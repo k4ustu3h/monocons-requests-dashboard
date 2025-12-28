@@ -108,9 +108,10 @@ const App = {
     mobileFilterCount: document.getElementById("mobileFilterCount"),
     mobileFilterMenu: document.getElementById("mobileFilterMenu"),
     
-    fabBar:      document.getElementById("fabBar"),
-    fabCount:    document.getElementById("fabCount"),
-    fabMenuBtn:  document.getElementById("fabMenuBtn"),
+    fabBar:        document.getElementById("fabBar"),
+    fabCount:      document.getElementById("fabCount"),
+    fabPrimaryBtn: document.getElementById("fabPrimaryBtn"),
+    fabMenuBtn:    document.getElementById("fabMenuBtn"),
     
     rowMenu:     document.getElementById("rowMenu"),
     fabMenu:     document.getElementById("fabMenu"),
@@ -922,6 +923,11 @@ const UI = {
         App.dom.inputSearch.focus();
       }
 
+      if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+        e.preventDefault();
+        App.dom.inputSearch.focus();
+      }
+
       // 2. Select All (Ctrl+A)
       if ((e.ctrlKey || e.metaKey) && e.key === 'a') {
         e.preventDefault();
@@ -939,7 +945,8 @@ const UI = {
       if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
         if (App.state.selected.size > 0) {
           e.preventDefault();
-          App.dom.fabBar.focus()
+          App.dom.fabPrimaryBtn.focus()
+          App.dom.fabPrimaryBtn.click()
         }
       }
     });
@@ -949,7 +956,7 @@ const UI = {
       const target = e.target;
       
       // --- 1. Selection & Actions (Enter/Space) ---
-      if (e.key === 'Enter' || e.key === ' ') {
+      if (!(e.ctrlKey || e.metaKey) && e.key === 'Enter' || e.key === ' ') {
         // A. Row/Card Selection
         if (target.classList.contains('list-row') || target.classList.contains('grid-card')) {
           e.preventDefault(); // Prevent page scroll on Space
