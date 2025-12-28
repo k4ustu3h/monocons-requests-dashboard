@@ -454,6 +454,39 @@ const Actions = {
     window.scrollTo(0, scrollY);
   },
 
+  toggleSortHeader(key) {
+    const current = App.state.sort;
+    const [currKey, currDir] = current.split('-');
+    
+    const defaults = {
+      name: 'asc',
+      req: 'desc',
+      install: 'desc',
+      time: 'desc'
+    };
+
+    let nextSort = "";
+
+    if (currKey === key) {
+      // Same column: Toggle direction
+      nextSort = `${key}-${currDir === 'asc' ? 'desc' : 'asc'}`;
+    } else {
+      // New column: Use default
+      nextSort = `${key}-${defaults[key]}`;
+    }
+
+    // Apply
+    App.state.sort = nextSort;
+    
+    // Sync Dropdowns
+    if (App.dom.selectSort) App.dom.selectSort.value = nextSort;
+    // If mobile dropdown exists/is visible, sync it too
+    const mobSort = document.getElementById("sortSelectMobile"); 
+    if (mobSort) mobSort.value = nextSort;
+
+    UI.render();
+  },
+
   copyToClipboard(text) {
     navigator.clipboard.writeText(text);
     Toast.show("Copied!");
@@ -821,6 +854,22 @@ const UI = {
     App.dom.mobileFilterBtn.addEventListener("click", () => {
       this.showMobileFilterPopover();
     });
+
+    const headers = {
+      '.col.name': 'name',
+      '.col.req':  'req',
+      '.col.install': 'install',
+      '.col.first': 'time'
+    };
+
+    Object.entries(headers).forEach(([selector, key]) => {
+      const el = App.dom.listHeader.querySelector(selector);
+      if (el) {
+        el.title = "Click to sort";
+        el.onclick = () => Actions.toggleSortHeader(key);
+      }
+    });
+
 
     App.dom.container.addEventListener('click', (e) => {
       const trigger = e.target.closest('.ctx-trigger');

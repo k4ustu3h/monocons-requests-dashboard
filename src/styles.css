@@ -389,6 +389,24 @@ select:hover {
   align-items: center;
 }
 
+/* Sortable Headers */
+.list-header .col.name,
+.list-header .col.req,
+.list-header .col.install,
+.list-header .col.first {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.list-header .col.name:hover,
+.list-header .col.req:hover,
+.list-header .col.install:hover,
+.list-header .col.first:hover {
+  color: var(--primary);
+}
+
 .list-row {
   transition: background-color 0.1s;
   cursor: pointer;
