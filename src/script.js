@@ -97,6 +97,7 @@ const App = {
     sentinel:    document.getElementById("scrollSentinel"),
     
     inputSearch: document.getElementById("searchInput"),
+    clearBtn: document.getElementById("clearSearchBtn"),
     regexBtn:    document.getElementById("regexBtn"),
     selectSort:  document.getElementById("sortSelect"),
     selectView:  document.getElementById("viewSelect"),
@@ -773,6 +774,7 @@ const Data = {
     if (params.has("q")) {
       App.state.search = params.get("q");
       App.dom.inputSearch.value = App.state.search;
+      if (App.state.search) App.dom.clearBtn.style.display = "flex";
     }
     if (params.has("view")) {
       const v = params.get("view");
@@ -830,7 +832,17 @@ const UI = {
     
     // Bind Global Events
     App.dom.inputSearch.addEventListener("input", e => {
-      App.state.search = e.target.value;
+      const val = e.target.value;
+      App.state.search = val;
+      App.dom.clearBtn.style.display = val.length > 0 ? "flex" : "none";
+
+      this.render();
+    });
+    App.dom.clearBtn.addEventListener("click", () => {
+      App.state.search = "";
+      App.dom.inputSearch.value = "";
+      App.dom.clearBtn.style.display = "none";
+      App.dom.inputSearch.focus();
       this.render();
     });
     App.dom.selectSort.addEventListener("change", e => {

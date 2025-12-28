@@ -230,7 +230,7 @@ body {
 .path-wrapper {
   height: 48px;
   background-color: var(--surface-container-high);
-  border-radius: 32px;
+  border-radius: 9999999px;
   display: flex;
   align-items: center;
   transition: box-shadow 0.2s;
@@ -239,9 +239,9 @@ body {
 .search-wrapper {
   flex: 2;
   min-width: 300px;
-  padding: 0 6px 0 20px;
-  gap: 6px;
+  padding: 8px;
 }
+
 .path-wrapper {
   flex: 1;
   padding: 0 16px;
@@ -261,8 +261,35 @@ body {
   background: transparent;
   border: none;
   outline: none;
-  color: var(--on-surface);
+  color: var(--on-surface-variant);
   font-weight: 500;
+}
+
+/* Icon Button (Inside Input) */
+.search-icon {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  color: var(--on-surface-variant);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+button.search-icon {
+  cursor: pointer;
+}
+
+button.search-icon:hover {
+  background: var(--surface-container-highest);
+  color: var(--on-surface);
+}
+
+button.search-icon:active {
+  background: var(--secondary-container);
+  color: var(--on-secondary-container);
 }
 
 .search-wrapper svg {
@@ -274,28 +301,6 @@ body {
   color: var(--on-surface-variant);
   width: 26px;
   height: 24px;
-}
-
-/* Icon Button (Inside Input) */
-#regexBtn {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-  border-radius: 50%;
-  color: var(--on-surface-variant);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s;
-}
-#regexBtn:hover {
-  background: var(--surface-container-highest);
-  color: var(--on-surface);
-}
-#regexBtn.active {
-  background: var(--secondary-container);
-  color: var(--on-secondary-container);
 }
 
 /* Dropdowns & Chips */
