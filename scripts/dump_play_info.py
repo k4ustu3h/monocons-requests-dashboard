@@ -14,11 +14,11 @@ DEAD_PATH = "src/assets/dead_links.json"
 ICON_DIR = "src/extracted_png/"
 
 # Throttling & Limits
-SLEEP_MIN = 2
-SLEEP_MAX = 5
+SLEEP_MIN = 0.5
+SLEEP_MAX = 1
 SAVE_INTERVAL = 10         # Autosave every N requests
 MAX_CONSECUTIVE_ERRORS = 5 # Stop if IP blocked
-BATCH_LIMIT = 500          # Max apps to update per run (Set 0 for infinite)
+BATCH_LIMIT = 1000         # Max apps to update per run (Set 0 for infinite)
 
 # STATE
 DATA = None
