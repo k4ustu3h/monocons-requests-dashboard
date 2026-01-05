@@ -678,7 +678,7 @@ const Data = {
     if (id === "unlabeled") {
       return {
         label: "Unlabeled",
-        description: "Apps with no other tags assigned.",
+        description: "Apps with no other labels assigned.",
         unlabeled: [] // Empty placeholder
       };
     }
