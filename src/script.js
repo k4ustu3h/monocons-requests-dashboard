@@ -56,7 +56,7 @@ App name (\`com.package.app\`)
 App name (\`com.package.app\`)  
 
 ### Linked
-<!--  New app components for existing icons. -->
+<!--  New app packages for existing icons. -->
 App name (\`com.package.app\` → \`drawable.svg\`)  
 App name (\`com.package.app\` → \`drawable.svg\`)  
 
@@ -255,7 +255,7 @@ const Templates = {
       </div>
       <div class="ctx-item" tabindex="0" role="menuitem" 
         onclick="Actions.copyToClipboard('${name.replace(/'/g, "\\'")}\\n${id}')">
-        ${ICONS.copy} <span>Copy name and component</span>
+        ${ICONS.copy} <span>Copy app name and ID</span>
       </div>
       <div class="ctx-item" tabindex="0" role="menuitem"
         onclick="Actions.copyAppFilterEntry('${id}')">
