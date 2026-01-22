@@ -923,7 +923,7 @@ const UI = {
         App.dom.inputSearch.focus();
       }
 
-      if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
         e.preventDefault();
         App.dom.inputSearch.focus();
       }
