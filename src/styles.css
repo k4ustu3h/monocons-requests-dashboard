@@ -287,7 +287,7 @@ button.search-icon:hover {
   color: var(--on-surface);
 }
 
-button.search-icon:active {
+button.search-icon.active {
   background: var(--secondary-container);
   color: var(--on-secondary-container);
 }
