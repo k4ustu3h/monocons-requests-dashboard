@@ -186,7 +186,7 @@ const Templates = {
     `;
   },
 
-  gridCard(app, isSelected, iconUrl) {
+  gridCard(app, tags, isSelected, iconUrl) {
     const id = app.componentName;
     const isUnknown = app.drawable === "unknown";
     
@@ -208,12 +208,26 @@ const Templates = {
       <div class="grid-fallback" style="display:none; text-align:center; font-size:11px; color:var(--on-surface-variant)">No Icon</div>`;
     }
 
+    const tagHtml = tags
+      // show only WIP tags
+      .filter(tagId => tagId === "wip")
+      .map(tagId => {
+        const meta = App.state.filterMetadata.get(tagId);
+        const label = meta ? meta.label : tagId;
+        const desc = meta ? meta.description : `Tagged with "${tagId}"`
+        return `<span class="status-pill status-${tagId}" title="${desc}">${label}</span>`;
+      })
+      .join("");
+
     return `
       <div class="grid-card ${isSelected ? 'selected' : ''}" data-id="${id}" title="${label}"
         tabindex="0" 
         role="checkbox" 
         aria-checked="${isSelected}">
         ${contentHtml}
+        <div class="grid-overlay-tags">
+          ${tagHtml}
+        </div>
         <div class="grid-overlay-check">
           <input type="checkbox" ${isSelected ? "checked" : ""} style="pointer-events:none;" tabindex="-1" >
         </div>
@@ -1114,11 +1128,11 @@ const UI = {
       const iconUrl = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
       
       let html = "";
+      const tags = Utils.getTagsForApp(id);
       if (s.view === "list") {
-        const tags = Utils.getTagsForApp(id);
         html = Templates.listRow(app, isSelected, tags, iconUrl, Utils.formatDate(app.firstAppearance), Utils.formatDate(app.lastRequested));
       } else {
-        html = Templates.gridCard(app, isSelected, iconUrl);
+        html = Templates.gridCard(app, tags, isSelected, iconUrl);
       }
       
       // Append HTML string to temp container
