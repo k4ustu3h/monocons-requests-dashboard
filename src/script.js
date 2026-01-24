@@ -1262,7 +1262,7 @@ const UI = {
     App.dom.rowMenu.innerHTML = Templates.rowMenu(app);
     
     // Positioning
-    const w = 280, h = 280;
+    const w = 255, h = 290;
     let x = e.clientX + 2, y = e.clientY + 2;
     if (x + w > window.innerWidth) x -= (w + 4);
     if (y + h > window.innerHeight) y -= (h + 4);
