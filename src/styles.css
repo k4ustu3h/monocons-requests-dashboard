@@ -427,6 +427,7 @@ select:hover {
   background-color: rgba(164, 201, 254, 0.08);
 }
 
+.list-row .check-col,
 .list-row .icon {
   display: flex;
 }
@@ -649,7 +650,7 @@ input[type="checkbox"]:indeterminate::after {
 .grid-overlay-tags {
   position: absolute;
   top: 0;
-  right: 4px;
+  left: 4px;
 }
 
 .grid-card.selected .grid-overlay-check {
