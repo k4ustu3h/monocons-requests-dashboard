@@ -370,7 +370,7 @@ select:hover {
 .list-header,
 .list-row {
   display: grid;
-  grid-template-columns: 40px 66px 3fr 100px 100px 160px 140px;
+  grid-template-columns: 40px 72px 3fr 100px 100px 160px 200px;
   align-items: center;
   padding: 12px 16px;
   border-bottom: 1px solid var(--outline-variant);
