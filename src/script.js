@@ -45,26 +45,6 @@ const DEFAULTS = {
   regex: false
 };
 
-const PR_TEMPLATE =
-`## Icons
-<!-- Please specify in the sections below which apps and packages you have worked on.
-     Unnecessary sections can be deleted. -->
-
-### Added
-<!--  Apps for which you add icons. -->
-App name (\`com.package.app\`)  
-App name (\`com.package.app\`)  
-
-### Linked
-<!--  New app packages for existing icons. -->
-App name (\`com.package.app\` → \`drawable.svg\`)  
-App name (\`com.package.app\` → \`drawable.svg\`)  
-
-### Updated
-<!--  Outdated icons that you've updated. -->
-App name (\`com.package.app\`)  
-App name (\`com.package.app\`)`;
-
 // ==========================================
 // GLOBAL STATE
 // ==========================================
@@ -83,9 +63,12 @@ const App = {
     lastSelectedId: null,
     
     // Runtime
-    idMap: new Map(), // NEW: O(1) Lookup Cache
+    idMap: new Map(),
     renderedCount: 0,
-    currentData: [], // Filtered & Sorted list
+    currentData: [],
+
+    actionMode: "new",
+    icontoolPath: localStorage.getItem("icontoolPath") || ""
   },
 
   // DOM Elements Cache
@@ -108,13 +91,14 @@ const App = {
     mobileFilterCount: document.getElementById("mobileFilterCount"),
     mobileFilterMenu: document.getElementById("mobileFilterMenu"),
     
-    fabBar:        document.getElementById("fabBar"),
-    fabCount:      document.getElementById("fabCount"),
-    fabPrimaryBtn: document.getElementById("fabPrimaryBtn"),
-    fabMenuBtn:    document.getElementById("fabMenuBtn"),
+    sbBar: document.getElementById("selectionBar"),
+    sbCount: document.getElementById("sbCount"),
+    sbChips: document.querySelectorAll(".sb-chip"),
+    sbClearBtn: document.getElementById("sbClearBtn"),
+    sbPathInput: document.getElementById("sbPathInput"),
+    sbDownloadBtn: document.getElementById("sbDownloadBtn"),
     
     rowMenu:     document.getElementById("rowMenu"),
-    fabMenu:     document.getElementById("fabMenu"),
     toastBox:    document.getElementById("toastContainer")
   }
 };
@@ -263,10 +247,6 @@ const Templates = {
         onclick="window.open('${CONFIG.urls.galaxyStore}${pkg}')">
         ${ICONS.galaxyStore} <span>Galaxy Store</span>
       </div>
-      <div class="ctx-item" tabindex="0" role="menuitem"
-        onclick="Actions.copyIconToolCmd('${id}')">
-        ${ICONS.terminal} <span>Copy icontool command</span>
-      </div>
       <div class="ctx-item" tabindex="0" role="menuitem" 
         onclick="Actions.copyToClipboard('${name.replace(/'/g, "\\'")}\\n${id}')">
         ${ICONS.copy} <span>Copy app name and ID</span>
@@ -274,26 +254,6 @@ const Templates = {
       <div class="ctx-item" tabindex="0" role="menuitem"
         onclick="Actions.copyAppFilterEntry('${id}')">
         ${ICONS.copy} <span>Copy appfilter</span>
-      </div>
-    `;
-  },
-
-  fabMenu() {
-    return `
-      <div class="ctx-item" tabindex="0" role="menuitem"
-        onclick="Actions.copyBulkAppFilter()">
-        ${ICONS.copy} <span>Copy appfilter entries</span>
-      </div>
-      <div class="ctx-item" onclick="Actions.copyPrTemplate()">
-        ${ICONS.copy} <span>Copy PR template</span>
-      </div>
-      <div class="ctx-item" tabindex="0" role="menuitem"
-        onclick="Actions.downloadSelectionAsJson()">
-        ${ICONS.download} <span>Download JSON config</span>
-      </div>
-      <div class="ctx-item" tabindex="0" role="menuitem"
-        onclick="Actions.copyBulkIconToolCmd()">
-        ${ICONS.terminal} <span>Copy icontool commands</span>
       </div>
     `;
   },
@@ -352,17 +312,6 @@ const Utils = {
     const name = app.label;
     const draw = Utils.sanitizeDrawableName(name);
     return `<item component="ComponentInfo{${cmp}}" drawable="${draw}" name="${name}" />`;
-  },
-
-  generateIconToolCmd(app) {
-    let path = App.dom.inputPath.value.trim();
-    if (path && !path.endsWith("/")) path += "/";
-    
-    const cmp = app.componentName;
-    const name = app.label.replace(/"/g, '\\"');
-    const cleanName = Utils.sanitizeDrawableName(app.label);
-    
-    return `python3 ./icontool.py add "${path}${cleanName}.svg" ${cmp} "${name}"`;
   },
 
   getTagsForApp(id) {
@@ -455,7 +404,7 @@ const Actions = {
     
     UI.updateItemVisuals(id);
     UI.updateHeader();
-    UI.updateFab();
+    UI.updateSelectionBar();
   },
 
   toggleSelectAll(isChecked) {
@@ -514,125 +463,122 @@ const Actions = {
     if (app) Actions.copyToClipboard(Utils.generateXml(app));
   },
 
-  copyIconToolCmd(id) {
-    const app = App.state.idMap.get(id);
-    if (app) Actions.copyToClipboard(Utils.generateIconToolCmd(app));
-  },
-
-  copyPrTemplate() {
-    Actions.copyToClipboard(PR_TEMPLATE);
-  },
-
-  copyBulkAppFilter() {
-    const selected = Data.getSelectedApps();
-    if (selected.length === 0) return;
-    const output = selected.map(Utils.generateXml).join('\n');
-    Actions.copyToClipboard(output);
-  },
-
-  copyBulkIconToolCmd() {
-    const selected = Data.getSelectedApps();
-    if (selected.length === 0) return;
-    const output = selected.map(Utils.generateIconToolCmd).join('\n');
-    Actions.copyToClipboard(output);
-  },
-
-  downloadSelectionAsJson() {
-    const ids = Array.from(App.state.selected);
-    if (ids.length === 0) return;
-
-    const label = prompt("Enter label for group:", "custom") || "custom";
-    const blob = new Blob([JSON.stringify({ [label]: ids }, null, 2)], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = `${label}.json`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    
-    UI.closeContextMenu();
-  },
-
-  async downloadSelected() {
+  // In Actions object...
+  async downloadBundle() {
     if (typeof JSZip === 'undefined') {
       Toast.show("JSZip library missing", "error");
       return;
     }
 
-    // 1. Get objects instead of just IDs
+    // 1. Get Selected Data
     const selectedApps = App.data.filter(a => App.state.selected.has(a.componentName));
     if (selectedApps.length === 0) return;
 
-    // 2. Sort Alphabetically by Name (A-Z) for the XML
+    // 2. Sort Alphabetically
     selectedApps.sort((a, b) => a.label.localeCompare(b.label));
 
-    const originalText = App.dom.fabCount.textContent;
-    App.dom.fabCount.textContent = "Preparing...";
-    App.dom.fabBar.style.cursor = "wait";
+    // UI Feedback
+    const originalText = App.dom.sbDownloadBtn.innerHTML;
+    App.dom.sbDownloadBtn.innerHTML = "Processing...";
+    document.body.style.cursor = "wait";
 
     try {
       const zip = new JSZip();
+      const mode = App.state.actionMode; // "new" or "link"
+      const path = App.state.icontoolPath.trim().replace(/\/+$/, "") + "/"; // Ensure trailing slash
       
+      // Output Strings
+      let xmlAppFilter = "<resources>\n";
+      let txtCommands = "";
+      let mdPR = `## Icons \n\
+      <!-- Please specify in the sections below which apps and packages you have worked on.\n\
+        Unnecessary sections can be deleted. -->\n\n`;
+      
+      // PR Headers
+      if (mode === "new") mdPR += "### Added\n<!-- Apps for which you add icons. -->\n";
+      else mdPR += "### Linked\n<!-- New app components for existing icons. -->\n";
+
       const usedNames = new Set();
-      const promises = [];
-      const xmlLines = [];
+      const downloadPromises = [];
 
+      // --- APPFILTER ---
       selectedApps.forEach(app => {
-        // A. Resolve Filename (Handle Collisions)
-        let filename = Utils.sanitizeDrawableName(app.label);
-        
-        if (usedNames.has(filename)) {
-          let c = 2;
-          while (usedNames.has(`${filename}_${c}`)) c++;
-          filename = `${filename}_${c}`;
-        }
-        usedNames.add(filename);
-
-        // B. Generate XML Line (Using the resolved filename)
         const cmp = app.componentName;
-        const name = app.label;
-        // Escape XML special chars in name just in case
-        const safeName = name.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+        const label = app.label.replace(/"/g, '&quot;');
         
-        xmlLines.push(`  <item component="ComponentInfo{${cmp}}" drawable="${filename}" name="${safeName}" />`);
+        let drawable = Utils.sanitizeDrawableName(app.label);
+        
+        if (usedNames.has(drawable)) {
+          let c = 2;
+          while (usedNames.has(`${drawable}_${c}`)) c++;
+          drawable = `${drawable}_${c}`;
+        }
+        usedNames.add(drawable);
 
-        // C. Fetch Image
+        xmlAppFilter += `  <item component="ComponentInfo{${cmp}}" drawable="${drawable}" name="${label}" />\n`;
+
+        if (App.state.icontoolPath) {
+          if (mode === "new") {
+            txtCommands += `python3 ./icontool.py add "${path}${drawable}.svg" ${cmp} "${label}"\n`;
+          } else {
+            // TODO: use actual appfilter
+            txtCommands += `python3 ./icontool.py link "${drawable}" ${cmp} "${label}"\n`;
+          }
+        }
+
+        if (mode === "new") {
+          mdPR += `${app.label} (\`${app.componentName.split('/')[0]}\`)\n`;
+        } else {
+          mdPR += `${app.label} (\`${app.componentName.split('/')[0]}\` → \`${drawable}.svg\`)\n`;
+        }
+
         const url = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
-        promises.push(
+        downloadPromises.push(
           fetch(url)
-            .then(r => r.ok ? r.blob() : Promise.reject())
-            .then(blob => zip.file(`${filename}.png`, blob))
-            .catch(() => console.warn(`Failed: ${url}`))
+            .then(r => r.ok ? r.blob() : null)
+            .then(blob => {
+              if (blob) zip.file(`icons/${drawable}.png`, blob);
+            })
+            .catch(() => {})
         );
       });
 
-      // D. Add !appfilter.xml to Zip Root
-      const xmlContent = `<resources>\n${xmlLines.join('\n')}\n</resources>`;
-      zip.file("!appfilter.xml", xmlContent);
+      xmlAppFilter += "</resources>";
+      zip.file("!appfilter.xml", xmlAppFilter);
 
-      App.dom.fabCount.textContent = `Fetching ${promises.length}...`;
-      await Promise.all(promises);
+      // --- CONFIG JSON ---
+      const filterConfig = {
+        "selection": selectedApps.map(a => a.componentName)
+      };
+      zip.file("!filter_config.json", JSON.stringify(filterConfig, null, 2));
 
-      App.dom.fabCount.textContent = "Zipping...";
+      // --- COMMANDS ---
+      if (txtCommands) {
+        zip.file("!icontool_commands.txt", txtCommands);
+      }
+
+      // --- PR DESCRIPTION ---
+      zip.file("!pr_description.md", mdPR);
+
+      // --- EXECUTE ---
+      await Promise.all(downloadPromises);
       const content = await zip.generateAsync({ type: "blob" });
       
       const link = document.createElement("a");
       link.href = URL.createObjectURL(content);
-      link.download = `lawnicons-export-${new Date().toISOString().slice(0,10)}.zip`;
+      link.download = `lawnicons-${mode}-${new Date().toISOString().slice(0,10)}.zip`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
 
-      Toast.show("Download started", "success");
+      Toast.show(`Downloaded bundle (${mode})`, "success");
+
     } catch (e) {
       console.error(e);
-      Toast.show("Download failed", "error");
+      Toast.show("Failed to generate zip", "error");
     } finally {
-      App.dom.fabBar.style.cursor = "default";
-      App.dom.fabCount.textContent = originalText;
-      UI.closeContextMenu();
+      document.body.style.cursor = "default";
+      App.dom.sbDownloadBtn.innerHTML = originalText;
     }
   }
 };
@@ -874,13 +820,33 @@ const UI = {
       this.render();
     });
     App.dom.headerCheck.addEventListener("change", e => Actions.toggleSelectAll(e.target.checked));
-    App.dom.fabMenuBtn.addEventListener("click", e => {
-      e.stopPropagation();
-      this.showFabMenu();
-    });
     App.dom.mobileFilterBtn.addEventListener("click", () => {
       this.showMobileFilterPopover();
     });
+
+    App.dom.sbChips.forEach(chip => {
+      chip.addEventListener("click", () => {
+        // 1. Update State
+        App.state.actionMode = chip.dataset.mode;
+        
+        // 2. Update UI
+        App.dom.sbChips.forEach(c => c.classList.remove("active"));
+        chip.classList.add("active");
+      });
+    });
+
+    // Selection Bar - Path Input (Save on change)
+    App.dom.sbPathInput.value = App.state.icontoolPath;
+    App.dom.sbPathInput.addEventListener("input", (e) => {
+      App.state.icontoolPath = e.target.value;
+      localStorage.setItem("icontoolPath", e.target.value);
+    });
+
+    // Selection Bar - Clear
+    App.dom.sbClearBtn.addEventListener("click", () => Actions.toggleSelectAll(false));
+
+    // Selection Bar - Download
+    App.dom.sbDownloadBtn.addEventListener("click", () => Actions.downloadBundle());
 
     const headers = {
       '.col.name': 'name',
@@ -955,12 +921,12 @@ const UI = {
         }
       }
 
-      // 4. Focus FAB
+      // 4. Focus selection bar
       if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
         if (App.state.selected.size > 0) {
           e.preventDefault();
-          App.dom.fabPrimaryBtn.focus()
-          App.dom.fabPrimaryBtn.click()
+          App.dom.sbDownloadBtn.focus()
+          App.dom.sbDownloadBtn.click()
         }
       }
     });
@@ -1033,7 +999,7 @@ const UI = {
     });
 
     // Handle Menu Navigation (Shared for all menus)
-    ['rowMenu', 'fabMenu', 'mobileFilterMenu'].forEach(id => {
+    ['rowMenu', 'mobileFilterMenu'].forEach(id => {
       const menu = App.dom[id];
       if (!menu) return;
 
@@ -1245,16 +1211,18 @@ const UI = {
       App.dom.mobileFilterCount.textContent = "";
     }
 
-    this.updateFab();
+    this.updateSelectionBar();
   },
 
-  updateFab() {
+  updateSelectionBar() {
     const count = App.state.selected.size;
+    const bar = App.dom.sbBar;
+    
     if (count > 0) {
-      App.dom.fabBar.classList.add("visible");
-      App.dom.fabCount.textContent = `Download ${count} icon${count > 1 ? 's' : ''}`;
+      bar.classList.add("visible");
+      App.dom.sbCount.textContent = `${count} icon${count !== 1 ? 's' : ''}`;
     } else {
-      App.dom.fabBar.classList.remove("visible");
+      bar.classList.remove("visible");
     }
   },
 
@@ -1272,12 +1240,6 @@ const UI = {
     App.dom.rowMenu.style.transformOrigin = "top left";
     App.dom.rowMenu.showPopover();
     this.focusMenu(App.dom.rowMenu);
-  },
-
-  showFabMenu() {
-    App.dom.fabMenu.innerHTML = Templates.fabMenu();
-    App.dom.fabMenu.showPopover();
-    this.focusMenu(App.dom.fabMenu);
   },
 
   showMobileFilterPopover() {
@@ -1343,12 +1305,10 @@ const UI = {
 
   closeContextMenu() {
     try { App.dom.rowMenu.hidePopover(); } catch {}
-    try { App.dom.fabMenu.hidePopover(); } catch {}
     try { App.dom.mobileFilterMenu.hidePopover(); } catch {}
 
     setTimeout(() => {
       App.dom.rowMenu.innerHTML = "";
-      App.dom.fabMenu.innerHTML = "";
       App.dom.mobileFilterMenu.innerHTML = ""; // If present
     }, 200);
   }

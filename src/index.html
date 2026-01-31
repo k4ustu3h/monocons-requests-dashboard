@@ -38,17 +38,17 @@
       </div>
     </div>
     <div class="header-center">
-      <div class="search-wrapper" title="Search">
-        <div class="search-icon">
+      <div class="input-wrapper" id="search-wrapper" title="Search">
+        <div class="input-icon">
           <svg id="searchIcon"><use href="#ic-search"/></svg>
         </div>
       
         <input id="searchInput" placeholder="Application name or ID" />
 
-        <button id="clearSearchBtn" class="search-icon" title="Clear search" style="display: none;">
+        <button id="clearSearchBtn" class="input-icon" title="Clear search" style="display: none;">
           <svg><use href="#ic-close"/></svg>
         </button>
-        <button id="regexBtn" class="search-icon" title="Use Regular Expression">
+        <button id="regexBtn" class="input-icon" title="Use Regular Expression">
           <svg><use href="#ic-regex"/></svg>
         </button>
       </div>
@@ -92,15 +92,38 @@
     </div>
   </div>
 
-  <div id="fabBar" class="fab-bar" tabindex="0" role="menu">
-    <button class="fab-btn fab-primary" id="fabPrimaryBtn" onclick="Actions.downloadSelected()">
-      <svg><use href="#ic-download"/></svg>
-      <span id="fabCount">Download 0 icons</span>
-    </button>
-    <button class="fab-btn fab-secondary" id="fabMenuBtn" title="More actions">
-      <svg><use href="#ic-dots"/></svg>
-    </button>
-</div>
+  <!-- SELECTION BAR (Fixed Bottom Card) -->
+  <div id="selectionBar" class="selection-bar">
+    <div class="sb-left">
+      <div class="sb-count" id="sbCount">0 icons</div>
+
+      <div class="sb-chips">
+        <button class="tag chip sb-chip active" data-mode="new">New icons</button>
+        <button class="tag chip sb-chip" data-mode="link">Link</button>
+      </div>
+    </div>
+
+    <div class="sb-right">
+      <!-- Clear Selection -->
+      <button class="sb-icon-btn" id="sbClearBtn" title="Clear selection">
+        <svg><use href="#ic-close"/></svg>
+      </button>
+
+      <!-- Path Input -->
+      <div class="input-wrapper sb-input-wrapper">
+        <div class="input-icon">
+          <svg><use href="#ic-terminal"/></svg>
+        </div>
+        <input id="sbPathInput" placeholder="Icontool path (optional)" />
+      </div>
+
+      <!-- Download Button -->
+      <button class="sb-action-btn" id="sbDownloadBtn">
+        <svg><use href="#ic-download"/></svg>
+        <span>Download</span>
+      </button>
+    </div>
+  </div>
 
   <div class="list-viewport">
     <div id="listHeader" class="list-header">
@@ -124,7 +147,6 @@
 </div>
 
 <div id="rowMenu" popover="auto" tabindex="0" role="menu" class="context-menu row-style"></div>
-<div id="fabMenu" popover="auto" tabindex="0" role="menu" class="context-menu fab-style"></div>
 <div id="mobileFilterMenu" popover="auto" tabindex="0" role="menu" class="context-menu row-style mobile-filter-style"></div>
 
 <div id="toastContainer" class="toast-container"></div>
