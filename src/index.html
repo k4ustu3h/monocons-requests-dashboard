@@ -30,22 +30,14 @@
 
   <!-- HEADER -->
   <header class="header">
-    <img src="./favicon.webp" alt="Lawnicons" class="header-icon">
-    <div class="header-info">
-      <h1>Lawnicons <span class="header-tag">Beta</span></h1>
-      <div id="headerCount" class="header-sub"></div>
+    <div class="header-left">
+      <img src="./favicon.webp" alt="Lawnicons" class="header-icon">
+      <div class="header-info">
+        <h1>Lawnicons <span class="header-tag">Beta</span></h1>
+        <div id="headerCount" class="header-sub"></div>
+      </div>
     </div>
-    <div class="header-links">
-      <a href="https://opencollective.com/lawnchair" class="header-link" title="Open Collective">
-        <svg><use href="#ic-open-collective"></use></svg>      
-      <a href="https://github.com/LawnchairLauncher/lawnicons" class="header-link" title="GitHub">
-        <svg><use href="#ic-github"></use></svg>
-      </a>
-    </div>
-  </header>
-
-  <div class="controls">
-    <div class="controls-top">
+    <div class="header-center">
       <div class="search-wrapper" title="Search">
         <div class="search-icon">
           <svg id="searchIcon"><use href="#ic-search"/></svg>
@@ -60,13 +52,17 @@
           <svg><use href="#ic-regex"/></svg>
         </button>
       </div>
-      
-      <div class="path-wrapper" title="icontool.py path">
-        <svg><use href="#ic-terminal"/></svg>
-        <input type="text" placeholder="Icontool.py path"/>
-      </div>
     </div>
+    <div class="header-right">
+      <a href="https://opencollective.com/lawnchair" class="header-link" title="Open Collective">
+        <svg><use href="#ic-open-collective"></use></svg>      
+      <a href="https://github.com/LawnchairLauncher/lawnicons" class="header-link" title="GitHub">
+        <svg><use href="#ic-github"></use></svg>
+      </a>
+    </div>
+  </header>
 
+  <div class="controls">
     <a href="#headerCheck" id="controlsSkip">Skip filters</a>
 
     <div class="controls-bottom">

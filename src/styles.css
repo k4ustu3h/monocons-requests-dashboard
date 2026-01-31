@@ -126,10 +126,23 @@ body:has(.context-menu:popover-open) {
    3. HEADER
    ========================================= */
 .header {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Left | Center (Search) | Right */
+  gap: 24px;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.header-left, .header-right {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 32px 0 24px 0;
+}
+
+.header-center {
+  width: 100%;
+  max-width: 600px;
+  justify-self: center;
 }
 
 .header-icon {
@@ -192,51 +205,8 @@ body:has(.context-menu:popover-open) {
   height: 28px;
 }
 
-/* =========================================
-   4. CONTROLS
-   ========================================= */
-#controlsSkip {
-  position: fixed;
-  top: 999999999999999px;
-  background: var(--tertiary-container);
-  color: var(--on-tertiary-container);
-  border-radius: 4px;
-  text-decoration: none;
-  padding: 8px;
-}
-
-#controlsSkip:focus {
-  top: 4px;
-  left: 4px;
-  outline: 1px solid var(--outline)
-}
-
-.controls {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 24px;
-}
-
-.controls-top {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-.controls-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-}
-.control-group {
-  display: flex;
-  gap: 8px;
-}
-
-/* Inputs (Search & Path) */
-.search-wrapper,
-.path-wrapper {
+/* Search */
+.search-wrapper {
   height: 48px;
   background-color: var(--surface-container-high);
   border-radius: 9999999px;
@@ -251,20 +221,11 @@ body:has(.context-menu:popover-open) {
   padding: 8px;
 }
 
-.path-wrapper {
-  flex: 1;
-  padding: 0 16px;
-  gap: 10px;
-  border: 1px solid transparent;
-}
-
-.search-wrapper:focus-within,
-.path-wrapper:focus-within {
+.search-wrapper:focus-within {
   box-shadow: 0 0 0 1px var(--on-surface-variant);
 }
 
-.search-wrapper input,
-.path-wrapper input {
+.search-wrapper input {
   width: 100%;
   height: 100%;
   background: transparent;
@@ -310,6 +271,43 @@ button.search-icon.active {
   color: var(--on-surface-variant);
   width: 26px;
   height: 24px;
+}
+
+/* =========================================
+   4. CONTROLS
+   ========================================= */
+#controlsSkip {
+  position: fixed;
+  top: 999999999999999px;
+  background: var(--tertiary-container);
+  color: var(--on-tertiary-container);
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 8px;
+}
+
+#controlsSkip:focus {
+  top: 4px;
+  left: 4px;
+  outline: 1px solid var(--outline)
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.controls-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.control-group {
+  display: flex;
+  gap: 8px;
 }
 
 /* Dropdowns & Chips */
@@ -967,14 +965,28 @@ input[type="checkbox"]:indeterminate::after {
 
 @media (max-width: 840px) {
   /* Visibility */
-  .path-wrapper {
-    display: none;
-  }
   .desktop-only {
     display: none !important;
   }
   .mobile-only {
     display: flex !important;
+  }
+
+  /* Switch Header to Stacked Layout */
+  .header {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 16px;
+    padding-bottom: 16px;
+  }
+
+  .header-left { grid-column: 1; grid-row: 1; }
+  .header-right { grid-column: 2; grid-row: 1; }
+  
+  .header-center {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    max-width: none;
   }
 
   /* Mobile Button Alignment */
