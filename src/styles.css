@@ -113,6 +113,15 @@ body {
   border-radius: 4px;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
+/* Stop scrolling when ANY context menu is open */
+body:has(.context-menu:popover-open) {
+  overflow: hidden;
+}
+
 /* =========================================
    3. HEADER
    ========================================= */
