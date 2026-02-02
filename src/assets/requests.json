@@ -1,10 +1,10 @@
 {
-  "count": 28500,
-  "lastUpdate": "2026-01-30",
+  "count": 28480,
+  "lastUpdate": "2026-02-02",
   "apps": [
     {
       "drawable": "mini_militia",
-      "requestCount": 45,
+      "requestCount": 46,
       "firstAppearance": 1718707312.0,
       "lastRequested": 1767093201.0,
       "label": "Mini Militia",
@@ -1240,6 +1240,15 @@
       "installs": "10,000,000+"
     },
     {
+      "drawable": "gg_game_space___teste_interno",
+      "requestCount": 21,
+      "firstAppearance": 1715605891.0,
+      "lastRequested": 1766045780.0,
+      "label": "GG Game Space - Teste interno",
+      "componentName": "com.zjx.gamebox/com.zjx.gamebox.MainActivity",
+      "installs": "1,000,000+"
+    },
+    {
       "drawable": "bus_simulator_indonesia",
       "requestCount": 20,
       "firstAppearance": 1720737498.0,
@@ -1422,15 +1431,6 @@
       "label": "Monoposto",
       "componentName": "com.gabama.monopostolite/com.unity3d.player.UnityPlayerActivity",
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "gg_game_space___teste_interno",
-      "requestCount": 20,
-      "firstAppearance": 1715605891.0,
-      "lastRequested": 1766045780.0,
-      "label": "GG Game Space - Teste interno",
-      "componentName": "com.zjx.gamebox/com.zjx.gamebox.MainActivity",
-      "installs": "1,000,000+"
     },
     {
       "drawable": "photo_studio_pro",
@@ -1761,6 +1761,24 @@
       "installs": "1,000,000+"
     },
     {
+      "drawable": "curse_of_aros",
+      "label": "Curse of Aros",
+      "componentName": "com.bitgate.curseofaros/com.bitgate.curseofaros.AndroidLauncher",
+      "requestCount": 19,
+      "firstAppearance": 1766034980.0,
+      "lastRequested": 1766045780.0,
+      "installs": "1,000,000+"
+    },
+    {
+      "drawable": "speedtop",
+      "label": "SpeedTop",
+      "componentName": "io.speedtop.app/io.speedtop.app.MainActivity",
+      "requestCount": 19,
+      "firstAppearance": 1766034980.0,
+      "lastRequested": 1766045780.0,
+      "installs": "5,000,000+"
+    },
+    {
       "drawable": "mylebara",
       "requestCount": 18,
       "firstAppearance": 1714820543.0,
@@ -2077,24 +2095,6 @@
       "label": "SchildiNext",
       "componentName": "chat.schildi.android/io.element.android.x.MainActivity",
       "installs": "1,000+"
-    },
-    {
-      "drawable": "curse_of_aros",
-      "label": "Curse of Aros",
-      "componentName": "com.bitgate.curseofaros/com.bitgate.curseofaros.AndroidLauncher",
-      "requestCount": 18,
-      "firstAppearance": 1766034980.0,
-      "lastRequested": 1766045780.0,
-      "installs": "1,000,000+"
-    },
-    {
-      "drawable": "speedtop",
-      "label": "SpeedTop",
-      "componentName": "io.speedtop.app/io.speedtop.app.MainActivity",
-      "requestCount": 18,
-      "firstAppearance": 1766034980.0,
-      "lastRequested": 1766045780.0,
-      "installs": "5,000,000+"
     },
     {
       "drawable": "snapmint",
@@ -7699,15 +7699,6 @@
       "label": "Personal",
       "componentName": "com.moniepoint.personal/com.moniepoint.personal.MainActivity",
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "vehicleinfo",
-      "requestCount": 11,
-      "firstAppearance": 1720081680.0,
-      "lastRequested": 1767177594.0,
-      "label": "Vehicleinfo",
-      "componentName": "com.vehicle.rto.vahan.status.information.register/com.vehicle.rto.vahan.status.information.register.SplashActivity",
-      "installs": "50,000,000+"
     },
     {
       "drawable": "dude_theft_wars",
@@ -23764,15 +23755,6 @@
       "label": "MetropolCard",
       "componentName": "com.Metropal.MetropolCard/com.Metropal.MetropolCard.MainActivity",
       "installs": "1,000,000+"
-    },
-    {
-      "drawable": "boomplay",
-      "requestCount": 5,
-      "firstAppearance": 1720081680.0,
-      "lastRequested": 1763716929.0,
-      "label": "Boomplay",
-      "componentName": "com.afmobi.boomplayer/com.tecno.boomplayer.guide.ControllerActivity",
-      "installs": "100,000,000+"
     },
     {
       "drawable": "bci_3",
@@ -72175,15 +72157,6 @@
       "installs": "100,000+"
     },
     {
-      "drawable": "michat",
-      "requestCount": 2,
-      "firstAppearance": 1718527371.0,
-      "lastRequested": 1762929232.0,
-      "label": "MiChat",
-      "componentName": "com.michatapp.im/com.michatapp.launch.LaunchActivity",
-      "installs": "100,000,000+"
-    },
-    {
       "drawable": "mary_browns",
       "requestCount": 2,
       "firstAppearance": 1726740929.0,
@@ -73324,15 +73297,6 @@
       "lastRequested": 1763126259.0,
       "label": "Jelly Master: Mukbang ASMR",
       "componentName": "com.fc.p.cp.jelly.mukbang.asmr.live.diy/com.google.firebase.MessagingUnityPlayerActivity",
-      "installs": "50,000,000+"
-    },
-    {
-      "drawable": "music_piano_7",
-      "requestCount": 2,
-      "firstAppearance": 1721055348.0,
-      "lastRequested": 1763126259.0,
-      "label": "Music Piano 7",
-      "componentName": "com.bunbunstudio.magicblocktiles/com.pem.pianomagictiles.AmaUnityPlayerActivity",
       "installs": "50,000,000+"
     },
     {
@@ -95570,15 +95534,6 @@
       "installs": "100,000+"
     },
     {
-      "drawable": "ai_video_editor_shotcut_ai",
-      "requestCount": 2,
-      "firstAppearance": 1726259123.0,
-      "lastRequested": 1743465600.0,
-      "label": "AI Video Editor: ShotCut AI",
-      "componentName": "video.editor.videomaker.effects.fx/com.atlasv.android.mediaeditor.ui.startup.SplashActivity",
-      "installs": "50,000,000+"
-    },
-    {
       "drawable": "splice_make_music_now",
       "requestCount": 2,
       "firstAppearance": 1726259123.0,
@@ -97166,15 +97121,6 @@
       "label": "T world - SKT \ub370\uc774\ud130/\uc694\uae08 \ud655\uc778, \ub9de\ucda4 \ud61c\ud0dd",
       "componentName": "com.sktelecom.minit/com.sktelecom.minit.scene.intro.IntroActivity",
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "icon_161",
-      "requestCount": 2,
-      "firstAppearance": 1726943614.0,
-      "lastRequested": 1743465600.0,
-      "label": "\uc5d0\uc774\ub2f7 \uc804\ud654",
-      "componentName": "com.skt.prod.dialer/com.skt.prod.dialer.activities.main.MainActivity",
-      "installs": "50,000,000+"
     },
     {
       "drawable": "endscopetool",
@@ -135006,15 +134952,6 @@
       "installs": "10,000+"
     },
     {
-      "drawable": "gtav_manual",
-      "requestCount": 1,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1763889585.0,
-      "label": "GTAV Manual",
-      "componentName": "com.rockstargames.gtavmanual/com.rockstargames.gtavmanual.GTAVManual",
-      "installs": "50,000,000+"
-    },
-    {
       "drawable": "gondolapro",
       "requestCount": 1,
       "firstAppearance": 1745020800.0,
@@ -137100,15 +137037,6 @@
       "label": "\u0424\u0438\u043a\u0431\u0443\u043a",
       "componentName": "com.breakpoint.ficbook/com.breakpoint.ficbook.MainActivity",
       "installs": "1,000,000+"
-    },
-    {
-      "drawable": "unnamed_icon_5_8",
-      "requestCount": 1,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1764615397.0,
-      "label": "\u0428\u0430\u0433\u043e\u043c\u0435\u0440 - \u0421\u0447\u0451\u0442\u0447\u0438\u043a \u0448\u0430\u0433\u043e\u0432",
-      "componentName": "pedometer.stepcounter.calorieburner.pedometerforwalking/pedometer.stepcounter.calorieburner.pedometerforwalking.activity.SplashActivity",
-      "installs": "50,000,000+"
     },
     {
       "drawable": "mcb_juice",
@@ -144686,15 +144614,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "cut_cut_photo_editor_cutout",
-      "requestCount": 1,
-      "firstAppearance": 1718488016.0,
-      "lastRequested": 1743465600.0,
-      "label": "Cut Cut: Photo Editor & CutOut",
-      "componentName": "com.xprodev.cutcam/org.saturn.splash.sdk.activity.SplashMainActivity",
-      "installs": "100,000,000+"
-    },
-    {
       "drawable": "let_s_create_pottery_2",
       "requestCount": 1,
       "firstAppearance": 1718488016.0,
@@ -147887,15 +147806,6 @@
       "installs": "500,000+"
     },
     {
-      "drawable": "zinio_magazine_newsstand",
-      "requestCount": 1,
-      "firstAppearance": 1718637854.0,
-      "lastRequested": 1743465600.0,
-      "label": "ZINIO - Magazine Newsstand",
-      "componentName": "com.zinio.mobile.android.reader/com.zinio.app.splash.presentation.activity.SplashActivity",
-      "installs": "50,000,000+"
-    },
-    {
       "drawable": "krisbow_sync_smart_klic",
       "requestCount": 1,
       "firstAppearance": 1718643640.0,
@@ -148209,15 +148119,6 @@
       "label": "BeActiveTV: Treningi w domu",
       "componentName": "pl.beactive.app/dev.theheart.beactive.MainActivity",
       "installs": "100,000+"
-    },
-    {
-      "drawable": "braindom_brain_games_test",
-      "requestCount": 1,
-      "firstAppearance": 1718690721.0,
-      "lastRequested": 1743465600.0,
-      "label": "Braindom: Brain Games Test",
-      "componentName": "com.braindom/com.unity3d.player.UnityPlayerActivity",
-      "installs": "100,000,000+"
     },
     {
       "drawable": "delikatesy_centrum",
@@ -150240,15 +150141,6 @@
       "installs": "1,000,000+"
     },
     {
-      "drawable": "woodoku_wood_block_puzzle",
-      "requestCount": 1,
-      "firstAppearance": 1719012487.0,
-      "lastRequested": 1743465600.0,
-      "label": "Woodoku - Wood Block Puzzle",
-      "componentName": "com.tripledot.woodoku/com.unity3d.player.UnityPlayerActivity",
-      "installs": "100,000,000+"
-    },
-    {
       "drawable": "vpn_germany_fast_safe_vpn",
       "requestCount": 1,
       "firstAppearance": 1719013101.0,
@@ -151819,15 +151711,6 @@
       "installs": "1,000,000+"
     },
     {
-      "drawable": "polaris_office_edit_view_pdf",
-      "requestCount": 1,
-      "firstAppearance": 1719225230.0,
-      "lastRequested": 1743465600.0,
-      "label": "Polaris Office: Edit&View, PDF",
-      "componentName": "com.infraware.office.link/com.infraware.service.ActLauncher",
-      "installs": "50,000,000+"
-    },
-    {
       "drawable": "claro_pay_argentina",
       "requestCount": 1,
       "firstAppearance": 1719228850.0,
@@ -151952,15 +151835,6 @@
       "label": "Bloons TD Battles",
       "componentName": "com.ninjakiwi.bloonstdbattles/com.ninjakiwi.MainActivityGradle",
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "piano_game_classic_music_song",
-      "requestCount": 1,
-      "firstAppearance": 1719234726.0,
-      "lastRequested": 1743465600.0,
-      "label": "Piano Game: Classic Music Song",
-      "componentName": "game.piano.music.tiles.challenge/org.cocos2dx.cpp.view.StartUpActivity",
-      "installs": "100,000,000+"
     },
     {
       "drawable": "coosporide",
@@ -169196,15 +169070,6 @@
       "installs": "100,000+"
     },
     {
-      "drawable": "piano_music_go_edm_piano_games",
-      "requestCount": 1,
-      "firstAppearance": 1722743841.0,
-      "lastRequested": 1743465600.0,
-      "label": "Piano Music Go-EDM Piano Games",
-      "componentName": "com.joyjourney.PianoWhiteGo/com.joyjourney.PianoWhiteGo.StartUpActivity",
-      "installs": "100,000,000+"
-    },
-    {
       "drawable": "penzmuzeum",
       "requestCount": 1,
       "firstAppearance": 1722743841.0,
@@ -169275,15 +169140,6 @@
       "label": "ChatWise",
       "componentName": "com.csmt.jigrr/com.jigrr.ui.splash.SplashActivity",
       "installs": "100,000+"
-    },
-    {
-      "drawable": "rooter_watch_gaming_esports",
-      "requestCount": 1,
-      "firstAppearance": 1722753511.0,
-      "lastRequested": 1743465600.0,
-      "label": "Rooter: Watch Gaming & Esports",
-      "componentName": "com.threesixteen.app/com.threesixteen.app.ui.activities.SplashActivity",
-      "installs": "50,000,000+"
     },
     {
       "drawable": "walkwork",
@@ -171373,15 +171229,6 @@
       "label": "Ultimate EMF Detector RealData",
       "componentName": "com.mreprogramming.ultimateemfdetector/com.mreprogramming.ultimateemfdetector.Intro",
       "installs": "1,000,000+"
-    },
-    {
-      "drawable": "beat_ly_ai_music_video_maker",
-      "requestCount": 1,
-      "firstAppearance": 1723114926.0,
-      "lastRequested": 1743465600.0,
-      "label": "Beat.ly - AI Music Video Maker",
-      "componentName": "vinkle.video.editor/com.ufotosoft.home.SplashActivity",
-      "installs": "100,000,000+"
     },
     {
       "drawable": "learning_matrix",
@@ -179989,15 +179836,6 @@
       "label": "CoinDetect for euro collectors",
       "componentName": "com.miccron.coindetect/com.miccron.coindetect.MainActivity",
       "installs": "100,000+"
-    },
-    {
-      "drawable": "color_flashlight",
-      "requestCount": 1,
-      "firstAppearance": 1724635103.0,
-      "lastRequested": 1743465600.0,
-      "label": "Color Flashlight",
-      "componentName": "com.socialnmobile.hd.flashlight/com.socialnmobile.hd.flashlight.Flashlight",
-      "installs": "50,000,000+"
     },
     {
       "drawable": "contraband_police_search_seize",
@@ -196537,15 +196375,6 @@
       "label": "Mi Band 7 Watch Faces",
       "componentName": "asn.ark.miband7/asn.ark.miband7.activites.PrimaryScreen",
       "installs": "1,000,000+"
-    },
-    {
-      "drawable": "gallery_vault_hide_photo_video",
-      "requestCount": 1,
-      "firstAppearance": 1727154595.0,
-      "lastRequested": 1743465600.0,
-      "label": "Gallery Vault-Hide Photo Video",
-      "componentName": "com.thinkyeah.galleryvault/com.thinkyeah.galleryvault.ads.GvAppOpenSplashActivity",
-      "installs": "50,000,000+"
     },
     {
       "drawable": "habitnow_daily_routine_planner",
@@ -217319,15 +217148,6 @@
       "label": "BigNote - Large Text Banner",
       "componentName": "com.androidgcpinct.bignote/com.androidgcpinct.bignote.MainActivity",
       "installs": "5,000+"
-    },
-    {
-      "drawable": "classic_words_with_friends",
-      "requestCount": 1,
-      "firstAppearance": 1712292785.0,
-      "lastRequested": 1743465600.0,
-      "label": "Classic Words With Friends",
-      "componentName": "com.zynga.words/com.zynga.ZyngaUnityActivity.ZyngaUnityActivity",
-      "installs": "50,000,000+"
     },
     {
       "drawable": "idotmatrix",
