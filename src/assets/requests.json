@@ -1,10 +1,10 @@
 {
-  "count": 28480,
-  "lastUpdate": "2026-02-02",
+  "count": 28428,
+  "lastUpdate": "2026-02-03",
   "apps": [
     {
       "drawable": "mini_militia",
-      "requestCount": 46,
+      "requestCount": 47,
       "firstAppearance": 1718707312.0,
       "lastRequested": 1767093201.0,
       "label": "Mini Militia",
@@ -1019,6 +1019,15 @@
       "installs": "10,000+"
     },
     {
+      "drawable": "gg_game_space___teste_interno",
+      "requestCount": 22,
+      "firstAppearance": 1715605891.0,
+      "lastRequested": 1766045780.0,
+      "label": "GG Game Space - Teste interno",
+      "componentName": "com.zjx.gamebox/com.zjx.gamebox.MainActivity",
+      "installs": "1,000,000+"
+    },
+    {
       "drawable": "swayam",
       "requestCount": 21,
       "firstAppearance": 1719405331.0,
@@ -1240,15 +1249,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "gg_game_space___teste_interno",
-      "requestCount": 21,
-      "firstAppearance": 1715605891.0,
-      "lastRequested": 1766045780.0,
-      "label": "GG Game Space - Teste interno",
-      "componentName": "com.zjx.gamebox/com.zjx.gamebox.MainActivity",
-      "installs": "1,000,000+"
-    },
-    {
       "drawable": "bus_simulator_indonesia",
       "requestCount": 20,
       "firstAppearance": 1720737498.0,
@@ -1431,6 +1431,24 @@
       "label": "Monoposto",
       "componentName": "com.gabama.monopostolite/com.unity3d.player.UnityPlayerActivity",
       "installs": "10,000,000+"
+    },
+    {
+      "drawable": "curse_of_aros",
+      "label": "Curse of Aros",
+      "componentName": "com.bitgate.curseofaros/com.bitgate.curseofaros.AndroidLauncher",
+      "requestCount": 20,
+      "firstAppearance": 1766034980.0,
+      "lastRequested": 1766045780.0,
+      "installs": "1,000,000+"
+    },
+    {
+      "drawable": "speedtop",
+      "label": "SpeedTop",
+      "componentName": "io.speedtop.app/io.speedtop.app.MainActivity",
+      "requestCount": 20,
+      "firstAppearance": 1766034980.0,
+      "lastRequested": 1766045780.0,
+      "installs": "5,000,000+"
     },
     {
       "drawable": "photo_studio_pro",
@@ -1759,24 +1777,6 @@
       "label": "GameSir",
       "componentName": "com.xiaoji.xtouch.google/com.xiaoji.newgameworld.EntryActivity",
       "installs": "1,000,000+"
-    },
-    {
-      "drawable": "curse_of_aros",
-      "label": "Curse of Aros",
-      "componentName": "com.bitgate.curseofaros/com.bitgate.curseofaros.AndroidLauncher",
-      "requestCount": 19,
-      "firstAppearance": 1766034980.0,
-      "lastRequested": 1766045780.0,
-      "installs": "1,000,000+"
-    },
-    {
-      "drawable": "speedtop",
-      "label": "SpeedTop",
-      "componentName": "io.speedtop.app/io.speedtop.app.MainActivity",
-      "requestCount": 19,
-      "firstAppearance": 1766034980.0,
-      "lastRequested": 1766045780.0,
-      "installs": "5,000,000+"
     },
     {
       "drawable": "mylebara",
@@ -3473,15 +3473,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "eba",
-      "requestCount": 14,
-      "firstAppearance": 1716537242.0,
-      "lastRequested": 1763785624.0,
-      "label": "EBA",
-      "componentName": "tr.gov.eba.hesap/tr.gov.eba.hesap.SplashScreenActivity",
-      "installs": "10,000,000+"
-    },
-    {
       "drawable": "pixel_widget_plus",
       "requestCount": 14,
       "firstAppearance": 1722596417.0,
@@ -3621,15 +3612,6 @@
       "lastRequested": 1763315074.0,
       "label": "FakeStandby",
       "componentName": "android.jonas.fakestandby/android.jonas.fakestandby.settings.SettingsActivity"
-    },
-    {
-      "drawable": "play_deals",
-      "requestCount": 14,
-      "firstAppearance": 1708337949.0,
-      "lastRequested": 1764840025.0,
-      "label": "Play Deals",
-      "componentName": "me.sujanpoudel.playdeals/me.sujanpoudel.playdeals.MainActivity",
-      "installs": "10,000+"
     },
     {
       "drawable": "unit_converter",
@@ -11287,15 +11269,6 @@
       "installs": "1,000,000+"
     },
     {
-      "drawable": "octopi_launcher",
-      "requestCount": 9,
-      "firstAppearance": 1724851114.0,
-      "lastRequested": 1767078306.0,
-      "label": "Octopi Launcher",
-      "componentName": "com.otp.octopilauncher/com.otp.octopilauncher.MainActivity",
-      "installs": "50,000+"
-    },
-    {
       "drawable": "bill_sahuliyat_plus",
       "requestCount": 9,
       "firstAppearance": 1745020800.0,
@@ -13860,14 +13833,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "\u4e09\u89d2\u6d32\u884c\u52a8_1",
-      "requestCount": 8,
-      "firstAppearance": 1728595504.0,
-      "lastRequested": 1766656956.0,
-      "label": "\u4e09\u89d2\u6d32\u884c\u52a8",
-      "componentName": "com.tencent.tmgp.dfm/com.epicgames.ue4.SplashActivity"
-    },
-    {
       "drawable": "unnamed_icon_23",
       "requestCount": 8,
       "firstAppearance": 1745020800.0,
@@ -16429,15 +16394,6 @@
       "installs": "100,000+"
     },
     {
-      "drawable": "hvv_switch_mobility_hamburg",
-      "requestCount": 7,
-      "firstAppearance": 1719055322.0,
-      "lastRequested": 1743465600.0,
-      "label": "hvv switch \u2013 Mobility Hamburg",
-      "componentName": "de.hochbahn.hvvswitch/de.hochbahn.hvvswitch.ui.splash.SplashActivity",
-      "installs": "1,000,000+"
-    },
-    {
       "drawable": "unknown",
       "requestCount": 7,
       "firstAppearance": 1719097253.0,
@@ -17498,15 +17454,6 @@
       "lastRequested": 1766731003.0,
       "label": "litube",
       "componentName": "com.hhst.litube/com.hhst.youtubelite.MainActivity"
-    },
-    {
-      "drawable": "paycom",
-      "requestCount": 7,
-      "firstAppearance": 1718492337.0,
-      "lastRequested": 1766666729.0,
-      "label": "Paycom",
-      "componentName": "com.paycom.mobile.ess/com.paycom.mobile.ess.splashscreen.SplashActivity",
-      "installs": "5,000,000+"
     },
     {
       "drawable": "launchpad",
@@ -22895,15 +22842,6 @@
       "installs": "1,000,000+"
     },
     {
-      "drawable": "santander_pass_3",
-      "requestCount": 6,
-      "firstAppearance": 1718637854.0,
-      "lastRequested": 1766667347.0,
-      "label": "Santander PASS",
-      "componentName": "cl.santander.santanderpasschile/cl.santander.santanderpasschile.activity.InitialActivity",
-      "installs": "1,000,000+"
-    },
-    {
       "drawable": "nagram_x_1",
       "requestCount": 6,
       "firstAppearance": 1738613731.0,
@@ -23631,15 +23569,6 @@
       "lastRequested": 1763450163.0,
       "label": "Moto Buds",
       "componentName": "com.motorola.motobuds/com.motorola.motobuds.ui.activity.LandingPageActivity",
-      "installs": "1,000,000+"
-    },
-    {
-      "drawable": "freedom",
-      "requestCount": 5,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1763740120.0,
-      "label": "Freedom",
-      "componentName": "to.freedom.android2/to.freedom.android2.ui.activity.SplashActivity",
       "installs": "1,000,000+"
     },
     {
@@ -30094,15 +30023,6 @@
       "installs": "1,000,000+"
     },
     {
-      "drawable": "parkering_goteborg",
-      "requestCount": 5,
-      "firstAppearance": 1726010779.0,
-      "lastRequested": 1743465600.0,
-      "label": "Parkering G\u00f6teborg",
-      "componentName": "se.goteborg.pbolaget.android/se.goteborg.pbolaget.android.SplashActivity",
-      "installs": "500,000+"
-    },
-    {
       "drawable": "vasttrafik_to_go",
       "requestCount": 5,
       "firstAppearance": 1726010779.0,
@@ -31820,15 +31740,6 @@
       "label": "Preply",
       "componentName": "com.preply/com.preply.MainActivity",
       "installs": "5,000,000+"
-    },
-    {
-      "drawable": "netbird",
-      "requestCount": 5,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1767049123.0,
-      "label": "NetBird",
-      "componentName": "io.netbird.client/io.netbird.client.MainActivity",
-      "installs": "10,000+"
     },
     {
       "drawable": "recorder_1",
@@ -33696,15 +33607,6 @@
       "label": "Cantook",
       "componentName": "com.aldiko.android/com.demarque.android.ui.splash.SplashActivity",
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "pixel__icon_pack",
-      "requestCount": 4,
-      "firstAppearance": 1723466846.0,
-      "lastRequested": 1764492253.0,
-      "label": "Pixel - icon pack",
-      "componentName": "ru.pt.iconpack.pixel_q/ru.pt.iconpack.pixel_q.activities.MainActivity",
-      "installs": "100,000+"
     },
     {
       "drawable": "ford",
@@ -37483,15 +37385,6 @@
       "label": "That level again 2",
       "componentName": "ru.iamtagir.thatlevelagain2.android/com.unity3d.player.UnityPlayerActivity",
       "installs": "5,000,000+"
-    },
-    {
-      "drawable": "go_events_widget_leek_duck",
-      "requestCount": 4,
-      "firstAppearance": 1718487156.0,
-      "lastRequested": 1743465600.0,
-      "label": "GO Events Widget \u2022 Leek Duck",
-      "componentName": "com.otp.gowidget/com.otp.gowidget.MainActivity",
-      "installs": "10,000+"
     },
     {
       "drawable": "fastrack_smart_world",
@@ -42131,15 +42024,6 @@
       "installs": "1,000,000+"
     },
     {
-      "drawable": "tk_ident",
-      "requestCount": 4,
-      "firstAppearance": 1726383028.0,
-      "lastRequested": 1743465600.0,
-      "label": "TK-Ident",
-      "componentName": "de.tk.apps.android.tkident/com.ibm.whitelabel.authenticator.auth.AuthenticatorAuthActivity",
-      "installs": "500,000+"
-    },
-    {
       "drawable": "beatport_music_for_djs_app",
       "requestCount": 4,
       "firstAppearance": 1726390956.0,
@@ -43262,15 +43146,6 @@
       "lastRequested": 1743465600.0,
       "label": "(Unknown App)",
       "componentName": "com.shixin.yysq/com.shixin.yysp.MainActivity"
-    },
-    {
-      "drawable": "netbird_p2p_vpn",
-      "requestCount": 4,
-      "firstAppearance": 1759408383.0,
-      "lastRequested": 1743465600.0,
-      "label": "NetBird P2P VPN",
-      "componentName": "io.netbird.client/io.netbird.client.LaunchActivity",
-      "installs": "10,000+"
     },
     {
       "drawable": "devilutionx_diablo_1_port",
@@ -45850,15 +45725,6 @@
       "installs": "5,000,000+"
     },
     {
-      "drawable": "onic",
-      "requestCount": 3,
-      "firstAppearance": 1723789109.0,
-      "lastRequested": 1763554165.0,
-      "label": "Onic",
-      "componentName": "pk.com.onic/com.circles.selfcare.v2.splash.SplashActivity",
-      "installs": "1,000,000+"
-    },
-    {
       "drawable": "sportzfy",
       "requestCount": 3,
       "firstAppearance": 1719748254.0,
@@ -47547,15 +47413,6 @@
       "label": "Foodie San",
       "componentName": "sg.com.mxcaterers.app/io.chaptervi.jcr.app.MainActivity",
       "installs": "10,000+"
-    },
-    {
-      "drawable": "maribank",
-      "requestCount": 3,
-      "firstAppearance": 1720025640.0,
-      "lastRequested": 1761634462.0,
-      "label": "MariBank",
-      "componentName": "sg.com.maribankmobile.digitalbank/com.shopee.bke.digitalbank.ui.MainActivity",
-      "installs": "100,000+"
     },
     {
       "drawable": "moorgen_life",
@@ -55117,15 +54974,6 @@
       "componentName": "com.topsed.race/com.bike.race.ui.splash.PrivacyCheckActivity"
     },
     {
-      "drawable": "stable_money_fds_bonds_gold",
-      "requestCount": 3,
-      "firstAppearance": 1719239678.0,
-      "lastRequested": 1743465600.0,
-      "label": "Stable Money: FDs, Bonds, Gold",
-      "componentName": "in.stablemoney.app/in.stablemoney.app.MainActivity",
-      "installs": "5,000,000+"
-    },
-    {
       "drawable": "icon_85",
       "requestCount": 3,
       "firstAppearance": 1719240965.0,
@@ -58664,15 +58512,6 @@
       "installs": "500,000+"
     },
     {
-      "drawable": "chartr_tickets_bus_metro",
-      "requestCount": 3,
-      "firstAppearance": 1722605722.0,
-      "lastRequested": 1743465600.0,
-      "label": "Chartr - Tickets, Bus & Metro",
-      "componentName": "in.chartr.transit/in.chartr.transit.activities.SplashScreenActivity",
-      "installs": "1,000,000+"
-    },
-    {
       "drawable": "icon_98",
       "requestCount": 3,
       "firstAppearance": 1722639151.0,
@@ -60784,15 +60623,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "usb_backup",
-      "requestCount": 3,
-      "firstAppearance": 1724747603.0,
-      "lastRequested": 1743465600.0,
-      "label": "USB Backup",
-      "componentName": "com.sec.android.autobackup/com.sec.android.autobackup.ui.LauncherActivity",
-      "installs": "100,000,000+"
-    },
-    {
       "drawable": "block_apps_sites_wellbeing",
       "requestCount": 3,
       "firstAppearance": 1724753237.0,
@@ -61433,15 +61263,6 @@
       "label": "Jolly Tur - Otel, Tur ve U\u00e7ak",
       "componentName": "com.jolly.framework.mvvm/com.jolly.ui.main.MainActivity",
       "installs": "100,000+"
-    },
-    {
-      "drawable": "queue_find_movies_shows",
-      "requestCount": 3,
-      "firstAppearance": 1725963936.0,
-      "lastRequested": 1743465600.0,
-      "label": "Queue - Find Movies & Shows",
-      "componentName": "co.queue.app/co.queue.app.feature.splash.SplashActivity",
-      "installs": "500,000+"
     },
     {
       "drawable": "radyoland",
@@ -63998,15 +63819,6 @@
       "installs": "5,000,000+"
     },
     {
-      "drawable": "tk_ident_2",
-      "requestCount": 3,
-      "firstAppearance": 1726383028.0,
-      "lastRequested": 1743465600.0,
-      "label": "TK-Ident",
-      "componentName": "de.tk.apps.android.tkident/com.ibm.whitelabel.authenticator.auth.AuthenticatorAuthLauncherActivity",
-      "installs": "500,000+"
-    },
-    {
       "drawable": "idaft_jamming_daft_punk_sounds",
       "requestCount": 3,
       "firstAppearance": 1726383028.0,
@@ -66045,15 +65857,6 @@
       "installs": "1+"
     },
     {
-      "drawable": "hvv_switch",
-      "requestCount": 3,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1767029411.0,
-      "label": "hvv switch",
-      "componentName": "de.hochbahn.hvvswitch/de.hochbahn.hvvswitch.ui.home.MainActivity",
-      "installs": "1,000,000+"
-    },
-    {
       "drawable": "webview_kiosk",
       "requestCount": 3,
       "firstAppearance": 1745020800.0,
@@ -66469,15 +66272,6 @@
       "lastRequested": 1761244230.0,
       "label": "NIMB Smart",
       "componentName": "com.f1soft.megafonebank.activities.starter/com.f1soft.megafonebank.activities.starter.MainActivity",
-      "installs": "1,000,000+"
-    },
-    {
-      "drawable": "zenfi",
-      "requestCount": 2,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1761245512.0,
-      "label": "Zenfi",
-      "componentName": "mx.zenfi.app/mx.zenfi.app.MainActivity",
       "installs": "1,000,000+"
     },
     {
@@ -68371,15 +68165,6 @@
       "lastRequested": 1764383849.0,
       "label": "RGDPS",
       "componentName": "com.gdpssxx.johnrickgdps/com.robtopx.geometryjump.GeometryJump"
-    },
-    {
-      "drawable": "stable_money_1",
-      "requestCount": 2,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1764573214.0,
-      "label": "Stable Money",
-      "componentName": "in.stablemoney.app/in.stablemoney.app.appicon.DEFAULT",
-      "installs": "5,000,000+"
     },
     {
       "drawable": "cs_security_1",
@@ -90503,15 +90288,6 @@
       "installs": "50,000,000+"
     },
     {
-      "drawable": "edge_lighting_led_borderlight",
-      "requestCount": 2,
-      "firstAppearance": 1723213709.0,
-      "lastRequested": 1743465600.0,
-      "label": "Edge Lighting: LED Borderlight",
-      "componentName": "com.edgeround.lightingcolors.rgb/com.edgeround.lightingcolors.rgb.ui.flash.FlashEdgeActivity",
-      "installs": "50,000,000+"
-    },
-    {
       "drawable": "sand_balls_puzzle_game",
       "requestCount": 2,
       "firstAppearance": 1723213709.0,
@@ -91265,15 +91041,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "eleven_2",
-      "requestCount": 2,
-      "firstAppearance": 1723425166.0,
-      "lastRequested": 1743465600.0,
-      "label": "Eleven",
-      "componentName": "by.eleven.scooters/by.eleven.scooters.ui.MainActivity",
-      "installs": "500,000+"
-    },
-    {
       "drawable": "justplay_earn_money_or_donate",
       "requestCount": 2,
       "firstAppearance": 1723431970.0,
@@ -91486,15 +91253,6 @@
       "lastRequested": 1743465600.0,
       "label": "(Unknown App)",
       "componentName": "minimalistforkwgt.kustom.pack/org.kustom.api.dashboard.DashboardActivity"
-    },
-    {
-      "drawable": "pixel_icon_pack",
-      "requestCount": 2,
-      "firstAppearance": 1723466846.0,
-      "lastRequested": 1743465600.0,
-      "label": "Pixel - icon pack",
-      "componentName": "ru.pt.iconpack.pixel_q/ru.pt.iconpack.pixel_q.activities.SplashActivity",
-      "installs": "100,000+"
     },
     {
       "drawable": "fruit_playground",
@@ -94555,15 +94313,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "oz",
-      "requestCount": 2,
-      "firstAppearance": 1725746091.0,
-      "lastRequested": 1743465600.0,
-      "label": "OZ - \u041f\u043e\u043a\u0443\u043f\u043a\u0438 \u0432 \u0440\u0430\u0434\u043e\u0441\u0442\u044c",
-      "componentName": "by.oz.android/by.oz.android.ui.promo.view.PromoActivity",
-      "installs": "1,000,000+"
-    },
-    {
       "drawable": "icon_154",
       "requestCount": 2,
       "firstAppearance": 1725746091.0,
@@ -95183,15 +94932,6 @@
       "label": "ID Jovem",
       "componentName": "com.idjovem2/com.idjovem2.MainActivity",
       "installs": "1,000,000+"
-    },
-    {
-      "drawable": "biblioteket",
-      "requestCount": 2,
-      "firstAppearance": 1726010779.0,
-      "lastRequested": 1743465600.0,
-      "label": "Biblioteket",
-      "componentName": "se.goteborg.biblioteket/crc648af1ced9db45d299.SplashActivity",
-      "installs": "50,000+"
     },
     {
       "drawable": "st1_mobility",
@@ -96035,15 +95775,6 @@
       "label": "Mobilbank DK \u2013 Danske Bank",
       "componentName": "com.danskebank.mobilebank3.dk/com.danskebank.mobilebank30.MainActivity",
       "installs": "500,000+"
-    },
-    {
-      "drawable": "sundhedskortet",
-      "requestCount": 2,
-      "firstAppearance": 1726379933.0,
-      "lastRequested": 1743465600.0,
-      "label": "Sundhedskortet",
-      "componentName": "dk.digst.hc/dk.digst.hc.Launcher",
-      "installs": "1,000,000+"
     },
     {
       "drawable": "lebara_australia",
@@ -111677,15 +111408,6 @@
       "installs": "1,000+"
     },
     {
-      "drawable": "stable_money",
-      "requestCount": 1,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1760996104.0,
-      "label": "Stable Money",
-      "componentName": "in.stablemoney.app/in.stablemoney.app.appicon.DiwaliLauncher",
-      "installs": "5,000,000+"
-    },
-    {
       "drawable": "zepto_cafe",
       "requestCount": 1,
       "firstAppearance": 1745020800.0,
@@ -123298,15 +123020,6 @@
       "lastRequested": 1762248664.0,
       "label": "Marvel MM",
       "componentName": "com.netease.mmm/com.netease.g124.GameMainActivity",
-      "installs": "1,000,000+"
-    },
-    {
-      "drawable": "chartr",
-      "requestCount": 1,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1762366946.0,
-      "label": "Chartr",
-      "componentName": "in.chartr.transit/in.chartr.transit.onboarding.SplashScreenActivity",
       "installs": "1,000,000+"
     },
     {
@@ -138125,15 +137838,6 @@
       "installs": "500,000+"
     },
     {
-      "drawable": "eleven",
-      "requestCount": 1,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1763912921.0,
-      "label": "Eleven",
-      "componentName": "by.eleven.scooters/io.goeleven.client.ui.MainActivity",
-      "installs": "500,000+"
-    },
-    {
       "drawable": "visa_extra",
       "requestCount": 1,
       "firstAppearance": 1745020800.0,
@@ -138633,15 +138337,6 @@
       "label": "GolfOdyssey2",
       "componentName": "com.rubenpecellin.golfodyssey2/com.unity3d.player.UnityPlayerActivity",
       "installs": "100,000+"
-    },
-    {
-      "drawable": "freedom_1",
-      "requestCount": 1,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1764692619.0,
-      "label": "Freedom",
-      "componentName": "to.freedom.android2/to.freedom.android2.MainActivity",
-      "installs": "1,000,000+"
     },
     {
       "drawable": "bakai",
@@ -143643,15 +143338,6 @@
       "installs": "1,000,000+"
     },
     {
-      "drawable": "melon_vpn_proxy_in_low_cost",
-      "requestCount": 1,
-      "firstAppearance": 1717809111.0,
-      "lastRequested": 1743465600.0,
-      "label": "Melon VPN - proxy in low cost",
-      "componentName": "com.vpnbottle.melon.free.unblock.fast.vpn/com.melon.vpn.tool.SplashActivity",
-      "installs": "50,000,000+"
-    },
-    {
       "drawable": "migaku_really_learn_languages",
       "requestCount": 1,
       "firstAppearance": 1717809111.0,
@@ -148480,15 +148166,6 @@
       "installs": "5,000,000+"
     },
     {
-      "drawable": "copy_my_data_transfer_content",
-      "requestCount": 1,
-      "firstAppearance": 1718744412.0,
-      "lastRequested": 1743465600.0,
-      "label": "Copy My Data: Transfer Content",
-      "componentName": "com.mediamushroom.copymydata/com.mediamushroom.copymydata.app.SplashActivity",
-      "installs": "50,000,000+"
-    },
-    {
       "drawable": "logix_banking",
       "requestCount": 1,
       "firstAppearance": 1718744412.0,
@@ -152547,15 +152224,6 @@
       "installs": "100,000+"
     },
     {
-      "drawable": "dolphin_browser_fast_private",
-      "requestCount": 1,
-      "firstAppearance": 1719343238.0,
-      "lastRequested": 1743465600.0,
-      "label": "Dolphin Browser: Fast, Private",
-      "componentName": "mobi.mgeek.TunnyBrowser/mobi.mgeek.TunnyBrowser.SplashActivity",
-      "installs": "50,000,000+"
-    },
-    {
       "drawable": "one_shade_custom_notification",
       "requestCount": 1,
       "firstAppearance": 1719343238.0,
@@ -153338,15 +153006,6 @@
       "label": "\u03c4\u03b9 \u03b5\u03af\u03c0\u03b1\u03bd;",
       "componentName": "com.krtlivapps.tieipanapp/com.krtlivapps.tieipanapp.MainActivity",
       "installs": "100,000+"
-    },
-    {
-      "drawable": "calculator_plus_with_history",
-      "requestCount": 1,
-      "firstAppearance": 1719477895.0,
-      "lastRequested": 1743465600.0,
-      "label": "Calculator Plus with History",
-      "componentName": "com.digitalchemy.calculator.freedecimal/com.digitalchemy.calculator.droidphone.FreeCalculatorPlusMainActivity",
-      "installs": "50,000,000+"
     },
     {
       "drawable": "onsurity_employee_healthcare",
@@ -156085,15 +155744,6 @@
       "lastRequested": 1743465600.0,
       "label": "LUGO: App for Seamless Travels",
       "componentName": "com.manja.hugoapp/com.manja.manjago.splash.SplashActivity",
-      "installs": "100,000+"
-    },
-    {
-      "drawable": "maribank_singapore",
-      "requestCount": 1,
-      "firstAppearance": 1720025640.0,
-      "lastRequested": 1743465600.0,
-      "label": "MariBank Singapore",
-      "componentName": "sg.com.maribankmobile.digitalbank/com.shopee.bke.digitalbank.luncher.LauncherActivity",
       "installs": "100,000+"
     },
     {
@@ -175692,15 +175342,6 @@
       "installs": "10,000+"
     },
     {
-      "drawable": "onic_2",
-      "requestCount": 1,
-      "firstAppearance": 1723789109.0,
-      "lastRequested": 1743465600.0,
-      "label": "Onic",
-      "componentName": "pk.com.onic/com.circles.selfcare.v2.splash.LaunchActivity",
-      "installs": "1,000,000+"
-    },
-    {
       "drawable": "burger_2",
       "requestCount": 1,
       "firstAppearance": 1723797938.0,
@@ -181548,15 +181189,6 @@
       "installs": "1,000,000+"
     },
     {
-      "drawable": "icon_340",
-      "requestCount": 1,
-      "firstAppearance": 1725026392.0,
-      "lastRequested": 1743465600.0,
-      "label": "\u041c\u043e\u0439 \u0434\u043e\u043c \u041b\u0435\u0442\u0430\u0439",
-      "componentName": "ru.tattelecom.intercom/ru.tattelecom.intercom.AndroidLauncher",
-      "installs": "500,000+"
-    },
-    {
       "drawable": "elemental_2d_mmorpg",
       "requestCount": 1,
       "firstAppearance": 1725027899.0,
@@ -185853,15 +185485,6 @@
       "installs": "500,000+"
     },
     {
-      "drawable": "biblioteket_2",
-      "requestCount": 1,
-      "firstAppearance": 1726010779.0,
-      "lastRequested": 1743465600.0,
-      "label": "Biblioteket",
-      "componentName": "se.goteborg.biblioteket/com.google.android.archive.ReactivateActivity",
-      "installs": "50,000+"
-    },
-    {
       "drawable": "billo_digital_brevlada",
       "requestCount": 1,
       "firstAppearance": 1726018209.0,
@@ -186122,15 +185745,6 @@
       "installs": "500,000+"
     },
     {
-      "drawable": "parkering_goteborg_2",
-      "requestCount": 1,
-      "firstAppearance": 1726010779.0,
-      "lastRequested": 1743465600.0,
-      "label": "Parkering G\u00f6teborg",
-      "componentName": "se.goteborg.pbolaget.android/com.google.android.archive.ReactivateActivity",
-      "installs": "500,000+"
-    },
-    {
       "drawable": "parkster_smooth_parking",
       "requestCount": 1,
       "firstAppearance": 1706331659.0,
@@ -186183,15 +185797,6 @@
       "label": "Pollenkoll - Dagliga prognoser",
       "componentName": "pollen.pollen/com.google.android.archive.ReactivateActivity",
       "installs": "100,000+"
-    },
-    {
-      "drawable": "queue_find_movies_shows_2",
-      "requestCount": 1,
-      "firstAppearance": 1725963936.0,
-      "lastRequested": 1743465600.0,
-      "label": "Queue - Find Movies & Shows",
-      "componentName": "co.queue.app/com.google.android.archive.ReactivateActivity",
-      "installs": "500,000+"
     },
     {
       "drawable": "rebel_inc",
@@ -203578,15 +203183,6 @@
       "label": "Word Counter - Count Words, Se",
       "componentName": "wordtextcounter.details.main/wordtextcounter.details.main.feature.main.MainActivity",
       "installs": "500,000+"
-    },
-    {
-      "drawable": "play_deals_paid_apps_deals",
-      "requestCount": 1,
-      "firstAppearance": 1708337949.0,
-      "lastRequested": 1743465600.0,
-      "label": "Play Deals : Paid Apps Deals",
-      "componentName": "me.sujanpoudel.playdeals/com.google.android.archive.ReactivateActivity",
-      "installs": "10,000+"
     },
     {
       "drawable": "tensor_art",
@@ -222406,15 +222002,6 @@
       "installs": "50,000+"
     },
     {
-      "drawable": "gamedeck_the_game_launcher",
-      "requestCount": 1,
-      "firstAppearance": 1762178867.0,
-      "lastRequested": 1743465600.0,
-      "label": "Gamedeck - The Game Launcher",
-      "componentName": "app.gamedeck/app.gamedeck.MainActivity",
-      "installs": "100,000+"
-    },
-    {
       "drawable": "mi_eps",
       "requestCount": 1,
       "firstAppearance": 1762178867.0,
@@ -224147,15 +223734,6 @@
       "installs": "100+"
     },
     {
-      "drawable": "icon_473",
-      "requestCount": 1,
-      "firstAppearance": 1725026392.0,
-      "lastRequested": 1743465600.0,
-      "label": "\u041c\u043e\u0439 \u0434\u043e\u043c \u041b\u0435\u0442\u0430\u0439",
-      "componentName": "ru.tattelecom.intercom/ru.tattelecom.intercom.main.MainActivity",
-      "installs": "500,000+"
-    },
-    {
       "drawable": "your_mortgage_online",
       "requestCount": 1,
       "firstAppearance": 1725026392.0,
@@ -225292,15 +224870,6 @@
       "label": "Color Widgets: Icon Themes",
       "componentName": "theme.color.widgets.icon/fxc.dev.app.ui.splash.SplashActivity",
       "installs": "100,000+"
-    },
-    {
-      "drawable": "headlines_tango",
-      "requestCount": 1,
-      "firstAppearance": 1708404068.0,
-      "lastRequested": 1743465600.0,
-      "label": "Headlines Tango",
-      "componentName": "us.sliide.tango/com.sliide.headlines.v2.activities.MainActivity",
-      "installs": "1,000,000+"
     },
     {
       "drawable": "wow_lavender_light_icon_pack",
@@ -226828,15 +226397,6 @@
       "label": "UpStudy - Camera Math Solver",
       "componentName": "com.crazylab.cameramath/com.crazylab.cameramath.SplashActivity",
       "installs": "5,000,000+"
-    },
-    {
-      "drawable": "sandbox_pixel_art_coloring",
-      "requestCount": 1,
-      "firstAppearance": 1717747136.0,
-      "lastRequested": 1743465600.0,
-      "label": "Sandbox - Pixel Art Coloring",
-      "componentName": "sandbox.art.sandbox/sandbox.art.sandbox.activities.SplashV31Activity",
-      "installs": "50,000,000+"
     },
     {
       "drawable": "icon_476",
@@ -234791,15 +234351,6 @@
       "installs": "5,000,000+"
     },
     {
-      "drawable": "vido_video_status_maker",
-      "requestCount": 1,
-      "firstAppearance": 1759568938.0,
-      "lastRequested": 1743465600.0,
-      "label": "Vido : Video Status Maker",
-      "componentName": "com.vido.particle.ly.lyrical.status.maker/com.vido.particle.ly.lyrical.status.maker.activity.SplashActivity",
-      "installs": "100,000,000+"
-    },
-    {
       "drawable": "viva_one",
       "requestCount": 1,
       "firstAppearance": 1759568938.0,
@@ -238870,15 +238421,6 @@
       "label": "AmpMe - Speaker Booster",
       "componentName": "com.amp.android/com.amp.android.ui.activity.LaunchActivity",
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "edge_lighting_led_borderlight_3",
-      "requestCount": 1,
-      "firstAppearance": 1723213709.0,
-      "lastRequested": 1743465600.0,
-      "label": "Edge Lighting: LED Borderlight",
-      "componentName": "com.edgeround.lightingcolors.rgb/com.edgeround.lightingcolors.rgb.ui.main.MainNewActivity",
-      "installs": "50,000,000+"
     },
     {
       "drawable": "energy_bar_original_edition_2",
@@ -248780,15 +248322,6 @@
       "requestCount": 1,
       "firstAppearance": 1767020614.0,
       "lastRequested": 1767020614.0
-    },
-    {
-      "drawable": "affine",
-      "label": "AFFiNE",
-      "componentName": "app.affine.pro/app.affine.pro.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1766924871.0,
-      "lastRequested": 1766924871.0,
-      "installs": "10,000+"
     },
     {
       "drawable": "anikun",
