@@ -3,7 +3,7 @@
    ========================================= */
 @font-face {
   font-family: "Manrope";
-  src: url("/assets/Manrope-VariableFont_wght.ttf") format("truetype");
+  src: url("./assets/Manrope-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
@@ -35,6 +35,7 @@
 
   --surface: rgb(17 19 24);
   --on-surface: rgb(225 226 233);
+  --on-surface-rgb: 225 226 233;
   --surface-variant: rgb(67 71 78);
   --on-surface-variant: rgb(195 198 207);
 
@@ -91,7 +92,7 @@
 * {
   box-sizing: border-box;
   font-weight: 500;
-  font-family: var(--font-main);
+  font-family: var(--font-main), sans-serif;
 }
 
 body {
@@ -547,13 +548,12 @@ select:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color 0.2s;
+  transition: border 0.2s, color 0.2s;
   text-decoration: none;
   outline: none;
   background: transparent;
   border-radius: var(--shape-xlarge);
   border: 1px solid transparent;
-  transition: border 0.2s;
   width: 36px;
   height: 36px;
 }
