@@ -1,18 +1,61 @@
 /**
  * LAWNICONS REQUEST MANAGER
- * Pure Vanilla JS
+ * Pure Vanilla JS with JSDoc
  */
 
 // ==========================================
-// CONFIGURATION & CONSTANTS
+// 0. TYPES & INTERFACES
 // ==========================================
+
+/** @typedef {any} JSZip */
+
+/**
+ * @typedef {Object} AppEntry
+ * @property {string} drawable
+ * @property {string} label
+ * @property {string} componentName
+ * @property {number} requestCount
+ * @property {number} firstAppearance
+ * @property {number} lastRequested
+ * @property {string} [installs]
+ */
+
+/**
+ * @typedef {Object} FilterMetadata
+ * @property {string} label
+ * @property {string} [description]
+ */
+
+/**
+ * @typedef {Object} AppState
+ * @property {"list" | "grid"} view
+ * @property {string} sort
+ * @property {string} search
+ * @property {boolean} regexMode
+ * @property {Set<string>} selected
+ * @property {Map<string, Set<string>>} appTags
+ * @property {Map<string, FilterMetadata>} filterMetadata
+ * @property {Set<string>} activeFilters
+ * @property {string | null} lastSelectedId
+ * @property {Map<string, AppEntry>} idMap
+ * @property {number} renderedCount
+ * @property {AppEntry[]} currentData
+ * @property {string} actionMode
+ * @property {string} icontoolPath
+ */
+
+// ==========================================
+// 1. CONFIGURATION
+// ==========================================
+
 const CONFIG = {
   data: {
-    endpoint: "/assets/requests.json",
-    assetsPath: "/extracted_png/",
+    endpoint: "assets/requests.json",
+    assetsPath: "extracted_png/",
     iconExtension: ".png",
-    filterPath: "/assets/filters/",
-    filters: ["wip", "easy", "conflict", "link", "unlabeled"],
+    filterPath: "assets/filters/",
+    // Order matters for UI
+    filters: ["wip", "easy", "conflict", "link", "unlabeled"]
   },
   urls: {
     playStore: "https://play.google.com/store/apps/details?id=",
@@ -26,16 +69,16 @@ const CONFIG = {
 };
 
 const ICONS = {
-  check:       `<svg><use href="#ic-check"/></svg>`,
-  download:    `<svg><use href="#ic-download"/></svg>`,
-  play:        `<svg><use href="#ic-play"/></svg>`,
-  dots:        `<svg><use href="#ic-dots"/></svg>`,
-  copy:        `<svg><use href="#ic-copy"/></svg>`,
-  fDroid:      `<svg><use href="#ic-fdroid"/></svg>`,
+  check: `<svg><use href="#ic-check"/></svg>`,
+  download: `<svg><use href="#ic-download"/></svg>`,
+  play: `<svg><use href="#ic-play"/></svg>`,
+  dots: `<svg><use href="#ic-dots"/></svg>`,
+  copy: `<svg><use href="#ic-copy"/></svg>`,
+  fDroid: `<svg><use href="#ic-fdroid"/></svg>`,
   izzyOnDroid: `<svg><use href="#ic-izzyondroid"/></svg>`,
   galaxyStore: `<svg><use href="#ic-galaxystore"/></svg>`,
-  terminal:    `<svg><use href="#ic-terminal"/></svg>`,
-  regex:       `<svg><use href="#ic-regex"/></svg>`
+  terminal: `<svg><use href="#ic-terminal"/></svg>`,
+  regex: `<svg><use href="#ic-regex"/></svg>`
 };
 
 const DEFAULTS = {
@@ -46,11 +89,14 @@ const DEFAULTS = {
 };
 
 // ==========================================
-// GLOBAL STATE
+// 2. STATE & DOM
 // ==========================================
+
 const App = {
-  data: [], // Raw apps list
-  
+  /** @type {AppEntry[]} */
+  data: [],
+
+  /** @type {AppState} */
   state: {
     view: "list",
     sort: "req-desc",
@@ -61,7 +107,7 @@ const App = {
     filterMetadata: new Map(),
     activeFilters: new Set(),
     lastSelectedId: null,
-    
+
     // Runtime
     idMap: new Map(),
     renderedCount: 0,
@@ -71,77 +117,213 @@ const App = {
     icontoolPath: localStorage.getItem("icontoolPath") || ""
   },
 
-  // DOM Elements Cache
   dom: {
-    container:   document.getElementById("appContainer"),
-    listHeader:  document.getElementById("listHeader"),
-    headerCheck: document.getElementById("headerCheck"),
-    headerCount: document.getElementById("headerCount"),
-    sentinel:    document.getElementById("scrollSentinel"),
-    
-    inputSearch: document.getElementById("searchInput"),
-    clearBtn: document.getElementById("clearSearchBtn"),
-    regexBtn:    document.getElementById("regexBtn"),
-    selectSort:  document.getElementById("sortSelect"),
-    selectView:  document.getElementById("viewSelect"),
-    filterBox:   document.getElementById("filterContainer"),
-    inputPath:   document.querySelector(".path-wrapper input"),
+    /** @type {HTMLDivElement} */
+    container: /** @type {any} */ (document.getElementById("appContainer")),
+    /** @type {HTMLDivElement} */
+    listHeader: /** @type {any} */ (document.getElementById("listHeader")),
+    /** @type {HTMLInputElement} */
+    headerCheck: /** @type {any} */ (document.getElementById("headerCheck")),
+    /** @type {HTMLDivElement} */
+    headerCount: /** @type {any} */ (document.getElementById("headerCount")),
+    /** @type {HTMLDivElement} */
+    sentinel: /** @type {any} */ (document.getElementById("scrollSentinel")),
 
-    mobileFilterBtn: document.getElementById("mobileFilterBtn"),
-    mobileFilterCount: document.getElementById("mobileFilterCount"),
-    mobileFilterMenu: document.getElementById("mobileFilterMenu"),
-    
-    sbBar: document.getElementById("selectionBar"),
-    sbCount: document.getElementById("sbCount"),
+    /** @type {HTMLInputElement} */
+    inputSearch: /** @type {any} */ (document.getElementById("searchInput")),
+    /** @type {HTMLButtonElement} */
+    clearBtn: /** @type {any} */ (document.getElementById("clearSearchBtn")),
+    /** @type {HTMLButtonElement} */
+    regexBtn: /** @type {any} */ (document.getElementById("regexBtn")),
+
+    /** @type {HTMLSelectElement} */
+    selectSort: /** @type {any} */ (document.getElementById("sortSelect")),
+    /** @type {HTMLSelectElement} */
+    selectView: /** @type {any} */ (document.getElementById("viewSelect")),
+    /** @type {HTMLDivElement} */
+    filterBox: /** @type {any} */ (document.getElementById("filterContainer")),
+
+    /** @type {HTMLButtonElement} */
+    mobileFilterBtn: /** @type {any} */ (document.getElementById("mobileFilterBtn")),
+    /** @type {HTMLSpanElement} */
+    mobileFilterCount: /** @type {any} */ (document.getElementById("mobileFilterCount")),
+    /** @type {HTMLElement} */
+    mobileFilterMenu: /** @type {any} */ (document.getElementById("mobileFilterMenu")),
+
+    /** @type {HTMLDivElement} */
+    sbBar: /** @type {any} */ (document.getElementById("selectionBar")),
+    /** @type {HTMLDivElement} */
+    sbCount: /** @type {any} */ (document.getElementById("sbCount")),
+    /** @type {NodeListOf<HTMLButtonElement>} */
     sbChips: document.querySelectorAll(".sb-chip"),
-    sbClearBtn: document.getElementById("sbClearBtn"),
-    sbPathInput: document.getElementById("sbPathInput"),
-    sbDownloadBtn: document.getElementById("sbDownloadBtn"),
-    
-    rowMenu:     document.getElementById("rowMenu"),
-    toastBox:    document.getElementById("toastContainer")
+    /** @type {HTMLButtonElement} */
+    sbClearBtn: /** @type {any} */ (document.getElementById("sbClearBtn")),
+    /** @type {HTMLInputElement} */
+    sbPathInput: /** @type {any} */ (document.getElementById("sbPathInput")),
+    /** @type {HTMLButtonElement} */
+    sbDownloadBtn: /** @type {any} */ (document.getElementById("sbDownloadBtn")),
+
+    /** @type {HTMLElement} */
+    rowMenu: /** @type {any} */ (document.getElementById("rowMenu")),
+    /** @type {HTMLDivElement} */
+    toastBox: /** @type {any} */ (document.getElementById("toastContainer"))
   }
 };
 
 // ==========================================
-// TEMPLATES (View Layer)
+// 3. UTILITIES
+// ==========================================
+const Utils = {
+  /**
+   * @param {number} unix
+   * @returns {string}
+   */
+  formatDate(unix) {
+    if (!unix) return "—";
+    return new Date(unix * 1000).toLocaleDateString("en-US", {
+      month: "short", day: "numeric", year: "numeric"
+    });
+  },
+
+  /**
+   * @param {string} [str]
+   * @returns {number}
+   */
+  parseInstalls(str) {
+    if (!str) return -1;
+    const clean = str.toString().replace(/[,+]/g, '');
+    return parseInt(clean, 10) || 0;
+  },
+
+  /**
+   * @param {string} label
+   * @returns {string}
+   */
+  sanitizeDrawableName(label) {
+    if (!label) return "unknown";
+    let name = label.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    name = name.toLowerCase().replace(/[^a-z0-9]+/g, "_");
+    name = name.replace(/^_+|_+$/g, "");
+    if (/^[0-9]/.test(name)) name = "_" + name;
+    return name || "icon";
+  },
+
+  /**
+   * @param {string} rawQuery
+   * @returns {{ text: string; tags: Set<string> }}
+   */
+  parseSearchQuery(rawQuery) {
+    const result = {text: "", tags: new Set()};
+    const tokenRegex = /\b(?:is|tag|in):([a-z0-9-_]+)\b/gi;
+
+    const cleanQuery = rawQuery.replace(tokenRegex, (_, tag) => {
+      const lowerTag = tag.toLowerCase();
+      // Check if tag exists in config
+      if (CONFIG.data.filters.includes(lowerTag)) {
+        result.tags.add(lowerTag);
+      }
+      return "";
+    });
+
+    result.text = cleanQuery.trim();
+    return result;
+  },
+
+  /**
+   * @param {AppEntry} app
+   * @returns {string}
+   */
+  generateXml(app) {
+    const cmp = app.componentName;
+    const name = app.label.replace(/"/g, '&quot;'); // Escape for XML
+    const draw = Utils.sanitizeDrawableName(app.label);
+    return `<item component="ComponentInfo{${cmp}}" drawable="${draw}" name="${name}" />`;
+  },
+
+  /**
+   * @param {string} id
+   * @returns {string[]}
+   */
+  getTagsForApp(id) {
+    const tags = [];
+    const appTags = App.state.appTags.get(id);
+    if (appTags) {
+      CONFIG.data.filters.forEach(fid => {
+        if (appTags.has(fid)) tags.push(fid);
+      });
+    }
+    return tags;
+  },
+
+  /**
+   * @param {string} id
+   * @param {Set<string>} s
+   */
+  mutualExclusiveTags(id, s) {
+    if (id === "unlabeled") {
+      if (s.has("unlabeled")) {
+        s.delete("unlabeled"); // Toggle Off
+      } else {
+        s.clear();             // Clear others
+        s.add("unlabeled");    // Toggle On
+      }
+    } else {
+      // Clicking a normal filter
+      if (s.has("unlabeled")) {
+        s.delete("unlabeled"); // Clear unlabeled if active
+      }
+
+      // Standard Toggle
+      if (s.has(id)) s.delete(id);
+      else s.add(id);
+    }
+  },
+};
+
+// ==========================================
+// 4. TEMPLATES
 // ==========================================
 const Templates = {
+  /**
+   * @param {AppEntry} app
+   * @param {boolean} isSelected
+   * @param {string[]} tags
+   * @param {string} iconUrl
+   * @param {string} firstStr
+   * @param {string} lastStr
+   * @returns {string}
+   */
   listRow(app, isSelected, tags, iconUrl, firstStr, lastStr) {
     const id = app.componentName;
     const name = app.label;
     const pkg = id.split('/')[0];
     const isUnknown = app.drawable === "unknown" || name === "(Unknown App)";
 
-
     const tagHtml = tags.map(tagId => {
       const meta = App.state.filterMetadata.get(tagId);
       const label = meta ? meta.label : tagId;
-      const desc = meta ? meta.description : `Tagged with "${tagId}"`
+      const desc = meta ? meta.description : "";
       return `<span class="status-pill status-${tagId}" title="${desc}">${label}</span>`;
     }).join("");
 
-    const iconHtml = isUnknown 
-      ? `<div class="fallback-icon-row">No Icon</div>`
-      : `<img src="${iconUrl}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
-        <div class="fallback-icon-row" style="display:none">No Icon</div>`;
+    const iconHtml = isUnknown
+        ? `<div class="fallback-icon-row">No Icon</div>`
+        : `<img src="${iconUrl}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" alt="${name}" />
+         <div class="fallback-icon-row" style="display:none">No Icon</div>`;
 
-    const installs = app.installs ? app.installs.replace(/,/g, '').replace(/\+/g, '') : null;
-    const displayInstalls = installs ? new Intl.NumberFormat('en', { notation: "compact" }).format(installs) + "+" : "—";
+    const installsRaw = app.installs ? app.installs.replace(/[,+]/g, '') : null;
+    const displayInstalls = installsRaw ? new Intl.NumberFormat('en', {notation: "compact"}).format(parseInt(installsRaw)) + "+" : "—";
 
     return `
       <div class="list-row ${isSelected ? 'selected' : ''}"
         data-id="${id}"
         tabindex="0" 
         role="row" 
-        aria-selected="${isSelected}"
-        >
+        aria-selected="${isSelected}">
         <div class="check-col">
           <input type="checkbox" ${isSelected ? "checked" : ""} class="row-checkbox" tabindex="-1" />
         </div>
-        <div class="icon">
-          ${iconHtml}
-        </div>
+        <div class="icon">${iconHtml}</div>
         <div class="name-col">
           <div class="name-row">
             ${tagHtml}
@@ -150,7 +332,7 @@ const Templates = {
           <span class="pkg-name">${id}</span>
         </div>
         <div class="col req">${app.requestCount}</div>
-        <div class="col install" title="${installs}+ installs in Play Store">${displayInstalls}</div>
+        <div class="col install" title="${app.installs || '0'}+ installs in Play Store">${displayInstalls}</div>
         <div class="col first" style="line-height:1.4">
           <div>${firstStr}</div>
           <div>Last: ${lastStr}</div>
@@ -170,14 +352,19 @@ const Templates = {
     `;
   },
 
+  /**
+   * @param {AppEntry} app
+   * @param {string[]} tags
+   * @param {boolean} isSelected
+   * @param {string} iconUrl
+   * @returns {string}
+   */
   gridCard(app, tags, isSelected, iconUrl) {
     const id = app.componentName;
     const isUnknown = app.drawable === "unknown";
-    
+
     let contentHtml = "";
-    const label = app.label === "(Unknown App)" 
-      ? id.split('/')[0] // Show package
-      : app.label;
+    const label = app.label === "(Unknown App)" ? id.split('/')[0] : app.label;
 
     if (isUnknown) {
       contentHtml = `
@@ -187,38 +374,36 @@ const Templates = {
         </div>
       `;
     } else {
-      // Show Image with error handler
-      contentHtml = `<img src="${iconUrl}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
-      <div class="grid-fallback" style="display:none; text-align:center; font-size:11px; color:var(--on-surface-variant)">No Icon</div>`;
+      contentHtml = `<img src="${iconUrl}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" alt="${label}" />
+      <div class="fallback-icon-grid" style="display:none">No Icon</div>`;
     }
 
+    // Only show WIP tags on grid to avoid clutter
     const tagHtml = tags
-      // show only WIP tags
-      .filter(tagId => tagId === "wip")
-      .map(tagId => {
-        const meta = App.state.filterMetadata.get(tagId);
-        const label = meta ? meta.label : tagId;
-        const desc = meta ? meta.description : `Tagged with "${tagId}"`
-        return `<span class="status-pill status-${tagId}" title="${desc}">${label}</span>`;
-      })
-      .join("");
+        .filter(tagId => tagId === "wip")
+        .map(tagId => {
+          const meta = App.state.filterMetadata.get(tagId);
+          const label = meta ? meta.label : tagId;
+          const desc = meta ? meta.description : `Tagged with "${tagId}"`
+          return `<span class="status-pill status-${tagId}" title="${desc}">${label}</span>`;
+        })
+        .join("");
 
     return `
       <div class="grid-card ${isSelected ? 'selected' : ''}" data-id="${id}" title="${label}"
-        tabindex="0" 
-        role="checkbox" 
-        aria-checked="${isSelected}">
+        tabindex="0" role="checkbox" aria-checked="${isSelected}">
         ${contentHtml}
-        <div class="grid-overlay-tags">
-          ${tagHtml}
-        </div>
+        <div class="grid-overlay-tags">${tagHtml}</div>
         <div class="grid-overlay-check">
-          <input type="checkbox" ${isSelected ? "checked" : ""} style="pointer-events:none;" tabindex="-1" >
+          <input type="checkbox" ${isSelected ? "checked" : ""} style="pointer-events:none;" tabindex="-1">
         </div>
       </div>
     `;
   },
 
+  /**
+   * @returns {string}
+   */
   emptyState() {
     return `
       <div class="empty-state">
@@ -229,35 +414,42 @@ const Templates = {
     `;
   },
 
+  /**
+   * @param {AppEntry} app
+   * @returns {string}
+   */
   rowMenu(app) {
     const id = app.componentName;
     const pkg = id.split('/')[0];
     const name = app.label;
-    
+    // escape single quotes for the inline onclick handler
+    const safeName = name.replace(/'/g, "\\'");
+
     return `
-      <div class="ctx-item" tabindex="0" role="menuitem"
-        onclick="window.open('${CONFIG.urls.fDroid}${pkg}')">
+      <div class="ctx-item" tabindex="0" role="menuitem" onclick="window.open('${CONFIG.urls.fDroid}${pkg}')">
         ${ICONS.fDroid} <span>F-Droid</span>
       </div>
-      <div class="ctx-item" tabindex="0" role="menuitem"
-        onclick="window.open('${CONFIG.urls.izzy}${pkg}')">
+      <div class="ctx-item" tabindex="0" role="menuitem" onclick="window.open('${CONFIG.urls.izzy}${pkg}')">
         ${ICONS.izzyOnDroid} <span>IzzyOnDroid</span>
       </div>
-      <div class="ctx-item" tabindex="0" role="menuitem"
-        onclick="window.open('${CONFIG.urls.galaxyStore}${pkg}')">
+      <div class="ctx-item" tabindex="0" role="menuitem" onclick="window.open('${CONFIG.urls.galaxyStore}${pkg}')">
         ${ICONS.galaxyStore} <span>Galaxy Store</span>
       </div>
-      <div class="ctx-item" tabindex="0" role="menuitem" 
-        onclick="Actions.copyToClipboard('${name.replace(/'/g, "\\'")}\\n${id}')">
-        ${ICONS.copy} <span>Copy app name and ID</span>
+      <div class="ctx-divider"></div>
+      <div class="ctx-item" tabindex="0" role="menuitem" onclick="Actions.copyToClipboard('${safeName}\\n${id}')">
+        ${ICONS.copy} <span>Copy Name & ID</span>
       </div>
-      <div class="ctx-item" tabindex="0" role="menuitem"
-        onclick="Actions.copyAppFilterEntry('${id}')">
-        ${ICONS.copy} <span>Copy appfilter</span>
+      <div class="ctx-item" tabindex="0" role="menuitem" onclick="Actions.copyAppFilterEntry('${id}')">
+        ${ICONS.copy} <span>Copy Appfilter</span>
       </div>
     `;
   },
-  
+
+  /**
+   * @param {string} text
+   * @param {string} icon
+   * @returns {string}
+   */
   toast(text, icon) {
     return `
       <div class="toast-icon">${icon}</div>
@@ -267,77 +459,23 @@ const Templates = {
 };
 
 // ==========================================
-// UTILITIES
-// ==========================================
-const Utils = {
-  formatDate(unix) {
-    if (!unix) return "—";
-    return new Date(unix * 1000).toLocaleDateString("en-US", { 
-      month: "short", day: "numeric", year: "numeric" 
-    });
-  },
-
-  parseInstalls(str) {
-    if (!str) return -1; // Unknown installs go to bottom
-    // Remove commas and plus signs, then parse
-    const clean = str.toString().replace(/[,+]/g, '');
-    return parseInt(clean, 10) || 0;
-  },
-
-  sanitizeDrawableName(label) {
-    if (!label) return "unknown";
-    let name = label.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    name = name.toLowerCase().replace(/[^a-z0-9]+/g, "_");
-    name = name.replace(/^_+|_+$/g, "");
-    if (/^[0-9]/.test(name)) name = "_" + name;
-    return name || "icon";
-  },
-
-  parseSearchQuery(rawQuery) {
-    const result = { text: "", tags: new Set() };
-    const tokenRegex = /\b(?:is|tag|in):([a-z0-9-_]+)\b/gi;
-    
-    const cleanQuery = rawQuery.replace(tokenRegex, (match, tag) => {
-      const validTag = CONFIG.data.filters.find(id => id === tag.toLowerCase());
-      if (validTag) result.tags.add(validTag);
-      return "";
-    });
-    
-    result.text = cleanQuery.trim();
-    return result;
-  },
-
-  generateXml(app) {
-    const cmp = app.componentName;
-    const name = app.label;
-    const draw = Utils.sanitizeDrawableName(name);
-    return `<item component="ComponentInfo{${cmp}}" drawable="${draw}" name="${name}" />`;
-  },
-
-  getTagsForApp(id) {
-    const tags = [];
-    const appTags = App.state.appTags.get(id);
-    if (appTags) {
-      CONFIG.data.filters.forEach(id => {
-        if (appTags.has(id)) tags.push(id);
-      });
-    }
-    return tags;
-  }
-};
-
-// ==========================================
-// TOAST SYSTEM
+// 5. TOAST SYSTEM
 // ==========================================
 const Toast = {
+  /** @type {Set<string>} */
   activeToasts: new Set(),
 
+  /**
+   * @param {string} text
+   * @param {"info" | "success" | "error"} [type]
+   */
   show(text, type = "info") {
     const key = `${text}-${type}`;
     if (this.activeToasts.has(key)) return;
 
     if (App.dom.toastBox.children.length >= 3) {
-      this.remove(App.dom.toastBox.firstElementChild);
+      const first = App.dom.toastBox.firstElementChild;
+      if (first) this.remove(/** @type {HTMLElement} */ (first));
     }
 
     const el = document.createElement("div");
@@ -346,7 +484,7 @@ const Toast = {
     this.activeToasts.add(key);
 
     let iconSvg = ICONS.copy;
-    if (type === "error") iconSvg = `<svg><use href="#ic-search"/></svg>`;
+    if (type === "error") iconSvg = `<svg><use href="#ic-search"/></svg>`; // Using search as alert icon placeholder
     if (type === "success") iconSvg = `<svg><use href="#ic-download"/></svg>`;
 
     el.innerHTML = Templates.toast(text, iconSvg);
@@ -355,6 +493,9 @@ const Toast = {
     setTimeout(() => this.remove(el), 2500);
   },
 
+  /**
+   * @param {HTMLElement} el
+   */
   remove(el) {
     if (el.classList.contains("hiding")) return;
     if (el.dataset.key) this.activeToasts.delete(el.dataset.key);
@@ -364,65 +505,71 @@ const Toast = {
 };
 
 // ==========================================
-// ACTIONS (Business Logic)
+// 6. ACTIONS
 // ==========================================
 const Actions = {
+  /**
+   * @param {string} id
+   * @param {MouseEvent | KeyboardEvent | null} [event]
+   */
   toggleSelection(id, event = null) {
     const s = App.state.selected;
     const currentIdx = App.state.currentData.findIndex(a => a.componentName === id);
 
     // Handle Shift Click
-    if (event && event.shiftKey && s.lastSelectedId) {
-      const lastIdx = App.state.currentData.findIndex(a => a.componentName === s.lastSelectedId);
+    if (event && /** @type {MouseEvent} */ (event).shiftKey && App.state.lastSelectedId) {
+      const lastIdx = App.state.currentData.findIndex(a => a.componentName === App.state.lastSelectedId);
 
       window.getSelection()?.removeAllRanges();
-      
+
       if (lastIdx !== -1 && currentIdx !== -1) {
         const start = Math.min(lastIdx, currentIdx);
         const end = Math.max(lastIdx, currentIdx);
-        
         const range = App.state.currentData.slice(start, end + 1);
-        
-        // Determine mode: if current clicked item is NOT selected, we select range.
-        // If it IS selected (and we shift click), we typically select range.
-        // Standard behavior: Add range to selection.
-        
+
         range.forEach(app => {
           s.add(app.componentName);
           UI.updateItemVisuals(app.componentName);
         });
-        
+
         UI.updateHeader();
-        return; // Stop standard toggle
+        return;
       }
     }
 
     if (s.has(id)) s.delete(id);
     else s.add(id);
 
-    s.lastSelectedId = id;
-    
+    App.state.lastSelectedId = id;
+
     UI.updateItemVisuals(id);
     UI.updateHeader();
     UI.updateSelectionBar();
   },
 
+  /**
+   * @param {boolean} isChecked
+   */
   toggleSelectAll(isChecked) {
     if (isChecked) {
       App.state.currentData.forEach(app => App.state.selected.add(app.componentName));
     } else {
       App.state.currentData.forEach(app => App.state.selected.delete(app.componentName));
     }
-    
+
     const scrollY = window.scrollY;
     UI.render();
     window.scrollTo(0, scrollY);
   },
 
+  /**
+   * @param {string} key
+   */
   toggleSortHeader(key) {
     const current = App.state.sort;
     const [currKey, currDir] = current.split('-');
-    
+
+    /** @type {Record<string, string>} */
     const defaults = {
       name: 'asc',
       req: 'desc',
@@ -431,40 +578,37 @@ const Actions = {
     };
 
     let nextSort = "";
-
     if (currKey === key) {
-      // Same column: Toggle direction
       nextSort = `${key}-${currDir === 'asc' ? 'desc' : 'asc'}`;
     } else {
-      // New column: Use default
       nextSort = `${key}-${defaults[key]}`;
     }
 
-    // Apply
     App.state.sort = nextSort;
-    
-    // Sync Dropdowns
-    if (App.dom.selectSort) App.dom.selectSort.value = nextSort;
-    // If mobile dropdown exists/is visible, sync it too
-    const mobSort = document.getElementById("sortSelectMobile"); 
-    if (mobSort) mobSort.value = nextSort;
-
+    App.dom.selectSort.value = nextSort;
     UI.render();
   },
 
+  /**
+   * @param {string} text
+   */
   copyToClipboard(text) {
-    navigator.clipboard.writeText(text);
-    Toast.show("Copied!");
-    UI.closeContextMenu();
+    navigator.clipboard.writeText(text).then(_ => {
+      Toast.show("Copied!");
+      UI.closeContextMenu();
+    });
   },
 
+  /**
+   * @param {string} id
+   */
   copyAppFilterEntry(id) {
     const app = App.state.idMap.get(id);
     if (app) Actions.copyToClipboard(Utils.generateXml(app));
   },
 
-  // In Actions object...
   async downloadBundle() {
+    // @ts-ignore
     if (typeof JSZip === 'undefined') {
       Toast.show("JSZip library missing", "error");
       return;
@@ -483,31 +627,29 @@ const Actions = {
     document.body.style.cursor = "wait";
 
     try {
+      // @ts-ignore
       const zip = new JSZip();
-      const mode = App.state.actionMode; // "new" or "link"
-      const path = App.state.icontoolPath.trim().replace(/\/+$/, "") + "/"; // Ensure trailing slash
-      
-      // Output Strings
+      const mode = App.state.actionMode; // "new" | "link"
+      const path = App.state.icontoolPath.trim().replace(/\/+$/, "") + "/";
+
       let xmlAppFilter = "<resources>\n";
       let txtCommands = "";
-      let mdPR = `## Icons \n\
-      <!-- Please specify in the sections below which apps and packages you have worked on.\n\
-        Unnecessary sections can be deleted. -->\n\n`;
-      
-      // PR Headers
-      if (mode === "new") mdPR += "### Added\n<!-- Apps for which you add icons. -->\n";
-      else mdPR += "### Linked\n<!-- New app components for existing icons. -->\n";
+      let mdPR = `## Icons \n<!-- Generated via Dashboard -->\n\n`;
 
+      if (mode === "new") mdPR += "### Added\n";
+      else mdPR += "### Linked\n";
+
+      /** @type {Set<string>} */
       const usedNames = new Set();
+      /** @type {Promise<void>[]} */
       const downloadPromises = [];
 
-      // --- APPFILTER ---
       selectedApps.forEach(app => {
         const cmp = app.componentName;
         const label = app.label.replace(/"/g, '&quot;');
-        
         let drawable = Utils.sanitizeDrawableName(app.label);
-        
+
+        // Collision Handling
         if (usedNames.has(drawable)) {
           let c = 2;
           while (usedNames.has(`${drawable}_${c}`)) c++;
@@ -518,55 +660,41 @@ const Actions = {
         xmlAppFilter += `  <item component="ComponentInfo{${cmp}}" drawable="${drawable}" name="${label}" />\n`;
 
         if (App.state.icontoolPath) {
-          if (mode === "new") {
-            txtCommands += `python3 ./icontool.py add "${path}${drawable}.svg" ${cmp} "${label}"\n`;
-          } else {
-            // TODO: use actual appfilter
-            txtCommands += `python3 ./icontool.py link "${drawable}" ${cmp} "${label}"\n`;
-          }
+          const cmdType = mode === "new" ? "add" : "link";
+          const svgPath = mode === "new" ? `"${path}${drawable}.svg"` : `"${drawable}"`; // Link mode usually just takes name or path?
+          // Using user's python syntax logic
+          txtCommands += `python3 ./icontool.py ${cmdType} ${svgPath} ${cmp} "${label}"\n`;
         }
 
-        if (mode === "new") {
-          mdPR += `${app.label} (\`${app.componentName.split('/')[0]}\`)\n`;
-        } else {
-          mdPR += `${app.label} (\`${app.componentName.split('/')[0]}\` → \`${drawable}.svg\`)\n`;
-        }
+        mdPR += `${app.label} (\`${cmp.split('/')[0]}\`)\n`;
 
         const url = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
         downloadPromises.push(
-          fetch(url)
-            .then(r => r.ok ? r.blob() : null)
-            .then(blob => {
-              if (blob) zip.file(`icons/${drawable}.png`, blob);
-            })
-            .catch(() => {})
+            fetch(url)
+                .then(r => r.ok ? r.blob() : null)
+                .then(blob => {
+                  if (blob) zip.file(`icons/${drawable}.png`, blob);
+                })
+                .catch(() => {
+                })
         );
       });
 
       xmlAppFilter += "</resources>";
       zip.file("!appfilter.xml", xmlAppFilter);
 
-      // --- CONFIG JSON ---
-      const filterConfig = {
-        "selection": selectedApps.map(a => a.componentName)
-      };
+      const filterConfig = {"selection": selectedApps.map(a => a.componentName)};
       zip.file("!filter_config.json", JSON.stringify(filterConfig, null, 2));
 
-      // --- COMMANDS ---
-      if (txtCommands) {
-        zip.file("!icontool_commands.txt", txtCommands);
-      }
-
-      // --- PR DESCRIPTION ---
+      if (txtCommands) zip.file("!icontool_commands.txt", txtCommands);
       zip.file("!pr_description.md", mdPR);
 
-      // --- EXECUTE ---
       await Promise.all(downloadPromises);
-      const content = await zip.generateAsync({ type: "blob" });
-      
+      const content = await zip.generateAsync({type: "blob"});
+
       const link = document.createElement("a");
       link.href = URL.createObjectURL(content);
-      link.download = `lawnicons-${mode}-${new Date().toISOString().slice(0,10)}.zip`;
+      link.download = `lawnicons-${mode}-${new Date().toISOString().slice(0, 10)}.zip`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -584,102 +712,103 @@ const Actions = {
 };
 
 // ==========================================
-// DATA & STATE LOGIC
+// 7. DATA PROCESSING
 // ==========================================
 const Data = {
   init() {
     Promise.all([
       fetch(CONFIG.data.endpoint).then(r => r.json()),
-      ...CONFIG.data.filters.map(id => this.fetchFilterData(id)) // Fetch all
+      ...CONFIG.data.filters.map(id => this.fetchFilterData(id))
     ])
-    .then(([json, ...filterObjects]) => {
-      App.data = json.apps;
-      
-      // 1. Build ID Map
-      App.state.idMap = new Map();
-      App.data.forEach(app => App.state.idMap.set(app.componentName, app));
+        .then(([json, ...filterObjects]) => {
+          App.data = json.apps;
 
-      // 2. Initialize Tags & Metadata Storage
-      App.state.appTags = new Map();
-      App.state.filterMetadata = new Map(); // Store labels/desc here
+          // Build ID Map
+          App.state.idMap = new Map();
+          App.data.forEach(app => App.state.idMap.set(app.componentName, app));
 
-      // 3. Process Filters
-      filterObjects.forEach((obj, index) => {
-        if (!obj) return;
-        const id = CONFIG.data.filters[index];
+          // Init Tags
+          App.state.appTags = new Map();
+          App.state.filterMetadata = new Map();
 
-        // Store Metadata for UI
-        App.state.filterMetadata.set(id, { 
-          label: obj.label, 
-          description: obj.description 
+          // Process Filters
+          filterObjects.forEach((obj, index) => {
+            if (!obj) return;
+            const id = CONFIG.data.filters[index];
+
+            App.state.filterMetadata.set(id, {
+              label: obj.label,
+              description: obj.description
+            });
+
+            if (id === "unlabeled") {
+              this.computeUnlabeled(id);
+            } else if (obj[id] && Array.isArray(obj[id])) {
+              obj[id].forEach((/** @type {string} */ appId) => this.addTag(appId, id));
+            }
+          });
+
+          this.loadUrlState();
+          UI.init();
+        })
+        .catch(e => {
+          console.error(e);
+          Toast.show("Failed to load data", "error");
         });
-
-        // Handle "Unlabeled" Logic
-        if (id === "unlabeled") {
-          this.computeUnlabeled(id);
-        } 
-        // Handle Standard JSON Logic
-        else if (obj[id] && Array.isArray(obj[id])) {
-          obj[id].forEach(appId => this.addTag(appId, id));
-        }
-      });
-
-      this.loadUrlState();
-      UI.init();
-    })
-    .catch(e => {
-      console.error(e);
-      Toast.show("Failed to load data", "error");
-    });
   },
 
+  /**
+   * @param {string} id
+   * @returns {Promise<any>}
+   */
   async fetchFilterData(id) {
-    // Special handling for Unlabeled (No network request)
     if (id === "unlabeled") {
       return {
         label: "Unlabeled",
-        description: "Apps with no other labels assigned.",
-        unlabeled: [] // Empty placeholder
+        description: "Apps with no other labels.",
+        unlabeled: []
       };
     }
-
     try {
       const res = await fetch(`${CONFIG.data.filterPath}${id}.json`);
       if (!res.ok) return null;
       return await res.json();
-    } catch { return null; }
+    } catch {
+      return null;
+    }
   },
 
+  /**
+   * @param {string} tagId
+   */
   computeUnlabeled(tagId) {
-    // Run after other tags are populated
     App.data.forEach(app => {
       const id = app.componentName;
       const existingTags = App.state.appTags.get(id);
-      // If no tags exist (or set is empty), mark as unlabeled
       if (!existingTags || existingTags.size === 0) {
         this.addTag(id, tagId);
       }
     });
   },
 
+  /**
+   * @param {string} id
+   * @param {string} tag
+   */
   addTag(id, tag) {
     if (!App.state.appTags.has(id)) App.state.appTags.set(id, new Set());
     App.state.appTags.get(id).add(tag);
-  },
-
-  getSelectedApps() {
-    return App.data.filter(a => App.state.selected.has(a.componentName));
   },
 
   process() {
     let data = App.data;
     const s = App.state;
 
-    // 1. Search
+    // Search
     const query = Utils.parseSearchQuery(s.search);
     const activeFilters = new Set([...s.activeFilters, ...query.tags]);
 
-    // 2. Filter (Tags)
+    // Filter
     if (activeFilters.size > 0) {
       data = data.filter(app => {
         const id = app.componentName;
@@ -689,40 +818,41 @@ const Data = {
       });
     }
 
-    // 3. Filter (Text)
+    // Text Search
     if (query.text) {
       if (s.regexMode) {
         try {
           const regex = new RegExp(query.text, 'i');
-          data = data.filter(a => 
-            regex.test(a.label) || regex.test(a.componentName)
-          );
-        } catch { data = []; }
+          data = data.filter(a => regex.test(a.label) || regex.test(a.componentName));
+        } catch {
+          data = [];
+        }
       } else {
         const term = query.text.toLowerCase();
-        data = data.filter(a => 
-          a.label.toLowerCase().includes(term) || a.componentName.toLowerCase().includes(term)
+        data = data.filter(a =>
+            a.label.toLowerCase().includes(term) || a.componentName.toLowerCase().includes(term)
         );
       }
     }
 
-    // 4. Sort
-    data = [...data]; // Clone
+    // Sort
+    data = [...data];
     if (s.sort === "rand") {
       for (let i = data.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [data[i], data[j]] = [data[j], data[i]];
       }
     } else {
+      /** @type {Record<string, (a: AppEntry, b: AppEntry) => number>} */
       const sorters = {
-        "req-desc":  (a, b) => b.requestCount - a.requestCount,
-        "req-asc":   (a, b) => a.requestCount - b.requestCount,
+        "req-desc": (a, b) => b.requestCount - a.requestCount,
+        "req-asc": (a, b) => a.requestCount - b.requestCount,
         "install-desc": (a, b) => Utils.parseInstalls(b.installs) - Utils.parseInstalls(a.installs),
-        "install-asc":  (a, b) => Utils.parseInstalls(a.installs) - Utils.parseInstalls(b.installs),
-        "name-asc":  (a, b) => a.label.localeCompare(b.label),
+        "install-asc": (a, b) => Utils.parseInstalls(a.installs) - Utils.parseInstalls(b.installs),
+        "name-asc": (a, b) => a.label.localeCompare(b.label),
         "name-desc": (a, b) => b.label.localeCompare(a.label),
-        "time-desc": (a, b) => b.firstAppearance - a.firstAppearance,
-        "time-asc":  (a, b) => a.firstAppearance - b.firstAppearance
+        "time-desc": (a, b) => b.lastRequested - a.lastRequested,
+        "time-asc": (a, b) => a.lastRequested - b.lastRequested
       };
       if (sorters[s.sort]) data.sort(sorters[s.sort]);
     }
@@ -733,17 +863,17 @@ const Data = {
   loadUrlState() {
     const params = new URLSearchParams(window.location.search);
     if (params.has("q")) {
-      App.state.search = params.get("q");
+      App.state.search = params.get("q") || "";
       App.dom.inputSearch.value = App.state.search;
       if (App.state.search) App.dom.clearBtn.style.display = "flex";
     }
     if (params.has("view")) {
       const v = params.get("view");
-      if (["list", "grid"].includes(v)) App.state.view = v;
+      if (v === "list" || v === "grid") App.state.view = /** @type {"list"|"grid"} */ (v);
       App.dom.selectView.value = App.state.view;
     }
     if (params.has("sort")) {
-      App.state.sort = params.get("sort");
+      App.state.sort = params.get("sort") || DEFAULTS.sort;
       App.dom.selectSort.value = App.state.sort;
     }
     if (params.has("regex")) {
@@ -751,54 +881,59 @@ const Data = {
       App.dom.regexBtn.classList.add("active");
     }
     if (params.has("filters")) {
-      params.get("filters").split(",").forEach(t => {
-        if (CONFIG.data.filters.some(id => id === t)) App.state.activeFilters.add(t);
+      params.get("filters")?.split(",").forEach(t => {
+        if (CONFIG.data.filters.includes(t)) App.state.activeFilters.add(t);
       });
     }
   },
 
   syncUrlState() {
     const s = App.state;
-    const params = new URLSearchParams();
+    const params = new URLSearchParams(window.location.search);
 
-    if (s.search) params.set("q", s.search);
-    if (s.view !== DEFAULTS.view) params.set("view", s.view);
-    if (s.sort !== DEFAULTS.sort) params.set("sort", s.sort);
-    if (s.regexMode) params.set("regex", "1");
-    
+    if (s.search) params.set("q", s.search); else params.delete("q");
+    if (s.view !== DEFAULTS.view) params.set("view", s.view); else params.delete("view");
+    if (s.sort !== DEFAULTS.sort) params.set("sort", s.sort); else params.delete("sort");
+    if (s.regexMode) params.set("regex", "1"); else params.delete("regex");
+
     if (s.activeFilters.size > 0) {
       const sortedFilters = Array.from(s.activeFilters).sort();
       params.set("filters", sortedFilters.join(","));
+    } else {
+      params.delete("filters");
     }
-    
-    const queryString = params.toString();
-    const newUrl = queryString 
-      ? `${window.location.pathname}?${queryString}` 
-      : window.location.pathname;
 
-    window.history.replaceState({}, "", newUrl);
+    const queryString = params.toString();
+    const newUrl = queryString
+        ? `${window.location.pathname}?${queryString}`
+        : window.location.pathname;
+
+    if (newUrl !== window.location.pathname + window.location.search) {
+      window.history.replaceState({}, "", newUrl);
+    }
   }
 };
 
 // ==========================================
-// UI LOGIC
+// 8. UI LOGIC
 // ==========================================
 const UI = {
+  /** @type {IntersectionObserver | null} */
   observer: null,
 
   init() {
     this.generateFilters();
     this.initObserver();
     this.render();
-    
-    // Bind Global Events
+
+    // Bindings
     App.dom.inputSearch.addEventListener("input", e => {
-      const val = e.target.value;
+      const val = (/** @type {HTMLInputElement} */ (e.target)).value;
       App.state.search = val;
       App.dom.clearBtn.style.display = val.length > 0 ? "flex" : "none";
-
       this.render();
     });
+
     App.dom.clearBtn.addEventListener("click", () => {
       App.state.search = "";
       App.dom.inputSearch.value = "";
@@ -806,104 +941,96 @@ const UI = {
       App.dom.inputSearch.focus();
       this.render();
     });
+
     App.dom.selectSort.addEventListener("change", e => {
-      App.state.sort = e.target.value;
+      App.state.sort = (/** @type {HTMLSelectElement} */ (e.target)).value;
       this.render();
     });
+
     App.dom.selectView.addEventListener("change", e => {
-      App.state.view = e.target.value;
+      App.state.view = /** @type {"list" | "grid"} */ (/** @type {HTMLSelectElement} */ (e.target).value);
       this.render();
     });
+
     App.dom.regexBtn.addEventListener("click", () => {
       App.state.regexMode = !App.state.regexMode;
       App.dom.regexBtn.classList.toggle("active", App.state.regexMode);
       this.render();
     });
-    App.dom.headerCheck.addEventListener("change", e => Actions.toggleSelectAll(e.target.checked));
+
+    App.dom.headerCheck.addEventListener("change", e =>
+        Actions.toggleSelectAll((/** @type {HTMLInputElement} */ (e.target)).checked)
+    );
+
     App.dom.mobileFilterBtn.addEventListener("click", () => {
       this.showMobileFilterPopover();
     });
 
+    // Selection Bar
     App.dom.sbChips.forEach(chip => {
       chip.addEventListener("click", () => {
-        // 1. Update State
-        App.state.actionMode = chip.dataset.mode;
-        
-        // 2. Update UI
+        App.state.actionMode = (/** @type {any} */ (chip.dataset)).mode;
         App.dom.sbChips.forEach(c => c.classList.remove("active"));
         chip.classList.add("active");
       });
     });
 
-    // Selection Bar - Path Input (Save on change)
     App.dom.sbPathInput.value = App.state.icontoolPath;
     App.dom.sbPathInput.addEventListener("input", (e) => {
-      App.state.icontoolPath = e.target.value;
-      localStorage.setItem("icontoolPath", e.target.value);
+      const val = (/** @type {HTMLInputElement} */ (e.target)).value;
+      App.state.icontoolPath = val;
+      localStorage.setItem("icontoolPath", val);
     });
 
-    // Selection Bar - Clear
     App.dom.sbClearBtn.addEventListener("click", () => Actions.toggleSelectAll(false));
-
-    // Selection Bar - Download
     App.dom.sbDownloadBtn.addEventListener("click", () => Actions.downloadBundle());
 
+    // Sort Headers
     const headers = {
       '.col.name': 'name',
-      '.col.req':  'req',
+      '.col.req': 'req',
       '.col.install': 'install',
       '.col.first': 'time'
     };
-
     Object.entries(headers).forEach(([selector, key]) => {
-      const el = App.dom.listHeader.querySelector(selector);
+      const el = /** @type {HTMLElement} */ (App.dom.listHeader.querySelector(selector));
       if (el) {
         el.title = "Click to sort";
         el.onclick = () => Actions.toggleSortHeader(key);
       }
     });
 
-
+    // Event Delegation
     App.dom.container.addEventListener('click', (e) => {
-      const trigger = e.target.closest('.ctx-trigger');
+      const target = /** @type {HTMLElement} */ (e.target);
+
+      const trigger = target.closest('.ctx-trigger');
       if (trigger) {
-        e.stopPropagation(); // Prevent row selection
-        const row = trigger.closest('[data-id]');
+        e.stopPropagation();
+        const row = /** @type {HTMLElement} */ (trigger.closest('[data-id]'));
         const id = row.dataset.id;
         const app = App.state.idMap.get(id);
         if (app) this.showRowMenu(e, app);
         return;
       }
 
-      // 2. Handle Links/Buttons (Download, Play Store)
-      // We explicitly IGNORE clicks on <a> tags so they perform their default action
-      // but do NOT trigger row selection.
-      if (e.target.closest('a')) {
-        e.stopPropagation(); 
+      if (target.closest('a')) {
+        e.stopPropagation();
         return;
       }
 
-      // 3. Handle Row/Card Selection
-      const item = e.target.closest('[data-id]');
+      const item = /** @type {HTMLElement} */ (target.closest('[data-id]'));
       if (item) {
-        const id = item.dataset.id;
-        
-        // If clicking the checkbox directly, or the row background
-        Actions.toggleSelection(id, e);
+        Actions.toggleSelection(item.dataset.id, /** @type {MouseEvent} */ (e));
       }
     });
 
+    // Keyboard Shortcuts
     document.addEventListener('keydown', (e) => {
-      // Ignore if typing in an input
-      if (e.target.tagName === 'INPUT') return;
+      if ((/** @type {HTMLElement} */ (e.target)).tagName === 'INPUT') return;
 
-      // 1. Focus Search (/)
-      if (e.key === '/') {
-        e.preventDefault();
-        App.dom.inputSearch.focus();
-      }
-
-      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      // 1. Focus Search (/ or Ctrl + K)
+      if (e.key === '/' || (e.ctrlKey || e.metaKey) && e.key === 'k') {
         e.preventDefault();
         App.dom.inputSearch.focus();
       }
@@ -916,12 +1043,10 @@ const UI = {
 
       // 3. Clear Selection (Esc)
       if (e.key === 'Escape') {
-        if (App.state.selected.size > 0) {
-          Actions.toggleSelectAll(false);
-        }
+        if (App.state.selected.size > 0) Actions.toggleSelectAll(false);
       }
 
-      // 4. Focus selection bar
+      // 4. Focus selection bar (Ctrl + Enter)
       if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
         if (App.state.selected.size > 0) {
           e.preventDefault();
@@ -932,15 +1057,17 @@ const UI = {
     });
 
     // Add 'keydown' listener to container
-    App.dom.container.addEventListener('keydown', (e) => {
-      const target = e.target;
-      
+    App.dom.container.addEventListener('keydown', (/** @type {KeyboardEvent} */ e) => {
+      const target = /** @type {HTMLElement | null} */ (e.target);
+      if (!target) return;
+
       // --- 1. Selection & Actions (Enter/Space) ---
       if (!(e.ctrlKey || e.metaKey) && e.key === 'Enter' || e.key === ' ') {
         // A. Row/Card Selection
         if (target.classList.contains('list-row') || target.classList.contains('grid-card')) {
           e.preventDefault(); // Prevent page scroll on Space
           const id = target.dataset.id;
+          if (!id) return;
           Actions.toggleSelection(id, e); // Pass event for Shift logic
         }
 
@@ -948,16 +1075,19 @@ const UI = {
         if (target.classList.contains('ctx-trigger')) {
           e.preventDefault();
           e.stopPropagation();
-          const row = target.closest('[data-id]');
+          const row = /** @type {HTMLElement | null} */ (target.closest('[data-id]'));
+          if (!row) return;
           const id = row.dataset.id;
+          if (!id) return;
           const app = App.state.idMap.get(id);
-          
+          if (!app) return;
+
           const rect = target.getBoundingClientRect();
-          const fakeEvent = { 
-            clientX: rect.left + rect.width / 2, 
-            clientY: rect.top + rect.height / 2 
+          const fakeEvent = {
+            clientX: rect.left + rect.width / 2,
+            clientY: rect.top + rect.height / 2
           };
-          
+
           UI.showRowMenu(fakeEvent, app);
         }
         return; // Done with Enter/Space
@@ -965,13 +1095,13 @@ const UI = {
 
       // --- 2. Navigation (Arrow Keys) ---
       if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.key)) {
-        const item = target.closest('[data-id]');
+        const item = /** @type {HTMLElement | null} */ (target.closest('[data-id]'));
         if (!item) return;
 
         e.preventDefault(); // Prevent scrolling
 
         // Get only valid items (ignore loaders/sentinels)
-        const items = Array.from(App.dom.container.querySelectorAll('[data-id]'));
+        const items = /** @type {HTMLElement[]} */ (Array.from(App.dom.container.querySelectorAll('[data-id]')));
         const index = items.indexOf(item);
         let nextIndex = index;
 
@@ -998,12 +1128,14 @@ const UI = {
       }
     });
 
-    // Handle Menu Navigation (Shared for all menus)
-    ['rowMenu', 'mobileFilterMenu'].forEach(id => {
-      const menu = App.dom[id];
+    // Menu Navigation
+    const menus = ['rowMenu', 'mobileFilterMenu'];
+    menus.forEach(id => {
+      const menu = /** @type {HTMLElement} */ (App.dom[/** @type {keyof typeof App.dom} */ (id)]);
       if (!menu) return;
 
       if (menu) {
+        // @ts-ignore
         menu.addEventListener("toggle", (e) => {
           if (e.newState === "closed") {
             // Wait for CSS transition
@@ -1013,8 +1145,8 @@ const UI = {
       }
 
       menu.addEventListener('keydown', (e) => {
-        const items = Array.from(menu.querySelectorAll('.ctx-item'));
-        const index = items.indexOf(document.activeElement);
+        const items = /** @type {HTMLElement[]} */ (Array.from(menu.querySelectorAll('.ctx-item')));
+        const index = items.indexOf(/** @type {HTMLElement} */ (document.activeElement));
 
         if (e.key === 'ArrowDown') {
           e.preventDefault();
@@ -1026,30 +1158,26 @@ const UI = {
           prev.focus();
         } else if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          document.activeElement.click();
+          (/** @type {HTMLElement} */ (document.activeElement)).click();
         } else if (e.key === 'Tab') {
-          e.preventDefault()
-          this.closeContextMenu()
-        }  else if (e.key === 'Escape') {
-          // Popover handles close, but we should return focus to trigger?
-          // Native behavior usually handles this, but explicit is better.
+          e.preventDefault();
+          this.closeContextMenu();
         }
       });
     });
 
+    // Auto Focus
     const isDesktop = window.matchMedia('(pointer: fine)').matches;
-    if (isDesktop) {
-      App.dom.inputSearch.focus();
-    }
+    if (isDesktop) App.dom.inputSearch.focus();
   },
 
   initObserver() {
     this.observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
         const more = this.loadMore();
-        App.dom.sentinel.style.opacity = more ? 1 : 0;
+        App.dom.sentinel.style.opacity = more ? "1" : "0";
       }
-    }, { rootMargin: "400px" });
+    }, {rootMargin: "400px"});
     this.observer.observe(App.dom.sentinel);
   },
 
@@ -1059,9 +1187,7 @@ const UI = {
     App.dom.container.className = s.view === "grid" ? "grid-container" : "";
 
     Data.process();
-
     Data.syncUrlState();
-
     this.updateHeader();
 
     if (s.currentData.length === 0) {
@@ -1072,11 +1198,13 @@ const UI = {
 
     s.renderedCount = 0;
     this.loadMore();
-    
+
     App.dom.listHeader.style.display = s.view === "list" ? "grid" : "none";
   },
 
-  // In UI object
+  /**
+   * @returns {boolean}
+   */
   loadMore() {
     const s = App.state;
     if (s.renderedCount >= s.currentData.length) return false;
@@ -1084,27 +1212,22 @@ const UI = {
     const end = Math.min(s.renderedCount + CONFIG.ui.batchSize, s.currentData.length);
     const batch = s.currentData.slice(s.renderedCount, end);
     const fragment = document.createDocumentFragment();
-
-    // Create a temporary container to hold the HTML string
     const tempDiv = document.createElement('div');
 
     batch.forEach(app => {
       const id = app.componentName;
       const isSelected = s.selected.has(id);
       const iconUrl = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
-      
-      let html = "";
+
+      let html;
       const tags = Utils.getTagsForApp(id);
       if (s.view === "list") {
         html = Templates.listRow(app, isSelected, tags, iconUrl, Utils.formatDate(app.firstAppearance), Utils.formatDate(app.lastRequested));
       } else {
         html = Templates.gridCard(app, tags, isSelected, iconUrl);
       }
-      
-      // Append HTML string to temp container
+
       tempDiv.innerHTML = html.trim();
-      
-      // Move the created element to fragment (No event listeners attached!)
       while (tempDiv.firstChild) {
         fragment.appendChild(tempDiv.firstChild);
       }
@@ -1119,7 +1242,7 @@ const UI = {
     const c = App.dom.filterBox;
     if (!c) return;
     c.innerHTML = "";
-    
+
     CONFIG.data.filters.forEach(id => {
       const meta = App.state.filterMetadata.get(id);
       if (!meta) return;
@@ -1127,35 +1250,18 @@ const UI = {
       const btn = document.createElement("button");
       btn.className = `tag tag-${id} chip`;
       btn.textContent = meta.label;
-      btn.title = meta.description || `Filter by ${meta.label}`; // Use description for 
+      btn.title = meta.description || `Filter by ${meta.label}`;
       if (App.state.activeFilters.has(id)) btn.classList.add("active");
-      
+
       btn.onclick = () => {
         const s = App.state.activeFilters;
-        
-        // LOGIC: Mutual Exclusivity for "Unlabeled"
-        if (id === "unlabeled") {
-          if (s.has("unlabeled")) {
-            s.delete("unlabeled"); // Toggle Off
-          } else {
-            s.clear();             // Clear others
-            s.add("unlabeled");    // Toggle On
-          }
-        } else {
-          // Clicking a normal filter
-          if (s.has("unlabeled")) {
-            s.delete("unlabeled"); // Clear unlabeled if active
-          }
-          
-          // Standard Toggle
-          if (s.has(id)) s.delete(id);
-          else s.add(id);
-        }
-        
+
+        Utils.mutualExclusiveTags(id, s)
         // Update UI classes immediately (faster than full render)
         Array.from(c.children).forEach(b => {
+          // @ts-ignore
           const filterId = b.className.match(/tag-([a-z]+)/)[1];
-          
+
           if (s.has(filterId)) b.classList.add("active");
           else b.classList.remove("active");
         });
@@ -1166,34 +1272,36 @@ const UI = {
     });
   },
 
+  /**
+   * @param {string} id
+   */
   updateItemVisuals(id) {
     const isSelected = App.state.selected.has(id);
     document.querySelectorAll(`[data-id="${id}"]`).forEach(el => {
       el.classList.toggle("selected", isSelected);
-      const cb = el.querySelector("input[type='checkbox']");
+      const cb = /** @type {HTMLInputElement} */ (el.querySelector("input[type='checkbox']"));
       if (cb) cb.checked = isSelected;
     });
   },
 
   updateHeader() {
-    const total = App.state.currentData.length; // Filtered Count
-    const absoluteTotal = App.data.length;      // Global Count
-    
-    // 1. Update Text
+    const total = App.state.currentData.length;
+    const absTotal = App.data.length;
+
+    // Text
     const countEl = App.dom.headerCount;
-    
-    if (total === absoluteTotal) {
-      // No filters active
-      countEl.textContent = `${absoluteTotal.toLocaleString()} requests`;
+    if (total === absTotal) {
+      countEl.textContent = `${absTotal.toLocaleString()} requests`;
     } else {
-      // Filters active
-      countEl.textContent = `${total.toLocaleString()} of ${absoluteTotal.toLocaleString()} requests`;
+      countEl.textContent = `${total.toLocaleString()} of ${absTotal.toLocaleString()} requests`;
     }
 
-    // 2. Update Checkbox (Existing Logic)
+    // Checkbox
     const hc = App.dom.headerCheck;
     if (total === 0) {
-      hc.checked = false; hc.indeterminate = false; return;
+      hc.checked = false;
+      hc.indeterminate = false;
+      return;
     }
 
     let count = 0;
@@ -1203,7 +1311,7 @@ const UI = {
 
     hc.checked = (count === total);
     hc.indeterminate = (count > 0 && count < total);
-    
+
     const filterCount = App.state.activeFilters.size;
     if (filterCount > 0) {
       App.dom.mobileFilterCount.textContent = `(${filterCount})`;
@@ -1217,7 +1325,7 @@ const UI = {
   updateSelectionBar() {
     const count = App.state.selected.size;
     const bar = App.dom.sbBar;
-    
+
     if (count > 0) {
       bar.classList.add("visible");
       App.dom.sbCount.textContent = `${count} icon${count !== 1 ? 's' : ''}`;
@@ -1226,90 +1334,85 @@ const UI = {
     }
   },
 
+  /**
+   * @param {any} e
+   * @param {AppEntry} app
+   */
   showRowMenu(e, app) {
     App.dom.rowMenu.innerHTML = Templates.rowMenu(app);
-    
-    // Positioning
+
     const w = 255, h = 290;
     let x = e.clientX + 2, y = e.clientY + 2;
     if (x + w > window.innerWidth) x -= (w + 4);
     if (y + h > window.innerHeight) y -= (h + 4);
-    
+
     App.dom.rowMenu.style.left = `${x}px`;
     App.dom.rowMenu.style.top = `${y}px`;
     App.dom.rowMenu.style.transformOrigin = "top left";
-    App.dom.rowMenu.showPopover();
+    /** @type {any} */ (App.dom.rowMenu).showPopover();
     this.focusMenu(App.dom.rowMenu);
   },
 
   showMobileFilterPopover() {
     const menu = App.dom.mobileFilterMenu;
-    menu.innerHTML = ""; // Clear previous content
-
+    menu.innerHTML = "";
     const s = App.state.activeFilters;
 
-    // 1. Build Items
     CONFIG.data.filters.forEach(id => {
       const meta = App.state.filterMetadata.get(id);
       if (!meta) return;
 
       const item = document.createElement("div");
-      const isActive = App.state.activeFilters.has(id);
-      item.tabIndex = 0
-      item.role = "menuitemcheckbox"
+      const isActive = s.has(id);
+      item.tabIndex = 0;
+      item.role = "menuitemcheckbox";
       item.className = `ctx-item ${isActive ? 'active' : ''}`;
-      
+
       item.innerHTML = `
         <span class="check-icon">${ICONS.check}</span>
         <span>${meta.label}</span>      
       `;
-      
+
       item.onclick = (e) => {
-        e.stopPropagation(); // Prevent popover from closing
-    
-        if (id === "unlabeled") {
-          if (s.has("unlabeled")) s.delete("unlabeled");
-          else { s.clear(); s.add("unlabeled"); }
-        } else {
-          if (s.has("unlabeled")) s.delete("unlabeled");
-          if (s.has(id)) s.delete(id);
-          else s.add(id);
-        }
+        e.stopPropagation();
+
+        Utils.mutualExclusiveTags(id, s)
         UI.render();
-        
+
         // Re-render menu content to update checkmarks instantly
         this.showMobileFilterPopover();
       };
       menu.appendChild(item);
     });
 
-    // 2. Position below button
     const rect = App.dom.mobileFilterBtn.getBoundingClientRect();
-    const padding = (s.size > 0) ? 135 : 150
+    const padding = (s.size > 0) ? 135 : 150;
 
     menu.style.left = `${rect.left - padding}px`;
     menu.style.top = `${rect.bottom + 8}px`;
 
-    // 3. Show
-    menu.showPopover();
-    this.focusMenu(App.dom.mobileFilterMenu);
+    /** @type {any} */ (menu).showPopover();
+    this.focusMenu(menu);
   },
 
+  /**
+   * @param {HTMLElement} menuEl
+   */
   focusMenu(menuEl) {
     // Wait for browser to render the popover
     requestAnimationFrame(() => {
-      const firstItem = menuEl.querySelector('.ctx-item');
+      const firstItem = /** @type {HTMLElement} */ (menuEl.querySelector('.ctx-item'));
       if (firstItem) firstItem.focus();
     });
   },
 
   closeContextMenu() {
-    try { App.dom.rowMenu.hidePopover(); } catch {}
-    try { App.dom.mobileFilterMenu.hidePopover(); } catch {}
+    try { /** @type {any} */ (App.dom.rowMenu).hidePopover(); } catch {}
+    try { /** @type {any} */ (App.dom.mobileFilterMenu).hidePopover(); } catch {}
 
     setTimeout(() => {
       App.dom.rowMenu.innerHTML = "";
-      App.dom.mobileFilterMenu.innerHTML = ""; // If present
+      App.dom.mobileFilterMenu.innerHTML = "";
     }, 200);
   }
 };
