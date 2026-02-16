@@ -7,7 +7,7 @@
 // 0. TYPES & INTERFACES
 // ==========================================
 
-/** @typedef {any} JSZip */
+/// <reference types="https://cdn.skypack.dev/fflate@0.8.2/lib/index.d.ts" />
 
 /**
  * @typedef {Object} AppEntry
@@ -608,8 +608,8 @@ const Actions = {
   },
 
   async downloadBundle() {
-    if (typeof JSZip === 'undefined') {
-      Toast.show("JSZip library missing", "error");
+    if (typeof fflate === 'undefined') {
+      Toast.show("fflate library missing", "error");
       return;
     }
 
@@ -624,29 +624,34 @@ const Actions = {
     document.body.style.cursor = "wait";
 
     try {
-      const zip = new JSZip();
       const mode = App.state.actionMode; // "new" | "link"
       const path = App.state.icontoolPath.trim().replace(/\/+$/, "") + "/";
+
+      // fflate uses a simple object mapping paths to Uint8Arrays/Strings
+      /** @type {Object.<string, Uint8Array | string | Object>} */
+      const zipData = {
+        "icons": {} // This will be a nested folder object
+      };
 
       let xmlAppFilter = "<resources>\n";
       let txtCommands = "";
 
       const prLines = new Set();
 
-      // Key: drawable -> { url, promise }
-      /** @type {Map<String, Promise>} */
-      const downloads = new Map();
-
-      /** Tracks drawable names globally to prevent file overwrites (e.g. app.svg, app_2.svg) */
+      /**
+       * Tracks drawable names globally to prevent file overwrites (e.g. app.svg, app_2.svg)
+       * @type {Set<string>}
+       */
       const usedDrawables = new Set();
 
       /**
        * Maps a specific App Identity (Label + Package) to a Drawable.
        *
        * This ensures if we have "App (com.a/Act1)" and "App (com.a/Act2)", they both get "app.svg"
-       * @type {Map<String, String>}
+       * @type {Map<string, string>}
        */
       const assignedDrawables = new Map();
+      const fetchPromises = [];
 
       // --- LOOP ---
       selectedApps.forEach(app => {
@@ -692,25 +697,26 @@ const Actions = {
           prLines.add(`${app.label} (\`${pkg}\` → \`${drawable}.svg\`)`);
         }
 
-        // Queue Download
-        if (!downloads.has(drawable)) {
+        // Queue Icon Fetch
+        if (!zipData.icons[`${drawable}.png`]) {
           const url = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
-          downloads.set(drawable,
-              fetch(url)
-                  .then(r => r.ok ? r.blob() : null)
-                  .then(blob => {
-                    if (blob) zip.file(`icons/${drawable}.png`, blob);
-                  })
-                  .catch(() => {})
-          );
+          const p = fetch(url)
+              .then(r => r.ok ? r.arrayBuffer() : null)
+              .then(buf => {
+                if (buf) zipData.icons[`icons/${drawable}.png`] = new Uint8Array(buf);
+              })
+              .catch(() => {});
+          fetchPromises.push(p);
         }
       });
 
       // --- FINALIZE OUTPUTS ---
+      App.dom.sbDownloadBtn.innerHTML = "Fetching...";
+      await Promise.all(fetchPromises);
 
       // 1. XML
       xmlAppFilter += "</resources>";
-      zip.file("!appfilter.xml", xmlAppFilter);
+      zipData["!appfilter.xml"] = fflate.strToU8(xmlAppFilter);
 
       // 2. Config
       const filterConfig = {
@@ -718,28 +724,27 @@ const Actions = {
         "description": "Sample description",
         "selection": selectedApps.map(a => a.componentName)
       };
-      zip.file("!filter_config.json", JSON.stringify(filterConfig, null, 2));
+      zipData["!filter_config.json"] = fflate.strToU8(JSON.stringify(filterConfig, null, 2));
 
       // 3. Commands
-      if (txtCommands) zip.file("!icontool_commands.txt", txtCommands);
+      if (txtCommands) zipData["!icontool_commands.txt"] = fflate.strToU8(txtCommands);
 
-      // 4. PR Description
       let mdPR = `## Icons \n<!-- Generated via Dashboard -->\n\n`;
       mdPR += (mode === "new" ? "### Added\n" : "### Linked\n");
       mdPR += Array.from(prLines).join("\n") + "\n";
-      zip.file("!pr_description.md", mdPR);
+      zipData["!pr_description.md"] = fflate.strToU8(mdPR);
 
-      // 5. Execute Downloads
-      await Promise.all(downloads.values());
+      // 6. Zip & Download
+      App.dom.sbDownloadBtn.innerHTML = "Zipping...";
+      const content = fflate.zipSync(zipData, { level: 6 });
 
-      // 6. Generate Zip
-      const content = await zip.generateAsync({type: "blob"});
       const link = document.createElement("a");
-      link.href = URL.createObjectURL(content);
+      link.href = URL.createObjectURL(new Blob([content], { type: 'application/zip' }));
       link.download = `lawnicons-${mode}-${new Date().toISOString().slice(0, 10)}.zip`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
+      URL.revokeObjectURL(link.href);
 
       Toast.show(`Downloaded bundle (${mode})`, "success");
 
