@@ -608,17 +608,14 @@ const Actions = {
   },
 
   async downloadBundle() {
-    // @ts-ignore
     if (typeof JSZip === 'undefined') {
       Toast.show("JSZip library missing", "error");
       return;
     }
 
-    // 1. Get Selected Data
     const selectedApps = App.data.filter(a => App.state.selected.has(a.componentName));
     if (selectedApps.length === 0) return;
 
-    // 2. Sort Alphabetically
     selectedApps.sort((a, b) => a.label.localeCompare(b.label));
 
     // UI Feedback
@@ -627,71 +624,116 @@ const Actions = {
     document.body.style.cursor = "wait";
 
     try {
-      // @ts-ignore
       const zip = new JSZip();
       const mode = App.state.actionMode; // "new" | "link"
       const path = App.state.icontoolPath.trim().replace(/\/+$/, "") + "/";
 
       let xmlAppFilter = "<resources>\n";
       let txtCommands = "";
-      let mdPR = `## Icons \n<!-- Generated via Dashboard -->\n\n`;
 
-      if (mode === "new") mdPR += "### Added\n";
-      else mdPR += "### Linked\n";
+      const prLines = new Set();
 
-      /** @type {Set<string>} */
-      const usedNames = new Set();
-      /** @type {Promise<void>[]} */
-      const downloadPromises = [];
+      // Key: drawable -> { url, promise }
+      /** @type {Map<String, Promise>} */
+      const downloads = new Map();
 
+      /** Tracks drawable names globally to prevent file overwrites (e.g. app.svg, app_2.svg) */
+      const usedDrawables = new Set();
+
+      /**
+       * Maps a specific App Identity (Label + Package) to a Drawable.
+       *
+       * This ensures if we have "App (com.a/Act1)" and "App (com.a/Act2)", they both get "app.svg"
+       * @type {Map<String, String>}
+       */
+      const assignedDrawables = new Map();
+
+      // --- LOOP ---
       selectedApps.forEach(app => {
         const cmp = app.componentName;
+        const pkg = cmp.split('/')[0];
         const label = app.label.replace(/"/g, '&quot;');
-        let drawable = Utils.sanitizeDrawableName(app.label);
+        const cmdLabel = app.label.replace(/"/g, '\\"');
 
-        // Collision Handling
-        if (usedNames.has(drawable)) {
-          let c = 2;
-          while (usedNames.has(`${drawable}_${c}`)) c++;
-          drawable = `${drawable}_${c}`;
+        // Resolve Drawable Name
+        const appIdentity = `${app.label}|${pkg}`;
+        let drawable = "";
+
+        if (assignedDrawables.has(appIdentity)) {
+          drawable = assignedDrawables.get(appIdentity);
+        } else {
+          drawable = Utils.sanitizeDrawableName(app.label);
+
+          // Handle collision with DIFFERENT apps
+          if (usedDrawables.has(drawable)) {
+            let c = 2;
+            while (usedDrawables.has(`${drawable}_${c}`)) c++;
+            drawable = `${drawable}_${c}`;
+          }
+
+          usedDrawables.add(drawable);
+          assignedDrawables.set(appIdentity, drawable);
         }
-        usedNames.add(drawable);
 
-        xmlAppFilter += `  <item component="ComponentInfo{${cmp}}" drawable="${drawable}" name="${label}" />\n`;
+        // Appfilter entry
+        xmlAppFilter += `    <item component="ComponentInfo{${cmp}}" drawable="${drawable}" name="${label}" />\n`;
 
+        // Commands
         if (App.state.icontoolPath) {
           const cmdType = mode === "new" ? "add" : "link";
-          const svgPath = mode === "new" ? `"${path}${drawable}.svg"` : `"${drawable}"`; // Link mode usually just takes name or path?
-          // Using user's python syntax logic
-          txtCommands += `python3 ./icontool.py ${cmdType} ${svgPath} ${cmp} "${label}"\n`;
+          const svgPath = mode === "new" ? `"${path}${drawable}.svg"` : `"${drawable}"`;
+          txtCommands += `python3 ./icontool.py ${cmdType} ${svgPath} ${cmp} "${cmdLabel}"\n`;
         }
 
-        mdPR += `${app.label} (\`${cmp.split('/')[0]}\`)\n`;
+        // PR Description
+        if (mode === "new") {
+          prLines.add(`${app.label} (\`${pkg}\`)`);
+        } else {
+          prLines.add(`${app.label} (\`${pkg}\` → \`${drawable}.svg\`)`);
+        }
 
-        const url = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
-        downloadPromises.push(
-            fetch(url)
-                .then(r => r.ok ? r.blob() : null)
-                .then(blob => {
-                  if (blob) zip.file(`icons/${drawable}.png`, blob);
-                })
-                .catch(() => {
-                })
-        );
+        // Queue Download
+        if (!downloads.has(drawable)) {
+          const url = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
+          downloads.set(drawable,
+              fetch(url)
+                  .then(r => r.ok ? r.blob() : null)
+                  .then(blob => {
+                    if (blob) zip.file(`icons/${drawable}.png`, blob);
+                  })
+                  .catch(() => {})
+          );
+        }
       });
 
+      // --- FINALIZE OUTPUTS ---
+
+      // 1. XML
       xmlAppFilter += "</resources>";
       zip.file("!appfilter.xml", xmlAppFilter);
 
-      const filterConfig = {"selection": selectedApps.map(a => a.componentName)};
+      // 2. Config
+      const filterConfig = {
+        "label": "Selection",
+        "description": "Sample description",
+        "selection": selectedApps.map(a => a.componentName)
+      };
       zip.file("!filter_config.json", JSON.stringify(filterConfig, null, 2));
 
+      // 3. Commands
       if (txtCommands) zip.file("!icontool_commands.txt", txtCommands);
+
+      // 4. PR Description
+      let mdPR = `## Icons \n<!-- Generated via Dashboard -->\n\n`;
+      mdPR += (mode === "new" ? "### Added\n" : "### Linked\n");
+      mdPR += Array.from(prLines).join("\n") + "\n";
       zip.file("!pr_description.md", mdPR);
 
-      await Promise.all(downloadPromises);
-      const content = await zip.generateAsync({type: "blob"});
+      // 5. Execute Downloads
+      await Promise.all(downloads.values());
 
+      // 6. Generate Zip
+      const content = await zip.generateAsync({type: "blob"});
       const link = document.createElement("a");
       link.href = URL.createObjectURL(content);
       link.download = `lawnicons-${mode}-${new Date().toISOString().slice(0, 10)}.zip`;
