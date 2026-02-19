@@ -1,10 +1,10 @@
 {
-  "count": 28067,
+  "count": 28048,
   "lastUpdate": "2026-02-19",
   "apps": [
     {
       "drawable": "mini_militia",
-      "requestCount": 57,
+      "requestCount": 58,
       "firstAppearance": 1718707312.0,
       "lastRequested": 1771331369.0,
       "label": "Mini Militia",
@@ -74,15 +74,6 @@
       "componentName": "com.oplus.aimemory/com.oplus.aimemory.MainActivity"
     },
     {
-      "drawable": "blip",
-      "requestCount": 34,
-      "firstAppearance": 1728858107.0,
-      "lastRequested": 1771432295.0,
-      "label": "Blip",
-      "componentName": "net.blip.android/net.blip.android.MainActivity",
-      "installs": "500,000+"
-    },
-    {
       "drawable": "suno",
       "requestCount": 34,
       "firstAppearance": 1738662999.0,
@@ -119,6 +110,15 @@
       "installs": "50,000,000+"
     },
     {
+      "drawable": "gg_game_space___teste_interno",
+      "requestCount": 32,
+      "firstAppearance": 1715605891.0,
+      "lastRequested": 1766045780.0,
+      "label": "GG Game Space - Teste interno",
+      "componentName": "com.zjx.gamebox/com.zjx.gamebox.MainActivity",
+      "installs": "1,000,000+"
+    },
+    {
       "drawable": "melon_sandbox",
       "requestCount": 31,
       "firstAppearance": 1719816559.0,
@@ -135,23 +135,6 @@
       "label": "How We Feel",
       "componentName": "org.howwefeel.moodmeter/org.howwefeel.moodmeter.screens.main.MainActivity",
       "installs": "500,000+"
-    },
-    {
-      "drawable": "joiplay",
-      "requestCount": 31,
-      "firstAppearance": 1714446518.0,
-      "lastRequested": 1763624173.0,
-      "label": "JoiPlay",
-      "componentName": "cyou.joiplay.joiplay/cyou.joiplay.joiplay.activities.SplashActivity"
-    },
-    {
-      "drawable": "gg_game_space___teste_interno",
-      "requestCount": 31,
-      "firstAppearance": 1715605891.0,
-      "lastRequested": 1766045780.0,
-      "label": "GG Game Space - Teste interno",
-      "componentName": "com.zjx.gamebox/com.zjx.gamebox.MainActivity",
-      "installs": "1,000,000+"
     },
     {
       "drawable": "hibernator",
@@ -216,19 +199,10 @@
       "componentName": "com.didjdk.adbhelper/com.didjdk.adbhelper.ConnectActivity"
     },
     {
-      "drawable": "immortal",
-      "requestCount": 29,
-      "firstAppearance": 1718671759.0,
-      "lastRequested": 1771396942.0,
-      "label": "Immortal",
-      "componentName": "com.blizzard.diablo.immortal/com.netease.game.MessiahNativeActivity",
-      "installs": "10,000,000+"
-    },
-    {
       "drawable": "curse_of_aros",
       "label": "Curse of Aros",
       "componentName": "com.bitgate.curseofaros/com.bitgate.curseofaros.AndroidLauncher",
-      "requestCount": 29,
+      "requestCount": 30,
       "firstAppearance": 1766034980.0,
       "lastRequested": 1766045780.0,
       "installs": "1,000,000+"
@@ -237,10 +211,19 @@
       "drawable": "speedtop",
       "label": "SpeedTop",
       "componentName": "io.speedtop.app/io.speedtop.app.MainActivity",
-      "requestCount": 29,
+      "requestCount": 30,
       "firstAppearance": 1766034980.0,
       "lastRequested": 1766045780.0,
       "installs": "5,000,000+"
+    },
+    {
+      "drawable": "immortal",
+      "requestCount": 29,
+      "firstAppearance": 1718671759.0,
+      "lastRequested": 1771396942.0,
+      "label": "Immortal",
+      "componentName": "com.blizzard.diablo.immortal/com.netease.game.MessiahNativeActivity",
+      "installs": "10,000,000+"
     },
     {
       "drawable": "soundcorset_tuner__metronome",
@@ -312,15 +295,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "urbani",
-      "requestCount": 27,
-      "firstAppearance": 1719156354.0,
-      "lastRequested": 1766543553.0,
-      "label": "Urbani",
-      "componentName": "com.miruta.mty/com.miruta.mty.MainActivity",
-      "installs": "1,000,000+"
-    },
-    {
       "drawable": "chipotle",
       "requestCount": 27,
       "firstAppearance": 1718744412.0,
@@ -363,15 +337,6 @@
       "label": "Survivor.io",
       "componentName": "com.dxx.firenow/com.unity3d.player.UnityPlayerActivityOverride",
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "azahar_emulator",
-      "requestCount": 26,
-      "firstAppearance": 1714031674.0,
-      "lastRequested": 1743465600.0,
-      "label": "Azahar Emulator",
-      "componentName": "io.github.lime3ds.android/io.github.lime3ds.android.ui.main.MainActivity",
-      "installs": "500,000+"
     },
     {
       "drawable": "limbo_x86",
@@ -8476,22 +8441,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "thunderbird",
-      "label": "Thunderbird",
-      "componentName": "net.thunderbird.android/com.fsck.k9.activity.MainActivity",
-      "requestCount": 10,
-      "firstAppearance": 1771157987.0,
-      "lastRequested": 1771436499.0
-    },
-    {
-      "drawable": "kazumi",
-      "requestCount": 10,
-      "firstAppearance": 1721378507.0,
-      "lastRequested": 1771335943.0,
-      "label": "Kazumi",
-      "componentName": "com.predidit.kazumi/com.example.kazumi.MainActivity"
-    },
-    {
       "drawable": "camera_2",
       "requestCount": 9,
       "firstAppearance": 1745020800.0,
@@ -10148,15 +10097,6 @@
       "installs": "1,000,000+"
     },
     {
-      "drawable": "nora",
-      "requestCount": 9,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1771447609.0,
-      "label": "Nora",
-      "componentName": "jp.nonbili.nora/jp.nonbili.nora.MainActivity",
-      "installs": "1,000+"
-    },
-    {
       "drawable": "lifx",
       "requestCount": 9,
       "firstAppearance": 1720202302.0,
@@ -10182,14 +10122,6 @@
       "label": "DragonCity",
       "componentName": "es.socialpoint.DragonCity/es.socialpoint.hydra.permissions.PermissionsActivity",
       "installs": "100,000,000+"
-    },
-    {
-      "drawable": "piliplus",
-      "requestCount": 9,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1771269795.0,
-      "label": "PiliPlus",
-      "componentName": "com.example.piliplus/com.example.piliplus.MainActivity"
     },
     {
       "drawable": "adsilence",
@@ -10236,14 +10168,6 @@
       "installs": "5,000,000+"
     },
     {
-      "drawable": "sefirah",
-      "requestCount": 9,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1771313958.0,
-      "label": "Sefirah",
-      "componentName": "com.castle.sefirah/com.castle.sefirah.MainActivity"
-    },
-    {
       "drawable": "empower_ret",
       "requestCount": 9,
       "firstAppearance": 1718490491.0,
@@ -10260,14 +10184,6 @@
       "label": "Sanchar Saathi",
       "componentName": "com.dot.app.sancharsaathi/org.cdot.diu.main.SathiMainActivity",
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "global_icon_pack",
-      "requestCount": 9,
-      "firstAppearance": 1738613731.0,
-      "lastRequested": 1771180189.0,
-      "label": "Global Icon Pack",
-      "componentName": "com.richardluo.globalIconPack/com.richardluo.globalIconPack.ui.MainActivity"
     },
     {
       "drawable": "zotero",
@@ -13391,14 +13307,6 @@
       "installs": "5+"
     },
     {
-      "drawable": "venera",
-      "requestCount": 7,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1763597183.0,
-      "label": "venera",
-      "componentName": "com.github.wgh136.venera/com.github.wgh136.venera.MainActivity"
-    },
-    {
       "drawable": "lx_music",
       "requestCount": 7,
       "firstAppearance": 1722154244.0,
@@ -16012,14 +15920,6 @@
       "label": "3B Meteo - Weather Forecasts",
       "componentName": "com.Meteosolutions.Meteo3b/com.Meteosolutions.Meteo3b.activity.SplashActivity",
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "\u7f8e\u7684\u7f8e\u5c45",
-      "requestCount": 7,
-      "firstAppearance": 1716970307.0,
-      "lastRequested": 1771269795.0,
-      "label": "\u7f8e\u7684\u7f8e\u5c45",
-      "componentName": "com.midea.ai.appliances/com.midea.meiju.welcome.WelcomeActivityMeiJu"
     },
     {
       "drawable": "royal_kingdom",
@@ -20798,15 +20698,6 @@
       "label": "Pro Guitar Tuner",
       "componentName": "com.jrinnovation.proguitartuner/com.jrinnovation.proguitartuner.InitActivity",
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "openhiit",
-      "requestCount": 6,
-      "firstAppearance": 1718579503.0,
-      "lastRequested": 1771244575.0,
-      "label": "OpenHIIT",
-      "componentName": "com.codepup.workout_timer/com.codepup.workout_timer.MainActivity",
-      "installs": "500+"
     },
     {
       "drawable": "eshare",
@@ -29356,15 +29247,6 @@
       "lastRequested": 1771313958.0,
       "label": "Zapstore",
       "componentName": "dev.zapstore.app/dev.zapstore.app.MainActivity"
-    },
-    {
-      "drawable": "unnamed_icon_1_22",
-      "label": "\u4eac\u6771",
-      "componentName": "com.jingdong.app.mall/com.jingdong.app.mall.MainFrameActivity",
-      "requestCount": 5,
-      "firstAppearance": 1767159771.0,
-      "lastRequested": 1771335943.0,
-      "installs": "5,000,000+"
     },
     {
       "drawable": "panda",
@@ -103734,14 +103616,6 @@
       "installs": "500,000+"
     },
     {
-      "drawable": "ab_dm",
-      "label": "AB DM",
-      "componentName": "com.abdownloadmanager/com.abdownloadmanager.android.ui.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1767078306.0,
-      "lastRequested": 1771389265.0
-    },
-    {
       "drawable": "ps_family",
       "label": "PS Family",
       "componentName": "com.playstation.ohana.android/com.playstation.ohana.android.TopActivity",
@@ -107437,14 +107311,6 @@
       "componentName": "com.anafthdev.tictactoe/com.anafthdev.tictactoe.runtime.MainActivity"
     },
     {
-      "drawable": "lightnovelreader",
-      "requestCount": 1,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1760911725.0,
-      "label": "LightNovelReader",
-      "componentName": "indi.dmzz_yyhyy.lightnovelreader/indi.dmzz_yyhyy.lightnovelreader.MainActivity"
-    },
-    {
       "drawable": "anime_wallpapers",
       "requestCount": 1,
       "firstAppearance": 1745020800.0,
@@ -110146,14 +110012,6 @@
       "label": "MyCattolica",
       "componentName": "it.cattolicaassicurazioni.android.mycattolica/it.cattolicaassicurazioni.android.mycattolica.MainActivity",
       "installs": "100,000+"
-    },
-    {
-      "drawable": "neodb_you",
-      "requestCount": 1,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1761238423.0,
-      "label": "NeoDB You",
-      "componentName": "day.vitayuzu.neodb/day.vitayuzu.neodb.MainActivity"
     },
     {
       "drawable": "oh_my_waifu",
@@ -247313,14 +247171,6 @@
       "lastRequested": 1771180189.0
     },
     {
-      "drawable": "icsx",
-      "label": "ICSx\u2075",
-      "componentName": "at.bitfire.icsdroid/at.bitfire.icsdroid.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1771449570.0,
-      "lastRequested": 1771449570.0
-    },
-    {
       "drawable": "morphe_2",
       "label": "Morphe",
       "componentName": "app.morphe.manager/app.morphe.manager.MainActivity_Dark_2",
@@ -247332,14 +247182,6 @@
       "drawable": "quik",
       "label": "QUIK",
       "componentName": "dev.octoshrimpy.quik.fdroid/dev.octoshrimpy.quik.feature.main.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1771449570.0,
-      "lastRequested": 1771449570.0
-    },
-    {
-      "drawable": "thunderbird_beta",
-      "label": "Thunderbird Beta",
-      "componentName": "net.thunderbird.android.beta/net.thunderbird.app.common.MainActivity",
       "requestCount": 1,
       "firstAppearance": 1771449570.0,
       "lastRequested": 1771449570.0

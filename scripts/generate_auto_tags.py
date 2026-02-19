@@ -8,12 +8,12 @@ import xml.etree.ElementTree as ET
 # Metadata Definitions for the UI
 METADATA = {
     "conflict": {
-        "label": "Name in Use",
-        "desc": "App name matches an existing icon, but the package is different"
+        "label": "Name in use",
+        "desc": "App name matches an existing icon, but the package is different."
     },
     "link": {
-        "label": "Matches",
-        "desc": "Apps that share a package structure with an existing icon (e.g. regional variants)"
+        "label": "Matche",
+        "desc": "Apps that share a package structure with an existing icon (e.g. regional variants)."
     }
 }
 
