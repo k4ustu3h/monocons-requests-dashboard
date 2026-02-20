@@ -12,7 +12,7 @@ METADATA = {
         "desc": "App name matches an existing icon, but the package is different."
     },
     "link": {
-        "label": "Matche",
+        "label": "Match",
         "desc": "Apps that share a package structure with an existing icon (e.g. regional variants)."
     }
 }
