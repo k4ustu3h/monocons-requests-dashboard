@@ -898,8 +898,8 @@ const Data = {
         "install-asc": (a, b) => Utils.parseInstalls(a.installs) - Utils.parseInstalls(b.installs),
         "name-asc": (a, b) => a.label.localeCompare(b.label),
         "name-desc": (a, b) => b.label.localeCompare(a.label),
-        "time-desc": (a, b) => b.lastRequested - a.lastRequested,
-        "time-asc": (a, b) => a.lastRequested - b.lastRequested
+        "time-desc": (a, b) => b.firstAppearance - a.firstAppearance,
+        "time-asc": (a, b) => a.firstAppearance - b.firstAppearance
       };
       if (sorters[s.sort]) data.sort(sorters[s.sort]);
     }
