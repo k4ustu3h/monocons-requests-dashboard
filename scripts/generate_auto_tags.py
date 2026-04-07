@@ -13,7 +13,7 @@ METADATA = {
     },
     "link": {
         "label": "Match",
-        "desc": "Apps that share a package structure with an existing icon (e.g. regional variants)."
+        "desc": "Apps that share a package with an existing icon."
     }
 }
 
@@ -41,15 +41,15 @@ def load_appfilter_data(appfilter_path):
     """
     Parses appfilter.xml to build indices of existing icons.
     Returns:
-        existing_cores: Set of 'core' packages (e.g. 'google.maps')
+        existing_packages: Set of packages (e.g. 'google.maps')
         existing_names: Set of sanitized icon names (e.g. 'signal')
     """
-    existing_cores = set()
+    existing_packages = set()
     existing_names = set()
 
     if not os.path.exists(appfilter_path):
         print(f"Warning: {appfilter_path} not found. Auto-tags will be empty.")
-        return existing_cores, existing_names
+        return existing_packages, existing_names
 
     try:
         # Use iterparse for memory efficiency if file is huge, but parse is fine for ~2MB
@@ -64,7 +64,7 @@ def load_appfilter_data(appfilter_path):
                 match = re.search(r'ComponentInfo\{([^/]+)', comp)
                 if match:
                     pkg = match.group(1)
-                    existing_cores.add(get_core_package(pkg))
+                    existing_packages.add(pkg)
             
             # 2. Extract Name (Label)
             # We use the 'name' attribute to check for Label Conflicts
@@ -75,7 +75,7 @@ def load_appfilter_data(appfilter_path):
     except Exception as e:
         print(f"Error parsing appfilter: {e}")
 
-    return existing_cores, existing_names
+    return existing_packages, existing_names
 
 def write_json(output_dir, filename, key, data_list):
     path = os.path.join(output_dir, filename)
@@ -100,12 +100,12 @@ def main(input_file, output_dir, appfilter_path):
         return
 
     # 2. Load Appfilter (Source of Truth)
-    existing_cores, existing_names = load_appfilter_data(appfilter_path)
+    existing_packages, existing_names = load_appfilter_data(appfilter_path)
     
     conflict_ids = []
     link_ids = []
 
-    print(f"Scanning {len(apps)} requests against {len(existing_cores)} existing packages...")
+    print(f"Scanning {len(apps)} requests against {len(existing_packages)} existing packages...")
 
     for app in apps:
         app_id = app.get('componentName')
@@ -114,15 +114,15 @@ def main(input_file, output_dir, appfilter_path):
         pkg = app_id.split('/')[0]
         label = app.get('label', '')
         
-        req_core = get_core_package(pkg)
+        req_pkg = pkg
         req_name = sanitize_drawable_name(label)
         
         is_linked = False
 
         # --- Rule A: Matches (Link) ---
-        # Check if core package exists in appfilter
-        # e.g. Request 'uk.foo' matches Existing 'com.foo' (core: 'foo')
-        if req_core in existing_cores:
+        # Check if exact package name exists in appfilter
+        # e.g. Request 'uk.co.example.app' matches only if 'uk.co.example.app' exists
+        if req_pkg in existing_packages:
             is_linked = True
             link_ids.append(app_id)
         
