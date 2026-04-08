@@ -1,4 +1,4 @@
-name: Remove Fulfilled Requests
+name: Prune Requests
 
 on:
   schedule:
@@ -15,24 +15,24 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
-      
+
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: '3.13'
-      
-      - name: Remove added requests
-        id: remove_requests
-        run: python scripts/remove_added_requests.py
-      
+
+      - name: Prune requests
+        id: prune_requests
+        run: python scripts/prune_requests.py
+
       - name: Auto generate tags
-        if: steps.remove_requests.outputs.appfilter_changed == 'true'
+        if: steps.prune_requests.outputs.appfilter_changed == 'true'
         run: python scripts/generate_auto_tags.py src/assets/requests.json src/assets/filters src/assets/appfilter.xml
 
       - name: Commit and push changes
-        if: steps.remove_requests.outputs.appfilter_changed == 'true'
+        if: steps.prune_requests.outputs.requests_changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add .
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Remove fulfilled requests" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Prune fulfilled and outdated requests" && git push)
