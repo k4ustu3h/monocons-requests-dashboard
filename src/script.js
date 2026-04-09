@@ -627,11 +627,14 @@ const Actions = {
       const mode = App.state.actionMode; // "new" | "link"
       const path = App.state.icontoolPath.trim().replace(/\/+$/, "") + "/";
 
-      // fflate uses a simple object mapping paths to Uint8Arrays/Strings
-      /** @type {Object.<string, Uint8Array | string | Object>} */
-      const zipData = {
-        "icons": {} // This will be a nested folder object
-      };
+       // fflate uses a simple object mapping paths to Uint8Arrays/Strings
+       /** @type {Object.<string, Uint8Array | string | Object>} */
+       const zipData = {};
+
+       // Only include icons folder in "new" mode
+       if (mode === "new") {
+         zipData["icons"] = {};
+       }
 
       let xmlAppFilter = "<resources>\n";
       let txtCommands = "";
@@ -697,17 +700,17 @@ const Actions = {
           prLines.add(`${app.label} (\`${pkg}\` → \`${drawable}.svg\`)`);
         }
 
-        // Queue Icon Fetch
-        if (!zipData.icons[`${drawable}.png`]) {
-          const url = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
-          const p = fetch(url)
-              .then(r => r.ok ? r.arrayBuffer() : null)
-              .then(buf => {
-                if (buf) zipData.icons[`${drawable}.png`] = new Uint8Array(buf);
-              })
-              .catch(() => {});
-          fetchPromises.push(p);
-        }
+       // Queue Icon Fetch (only in "new" mode)
+         if (mode === "new" && !zipData.icons[`${drawable}.png`]) {
+           const url = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
+           const p = fetch(url)
+               .then(r => r.ok ? r.arrayBuffer() : null)
+               .then(buf => {
+                 if (buf) zipData.icons[`${drawable}.png`] = new Uint8Array(buf);
+               })
+               .catch(() => {});
+           fetchPromises.push(p);
+         }
       });
 
       // --- FINALIZE OUTPUTS ---
