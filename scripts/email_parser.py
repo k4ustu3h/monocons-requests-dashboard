@@ -63,8 +63,9 @@ def extract_xml(zip_file: zipfile.ZipFile) -> ET.Element:
     xml_string = zip_file.read('!appfilter.xml')
     return ET.fromstring(xml_string)
 
-def extract_png(zip_file: zipfile.ZipFile, drawable_name: str, out_dir: Path) -> str:
-    base_name = drawable_name
+def extract_png(zip_file: zipfile.ZipFile, drawable_name: str, out_dir: Path,
+                target_name: str | None = None, overwrite: bool = False) -> str:
+    base_name = target_name or drawable_name
     candidate_name = base_name
     try:
         for file_info in zip_file.infolist():
@@ -72,14 +73,15 @@ def extract_png(zip_file: zipfile.ZipFile, drawable_name: str, out_dir: Path) ->
                 with zip_file.open(file_info.filename) as png_file:
                     png_content = png_file.read()
                 
-                # Deduplicate filename
                 png_path = out_dir / f"{candidate_name}.png"
-                count = 1
-                while png_path.exists():
-                    candidate_name = f"{base_name}_{count}"
-                    png_path = out_dir / f"{candidate_name}.png"
-                    count += 1
-                
+                if not overwrite:
+                    # Deduplicate filename only for newly created entries.
+                    count = 1
+                    while png_path.exists():
+                        candidate_name = f"{base_name}_{count}"
+                        png_path = out_dir / f"{candidate_name}.png"
+                        count += 1
+
                 out_dir.mkdir(parents=True, exist_ok=True)
                 with open(png_path, 'wb') as f:
                     f.write(png_content)
@@ -167,7 +169,17 @@ def parse_item_tag(item: ET.Element, msg: Message, zip_file: zipfile.ZipFile,
         entry = apps[component_info]
         entry["requestCount"] += 1
         entry["lastRequested"] = max(entry.get("lastRequested", 0), req_time)
-        
+
+        # Refresh PNG for existing requests while keeping their drawable key stable.
+        existing_drawable = entry.get("drawable") or drawable
+        entry["drawable"] = extract_png(
+            zip_file,
+            drawable,
+            png_out_dir,
+            target_name=existing_drawable,
+            overwrite=True,
+        )
+
         # Ensure firstAppearance exists (legacy migration safety)
         if "firstAppearance" not in entry:
             entry["firstAppearance"] = entry["lastRequested"]
