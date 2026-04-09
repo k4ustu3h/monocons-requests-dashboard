@@ -13,6 +13,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 LOCAL_APPFILTER = REPO_ROOT / "src/assets/appfilter.xml"
 REQUESTS_JSON = REPO_ROOT / "src/assets/requests.json"
 EXTRACTED_PNG_DIR = REPO_ROOT / "src/extracted_png"
+FILTERS_DIR = REPO_ROOT / "src/assets/filters"
 
 UPSTREAM_APPFILTER = "https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/app/assets/appfilter.xml"
 
@@ -76,7 +77,61 @@ def delete_drawable_png(drawable_name: str) -> bool:
     return True
 
 
-def prune_requests(components_to_remove: set[str]) -> tuple[int, int]:
+def prune_filter_files() -> int:
+    """Remove stale componentName entries from every filter JSON in FILTERS_DIR.
+
+    An entry is stale if it no longer exists in the current requests.json.
+    This catches entries left over from previous pruning runs, not just the
+    current one.
+
+    Returns the total number of entries removed across all filter files.
+    """
+    if not FILTERS_DIR.exists():
+        return 0
+
+    # Build the authoritative set of valid componentNames from the current requests.json
+    try:
+        with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
+            requests_data = json.load(f)
+        valid_components = {
+            app.get("componentName", "")
+            for app in requests_data.get("apps", [])
+        }
+        valid_components.discard("")
+    except Exception as e:
+        print(f"  Warning: could not load requests.json for filter cleanup: {e}")
+        return 0
+
+    total_removed = 0
+
+    for filter_path in FILTERS_DIR.glob("*.json"):
+        try:
+            with open(filter_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except Exception as e:
+            print(f"  Warning: could not read {filter_path.name}: {e}")
+            continue
+
+        # The list key matches the file stem (e.g. "link.json" -> "link")
+        key = filter_path.stem
+        if key not in data or not isinstance(data[key], list):
+            continue
+
+        original = data[key]
+        cleaned = [entry for entry in original if entry in valid_components]
+        pruned = len(original) - len(cleaned)
+
+        if pruned:
+            data[key] = cleaned
+            with open(filter_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=2)
+            print(f"  Pruned {pruned} stale entries from {filter_path.name}")
+            total_removed += pruned
+
+    return total_removed
+
+
+def prune_requests(components_to_remove: set[str]) -> tuple[int, int, set[str]]:
     with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
         requests_data = json.load(f)
 
@@ -107,7 +162,9 @@ def prune_requests(components_to_remove: set[str]) -> tuple[int, int]:
         if delete_drawable_png(drawable):
             deleted_png_count += 1
 
-    return len(removed_apps), deleted_png_count
+    removed_components = {app.get("componentName", "") for app in removed_apps}
+    removed_components.discard("")
+    return len(removed_apps), deleted_png_count, removed_components
 
 
 def is_outdated(app: dict, now: float) -> bool:
@@ -197,7 +254,7 @@ def main() -> int:
         print(f"Updated local appfilter at: {LOCAL_APPFILTER}")
 
         components = load_upstream_components(upstream_xml)
-        fulfilled_removed, fulfilled_deleted = prune_requests(components)
+        fulfilled_removed, fulfilled_deleted, _ = prune_requests(components)
 
         print(f"Components in upstream appfilter: {len(components)}")
         print(f"Removed fulfilled requests: {fulfilled_removed}")
@@ -209,6 +266,11 @@ def main() -> int:
     outdated_removed, outdated_deleted = prune_outdated_requests()
     print(f"Removed outdated requests: {outdated_removed}")
     print(f"Deleted extracted PNGs (outdated): {outdated_deleted}")
+
+    # --- Filter file cleanup (always runs; catches stale entries from any past run) ---
+    filter_entries_removed = prune_filter_files()
+    if filter_entries_removed:
+        print(f"Removed stale filter entries: {filter_entries_removed}")
 
     # --- Workflow outputs ---
     has_changes = appfilter_changed or outdated_removed > 0
