@@ -703,7 +703,7 @@ const Actions = {
           const p = fetch(url)
               .then(r => r.ok ? r.arrayBuffer() : null)
               .then(buf => {
-                if (buf) zipData.icons[`icons/${drawable}.png`] = new Uint8Array(buf);
+                if (buf) zipData.icons[`${drawable}.png`] = new Uint8Array(buf);
               })
               .catch(() => {});
           fetchPromises.push(p);
