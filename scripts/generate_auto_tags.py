@@ -17,6 +17,8 @@ METADATA = {
     }
 }
 
+PWA_PACKAGE_PREFIXES = ("org.chromium.webapk", "com.sec.android.app.sbrowser.webapk")
+
 def sanitize_drawable_name(label):
     if not label: return "unknown"
     name = unicodedata.normalize('NFD', label).encode('ascii', 'ignore').decode("utf-8")
@@ -125,12 +127,16 @@ def main(input_file, output_dir, appfilter_path):
         if req_pkg in existing_packages:
             is_linked = True
             link_ids.append(app_id)
-        
+
         # --- Rule B: Name in Use (Conflict) ---
         # Check if name exists, BUT package does not match
         # e.g. Request 'Signal' (tooth.brush) matches Existing 'Signal' (org.thoughtcrime)
         # But Request 'Signal' (org.thoughtcrime.beta) is LINKED, so not a conflict.
-        if req_name in existing_names and not is_linked:
+
+        # Ignore PWA wrappers
+        is_pwa = req_pkg.startswith(PWA_PACKAGE_PREFIXES)
+
+        if req_name in existing_names and not is_linked and not is_pwa:
             conflict_ids.append(app_id)
 
     # 3. Output
