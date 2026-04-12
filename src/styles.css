@@ -146,7 +146,7 @@ body:has(.context-menu:popover-open) {
    ========================================= */
 .header {
   display: grid;
-  grid-template-columns: auto 1fr auto; /* Left | Center (Search) | Right */
+  grid-template-columns: 200px 1fr auto; /* Left | Center (Search) | Right */
   gap: 24px;
   align-items: center;
   padding: 24px 0;
@@ -184,6 +184,7 @@ body:has(.context-menu:popover-open) {
 .header-sub {
   color: var(--on-surface-variant);
   font-size: 14px;
+  width: 200px;
 }
 
 .header-links {
