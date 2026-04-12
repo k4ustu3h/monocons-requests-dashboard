@@ -1027,6 +1027,11 @@ input[type="checkbox"]:indeterminate::after {
     max-width: none;
   }
 
+  /* Reset fixed width on mobile to prevent overflow */
+  .header-sub {
+    width: auto;
+  }
+
   .sb-input-wrapper {
     display: none;
   }
