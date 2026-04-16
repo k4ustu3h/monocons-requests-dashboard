@@ -67,6 +67,10 @@
   --teal-container: #004f55;
   --on-teal-container: #9df0f9;
 
+  /* Source: #F9E59D */
+  --flax-container: #544600;
+  --on-flax-container: #fae287;
+
   /** Shape tokens **/
   --shape-xsmall: 4px;
   --shape-small: 8px;
@@ -510,10 +514,7 @@ select:hover {
   background: var(--tertiary-container);
   color: var(--on-tertiary-container);
 }
-.status-missing {
-  background: var(--error-container);
-  color: var(--on-error-container);
-}
+
 .status-conflict {
   background: var(--orange-container);
   color: var(--on-orange-container);
@@ -522,6 +523,12 @@ select:hover {
   background: var(--teal-container);
   color: var(--on-teal-container);
 }
+
+.status-stale {
+  background: var(--flax-container);
+  color: var(--on-flax-container);
+}
+
 .status-unlabeled {
   display: none;
 }
