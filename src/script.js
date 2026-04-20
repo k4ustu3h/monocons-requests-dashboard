@@ -695,14 +695,13 @@ const Actions = {
         }
 
         // PR Description
-        const pkgOnly = cmp.split('/')[0];
-        if (!processedPackages.has(pkgOnly)) {
-          processedPackages.add(pkgOnly);
+        if (!processedPackages.has(pkg)) {
+          processedPackages.add(pkg);
           
           if (mode === "new") {
-            prLines.add(`${app.label} (\`${pkgOnly}\`)`);
+            prLines.add(`${app.label} (\`${pkg}\`)`);
           } else {
-            prLines.add(`${app.label} (\`${pkgOnly}\` → \`${drawable}.svg\`)`);
+            prLines.add(`${app.label} (\`${pkg}\` → \`${drawable}.svg\`)`);
           }
         }
 
