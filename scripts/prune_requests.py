@@ -230,11 +230,8 @@ def prune_outdated_requests() -> tuple[int, int]:
     return len(removed_apps), deleted_png_count
 
 def generate_stale_list() -> int:
-    """Generate stale.json containing requests that are within the 30-day window
-    before deletion.
-
-    A stale request is one whose lastRequested date falls between the oldest
-    lastRequested date in the queue and 30 days after that date.
+    """Generate stale.json containing requests that will become outdated within
+    30 days starting from the oldest lastRequested date.
     """
     try:
         with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
@@ -248,6 +245,10 @@ def generate_stale_list() -> int:
         print("No apps in requests.json, skipping stale list generation")
         return 0
 
+    now = time.time()
+    seconds_per_year = 365.25 * 86400
+    THIRTY_DAYS_IN_SECONDS = 30 * 24 * 60 * 60
+
     # --- Find the oldest lastRequested date among all apps ---
     valid_last_requested = [
         app.get("lastRequested", 0)
@@ -260,23 +261,41 @@ def generate_stale_list() -> int:
         return 0
 
     oldest_timestamp = min(valid_last_requested)
-
-    # --- Define the 30-day window ---
-    THIRTY_DAYS_IN_SECONDS = 30 * 24 * 60 * 60
     window_end_ts = oldest_timestamp + THIRTY_DAYS_IN_SECONDS
 
     start_date = time.strftime("%Y-%m-%d", time.localtime(oldest_timestamp))
     end_date = time.strftime("%Y-%m-%d", time.localtime(window_end_ts))
     print(f"Stale window: {start_date} to {end_date}")
 
-    # --- Collect componentName for apps whose lastRequested falls within the window ---
     stale_components = []
+
+    # --- Check each request to see if it will become outdated within the window ---
     for app in apps:
         last_requested = app.get("lastRequested", 0)
-        if last_requested and oldest_timestamp <= last_requested <= window_end_ts:
-            comp_name = app.get("componentName", "")
-            if comp_name:
-                stale_components.append(comp_name)
+        request_count = app.get("requestCount", 0)
+        comp_name = app.get("componentName", "")
+
+        if not last_requested or not comp_name:
+            continue
+
+        # Find when this request will become outdated
+        # It becomes outdated when age reaches N years where 2^N >= request_count
+        # And N must be >= 1
+        
+        # Find minimum N such that 2^N >= request_count and N >= 1
+        n = 1
+        while 2 ** n < request_count:
+            n += 1
+        
+        becomes_outdated_at = last_requested + (n * seconds_per_year)
+
+        # Check if it's not already outdated (shouldn't happen after pruning, but safe)
+        if becomes_outdated_at <= now:
+            continue
+
+        # Check if it becomes outdated within the window
+        if oldest_timestamp <= becomes_outdated_at <= window_end_ts:
+            stale_components.append(comp_name)
 
     # --- Sort for consistency ---
     stale_components.sort()
@@ -342,7 +361,7 @@ def main() -> int:
     print(f"Stale requests identified: {stale_count}")
 
     # --- Workflow outputs ---
-    has_changes = appfilter_changed or outdated_removed > 0 or stale_count > 0
+    has_changes = appfilter_changed or outdated_removed > 0
     set_workflow_output("appfilter_changed", str(appfilter_changed).lower())
     set_workflow_output("requests_changed", str(has_changes).lower())
     set_workflow_output("fulfilled_removed", str(fulfilled_removed))
