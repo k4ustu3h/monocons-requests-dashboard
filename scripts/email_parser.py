@@ -204,13 +204,14 @@ def parse_item_tag(item: ET.Element, msg: Message, zip_file: zipfile.ZipFile,
     return apps
 
 def parse_emails(email_files: list[Path], apps: dict, sender_counter: Counter, png_out_dir: Path) -> dict:
+    failed_count = 0
+    
     for email_file in email_files:
         msg = read_email(email_file)
         zip_file = extract_zip_from_email(msg)
 
         if not zip_file:
-            sender = parseaddr(msg['From'])[1].lower()
-            handle_invalid_email(sender, email_file)
+            failed_count += 1
             continue
 
         try:
@@ -219,6 +220,10 @@ def parse_emails(email_files: list[Path], apps: dict, sender_counter: Counter, p
                 apps = parse_item_tag(item, msg, zip_file, apps, sender_counter, png_out_dir)
         except Exception as e:
             print(f"Error processing {email_file.name}: {e}")
+    
+    if failed_count > 0:
+        word = "email" if failed_count == 1 else "emails"
+        print(f"Skipped {failed_count} {word} without valid ZIP attachment")
 
     return apps
 
@@ -230,14 +235,6 @@ def is_greedy(message, sender_counter):
     sender = parseaddr(message['From'])[1].lower()
     sender_counter[sender] += 1
     return sender_counter[sender] > CONFIG["request_limit"]
-
-def handle_invalid_email(sender: str, email_path: Path):
-    failed_dir = Path("failedmail")
-    failed_dir.mkdir(parents=True, exist_ok=True)
-    try:
-        email_path.rename(failed_dir / email_path.name)
-        print(f"Moved invalid email from {sender}")
-    except OSError: pass
 
 def load_existing_components(appfilter_path: Path) -> set[str]:
     root = ET.parse(appfilter_path).getroot()
