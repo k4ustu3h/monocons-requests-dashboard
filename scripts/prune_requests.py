@@ -229,6 +229,71 @@ def prune_outdated_requests() -> tuple[int, int]:
 
     return len(removed_apps), deleted_png_count
 
+def generate_stale_list() -> int:
+    """Generate stale.json containing requests that are within the 30-day window
+    before deletion.
+
+    A stale request is one whose lastRequested date falls between the oldest
+    lastRequested date in the queue and 30 days after that date.
+    """
+    try:
+        with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
+            requests_data = json.load(f)
+    except Exception as e:
+        print(f"Error loading requests.json for stale list generation: {e}")
+        return 0
+
+    apps = requests_data.get("apps", [])
+    if not apps:
+        print("No apps in requests.json, skipping stale list generation")
+        return 0
+
+    # --- Find the oldest lastRequested date among all apps ---
+    valid_last_requested = [
+        app.get("lastRequested", 0)
+        for app in apps
+        if app.get("lastRequested", 0) > 0
+    ]
+
+    if not valid_last_requested:
+        print("No valid lastRequested timestamps found")
+        return 0
+
+    oldest_timestamp = min(valid_last_requested)
+
+    # --- Define the 30-day window ---
+    THIRTY_DAYS_IN_SECONDS = 30 * 24 * 60 * 60
+    window_end_ts = oldest_timestamp + THIRTY_DAYS_IN_SECONDS
+
+    start_date = time.strftime("%Y-%m-%d", time.localtime(oldest_timestamp))
+    end_date = time.strftime("%Y-%m-%d", time.localtime(window_end_ts))
+    print(f"Stale window: {start_date} to {end_date}")
+
+    # --- Collect componentName for apps whose lastRequested falls within the window ---
+    stale_components = []
+    for app in apps:
+        last_requested = app.get("lastRequested", 0)
+        if last_requested and oldest_timestamp <= last_requested <= window_end_ts:
+            comp_name = app.get("componentName", "")
+            if comp_name:
+                stale_components.append(comp_name)
+
+    # --- Sort for consistency ---
+    stale_components.sort()
+
+    # --- Write to stale.json ---
+    stale_file_path = FILTERS_DIR / "stale.json"
+    output_data = {
+        "label": "Stale",
+        "description": "Requests scheduled for deletion.",
+        "stale": stale_components
+    }
+
+    with open(stale_file_path, "w", encoding="utf-8") as f:
+        json.dump(output_data, f, indent=2)
+
+    print(f"Generated {stale_file_path} with {len(stale_components)} entries")
+    return len(stale_components)
 
 def main() -> int:
     # --- Fulfilled request pruning (depends on upstream appfilter changes) ---
@@ -272,8 +337,12 @@ def main() -> int:
     if filter_entries_removed:
         print(f"Removed stale filter entries: {filter_entries_removed}")
 
+    # --- Generate stale.json (runs unconditionally after all pruning) ---
+    stale_count = generate_stale_list()
+    print(f"Stale requests identified: {stale_count}")
+
     # --- Workflow outputs ---
-    has_changes = appfilter_changed or outdated_removed > 0
+    has_changes = appfilter_changed or outdated_removed > 0 or stale_count > 0
     set_workflow_output("appfilter_changed", str(appfilter_changed).lower())
     set_workflow_output("requests_changed", str(has_changes).lower())
     set_workflow_output("fulfilled_removed", str(fulfilled_removed))
