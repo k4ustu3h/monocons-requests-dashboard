@@ -20,13 +20,9 @@ METADATA = {
 PWA_PACKAGE_PREFIXES = ("org.chromium.webapk", "com.sec.android.app.sbrowser.webapk")
 
 def sanitize_drawable_name(label):
-    if not label: return "unknown"
-    name = unicodedata.normalize('NFD', label).encode('ascii', 'ignore').decode("utf-8")
-    name = re.sub(r'[^a-z0-9]+', '_', name.lower())
-    name = name.strip('_')
-    if name and name[0].isdigit():
-        name = "_" + name
-    return name or "icon"
+    if not label:
+        return ""
+    return label.strip().lower()
 
 def get_core_package(pkg):
     """
