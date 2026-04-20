@@ -640,6 +640,7 @@ const Actions = {
       let txtCommands = "";
 
       const prLines = new Set();
+      const processedPackages = new Set();
 
       /**
        * Tracks drawable names globally to prevent file overwrites (e.g. app.svg, app_2.svg)
@@ -694,10 +695,15 @@ const Actions = {
         }
 
         // PR Description
-        if (mode === "new") {
-          prLines.add(`${app.label} (\`${pkg}\`)`);
-        } else {
-          prLines.add(`${app.label} (\`${pkg}\` → \`${drawable}.svg\`)`);
+        const pkgOnly = cmp.split('/')[0];
+        if (!processedPackages.has(pkgOnly)) {
+          processedPackages.add(pkgOnly);
+          
+          if (mode === "new") {
+            prLines.add(`${app.label} (\`${pkgOnly}\`)`);
+          } else {
+            prLines.add(`${app.label} (\`${pkgOnly}\` → \`${drawable}.svg\`)`);
+          }
         }
 
        // Queue Icon Fetch (only in "new" mode)
