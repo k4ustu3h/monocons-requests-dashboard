@@ -230,8 +230,11 @@ def prune_outdated_requests() -> tuple[int, int]:
     return len(removed_apps), deleted_png_count
 
 def generate_stale_list() -> int:
-    """Generate stale.json containing requests that will become outdated within
-    30 days starting from the oldest lastRequested date.
+    """Generate stale.json containing requests that are at the front of the
+    deletion queue.
+
+    A stale request is one whose calculated outdated date falls within a 30-day
+    window starting from the earliest outdated date among all requests.
     """
     try:
         with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
@@ -249,27 +252,9 @@ def generate_stale_list() -> int:
     seconds_per_year = 365.25 * 86400
     THIRTY_DAYS_IN_SECONDS = 30 * 24 * 60 * 60
 
-    # --- Find the oldest lastRequested date among all apps ---
-    valid_last_requested = [
-        app.get("lastRequested", 0)
-        for app in apps
-        if app.get("lastRequested", 0) > 0
-    ]
-
-    if not valid_last_requested:
-        print("No valid lastRequested timestamps found")
-        return 0
-
-    oldest_timestamp = min(valid_last_requested)
-    window_end_ts = oldest_timestamp + THIRTY_DAYS_IN_SECONDS
-
-    start_date = time.strftime("%Y-%m-%d", time.localtime(oldest_timestamp))
-    end_date = time.strftime("%Y-%m-%d", time.localtime(window_end_ts))
-    print(f"Stale window: {start_date} to {end_date}")
-
-    stale_components = []
-
-    # --- Check each request to see if it will become outdated within the window ---
+    # --- Calculate outdated date for each request ---
+    request_outdated_dates = []
+    
     for app in apps:
         last_requested = app.get("lastRequested", 0)
         request_count = app.get("requestCount", 0)
@@ -279,23 +264,31 @@ def generate_stale_list() -> int:
             continue
 
         # Find when this request will become outdated
-        # It becomes outdated when age reaches N years where 2^N >= request_count
-        # And N must be >= 1
-        
-        # Find minimum N such that 2^N >= request_count and N >= 1
         n = 1
         while 2 ** n < request_count:
             n += 1
         
-        becomes_outdated_at = last_requested + (n * seconds_per_year)
+        outdated_at = last_requested + (n * seconds_per_year)
+        request_outdated_dates.append((comp_name, outdated_at))
 
-        # Check if it's not already outdated (shouldn't happen after pruning, but safe)
-        if becomes_outdated_at <= now:
-            continue
+    if not request_outdated_dates:
+        print("No requests with valid outdated dates found")
+        return 0
 
-        # Check if it becomes outdated within the window
-        if oldest_timestamp <= becomes_outdated_at <= window_end_ts:
-            stale_components.append(comp_name)
+    # --- Find the earliest outdated date ---
+    earliest_outdated = min(date for _, date in request_outdated_dates)
+    window_end = earliest_outdated + THIRTY_DAYS_IN_SECONDS
+
+    start_date = time.strftime("%Y-%m-%d", time.localtime(earliest_outdated))
+    end_date = time.strftime("%Y-%m-%d", time.localtime(window_end))
+    print(f"Stale window: {start_date} to {end_date}")
+
+    # --- Collect requests whose outdated date falls within the window ---
+    stale_components = [
+        comp_name 
+        for comp_name, outdated_at in request_outdated_dates
+        if earliest_outdated <= outdated_at <= window_end
+    ]
 
     # --- Sort for consistency ---
     stale_components.sort()
