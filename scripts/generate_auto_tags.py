@@ -9,11 +9,11 @@ import xml.etree.ElementTree as ET
 METADATA = {
     "conflict": {
         "label": "Name in use",
-        "desc": "App name matches an existing icon, but the package is different."
+        "desc": "Requests with an existing app name and unknown package."
     },
     "link": {
         "label": "Match",
-        "desc": "Apps that share a package with an existing icon."
+        "desc": "Requests with an existing package."
     }
 }
 

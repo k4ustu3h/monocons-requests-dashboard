@@ -1,6 +1,6 @@
 {
   "label": "Name in use",
-  "description": "App name matches an existing icon, but the package is different.",
+  "description": "Requests with an existing app name and unknown package.",
   "conflict": [
     "com.lknninex.epik/com.lknninex.epik.MainActivity",
     "com.tomatos.clientapp/com.tomatos.clientapp.SplashActivity",
