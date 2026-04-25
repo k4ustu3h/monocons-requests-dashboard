@@ -820,7 +820,7 @@ const Data = {
     if (id === "unlabeled") {
       return {
         label: "Unlabeled",
-        description: "Apps with no other labels.",
+        description: "Requests with medium to high complexity and the lowest completion odds.",
         unlabeled: []
       };
     }
