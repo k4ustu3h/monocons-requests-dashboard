@@ -1,6 +1,6 @@
 {
   "count": 20143,
-  "lastUpdate": "2026-04-25",
+  "lastUpdate": "2026-04-28",
   "apps": [
     {
       "drawable": "mini_militia",
@@ -2683,6 +2683,15 @@
       "installs": "100,000,000+"
     },
     {
+      "drawable": "tor_vpn",
+      "requestCount": 16,
+      "firstAppearance": 1745020800.0,
+      "lastRequested": 1777370113.0,
+      "label": "Tor VPN",
+      "componentName": "org.torproject.vpn/org.torproject.vpn.ui.iconsetting.model.LauncherDefault",
+      "installs": "50,000+"
+    },
+    {
       "drawable": "cabify",
       "requestCount": 15,
       "firstAppearance": 1718582704.0,
@@ -3205,15 +3214,6 @@
       "label": "MadOut2",
       "componentName": "com.MadOut.BIG/com.unity3d.player.UnityPlayerActivity",
       "installs": "100,000,000+"
-    },
-    {
-      "drawable": "tor_vpn",
-      "requestCount": 15,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1776450150.0,
-      "label": "Tor VPN",
-      "componentName": "org.torproject.vpn/org.torproject.vpn.ui.iconsetting.model.LauncherDefault",
-      "installs": "50,000+"
     },
     {
       "drawable": "tiketcom",
