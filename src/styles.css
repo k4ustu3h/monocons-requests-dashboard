@@ -71,6 +71,10 @@
   --flax-container: #544600;
   --on-flax-container: #fae287;
 
+  /* Source: #F9E59D */
+  --pine-container: #2e4f1c;
+  --on-pine-container: #c6efaa;
+
   /** Shape tokens **/
   --shape-xsmall: 4px;
   --shape-small: 8px;
@@ -506,10 +510,17 @@ select:hover {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
+
 .status-wip {
   background: var(--primary-container);
   color: var(--on-primary-container);
 }
+
+.status-pick {
+  background: var(--teal-container);
+  color: var(--on-teal-container);
+}
+
 .status-easy {
   background: var(--tertiary-container);
   color: var(--on-tertiary-container);
@@ -520,8 +531,8 @@ select:hover {
   color: var(--on-orange-container);
 }
 .status-link {
-  background: var(--teal-container);
-  color: var(--on-teal-container);
+  background: var(--pine-container);
+  color: var(--on-pine-container);
 }
 
 .status-stale {

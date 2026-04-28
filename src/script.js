@@ -55,7 +55,7 @@ const CONFIG = {
     iconExtension: ".png",
     filterPath: "assets/filters/",
     // Order matters for UI
-    filters: ["wip", "easy", "conflict", "link", "stale", "unlabeled"]
+    filters: ["wip", "pick", "easy", "conflict", "link", "stale", "unlabeled"]
   },
   urls: {
     playStore: "https://play.google.com/store/apps/details?id=",
