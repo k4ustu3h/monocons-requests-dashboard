@@ -308,7 +308,8 @@ def generate_stale_list() -> int:
     return len(stale_components)
 
 def update_sets_stats() -> int:
-    """Generate sets_stats.json with summed request counts per package."""
+    """Generate sets_stats.json with summed request counts per package.
+    Only includes packages that appear 2+ times in requests.json."""
     sets_path = REPO_ROOT / "src/assets/sets_stats.json"
     
     try:
@@ -328,12 +329,25 @@ def update_sets_stats() -> int:
         package = component.split("/")[0]
         sets[package] = sets.get(package, 0) + app.get("requestCount", 0)
 
+    # Keep only packages with 2+ components
+    sets = {pkg: count for pkg, count in sets.items() if count > 1 and any(
+        a.get("componentName", "").startswith(pkg + "/") for a in apps if a.get("componentName", "").split("/")[0] == pkg
+    )}
+    
+    package_counts = {}
+    for app in apps:
+        pkg = app.get("componentName", "").split("/")[0]
+        if pkg:
+            package_counts[pkg] = package_counts.get(pkg, 0) + 1
+    
+    sets = {pkg: count for pkg, count in sets.items() if package_counts.get(pkg, 0) >= 2}
+
     sets = dict(sorted(sets.items(), key=lambda x: x[1], reverse=True))
     
     with open(sets_path, "w", encoding="utf-8") as f:
         json.dump(sets, f, indent=2)
     
-    print(f"Updated sets_stats.json with {len(sets)} packages")
+    print(f"Updated sets_stats.json with {len(sets)} packages (2+ occurrences)")
     return len(sets)
 
 def main() -> int:
