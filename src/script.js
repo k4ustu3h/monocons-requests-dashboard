@@ -907,12 +907,16 @@ const Data = {
         "req-desc": (a, b) => {
             const pkgA = a.componentName.split('/')[0];
             const pkgB = b.componentName.split('/')[0];
-            return (App.state.setsStats[pkgB] || 0) - (App.state.setsStats[pkgA] || 0);
+            const valA = App.state.setsStats[pkgA] || a.requestCount;
+            const valB = App.state.setsStats[pkgB] || b.requestCount;
+            return valB - valA;
         },
         "req-asc": (a, b) => {
             const pkgA = a.componentName.split('/')[0];
             const pkgB = b.componentName.split('/')[0];
-            return (App.state.setsStats[pkgA] || 0) - (App.state.setsStats[pkgB] || 0);
+            const valA = App.state.setsStats[pkgA] || a.requestCount;
+            const valB = App.state.setsStats[pkgB] || b.requestCount;
+            return valA - valB;
         },
         "install-desc": (a, b) => Utils.parseInstalls(b.installs) - Utils.parseInstalls(a.installs),
         "install-asc": (a, b) => Utils.parseInstalls(a.installs) - Utils.parseInstalls(b.installs),
