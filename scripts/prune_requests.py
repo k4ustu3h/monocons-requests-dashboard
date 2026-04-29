@@ -307,6 +307,35 @@ def generate_stale_list() -> int:
     print(f"Generated {stale_file_path} with {len(stale_components)} entries")
     return len(stale_components)
 
+def update_sets_stats() -> int:
+    """Generate sets_stats.json with summed request counts per package."""
+    sets_path = REPO_ROOT / "src/assets/sets_stats.json"
+    
+    try:
+        with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
+            requests_data = json.load(f)
+    except Exception as e:
+        print(f"Error loading requests.json for sets stats: {e}")
+        return 0
+
+    apps = requests_data.get("apps", [])
+    sets = {}
+    
+    for app in apps:
+        component = app.get("componentName", "")
+        if not component:
+            continue
+        package = component.split("/")[0]
+        sets[package] = sets.get(package, 0) + app.get("requestCount", 0)
+
+    sets = dict(sorted(sets.items(), key=lambda x: x[1], reverse=True))
+    
+    with open(sets_path, "w", encoding="utf-8") as f:
+        json.dump(sets, f, indent=2)
+    
+    print(f"Updated sets_stats.json with {len(sets)} packages")
+    return len(sets)
+
 def main() -> int:
     # --- Fulfilled request pruning (depends on upstream appfilter changes) ---
     appfilter_changed = False
@@ -352,6 +381,10 @@ def main() -> int:
     # --- Generate stale.json (runs unconditionally after all pruning) ---
     stale_count = generate_stale_list()
     print(f"Stale requests identified: {stale_count}")
+
+    # --- Update sets_stats.json ---
+    sets_count = update_sets_stats()
+    print(f"Package sets updated: {sets_count}")
 
     # --- Workflow outputs ---
     has_changes = appfilter_changed or outdated_removed > 0

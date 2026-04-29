@@ -51,6 +51,7 @@
 const CONFIG = {
   data: {
     endpoint: "assets/requests.json",
+    setsStatsPath: "assets/sets_stats.json",
     assetsPath: "extracted_png/",
     iconExtension: ".png",
     filterPath: "assets/filters/",
@@ -114,7 +115,8 @@ const App = {
     currentData: [],
 
     actionMode: "new",
-    icontoolPath: localStorage.getItem("icontoolPath") || ""
+    icontoolPath: localStorage.getItem("icontoolPath") || "",
+    setsStats: {}
   },
 
   dom: {
@@ -331,7 +333,7 @@ const Templates = {
           </div>
           <span class="pkg-name">${id}</span>
         </div>
-        <div class="col req">${app.requestCount}</div>
+        <div class="col req">${(App.state.setsStats[pkg] || app.requestCount).toLocaleString()}</div>
         <div class="col install" title="${app.installs || '0'} installs in Play Store">${displayInstalls}</div>
         <div class="col first" style="line-height:1.4">
           <div>${firstStr}</div>
@@ -773,10 +775,12 @@ const Data = {
   init() {
     Promise.all([
       fetch(CONFIG.data.endpoint).then(r => r.json()),
+      fetch(CONFIG.data.setsStatsPath).then(r => r.json()).catch(() => ({})),
       ...CONFIG.data.filters.map(id => this.fetchFilterData(id))
     ])
-        .then(([json, ...filterObjects]) => {
+        .then(([json, setsStats, ...filterObjects]) => {
           App.data = json.apps;
+          App.state.setsStats = setsStats;
 
           // Build ID Map
           App.state.idMap = new Map();
@@ -900,8 +904,16 @@ const Data = {
     } else {
       /** @type {Record<string, (a: AppEntry, b: AppEntry) => number>} */
       const sorters = {
-        "req-desc": (a, b) => b.requestCount - a.requestCount,
-        "req-asc": (a, b) => a.requestCount - b.requestCount,
+        "req-desc": (a, b) => {
+            const pkgA = a.componentName.split('/')[0];
+            const pkgB = b.componentName.split('/')[0];
+            return (App.state.setsStats[pkgB] || 0) - (App.state.setsStats[pkgA] || 0);
+        },
+        "req-asc": (a, b) => {
+            const pkgA = a.componentName.split('/')[0];
+            const pkgB = b.componentName.split('/')[0];
+            return (App.state.setsStats[pkgA] || 0) - (App.state.setsStats[pkgB] || 0);
+        },
         "install-desc": (a, b) => Utils.parseInstalls(b.installs) - Utils.parseInstalls(a.installs),
         "install-asc": (a, b) => Utils.parseInstalls(a.installs) - Utils.parseInstalls(b.installs),
         "name-asc": (a, b) => a.label.localeCompare(b.label),
