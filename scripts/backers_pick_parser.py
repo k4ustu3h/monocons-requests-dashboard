@@ -256,7 +256,7 @@ def update_pick_json(pick_path: Path, existing_pick: set[str], new_components: s
     
     data = {
         "label": "Pick",
-        "description": "Requests from Open Collective backers.",
+        "description": "Requests from Open Collective backers and GitHub sponsors.",
         "pick": sorted(list(updated_pick))
     }
     
