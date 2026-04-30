@@ -86,7 +86,7 @@ def save_state():
         updated_dead = existing_dead | DEAD_SET
         if updated_dead != existing_dead:
             with open(DEAD_PATH, 'w', encoding='utf-8') as f:
-                json.dump(list(updated_dead), f, indent=2)
+                json.dump(sorted(updated_dead), f, indent=2)
         
         print("OK.")
     except Exception as e:
