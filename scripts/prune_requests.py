@@ -350,6 +350,86 @@ def update_sets_stats() -> int:
     print(f"Updated sets_stats.json with {len(sets)} packages (2+ occurrences)")
     return len(sets)
 
+label_factors = {
+    "unlabeled": 1,
+    "stale": 2,
+    "conflict": 2,
+    "easy": 3,
+    "link": 5,
+    "support": 6,
+    "wip": 8,
+}
+
+creation_odds_cap = 0.8
+
+
+def update_creation_odds() -> int:
+    """Generate creation_odds.json with fulfillment probabilities.
+
+    Only recalculates if P_top has changed since the previous run.
+    Returns the number of popularity levels in the creation odds table.
+    """
+    creation_odds_path = REPO_ROOT / "src/assets/creation_odds.json"
+
+    # --- Determine P_top (max popularity across all requests) ---
+    sets_path = REPO_ROOT / "src/assets/sets_stats.json"
+    try:
+        with open(sets_path, "r", encoding="utf-8") as f:
+            sets_stats = json.load(f)
+    except Exception:
+        sets_stats = {}
+
+    try:
+        with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
+            requests_data = json.load(f)
+    except Exception as e:
+        print(f"Error loading requests.json for creation_odds: {e}")
+        return 0
+
+    max_pop = 0
+    for app in requests_data.get("apps", []):
+        pkg = app.get("componentName", "").split("/")[0]
+        pop = sets_stats.get(pkg, app.get("requestCount", 0))
+        if pop > max_pop:
+            max_pop = pop
+
+    if max_pop == 0:
+        print("No popularity data for creation odds")
+        return 0
+
+    # --- Check if P_top changed ---
+    prev_top = 0
+    if creation_odds_path.exists():
+        try:
+            with open(creation_odds_path, "r", encoding="utf-8") as f:
+                prev_data = json.load(f)
+            if prev_data and isinstance(prev_data, list):
+                prev_top = prev_data[0].get("popularity", 0) if prev_data else 0
+        except Exception:
+            pass
+
+    if max_pop == prev_top:
+        print(f"Top popularity unchanged ({max_pop}), skipping creation odds update")
+        return max_pop
+
+    # --- Generate table ---
+    factors = sorted(label_factors.keys(), key=lambda k: label_factors[k])
+    table = []
+
+    for pop in range(max_pop, 0, -1):
+        row = {"popularity": pop}
+        base = (pop / max_pop) * creation_odds_cap
+        for label in factors:
+            L = label_factors[label]
+            row[str(L)] = round(min(creation_odds_cap, base * L), 4)
+        table.append(row)
+
+    with open(creation_odds_path, "w", encoding="utf-8") as f:
+        json.dump(table, f, indent=2)
+
+    print(f"Updated creation_odds.json with {len(table)} levels (top={max_pop})")
+    return max_pop    
+
 def main() -> int:
     # --- Fulfilled request pruning (depends on upstream appfilter changes) ---
     appfilter_changed = False
@@ -399,6 +479,10 @@ def main() -> int:
     # --- Update sets_stats.json ---
     sets_count = update_sets_stats()
     print(f"Package sets updated: {sets_count}")
+
+    # --- Update creation_odds.json ---
+    creation_odds_count = update_creation_odds()
+    print(f"Creation odds updated: {creation_odds_count} levels")
 
     # --- Workflow outputs ---
     has_changes = appfilter_changed or outdated_removed > 0

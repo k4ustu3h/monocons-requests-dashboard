@@ -52,11 +52,21 @@ const CONFIG = {
   data: {
     endpoint: "assets/requests.json",
     setsStatsPath: "assets/sets_stats.json",
+    creationOddsPath: "assets/creation_odds.json",
     assetsPath: "extracted_png/",
     iconExtension: ".png",
     filterPath: "assets/filters/",
     // Order matters for UI
     filters: ["wip", "support", "easy", "conflict", "link", "stale", "unlabeled"]
+  },
+  label_factors: {
+    unlabeled: 1,
+    stale: 2,
+    conflict: 2,
+    easy: 3,
+    link: 5,
+    support: 6,
+    wip: 8,
   },
   urls: {
     playStore: "https://play.google.com/store/apps/details?id=",
@@ -116,7 +126,8 @@ const App = {
 
     actionMode: "new",
     icontoolPath: localStorage.getItem("icontoolPath") || "",
-    setsStats: {}
+    setsStats: {},
+    creationOdds: []
   },
 
   dom: {
@@ -233,6 +244,26 @@ const Utils = {
 
   /**
    * @param {AppEntry} app
+   * @returns {number}
+   */
+  getCreationOdds(app) {
+    const table = App.state.creationOdds;
+    if (!table || table.length === 0) return 0;
+    const pkg = app.componentName.split('/')[0];
+    const pop = App.state.setsStats[pkg] || app.requestCount;
+    const row = table.find(r => r.popularity === pop);
+    if (!row) return 0;
+    const tags = Utils.getTagsForApp(app.componentName);
+    let factor = 1;
+    for (const tag of tags) {
+      const f = CONFIG.label_factors[tag];
+      if (f && f > factor) factor = f;
+    }
+    return row[factor] || 0;
+  },
+
+  /**
+   * @param {AppEntry} app
    * @returns {string}
    */
   generateXml(app) {
@@ -334,6 +365,7 @@ const Templates = {
           <span class="pkg-name">${id}</span>
         </div>
         <div class="col req">${(App.state.setsStats[pkg] || app.requestCount).toLocaleString()}</div>
+        <div class="col creation-odds" title="Chance of this request being fulfilled within a year if you wait. If you step up — it's in your hands.">${(Utils.getCreationOdds(app) * 100).toFixed(0)}%</div>
         <div class="col install" title="${app.installs || '0'} installs in Play Store">${displayInstalls}</div>
         <div class="col first" style="line-height:1.4">
           <div>${firstStr}</div>
@@ -776,11 +808,13 @@ const Data = {
     Promise.all([
       fetch(CONFIG.data.endpoint).then(r => r.json()),
       fetch(CONFIG.data.setsStatsPath).then(r => r.json()).catch(() => ({})),
+      fetch(CONFIG.data.creationOddsPath).then(r => r.json()).catch(() => []),
       ...CONFIG.data.filters.map(id => this.fetchFilterData(id))
     ])
-        .then(([json, setsStats, ...filterObjects]) => {
+        .then(([json, setsStats, creationOdds, ...filterObjects]) => {
           App.data = json.apps;
           App.state.setsStats = setsStats;
+          App.state.creationOdds = creationOdds;
 
           // Build ID Map
           App.state.idMap = new Map();
@@ -918,6 +952,8 @@ const Data = {
             const valB = App.state.setsStats[pkgB] || b.requestCount;
             return valA - valB;
         },
+        "odds-desc": (a, b) => Utils.getCreationOdds(b) - Utils.getCreationOdds(a),
+        "odds-asc": (a, b) => Utils.getCreationOdds(a) - Utils.getCreationOdds(b),
         "install-desc": (a, b) => Utils.parseInstalls(b.installs) - Utils.parseInstalls(a.installs),
         "install-asc": (a, b) => Utils.parseInstalls(a.installs) - Utils.parseInstalls(b.installs),
         "name-asc": (a, b) => a.label.localeCompare(b.label),
@@ -1060,6 +1096,7 @@ const UI = {
     const headers = {
       '.col.name': 'name',
       '.col.req': 'req',
+      '.col.creation-odds': 'odds',
       '.col.install': 'install',
       '.col.first': 'time'
     };
