@@ -351,8 +351,8 @@ def update_sets_stats() -> int:
     return len(sets)
 
 label_factors = {
+    "stale": 0.1,
     "unlabeled": 1,
-    "stale": 2,
     "conflict": 2,
     "easy": 3,
     "link": 5,
