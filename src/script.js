@@ -365,7 +365,7 @@ const Templates = {
           <span class="pkg-name">${id}</span>
         </div>
         <div class="col req">${(App.state.setsStats[pkg] || app.requestCount).toLocaleString()}</div>
-        <div class="col creation-odds" title="Chance of this request being fulfilled within a year if you wait. If you step up — it's in your hands.">${(Utils.getCreationOdds(app) * 100).toFixed(0)}%</div>
+        <div class="col creation-odds" title="Chance of this request being fulfilled within a year if you wait.">${(Utils.getCreationOdds(app) * 100).toFixed(0)}%</div>
         <div class="col install" title="${app.installs || '0'} installs in Play Store">${displayInstalls}</div>
         <div class="col first" style="line-height:1.4">
           <div>${firstStr}</div>
