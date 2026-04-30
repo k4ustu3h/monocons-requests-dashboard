@@ -11,6 +11,7 @@ from google_play_scraper import app as play_app
 # CONFIG
 JSON_PATH = "src/assets/requests.json"
 DEAD_PATH = "src/assets/dead_links.json"
+PLAY_SYNC_STATE_PATH = "src/assets/play_sync_state.json"
 ICON_DIR = "src/extracted_png/"
 
 # Throttling & Limits
@@ -18,7 +19,7 @@ SLEEP_MIN = 0.5
 SLEEP_MAX = 1
 SAVE_INTERVAL = 10         # Autosave every N requests
 MAX_CONSECUTIVE_ERRORS = 5 # Stop if IP blocked
-BATCH_LIMIT = 1000         # Max apps to update per run (Set 0 for infinite)
+BATCH_LIMIT = 100         # Max apps to update per run (Set 0 for infinite)
 
 # STATE
 DATA = None
@@ -71,6 +72,14 @@ def load_dead_links():
                 DEAD_SET = set(json.load(f))
         except: pass
 
+def load_last_synced():
+    if os.path.exists(PLAY_SYNC_STATE_PATH):
+        try:
+            with open(PLAY_SYNC_STATE_PATH) as f:
+                return json.load(f).get("last_synced_first_appearance", 0)
+        except: pass
+    return 0
+
 def save_state():
     if DATA is None: return
     print(f"💾 Autosaving...", end=" ")
@@ -95,6 +104,8 @@ def main():
         return
 
     load_dead_links()
+    last_synced = load_last_synced()
+    print(f"Last synced: {last_synced}")
     
     apps = DATA['apps']
     total = len(apps)
@@ -122,6 +133,7 @@ def main():
 
         # Skip Logic
         if pkg in DEAD_SET: continue
+        if app.get('firstAppearance', 0) <= last_synced: continue
         if 'installs' in app and app.get('drawable') != 'unknown': continue
 
         try:

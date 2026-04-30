@@ -307,19 +307,10 @@ def generate_stale_list() -> int:
     print(f"Generated {stale_file_path} with {len(stale_components)} entries")
     return len(stale_components)
 
-def update_sets_stats() -> int:
+def update_sets_stats(apps: list) -> int:
     """Generate sets_stats.json with summed request counts per package.
     Only includes packages that appear 2+ times in requests.json."""
     sets_path = REPO_ROOT / "src/assets/sets_stats.json"
-    
-    try:
-        with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
-            requests_data = json.load(f)
-    except Exception as e:
-        print(f"Error loading requests.json for sets stats: {e}")
-        return 0
-
-    apps = requests_data.get("apps", [])
     sets = {}
     
     for app in apps:
@@ -363,7 +354,7 @@ label_factors = {
 creation_odds_cap = 0.8
 
 
-def update_creation_odds() -> int:
+def update_creation_odds(apps: list) -> int:
     """Generate creation_odds.json with fulfillment probabilities.
 
     Only recalculates if P_top has changed since the previous run.
@@ -371,7 +362,6 @@ def update_creation_odds() -> int:
     """
     creation_odds_path = REPO_ROOT / "src/assets/creation_odds.json"
 
-    # --- Determine P_top (max popularity across all requests) ---
     sets_path = REPO_ROOT / "src/assets/sets_stats.json"
     try:
         with open(sets_path, "r", encoding="utf-8") as f:
@@ -379,15 +369,8 @@ def update_creation_odds() -> int:
     except Exception:
         sets_stats = {}
 
-    try:
-        with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
-            requests_data = json.load(f)
-    except Exception as e:
-        print(f"Error loading requests.json for creation_odds: {e}")
-        return 0
-
     max_pop = 0
-    for app in requests_data.get("apps", []):
+    for app in apps:
         pkg = app.get("componentName", "").split("/")[0]
         pop = sets_stats.get(pkg, app.get("requestCount", 0))
         if pop > max_pop:
@@ -397,7 +380,6 @@ def update_creation_odds() -> int:
         print("No popularity data for creation odds")
         return 0
 
-    # --- Check if P_top changed ---
     prev_top = 0
     if creation_odds_path.exists():
         try:
@@ -412,7 +394,6 @@ def update_creation_odds() -> int:
         print(f"Top popularity unchanged ({max_pop}), skipping creation odds update")
         return max_pop
 
-    # --- Generate table ---
     factors = sorted(label_factors.keys(), key=lambda k: label_factors[k])
     table = []
 
@@ -429,6 +410,8 @@ def update_creation_odds() -> int:
 
     print(f"Updated creation_odds.json with {len(table)} levels (top={max_pop})")
     return max_pop    
+
+
 
 def main() -> int:
     # --- Fulfilled request pruning (depends on upstream appfilter changes) ---
@@ -467,6 +450,10 @@ def main() -> int:
     print(f"Removed outdated requests: {outdated_removed}")
     print(f"Deleted extracted PNGs (outdated): {outdated_deleted}")
 
+    # Load requests for later use
+    with open(REQUESTS_JSON, "r") as f:
+        requests_data = json.load(f)    
+
     # --- Filter file cleanup (always runs; catches stale entries from any past run) ---
     filter_entries_removed = prune_filter_files()
     if filter_entries_removed:
@@ -477,12 +464,31 @@ def main() -> int:
     print(f"Stale requests identified: {stale_count}")
 
     # --- Update sets_stats.json ---
-    sets_count = update_sets_stats()
+    sets_count = update_sets_stats(requests_data.get("apps", []))
     print(f"Package sets updated: {sets_count}")
 
     # --- Update creation_odds.json ---
-    creation_odds_count = update_creation_odds()
+    creation_odds_count = update_creation_odds(requests_data.get("apps", []))
     print(f"Creation odds updated: {creation_odds_count} levels")
+
+    # --- Update Play Store metadata for new requests ---
+    play_sync_path = REPO_ROOT / "src/assets/play_sync_state.json"
+    last_synced = 0
+    if play_sync_path.exists():
+        with open(play_sync_path) as f:
+            last_synced = json.load(f).get("last_synced_first_appearance", 0)
+    
+    new_apps = [a for a in requests_data.get("apps", []) if a.get("firstAppearance", 0) > last_synced]
+    if new_apps:
+        print(f"Found {len(new_apps)} new apps for Play Store sync.")
+        os.system(f"{sys.executable} scripts/dump_play_info.py")
+        
+        max_ts = max(a.get("firstAppearance", 0) for a in new_apps)
+        with open(play_sync_path, 'w') as f:
+            json.dump({"last_synced_first_appearance": max_ts}, f)
+        print(f"Updated Play Store sync state: {max_ts}")
+    else:
+        print("No new apps for Play Store sync.")    
 
     # --- Workflow outputs ---
     has_changes = appfilter_changed or outdated_removed > 0
