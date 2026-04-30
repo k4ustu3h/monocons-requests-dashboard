@@ -607,6 +607,7 @@ const Actions = {
     const defaults = {
       name: 'asc',
       req: 'desc',
+      odds: 'desc',
       install: 'desc',
       time: 'desc'
     };
