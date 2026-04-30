@@ -3,7 +3,7 @@ Refactored ZIP -> Request Processor
 Outputs flat JSON structure with firstAppearance tracking.
 
 Usage
-python3 scripts/supporter_request_parser.py zips src/assets/appfilter.xml src/extracted_png src/assets src/assets/filters/support.json
+python3 scripts/supporter_request_parser.py zips src/assets/appfilter.xml src/extracted_png src/assets src/assets/filters/supported.json
 """
 
 import argparse
@@ -35,7 +35,7 @@ def parse_args():
     parser.add_argument("appfilter_path", type=str, help="Current appfilter.xml path")
     parser.add_argument("extracted_png_folder_path", type=str, help="Output folder for PNGs")
     parser.add_argument("requests_path", type=str, help="Folder containing requests.json")
-    parser.add_argument("support_path", type=str, help="Path to support.json")
+    parser.add_argument("supported_path", type=str, help="Path to supported.json")
     return parser.parse_args()
 
 # -------------------------------------------------------
@@ -100,16 +100,16 @@ def parse_existing_requests_json(json_path: Path) -> dict:
             
     return apps_map
 
-def parse_existing_support_json(support_path: Path) -> set[str]:
-    if not support_path.exists():
+def parse_existing_supported_json(supported_path: Path) -> set[str]:
+    if not supported_path.exists():
         return set()
     
-    with open(support_path, "r", encoding="utf-8") as f:
+    with open(supported_path, "r", encoding="utf-8") as f:
         try:
             data = json.load(f)
-            return set(data.get("support", []))
+            return set(data.get("supported", []))
         except json.JSONDecodeError:
-            print(f"Warning: Failed to parse {support_path}. Starting fresh.")
+            print(f"Warning: Failed to parse {supported_path}. Starting fresh.")
             return set()
 
 # -------------------------------------------------------
@@ -251,27 +251,27 @@ def write_json_output(output_path: Path, apps: dict):
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
-def update_support_json(support_path: Path, existing_support: set[str], new_components: set[str]):
-    updated_support = existing_support | new_components
+def update_supported_json(supported_path: Path, existing_supported: set[str], new_components: set[str]):
+    updated_supported = existing_supported | new_components
     
     data = {
-        "label": "Support",
+        "label": "Supported",
         "description": "Requests from Open Collective backers and GitHub sponsors.",
-        "support": sorted(list(updated_support))
+        "supported": sorted(list(updated_supported))
     }
     
-    support_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(support_path, "w", encoding="utf-8") as f:
+    supported_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(supported_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
     
-    print(f"Updated support.json with {len(new_components)} new components")
+    print(f"Updated supported.json with {len(new_components)} new components")
 
 def run_pipeline(folder_path: Path, appfilter_path: Path, png_out_path: Path, 
-                 output_path: Path, support_path: Path):
+                 output_path: Path, supported_path: Path):
     zip_files = load_zips(folder_path)
 
     apps = parse_existing_requests_json(output_path)
-    existing_support = parse_existing_support_json(support_path)
+    existing_supported = parse_existing_supported_json(supported_path)
     
     apps, zip_components = parse_zips(zip_files, apps, png_out_path)
     apps = filter_old_requests(apps, CONFIG["months_limit"], CONFIG["min_requests"])
@@ -283,7 +283,7 @@ def run_pipeline(folder_path: Path, appfilter_path: Path, png_out_path: Path,
         print("Warning: appfilter.xml not found, skipping deduplication.")
 
     write_json_output(output_path, apps)
-    update_support_json(support_path, existing_support, zip_components)
+    update_supported_json(supported_path, existing_supported, zip_components)
 
     keep_pngs = {a["drawable"] for a in apps.values()}
     delete_unused_pngs(png_out_path, keep_pngs)
@@ -302,7 +302,7 @@ def main():
         appfilter_path=Path(args.appfilter_path),
         png_out_path=Path(args.extracted_png_folder_path),
         output_path=Path(args.requests_path) / "requests.json",
-        support_path=Path(args.support_path)
+        supported_path=Path(args.supported_path)
     )
 
 if __name__ == "__main__":

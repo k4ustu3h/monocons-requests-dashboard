@@ -57,15 +57,15 @@ const CONFIG = {
     iconExtension: ".png",
     filterPath: "assets/filters/",
     // Order matters for UI
-    filters: ["wip", "support", "easy", "conflict", "link", "stale", "unlabeled"]
+    filters: ["wip", "supported", "easy", "nameinuse", "match", "stale", "unlabeled"]
   },
   label_factors: {
     stale: 0.1,
     unlabeled: 1,
-    conflict: 2,
+    nameinuse: 2,
     easy: 3,
-    link: 5,
-    support: 6,
+    match: 5,
+    supported: 6,
     wip: 8,
   },
   urls: {

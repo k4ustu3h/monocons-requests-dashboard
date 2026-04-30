@@ -518,7 +518,7 @@ select:hover {
   color: var(--on-primary-container);
 }
 
-.status-support {
+.status-supported {
   background: var(--teal-container);
   color: var(--on-teal-container);
 }
@@ -528,11 +528,11 @@ select:hover {
   color: var(--on-tertiary-container);
 }
 
-.status-conflict {
+.status-nameinuse {
   background: var(--orange-container);
   color: var(--on-orange-container);
 }
-.status-link {
+.status-match {
   background: var(--pine-container);
   color: var(--on-pine-container);
 }

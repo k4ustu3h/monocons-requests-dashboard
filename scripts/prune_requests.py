@@ -112,7 +112,7 @@ def prune_filter_files() -> int:
             print(f"  Warning: could not read {filter_path.name}: {e}")
             continue
 
-        # The list key matches the file stem (e.g. "link.json" -> "link")
+        # The list key matches the file stem (e.g. "match.json" -> "match")
         key = filter_path.stem
         if key not in data or not isinstance(data[key], list):
             continue
@@ -353,10 +353,10 @@ def update_sets_stats() -> int:
 label_factors = {
     "stale": 0.1,
     "unlabeled": 1,
-    "conflict": 2,
+    "nameinuse": 2,
     "easy": 3,
-    "link": 5,
-    "support": 6,
+    "match": 5,
+    "supported": 6,
     "wip": 8,
 }
 

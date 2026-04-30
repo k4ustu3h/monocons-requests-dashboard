@@ -1,7 +1,7 @@
 {
   "label": "Name in use",
   "description": "Requests with an existing app name and unknown package.",
-  "conflict": [
+  "nameinuse": [
     "com.lknninex.epik/com.lknninex.epik.MainActivity",
     "com.tomatos.clientapp/com.tomatos.clientapp.SplashActivity",
     "com.oplus.calendar/com.android.calendar.AllInOneActivity",

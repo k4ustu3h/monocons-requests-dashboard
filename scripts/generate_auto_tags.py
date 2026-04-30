@@ -7,11 +7,11 @@ import xml.etree.ElementTree as ET
 
 # Metadata Definitions for the UI
 METADATA = {
-    "conflict": {
+    "nameinuse": {
         "label": "Name in use",
         "desc": "Requests with an existing app name and unknown package."
     },
-    "link": {
+    "match": {
         "label": "Match",
         "desc": "Requests with an existing package."
     }
@@ -100,8 +100,8 @@ def main(input_file, output_dir, appfilter_path):
     # 2. Load Appfilter (Source of Truth)
     existing_packages, existing_names = load_appfilter_data(appfilter_path)
     
-    conflict_ids = []
-    link_ids = []
+    nameinusee_ids = []
+    match_ids = []
 
     print(f"Scanning {len(apps)} requests against {len(existing_packages)} existing packages...")
 
@@ -115,16 +115,16 @@ def main(input_file, output_dir, appfilter_path):
         req_pkg = pkg
         req_name = sanitize_drawable_name(label)
         
-        is_linked = False
+        is_matched = False
 
-        # --- Rule A: Matches (Link) ---
+        # --- Rule A: Match ---
         # Check if exact package name exists in appfilter
         # e.g. Request 'uk.co.example.app' matches only if 'uk.co.example.app' exists
         if req_pkg in existing_packages:
-            is_linked = True
-            link_ids.append(app_id)
+            is_matched = True
+            match_ids.append(app_id)
 
-        # --- Rule B: Name in Use (Conflict) ---
+        # --- Rule B: Name in Use ---
         # Check if name exists, BUT package does not match
         # e.g. Request 'Signal' (tooth.brush) matches Existing 'Signal' (org.thoughtcrime)
         # But Request 'Signal' (org.thoughtcrime.beta) is LINKED, so not a conflict.
@@ -132,14 +132,14 @@ def main(input_file, output_dir, appfilter_path):
         # Ignore PWA wrappers
         is_pwa = req_pkg.startswith(PWA_PACKAGE_PREFIXES)
 
-        if req_name in existing_names and not is_linked and not is_pwa:
-            conflict_ids.append(app_id)
+        if req_name in existing_names and not is_matched and not is_pwa:
+            nameinuse_ids.append(app_id)
 
     # 3. Output
-    write_json(output_dir, "conflict.json", "conflict", conflict_ids)
-    write_json(output_dir, "link.json", "link", link_ids)
+    write_json(output_dir, "nameinuse.json", "nameinuse", nameinuse_ids)
+    write_json(output_dir, "match.json", "match", match_ids)
     
-    print(f"Generated tags: {len(conflict_ids)} conflicts, {len(link_ids)} matches.")
+    print(f"Generated tags: {len(nameinuse_ids)} nameinuses, {len(match_ids)} matches.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate automatic tags based on appfilter.xml")
