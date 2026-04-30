@@ -180,7 +180,7 @@ def main():
     save_state()
     
     print("-" * 40)
-    print(f"✨ Finished. Updated {updated_session} apps.")
+    print(f"✨ Finished. Processed {i+1} apps, updated {updated_session}.")
     
     if updated_session > 0:
         print("\n📝 Suggested Commit Message:")
