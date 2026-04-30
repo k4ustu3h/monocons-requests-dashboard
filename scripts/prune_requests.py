@@ -472,23 +472,12 @@ def main() -> int:
     print(f"Creation odds updated: {creation_odds_count} levels")
 
     # --- Update Play Store metadata for new requests ---
-    play_sync_path = REPO_ROOT / "src/assets/play_sync_state.json"
-    last_synced = 0
-    if play_sync_path.exists():
-        with open(play_sync_path) as f:
-            last_synced = json.load(f).get("last_synced_first_appearance", 0)
-    
-    new_apps = [a for a in requests_data.get("apps", []) if a.get("firstAppearance", 0) > last_synced]
-    if new_apps:
-        print(f"Found {len(new_apps)} new apps for Play Store sync.")
+    new_without_installs = [a for a in requests_data.get("apps", []) if 'installs' not in a]
+    if new_without_installs:
+        print(f"Found {len(new_without_installs)} apps without Play Store data. Running dump_play_info...")
         os.system(f"{sys.executable} scripts/dump_play_info.py")
-        
-        max_ts = max(a.get("firstAppearance", 0) for a in new_apps)
-        with open(play_sync_path, 'w') as f:
-            json.dump({"last_synced_first_appearance": max_ts}, f)
-        print(f"Updated Play Store sync state: {max_ts}")
     else:
-        print("No new apps for Play Store sync.")    
+        print("All apps have Play Store metadata, skipping Play Store sync.")
 
     # --- Workflow outputs ---
     has_changes = appfilter_changed or outdated_removed > 0
