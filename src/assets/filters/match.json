@@ -3,10 +3,6 @@
   "description": "Requests with an existing package.",
   "match": [
     {
-      "id": "com.avast.android.mobilesecurity/com.norton.n360.splash.SplashActivity",
-      "existing_drawable": "avast_antivirus"
-    },
-    {
       "id": "com.android.deskclock/com.android.BBKClock.Timer",
       "existing_drawable": "generic_clock"
     },
@@ -103,10 +99,6 @@
       "existing_drawable": "ente_photos"
     },
     {
-      "id": "com.avast.android.mobilesecurity/com.norton.n360.SplashActivity",
-      "existing_drawable": "avast_antivirus"
-    },
-    {
       "id": "org.telegram.messenger.web/com.exteragram.messenger.CyberpunkIcon",
       "existing_drawable": "telegram"
     },
@@ -171,10 +163,6 @@
       "existing_drawable": "vivo_browser"
     },
     {
-      "id": "com.vpnhood.connect.android/crc640ff1ea0c75b1138a.MainActivity",
-      "existing_drawable": "vpnhood"
-    },
-    {
       "id": "com.qobuz.music/com.qobuz.android.mobile.app.IconGold",
       "existing_drawable": "qobuz"
     },
@@ -197,10 +185,6 @@
     {
       "id": "com.dot.gallery/com.dot.gallery.Launcher_Gallery",
       "existing_drawable": "generic_gallery"
-    },
-    {
-      "id": "com.appsgenz.launcherios.pro/com.android.launcher3.SplashActivity",
-      "existing_drawable": "launcher_os_pro"
     }
   ]
 }
