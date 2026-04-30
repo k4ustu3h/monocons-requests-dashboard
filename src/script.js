@@ -254,11 +254,12 @@ const Utils = {
     const row = table.find(r => r.popularity === pop);
     if (!row) return 0;
     const tags = Utils.getTagsForApp(app.componentName);
-    let factor = 1;
+    let factor = null;
     for (const tag of tags) {
-      const f = CONFIG.label_factors[tag];
-      if (f && f > factor) factor = f;
+        const f = CONFIG.label_factors[tag];
+        if (f !== undefined && (factor === null || f > factor)) factor = f;
     }
+    if (factor === null) factor = 1;
     return row[factor] || 0;
   },
 
@@ -346,6 +347,8 @@ const Templates = {
 
     const installsRaw = app.installs ? app.installs.replace(/[,+]/g, '') : null;
     const displayInstalls = installsRaw ? new Intl.NumberFormat('en', {notation: "compact"}).format(parseInt(installsRaw)) + "+" : "—";
+    const rawOdds = Utils.getCreationOdds(app) * 100;
+    const displayOdds = rawOdds < 1 ? rawOdds.toFixed(2) + "%" : rawOdds.toFixed(0) + "%";
 
     return `
       <div class="list-row ${isSelected ? 'selected' : ''}"
@@ -365,7 +368,7 @@ const Templates = {
           <span class="pkg-name">${id}</span>
         </div>
         <div class="col req">${(App.state.setsStats[pkg] || app.requestCount).toLocaleString()}</div>
-        <div class="col creation-odds" title="Chance of this request being fulfilled within a year if you wait.">${(Utils.getCreationOdds(app) * 100).toFixed(0)}%</div>
+        <div class="col creation-odds" title="Chance of this request being fulfilled within a year if you wait.">${displayOdds}</div>
         <div class="col install" title="${app.installs || '0'} installs in Play Store">${displayInstalls}</div>
         <div class="col first" style="line-height:1.4">
           <div>${firstStr}</div>
