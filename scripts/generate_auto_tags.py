@@ -36,18 +36,35 @@ def get_core_package(pkg):
     return pkg
 
 def load_appfilter_data(appfilter_path):
-    """
-    Parses appfilter.xml to build indices of existing icons.
-    Returns:
-        existing_packages: Set of packages (e.g. 'google.maps')
-        existing_names: Set of sanitized icon names (e.g. 'signal')
-    """
-    existing_packages = set()
-    existing_names = set()
+    existing_packages = {}  # package → drawable
+    existing_names = {}     # sanitized_name → drawable
 
     if not os.path.exists(appfilter_path):
         print(f"Warning: {appfilter_path} not found. Auto-tags will be empty.")
         return existing_packages, existing_names
+
+    try:
+        tree = ET.parse(appfilter_path)
+        root = tree.getroot()
+        
+        for item in root.findall('item'):
+            drawable = item.get('drawable', '')
+            
+            comp = item.get('component')
+            if comp:
+                match = re.search(r'ComponentInfo\{([^/]+)', comp)
+                if match:
+                    pkg = match.group(1)
+                    existing_packages[pkg] = drawable
+            
+            raw_name = item.get('name')
+            if raw_name:
+                existing_names[sanitize_drawable_name(raw_name)] = drawable
+                
+    except Exception as e:
+        print(f"Error parsing appfilter: {e}")
+
+    return existing_packages, existing_names
 
     try:
         # Use iterparse for memory efficiency if file is huge, but parse is fine for ~2MB
@@ -80,7 +97,7 @@ def write_json(output_dir, filename, key, data_list):
     output_data = {
         "label": METADATA.get(key, {}).get("label", key.capitalize()),
         "description": METADATA.get(key, {}).get("desc", ""),
-        key: data_list
+        key: [{"id": item[0], "existing_drawable": item[1]} for item in data_list]
     }
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(output_data, f, indent=2)
@@ -100,8 +117,8 @@ def main(input_file, output_dir, appfilter_path):
     # 2. Load Appfilter (Source of Truth)
     existing_packages, existing_names = load_appfilter_data(appfilter_path)
     
-    nameinusee_ids = []
-    match_ids = []
+    nameinuse_data = []
+    match_data = []
 
     print(f"Scanning {len(apps)} requests against {len(existing_packages)} existing packages...")
 
@@ -122,7 +139,7 @@ def main(input_file, output_dir, appfilter_path):
         # e.g. Request 'uk.co.example.app' matches only if 'uk.co.example.app' exists
         if req_pkg in existing_packages:
             is_matched = True
-            match_ids.append(app_id)
+            match_data.append((app_id, existing_packages[req_pkg]))
 
         # --- Rule B: Name in Use ---
         # Check if name exists, BUT package does not match
@@ -133,13 +150,13 @@ def main(input_file, output_dir, appfilter_path):
         is_pwa = req_pkg.startswith(PWA_PACKAGE_PREFIXES)
 
         if req_name in existing_names and not is_matched and not is_pwa:
-            nameinuse_ids.append(app_id)
+            nameinuse_data.append((app_id, existing_names[req_name]))
 
     # 3. Output
-    write_json(output_dir, "nameinuse.json", "nameinuse", nameinuse_ids)
-    write_json(output_dir, "match.json", "match", match_ids)
+    write_json(output_dir, "nameinuse.json", "nameinuse", nameinuse_data)
+    write_json(output_dir, "match.json", "match", match_data)
     
-    print(f"Generated tags: {len(nameinuse_ids)} nameinuses, {len(match_ids)} matches.")
+    print(f"Generated tags: {len(nameinuse_data)} nameinuses, {len(match_data)} matches.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate automatic tags based on appfilter.xml")

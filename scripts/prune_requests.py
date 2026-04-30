@@ -118,7 +118,7 @@ def prune_filter_files() -> int:
             continue
 
         original = data[key]
-        cleaned = [entry for entry in original if entry in valid_components]
+        cleaned = [entry for entry in original if (entry if isinstance(entry, str) else entry.get("id", "")) in valid_components]
         pruned = len(original) - len(cleaned)
 
         if pruned:

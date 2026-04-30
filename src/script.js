@@ -126,8 +126,10 @@ const App = {
 
     actionMode: "new",
     icontoolPath: localStorage.getItem("icontoolPath") || "",
+    existingSvgs: new Map(),
     setsStats: {},
-    creationOdds: []
+    creationOdds: [],
+
   },
 
   dom: {
@@ -332,6 +334,7 @@ const Templates = {
     const name = app.label;
     const pkg = id.split('/')[0];
     const isUnknown = app.drawable === "unknown" || name === "(Unknown App)";
+    const existingDrawable = App.state.existingSvgs ? App.state.existingSvgs.get(id) : null;
 
     const tagHtml = tags.map(tagId => {
       const meta = App.state.filterMetadata.get(tagId);
@@ -340,11 +343,21 @@ const Templates = {
       return `<span class="status-pill status-${tagId}" title="${desc}">${label}</span>`;
     }).join("");
 
+const existingSvgHtml = existingDrawable
+    ? `<span class="existing-svg-wrapper">
+         <img src="https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/svgs/${existingDrawable}.svg" 
+              class="existing-svg" 
+              title="${existingDrawable}.svg"
+              loading="lazy"
+              onerror="this.style.display='none'" />
+       </span>`
+    : "";
+
     const iconHtml = isUnknown
         ? `<div class="fallback-icon-row">No Icon</div>`
-        : `<img src="${iconUrl}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" alt="${name}" />
+        : `<img src="${iconUrl}" class="requested-icon" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" alt="${name}" />
          <div class="fallback-icon-row" style="display:none">No Icon</div>`;
-
+    
     const installsRaw = app.installs ? app.installs.replace(/[,+]/g, '') : null;
     const displayInstalls = installsRaw ? new Intl.NumberFormat('en', {notation: "compact"}).format(parseInt(installsRaw)) + "+" : "—";
     const rawOdds = Utils.getCreationOdds(app) * 100;
@@ -361,11 +374,16 @@ const Templates = {
         </div>
         <div class="icon">${iconHtml}</div>
         <div class="name-col">
-          <div class="name-row">
-            ${tagHtml}
-            <span class="app-name" style="${isUnknown ? "display: none" : ""}">${name}</span>
+          <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+            ${existingSvgHtml}
+          <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
+              <div class="name-row">
+                  ${tagHtml}
+                  <span class="app-name" style="${isUnknown ? "display: none" : ""}">${name}</span>
+              </div>
+              <span class="pkg-name">${id}</span>
           </div>
-          <span class="pkg-name">${id}</span>
+          </div>
         </div>
         <div class="col req">${(App.state.setsStats[pkg] || app.requestCount).toLocaleString()}</div>
         <div class="col creation-odds" title="Chance of this request being fulfilled within a year if you wait.">${displayOdds}</div>
@@ -841,7 +859,14 @@ const Data = {
             if (id === "unlabeled") {
               this.computeUnlabeled(id);
             } else if (obj[id] && Array.isArray(obj[id])) {
-              obj[id].forEach((/** @type {string} */ appId) => this.addTag(appId, id));
+                obj[id].forEach(item => {
+                    const appId = typeof item === 'string' ? item : item.id;
+                    this.addTag(appId, id);
+                    if (typeof item === 'object' && item.existing_drawable) {
+                        if (!App.state.existingSvgs) App.state.existingSvgs = new Map();
+                        App.state.existingSvgs.set(appId, item.existing_drawable);
+                    }
+                });
             }
           });
 

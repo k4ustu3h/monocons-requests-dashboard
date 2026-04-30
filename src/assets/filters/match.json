@@ -2,55 +2,205 @@
   "label": "Match",
   "description": "Requests with an existing package.",
   "match": [
-    "com.avast.android.mobilesecurity/com.norton.n360.splash.SplashActivity",
-    "com.android.deskclock/com.android.BBKClock.Timer",
-    "br.com.brainweb.ifood/br.com.brainweb.ifood.AppIconClub",
-    "com.tmob.AveaOIM/moim.android.FiveGMoimApplicationAlias",
-    "com.iqoo.website/com.vivo.website.feedback.HotQuestionEntry",
-    "io.zenzy.applock/io.zenzy.applock.DefaultLauncher",
-    "com.luckydeveloper.apkshare/com.luckydeveloper.shareit.MainActivity",
-    "com.twitter.android/com.x.android.main.MainActivity",
-    "com.pashapuma.pix.material.you.iconpack/com.pashapuma.pix.material.you.iconpack.MiniFolderLauncherIcon",
-    "com.goldengekko.o2pm/uk.co.o2.ios.moments.dev.MainActivity",
-    "com.taobao.idlefish/com.taobao.fleamarket.home.activity.AppIcon_Skin_Pink",
-    "com.myscript.nebo/com.myscript.nebo.LaunchActivity",
-    "com.qobuz.music/com.qobuz.android.mobile.app.IconDark",
-    "com.exteragram.messenger/com.exteragram.messenger.EditorIcon",
-    "ir.ilmili.telegraph/org.telegram.messenger.PremiumIcon",
-    "org.telegram.messenger/com.exteragram.messenger.AyuTyan",
-    "app.anikku/eu.kanade.tachiyomi.ui.main.MainActivityAnikun3",
-    "com.ticktick.task/com.ticktick.task.HomeAlia_emotion",
-    "org.mozilla.firefox/org.mozilla.firefox.AppMomo",
-    "app.anikku/eu.kanade.tachiyomi.ui.main.MainActivityOnigiri1",
-    "me.yuki.folk/me.bmax.apatch.ui.MainActivityDefault",
-    "app.lawnchair.play.debug/leakcanary.internal.activity.LeakLauncherActivity",
-    "org.telegram.messenger.web/com.exteragram.messenger.OrbitIcon",
-    "xyz.nextalone.nagram/org.telegram.messenger.NielloIcon",
-    "io.ente.photos.fdroid/io.ente.photos.fdroid.IconDuckyHuggingE",
-    "com.avast.android.mobilesecurity/com.norton.n360.SplashActivity",
-    "org.telegram.messenger.web/com.exteragram.messenger.CyberpunkIcon",
-    "com.grindrapp.android/com.grindrapp.android.HomeActivityChatRed",
-    "com.snapchat.android/com.snapchat.android.Plus2Alias",
-    "net.zedge.android/net.zedge.android.MainDogDay",
-    "com.duolingo/com.duolingo.app.StreakSaverLauncher2",
-    "jp.co.netbk/jp.co.netbk.nbk.ui.activity.SplashActivity",
-    "com.google.android.calendar/com.google.android.archive.ReactivateActivity",
-    "com.vkontakte.android/com.vk.android.launcher.icons.IconAlias.StaticIcon2",
-    "it.belloworld.mercurygram/org.telegram.messenger.TurboIcon",
-    "app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_2",
-    "easy.launcher/easy.launcher.AppStartActivity",
-    "money.jupiter/money.jupiter.MainActivityPro",
-    "com.luna.music/com.luna.biz.main.main.MainActivity",
-    "com.universe.messenger/com.whatsapp.Main",
-    "bsd.suitcase.release/com.supercell.brawlstars.PirateIcon",
-    "com.vivo.browser/com.vivo.browser.filemanager.FileDocNew_OverAndroid16",
-    "com.vpnhood.connect.android/crc640ff1ea0c75b1138a.MainActivity",
-    "com.qobuz.music/com.qobuz.android.mobile.app.IconGold",
-    "com.vkontakte.android/com.vk.android.launcher.icons.IconAlias.EventIcon9",
-    "net.zedge.android/net.zedge.android.MainAnimeDay",
-    "com.eljur.client/com.eljur.client.feature.splash.view.SplashActivityAlias4",
-    "com.github.libretube.debug/com.github.libretube.IconGradient",
-    "com.dot.gallery/com.dot.gallery.Launcher_Gallery",
-    "com.appsgenz.launcherios.pro/com.android.launcher3.SplashActivity"
+    {
+      "id": "com.avast.android.mobilesecurity/com.norton.n360.splash.SplashActivity",
+      "existing_drawable": "avast_antivirus"
+    },
+    {
+      "id": "com.android.deskclock/com.android.BBKClock.Timer",
+      "existing_drawable": "generic_clock"
+    },
+    {
+      "id": "br.com.brainweb.ifood/br.com.brainweb.ifood.AppIconClub",
+      "existing_drawable": "ifood"
+    },
+    {
+      "id": "com.tmob.AveaOIM/moim.android.FiveGMoimApplicationAlias",
+      "existing_drawable": "turk_telekom"
+    },
+    {
+      "id": "com.iqoo.website/com.vivo.website.feedback.HotQuestionEntry",
+      "existing_drawable": "iqoo_store"
+    },
+    {
+      "id": "io.zenzy.applock/io.zenzy.applock.DefaultLauncher",
+      "existing_drawable": "nintendo_music"
+    },
+    {
+      "id": "com.luckydeveloper.apkshare/com.luckydeveloper.shareit.MainActivity",
+      "existing_drawable": "apk_share_bluetooth"
+    },
+    {
+      "id": "com.twitter.android/com.x.android.main.MainActivity",
+      "existing_drawable": "x"
+    },
+    {
+      "id": "com.pashapuma.pix.material.you.iconpack/com.pashapuma.pix.material.you.iconpack.MiniFolderLauncherIcon",
+      "existing_drawable": "pix_material_you_icons"
+    },
+    {
+      "id": "com.goldengekko.o2pm/uk.co.o2.ios.moments.dev.MainActivity",
+      "existing_drawable": "o2"
+    },
+    {
+      "id": "com.taobao.idlefish/com.taobao.fleamarket.home.activity.AppIcon_Skin_Pink",
+      "existing_drawable": "idle_fish"
+    },
+    {
+      "id": "com.myscript.nebo/com.myscript.nebo.LaunchActivity",
+      "existing_drawable": "nebo"
+    },
+    {
+      "id": "com.qobuz.music/com.qobuz.android.mobile.app.IconDark",
+      "existing_drawable": "qobuz"
+    },
+    {
+      "id": "com.exteragram.messenger/com.exteragram.messenger.EditorIcon",
+      "existing_drawable": "exteragram"
+    },
+    {
+      "id": "ir.ilmili.telegraph/org.telegram.messenger.PremiumIcon",
+      "existing_drawable": "graph_messenger"
+    },
+    {
+      "id": "org.telegram.messenger/com.exteragram.messenger.AyuTyan",
+      "existing_drawable": "telegram"
+    },
+    {
+      "id": "app.anikku/eu.kanade.tachiyomi.ui.main.MainActivityAnikun3",
+      "existing_drawable": "anikku"
+    },
+    {
+      "id": "com.ticktick.task/com.ticktick.task.HomeAlia_emotion",
+      "existing_drawable": "ticktick"
+    },
+    {
+      "id": "org.mozilla.firefox/org.mozilla.firefox.AppMomo",
+      "existing_drawable": "firefox"
+    },
+    {
+      "id": "app.anikku/eu.kanade.tachiyomi.ui.main.MainActivityOnigiri1",
+      "existing_drawable": "anikku"
+    },
+    {
+      "id": "me.yuki.folk/me.bmax.apatch.ui.MainActivityDefault",
+      "existing_drawable": "apatch"
+    },
+    {
+      "id": "app.lawnchair.play.debug/leakcanary.internal.activity.LeakLauncherActivity",
+      "existing_drawable": "lawnchair_debug"
+    },
+    {
+      "id": "org.telegram.messenger.web/com.exteragram.messenger.OrbitIcon",
+      "existing_drawable": "telegram"
+    },
+    {
+      "id": "xyz.nextalone.nagram/org.telegram.messenger.NielloIcon",
+      "existing_drawable": "nagram"
+    },
+    {
+      "id": "io.ente.photos.fdroid/io.ente.photos.fdroid.IconDuckyHuggingE",
+      "existing_drawable": "ente_photos"
+    },
+    {
+      "id": "com.avast.android.mobilesecurity/com.norton.n360.SplashActivity",
+      "existing_drawable": "avast_antivirus"
+    },
+    {
+      "id": "org.telegram.messenger.web/com.exteragram.messenger.CyberpunkIcon",
+      "existing_drawable": "telegram"
+    },
+    {
+      "id": "com.grindrapp.android/com.grindrapp.android.HomeActivityChatRed",
+      "existing_drawable": "generic_dialer"
+    },
+    {
+      "id": "com.snapchat.android/com.snapchat.android.Plus2Alias",
+      "existing_drawable": "snapchat"
+    },
+    {
+      "id": "net.zedge.android/net.zedge.android.MainDogDay",
+      "existing_drawable": "zedge"
+    },
+    {
+      "id": "com.duolingo/com.duolingo.app.StreakSaverLauncher2",
+      "existing_drawable": "duolingo"
+    },
+    {
+      "id": "jp.co.netbk/jp.co.netbk.nbk.ui.activity.SplashActivity",
+      "existing_drawable": "sbi_neobank"
+    },
+    {
+      "id": "com.google.android.calendar/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "themed_icon_calendar_31"
+    },
+    {
+      "id": "com.vkontakte.android/com.vk.android.launcher.icons.IconAlias.StaticIcon2",
+      "existing_drawable": "vk"
+    },
+    {
+      "id": "it.belloworld.mercurygram/org.telegram.messenger.TurboIcon",
+      "existing_drawable": "mercurygram"
+    },
+    {
+      "id": "app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_2",
+      "existing_drawable": "youtube"
+    },
+    {
+      "id": "easy.launcher/easy.launcher.AppStartActivity",
+      "existing_drawable": "generic_keyboard"
+    },
+    {
+      "id": "money.jupiter/money.jupiter.MainActivityPro",
+      "existing_drawable": "jupiter"
+    },
+    {
+      "id": "com.luna.music/com.luna.biz.main.main.MainActivity",
+      "existing_drawable": "soundcloud"
+    },
+    {
+      "id": "com.universe.messenger/com.whatsapp.Main",
+      "existing_drawable": "whatsapp"
+    },
+    {
+      "id": "bsd.suitcase.release/com.supercell.brawlstars.PirateIcon",
+      "existing_drawable": "bsd_brawl"
+    },
+    {
+      "id": "com.vivo.browser/com.vivo.browser.filemanager.FileDocNew_OverAndroid16",
+      "existing_drawable": "vivo_browser"
+    },
+    {
+      "id": "com.vpnhood.connect.android/crc640ff1ea0c75b1138a.MainActivity",
+      "existing_drawable": "vpnhood"
+    },
+    {
+      "id": "com.qobuz.music/com.qobuz.android.mobile.app.IconGold",
+      "existing_drawable": "qobuz"
+    },
+    {
+      "id": "com.vkontakte.android/com.vk.android.launcher.icons.IconAlias.EventIcon9",
+      "existing_drawable": "vk"
+    },
+    {
+      "id": "net.zedge.android/net.zedge.android.MainAnimeDay",
+      "existing_drawable": "zedge"
+    },
+    {
+      "id": "com.eljur.client/com.eljur.client.feature.splash.view.SplashActivityAlias4",
+      "existing_drawable": "eljur_student"
+    },
+    {
+      "id": "com.github.libretube.debug/com.github.libretube.IconGradient",
+      "existing_drawable": "libretube"
+    },
+    {
+      "id": "com.dot.gallery/com.dot.gallery.Launcher_Gallery",
+      "existing_drawable": "generic_gallery"
+    },
+    {
+      "id": "com.appsgenz.launcherios.pro/com.android.launcher3.SplashActivity",
+      "existing_drawable": "launcher_os_pro"
+    }
   ]
 }
