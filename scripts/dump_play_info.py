@@ -110,6 +110,7 @@ def main():
     apps = DATA['apps']
     total = len(apps)
     updated_session = 0
+    attempted = 0
     consecutive_errors = 0
     
     print(f"📋 Loaded {total} apps. {len(DEAD_SET)} known dead links.")
@@ -136,8 +137,10 @@ def main():
         if app.get('firstAppearance', 0) <= last_synced: continue
         if 'installs' in app and app.get('drawable') != 'unknown': continue
 
+        attempted += 1
+
         try:
-            print(f"[{i+1}/{total}] {pkg}...", end=" ", flush=True)
+            print(f"[{attempted}] {pkg}...", end=" ", flush=True)
             
             details = play_app(pkg, lang='en', country='us')
             
@@ -180,7 +183,7 @@ def main():
     save_state()
     
     print("-" * 40)
-    print(f"✨ Finished. Processed {i+1} apps, updated {updated_session}.")
+    print(f"✨ Finished. Tried {attempted} apps from Play Store, updated {updated_session}.")
     
     if updated_session > 0:
         print("\n📝 Suggested Commit Message:")
