@@ -163,7 +163,7 @@ body:has(.context-menu:popover-open) {
 .header-left, .header-right {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 .header-center {

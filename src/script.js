@@ -1459,18 +1459,11 @@ const UI = {
 
   updateHeader() {
     const total = App.state.currentData.length;
-    const absTotal = App.data.length;
 
     // Text
     const countEl = App.dom.headerCount;
-    const countText = Utils.compactNumber(absTotal);
-    let displayText = "";
-    if (total === absTotal) {
-      displayText = `${countText} requests`;
-    } else {
-      displayText = `${Utils.compactNumber(total)} of ${countText} requests`;
-    }
-    if (App.state.lastUpdate) {
+    let displayText = `${Utils.compactNumber(total)} requests`;
+    if (App.state.lastUpdate && window.matchMedia('(min-width: 901px)').matches) {
       displayText += ` · ${Utils.timeAgo(App.state.lastUpdate)}`;
     }
     countEl.textContent = displayText;
