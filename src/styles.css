@@ -1074,13 +1074,13 @@ input[type="checkbox"]:indeterminate::after {
 }
 
 /* =========================================
-   10. RESPONSIVE (< 840px)
+   10. RESPONSIVE (< 900px)
    ========================================= */
 .mobile-only {
   display: none !important;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 900px) {
   /* Visibility */
   .desktop-only {
     display: none !important;
