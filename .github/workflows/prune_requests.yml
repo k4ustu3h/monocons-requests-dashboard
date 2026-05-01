@@ -25,6 +25,18 @@ jobs:
       - name: Install dependencies
         run: pip install requests google-play-scraper lxml
 
+      - name: Fetch new emails
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python scripts/fetch_emails.py
+
+      - name: Parse emails
+        run: python3 scripts/email_parser.py emails/ src/assets/appfilter.xml src/extracted_png src/assets
+
+      - name: Cleanup emails
+        run: rm -rf emails/
+
       - name: Prune requests
         id: prune_requests
         run: python scripts/prune_requests.py

@@ -21,9 +21,7 @@ from email.utils import parseaddr, parsedate
 COMPONENT_PATTERN = re.compile('ComponentInfo{(?P<ComponentInfo>.+)}')
 
 CONFIG = {
-    "request_limit": 1000,
-    "months_limit": 24,
-    "min_requests": 4,
+    "request_limit": 100,
 }
 
 # -------------------------------------------------------
@@ -246,21 +244,6 @@ def load_existing_components(appfilter_path: Path) -> set[str]:
         if match: components.add(match.group(1))
     return components
 
-def filter_old_requests(apps: dict, months_limit: int, min_requests: int) -> dict:
-    current_date = date.today()
-    def diff_month(d1, d2): return (d1.year - d2.year) * 12 + d1.month - d2.month
-
-    filtered = {}
-    for k, v in apps.items():
-        ts = v.get("lastRequested", 0)
-        if ts <= 0: continue
-        
-        req_date = date.fromtimestamp(ts)
-        if v.get("requestCount", 0) >= min_requests or diff_month(current_date, req_date) < months_limit:
-            filtered[k] = v
-            
-    return filtered
-
 def delete_unused_pngs(out_dir: Path, keep: set[str]):
     if not out_dir.exists(): return
     for f in os.listdir(out_dir):
@@ -307,9 +290,6 @@ def run_pipeline(folder_path: Path, appfilter_path: Path, png_out_path: Path, ou
     # 2. Update State
     apps = parse_emails(email_files, apps, sender_counter, png_out_path)
 
-    # 3. Prune Old/Done
-    apps = filter_old_requests(apps, CONFIG["months_limit"], CONFIG["min_requests"])
-    
     # Remove apps already in appfilter (Done)
     if appfilter_path.exists():
         existing = load_existing_components(appfilter_path)
@@ -317,10 +297,10 @@ def run_pipeline(folder_path: Path, appfilter_path: Path, png_out_path: Path, ou
     else:
         print("Warning: appfilter.xml not found, skipping deduplication.")
 
-    # 4. Save
+    # 3. Save
     write_json_output(output_path, apps)
 
-    # 5. Cleanup
+    # 4. Cleanup
     keep_pngs = {a["drawable"] for a in apps.values()}
     delete_unused_pngs(png_out_path, keep_pngs)
 
