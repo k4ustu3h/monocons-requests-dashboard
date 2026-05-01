@@ -225,7 +225,7 @@ body:has(.context-menu:popover-open) {
 /* Search */
 .input-wrapper {
   height: 48px;
-  background-color: var(--surface-container-high);
+  background-color: var(--surface-container);
   border-radius: var(--shape-xlarge);
   display: flex;
   align-items: center;
