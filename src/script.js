@@ -569,7 +569,7 @@ const Toast = {
     this.activeToasts.add(key);
 
     let iconSvg = ICONS.copy;
-    if (type === "error") iconSvg = `<svg><use href="#ic-search"/></svg>`; // Using search as alert icon placeholder
+    if (type === "error") iconSvg = `<svg><use href="#ic-error"/></svg>`; // Using search as alert icon placeholder
     if (type === "success") iconSvg = `<svg><use href="#ic-download"/></svg>`;
 
     el.innerHTML = Templates.toast(text, iconSvg);
