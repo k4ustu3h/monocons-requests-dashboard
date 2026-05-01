@@ -409,9 +409,32 @@ def update_creation_odds(apps: list) -> int:
         json.dump(table, f, indent=2)
 
     print(f"Updated creation_odds.json with {len(table)} levels (top={max_pop})")
-    return max_pop    
+    return max_pop
 
+def update_domain_stats() -> int:
+    """Generate domain_stats.json with request counts by domain (excluding com and org)."""
+    from collections import Counter
+    
+    domain_stats_path = REPO_ROOT / "src/assets/domain_stats.json"
+    
+    with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
+        data = json.load(f)
 
+    domain_counter = Counter()
+
+    for app in data.get("apps", []):
+        pkg = app.get("componentName", "").split("/")[0]
+        domain = pkg.split(".")[0] if "." in pkg else "unknown"
+        if domain not in ("com", "org"):
+            domain_counter[domain] += 1
+
+    top = dict(domain_counter.most_common())
+
+    with open(domain_stats_path, "w", encoding="utf-8") as f:
+        json.dump(top, f, indent=2)
+
+    print(f"Updated domain_stats.json with {len(top)} domains (excluding com and org)")
+    return len(top)    
 
 def main() -> int:
     # --- Fulfilled request pruning (depends on upstream appfilter changes) ---
@@ -470,6 +493,10 @@ def main() -> int:
     # --- Update creation_odds.json ---
     creation_odds_count = update_creation_odds(requests_data.get("apps", []))
     print(f"Creation odds updated: {creation_odds_count} levels")
+
+    # --- Update domain_stats.json ---
+    domain_count = update_domain_stats()
+    print(f"Domain stats updated: {domain_count} domains")
 
     # --- Update Play Store metadata for new requests ---
     new_without_installs = [a for a in requests_data.get("apps", []) if 'installs' not in a]

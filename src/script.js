@@ -53,6 +53,7 @@ const CONFIG = {
     endpoint: "assets/requests.json",
     setsStatsPath: "assets/sets_stats.json",
     creationOddsPath: "assets/creation_odds.json",
+    domainStatsPath: "assets/domain_stats.json",
     assetsPath: "extracted_png/",
     iconExtension: ".png",
     filterPath: "assets/filters/",
@@ -129,6 +130,7 @@ const App = {
     existingSvgs: new Map(),
     setsStats: {},
     creationOdds: [],
+    domainStats: {},
     lastUpdate: null,
 
   },
@@ -861,12 +863,14 @@ const Data = {
       fetch(CONFIG.data.endpoint).then(r => r.json()),
       fetch(CONFIG.data.setsStatsPath).then(r => r.json()).catch(() => ({})),
       fetch(CONFIG.data.creationOddsPath).then(r => r.json()).catch(() => []),
+      fetch(CONFIG.data.domainStatsPath).then(r => r.json()).catch(() => ({})),
       ...CONFIG.data.filters.map(id => this.fetchFilterData(id))
     ])
-        .then(([json, setsStats, creationOdds, ...filterObjects]) => {
+        .then(([json, setsStats, creationOdds, domainStats, ...filterObjects]) => {
           App.data = json.apps;
           App.state.setsStats = setsStats;
           App.state.creationOdds = creationOdds;
+          App.state.domainStats = domainStats;
           App.state.lastUpdate = json.lastUpdate;
 
           // Build ID Map
@@ -1089,9 +1093,12 @@ const UI = {
   observer: null,
 
   init() {
+    this.renderDomainStats();
     this.generateFilters();
     this.initObserver();
     this.render();
+
+    window.addEventListener("resize", () => this.renderDomainStats());
 
     // Bindings
     App.dom.inputSearch.addEventListener("input", e => {
@@ -1279,9 +1286,9 @@ const UI = {
           if (e.key === 'ArrowDown') nextIndex = index + 1;
         } else {
           // Grid: Calculate columns dynamically
-          const itemWidth = item.getBoundingClientRect().width + 16; // Width + Gap
-          const containerWidth = App.dom.container.clientWidth;
-          const cols = Math.floor(containerWidth / itemWidth) || 1;
+          const containerWidth = container.clientWidth || document.querySelector(".page").clientWidth - 32;
+          const fits = Math.min(entries.length, Math.floor(containerWidth / 80));
+          const top = entries.slice(0, fits);
 
           if (e.key === 'ArrowLeft') nextIndex = index - 1;
           if (e.key === 'ArrowRight') nextIndex = index + 1;
@@ -1504,6 +1511,40 @@ const UI = {
     } else {
       bar.classList.remove("visible");
     }
+  },
+
+  renderDomainStats() {
+      const data = App.state.domainStats;
+      const card = document.querySelector(".domain-stats-card");
+      
+      if (!data || Object.keys(data).length === 0) {
+          if (card) card.style.display = "none";
+          return;
+      }
+      
+      if (card) card.style.display = "";
+      
+      const container = document.getElementById("domainStats");
+      if (!container) return;
+      
+      const containerWidth = container.clientWidth || document.querySelector(".page").clientWidth - 64;
+      const colWidth = 26;
+      const fits = Math.floor(containerWidth / colWidth);
+      const entries = Object.entries(data).slice(0, fits);
+      const max = entries[0][1];
+      
+      const html = `<div class="domain-chart">
+        ${entries.map(([domain, count]) => {
+          const h = (count / max * 100).toFixed(0);
+          const shortDomain = domain.length > 3 ? domain.slice(0, 3) : domain;
+          return `<div class="domain-col">
+            <div class="domain-col-fill" style="height:${h}%" title="${domain}: ${count}"></div>
+            <span class="domain-col-label">${shortDomain}</span>
+          </div>`;
+        }).join("")}
+      </div>`;
+      
+      container.innerHTML = html;
   },
 
   /**
