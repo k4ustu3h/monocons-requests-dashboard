@@ -1096,6 +1096,7 @@ const UI = {
     this.renderDomainStats();
     this.generateFilters();
     this.initObserver();
+    this.initRegexAutocomplete();
     this.render();
 
     window.addEventListener("resize", () => this.renderDomainStats());
@@ -1545,6 +1546,72 @@ const UI = {
       </div>`;
       
       container.innerHTML = html;
+  },
+
+  initRegexAutocomplete() {
+    const input = App.dom.inputSearch;
+    let listEl = null;
+
+    input.addEventListener("input", () => {
+      if (listEl) { listEl.remove(); listEl = null; }
+      if (!App.state.regexMode) return;
+      const val = input.value;
+      if (!val || val.includes(".")) return;
+      const domains = Object.keys(App.state.domainStats);
+      if (!domains.length) return;
+      const matches = domains
+        .filter(d => d.toLowerCase().startsWith(val.toLowerCase()))
+        .slice(0, 5);
+      if (!matches.length) return;
+
+      listEl = document.createElement("div");
+      listEl.className = "regex-autocomplete";
+      Object.assign(listEl.style, {
+        position: "absolute",
+        top: input.getBoundingClientRect().bottom + 4 + "px",
+        left: input.getBoundingClientRect().left + "px",
+        width: input.offsetWidth + "px",
+        background: "var(--surface-container-high)",
+        border: "1px solid var(--outline-variant)",
+        borderRadius: "var(--shape-small)",
+        boxShadow: "var(--elevation-3)",
+        zIndex: "100",
+        maxHeight: "240px",
+        overflowY: "auto"
+      });
+
+      matches.forEach(d => {
+        const item = document.createElement("div");
+        item.textContent = `^${d}\\.`;
+        Object.assign(item.style, {
+          padding: "10px 16px",
+          cursor: "pointer",
+          fontSize: "14px",
+          color: "var(--on-surface)",
+          fontFamily: "monospace",
+          transition: "background 0.1s"
+        });
+        item.addEventListener("mouseenter", () => item.style.background = "var(--surface-container-highest)");
+        item.addEventListener("mouseleave", () => item.style.background = "");
+        item.addEventListener("click", () => {
+          input.value = `^${d}\\.`;
+          input.focus();
+          input.dispatchEvent(new Event("input"));
+          listEl.remove();
+          listEl = null;
+        });
+        listEl.appendChild(item);
+      });
+
+      document.body.appendChild(listEl);
+    });
+
+    document.addEventListener("click", (e) => {
+      if (listEl && !listEl.contains(e.target) && e.target !== input) {
+        listEl.remove();
+        listEl = null;
+      }
+    });
   },
 
   /**
