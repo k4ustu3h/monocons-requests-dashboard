@@ -1333,6 +1333,11 @@ const UI = {
       return;
     }
 
+    const banner = document.getElementById("supportedBanner");
+    if (banner) {
+      banner.style.display = s.activeFilters.has("supported") ? "block" : "none";
+    }
+
     s.renderedCount = 0;
     this.loadMore();
 
