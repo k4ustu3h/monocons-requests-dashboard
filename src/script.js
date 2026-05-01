@@ -1327,15 +1327,15 @@ const UI = {
     Data.syncUrlState();
     this.updateHeader();
 
+    const banner = document.getElementById("supportedBanner");
+    if (banner) {
+      banner.style.display = s.activeFilters.has("supported") ? "block" : "none";
+    }
+
     if (s.currentData.length === 0) {
       App.dom.container.innerHTML = Templates.emptyState();
       this.updateHeader();
       return;
-    }
-
-    const banner = document.getElementById("supportedBanner");
-    if (banner) {
-      banner.style.display = s.activeFilters.has("supported") ? "block" : "none";
     }
 
     s.renderedCount = 0;
