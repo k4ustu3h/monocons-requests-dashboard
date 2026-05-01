@@ -129,6 +129,7 @@ const App = {
     existingSvgs: new Map(),
     setsStats: {},
     creationOdds: [],
+    lastUpdate: null,
 
   },
 
@@ -314,6 +315,35 @@ const Utils = {
       else s.add(id);
     }
   },
+
+  /**
+   * @param {string} dateStr
+   * @returns {string}
+   */
+  timeAgo(dateStr) {
+    const now = Date.now();
+    const then = new Date(dateStr + "T00:00:00").getTime();
+    const diff = now - then;
+    const hours = Math.floor(diff / 3600000);
+    const days = Math.floor(hours / 24);
+    if (days > 30) {
+      return new Date(dateStr).toLocaleDateString("en-US", { month: "short", day: "numeric" });
+    }
+    if (days > 0) return `${days}d ago`;
+    if (hours > 0) return `${hours}h ago`;
+    return "just now";
+  },
+
+  /**
+   * @param {number} num
+   * @returns {string}
+   */
+  compactNumber(num) {
+    if (num >= 1000000) return (num / 1000000).toFixed(1) + "M";
+    if (num >= 1000) return (num / 1000).toFixed(1) + "K";
+    return num.toString();
+  },
+
 };
 
 // ==========================================
@@ -837,6 +867,7 @@ const Data = {
           App.data = json.apps;
           App.state.setsStats = setsStats;
           App.state.creationOdds = creationOdds;
+          App.state.lastUpdate = json.lastUpdate;
 
           // Build ID Map
           App.state.idMap = new Map();
@@ -1432,11 +1463,17 @@ const UI = {
 
     // Text
     const countEl = App.dom.headerCount;
+    const countText = Utils.compactNumber(absTotal);
+    let displayText = "";
     if (total === absTotal) {
-      countEl.textContent = `${absTotal.toLocaleString()} requests`;
+      displayText = `${countText} requests`;
     } else {
-      countEl.textContent = `${total.toLocaleString()} of ${absTotal.toLocaleString()} requests`;
+      displayText = `${Utils.compactNumber(total)} of ${countText} requests`;
     }
+    if (App.state.lastUpdate) {
+      displayText += ` · ${Utils.timeAgo(App.state.lastUpdate)}`;
+    }
+    countEl.textContent = displayText;
 
     // Checkbox
     const hc = App.dom.headerCheck;
