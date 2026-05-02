@@ -322,7 +322,7 @@ button.input-icon.active {
 .card-chart {
   display: flex;
   flex-direction: column;
-  height: 48px;
+  height: 68px;
   overflow: visible;
   position: relative;
 }
@@ -407,6 +407,19 @@ button.input-icon.active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#pulseCard,
+#domainStatsCard {
+  display: flex;
+  flex-direction: column;
+}
+
+#pulseChart,
+#domainStats {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 #pulseChart {
