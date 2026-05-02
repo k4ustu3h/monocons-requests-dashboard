@@ -326,17 +326,16 @@ const Utils = {
    * @returns {string}
    */
   timeAgo(dateStr) {
-    const now = Date.now();
-    const then = new Date(dateStr + "T00:00:00").getTime();
+    const now = new Date();
+    const then = new Date(dateStr + "T00:00:00");
     const diff = now - then;
-    const hours = Math.floor(diff / 3600000);
-    const days = Math.floor(hours / 24);
+    const days = Math.floor(diff / 86400000);
     if (days > 30) {
       return new Date(dateStr).toLocaleDateString("en-US", { month: "short", day: "numeric" });
     }
-    if (days > 0) return `${days}d ago`;
-    if (hours > 0) return `${hours}h ago`;
-    return "just now";
+    if (days === 0) return "today";
+    if (days === 1) return "1d";
+    return `${days}d`;
   },
 
   /**
