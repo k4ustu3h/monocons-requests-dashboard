@@ -291,16 +291,38 @@ button.input-icon.active {
 }
 
 .domain-stats {
-  padding: 12px 0;
-  margin-bottom: 4px;
+  padding: 0;
+  margin-bottom: 0;
 }
 
-.domain-chart {
+#domainStats {
+  overflow: visible;
+  position: relative;
+}
+
+#domainStatsCard {
+  overflow: visible;
+}
+
+.card-chart {
   display: flex;
+  flex-direction: column;
+  height: 48px;
+  overflow: visible;
+  position: relative;
+}
+
+.card-chart.has-bars {
+  flex-direction: row;
   align-items: flex-end;
   gap: 4px;
-  height: 48px;
   overflow-x: auto;
+}
+
+.chart-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--on-surface);
 }
 
 .domain-col {
@@ -323,40 +345,81 @@ button.input-icon.active {
   transition: height 0.3s;
 }
 
-.domain-col-label {
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--on-surface);
-}
-
-.domain-stats-card {
+.stats-card {
   background: var(--surface-container-low);
   border-radius: var(--shape-medium);
   padding: 16px;
   margin-bottom: 16px;
 }
 
-.domain-stats-header {
+.stats-header {
   display: flex;
   align-items: baseline;
   gap: 4px;
   margin-bottom: 12px;
+  flex-shrink: 0;
 }
 
-.domain-stats-title {
+.stats-title {
   font-size: 14px;
   font-weight: 600;
   color: var(--on-surface);
 }
 
-.domain-stats-sub {
+.stats-sub {
   font-size: 12px;
   color: var(--on-surface-variant);
 }
 
-.domain-stats {
-  padding: 0;
+.stats-row {
+  display: flex;
+  gap: 8px;
   margin-bottom: 0;
+}
+
+.stats-row .stats-card {
+  flex: 1;
+  min-width: 0px;
+}
+
+#pulseChart {
+  position: relative;
+}
+
+.pulse-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.pulse-line {
+  fill: none;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.pulse-zero {
+  stroke: var(--outline);
+  stroke-width: 1;
+}
+
+.pulse-added {
+  stroke: var(--primary);
+}
+
+.pulse-removed {
+  stroke: var(--error);
+}
+
+.pulse-days {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+.pulse-vline {
+  stroke: var(--outline-variant);
+  stroke-width: 0.5;
+  pointer-events: none;
 }
 
 /* =========================================
@@ -1235,5 +1298,22 @@ input[type="checkbox"]:indeterminate::after {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  .stats-row {
+    margin: 0 -16px;
+    padding: 0 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .stats-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .stats-row .stats-card {
+    width: 85vw;
+    min-width: 280px;
+    flex-shrink: 0;
   }
 }

@@ -66,12 +66,21 @@
     </div>
   </header>
 
-  <div class="domain-stats-card">
-    <div class="domain-stats-header">
-      <span class="domain-stats-title">Top domains</span>
-      <span class="domain-stats-sub"> (excl. com, org)</span>
+  <div class="stats-row">
+    <div id="pulseCard" class="stats-card">
+      <div class="stats-header">
+        <span class="stats-title">Activity</span>
+        <span class="stats-sub" id="pulseSub">added / resolved</span>
+      </div>
+      <div id="pulseChart" class="domain-stats"></div>
     </div>
-    <div id="domainStats" class="domain-stats"></div>
+    <div id="domainStatsCard" class="stats-card">
+      <div class="stats-header">
+        <span class="stats-title">Top domains</span>
+        <span class="stats-sub"> excl. com, org</span>
+      </div>
+      <div id="domainStats" class="domain-stats"></div>
+    </div>
   </div>
 
   <div class="controls">
@@ -86,6 +95,7 @@
         <select id="sortSelect" title="Sort by" class="chip">
           <option value="req-desc">Most requested</option>
           <option value="req-asc">Least requested</option>
+          <option value="trending">Trending</option>
           <option value="odds-desc">Highest creation odds</option>
           <option value="odds-asc">Lowest creation odds</option>
           <option value="install-desc">Most installed</option>

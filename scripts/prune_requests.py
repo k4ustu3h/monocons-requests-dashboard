@@ -436,6 +436,78 @@ def update_domain_stats() -> int:
     print(f"Updated domain_stats.json with {len(top)} domains (excluding com and org)")
     return len(top)    
 
+def update_stats_history(
+    total: int,
+    fulfilled_removed: int,
+    outdated_removed: int,
+) -> int:
+    """Append daily stats point to stats_history.json for pulse graph and trending."""
+    from datetime import date
+    
+    stats_path = REPO_ROOT / "src/assets/stats_history.json"
+    today = date.today().isoformat()
+    
+    history = []
+    if stats_path.exists():
+        try:
+            with open(stats_path, "r", encoding="utf-8") as f:
+                history = json.load(f)
+        except Exception:
+            history = []
+    
+    yesterday_total = history[-1]["total"] if history else total
+    yesterday_apps = history[-1]["snapshot"] if history else {}
+    
+    with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    
+    apps = data.get("apps", [])
+    today_snapshot = {}
+    today_components = set()
+    
+    for app in apps:
+        comp = app.get("componentName", "")
+        req = app.get("requestCount", 0)
+        if comp:
+            today_snapshot[comp] = req
+            today_components.add(comp)
+    
+    new_added = 0
+    for comp in today_components:
+        if comp not in yesterday_apps:
+            new_added += today_snapshot.get(comp, 0)
+        else:
+            delta = today_snapshot.get(comp, 0) - yesterday_apps.get(comp, 0)
+            if delta > 0:
+                new_added += delta
+    
+    total_removed = yesterday_total - total + new_added
+    manual_removed = max(0, total_removed - fulfilled_removed - outdated_removed)
+    
+    entry = {
+        "date": today,
+        "total": total,
+        "added": new_added,
+        "fulfilled": fulfilled_removed,
+        "outdated": outdated_removed,
+        "manual_removed": manual_removed,
+        "snapshot": today_snapshot
+    }
+    
+    if history and history[-1]["date"] == today:
+        history[-1] = entry
+    else:
+        history.append(entry)
+
+    for old_entry in history[:-30]:
+        old_entry.pop("snapshot", None)
+
+    with open(stats_path, "w", encoding="utf-8") as f:
+        json.dump(history, f, indent=2)
+    
+    print(f"Updated stats_history.json with {len(history)} entries (today: +{new_added}, -{fulfilled_removed}f, -{outdated_removed}o, -{manual_removed}m)")
+    return len(history)
+
 def main() -> int:
     # --- Fulfilled request pruning (depends on upstream appfilter changes) ---
     appfilter_changed = False
@@ -497,6 +569,18 @@ def main() -> int:
     # --- Update domain_stats.json ---
     domain_count = update_domain_stats()
     print(f"Domain stats updated: {domain_count} domains")
+
+    # --- Re-load requests.json to capture the final state after all pruning ---
+    with open(REQUESTS_JSON, "r") as f:
+        requests_data = json.load(f)
+
+    # --- Update stats history ---
+    history_count = update_stats_history(
+        total=len(requests_data.get("apps", [])),
+        fulfilled_removed=fulfilled_removed,
+        outdated_removed=outdated_removed,
+    )
+    print(f"Stats history updated: {history_count} entries")    
 
     # --- Update Play Store metadata for new requests ---
     new_without_installs = [a for a in requests_data.get("apps", []) if 'installs' not in a]

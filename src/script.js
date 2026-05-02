@@ -54,6 +54,7 @@ const CONFIG = {
     setsStatsPath: "assets/sets_stats.json",
     creationOddsPath: "assets/creation_odds.json",
     domainStatsPath: "assets/domain_stats.json",
+    statsHistoryPath: "assets/stats_history.json",
     assetsPath: "extracted_png/",
     iconExtension: ".png",
     filterPath: "assets/filters/",
@@ -131,6 +132,8 @@ const App = {
     setsStats: {},
     creationOdds: [],
     domainStats: {},
+    statsHistory: [],
+    trendingDeltas: {},
     lastUpdate: null,
 
   },
@@ -417,7 +420,7 @@ const existingSvgHtml = existingDrawable
           </div>
           </div>
         </div>
-        <div class="col req">${(App.state.setsStats[pkg] || app.requestCount).toLocaleString()}</div>
+        <div class="col req">${(App.state.setsStats[pkg] || app.requestCount).toLocaleString()}${App.state.trendingDeltas[app.componentName] ? ` <span style="color: var(--on-pine-container);" title="Popularity growth over last 30 days.">↑${App.state.trendingDeltas[app.componentName]}</span>` : ""}</div>
         <div class="col creation-odds" title="Chance of this request being fulfilled within a year if you wait.">${displayOdds}</div>
         <div class="col install" title="${app.installs || '0'} installs in Play Store">${displayInstalls}</div>
         <div class="col first" style="line-height:1.4">
@@ -864,14 +867,31 @@ const Data = {
       fetch(CONFIG.data.setsStatsPath).then(r => r.json()).catch(() => ({})),
       fetch(CONFIG.data.creationOddsPath).then(r => r.json()).catch(() => []),
       fetch(CONFIG.data.domainStatsPath).then(r => r.json()).catch(() => ({})),
+      fetch(CONFIG.data.statsHistoryPath).then(r => r.json()).catch(() => []),
       ...CONFIG.data.filters.map(id => this.fetchFilterData(id))
     ])
-        .then(([json, setsStats, creationOdds, domainStats, ...filterObjects]) => {
+        .then(([json, setsStats, creationOdds, domainStats, statsHistory, ...filterObjects]) => {
           App.data = json.apps;
           App.state.setsStats = setsStats;
           App.state.creationOdds = creationOdds;
           App.state.domainStats = domainStats;
+          App.state.statsHistory = statsHistory;
           App.state.lastUpdate = json.lastUpdate;
+
+          if (statsHistory && statsHistory.length > 0) {
+              const oldestSnapshot = statsHistory[0].snapshot || {};
+              const newestEntry = statsHistory[statsHistory.length - 1];
+              const newestSnapshot = newestEntry.snapshot || {};
+              App.state.trendingDeltas = {};
+
+              for (const [comp, count] of Object.entries(newestSnapshot)) {
+                  const prev = oldestSnapshot[comp] || 0;
+                  const delta = count - prev;
+                  if (delta > 0) {
+                      App.state.trendingDeltas[comp] = delta;
+                  }
+              }
+          }          
 
           // Build ID Map
           App.state.idMap = new Map();
@@ -1016,6 +1036,11 @@ const Data = {
             const valB = App.state.setsStats[pkgB] || b.requestCount;
             return valA - valB;
         },
+        "trending": (a, b) => {
+            const deltaA = App.state.trendingDeltas[a.componentName] || 0;
+            const deltaB = App.state.trendingDeltas[b.componentName] || 0;
+            return deltaB - deltaA;
+        },            
         "odds-desc": (a, b) => Utils.getCreationOdds(b) - Utils.getCreationOdds(a),
         "odds-asc": (a, b) => Utils.getCreationOdds(a) - Utils.getCreationOdds(b),
         "install-desc": (a, b) => Utils.parseInstalls(b.installs) - Utils.parseInstalls(a.installs),
@@ -1094,12 +1119,16 @@ const UI = {
 
   init() {
     this.renderDomainStats();
+    this.renderPulseCard();
     this.generateFilters();
     this.initObserver();
     this.initRegexAutocomplete();
     this.render();
 
-    window.addEventListener("resize", () => this.renderDomainStats());
+    window.addEventListener("resize", () => {
+        this.renderDomainStats();
+        this.renderPulseCard();
+    });
 
     // Bindings
     App.dom.inputSearch.addEventListener("input", e => {
@@ -1514,39 +1543,214 @@ const UI = {
     }
   },
 
-  renderDomainStats() {
-      const data = App.state.domainStats;
-      const card = document.querySelector(".domain-stats-card");
-      
-      if (!data || Object.keys(data).length === 0) {
-          if (card) card.style.display = "none";
-          return;
-      }
-      
-      if (card) card.style.display = "";
-      
-      const container = document.getElementById("domainStats");
-      if (!container) return;
-      
-      const containerWidth = container.clientWidth || document.querySelector(".page").clientWidth - 64;
-      const colWidth = 26;
-      const fits = Math.floor(containerWidth / colWidth);
-      const entries = Object.entries(data).slice(0, fits);
-      const max = entries[0][1];
-      
-      const html = `<div class="domain-chart">
-        ${entries.map(([domain, count]) => {
-          const h = (count / max * 100).toFixed(0);
-          const shortDomain = domain.length > 3 ? domain.slice(0, 3) : domain;
-          return `<div class="domain-col">
-            <div class="domain-col-fill" style="height:${h}%" title="${domain}: ${count}"></div>
-            <span class="domain-col-label">${shortDomain}</span>
-          </div>`;
-        }).join("")}
-      </div>`;
-      
-      container.innerHTML = html;
-  },
+renderDomainStats() {
+    const data = App.state.domainStats;
+    const card = document.querySelector(".stats-card");
+    
+    if (!data || Object.keys(data).length === 0) {
+        if (card) card.style.display = "none";
+        return;
+    }
+    
+    if (card) card.style.display = "";
+    
+    const container = document.getElementById("domainStats");
+    if (!container) return;
+    
+    const containerWidth = container.clientWidth || document.querySelector(".page").clientWidth - 64;
+    const colWidth = 26;
+    const fits = Math.floor(containerWidth / colWidth);
+    const entries = Object.entries(data).slice(0, fits);
+    const max = entries[0][1];
+    
+    const html = `<div class="card-chart has-bars">
+      ${entries.map(([domain, count]) => {
+        const h = (count / max * 100).toFixed(0);
+        const shortDomain = domain.length > 3 ? domain.slice(0, 3) : domain;
+        return `<div class="domain-col" data-domain="${domain}" data-count="${count}">
+          <div class="domain-col-fill" style="height:${h}%"></div>
+          <span class="chart-label">${shortDomain}</span>
+        </div>`;
+      }).join("")}
+    </div>`;
+    
+    container.innerHTML = html;
+    
+    const tooltip = document.createElement("div");
+    tooltip.className = "pulse-tooltip";
+    Object.assign(tooltip.style, {
+        display: "none",
+        position: "absolute",
+        background: "var(--surface-container-high)",
+        border: "1px solid var(--outline-variant)",
+        borderRadius: "var(--shape-small)",
+        padding: "6px 10px",
+        fontSize: "12px",
+        color: "var(--on-surface)",
+        pointerEvents: "none",
+        zIndex: "100",
+        whiteSpace: "nowrap",
+        lineHeight: "1.4"
+    });
+    container.appendChild(tooltip);
+    
+    container.addEventListener("mousemove", (e) => {
+        const col = e.target.closest(".domain-col");
+        if (!col) {
+            tooltip.style.display = "none";
+            return;
+        }
+        const domain = col.dataset.domain;
+        const count = col.dataset.count;
+        tooltip.innerHTML = `<div style="margin-bottom:4px">${domain}</div><div>${count} requests</div>`;
+        tooltip.style.display = "";
+        const rect = col.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+        tooltip.style.top = "0px";
+        tooltip.style.transform = "translateY(-50%)";
+        tooltip.style.left = (rect.left - containerRect.left + rect.width) + "px";
+    });
+    
+    container.addEventListener("mouseleave", () => {
+        tooltip.style.display = "none";
+    });
+},
+
+renderPulseCard() {
+    const history = App.state.statsHistory;
+    const card = document.getElementById("pulseCard");
+    
+    const container = document.getElementById("pulseChart");
+    if (!container) return;
+    
+    if (!history || history.length < 2) {
+        container.innerHTML = `<div class="card-chart" style="display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--on-surface-variant)">Collecting data…</div>`;
+        return;
+    }
+    
+    const last14 = history.slice(-14);
+    const totalAdded = last14.reduce((sum, d) => sum + (d.added || 0), 0);
+    const totalRemoved = last14.reduce((sum, d) => sum + (d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0), 0);
+    
+    const maxAdded = Math.max(...last14.map(d => d.added || 0));
+    const maxRemoved = Math.max(...last14.map(d => (d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0)));
+    const maxVal = Math.max(maxAdded, maxRemoved);
+    if (maxVal === 0) return;
+
+    const addedPoints = last14.map((d, i) => ({
+        x: (i / (last14.length - 1) * 100),
+        y: (50 - (d.added || 0) / maxVal * 50)
+    }));
+    
+    const removedPoints = last14.map((d, i) => ({
+        x: (i / (last14.length - 1) * 100),
+        y: (50 + ((d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0)) / maxVal * 50)
+    }));    
+    
+    const makePath = (points) => {
+        if (points.length < 2) return "";
+        let d = `M ${points[0].x.toFixed(1)} ${points[0].y.toFixed(1)}`;
+        for (let i = 1; i < points.length; i++) {
+            const cp1x = ((points[i - 1].x + points[i].x) / 2).toFixed(1);
+            const cp1y = points[i - 1].y.toFixed(1);
+            const cp2x = ((points[i - 1].x + points[i].x) / 2).toFixed(1);
+            const cp2y = points[i].y.toFixed(1);
+            d += ` C ${cp1x},${cp1y} ${cp2x},${cp2y} ${points[i].x.toFixed(1)},${points[i].y.toFixed(1)}`;
+        }
+        return d;
+    };
+
+    const pathAdded = makePath(addedPoints);
+    const pathRemoved = makePath(removedPoints);
+
+    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const firstDate = new Date(last14[0].date + "T12:00:00");
+    const lastDate = new Date(last14[last14.length - 1].date + "T12:00:00");
+    const firstLabel = `${monthNames[firstDate.getMonth()]} ${firstDate.getDate()}`;
+    const lastLabel = `${monthNames[lastDate.getMonth()]} ${lastDate.getDate()}`;
+    const mid1Date = new Date(last14[Math.floor(last14.length / 3)].date + "T12:00:00");
+    const mid1Label = `${monthNames[mid1Date.getMonth()]} ${mid1Date.getDate()}`;
+    const mid2Date = new Date(last14[Math.floor(last14.length * 2 / 3)].date + "T12:00:00");
+    const mid2Label = `${monthNames[mid2Date.getMonth()]} ${mid2Date.getDate()}`;
+    
+    const dayLabels = last14.map((d, i) => {
+        if (i === 0) return `<span class="chart-label">${firstLabel}</span>`;
+        if (i === last14.length - 1) return `<span class="chart-label">${lastLabel}</span>`;
+        return `<span class="chart-label"></span>`;
+    }).join("");
+
+    container.innerHTML = `<div class="card-chart">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="pulse-svg">
+        <line x1="0" y1="50" x2="100" y2="50" class="pulse-zero" />
+        <path d="${pathAdded}" class="pulse-line pulse-added" />
+        <path d="${pathRemoved}" class="pulse-line pulse-removed" />
+      </svg>
+      <div class="pulse-days">${dayLabels}</div>
+    </div>`;
+
+    const subEl = document.getElementById("pulseSub");
+    if (subEl) subEl.textContent = `+${Utils.compactNumber(totalAdded)} added / ${Utils.compactNumber(totalRemoved)} resolved`;
+
+    const svg = container.querySelector(".pulse-svg");
+    if (!svg) return;
+    
+    const tooltip = document.createElement("div");
+    tooltip.className = "pulse-tooltip";
+    Object.assign(tooltip.style, {
+        display: "none",
+        position: "absolute",
+        background: "var(--surface-container-high)",
+        border: "1px solid var(--outline-variant)",
+        borderRadius: "var(--shape-small)",
+        padding: "6px 10px",
+        fontSize: "12px",
+        color: "var(--on-surface)",
+        pointerEvents: "none",
+        zIndex: "50",
+        whiteSpace: "nowrap",
+        lineHeight: "1.4"
+    });
+    container.appendChild(tooltip);
+    
+    const vLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    vLine.classList.add("pulse-vline");
+    vLine.style.display = "none";
+    svg.appendChild(vLine);
+    
+    svg.addEventListener("mousemove", (e) => {
+        const svgRect = svg.getBoundingClientRect();
+        const cardRect = card.getBoundingClientRect();
+        const x = (e.clientX - svgRect.left) / svgRect.width * 100;
+        const idx = Math.round(x / 100 * (last14.length - 1));
+        const clamped = Math.min(last14.length - 1, Math.max(0, idx));
+        const snapX = (clamped / (last14.length - 1) * 100);
+        
+        vLine.setAttribute("x1", snapX);
+        vLine.setAttribute("x2", snapX);
+        vLine.setAttribute("y1", "0");
+        vLine.setAttribute("y2", "100");
+        vLine.style.display = "";
+        
+        const added = last14[clamped].added || 0;
+        const removed = (last14[clamped].fulfilled || 0) + (last14[clamped].outdated || 0) + (last14[clamped].manual_removed || 0);
+        
+        const dateParts = last14[clamped].date.split("-");
+        const formattedDate = `${monthNames[parseInt(dateParts[1]) - 1]} ${parseInt(dateParts[2])}`;
+        tooltip.innerHTML = `<div style="margin-bottom:4px">${formattedDate}</div><div style="color:var(--primary); margin-bottom:2px">+${added} requests</div><div style="color:var(--error)">−${removed} requests</div>`;
+        tooltip.style.display = "";
+        
+        const left = snapX / 100 * svgRect.width + 12;
+        tooltip.style.left = left + "px";
+        tooltip.style.top = "0px";
+        tooltip.style.transform = "translateY(-50%)";
+    });
+
+    svg.addEventListener("mouseleave", () => {
+        vLine.style.display = "none";
+        tooltip.style.display = "none";
+    });    
+    
+},
 
   initRegexAutocomplete() {
     const input = App.dom.inputSearch;
