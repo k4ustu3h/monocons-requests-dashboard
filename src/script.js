@@ -1394,10 +1394,10 @@ const UI = {
     Data.syncUrlState();
     this.updateHeader();
 
-    const card = document.getElementById("supportedCard");
-    if (card) {
-      card.style.display = "";
-    }
+    const desc = document.getElementById("supportedDesc");
+    const link = document.getElementById("supportedLink");
+    if (desc) desc.style.display = "";
+    if (link) link.style.display = "";
 
     if (s.currentData.length === 0) {
       App.dom.container.innerHTML = Templates.emptyState();
