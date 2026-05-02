@@ -54,9 +54,6 @@
       </div>
     </div>
     <div class="header-right">
-      <a href="https://opencollective.com/lawnchair" class="header-link" title="Open Collective">
-        <svg><use href="#ic-open-collective"></use></svg>
-      </a>
       <a href="https://github.com/LawnchairLauncher/lawnchair" class="header-link" title="Lawnchair on GitHub">
         <svg><use href="#ic-lawnchair"></use></svg>
       </a>
@@ -66,21 +63,32 @@
     </div>
   </header>
 
-  <div class="stats-row">
-    <div id="pulseCard" class="stats-card">
-      <div class="stats-header">
-        <span class="stats-title">Activity</span>
-        <span class="stats-sub" id="pulseSub">added / resolved</span>
+  <div class="cards-row">
+
+    <div id="supportedCard" class="card">
+      <div class="card-header">
+        <span class="status-pill status-supported">Supported</span>
+      </div>
+      <div class="card-sub">Requests from Open Collective backers and GitHub sponsors.</div>
+      <a href="https://github.com/LawnchairLauncher/lawnicons#supporting" target="_blank" rel="noopener" class="link">Become a supporter</a>
+    </div>
+
+    <div id="pulseCard" class="card">
+      <div class="card-header">
+        <span class="card-title">Activity</span>
+        <span class="card-sub" id="pulseSub">added / resolved</span>
       </div>
       <div id="pulseChart" class="domain-stats"></div>
     </div>
-    <div id="domainStatsCard" class="stats-card">
-      <div class="stats-header">
-        <span class="stats-title">Top domains</span>
-        <span class="stats-sub"> excl. com, org</span>
+
+    <div id="domainStatsCard" class="card">
+      <div class="card-header">
+        <span class="card-title">Top domains</span>
+        <span class="card-sub"> excl. com, org</span>
       </div>
       <div id="domainStats" class="domain-stats"></div>
     </div>
+
   </div>
 
   <div class="controls">
@@ -149,11 +157,6 @@
     </div>
   </div>
 
-  <div id="supportedBanner" class="supported-banner" style="display: none;">
-    <span>Requests from <strong>Open Collective backers</strong> and <strong>GitHub sponsors</strong>.</span>
-    <a href="https://github.com/LawnchairLauncher/lawnicons#supporting" target="_blank" rel="noopener">Become a supporter</a>
-  </div> 
-
   <div class="list-viewport">
     <div id="listHeader" class="list-header">
       <div class="col sel">
@@ -218,8 +221,6 @@
   <symbol id="ic-terminal" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
    <path d="M2 16C1.45 16 0.979167 15.8042 0.5875 15.4125C0.195833 15.0208 0 14.55 0 14V2C0 1.45 0.195833 0.979167 0.5875 0.5875C0.979167 0.195833 1.45 0 2 0H18C18.55 0 19.0208 0.195833 19.4125 0.5875C19.8042 0.979167 20 1.45 20 2V14C20 14.55 19.8042 15.0208 19.4125 15.4125C19.0208 15.8042 18.55 16 18 16H2ZM2 14H18V4H2V14ZM6.675 9L4.775 7.1C4.575 6.9 4.47917 6.66667 4.4875 6.4C4.49583 6.13333 4.6 5.9 4.8 5.7C5 5.51667 5.23333 5.42083 5.5 5.4125C5.76667 5.40417 6 5.5 6.2 5.7L8.8 8.3C9 8.5 9.1 8.73333 9.1 9C9.1 9.26667 9 9.5 8.8 9.7L6.2 12.3C6.01667 12.4833 5.7875 12.5792 5.5125 12.5875C5.2375 12.5958 5 12.5 4.8 12.3C4.61667 12.1167 4.525 11.8833 4.525 11.6C4.525 11.3167 4.61667 11.0833 4.8 10.9L6.675 9ZM11 13C10.7167 13 10.4792 12.9042 10.2875 12.7125C10.0958 12.5208 10 12.2833 10 12C10 11.7167 10.0958 11.4792 10.2875 11.2875C10.4792 11.0958 10.7167 11 11 11H15C15.2833 11 15.5208 11.0958 15.7125 11.2875C15.9042 11.4792 16 11.7167 16 12C16 12.2833 15.9042 12.5208 15.7125 12.7125C15.5208 12.9042 15.2833 13 15 13H11Z" fill="#D8E3F8"/>
   </symbol>
-
-  <symbol id="ic-open-collective" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 96c0 40.869 33.13 74 74 74 15.064 0 29.077-4.501 40.767-12.233l-18.983-18.983A47.802 47.802 0 0 1 96 144c-26.51 0-48-21.49-48-48s21.49-48 48-48a47.79 47.79 0 0 1 21.784 5.216l18.983-18.983C125.077 26.5 111.064 22 96 22c-40.87 0-74 33.13-74 74Zm148 0c0-15.064-4.501-29.078-12.233-40.767l-18.983 18.983A47.802 47.802 0 0 1 144 96a47.802 47.802 0 0 1-5.216 21.784l18.983 18.983C165.499 125.077 170 111.064 170 96Z" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 
   <symbol id="ic-lawnchair" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m22 22 148 148m0-74-22.5 11.25M90 91l-68 79 72-36" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 

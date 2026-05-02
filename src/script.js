@@ -1394,9 +1394,9 @@ const UI = {
     Data.syncUrlState();
     this.updateHeader();
 
-    const banner = document.getElementById("supportedBanner");
-    if (banner) {
-      banner.style.display = s.activeFilters.has("supported") ? "block" : "none";
+    const card = document.getElementById("supportedCard");
+    if (card) {
+      card.style.display = "";
     }
 
     if (s.currentData.length === 0) {
@@ -1545,7 +1545,7 @@ const UI = {
 
 renderDomainStats() {
     const data = App.state.domainStats;
-    const card = document.querySelector(".stats-card");
+    const card = document.getElementById("domainStatsCard");
     
     if (!data || Object.keys(data).length === 0) {
         if (card) card.style.display = "none";

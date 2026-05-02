@@ -111,6 +111,21 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.link {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--primary);
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -345,41 +360,53 @@ button.input-icon.active {
   transition: height 0.3s;
 }
 
-.stats-card {
+.card {
   background: var(--surface-container-low);
   border-radius: var(--shape-medium);
   padding: 16px;
   margin-bottom: 16px;
 }
 
-.stats-header {
+.card-header {
   display: flex;
   align-items: baseline;
   gap: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   flex-shrink: 0;
 }
 
-.stats-title {
+#supportedCard .card-header {
+  margin-bottom: 8px;
+}
+
+.card-title {
   font-size: 14px;
   font-weight: 600;
   color: var(--on-surface);
 }
 
-.stats-sub {
+.card-sub {
   font-size: 12px;
   color: var(--on-surface-variant);
 }
 
-.stats-row {
+.cards-row {
   display: flex;
   gap: 8px;
   margin-bottom: 0;
 }
 
-.stats-row .stats-card {
+.cards-row .card {
   flex: 1;
   min-width: 0px;
+}
+
+#supportedCard {
+  flex: 0 0 auto;
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #pulseChart {
@@ -518,35 +545,6 @@ select:hover {
   color: var(--on-secondary-container);
   padding-left: 32px;
   background-size: 18px;
-}
-
-.supported-banner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 10px 16px;
-  margin-bottom: 4px;
-  background: var(--surface-container);
-  border-radius: var(--shape-small);
-  font-size: 13px;
-  color: var(--on-surface);
-}
-
-.supported-banner span {
-  flex: 1;
-}
-
-.supported-banner a {
-  color: var(--primary);
-  font-weight: 600;
-  text-decoration: none;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.supported-banner a:hover {
-  text-decoration: underline;
 }
 
 /* =========================================
@@ -1300,20 +1298,26 @@ input[type="checkbox"]:indeterminate::after {
     }
   }
 
-  .stats-row {
+  .cards-row {
     margin: 0 -16px;
     padding: 0 16px;
     overflow-x: auto;
     scrollbar-width: none;
   }
 
-  .stats-row::-webkit-scrollbar {
+  .cards-row::-webkit-scrollbar {
     display: none;
   }
 
-  .stats-row .stats-card {
+  .cards-row .card {
     width: 85vw;
     min-width: 280px;
     flex-shrink: 0;
+  }
+
+#supportedCard {
+    width: 210px;
+    min-width: 210px;
+    flex: 0 0 210px;
   }
 }
