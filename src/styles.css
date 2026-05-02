@@ -322,7 +322,7 @@ button.input-icon.active {
 .card-chart {
   display: flex;
   flex-direction: column;
-  height: 68px;
+  height: 60px;
   overflow: visible;
   position: relative;
 }
