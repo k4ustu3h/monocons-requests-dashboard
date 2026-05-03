@@ -425,15 +425,14 @@ def update_domain_stats() -> int:
     for app in data.get("apps", []):
         pkg = app.get("componentName", "").split("/")[0]
         domain = pkg.split(".")[0] if "." in pkg else "unknown"
-        if domain not in ("com", "org"):
-            domain_counter[domain] += 1
+        domain_counter[domain] += 1
 
     top = dict(domain_counter.most_common())
 
     with open(domain_stats_path, "w", encoding="utf-8") as f:
         json.dump(top, f, indent=2)
 
-    print(f"Updated domain_stats.json with {len(top)} domains (excluding com and org)")
+    print(f"Updated domain_stats.json with {len(top)} domains")
     return len(top)    
 
 def update_activity_stats(

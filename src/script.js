@@ -1640,7 +1640,11 @@ renderDomainStats() {
     const containerWidth = container.clientWidth || document.querySelector(".page").clientWidth - 64;
     const colWidth = 26;
     const fits = Math.floor(containerWidth / colWidth);
-    const entries = Object.entries(data).slice(0, fits);
+    const nonGeo = new Set(["ai", "me", "my", "tv", "fm", "to", "st", "cc", "ws", "nu", "tk", "sh", "is", "as", "je", "gg", "im", "io", "co"]);
+    const isCountryCode = (domain) => /^[a-z]{2}$/.test(domain) && !nonGeo.has(domain);
+    const entries = Object.entries(data)
+        .filter(([domain]) => isCountryCode(domain))
+        .slice(0, fits);
     const max = entries[0][1];
     
     const html = `<div class="card-chart has-bars">
