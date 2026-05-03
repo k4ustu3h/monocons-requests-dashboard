@@ -409,7 +409,7 @@ const existingSvgHtml = existingDrawable
                   ${tagHtml}
                   <span class="app-name" style="${isUnknown ? "display: none" : ""}">${name}</span>
               </div>
-              <span class="pkg-name">${id}</span>
+              <span class="pkg-name" title="${id}">${id}</span>
           </div>
           </div>
         </div>
