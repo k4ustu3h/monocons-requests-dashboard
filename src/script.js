@@ -127,7 +127,6 @@ const App = {
     currentData: [],
 
     actionMode: "new",
-    icontoolPath: localStorage.getItem("icontoolPath") || "",
     existingSvgs: new Map(),
     setsStats: {},
     creationOdds: [],
@@ -175,15 +174,10 @@ const App = {
     sbBar: /** @type {any} */ (document.getElementById("selectionBar")),
     /** @type {HTMLDivElement} */
     sbCount: /** @type {any} */ (document.getElementById("sbCount")),
-    /** @type {NodeListOf<HTMLButtonElement>} */
-    sbChips: document.querySelectorAll(".sb-chip"),
-    /** @type {HTMLButtonElement} */
-    sbClearBtn: /** @type {any} */ (document.getElementById("sbClearBtn")),
-    /** @type {HTMLInputElement} */
-    sbPathInput: /** @type {any} */ (document.getElementById("sbPathInput")),
     /** @type {HTMLButtonElement} */
     sbDownloadBtn: /** @type {any} */ (document.getElementById("sbDownloadBtn")),
-
+    /** @type {HTMLButtonElement} */
+    sbMenuBtn: /** @type {any} */ (document.getElementById("sbMenuBtn")),
     /** @type {HTMLElement} */
     rowMenu: /** @type {any} */ (document.getElementById("rowMenu")),
     /** @type {HTMLDivElement} */
@@ -427,7 +421,7 @@ const existingSvgHtml = existingDrawable
           <div>Last: ${lastStr}</div>
         </div>
         <div class="actions-col">
-          <a class="action-btn" href="${iconUrl}" download title="Download icon"
+          <a class="action-btn" href="${iconUrl}" download title="Download PNG"
             tabindex="0" role="button" aria-label="Download" >${ICONS.download}</a>
           <a class="action-btn" href="${CONFIG.urls.playStore}${pkg}" target="_blank" title="Play Store"
             tabindex="0" role="button" aria-label="Play Store" >${ICONS.play}</a>
@@ -525,11 +519,11 @@ const existingSvgHtml = existingDrawable
         ${ICONS.galaxyStore} <span>Galaxy Store</span>
       </div>
       <div class="ctx-divider"></div>
-      <div class="ctx-item" tabindex="0" role="menuitem" onclick="Actions.copyToClipboard('${safeName}\\n${id}')">
-        ${ICONS.copy} <span>Copy Name & ID</span>
+      <div class="ctx-item" tabindex="0" role="menuitem" onclick="Actions.copyNamesAndIDs(['${id}'])">
+        ${ICONS.copy} <span>Copy name & app ID</span>
       </div>
       <div class="ctx-item" tabindex="0" role="menuitem" onclick="Actions.copyAppFilterEntry('${id}')">
-        ${ICONS.copy} <span>Copy Appfilter</span>
+        ${ICONS.copy} <span>Copy appfilter.xml</span>
       </div>
     `;
   },
@@ -678,6 +672,7 @@ const Actions = {
     App.dom.selectSort.value = nextSort;
     UI.render();
   },
+  
 
   clearAllSelections() {
     App.state.selected.clear();
@@ -686,6 +681,17 @@ const Actions = {
     UI.updateSelectionBar();
     UI.render();
   },
+
+  generateNamesAndIDs(ids = null) {
+    const apps = ids
+      ? ids.map(id => App.state.idMap.get(id)).filter(Boolean)
+      : App.data.filter(a => App.state.selected.has(a.componentName));
+    return apps.map(app => `${app.label}\n${app.componentName}`).join("\n\n");
+  },
+
+  copyNamesAndIDs(ids = null) {
+    Actions.copyToClipboard(Actions.generateNamesAndIDs(ids));
+  },  
 
   /**
    * @param {string} text
@@ -701,8 +707,45 @@ const Actions = {
    * @param {string} id
    */
   copyAppFilterEntry(id) {
-    const app = App.state.idMap.get(id);
-    if (app) Actions.copyToClipboard(Utils.generateXml(app));
+    Actions.copyToClipboard(Actions.generateAppFilterXml([id]));
+  },
+
+  generateAppFilterXml(ids = null) {
+    const apps = ids
+      ? ids.map(id => App.state.idMap.get(id)).filter(Boolean)
+      : App.data.filter(a => App.state.selected.has(a.componentName));
+    let xml = "<resources>\n";
+    apps.forEach(app => {
+      xml += `    ${Utils.generateXml(app)}\n`;
+    });
+    xml += "</resources>";
+    return xml;
+  },
+
+  copyAppFilter() {
+    Actions.copyToClipboard(Actions.generateAppFilterXml());
+  },
+  
+    generatePRDescription(mode) {
+    const selected = App.data.filter(a => App.state.selected.has(a.componentName));
+    let md = `## Icons\n`;
+    if (mode === "new") {
+      md += "### Added\n";
+      selected.forEach(app => {
+        md += `${app.label} (\`${app.componentName.split('/')[0]}\`)\n`;
+      });
+    } else {
+      md += "### Linked\n";
+      selected.forEach(app => {
+        const drawable = Utils.sanitizeDrawableName(app.label);
+        md += `${app.label} (\`${app.componentName.split('/')[0]}\` → \`${drawable}.svg\`)\n`;
+      });
+    }
+    return md;
+  },
+
+  copyPRDescription(mode) {
+    Actions.copyToClipboard(Actions.generatePRDescription(mode));
   },
 
   async downloadBundle() {
@@ -723,7 +766,6 @@ const Actions = {
 
     try {
       const mode = App.state.actionMode; // "new" | "link"
-      const path = App.state.icontoolPath.trim().replace(/\/+$/, "") + "/";
 
        // fflate uses a simple object mapping paths to Uint8Arrays/Strings
        /** @type {Object.<string, Uint8Array | string | Object>} */
@@ -731,7 +773,7 @@ const Actions = {
 
        // Only include icons folder in "new" mode
        if (mode === "new") {
-         zipData["icons"] = {};
+         zipData["_icons"] = {};
        }
 
       let xmlAppFilter = "<resources>\n";
@@ -786,11 +828,9 @@ const Actions = {
         xmlAppFilter += `    <item component="ComponentInfo{${cmp}}" drawable="${drawable}" name="${label}" />\n`;
 
         // Commands
-        if (App.state.icontoolPath) {
-          const cmdType = mode === "new" ? "add" : "link";
-          const svgPath = mode === "new" ? `"${path}${drawable}.svg"` : `"${drawable}"`;
-          txtCommands += `python3 ./icontool.py ${cmdType} ${svgPath} ${cmp} "${cmdLabel}"\n`;
-        }
+        const cmdType = mode === "new" ? "add" : "link";
+        const svgPath = mode === "new" ? `"${drawable}.svg"` : `"${drawable}"`;
+        txtCommands += `python3 ./icontool.py ${cmdType} ${svgPath} ${cmp} "${cmdLabel}"\n`;
 
         // PR Description
         if (!processedPackages.has(pkg)) {
@@ -804,12 +844,12 @@ const Actions = {
         }
 
        // Queue Icon Fetch (only in "new" mode)
-         if (mode === "new" && !zipData.icons[`${drawable}.png`]) {
+         if (mode === "new" && !zipData._icons[`${drawable}.png`]) {
            const url = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
            const p = fetch(url)
                .then(r => r.ok ? r.arrayBuffer() : null)
                .then(buf => {
-                 if (buf) zipData.icons[`${drawable}.png`] = new Uint8Array(buf);
+                 if (buf) zipData._icons[`${drawable}.png`] = new Uint8Array(buf);
                })
                .catch(() => {});
            fetchPromises.push(p);
@@ -822,7 +862,7 @@ const Actions = {
 
       // 1. XML
       xmlAppFilter += "</resources>";
-      zipData["!appfilter.xml"] = fflate.strToU8(xmlAppFilter);
+      zipData["appfilter.xml"] = fflate.strToU8(xmlAppFilter);
 
       // 2. Config
       const filterConfig = {
@@ -830,15 +870,18 @@ const Actions = {
         "description": "Sample description",
         "selection": selectedApps.map(a => a.componentName)
       };
-      zipData["!filter_config.json"] = fflate.strToU8(JSON.stringify(filterConfig, null, 2));
+      zipData["filter_config.json"] = fflate.strToU8(JSON.stringify(filterConfig, null, 2));
 
       // 3. Commands
-      if (txtCommands) zipData["!icontool_commands.txt"] = fflate.strToU8(txtCommands);
+      if (txtCommands) {
+        txtCommands = "Run from your Lawnicons repository folder.\n\n" + txtCommands;
+        zipData["icontool_commands.txt"] = fflate.strToU8(txtCommands);
+      }
 
-      let mdPR = `## Icons \n<!-- Generated via Dashboard -->\n\n`;
+      let mdPR = "## Icons\n\n";
       mdPR += (mode === "new" ? "### Added\n" : "### Linked\n");
       mdPR += Array.from(prLines).join("\n") + "\n";
-      zipData["!pr_description.md"] = fflate.strToU8(mdPR);
+      zipData["pr_description.md"] = fflate.strToU8(mdPR);
 
       // 6. Zip & Download
       App.dom.sbDownloadBtn.innerHTML = "Zipping...";
@@ -846,13 +889,13 @@ const Actions = {
 
       const link = document.createElement("a");
       link.href = URL.createObjectURL(new Blob([content], { type: 'application/zip' }));
-      link.download = `lawnicons-${mode}-${new Date().toISOString().slice(0, 10)}.zip`;
+      const date = new Date().toISOString().slice(5, 10); // MM-DD
+      const name = mode === "new" ? `lawnicons-add-icons-${date}` : `lawnicons-link-app-ids-${date}`;
+      link.download = `${name}.zip`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
       URL.revokeObjectURL(link.href);
-
-      Toast.show(`Downloaded bundle (${mode})`, "success");
 
     } catch (e) {
       console.error(e);
@@ -1178,38 +1221,51 @@ const UI = {
     });
 
     // Selection Bar
-    App.dom.sbChips.forEach(chip => {
-      chip.addEventListener("click", () => {
-        App.state.actionMode = (/** @type {any} */ (chip.dataset)).mode;
-        App.dom.sbChips.forEach(c => c.classList.remove("active"));
-        chip.classList.add("active");
-      });
+    App.dom.sbDownloadBtn.addEventListener("click", () => {
+      App.state.actionMode = "new";
+      Actions.downloadBundle();
     });
 
-    App.dom.sbPathInput.value = App.state.icontoolPath;
-    App.dom.sbPathInput.addEventListener("input", (e) => {
-      const val = (/** @type {HTMLInputElement} */ (e.target)).value;
-      App.state.icontoolPath = val;
-      localStorage.setItem("icontoolPath", val);
+    App.dom.sbMenuBtn.addEventListener("click", (e) => {
+      const menu = document.getElementById("sbMenu");
+      menu.innerHTML = `
+        <div class="ctx-item" role="menuitem">
+          ${ICONS.copy} <span>Copy appfilter.xml</span>
+        </div>
+        <div class="ctx-item" role="menuitem">
+          ${ICONS.copy} <span>Copy names and app IDs</span>
+        </div>        
+        <div class="ctx-item" role="menuitem">
+          ${ICONS.copy} <span>Copy PR body (new icons)</span>
+        </div>
+        <div class="ctx-item" role="menuitem">
+          ${ICONS.copy} <span>Copy PR body (links)</span>
+        </div>
+        <div class="ctx-item" role="menuitem">
+          ${ICONS.download} <span>Download metadata</span>
+        </div>
+      `;
+      const items = menu.querySelectorAll(".ctx-item");
+      items[0].onclick = () => { Actions.copyAppFilter(); menu.hidePopover(); };
+      items[1].onclick = () => { Actions.copyPRDescription("new"); menu.hidePopover(); };
+      items[2].onclick = () => { Actions.copyPRDescription("link"); menu.hidePopover(); };
+      items[3].onclick = () => { Actions.copyNamesAndIDs(); menu.hidePopover(); };
+      items[4].onclick = () => { App.state.actionMode = "link"; Actions.downloadBundle(); menu.hidePopover(); };
+      
+      const rect = e.currentTarget.getBoundingClientRect();
+      const w = 240, h = 240;
+      let x = rect.left;
+      let y = rect.top - h - 20;
+      if (x + w > window.innerWidth) x = rect.right - w;
+      if (y < 0) y = rect.bottom + 8;
+      menu.style.left = `${x}px`;
+      menu.style.top = `${y}px`;
+      menu.style.transformOrigin = "bottom left";
+      menu.showPopover();
     });
 
-    App.dom.sbClearBtn.addEventListener("click", () => Actions.clearAllSelections());
-    App.dom.sbDownloadBtn.addEventListener("click", () => Actions.downloadBundle());
-
-    // Sort Headers
-    const headers = {
-      '.col.name': 'name',
-      '.col.req': 'req',
-      '.col.creation-odds': 'odds',
-      '.col.install': 'install',
-      '.col.first': 'time'
-    };
-    Object.entries(headers).forEach(([selector, key]) => {
-      const el = /** @type {HTMLElement} */ (App.dom.listHeader.querySelector(selector));
-      if (el) {
-        el.title = "Click to sort";
-        el.onclick = () => Actions.toggleSortHeader(key);
-      }
+      document.getElementById("sbHint")?.addEventListener("click", () => {
+        Actions.clearAllSelections();
     });
 
     // Event Delegation

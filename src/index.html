@@ -126,35 +126,20 @@
 
   <!-- SELECTION BAR (Fixed Bottom Card) -->
   <div id="selectionBar" class="selection-bar">
-    <div class="sb-left">
+    <div class="sb-main">
       <div class="sb-count" id="sbCount">0 icons</div>
-
-      <div class="sb-chips">
-        <button class="tag chip sb-chip active" data-mode="new">New icons</button>
-        <button class="tag chip sb-chip" data-mode="link">Link</button>
+      <div class="sb-actions">
+        <button class="sb-action-btn" id="sbDownloadBtn" title="Download zip archive">
+          <svg><use href="#ic-download"/></svg>
+          <span>Download</span>
+        </button>
+        <button class="sb-action-btn sb-action-btn-icon" id="sbMenuBtn" title="Download menu">
+          <svg><use href="#ic-dots"/></svg>
+        </button>
       </div>
     </div>
-
-    <div class="sb-right">
-      <!-- Clear Selection -->
-      <button class="sb-icon-btn" id="sbClearBtn" title="Clear selection">
-        <svg><use href="#ic-close"/></svg>
-      </button>
-
-      <!-- Path Input -->
-      <div class="input-wrapper sb-input-wrapper">
-        <div class="input-icon">
-          <svg><use href="#ic-terminal"/></svg>
-        </div>
-        <input id="sbPathInput" placeholder="Icontool path (optional)" />
-      </div>
-
-      <!-- Download Button -->
-      <button class="sb-action-btn" id="sbDownloadBtn">
-        <svg><use href="#ic-download"/></svg>
-        <span>Download</span>
-      </button>
-    </div>
+    <div class="sb-hint" id="sbHint"><kbd>Esc</kbd>Clear selection</div>
+    <div id="sbMenu" popover="auto" class="context-menu row-style"></div>
   </div>
 
   <div class="list-viewport">
