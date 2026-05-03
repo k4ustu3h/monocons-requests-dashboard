@@ -679,6 +679,14 @@ const Actions = {
     UI.render();
   },
 
+  clearAllSelections() {
+    App.state.selected.clear();
+    App.state.lastSelectedId = null;
+    UI.updateHeader();
+    UI.updateSelectionBar();
+    UI.render();
+  },
+
   /**
    * @param {string} text
    */
@@ -1185,7 +1193,7 @@ const UI = {
       localStorage.setItem("icontoolPath", val);
     });
 
-    App.dom.sbClearBtn.addEventListener("click", () => Actions.toggleSelectAll(false));
+    App.dom.sbClearBtn.addEventListener("click", () => Actions.clearAllSelections());
     App.dom.sbDownloadBtn.addEventListener("click", () => Actions.downloadBundle());
 
     // Sort Headers
@@ -1247,7 +1255,7 @@ const UI = {
 
       // 3. Clear Selection (Esc)
       if (e.key === 'Escape') {
-        if (App.state.selected.size > 0) Actions.toggleSelectAll(false);
+        if (App.state.selected.size > 0) Actions.clearAllSelections();
       }
 
       // 4. Focus selection bar (Ctrl + Enter)
