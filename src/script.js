@@ -673,13 +673,17 @@ const Actions = {
     UI.render();
   },
   
-
   clearAllSelections() {
+    if (App.state.selected.size === 0) return;
+    document.querySelectorAll(".list-row.selected, .grid-card.selected").forEach(el => {
+      el.classList.remove("selected");
+      const cb = el.querySelector("input[type='checkbox']");
+      if (cb) cb.checked = false;
+    });
     App.state.selected.clear();
     App.state.lastSelectedId = null;
     UI.updateHeader();
     UI.updateSelectionBar();
-    UI.render();
   },
 
   generateNamesAndIDs(ids = null) {
@@ -1450,9 +1454,6 @@ const UI = {
       });
     });
 
-    // Auto Focus
-    const isDesktop = window.matchMedia('(pointer: fine)').matches;
-    if (isDesktop) App.dom.inputSearch.focus();
   },
 
   initObserver() {

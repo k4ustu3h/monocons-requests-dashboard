@@ -1028,13 +1028,11 @@ input[type="checkbox"]:indeterminate::after {
   font-family: inherit;
 }
 
-.sb-clear-btn:hover {
-  opacity: 0.8;
-}
-
 .sb-clear-btn kbd {
   display: inline-block;
-  padding: 1px 6px;
+  line-height: 24px;
+  padding: 0 12px;
+  background: var(--surface-container-high);
   border-radius: var(--shape-xsmall);
   border: 1px solid var(--outline-variant);
   font-size: 12px;
@@ -1042,10 +1040,8 @@ input[type="checkbox"]:indeterminate::after {
   color: var(--on-surface-variant);
 }
 
-.sb-clear-btn span {
-  font-size: 12px;
-  color: var(--primary);
-  font-weight: 500;
+.sb-clear-btn kbd:hover {
+  background: var(--surface-container-highest);
 }
 
 .selection-bar.visible {
