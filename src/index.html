@@ -127,17 +127,20 @@
   <div id="selectionBar" class="selection-bar">
     <div class="sb-main">
       <div class="sb-count" id="sbCount">0 icons</div>
-      <div class="sb-actions">
-        <button class="sb-action-btn" id="sbDownloadBtn" title="Download zip archive">
-          <svg><use href="#ic-download"/></svg>
-          <span>Download</span>
+        <button class="sb-clear-btn" id="sbHint" title="Clear selection">
+          <kbd>Esc</kbd>
+          <span>Clear</span>
         </button>
-        <button class="sb-action-btn sb-action-btn-icon" id="sbMenuBtn" title="Download menu">
-          <svg><use href="#ic-dots"/></svg>
-        </button>
-      </div>
     </div>
-    <div class="sb-hint" id="sbHint"><kbd>Esc</kbd>Clear selection</div>
+    <div class="sb-actions">
+      <button class="sb-action-btn" id="sbDownloadBtn" title="Download zip archive">
+        <svg><use href="#ic-download"/></svg>
+        <span>Download</span>
+      </button>
+      <button class="sb-action-btn sb-action-btn-icon" id="sbMenuBtn" title="Download options">
+        <svg><use href="#ic-dots"/></svg>
+      </button>
+    </div>
     <div id="sbMenu" popover="auto" class="context-menu row-style"></div>
   </div>
 
