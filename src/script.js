@@ -1689,7 +1689,7 @@ renderPulseCard() {
     </div>`;
 
     const subEl = document.getElementById("pulseSub");
-    if (subEl) subEl.textContent = `+${Utils.compactNumber(totalAdded)} added / ${Utils.compactNumber(totalRemoved)} resolved`;
+    if (subEl) subEl.textContent = `${Utils.compactNumber(totalAdded)} added / ${Utils.compactNumber(totalRemoved)} resolved`;
 
     const svg = container.querySelector(".pulse-svg");
     if (!svg) return;
