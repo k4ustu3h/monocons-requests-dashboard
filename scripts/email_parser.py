@@ -42,7 +42,8 @@ def parse_args():
 
 def load_emails(folder_path: Path) -> list[Path]:
     if not folder_path.is_dir():
-        raise ValueError(f"Path is not a directory: {folder_path}")
+        print(f"Emails directory not found: {folder_path}. Skipping email parsing.")
+        return []
     return list(folder_path.glob('*.eml'))
 
 def read_email(file_path: Path) -> Message:
