@@ -1661,21 +1661,7 @@ renderDomainStats() {
     container.innerHTML = html;
     
     const tooltip = document.createElement("div");
-    tooltip.className = "activity-tooltip";
-    Object.assign(tooltip.style, {
-        display: "none",
-        position: "absolute",
-        background: "var(--surface-container-high)",
-        border: "1px solid var(--outline-variant)",
-        borderRadius: "var(--shape-small)",
-        padding: "6px 10px",
-        fontSize: "12px",
-        color: "var(--on-surface)",
-        pointerEvents: "none",
-        zIndex: "100",
-        whiteSpace: "nowrap",
-        lineHeight: "1.4"
-    });
+    tooltip.className = "chart-tooltip";
     container.appendChild(tooltip);
     
     container.addEventListener("mousemove", (e) => {
@@ -1687,7 +1673,7 @@ renderDomainStats() {
         const domain = col.dataset.domain;
         const count = col.dataset.count;
         tooltip.innerHTML = `<div style="margin-bottom:4px">${domain}</div><div>${count} requests</div>`;
-        tooltip.style.display = "";
+        tooltip.style.display = "block";
         const rect = col.getBoundingClientRect();
         const containerRect = container.getBoundingClientRect();
         tooltip.style.top = "0px";
@@ -1779,21 +1765,7 @@ renderActivityCard() {
     if (!svg) return;
     
     const tooltip = document.createElement("div");
-    tooltip.className = "activity-tooltip";
-    Object.assign(tooltip.style, {
-        display: "none",
-        position: "absolute",
-        background: "var(--surface-container-high)",
-        border: "1px solid var(--outline-variant)",
-        borderRadius: "var(--shape-small)",
-        padding: "6px 10px",
-        fontSize: "12px",
-        color: "var(--on-surface)",
-        pointerEvents: "none",
-        zIndex: "50",
-        whiteSpace: "nowrap",
-        lineHeight: "1.4"
-    });
+    tooltip.className = "chart-tooltip";
     container.appendChild(tooltip);
     
     const vLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
@@ -1821,7 +1793,7 @@ renderActivityCard() {
         const dateParts = last14[clamped].date.split("-");
         const formattedDate = `${monthNames[parseInt(dateParts[1]) - 1]} ${parseInt(dateParts[2])}`;
         tooltip.innerHTML = `<div style="margin-bottom:4px">${formattedDate}</div><div style="color:var(--primary); margin-bottom:2px">+${added} new</div><div style="color:var(--error)">−${removed} resolved</div>`;
-        tooltip.style.display = "";
+        tooltip.style.display = "block";
         
         const left = snapX / 100 * svgRect.width + 12;
         tooltip.style.left = left + "px";

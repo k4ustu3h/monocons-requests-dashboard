@@ -462,6 +462,20 @@ button.input-icon.active {
   pointer-events: none;
 }
 
+.chart-tooltip {
+  display: none;
+  position: absolute;
+  background: var(--surface-container-highest);
+  border-radius: var(--shape-small);
+  padding: 6px 10px;
+  font-size: 12px;
+  color: var(--on-surface);
+  pointer-events: none;
+  z-index: 100;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
 /* =========================================
    4. CONTROLS
    ========================================= */
