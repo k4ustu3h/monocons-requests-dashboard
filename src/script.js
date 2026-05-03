@@ -1169,7 +1169,7 @@ const UI = {
 
   init() {
     this.renderDomainStats();
-    this.renderPulseCard();
+    this.renderActivityCard();
     this.generateFilters();
     this.initObserver();
     this.initRegexAutocomplete();
@@ -1177,7 +1177,7 @@ const UI = {
 
     window.addEventListener("resize", () => {
         this.renderDomainStats();
-        this.renderPulseCard();
+        this.renderActivityCard();
     });
 
     // Bindings
@@ -1657,7 +1657,7 @@ renderDomainStats() {
     container.innerHTML = html;
     
     const tooltip = document.createElement("div");
-    tooltip.className = "pulse-tooltip";
+    tooltip.className = "activity-tooltip";
     Object.assign(tooltip.style, {
         display: "none",
         position: "absolute",
@@ -1696,11 +1696,11 @@ renderDomainStats() {
     });
 },
 
-renderPulseCard() {
+renderActivityCard() {
     const history = App.state.activityStats;
-    const card = document.getElementById("pulseCard");
+    const card = document.getElementById("activityCard");
     
-    const container = document.getElementById("pulseChart");
+    const container = document.getElementById("activityChart");
     if (!container) return;
     
     if (!history || history.length < 2) {
@@ -1709,15 +1709,15 @@ renderPulseCard() {
     }
     
     const last14 = history.slice(-14);
-    const totalAdded = last14.reduce((sum, d) => sum + (d.added || 0), 0);
+    const totalNew = last14.reduce((sum, d) => sum + (d.added || 0), 0);
     const totalRemoved = last14.reduce((sum, d) => sum + (d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0), 0);
     
-    const maxAdded = Math.max(...last14.map(d => d.added || 0));
+    const maxNew = Math.max(...last14.map(d => d.added || 0));
     const maxRemoved = Math.max(...last14.map(d => (d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0)));
-    const maxVal = Math.max(maxAdded, maxRemoved);
+    const maxVal = Math.max(maxNew, maxRemoved);
     if (maxVal === 0) return;
 
-    const addedPoints = last14.map((d, i) => ({
+    const newPoints = last14.map((d, i) => ({
         x: (i / (last14.length - 1) * 100),
         y: (50 - (d.added || 0) / maxVal * 50)
     }));
@@ -1740,7 +1740,7 @@ renderPulseCard() {
         return d;
     };
 
-    const pathAdded = makePath(addedPoints);
+    const pathNew = makePath(newPoints);
     const pathRemoved = makePath(removedPoints);
 
     const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -1760,22 +1760,22 @@ renderPulseCard() {
     }).join("");
 
     container.innerHTML = `<div class="card-chart">
-      <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="pulse-svg">
-        <line x1="0" y1="50" x2="100" y2="50" class="pulse-zero" />
-        <path d="${pathAdded}" class="pulse-line pulse-added" />
-        <path d="${pathRemoved}" class="pulse-line pulse-removed" />
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="activity-svg">
+        <line x1="0" y1="50" x2="100" y2="50" class="activity-zero" />
+        <path d="${pathNew}" class="activity-line activity-new" />
+        <path d="${pathRemoved}" class="activity-line activity-removed" />
       </svg>
-      <div class="pulse-days">${dayLabels}</div>
+      <div class="activity-days">${dayLabels}</div>
     </div>`;
 
-    const subEl = document.getElementById("pulseSub");
-    if (subEl) subEl.textContent = `${Utils.compactNumber(totalAdded)} added / ${Utils.compactNumber(totalRemoved)} resolved`;
+    const subEl = document.getElementById("activitySub");
+    if (subEl) subEl.textContent = `${Utils.compactNumber(totalNew)} new / ${Utils.compactNumber(totalRemoved)} resolved`;
 
-    const svg = container.querySelector(".pulse-svg");
+    const svg = container.querySelector(".activity-svg");
     if (!svg) return;
     
     const tooltip = document.createElement("div");
-    tooltip.className = "pulse-tooltip";
+    tooltip.className = "activity-tooltip";
     Object.assign(tooltip.style, {
         display: "none",
         position: "absolute",
@@ -1793,7 +1793,7 @@ renderPulseCard() {
     container.appendChild(tooltip);
     
     const vLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
-    vLine.classList.add("pulse-vline");
+    vLine.classList.add("activity-vline");
     vLine.style.display = "none";
     svg.appendChild(vLine);
     
@@ -1816,7 +1816,7 @@ renderPulseCard() {
         
         const dateParts = last14[clamped].date.split("-");
         const formattedDate = `${monthNames[parseInt(dateParts[1]) - 1]} ${parseInt(dateParts[2])}`;
-        tooltip.innerHTML = `<div style="margin-bottom:4px">${formattedDate}</div><div style="color:var(--primary); margin-bottom:2px">+${added} requests</div><div style="color:var(--error)">−${removed} requests</div>`;
+        tooltip.innerHTML = `<div style="margin-bottom:4px">${formattedDate}</div><div style="color:var(--primary); margin-bottom:2px">+${added} new</div><div style="color:var(--error)">−${removed} resolved</div>`;
         tooltip.style.display = "";
         
         const left = snapX / 100 * svgRect.width + 12;

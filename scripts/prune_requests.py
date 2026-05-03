@@ -441,7 +441,7 @@ def update_activity_stats(
     fulfilled_removed: int,
     outdated_removed: int,
 ) -> int:
-    """Append daily stats point to stats_history.json for pulse graph and trending."""
+    """Append daily stats point to stats_history.json for activity graph and trending."""
     from datetime import date
     
     activity_stats_path = REPO_ROOT / "src/assets/activity_stats.json"
