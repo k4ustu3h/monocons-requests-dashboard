@@ -54,7 +54,7 @@ const CONFIG = {
     setsStatsPath: "assets/sets_stats.json",
     creationOddsPath: "assets/creation_odds.json",
     domainStatsPath: "assets/domain_stats.json",
-    statsHistoryPath: "assets/stats_history.json",
+    activityStatsPath: "assets/activity_stats.json",
     assetsPath: "extracted_png/",
     iconExtension: ".png",
     filterPath: "assets/filters/",
@@ -132,7 +132,7 @@ const App = {
     setsStats: {},
     creationOdds: [],
     domainStats: {},
-    statsHistory: [],
+    activityStats: [],
     trendingDeltas: {},
     lastUpdate: null,
 
@@ -866,20 +866,20 @@ const Data = {
       fetch(CONFIG.data.setsStatsPath).then(r => r.json()).catch(() => ({})),
       fetch(CONFIG.data.creationOddsPath).then(r => r.json()).catch(() => []),
       fetch(CONFIG.data.domainStatsPath).then(r => r.json()).catch(() => ({})),
-      fetch(CONFIG.data.statsHistoryPath).then(r => r.json()).catch(() => []),
+      fetch(CONFIG.data.activityStatsPath).then(r => r.json()).catch(() => []),
       ...CONFIG.data.filters.map(id => this.fetchFilterData(id))
     ])
-        .then(([json, setsStats, creationOdds, domainStats, statsHistory, ...filterObjects]) => {
+        .then(([json, setsStats, creationOdds, domainStats, activityStats, ...filterObjects]) => {
           App.data = json.apps;
           App.state.setsStats = setsStats;
           App.state.creationOdds = creationOdds;
           App.state.domainStats = domainStats;
-          App.state.statsHistory = statsHistory;
+          App.state.activityStats = activityStats;
           App.state.lastUpdate = json.lastUpdate;
 
-          if (statsHistory && statsHistory.length > 0) {
-              const oldestSnapshot = statsHistory[0].snapshot || {};
-              const newestEntry = statsHistory[statsHistory.length - 1];
+          if (activityStats && activityStats.length > 0) {
+              const oldestSnapshot = activityStats[0].snapshot || {};
+              const newestEntry = activityStats[activityStats.length - 1];
               const newestSnapshot = newestEntry.snapshot || {};
               App.state.trendingDeltas = {};
 
@@ -1617,7 +1617,7 @@ renderDomainStats() {
 },
 
 renderPulseCard() {
-    const history = App.state.statsHistory;
+    const history = App.state.activityStats;
     const card = document.getElementById("pulseCard");
     
     const container = document.getElementById("pulseChart");

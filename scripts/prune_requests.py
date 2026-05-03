@@ -436,7 +436,7 @@ def update_domain_stats() -> int:
     print(f"Updated domain_stats.json with {len(top)} domains (excluding com and org)")
     return len(top)    
 
-def update_stats_history(
+def update_activity_stats(
     total: int,
     fulfilled_removed: int,
     outdated_removed: int,
@@ -444,13 +444,13 @@ def update_stats_history(
     """Append daily stats point to stats_history.json for pulse graph and trending."""
     from datetime import date
     
-    stats_path = REPO_ROOT / "src/assets/stats_history.json"
+    activity_stats_path = REPO_ROOT / "src/assets/activity_stats.json"
     today = date.today().isoformat()
     
     history = []
-    if stats_path.exists():
+    if activity_stats_path.exists():
         try:
-            with open(stats_path, "r", encoding="utf-8") as f:
+            with open(activity_stats_path, "r", encoding="utf-8") as f:
                 history = json.load(f)
         except Exception:
             history = []
@@ -469,8 +469,11 @@ def update_stats_history(
         comp = app.get("componentName", "")
         req = app.get("requestCount", 0)
         if comp:
-            today_snapshot[comp] = req
             today_components.add(comp)
+            if req >= 10:
+                prev = yesterday_apps.get(comp)
+                if prev != req:
+                    today_snapshot[comp] = req
     
     new_added = 0
     for comp in today_components:
@@ -502,10 +505,10 @@ def update_stats_history(
     for old_entry in history[:-30]:
         old_entry.pop("snapshot", None)
 
-    with open(stats_path, "w", encoding="utf-8") as f:
+    with open(activity_stats_path, "w", encoding="utf-8") as f:
         json.dump(history, f, indent=2)
     
-    print(f"Updated stats_history.json with {len(history)} entries (today: +{new_added}, -{fulfilled_removed}f, -{outdated_removed}o, -{manual_removed}m)")
+    print(f"Updated activity_stats.json with {len(history)} entries (today: +{new_added}, -{fulfilled_removed}f, -{outdated_removed}o, -{manual_removed}m)")
     return len(history)
 
 def main() -> int:
@@ -574,13 +577,13 @@ def main() -> int:
     with open(REQUESTS_JSON, "r") as f:
         requests_data = json.load(f)
 
-    # --- Update stats history ---
-    history_count = update_stats_history(
+    # --- Update activity stats ---
+    history_count = update_activity_stats(
         total=len(requests_data.get("apps", [])),
         fulfilled_removed=fulfilled_removed,
         outdated_removed=outdated_removed,
     )
-    print(f"Stats history updated: {history_count} entries")    
+    print(f"Activity stats updated: {history_count} entries")    
 
     # --- Update Play Store metadata for new requests ---
     new_without_installs = [a for a in requests_data.get("apps", []) if 'installs' not in a]
