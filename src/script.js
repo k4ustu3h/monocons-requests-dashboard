@@ -1247,9 +1247,9 @@ const UI = {
       `;
       const items = menu.querySelectorAll(".ctx-item");
       items[0].onclick = () => { Actions.copyAppFilter(); menu.hidePopover(); };
-      items[1].onclick = () => { Actions.copyPRDescription("new"); menu.hidePopover(); };
-      items[2].onclick = () => { Actions.copyPRDescription("link"); menu.hidePopover(); };
-      items[3].onclick = () => { Actions.copyNamesAndIDs(); menu.hidePopover(); };
+      items[1].onclick = () => { Actions.copyNamesAndIDs(); menu.hidePopover(); };
+      items[2].onclick = () => { Actions.copyPRDescription("new"); menu.hidePopover(); };
+      items[3].onclick = () => { Actions.copyPRDescription("link"); menu.hidePopover(); };
       items[4].onclick = () => { App.state.actionMode = "link"; Actions.downloadBundle(); menu.hidePopover(); };
       
       const rect = e.currentTarget.getBoundingClientRect();
@@ -1266,6 +1266,22 @@ const UI = {
 
       document.getElementById("sbHint")?.addEventListener("click", () => {
         Actions.clearAllSelections();
+    });
+
+    // Sort Headers
+    const headers = {
+      '.col.name': 'name',
+      '.col.req': 'req',
+      '.col.creation-odds': 'odds',
+      '.col.install': 'install',
+      '.col.first': 'time'
+    };
+    Object.entries(headers).forEach(([selector, key]) => {
+      const el = /** @type {HTMLElement} */ (App.dom.listHeader.querySelector(selector));
+      if (el) {
+        el.title = "Click to sort";
+        el.onclick = () => Actions.toggleSortHeader(key);
+      }
     });
 
     // Event Delegation
