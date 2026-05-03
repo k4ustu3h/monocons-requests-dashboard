@@ -1265,11 +1265,6 @@ input[type="checkbox"]:indeterminate::after {
     width: auto;
   }
 
-  .sb-input-wrapper {
-    flex: 1;
-    width: auto;
-  }
-
   /* Mobile Button Alignment */
   #mobileFilterBtn {
     align-items: center;

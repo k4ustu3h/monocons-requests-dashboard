@@ -518,12 +518,11 @@ const existingSvgHtml = existingDrawable
       <div class="ctx-item" tabindex="0" role="menuitem" onclick="window.open('${CONFIG.urls.galaxyStore}${pkg}')">
         ${ICONS.galaxyStore} <span>Galaxy Store</span>
       </div>
-      <div class="ctx-divider"></div>
-      <div class="ctx-item" tabindex="0" role="menuitem" onclick="Actions.copyNamesAndIDs(['${id}'])">
-        ${ICONS.copy} <span>Copy name & app ID</span>
-      </div>
       <div class="ctx-item" tabindex="0" role="menuitem" onclick="Actions.copyAppFilterEntry('${id}')">
         ${ICONS.copy} <span>Copy appfilter.xml</span>
+      </div>
+      <div class="ctx-item" tabindex="0" role="menuitem" onclick="Actions.copyNamesAndIDs(['${id}'])">
+        ${ICONS.copy} <span>Copy name & app ID</span>
       </div>
     `;
   },
@@ -684,6 +683,10 @@ const Actions = {
     App.state.lastSelectedId = null;
     UI.updateHeader();
     UI.updateSelectionBar();
+  },
+
+  closeSbMenu() {
+    document.getElementById("sbMenu")?.hidePopover();
   },
 
   generateNamesAndIDs(ids = null) {
@@ -1233,29 +1236,22 @@ const UI = {
     App.dom.sbMenuBtn.addEventListener("click", (e) => {
       const menu = document.getElementById("sbMenu");
       menu.innerHTML = `
-        <div class="ctx-item" role="menuitem">
+        <div class="ctx-item" role="menuitem" onclick="Actions.copyAppFilter();Actions.closeSbMenu();">
           ${ICONS.copy} <span>Copy appfilter.xml</span>
         </div>
-        <div class="ctx-item" role="menuitem">
+        <div class="ctx-item" role="menuitem" onclick="Actions.copyNamesAndIDs();Actions.closeSbMenu();">
           ${ICONS.copy} <span>Copy names and app IDs</span>
-        </div>        
-        <div class="ctx-item" role="menuitem">
+        </div>
+        <div class="ctx-item" role="menuitem" onclick="Actions.copyPRDescription('new');Actions.closeSbMenu();">
           ${ICONS.copy} <span>Copy PR body (new icons)</span>
         </div>
-        <div class="ctx-item" role="menuitem">
+        <div class="ctx-item" role="menuitem" onclick="Actions.copyPRDescription('link');Actions.closeSbMenu();">
           ${ICONS.copy} <span>Copy PR body (links)</span>
         </div>
-        <div class="ctx-item" role="menuitem">
+        <div class="ctx-item" role="menuitem" onclick="App.state.actionMode='link';Actions.downloadBundle();Actions.closeSbMenu();">
           ${ICONS.download} <span>Download metadata</span>
         </div>
       `;
-      const items = menu.querySelectorAll(".ctx-item");
-      items[0].onclick = () => { Actions.copyAppFilter(); menu.hidePopover(); };
-      items[1].onclick = () => { Actions.copyNamesAndIDs(); menu.hidePopover(); };
-      items[2].onclick = () => { Actions.copyPRDescription("new"); menu.hidePopover(); };
-      items[3].onclick = () => { Actions.copyPRDescription("link"); menu.hidePopover(); };
-      items[4].onclick = () => { App.state.actionMode = "link"; Actions.downloadBundle(); menu.hidePopover(); };
-      
       const rect = e.currentTarget.getBoundingClientRect();
       const w = 240, h = 240;
       let x = rect.left;

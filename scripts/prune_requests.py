@@ -412,7 +412,7 @@ def update_creation_odds(apps: list) -> int:
     return max_pop
 
 def update_domain_stats() -> int:
-    """Generate domain_stats.json with request counts by domain (excluding com and org)."""
+    """Generate domain_stats.json with request counts by domain."""
     from collections import Counter
     
     domain_stats_path = REPO_ROOT / "src/assets/domain_stats.json"
