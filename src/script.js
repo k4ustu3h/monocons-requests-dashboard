@@ -992,7 +992,7 @@ const Data = {
     if (id === "unlabeled") {
       return {
         label: "Unlabeled",
-        description: "Requests with medium to high complexity and the lowest completion odds.",
+        description: "Requests with medium to high complexity.",
         unlabeled: []
       };
     }
