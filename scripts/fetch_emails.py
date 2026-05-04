@@ -28,9 +28,9 @@ def check_requests_open():
 
 
 def main():
-    if not check_requests_open():
-        print("Requests are closed. Skipping email fetch.")
-        return
+    # if not check_requests_open():
+    #     print("Requests are closed. Skipping email fetch.")
+    #     return
 
     user = os.environ.get("GMAIL_USER")
     password = os.environ.get("GMAIL_APP_PASSWORD")
