@@ -481,14 +481,14 @@ def update_activity_stats(
         else:
             delta = today_snapshot.get(comp, 0) - yesterday_apps.get(comp, 0)
             if delta > 0:
-                new_added += delta                    
-
-    corrected_total = total
-    for comp in yesterday_apps:
-        if comp not in today_snapshot and comp in today_components:
-            corrected_total += 1
+                new_added += delta
     
-    total_removed = yesterday_total - corrected_total + new_added
+    total_removed = yesterday_total - total
+
+    for comp in today_components:
+        if comp not in yesterday_apps and comp in today_snapshot:
+            total_removed += today_snapshot[comp]
+
     manual_removed = max(0, total_removed - fulfilled_removed - outdated_removed)
     
     entry = {
