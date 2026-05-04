@@ -518,11 +518,14 @@ const existingSvgHtml = existingDrawable
       <div class="ctx-item" tabindex="0" role="menuitem" onclick="window.open('${CONFIG.urls.galaxyStore}${pkg}')">
         ${ICONS.galaxyStore} <span>Galaxy Store</span>
       </div>
+      <div class="ctx-divider"></div>
+      <div class="ctx-section">Copy</div>
       <div class="ctx-item" tabindex="0" role="menuitem" onclick="Actions.copyAppFilterEntry('${id}')">
-        ${ICONS.copy} <span>Copy appfilter.xml</span>
+        <span>appfilter.xml</span>
       </div>
       <div class="ctx-item" tabindex="0" role="menuitem" onclick="Actions.copyNamesAndIDs(['${id}'])">
-        ${ICONS.copy} <span>Copy name & app ID</span>
+        <span>name & app ID</span>
+      </div>
       </div>
     `;
   },
@@ -1236,20 +1239,22 @@ const UI = {
     App.dom.sbMenuBtn.addEventListener("click", (e) => {
       const menu = document.getElementById("sbMenu");
       menu.innerHTML = `
-        <div class="ctx-item" role="menuitem" onclick="Actions.copyAppFilter();Actions.closeSbMenu();">
-          ${ICONS.copy} <span>Copy appfilter.xml</span>
-        </div>
-        <div class="ctx-item" role="menuitem" onclick="Actions.copyNamesAndIDs();Actions.closeSbMenu();">
-          ${ICONS.copy} <span>Copy names and app IDs</span>
-        </div>
-        <div class="ctx-item" role="menuitem" onclick="Actions.copyPRDescription('new');Actions.closeSbMenu();">
-          ${ICONS.copy} <span>Copy PR body (new icons)</span>
-        </div>
-        <div class="ctx-item" role="menuitem" onclick="Actions.copyPRDescription('link');Actions.closeSbMenu();">
-          ${ICONS.copy} <span>Copy PR body (links)</span>
-        </div>
         <div class="ctx-item" role="menuitem" onclick="App.state.actionMode='link';Actions.downloadBundle();Actions.closeSbMenu();">
           ${ICONS.download} <span>Download metadata</span>
+        </div>
+        <div class="ctx-divider"></div>
+        <div class="ctx-section">Copy</div>
+        <div class="ctx-item" role="menuitem" onclick="Actions.copyAppFilter();Actions.closeSbMenu();">
+          <span>appfilter.xml</span>
+        </div>
+        <div class="ctx-item" role="menuitem" onclick="Actions.copyNamesAndIDs();Actions.closeSbMenu();">
+          <span>names and app IDs</span>
+        </div>
+        <div class="ctx-item" role="menuitem" onclick="Actions.copyPRDescription('new');Actions.closeSbMenu();">
+          <span>PR body (new icons)</span>
+        </div>
+        <div class="ctx-item" role="menuitem" onclick="Actions.copyPRDescription('link');Actions.closeSbMenu();">
+          <span>PR body (links)</span>
         </div>
       `;
       const rect = e.currentTarget.getBoundingClientRect();
@@ -1887,7 +1892,6 @@ renderActivityCard() {
     App.dom.rowMenu.style.top = `${y}px`;
     App.dom.rowMenu.style.transformOrigin = "top left";
     /** @type {any} */ (App.dom.rowMenu).showPopover();
-    this.focusMenu(App.dom.rowMenu);
   },
 
   showMobileFilterPopover() {
@@ -1929,7 +1933,6 @@ renderActivityCard() {
     menu.style.top = `${rect.bottom + 8}px`;
 
     /** @type {any} */ (menu).showPopover();
-    this.focusMenu(menu);
   },
 
   /**
