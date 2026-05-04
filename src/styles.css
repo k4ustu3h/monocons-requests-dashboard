@@ -245,12 +245,16 @@ body:has(.context-menu:popover-open) {
   display: flex;
   align-items: center;
   transition: box-shadow 0.2s;
-  padding: 8px;
+  padding: 4px 4px 4px 8px;
 }
 
 #search-wrapper {
   flex: 2;
   min-width: 300px;
+}
+
+#search-wrapper .input-icon {
+  margin: 0;
 }
 
 .input-wrapper:focus-within {
@@ -297,11 +301,6 @@ button.input-icon.active {
 #search-wrapper svg {
   color: var(--on-surface-variant);
   width: 24px;
-  height: 24px;
-}
-.path-wrapper svg {
-  color: var(--on-surface-variant);
-  width: 26px;
   height: 24px;
 }
 
@@ -365,6 +364,82 @@ button.input-icon.active {
   background: var(--primary);
 }
 
+.domain-config {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.domain-config .input-wrapper {
+  height: 36px;
+}
+
+.domain-config input:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.domain-config-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.domain-config-row .input-wrapper {
+  flex: 1;
+}
+
+.domain-config-btn-apply {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: var(--shape-xlarge-inc);
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+  background: var(--primary);
+  color: var(--on-primary);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.domain-config-btn-apply:hover {
+  background: var(--secondary);
+}
+
+#geoBatchBtn {
+  width: auto;
+  padding: 8px 12px;
+  gap: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+#geoBatchBtn span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#geoBatchMenu {
+  position: fixed;
+  margin: 0;
+  background: var(--surface-container-low);
+  border-radius: var(--shape-medium);
+  border: none;
+  box-shadow: var(--elevation-3);
+  padding: 16px;
+  min-width: 280px;
+}
+
+#geoBatchMenu .domain-config {
+  gap: 8px;
+}
+#geoBatchMenu .domain-config .input-wrapper {
+  height: 36px;
+}
+#geoBatchMenu .domain-config-row .input-wrapper {
+  flex: 1;
+}
+
 .card {
   background: var(--surface-container-low);
   border-radius: var(--shape-medium);
@@ -374,7 +449,7 @@ button.input-icon.active {
 
 .card-header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 4px;
   margin-bottom: 8px;
   flex-shrink: 0;
@@ -403,6 +478,7 @@ button.input-icon.active {
 
 .cards-row .card {
   flex: 1;
+  height: 120px;
   min-width: 0px;
 }
 
@@ -1304,16 +1380,6 @@ input[type="checkbox"]:indeterminate::after {
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     gap: 12px;
     padding-bottom: 120px;
-  }
-
-  /* Pagination */
-  .pagination-container {
-    gap: 4px;
-  }
-  .page-btn {
-    min-width: 32px;
-    height: 32px;
-    font-size: 12px;
   }
 
   /* Toasts */

@@ -127,6 +127,8 @@ const App = {
     currentData: [],
 
     actionMode: "new",
+    geoBatchActive: false,
+    geoBatchConfig: null,
     existingSvgs: new Map(),
     setsStats: {},
     creationOdds: [],
@@ -181,7 +183,11 @@ const App = {
     /** @type {HTMLElement} */
     rowMenu: /** @type {any} */ (document.getElementById("rowMenu")),
     /** @type {HTMLDivElement} */
-    toastBox: /** @type {any} */ (document.getElementById("toastContainer"))
+    toastBox: /** @type {any} */ (document.getElementById("toastContainer")),
+    /** @type {HTMLButtonElement} */
+    geoBatchBtn: /** @type {any} */ (document.getElementById("geoBatchBtn")),
+    /** @type {HTMLButtonElement} */
+    geoBatchMenu: document.getElementById("geoBatchMenu")
   }
 };
 
@@ -984,6 +990,15 @@ const Data = {
                 });
             }
           });
+          
+          try {
+              const saved = localStorage.getItem("lawnicons_geo_batch");
+              if (saved) {
+                  const parsed = JSON.parse(saved);
+                  App.state.geoBatchConfig = parsed.config;
+                  App.state.geoBatchActive = parsed.active || false;
+              }
+          } catch (e) {}  
 
           this.loadUrlState();
           UI.init();
@@ -1113,6 +1128,10 @@ const Data = {
       if (sorters[s.sort]) data.sort(sorters[s.sort]);
     }
 
+      if (s.geoBatchActive && s.geoBatchConfig) {
+          data = UI.applyGeoBatch(data);
+      }    
+
     App.state.currentData = data;
   },
 
@@ -1178,6 +1197,16 @@ const UI = {
   observer: null,
 
   init() {
+    if (App.state.regexMode) {
+    App.dom.regexBtn.classList.add("active");
+    App.dom.geoBatchBtn.style.display = "none";
+    }
+
+    if (App.state.geoBatchActive) {
+        App.dom.geoBatchBtn.classList.add("active");
+        App.dom.regexBtn.style.display = "none";
+    }
+
     this.renderDomainStats();
     this.renderActivityCard();
     this.generateFilters();
@@ -1217,9 +1246,22 @@ const UI = {
     });
 
     App.dom.regexBtn.addEventListener("click", () => {
-      App.state.regexMode = !App.state.regexMode;
-      App.dom.regexBtn.classList.toggle("active", App.state.regexMode);
-      this.render();
+        if (App.state.geoBatchActive) {
+            App.state.geoBatchActive = false;
+            App.dom.geoBatchBtn.classList.remove("active");
+            App.dom.geoBatchBtn.style.display = "";
+            this.saveGeoBatchState();
+            this.render();
+            return;
+        }
+        App.state.regexMode = !App.state.regexMode;
+        App.dom.regexBtn.classList.toggle("active", App.state.regexMode);
+        if (App.state.regexMode) {
+            App.dom.geoBatchBtn.style.display = "none";
+        } else {
+            App.dom.geoBatchBtn.style.display = "";
+        }
+        this.render();
     });
 
     App.dom.headerCheck.addEventListener("change", e =>
@@ -1228,6 +1270,22 @@ const UI = {
 
     App.dom.mobileFilterBtn.addEventListener("click", () => {
       this.showMobileFilterPopover();
+    });
+
+    App.dom.geoBatchBtn.addEventListener("click", () => {
+        if (App.state.geoBatchActive) {
+            App.state.geoBatchActive = false;
+            App.dom.geoBatchBtn.classList.remove("active");
+            App.dom.regexBtn.style.display = "";
+            if (App.state.regexMode) {
+                App.state.regexMode = false;
+                App.dom.regexBtn.classList.remove("active");
+            }
+            this.saveGeoBatchState();
+            this.render();
+            return;
+        }
+        this.showGeoBatchConfig();
     });
 
     // Selection Bar
@@ -1418,7 +1476,7 @@ const UI = {
     });
 
     // Menu Navigation
-    const menus = ['rowMenu', 'mobileFilterMenu'];
+    const menus = ['rowMenu', 'mobileFilterMenu', 'geoBatchMenu'];
     menus.forEach(id => {
       const menu = /** @type {HTMLElement} */ (App.dom[/** @type {keyof typeof App.dom} */ (id)]);
       if (!menu) return;
@@ -1623,18 +1681,200 @@ const UI = {
     } else {
       bar.classList.remove("visible");
     }
-  },
+},
+
+showGeoBatchConfig() {
+    const menu = document.getElementById("geoBatchMenu");
+    if (!menu) return;
+    
+    const saved = App.state.geoBatchConfig;
+    const domainsText = saved ? saved.domainsRaw : "";
+    const targetText = saved && saved.target ? saved.target : "";
+    
+    menu.innerHTML = `
+      <div class="domain-config">
+        <div class="input-wrapper">
+          <input id="geoBatchDomains" type="text" value="${domainsText}" placeholder="Domains: de 2, jp 3, br 1" />
+        </div>
+        <div class="domain-config-row">
+          <div class="input-wrapper">
+            <input id="geoBatchTarget" type="text" inputmode="numeric" value="${targetText}" disabled />
+          </div>
+          <button class="domain-config-btn-apply" id="geoBatchApply">Apply</button>
+        </div>
+      </div>
+    `;
+    
+    const updateTargetState = () => {
+        const domainsInput = document.getElementById("geoBatchDomains");
+        const targetInput = document.getElementById("geoBatchTarget");
+        if (!domainsInput || !targetInput) return;
+        const domainsVal = domainsInput.value.trim();
+        const items = domainsVal.split(",").map(item => item.trim().split(/\s+/));
+        const allHaveWeights = items.length > 0 && items[0][0] && items.every(parts => parts.length > 1 && parts[1]);
+        if (!allHaveWeights) {
+            targetInput.value = "";
+            targetInput.disabled = true;
+            targetInput.placeholder = "All domains need weights";
+        } else {
+            targetInput.disabled = false;
+            targetInput.placeholder = "Target icons";
+        }
+    };
+    
+    setTimeout(() => {
+    const domainsInput = document.getElementById("geoBatchDomains");
+    const targetInput = document.getElementById("geoBatchTarget");
+    
+    domainsInput.addEventListener("input", () => {
+        const domainsRaw = domainsInput.value.trim();
+        const targetVal = targetInput.value.trim();
+        if (!domainsRaw) {
+            App.state.geoBatchConfig = null;
+            App.state.geoBatchActive = false;
+            App.dom.geoBatchBtn.classList.remove("active");
+        } else {
+            App.state.geoBatchConfig = {
+                domainsRaw: domainsRaw,
+                target: targetVal || null
+            };
+        }
+        updateTargetState();
+        UI.saveGeoBatchState();
+    });
+    
+    targetInput.addEventListener("input", () => {
+        if (App.state.geoBatchConfig) {
+            App.state.geoBatchConfig.target = targetInput.value.trim() || null;
+            UI.saveGeoBatchState();
+        }
+    });
+    
+    updateTargetState();
+    
+    document.getElementById("geoBatchApply").onclick = () => {
+        const domainsRaw = domainsInput.value.trim();
+        const targetVal = targetInput.value.trim();
+        
+        if (!domainsRaw) {
+            App.state.geoBatchConfig = null;
+            App.state.geoBatchActive = false;
+            App.dom.geoBatchBtn.classList.remove("active");
+            UI.saveGeoBatchState();
+        } else {
+            if (!App.state.geoBatchConfig) {
+                App.state.geoBatchConfig = {
+                    domainsRaw: domainsRaw,
+                    target: targetVal || null
+                };
+            }
+            App.state.geoBatchActive = true;
+            App.dom.geoBatchBtn.classList.add("active");
+            App.dom.regexBtn.style.display = "none";
+            App.state.regexMode = false;
+            App.dom.regexBtn.classList.remove("active");
+            UI.saveGeoBatchState();
+        }
+        
+        UI.render();
+        menu.hidePopover();
+    };
+}, 0);
+    
+    const rect = App.dom.geoBatchBtn.getBoundingClientRect();
+    menu.style.left = (rect.left - 200) + "px";
+    menu.style.top = (rect.bottom + 8) + "px";
+    menu.showPopover();
+},
+
+applyGeoBatch(data) {
+    const config = App.state.geoBatchConfig;
+    const items = config.domainsRaw.split(",").map(item => item.trim().split(/\s+/));
+    
+    const weights = {};
+    let totalWeight = 0;
+    for (const parts of items) {
+        const domain = parts[0];
+        const w = parseInt(parts[1]);
+        weights[domain] = w;
+        totalWeight += w;
+    }
+    
+    const target = config.target ? parseInt(config.target) : null;
+    const limits = {};
+    
+    if (target) {
+        let planned = 0;
+        const sorted = Object.entries(weights).sort((a, b) => b[1] - a[1]);
+        for (const [domain, w] of sorted) {
+            const count = Math.trunc(target * w / totalWeight);
+            limits[domain] = count;
+            planned += count;
+        }
+        limits._remaining = target - planned;
+    } else {
+        for (const domain of Object.keys(weights)) {
+            limits[domain] = Infinity;
+        }
+        limits._remaining = 0;
+    }
+    
+    const planDomains = new Set(Object.keys(weights));
+    const selected = [];
+    const used = new Set();
+    const quotas = { ...limits };
+    
+    for (const app of data) {
+        const domain = app.componentName.split("/")[0].split(".")[0];
+        
+        if (planDomains.has(domain)) {
+            if (quotas[domain] > 0) {
+                selected.push(app);
+                used.add(app.componentName);
+                quotas[domain]--;
+            }
+        }
+    }
+    
+    let unfilled = 0;
+    for (const [domain, qty] of Object.entries(quotas)) {
+        if (domain !== "_remaining") {
+            unfilled += qty;
+        }
+    }
+    limits._remaining += unfilled;
+
+    if (limits._remaining > 0) {
+        const usedRemainingDomains = new Set();
+        for (const app of data) {
+            const domain = app.componentName.split("/")[0].split(".")[0];
+            
+            if (used.has(app.componentName)) continue;
+            if (planDomains.has(domain)) continue;
+            if (usedRemainingDomains.has(domain)) continue;
+            
+            selected.push(app);
+            used.add(app.componentName);
+            usedRemainingDomains.add(domain);
+            limits._remaining--;
+            
+            if (limits._remaining === 0) break;
+        }
+    }
+    
+    return selected;
+},
 
 renderDomainStats() {
     const data = App.state.domainStats;
     const card = document.getElementById("domainStatsCard");
+    if (!card) return;
     
     if (!data || Object.keys(data).length === 0) {
-        if (card) card.style.display = "none";
+        card.style.display = "none";
         return;
     }
-    
-    if (card) card.style.display = "";
+    card.style.display = "";
     
     const container = document.getElementById("domainStats");
     if (!container) return;
@@ -1642,12 +1882,20 @@ renderDomainStats() {
     const containerWidth = container.clientWidth || document.querySelector(".page").clientWidth - 64;
     const colWidth = 26;
     const fits = Math.floor(containerWidth / colWidth);
+    
     const nonGeo = new Set(["ai", "me", "my", "tv", "fm", "to", "st", "cc", "ws", "nu", "tk", "sh", "is", "as", "je", "gg", "im", "io", "co"]);
     const isCountryCode = (domain) => /^[a-z]{2}$/.test(domain) && !nonGeo.has(domain);
     const entries = Object.entries(data)
         .filter(([domain]) => isCountryCode(domain))
         .slice(0, fits);
-    const max = entries[0][1];
+
+    const title = document.querySelector("#domainStatsCard .card-title");
+    if (title) title.textContent = "Top country domains";
+
+    const sub = document.querySelector("#domainStatsCard .card-sub");
+    if (sub) sub.style.display = "none";
+    
+    const max = entries[0]?.[1] || 1;
     
     const html = `<div class="card-chart has-bars">
       ${entries.map(([domain, count]) => {
@@ -1963,13 +2211,22 @@ renderActivityCard() {
   closeContextMenu() {
     try { /** @type {any} */ (App.dom.rowMenu).hidePopover(); } catch {}
     try { /** @type {any} */ (App.dom.mobileFilterMenu).hidePopover(); } catch {}
+    try { /** @type {any} */ (App.dom.geoBatchMenu).hidePopover(); } catch {}
 
     setTimeout(() => {
       App.dom.rowMenu.innerHTML = "";
       App.dom.mobileFilterMenu.innerHTML = "";
     }, 200);
-  }
+},
+
+saveGeoBatchState() {
+    localStorage.setItem("lawnicons_geo_batch", JSON.stringify({
+        config: App.state.geoBatchConfig,
+        active: App.state.geoBatchActive
+    }));
+},
 };
+
 
 // Start
 Data.init();
