@@ -86,6 +86,13 @@
   --shape-xxlarge: 48px;
   --shape-full: 9999999px;
 
+  /** Spacing tokens */
+    --space-2xs: 2px;
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 12px;
+    --space-lg: 16px;
+    --space-xl: 24px;
   /** Elevation tokens */
   --elevation-1: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
   --elevation-2: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
@@ -116,7 +123,7 @@ body {
   font-weight: 600;
   color: var(--primary);
   text-decoration: none;
-  margin-top: 12px;
+  margin-top: var(--space-md);
 }
 
 .link:hover {
@@ -146,7 +153,7 @@ body {
 .page {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 var(--space-lg);
 }
 
 .grid-card:focus-visible {
@@ -164,21 +171,28 @@ body:has(.context-menu:popover-open) {
   overflow: hidden;
 }
 
+.is-hidden {
+  display: none !important;
+}
+
+.icon-sprite {
+  display: none;
+}
 /* =========================================
    3. HEADER
    ========================================= */
 .header {
   display: grid;
   grid-template-columns: 200px 1fr auto; /* Left | Center (Search) | Right */
-  gap: 24px;
+  gap: var(--space-xl);
   align-items: center;
-  padding: 24px 0;
+  padding: var(--space-xl) 0;
 }
 
 .header-left, .header-right {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: var(--space-md);
 }
 
 .header-center {
@@ -213,7 +227,7 @@ body:has(.context-menu:popover-open) {
 .header-links {
   margin-left: auto;
   display: flex;
-  gap: 8px;
+  gap: var(--space-sm);
 }
 
 .header-link {
@@ -245,7 +259,7 @@ body:has(.context-menu:popover-open) {
   display: flex;
   align-items: center;
   transition: box-shadow 0.2s;
-  padding: 4px 4px 4px 8px;
+  padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-sm);
 }
 
 #search-wrapper {
@@ -275,7 +289,7 @@ body:has(.context-menu:popover-open) {
 .input-icon {
   background: transparent;
   border: none;
-  padding: 8px;
+  padding: var(--space-sm);
   border-radius: var(--shape-xlarge);
   color: var(--on-surface-variant);
   display: flex;
@@ -329,7 +343,7 @@ button.input-icon.active {
 .card-chart.has-bars {
   flex-direction: row;
   align-items: flex-end;
-  gap: 4px;
+  gap: var(--space-xs);
   overflow-x: auto;
 }
 
@@ -343,7 +357,7 @@ button.input-icon.active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: var(--space-xs);
   flex: 1;
   min-width: 20px;
   height: 100%;
@@ -367,7 +381,7 @@ button.input-icon.active {
 .domain-config {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: var(--space-md);
 }
 
 .domain-config .input-wrapper {
@@ -381,7 +395,7 @@ button.input-icon.active {
 
 .domain-config-row {
   display: flex;
-  gap: 12px;
+  gap: var(--space-md);
   align-items: center;
 }
 
@@ -391,7 +405,7 @@ button.input-icon.active {
 
 .domain-config-btn-apply {
   height: 36px;
-  padding: 0 16px;
+  padding: 0 var(--space-lg);
   border-radius: var(--shape-xlarge-inc);
   border: none;
   font-size: 13px;
@@ -409,7 +423,7 @@ button.input-icon.active {
 
 #geoBatchBtn {
   width: auto;
-  padding: 8px 12px;
+  padding: var(--space-sm) var(--space-md);
   gap: 6px;
   white-space: nowrap;
   flex-shrink: 0;
@@ -431,7 +445,7 @@ button.input-icon.active {
   border-radius: var(--shape-medium);
   border: none;
   box-shadow: var(--elevation-3);
-  padding: 16px;
+  padding: var(--space-lg);
   min-width: 280px;
 }
 
@@ -446,20 +460,20 @@ button.input-icon.active {
 .card {
   background: var(--surface-container-low);
   border-radius: var(--shape-medium);
-  padding: 16px;
-  margin-bottom: 16px;
+  padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
 }
 
 .card-header {
   display: flex;
   align-items: center;
-  gap: 4px;
-  margin-bottom: 8px;
+  gap: var(--space-xs);
+    margin-bottom: var(--space-sm);
   flex-shrink: 0;
 }
 
 #supportedCard .card-header {
-  margin-bottom: 8px;
+  margin-bottom: var(--space-sm);
 }
 
 .card-title {
@@ -475,7 +489,7 @@ button.input-icon.active {
 
 .cards-row {
   display: flex;
-  gap: 8px;
+  gap: var(--space-sm);
   margin-bottom: 0;
 }
 
@@ -537,7 +551,7 @@ button.input-icon.active {
 .activity-days {
   display: flex;
   justify-content: space-between;
-  margin-top: 2px;
+  margin-top: var(--space-2xs);
 }
 
 .activity-vline {
@@ -560,6 +574,33 @@ button.input-icon.active {
   line-height: 1.4;
 }
 
+.tooltip-label {
+  margin-bottom: var(--space-xs);
+}
+
+.tooltip-value {
+  font-size: 12px;
+}
+
+.tooltip-value + .tooltip-value {
+  margin-top: var(--space-2xs);
+}
+
+.tooltip-value-primary {
+  color: var(--primary);
+}
+
+.tooltip-value-error {
+  color: var(--error);
+}
+
+.card-chart-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--on-surface-variant);
+}
 /* =========================================
    4. CONTROLS
    ========================================= */
@@ -570,31 +611,31 @@ button.input-icon.active {
   color: var(--on-tertiary-container);
   border-radius: var(--shape-xsmall);
   text-decoration: none;
-  padding: 8px;
+  padding: var(--space-sm);
 }
 
 #controlsSkip:focus {
-  top: 4px;
-  left: 4px;
+  top: var(--space-xs);
+    left: var(--space-xs);
   outline: 1px solid var(--outline)
 }
 
 .controls {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-bottom: 12px;
+  gap: var(--space-lg);
+    margin-bottom: var(--space-md);
 }
 
 .controls-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
+  gap: var(--space-md);
 }
 .control-group {
   display: flex;
-  gap: 8px;
+  gap: var(--space-sm);
 }
 
 /* Dropdowns & Chips */
@@ -667,13 +708,13 @@ select:hover,
 /* Filter Tags */
 .filter-tags {
   display: flex;
-  gap: 8px;
+  gap: var(--space-sm);
   overflow-x: auto;
 }
 
 .tag {
   background: transparent;
-  padding: 0 12px;
+  padding: 0 var(--space-md);
   border-color: var(--outline-variant);
   /* Checkmark icon (Hidden by default) */
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%23e3e3e3'%3E%3Cpath d='m382-354 339-339q12-12 28-12t28 12q12 12 12 28.5T777-636L410-268q-12 12-28 12t-28-12L182-440q-12-12-11.5-28.5T183-497q12-12 28.5-12t28.5 12l142 143Z'/%3E%3C/svg%3E");
@@ -700,7 +741,7 @@ select:hover,
   display: grid;
   grid-template-columns: 40px 72px 3fr 100px 140px 100px 140px 140px;
   align-items: center;
-  padding: 12px 16px;
+  padding: var(--space-md) var(--space-lg);
   border-bottom: 1px solid var(--outline-variant);
   min-width: 1060px;
   user-select: none;
@@ -798,13 +839,16 @@ select:hover,
   font-weight: 500;
 }
 
+.date-col {
+  line-height: 1.4;
+}
 /* Name Column */
 .name-col {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: var(--space-xs);
   overflow: hidden;
-  margin-right: 8px;
+  margin-right: var(--space-sm);
 }
 
 .name-col,
@@ -816,7 +860,21 @@ select:hover,
 .name-row {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--space-sm);
+  }
+  
+  .name-content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    min-width: 0;
+  }
+  
+  .name-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    min-width: 0;
 }
 
 .app-name {
@@ -879,10 +937,13 @@ select:hover,
   display: none;
 }
 
+.trend-indicator {
+  color: var(--on-pine-container);
+}
 /* Actions */
 .actions-col {
   display: flex;
-  gap: 4px;
+  gap: var(--space-xs);
   justify-content: flex-end;
 }
 .action-btn {
@@ -963,13 +1024,16 @@ input[type="checkbox"]:indeterminate::after {
   background-color: var(--on-primary);
 }
 
+.grid-overlay-check input[type="checkbox"] {
+  pointer-events: none;
+}
 /* =========================================
    6. GRID VIEW
    ========================================= */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 16px;
+  gap: var(--space-lg);
   padding-bottom: 100px;
   user-select: none;
   -webkit-user-select: none;
@@ -1004,8 +1068,8 @@ input[type="checkbox"]:indeterminate::after {
 
 .grid-overlay-check {
   position: absolute;
-  bottom: 8px;
-  right: 8px;
+  bottom: var(--space-sm);
+    right: var(--space-sm);
   width: 20px;
   height: 20px;
   display: flex;
@@ -1016,7 +1080,7 @@ input[type="checkbox"]:indeterminate::after {
 .grid-overlay-tags {
   position: absolute;
   top: 0;
-  left: 4px;
+  left: var(--space-xs);
 }
 
 .grid-card.selected .grid-overlay-check {
@@ -1039,7 +1103,7 @@ input[type="checkbox"]:indeterminate::after {
   color: var(--on-surface-variant);
   text-transform: uppercase;
   line-height: 1.1;
-  padding: 2px;
+  padding: var(--space-2xs);
 }
 
 .fallback-icon-grid {
@@ -1050,12 +1114,20 @@ input[type="checkbox"]:indeterminate::after {
   text-align: center;
   width: 100%;
   height: 100%;
-  padding: 8px;
+  padding: var(--space-sm);
   font-size: 11px;
   background-color: var(--surface-container-high);
   color: var(--on-surface-variant);
 }
 
+.fallback-icon-grid-title {
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.fallback-icon-grid-label {
+  word-break: break-word;
+}
 /* =========================================
    7. LOADERS & EMPTY STATES
    ========================================= */
@@ -1087,10 +1159,10 @@ input[type="checkbox"]:indeterminate::after {
 .empty-state svg {
   width: 48px;
   height: 48px;
-  margin-bottom: 16px;
+  margin-bottom: var(--space-lg);
 }
 .empty-state h3 {
-  margin: 0 0 8px 0;
+  margin: 0 0 var(--space-sm) 0;
   font-size: 20px;
   font-weight: 600;
   color: var(--on-surface);
@@ -1106,18 +1178,18 @@ input[type="checkbox"]:indeterminate::after {
    ========================================= */
 .selection-bar {
   position: fixed;
-  bottom: 24px;
+  bottom: var(--space-xl);
   left: 50%;
   transform: translateX(-50%) translateY(100px);
   
   background: var(--surface-container);
   border-radius: var(--shape-large);
-  padding: 12px 16px;
+  padding: var(--space-md) var(--space-lg);
   box-shadow: var(--elevation-3);
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 4px;
+  gap: var(--space-xs);
   z-index: 900;
   
   opacity: 0;
@@ -1131,7 +1203,7 @@ input[type="checkbox"]:indeterminate::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: var(--space-xl);
   width: 100%;
 }
 
@@ -1149,7 +1221,7 @@ input[type="checkbox"]:indeterminate::after {
 .sb-clear-btn kbd {
   display: inline-block;
   line-height: 24px;
-  padding: 0 12px;
+  padding: 0 var(--space-md);
   background: var(--surface-container-high);
   border-radius: var(--shape-xsmall);
   border: 1px solid var(--outline-variant);
@@ -1176,7 +1248,7 @@ input[type="checkbox"]:indeterminate::after {
 
 .sb-actions {
   display: flex;
-  gap: 12px;
+  gap: var(--space-md);
   margin-top: 10px;
   flex-shrink: 0;
   width: 100%;
@@ -1184,7 +1256,7 @@ input[type="checkbox"]:indeterminate::after {
 
 .sb-action-btn {
   height: 48px;
-  padding: 10px 16px;
+  padding: 10px var(--space-lg);
   background: var(--primary);
   color: var(--on-primary);
   border: none;
@@ -1193,7 +1265,7 @@ input[type="checkbox"]:indeterminate::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: var(--space-sm);
   cursor: pointer;
 }
 
@@ -1219,7 +1291,7 @@ input[type="checkbox"]:indeterminate::after {
 .context-menu {
   margin: 0;
   border: none;
-  padding: 8px 0;
+  padding: var(--space-sm) 0;
   background: var(--secondary-container);
   color: var(--on-secondary-container);
   border-radius: var(--shape-xsmall);
@@ -1251,11 +1323,11 @@ input[type="checkbox"]:indeterminate::after {
 .ctx-item {
   font-weight: 500;
   font-size: 14px;
-  padding: 0 12px;
+  padding: 0 var(--space-md);
   height: 40px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--space-sm);
   color: var(--on-secondary-container);
   cursor: pointer;
   transition: background 0.1s;
@@ -1278,13 +1350,13 @@ input[type="checkbox"]:indeterminate::after {
   height: 1px;
   background: var(--on-secondary-container);
   opacity: 0.2;
-  margin: 4px 12px;
+  margin: var(--space-xs) var(--space-md);
 }
 
 .ctx-section {
   font-size: 12px;
   color: var(--primary);
-  padding: 8px 12px 4px;
+  padding: var(--space-sm) var(--space-md) var(--space-xs);
 }
 
 /* Mobile Filter Popover */
@@ -1308,24 +1380,24 @@ input[type="checkbox"]:indeterminate::after {
 /* Toasts */
 .toast-container {
   position: fixed;
-  top: 24px;
-  right: 24px;
+  top: var(--space-xl);
+    right: var(--space-xl);
   z-index: 2000;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: var(--space-md);
   pointer-events: none;
 }
 .toast {
   background: var(--surface-container-high);
   color: var(--on-surface);
   border: 1px solid var(--outline-variant);
-  padding: 12px;
+  padding: var(--space-md);
   border-radius: var(--shape-medium);
   box-shadow: var(--elevation-5);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--space-sm);
   min-width: auto;
   max-width: 400px;
   pointer-events: auto;
@@ -1381,8 +1453,8 @@ input[type="checkbox"]:indeterminate::after {
   .header {
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
-    gap: 16px;
-    padding-bottom: 16px;
+    gap: var(--space-lg);
+      padding-bottom: var(--space-lg);
   }
 
   .header-left { grid-column: 1; grid-row: 1; }
@@ -1402,29 +1474,29 @@ input[type="checkbox"]:indeterminate::after {
   /* Mobile Button Alignment */
   #mobileFilterBtn {
     align-items: center;
-    gap: 2px;
+    gap: var(--space-2xs);
   }
 
   /* List */
   .list-viewport {
     overflow-x: auto;
-    margin: 0 -16px;
-    padding: 0 16px;
+    margin: 0 calc(-1 * var(--space-lg));
+      padding: 0 var(--space-lg);
     -webkit-overflow-scrolling: touch;
   }
 
   /* Grid */
   .grid-container {
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    gap: 12px;
+    gap: var(--space-md);
     padding-bottom: 120px;
   }
 
   /* Toasts */
   .toast-container {
-    top: 16px;
-    left: 16px;
-    right: 16px;
+    top: var(--space-lg);
+      left: var(--space-lg);
+      right: var(--space-lg);
     align-items: center;
   }
   .toast {
@@ -1439,8 +1511,8 @@ input[type="checkbox"]:indeterminate::after {
   }
 
   .cards-row {
-    margin: 0 -16px;
-    padding: 0 16px;
+    margin: 0 calc(-1 * var(--space-lg));
+      padding: 0 var(--space-lg);
     overflow-x: auto;
     scrollbar-width: none;
   }

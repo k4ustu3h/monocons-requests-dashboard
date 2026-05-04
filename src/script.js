@@ -365,6 +365,38 @@ const Utils = {
     return num.toString();
   },
 
+  /**
+   * @param {Element | null | undefined} element
+   * @param {boolean} hidden
+   */
+  setHidden(element, hidden) {
+    if (!(element instanceof HTMLElement || element instanceof SVGElement)) return;
+    element.classList.toggle("is-hidden", hidden);
+  },
+
+  /**
+   * @param {Event} event
+   */
+  handleImageError(event) {
+    const target = event.target;
+    if (!(target instanceof HTMLImageElement)) return;
+
+    const errorMode = target.dataset.errorMode;
+    if (errorMode === "hide-wrapper") {
+      target.closest(".existing-svg-wrapper")?.classList.add("is-hidden");
+      return;
+    }
+
+    target.classList.add("is-hidden");
+
+    if (errorMode === "show-next-fallback") {
+      const fallback = target.nextElementSibling;
+      if (fallback instanceof HTMLElement) {
+        fallback.classList.remove("is-hidden");
+      }
+    }
+  },
+
 };
 
 // ==========================================
@@ -386,6 +418,8 @@ const Templates = {
     const pkg = id.split('/')[0];
     const isUnknown = app.drawable === "unknown" || name === "(Unknown App)";
     const existingDrawable = App.state.existingSvgs ? App.state.existingSvgs.get(id) : null;
+    const appNameClass = isUnknown ? "app-name is-hidden" : "app-name";
+    const trendingDelta = App.state.trendingDeltas[app.componentName];
 
     const tagHtml = tags.map(tagId => {
       const meta = App.state.filterMetadata.get(tagId);
@@ -400,7 +434,7 @@ const Templates = {
               class="existing-svg" 
               title="${existingDrawable}.svg"
               loading="lazy"
-              onerror="this.style.display='none'" />
+        data-error-mode="hide-wrapper" />
        </span>`
       : "";
 
@@ -425,21 +459,21 @@ const Templates = {
         </div>
         <div class="icon">${iconHtml}</div>
         <div class="name-col">
-          <div style="display: flex; align-items: center; gap: 12px; min-width: 0;">
+          <div class="name-content">
             ${existingSvgHtml}
-          <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
+          <div class="name-details">
               <div class="name-row">
                   ${tagHtml}
-                  <span class="app-name" style="${isUnknown ? "display: none" : ""}">${name}</span>
+                  <span class="${appNameClass}">${name}</span>
               </div>
               <span class="pkg-name" title="${id}">${id}</span>
           </div>
           </div>
         </div>
-        <div class="col req">${(App.state.setsStats[pkg] || app.requestCount).toLocaleString()}${App.state.trendingDeltas[app.componentName] ? ` <span style="color: var(--on-pine-container);" title="Popularity growth over last 30 days.">↑${App.state.trendingDeltas[app.componentName]}</span>` : ""}</div>
+        <div class="col req">${(App.state.setsStats[pkg] || app.requestCount).toLocaleString()}${trendingDelta ? ` <span class="trend-indicator" title="Popularity growth over last 30 days.">↑${trendingDelta}</span>` : ""}</div>
         <div class="col creation-odds" title="Chance of this request being fulfilled within a year if you wait.">${displayOdds}</div>
         <div class="col install" title="${app.installs || '0'} installs in Play Store">${displayInstalls}</div>
-        <div class="col first" style="line-height:1.4">
+        <div class="col first date-col">
           <div>${firstStr}</div>
           <div>Last: ${lastStr}</div>
         </div>
@@ -475,13 +509,13 @@ const Templates = {
     if (isUnknown) {
       contentHtml = `
         <div class="fallback-icon-grid">
-          <div style="font-weight:700; margin-bottom:4px;">No Icon</div>
-          <div style="word-break:break-word;">${label}</div>
+          <div class="fallback-icon-grid-title">No Icon</div>
+          <div class="fallback-icon-grid-label">${label}</div>
         </div>
       `;
     } else {
-      contentHtml = `<img src="${iconUrl}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" alt="${label}" />
-      <div class="fallback-icon-grid" style="display:none">No Icon</div>`;
+      contentHtml = `<img src="${iconUrl}" loading="lazy" data-error-mode="show-next-fallback" alt="${label}" />
+      <div class="fallback-icon-grid is-hidden">No Icon</div>`;
     }
 
     // Only show WIP tags on grid to avoid clutter
@@ -501,7 +535,7 @@ const Templates = {
         ${contentHtml}
         <div class="grid-overlay-tags">${tagHtml}</div>
         <div class="grid-overlay-check">
-          <input type="checkbox" ${isSelected ? "checked" : ""} style="pointer-events:none;" tabindex="-1">
+          <input type="checkbox" ${isSelected ? "checked" : ""} tabindex="-1">
         </div>
       </div>
     `;
@@ -622,7 +656,7 @@ const Templates = {
    * @returns {string}
    */
   domainStatsTooltip(domain, count) {
-    return `<div style="margin-bottom:4px">${domain}</div><div>${count} requests</div>`;
+    return `<div class="tooltip-label">${domain}</div><div class="tooltip-value">${count} requests</div>`;
   },
 
   /**
@@ -635,7 +669,7 @@ const Templates = {
     return `<div class="card-chart">
       <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="activity-svg">
         <line x1="0" y1="50" x2="100" y2="50" class="activity-zero" />
-        <line x1="0" y1="0" x2="0" y2="100" class="activity-vline" style="display:none" />
+        <line x1="0" y1="0" x2="0" y2="100" class="activity-vline" />
         <path d="${pathNew}" class="activity-line activity-new" />
         <path d="${pathRemoved}" class="activity-line activity-removed" />
       </svg>
@@ -648,7 +682,7 @@ const Templates = {
    * @returns {string}
    */
   activityCardEmpty() {
-    return `<div class="card-chart" style="display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--on-surface-variant)">Collecting data…</div>`;
+    return `<div class="card-chart card-chart-empty">Collecting data…</div>`;
   },
 
   /**
@@ -658,7 +692,7 @@ const Templates = {
    * @returns {string}
    */
   activityTooltip(formattedDate, added, removed) {
-    return `<div style="margin-bottom:4px">${formattedDate}</div><div style="color:var(--primary); margin-bottom:2px">+${added} new</div><div style="color:var(--error)">−${removed} resolved</div>`;
+    return `<div class="tooltip-label">${formattedDate}</div><div class="tooltip-value tooltip-value-primary">+${added} new</div><div class="tooltip-value tooltip-value-error">−${removed} resolved</div>`;
   },
 
   /**
@@ -1315,7 +1349,7 @@ const Data = {
     if (params.has("q")) {
       App.state.search = params.get("q") || "";
       App.dom.inputSearch.value = App.state.search;
-      if (App.state.search) App.dom.clearBtn.style.display = "flex";
+      Utils.setHidden(App.dom.clearBtn, !App.state.search);
     }
     if (params.has("view")) {
       const v = params.get("view");
@@ -1413,10 +1447,14 @@ const UI = {
     });
 
     // Bindings
+    App.dom.container.addEventListener("error", event => {
+      Utils.handleImageError(event);
+    }, true);
+
     App.dom.inputSearch.addEventListener("input", e => {
       const val = (/** @type {HTMLInputElement} */ (e.target)).value;
       App.state.search = val;
-      App.dom.clearBtn.style.display = val.length > 0 ? "flex" : "none";
+      Utils.setHidden(App.dom.clearBtn, val.length === 0);
       this.render();
     });
 
@@ -1652,17 +1690,17 @@ const UI = {
           if (App.state.geoBatchActive) {
             App.state.geoBatchActive = false;
             App.dom.geoBatchBtn.classList.remove("active");
-            App.dom.geoBatchBtn.style.display = "";
+            Utils.setHidden(App.dom.geoBatchBtn, false);
             UI.saveGeoBatchState();
           }
 
           App.state.regexMode = true;
           App.dom.regexBtn.classList.add("active");
-          App.dom.regexBtn.style.display = "";
-          App.dom.geoBatchBtn.style.display = "none";
+          Utils.setHidden(App.dom.regexBtn, false);
+          Utils.setHidden(App.dom.geoBatchBtn, true);
           App.state.search = `^${domain}\\.`;
           App.dom.inputSearch.value = App.state.search;
-          App.dom.clearBtn.style.display = "flex";
+          Utils.setHidden(App.dom.clearBtn, false);
           UI.render();
           return;
         }
@@ -1857,8 +1895,8 @@ const UI = {
 
     const desc = document.getElementById("supportedDesc");
     const link = document.getElementById("supportedLink");
-    if (desc) desc.style.display = "";
-    if (link) link.style.display = "";
+    Utils.setHidden(desc, false);
+    Utils.setHidden(link, false);
 
     if (s.currentData.length === 0) {
       App.dom.container.innerHTML = Templates.emptyState();
