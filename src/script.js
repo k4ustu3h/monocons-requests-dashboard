@@ -41,6 +41,15 @@
  * @property {number} renderedCount
  * @property {AppEntry[]} currentData
  * @property {string} actionMode
+ * @property {boolean} geoBatchActive
+ * @property {Object | null} geoBatchConfig
+ * @property {Map<string, string>} existingSvgs
+ * @property {Object} setsStats
+ * @property {Array} creationOdds
+ * @property {Object} domainStats
+ * @property {Array} activityStats
+ * @property {Object} trendingDeltas
+ * @property {string | null} lastUpdate
  * @property {string} icontoolPath
  */
 
