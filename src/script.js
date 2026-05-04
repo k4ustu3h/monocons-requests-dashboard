@@ -242,7 +242,7 @@ const Utils = {
    * @returns {{ text: string; tags: Set<string> }}
    */
   parseSearchQuery(rawQuery) {
-    const result = {text: "", tags: new Set()};
+    const result = { text: "", tags: new Set() };
     const tokenRegex = /\b(?:is|tag|in):([a-z0-9-_]+)\b/gi;
 
     const cleanQuery = rawQuery.replace(tokenRegex, (_, tag) => {
@@ -272,8 +272,8 @@ const Utils = {
     const tags = Utils.getTagsForApp(app.componentName);
     let factor = null;
     for (const tag of tags) {
-        const f = CONFIG.label_factors[tag];
-        if (f !== undefined && (factor === null || f > factor)) factor = f;
+      const f = CONFIG.label_factors[tag];
+      if (f !== undefined && (factor === null || f > factor)) factor = f;
     }
     if (factor === null) factor = 1;
     return row[factor] || 0;
@@ -385,23 +385,23 @@ const Templates = {
       return `<span class="status-pill status-${tagId}" title="${desc}">${label}</span>`;
     }).join("");
 
-const existingSvgHtml = existingDrawable
-    ? `<span class="existing-svg-wrapper">
+    const existingSvgHtml = existingDrawable
+      ? `<span class="existing-svg-wrapper">
          <img src="https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/svgs/${existingDrawable}.svg" 
               class="existing-svg" 
               title="${existingDrawable}.svg"
               loading="lazy"
               onerror="this.style.display='none'" />
        </span>`
-    : "";
+      : "";
 
     const iconHtml = isUnknown
-        ? `<div class="fallback-icon-row">No Icon</div>`
-        : `<img src="${iconUrl}" class="requested-icon" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" alt="${name}" />
+      ? `<div class="fallback-icon-row">No Icon</div>`
+      : `<img src="${iconUrl}" class="requested-icon" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" alt="${name}" />
          <div class="fallback-icon-row" style="display:none">No Icon</div>`;
-    
+
     const installsRaw = app.installs ? app.installs.replace(/[,+]/g, '') : null;
-    const displayInstalls = installsRaw ? new Intl.NumberFormat('en', {notation: "compact"}).format(parseInt(installsRaw)) + "+" : "—";
+    const displayInstalls = installsRaw ? new Intl.NumberFormat('en', { notation: "compact" }).format(parseInt(installsRaw)) + "+" : "—";
     const rawOdds = Utils.getCreationOdds(app) * 100;
     const displayOdds = rawOdds < 1 ? rawOdds.toFixed(2) + "%" : rawOdds.toFixed(0) + "%";
 
@@ -477,14 +477,14 @@ const existingSvgHtml = existingDrawable
 
     // Only show WIP tags on grid to avoid clutter
     const tagHtml = tags
-        .filter(tagId => tagId === "wip")
-        .map(tagId => {
-          const meta = App.state.filterMetadata.get(tagId);
-          const label = meta ? meta.label : tagId;
-          const desc = meta ? meta.description : `Tagged with "${tagId}"`
-          return `<span class="status-pill status-${tagId}" title="${desc}">${label}</span>`;
-        })
-        .join("");
+      .filter(tagId => tagId === "wip")
+      .map(tagId => {
+        const meta = App.state.filterMetadata.get(tagId);
+        const label = meta ? meta.label : tagId;
+        const desc = meta ? meta.description : `Tagged with "${tagId}"`
+        return `<span class="status-pill status-${tagId}" title="${desc}">${label}</span>`;
+      })
+      .join("");
 
     return `
       <div class="grid-card ${isSelected ? 'selected' : ''}" data-id="${id}" title="${label}"
@@ -545,6 +545,131 @@ const existingSvgHtml = existingDrawable
   },
 
   /**
+   * @param {{ value: string, label: string }[]} options
+   * @param {string} activeValue
+   * @returns {string}
+   */
+  sortMenuItems(options, activeValue) {
+    return options.map(opt => `
+      <div class="ctx-item ${activeValue === opt.value ? 'active' : ''}" data-value="${opt.value}">
+        <span>${opt.label}</span>
+      </div>
+    `).join("");
+  },
+
+  /**
+   * @param {{ value: string, label: string }[]} options
+   * @param {string} activeValue
+   * @returns {string}
+   */
+  viewMenuItems(options, activeValue) {
+    return options.map(opt => `
+      <div class="ctx-item ${activeValue === opt.value ? 'active' : ''}" data-value="${opt.value}">
+        <span>${opt.label}</span>
+      </div>
+    `).join("");
+  },
+
+  /**
+   * @param {string} domainsText
+   * @param {string} targetText
+   * @returns {string}
+   */
+  geoBatchConfig(domainsText, targetText) {
+    return `
+      <div class="domain-config">
+        <div class="input-wrapper">
+          <input id="geoBatchDomains" type="text" value="${domainsText}" placeholder="Domains: de 2, jp 3, br 1" />
+        </div>
+        <div class="domain-config-row">
+          <div class="input-wrapper">
+            <input id="geoBatchTarget" type="text" inputmode="numeric" value="${targetText}" disabled />
+          </div>
+          <button class="domain-config-btn-apply" id="geoBatchApply">Apply</button>
+        </div>
+      </div>
+    `;
+  },
+
+  /**
+   * @param {[string, number][]} entries
+   * @param {number} max
+   * @returns {string}
+   */
+  domainStatsCard(entries, max) {
+    return `<div class="card-chart has-bars">
+      ${entries.map(([domain, count]) => {
+      const h = (count / max * 100).toFixed(0);
+      const shortDomain = domain.length > 3 ? domain.slice(0, 3) : domain;
+      return `<div class="domain-col" data-domain="${domain}" data-count="${count}">
+          <div class="domain-col-fill" style="height:${h}%"></div>
+          <span class="chart-label">${shortDomain}</span>
+        </div>`;
+    }).join("")}
+    </div>
+    <div class="chart-tooltip"></div>`;
+  },
+
+  /**
+   * @param {string} domain
+   * @param {string} count
+   * @returns {string}
+   */
+  domainStatsTooltip(domain, count) {
+    return `<div style="margin-bottom:4px">${domain}</div><div>${count} requests</div>`;
+  },
+
+  /**
+   * @param {string} pathNew
+   * @param {string} pathRemoved
+   * @param {string} dayLabels
+   * @returns {string}
+   */
+  activityCard(pathNew, pathRemoved, dayLabels) {
+    return `<div class="card-chart">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="activity-svg">
+        <line x1="0" y1="50" x2="100" y2="50" class="activity-zero" />
+        <path d="${pathNew}" class="activity-line activity-new" />
+        <path d="${pathRemoved}" class="activity-line activity-removed" />
+      </svg>
+      <div class="activity-days">${dayLabels}</div>
+    </div>
+    <div class="chart-tooltip"></div>`;
+  },
+
+  /**
+   * @returns {string}
+   */
+  activityCardEmpty() {
+    return `<div class="card-chart" style="display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--on-surface-variant)">Collecting data…</div>`;
+  },
+
+  /**
+   * @param {string} formattedDate
+   * @param {number} added
+   * @param {number} removed
+   * @returns {string}
+   */
+  activityTooltip(formattedDate, added, removed) {
+    return `<div style="margin-bottom:4px">${formattedDate}</div><div style="color:var(--primary); margin-bottom:2px">+${added} new</div><div style="color:var(--error)">−${removed} resolved</div>`;
+  },
+
+  /**
+   * @param {string} id
+   * @param {string} label
+   * @param {boolean} isActive
+   * @returns {string}
+   */
+  mobileFilterItem(id, label, isActive) {
+    return `
+      <div class="ctx-item ${isActive ? 'active' : ''}" data-filter-id="${id}" tabindex="0" role="menuitemcheckbox" aria-checked="${isActive}">
+        <span class="check-icon">${ICONS.check}</span>
+        <span>${label}</span>
+      </div>
+    `;
+  },
+
+  /**
    * @param {string} text
    * @param {string} icon
    * @returns {string}
@@ -574,7 +699,7 @@ const Toast = {
 
     if (App.dom.toastBox.children.length >= 3) {
       const first = App.dom.toastBox.firstElementChild;
-      if (first) this.remove(/** @type {HTMLElement} */ (first));
+      if (first) this.remove(/** @type {HTMLElement} */(first));
     }
 
     const el = document.createElement("div");
@@ -665,30 +790,30 @@ const Actions = {
    * @param {string} key
    */
   toggleSortHeader(key) {
-      const current = App.state.sort;
-      const [currKey, currDir] = current.split('-');
+    const current = App.state.sort;
+    const [currKey, currDir] = current.split('-');
 
-      const defaults = {
-          name: 'asc',
-          req: 'desc',
-          odds: 'desc',
-          install: 'desc',
-          time: 'desc'
-      };
+    const defaults = {
+      name: 'asc',
+      req: 'desc',
+      odds: 'desc',
+      install: 'desc',
+      time: 'desc'
+    };
 
-      let nextSort = "";
-      if (currKey === key) {
-          nextSort = `${key}-${currDir === 'asc' ? 'desc' : 'asc'}`;
-      } else {
-          nextSort = `${key}-${defaults[key]}`;
-      }
+    let nextSort = "";
+    if (currKey === key) {
+      nextSort = `${key}-${currDir === 'asc' ? 'desc' : 'asc'}`;
+    } else {
+      nextSort = `${key}-${defaults[key]}`;
+    }
 
-      App.state.sort = nextSort;
-      const opt = UI.sortOptions.find(o => o.value === nextSort);
-      App.dom.sortLabel.textContent = opt ? opt.label : nextSort;
-      UI.render();
+    App.state.sort = nextSort;
+    const opt = UI.sortOptions.find(o => o.value === nextSort);
+    App.dom.sortLabel.textContent = opt ? opt.label : nextSort;
+    UI.render();
   },
-  
+
   clearAllSelections() {
     if (App.state.selected.size === 0) return;
     document.querySelectorAll(".list-row.selected, .grid-card.selected").forEach(el => {
@@ -715,7 +840,7 @@ const Actions = {
 
   copyNamesAndIDs(ids = null) {
     Actions.copyToClipboard(Actions.generateNamesAndIDs(ids));
-  },  
+  },
 
   /**
    * @param {string} text
@@ -749,8 +874,8 @@ const Actions = {
   copyAppFilter() {
     Actions.copyToClipboard(Actions.generateAppFilterXml());
   },
-  
-    generatePRDescription(mode) {
+
+  generatePRDescription(mode) {
     const selected = App.data.filter(a => App.state.selected.has(a.componentName));
     let md = `## Icons\n`;
     if (mode === "new") {
@@ -791,14 +916,14 @@ const Actions = {
     try {
       const mode = App.state.actionMode; // "new" | "link"
 
-       // fflate uses a simple object mapping paths to Uint8Arrays/Strings
-       /** @type {Object.<string, Uint8Array | string | Object>} */
-       const zipData = {};
+      // fflate uses a simple object mapping paths to Uint8Arrays/Strings
+      /** @type {Object.<string, Uint8Array | string | Object>} */
+      const zipData = {};
 
-       // Only include icons folder in "new" mode
-       if (mode === "new") {
-         zipData["_icons"] = {};
-       }
+      // Only include icons folder in "new" mode
+      if (mode === "new") {
+        zipData["_icons"] = {};
+      }
 
       let xmlAppFilter = "<resources>\n";
       let txtCommands = "";
@@ -859,7 +984,7 @@ const Actions = {
         // PR Description
         if (!processedPackages.has(pkg)) {
           processedPackages.add(pkg);
-          
+
           if (mode === "new") {
             prLines.add(`${app.label} (\`${pkg}\`)`);
           } else {
@@ -867,17 +992,17 @@ const Actions = {
           }
         }
 
-       // Queue Icon Fetch (only in "new" mode)
-         if (mode === "new" && !zipData._icons[`${drawable}.png`]) {
-           const url = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
-           const p = fetch(url)
-               .then(r => r.ok ? r.arrayBuffer() : null)
-               .then(buf => {
-                 if (buf) zipData._icons[`${drawable}.png`] = new Uint8Array(buf);
-               })
-               .catch(() => {});
-           fetchPromises.push(p);
-         }
+        // Queue Icon Fetch (only in "new" mode)
+        if (mode === "new" && !zipData._icons[`${drawable}.png`]) {
+          const url = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
+          const p = fetch(url)
+            .then(r => r.ok ? r.arrayBuffer() : null)
+            .then(buf => {
+              if (buf) zipData._icons[`${drawable}.png`] = new Uint8Array(buf);
+            })
+            .catch(() => { });
+          fetchPromises.push(p);
+        }
       });
 
       // --- FINALIZE OUTPUTS ---
@@ -944,77 +1069,77 @@ const Data = {
       fetch(CONFIG.data.activityStatsPath).then(r => r.json()).catch(() => []),
       ...CONFIG.data.filters.map(id => this.fetchFilterData(id))
     ])
-        .then(([json, setsStats, creationOdds, domainStats, activityStats, ...filterObjects]) => {
-          App.data = json.apps;
-          App.state.setsStats = setsStats;
-          App.state.creationOdds = creationOdds;
-          App.state.domainStats = domainStats;
-          App.state.activityStats = activityStats;
-          App.state.lastUpdate = json.lastUpdate;
+      .then(([json, setsStats, creationOdds, domainStats, activityStats, ...filterObjects]) => {
+        App.data = json.apps;
+        App.state.setsStats = setsStats;
+        App.state.creationOdds = creationOdds;
+        App.state.domainStats = domainStats;
+        App.state.activityStats = activityStats;
+        App.state.lastUpdate = json.lastUpdate;
 
-          if (activityStats && activityStats.length > 0) {
-              const oldestSnapshot = activityStats[0].snapshot || {};
-              const newestEntry = activityStats[activityStats.length - 1];
-              const newestSnapshot = newestEntry.snapshot || {};
-              App.state.trendingDeltas = {};
+        if (activityStats && activityStats.length > 0) {
+          const oldestSnapshot = activityStats[0].snapshot || {};
+          const newestEntry = activityStats[activityStats.length - 1];
+          const newestSnapshot = newestEntry.snapshot || {};
+          App.state.trendingDeltas = {};
 
-              for (const [comp, count] of Object.entries(newestSnapshot)) {
-                  const prev = oldestSnapshot[comp] || 0;
-                  const delta = count - prev;
-                  if (delta > 0) {
-                      App.state.trendingDeltas[comp] = delta;
-                  }
-              }
-          }          
-
-          // Build ID Map
-          App.state.idMap = new Map();
-          App.data.forEach(app => App.state.idMap.set(app.componentName, app));
-
-          // Init Tags
-          App.state.appTags = new Map();
-          App.state.filterMetadata = new Map();
-
-          // Process Filters
-          filterObjects.forEach((obj, index) => {
-            if (!obj) return;
-            const id = CONFIG.data.filters[index];
-
-            App.state.filterMetadata.set(id, {
-              label: obj.label,
-              description: obj.description
-            });
-
-            if (id === "unlabeled") {
-              this.computeUnlabeled(id);
-            } else if (obj[id] && Array.isArray(obj[id])) {
-                obj[id].forEach(item => {
-                    const appId = typeof item === 'string' ? item : item.id;
-                    this.addTag(appId, id);
-                    if (typeof item === 'object' && item.existing_drawable) {
-                        if (!App.state.existingSvgs) App.state.existingSvgs = new Map();
-                        App.state.existingSvgs.set(appId, item.existing_drawable);
-                    }
-                });
+          for (const [comp, count] of Object.entries(newestSnapshot)) {
+            const prev = oldestSnapshot[comp] || 0;
+            const delta = count - prev;
+            if (delta > 0) {
+              App.state.trendingDeltas[comp] = delta;
             }
-          });
-          
-          try {
-              const saved = localStorage.getItem("lawnicons_geo_batch");
-              if (saved) {
-                  const parsed = JSON.parse(saved);
-                  App.state.geoBatchConfig = parsed.config;
-                  App.state.geoBatchActive = parsed.active || false;
-              }
-          } catch (e) {}  
+          }
+        }
 
-          this.loadUrlState();
-          UI.init();
-        })
-        .catch(e => {
-          console.error(e);
-          Toast.show("Failed to load data", "error");
+        // Build ID Map
+        App.state.idMap = new Map();
+        App.data.forEach(app => App.state.idMap.set(app.componentName, app));
+
+        // Init Tags
+        App.state.appTags = new Map();
+        App.state.filterMetadata = new Map();
+
+        // Process Filters
+        filterObjects.forEach((obj, index) => {
+          if (!obj) return;
+          const id = CONFIG.data.filters[index];
+
+          App.state.filterMetadata.set(id, {
+            label: obj.label,
+            description: obj.description
+          });
+
+          if (id === "unlabeled") {
+            this.computeUnlabeled(id);
+          } else if (obj[id] && Array.isArray(obj[id])) {
+            obj[id].forEach(item => {
+              const appId = typeof item === 'string' ? item : item.id;
+              this.addTag(appId, id);
+              if (typeof item === 'object' && item.existing_drawable) {
+                if (!App.state.existingSvgs) App.state.existingSvgs = new Map();
+                App.state.existingSvgs.set(appId, item.existing_drawable);
+              }
+            });
+          }
         });
+
+        try {
+          const saved = localStorage.getItem("lawnicons_geo_batch");
+          if (saved) {
+            const parsed = JSON.parse(saved);
+            App.state.geoBatchConfig = parsed.config;
+            App.state.geoBatchActive = parsed.active || false;
+          }
+        } catch (e) { }
+
+        this.loadUrlState();
+        UI.init();
+      })
+      .catch(e => {
+        console.error(e);
+        Toast.show("Failed to load data", "error");
+      });
   },
 
   /**
@@ -1090,7 +1215,7 @@ const Data = {
       } else {
         const term = query.text.toLowerCase();
         data = data.filter(a =>
-            a.label.toLowerCase().includes(term) || a.componentName.toLowerCase().includes(term)
+          a.label.toLowerCase().includes(term) || a.componentName.toLowerCase().includes(term)
         );
       }
     }
@@ -1106,24 +1231,24 @@ const Data = {
       /** @type {Record<string, (a: AppEntry, b: AppEntry) => number>} */
       const sorters = {
         "req-desc": (a, b) => {
-            const pkgA = a.componentName.split('/')[0];
-            const pkgB = b.componentName.split('/')[0];
-            const valA = App.state.setsStats[pkgA] || a.requestCount;
-            const valB = App.state.setsStats[pkgB] || b.requestCount;
-            return valB - valA;
+          const pkgA = a.componentName.split('/')[0];
+          const pkgB = b.componentName.split('/')[0];
+          const valA = App.state.setsStats[pkgA] || a.requestCount;
+          const valB = App.state.setsStats[pkgB] || b.requestCount;
+          return valB - valA;
         },
         "req-asc": (a, b) => {
-            const pkgA = a.componentName.split('/')[0];
-            const pkgB = b.componentName.split('/')[0];
-            const valA = App.state.setsStats[pkgA] || a.requestCount;
-            const valB = App.state.setsStats[pkgB] || b.requestCount;
-            return valA - valB;
+          const pkgA = a.componentName.split('/')[0];
+          const pkgB = b.componentName.split('/')[0];
+          const valA = App.state.setsStats[pkgA] || a.requestCount;
+          const valB = App.state.setsStats[pkgB] || b.requestCount;
+          return valA - valB;
         },
         "trending": (a, b) => {
-            const deltaA = App.state.trendingDeltas[a.componentName] || 0;
-            const deltaB = App.state.trendingDeltas[b.componentName] || 0;
-            return deltaB - deltaA;
-        },            
+          const deltaA = App.state.trendingDeltas[a.componentName] || 0;
+          const deltaB = App.state.trendingDeltas[b.componentName] || 0;
+          return deltaB - deltaA;
+        },
         "odds-desc": (a, b) => Utils.getCreationOdds(b) - Utils.getCreationOdds(a),
         "odds-asc": (a, b) => Utils.getCreationOdds(a) - Utils.getCreationOdds(b),
         "install-desc": (a, b) => Utils.parseInstalls(b.installs) - Utils.parseInstalls(a.installs),
@@ -1136,9 +1261,9 @@ const Data = {
       if (sorters[s.sort]) data.sort(sorters[s.sort]);
     }
 
-      if (s.geoBatchActive && s.geoBatchConfig) {
-          data = UI.applyGeoBatch(data);
-      }    
+    if (s.geoBatchActive && s.geoBatchConfig) {
+      data = UI.applyGeoBatch(data);
+    }
 
     App.state.currentData = data;
   },
@@ -1151,13 +1276,13 @@ const Data = {
       if (App.state.search) App.dom.clearBtn.style.display = "flex";
     }
     if (params.has("view")) {
-        const v = params.get("view");
-        if (v === "list" || v === "grid") App.state.view = v;
+      const v = params.get("view");
+      if (v === "list" || v === "grid") App.state.view = v;
     }
     if (params.has("sort")) {
-        App.state.sort = params.get("sort") || DEFAULTS.sort;
-        const opt = UI.sortOptions.find(o => o.value === App.state.sort);
-        App.dom.sortLabel.textContent = opt ? opt.label : App.state.sort;
+      App.state.sort = params.get("sort") || DEFAULTS.sort;
+      const opt = UI.sortOptions.find(o => o.value === App.state.sort);
+      App.dom.sortLabel.textContent = opt ? opt.label : App.state.sort;
     }
     if (params.has("regex")) {
       App.state.regexMode = true;
@@ -1188,8 +1313,8 @@ const Data = {
 
     const queryString = params.toString();
     const newUrl = queryString
-        ? `${window.location.pathname}?${queryString}`
-        : window.location.pathname;
+      ? `${window.location.pathname}?${queryString}`
+      : window.location.pathname;
 
     if (newUrl !== window.location.pathname + window.location.search) {
       window.history.replaceState({}, "", newUrl);
@@ -1205,29 +1330,29 @@ const UI = {
   observer: null,
 
   sortOptions: [
-      { value: "req-desc", label: "Most requested" },
-      { value: "req-asc", label: "Least requested" },
-      { value: "trending", label: "Trending" },
-      { value: "odds-desc", label: "Highest creation odds" },
-      { value: "odds-asc", label: "Lowest creation odds" },
-      { value: "install-desc", label: "Most installed" },
-      { value: "install-asc", label: "Least installed" },
-      { value: "time-desc", label: "Newest" },
-      { value: "time-asc", label: "Oldest" },
-      { value: "name-asc", label: "Name (A-Z)" },
-      { value: "name-desc", label: "Name (Z-A)" },
-      { value: "rand", label: "Random" }
-  ],  
+    { value: "req-desc", label: "Most requested" },
+    { value: "req-asc", label: "Least requested" },
+    { value: "trending", label: "Trending" },
+    { value: "odds-desc", label: "Highest creation odds" },
+    { value: "odds-asc", label: "Lowest creation odds" },
+    { value: "install-desc", label: "Most installed" },
+    { value: "install-asc", label: "Least installed" },
+    { value: "time-desc", label: "Newest" },
+    { value: "time-asc", label: "Oldest" },
+    { value: "name-asc", label: "Name (A-Z)" },
+    { value: "name-desc", label: "Name (Z-A)" },
+    { value: "rand", label: "Random" }
+  ],
 
   init() {
     if (App.state.regexMode) {
-    App.dom.regexBtn.classList.add("active");
-    App.dom.geoBatchBtn.style.display = "none";
+      App.dom.regexBtn.classList.add("active");
+      App.dom.geoBatchBtn.style.display = "none";
     }
 
     if (App.state.geoBatchActive) {
-        App.dom.geoBatchBtn.classList.add("active");
-        App.dom.regexBtn.style.display = "none";
+      App.dom.geoBatchBtn.classList.add("active");
+      App.dom.regexBtn.style.display = "none";
     }
 
     this.renderDomainStats();
@@ -1238,8 +1363,8 @@ const UI = {
     this.render();
 
     window.addEventListener("resize", () => {
-        this.renderDomainStats();
-        this.renderActivityCard();
+      this.renderDomainStats();
+      this.renderActivityCard();
     });
 
     // Bindings
@@ -1251,49 +1376,49 @@ const UI = {
     });
 
     App.dom.clearBtn.addEventListener("click", () => {
-        App.state.search = "";
-        App.dom.inputSearch.value = "";
-        App.dom.clearBtn.style.display = "none";
-        App.dom.inputSearch.focus();
-        if (!App.state.geoBatchActive) {
-            App.dom.regexBtn.style.display = "";
-        }
-        this.render();
+      App.state.search = "";
+      App.dom.inputSearch.value = "";
+      App.dom.clearBtn.style.display = "none";
+      App.dom.inputSearch.focus();
+      if (!App.state.geoBatchActive) {
+        App.dom.regexBtn.style.display = "";
+      }
+      this.render();
     });
 
     App.dom.sortBtn.addEventListener("click", () => this.showSortMenu());
 
     App.dom.viewBtn.addEventListener("click", () => {
-        App.state.view = App.state.view === "list" ? "grid" : "list";
-        App.dom.viewIconList.classList.toggle("active", App.state.view === "list");
-        App.dom.viewIconGrid.classList.toggle("active", App.state.view === "grid");
-        this.render();
+      App.state.view = App.state.view === "list" ? "grid" : "list";
+      App.dom.viewIconList.classList.toggle("active", App.state.view === "list");
+      App.dom.viewIconGrid.classList.toggle("active", App.state.view === "grid");
+      this.render();
     });
 
     App.dom.viewIconList.classList.add("active");
     App.dom.viewIconGrid.classList.remove("active");
 
     App.dom.regexBtn.addEventListener("click", () => {
-        if (App.state.geoBatchActive) {
-            App.state.geoBatchActive = false;
-            App.dom.geoBatchBtn.classList.remove("active");
-            App.dom.geoBatchBtn.style.display = "";
-            this.saveGeoBatchState();
-            this.render();
-            return;
-        }
-        App.state.regexMode = !App.state.regexMode;
-        App.dom.regexBtn.classList.toggle("active", App.state.regexMode);
-        if (App.state.regexMode) {
-            App.dom.geoBatchBtn.style.display = "none";
-        } else {
-            App.dom.geoBatchBtn.style.display = "";
-        }
+      if (App.state.geoBatchActive) {
+        App.state.geoBatchActive = false;
+        App.dom.geoBatchBtn.classList.remove("active");
+        App.dom.geoBatchBtn.style.display = "";
+        this.saveGeoBatchState();
         this.render();
+        return;
+      }
+      App.state.regexMode = !App.state.regexMode;
+      App.dom.regexBtn.classList.toggle("active", App.state.regexMode);
+      if (App.state.regexMode) {
+        App.dom.geoBatchBtn.style.display = "none";
+      } else {
+        App.dom.geoBatchBtn.style.display = "";
+      }
+      this.render();
     });
 
     App.dom.headerCheck.addEventListener("change", e =>
-        Actions.toggleSelectAll((/** @type {HTMLInputElement} */ (e.target)).checked)
+      Actions.toggleSelectAll((/** @type {HTMLInputElement} */ (e.target)).checked)
     );
 
     App.dom.mobileFilterBtn.addEventListener("click", () => {
@@ -1301,19 +1426,19 @@ const UI = {
     });
 
     App.dom.geoBatchBtn.addEventListener("click", () => {
-        if (App.state.geoBatchActive) {
-            App.state.geoBatchActive = false;
-            App.dom.geoBatchBtn.classList.remove("active");
-            App.dom.regexBtn.style.display = "";
-            if (App.state.regexMode) {
-                App.state.regexMode = false;
-                App.dom.regexBtn.classList.remove("active");
-            }
-            this.saveGeoBatchState();
-            this.render();
-            return;
+      if (App.state.geoBatchActive) {
+        App.state.geoBatchActive = false;
+        App.dom.geoBatchBtn.classList.remove("active");
+        App.dom.regexBtn.style.display = "";
+        if (App.state.regexMode) {
+          App.state.regexMode = false;
+          App.dom.regexBtn.classList.remove("active");
         }
-        this.showGeoBatchConfig();
+        this.saveGeoBatchState();
+        this.render();
+        return;
+      }
+      this.showGeoBatchConfig();
     });
 
     // Selection Bar
@@ -1355,8 +1480,8 @@ const UI = {
       menu.showPopover();
     });
 
-      document.getElementById("sbHint")?.addEventListener("click", () => {
-        Actions.clearAllSelections();
+    document.getElementById("sbHint")?.addEventListener("click", () => {
+      Actions.clearAllSelections();
     });
 
     // Sort Headers
@@ -1369,11 +1494,11 @@ const UI = {
     };
 
     Object.entries(headers).forEach(([selector, key]) => {
-        const el = /** @type {HTMLElement} */ (App.dom.listHeader.querySelector(selector));
-        if (el) {
-            el.title = "Click to sort";
-            el.onclick = () => Actions.toggleSortHeader(key);
-        }
+      const el = /** @type {HTMLElement} */ (App.dom.listHeader.querySelector(selector));
+      if (el) {
+        el.title = "Click to sort";
+        el.onclick = () => Actions.toggleSortHeader(key);
+      }
     });
 
     // Event Delegation
@@ -1397,7 +1522,7 @@ const UI = {
 
       const item = /** @type {HTMLElement} */ (target.closest('[data-id]'));
       if (item) {
-        Actions.toggleSelection(item.dataset.id, /** @type {MouseEvent} */ (e));
+        Actions.toggleSelection(item.dataset.id, /** @type {MouseEvent} */(e));
       }
     });
 
@@ -1522,7 +1647,7 @@ const UI = {
 
       menu.addEventListener('keydown', (e) => {
         const items = /** @type {HTMLElement[]} */ (Array.from(menu.querySelectorAll('.ctx-item')));
-        const index = items.indexOf(/** @type {HTMLElement} */ (document.activeElement));
+        const index = items.indexOf(/** @type {HTMLElement} */(document.activeElement));
 
         if (e.key === 'ArrowDown') {
           e.preventDefault();
@@ -1550,7 +1675,7 @@ const UI = {
         const more = this.loadMore();
         App.dom.sentinel.style.opacity = more ? "1" : "0";
       }
-    }, {rootMargin: "400px"});
+    }, { rootMargin: "400px" });
     this.observer.observe(App.dom.sentinel);
   },
 
@@ -1619,27 +1744,23 @@ const UI = {
   showSortMenu() {
     const menu = App.dom.sortMenu;
     const options = UI.sortOptions;
-    
-    menu.innerHTML = options.map(opt => `
-        <div class="ctx-item ${App.state.sort === opt.value ? 'active' : ''}" data-value="${opt.value}">
-            <span>${opt.label}</span>
-        </div>
-    `).join("");
-    
+
+    menu.innerHTML = Templates.sortMenuItems(options, App.state.sort);
+
     menu.querySelectorAll(".ctx-item").forEach(item => {
-        item.onclick = () => {
-            App.state.sort = item.dataset.value;
-            App.dom.sortLabel.textContent = item.textContent.trim();
-            menu.hidePopover();
-            this.render();
-        };
+      item.onclick = () => {
+        App.state.sort = item.dataset.value;
+        App.dom.sortLabel.textContent = item.textContent.trim();
+        menu.hidePopover();
+        this.render();
+      };
     });
-    
+
     const rect = App.dom.sortBtn.getBoundingClientRect();
     menu.style.left = rect.left + "px";
     menu.style.top = (rect.bottom + 8) + "px";
     menu.showPopover();
-},
+  },
 
   generateFilters() {
     const c = App.dom.filterBox;
@@ -1735,343 +1856,319 @@ const UI = {
     } else {
       bar.classList.remove("visible");
     }
-},
+  },
 
-showGeoBatchConfig() {
+  showGeoBatchConfig() {
     const menu = document.getElementById("geoBatchMenu");
     if (!menu) return;
-    
+
     const saved = App.state.geoBatchConfig;
     const domainsText = saved ? saved.domainsRaw : "";
     const targetText = saved && saved.target ? saved.target : "";
-    
-    menu.innerHTML = `
-      <div class="domain-config">
-        <div class="input-wrapper">
-          <input id="geoBatchDomains" type="text" value="${domainsText}" placeholder="Domains: de 2, jp 3, br 1" />
-        </div>
-        <div class="domain-config-row">
-          <div class="input-wrapper">
-            <input id="geoBatchTarget" type="text" inputmode="numeric" value="${targetText}" disabled />
-          </div>
-          <button class="domain-config-btn-apply" id="geoBatchApply">Apply</button>
-        </div>
-      </div>
-    `;
-    
+
+    menu.innerHTML = Templates.geoBatchConfig(domainsText, targetText);
+
     const updateTargetState = () => {
-    const domainsInput = document.getElementById("geoBatchDomains");
-    const targetInput = document.getElementById("geoBatchTarget");
-    if (!domainsInput || !targetInput) return;
-    const domainsVal = domainsInput.value.trim();
-    if (!domainsVal) {
+      const domainsInput = document.getElementById("geoBatchDomains");
+      const targetInput = document.getElementById("geoBatchTarget");
+      if (!domainsInput || !targetInput) return;
+      const domainsVal = domainsInput.value.trim();
+      if (!domainsVal) {
         targetInput.value = "";
         targetInput.disabled = true;
         targetInput.placeholder = "All domains need weights";
         return;
-    }
-    const items = domainsVal.split(",").map(item => item.trim()).filter(item => item);
-    const allHaveWeights = items.length > 0 && items.every(item => item.split(/\s+/).length > 1);
-    if (!allHaveWeights) {
+      }
+      const items = domainsVal.split(",").map(item => item.trim()).filter(item => item);
+      const allHaveWeights = items.length > 0 && items.every(item => item.split(/\s+/).length > 1);
+      if (!allHaveWeights) {
         targetInput.value = "";
         targetInput.disabled = true;
         targetInput.placeholder = "All domains need weights";
-    } else {
+      } else {
         targetInput.disabled = false;
         targetInput.placeholder = "Target icons";
-    }
-};
-    
+      }
+    };
+
     setTimeout(() => {
-    const domainsInput = document.getElementById("geoBatchDomains");
-    const targetInput = document.getElementById("geoBatchTarget");
-    
-    domainsInput.addEventListener("input", () => {
+      const domainsInput = document.getElementById("geoBatchDomains");
+      const targetInput = document.getElementById("geoBatchTarget");
+
+      domainsInput.addEventListener("input", () => {
         const domainsRaw = domainsInput.value.trim();
         const targetVal = targetInput.value.trim();
         if (!domainsRaw) {
-            App.state.geoBatchConfig = null;
-            App.state.geoBatchActive = false;
-            App.dom.geoBatchBtn.classList.remove("active");
+          App.state.geoBatchConfig = null;
+          App.state.geoBatchActive = false;
+          App.dom.geoBatchBtn.classList.remove("active");
         } else {
-            App.state.geoBatchConfig = {
-                domainsRaw: domainsRaw,
-                target: targetVal || null
-            };
+          App.state.geoBatchConfig = {
+            domainsRaw: domainsRaw,
+            target: targetVal || null
+          };
         }
         updateTargetState();
         UI.saveGeoBatchState();
-    });
+      });
 
-    domainsInput.addEventListener("keydown", (e) => {
+      domainsInput.addEventListener("keydown", (e) => {
         e.stopPropagation();
-    });
-    
-    targetInput.addEventListener("input", () => {
+      });
+
+      targetInput.addEventListener("input", () => {
         if (App.state.geoBatchConfig) {
-            App.state.geoBatchConfig.target = targetInput.value.trim() || null;
-            UI.saveGeoBatchState();
+          App.state.geoBatchConfig.target = targetInput.value.trim() || null;
+          UI.saveGeoBatchState();
         }
-    });
+      });
 
-    targetInput.addEventListener("keydown", (e) => {
+      targetInput.addEventListener("keydown", (e) => {
         e.stopPropagation();
-    });
-    
-    updateTargetState();
-    
-    document.getElementById("geoBatchApply").onclick = () => {
+      });
+
+      updateTargetState();
+
+      document.getElementById("geoBatchApply").onclick = () => {
         const domainsRaw = domainsInput.value.trim();
         const targetVal = targetInput.value.trim();
-        
+
         if (!domainsRaw) {
-            App.state.geoBatchConfig = null;
-            App.state.geoBatchActive = false;
-            App.dom.geoBatchBtn.classList.remove("active");
-            UI.saveGeoBatchState();
+          App.state.geoBatchConfig = null;
+          App.state.geoBatchActive = false;
+          App.dom.geoBatchBtn.classList.remove("active");
+          UI.saveGeoBatchState();
         } else {
-            if (!App.state.geoBatchConfig) {
-                App.state.geoBatchConfig = {
-                    domainsRaw: domainsRaw,
-                    target: targetVal || null
-                };
-            }
-            App.state.geoBatchActive = true;
-            App.dom.geoBatchBtn.classList.add("active");
-            App.dom.regexBtn.style.display = "none";
-            App.state.regexMode = false;
-            App.dom.regexBtn.classList.remove("active");
-            UI.saveGeoBatchState();
+          if (!App.state.geoBatchConfig) {
+            App.state.geoBatchConfig = {
+              domainsRaw: domainsRaw,
+              target: targetVal || null
+            };
+          }
+          App.state.geoBatchActive = true;
+          App.dom.geoBatchBtn.classList.add("active");
+          App.dom.regexBtn.style.display = "none";
+          App.state.regexMode = false;
+          App.dom.regexBtn.classList.remove("active");
+          UI.saveGeoBatchState();
         }
-        
+
         UI.render();
         menu.hidePopover();
-    };
-}, 0);
-    
-        const btnRect = App.dom.geoBatchBtn.getBoundingClientRect();
-        menu.style.visibility = "hidden";
-        menu.showPopover();
-        const wrapperRect = document.getElementById("search-wrapper").getBoundingClientRect();
-        menu.style.left = (wrapperRect.right - menu.offsetWidth) + "px";
-        menu.style.top = (btnRect.bottom + 8) + "px";
-        menu.style.visibility = "visible";
-},
+      };
+    }, 0);
 
-applyGeoBatch(data) {
+    const btnRect = App.dom.geoBatchBtn.getBoundingClientRect();
+    menu.style.visibility = "hidden";
+    menu.showPopover();
+    const wrapperRect = document.getElementById("search-wrapper").getBoundingClientRect();
+    menu.style.left = (wrapperRect.right - menu.offsetWidth) + "px";
+    menu.style.top = (btnRect.bottom + 8) + "px";
+    menu.style.visibility = "visible";
+  },
+
+  applyGeoBatch(data) {
     const config = App.state.geoBatchConfig;
     const items = config.domainsRaw.split(",").map(item => item.trim().split(/\s+/));
-    
+
     const weights = {};
     let totalWeight = 0;
     for (const parts of items) {
-        const domain = parts[0];
-        const w = parseInt(parts[1]);
-        weights[domain] = w;
-        totalWeight += w;
+      const domain = parts[0];
+      const w = parseInt(parts[1]);
+      weights[domain] = w;
+      totalWeight += w;
     }
-    
+
     const target = config.target ? parseInt(config.target) : null;
     const limits = {};
-    
+
     if (target) {
-        let planned = 0;
-        const sorted = Object.entries(weights).sort((a, b) => b[1] - a[1]);
-        for (const [domain, w] of sorted) {
-            const count = Math.trunc(target * w / totalWeight);
-            limits[domain] = count;
-            planned += count;
-        }
-        limits._remaining = target - planned;
+      let planned = 0;
+      const sorted = Object.entries(weights).sort((a, b) => b[1] - a[1]);
+      for (const [domain, w] of sorted) {
+        const count = Math.trunc(target * w / totalWeight);
+        limits[domain] = count;
+        planned += count;
+      }
+      limits._remaining = target - planned;
     } else {
-        for (const domain of Object.keys(weights)) {
-            limits[domain] = Infinity;
-        }
-        limits._remaining = 0;
+      for (const domain of Object.keys(weights)) {
+        limits[domain] = Infinity;
+      }
+      limits._remaining = 0;
     }
-    
+
     const planDomains = new Set(Object.keys(weights));
     const selected = [];
     const used = new Set();
     const quotas = { ...limits };
-    
+
     for (const app of data) {
-        const domain = app.componentName.split("/")[0].split(".")[0];
-        
-        if (planDomains.has(domain)) {
-            if (quotas[domain] > 0) {
-                selected.push(app);
-                used.add(app.componentName);
-                quotas[domain]--;
-            }
+      const domain = app.componentName.split("/")[0].split(".")[0];
+
+      if (planDomains.has(domain)) {
+        if (quotas[domain] > 0) {
+          selected.push(app);
+          used.add(app.componentName);
+          quotas[domain]--;
         }
+      }
     }
-    
+
     let unfilled = 0;
     for (const [domain, qty] of Object.entries(quotas)) {
-        if (domain !== "_remaining") {
-            unfilled += qty;
-        }
+      if (domain !== "_remaining") {
+        unfilled += qty;
+      }
     }
     limits._remaining += unfilled;
 
     if (limits._remaining > 0) {
-        const usedRemainingDomains = new Set();
-        for (const app of data) {
-            const domain = app.componentName.split("/")[0].split(".")[0];
-            
-            if (used.has(app.componentName)) continue;
-            if (planDomains.has(domain)) continue;
-            if (usedRemainingDomains.has(domain)) continue;
-            
-            selected.push(app);
-            used.add(app.componentName);
-            usedRemainingDomains.add(domain);
-            limits._remaining--;
-            
-            if (limits._remaining === 0) break;
-        }
-    }
-    
-    return selected;
-},
+      const usedRemainingDomains = new Set();
+      for (const app of data) {
+        const domain = app.componentName.split("/")[0].split(".")[0];
 
-renderDomainStats() {
+        if (used.has(app.componentName)) continue;
+        if (planDomains.has(domain)) continue;
+        if (usedRemainingDomains.has(domain)) continue;
+
+        selected.push(app);
+        used.add(app.componentName);
+        usedRemainingDomains.add(domain);
+        limits._remaining--;
+
+        if (limits._remaining === 0) break;
+      }
+    }
+
+    return selected;
+  },
+
+  renderDomainStats() {
     const data = App.state.domainStats;
     const card = document.getElementById("domainStatsCard");
     if (!card) return;
-    
+
     if (!data || Object.keys(data).length === 0) {
-        card.style.display = "none";
-        return;
+      card.style.display = "none";
+      return;
     }
     card.style.display = "";
-    
+
     const container = document.getElementById("domainStats");
     if (!container) return;
-    
+
     const containerWidth = container.clientWidth || document.querySelector(".page").clientWidth - 64;
     const colWidth = 26;
     const fits = Math.floor(containerWidth / colWidth);
-    
+
     const nonGeo = new Set(["ai", "me", "my", "tv", "fm", "to", "st", "cc", "ws", "nu", "tk", "sh", "is", "as", "je", "gg", "im", "io", "co"]);
     const isCountryCode = (domain) => /^[a-z]{2}$/.test(domain) && !nonGeo.has(domain);
     const entries = Object.entries(data)
-        .filter(([domain]) => isCountryCode(domain))
-        .slice(0, fits);
+      .filter(([domain]) => isCountryCode(domain))
+      .slice(0, fits);
 
     const title = document.querySelector("#domainStatsCard .card-title");
     if (title) title.textContent = "Top country domains";
 
     const sub = document.querySelector("#domainStatsCard .card-sub");
     if (sub) sub.style.display = "none";
-    
+
     const max = entries[0]?.[1] || 1;
-    
-    const html = `<div class="card-chart has-bars">
-      ${entries.map(([domain, count]) => {
-        const h = (count / max * 100).toFixed(0);
-        const shortDomain = domain.length > 3 ? domain.slice(0, 3) : domain;
-        return `<div class="domain-col" data-domain="${domain}" data-count="${count}">
-          <div class="domain-col-fill" style="height:${h}%"></div>
-          <span class="chart-label">${shortDomain}</span>
-        </div>`;
-      }).join("")}
-    </div>`;
-    
-    container.innerHTML = html;
-    
-    const tooltip = document.createElement("div");
-    tooltip.className = "chart-tooltip";
-    container.appendChild(tooltip);
-    
+
+    container.innerHTML = Templates.domainStatsCard(entries, max);
+
+    const tooltip = /** @type {HTMLElement | null} */ (container.querySelector(".chart-tooltip"));
+    if (!tooltip) return;
+
     container.addEventListener("mousemove", (e) => {
-        const col = e.target.closest(".domain-col");
-        if (!col) {
-            tooltip.style.display = "none";
-            return;
-        }
-        const domain = col.dataset.domain;
-        const count = col.dataset.count;
-        tooltip.innerHTML = `<div style="margin-bottom:4px">${domain}</div><div>${count} requests</div>`;
-        tooltip.style.display = "block";
-        const rect = col.getBoundingClientRect();
-        const containerRect = container.getBoundingClientRect();
-        tooltip.style.top = "0px";
-        tooltip.style.transform = "translateY(-50%)";
-        tooltip.style.left = (rect.left - containerRect.left + rect.width) + "px";
-    });
-    
-    container.addEventListener("mouseleave", () => {
+      const col = e.target.closest(".domain-col");
+      if (!col) {
         tooltip.style.display = "none";
+        return;
+      }
+      const domain = col.dataset.domain;
+      const count = col.dataset.count;
+      tooltip.innerHTML = Templates.domainStatsTooltip(domain, count);
+      tooltip.style.display = "block";
+      const rect = col.getBoundingClientRect();
+      const containerRect = container.getBoundingClientRect();
+      tooltip.style.top = "0px";
+      tooltip.style.transform = "translateY(-50%)";
+      tooltip.style.left = (rect.left - containerRect.left + rect.width) + "px";
+    });
+
+    container.addEventListener("mouseleave", () => {
+      tooltip.style.display = "none";
     });
 
     container.addEventListener("click", (e) => {
-        const col = e.target.closest(".domain-col");
-        if (!col) return;
-        const domain = col.dataset.domain;
-        if (!domain) return;
-        
-        if (App.state.geoBatchActive) {
-            App.state.geoBatchActive = false;
-            App.dom.geoBatchBtn.classList.remove("active");
-            App.dom.geoBatchBtn.style.display = "";
-            UI.saveGeoBatchState();
-        }
-        
-        App.state.regexMode = true;
-        App.dom.regexBtn.classList.add("active");
-        App.dom.regexBtn.style.display = "";
-        App.dom.geoBatchBtn.style.display = "none";
-        App.state.search = `^${domain}\\.`;
-        App.dom.inputSearch.value = App.state.search;
-        App.dom.clearBtn.style.display = "flex";
-        UI.render();
-    });
-},
+      const col = e.target.closest(".domain-col");
+      if (!col) return;
+      const domain = col.dataset.domain;
+      if (!domain) return;
 
-renderActivityCard() {
+      if (App.state.geoBatchActive) {
+        App.state.geoBatchActive = false;
+        App.dom.geoBatchBtn.classList.remove("active");
+        App.dom.geoBatchBtn.style.display = "";
+        UI.saveGeoBatchState();
+      }
+
+      App.state.regexMode = true;
+      App.dom.regexBtn.classList.add("active");
+      App.dom.regexBtn.style.display = "";
+      App.dom.geoBatchBtn.style.display = "none";
+      App.state.search = `^${domain}\\.`;
+      App.dom.inputSearch.value = App.state.search;
+      App.dom.clearBtn.style.display = "flex";
+      UI.render();
+    });
+  },
+
+  renderActivityCard() {
     const history = App.state.activityStats;
     const card = document.getElementById("activityCard");
-    
+
     const container = document.getElementById("activityChart");
     if (!container) return;
-    
+
     if (!history || history.length < 2) {
-        container.innerHTML = `<div class="card-chart" style="display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--on-surface-variant)">Collecting data…</div>`;
-        return;
+      container.innerHTML = Templates.activityCardEmpty();
+      return;
     }
-    
+
     const last14 = history.slice(-14);
     const totalNew = last14.reduce((sum, d) => sum + (d.added || 0), 0);
     const totalRemoved = last14.reduce((sum, d) => sum + (d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0), 0);
-    
+
     const maxNew = Math.max(...last14.map(d => d.added || 0));
     const maxRemoved = Math.max(...last14.map(d => (d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0)));
     const maxVal = Math.max(maxNew, maxRemoved);
     if (maxVal === 0) return;
 
     const newPoints = last14.map((d, i) => ({
-        x: (i / (last14.length - 1) * 100),
-        y: (50 - (d.added || 0) / maxVal * 50)
+      x: (i / (last14.length - 1) * 100),
+      y: (50 - (d.added || 0) / maxVal * 50)
     }));
-    
+
     const removedPoints = last14.map((d, i) => ({
-        x: (i / (last14.length - 1) * 100),
-        y: (50 + ((d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0)) / maxVal * 50)
-    }));    
-    
+      x: (i / (last14.length - 1) * 100),
+      y: (50 + ((d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0)) / maxVal * 50)
+    }));
+
     const makePath = (points) => {
-        if (points.length < 2) return "";
-        let d = `M ${points[0].x.toFixed(1)} ${points[0].y.toFixed(1)}`;
-        for (let i = 1; i < points.length; i++) {
-            const cp1x = ((points[i - 1].x + points[i].x) / 2).toFixed(1);
-            const cp1y = points[i - 1].y.toFixed(1);
-            const cp2x = ((points[i - 1].x + points[i].x) / 2).toFixed(1);
-            const cp2y = points[i].y.toFixed(1);
-            d += ` C ${cp1x},${cp1y} ${cp2x},${cp2y} ${points[i].x.toFixed(1)},${points[i].y.toFixed(1)}`;
-        }
-        return d;
+      if (points.length < 2) return "";
+      let d = `M ${points[0].x.toFixed(1)} ${points[0].y.toFixed(1)}`;
+      for (let i = 1; i < points.length; i++) {
+        const cp1x = ((points[i - 1].x + points[i].x) / 2).toFixed(1);
+        const cp1y = points[i - 1].y.toFixed(1);
+        const cp2x = ((points[i - 1].x + points[i].x) / 2).toFixed(1);
+        const cp2y = points[i].y.toFixed(1);
+        d += ` C ${cp1x},${cp1y} ${cp2x},${cp2y} ${points[i].x.toFixed(1)},${points[i].y.toFixed(1)}`;
+      }
+      return d;
     };
 
     const pathNew = makePath(newPoints);
@@ -2086,71 +2183,63 @@ renderActivityCard() {
     const mid1Label = `${monthNames[mid1Date.getMonth()]} ${mid1Date.getDate()}`;
     const mid2Date = new Date(last14[Math.floor(last14.length * 2 / 3)].date + "T12:00:00");
     const mid2Label = `${monthNames[mid2Date.getMonth()]} ${mid2Date.getDate()}`;
-    
+
     const dayLabels = last14.map((d, i) => {
-        if (i === 0) return `<span class="chart-label">${firstLabel}</span>`;
-        if (i === last14.length - 1) return `<span class="chart-label">${lastLabel}</span>`;
-        return `<span class="chart-label"></span>`;
+      if (i === 0) return `<span class="chart-label">${firstLabel}</span>`;
+      if (i === last14.length - 1) return `<span class="chart-label">${lastLabel}</span>`;
+      return `<span class="chart-label"></span>`;
     }).join("");
 
-    container.innerHTML = `<div class="card-chart">
-      <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="activity-svg">
-        <line x1="0" y1="50" x2="100" y2="50" class="activity-zero" />
-        <path d="${pathNew}" class="activity-line activity-new" />
-        <path d="${pathRemoved}" class="activity-line activity-removed" />
-      </svg>
-      <div class="activity-days">${dayLabels}</div>
-    </div>`;
+    container.innerHTML = Templates.activityCard(pathNew, pathRemoved, dayLabels);
 
     const subEl = document.getElementById("activitySub");
     if (subEl) subEl.textContent = `${Utils.compactNumber(totalNew)} new / ${Utils.compactNumber(totalRemoved)} resolved`;
 
     const svg = container.querySelector(".activity-svg");
     if (!svg) return;
-    
-    const tooltip = document.createElement("div");
-    tooltip.className = "chart-tooltip";
-    container.appendChild(tooltip);
-    
+
+    const tooltip = /** @type {HTMLElement | null} */ (container.querySelector(".chart-tooltip"));
+    if (!tooltip) return;
+
     const vLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
     vLine.classList.add("activity-vline");
     vLine.style.display = "none";
     svg.appendChild(vLine);
-    
+
     svg.addEventListener("mousemove", (e) => {
-        const svgRect = svg.getBoundingClientRect();
-        const cardRect = card.getBoundingClientRect();
-        const x = (e.clientX - svgRect.left) / svgRect.width * 100;
-        const idx = Math.round(x / 100 * (last14.length - 1));
-        const clamped = Math.min(last14.length - 1, Math.max(0, idx));
-        const snapX = (clamped / (last14.length - 1) * 100);
-        
-        vLine.setAttribute("x1", snapX);
-        vLine.setAttribute("x2", snapX);
-        vLine.setAttribute("y1", "0");
-        vLine.setAttribute("y2", "100");
-        vLine.style.display = "";
-        
-        const added = last14[clamped].added || 0;
-        const removed = (last14[clamped].fulfilled || 0) + (last14[clamped].outdated || 0) + (last14[clamped].manual_removed || 0);
-        
-        const dateParts = last14[clamped].date.split("-");
-        const formattedDate = `${monthNames[parseInt(dateParts[1]) - 1]} ${parseInt(dateParts[2])}`;
-        tooltip.innerHTML = `<div style="margin-bottom:4px">${formattedDate}</div><div style="color:var(--primary); margin-bottom:2px">+${added} new</div><div style="color:var(--error)">−${removed} resolved</div>`;
-        tooltip.style.display = "block";
-        
-        const left = snapX / 100 * svgRect.width + 12;
-        tooltip.style.left = left + "px";
-        tooltip.style.top = "0px";
-        tooltip.style.transform = "translateY(-50%)";
+      const svgRect = svg.getBoundingClientRect();
+      const cardRect = card.getBoundingClientRect();
+      const x = (e.clientX - svgRect.left) / svgRect.width * 100;
+      const idx = Math.round(x / 100 * (last14.length - 1));
+      const clamped = Math.min(last14.length - 1, Math.max(0, idx));
+      const snapX = (clamped / (last14.length - 1) * 100);
+
+      vLine.setAttribute("x1", snapX);
+      vLine.setAttribute("x2", snapX);
+      vLine.setAttribute("y1", "0");
+      vLine.setAttribute("y2", "100");
+      vLine.style.display = "";
+
+      const added = last14[clamped].added || 0;
+      const removed = (last14[clamped].fulfilled || 0) + (last14[clamped].outdated || 0) + (last14[clamped].manual_removed || 0);
+
+      const dateParts = last14[clamped].date.split("-");
+      const formattedDate = `${monthNames[parseInt(dateParts[1]) - 1]} ${parseInt(dateParts[2])}`;
+      tooltip.innerHTML = Templates.activityTooltip(formattedDate, added, removed);
+      tooltip.style.display = "block";
+
+      const left = snapX / 100 * svgRect.width + 12;
+      tooltip.style.left = left + "px";
+      tooltip.style.top = "0px";
+      tooltip.style.transform = "translateY(-50%)";
     });
 
     svg.addEventListener("mouseleave", () => {
-        vLine.style.display = "none";
-        tooltip.style.display = "none";
-    });    
-    
-},
+      vLine.style.display = "none";
+      tooltip.style.display = "none";
+    });
+
+  },
 
   initRegexAutocomplete() {
     const input = App.dom.inputSearch;
@@ -2240,21 +2329,17 @@ renderActivityCard() {
     const menu = App.dom.mobileFilterMenu;
     menu.innerHTML = "";
     const s = App.state.activeFilters;
+    const fragment = document.createDocumentFragment();
 
     CONFIG.data.filters.forEach(id => {
       const meta = App.state.filterMetadata.get(id);
       if (!meta) return;
 
-      const item = document.createElement("div");
       const isActive = s.has(id);
-      item.tabIndex = 0;
-      item.role = "menuitemcheckbox";
-      item.className = `ctx-item ${isActive ? 'active' : ''}`;
-
-      item.innerHTML = `
-        <span class="check-icon">${ICONS.check}</span>
-        <span>${meta.label}</span>      
-      `;
+      const wrapper = document.createElement("div");
+      wrapper.innerHTML = Templates.mobileFilterItem(id, meta.label, isActive).trim();
+      const item = /** @type {HTMLElement | null} */ (wrapper.firstElementChild);
+      if (!item) return;
 
       item.onclick = (e) => {
         e.stopPropagation();
@@ -2265,8 +2350,10 @@ renderActivityCard() {
         // Re-render menu content to update checkmarks instantly
         this.showMobileFilterPopover();
       };
-      menu.appendChild(item);
+      fragment.appendChild(item);
     });
+
+    menu.appendChild(fragment);
 
     const rect = App.dom.mobileFilterBtn.getBoundingClientRect();
     const padding = (s.size > 0) ? 135 : 150;
@@ -2289,23 +2376,23 @@ renderActivityCard() {
   },
 
   closeContextMenu() {
-    try { /** @type {any} */ (App.dom.sortMenu).hidePopover(); } catch {}
-    try { /** @type {any} */ (App.dom.rowMenu).hidePopover(); } catch {}
-    try { /** @type {any} */ (App.dom.mobileFilterMenu).hidePopover(); } catch {}
-    try { /** @type {any} */ (App.dom.geoBatchMenu).hidePopover(); } catch {}
+    try { /** @type {any} */ (App.dom.sortMenu).hidePopover(); } catch { }
+    try { /** @type {any} */ (App.dom.rowMenu).hidePopover(); } catch { }
+    try { /** @type {any} */ (App.dom.mobileFilterMenu).hidePopover(); } catch { }
+    try { /** @type {any} */ (App.dom.geoBatchMenu).hidePopover(); } catch { }
 
     setTimeout(() => {
       App.dom.rowMenu.innerHTML = "";
       App.dom.mobileFilterMenu.innerHTML = "";
     }, 200);
-},
+  },
 
-saveGeoBatchState() {
+  saveGeoBatchState() {
     localStorage.setItem("lawnicons_geo_batch", JSON.stringify({
-        config: App.state.geoBatchConfig,
-        active: App.state.geoBatchActive
+      config: App.state.geoBatchConfig,
+      active: App.state.geoBatchActive
     }));
-},
+  },
 };
 
 
