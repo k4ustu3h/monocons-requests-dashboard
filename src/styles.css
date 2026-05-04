@@ -360,6 +360,11 @@ button.input-icon.active {
   transition: height 0.3s;
 }
 
+.domain-col:hover .domain-col-fill {
+  opacity: 1;
+  background: var(--primary);
+}
+
 .card {
   background: var(--surface-container-low);
   border-radius: var(--shape-medium);

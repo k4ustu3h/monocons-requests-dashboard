@@ -1686,6 +1686,20 @@ renderDomainStats() {
     container.addEventListener("mouseleave", () => {
         tooltip.style.display = "none";
     });
+
+    container.addEventListener("click", (e) => {
+        const col = e.target.closest(".domain-col");
+        if (!col) return;
+        const domain = col.dataset.domain;
+        if (!domain) return;
+        
+        App.state.regexMode = true;
+        App.dom.regexBtn.classList.add("active");
+        App.state.search = `^${domain}\\.`;
+        App.dom.inputSearch.value = App.state.search;
+        App.dom.clearBtn.style.display = "flex";
+        UI.render();
+    });    
 },
 
 renderActivityCard() {
