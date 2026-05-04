@@ -41,7 +41,6 @@
  * @property {number} renderedCount
  * @property {AppEntry[]} currentData
  * @property {string} actionMode
- * @property {boolean} geoBatchActive
  * @property {Object | null} geoBatchConfig
  * @property {Map<string, string>} existingSvgs
  * @property {Object} setsStats
@@ -136,7 +135,6 @@ const App = {
     currentData: [],
 
     actionMode: "new",
-    geoBatchActive: false,
     geoBatchConfig: null,
     existingSvgs: new Map(),
     setsStats: {},
@@ -1200,15 +1198,6 @@ const Data = {
           }
         });
 
-        try {
-          const saved = localStorage.getItem("lawnicons_geo_batch");
-          if (saved) {
-            const parsed = JSON.parse(saved);
-            App.state.geoBatchConfig = parsed.config;
-            App.state.geoBatchActive = parsed.active || false;
-          }
-        } catch (e) { }
-
         this.loadUrlState();
         UI.init();
       })
@@ -1337,11 +1326,53 @@ const Data = {
       if (sorters[s.sort]) data.sort(sorters[s.sort]);
     }
 
-    if (s.geoBatchActive && s.geoBatchConfig) {
+    if (s.geoBatchConfig) {
       data = UI.applyGeoBatch(data);
     }
 
     App.state.currentData = data;
+  },
+
+  /**
+   * @param {{ domainsRaw: string, target: string | null }} config
+   * @returns {string}
+   */
+  serializeGeoBatch(config) {
+    const parts = config.domainsRaw.split(",").map(s => s.trim()).filter(s => s);
+    const encoded = parts.map(p => {
+      const [domain, weight] = p.trim().split(/\s+/);
+      if (!domain || !weight) return null;
+      return `${domain}:${weight}`;
+    }).filter(Boolean).join(",");
+    if (!encoded) return "";
+    return config.target ? `${encoded}/${config.target}` : encoded;
+  },
+
+  /**
+   * @param {string} str
+   * @returns {{ domainsRaw: string, target: string | null } | null}
+   */
+  parseGeoBatchParam(str) {
+    if (!str) return null;
+    try {
+      const slashIdx = str.indexOf("/");
+      const domainsPart = slashIdx !== -1 ? str.slice(0, slashIdx) : str;
+      const targetPart = slashIdx !== -1 ? str.slice(slashIdx + 1) : null;
+      const pairs = domainsPart.split(",").map(p => p.trim()).filter(p => p);
+      if (!pairs.length) return null;
+      const domainItems = pairs.map(p => {
+        const colonIdx = p.indexOf(":");
+        if (colonIdx === -1) return null;
+        const domain = p.slice(0, colonIdx).trim();
+        const weight = p.slice(colonIdx + 1).trim();
+        if (!domain || !weight || isNaN(parseInt(weight))) return null;
+        return `${domain} ${weight}`;
+      }).filter(Boolean);
+      if (!domainItems.length) return null;
+      return { domainsRaw: domainItems.join(", "), target: targetPart || null };
+    } catch {
+      return null;
+    }
   },
 
   loadUrlState() {
@@ -1369,6 +1400,10 @@ const Data = {
         if (CONFIG.data.filters.includes(t)) App.state.activeFilters.add(t);
       });
     }
+    if (params.has("geo")) {
+      const config = Data.parseGeoBatchParam(params.get("geo") || "");
+      if (config) App.state.geoBatchConfig = config;
+    }
   },
 
   syncUrlState() {
@@ -1379,6 +1414,7 @@ const Data = {
     if (s.view !== DEFAULTS.view) params.set("view", s.view); else params.delete("view");
     if (s.sort !== DEFAULTS.sort) params.set("sort", s.sort); else params.delete("sort");
     if (s.regexMode) params.set("regex", "1"); else params.delete("regex");
+    if (s.geoBatchConfig) params.set("geo", Data.serializeGeoBatch(s.geoBatchConfig)); else params.delete("geo");
 
     if (s.activeFilters.size > 0) {
       const sortedFilters = Array.from(s.activeFilters).sort();
@@ -1429,7 +1465,7 @@ const UI = {
       App.dom.geoBatchBtn.style.display = "none";
     }
 
-    if (App.state.geoBatchActive) {
+    if (App.state.geoBatchConfig !== null) {
       App.dom.geoBatchBtn.classList.add("active");
       App.dom.regexBtn.style.display = "none";
     }
@@ -1463,7 +1499,7 @@ const UI = {
       App.dom.inputSearch.value = "";
       App.dom.clearBtn.style.display = "none";
       App.dom.inputSearch.focus();
-      if (!App.state.geoBatchActive) {
+      if (App.state.geoBatchConfig === null) {
         App.dom.regexBtn.style.display = "";
       }
       this.render();
@@ -1482,11 +1518,10 @@ const UI = {
     App.dom.viewIconGrid.classList.remove("active");
 
     App.dom.regexBtn.addEventListener("click", () => {
-      if (App.state.geoBatchActive) {
-        App.state.geoBatchActive = false;
+      if (App.state.geoBatchConfig !== null) {
+        App.state.geoBatchConfig = null;
         App.dom.geoBatchBtn.classList.remove("active");
         App.dom.geoBatchBtn.style.display = "";
-        this.saveGeoBatchState();
         this.render();
         return;
       }
@@ -1509,15 +1544,14 @@ const UI = {
     });
 
     App.dom.geoBatchBtn.addEventListener("click", () => {
-      if (App.state.geoBatchActive) {
-        App.state.geoBatchActive = false;
+      if (App.state.geoBatchConfig !== null) {
+        App.state.geoBatchConfig = null;
         App.dom.geoBatchBtn.classList.remove("active");
         App.dom.regexBtn.style.display = "";
         if (App.state.regexMode) {
           App.state.regexMode = false;
           App.dom.regexBtn.classList.remove("active");
         }
-        this.saveGeoBatchState();
         this.render();
         return;
       }
@@ -1687,11 +1721,10 @@ const UI = {
           const domain = actionEl.dataset.domain;
           if (!domain) return;
 
-          if (App.state.geoBatchActive) {
-            App.state.geoBatchActive = false;
+          if (App.state.geoBatchConfig !== null) {
+            App.state.geoBatchConfig = null;
             App.dom.geoBatchBtn.classList.remove("active");
             Utils.setHidden(App.dom.geoBatchBtn, false);
-            UI.saveGeoBatchState();
           }
 
           App.state.regexMode = true;
@@ -2086,12 +2119,14 @@ const UI = {
     const updateTargetState = () => {
       const domainsInput = document.getElementById("geoBatchDomains");
       const targetInput = document.getElementById("geoBatchTarget");
-      if (!domainsInput || !targetInput) return;
+      const applyBtn = /** @type {HTMLButtonElement | null} */ (document.getElementById("geoBatchApply"));
+      if (!domainsInput || !targetInput || !applyBtn) return;
       const domainsVal = domainsInput.value.trim();
       if (!domainsVal) {
         targetInput.value = "";
         targetInput.disabled = true;
         targetInput.placeholder = "All domains need weights";
+        applyBtn.disabled = false; // allow clearing via Apply
         return;
       }
       const items = domainsVal.split(",").map(item => item.trim()).filter(item => item);
@@ -2100,9 +2135,11 @@ const UI = {
         targetInput.value = "";
         targetInput.disabled = true;
         targetInput.placeholder = "All domains need weights";
+        applyBtn.disabled = true;
       } else {
         targetInput.disabled = false;
         targetInput.placeholder = "Target icons";
+        applyBtn.disabled = false;
       }
     };
 
@@ -2115,7 +2152,6 @@ const UI = {
         const targetVal = targetInput.value.trim();
         if (!domainsRaw) {
           App.state.geoBatchConfig = null;
-          App.state.geoBatchActive = false;
           App.dom.geoBatchBtn.classList.remove("active");
         } else {
           App.state.geoBatchConfig = {
@@ -2124,7 +2160,6 @@ const UI = {
           };
         }
         updateTargetState();
-        UI.saveGeoBatchState();
       });
 
       domainsInput.addEventListener("keydown", (e) => {
@@ -2134,7 +2169,6 @@ const UI = {
       targetInput.addEventListener("input", () => {
         if (App.state.geoBatchConfig) {
           App.state.geoBatchConfig.target = targetInput.value.trim() || null;
-          UI.saveGeoBatchState();
         }
       });
 
@@ -2150,22 +2184,16 @@ const UI = {
 
         if (!domainsRaw) {
           App.state.geoBatchConfig = null;
-          App.state.geoBatchActive = false;
           App.dom.geoBatchBtn.classList.remove("active");
-          UI.saveGeoBatchState();
         } else {
-          if (!App.state.geoBatchConfig) {
-            App.state.geoBatchConfig = {
-              domainsRaw: domainsRaw,
-              target: targetVal || null
-            };
-          }
-          App.state.geoBatchActive = true;
+          App.state.geoBatchConfig = {
+            domainsRaw: domainsRaw,
+            target: targetVal || null
+          };
           App.dom.geoBatchBtn.classList.add("active");
           App.dom.regexBtn.style.display = "none";
           App.state.regexMode = false;
           App.dom.regexBtn.classList.remove("active");
-          UI.saveGeoBatchState();
         }
 
         UI.render();
@@ -2324,11 +2352,10 @@ const UI = {
       const domain = col.dataset.domain;
       if (!domain) return;
 
-      if (App.state.geoBatchActive) {
-        App.state.geoBatchActive = false;
+      if (App.state.geoBatchConfig !== null) {
+        App.state.geoBatchConfig = null;
         App.dom.geoBatchBtn.classList.remove("active");
         App.dom.geoBatchBtn.style.display = "";
-        UI.saveGeoBatchState();
       }
 
       App.state.regexMode = true;
@@ -2553,13 +2580,6 @@ const UI = {
       App.dom.rowMenu.innerHTML = "";
       App.dom.mobileFilterMenu.innerHTML = "";
     }, 200);
-  },
-
-  saveGeoBatchState() {
-    localStorage.setItem("lawnicons_geo_batch", JSON.stringify({
-      config: App.state.geoBatchConfig,
-      active: App.state.geoBatchActive
-    }));
   },
 };
 

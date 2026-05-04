@@ -421,6 +421,11 @@ button.input-icon.active {
   background: var(--secondary);
 }
 
+.domain-config-btn-apply:disabled {
+  background: var(--surface-variant);
+  color: var(--on-surface-variant);
+  cursor: default;
+}
 #geoBatchBtn {
   width: auto;
   padding: var(--space-sm) var(--space-md);
