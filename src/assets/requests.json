@@ -22,7 +22,7 @@
     },
     {
       "drawable": "manus",
-      "requestCount": 36,
+      "requestCount": 37,
       "firstAppearance": 1745020800.0,
       "lastRequested": 1777880016.0,
       "label": "Manus",
@@ -2024,6 +2024,15 @@
       "installs": "5,000,000+"
     },
     {
+      "drawable": "tor_vpn",
+      "requestCount": 18,
+      "firstAppearance": 1745020800.0,
+      "lastRequested": 1777880016.0,
+      "label": "Tor VPN",
+      "componentName": "org.torproject.vpn/org.torproject.vpn.ui.iconsetting.model.LauncherDefault",
+      "installs": "50,000+"
+    },
+    {
       "drawable": "snapmint",
       "requestCount": 17,
       "firstAppearance": 1721855740.0,
@@ -2254,15 +2263,6 @@
       "label": "Insta360",
       "componentName": "com.arashivision.insta360akiko/com.arashivision.insta360akiko.app.SplashActivity",
       "installs": "1,000,000+"
-    },
-    {
-      "drawable": "tor_vpn",
-      "requestCount": 17,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1777880016.0,
-      "label": "Tor VPN",
-      "componentName": "org.torproject.vpn/org.torproject.vpn.ui.iconsetting.model.LauncherDefault",
-      "installs": "50,000+"
     },
     {
       "drawable": "pixlineardark_icons",
@@ -2689,6 +2689,15 @@
       "lastRequested": 1776496263.0,
       "label": "Kafa Topu 2",
       "componentName": "com.masomo.headball2/org.cocos2dx.cpp.AppActivity",
+      "installs": "100,000,000+"
+    },
+    {
+      "drawable": "dola_1",
+      "label": "Dola",
+      "componentName": "com.larus.wolf/com.larus.home.impl.alias.AliasActivity1",
+      "requestCount": 16,
+      "firstAppearance": 1771526597.0,
+      "lastRequested": 1777880016.0,
       "installs": "100,000,000+"
     },
     {
@@ -3196,15 +3205,6 @@
       "lastRequested": 1776868526.0,
       "label": "MadOut2",
       "componentName": "com.MadOut.BIG/com.unity3d.player.UnityPlayerActivity",
-      "installs": "100,000,000+"
-    },
-    {
-      "drawable": "dola_1",
-      "label": "Dola",
-      "componentName": "com.larus.wolf/com.larus.home.impl.alias.AliasActivity1",
-      "requestCount": 15,
-      "firstAppearance": 1771526597.0,
-      "lastRequested": 1777880016.0,
       "installs": "100,000,000+"
     },
     {
