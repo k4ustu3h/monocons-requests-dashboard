@@ -86,7 +86,7 @@ def main():
         if sender not in sender_latest or (date_obj and sender_latest[sender][0] and date_obj > sender_latest[sender][0]):
             sender_latest[sender] = (date_obj, eid, raw_email)
 
-    print(f"Found {len(email_ids)} unread emails from {len(sender_latest)} senders.")
+    print(f"Found {len(email_ids)} unread emails from {len(sender_latest)} sender(s).")
 
     EMAILS_DIR.mkdir(parents=True, exist_ok=True)
     saved = 0
@@ -95,14 +95,13 @@ def main():
         msg = email.message_from_bytes(raw_email)
         subject = msg.get("Subject", "no-subject")
         safe_subject = "".join(c for c in subject if c.isalnum() or c in " _-").strip()
-        filename = f"{safe_subject[:50]}_{eid.decode()}.eml"
+        filename = f"{eid.decode()}.eml"
         filepath = EMAILS_DIR / filename
 
         with open(filepath, "wb") as f:
             f.write(raw_email)
 
         mail.store(eid, "+FLAGS", "\\Seen")
-        print(f"  Saved: {filename} (from: {sender})")
         saved += 1
 
     mail.logout()
