@@ -1228,11 +1228,14 @@ const UI = {
     });
 
     App.dom.clearBtn.addEventListener("click", () => {
-      App.state.search = "";
-      App.dom.inputSearch.value = "";
-      App.dom.clearBtn.style.display = "none";
-      App.dom.inputSearch.focus();
-      this.render();
+        App.state.search = "";
+        App.dom.inputSearch.value = "";
+        App.dom.clearBtn.style.display = "none";
+        App.dom.inputSearch.focus();
+        if (!App.state.geoBatchActive) {
+            App.dom.regexBtn.style.display = "";
+        }
+        this.render();
     });
 
     App.dom.selectSort.addEventListener("change", e => {
@@ -1781,10 +1784,13 @@ showGeoBatchConfig() {
     };
 }, 0);
     
-    const rect = App.dom.geoBatchBtn.getBoundingClientRect();
-    menu.style.left = (rect.left - 200) + "px";
-    menu.style.top = (rect.bottom + 8) + "px";
-    menu.showPopover();
+        const btnRect = App.dom.geoBatchBtn.getBoundingClientRect();
+        menu.style.visibility = "hidden";
+        menu.showPopover();
+        const wrapperRect = document.getElementById("search-wrapper").getBoundingClientRect();
+        menu.style.left = (wrapperRect.right - menu.offsetWidth) + "px";
+        menu.style.top = (btnRect.bottom + 8) + "px";
+        menu.style.visibility = "visible";
 },
 
 applyGeoBatch(data) {
@@ -1941,13 +1947,22 @@ renderDomainStats() {
         const domain = col.dataset.domain;
         if (!domain) return;
         
+        if (App.state.geoBatchActive) {
+            App.state.geoBatchActive = false;
+            App.dom.geoBatchBtn.classList.remove("active");
+            App.dom.geoBatchBtn.style.display = "";
+            UI.saveGeoBatchState();
+        }
+        
         App.state.regexMode = true;
         App.dom.regexBtn.classList.add("active");
+        App.dom.regexBtn.style.display = "";
+        App.dom.geoBatchBtn.style.display = "none";
         App.state.search = `^${domain}\\.`;
         App.dom.inputSearch.value = App.state.search;
         App.dom.clearBtn.style.display = "flex";
         UI.render();
-    });    
+    });
 },
 
 renderActivityCard() {

@@ -422,7 +422,7 @@ button.input-icon.active {
 #geoBatchMenu {
   position: fixed;
   margin: 0;
-  background: var(--surface-container-low);
+  background: var(--surface-container-high);
   border-radius: var(--shape-medium);
   border: none;
   box-shadow: var(--elevation-3);
@@ -430,12 +430,10 @@ button.input-icon.active {
   min-width: 280px;
 }
 
-#geoBatchMenu .domain-config {
-  gap: 8px;
-}
 #geoBatchMenu .domain-config .input-wrapper {
   height: 36px;
 }
+
 #geoBatchMenu .domain-config-row .input-wrapper {
   flex: 1;
 }
