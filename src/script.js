@@ -189,13 +189,13 @@ const App = {
     /** @type {HTMLButtonElement} */
     viewBtn: /** @type {any} */ (document.getElementById("viewBtn")),
     /** @type {HTMLElement} */
-    sortMenu: /** @type {any} */ (document.getElementById("sortMenu")),
+    viewIconList: document.getElementById("viewIconList"),
     /** @type {HTMLElement} */
-    viewMenu: /** @type {any} */ (document.getElementById("viewMenu")),
+    viewIconGrid: document.getElementById("viewIconGrid"),
+    /** @type {HTMLElement} */
+    sortMenu: /** @type {any} */ (document.getElementById("sortMenu")),
     /** @type {HTMLSpanElement} */
-    sortLabel: /** @type {any} */ (document.getElementById("sortLabel")),
-    /** @type {HTMLSpanElement} */
-    viewLabel: /** @type {any} */ (document.getElementById("viewLabel"))
+    sortLabel: /** @type {any} */ (document.getElementById("sortLabel"))
   }
 };
 
@@ -1153,7 +1153,6 @@ const Data = {
     if (params.has("view")) {
         const v = params.get("view");
         if (v === "list" || v === "grid") App.state.view = v;
-        App.dom.viewLabel.textContent = v === "grid" ? "Grid" : "List";
     }
     if (params.has("sort")) {
         App.state.sort = params.get("sort") || DEFAULTS.sort;
@@ -1263,7 +1262,16 @@ const UI = {
     });
 
     App.dom.sortBtn.addEventListener("click", () => this.showSortMenu());
-    App.dom.viewBtn.addEventListener("click", () => this.showViewMenu());
+
+    App.dom.viewBtn.addEventListener("click", () => {
+        App.state.view = App.state.view === "list" ? "grid" : "list";
+        App.dom.viewIconList.classList.toggle("active", App.state.view === "list");
+        App.dom.viewIconGrid.classList.toggle("active", App.state.view === "grid");
+        this.render();
+    });
+
+    App.dom.viewIconList.classList.add("active");
+    App.dom.viewIconGrid.classList.remove("active");
 
     App.dom.regexBtn.addEventListener("click", () => {
         if (App.state.geoBatchActive) {
@@ -1497,7 +1505,7 @@ const UI = {
     });
 
     // Menu Navigation
-    const menus = ['rowMenu', 'mobileFilterMenu', 'geoBatchMenu', 'sortMenu', 'viewMenu'];
+    const menus = ['rowMenu', 'mobileFilterMenu', 'geoBatchMenu', 'sortMenu'];
     menus.forEach(id => {
       const menu = /** @type {HTMLElement} */ (App.dom[/** @type {keyof typeof App.dom} */ (id)]);
       if (!menu) return;
@@ -1632,34 +1640,6 @@ const UI = {
     menu.style.top = (rect.bottom + 8) + "px";
     menu.showPopover();
 },
-
-  showViewMenu() {
-      const menu = App.dom.viewMenu;
-      const options = [
-          { value: "list", label: "List" },
-          { value: "grid", label: "Grid" }
-      ];
-      
-      menu.innerHTML = options.map(opt => `
-          <div class="ctx-item ${App.state.view === opt.value ? 'active' : ''}" data-value="${opt.value}">
-              <span>${opt.label}</span>
-          </div>
-      `).join("");
-      
-      menu.querySelectorAll(".ctx-item").forEach(item => {
-          item.onclick = () => {
-              App.state.view = item.dataset.value;
-              App.dom.viewLabel.textContent = item.textContent.trim();
-              menu.hidePopover();
-              this.render();
-          };
-      });
-      
-      const rect = App.dom.viewBtn.getBoundingClientRect();
-      menu.style.left = rect.left + "px";
-      menu.style.top = (rect.bottom + 8) + "px";
-      menu.showPopover();
-  },
 
   generateFilters() {
     const c = App.dom.filterBox;
@@ -2310,7 +2290,6 @@ renderActivityCard() {
 
   closeContextMenu() {
     try { /** @type {any} */ (App.dom.sortMenu).hidePopover(); } catch {}
-    try { /** @type {any} */ (App.dom.viewMenu).hidePopover(); } catch {}
     try { /** @type {any} */ (App.dom.rowMenu).hidePopover(); } catch {}
     try { /** @type {any} */ (App.dom.mobileFilterMenu).hidePopover(); } catch {}
     try { /** @type {any} */ (App.dom.geoBatchMenu).hidePopover(); } catch {}

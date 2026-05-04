@@ -601,8 +601,7 @@ button.input-icon.active {
 .chip,
 select,
 #mobileFilterBtn,
-#sortBtn,
-#viewBtn {
+#sortBtn {
   height: 32px;
   background-color: var(--surface);
   border: 1px solid var(--outline-variant);
@@ -616,16 +615,14 @@ select,
 }
 
 .chip:focus,
-#sortBtn:focus,
-#viewBtn:focus {
+#sortBtn:focus {
   border-color: var(--outline)
 }
 
 /* Arrow Icon for Dropdowns */
 select,
 #mobileFilterBtn,
-#sortBtn,
-#viewBtn {
+#sortBtn {
   padding: 0 32px 0 12px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%23e3e3e3'%3E%3Cpath d='M459-381 314-526q-3-3-4.5-6.5T308-540q0-8 5.5-14t14.5-6h304q9 0 14.5 6t5.5 14q0 2-6 14L501-381q-5 5-10 7t-11 2q-6 0-11-2t-10-7Z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -635,9 +632,36 @@ select,
 
 select:hover,
 #mobileFilterBtn:hover,
-#sortBtn:hover,
-#viewBtn:hover {
+#sortBtn:hover {
   background-color: var(--surface-container-high);
+}
+
+.control-group-btn {
+  height: 32px;
+  padding: 4px 8px;
+  gap: 4px;
+  background-color: var(--surface);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--shape-small);
+  color: var(--on-surface-variant);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.control-group-btn:hover {
+  background-color: var(--surface-container-high);
+}
+
+.control-group-btn svg {
+  width: 20px;
+  height: 20px;
+  color: var(--on-surface-variant);
+}
+
+.control-group-btn svg.active {
+  color: var(--primary);
 }
 
 /* Filter Tags */
