@@ -1,6 +1,6 @@
 {
-  "count": 20099,
-  "lastUpdate": "2026-05-03",
+  "count": 20090,
+  "lastUpdate": "2026-05-04",
   "apps": [
     {
       "drawable": "mini_militia",
@@ -22,9 +22,9 @@
     },
     {
       "drawable": "manus",
-      "requestCount": 35,
+      "requestCount": 36,
       "firstAppearance": 1745020800.0,
-      "lastRequested": 1776593090.0,
+      "lastRequested": 1777880016.0,
       "label": "Manus",
       "componentName": "tech.butterfly.app/tech.butterfly.app.MainActivity",
       "installs": "1,000,000+"
@@ -2256,6 +2256,15 @@
       "installs": "1,000,000+"
     },
     {
+      "drawable": "tor_vpn",
+      "requestCount": 17,
+      "firstAppearance": 1745020800.0,
+      "lastRequested": 1777880016.0,
+      "label": "Tor VPN",
+      "componentName": "org.torproject.vpn/org.torproject.vpn.ui.iconsetting.model.LauncherDefault",
+      "installs": "50,000+"
+    },
+    {
       "drawable": "pixlineardark_icons",
       "requestCount": 16,
       "firstAppearance": 1736023057.0,
@@ -2681,15 +2690,6 @@
       "label": "Kafa Topu 2",
       "componentName": "com.masomo.headball2/org.cocos2dx.cpp.AppActivity",
       "installs": "100,000,000+"
-    },
-    {
-      "drawable": "tor_vpn",
-      "requestCount": 16,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1777370113.0,
-      "label": "Tor VPN",
-      "componentName": "org.torproject.vpn/org.torproject.vpn.ui.iconsetting.model.LauncherDefault",
-      "installs": "50,000+"
     },
     {
       "drawable": "met_office",
@@ -3196,6 +3196,15 @@
       "lastRequested": 1776868526.0,
       "label": "MadOut2",
       "componentName": "com.MadOut.BIG/com.unity3d.player.UnityPlayerActivity",
+      "installs": "100,000,000+"
+    },
+    {
+      "drawable": "dola_1",
+      "label": "Dola",
+      "componentName": "com.larus.wolf/com.larus.home.impl.alias.AliasActivity1",
+      "requestCount": 15,
+      "firstAppearance": 1771526597.0,
+      "lastRequested": 1777880016.0,
       "installs": "100,000,000+"
     },
     {
@@ -3814,15 +3823,6 @@
       "label": "BBC: World News & Stories",
       "componentName": "bbc.mobile.news.ww/com.mobile.MainActivity",
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "dola_1",
-      "label": "Dola",
-      "componentName": "com.larus.wolf/com.larus.home.impl.alias.AliasActivity1",
-      "requestCount": 14,
-      "firstAppearance": 1771526597.0,
-      "lastRequested": 1776762806.0,
-      "installs": "100,000,000+"
     },
     {
       "drawable": "last_war",
@@ -28305,15 +28305,6 @@
       "installs": "500,000+"
     },
     {
-      "drawable": "radio_france_radios_podcast",
-      "requestCount": 5,
-      "firstAppearance": 1714013968.0,
-      "lastRequested": 1771407787.0,
-      "label": "Radio France : radios, podcast",
-      "componentName": "com.radiofrance.radio.radiofrance.android/com.radiofrance.kmp.application.MainActivity",
-      "installs": "1,000,000+"
-    },
-    {
       "drawable": "gogh_focus_with_your_avatar",
       "requestCount": 5,
       "firstAppearance": 1726803091.0,
@@ -48670,15 +48661,6 @@
       "installs": "5,000,000+"
     },
     {
-      "drawable": "radio_france_radios_podcast_2",
-      "requestCount": 3,
-      "firstAppearance": 1714013968.0,
-      "lastRequested": 1743465600.0,
-      "label": "Radio France : radios, podcast",
-      "componentName": "com.radiofrance.radio.radiofrance.android/com.radiofrance.radio.radiofrance.android.screen.splash.SplashActivity",
-      "installs": "1,000,000+"
-    },
-    {
       "drawable": "reduze_icon_pack",
       "requestCount": 3,
       "firstAppearance": 1714032182.0,
@@ -52548,15 +52530,6 @@
       "lastRequested": 1743465600.0,
       "label": "DA Studio",
       "componentName": "com.donationalerts.studio/com.donationalerts.studio.features.MainActivity"
-    },
-    {
-      "drawable": "winamp_2",
-      "requestCount": 3,
-      "firstAppearance": 1721001314.0,
-      "lastRequested": 1743465600.0,
-      "label": "Winamp",
-      "componentName": "com.winamp.release/com.winamp.winamp.activities.MainActivity",
-      "installs": "500,000+"
     },
     {
       "drawable": "passport_fee_asaan",
@@ -62336,15 +62309,6 @@
       "installs": "5,000,000+"
     },
     {
-      "drawable": "winamp",
-      "requestCount": 3,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1773416019.0,
-      "label": "Winamp",
-      "componentName": "com.winamp.release/com.winamp.winamp.activities.MainActivityWhiteOrange",
-      "installs": "500,000+"
-    },
-    {
       "drawable": "ttdevasthanams_2",
       "requestCount": 3,
       "firstAppearance": 1721229997.0,
@@ -67387,15 +67351,6 @@
       "label": "Megamart",
       "componentName": "com.arvind.megamart/com.arvind.megamart.MainActivity",
       "installs": "50,000+"
-    },
-    {
-      "drawable": "hdfc_life_3",
-      "requestCount": 2,
-      "firstAppearance": 1728802868.0,
-      "lastRequested": 1761145626.0,
-      "label": "HDFC Life",
-      "componentName": "com.hdfcclife.activities/com.hdfcclife.activities.MainActivity",
-      "installs": "5,000,000+"
     },
     {
       "drawable": "absoluta_3",
@@ -89990,15 +89945,6 @@
       "installs": "50,000+"
     },
     {
-      "drawable": "letras",
-      "requestCount": 1,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1760865579.0,
-      "label": "Letras",
-      "componentName": "com.studiosol.player.letras/com.studiosol.player.letras.presenter.screen.main.MainActivity",
-      "installs": "10,000,000+"
-    },
-    {
       "drawable": "lingomy",
       "requestCount": 1,
       "firstAppearance": 1745020800.0,
@@ -91207,15 +91153,6 @@
       "label": "SofiaVac",
       "componentName": "com.dgac.sofia_vac/com.dgac.sofia_vac.MainActivity",
       "installs": "10,000+"
-    },
-    {
-      "drawable": "transkriptor",
-      "requestCount": 1,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1760878491.0,
-      "label": "Transkriptor",
-      "componentName": "com.transkriptor.app/com.transkriptor.app.MainActivity",
-      "installs": "5,000,000+"
     },
     {
       "drawable": "world_of_airports",
@@ -93283,15 +93220,6 @@
       "lastRequested": 1761143560.0,
       "label": "Regions",
       "componentName": "com.regions.mobbanking/com.regions.mobilebanking.applaunch.MainActivity",
-      "installs": "1,000,000+"
-    },
-    {
-      "drawable": "square_team",
-      "requestCount": 1,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1761304264.0,
-      "label": "Square Team",
-      "componentName": "com.squareup.payroll.team/com.squareup.teamapp.MainActivity",
       "installs": "1,000,000+"
     },
     {
@@ -100895,15 +100823,6 @@
       "label": "Financiera oh!",
       "componentName": "pe.solera.tarjetaoh/pe.solera.tarjetaoh.ui.splash.SplashScreenActivity",
       "installs": "1,000,000+"
-    },
-    {
-      "drawable": "hapi",
-      "requestCount": 1,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1762205820.0,
-      "label": "Hapi",
-      "componentName": "com.hapicorp.imhapi/com.hapicorp.imhapi.MainActivity",
-      "installs": "500,000+"
     },
     {
       "drawable": "ligo",
