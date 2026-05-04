@@ -414,9 +414,14 @@ button.input-icon.active {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
 #geoBatchBtn span {
   font-size: 13px;
   font-weight: 600;
+}
+
+#geoBatchBtn.active svg {
+  color: var(--on-secondary-container);
 }
 
 #geoBatchMenu {
@@ -868,8 +873,8 @@ select:hover,
   background: transparent;
   border-radius: var(--shape-xlarge);
   border: 1px solid transparent;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
 }
 .action-btn:focus {
   border-color: var(--outline-variant)
@@ -1249,13 +1254,13 @@ input[type="checkbox"]:indeterminate::after {
   height: 1px;
   background: var(--on-secondary-container);
   opacity: 0.2;
-  margin: 4px 16px;
+  margin: 4px 12px;
 }
 
 .ctx-section {
   font-size: 12px;
   color: var(--primary);
-  padding: 8px 16px 4px;
+  padding: 8px 12px 4px;
 }
 
 /* Mobile Filter Popover */

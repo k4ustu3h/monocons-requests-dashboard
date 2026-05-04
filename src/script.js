@@ -665,28 +665,28 @@ const Actions = {
    * @param {string} key
    */
   toggleSortHeader(key) {
-    const current = App.state.sort;
-    const [currKey, currDir] = current.split('-');
+      const current = App.state.sort;
+      const [currKey, currDir] = current.split('-');
 
-    /** @type {Record<string, string>} */
-    const defaults = {
-      name: 'asc',
-      req: 'desc',
-      odds: 'desc',
-      install: 'desc',
-      time: 'desc'
-    };
+      const defaults = {
+          name: 'asc',
+          req: 'desc',
+          odds: 'desc',
+          install: 'desc',
+          time: 'desc'
+      };
 
-    let nextSort = "";
-    if (currKey === key) {
-      nextSort = `${key}-${currDir === 'asc' ? 'desc' : 'asc'}`;
-    } else {
-      nextSort = `${key}-${defaults[key]}`;
-    }
+      let nextSort = "";
+      if (currKey === key) {
+          nextSort = `${key}-${currDir === 'asc' ? 'desc' : 'asc'}`;
+      } else {
+          nextSort = `${key}-${defaults[key]}`;
+      }
 
-    App.state.sort = nextSort;
-    App.dom.selectSort.value = nextSort;
-    UI.render();
+      App.state.sort = nextSort;
+      const opt = UI.sortOptions.find(o => o.value === nextSort);
+      App.dom.sortLabel.textContent = opt ? opt.label : nextSort;
+      UI.render();
   },
   
   clearAllSelections() {
@@ -1151,13 +1151,14 @@ const Data = {
       if (App.state.search) App.dom.clearBtn.style.display = "flex";
     }
     if (params.has("view")) {
-      const v = params.get("view");
-      if (v === "list" || v === "grid") App.state.view = /** @type {"list"|"grid"} */ (v);
-      App.dom.selectView.value = App.state.view;
+        const v = params.get("view");
+        if (v === "list" || v === "grid") App.state.view = v;
+        App.dom.viewLabel.textContent = v === "grid" ? "Grid" : "List";
     }
     if (params.has("sort")) {
-      App.state.sort = params.get("sort") || DEFAULTS.sort;
-      App.dom.selectSort.value = App.state.sort;
+        App.state.sort = params.get("sort") || DEFAULTS.sort;
+        const opt = UI.sortOptions.find(o => o.value === App.state.sort);
+        App.dom.sortLabel.textContent = opt ? opt.label : App.state.sort;
     }
     if (params.has("regex")) {
       App.state.regexMode = true;
@@ -1203,6 +1204,21 @@ const Data = {
 const UI = {
   /** @type {IntersectionObserver | null} */
   observer: null,
+
+  sortOptions: [
+      { value: "req-desc", label: "Most requested" },
+      { value: "req-asc", label: "Least requested" },
+      { value: "trending", label: "Trending" },
+      { value: "odds-desc", label: "Highest creation odds" },
+      { value: "odds-asc", label: "Lowest creation odds" },
+      { value: "install-desc", label: "Most installed" },
+      { value: "install-asc", label: "Least installed" },
+      { value: "time-desc", label: "Newest" },
+      { value: "time-asc", label: "Oldest" },
+      { value: "name-asc", label: "Name (A-Z)" },
+      { value: "name-desc", label: "Name (Z-A)" },
+      { value: "rand", label: "Random" }
+  ],  
 
   init() {
     if (App.state.regexMode) {
@@ -1343,12 +1359,13 @@ const UI = {
       '.col.install': 'install',
       '.col.first': 'time'
     };
+
     Object.entries(headers).forEach(([selector, key]) => {
-      const el = /** @type {HTMLElement} */ (App.dom.listHeader.querySelector(selector));
-      if (el) {
-        el.title = "Click to sort";
-        el.onclick = () => Actions.toggleSortHeader(key);
-      }
+        const el = /** @type {HTMLElement} */ (App.dom.listHeader.querySelector(selector));
+        if (el) {
+            el.title = "Click to sort";
+            el.onclick = () => Actions.toggleSortHeader(key);
+        }
     });
 
     // Event Delegation
@@ -1593,20 +1610,7 @@ const UI = {
 
   showSortMenu() {
     const menu = App.dom.sortMenu;
-    const options = [
-        { value: "req-desc", label: "Most requested" },
-        { value: "req-asc", label: "Least requested" },
-        { value: "trending", label: "Trending" },
-        { value: "odds-desc", label: "Highest creation odds" },
-        { value: "odds-asc", label: "Lowest creation odds" },
-        { value: "install-desc", label: "Most installed" },
-        { value: "install-asc", label: "Least installed" },
-        { value: "time-desc", label: "Newest" },
-        { value: "time-asc", label: "Oldest" },
-        { value: "name-asc", label: "Name (A-Z)" },
-        { value: "name-desc", label: "Name (Z-A)" },
-        { value: "rand", label: "Random" }
-    ];
+    const options = UI.sortOptions;
     
     menu.innerHTML = options.map(opt => `
         <div class="ctx-item ${App.state.sort === opt.value ? 'active' : ''}" data-value="${opt.value}">
