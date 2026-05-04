@@ -99,24 +99,12 @@
 
     <div class="controls-bottom">
       <div class="control-group">
-        <select id="viewSelect" title="View" class="chip">
-          <option value="list">List</option>
-          <option value="grid">Grid</option>
-        </select>
-        <select id="sortSelect" title="Sort by" class="chip">
-          <option value="req-desc">Most requested</option>
-          <option value="req-asc">Least requested</option>
-          <option value="trending">Trending</option>
-          <option value="odds-desc">Highest creation odds</option>
-          <option value="odds-asc">Lowest creation odds</option>
-          <option value="install-desc">Most installed</option>
-          <option value="install-asc">Least installed</option>
-          <option value="time-desc">Newest</option>
-          <option value="time-asc">Oldest</option>
-          <option value="name-asc">Name (A-Z)</option>
-          <option value="name-desc">Name (Z-A)</option>
-          <option value="rand">Random</option>
-        </select>
+        <button id="viewBtn" class="chip" title="View">
+          <span id="viewLabel">List</span>
+        </button>
+        <button id="sortBtn" class="chip" title="Sort by">
+          <span id="sortLabel">Most requested</span>
+        </button>
       </div>
 
       <div class="filter-tags desktop-only" id="filterContainer"></div>
@@ -169,6 +157,8 @@
 
 </div>
 
+<div id="sortMenu" popover="auto" class="context-menu row-style"></div>
+<div id="viewMenu" popover="auto" class="context-menu row-style"></div>
 <div id="rowMenu" popover="auto" tabindex="0" role="menu" class="context-menu row-style"></div>
 <div id="mobileFilterMenu" popover="auto" tabindex="0" role="menu" class="context-menu row-style mobile-filter-style"></div>
 <div id="geoBatchMenu" popover="auto"></div>
@@ -224,7 +214,7 @@
 
   <symbol id="ic-error" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M508.5-291.5Q520-303 520-320t-11.5-28.5Q497-360 480-360t-28.5 11.5Q440-337 440-320t11.5 28.5Q463-280 480-280t28.5-11.5Zm0-160Q520-463 520-480v-160q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640v160q0 17 11.5 28.5T480-440q17 0 28.5-11.5ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></symbol>
 
-  <symbol id="ic-geo-batch" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h168q13-36 43.5-58t68.5-22q38 0 68.5 22t43.5 58h168q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm120-80h200q17 0 28.5-11.5T560-320q0-17-11.5-28.5T520-360H320q-17 0-28.5 11.5T280-320q0 17 11.5 28.5T320-280Zm0-160h320q17 0 28.5-11.5T680-480q0-17-11.5-28.5T640-520H320q-17 0-28.5 11.5T280-480q0 17 11.5 28.5T320-440Zm0-160h320q17 0 28.5-11.5T680-640q0-17-11.5-28.5T640-680H320q-17 0-28.5 11.5T280-640q0 17 11.5 28.5T320-600Zm181.5-198.5Q510-807 510-820t-8.5-21.5Q493-850 480-850t-21.5 8.5Q450-833 450-820t8.5 21.5Q467-790 480-790t21.5-8.5ZM200-200v-560 560Z"/></symbol>
+  <symbol id="ic-geo-batch" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-7-.5-14.5T799-507q-5 29-27 48t-52 19h-80q-33 0-56.5-23.5T560-520v-40H400v-80q0-33 23.5-56.5T480-720h40q0-23 12.5-40.5T563-789q-20-5-40.5-8t-42.5-3q-134 0-227 93t-93 227h200q66 0 113 47t47 113v40H400v110q20 5 39.5 7.5T480-160Z"/></symbol>
 </svg>
 
 </body>

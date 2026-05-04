@@ -158,10 +158,6 @@ const App = {
     /** @type {HTMLButtonElement} */
     regexBtn: /** @type {any} */ (document.getElementById("regexBtn")),
 
-    /** @type {HTMLSelectElement} */
-    selectSort: /** @type {any} */ (document.getElementById("sortSelect")),
-    /** @type {HTMLSelectElement} */
-    selectView: /** @type {any} */ (document.getElementById("viewSelect")),
     /** @type {HTMLDivElement} */
     filterBox: /** @type {any} */ (document.getElementById("filterContainer")),
 
@@ -187,7 +183,19 @@ const App = {
     /** @type {HTMLButtonElement} */
     geoBatchBtn: /** @type {any} */ (document.getElementById("geoBatchBtn")),
     /** @type {HTMLButtonElement} */
-    geoBatchMenu: document.getElementById("geoBatchMenu")
+    geoBatchMenu: document.getElementById("geoBatchMenu"),
+    /** @type {HTMLButtonElement} */
+    sortBtn: /** @type {any} */ (document.getElementById("sortBtn")),
+    /** @type {HTMLButtonElement} */
+    viewBtn: /** @type {any} */ (document.getElementById("viewBtn")),
+    /** @type {HTMLElement} */
+    sortMenu: /** @type {any} */ (document.getElementById("sortMenu")),
+    /** @type {HTMLElement} */
+    viewMenu: /** @type {any} */ (document.getElementById("viewMenu")),
+    /** @type {HTMLSpanElement} */
+    sortLabel: /** @type {any} */ (document.getElementById("sortLabel")),
+    /** @type {HTMLSpanElement} */
+    viewLabel: /** @type {any} */ (document.getElementById("viewLabel"))
   }
 };
 
@@ -1238,15 +1246,8 @@ const UI = {
         this.render();
     });
 
-    App.dom.selectSort.addEventListener("change", e => {
-      App.state.sort = (/** @type {HTMLSelectElement} */ (e.target)).value;
-      this.render();
-    });
-
-    App.dom.selectView.addEventListener("change", e => {
-      App.state.view = /** @type {"list" | "grid"} */ (/** @type {HTMLSelectElement} */ (e.target).value);
-      this.render();
-    });
+    App.dom.sortBtn.addEventListener("click", () => this.showSortMenu());
+    App.dom.viewBtn.addEventListener("click", () => this.showViewMenu());
 
     App.dom.regexBtn.addEventListener("click", () => {
         if (App.state.geoBatchActive) {
@@ -1479,7 +1480,7 @@ const UI = {
     });
 
     // Menu Navigation
-    const menus = ['rowMenu', 'mobileFilterMenu', 'geoBatchMenu'];
+    const menus = ['rowMenu', 'mobileFilterMenu', 'geoBatchMenu', 'sortMenu', 'viewMenu'];
     menus.forEach(id => {
       const menu = /** @type {HTMLElement} */ (App.dom[/** @type {keyof typeof App.dom} */ (id)]);
       if (!menu) return;
@@ -1588,6 +1589,72 @@ const UI = {
     App.dom.container.appendChild(fragment);
     s.renderedCount = end;
     return true;
+  },
+
+  showSortMenu() {
+    const menu = App.dom.sortMenu;
+    const options = [
+        { value: "req-desc", label: "Most requested" },
+        { value: "req-asc", label: "Least requested" },
+        { value: "trending", label: "Trending" },
+        { value: "odds-desc", label: "Highest creation odds" },
+        { value: "odds-asc", label: "Lowest creation odds" },
+        { value: "install-desc", label: "Most installed" },
+        { value: "install-asc", label: "Least installed" },
+        { value: "time-desc", label: "Newest" },
+        { value: "time-asc", label: "Oldest" },
+        { value: "name-asc", label: "Name (A-Z)" },
+        { value: "name-desc", label: "Name (Z-A)" },
+        { value: "rand", label: "Random" }
+    ];
+    
+    menu.innerHTML = options.map(opt => `
+        <div class="ctx-item ${App.state.sort === opt.value ? 'active' : ''}" data-value="${opt.value}">
+            <span>${opt.label}</span>
+        </div>
+    `).join("");
+    
+    menu.querySelectorAll(".ctx-item").forEach(item => {
+        item.onclick = () => {
+            App.state.sort = item.dataset.value;
+            App.dom.sortLabel.textContent = item.textContent.trim();
+            menu.hidePopover();
+            this.render();
+        };
+    });
+    
+    const rect = App.dom.sortBtn.getBoundingClientRect();
+    menu.style.left = rect.left + "px";
+    menu.style.top = (rect.bottom + 8) + "px";
+    menu.showPopover();
+},
+
+  showViewMenu() {
+      const menu = App.dom.viewMenu;
+      const options = [
+          { value: "list", label: "List" },
+          { value: "grid", label: "Grid" }
+      ];
+      
+      menu.innerHTML = options.map(opt => `
+          <div class="ctx-item ${App.state.view === opt.value ? 'active' : ''}" data-value="${opt.value}">
+              <span>${opt.label}</span>
+          </div>
+      `).join("");
+      
+      menu.querySelectorAll(".ctx-item").forEach(item => {
+          item.onclick = () => {
+              App.state.view = item.dataset.value;
+              App.dom.viewLabel.textContent = item.textContent.trim();
+              menu.hidePopover();
+              this.render();
+          };
+      });
+      
+      const rect = App.dom.viewBtn.getBoundingClientRect();
+      menu.style.left = rect.left + "px";
+      menu.style.top = (rect.bottom + 8) + "px";
+      menu.showPopover();
   },
 
   generateFilters() {
@@ -1709,21 +1776,27 @@ showGeoBatchConfig() {
     `;
     
     const updateTargetState = () => {
-        const domainsInput = document.getElementById("geoBatchDomains");
-        const targetInput = document.getElementById("geoBatchTarget");
-        if (!domainsInput || !targetInput) return;
-        const domainsVal = domainsInput.value.trim();
-        const items = domainsVal.split(",").map(item => item.trim().split(/\s+/));
-        const allHaveWeights = items.length > 0 && items[0][0] && items.every(parts => parts.length > 1 && parts[1]);
-        if (!allHaveWeights) {
-            targetInput.value = "";
-            targetInput.disabled = true;
-            targetInput.placeholder = "All domains need weights";
-        } else {
-            targetInput.disabled = false;
-            targetInput.placeholder = "Target icons";
-        }
-    };
+    const domainsInput = document.getElementById("geoBatchDomains");
+    const targetInput = document.getElementById("geoBatchTarget");
+    if (!domainsInput || !targetInput) return;
+    const domainsVal = domainsInput.value.trim();
+    if (!domainsVal) {
+        targetInput.value = "";
+        targetInput.disabled = true;
+        targetInput.placeholder = "All domains need weights";
+        return;
+    }
+    const items = domainsVal.split(",").map(item => item.trim()).filter(item => item);
+    const allHaveWeights = items.length > 0 && items.every(item => item.split(/\s+/).length > 1);
+    if (!allHaveWeights) {
+        targetInput.value = "";
+        targetInput.disabled = true;
+        targetInput.placeholder = "All domains need weights";
+    } else {
+        targetInput.disabled = false;
+        targetInput.placeholder = "Target icons";
+    }
+};
     
     setTimeout(() => {
     const domainsInput = document.getElementById("geoBatchDomains");
@@ -1745,12 +1818,20 @@ showGeoBatchConfig() {
         updateTargetState();
         UI.saveGeoBatchState();
     });
+
+    domainsInput.addEventListener("keydown", (e) => {
+        e.stopPropagation();
+    });
     
     targetInput.addEventListener("input", () => {
         if (App.state.geoBatchConfig) {
             App.state.geoBatchConfig.target = targetInput.value.trim() || null;
             UI.saveGeoBatchState();
         }
+    });
+
+    targetInput.addEventListener("keydown", (e) => {
+        e.stopPropagation();
     });
     
     updateTargetState();
@@ -2224,6 +2305,8 @@ renderActivityCard() {
   },
 
   closeContextMenu() {
+    try { /** @type {any} */ (App.dom.sortMenu).hidePopover(); } catch {}
+    try { /** @type {any} */ (App.dom.viewMenu).hidePopover(); } catch {}
     try { /** @type {any} */ (App.dom.rowMenu).hidePopover(); } catch {}
     try { /** @type {any} */ (App.dom.mobileFilterMenu).hidePopover(); } catch {}
     try { /** @type {any} */ (App.dom.geoBatchMenu).hidePopover(); } catch {}

@@ -595,7 +595,9 @@ button.input-icon.active {
 /* Dropdowns & Chips */
 .chip,
 select,
-#mobileFilterBtn {
+#mobileFilterBtn,
+#sortBtn,
+#viewBtn {
   height: 32px;
   background-color: var(--surface);
   border: 1px solid var(--outline-variant);
@@ -608,20 +610,28 @@ select,
   text-wrap-mode: nowrap;
 }
 
-.chip:focus {
+.chip:focus,
+#sortBtn:focus,
+#viewBtn:focus {
   border-color: var(--outline)
 }
 
-/* Arrow Icon for Selects */
+/* Arrow Icon for Dropdowns */
 select,
-#mobileFilterBtn {
+#mobileFilterBtn,
+#sortBtn,
+#viewBtn {
   padding: 0 32px 0 12px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%23e3e3e3'%3E%3Cpath d='M459-381 314-526q-3-3-4.5-6.5T308-540q0-8 5.5-14t14.5-6h304q9 0 14.5 6t5.5 14q0 2-6 14L501-381q-5 5-10 7t-11 2q-6 0-11-2t-10-7Z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 6px top 50%;
   background-size: 24px auto;
 }
-select:hover {
+
+select:hover,
+#mobileFilterBtn:hover,
+#sortBtn:hover,
+#viewBtn:hover {
   background-color: var(--surface-container-high);
 }
 
@@ -1211,11 +1221,12 @@ input[type="checkbox"]:indeterminate::after {
 
 .ctx-item {
   font-weight: 500;
-  padding: 0 16px;
-  height: 48px;
+  font-size: 14px;
+  padding: 0 12px;
+  height: 40px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   color: var(--on-secondary-container);
   cursor: pointer;
   transition: background 0.1s;
