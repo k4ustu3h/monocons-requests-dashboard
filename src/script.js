@@ -679,6 +679,31 @@ const Templates = {
   },
 
   /**
+   * @returns {string}
+   */
+  selectionBarMenu() {
+    return `
+      <div class="ctx-item" role="menuitem" onclick="App.state.actionMode='link';Actions.downloadBundle();Actions.closeSbMenu();">
+        ${ICONS.download} <span>Download metadata</span>
+      </div>
+      <div class="ctx-divider"></div>
+      <div class="ctx-section">Copy</div>
+      <div class="ctx-item" role="menuitem" onclick="Actions.copyAppFilter();Actions.closeSbMenu();">
+        <span>appfilter.xml</span>
+      </div>
+      <div class="ctx-item" role="menuitem" onclick="Actions.copyNamesAndIDs();Actions.closeSbMenu();">
+        <span>names and app IDs</span>
+      </div>
+      <div class="ctx-item" role="menuitem" onclick="Actions.copyPRDescription('new');Actions.closeSbMenu();">
+        <span>PR body (new icons)</span>
+      </div>
+      <div class="ctx-item" role="menuitem" onclick="Actions.copyPRDescription('link');Actions.closeSbMenu();">
+        <span>PR body (links)</span>
+      </div>
+    `;
+  },
+
+  /**
    * @param {string} text
    * @param {string} icon
    * @returns {string}
@@ -1458,25 +1483,7 @@ const UI = {
 
     App.dom.sbMenuBtn.addEventListener("click", (e) => {
       const menu = document.getElementById("sbMenu");
-      menu.innerHTML = `
-        <div class="ctx-item" role="menuitem" onclick="App.state.actionMode='link';Actions.downloadBundle();Actions.closeSbMenu();">
-          ${ICONS.download} <span>Download metadata</span>
-        </div>
-        <div class="ctx-divider"></div>
-        <div class="ctx-section">Copy</div>
-        <div class="ctx-item" role="menuitem" onclick="Actions.copyAppFilter();Actions.closeSbMenu();">
-          <span>appfilter.xml</span>
-        </div>
-        <div class="ctx-item" role="menuitem" onclick="Actions.copyNamesAndIDs();Actions.closeSbMenu();">
-          <span>names and app IDs</span>
-        </div>
-        <div class="ctx-item" role="menuitem" onclick="Actions.copyPRDescription('new');Actions.closeSbMenu();">
-          <span>PR body (new icons)</span>
-        </div>
-        <div class="ctx-item" role="menuitem" onclick="Actions.copyPRDescription('link');Actions.closeSbMenu();">
-          <span>PR body (links)</span>
-        </div>
-      `;
+      menu.innerHTML = Templates.selectionBarMenu();
       const rect = e.currentTarget.getBoundingClientRect();
       const w = 240, h = 240;
       let x = rect.left;
