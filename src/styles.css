@@ -1461,3 +1461,30 @@ input[type="checkbox"]:indeterminate::after {
     flex: 0 0 210px;
   }
 }
+
+/* ==========================================
+   Regex Autocomplete
+   ========================================== */
+.autocomplete-list {
+  position: absolute;
+  background: var(--surface-container-high);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--shape-small);
+  box-shadow: var(--elevation-3);
+  z-index: 100;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.autocomplete-item {
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--on-surface);
+  font-family: monospace;
+  transition: background 0.1s;
+}
+
+.autocomplete-item.is-hovered {
+  background: var(--surface-container-highest);
+}

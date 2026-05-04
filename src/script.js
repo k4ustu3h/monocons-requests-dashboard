@@ -944,7 +944,7 @@ const Actions = {
 
     // UI Feedback
     const originalText = App.dom.sbDownloadBtn.innerHTML;
-    App.dom.sbDownloadBtn.innerHTML = "Processing...";
+    App.dom.sbDownloadBtn.textContent = "Processing...";
     document.body.style.cursor = "wait";
 
     try {
@@ -1040,7 +1040,7 @@ const Actions = {
       });
 
       // --- FINALIZE OUTPUTS ---
-      App.dom.sbDownloadBtn.innerHTML = "Fetching...";
+      App.dom.sbDownloadBtn.textContent = "Fetching...";
       await Promise.all(fetchPromises);
 
       // 1. XML
@@ -1067,7 +1067,7 @@ const Actions = {
       zipData["pr_description.md"] = fflate.strToU8(mdPR);
 
       // 6. Zip & Download
-      App.dom.sbDownloadBtn.innerHTML = "Zipping...";
+      App.dom.sbDownloadBtn.textContent = "Zipping...";
       const content = fflate.zipSync(zipData, { level: 6 });
 
       const link = document.createElement("a");
@@ -2274,20 +2274,10 @@ const UI = {
       if (!matches.length) return;
 
       listEl = document.createElement("div");
-      listEl.className = "regex-autocomplete";
-      Object.assign(listEl.style, {
-        position: "absolute",
-        top: input.getBoundingClientRect().bottom + 4 + "px",
-        left: input.getBoundingClientRect().left + "px",
-        width: input.offsetWidth + "px",
-        background: "var(--surface-container-high)",
-        border: "1px solid var(--outline-variant)",
-        borderRadius: "var(--shape-small)",
-        boxShadow: "var(--elevation-3)",
-        zIndex: "100",
-        maxHeight: "240px",
-        overflowY: "auto"
-      });
+      listEl.className = "autocomplete-list";
+      listEl.style.top = input.getBoundingClientRect().bottom + 4 + "px";
+      listEl.style.left = input.getBoundingClientRect().left + "px";
+      listEl.style.width = input.offsetWidth + "px";
 
       matches.forEach(d => {
         const item = document.createElement("div");
