@@ -527,26 +527,23 @@ const Templates = {
   rowMenu(app) {
     const id = app.componentName;
     const pkg = id.split('/')[0];
-    const name = app.label;
-    // escape single quotes for the inline onclick handler
-    const safeName = name.replace(/'/g, "\\'");
 
     return `
-      <div class="ctx-item" tabindex="0" role="menuitem" onclick="window.open('${CONFIG.urls.fDroid}${pkg}')">
+      <div class="ctx-item" tabindex="0" role="menuitem" data-action="open-link" data-url="${CONFIG.urls.fDroid}${pkg}">
         ${ICONS.fDroid} <span>F-Droid</span>
       </div>
-      <div class="ctx-item" tabindex="0" role="menuitem" onclick="window.open('${CONFIG.urls.izzy}${pkg}')">
+      <div class="ctx-item" tabindex="0" role="menuitem" data-action="open-link" data-url="${CONFIG.urls.izzy}${pkg}">
         ${ICONS.izzyOnDroid} <span>IzzyOnDroid</span>
       </div>
-      <div class="ctx-item" tabindex="0" role="menuitem" onclick="window.open('${CONFIG.urls.galaxyStore}${pkg}')">
+      <div class="ctx-item" tabindex="0" role="menuitem" data-action="open-link" data-url="${CONFIG.urls.galaxyStore}${pkg}">
         ${ICONS.galaxyStore} <span>Galaxy Store</span>
       </div>
       <div class="ctx-divider"></div>
       <div class="ctx-section">Copy</div>
-      <div class="ctx-item" tabindex="0" role="menuitem" onclick="Actions.copyAppFilterEntry('${id}')">
+      <div class="ctx-item" tabindex="0" role="menuitem" data-action="copy-appfilter-entry" data-id="${id}">
         <span>appfilter.xml</span>
       </div>
-      <div class="ctx-item" tabindex="0" role="menuitem" onclick="Actions.copyNamesAndIDs(['${id}'])">
+      <div class="ctx-item" tabindex="0" role="menuitem" data-action="copy-name-id-entry" data-id="${id}">
         <span>name & app ID</span>
       </div>
       </div>
@@ -560,7 +557,7 @@ const Templates = {
    */
   sortMenuItems(options, activeValue) {
     return options.map(opt => `
-      <div class="ctx-item ${activeValue === opt.value ? 'active' : ''}" data-value="${opt.value}">
+      <div class="ctx-item ${activeValue === opt.value ? 'active' : ''}" tabindex="0" role="menuitemradio" aria-checked="${activeValue === opt.value}" data-action="sort-option" data-value="${opt.value}">
         <span>${opt.label}</span>
       </div>
     `).join("");
@@ -573,7 +570,7 @@ const Templates = {
    */
   viewMenuItems(options, activeValue) {
     return options.map(opt => `
-      <div class="ctx-item ${activeValue === opt.value ? 'active' : ''}" data-value="${opt.value}">
+      <div class="ctx-item ${activeValue === opt.value ? 'active' : ''}" tabindex="0" role="menuitemradio" aria-checked="${activeValue === opt.value}" data-action="view-option" data-value="${opt.value}">
         <span>${opt.label}</span>
       </div>
     `).join("");
@@ -594,7 +591,7 @@ const Templates = {
           <div class="input-wrapper">
             <input id="geoBatchTarget" type="text" inputmode="numeric" value="${targetText}" disabled />
           </div>
-          <button class="domain-config-btn-apply" id="geoBatchApply">Apply</button>
+          <button class="domain-config-btn-apply" id="geoBatchApply" data-action="geo-batch-apply">Apply</button>
         </div>
       </div>
     `;
@@ -610,7 +607,7 @@ const Templates = {
       ${entries.map(([domain, count]) => {
       const h = (count / max * 100).toFixed(0);
       const shortDomain = domain.length > 3 ? domain.slice(0, 3) : domain;
-      return `<div class="domain-col" data-domain="${domain}" data-count="${count}">
+      return `<div class="domain-col" data-action="domain-filter" data-domain="${domain}" data-count="${count}">
           <div class="domain-col-fill" style="height:${h}%"></div>
           <span class="chart-label">${shortDomain}</span>
         </div>`;
@@ -638,6 +635,7 @@ const Templates = {
     return `<div class="card-chart">
       <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="activity-svg">
         <line x1="0" y1="50" x2="100" y2="50" class="activity-zero" />
+        <line x1="0" y1="0" x2="0" y2="100" class="activity-vline" style="display:none" />
         <path d="${pathNew}" class="activity-line activity-new" />
         <path d="${pathRemoved}" class="activity-line activity-removed" />
       </svg>
@@ -671,7 +669,7 @@ const Templates = {
    */
   mobileFilterItem(id, label, isActive) {
     return `
-      <div class="ctx-item ${isActive ? 'active' : ''}" data-filter-id="${id}" tabindex="0" role="menuitemcheckbox" aria-checked="${isActive}">
+      <div class="ctx-item ${isActive ? 'active' : ''}" data-action="mobile-filter-toggle" data-filter-id="${id}" tabindex="0" role="menuitemcheckbox" aria-checked="${isActive}">
         <span class="check-icon">${ICONS.check}</span>
         <span>${label}</span>
       </div>
@@ -683,24 +681,34 @@ const Templates = {
    */
   selectionBarMenu() {
     return `
-      <div class="ctx-item" role="menuitem" onclick="App.state.actionMode='link';Actions.downloadBundle();Actions.closeSbMenu();">
+      <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-download-metadata">
         ${ICONS.download} <span>Download metadata</span>
       </div>
       <div class="ctx-divider"></div>
       <div class="ctx-section">Copy</div>
-      <div class="ctx-item" role="menuitem" onclick="Actions.copyAppFilter();Actions.closeSbMenu();">
+      <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-copy-appfilter">
         <span>appfilter.xml</span>
       </div>
-      <div class="ctx-item" role="menuitem" onclick="Actions.copyNamesAndIDs();Actions.closeSbMenu();">
+      <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-copy-nameid">
         <span>names and app IDs</span>
       </div>
-      <div class="ctx-item" role="menuitem" onclick="Actions.copyPRDescription('new');Actions.closeSbMenu();">
+      <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-copy-pr-new">
         <span>PR body (new icons)</span>
       </div>
-      <div class="ctx-item" role="menuitem" onclick="Actions.copyPRDescription('link');Actions.closeSbMenu();">
+      <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-copy-pr-link">
         <span>PR body (links)</span>
       </div>
     `;
+  },
+
+  /**
+   * @param {string[]} matches
+   * @returns {string}
+   */
+  regexAutocompleteList(matches) {
+    return matches.map(domain => `
+      <div class="autocomplete-item" tabindex="0" role="option" data-action="regex-suggestion" data-value="^${domain}\\.">^${domain}\\.</div>
+    `).join("");
   },
 
   /**
@@ -1363,6 +1371,9 @@ const UI = {
   /** @type {IntersectionObserver | null} */
   observer: null,
 
+  /** @type {HTMLElement | null} */
+  regexListEl: null,
+
   sortOptions: [
     { value: "req-desc", label: "Most requested" },
     { value: "req-asc", label: "Least requested" },
@@ -1518,8 +1529,144 @@ const UI = {
     });
 
     // Event Delegation
-    App.dom.container.addEventListener('click', (e) => {
+    document.addEventListener('click', (e) => {
       const target = /** @type {HTMLElement} */ (e.target);
+
+      const actionEl = /** @type {HTMLElement | null} */ (target.closest('[data-action]'));
+      if (actionEl) {
+        const action = actionEl.dataset.action;
+
+        if (action === "open-link") {
+          const url = actionEl.dataset.url;
+          if (url) window.open(url, "_blank", "noopener,noreferrer");
+          return;
+        }
+
+        if (action === "copy-appfilter-entry") {
+          const id = actionEl.dataset.id;
+          if (id) Actions.copyAppFilterEntry(id);
+          return;
+        }
+
+        if (action === "copy-name-id-entry") {
+          const id = actionEl.dataset.id;
+          if (id) Actions.copyNamesAndIDs([id]);
+          return;
+        }
+
+        if (action === "sb-download-metadata") {
+          App.state.actionMode = "link";
+          Actions.downloadBundle();
+          Actions.closeSbMenu();
+          return;
+        }
+
+        if (action === "sb-copy-appfilter") {
+          Actions.copyAppFilter();
+          Actions.closeSbMenu();
+          return;
+        }
+
+        if (action === "sb-copy-nameid") {
+          Actions.copyNamesAndIDs();
+          Actions.closeSbMenu();
+          return;
+        }
+
+        if (action === "sb-copy-pr-new") {
+          Actions.copyPRDescription("new");
+          Actions.closeSbMenu();
+          return;
+        }
+
+        if (action === "sb-copy-pr-link") {
+          Actions.copyPRDescription("link");
+          Actions.closeSbMenu();
+          return;
+        }
+
+        if (action === "sort-option") {
+          const value = actionEl.dataset.value;
+          if (!value) return;
+          App.state.sort = value;
+          App.dom.sortLabel.textContent = actionEl.textContent?.trim() || value;
+          App.dom.sortMenu.hidePopover();
+          this.render();
+          return;
+        }
+
+        if (action === "view-option") {
+          const value = actionEl.dataset.value;
+          if (value !== "list" && value !== "grid") return;
+          App.state.view = value;
+          App.dom.viewLabel.textContent = actionEl.textContent?.trim() || value;
+          App.dom.viewMenu.hidePopover();
+          this.render();
+          return;
+        }
+
+        if (action === "filter-tag-toggle") {
+          const id = actionEl.dataset.filterId;
+          if (!id) return;
+          const s = App.state.activeFilters;
+          Utils.mutualExclusiveTags(id, s);
+          this.render();
+          return;
+        }
+
+        if (action === "mobile-filter-toggle") {
+          const id = actionEl.dataset.filterId;
+          if (!id) return;
+          const s = App.state.activeFilters;
+          Utils.mutualExclusiveTags(id, s);
+          this.render();
+          this.showMobileFilterPopover();
+          return;
+        }
+
+        if (action === "geo-batch-apply") {
+          this.applyGeoBatchFromMenu();
+          return;
+        }
+
+        if (action === "regex-suggestion") {
+          const value = actionEl.dataset.value;
+          if (!value) return;
+          App.dom.inputSearch.value = value;
+          App.dom.inputSearch.focus();
+          App.dom.inputSearch.dispatchEvent(new Event("input"));
+          this.hideRegexAutocomplete();
+          return;
+        }
+
+        if (action === "sort-header-toggle") {
+          const key = actionEl.dataset.sortKey;
+          if (key) Actions.toggleSortHeader(key);
+          return;
+        }
+
+        if (action === "domain-filter") {
+          const domain = actionEl.dataset.domain;
+          if (!domain) return;
+
+          if (App.state.geoBatchActive) {
+            App.state.geoBatchActive = false;
+            App.dom.geoBatchBtn.classList.remove("active");
+            App.dom.geoBatchBtn.style.display = "";
+            UI.saveGeoBatchState();
+          }
+
+          App.state.regexMode = true;
+          App.dom.regexBtn.classList.add("active");
+          App.dom.regexBtn.style.display = "";
+          App.dom.geoBatchBtn.style.display = "none";
+          App.state.search = `^${domain}\\.`;
+          App.dom.inputSearch.value = App.state.search;
+          App.dom.clearBtn.style.display = "flex";
+          UI.render();
+          return;
+        }
+      }
 
       const trigger = target.closest('.ctx-trigger');
       if (trigger) {
@@ -1534,6 +1681,10 @@ const UI = {
       if (target.closest('a')) {
         e.stopPropagation();
         return;
+      }
+
+      if (this.regexListEl && !this.regexListEl.contains(target) && target !== App.dom.inputSearch) {
+        this.hideRegexAutocomplete();
       }
 
       const item = /** @type {HTMLElement} */ (target.closest('[data-id]'));
@@ -1778,6 +1929,30 @@ const UI = {
     menu.showPopover();
   },
 
+  showViewMenu() {
+    const menu = App.dom.viewMenu;
+    const options = [
+      { value: "list", label: "List" },
+      { value: "grid", label: "Grid" }
+    ];
+
+    menu.innerHTML = Templates.viewMenuItems(options, App.state.view);
+
+    menu.querySelectorAll(".ctx-item").forEach(item => {
+      item.onclick = () => {
+        App.state.view = item.dataset.value;
+        App.dom.viewLabel.textContent = item.textContent.trim();
+        menu.hidePopover();
+        this.render();
+      };
+    });
+
+    const rect = App.dom.viewBtn.getBoundingClientRect();
+    menu.style.left = rect.left + "px";
+    menu.style.top = (rect.bottom + 8) + "px";
+    menu.showPopover();
+  },
+
   generateFilters() {
     const c = App.dom.filterBox;
     if (!c) return;
@@ -1791,23 +1966,9 @@ const UI = {
       btn.className = `tag tag-${id} chip`;
       btn.textContent = meta.label;
       btn.title = meta.description || `Filter by ${meta.label}`;
+      btn.dataset.action = "filter-tag-toggle";
+      btn.dataset.filterId = id;
       if (App.state.activeFilters.has(id)) btn.classList.add("active");
-
-      btn.onclick = () => {
-        const s = App.state.activeFilters;
-
-        Utils.mutualExclusiveTags(id, s)
-        // Update UI classes immediately (faster than full render)
-        Array.from(c.children).forEach(b => {
-          // @ts-ignore
-          const filterId = b.className.match(/tag-([a-z]+)/)[1];
-
-          if (s.has(filterId)) b.classList.add("active");
-          else b.classList.remove("active");
-        });
-
-        this.render()
-      };
       c.appendChild(btn);
     });
   },
@@ -2259,58 +2420,41 @@ const UI = {
 
   initRegexAutocomplete() {
     const input = App.dom.inputSearch;
-    let listEl = null;
+    const wrapper = document.getElementById("search-wrapper");
+    if (!wrapper) return;
 
     input.addEventListener("input", () => {
-      if (listEl) { listEl.remove(); listEl = null; }
+      this.hideRegexAutocomplete();
       if (!App.state.regexMode) return;
+
       const val = input.value;
       if (!val || val.includes(".")) return;
+
       const domains = Object.keys(App.state.domainStats);
       if (!domains.length) return;
+
       const matches = domains
         .filter(d => d.toLowerCase().startsWith(val.toLowerCase()))
         .slice(0, 5);
       if (!matches.length) return;
 
-      listEl = document.createElement("div");
+      const listEl = document.createElement("div");
       listEl.className = "autocomplete-list";
-      listEl.style.top = input.getBoundingClientRect().bottom + 4 + "px";
-      listEl.style.left = input.getBoundingClientRect().left + "px";
-      listEl.style.width = input.offsetWidth + "px";
+      listEl.setAttribute("role", "listbox");
+      listEl.innerHTML = Templates.regexAutocompleteList(matches);
+      listEl.style.top = `${input.offsetTop + input.offsetHeight + 4}px`;
+      listEl.style.left = `${input.offsetLeft}px`;
+      listEl.style.width = `${input.offsetWidth}px`;
 
-      matches.forEach(d => {
-        const item = document.createElement("div");
-        item.textContent = `^${d}\\.`;
-        Object.assign(item.style, {
-          padding: "10px 16px",
-          cursor: "pointer",
-          fontSize: "14px",
-          color: "var(--on-surface)",
-          fontFamily: "monospace",
-          transition: "background 0.1s"
-        });
-        item.addEventListener("mouseenter", () => item.style.background = "var(--surface-container-highest)");
-        item.addEventListener("mouseleave", () => item.style.background = "");
-        item.addEventListener("click", () => {
-          input.value = `^${d}\\.`;
-          input.focus();
-          input.dispatchEvent(new Event("input"));
-          listEl.remove();
-          listEl = null;
-        });
-        listEl.appendChild(item);
-      });
-
-      document.body.appendChild(listEl);
+      wrapper.appendChild(listEl);
+      this.regexListEl = listEl;
     });
+  },
 
-    document.addEventListener("click", (e) => {
-      if (listEl && !listEl.contains(e.target) && e.target !== input) {
-        listEl.remove();
-        listEl = null;
-      }
-    });
+  hideRegexAutocomplete() {
+    if (!this.regexListEl) return;
+    this.regexListEl.remove();
+    this.regexListEl = null;
   },
 
   /**
@@ -2335,31 +2479,11 @@ const UI = {
     const menu = App.dom.mobileFilterMenu;
     menu.innerHTML = "";
     const s = App.state.activeFilters;
-    const fragment = document.createDocumentFragment();
-
-    CONFIG.data.filters.forEach(id => {
+    menu.innerHTML = CONFIG.data.filters.map(id => {
       const meta = App.state.filterMetadata.get(id);
-      if (!meta) return;
-
-      const isActive = s.has(id);
-      const wrapper = document.createElement("div");
-      wrapper.innerHTML = Templates.mobileFilterItem(id, meta.label, isActive).trim();
-      const item = /** @type {HTMLElement | null} */ (wrapper.firstElementChild);
-      if (!item) return;
-
-      item.onclick = (e) => {
-        e.stopPropagation();
-
-        Utils.mutualExclusiveTags(id, s)
-        UI.render();
-
-        // Re-render menu content to update checkmarks instantly
-        this.showMobileFilterPopover();
-      };
-      fragment.appendChild(item);
-    });
-
-    menu.appendChild(fragment);
+      if (!meta) return "";
+      return Templates.mobileFilterItem(id, meta.label, s.has(id));
+    }).join("");
 
     const rect = App.dom.mobileFilterBtn.getBoundingClientRect();
     const padding = (s.size > 0) ? 135 : 150;
