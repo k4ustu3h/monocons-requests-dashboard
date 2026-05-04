@@ -477,11 +477,7 @@ def update_activity_stats(
     new_added = 0
     for comp in today_components:
         if comp not in yesterday_apps:
-            new_added += today_snapshot.get(comp, 0)
-        else:
-            delta = today_snapshot.get(comp, 0) - yesterday_apps.get(comp, 0)
-            if delta > 0:
-                new_added += delta
+            new_added += 1
     
     total_removed = yesterday_total - total
 
