@@ -2268,21 +2268,37 @@ const UI = {
     limits._remaining += unfilled;
 
     if (limits._remaining > 0) {
-      const usedRemainingDomains = new Set();
-      for (const app of data) {
-        const domain = app.componentName.split("/")[0].split(".")[0];
-
-        if (used.has(app.componentName)) continue;
-        if (planDomains.has(domain)) continue;
-        if (usedRemainingDomains.has(domain)) continue;
-
-        selected.push(app);
-        used.add(app.componentName);
-        usedRemainingDomains.add(domain);
-        limits._remaining--;
-
-        if (limits._remaining === 0) break;
-      }
+        const usedRemainingDomains = new Set();
+        
+        for (const app of data) {
+            const domain = app.componentName.split("/")[0].split(".")[0];
+            
+            if (used.has(app.componentName)) continue;
+            if (planDomains.has(domain)) continue;
+            if (usedRemainingDomains.has(domain)) continue;
+            
+            selected.push(app);
+            used.add(app.componentName);
+            usedRemainingDomains.add(domain);
+            limits._remaining--;
+            
+            if (limits._remaining === 0) break;
+        }
+        
+        if (limits._remaining > 0) {
+            for (const app of data) {
+                const domain = app.componentName.split("/")[0].split(".")[0];
+                
+                if (used.has(app.componentName)) continue;
+                if (planDomains.has(domain)) continue;
+                
+                selected.push(app);
+                used.add(app.componentName);
+                limits._remaining--;
+                
+                if (limits._remaining === 0) break;
+            }
+        }
     }
 
     return selected;
