@@ -624,7 +624,7 @@ const Templates = {
         </div>
         <div class="domain-config-row">
           <div class="input-wrapper">
-            <input id="geoBatchTarget" type="text" inputmode="numeric" value="${targetText}" disabled />
+            <input id="geoBatchTarget" type="text" inputmode="numeric" pattern="[0-9]*" value="${targetText}" disabled />
           </div>
           <button class="domain-config-btn-apply" id="geoBatchApply" data-action="geo-batch-apply">Apply</button>
         </div>
@@ -2222,9 +2222,10 @@ const UI = {
       });
 
       targetInput.addEventListener("input", () => {
-        if (App.state.geoBatchConfig) {
-          App.state.geoBatchConfig.target = targetInput.value.trim() || null;
-        }
+          targetInput.value = targetInput.value.replace(/[^0-9]/g, "");
+          if (App.state.geoBatchConfig) {
+              App.state.geoBatchConfig.target = targetInput.value.trim() || null;
+          }
       });
 
       targetInput.addEventListener("keydown", (e) => {

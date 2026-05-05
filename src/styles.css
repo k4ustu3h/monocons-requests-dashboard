@@ -271,10 +271,6 @@ body:has(.context-menu:popover-open) {
   margin: 0;
 }
 
-#searchInput {
-  padding-left: var(--space-lg);
-}
-
 .input-wrapper:focus-within {
   box-shadow: 0 0 0 1px var(--on-surface-variant);
 }
@@ -287,6 +283,7 @@ body:has(.context-menu:popover-open) {
   outline: none;
   color: var(--on-surface-variant);
   font-weight: 500;
+  padding-left: var(--space-lg);
 }
 
 /* Icon Button (Inside Input) */
@@ -464,6 +461,10 @@ button.input-icon.active {
 
 #geoBatchMenu .domain-config-row .input-wrapper {
   flex: 1;
+}
+
+#geoBatchMenu .input-wrapper input {
+  padding-left: var(--space-md);
 }
 
 .card {
