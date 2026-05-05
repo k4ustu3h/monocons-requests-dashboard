@@ -1520,7 +1520,7 @@ const UI = {
     App.dom.clearBtn.addEventListener("click", () => {
       App.state.search = "";
       App.dom.inputSearch.value = "";
-      App.dom.clearBtn.style.display = "none";
+      Utils.setHidden(App.dom.clearBtn, true);
       App.dom.inputSearch.focus();
       if (App.state.geoBatchConfig === null) {
         App.dom.regexBtn.style.display = "";
@@ -2435,7 +2435,7 @@ const UI = {
       Utils.setHidden(App.dom.geoBatchBtn, true);
       App.state.search = `^${domain}\\.`;
       App.dom.inputSearch.value = App.state.search;
-      App.dom.clearBtn.style.display = "flex";
+      Utils.setHidden(App.dom.clearBtn, false);
       UI.render();
     });
   },

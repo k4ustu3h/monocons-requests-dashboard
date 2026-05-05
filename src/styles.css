@@ -272,7 +272,7 @@ body:has(.context-menu:popover-open) {
 }
 
 #searchInput {
-  padding-left: var(--space-sm);
+  padding-left: var(--space-lg);
 }
 
 .input-wrapper:focus-within {
