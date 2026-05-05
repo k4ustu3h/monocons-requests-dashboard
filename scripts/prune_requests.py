@@ -454,39 +454,32 @@ def update_activity_stats(
         except Exception:
             history = []
     
-    yesterday_total = history[-1]["total"] if history else total
-    yesterday_apps = history[-1]["snapshot"] if history else {}
+    if len(history) >= 2 and history[-1]["date"] == today:
+        yesterday_total = history[-2]["total"]
+        yesterday_apps = history[-2]["snapshot"]
+    elif history:
+        yesterday_total = history[-1]["total"]
+        yesterday_apps = history[-1]["snapshot"]
+    else:
+        yesterday_total = total
+        yesterday_apps = {}
     
     with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
         data = json.load(f)
     
     apps = data.get("apps", [])
     today_snapshot = {}
-    today_components = set()
     
     for app in apps:
         comp = app.get("componentName", "")
         req = app.get("requestCount", 0)
-        if comp:
-            today_components.add(comp)
-            if req >= 10:
-                prev = yesterday_apps.get(comp)
-                if prev != req:
-                    today_snapshot[comp] = req
+        if comp and req >= 10:
+            prev = yesterday_apps.get(comp)
+            if prev != req:
+                today_snapshot[comp] = req
 
-    new_added = 0
-    if yesterday_apps:
-        for comp in today_components:
-            if comp not in yesterday_apps:
-                new_added += 1
-    
+    new_added = max(0, total - yesterday_total)
     total_removed = max(0, yesterday_total - total)
-
-    if yesterday_apps:
-        for comp in today_components:
-            if comp not in yesterday_apps and comp in today_snapshot:
-                total_removed += today_snapshot[comp]
-
     manual_removed = max(0, total_removed - fulfilled_removed - outdated_removed)
     
     entry = {
@@ -512,7 +505,7 @@ def update_activity_stats(
     
     print(f"Updated activity_stats.json with {len(history)} entries (today: +{new_added}, -{fulfilled_removed}f, -{outdated_removed}o, -{manual_removed}m)")
     return len(history)
-
+    
 def main() -> int:
     # --- Fulfilled request pruning (depends on upstream appfilter changes) ---
     appfilter_changed = False
