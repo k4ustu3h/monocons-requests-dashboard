@@ -411,28 +411,58 @@ def update_creation_odds(apps: list) -> int:
     return max_pop
 
 def update_domain_stats() -> int:
-    """Generate domain_stats.json with request counts by domain."""
+    """Generate domain_stats.json with request counts and appfilter coverage by domain."""
     from collections import Counter
+    import xml.etree.ElementTree as ET
     
     domain_stats_path = REPO_ROOT / "src/assets/domain_stats.json"
     
     with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    domain_counter = Counter()
-
+    requests_counter = Counter()
     for app in data.get("apps", []):
         pkg = app.get("componentName", "").split("/")[0]
         domain = pkg.split(".")[0] if "." in pkg else "unknown"
-        domain_counter[domain] += 1
+        requests_counter[domain] += 1
 
-    top = dict(domain_counter.most_common())
+    appfilter_counter = Counter()
+    appfilter_path = REPO_ROOT / "src/assets/appfilter.xml"
+    if appfilter_path.exists():
+        tree = ET.parse(appfilter_path)
+        for item in tree.findall("item"):
+            comp = item.get("component", "")
+            match = re.search(r"ComponentInfo\{([^/]+)", comp)
+            if match:
+                domain = match.group(1).split(".")[0]
+                appfilter_counter[domain] += 1
+
+    all_domains = set(list(requests_counter.keys()) + list(appfilter_counter.keys()))
+    output = {}
+    for domain in all_domains:
+        output[domain] = {
+            "requests": requests_counter.get(domain, 0),
+            "done": appfilter_counter.get(domain, 0),
+            "total": requests_counter.get(domain, 0) + appfilter_counter.get(domain, 0)
+        }
+
+    output = dict(sorted(output.items(), key=lambda x: x[1]["total"], reverse=True))
+
+    # Preserve _population if it exists
+    if domain_stats_path.exists():
+        try:
+            with open(domain_stats_path, "r", encoding="utf-8") as f:
+                old_data = json.load(f)
+            if "_population" in old_data:
+                output["_population"] = old_data["_population"]
+        except Exception:
+            pass
 
     with open(domain_stats_path, "w", encoding="utf-8") as f:
-        json.dump(top, f, indent=2)
+        json.dump(output, f, indent=2)
 
-    print(f"Updated domain_stats.json with {len(top)} domains")
-    return len(top)    
+    print(f"Updated domain_stats.json with {len(output)} domains")
+    return len(output)
 
 def update_activity_stats(
     total: int,

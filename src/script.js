@@ -140,6 +140,7 @@ const App = {
     setsStats: {},
     creationOdds: [],
     domainStats: {},
+    domainStatsMode: "requests",
     activityStats: [],
     trendingDeltas: {},
     lastUpdate: null,
@@ -638,26 +639,36 @@ const Templates = {
    * @returns {string}
    */
   domainStatsCard(entries, max) {
-    return `<div class="card-chart has-bars">
-      ${entries.map(([domain, count]) => {
-      const h = (count / max * 100).toFixed(0);
-      const shortDomain = domain.length > 3 ? domain.slice(0, 3) : domain;
-      return `<div class="domain-col" data-action="domain-filter" data-domain="${domain}" data-count="${count}">
-          <div class="domain-col-fill" style="height:${h}%"></div>
-          <span class="chart-label">${shortDomain}</span>
-        </div>`;
-    }).join("")}
-    </div>
-    <div class="chart-tooltip"></div>`;
+      return `<div class="card-chart has-bars">
+        ${entries.map(([domain, done, requests, total]) => {
+          const shortDomain = domain.length > 3 ? domain.slice(0, 3) : domain;
+          const doneH = (done / max * 100).toFixed(0);
+          const reqH = (requests / max * 100).toFixed(0);
+          return `<div class="domain-col" data-action="domain-filter" data-domain="${domain}" data-done="${done}" data-requests="${requests}" data-total="${total}">
+            <div class="domain-col-fill domain-col-requests" style="height:${reqH}%"></div>
+            <div class="domain-col-fill domain-col-done" style="height:${doneH}%"></div>
+            <span class="chart-label">${shortDomain}</span>
+          </div>`;
+        }).join("")}
+      </div>
+      <div class="chart-tooltip"></div>`;
   },
-
   /**
    * @param {string} domain
    * @param {string} count
    * @returns {string}
    */
-  domainStatsTooltip(domain, count) {
-    return `<div class="tooltip-label">${domain}</div><div class="tooltip-value">${count} requests</div>`;
+  domainStatsTooltip(domain, done, requests, total, mode, avgReq, population) {
+      const pct = total ? (done / total * 100).toFixed(1) : 0;
+      let extra = "";
+      if (mode === "demand" && avgReq) {
+          extra = `<div class="tooltip-value">${avgReq} requests per app</div>`;
+      } else if (mode === "reach" && population) {
+          extra = `<div class="tooltip-value">${population}M people</div>`;
+      }
+      return `<div class="tooltip-label">${domain}</div>
+        <div class="tooltip-value">${requests} requests</div>
+        <div class="tooltip-value">${done} done (${pct}%)</div>${extra}`;
   },
 
   /**
@@ -1494,6 +1505,26 @@ const UI = {
     }
 
     this.renderDomainStats();
+    document.querySelectorAll("[data-action='domain-stats-mode']").forEach(el => {
+    el.addEventListener("click", () => {
+        const mode = el.dataset.mode;
+        if (!mode) return;
+        App.state.domainStatsMode = mode;
+        document.querySelectorAll("[data-action='domain-stats-mode']").forEach(s => {
+            const span = s.closest('span');
+            if (span) span.classList.toggle("active", s.dataset.mode === mode);
+        });
+        this.renderDomainStats();
+        });
+    });
+
+    const activeMode = App.state.domainStatsMode;
+    const activeSvg = document.querySelector(`[data-action='domain-stats-mode'][data-mode='${activeMode}']`);
+    if (activeSvg) {
+        const span = activeSvg.closest('span');
+        if (span) span.classList.add("active");
+    }    
+
     this.renderActivityCard();
     this.generateFilters();
     this.initObserver();
@@ -2380,21 +2411,74 @@ const UI = {
 
     const nonGeo = new Set(["ai", "me", "my", "tv", "fm", "to", "st", "cc", "ws", "nu", "tk", "sh", "is", "as", "je", "gg", "im", "io", "co"]);
     const isCountryCode = (domain) => /^[a-z]{2}$/.test(domain) && !nonGeo.has(domain);
-    const entries = Object.entries(data)
-      .filter(([domain]) => isCountryCode(domain))
-      .slice(0, fits);
+    const mode = App.state.domainStatsMode;
+    
+    // Calc avg requestCount per domain (once)
+    if (!App.state._domainAvgReq) {
+        App.state._domainAvgReq = {};
+        const domainCounts = {};
+        const domainSums = {};
+        App.data.forEach(app => {
+            const pkg = app.componentName.split('/')[0];
+            const parts = pkg.split('.');
+            const domain = parts[parts.length - 1];
+            if (isCountryCode(domain)) {
+                domainSums[domain] = (domainSums[domain] || 0) + (App.state.setsStats[pkg] || app.requestCount);
+                domainCounts[domain] = (domainCounts[domain] || 0) + 1;
+            }
+        });
+        for (const d of Object.keys(domainSums)) {
+            App.state._domainAvgReq[d] = Math.round(domainSums[d] / domainCounts[d]);
+        }
+    }
+
+    const population = (data._population) || {};
+    
+    let entries = Object.entries(data)
+        .filter(([domain]) => isCountryCode(domain) && domain !== "_population")
+        .map(([domain, stats]) => [domain, stats.done, stats.requests, stats.total]);
+
+    if (mode === "demand") {
+        entries = entries
+            .filter(([, , requests]) => requests > 0)
+            .sort((a, b) => {
+                const avgA = App.state._domainAvgReq[a[0]] || 0;
+                const avgB = App.state._domainAvgReq[b[0]] || 0;
+                const scoreA = (a[3] - a[1]) * avgA;
+                const scoreB = (b[3] - b[1]) * avgB;
+                return scoreB - scoreA;
+            });
+    } else if (mode === "reach") {
+        entries = entries
+            .filter(([, , requests]) => requests > 0)
+            .sort((a, b) => {
+                const popA = population[a[0]] || 0;
+                const popB = population[b[0]] || 0;
+                const scoreA = (a[3] - a[1]) * popA;
+                const scoreB = (b[3] - b[1]) * popB;
+                return scoreB - scoreA;
+            });
+    } else {
+      
+        entries.sort((a, b) => b[3] - a[3]);
+    }
+    
+    entries = entries.slice(0, fits);
+    const max = Math.max(...entries.map(e => e[3]), 1);
 
     const title = document.querySelector("#domainStatsCard .card-title");
-    if (title) title.textContent = "Top country domains";
+    if (title) {
+        if (mode === "demand") title.textContent = "Highest demand";
+        else if (mode === "reach") title.textContent = "Widest reach";
+        else title.textContent = "Top domains";
+    }
 
     const sub = document.querySelector("#domainStatsCard .card-sub");
     if (sub) sub.style.display = "none";
 
-    const max = entries[0]?.[1] || 1;
-
     container.innerHTML = Templates.domainStatsCard(entries, max);
 
-    const tooltip = /** @type {HTMLElement | null} */ (container.querySelector(".chart-tooltip"));
+    const tooltip = container.querySelector(".chart-tooltip");
     if (!tooltip) return;
 
     container.addEventListener("mousemove", (e) => {
@@ -2404,8 +2488,12 @@ const UI = {
         return;
       }
       const domain = col.dataset.domain;
-      const count = col.dataset.count;
-      tooltip.innerHTML = Templates.domainStatsTooltip(domain, count);
+      const done = parseInt(col.dataset.done);
+      const requests = parseInt(col.dataset.requests);
+      const total = parseInt(col.dataset.total);
+      const avgReq = App.state._domainAvgReq[domain] || 0;
+      const pop = population[domain] || 0;
+      tooltip.innerHTML = Templates.domainStatsTooltip(domain, done, requests, total, mode, avgReq, pop);
       tooltip.style.display = "block";
       const rect = col.getBoundingClientRect();
       const containerRect = container.getBoundingClientRect();
@@ -2416,28 +2504,6 @@ const UI = {
 
     container.addEventListener("mouseleave", () => {
       tooltip.style.display = "none";
-    });
-
-    container.addEventListener("click", (e) => {
-      const col = e.target.closest(".domain-col");
-      if (!col) return;
-      const domain = col.dataset.domain;
-      if (!domain) return;
-
-      if (App.state.geoBatchConfig !== null) {
-        App.state.geoBatchConfig = null;
-        App.dom.geoBatchBtn.classList.remove("active");
-        Utils.setHidden(App.dom.geoBatchBtn, false);
-      }
-
-      App.state.regexMode = true;
-      App.dom.regexBtn.classList.add("active");
-      App.dom.regexBtn.style.display = "";
-      Utils.setHidden(App.dom.geoBatchBtn, true);
-      App.state.search = `^${domain}\\.`;
-      App.dom.inputSearch.value = App.state.search;
-      Utils.setHidden(App.dom.clearBtn, false);
-      UI.render();
     });
   },
 

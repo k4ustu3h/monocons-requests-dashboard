@@ -321,6 +321,8 @@ button.input-icon.active {
   height: 24px;
 }
 
+/* Stats */
+
 .domain-stats {
   padding: 0;
   margin-bottom: 0;
@@ -333,6 +335,35 @@ button.input-icon.active {
 
 #domainStatsCard {
   overflow: visible;
+}
+
+#domainStatsCard .card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+#domainStatsCard .card-header .card-title {
+  flex: 1;
+}
+
+#domainStatsCard .card-header span:has(svg) {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+#domainStatsCard .card-header span:has(svg) svg {
+  width: 18px;
+  height: 18px;
+  color: var(--on-surface-variant);
+  cursor: pointer;
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+
+#domainStatsCard .card-header span:has(svg).active svg {
+  color: var(--primary);
 }
 
 .card-chart {
@@ -350,35 +381,47 @@ button.input-icon.active {
   overflow-x: auto;
 }
 
-.chart-label {
+.domain-col .chart-label {
   font-size: 11px;
   font-weight: 600;
   color: var(--on-surface);
 }
 
 .domain-col {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-xs);
+  justify-content: flex-end;
   flex: 1;
   min-width: 20px;
   height: 100%;
-  justify-content: flex-end;
+  gap: 0;
 }
 
 .domain-col-fill {
   width: 12px;
-  background: var(--secondary);
-  opacity: 0.8;
-  border-radius: 4px 4px 0 0;
-  min-height: 8px;
-  transition: height 0.3s;
+  min-height: 0;
+  border-radius: 0;
 }
 
-.domain-col:hover .domain-col-fill {
+.domain-col-done {
+  background: var(--secondary);
+  opacity: 0.9;
+  border-radius: 0;
+}
+
+.domain-col-requests {
+  background: var(--surface-container-highest);
+  border-radius: var(--shape-xsmall) var(--shape-xsmall) 0 0;
+}
+
+.domain-col:hover .domain-col-done {
   opacity: 1;
-  background: var(--primary);
+}
+
+.domain-col:hover .domain-col-requests {
+  opacity: 1;
 }
 
 .domain-config {
@@ -429,6 +472,8 @@ button.input-icon.active {
   color: var(--on-surface-variant);
   cursor: default;
 }
+
+/* Geo batch */
 
 #geoBatchBtn {
   width: auto;
