@@ -2,7 +2,7 @@ name: Prune Requests
 
 on:
   schedule:
-    - cron: '17 1 * * *'
+    - cron: "17 1 * * *"
       timezone: Europe/Moscow
   workflow_dispatch:
 
@@ -12,7 +12,7 @@ permissions:
 jobs:
   run-script:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -20,10 +20,30 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version: '3.13'
+          python-version: "3.13"
 
       - name: Install dependencies
         run: pip install requests google-play-scraper lxml Pillow
+
+      - name: Fetch new emails
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python scripts/fetch_emails.py
+
+      - name: Parse emails
+        run: |
+          if [ "$(ls -A emails/ 2>/dev/null)" ]; then
+            python scripts/email_parser.py emails/ src/assets/appfilter.xml src/extracted_png src/assets
+          else
+            echo "No emails to parse."
+          fi
+
+      - name: Cleanup emails
+        run: rm -rf emails/
+
+      - name: Save trending baseline
+        run: python scripts/save_trending_baseline.py
 
       - name: Prune requests
         id: prune_requests
@@ -34,6 +54,7 @@ jobs:
         run: python scripts/generate_auto_tags.py src/assets/requests.json src/assets/filters src/assets/appfilter.xml
 
       - name: Commit and push changes
+        if: steps.prune_requests.outputs.requests_changed == 'true' || github.event_name == 'workflow_dispatch'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
