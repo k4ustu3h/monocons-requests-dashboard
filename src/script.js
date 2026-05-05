@@ -1761,8 +1761,7 @@ const UI = {
         }
 
         if (action === "geo-batch-apply") {
-          this.applyGeoBatchFromMenu();
-          return;
+            return;
         }
 
         if (action === "regex-suggestion") {
@@ -2290,8 +2289,7 @@ const UI = {
     const btnRect = App.dom.geoBatchBtn.getBoundingClientRect();
     menu.style.visibility = "hidden";
     menu.showPopover();
-    const wrapperRect = document.getElementById("search-wrapper").getBoundingClientRect();
-    menu.style.left = (wrapperRect.right - menu.offsetWidth) + "px";
+    menu.style.left = (btnRect.right - menu.offsetWidth) + "px";
     menu.style.top = (btnRect.bottom + 8) + "px";
     menu.style.visibility = "visible";
   },

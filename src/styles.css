@@ -362,6 +362,10 @@ button.input-icon.active {
   flex-shrink: 0;
 }
 
+#domainStatsCard .card-header span:has(svg):hover svg {
+  color: var(--primary);
+}
+
 #domainStatsCard .card-header span:has(svg).active svg {
   color: var(--primary);
 }
@@ -417,11 +421,7 @@ button.input-icon.active {
 }
 
 .domain-col:hover .domain-col-done {
-  opacity: 1;
-}
-
-.domain-col:hover .domain-col-requests {
-  opacity: 1;
+  background: var(--primary);
 }
 
 .domain-config {
