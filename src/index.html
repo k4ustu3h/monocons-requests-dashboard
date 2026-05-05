@@ -38,24 +38,21 @@
       </div>
     </div>
     <div class="header-center">
-      <div class="input-wrapper" id="search-wrapper" title="Search">
-        <div class="input-icon">
-          <svg id="searchIcon"><use href="#ic-search"/></svg>
-        </div>
-      
-        <input id="searchInput" placeholder="Application name or ID" />
+<div class="input-wrapper" id="search-wrapper" title="Search">
+  <button id="regexBtn" class="input-icon" title="Use regular expression">
+    <svg><use href="#ic-regex"/></svg>
+  </button>
+  
+  <input id="searchInput" placeholder="Search apps and IDs" />
 
-        <button id="clearSearchBtn" class="input-icon is-hidden" title="Clear search">
-          <svg><use href="#ic-close"/></svg>
-        </button>
-        <button id="geoBatchBtn" class="input-icon" title="Geo batch">
-          <svg><use href="#ic-geo-batch"/></svg>
-          <span>Geo batch</span>
-        </button>
-        <button id="regexBtn" class="input-icon" title="Use regular expression">
-          <svg><use href="#ic-regex"/></svg>
-        </button>
-      </div>
+  <button id="clearSearchBtn" class="input-icon" title="Clear search" style="display: none;">
+    <svg><use href="#ic-close"/></svg>
+  </button>
+  <button id="geoBatchBtn" class="input-icon" title="Geo batch">
+    <svg><use href="#ic-geo-batch"/></svg>
+    <span>Geo batch</span>
+  </button>
+</div>
     </div>
     <div class="header-right">
       <a href="https://github.com/LawnchairLauncher/lawnchair" class="header-link" title="Lawnchair on GitHub">

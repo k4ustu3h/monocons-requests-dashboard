@@ -259,7 +259,7 @@ body:has(.context-menu:popover-open) {
   display: flex;
   align-items: center;
   transition: box-shadow 0.2s;
-  padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-sm);
+  padding: var(--space-xs);
 }
 
 #search-wrapper {
@@ -269,6 +269,10 @@ body:has(.context-menu:popover-open) {
 
 #search-wrapper .input-icon {
   margin: 0;
+}
+
+#searchInput {
+  padding-left: var(--space-sm);
 }
 
 .input-wrapper:focus-within {
