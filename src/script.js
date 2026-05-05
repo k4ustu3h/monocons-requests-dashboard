@@ -658,19 +658,18 @@ const Templates = {
    * @param {string} count
    * @returns {string}
    */
-  domainStatsTooltip(domain, done, requests, total, mode, avgReq, population) {
+  domainStatsTooltip(domain, done, requests, total, mode, extraValue, population) {
       const pct = total ? (done / total * 100).toFixed(1) : 0;
       let extra = "";
-      if (mode === "demand" && avgReq) {
-          extra = `<div class="tooltip-value">${avgReq} requests per app</div>`;
+      if (mode === "local" && extraValue) {
+          extra = `<div class="tooltip-value">avg ${Utils.compactNumber(extraValue)} installs</div>`;
       } else if (mode === "reach" && population) {
-          extra = `<div class="tooltip-value">${population}M people</div>`;
+          extra = `<div class="tooltip-value">${population}M Android users</div>`;
       }
       return `<div class="tooltip-label">${domain}</div>
         <div class="tooltip-value">${requests} requests</div>
         <div class="tooltip-value">${done} done (${pct}%)</div>${extra}`;
   },
-
   /**
    * @param {string} pathNew
    * @param {string} pathRemoved
@@ -2413,22 +2412,23 @@ const UI = {
     const isCountryCode = (domain) => /^[a-z]{2}$/.test(domain) && !nonGeo.has(domain);
     const mode = App.state.domainStatsMode;
     
-    // Calc avg requestCount per domain (once)
-    if (!App.state._domainAvgReq) {
-        App.state._domainAvgReq = {};
-        const domainCounts = {};
-        const domainSums = {};
+    // Calc avg installs per domain (once)
+    if (!App.state._domainAvgInstalls) {
+        App.state._domainAvgInstalls = {};
+        const domainCountsI = {};
+        const domainSumsI = {};
         App.data.forEach(app => {
             const pkg = app.componentName.split('/')[0];
-            const parts = pkg.split('.');
-            const domain = parts[parts.length - 1];
+            const domain = pkg.split('.')[0];
             if (isCountryCode(domain)) {
-                domainSums[domain] = (domainSums[domain] || 0) + (App.state.setsStats[pkg] || app.requestCount);
-                domainCounts[domain] = (domainCounts[domain] || 0) + 1;
+                const instStr = app.installs ? app.installs.replace(/[,+]/g, '') : '0';
+                const inst = parseInt(instStr, 10) || 0;
+                domainSumsI[domain] = (domainSumsI[domain] || 0) + inst;
+                domainCountsI[domain] = (domainCountsI[domain] || 0) + 1;
             }
         });
-        for (const d of Object.keys(domainSums)) {
-            App.state._domainAvgReq[d] = Math.round(domainSums[d] / domainCounts[d]);
+        for (const d of Object.keys(domainSumsI)) {
+            App.state._domainAvgInstalls[d] = Math.round(domainSumsI[d] / domainCountsI[d]);
         }
     }
 
@@ -2438,16 +2438,16 @@ const UI = {
         .filter(([domain]) => isCountryCode(domain) && domain !== "_population")
         .map(([domain, stats]) => [domain, stats.done, stats.requests, stats.total]);
 
-    if (mode === "demand") {
-        entries = entries
-            .filter(([, , requests]) => requests > 0)
-            .sort((a, b) => {
-                const avgA = App.state._domainAvgReq[a[0]] || 0;
-                const avgB = App.state._domainAvgReq[b[0]] || 0;
-                const scoreA = (a[3] - a[1]) * avgA;
-                const scoreB = (b[3] - b[1]) * avgB;
-                return scoreB - scoreA;
-            });
+    if (mode === "local") {
+    entries = entries
+        .filter(([, , requests]) => requests > 0)
+        .sort((a, b) => {
+            const instA = App.state._domainAvgInstalls[a[0]] || 0;
+            const instB = App.state._domainAvgInstalls[b[0]] || 0;
+            const scoreA = (a[3] - a[1]) * instA;
+            const scoreB = (b[3] - b[1]) * instB;
+            return scoreB - scoreA;
+        });
     } else if (mode === "reach") {
         entries = entries
             .filter(([, , requests]) => requests > 0)
@@ -2468,7 +2468,7 @@ const UI = {
 
     const title = document.querySelector("#domainStatsCard .card-title");
     if (title) {
-        if (mode === "demand") title.textContent = "Highest demand";
+        if (mode === "local") title.textContent = "Local impact";
         else if (mode === "reach") title.textContent = "Widest reach";
         else title.textContent = "Top domains";
     }
@@ -2491,9 +2491,9 @@ const UI = {
       const done = parseInt(col.dataset.done);
       const requests = parseInt(col.dataset.requests);
       const total = parseInt(col.dataset.total);
-      const avgReq = App.state._domainAvgReq[domain] || 0;
+      const avgInst = App.state._domainAvgInstalls[domain] || 0;
       const pop = population[domain] || 0;
-      tooltip.innerHTML = Templates.domainStatsTooltip(domain, done, requests, total, mode, avgReq, pop);
+      tooltip.innerHTML = Templates.domainStatsTooltip(domain, done, requests, total, mode, avgInst, pop);
       tooltip.style.display = "block";
       const rect = col.getBoundingClientRect();
       const containerRect = container.getBoundingClientRect();
