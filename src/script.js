@@ -578,6 +578,9 @@ const Templates = {
       <div class="ctx-item" tabindex="0" role="menuitem" data-action="copy-name-id-entry" data-id="${id}">
         <span>name & app ID</span>
       </div>
+      <div class="ctx-item" tabindex="0" role="menuitem" data-action="copy-pkg-entry" data-id="${id}">
+        <span>package name</span>
+      </div>
       </div>
     `;
   },
@@ -722,6 +725,9 @@ const Templates = {
       </div>
       <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-copy-nameid">
         <span>names and app IDs</span>
+      </div>
+      <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-copy-pkgs">
+        <span>package names</span>
       </div>
       <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-copy-pr-new">
         <span>PR body (new icons)</span>
@@ -914,6 +920,21 @@ const Actions = {
   copyNamesAndIDs(ids = null) {
     Actions.copyToClipboard(Actions.generateNamesAndIDs(ids));
   },
+
+  copyPkgName(id) {
+      const app = App.state.idMap.get(id);
+      if (!app) return;
+      Actions.copyToClipboard(app.componentName.split('/')[0]);
+  },
+
+  copySelectedPkgs() {
+      const pkgs = [...App.state.selected]
+          .map(id => App.state.idMap.get(id))
+          .filter(Boolean)
+          .map(app => app.componentName.split('/')[0]);
+      Actions.copyToClipboard([...new Set(pkgs)].join("\n"));
+      Actions.closeSbMenu();
+  },  
 
   /**
    * @param {string} text
@@ -1628,6 +1649,12 @@ const UI = {
           return;
         }
 
+        if (action === "copy-pkg-entry") {
+            const id = actionEl.dataset.id;
+            if (id) Actions.copyPkgName(id);
+            return;
+        }
+
         if (action === "sb-download-metadata") {
           App.state.actionMode = "link";
           Actions.downloadBundle();
@@ -1645,6 +1672,11 @@ const UI = {
           Actions.copyNamesAndIDs();
           Actions.closeSbMenu();
           return;
+        }
+
+        if (action === "sb-copy-pkgs") {
+            Actions.copySelectedPkgs();
+            return;
         }
 
         if (action === "sb-copy-pr-new") {
