@@ -141,7 +141,6 @@ const App = {
     creationOdds: [],
     domainStats: {},
     activityStats: [],
-    trendingDeltas: {},
     lastUpdate: null,
 
   },
@@ -417,7 +416,6 @@ const Templates = {
     const isUnknown = app.drawable === "unknown" || name === "(Unknown App)";
     const existingDrawable = App.state.existingSvgs ? App.state.existingSvgs.get(id) : null;
     const appNameClass = isUnknown ? "app-name is-hidden" : "app-name";
-    const trendingDelta = App.state.trendingDeltas[app.componentName];
 
     const tagHtml = tags.map(tagId => {
       const meta = App.state.filterMetadata.get(tagId);
@@ -468,7 +466,7 @@ const Templates = {
           </div>
           </div>
         </div>
-        <div class="col req">${(App.state.setsStats[pkg] || app.requestCount).toLocaleString()}${trendingDelta ? ` <span class="trend-indicator" title="Popularity growth over last 30 days.">↑${trendingDelta}</span>` : ""}</div>
+        <div class="col req">${(App.state.setsStats[pkg] || app.requestCount).toLocaleString()}</div>
         <div class="col creation-odds" title="Chance of this request being fulfilled within a year if you wait.">${displayOdds}</div>
         <div class="col install" title="${app.installs || '0'} installs in Play Store">${displayInstalls}</div>
         <div class="col first date-col">
@@ -1150,21 +1148,6 @@ const Data = {
         App.state.domainStats = domainStats;
         App.state.activityStats = activityStats;
         App.state.lastUpdate = json.lastUpdate;
-
-        if (activityStats && activityStats.length > 0) {
-          const oldestSnapshot = activityStats[0].snapshot || {};
-          const newestEntry = activityStats[activityStats.length - 1];
-          const newestSnapshot = newestEntry.snapshot || {};
-          App.state.trendingDeltas = {};
-
-          for (const [comp, count] of Object.entries(newestSnapshot)) {
-            const prev = oldestSnapshot[comp] || 0;
-            const delta = count - prev;
-            if (delta > 0) {
-              App.state.trendingDeltas[comp] = delta;
-            }
-          }
-        }
 
         // Build ID Map
         App.state.idMap = new Map();
