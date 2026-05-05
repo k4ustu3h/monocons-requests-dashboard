@@ -1922,6 +1922,8 @@ const UI = {
     App.dom.container.innerHTML = "";
     App.dom.container.className = s.view === "grid" ? "grid-container" : "";
 
+    this.syncFilterTagState();
+
     Data.process();
     Data.syncUrlState();
     this.updateHeader();
@@ -2039,8 +2041,24 @@ const UI = {
       btn.title = meta.description || `Filter by ${meta.label}`;
       btn.dataset.action = "filter-tag-toggle";
       btn.dataset.filterId = id;
+      btn.setAttribute("aria-pressed", String(App.state.activeFilters.has(id)));
       if (App.state.activeFilters.has(id)) btn.classList.add("active");
       c.appendChild(btn);
+    });
+  },
+
+  syncFilterTagState() {
+    const c = App.dom.filterBox;
+    if (!c) return;
+
+    const active = App.state.activeFilters;
+    c.querySelectorAll("[data-filter-id]").forEach(el => {
+      if (!(el instanceof HTMLElement)) return;
+      const id = el.dataset.filterId;
+      if (!id) return;
+      const isActive = active.has(id);
+      el.classList.toggle("active", isActive);
+      el.setAttribute("aria-pressed", String(isActive));
     });
   },
 
