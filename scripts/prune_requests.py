@@ -353,6 +353,86 @@ label_factors = {
 
 creation_odds_cap = 0.8
 
+def update_creation_odds(apps: list) -> int:
+    """Generate creation_odds.json with fulfillment probabilities.
+
+    Only recalculates if P_top has changed since the previous run.
+    Returns the number of popularity levels in the creation odds table.
+    """
+    creation_odds_path = REPO_ROOT / "src/assets/creation_odds.json"
+
+    sets_path = REPO_ROOT / "src/assets/sets_stats.json"
+    try:
+        with open(sets_path, "r", encoding="utf-8") as f:
+            sets_stats = json.load(f)
+    except Exception:
+        sets_stats = {}
+
+    max_pop = 0
+    for app in apps:
+        pkg = app.get("componentName", "").split("/")[0]
+        pop = sets_stats.get(pkg, app.get("requestCount", 0))
+        if pop > max_pop:
+            max_pop = pop
+
+    if max_pop == 0:
+        print("No popularity data for creation odds")
+        return 0
+
+    prev_top = 0
+    if creation_odds_path.exists():
+        try:
+            with open(creation_odds_path, "r", encoding="utf-8") as f:
+                prev_data = json.load(f)
+            if prev_data and isinstance(prev_data, list):
+                prev_top = prev_data[0].get("popularity", 0) if prev_data else 0
+        except Exception:
+            pass
+
+    if max_pop == prev_top:
+        print(f"Top popularity unchanged ({max_pop}), skipping creation odds update")
+        return max_pop
+
+    factors = sorted(label_factors.keys(), key=lambda k: label_factors[k])
+    table = []
+
+    for pop in range(max_pop, 0, -1):
+        row = {"popularity": pop}
+        base = (pop / max_pop) * creation_odds_cap
+        for label in factors:
+            L = label_factors[label]
+            row[str(L)] = round(min(creation_odds_cap, base * L), 4)
+        table.append(row)
+
+    with open(creation_odds_path, "w", encoding="utf-8") as f:
+        json.dump(table, f, indent=2)
+
+    print(f"Updated creation_odds.json with {len(table)} levels (top={max_pop})")
+    return max_pop
+
+def update_domain_stats() -> int:
+    """Generate domain_stats.json with request counts by domain."""
+    from collections import Counter
+    
+    domain_stats_path = REPO_ROOT / "src/assets/domain_stats.json"
+    
+    with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    domain_counter = Counter()
+
+    for app in data.get("apps", []):
+        pkg = app.get("componentName", "").split("/")[0]
+        domain = pkg.split(".")[0] if "." in pkg else "unknown"
+        domain_counter[domain] += 1
+
+    top = dict(domain_counter.most_common())
+
+    with open(domain_stats_path, "w", encoding="utf-8") as f:
+        json.dump(top, f, indent=2)
+
+    print(f"Updated domain_stats.json with {len(top)} domains")
+    return len(top)    
 
 def update_activity_stats(
     total: int,
