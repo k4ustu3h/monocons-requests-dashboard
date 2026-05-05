@@ -141,6 +141,7 @@ const App = {
     creationOdds: [],
     domainStats: {},
     activityStats: [],
+    trendingDeltas: {},
     lastUpdate: null,
 
   },
@@ -443,6 +444,7 @@ const Templates = {
     const displayInstalls = installsRaw ? new Intl.NumberFormat('en', { notation: "compact" }).format(parseInt(installsRaw)) + "+" : "—";
     const rawOdds = Utils.getCreationOdds(app) * 100;
     const displayOdds = rawOdds < 1 ? rawOdds.toFixed(2) + "%" : rawOdds.toFixed(0) + "%";
+    const trendingDelta = App.state.trendingDeltas[app.componentName];
 
     return `
       <div class="list-row ${isSelected ? 'selected' : ''}"
@@ -466,7 +468,7 @@ const Templates = {
           </div>
           </div>
         </div>
-        <div class="col req">${(App.state.setsStats[pkg] || app.requestCount).toLocaleString()}</div>
+        <div class="col req">${(App.state.setsStats[pkg] || app.requestCount).toLocaleString()}${trendingDelta ? ` <span class="trend-indicator" title="Growth during last request period.">↑${trendingDelta}</span>` : ""}</div>
         <div class="col creation-odds" title="Chance of this request being fulfilled within a year if you wait.">${displayOdds}</div>
         <div class="col install" title="${app.installs || '0'} installs in Play Store">${displayInstalls}</div>
         <div class="col first date-col">
@@ -1149,6 +1151,24 @@ const Data = {
         App.state.activityStats = activityStats;
         App.state.lastUpdate = json.lastUpdate;
 
+      fetch("assets/trending_baseline.json")
+          .then(r => r.json())
+          .then(baseline => {
+              if (baseline && baseline.period_start && baseline.period_end) {
+                  const startSnapshot = baseline.period_start.snapshot || {};
+                  const endSnapshot = baseline.period_end.snapshot || {};
+                  App.state.trendingDeltas = {};
+                  for (const [comp, endCount] of Object.entries(endSnapshot)) {
+                      const startCount = startSnapshot[comp] || 0;
+                      const delta = endCount - startCount;
+                      if (delta > 0) {
+                          App.state.trendingDeltas[comp] = delta;
+                      }
+                  }
+              }
+          })
+          .catch(() => {});        
+
         // Build ID Map
         App.state.idMap = new Map();
         App.data.forEach(app => App.state.idMap.set(app.componentName, app));
@@ -1430,7 +1450,6 @@ const UI = {
   sortOptions: [
     { value: "req-desc", label: "Most requested" },
     { value: "req-asc", label: "Least requested" },
-    { value: "trending", label: "Trending" },
     { value: "odds-desc", label: "Highest creation odds" },
     { value: "odds-asc", label: "Lowest creation odds" },
     { value: "install-desc", label: "Most installed" },
@@ -1439,6 +1458,7 @@ const UI = {
     { value: "time-asc", label: "Oldest" },
     { value: "name-asc", label: "Name (A-Z)" },
     { value: "name-desc", label: "Name (Z-A)" },
+    { value: "trending", label: "Trending" },
     { value: "rand", label: "Random" }
   ],
 
@@ -1966,7 +1986,10 @@ const UI = {
 
   showSortMenu() {
     const menu = App.dom.sortMenu;
-    const options = UI.sortOptions;
+    const options = UI.sortOptions.filter(opt => {
+        if (opt.value === "trending" && Object.keys(App.state.trendingDeltas).length === 0) return false;
+        return true;
+    });
 
     menu.innerHTML = Templates.sortMenuItems(options, App.state.sort);
 

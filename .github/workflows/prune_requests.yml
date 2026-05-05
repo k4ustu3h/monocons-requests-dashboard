@@ -32,10 +32,13 @@ jobs:
         run: python scripts/fetch_emails.py
 
       - name: Parse emails
-        run: python3 scripts/email_parser.py emails/ src/assets/appfilter.xml src/extracted_png src/assets
+        run: python scripts/email_parser.py emails/ src/assets/appfilter.xml src/extracted_png src/assets
 
       - name: Cleanup emails
         run: rm -rf emails/
+
+      - name: Save trending baseline
+        run: python scripts/save_trending_baseline.py
 
       - name: Prune requests
         id: prune_requests
