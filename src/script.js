@@ -667,7 +667,6 @@ const Templates = {
     return `<div class="card-chart">
       <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="activity-svg">
         <line x1="0" y1="50" x2="100" y2="50" class="activity-zero" />
-        <line x1="0" y1="0" x2="0" y2="100" class="activity-vline" />
         <path d="${pathNew}" class="activity-line activity-new" />
         <path d="${pathRemoved}" class="activity-line activity-removed" />
       </svg>
@@ -2581,25 +2580,24 @@ const UI = {
   },
 
   showMobileFilterPopover() {
-    const menu = App.dom.mobileFilterMenu;
-    menu.innerHTML = "";
-    const s = App.state.activeFilters;
-    menu.innerHTML = CONFIG.data.filters.map(id => {
-      const meta = App.state.filterMetadata.get(id);
-      if (!meta) return "";
-      return Templates.mobileFilterItem(id, meta.label, s.has(id));
-    }).join("");
+      const menu = App.dom.mobileFilterMenu;
+      menu.innerHTML = "";
+      const s = App.state.activeFilters;
+      menu.innerHTML = CONFIG.data.filters.map(id => {
+        const meta = App.state.filterMetadata.get(id);
+        if (!meta) return "";
+        return Templates.mobileFilterItem(id, meta.label, s.has(id));
+      }).join("");
 
-    const rect = App.dom.mobileFilterBtn.getBoundingClientRect();
-    const padding = (s.size > 0) ? 135 : 150;
-
-    menu.style.left = `${rect.left - padding}px`;
-    menu.style.top = `${rect.bottom + 8}px`;
-
-    /** @type {any} */ (menu).showPopover();
+      const rect = App.dom.mobileFilterBtn.getBoundingClientRect();
+      menu.style.visibility = "hidden";
+      menu.showPopover();
+      menu.style.left = `${rect.right - menu.offsetWidth}px`;
+      menu.style.top = `${rect.bottom + 8}px`;
+      menu.style.visibility = "visible";
   },
-
-  /**
+  
+    /**
    * @param {HTMLElement} menuEl
    */
   focusMenu(menuEl) {

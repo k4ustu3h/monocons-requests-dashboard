@@ -1301,7 +1301,7 @@ input[type="checkbox"]:indeterminate::after {
   color: var(--on-secondary-container);
   border-radius: var(--shape-xsmall);
   box-shadow: var(--elevation-5);
-  min-width: 240px;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
 }
