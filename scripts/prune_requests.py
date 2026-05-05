@@ -480,7 +480,7 @@ def update_activity_stats(
             if comp not in yesterday_apps:
                 new_added += 1
     
-    total_removed = yesterday_total - total
+    total_removed = max(0, yesterday_total - total)
 
     if yesterday_apps:
         for comp in today_components:
