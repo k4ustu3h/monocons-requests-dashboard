@@ -1462,7 +1462,7 @@ const UI = {
   init() {
     if (App.state.regexMode) {
       App.dom.regexBtn.classList.add("active");
-      App.dom.geoBatchBtn.style.display = "none";
+      Utils.setHidden(App.dom.geoBatchBtn, true);
     }
 
     if (App.state.geoBatchConfig !== null) {
@@ -1521,16 +1521,16 @@ const UI = {
       if (App.state.geoBatchConfig !== null) {
         App.state.geoBatchConfig = null;
         App.dom.geoBatchBtn.classList.remove("active");
-        App.dom.geoBatchBtn.style.display = "";
+        Utils.setHidden(App.dom.geoBatchBtn, false);
         this.render();
         return;
       }
       App.state.regexMode = !App.state.regexMode;
       App.dom.regexBtn.classList.toggle("active", App.state.regexMode);
       if (App.state.regexMode) {
-        App.dom.geoBatchBtn.style.display = "none";
+        Utils.setHidden(App.dom.geoBatchBtn, true);
       } else {
-        App.dom.geoBatchBtn.style.display = "";
+        Utils.setHidden(App.dom.geoBatchBtn, false);
       }
       this.render();
     });
@@ -2371,13 +2371,13 @@ const UI = {
       if (App.state.geoBatchConfig !== null) {
         App.state.geoBatchConfig = null;
         App.dom.geoBatchBtn.classList.remove("active");
-        App.dom.geoBatchBtn.style.display = "";
+        Utils.setHidden(App.dom.geoBatchBtn, false);
       }
 
       App.state.regexMode = true;
       App.dom.regexBtn.classList.add("active");
       App.dom.regexBtn.style.display = "";
-      App.dom.geoBatchBtn.style.display = "none";
+      Utils.setHidden(App.dom.geoBatchBtn, true);
       App.state.search = `^${domain}\\.`;
       App.dom.inputSearch.value = App.state.search;
       App.dom.clearBtn.style.display = "flex";
