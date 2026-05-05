@@ -475,15 +475,17 @@ def update_activity_stats(
                     today_snapshot[comp] = req
 
     new_added = 0
-    for comp in today_components:
-        if comp not in yesterday_apps:
-            new_added += 1
+    if yesterday_apps:
+        for comp in today_components:
+            if comp not in yesterday_apps:
+                new_added += 1
     
     total_removed = yesterday_total - total
 
-    for comp in today_components:
-        if comp not in yesterday_apps and comp in today_snapshot:
-            total_removed += today_snapshot[comp]
+    if yesterday_apps:
+        for comp in today_components:
+            if comp not in yesterday_apps and comp in today_snapshot:
+                total_removed += today_snapshot[comp]
 
     manual_removed = max(0, total_removed - fulfilled_removed - outdated_removed)
     
