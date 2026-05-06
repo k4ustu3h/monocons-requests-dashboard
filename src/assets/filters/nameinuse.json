@@ -283,6 +283,10 @@
       "existing_drawable": "androidide"
     },
     {
+      "id": "uk.co.next.android/uk.co.next.android.MainActivity",
+      "existing_drawable": "next"
+    },
+    {
       "id": "privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist/privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.main.SplashActivity",
       "existing_drawable": "shopping_list"
     },
@@ -1549,6 +1553,10 @@
     {
       "id": "com.umoligames.pianotiles/com.umosun.pianotiles.Piano",
       "existing_drawable": "windows"
+    },
+    {
+      "id": "com.swishapp/com.swishapp.MainActivity",
+      "existing_drawable": "swish"
     }
   ]
 }
