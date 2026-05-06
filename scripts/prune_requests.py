@@ -446,7 +446,7 @@ def update_domain_stats() -> int:
             "total": requests_counter.get(domain, 0) + appfilter_counter.get(domain, 0)
         }
 
-    output = dict(sorted(output.items(), key=lambda x: x[1]["total"], reverse=True))
+    output = dict(sorted(output.items(), key=lambda x: (-x[1]["total"], x[0])))
 
     # Preserve _population if it exists
     if domain_stats_path.exists():
