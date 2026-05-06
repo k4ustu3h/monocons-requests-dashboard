@@ -2176,8 +2176,8 @@ const UI = {
     // Text
     const countEl = App.dom.headerCount;
     let displayText = `${Utils.compactNumber(total)} requests`;
-    if (App.state.lastUpdate && window.matchMedia('(min-width: 901px)').matches) {
-      displayText += ` • ${Utils.timeAgo(App.state.lastUpdate)}`;
+    if (App.state.lastUpdate) {
+        displayText += ` • ${Utils.timeAgo(App.state.lastUpdate)}`;
     }
     countEl.textContent = displayText;
     countEl.title = `Last update`;
