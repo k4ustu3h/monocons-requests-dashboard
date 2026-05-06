@@ -504,10 +504,20 @@ def update_activity_stats(
     }
     
     if history and history[-1]["date"] == today:
+        # Merge with existing today entry instead of overwriting
+        existing = history[-1]
+        entry = {
+            "date": today,
+            "total": total,
+            "added": existing["added"] + new_added,
+            "fulfilled": existing["fulfilled"] + fulfilled_removed,
+            "outdated": existing["outdated"] + outdated_removed,
+            "manual_removed": existing["manual_removed"] + manual_removed
+        }
         history[-1] = entry
     else:
         history.append(entry)
-
+        
     with open(activity_stats_path, "w", encoding="utf-8") as f:
         json.dump(history, f, indent=2)
     
