@@ -383,6 +383,11 @@ button.input-icon.active {
   align-items: flex-end;
   gap: var(--space-xs);
   overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.card-chart.has-bars::-webkit-scrollbar {
+  display: none;
 }
 
 .domain-col .chart-label,

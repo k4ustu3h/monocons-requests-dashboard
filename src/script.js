@@ -2468,7 +2468,7 @@ const UI = {
 
     if (mode === "local") {
     entries = entries
-        .filter(([, , requests]) => requests > 0)
+        .filter(([, , requests]) => requests > 15)
         .sort((a, b) => {
             const instA = App.state._domainAvgInstalls[a[0]] || 0;
             const instB = App.state._domainAvgInstalls[b[0]] || 0;
@@ -2478,18 +2478,18 @@ const UI = {
         });
     } else if (mode === "coverage") {
         entries = entries
-            .filter(([, , requests]) => requests >= 20)
+            .filter(([, , requests]) => requests >= 15)
             .sort((a, b) => {
                 const pctA = a[2] / a[3];
                 const pctB = b[2] / b[3];
                 return pctB - pctA;
             });
     } else {
-      
-        entries.sort((a, b) => b[3] - a[3]);
+        entries = entries
+            .filter(([, , requests]) => requests >= 15)
+            .sort((a, b) => b[3] - a[3]);
     }
     
-    entries = entries.slice(0, fits);
     const max = Math.max(...entries.map(e => e[3]), 1);
 
     const title = document.querySelector("#domainStatsCard .card-title");
