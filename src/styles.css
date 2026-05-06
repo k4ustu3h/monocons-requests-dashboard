@@ -545,14 +545,14 @@ button.input-icon.active {
   background: var(--surface-container-low);
   border-radius: var(--shape-medium);
   padding: var(--space-lg);
-    margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-lg);
 }
 
 .card-header {
   display: flex;
   align-items: center;
   gap: var(--space-xs);
-    margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-sm);
   flex-shrink: 0;
 }
 
@@ -589,6 +589,85 @@ button.input-icon.active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/* Quick pick */
+.cards-row #quickPickCard {
+  position: relative;
+  width: 120px;
+  min-width: 120px;
+  height: 120px;
+  flex: 0 0 120px;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-lg);
+  overflow: visible;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Actions */
+.quick-pick-actions {
+  position: absolute;
+  bottom: var(--space-lg);
+  left: var(--space-lg);
+  right: var(--space-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.quick-pick-actions span:has(svg) {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.quick-pick-actions span:has(svg) svg {
+  width: 18px;
+  height: 18px;
+  color: var(--on-surface-variant);
+  cursor: pointer;
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+
+.quick-pick-actions span:has(svg):hover svg {
+  color: var(--primary);
+}
+
+.quick-pick-actions-bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: rgba(50, 53, 58, 0.9);
+  border-radius: var(--shape-small);
+  padding: 4px 8px;
+}
+
+/* Download button */
+.quick-pick-btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--on-surface-variant);
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.quick-pick-btn-icon:hover {
+  color: var(--primary);
+}
+
+.quick-pick-btn-icon svg {
+  width: 18px;
+  height: 18px;
 }
 
 #activityCard,

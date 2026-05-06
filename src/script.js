@@ -1233,6 +1233,8 @@ const Data = {
 
         this.loadUrlState();
         UI.init();
+        UI.buildQuickPickQueue();
+        UI.renderQuickPick();
       })
       .catch(e => {
         console.error(e);
@@ -1523,6 +1525,34 @@ const UI = {
         const span = activeSvg.closest('span');
         if (span) span.classList.add("active");
     }    
+
+    // Quick Pick
+    this.renderQuickPick();
+    
+    document.getElementById("quickPickDownload")?.addEventListener("click", (e) => {
+        e.preventDefault();
+        const queue = App.state.quickPickMode === 'easy' 
+            ? App.state._quickPickEasy 
+            : App.state._quickPickMiddle;
+        if (!queue || !queue.length) return;
+        const app = queue[App.state._lastQuickPickIdx || 0];
+        App.state.selected.clear();
+        App.state.selected.add(app.componentName);
+        Actions.downloadBundle();
+    });
+
+    document.querySelectorAll("[data-action='quick-pick-mode']").forEach(el => {
+        el.addEventListener("click", () => {
+            const mode = el.dataset.mode;
+            if (!mode) return;
+            App.state.quickPickMode = mode;
+            document.querySelectorAll("[data-action='quick-pick-mode']").forEach(s => {
+                const span = s.closest('span');
+                if (span) span.classList.toggle("active", s.dataset.mode === mode);
+            });
+            this.pickRandomQuickPick();
+        });
+    })
 
     this.renderActivityCard();
     this.generateFilters();
@@ -2690,6 +2720,119 @@ const UI = {
       menu.style.left = `${rect.right - menu.offsetWidth}px`;
       menu.style.top = `${rect.bottom + 8}px`;
       menu.style.visibility = "visible";
+  },
+
+  buildQuickPickQueue() {
+      const NON_GEO = new Set(["ai", "me", "my", "tv", "fm", "to", "st", "cc", "ws", "nu", "tk", "sh", "is", "as", "je", "gg", "im", "io", "co"]);
+      const POP = App.state.domainStats._population || {};
+      const isCountry = (d) => d.length === 2 && !NON_GEO.has(d) && d in POP;
+      
+      // Calc local_impact per country
+      const domainInstalls = {};
+      const domainInstCounts = {};
+      App.data.forEach(app => {
+          const pkg = app.componentName.split('/')[0];
+          const domain = pkg.split('.')[0];
+          if (!isCountry(domain)) return;
+          const inst = Utils.parseInstalls(app.installs);
+          domainInstalls[domain] = (domainInstalls[domain] || 0) + inst;
+          domainInstCounts[domain] = (domainInstCounts[domain] || 0) + 1;
+      });
+      
+      const localImpact = {};
+      for (const d of Object.keys(domainInstalls)) {
+          const s = App.state.domainStats[d] || {};
+          const unf = s.requests || 0;
+          const avg = Math.round(domainInstalls[d] / domainInstCounts[d]);
+          localImpact[d] = unf * avg;
+      }
+      
+      const liValues = Object.values(localImpact).sort((a,b) => a-b);
+      const n = liValues.length;
+      const q1 = liValues[Math.floor(n/4)] || 0;
+      const q2 = liValues[Math.floor(n/2)] || 0;
+      const q3 = liValues[Math.floor(3*n/4)] || 0;
+      
+      const quartileUrgency = (li) => {
+          if (li >= q3) return 1.0;
+          if (li >= q2) return 0.75;
+          if (li >= q1) return 0.5;
+          return 0.25;
+      };
+      
+      const now = Date.now() / 1000;
+      
+      App.state._quickPickMiddle = [];
+      App.state._quickPickEasy = [];
+      
+      App.data.forEach(app => {
+          const tags = App.state.appTags.get(app.componentName) || new Set();
+          
+          const isEasy = tags.has('easy');
+          const isMatch = tags.has('match');
+          const isNameInUse = tags.has('nameinuse');
+          
+          const pkg = app.componentName.split('/')[0];
+          const domain = pkg.split('.')[0];
+          const req = app.requestCount || 0;
+          const inst = Utils.parseInstalls(app.installs);
+          const first = app.firstAppearance || 0;
+          const last = app.lastRequested || 0;
+          const daysActive = (last - first) / 86400;
+          const freshness = Math.min(1, daysActive / 365);
+          
+          let urg = 0.5;
+          if (isCountry(domain)) {
+              const li = localImpact[domain] || 0;
+              urg = quartileUrgency(li);
+          }
+          const urgencyMod = 0.5 + 0.5 * urg;
+          const score = Math.log(inst + 1) * Math.sqrt(req) * freshness * urgencyMod;
+          
+          const item = { ...app, _score: score };
+          
+          // Middle+: не easy, не match, не nameinuse
+          if (!isEasy && !isMatch && !isNameInUse) {
+              App.state._quickPickMiddle.push(item);
+          }
+          
+          // Easy: только easy, исключая match и nameinuse
+          if (isEasy && !isMatch && !isNameInUse) {
+              App.state._quickPickEasy.push(item);
+          }
+      });
+      
+      App.state._quickPickMiddle.sort((a,b) => b._score - a._score);
+      App.state._quickPickEasy.sort((a,b) => b._score - a._score);
+      App.state._quickPickMiddle = App.state._quickPickMiddle.slice(0, 1000);
+      App.state._quickPickEasy = App.state._quickPickEasy.slice(0, 1000);
+      
+      App.state.quickPickMode = App.state.quickPickMode || 'easy';
+  },
+
+  renderQuickPick() {
+      if (!App.state._quickPickMiddle || !App.state._quickPickMiddle.length) {
+          this.buildQuickPickQueue();
+      }
+      this.pickRandomQuickPick();
+  },
+
+  pickRandomQuickPick() {
+      const queue = App.state.quickPickMode === 'easy' 
+              ? App.state._quickPickEasy 
+              : App.state._quickPickMiddle;
+      if (!queue || !queue.length) return;
+      
+      const idx = Math.floor(Math.random() * queue.length);
+      App.state._lastQuickPickIdx = idx;
+      const app = queue[idx];
+      const card = document.getElementById("quickPickCard");
+      
+      card.style.backgroundImage = `url('extracted_png/${app.drawable}.png')`;
+      card.style.backgroundSize = 'cover';
+      card.style.backgroundPosition = 'center';
+      card.style.backgroundRepeat = 'no-repeat';
+      card.title = app.label;
   },
   
     /**
