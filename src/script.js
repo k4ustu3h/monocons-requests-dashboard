@@ -663,8 +663,8 @@ const Templates = {
       let extra = "";
       if (mode === "local" && extraValue) {
           extra = `<div class="tooltip-value">avg ${Utils.compactNumber(extraValue)} installs</div>`;
-      } else if (mode === "reach" && population) {
-          extra = `<div class="tooltip-value">${population}M Android users</div>`;
+      } else if (mode === "coverage") {
+          extra = `<div class="tooltip-value">${((requests / total) * 100).toFixed(1)}% uncovered</div>`;
       }
       return `<div class="tooltip-label">${domain}</div>
         <div class="tooltip-value">${requests} requests</div>
@@ -2446,15 +2446,13 @@ const UI = {
             const scoreB = (b[3] - b[1]) * instB;
             return scoreB - scoreA;
         });
-    } else if (mode === "reach") {
+    } else if (mode === "coverage") {
         entries = entries
-            .filter(([, , requests]) => requests > 0)
+            .filter(([, , requests]) => requests >= 20)
             .sort((a, b) => {
-                const popA = population[a[0]] || 0;
-                const popB = population[b[0]] || 0;
-                const scoreA = (a[3] - a[1]) * popA;
-                const scoreB = (b[3] - b[1]) * popB;
-                return scoreB - scoreA;
+                const pctA = a[2] / a[3];
+                const pctB = b[2] / b[3];
+                return pctB - pctA;
             });
     } else {
       
@@ -2467,7 +2465,7 @@ const UI = {
     const title = document.querySelector("#domainStatsCard .card-title");
     if (title) {
         if (mode === "local") title.textContent = "Local impact";
-        else if (mode === "reach") title.textContent = "Widest reach";
+        else if (mode === "coverage") title.textContent = "Lowest coverage";
         else title.textContent = "Top domains";
     }
 
