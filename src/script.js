@@ -2790,16 +2790,17 @@ const UI = {
           const score = Math.log(inst + 1) * Math.sqrt(req) * freshness * urgencyMod;
           
           const item = { ...app, _score: score };
+
+          // Easy: only easy, excl. match and nameinuse
+          if (isEasy && !isMatch && !isNameInUse) {
+              App.state._quickPickEasy.push(item);
+          }          
           
-          // Middle+: не easy, не match, не nameinuse
+          // Middle+: excl. easy, match and nameinuse
           if (!isEasy && !isMatch && !isNameInUse) {
               App.state._quickPickMiddle.push(item);
           }
           
-          // Easy: только easy, исключая match и nameinuse
-          if (isEasy && !isMatch && !isNameInUse) {
-              App.state._quickPickEasy.push(item);
-          }
       });
       
       App.state._quickPickMiddle.sort((a,b) => b._score - a._score);
