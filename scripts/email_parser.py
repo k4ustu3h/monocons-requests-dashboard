@@ -14,14 +14,13 @@ import lxml.etree as ET
 from time import mktime
 from datetime import date
 from pathlib import Path
-from collections import Counter
 from email.message import Message
-from email.utils import parseaddr, parsedate
+from email.utils import parsedate
 
 COMPONENT_PATTERN = re.compile('ComponentInfo{(?P<ComponentInfo>.+)}')
 
 CONFIG = {
-    "request_limit": 100,
+    "request_limit": 30,
 }
 
 # -------------------------------------------------------
@@ -153,9 +152,7 @@ def process_item_tag(item: ET.Element) -> tuple[str, str, str] | None:
     return match.group('ComponentInfo'), name, draw
 
 def parse_item_tag(item: ET.Element, msg: Message, zip_file: zipfile.ZipFile,
-                   apps: dict, sender_counter: Counter, png_out_dir: Path) -> dict:
-    
-    if is_greedy(msg, sender_counter): return apps
+                   apps: dict, png_out_dir: Path) -> dict:
 
     item_data = process_item_tag(item)
     if not item_data: return apps
@@ -202,8 +199,9 @@ def parse_item_tag(item: ET.Element, msg: Message, zip_file: zipfile.ZipFile,
 
     return apps
 
-def parse_emails(email_files: list[Path], apps: dict, sender_counter: Counter, png_out_dir: Path) -> dict:
+def parse_emails(email_files: list[Path], apps: dict, png_out_dir: Path) -> dict:
     failed_count = 0
+    limit = CONFIG["request_limit"]
     
     for email_file in email_files:
         msg = read_email(email_file)
@@ -215,8 +213,27 @@ def parse_emails(email_files: list[Path], apps: dict, sender_counter: Counter, p
 
         try:
             xml_root = extract_xml(zip_file)
-            for item in xml_root.findall('item'):
-                apps = parse_item_tag(item, msg, zip_file, apps, sender_counter, png_out_dir)
+            items = xml_root.findall('item')
+            
+            if len(items) <= limit:
+                for item in items:
+                    apps = parse_item_tag(item, msg, zip_file, apps, png_out_dir)
+            else:
+                # Prioritise new items over existing ones
+                item_data_list = []
+                for item in items:
+                    data = process_item_tag(item)
+                    if data:
+                        component_info = data[0]
+                        is_new = component_info not in apps
+                        item_data_list.append((is_new, item))
+                
+                item_data_list.sort(key=lambda x: not x[0])  # new first
+                
+                for _, item in item_data_list[:limit]:
+                    apps = parse_item_tag(item, msg, zip_file, apps, png_out_dir)
+                    
+                print(f"  Limited from {len(items)} to {limit} items (new prioritised)")
         except Exception as e:
             print(f"Error processing {email_file.name}: {e}")
     
@@ -229,11 +246,6 @@ def parse_emails(email_files: list[Path], apps: dict, sender_counter: Counter, p
 # -------------------------------------------------------
 # UTILITIES
 # -------------------------------------------------------
-
-def is_greedy(message, sender_counter):
-    sender = parseaddr(message['From'])[1].lower()
-    sender_counter[sender] += 1
-    return sender_counter[sender] > CONFIG["request_limit"]
 
 def load_existing_components(appfilter_path: Path) -> set[str]:
     root = ET.parse(appfilter_path).getroot()
@@ -276,20 +288,14 @@ def write_json_output(output_path: Path, apps: dict):
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
-def print_greedy_report(counter: Counter, limit: int):
-    for sender, count in counter.items():
-        if count > limit:
-            print(f"⚠️  Greedy sender: {sender} ({count})")
-
 def run_pipeline(folder_path: Path, appfilter_path: Path, png_out_path: Path, output_path: Path):
     email_files = load_emails(folder_path)
-    sender_counter = Counter()
 
     # 1. Load State
     apps = parse_existing_requests_json(output_path)
 
     # 2. Update State
-    apps = parse_emails(email_files, apps, sender_counter, png_out_path)
+    apps = parse_emails(email_files, apps, png_out_path)
 
     # Remove apps already in appfilter (Done)
     if appfilter_path.exists():
@@ -306,7 +312,6 @@ def run_pipeline(folder_path: Path, appfilter_path: Path, png_out_path: Path, ou
     delete_unused_pngs(png_out_path, keep_pngs)
 
     print(f"Processed {len(email_files)} emails. Total requests: {len(apps)}")
-    print_greedy_report(sender_counter, CONFIG["request_limit"])
 
 # -------------------------------------------------------
 # MAIN
