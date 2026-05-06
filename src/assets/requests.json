@@ -1,6 +1,6 @@
 {
   "count": 20213,
-  "lastUpdate": "2026-05-05",
+  "lastUpdate": "2026-05-06",
   "apps": [
     {
       "drawable": "mini_militia",
@@ -1783,6 +1783,15 @@
       "installs": "5,000,000+"
     },
     {
+      "drawable": "tor_vpn",
+      "requestCount": 19,
+      "firstAppearance": 1745020800.0,
+      "lastRequested": 1778115211.0,
+      "label": "Tor VPN",
+      "componentName": "org.torproject.vpn/org.torproject.vpn.ui.iconsetting.model.LauncherDefault",
+      "installs": "50,000+"
+    },
+    {
       "drawable": "pix_minimal_blackwhite",
       "requestCount": 18,
       "firstAppearance": 1719262718.0,
@@ -2102,15 +2111,6 @@
       "label": "VIDAA",
       "componentName": "com.universal.remote.multi/com.universal.remote.multi.U6MainActivity",
       "installs": "5,000,000+"
-    },
-    {
-      "drawable": "tor_vpn",
-      "requestCount": 18,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1777880016.0,
-      "label": "Tor VPN",
-      "componentName": "org.torproject.vpn/org.torproject.vpn.ui.iconsetting.model.LauncherDefault",
-      "installs": "50,000+"
     },
     {
       "drawable": "nobodies",
