@@ -1,6 +1,6 @@
 """
 Save trending baseline snapshots for comparing request counts during open period.
-Saves period_start on first run, updates period_end on subsequent runs.
+Saves period_start when requests open, period_end when they close.
 Deletes baseline file if period_end is older than 30 days.
 """
 
@@ -16,14 +16,13 @@ BASELINE_PATH = REPO_ROOT / "src/assets/trending_baseline.json"
 SETTINGS_URL = "https://raw.githubusercontent.com/LawnchairLauncher/lawnchair-website/master/lawnicons-request/settings.json"
 
 
-def check_requests_open():
+def get_settings():
     try:
         with urllib.request.urlopen(SETTINGS_URL, timeout=10) as resp:
-            data = json.load(resp)
-            return data.get("enabled", False)
+            return json.load(resp)
     except Exception as e:
         print(f"Failed to check settings: {e}")
-        return False
+        return {}
 
 
 def load_baseline():
@@ -49,14 +48,13 @@ def build_snapshot(apps, min_req=10):
 
 
 def main():
-    if not check_requests_open():
-        print("Requests are closed. Skipping baseline save.")
-        return
-
+    settings = get_settings()
+    enabled = settings.get("enabled", False)
+    
     baseline = load_baseline()
     today = date.today().isoformat()
 
-    # Check if period_end is older than 30 days
+    # Check if period_end is older than 30 days — reset
     if baseline.get("period_end") and baseline["period_end"].get("date"):
         end_date = datetime.strptime(baseline["period_end"]["date"], "%Y-%m-%d").date()
         if (date.today() - end_date).days > 30:
@@ -77,18 +75,21 @@ def main():
         "snapshot": snapshot
     }
 
-    if baseline.get("period_start") is None:
+    if enabled and baseline.get("period_start") is None:
+        # Requests just opened — save period_start
         baseline["period_start"] = entry
         print(f"Saved period_start with {len(snapshot)} entries")
-    else:
-        # Only track components that were in period_start
+        save_baseline(baseline)
+    elif not enabled and baseline.get("period_start") is not None and baseline.get("period_end") is None:
+        # Requests just closed — save period_end
         start_snapshot = baseline["period_start"]["snapshot"]
         filtered_snapshot = {k: v for k, v in snapshot.items() if k in start_snapshot}
         entry["snapshot"] = filtered_snapshot
         baseline["period_end"] = entry
-        print(f"Updated period_end with {len(filtered_snapshot)} entries")
-
-    save_baseline(baseline)
+        print(f"Saved period_end with {len(filtered_snapshot)} entries")
+        save_baseline(baseline)
+    else:
+        print("No snapshot needed at this time.")
 
 
 if __name__ == "__main__":

@@ -15,21 +15,30 @@ EMAILS_DIR = REPO_ROOT / "emails"
 SETTINGS_URL = "https://raw.githubusercontent.com/LawnchairLauncher/lawnchair-website/master/lawnicons-request/settings.json"
 
 
-def check_requests_open():
+def should_fetch_today():
     import urllib.request
     import json
+    from datetime import date, timedelta
     try:
         with urllib.request.urlopen(SETTINGS_URL, timeout=10) as resp:
             data = json.load(resp)
-            return data.get("enabled", False)
+        fetch_after = data.get("fetch_emails_after")
+        if not fetch_after:
+            return False
+        today = date.today()
+        yesterday = today - timedelta(days=1)
+        # Today OR yesterday (safety margin)
+        if fetch_after == today.isoformat() or fetch_after == yesterday.isoformat():
+            return True
+        return False
     except Exception as e:
         print(f"Failed to check settings: {e}")
         return False
 
 
 def main():
-    if not check_requests_open():
-        print("Requests are closed. Skipping email fetch.")
+    if not should_fetch_today():
+        print("Not the fetch day. Skipping email fetch.")
         return
 
     user = os.environ.get("GMAIL_USER")
