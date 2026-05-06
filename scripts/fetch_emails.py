@@ -16,25 +16,24 @@ SETTINGS_URL = "https://raw.githubusercontent.com/LawnchairLauncher/lawnchair-we
 
 
 def should_fetch_today():
-    return True
-#    import urllib.request
-#    import json
-#    from datetime import date, timedelta
-#    try:
-#        with urllib.request.urlopen(SETTINGS_URL, timeout=10) as resp:
-#            data = json.load(resp)
-#        fetch_after = data.get("fetch_emails_after")
-#        if not fetch_after:
-#            return False
-#        today = date.today()
-#        yesterday = today - timedelta(days=1)
+    import urllib.request
+    import json
+    from datetime import date, timedelta
+    try:
+        with urllib.request.urlopen(SETTINGS_URL, timeout=10) as resp:
+            data = json.load(resp)
+        fetch_after = data.get("fetch_emails_after")
+        if not fetch_after:
+            return False
+        today = date.today()
+        yesterday = today - timedelta(days=1)
         # Today OR yesterday (safety margin)
-#        if fetch_after == today.isoformat() or fetch_after == yesterday.isoformat():
-#            return True
-#        return False
-#    except Exception as e:
-#        print(f"Failed to check settings: {e}")
-#        return False
+        if fetch_after == today.isoformat() or fetch_after == yesterday.isoformat():
+            return True
+        return False
+    except Exception as e:
+        print(f"Failed to check settings: {e}")
+        return False
 
 
 def main():

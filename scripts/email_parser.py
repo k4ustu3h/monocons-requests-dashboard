@@ -298,11 +298,11 @@ def run_pipeline(folder_path: Path, appfilter_path: Path, png_out_path: Path, ou
     apps = parse_emails(email_files, apps, png_out_path)
 
     # Remove apps already in appfilter (Done)
-    # if appfilter_path.exists():
-    #     existing = load_existing_components(appfilter_path)
-    #     apps = {k: v for k, v in apps.items() if k not in existing}
-    # else:
-    #     print("Warning: appfilter.xml not found, skipping deduplication.")
+    if appfilter_path.exists():
+        existing = load_existing_components(appfilter_path)
+        apps = {k: v for k, v in apps.items() if k not in existing}
+    else:
+        print("Warning: appfilter.xml not found, skipping deduplication.")
 
     # 3. Save
     write_json_output(output_path, apps)
