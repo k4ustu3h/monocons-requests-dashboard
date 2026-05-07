@@ -271,20 +271,22 @@ const Utils = {
    * @returns {number}
    */
   getCreationOdds(app) {
-    const table = App.state.creationOdds;
-    if (!table || table.length === 0) return 0;
-    const pkg = app.componentName.split('/')[0];
-    const pop = App.state.setsStats[pkg] || app.requestCount;
-    const row = table.find(r => r.popularity === pop);
-    if (!row) return 0;
-    const tags = Utils.getTagsForApp(app.componentName);
-    let factor = null;
-    for (const tag of tags) {
-      const f = CONFIG.label_factors[tag];
-      if (f !== undefined && (factor === null || f > factor)) factor = f;
-    }
-    if (factor === null) factor = 1;
-    return row[factor] || 0;
+      const table = App.state.creationOdds;
+      if (!table || table.length === 0) return 0;
+      const pkg = app.componentName.split('/')[0];
+      const pop = App.state.setsStats[pkg] || app.requestCount;
+      const row = table.find(r => r.popularity === pop);
+      if (!row) return 0;
+      const tags = Utils.getTagsForApp(app.componentName);
+      let factor = null;
+      for (const tag of tags) {
+        const f = CONFIG.label_factors[tag];
+        if (f !== undefined && (factor === null || f > factor)) factor = f;
+      }
+      if (factor === null) factor = 1;
+      
+      const key = App.state.medianTTF !== undefined ? factor + "_at_pace" : String(factor);
+      return row[key] ?? row[String(factor)] ?? 0;
   },
 
   /**

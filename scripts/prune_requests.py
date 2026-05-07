@@ -353,10 +353,25 @@ label_factors = {
 
 creation_odds_cap = 0.8
 
+def get_median_ttf() -> float | None:
+    """Return median time-to-fulfill from fulfillment_history.json, or None if insufficient data."""
+    fulfillment_path = REPO_ROOT / "src/assets/fulfillment_history.json"
+    if not fulfillment_path.exists():
+        return None
+    try:
+        with open(fulfillment_path, "r") as f:
+            history = json.load(f)
+        if len(history) < 3:
+            return None
+        ttfs = sorted((h["fulfilled"] - h["firstAppearance"]) / 86400 for h in history)
+        return ttfs[len(ttfs) // 2]
+    except Exception:
+        return None
+
 def update_creation_odds(apps: list) -> int:
     """Generate creation_odds.json with fulfillment probabilities.
 
-    Only recalculates if P_top has changed since the previous run.
+    Only recalculates if P_top or median TTF has changed since the previous run.
     Returns the number of popularity levels in the creation odds table.
     """
     creation_odds_path = REPO_ROOT / "src/assets/creation_odds.json"
@@ -379,35 +394,70 @@ def update_creation_odds(apps: list) -> int:
         print("No popularity data for creation odds")
         return 0
 
+    # Get pace
+    median_ttf = get_median_ttf()
+    scale = 365 / median_ttf if median_ttf else 1.0
+
     prev_top = 0
+    prev_scale = 1.0
+    has_at_pace = False
+    prev_data = None
     if creation_odds_path.exists():
         try:
             with open(creation_odds_path, "r", encoding="utf-8") as f:
                 prev_data = json.load(f)
-            if prev_data and isinstance(prev_data, list):
-                prev_top = prev_data[0].get("popularity", 0) if prev_data else 0
+            if prev_data and isinstance(prev_data, list) and len(prev_data) > 0:
+                prev_top = prev_data[0].get("popularity", 0)
+                has_at_pace = any(
+                    isinstance(k, str) and k.endswith("_at_pace")
+                    for k in prev_data[0]
+                )
+                if has_at_pace:
+                    for label in label_factors:
+                        L = label_factors[label]
+                        prev_odds = prev_data[0].get(str(L), 0)
+                        prev_odds_paced = prev_data[0].get(f"{L}_at_pace", 0)
+                        if prev_odds > 0 and prev_odds_paced > 0:
+                            prev_scale = prev_odds_paced / prev_odds
+                            break
         except Exception:
             pass
 
-    if max_pop == prev_top:
-        print(f"Top popularity unchanged ({max_pop}), skipping creation odds update")
+    full_rebuild = max_pop != prev_top or not has_at_pace
+    pace_only = not full_rebuild and abs(scale - prev_scale) >= 0.01
+
+    if not full_rebuild and not pace_only:
+        print(f"Top popularity ({max_pop}) and pace unchanged, skipping creation odds update")
         return max_pop
 
     factors = sorted(label_factors.keys(), key=lambda k: label_factors[k])
-    table = []
 
-    for pop in range(max_pop, 0, -1):
-        row = {"popularity": pop}
-        base = (pop / max_pop) * creation_odds_cap
-        for label in factors:
-            L = label_factors[label]
-            row[str(L)] = round(min(creation_odds_cap, base * L), 4)
-        table.append(row)
+    if pace_only:
+        table = prev_data
+        for row in table:
+            pop = row["popularity"]
+            base = (pop / max_pop) * creation_odds_cap
+            for label in factors:
+                L = label_factors[label]
+                row[f"{L}_at_pace"] = round(min(creation_odds_cap, base * L * scale), 4)
+        print(f"Updated _at_pace fields in creation_odds.json (scale={scale:.2f}, pace={median_ttf or 'N/A'})")
+    else:
+        table = []
+        for pop in range(max_pop, 0, -1):
+            row = {"popularity": pop}
+            base = (pop / max_pop) * creation_odds_cap
+            for label in factors:
+                L = label_factors[label]
+                odds = round(min(creation_odds_cap, base * L), 4)
+                odds_paced = round(min(creation_odds_cap, base * L * scale), 4)
+                row[str(L)] = odds
+                row[f"{L}_at_pace"] = odds_paced
+            table.append(row)
+        print(f"Updated creation_odds.json with {len(table)} levels (top={max_pop}, scale={scale:.2f}, pace={median_ttf or 'N/A'})")
 
     with open(creation_odds_path, "w", encoding="utf-8") as f:
         json.dump(table, f, indent=2)
 
-    print(f"Updated creation_odds.json with {len(table)} levels (top={max_pop})")
     return max_pop
 
 def update_domain_stats() -> int:
