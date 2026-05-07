@@ -7,6 +7,7 @@
 // 0. TYPES & INTERFACES
 // ==========================================
 
+// @ts-ignore - VSCode does not support types from URL imports
 /// <reference types="https://cdn.skypack.dev/fflate@0.8.2/lib/index.d.ts" />
 
 /**
@@ -42,6 +43,7 @@
  * @property {AppEntry[]} currentData
  * @property {string} actionMode
  * @property {Object | null} geoBatchConfig
+ * @property {boolean} geoBatchActive
  * @property {Map<string, string>} existingSvgs
  * @property {Object} setsStats
  * @property {Array} creationOdds
@@ -136,6 +138,7 @@ const App = {
 
     actionMode: "new",
     geoBatchConfig: null,
+    geoBatchActive: false,
     existingSvgs: new Map(),
     setsStats: {},
     creationOdds: [],
@@ -1380,7 +1383,7 @@ const Data = {
       if (sorters[s.sort]) data.sort(sorters[s.sort]);
     }
 
-    if (s.geoBatchConfig) {
+    if (s.geoBatchActive && s.geoBatchConfig) {
       data = UI.applyGeoBatch(data);
     }
 
@@ -1429,6 +1432,41 @@ const Data = {
     }
   },
 
+  saveGeoBatchToStorage() {
+    try {
+      if (!App.state.geoBatchConfig) {
+        localStorage.removeItem("lawnicons_geo_batch");
+        return;
+      }
+      localStorage.setItem("lawnicons_geo_batch", JSON.stringify({
+        config: App.state.geoBatchConfig,
+        active: App.state.geoBatchActive
+      }));
+    } catch (e) { /* silent fail */ }
+  },
+
+  /**
+   * @returns {{ config: { domainsRaw: string, target: string | null }, active: boolean } | null}
+   */
+  loadGeoBatchFromStorage() {
+    try {
+      const saved = localStorage.getItem("lawnicons_geo_batch");
+      if (!saved) return null;
+      const parsed = JSON.parse(saved);
+      const config = parsed && parsed.config ? parsed.config : parsed;
+      if (!config || typeof config.domainsRaw !== "string") return null;
+      return {
+        config: {
+          domainsRaw: config.domainsRaw,
+          target: typeof config.target === "string" && config.target.length > 0 ? config.target : null
+        },
+        active: typeof parsed?.active === "boolean" ? parsed.active : true
+      };
+    } catch {
+      return null;
+    }
+  },
+
   loadUrlState() {
     const params = new URLSearchParams(window.location.search);
     if (params.has("q")) {
@@ -1454,9 +1492,33 @@ const Data = {
         if (CONFIG.data.filters.includes(t)) App.state.activeFilters.add(t);
       });
     }
+
+    const hadGeoParam = params.has("geo");
+    const storedGeo = Data.loadGeoBatchFromStorage();
     if (params.has("geo")) {
       const config = Data.parseGeoBatchParam(params.get("geo") || "");
-      if (config) App.state.geoBatchConfig = config;
+      if (config) {
+        App.state.geoBatchConfig = config;
+        App.state.geoBatchActive = true;
+        Data.saveGeoBatchToStorage();
+      } else {
+        App.state.geoBatchConfig = storedGeo ? storedGeo.config : null;
+        App.state.geoBatchActive = storedGeo ? storedGeo.active : false;
+      }
+    } else {
+      App.state.geoBatchConfig = storedGeo ? storedGeo.config : null;
+      App.state.geoBatchActive = storedGeo ? storedGeo.active : false;
+    }
+
+    if (hadGeoParam) {
+      params.delete("geo");
+      const queryString = params.toString();
+      const newUrl = queryString
+        ? `${window.location.pathname}?${queryString}`
+        : window.location.pathname;
+      if (newUrl !== window.location.pathname + window.location.search) {
+        window.history.replaceState({}, "", newUrl);
+      }
     }
   },
 
@@ -1468,7 +1530,6 @@ const Data = {
     if (s.view !== DEFAULTS.view) params.set("view", s.view); else params.delete("view");
     if (s.sort !== DEFAULTS.sort) params.set("sort", s.sort); else params.delete("sort");
     if (s.regexMode) params.set("regex", "1"); else params.delete("regex");
-    if (s.geoBatchConfig) params.set("geo", Data.serializeGeoBatch(s.geoBatchConfig)); else params.delete("geo");
 
     if (s.activeFilters.size > 0) {
       const sortedFilters = Array.from(s.activeFilters).sort();
@@ -1519,7 +1580,7 @@ const UI = {
       Utils.setHidden(App.dom.geoBatchBtn, true);
     }
 
-    if (App.state.geoBatchConfig !== null) {
+    if (App.state.geoBatchActive && App.state.geoBatchConfig !== null) {
       App.dom.geoBatchBtn.classList.add("active");
       App.dom.regexBtn.style.display = "none";
     }
@@ -1601,7 +1662,7 @@ const UI = {
       App.dom.inputSearch.value = "";
       Utils.setHidden(App.dom.clearBtn, true);
       App.dom.inputSearch.focus();
-      if (App.state.geoBatchConfig === null) {
+      if (!App.state.geoBatchActive) {
         App.dom.regexBtn.style.display = "";
       }
       this.render();
@@ -1620,10 +1681,12 @@ const UI = {
     App.dom.viewIconGrid.classList.remove("active");
 
     App.dom.regexBtn.addEventListener("click", () => {
-      if (App.state.geoBatchConfig !== null) {
-        App.state.geoBatchConfig = null;
+      if (App.state.geoBatchActive) {
+        App.state.geoBatchActive = false;
+        Data.saveGeoBatchToStorage();
         App.dom.geoBatchBtn.classList.remove("active");
         Utils.setHidden(App.dom.geoBatchBtn, false);
+        App.dom.regexBtn.style.display = "";
         this.render();
         return;
       }
@@ -1646,8 +1709,9 @@ const UI = {
     });
 
     App.dom.geoBatchBtn.addEventListener("click", () => {
-      if (App.state.geoBatchConfig !== null) {
-        App.state.geoBatchConfig = null;
+      if (App.state.geoBatchActive) {
+        App.state.geoBatchActive = false;
+        Data.saveGeoBatchToStorage();
         App.dom.geoBatchBtn.classList.remove("active");
         App.dom.regexBtn.style.display = "";
         if (App.state.regexMode) {
@@ -1848,8 +1912,9 @@ const UI = {
           const domain = actionEl.dataset.domain;
           if (!domain) return;
 
-          if (App.state.geoBatchConfig !== null) {
-            App.state.geoBatchConfig = null;
+          if (App.state.geoBatchActive) {
+            App.state.geoBatchActive = false;
+            Data.saveGeoBatchToStorage();
             App.dom.geoBatchBtn.classList.remove("active");
             Utils.setHidden(App.dom.geoBatchBtn, false);
           }
@@ -2300,7 +2365,6 @@ const UI = {
         const targetVal = targetInput.value.trim();
         if (!domainsRaw) {
           App.state.geoBatchConfig = null;
-          App.dom.geoBatchBtn.classList.remove("active");
         } else {
           App.state.geoBatchConfig = {
             domainsRaw: domainsRaw,
@@ -2333,12 +2397,17 @@ const UI = {
 
         if (!domainsRaw) {
           App.state.geoBatchConfig = null;
+          App.state.geoBatchActive = false;
+          Data.saveGeoBatchToStorage();
           App.dom.geoBatchBtn.classList.remove("active");
+          App.dom.regexBtn.style.display = "";
         } else {
           App.state.geoBatchConfig = {
             domainsRaw: domainsRaw,
             target: targetVal || null
           };
+          App.state.geoBatchActive = true;
+          Data.saveGeoBatchToStorage();
           App.dom.geoBatchBtn.classList.add("active");
           App.dom.regexBtn.style.display = "none";
           App.state.regexMode = false;
