@@ -1,5 +1,5 @@
 # Lawnicons Requests Dashboard
-Browse, sort, and filter Lawnicons icon requests. View contribution activity, batch export selections, plan contributions, and more.
+Browse, sort, and filter Lawnicons icon requests. Plan contributions, view stats, and more.
 
 [Dashboard](https://lawnicons-requests.vercel.app/) • [Lawnicons](https://github.com/LawnchairLauncher/lawnicons)
 
