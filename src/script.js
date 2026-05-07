@@ -1963,33 +1963,39 @@ App.dom.sbMenuBtn.addEventListener("click", (e) => {
 
     // Keyboard Shortcuts
     document.addEventListener('keydown', (e) => {
-      if ((/** @type {HTMLElement} */ (e.target)).tagName === 'INPUT') return;
-
-      // 1. Focus Search (/ or Ctrl + K)
-      if (e.key === '/' || (e.ctrlKey || e.metaKey) && e.key === 'k') {
-        e.preventDefault();
-        App.dom.inputSearch.focus();
-      }
-
-      // 2. Select All (Ctrl+A)
-      if ((e.ctrlKey || e.metaKey) && e.key === 'a') {
-        e.preventDefault();
-        Actions.toggleSelectAll(true);
-      }
-
-      // 3. Clear Selection (Esc)
-      if (e.key === 'Escape') {
-        if (App.state.selected.size > 0) Actions.clearAllSelections();
-      }
-
-      // 4. Focus selection bar (Ctrl + Enter)
-      if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
-        if (App.state.selected.size > 0) {
-          e.preventDefault();
-          App.dom.sbDownloadBtn.focus()
-          App.dom.sbDownloadBtn.click()
+        // Esc on search input — remove focus
+        if (e.key === 'Escape' && e.target === App.dom.inputSearch) {
+            App.dom.inputSearch.blur();
+            return;
         }
-      }
+
+        if (e.target.tagName === 'INPUT' && e.target.type !== 'checkbox') return;
+
+        // 1. Focus Search (/ or Ctrl + K)
+        if (e.key === '/' || (e.ctrlKey || e.metaKey) && e.key === 'k') {
+            e.preventDefault();
+            App.dom.inputSearch.focus();
+        }
+
+        // 2. Select All (Ctrl+A)
+        if ((e.ctrlKey || e.metaKey) && e.key === 'a') {
+            e.preventDefault();
+            Actions.toggleSelectAll(true);
+        }
+
+        // 3. Clear Selection (Esc)
+        if (e.key === 'Escape') {
+            if (App.state.selected.size > 0) Actions.clearAllSelections();
+        }
+
+        // 4. Focus selection bar (Ctrl + Enter)
+        if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+            if (App.state.selected.size > 0) {
+                e.preventDefault();
+                App.dom.sbDownloadBtn.focus()
+                App.dom.sbDownloadBtn.click()
+            }
+        }
     });
 
     // Add 'keydown' listener to container
