@@ -1730,25 +1730,22 @@ const UI = {
       Actions.downloadBundle();
     });
 
-App.dom.sbMenuBtn.addEventListener("click", (e) => {
-    const menu = document.getElementById("sbMenu");
-    menu.innerHTML = Templates.selectionBarMenu();
-    const btnRect = e.currentTarget.getBoundingClientRect();
-    
-    menu.style.visibility = "hidden";
-    menu.style.removeProperty("top");
-    menu.style.removeProperty("bottom");
-    menu.showPopover();
-    
-    const menuHeight = menu.offsetHeight;
-    const x = btnRect.right + 12;
-    const y = btnRect.bottom - menuHeight;
-    
-    menu.style.left = `${x}px`;
-    menu.style.top = `${y}px`;
-    menu.style.transformOrigin = "bottom left";
-    menu.style.visibility = "visible";
-});
+    App.dom.sbMenuBtn.addEventListener("click", (e) => {
+        const menu = document.getElementById("sbMenu");
+        menu.innerHTML = Templates.selectionBarMenu();
+        const rect = /** @type {HTMLElement} */ (e.currentTarget).getBoundingClientRect();
+        
+        menu.style.visibility = "hidden";
+        menu.showPopover();
+        
+        const x = rect.right - menu.offsetWidth;
+        const y = rect.top - menu.offsetHeight - 8;
+        
+        menu.style.left = `${x}px`;
+        menu.style.top = `${y}px`;
+        menu.style.transformOrigin = "bottom right";
+        menu.style.visibility = "visible";
+    });
 
     document.getElementById("sbHint")?.addEventListener("click", () => {
       Actions.clearAllSelections();
