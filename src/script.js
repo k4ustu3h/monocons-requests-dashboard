@@ -1073,7 +1073,7 @@ const Actions = {
         const cmdLabel = app.label.replace(/"/g, '\\"');
 
         // Resolve Drawable Name
-        const appIdentity = `${app.label}|${pkg}`;
+        const appIdentity = app.componentName;
         let drawable = "";
 
         if (assignedDrawables.has(appIdentity)) {
