@@ -523,6 +523,52 @@ def update_activity_stats(
     
     print(f"Updated activity_stats.json with {len(history)} entries (today: +{new_added}, -{fulfilled_removed}f, -{outdated_removed}o, -{manual_removed}m)")
     return len(history)
+
+def update_fulfillment_history(removed_components: set[str], old_apps: dict) -> int:
+    """Record fulfilled requests with firstAppearance and fulfillment date.
+    
+    Only records requests that were just removed from requests.json
+    (i.e., newly discovered in upstream appfilter.xml).
+    Keeps entries from the last 365 days.
+    """
+    fulfillment_path = REPO_ROOT / "src/assets/fulfillment_history.json"
+    now = time.time()
+    cutoff = now - 365 * 86400  # 1 year ago
+    
+    # Load existing history
+    history = []
+    if fulfillment_path.exists():
+        try:
+            with open(fulfillment_path, "r") as f:
+                history = json.load(f)
+        except Exception:
+            history = []
+    
+    # Add newly fulfilled requests
+    added = 0
+    for comp in removed_components:
+        app = old_apps.get(comp)
+        if not app:
+            continue
+        first_appearance = app.get("firstAppearance")
+        if not first_appearance:
+            continue
+        
+        history.append({
+            "componentName": comp,
+            "firstAppearance": first_appearance,
+            "fulfilled": now
+        })
+        added += 1
+    
+    # Rotate: keep only last 365 days
+    history = [entry for entry in history if entry["fulfilled"] >= cutoff]
+    
+    with open(fulfillment_path, "w") as f:
+        json.dump(history, f, indent=2)
+    
+    print(f"Updated fulfillment_history.json: +{added} entries, {len(history)} total (last 365 days)")
+    return len(history)    
     
 def main() -> int:
     # --- Fulfilled request pruning (depends on upstream appfilter changes) ---
@@ -547,8 +593,16 @@ def main() -> int:
         LOCAL_APPFILTER.write_bytes(upstream_xml)
         print(f"Updated local appfilter at: {LOCAL_APPFILTER}")
 
+        # Save old state before pruning
+        with open(REQUESTS_JSON, "r") as f:
+            old_data = json.load(f)
+        old_apps = {app["componentName"]: app for app in old_data.get("apps", [])}
+
         components = load_upstream_components(upstream_xml)
-        fulfilled_removed, fulfilled_deleted, _ = prune_requests(components)
+        fulfilled_removed, fulfilled_deleted, removed_components = prune_requests(components)
+
+        # Record fulfilled requests
+        update_fulfillment_history(removed_components, old_apps)
 
         print(f"Components in upstream appfilter: {len(components)}")
         print(f"Removed fulfilled requests: {fulfilled_removed}")

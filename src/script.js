@@ -1181,24 +1181,6 @@ const Data = {
         App.state.activityStats = activityStats;
         App.state.lastUpdate = json.lastUpdate;
 
-      fetch("assets/trending_baseline.json")
-          .then(r => r.json())
-          .then(baseline => {
-              if (baseline && baseline.period_start && baseline.period_end) {
-                  const startSnapshot = baseline.period_start.snapshot || {};
-                  const endSnapshot = baseline.period_end.snapshot || {};
-                  App.state.trendingDeltas = {};
-                  for (const [comp, endCount] of Object.entries(endSnapshot)) {
-                      const startCount = startSnapshot[comp] || 0;
-                      const delta = endCount - startCount;
-                      if (delta > 0) {
-                          App.state.trendingDeltas[comp] = delta;
-                      }
-                  }
-              }
-          })
-          .catch(() => {});        
-
         // Build ID Map
         App.state.idMap = new Map();
         App.data.forEach(app => App.state.idMap.set(app.componentName, app));
@@ -1231,10 +1213,35 @@ const Data = {
           }
         });
 
-        this.loadUrlState();
-        UI.init();
-        UI.buildQuickPickQueue();
-        UI.renderQuickPick();
+        // Load optional data, then init UI
+        Promise.all([
+          fetch("assets/fulfillment_history.json").then(r => r.json()).catch(() => []),
+          fetch("assets/trending_baseline.json").then(r => r.json()).catch(() => null)
+        ]).then(([history, baseline]) => {
+          if (history && history.length > 0) {
+              const ttfs = history.map(h => (h.fulfilled - h.firstAppearance) / 86400);
+              ttfs.sort((a,b) => a-b);
+              const median = ttfs[Math.floor(ttfs.length / 2)];
+              App.state.medianTTF = Math.round(median);
+          }
+          if (baseline && baseline.period_start && baseline.period_end) {
+              const startSnapshot = baseline.period_start.snapshot || {};
+              const endSnapshot = baseline.period_end.snapshot || {};
+              App.state.trendingDeltas = {};
+              for (const [comp, endCount] of Object.entries(endSnapshot)) {
+                  const startCount = startSnapshot[comp] || 0;
+                  const delta = endCount - startCount;
+                  if (delta > 0) {
+                      App.state.trendingDeltas[comp] = delta;
+                  }
+              }
+          }
+        }).catch(() => {}).finally(() => {
+          this.loadUrlState();
+          UI.init();
+          UI.buildQuickPickQueue();
+          UI.renderQuickPick();
+        });
       })
       .catch(e => {
         console.error(e);
@@ -2592,6 +2599,7 @@ const UI = {
 
     const dayLabels = last14.map((d, i) => {
       if (i === 0) return `<span class="chart-label">${firstLabel}</span>`;
+      if (i === Math.floor(last14.length / 2)) return `<span class="chart-label" id="activityPace"></span>`;
       if (i === last14.length - 1) return `<span class="chart-label">${lastLabel}</span>`;
       return `<span class="chart-label"></span>`;
     }).join("");
@@ -2599,7 +2607,13 @@ const UI = {
     container.innerHTML = Templates.activityCard(pathNew, pathRemoved, dayLabels);
 
     const subEl = document.getElementById("activitySub");
-    if (subEl) subEl.textContent = `${Utils.compactNumber(totalNew)} new / ${Utils.compactNumber(totalRemoved)} resolved`;
+    if (subEl) subEl.textContent = `${Utils.compactNumber(totalNew)} new • ${Utils.compactNumber(totalRemoved)} resolved`;
+
+    const paceEl = document.getElementById("activityPace");
+    if (paceEl && App.state.medianTTF !== undefined) {
+        paceEl.textContent = `${App.state.medianTTF}d from ask to icon`;
+        paceEl.title = "Median time from request to icon over the last 365 days.";
+    }
 
     const svg = container.querySelector(".activity-svg");
     if (!svg) return;

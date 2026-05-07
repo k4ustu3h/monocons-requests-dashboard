@@ -728,6 +728,11 @@ button.input-icon.active {
   pointer-events: none;
 }
 
+#activityPace {
+  color: var(--on-surface-variant);
+  font-weight: 600;
+}
+
 .chart-tooltip {
   display: none;
   position: absolute;
