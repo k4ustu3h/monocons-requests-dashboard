@@ -1372,6 +1372,12 @@ input[type="checkbox"]:indeterminate::after {
   width: auto;
 }
 
+.selection-bar.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
 .sb-main {
   display: flex;
   align-items: center;
@@ -1383,34 +1389,22 @@ input[type="checkbox"]:indeterminate::after {
 .sb-clear-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
   background: none;
   border: none;
   cursor: pointer;
   padding: 0;
-  font-family: inherit;
 }
 
-.sb-clear-btn kbd {
-  display: inline-block;
-  line-height: 24px;
-  padding: 0 var(--space-md);
-  background: var(--surface-container-high);
-  border-radius: var(--shape-xsmall);
-  border: 1px solid var(--outline-variant);
-  font-size: 12px;
-  font-family: inherit;
+.sb-clear-btn svg {
+  width: 32px;
+  height: 32px;
   color: var(--on-surface-variant);
+  transition: color 0.2s;
 }
 
-.sb-clear-btn kbd:hover {
-  background: var(--surface-container-highest);
-}
-
-.selection-bar.visible {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateX(-50%) translateY(0);
+.sb-clear-btn:hover svg {
+  color: var(--primary);
 }
 
 .sb-count {
