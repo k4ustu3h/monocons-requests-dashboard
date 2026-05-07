@@ -584,6 +584,9 @@ const Templates = {
       <div class="ctx-item" tabindex="0" role="menuitem" data-action="copy-pkg-entry" data-id="${id}">
         <span>package name</span>
       </div>
+      <div class="ctx-item" tabindex="0" role="menuitem" data-action="copy-filter-entry" data-id="${id}">
+        <span>as filter entry</span>
+      </div>
       </div>
     `;
   },
@@ -740,6 +743,9 @@ const Templates = {
       </div>
       <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-copy-pkgs">
         <span>package names</span>
+      </div>
+      <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-copy-filter-entries">
+        <span>as filter entry</span>
       </div>
       <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-copy-pr-new">
         <span>PR body (new icons)</span>
@@ -947,6 +953,10 @@ const Actions = {
       Actions.copyToClipboard([...new Set(pkgs)].join("\n"));
       Actions.closeSbMenu();
   },  
+
+  copyFilterEntry(id) {
+    Actions.copyToClipboard(`"${id}",`);
+  },
 
   /**
    * @param {string} text
@@ -1724,6 +1734,12 @@ const UI = {
             return;
         }
 
+        if (action === "copy-filter-entry") {
+          const id = actionEl.dataset.id;
+          if (id) Actions.copyFilterEntry(id);
+          return;
+        }
+
         if (action === "sb-download-metadata") {
           App.state.actionMode = "link";
           Actions.downloadBundle();
@@ -1747,6 +1763,15 @@ const UI = {
             Actions.copySelectedPkgs();
             return;
         }
+
+        if (action === "sb-copy-filter-entries") {
+          const entries = [...App.state.selected]
+            .map(id => `"${id}",`)
+            .join("\n");
+          Actions.copyToClipboard(entries);
+          Actions.closeSbMenu();
+          return;
+        }        
 
         if (action === "sb-copy-pr-new") {
           Actions.copyPRDescription("new");
