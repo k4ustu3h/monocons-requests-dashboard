@@ -1730,20 +1730,25 @@ const UI = {
       Actions.downloadBundle();
     });
 
-    App.dom.sbMenuBtn.addEventListener("click", (e) => {
-      const menu = document.getElementById("sbMenu");
-      menu.innerHTML = Templates.selectionBarMenu();
-      const rect = e.currentTarget.getBoundingClientRect();
-      const w = 240, h = 240;
-      let x = rect.left;
-      let y = rect.top - h - 20;
-      if (x + w > window.innerWidth) x = rect.right - w;
-      if (y < 0) y = rect.bottom + 8;
-      menu.style.left = `${x}px`;
-      menu.style.top = `${y}px`;
-      menu.style.transformOrigin = "bottom left";
-      menu.showPopover();
-    });
+App.dom.sbMenuBtn.addEventListener("click", (e) => {
+    const menu = document.getElementById("sbMenu");
+    menu.innerHTML = Templates.selectionBarMenu();
+    const btnRect = e.currentTarget.getBoundingClientRect();
+    
+    menu.style.visibility = "hidden";
+    menu.style.removeProperty("top");
+    menu.style.removeProperty("bottom");
+    menu.showPopover();
+    
+    const menuHeight = menu.offsetHeight;
+    const x = btnRect.right + 12;
+    const y = btnRect.bottom - menuHeight;
+    
+    menu.style.left = `${x}px`;
+    menu.style.top = `${y}px`;
+    menu.style.transformOrigin = "bottom left";
+    menu.style.visibility = "visible";
+});
 
     document.getElementById("sbHint")?.addEventListener("click", () => {
       Actions.clearAllSelections();
@@ -2801,17 +2806,28 @@ const UI = {
    * @param {AppEntry} app
    */
   showRowMenu(e, app) {
-    App.dom.rowMenu.innerHTML = Templates.rowMenu(app);
-
-    const w = 255, h = 290;
-    let x = e.clientX + 2, y = e.clientY + 2;
-    if (x + w > window.innerWidth) x -= (w + 4);
-    if (y + h > window.innerHeight) y -= (h + 4);
-
-    App.dom.rowMenu.style.left = `${x}px`;
-    App.dom.rowMenu.style.top = `${y}px`;
-    App.dom.rowMenu.style.transformOrigin = "top left";
-    /** @type {any} */ (App.dom.rowMenu).showPopover();
+      App.dom.rowMenu.innerHTML = Templates.rowMenu(app);
+      const trigger = /** @type {HTMLElement} */ (e.target.closest('.ctx-trigger'));
+      const rect = trigger.getBoundingClientRect();
+      const menu = App.dom.rowMenu;
+      
+      // Hide first to measure
+      menu.style.visibility = "hidden";
+      menu.showPopover();
+      
+      const w = menu.offsetWidth || 255;
+      let x = rect.right - w;
+      let y = rect.bottom + 4;
+      
+      // Если уходит за правый край экрана — прижать к правому краю кнопки
+      if (x < 0) x = rect.right - w;
+      // Если уходит за нижний край — показать сверху
+      if (y + 290 > window.innerHeight) y = rect.top - 290 - 4;
+      
+      menu.style.left = `${x}px`;
+      menu.style.top = `${y}px`;
+      menu.style.transformOrigin = "top right";
+      menu.style.visibility = "visible";
   },
 
   showMobileFilterPopover() {
