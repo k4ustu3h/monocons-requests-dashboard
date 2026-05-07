@@ -371,6 +371,7 @@ def get_median_ttf() -> float | None:
 def update_creation_odds(apps: list) -> int:
     """Generate creation_odds.json with fulfillment probabilities.
 
+    Calibrated so the 1000th most popular request has 80% chance at max effort (wip=8).
     Only recalculates if P_top or median TTF has changed since the previous run.
     Returns the number of popularity levels in the creation odds table.
     """
@@ -383,16 +384,24 @@ def update_creation_odds(apps: list) -> int:
     except Exception:
         sets_stats = {}
 
-    max_pop = 0
+    # Collect all popularity values
+    all_pops = []
     for app in apps:
         pkg = app.get("componentName", "").split("/")[0]
         pop = sets_stats.get(pkg, app.get("requestCount", 0))
-        if pop > max_pop:
-            max_pop = pop
-
-    if max_pop == 0:
+        all_pops.append(pop)
+    
+    all_pops.sort(reverse=True)
+    if len(all_pops) >= 1000:
+        max_pop = all_pops[999]  # 1000th most popular
+    elif all_pops:
+        max_pop = all_pops[-1]  # least popular if < 1000
+    else:
         print("No popularity data for creation odds")
         return 0
+
+    # Calibration: base_1000 * 8 = 0.8 -> base_1000 = 0.1
+    base_calibration = 0.1
 
     # Get pace
     median_ttf = get_median_ttf()
@@ -427,7 +436,7 @@ def update_creation_odds(apps: list) -> int:
     pace_only = not full_rebuild and abs(scale - prev_scale) >= 0.01
 
     if not full_rebuild and not pace_only:
-        print(f"Top popularity ({max_pop}) and pace unchanged, skipping creation odds update")
+        print(f"Top-1000 popularity ({max_pop}) and pace unchanged, skipping creation odds update")
         return max_pop
 
     factors = sorted(label_factors.keys(), key=lambda k: label_factors[k])
@@ -436,16 +445,16 @@ def update_creation_odds(apps: list) -> int:
         table = prev_data
         for row in table:
             pop = row["popularity"]
-            base = (pop / max_pop) * creation_odds_cap
+            base = (pop / max_pop) * base_calibration
             for label in factors:
                 L = label_factors[label]
                 row[f"{L}_at_pace"] = round(min(creation_odds_cap, base * L * scale), 4)
         print(f"Updated _at_pace fields in creation_odds.json (scale={scale:.2f}, pace={median_ttf or 'N/A'})")
     else:
         table = []
-        for pop in range(max_pop, 0, -1):
+        for pop in range(max(all_pops), 0, -1):
             row = {"popularity": pop}
-            base = (pop / max_pop) * creation_odds_cap
+            base = (pop / max_pop) * base_calibration
             for label in factors:
                 L = label_factors[label]
                 odds = round(min(creation_odds_cap, base * L), 4)
@@ -453,7 +462,7 @@ def update_creation_odds(apps: list) -> int:
                 row[str(L)] = odds
                 row[f"{L}_at_pace"] = odds_paced
             table.append(row)
-        print(f"Updated creation_odds.json with {len(table)} levels (top={max_pop}, scale={scale:.2f}, pace={median_ttf or 'N/A'})")
+        print(f"Updated creation_odds.json with {len(table)} levels (top-1000 pop={max_pop}, scale={scale:.2f}, pace={median_ttf or 'N/A'})")
 
     with open(creation_odds_path, "w", encoding="utf-8") as f:
         json.dump(table, f, indent=2)
