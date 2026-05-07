@@ -2470,15 +2470,18 @@ const UI = {
     const planDomains = new Set(Object.keys(weights));
     const selected = [];
     const used = new Set();
+    const usedPackages = new Set();
     const quotas = { ...limits };
 
     for (const app of data) {
       const domain = app.componentName.split("/")[0].split(".")[0];
+      const pkg = app.componentName.split("/")[0];
 
       if (planDomains.has(domain)) {
-        if (quotas[domain] > 0) {
+        if (quotas[domain] > 0 && !usedPackages.has(pkg)) {
           selected.push(app);
           used.add(app.componentName);
+          usedPackages.add(pkg);
           quotas[domain]--;
         }
       }
@@ -2497,13 +2500,16 @@ const UI = {
         
         for (const app of data) {
             const domain = app.componentName.split("/")[0].split(".")[0];
+            const pkg = app.componentName.split("/")[0];
             
             if (used.has(app.componentName)) continue;
+            if (usedPackages.has(pkg)) continue;
             if (planDomains.has(domain)) continue;
             if (usedRemainingDomains.has(domain)) continue;
             
             selected.push(app);
             used.add(app.componentName);
+            usedPackages.add(pkg);
             usedRemainingDomains.add(domain);
             limits._remaining--;
             
@@ -2513,12 +2519,15 @@ const UI = {
         if (limits._remaining > 0) {
             for (const app of data) {
                 const domain = app.componentName.split("/")[0].split(".")[0];
+                const pkg = app.componentName.split("/")[0];
                 
                 if (used.has(app.componentName)) continue;
+                if (usedPackages.has(pkg)) continue;
                 if (planDomains.has(domain)) continue;
                 
                 selected.push(app);
                 used.add(app.componentName);
+                usedPackages.add(pkg);
                 limits._remaining--;
                 
                 if (limits._remaining === 0) break;
