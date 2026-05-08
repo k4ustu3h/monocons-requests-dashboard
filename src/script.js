@@ -1233,7 +1233,7 @@ const Data = {
           fetch("assets/fulfillment_history.json").then(r => r.json()).catch(() => []),
           fetch("assets/trending_baseline.json").then(r => r.json()).catch(() => null)
         ]).then(([history, baseline]) => {
-          if (history && history.length > 0) {
+          if (history && history.length >= 100) {
               const ttfs = history.map(h => (h.fulfilled - h.firstAppearance) / 86400);
               ttfs.sort((a,b) => a-b);
               const median = ttfs[Math.floor(ttfs.length / 2)];
@@ -2665,22 +2665,47 @@ const UI = {
       return;
     }
 
-    const last14 = history.slice(-14);
-    const totalNew = last14.reduce((sum, d) => sum + (d.added || 0), 0);
-    const totalRemoved = last14.reduce((sum, d) => sum + (d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0), 0);
+       const rawDays = history.slice(-30);
+    
+    // Fill gaps between days with zero entries
+    const filledDays = [];
+    if (rawDays.length > 0) {
+        filledDays.push(rawDays[0]);
+        for (let i = 1; i < rawDays.length; i++) {
+            const prevDate = new Date(filledDays[filledDays.length - 1].date + "T12:00:00");
+            const currDate = new Date(rawDays[i].date + "T12:00:00");
+            while (prevDate.getTime() + 86400000 < currDate.getTime()) {
+                prevDate.setTime(prevDate.getTime() + 86400000);
+                filledDays.push({
+                    date: prevDate.toISOString().slice(0, 10),
+                    total: filledDays[filledDays.length - 1].total,
+                    added: 0,
+                    fulfilled: 0,
+                    outdated: 0,
+                    manual_removed: 0
+                });
+            }
+            filledDays.push(rawDays[i]);
+        }
+    }
+    
+    const days = filledDays.length >= 2 ? filledDays : rawDays;
 
-    const maxNew = Math.max(...last14.map(d => d.added || 0));
-    const maxRemoved = Math.max(...last14.map(d => (d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0)));
+    const totalNew = days.reduce((sum, d) => sum + (d.added || 0), 0);
+    const totalRemoved = days.reduce((sum, d) => sum + (d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0), 0);
+
+    const maxNew = Math.max(...days.map(d => d.added || 0));
+    const maxRemoved = Math.max(...days.map(d => (d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0)));
     const maxVal = Math.max(maxNew, maxRemoved);
     if (maxVal === 0) return;
 
-    const newPoints = last14.map((d, i) => ({
-      x: (i / (last14.length - 1) * 100),
+    const newPoints = days.map((d, i) => ({
+      x: (i / (days.length - 1) * 100),
       y: (50 - (d.added || 0) / maxVal * 50)
     }));
 
-    const removedPoints = last14.map((d, i) => ({
-      x: (i / (last14.length - 1) * 100),
+    const removedPoints = days.map((d, i) => ({
+      x: (i / (days.length - 1) * 100),
       y: (50 + ((d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0)) / maxVal * 50)
     }));
 
@@ -2701,21 +2726,16 @@ const UI = {
     const pathRemoved = makePath(removedPoints);
 
     const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    const firstDate = new Date(last14[0].date + "T12:00:00");
-    const lastDate = new Date(last14[last14.length - 1].date + "T12:00:00");
+    const firstDate = new Date(days[0].date + "T12:00:00");
+    const lastDate = new Date(days[days.length - 1].date + "T12:00:00");
     const firstLabel = `${monthNames[firstDate.getMonth()]} ${firstDate.getDate()}`;
     const lastLabel = `${monthNames[lastDate.getMonth()]} ${lastDate.getDate()}`;
-    const mid1Date = new Date(last14[Math.floor(last14.length / 3)].date + "T12:00:00");
-    const mid1Label = `${monthNames[mid1Date.getMonth()]} ${mid1Date.getDate()}`;
-    const mid2Date = new Date(last14[Math.floor(last14.length * 2 / 3)].date + "T12:00:00");
-    const mid2Label = `${monthNames[mid2Date.getMonth()]} ${mid2Date.getDate()}`;
 
-    const dayLabels = last14.map((d, i) => {
-      if (i === 0) return `<span class="chart-label">${firstLabel}</span>`;
-      if (i === Math.floor(last14.length / 2)) return `<span class="chart-label" id="activityPace"></span>`;
-      if (i === last14.length - 1) return `<span class="chart-label">${lastLabel}</span>`;
-      return `<span class="chart-label"></span>`;
-    }).join("");
+    const dayLabels = `
+        <span class="chart-label">${firstLabel}</span>
+        <span class="chart-label" id="activityPace"></span>
+        <span class="chart-label">${lastLabel}</span>
+    `;
 
     container.innerHTML = Templates.activityCard(pathNew, pathRemoved, dayLabels);
 
@@ -2723,9 +2743,14 @@ const UI = {
     if (subEl) subEl.textContent = `${Utils.compactNumber(totalNew)} new • ${Utils.compactNumber(totalRemoved)} resolved`;
 
     const paceEl = document.getElementById("activityPace");
-    if (paceEl && App.state.medianTTF !== undefined) {
-        paceEl.textContent = `${App.state.medianTTF}d from ask to icon`;
-        paceEl.title = "Median time from request to icon over the last 365 days.";
+    if (paceEl) {
+        if (App.state.medianTTF !== undefined) {
+            paceEl.textContent = `${App.state.medianTTF}d from ask to icon`;
+            paceEl.title = "Median time from request to icon over the last 365 days.";
+        } else {
+            paceEl.textContent = "Pace TBD";
+            paceEl.title = "Gathering fulfillment data to estimate pace.";
+        }
     }
 
     const svg = container.querySelector(".activity-svg");
@@ -2743,9 +2768,9 @@ const UI = {
       const svgRect = svg.getBoundingClientRect();
       const cardRect = card.getBoundingClientRect();
       const x = (e.clientX - svgRect.left) / svgRect.width * 100;
-      const idx = Math.round(x / 100 * (last14.length - 1));
-      const clamped = Math.min(last14.length - 1, Math.max(0, idx));
-      const snapX = (clamped / (last14.length - 1) * 100);
+      const idx = Math.round(x / 100 * (days.length - 1));
+      const clamped = Math.min(days.length - 1, Math.max(0, idx));
+      const snapX = (clamped / (days.length - 1) * 100);
 
       vLine.setAttribute("x1", snapX);
       vLine.setAttribute("x2", snapX);
@@ -2753,10 +2778,10 @@ const UI = {
       vLine.setAttribute("y2", "100");
       vLine.style.display = "";
 
-      const added = last14[clamped].added || 0;
-      const removed = (last14[clamped].fulfilled || 0) + (last14[clamped].outdated || 0) + (last14[clamped].manual_removed || 0);
+      const added = days[clamped].added || 0;
+      const removed = (days[clamped].fulfilled || 0) + (days[clamped].outdated || 0) + (days[clamped].manual_removed || 0);
 
-      const dateParts = last14[clamped].date.split("-");
+      const dateParts = days[clamped].date.split("-");
       const formattedDate = `${monthNames[parseInt(dateParts[1]) - 1]} ${parseInt(dateParts[2])}`;
       tooltip.innerHTML = Templates.activityTooltip(formattedDate, added, removed);
       tooltip.style.display = "block";
