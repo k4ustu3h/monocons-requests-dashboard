@@ -616,7 +616,6 @@ def update_fulfillment_history(removed_components: set[str], old_apps: dict) -> 
             continue
         
         history.append({
-            "componentName": comp,
             "firstAppearance": first_appearance,
             "fulfilled": now
         })
