@@ -149,6 +149,7 @@ def prune_requests(components_to_remove: set[str]) -> tuple[int, int, set[str]]:
     if removed_apps:
         requests_data["apps"] = kept_apps
         requests_data["count"] = len(kept_apps)
+        requests_data["lastUpdate"] = time.strftime("%Y-%m-%d")  # ← добавить
         with open(REQUESTS_JSON, "w", encoding="utf-8") as f:
             json.dump(requests_data, f, indent=2)
 
@@ -207,6 +208,7 @@ def prune_outdated_requests() -> tuple[int, int]:
     if removed_apps:
         requests_data["apps"] = kept_apps
         requests_data["count"] = len(kept_apps)
+        requests_data["lastUpdate"] = time.strftime("%Y-%m-%d")  # ← добавить
         with open(REQUESTS_JSON, "w", encoding="utf-8") as f:
             json.dump(requests_data, f, indent=2)
 
