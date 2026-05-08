@@ -354,7 +354,7 @@ const Utils = {
     if (days > 30) {
       return new Date(dateStr).toLocaleDateString("en-US", { month: "short", day: "numeric" });
     }
-    if (days === 0) return "today";
+    if (days === 0) return "Today";
     if (days === 1) return "1d";
     return `${days}d`;
   },
@@ -2284,9 +2284,10 @@ const UI = {
     const countEl = App.dom.headerCount;
     let displayText = `${Utils.compactNumber(total)} requests`;
     if (App.state.lastUpdate) {
-        displayText += ` • ${Utils.timeAgo(App.state.lastUpdate)}`;
+        const timeAgo = Utils.timeAgo(App.state.lastUpdate);
+        displayText += ` • <a href="https://github.com/LawnchairLauncher/lawnicons-requests-dashboard" target="_blank">${timeAgo}</a>`;
     }
-    countEl.textContent = displayText;
+    countEl.innerHTML = displayText;
     countEl.title = `Last update`;
 
     // Checkbox

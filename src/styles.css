@@ -227,6 +227,20 @@ body:has(.context-menu:popover-open) {
   width: 200px;
 }
 
+.header-sub a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.header-sub a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--primary);
+}
+
 .header-links {
   margin-left: auto;
   display: flex;
