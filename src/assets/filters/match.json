@@ -3,6 +3,10 @@
   "description": "Requests with an existing package.",
   "match": [
     {
+      "id": "nu.gpu.nagram/org.telegram.messenger.BlueIcon",
+      "existing_drawable": "nagram"
+    },
+    {
       "id": "com.android.deskclock/com.android.BBKClock.Timer",
       "existing_drawable": "generic_clock"
     },
@@ -33,6 +37,10 @@
     {
       "id": "com.pashapuma.pix.material.you.iconpack/com.pashapuma.pix.material.you.iconpack.MiniFolderLauncherIcon",
       "existing_drawable": "pix_material_you_icons"
+    },
+    {
+      "id": "nu.gpu.nagram/org.telegram.messenger.NielloIcon",
+      "existing_drawable": "nagram"
     },
     {
       "id": "com.goldengekko.o2pm/uk.co.o2.ios.moments.dev.MainActivity",
@@ -71,12 +79,20 @@
       "existing_drawable": "ticktick"
     },
     {
+      "id": "nu.gpu.nagram/org.telegram.messenger.AquaIcon",
+      "existing_drawable": "nagram"
+    },
+    {
       "id": "org.mozilla.firefox/org.mozilla.firefox.AppMomo",
       "existing_drawable": "firefox"
     },
     {
       "id": "app.anikku/eu.kanade.tachiyomi.ui.main.MainActivityOnigiri1",
       "existing_drawable": "anikku"
+    },
+    {
+      "id": "nu.gpu.nagram/org.telegram.messenger.NoxIcon",
+      "existing_drawable": "nagram"
     },
     {
       "id": "me.yuki.folk/me.bmax.apatch.ui.MainActivityDefault",
@@ -189,6 +205,10 @@
     {
       "id": "com.dot.gallery/com.dot.gallery.Launcher_Gallery",
       "existing_drawable": "generic_gallery"
+    },
+    {
+      "id": "nu.gpu.nagram/org.telegram.messenger.DefaultIcon",
+      "existing_drawable": "nagram"
     },
     {
       "id": "com.eljur.client/com.eljur.client.feature.splash.view.SplashActivityAlias7",
