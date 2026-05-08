@@ -1354,34 +1354,27 @@ const Data = {
       }
     } else {
       /** @type {Record<string, (a: AppEntry, b: AppEntry) => number>} */
+      const getPop = (app) => {
+          const pkg = app.componentName.split('/')[0];
+          return App.state.setsStats[pkg] || app.requestCount;
+      };
+
       const sorters = {
-        "req-desc": (a, b) => {
-          const pkgA = a.componentName.split('/')[0];
-          const pkgB = b.componentName.split('/')[0];
-          const valA = App.state.setsStats[pkgA] || a.requestCount;
-          const valB = App.state.setsStats[pkgB] || b.requestCount;
-          return valB - valA;
-        },
-        "req-asc": (a, b) => {
-          const pkgA = a.componentName.split('/')[0];
-          const pkgB = b.componentName.split('/')[0];
-          const valA = App.state.setsStats[pkgA] || a.requestCount;
-          const valB = App.state.setsStats[pkgB] || b.requestCount;
-          return valA - valB;
-        },
-        "trending": (a, b) => {
-          const deltaA = App.state.trendingDeltas[a.componentName] || 0;
-          const deltaB = App.state.trendingDeltas[b.componentName] || 0;
-          return deltaB - deltaA;
-        },
-        "odds-desc": (a, b) => Utils.getCreationOdds(b) - Utils.getCreationOdds(a),
-        "odds-asc": (a, b) => Utils.getCreationOdds(a) - Utils.getCreationOdds(b),
-        "install-desc": (a, b) => Utils.parseInstalls(b.installs) - Utils.parseInstalls(a.installs),
-        "install-asc": (a, b) => Utils.parseInstalls(a.installs) - Utils.parseInstalls(b.installs),
-        "name-asc": (a, b) => a.label.localeCompare(b.label),
-        "name-desc": (a, b) => b.label.localeCompare(a.label),
-        "time-desc": (a, b) => b.firstAppearance - a.firstAppearance,
-        "time-asc": (a, b) => a.firstAppearance - b.firstAppearance
+          "req-desc": (a, b) => getPop(b) - getPop(a),
+          "req-asc": (a, b) => getPop(a) - getPop(b),
+          "trending": (a, b) => {
+              const deltaA = App.state.trendingDeltas[a.componentName] || 0;
+              const deltaB = App.state.trendingDeltas[b.componentName] || 0;
+              return deltaB - deltaA || getPop(b) - getPop(a);
+          },
+          "odds-desc": (a, b) => Utils.getCreationOdds(b) - Utils.getCreationOdds(a) || getPop(b) - getPop(a),
+          "odds-asc": (a, b) => Utils.getCreationOdds(a) - Utils.getCreationOdds(b) || getPop(b) - getPop(a),
+          "install-desc": (a, b) => Utils.parseInstalls(b.installs) - Utils.parseInstalls(a.installs) || getPop(b) - getPop(a),
+          "install-asc": (a, b) => Utils.parseInstalls(a.installs) - Utils.parseInstalls(b.installs) || getPop(b) - getPop(a),
+          "name-asc": (a, b) => a.label.localeCompare(b.label) || getPop(b) - getPop(a),
+          "name-desc": (a, b) => b.label.localeCompare(a.label) || getPop(b) - getPop(a),
+          "time-desc": (a, b) => b.firstAppearance - a.firstAppearance || getPop(b) - getPop(a),
+          "time-asc": (a, b) => a.firstAppearance - b.firstAppearance || getPop(b) - getPop(a)
       };
       if (sorters[s.sort]) data.sort(sorters[s.sort]);
     }
