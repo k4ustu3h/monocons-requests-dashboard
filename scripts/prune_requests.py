@@ -552,8 +552,6 @@ def update_activity_stats(
         yesterday_total = total
     
     new_added = max(0, total - yesterday_total)
-    total_removed = max(0, yesterday_total - total)
-    manual_removed = max(0, total_removed - fulfilled_removed - outdated_removed)
     
     entry = {
         "date": today,
@@ -561,11 +559,9 @@ def update_activity_stats(
         "added": new_added,
         "fulfilled": fulfilled_removed,
         "outdated": outdated_removed,
-        "manual_removed": manual_removed
     }
     
     if history and history[-1]["date"] == today:
-        # Merge with existing today entry instead of overwriting
         existing = history[-1]
         entry = {
             "date": today,
@@ -573,7 +569,6 @@ def update_activity_stats(
             "added": existing["added"] + new_added,
             "fulfilled": existing["fulfilled"] + fulfilled_removed,
             "outdated": existing["outdated"] + outdated_removed,
-            "manual_removed": existing["manual_removed"] + manual_removed
         }
         history[-1] = entry
     else:
@@ -582,7 +577,8 @@ def update_activity_stats(
     with open(activity_stats_path, "w", encoding="utf-8") as f:
         json.dump(history, f, indent=2)
     
-    print(f"Updated activity_stats.json with {len(history)} entries (today: +{new_added}, -{fulfilled_removed}f, -{outdated_removed}o, -{manual_removed}m)")
+    total_resolved = fulfilled_removed + outdated_removed
+    print(f"Updated activity_stats.json with {len(history)} entries (today: +{new_added}, -{total_resolved} resolved)")
     return len(history)
 
 def update_fulfillment_history(removed_components: set[str], old_apps: dict) -> int:

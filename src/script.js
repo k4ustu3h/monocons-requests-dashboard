@@ -2678,8 +2678,7 @@ const UI = {
                     total: filledDays[filledDays.length - 1].total,
                     added: 0,
                     fulfilled: 0,
-                    outdated: 0,
-                    manual_removed: 0
+                    outdated: 0
                 });
             }
             filledDays.push(rawDays[i]);
@@ -2689,10 +2688,10 @@ const UI = {
     const days = filledDays.length >= 2 ? filledDays : rawDays;
 
     const totalNew = days.reduce((sum, d) => sum + (d.added || 0), 0);
-    const totalRemoved = days.reduce((sum, d) => sum + (d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0), 0);
+    const totalRemoved = days.reduce((sum, d) => sum + (d.fulfilled || 0) + (d.outdated || 0), 0);
 
     const maxNew = Math.max(...days.map(d => d.added || 0));
-    const maxRemoved = Math.max(...days.map(d => (d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0)));
+    const maxRemoved = Math.max(...days.map(d => (d.fulfilled || 0) + (d.outdated || 0)));
     const maxVal = Math.max(maxNew, maxRemoved);
     if (maxVal === 0) return;
 
@@ -2703,7 +2702,7 @@ const UI = {
 
     const removedPoints = days.map((d, i) => ({
       x: (i / (days.length - 1) * 100),
-      y: (50 + ((d.fulfilled || 0) + (d.outdated || 0) + (d.manual_removed || 0)) / maxVal * 50)
+      y: (50 + ((d.fulfilled || 0) + (d.outdated || 0)) / maxVal * 50)
     }));
 
     const makePath = (points) => {
@@ -2782,7 +2781,7 @@ const UI = {
       vLine.style.display = "";
 
       const added = days[clamped].added || 0;
-      const removed = (days[clamped].fulfilled || 0) + (days[clamped].outdated || 0) + (days[clamped].manual_removed || 0);
+      const removed = (days[clamped].fulfilled || 0) + (days[clamped].outdated || 0);
 
       const dateParts = days[clamped].date.split("-");
       const formattedDate = `${monthNames[parseInt(dateParts[1]) - 1]} ${parseInt(dateParts[2])}`;
