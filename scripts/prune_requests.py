@@ -592,6 +592,33 @@ def update_fulfillment_history(removed_components: set[str], old_apps: dict) -> 
     now = time.time()
     cutoff = now - 365 * 86400  # 1 year ago
     
+    # Load sets_stats for popularity
+    sets_stats = {}
+    sets_path = REPO_ROOT / "src/assets/sets_stats.json"
+    try:
+        with open(sets_path) as f:
+            sets_stats = json.load(f)
+    except:
+        pass
+    
+    # Load filter data to compute label_factor
+    app_tags = {}
+    for filter_path in FILTERS_DIR.glob("*.json"):
+        tag = filter_path.stem
+        if tag not in label_factors:
+            continue
+        try:
+            with open(filter_path) as f:
+                data = json.load(f)
+            for item in data.get(tag, []):
+                comp_id = item if isinstance(item, str) else item.get("id", "")
+                if comp_id:
+                    if comp_id not in app_tags:
+                        app_tags[comp_id] = set()
+                    app_tags[comp_id].add(tag)
+        except:
+            pass
+    
     # Load existing history
     history = []
     if fulfillment_path.exists():
@@ -611,9 +638,20 @@ def update_fulfillment_history(removed_components: set[str], old_apps: dict) -> 
         if not first_appearance:
             continue
         
+        pkg = comp.split("/")[0]
+        pop = sets_stats.get(pkg, app.get("requestCount", 0))
+        
+        tags = app_tags.get(comp, set())
+        factor = 1
+        for tag in tags:
+            if tag in label_factors and label_factors[tag] > factor:
+                factor = label_factors[tag]
+        
         history.append({
             "firstAppearance": first_appearance,
-            "fulfilled": now
+            "fulfilled": now,
+            "popularity": pop,
+            "label_factor": factor
         })
         added += 1
     
@@ -624,7 +662,7 @@ def update_fulfillment_history(removed_components: set[str], old_apps: dict) -> 
         json.dump(history, f, indent=2)
     
     print(f"Updated fulfillment_history.json: +{added} entries, {len(history)} total (last 365 days)")
-    return len(history)    
+    return len(history)   
     
 def main() -> int:
     # --- Fulfilled request pruning (depends on upstream appfilter changes) ---
