@@ -547,6 +547,16 @@ button.input-icon.active {
   position: relative;
 }
 
+#activityCard .card-chart {
+  height: 43px;
+}
+
+@-moz-document url-prefix() {
+  #activityCard .card-chart {
+    height: 60px;
+  }
+}
+
 .card-chart {
   display: flex;
   flex-direction: column;
