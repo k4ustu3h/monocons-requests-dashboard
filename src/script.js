@@ -1233,14 +1233,12 @@ const Data = {
           fetch("assets/fulfillment_history.json").then(r => r.json()).catch(() => []),
           fetch("assets/trending_baseline.json").then(r => r.json()).catch(() => null)
         ]).then(([history, baseline]) => {
-          if (history && history.length > 0) {
+          if (history && history.length >= 3) {
               App.state._fulfillmentData = history;
-              if (history.length >= 100) {
-                  const ttfs = history.map(h => (h.fulfilled - h.firstAppearance) / 86400);
-                  ttfs.sort((a,b) => a-b);
-                  const median = ttfs[Math.floor(ttfs.length / 2)];
-                  App.state.medianTTF = Math.round(median);
-              }
+              const ttfs = history.map(h => (h.fulfilled - h.firstAppearance) / 86400);
+              ttfs.sort((a,b) => a-b);
+              const median = Math.round(ttfs[Math.floor(ttfs.length / 2)]);
+              App.state.medianTTF = median;
           }
           if (baseline && baseline.period_start && baseline.period_end) {
               const startSnapshot = baseline.period_start.snapshot || {};
@@ -2739,20 +2737,10 @@ const UI = {
     if (subEl) subEl.textContent = `${Utils.compactNumber(totalNew)} new • ${Utils.compactNumber(totalRemoved)} resolved`;
 
     const paceEl = document.getElementById("activityPace");
-    if (paceEl) {
-        if (App.state.medianTTF !== undefined) {
-            paceEl.textContent = `${App.state.medianTTF}d from ask to icon`;
-            paceEl.title = "Median time from request to icon over the last 365 days.";
-        } else {
-            paceEl.textContent = "Pace TBD";
-            const fulData = App.state._fulfillmentData;
-            if (fulData && fulData.length >= 3) {
-                const ttfs = fulData.map(h => (h.fulfilled - h.firstAppearance) / 86400);
-                ttfs.sort((a,b) => a-b);
-                const preview = Math.round(ttfs[Math.floor(ttfs.length / 2)]);
-                paceEl.title = `Current estimate: ${preview}d`;
-            }
-        }
+    if (paceEl && App.state.medianTTF !== undefined) {
+        paceEl.textContent = `${App.state.medianTTF}d from ask to icon`;
+        const count = App.state._fulfillmentData?.length || 0;
+        paceEl.title = `Median time from request to icon, based on ${count} fulfilled requests.`;
     }
 
     const svg = container.querySelector(".activity-svg");
