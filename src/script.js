@@ -661,6 +661,7 @@ const Templates = {
       </div>
       <div class="chart-tooltip"></div>`;
   },
+
   /**
    * @param {string} domain
    * @param {string} count
@@ -678,22 +679,23 @@ const Templates = {
         <div class="tooltip-value">${requests} requests</div>
         <div class="tooltip-value">${done} done (${pct}%)</div>${extra}`;
   },
+  
   /**
    * @param {string} pathNew
    * @param {string} pathRemoved
    * @param {string} dayLabels
    * @returns {string}
    */
-  activityCard(pathNew, pathRemoved, dayLabels) {
-    return `<div class="card-chart">
-      <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="activity-svg">
-        <line x1="0" y1="50" x2="100" y2="50" class="activity-zero" />
-        <path d="${pathNew}" class="activity-line activity-new" />
-        <path d="${pathRemoved}" class="activity-line activity-removed" />
-      </svg>
-      <div class="activity-days">${dayLabels}</div>
-    </div>
-    <div class="chart-tooltip"></div>`;
+  activityCard(pathResolved, addedLines, dayLabels) {
+      return `<div class="card-chart">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="activity-svg">
+          <line x1="0" y1="100" x2="100" y2="100" class="activity-zero" />
+          ${addedLines}
+          <path d="${pathResolved}" class="activity-line activity-removed" />
+        </svg>
+        <div class="activity-days">${dayLabels}</div>
+      </div>
+      <div class="chart-tooltip"></div>`;
   },
 
   /**
@@ -710,7 +712,7 @@ const Templates = {
    * @returns {string}
    */
   activityTooltip(formattedDate, added, removed) {
-    return `<div class="tooltip-label">${formattedDate}</div><div class="tooltip-value tooltip-value-primary">+${added} new</div><div class="tooltip-value tooltip-value-error">−${removed} resolved</div>`;
+      return `<div class="tooltip-label">${formattedDate}</div><div class="tooltip-value tooltip-value-primary">${added} new</div><div class="tooltip-value" style="color: var(--on-pine-container)">${removed} resolved</div>`;
   },
 
   /**
@@ -2660,7 +2662,7 @@ const UI = {
       return;
     }
 
-       const rawDays = history.slice(-30);
+    const rawDays = history.slice(-30);
     
     // Fill gaps between days with zero entries
     const filledDays = [];
@@ -2688,20 +2690,23 @@ const UI = {
     const totalNew = days.reduce((sum, d) => sum + (d.added || 0), 0);
     const totalRemoved = days.reduce((sum, d) => sum + (d.fulfilled || 0) + (d.outdated || 0), 0);
 
-    const maxNew = Math.max(...days.map(d => d.added || 0));
-    const maxRemoved = Math.max(...days.map(d => (d.fulfilled || 0) + (d.outdated || 0)));
-    const maxVal = Math.max(maxNew, maxRemoved);
-    if (maxVal === 0) return;
-
-    const newPoints = days.map((d, i) => ({
-      x: (i / (days.length - 1) * 100),
-      y: (50 - (d.added || 0) / maxVal * 50)
+    // Resolved as main line
+    const maxRemoved = Math.max(...days.map(d => (d.fulfilled || 0) + (d.outdated || 0)), 1);
+    const resolvedPoints = days.map((d, i) => ({
+        x: (i / (days.length - 1) * 100),
+        y: (100 - ((d.fulfilled || 0) + (d.outdated || 0)) / maxRemoved * 100)
     }));
 
-    const removedPoints = days.map((d, i) => ({
-      x: (i / (days.length - 1) * 100),
-      y: (50 + ((d.fulfilled || 0) + (d.outdated || 0)) / maxVal * 50)
-    }));
+    // Added as vertical bars
+    const maxAdded = Math.max(...days.map(d => d.added || 0), 1);
+    const addedLines = days.map((d, i) => {
+        const x = (i / (days.length - 1) * 100).toFixed(1);
+        const height = ((d.added || 0) / maxAdded * 100).toFixed(1);
+        if (parseFloat(height) === 0) return "";
+        return `<line x1="${x}" y1="100" x2="${x}" y2="${(100 - parseFloat(height)).toFixed(1)}" class="activity-added-bar" />`;
+    }).join("");
+
+    if (maxRemoved === 0 && maxAdded === 0) return;
 
     const makePath = (points) => {
       if (points.length < 2) return "";
@@ -2716,8 +2721,7 @@ const UI = {
       return d;
     };
 
-    const pathNew = makePath(newPoints);
-    const pathRemoved = makePath(removedPoints);
+    const pathResolved = makePath(resolvedPoints);
 
     const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     const firstDate = new Date(days[0].date + "T12:00:00");
@@ -2731,7 +2735,7 @@ const UI = {
         <span class="chart-label">${lastLabel}</span>
     `;
 
-    container.innerHTML = Templates.activityCard(pathNew, pathRemoved, dayLabels);
+    container.innerHTML = Templates.activityCard(pathResolved, addedLines, dayLabels);
 
     const subEl = document.getElementById("activitySub");
     if (subEl) subEl.textContent = `${Utils.compactNumber(totalNew)} new • ${Utils.compactNumber(totalRemoved)} resolved`;
@@ -2756,7 +2760,6 @@ const UI = {
 
     svg.addEventListener("mousemove", (e) => {
       const svgRect = svg.getBoundingClientRect();
-      const cardRect = card.getBoundingClientRect();
       const x = (e.clientX - svgRect.left) / svgRect.width * 100;
       const idx = Math.round(x / 100 * (days.length - 1));
       const clamped = Math.min(days.length - 1, Math.max(0, idx));
@@ -2786,8 +2789,7 @@ const UI = {
       vLine.style.display = "none";
       tooltip.style.display = "none";
     });
-
-  },
+},
 
   initRegexAutocomplete() {
     const input = App.dom.inputSearch;

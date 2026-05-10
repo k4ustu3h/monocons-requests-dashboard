@@ -409,6 +409,7 @@ button.input-icon.active {
   font-size: 11px;
   font-weight: 600;
   color: var(--on-surface);
+  margin-top: var(--space-2xs);
 }
 
 .domain-col {
@@ -722,18 +723,18 @@ button.input-icon.active {
   stroke-width: 1;
 }
 
-.activity-new {
-  stroke: var(--primary);
+.activity-added-bar {
+    stroke: var(--primary);
+    stroke-width: 0.5;
 }
 
 .activity-removed {
-  stroke: var(--error);
+  stroke: var(--on-pine-container);
 }
 
 .activity-days {
   display: flex;
   justify-content: space-between;
-  margin-top: var(--space-2xs);
 }
 
 .activity-vline {
