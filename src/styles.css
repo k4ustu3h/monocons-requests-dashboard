@@ -540,6 +540,12 @@ button.input-icon.active {
   flex-direction: column;
 }
 
+#activityCard .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #activityChart {
   display: flex;
   flex-direction: column;
