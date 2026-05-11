@@ -453,8 +453,10 @@ const Templates = {
     const trendingDelta = App.state.trendingDeltas[app.componentName];
     const reqValue = App.state.setsStats[pkg] || app.requestCount;
     const isSet = App.state.setsStats[pkg] !== undefined;
-    const displayReq = `<span title="Sum of requests for this package.">${reqValue.toLocaleString()}${isSet ? "S" : ""}</span>`;
-
+    const displayReq = isSet 
+        ? `<span title="Combined requests for this package.">${reqValue.toLocaleString()}S</span>`
+        : reqValue.toLocaleString();
+    
     return `
       <div class="list-row ${isSelected ? 'selected' : ''}"
         data-id="${id}"
