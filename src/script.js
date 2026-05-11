@@ -2782,6 +2782,11 @@ const UI = {
     vLine.style.display = "none";
     svg.appendChild(vLine);
 
+    svg.addEventListener("mouseleave", () => {
+        vLine.style.display = "none";
+        tooltip.style.display = "none";
+    });    
+
     svg.addEventListener("mousemove", (e) => {
         const svgRect = svg.getBoundingClientRect();
         const x = (e.clientX - svgRect.left) / svgRect.width * 100;
