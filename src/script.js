@@ -714,8 +714,12 @@ activityCard(pathResolved, addedDots, dayLabels) {
    * @param {number} removed
    * @returns {string}
    */
-  activityTooltip(formattedDate, added, removed) {
-      return `<div class="tooltip-label">${formattedDate}</div><div class="tooltip-value tooltip-value-primary">${added} new</div><div class="tooltip-value" style="color: var(--on-pine-container)">${removed} resolved</div>`;
+  activityTooltip(formattedDate, added, fulfilled, outdated) {
+      let html = `<div class="tooltip-label">${formattedDate}</div>`;
+      if (added > 0) html += `<div class="tooltip-value tooltip-value-primary">${added} new</div>`;
+      if (fulfilled > 0) html += `<div class="tooltip-value tooltip-value-resolved">${fulfilled} fulfilled</div>`;
+      if (outdated > 0) html += `<div class="tooltip-value tooltip-value-resolved">${outdated} expired</div>`;
+      return html;
   },
 
   /**
@@ -2779,35 +2783,36 @@ const UI = {
     svg.appendChild(vLine);
 
     svg.addEventListener("mousemove", (e) => {
-      const svgRect = svg.getBoundingClientRect();
-      const x = (e.clientX - svgRect.left) / svgRect.width * 100;
-      const idx = Math.round(x / 100 * (days.length - 1));
-      const clamped = Math.min(days.length - 1, Math.max(0, idx));
-      const snapX = (clamped / (days.length - 1) * 100);
+        const svgRect = svg.getBoundingClientRect();
+        const x = (e.clientX - svgRect.left) / svgRect.width * 100;
+        const idx = Math.round(x / 100 * (days.length - 1));
+        const clamped = Math.min(days.length - 1, Math.max(0, idx));
+        const snapX = (clamped / (days.length - 1) * 100);
 
-      vLine.setAttribute("x1", snapX);
-      vLine.setAttribute("x2", snapX);
-      vLine.setAttribute("y1", "0");
-      vLine.setAttribute("y2", "100");
-      vLine.style.display = "";
+        vLine.setAttribute("x1", snapX);
+        vLine.setAttribute("x2", snapX);
+        vLine.setAttribute("y1", "0");
+        vLine.setAttribute("y2", "100");
+        vLine.style.display = "";
 
-      const added = days[clamped].added || 0;
-      const removed = (days[clamped].fulfilled || 0) + (days[clamped].outdated || 0);
+        const added = days[clamped].added || 0;
+        const fulfilled = days[clamped].fulfilled || 0;
+        const outdated = days[clamped].outdated || 0;
 
-      const dateParts = days[clamped].date.split("-");
-      const formattedDate = `${monthNames[parseInt(dateParts[1]) - 1]} ${parseInt(dateParts[2])}`;
-      tooltip.innerHTML = Templates.activityTooltip(formattedDate, added, removed);
-      tooltip.style.display = "block";
+        if (added === 0 && fulfilled === 0 && outdated === 0) {
+            tooltip.style.display = "none";
+            return;
+        }
 
-      const left = snapX / 100 * svgRect.width + 12;
-      tooltip.style.left = left + "px";
-      tooltip.style.top = "0px";
-      tooltip.style.transform = "translateY(-50%)";
-    });
+        const dateParts = days[clamped].date.split("-");
+        const formattedDate = `${monthNames[parseInt(dateParts[1]) - 1]} ${parseInt(dateParts[2])}`;
+        tooltip.innerHTML = Templates.activityTooltip(formattedDate, added, fulfilled, outdated);
+        tooltip.style.display = "block";
 
-    svg.addEventListener("mouseleave", () => {
-      vLine.style.display = "none";
-      tooltip.style.display = "none";
+        const left = snapX / 100 * svgRect.width + 12;
+        tooltip.style.left = left + "px";
+        tooltip.style.top = "0px";
+        tooltip.style.transform = "translateY(-50%)";
     });
 },
 

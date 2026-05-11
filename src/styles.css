@@ -663,8 +663,8 @@ button.input-icon.active {
   color: var(--primary);
 }
 
-.tooltip-value-error {
-  color: var(--error);
+.tooltip-value-resolved {
+  color: var(--on-pine-container);
 }
 
 .card-chart-empty {
