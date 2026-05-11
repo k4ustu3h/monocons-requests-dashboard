@@ -686,17 +686,20 @@ const Templates = {
    * @param {string} dayLabels
    * @returns {string}
    */
-  activityCard(pathResolved, addedLines, dayLabels) {
-      return `<div class="card-chart">
-        <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="activity-svg">
-          <line x1="0" y1="100" x2="100" y2="100" class="activity-zero" />
-          ${addedLines}
-          <path d="${pathResolved}" class="activity-line activity-removed" />
-        </svg>
-        <div class="activity-days">${dayLabels}</div>
-      </div>
-      <div class="chart-tooltip"></div>`;
-  },
+activityCard(pathResolved, addedDots, dayLabels) {
+    return `<div class="card-chart activity-card-chart">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="activity-svg">
+        <line x1="0" y1="100" x2="100" y2="100" class="activity-zero" />
+        <path d="${pathResolved}" class="activity-line activity-removed" />
+      </svg>
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="activity-dots-svg">
+        ${addedDots}
+      </svg>
+      <div class="activity-days">${dayLabels}</div>
+    </div>
+    <div class="chart-tooltip"></div>`;
+},
+
 
   /**
    * @returns {string}
@@ -2697,14 +2700,7 @@ const UI = {
         y: (100 - ((d.fulfilled || 0) + (d.outdated || 0)) / maxRemoved * 100)
     }));
 
-    // Added as vertical bars
     const maxAdded = Math.max(...days.map(d => d.added || 0), 1);
-    const addedLines = days.map((d, i) => {
-        const x = (i / (days.length - 1) * 100).toFixed(1);
-        const height = ((d.added || 0) / maxAdded * 100).toFixed(1);
-        if (parseFloat(height) === 0) return "";
-        return `<line x1="${x}" y1="100" x2="${x}" y2="${(100 - parseFloat(height)).toFixed(1)}" class="activity-added-bar" />`;
-    }).join("");
 
     if (maxRemoved === 0 && maxAdded === 0) return;
 
@@ -2735,7 +2731,24 @@ const UI = {
         <span class="chart-label">${lastLabel}</span>
     `;
 
-    container.innerHTML = Templates.activityCard(pathResolved, addedLines, dayLabels);
+    container.innerHTML = Templates.activityCard(pathResolved, "", dayLabels);
+
+    const dotsSvg = container.querySelector(".activity-dots-svg");
+    if (dotsSvg) {
+        const chartEl = container.querySelector(".card-chart");
+        const w = chartEl.clientWidth;
+        const h = chartEl.clientHeight;
+        dotsSvg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+        
+        const addedDots = days.map((d, i) => {
+            const x = (i / (days.length - 1) * w).toFixed(1);
+            const added = d.added || 0;
+            if (added === 0) return "";
+            return `<circle cx="${x}" cy="8" r="3" class="activity-added-dot" />`;
+        }).join("");
+        
+        dotsSvg.innerHTML = addedDots;
+    }
 
     const subEl = document.getElementById("activitySub");
     if (subEl) subEl.textContent = `${Utils.compactNumber(totalNew)} new • ${Utils.compactNumber(totalRemoved)} resolved`;
@@ -2848,9 +2861,7 @@ const UI = {
       let x = rect.right - w;
       let y = rect.bottom + 4;
       
-      // Если уходит за правый край экрана — прижать к правому краю кнопки
       if (x < 0) x = rect.right - w;
-      // Если уходит за нижний край — показать сверху
       if (y + 290 > window.innerHeight) y = rect.top - 290 - 4;
       
       menu.style.left = `${x}px`;
