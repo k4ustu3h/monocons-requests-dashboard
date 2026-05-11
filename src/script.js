@@ -451,6 +451,9 @@ const Templates = {
     const rawOdds = Utils.getCreationOdds(app) * 100;
     const displayOdds = rawOdds < 1 ? rawOdds.toFixed(2) + "%" : rawOdds.toFixed(0) + "%";
     const trendingDelta = App.state.trendingDeltas[app.componentName];
+    const reqValue = App.state.setsStats[pkg] || app.requestCount;
+    const isSet = App.state.setsStats[pkg] !== undefined;
+    const displayReq = `<span title="Sum of requests for this package.">${reqValue.toLocaleString()}${isSet ? "S" : ""}</span>`;
 
     return `
       <div class="list-row ${isSelected ? 'selected' : ''}"
@@ -474,8 +477,7 @@ const Templates = {
           </div>
           </div>
         </div>
-        <div class="col req">${(App.state.setsStats[pkg] || app.requestCount).toLocaleString()}${trendingDelta ? ` <span class="trend-indicator" title="Growth during last request period.">↑${trendingDelta}</span>` : ""}</div>
-        <div class="col creation-odds" title="Chance of this request being fulfilled within a year if you wait.">${displayOdds}</div>
+        <div class="col req">${displayReq}${trendingDelta ? ` <span class="trend-indicator" title="Growth during last request period.">↑${trendingDelta}</span>` : ""}</div>        <div class="col creation-odds" title="Chance of this request being fulfilled within a year if you wait.">${displayOdds}</div>
         <div class="col install" title="${app.installs || '0'} installs in Play Store">${displayInstalls}</div>
         <div class="col first date-col">
           <div>${firstStr}</div>
