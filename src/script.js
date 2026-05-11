@@ -2739,12 +2739,19 @@ const UI = {
         const w = chartEl.clientWidth;
         const h = chartEl.clientHeight;
         dotsSvg.setAttribute("viewBox", `0 0 ${w} ${h}`);
-        
+
+        const getSize = (added) => {
+            if (added >= 1000) return 7;
+            if (added >= 251) return 5;
+            return 3;
+        };
+
         const addedDots = days.map((d, i) => {
             const x = (i / (days.length - 1) * w).toFixed(1);
             const added = d.added || 0;
             if (added === 0) return "";
-            return `<circle cx="${x}" cy="8" r="3" class="activity-added-dot" />`;
+            const r = getSize(added);
+            return `<circle cx="${x}" cy="${r + 2}" r="${r}" class="activity-added-dot" />`;
         }).join("");
         
         dotsSvg.innerHTML = addedDots;
