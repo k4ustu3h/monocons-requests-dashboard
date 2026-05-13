@@ -674,8 +674,9 @@ const Templates = {
   domainStatsTooltip(domain, done, requests, total, mode, extraValue, population) {
       const pct = total ? (done / total * 100).toFixed(1) : 0;
       let extra = "";
-      if (mode === "local" && extraValue) {
-          extra = `<div class="tooltip-value">avg ${Utils.compactNumber(extraValue)} installs</div>`;
+      if (mode === "local" && extraValue && population > 0) {
+          const pctLocals = (extraValue / 1_000_000 / population * 100).toFixed(1);
+          extra = `<div class="tooltip-value">Affects ${pctLocals}% locals</div>`;
       } else if (mode === "coverage") {
           extra = `<div class="tooltip-value">${((requests / total) * 100).toFixed(1)}% uncovered</div>`;
       }
@@ -2600,8 +2601,10 @@ const UI = {
         .sort((a, b) => {
             const instA = App.state._domainAvgInstalls[a[0]] || 0;
             const instB = App.state._domainAvgInstalls[b[0]] || 0;
-            const scoreA = (a[3] - a[1]) * instA;
-            const scoreB = (b[3] - b[1]) * instB;
+            const popA = population[a[0]] || 1;
+            const popB = population[b[0]] || 1;
+            const scoreA = instA / popA;
+            const scoreB = instB / popB;
             return scoreB - scoreA;
         });
     } else if (mode === "coverage") {
@@ -2931,7 +2934,8 @@ const UI = {
           const s = App.state.domainStats[d] || {};
           const unf = s.requests || 0;
           const avg = Math.round(domainInstalls[d] / domainInstCounts[d]);
-          localImpact[d] = unf * avg;
+          const pop = POP[d] || 1;
+          localImpact[d] = unf * avg / pop;
       }
       
       const liValues = Object.values(localImpact).sort((a,b) => a-b);
