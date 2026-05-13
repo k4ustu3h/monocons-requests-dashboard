@@ -413,12 +413,14 @@ def update_creation_odds(apps: list) -> int:
     prev_scale = 1.0
     has_at_pace = False
     prev_data = None
+    prev_table_top = 0
     if creation_odds_path.exists():
         try:
             with open(creation_odds_path, "r", encoding="utf-8") as f:
                 prev_data = json.load(f)
             if prev_data and isinstance(prev_data, list) and len(prev_data) > 0:
                 prev_top = prev_data[0].get("popularity", 0)
+                prev_table_top = prev_top
                 has_at_pace = any(
                     isinstance(k, str) and k.endswith("_at_pace")
                     for k in prev_data[0]
@@ -434,7 +436,8 @@ def update_creation_odds(apps: list) -> int:
         except Exception:
             pass
 
-    full_rebuild = max_pop != prev_top or not has_at_pace
+    current_top = max(all_pops) if all_pops else 0
+    full_rebuild = max_pop != prev_top or current_top != prev_table_top or not has_at_pace
     pace_only = not full_rebuild and abs(scale - prev_scale) >= 0.01
 
     if not full_rebuild and not pace_only:
