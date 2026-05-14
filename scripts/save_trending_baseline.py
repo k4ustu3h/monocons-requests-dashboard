@@ -81,7 +81,15 @@ def main():
         print(f"Saved period_start with {len(snapshot)} entries")
         save_baseline(baseline)
     elif not enabled and baseline.get("period_start") is not None and baseline.get("period_end") is None:
-        # Requests just closed — save period_end
+        # Check that at least 1 day has passed since requests closed
+        fetch_after = settings.get("fetch_emails_after")
+        if fetch_after:
+            fetch_date = date.fromisoformat(fetch_after)
+            if date.today() <= fetch_date:
+                print("Waiting for email parsing to complete. Skipping period_end.")
+                return
+        
+        # Emails collected — save period_end
         start_snapshot = baseline["period_start"]["snapshot"]
         filtered_snapshot = {k: v for k, v in snapshot.items() if k in start_snapshot}
         entry["snapshot"] = filtered_snapshot
