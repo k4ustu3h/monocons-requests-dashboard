@@ -764,12 +764,6 @@ activityCard(pathResolved, addedDots, dayLabels) {
       <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-copy-filter-entries">
         <span>as filter entry</span>
       </div>
-      <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-copy-pr-new">
-        <span>PR body (new icons)</span>
-      </div>
-      <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-copy-pr-link">
-        <span>PR body (links)</span>
-      </div>
     `;
   },
 
@@ -1008,28 +1002,6 @@ const Actions = {
     Actions.copyToClipboard(Actions.generateAppFilterXml());
   },
 
-  generatePRDescription(mode) {
-    const selected = App.data.filter(a => App.state.selected.has(a.componentName));
-    let md = `## Icons\n`;
-    if (mode === "new") {
-      md += "### Added\n";
-      selected.forEach(app => {
-        md += `${app.label} (\`${app.componentName.split('/')[0]}\`)\n`;
-      });
-    } else {
-      md += "### Linked\n";
-      selected.forEach(app => {
-        const drawable = Utils.sanitizeDrawableName(app.label);
-        md += `${app.label} (\`${app.componentName.split('/')[0]}\` → \`${drawable}.svg\`)\n`;
-      });
-    }
-    return md;
-  },
-
-  copyPRDescription(mode) {
-    Actions.copyToClipboard(Actions.generatePRDescription(mode));
-  },
-
   async downloadBundle() {
     if (typeof fflate === 'undefined') {
       Toast.show("fflate library missing", "error");
@@ -1060,9 +1032,6 @@ const Actions = {
 
       let xmlAppFilter = "<resources>\n";
       let txtCommands = "";
-
-      const prLines = new Set();
-      const processedPackages = new Set();
 
       /**
        * Tracks drawable names globally to prevent file overwrites (e.g. app.svg, app_2.svg)
@@ -1114,17 +1083,6 @@ const Actions = {
         const svgPath = mode === "new" ? `"${drawable}.svg"` : `"${drawable}"`;
         txtCommands += `python3 ./icontool.py ${cmdType} ${svgPath} ${cmp} "${cmdLabel}"\n`;
 
-        // PR Description
-        if (!processedPackages.has(pkg)) {
-          processedPackages.add(pkg);
-
-          if (mode === "new") {
-            prLines.add(`${app.label} (\`${pkg}\`)`);
-          } else {
-            prLines.add(`${app.label} (\`${pkg}\` → \`${drawable}.svg\`)`);
-          }
-        }
-
         // Queue Icon Fetch (only in "new" mode)
         if (mode === "new" && !zipData._icons[`${drawable}.png`]) {
           const url = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
@@ -1160,12 +1118,7 @@ const Actions = {
         zipData["icontool_commands.txt"] = fflate.strToU8(txtCommands);
       }
 
-      let mdPR = "## Icons\n\n";
-      mdPR += (mode === "new" ? "### Added\n" : "### Linked\n");
-      mdPR += Array.from(prLines).join("\n") + "\n";
-      zipData["pr_description.md"] = fflate.strToU8(mdPR);
-
-      // 6. Zip & Download
+      // 4. Zip & Download
       App.dom.sbDownloadBtn.textContent = "Zipping...";
       const content = fflate.zipSync(zipData, { level: 6 });
 
@@ -1843,18 +1796,6 @@ const UI = {
             .map(id => `"${id}",`)
             .join("\n");
           Actions.copyToClipboard(entries);
-          Actions.closeSbMenu();
-          return;
-        }        
-
-        if (action === "sb-copy-pr-new") {
-          Actions.copyPRDescription("new");
-          Actions.closeSbMenu();
-          return;
-        }
-
-        if (action === "sb-copy-pr-link") {
-          Actions.copyPRDescription("link");
           Actions.closeSbMenu();
           return;
         }
