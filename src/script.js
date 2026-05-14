@@ -2353,7 +2353,6 @@ const UI = {
       if (!domainsInput || !targetInput || !applyBtn) return;
       const domainsVal = domainsInput.value.trim();
       if (!domainsVal) {
-        targetInput.value = "";
         targetInput.disabled = true;
         targetInput.placeholder = "All domains need weights";
         applyBtn.disabled = false; // allow clearing via Apply
@@ -2362,7 +2361,6 @@ const UI = {
       const items = domainsVal.split(",").map(item => item.trim()).filter(item => item);
       const allHaveWeights = items.length > 0 && items.every(item => item.split(/\s+/).length > 1);
       if (!allHaveWeights) {
-        targetInput.value = "";
         targetInput.disabled = true;
         targetInput.placeholder = "All domains need weights";
         applyBtn.disabled = true;
