@@ -26,11 +26,9 @@ def should_fetch_today():
         if not fetch_after:
             return False
         today = date.today()
-        yesterday = today - timedelta(days=1)
-        # Today OR yesterday (safety margin)
-        if fetch_after == today.isoformat() or fetch_after == yesterday.isoformat():
-            return True
-        return False
+        fetch_date = date.fromisoformat(fetch_after)
+        # Fetch on the day after fetch_emails_after
+        return today == fetch_date + timedelta(days=1)
     except Exception as e:
         print(f"Failed to check settings: {e}")
         return False
