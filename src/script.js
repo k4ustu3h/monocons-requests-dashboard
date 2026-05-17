@@ -2543,7 +2543,7 @@ const UI = {
 
     if (mode === "local") {
     entries = entries
-        .filter(([, , requests]) => requests > 15)
+        .filter(([, , requests]) => requests > 10)
         .sort((a, b) => {
             const instA = App.state._domainAvgInstalls[a[0]] || 0;
             const instB = App.state._domainAvgInstalls[b[0]] || 0;
