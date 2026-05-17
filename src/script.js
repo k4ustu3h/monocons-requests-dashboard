@@ -1737,11 +1737,18 @@ const UI = {
       if (actionEl) {
         const action = actionEl.dataset.action;
 
-        if (action === "open-link") {
+      if (action === "open-link") {
           const url = actionEl.dataset.url;
-          if (url) window.open(url, "_blank", "noopener,noreferrer");
+          if (url) {
+              const a = document.createElement('a');
+              a.href = url;
+              a.target = '_blank';
+              a.rel = 'noopener noreferrer';
+              a.click();
+              UI.closeContextMenu();
+          }
           return;
-        }
+      }
 
         if (action === "copy-appfilter-entry") {
           const id = actionEl.dataset.id;
