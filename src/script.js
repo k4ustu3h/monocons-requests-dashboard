@@ -475,7 +475,7 @@ const Templates = {
                   ${tagHtml}
                   <span class="${appNameClass}">${name}</span>
               </div>
-              <span class="pkg-name" title="${id}">${id}</span>
+              <span class="pkg-name" title="${id}">ID: ${id}</span>
           </div>
           </div>
         </div>
