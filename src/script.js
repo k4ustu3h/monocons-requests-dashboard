@@ -572,6 +572,9 @@ const Templates = {
       const svgUrl = `https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/svgs/${icon.drawable}.svg`;
       const githubUrl = `https://github.com/LawnchairLauncher/lawnicons/blob/develop/svgs/${icon.drawable}.svg`;
       return `
+          <div class="ctx-item" tabindex="0" role="menuitem" data-action="library-download-svg" data-url="${svgUrl}" data-drawable="${icon.drawable}">
+              ${ICONS.download} <span>Download SVG</span>
+          </div>
           <div class="ctx-item" tabindex="0" role="menuitem" data-action="library-copy-svg" data-drawable="${icon.drawable}">
               ${ICONS.copy} <span>Copy SVG</span>
           </div>
@@ -1806,6 +1809,25 @@ const UI = {
       const actionEl = /** @type {HTMLElement | null} */ (target.closest('[data-action]'));
       if (actionEl) {
         const action = actionEl.dataset.action;
+
+      if (action === "library-download-svg") {
+          const url = actionEl.dataset.url;
+          const drawable = actionEl.dataset.drawable;
+          if (url && drawable) {
+              fetch(url)
+                  .then(r => r.blob())
+                  .then(blob => {
+                      const a = document.createElement('a');
+                      a.href = URL.createObjectURL(blob);
+                      a.download = `${drawable}.svg`;
+                      a.click();
+                      URL.revokeObjectURL(a.href);
+                  })
+                  .catch(() => Toast.show("Failed to download SVG", "error"));
+          }
+          UI.closeContextMenu();
+          return;
+      }    
 
       if (action === "library-copy-svg") {
           const drawable = actionEl.dataset.drawable;
