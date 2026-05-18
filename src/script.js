@@ -3180,6 +3180,8 @@ const UI = {
       
       Utils.setHidden(cardsRow, true);
       Utils.setHidden(container, false);
+
+      container.querySelector(".library-title").textContent = "Found in Lawnicons";
       
       const grid = container.querySelector(".library-grid");
       grid.innerHTML = matches.slice(0, 20).map(icon => 

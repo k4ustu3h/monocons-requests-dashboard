@@ -1772,6 +1772,19 @@ input[type="checkbox"]:indeterminate::after {
   margin-bottom: var(--space-lg);
 }
 
+.icon-library-results .library-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.icon-library-results .library-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--on-surface);
+}
+
 .icon-library-results .library-grid {
   display: flex;
   gap: var(--space-sm);
