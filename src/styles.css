@@ -1092,20 +1092,22 @@ select:hover,
   display: flex;
   align-items: center;
   gap: var(--space-sm);
-  }
+  min-width: 0;
+  flex-wrap: nowrap;
+}
   
-  .name-content {
-    display: flex;
-    align-items: center;
-    gap: var(--space-md);
-    min-width: 0;
-  }
+.name-content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  min-width: 0;
+}  
   
-  .name-details {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
-    min-width: 0;
+.name-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  min-width: 0;
 }
 
 .app-name {
@@ -1115,6 +1117,8 @@ select:hover,
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  min-width: 0;
+  flex-shrink: 1;
 }
 .pkg-name {
   color: var(--on-surface-variant);
@@ -1133,6 +1137,8 @@ select:hover,
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .status-wip {
