@@ -9,21 +9,13 @@ python3 scripts/supporter_request_parser.py zips src/assets/appfilter.xml src/ex
 import argparse
 import json
 import re
-import io
 import os
 import zipfile
 import lxml.etree as ET
 from datetime import date
 from pathlib import Path
-from collections import Counter
 
 COMPONENT_PATTERN = re.compile('ComponentInfo{(?P<ComponentInfo>.+)}')
-
-CONFIG = {
-    "request_limit": 1000,
-    "months_limit": 24,
-    "min_requests": 4,
-}
 
 # -------------------------------------------------------
 # CLI
@@ -208,21 +200,6 @@ def load_existing_components(appfilter_path: Path) -> set[str]:
         if match: components.add(match.group(1))
     return components
 
-def filter_old_requests(apps: dict, months_limit: int, min_requests: int) -> dict:
-    current_date = date.today()
-    def diff_month(d1, d2): return (d1.year - d2.year) * 12 + d1.month - d2.month
-
-    filtered = {}
-    for k, v in apps.items():
-        ts = v.get("lastRequested", 0)
-        if ts <= 0: continue
-        
-        req_date = date.fromtimestamp(ts)
-        if v.get("requestCount", 0) >= min_requests or diff_month(current_date, req_date) < months_limit:
-            filtered[k] = v
-            
-    return filtered
-
 def delete_unused_pngs(out_dir: Path, keep: set[str]):
     if not out_dir.exists(): return
     for f in os.listdir(out_dir):
@@ -274,7 +251,6 @@ def run_pipeline(folder_path: Path, appfilter_path: Path, png_out_path: Path,
     existing_supported = parse_existing_supported_json(supported_path)
     
     apps, zip_components = parse_zips(zip_files, apps, png_out_path)
-    apps = filter_old_requests(apps, CONFIG["months_limit"], CONFIG["min_requests"])
     
     if appfilter_path.exists():
         existing = load_existing_components(appfilter_path)
