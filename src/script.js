@@ -100,7 +100,8 @@ const ICONS = {
   fDroid: `<svg><use href="#ic-fdroid"/></svg>`,
   izzyOnDroid: `<svg><use href="#ic-izzyondroid"/></svg>`,
   galaxyStore: `<svg><use href="#ic-galaxystore"/></svg>`,
-  regex: `<svg><use href="#ic-regex"/></svg>`
+  regex: `<svg><use href="#ic-regex"/></svg>`,
+  downloadImage: `<svg><use href="#ic-download-image"/></svg>`,
 };
 
 const DEFAULTS = {
@@ -486,8 +487,8 @@ const Templates = {
           <div>Last: ${lastStr}</div>
         </div>
         <div class="actions-col">
-          <a class="action-btn" href="${iconUrl}" download title="Download PNG"
-            tabindex="0" role="button" aria-label="Download" >${ICONS.download}</a>
+          <a class="action-btn" data-action="download-png" data-url="${iconUrl}" data-drawable="${app.drawable}" title="Download PNG"
+              tabindex="0" role="button" aria-label="Download">${ICONS.downloadImage}</a>
           <a class="action-btn" href="${CONFIG.urls.playStore}${pkg}" target="_blank" title="Play Store"
             tabindex="0" role="button" aria-label="Play Store" >${ICONS.play}</a>
           <div class="action-btn ctx-trigger" title="More actions"
@@ -783,7 +784,7 @@ activityCard(pathResolved, addedDots, dayLabels) {
   selectionBarMenu() {
     return `
       <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-download-metadata">
-        ${ICONS.download} <span>Download metadata</span>
+        ${ICONS.download}<span>Download metadata</span>
       </div>
       <div class="ctx-divider"></div>
       <div class="ctx-section">Copy</div>
@@ -1809,6 +1810,37 @@ const UI = {
       const actionEl = /** @type {HTMLElement | null} */ (target.closest('[data-action]'));
       if (actionEl) {
         const action = actionEl.dataset.action;
+
+      if (action === "download-png") {
+          const url = actionEl.dataset.url;
+          const drawable = actionEl.dataset.drawable;
+          if (url && drawable) {
+              fetch(url)
+                  .then(r => r.blob())
+                  .then(async blob => {
+                      try {
+                          const handle = await window.showSaveFilePicker({
+                              suggestedName: `${drawable}.png`,
+                              types: [{
+                                  description: 'PNG Image',
+                                  accept: { 'image/png': ['.png'] }
+                              }]
+                          });
+                          const writable = await handle.createWritable();
+                          await writable.write(blob);
+                          await writable.close();
+                      } catch {
+                          const a = document.createElement('a');
+                          a.href = URL.createObjectURL(blob);
+                          a.download = `${drawable}.png`;
+                          a.click();
+                          URL.revokeObjectURL(a.href);
+                      }
+                  })
+                  .catch(() => Toast.show("Failed to download PNG", "error"));
+          }
+          return;
+      }
 
       if (action === "library-download-svg") {
           const url = actionEl.dataset.url;
