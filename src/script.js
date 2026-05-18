@@ -1695,6 +1695,7 @@ const UI = {
       if (!App.state.geoBatchActive) {
         App.dom.regexBtn.style.display = "";
       }
+      this.renderIconLibrary();
       this.render();
     });
 
