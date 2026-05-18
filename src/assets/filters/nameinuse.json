@@ -203,6 +203,10 @@
       "existing_drawable": "notepad"
     },
     {
+      "id": "energy.octopus.octopusenergy.android/energy.octopus.octopusenergy.android.OctopusMainActivity",
+      "existing_drawable": "octopus"
+    },
+    {
       "id": "com.Doviz/com.Doviz.presentation.initial.InitialActivityV2",
       "existing_drawable": "doviz"
     },
@@ -269,10 +273,6 @@
     {
       "id": "com.internet.tvbrowser/com.internet.tvbrowser.MainActivity",
       "existing_drawable": "generic_browser"
-    },
-    {
-      "id": "energy.octopus.octopusenergy.android/energy.octopus.octopusenergy.android.OctopusMainActivity",
-      "existing_drawable": "octopus"
     },
     {
       "id": "com.m4coding.ide/com.m4coding.ide.component.start.activity.StartActivity",
@@ -905,10 +905,6 @@
     {
       "id": "com.akinon.samsung/com.akinon.samsung.MainActivity",
       "existing_drawable": "samsung_shop"
-    },
-    {
-      "id": "fr.avianey.compass/fr.avianey.compass.CompassActivity",
-      "existing_drawable": "generic_compass"
     },
     {
       "id": "io.island.Island/com.google.android.apps.chrome.Main",
