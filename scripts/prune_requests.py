@@ -532,6 +532,7 @@ def update_activity_stats(
     total: int,
     fulfilled_removed: int,
     outdated_removed: int,
+    new_added: int,
 ) -> int:
     """Append daily stats point to stats_history.json for activity graph."""
     from datetime import date
@@ -546,15 +547,6 @@ def update_activity_stats(
                 history = json.load(f)
         except Exception:
             history = []
-    
-    if len(history) >= 2 and history[-1]["date"] == today:
-        yesterday_total = history[-2]["total"]
-    elif history:
-        yesterday_total = history[-1]["total"]
-    else:
-        yesterday_total = total
-    
-    new_added = max(0, total - yesterday_total)
     
     entry = {
         "date": today,
@@ -668,6 +660,10 @@ def update_fulfillment_history(removed_components: set[str], old_apps: dict) -> 
     return len(history)   
     
 def main() -> int:
+
+    with open(REQUESTS_JSON, "r") as f:
+        pre_total = len(json.load(f).get("apps", []))
+    
     # --- Fulfilled request pruning (depends on upstream appfilter changes) ---
     appfilter_changed = False
     fulfilled_removed = 0
@@ -741,11 +737,14 @@ def main() -> int:
     with open(REQUESTS_JSON, "r") as f:
         requests_data = json.load(f)
 
+    new_added = len(requests_data.get("apps", [])) - pre_total + fulfilled_removed + outdated_removed        
+
     # --- Update activity stats ---
     history_count = update_activity_stats(
         total=len(requests_data.get("apps", [])),
         fulfilled_removed=fulfilled_removed,
         outdated_removed=outdated_removed,
+        new_added=new_added,
     )
     print(f"Activity stats updated: {history_count} entries")    
 
@@ -765,7 +764,6 @@ def main() -> int:
     set_workflow_output("outdated_removed", str(outdated_removed))
 
     return 0
-
 
 if __name__ == "__main__":
     sys.exit(main())
