@@ -1258,7 +1258,7 @@ const Data = {
         }).catch(() => {}).finally(() => {
           this.loadUrlState();
 
-          fetch("https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/app/assets/appfilter.xml")
+          fetch("assets/appfilter.xml")
             .then(r => r.text())
             .then(xmlText => {
               const parser = new DOMParser();
