@@ -1767,6 +1767,48 @@ input[type="checkbox"]:indeterminate::after {
   }
 }
 
+/* Icon Library Results */
+.icon-library-results {
+  margin-bottom: var(--space-lg);
+}
+
+.icon-library-results .library-grid {
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: var(--space-xs);
+}
+
+.icon-library-results .library-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.library-icon-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  padding: var(--space-xs);
+  border-radius: var(--shape-small);
+  background: var(--surface-container);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.library-icon-card:hover {
+  background: var(--surface-container-high);
+}
+
+.library-icon-card img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: brightness(0) invert(0.9);
+}
+
 /* ==========================================
    Regex Autocomplete
    ========================================== */

@@ -100,7 +100,6 @@ const ICONS = {
   fDroid: `<svg><use href="#ic-fdroid"/></svg>`,
   izzyOnDroid: `<svg><use href="#ic-izzyondroid"/></svg>`,
   galaxyStore: `<svg><use href="#ic-galaxystore"/></svg>`,
-  terminal: `<svg><use href="#ic-terminal"/></svg>`,
   regex: `<svg><use href="#ic-regex"/></svg>`
 };
 
@@ -135,6 +134,7 @@ const App = {
     idMap: new Map(),
     renderedCount: 0,
     currentData: [],
+    existingIcons: [],
 
     actionMode: "new",
     geoBatchConfig: null,
@@ -547,6 +547,38 @@ const Templates = {
         </div>
       </div>
     `;
+  },
+
+  /**
+   * @param {{ drawable: string, name: string, component: string }} icon
+   * @returns {string}
+   */
+  libraryIconCard(icon) {
+      const svgUrl = `https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/svgs/${icon.drawable}.svg`;
+      return `
+          <div class="library-icon-card"
+              data-drawable="${icon.drawable}"
+              data-component="${icon.component}"
+              title="${icon.name}\n${icon.drawable}.svg">
+              <img src="${svgUrl}" 
+                  alt="${icon.name}" 
+                  loading="lazy"
+                  onerror="this.parentElement.remove()" />
+          </div>
+      `;
+  },
+
+  libraryIconMenu(icon) {
+      const svgUrl = `https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/svgs/${icon.drawable}.svg`;
+      const githubUrl = `https://github.com/LawnchairLauncher/lawnicons/blob/develop/svgs/${icon.drawable}.svg`;
+      return `
+          <div class="ctx-item" tabindex="0" role="menuitem" data-action="library-copy-svg" data-drawable="${icon.drawable}">
+              ${ICONS.copy} <span>Copy SVG</span>
+          </div>
+          <div class="ctx-item" tabindex="0" role="menuitem" data-action="open-link" data-url="${githubUrl}">
+              <svg><use href="#ic-github"/></svg> <span>Open on GitHub</span>
+          </div>
+      `;
   },
 
   /**
@@ -1221,6 +1253,42 @@ const Data = {
           }
         }).catch(() => {}).finally(() => {
           this.loadUrlState();
+
+          fetch("https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/app/assets/appfilter.xml")
+            .then(r => r.text())
+            .then(xmlText => {
+              const parser = new DOMParser();
+              const xmlDoc = parser.parseFromString(xmlText, "text/xml");
+              const items = xmlDoc.querySelectorAll("item");
+              const icons = [];
+              
+              items.forEach(item => {
+                const component = item.getAttribute("component") || "";
+                const drawable = item.getAttribute("drawable") || "";
+                const name = item.getAttribute("name") || "";
+                
+                if (drawable && component) {
+                  const match = component.match(/ComponentInfo\{([^}]+)\}/);
+                  const componentName = match ? match[1] : component;
+                  
+                  icons.push({
+                    drawable: drawable,
+                    name: name,
+                    component: componentName
+                  });
+                }
+              });
+              
+              App.state.existingIcons = icons;
+        })
+        .catch(() => {
+            App.state.existingIcons = [];
+        })
+        .finally(() => {
+            if (App.state.search && App.state.existingIcons.length > 0) {
+                UI.renderIconLibrary();
+            }
+        });
           UI.init();
           UI.buildQuickPickQueue();
           UI.renderQuickPick();
@@ -1612,10 +1680,11 @@ const UI = {
     }, true);
 
     App.dom.inputSearch.addEventListener("input", e => {
-      const val = (/** @type {HTMLInputElement} */ (e.target)).value;
-      App.state.search = val;
-      Utils.setHidden(App.dom.clearBtn, val.length === 0);
-      this.render();
+        const val = e.target.value;
+        App.state.search = val;
+        Utils.setHidden(App.dom.clearBtn, val.length === 0);
+        this.renderIconLibrary();
+        this.render();
     });
 
     App.dom.clearBtn.addEventListener("click", () => {
@@ -1736,6 +1805,23 @@ const UI = {
       const actionEl = /** @type {HTMLElement | null} */ (target.closest('[data-action]'));
       if (actionEl) {
         const action = actionEl.dataset.action;
+
+      if (action === "library-copy-svg") {
+          const drawable = actionEl.dataset.drawable;
+          if (drawable) {
+              const svgUrl = `https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/svgs/${drawable}.svg`;
+              fetch(svgUrl)
+                  .then(r => r.text())
+                  .then(svgText => {
+                      Actions.copyToClipboard(svgText);
+                  })
+                  .catch(() => {
+                      Toast.show("Failed to copy SVG", "error");
+                  });
+          }
+          UI.closeContextMenu();
+          return;
+      }
 
       if (action === "open-link") {
           const url = actionEl.dataset.url;
@@ -1888,6 +1974,15 @@ const UI = {
           return;
         }
       }
+
+      const libraryCard = target.closest('.library-icon-card');
+      if (libraryCard) {
+          e.stopPropagation();
+          const drawable = libraryCard.dataset.drawable;
+          const icon = App.state.existingIcons.find(i => i.drawable === drawable);
+          if (icon) this.showLibraryIconMenu(e, icon);
+          return;
+      }      
 
       const trigger = target.closest('.ctx-trigger');
       if (trigger) {
@@ -2079,7 +2174,6 @@ const UI = {
     App.dom.container.className = s.view === "grid" ? "grid-container" : "";
 
     this.syncFilterTagState();
-
     Data.process();
     Data.syncUrlState();
     this.updateHeader();
@@ -2984,8 +3078,84 @@ const UI = {
       card.style.backgroundRepeat = 'no-repeat';
       card.title = app.label;
   },
-  
-    /**
+
+  renderIconLibrary() {
+      const s = App.state;
+      const container = document.getElementById("iconLibraryResults");
+      const cardsRow = document.querySelector(".cards-row");
+      
+      if (!container || !cardsRow) return;
+      
+      const query = s.search.trim();
+      
+      if (!query || !s.existingIcons || s.existingIcons.length === 0) {
+          Utils.setHidden(container, true);
+          Utils.setHidden(cardsRow, false);
+          return;
+      }
+      
+      const term = query.toLowerCase();
+      const seen = new Set();
+      const matches = s.existingIcons.filter(icon => {
+          if (seen.has(icon.drawable)) return false;
+          const match = icon.name.toLowerCase().includes(term) ||
+                        icon.drawable.toLowerCase().includes(term) ||
+                        icon.component.toLowerCase().includes(term);
+          if (match) seen.add(icon.drawable);
+          return match;
+      });
+      
+      if (matches.length === 0) {
+          Utils.setHidden(container, true);
+          Utils.setHidden(cardsRow, false);
+          return;
+      }
+      
+      matches.sort((a, b) => {
+          const aDraw = a.drawable.toLowerCase().includes(term);
+          const bDraw = b.drawable.toLowerCase().includes(term);
+          if (aDraw !== bDraw) return aDraw ? -1 : 1;
+          
+          const aName = a.name.toLowerCase().includes(term);
+          const bName = b.name.toLowerCase().includes(term);
+          if (aName !== bName) return aName ? -1 : 1;
+          
+          return a.drawable.localeCompare(b.drawable);
+      });
+      
+      Utils.setHidden(cardsRow, true);
+      Utils.setHidden(container, false);
+      
+      const grid = container.querySelector(".library-grid");
+      grid.innerHTML = matches.slice(0, 20).map(icon => 
+          Templates.libraryIconCard(icon)
+      ).join("");
+  },
+
+  showLibraryIconMenu(e, icon) {
+      const menu = App.dom.rowMenu;
+      menu.innerHTML = Templates.libraryIconMenu(icon);
+      const target = e.target.closest('.library-icon-card');
+      const rect = target.getBoundingClientRect();
+      
+      menu.style.visibility = "hidden";
+      menu.showPopover();
+      
+      const w = menu.offsetWidth || 220;
+      let x = rect.left + rect.width / 2 - w / 2;
+      let y = rect.bottom + 4;
+      
+      if (x < 8) x = 8;
+      if (x + w > window.innerWidth - 8) x = window.innerWidth - w - 8;
+      if (y + 150 > window.innerHeight) y = rect.top - 150 - 4;
+      
+      menu.style.left = `${x}px`;
+      menu.style.top = `${y}px`;
+      menu.style.transformOrigin = "top center";
+      menu.style.visibility = "visible";
+  },
+    
+  /**
    * @param {HTMLElement} menuEl
    */
   focusMenu(menuEl) {
