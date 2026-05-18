@@ -2191,18 +2191,24 @@ const UI = {
     c.innerHTML = "";
 
     CONFIG.data.filters.forEach(id => {
-      const meta = App.state.filterMetadata.get(id);
-      if (!meta) return;
+        let count = 0;
+        App.state.appTags.forEach(tags => {
+            if (tags.has(id)) count++;
+        });
+        if (count === 0) return;
 
-      const btn = document.createElement("button");
-      btn.className = `tag tag-${id} chip`;
-      btn.textContent = meta.label;
-      btn.title = meta.description || `Filter by ${meta.label}`;
-      btn.dataset.action = "filter-tag-toggle";
-      btn.dataset.filterId = id;
-      btn.setAttribute("aria-pressed", String(App.state.activeFilters.has(id)));
-      if (App.state.activeFilters.has(id)) btn.classList.add("active");
-      c.appendChild(btn);
+        const meta = App.state.filterMetadata.get(id);
+        if (!meta) return;
+
+        const btn = document.createElement("button");
+        btn.className = `tag tag-${id} chip`;
+        btn.textContent = meta.label;
+        btn.title = meta.description || `Filter by ${meta.label}`;
+        btn.dataset.action = "filter-tag-toggle";
+        btn.dataset.filterId = id;
+        btn.setAttribute("aria-pressed", String(App.state.activeFilters.has(id)));
+        if (App.state.activeFilters.has(id)) btn.classList.add("active");
+        c.appendChild(btn);
     });
   },
 
@@ -2845,9 +2851,15 @@ const UI = {
       menu.innerHTML = "";
       const s = App.state.activeFilters;
       menu.innerHTML = CONFIG.data.filters.map(id => {
-        const meta = App.state.filterMetadata.get(id);
-        if (!meta) return "";
-        return Templates.mobileFilterItem(id, meta.label, s.has(id));
+          let count = 0;
+          App.state.appTags.forEach(tags => {
+              if (tags.has(id)) count++;
+          });
+          if (count === 0) return "";
+
+          const meta = App.state.filterMetadata.get(id);
+          if (!meta) return "";
+          return Templates.mobileFilterItem(id, meta.label, s.has(id));
       }).join("");
 
       const rect = App.dom.mobileFilterBtn.getBoundingClientRect();
