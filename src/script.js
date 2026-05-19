@@ -576,11 +576,16 @@ const Templates = {
           <div class="ctx-item" tabindex="0" role="menuitem" data-action="library-download-svg" data-url="${svgUrl}" data-drawable="${icon.drawable}">
               ${ICONS.download} <span>Download SVG</span>
           </div>
-          <div class="ctx-item" tabindex="0" role="menuitem" data-action="library-copy-svg" data-drawable="${icon.drawable}">
-              ${ICONS.copy} <span>Copy SVG</span>
-          </div>
           <div class="ctx-item" tabindex="0" role="menuitem" data-action="open-link" data-url="${githubUrl}">
               <svg><use href="#ic-github"/></svg> <span>Open on GitHub</span>
+          </div>
+          <div class="ctx-divider"></div>
+          <div class="ctx-section">Copy</div>
+          <div class="ctx-item" tabindex="0" role="menuitem" data-action="library-copy-svg" data-drawable="${icon.drawable}">
+              <span>as SVG</span>
+          </div>
+          <div class="ctx-item" tabindex="0" role="menuitem" data-action="library-copy-name" data-drawable="${icon.drawable}">
+              <span>icon name</span>
           </div>
       `;
   },
@@ -1877,6 +1882,15 @@ const UI = {
           UI.closeContextMenu();
           return;
       }
+
+      if (action === "library-copy-name") {
+          const drawable = actionEl.dataset.drawable;
+          if (drawable) {
+              Actions.copyToClipboard(drawable);
+          }
+          UI.closeContextMenu();
+          return;
+      }      
 
       if (action === "open-link") {
           const url = actionEl.dataset.url;
