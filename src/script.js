@@ -2883,9 +2883,10 @@ const UI = {
         dotsSvg.innerHTML = addedDots;
     }
 
+    const totalFulfilled = days.reduce((sum, d) => sum + (d.fulfilled || 0), 0);
     const subEl = document.getElementById("activitySub");
-    if (subEl) subEl.textContent = `${Utils.compactNumber(totalNew)} new • ${Utils.compactNumber(totalRemoved)} resolved`;
-
+    if (subEl) subEl.textContent = `${Utils.compactNumber(totalNew)} new • ${Utils.compactNumber(totalFulfilled)} done`;  
+    
     const paceEl = document.getElementById("activityPace");
     if (paceEl && App.state.medianTTF !== undefined) {
         paceEl.textContent = `${App.state.medianTTF}d from ask to icon`;
