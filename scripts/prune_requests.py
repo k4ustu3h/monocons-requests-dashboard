@@ -232,11 +232,11 @@ def prune_outdated_requests() -> tuple[int, int]:
     return len(removed_apps), deleted_png_count
 
 def generate_stale_list() -> int:
-    """Generate stale.json containing requests that are at the front of the
-    deletion queue.
-
-    A stale request is one whose calculated outdated date falls within a 30-day
-    window starting from the earliest outdated date among all requests.
+    """Generate stale.json containing requests approaching their outdated date.
+    
+    Stale date is calculated from firstAppearance with 2^n+2 threshold
+    to preview the upcoming policy change. Requests within a 30-day window
+    from now are included. Actual removal is still based on lastRequested.
     """
     try:
         with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
@@ -254,48 +254,37 @@ def generate_stale_list() -> int:
     seconds_per_year = 365.25 * 86400
     THIRTY_DAYS_IN_SECONDS = 30 * 24 * 60 * 60
 
-    # --- Calculate outdated date for each request ---
     request_outdated_dates = []
     
     for app in apps:
-        last_requested = app.get("lastRequested", 0)
+        first_appearance = app.get("firstAppearance", 0)
         request_count = app.get("requestCount", 0)
         comp_name = app.get("componentName", "")
 
-        if not last_requested or not comp_name:
+        if not first_appearance or not comp_name:
             continue
 
-        # Find when this request will become outdated
         n = 1
-        while 2 ** n < request_count:
+        while 2 ** n + 2 < request_count:
             n += 1
         
-        outdated_at = last_requested + (n * seconds_per_year)
+        outdated_at = first_appearance + (n * seconds_per_year)
         request_outdated_dates.append((comp_name, outdated_at))
 
     if not request_outdated_dates:
         print("No requests with valid outdated dates found")
         return 0
 
-    # --- Find the earliest outdated date ---
-    earliest_outdated = min(date for _, date in request_outdated_dates)
-    window_end = earliest_outdated + THIRTY_DAYS_IN_SECONDS
+    window_end = now + THIRTY_DAYS_IN_SECONDS
 
-    start_date = time.strftime("%Y-%m-%d", time.localtime(earliest_outdated))
-    end_date = time.strftime("%Y-%m-%d", time.localtime(window_end))
-    print(f"Stale window: {start_date} to {end_date}")
-
-    # --- Collect requests whose outdated date falls within the window ---
     stale_components = [
         comp_name 
         for comp_name, outdated_at in request_outdated_dates
-        if earliest_outdated <= outdated_at <= window_end
+        if outdated_at <= window_end
     ]
 
-    # --- Sort for consistency ---
     stale_components.sort()
 
-    # --- Write to stale.json ---
     stale_file_path = FILTERS_DIR / "stale.json"
     output_data = {
         "label": "Stale",
@@ -306,7 +295,7 @@ def generate_stale_list() -> int:
     with open(stale_file_path, "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=2)
 
-    print(f"Generated {stale_file_path} with {len(stale_components)} entries")
+    print(f"Generated {stale_file_path} with {len(stale_components)} entries (based on firstAppearance, 2^n+2)")
     return len(stale_components)
 
 def update_sets_stats(apps: list) -> int:
