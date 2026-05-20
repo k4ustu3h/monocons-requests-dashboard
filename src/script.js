@@ -760,11 +760,11 @@ activityCard(pathResolved, addedDots, dayLabels) {
    * @param {number} removed
    * @returns {string}
    */
-  activityTooltip(formattedDate, added, fulfilled, outdated) {
+  activityTooltip(formattedDate, added, fulfilled, expired) {
       let html = `<div class="tooltip-label">${formattedDate}</div>`;
       if (added > 0) html += `<div class="tooltip-value tooltip-value-primary">${added} new</div>`;
       if (fulfilled > 0) html += `<div class="tooltip-value tooltip-value-resolved">${fulfilled} fulfilled</div>`;
-      if (outdated > 0) html += `<div class="tooltip-value tooltip-value-resolved">${outdated} expired</div>`;
+      if (expired > 0) html += `<div class="tooltip-value tooltip-value-resolved">${expired} expired</div>`;
       return html;
   },
 
@@ -2807,7 +2807,7 @@ const UI = {
                     total: filledDays[filledDays.length - 1].total,
                     added: 0,
                     fulfilled: 0,
-                    outdated: 0
+                    expired: 0
                 });
             }
             filledDays.push(rawDays[i]);
@@ -2817,13 +2817,13 @@ const UI = {
     const days = filledDays.length >= 2 ? filledDays : rawDays;
 
     const totalNew = days.reduce((sum, d) => sum + (d.added || 0), 0);
-    const totalRemoved = days.reduce((sum, d) => sum + (d.fulfilled || 0) + (d.outdated || 0), 0);
+    const totalRemoved = days.reduce((sum, d) => sum + (d.fulfilled || 0) + (d.expired || 0), 0);
 
     // Resolved as main line
-    const maxRemoved = Math.max(...days.map(d => (d.fulfilled || 0) + (d.outdated || 0)), 1);
+    const maxRemoved = Math.max(...days.map(d => (d.fulfilled || 0) + (d.expired || 0)), 1);
     const resolvedPoints = days.map((d, i) => ({
         x: (i / (days.length - 1) * 100),
-        y: (100 - ((d.fulfilled || 0) + (d.outdated || 0)) / maxRemoved * 100)
+        y: (100 - ((d.fulfilled || 0) + (d.expired || 0)) / maxRemoved * 100)
     }));
 
     const maxAdded = Math.max(...days.map(d => d.added || 0), 1);
@@ -2924,16 +2924,16 @@ const UI = {
 
         const added = days[clamped].added || 0;
         const fulfilled = days[clamped].fulfilled || 0;
-        const outdated = days[clamped].outdated || 0;
+        const expired = days[clamped].expired || 0;
 
-        if (added === 0 && fulfilled === 0 && outdated === 0) {
+        if (added === 0 && fulfilled === 0 && expired === 0) {
             tooltip.style.display = "none";
             return;
         }
 
         const dateParts = days[clamped].date.split("-");
         const formattedDate = `${monthNames[parseInt(dateParts[1]) - 1]} ${parseInt(dateParts[2])}`;
-        tooltip.innerHTML = Templates.activityTooltip(formattedDate, added, fulfilled, outdated);
+        tooltip.innerHTML = Templates.activityTooltip(formattedDate, added, fulfilled, expired);
         tooltip.style.display = "block";
 
         const left = snapX / 100 * svgRect.width + 12;

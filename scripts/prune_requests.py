@@ -168,11 +168,11 @@ def prune_requests(components_to_remove: set[str]) -> tuple[int, int, set[str]]:
     return len(removed_apps), deleted_png_count, removed_components
 
 
-def is_outdated(app: dict, now: float) -> bool:
-    """Check if an app request is outdated.
+def is_expired(app: dict, now: float) -> bool:
+    """Check if an app request is expired.
 
-    A request is outdated when it was last made >= 1 year ago AND has been
-    requested at most 2^(full years since last update) times.
+    A request is expired when it was last made >= 1 year ago AND has been
+    requested at most 2^(full years since last update) + 1 times.
     """
     last_requested = app.get("lastRequested", 0)
     request_count = app.get("requestCount", 0)
@@ -186,11 +186,11 @@ def is_outdated(app: dict, now: float) -> bool:
     if full_years < 1:
         return False
 
-    return request_count <= 2**full_years
+    return request_count <= 2**full_years + 1
 
 
-def prune_outdated_requests() -> tuple[int, int]:
-    """Remove outdated requests from requests.json and delete their PNGs."""
+def prune_expired_requests() -> tuple[int, int]:
+    """Remove expired requests from requests.json and delete their PNGs."""
     with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
         requests_data = json.load(f)
 
@@ -200,7 +200,7 @@ def prune_outdated_requests() -> tuple[int, int]:
     removed_apps = []
 
     for app in apps:
-        if is_outdated(app, now):
+        if is_expired(app, now):
             removed_apps.append(app)
         else:
             kept_apps.append(app)
@@ -208,7 +208,7 @@ def prune_outdated_requests() -> tuple[int, int]:
     if removed_apps:
         requests_data["apps"] = kept_apps
         requests_data["count"] = len(kept_apps)
-        requests_data["lastUpdate"] = time.strftime("%Y-%m-%d")  # ← добавить
+        requests_data["lastUpdate"] = time.strftime("%Y-%m-%d")
         with open(REQUESTS_JSON, "w", encoding="utf-8") as f:
             json.dump(requests_data, f, indent=2)
 
@@ -227,16 +227,17 @@ def prune_outdated_requests() -> tuple[int, int]:
         count = app.get("requestCount", 0)
         last = app.get("lastRequested", 0)
         age = (now - last) / (365.25 * 86400) if last else float("inf")
-        print(f"  Outdated: {label} (requests={count}, age={age:.1f}y)")
+        print(f"  Expired: {label} (requests={count}, age={age:.1f}y)")
 
     return len(removed_apps), deleted_png_count
 
+
 def generate_stale_list() -> int:
-    """Generate stale.json containing requests approaching their outdated date.
-    
-    Stale date is calculated from firstAppearance with 2^n+2 threshold
-    to preview the upcoming policy change. Requests within a 30-day window
-    from now are included. Actual removal is still based on lastRequested.
+    """Generate stale.json containing requests that are at the front of the
+    deletion queue.
+
+    A stale request is one whose calculated expiration date falls within a 30-day
+    window starting from the earliest expiration date among all requests.
     """
     try:
         with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
@@ -254,33 +255,38 @@ def generate_stale_list() -> int:
     seconds_per_year = 365.25 * 86400
     THIRTY_DAYS_IN_SECONDS = 30 * 24 * 60 * 60
 
-    request_outdated_dates = []
+    request_expiration_dates = []
     
     for app in apps:
-        first_appearance = app.get("firstAppearance", 0)
+        last_requested = app.get("lastRequested", 0)
         request_count = app.get("requestCount", 0)
         comp_name = app.get("componentName", "")
 
-        if not first_appearance or not comp_name:
+        if not last_requested or not comp_name:
             continue
 
         n = 1
-        while 2 ** n + 2 < request_count:
+        while 2 ** n + 1 < request_count:
             n += 1
         
-        outdated_at = first_appearance + (n * seconds_per_year)
-        request_outdated_dates.append((comp_name, outdated_at))
+        expiration_at = last_requested + (n * seconds_per_year)
+        request_expiration_dates.append((comp_name, expiration_at))
 
-    if not request_outdated_dates:
-        print("No requests with valid outdated dates found")
+    if not request_expiration_dates:
+        print("No requests with valid expiration dates found")
         return 0
 
-    window_end = now + THIRTY_DAYS_IN_SECONDS
+    earliest_expiration = min(date for _, date in request_expiration_dates)
+    window_end = earliest_expiration + THIRTY_DAYS_IN_SECONDS
+
+    start_date = time.strftime("%Y-%m-%d", time.localtime(earliest_expiration))
+    end_date = time.strftime("%Y-%m-%d", time.localtime(window_end))
+    print(f"Stale window: {start_date} to {end_date}")
 
     stale_components = [
         comp_name 
-        for comp_name, outdated_at in request_outdated_dates
-        if outdated_at <= window_end
+        for comp_name, expiration_at in request_expiration_dates
+        if earliest_expiration <= expiration_at <= window_end
     ]
 
     stale_components.sort()
@@ -295,7 +301,7 @@ def generate_stale_list() -> int:
     with open(stale_file_path, "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=2)
 
-    print(f"Generated {stale_file_path} with {len(stale_components)} entries (based on firstAppearance, 2^n+2)")
+    print(f"Generated {stale_file_path} with {len(stale_components)} entries")
     return len(stale_components)
 
 def update_sets_stats(apps: list) -> int:
@@ -520,7 +526,7 @@ def update_domain_stats() -> int:
 def update_activity_stats(
     total: int,
     fulfilled_removed: int,
-    outdated_removed: int,
+    expired_removed: int,
     new_added: int,
 ) -> int:
     """Append daily stats point to stats_history.json for activity graph."""
@@ -542,7 +548,7 @@ def update_activity_stats(
         "total": total,
         "added": new_added,
         "fulfilled": fulfilled_removed,
-        "outdated": outdated_removed,
+        "expired": expired_removed,
     }
     
     if history and history[-1]["date"] == today:
@@ -552,7 +558,7 @@ def update_activity_stats(
             "total": total,
             "added": existing["added"] + new_added,
             "fulfilled": existing["fulfilled"] + fulfilled_removed,
-            "outdated": existing["outdated"] + outdated_removed,
+            "expired": existing["expired"] + expired_removed,
         }
         history[-1] = entry
     else:
@@ -565,7 +571,7 @@ def update_activity_stats(
     with open(activity_stats_path, "w", encoding="utf-8") as f:
         json.dump(history, f, indent=2)
     
-    total_resolved = fulfilled_removed + outdated_removed
+    total_resolved = fulfilled_removed + expired_removed
     print(f"Updated activity_stats.json with {len(history)} entries (today: +{new_added}, -{total_resolved} resolved)")
     return len(history)
 
@@ -696,10 +702,10 @@ def main() -> int:
     else:
         print("No upstream appfilter.xml changes detected.")
 
-    # --- Outdated request pruning (runs unconditionally) ---
-    outdated_removed, outdated_deleted = prune_outdated_requests()
-    print(f"Removed outdated requests: {outdated_removed}")
-    print(f"Deleted extracted PNGs (outdated): {outdated_deleted}")
+    # --- Expired request pruning (runs unconditionally) ---
+    expired_removed, expired_deleted = prune_expired_requests()
+    print(f"Removed expired requests: {expired_removed}")
+    print(f"Deleted extracted PNGs (expired): {expired_deleted}")
 
     # Load requests for later use
     with open(REQUESTS_JSON, "r") as f:
@@ -730,13 +736,13 @@ def main() -> int:
     with open(REQUESTS_JSON, "r") as f:
         requests_data = json.load(f)
 
-    new_added = len(requests_data.get("apps", [])) - pre_total + fulfilled_removed + outdated_removed        
+    new_added = len(requests_data.get("apps", [])) - pre_total + fulfilled_removed + expired_removed        
 
     # --- Update activity stats ---
     history_count = update_activity_stats(
         total=len(requests_data.get("apps", [])),
         fulfilled_removed=fulfilled_removed,
-        outdated_removed=outdated_removed,
+        expired_removed=expired_removed,
         new_added=new_added,
     )
     print(f"Activity stats updated: {history_count} entries")    
@@ -750,11 +756,11 @@ def main() -> int:
         print("All apps have Play Store metadata, skipping Play Store sync.")
 
     # --- Workflow outputs ---
-    has_changes = appfilter_changed or outdated_removed > 0
+    has_changes = appfilter_changed or expired_removed > 0
     set_workflow_output("appfilter_changed", str(appfilter_changed).lower())
     set_workflow_output("requests_changed", str(has_changes).lower())
     set_workflow_output("fulfilled_removed", str(fulfilled_removed))
-    set_workflow_output("outdated_removed", str(outdated_removed))
+    set_workflow_output("expired_removed", str(expired_removed))
 
     return 0
 
