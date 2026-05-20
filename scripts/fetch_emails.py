@@ -1,37 +1,26 @@
 """
 Fetch unread emails from Gmail via IMAP and save as .eml files.
-Only runs if Lawnicons requests are open:
-https://raw.githubusercontent.com/LawnchairLauncher/lawnchair-website/master/lawnicons-request/settings.json
+Runs every 2 months based on last fetch date.
 """
 
 import os
 import sys
 import imaplib
 import email
+from datetime import date, timedelta
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 EMAILS_DIR = REPO_ROOT / "emails"
-SETTINGS_URL = "https://raw.githubusercontent.com/LawnchairLauncher/lawnchair-website/master/lawnicons-request/settings.json"
+LAST_FETCH_PATH = REPO_ROOT / "src/assets/last_email_fetch.txt"
 
 
 def should_fetch_today():
-    import urllib.request
-    import json
-    from datetime import date, timedelta
-    try:
-        with urllib.request.urlopen(SETTINGS_URL, timeout=10) as resp:
-            data = json.load(resp)
-        fetch_after = data.get("fetch_emails_after")
-        if not fetch_after:
-            return False
-        today = date.today()
-        fetch_date = date.fromisoformat(fetch_after)
-        # Fetch on the day after fetch_emails_after
-        return today == fetch_date + timedelta(days=1)
-    except Exception as e:
-        print(f"Failed to check settings: {e}")
-        return False
+    today = date.today()
+    if LAST_FETCH_PATH.exists():
+        last = date.fromisoformat(LAST_FETCH_PATH.read_text().strip())
+        return today >= last + timedelta(days=60)
+    return True
 
 
 def main():
@@ -113,6 +102,8 @@ def main():
 
     mail.logout()
     print(f"Done. Saved {saved} emails to {EMAILS_DIR}.")
+    LAST_FETCH_PATH.parent.mkdir(parents=True, exist_ok=True)
+    LAST_FETCH_PATH.write_text(date.today().isoformat())
 
 
 if __name__ == "__main__":

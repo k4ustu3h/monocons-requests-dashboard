@@ -1,28 +1,19 @@
 """
-Save trending baseline snapshots for comparing request counts during open period.
-Saves period_start when requests open, period_end when they close.
-Deletes baseline file if period_end is older than 30 days.
+Save trending baseline snapshots for comparing request counts between email fetches.
+period_start: saved the day before the next scheduled fetch.
+period_end: saved the day after emails were fetched (last_email_fetch.txt updated).
+Baseline resets if period_end is older than 30 days.
 """
 
 import json
 import sys
-import urllib.request
 from pathlib import Path
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 REQUESTS_JSON = REPO_ROOT / "src/assets/requests.json"
 BASELINE_PATH = REPO_ROOT / "src/assets/trending_baseline.json"
-SETTINGS_URL = "https://raw.githubusercontent.com/LawnchairLauncher/lawnchair-website/master/lawnicons-request/settings.json"
-
-
-def get_settings():
-    try:
-        with urllib.request.urlopen(SETTINGS_URL, timeout=10) as resp:
-            return json.load(resp)
-    except Exception as e:
-        print(f"Failed to check settings: {e}")
-        return {}
+LAST_FETCH_PATH = REPO_ROOT / "src/assets/last_email_fetch.txt"
 
 
 def load_baseline():
@@ -47,17 +38,21 @@ def build_snapshot(apps, min_req=10):
     return snapshot
 
 
-def main():
-    settings = get_settings()
-    enabled = settings.get("enabled", False)
-    
-    baseline = load_baseline()
-    today = date.today().isoformat()
+def get_next_fetch_date():
+    if not LAST_FETCH_PATH.exists():
+        return None
+    last = date.fromisoformat(LAST_FETCH_PATH.read_text().strip())
+    return last + timedelta(days=60)
 
-    # Check if period_end is older than 30 days — reset
+
+def main():
+    today = date.today()
+    baseline = load_baseline()
+
+    # Reset if period_end is older than 30 days
     if baseline.get("period_end") and baseline["period_end"].get("date"):
         end_date = datetime.strptime(baseline["period_end"]["date"], "%Y-%m-%d").date()
-        if (date.today() - end_date).days > 30:
+        if (today - end_date).days > 30:
             print("Baseline older than 30 days. Deleting.")
             BASELINE_PATH.unlink(missing_ok=True)
             baseline = {"period_start": None, "period_end": None}
@@ -70,34 +65,36 @@ def main():
     snapshot = build_snapshot(apps)
 
     entry = {
-        "date": today,
+        "date": today.isoformat(),
         "total": total,
         "snapshot": snapshot
     }
 
-    if enabled and baseline.get("period_start") is None:
-        # Requests just opened — save period_start
-        baseline["period_start"] = entry
-        print(f"Saved period_start with {len(snapshot)} entries")
-        save_baseline(baseline)
-    elif not enabled and baseline.get("period_start") is not None and baseline.get("period_end") is None:
-        # Check that at least 1 day has passed since requests closed
-        fetch_after = settings.get("fetch_emails_after")
-        if fetch_after:
-            fetch_date = date.fromisoformat(fetch_after)
-            if date.today() <= fetch_date:
-                print("Waiting for email parsing to complete. Skipping period_end.")
-                return
-        
-        # Emails collected — save period_end
-        start_snapshot = baseline["period_start"]["snapshot"]
-        filtered_snapshot = {k: v for k, v in snapshot.items() if k in start_snapshot}
-        entry["snapshot"] = filtered_snapshot
-        baseline["period_end"] = entry
-        print(f"Saved period_end with {len(filtered_snapshot)} entries")
-        save_baseline(baseline)
-    else:
-        print("No snapshot needed at this time.")
+    next_fetch = get_next_fetch_date()
+
+    # period_start: day before next fetch
+    if next_fetch and baseline.get("period_start") is None:
+        day_before_fetch = next_fetch - timedelta(days=1)
+        if today == day_before_fetch:
+            baseline["period_start"] = entry
+            print(f"Saved period_start with {len(snapshot)} entries")
+            save_baseline(baseline)
+            return
+
+    # period_end: day after last fetch
+    if LAST_FETCH_PATH.exists():
+        last_fetch = date.fromisoformat(LAST_FETCH_PATH.read_text().strip())
+        day_after_fetch = last_fetch + timedelta(days=1)
+        if today == day_after_fetch and baseline.get("period_start") is not None and baseline.get("period_end") is None:
+            start_snapshot = baseline["period_start"]["snapshot"]
+            filtered_snapshot = {k: v for k, v in snapshot.items() if k in start_snapshot}
+            entry["snapshot"] = filtered_snapshot
+            baseline["period_end"] = entry
+            print(f"Saved period_end with {len(filtered_snapshot)} entries")
+            save_baseline(baseline)
+            return
+
+    print("No snapshot needed at this time.")
 
 
 if __name__ == "__main__":
