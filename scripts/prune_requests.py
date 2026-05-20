@@ -568,6 +568,10 @@ def update_activity_stats(
         history[-1] = entry
     else:
         history.append(entry)
+
+    # Keep only last 365 days
+    cutoff = (date.today() - date.resolution * 365).isoformat()
+    history = [entry for entry in history if entry["date"] >= cutoff]        
         
     with open(activity_stats_path, "w", encoding="utf-8") as f:
         json.dump(history, f, indent=2)

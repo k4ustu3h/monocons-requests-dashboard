@@ -2791,7 +2791,7 @@ const UI = {
       return;
     }
 
-    const rawDays = history.slice(-30);
+    const rawDays = history.slice(-90);
     
     // Fill gaps between days with zero entries
     const filledDays = [];
