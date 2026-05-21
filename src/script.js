@@ -1401,8 +1401,8 @@ const Data = {
       };
 
       const sorters = {
-          "req-desc": (a, b) => getPop(b) - getPop(a),
-          "req-asc": (a, b) => getPop(a) - getPop(b),
+          "req-desc": (a, b) => getPop(b) - getPop(a) || a.componentName.split('/')[0].localeCompare(b.componentName.split('/')[0]),
+          "req-asc": (a, b) => getPop(a) - getPop(b) || a.componentName.split('/')[0].localeCompare(b.componentName.split('/')[0]),
           "trending": (a, b) => {
               const deltaA = App.state.trendingDeltas[a.componentName] || 0;
               const deltaB = App.state.trendingDeltas[b.componentName] || 0;
@@ -1410,8 +1410,8 @@ const Data = {
           },
           "odds-desc": (a, b) => Utils.getCreationOdds(b) - Utils.getCreationOdds(a) || getPop(b) - getPop(a),
           "odds-asc": (a, b) => Utils.getCreationOdds(a) - Utils.getCreationOdds(b) || getPop(b) - getPop(a),
-          "install-desc": (a, b) => Utils.parseInstalls(b.installs) - Utils.parseInstalls(a.installs) || getPop(b) - getPop(a),
-          "install-asc": (a, b) => Utils.parseInstalls(a.installs) - Utils.parseInstalls(b.installs) || getPop(b) - getPop(a),
+          "install-desc": (a, b) => Utils.parseInstalls(b.installs) - Utils.parseInstalls(a.installs) || getPop(b) - getPop(a) || a.componentName.split('/')[0].localeCompare(b.componentName.split('/')[0]),
+          "install-asc": (a, b) => Utils.parseInstalls(a.installs) - Utils.parseInstalls(b.installs) || getPop(b) - getPop(a) || a.componentName.split('/')[0].localeCompare(b.componentName.split('/')[0]),
           "name-asc": (a, b) => a.label.localeCompare(b.label) || getPop(b) - getPop(a),
           "name-desc": (a, b) => b.label.localeCompare(a.label) || getPop(b) - getPop(a),
           "time-desc": (a, b) => b.firstAppearance - a.firstAppearance || getPop(b) - getPop(a),
