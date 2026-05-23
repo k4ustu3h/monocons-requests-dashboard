@@ -2699,7 +2699,7 @@ const UI = {
                 const instStr = app.installs ? app.installs.replace(/[,+]/g, '') : '0';
                 const inst = parseInt(instStr, 10) || 0;
                 const pop = population[domain] || 1;
-                if (inst / 1_000_000 > pop * 10) return;
+                if (inst / 1_000_000 > pop * 3) return;
                 domainSumsI[domain] = (domainSumsI[domain] || 0) + inst;
                 domainCountsI[domain] = (domainCountsI[domain] || 0) + 1;
             }
