@@ -2682,7 +2682,7 @@ const UI = {
     const colWidth = 26;
     const fits = Math.floor(containerWidth / colWidth);
 
-    const nonGeo = new Set(["ai", "me", "my", "tv", "fm", "to", "st", "cc", "ws", "nu", "tk", "sh", "is", "as", "je", "gg", "im", "io", "co"]);
+    const nonGeo = new Set(["ai", "me", "my", "tv", "fm", "to", "st", "cc", "ws", "nu", "tk", "sh", "is", "as", "je", "gg", "im", "io", "co", "su", "ac", "bh", "mf", "nh", "mo", "bd", "hk"]);
     const isCountryCode = (domain) => /^[a-z]{2}$/.test(domain) && !nonGeo.has(domain);
     const mode = App.state.domainStatsMode;
     const population = (data._population) || {};
