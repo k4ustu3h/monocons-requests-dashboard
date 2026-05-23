@@ -1,6 +1,6 @@
 {
-  "count": 18944,
-  "lastUpdate": "2026-05-22",
+  "count": 18948,
+  "lastUpdate": "2026-05-23",
   "apps": [
     {
       "drawable": "friday_night_funkin",
@@ -4816,6 +4816,15 @@
       "installs": "10,000+"
     },
     {
+      "drawable": "breakout_71",
+      "requestCount": 13,
+      "firstAppearance": 1735916086.0,
+      "lastRequested": 1779506720.237739,
+      "label": "Breakout 71",
+      "componentName": "me.lecaro.breakout/me.lecaro.breakout.MainActivity",
+      "installs": "1,000+"
+    },
+    {
       "drawable": "namma_metro",
       "requestCount": 12,
       "firstAppearance": 1719138846.0,
@@ -5344,15 +5353,6 @@
       "label": "Bend",
       "componentName": "com.bowerydigital.bend/com.bowerydigital.bend.app.MainActivity",
       "installs": "1,000,000+"
-    },
-    {
-      "drawable": "breakout_71",
-      "requestCount": 12,
-      "firstAppearance": 1735916086.0,
-      "lastRequested": 1774346836.0,
-      "label": "Breakout 71",
-      "componentName": "me.lecaro.breakout/me.lecaro.breakout.MainActivity",
-      "installs": "1,000+"
     },
     {
       "drawable": "aurora_1",
@@ -13550,6 +13550,15 @@
       "installs": "100,000+"
     },
     {
+      "drawable": "happycow",
+      "requestCount": 8,
+      "firstAppearance": 1718524752.0,
+      "lastRequested": 1779506720.237739,
+      "label": "HappyCow",
+      "componentName": "com.hcceg.veg.compassionfree/com.sisow.hcvg.healthydiningguide.app.splash.ui.SplashScreenActivity",
+      "installs": "1,000,000+"
+    },
+    {
       "drawable": "ncell_app",
       "requestCount": 7,
       "firstAppearance": 1714999431.0,
@@ -13744,15 +13753,6 @@
       "label": "OneTap",
       "componentName": "com.infinitylaunch.onetap.gp/com.infinitylaunch.onetap.gp.ui.SplashActivity",
       "installs": "5,000,000+"
-    },
-    {
-      "drawable": "happycow",
-      "requestCount": 7,
-      "firstAppearance": 1718524752.0,
-      "lastRequested": 1763961098.0,
-      "label": "HappyCow",
-      "componentName": "com.hcceg.veg.compassionfree/com.sisow.hcvg.healthydiningguide.app.splash.ui.SplashScreenActivity",
-      "installs": "1,000,000+"
     },
     {
       "drawable": "momogram",
@@ -22823,6 +22823,15 @@
       "installs": "10,000,000+"
     },
     {
+      "drawable": "watch_duty",
+      "requestCount": 6,
+      "firstAppearance": 1721467062.0,
+      "lastRequested": 1779506720.237739,
+      "label": "Watch Duty",
+      "componentName": "org.watchduty.app/org.watchduty.app.MainActivity",
+      "installs": "1,000,000+"
+    },
+    {
       "drawable": "rail_sheba_3",
       "requestCount": 5,
       "firstAppearance": 1745020800.0,
@@ -28602,15 +28611,6 @@
       "label": "Castify",
       "componentName": "com.castify/com.linkcaster.activities.MainActivity",
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "watch_duty",
-      "requestCount": 5,
-      "firstAppearance": 1721467062.0,
-      "lastRequested": 1774071194.0,
-      "label": "Watch Duty",
-      "componentName": "org.watchduty.app/org.watchduty.app.MainActivity",
-      "installs": "1,000,000+"
     },
     {
       "drawable": "tournant",
@@ -55639,6 +55639,15 @@
       "installs": "5,000,000+"
     },
     {
+      "drawable": "blorp",
+      "requestCount": 3,
+      "firstAppearance": 1745020800.0,
+      "lastRequested": 1779506720.237739,
+      "label": "Blorp",
+      "componentName": "xyz.blorpblorp.app/xyz.blorpblorp.app.MainActivity",
+      "installs": "100+"
+    },
+    {
       "drawable": "electrify_america",
       "requestCount": 2,
       "firstAppearance": 1745020800.0,
@@ -63236,15 +63245,6 @@
       "label": "Wellness Corner",
       "componentName": "com.truworth.wellnesscorner/com.truworth.wellnesscorner.changeicon.DefaultActivity",
       "installs": "500,000+"
-    },
-    {
-      "drawable": "blorp",
-      "requestCount": 2,
-      "firstAppearance": 1745020800.0,
-      "lastRequested": 1767049123.0,
-      "label": "Blorp",
-      "componentName": "xyz.blorpblorp.app/xyz.blorpblorp.app.MainActivity",
-      "installs": "100+"
     },
     {
       "drawable": "cad_assistant",
@@ -167165,6 +167165,38 @@
       "firstAppearance": 1779070959.4074323,
       "lastRequested": 1779070959.4074323,
       "installs": "500,000+"
+    },
+    {
+      "drawable": "f_droid_basic",
+      "label": "F-Droid Basic",
+      "componentName": "org.fdroid.basic/org.fdroid.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1779506720.237739,
+      "lastRequested": 1779506720.237739
+    },
+    {
+      "drawable": "isle_of_arrows",
+      "label": "Isle of Arrows",
+      "componentName": "com.gridpop.isleofarrowsandroid/com.unity3d.player.UnityPlayerActivity",
+      "requestCount": 1,
+      "firstAppearance": 1779506720.237739,
+      "lastRequested": 1779506720.237739
+    },
+    {
+      "drawable": "recipe_keeper",
+      "label": "Recipe Keeper",
+      "componentName": "com.tudorspan.recipekeeper/crc6494081064acdf378e.SplashScreenPage",
+      "requestCount": 1,
+      "firstAppearance": 1779506720.237739,
+      "lastRequested": 1779506720.237739
+    },
+    {
+      "drawable": "walkscape",
+      "label": "WalkScape",
+      "componentName": "com.notacult.walkscape/com.notacult.walkscape.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1779506720.237739,
+      "lastRequested": 1779506720.237739
     }
   ]
 }
