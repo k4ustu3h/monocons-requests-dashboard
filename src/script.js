@@ -3073,14 +3073,18 @@ const UI = {
           return 0.25;
       };
       
-      const now = Date.now() / 1000;
-      
       App.state._quickPickMiddle = [];
       App.state._quickPickEasy = [];
       
       App.data.forEach(app => {
           const tags = App.state.appTags.get(app.componentName) || new Set();
-          
+
+          const isStale = tags.has('stale');
+          if (isStale) return;
+
+          const inst = Utils.parseInstalls(app.installs);
+          if (inst < 500000) return;
+
           const isEasy = tags.has('easy');
           const isMatch = tags.has('match');
           const isNameInUse = tags.has('nameinuse');
@@ -3088,11 +3092,6 @@ const UI = {
           const pkg = app.componentName.split('/')[0];
           const domain = pkg.split('.')[0];
           const req = app.requestCount || 0;
-          const inst = Utils.parseInstalls(app.installs);
-          const first = app.firstAppearance || 0;
-          const last = app.lastRequested || 0;
-          const daysActive = (last - first) / 86400;
-          const freshness = Math.min(1, daysActive / 365);
           
           let urg = 0.5;
           if (isCountry(domain)) {
@@ -3100,7 +3099,7 @@ const UI = {
               urg = quartileUrgency(li);
           }
           const urgencyMod = 0.5 + 0.5 * urg;
-          const score = Math.log(inst + 1) * Math.sqrt(req) * freshness * urgencyMod;
+          const score = Math.log(inst + 1) * Math.sqrt(req) * urgencyMod;
           
           const item = { ...app, _score: score };
 
@@ -3118,8 +3117,6 @@ const UI = {
       
       App.state._quickPickMiddle.sort((a,b) => b._score - a._score);
       App.state._quickPickEasy.sort((a,b) => b._score - a._score);
-      App.state._quickPickMiddle = App.state._quickPickMiddle.slice(0, 1000);
-      App.state._quickPickEasy = App.state._quickPickEasy.slice(0, 1000);
       
       App.state.quickPickMode = App.state.quickPickMode || 'easy';
   },
