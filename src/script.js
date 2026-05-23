@@ -449,6 +449,9 @@ const Templates = {
 
     const installsRaw = app.installs ? app.installs.replace(/[,+]/g, '') : null;
     const displayInstalls = installsRaw ? new Intl.NumberFormat('en', { notation: "compact" }).format(parseInt(installsRaw)) + "+" : "—";
+    const installsTitle = installsRaw && installsRaw !== '0' 
+        ? `${app.installs} installs in Play Store` 
+        : 'Installs data unavailable';    
     const rawOdds = Utils.getCreationOdds(app) * 100;
     const displayOdds = rawOdds < 1 ? rawOdds.toFixed(2) + "%" : rawOdds.toFixed(0) + "%";
     const trendingDelta = App.state.trendingDeltas[app.componentName];
@@ -481,7 +484,7 @@ const Templates = {
           </div>
         </div>
         <div class="col req">${displayReq}${trendingDelta ? ` <span class="trend-indicator" title="Growth during last request period.">↑${trendingDelta}</span>` : ""}</div>        <div class="col creation-odds" title="Chance of this request being fulfilled within a year if you wait.">${displayOdds}</div>
-        <div class="col install" title="${app.installs || '0'} installs in Play Store">${displayInstalls}</div>
+        <div class="col install" title="${installsTitle}">${displayInstalls}</div>
         <div class="col first date-col">
           <div>${firstStr}</div>
           <div>Last: ${lastStr}</div>
