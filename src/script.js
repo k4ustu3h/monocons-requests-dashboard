@@ -2685,6 +2685,7 @@ const UI = {
     const nonGeo = new Set(["ai", "me", "my", "tv", "fm", "to", "st", "cc", "ws", "nu", "tk", "sh", "is", "as", "je", "gg", "im", "io", "co"]);
     const isCountryCode = (domain) => /^[a-z]{2}$/.test(domain) && !nonGeo.has(domain);
     const mode = App.state.domainStatsMode;
+    const population = (data._population) || {};
     
     // Calc avg installs per domain (once)
     if (!App.state._domainAvgInstalls) {
@@ -2697,6 +2698,8 @@ const UI = {
             if (isCountryCode(domain)) {
                 const instStr = app.installs ? app.installs.replace(/[,+]/g, '') : '0';
                 const inst = parseInt(instStr, 10) || 0;
+                const pop = population[domain] || 1;
+                if (inst / 1_000_000 > pop * 10) return;
                 domainSumsI[domain] = (domainSumsI[domain] || 0) + inst;
                 domainCountsI[domain] = (domainCountsI[domain] || 0) + 1;
             }
@@ -2705,8 +2708,6 @@ const UI = {
             App.state._domainAvgInstalls[d] = Math.round(domainSumsI[d] / domainCountsI[d]);
         }
     }
-
-    const population = (data._population) || {};
     
     let entries = Object.entries(data)
         .filter(([domain]) => isCountryCode(domain) && domain !== "_population")
