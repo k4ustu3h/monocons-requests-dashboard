@@ -83,10 +83,12 @@ def save_state():
         if os.path.exists(DEAD_PATH):
             with open(DEAD_PATH, 'r') as f:
                 existing_dead = set(json.load(f))
-        updated_dead = existing_dead | DEAD_SET
-        if updated_dead != existing_dead:
+        new_dead = DEAD_SET - existing_dead
+        if new_dead:
+            existing_list = list(existing_dead)
+            existing_list.extend(sorted(new_dead))
             with open(DEAD_PATH, 'w', encoding='utf-8') as f:
-                json.dump(sorted(updated_dead), f, indent=2)
+                json.dump(existing_list, f, indent=2)
         
         print("OK.")
     except Exception as e:
