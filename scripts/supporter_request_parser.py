@@ -243,11 +243,37 @@ def update_supported_json(supported_path: Path, existing_supported: set[str], ne
     
     print(f"Updated supported.json with {len(new_components)} new components")
 
+def update_activity_stats_for_supporter(requests_path: Path, new_count: int, total: int):
+    """Record supporter additions in activity_stats.json."""
+    activity_stats_path = requests_path / "activity_stats.json"
+    today = date.today().isoformat()
+    
+    history = []
+    if activity_stats_path.exists():
+        with open(activity_stats_path) as f:
+            history = json.load(f)
+    
+    if history and history[-1]["date"] == today:
+        history[-1]["added"] = history[-1].get("added", 0) + new_count
+        history[-1]["total"] = total
+    else:
+        history.append({
+            "date": today,
+            "total": total,
+            "added": new_count,
+            "fulfilled": 0,
+            "expired": 0
+        })
+    
+    with open(activity_stats_path, "w") as f:
+        json.dump(history, f, indent=2)    
+
 def run_pipeline(folder_path: Path, appfilter_path: Path, png_out_path: Path, 
                  output_path: Path, supported_path: Path):
     zip_files = load_zips(folder_path)
 
     apps = parse_existing_requests_json(output_path)
+    old_count = len(apps)
     existing_supported = parse_existing_supported_json(supported_path)
     
     apps, zip_components = parse_zips(zip_files, apps, png_out_path)
@@ -261,12 +287,17 @@ def run_pipeline(folder_path: Path, appfilter_path: Path, png_out_path: Path,
     write_json_output(output_path, apps)
     update_supported_json(supported_path, existing_supported, zip_components)
 
+    new_count = max(0, len(apps) - old_count + (len(existing) if appfilter_path.exists() else 0))
+    if new_count > 0:
+        update_activity_stats_for_supporter(output_path.parent, new_count, len(apps))
+
     keep_pngs = {a["drawable"] for a in apps.values()}
     delete_unused_pngs(png_out_path, keep_pngs)
 
     print(f"Processed {len(zip_files)} archives. Total requests: {len(apps)}")
     if zip_files:
         print("Don't forget to delete processed ZIP files from the zips folder.")
+        
 
 # -------------------------------------------------------
 # MAIN
