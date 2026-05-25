@@ -341,7 +341,7 @@ def update_sets_stats(apps: list) -> int:
 label_factors = {
     "stale": 0.1,
     "unlabeled": 1,
-    "nameinuse": 2,
+    "nameinuse": 1,
     "easy": 3,
     "match": 5,
     "supported": 6,
@@ -440,6 +440,16 @@ def update_creation_odds(apps: list) -> int:
         return max_pop
 
     factors = sorted(label_factors.keys(), key=lambda k: label_factors[k])
+
+    # Remove duplicate factors (unlabeled and nameinuse both = 1)
+    seen_factors = set()
+    unique_factors = []
+    for label in factors:
+        L = label_factors[label]
+        if L not in seen_factors:
+            seen_factors.add(L)
+            unique_factors.append(label)
+    factors = unique_factors    
 
     if pace_only:
         table = prev_data

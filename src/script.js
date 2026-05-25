@@ -74,7 +74,7 @@ const CONFIG = {
   label_factors: {
     stale: 0.1,
     unlabeled: 1,
-    nameinuse: 2,
+    nameinuse: 1,
     easy: 3,
     match: 5,
     supported: 6,
