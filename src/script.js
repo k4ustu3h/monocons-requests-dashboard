@@ -2421,10 +2421,10 @@ const UI = {
     let displayText = `${Utils.compactNumber(total)} requests`;
     if (App.state.lastUpdate) {
         const timeAgo = Utils.timeAgo(App.state.lastUpdate);
-        displayText += ` • <a href="https://github.com/LawnchairLauncher/lawnicons-requests-dashboard" target="_blank">${timeAgo}</a>`;
+        const fullDate = new Date(App.state.lastUpdate + "T00:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
+        displayText += ` • <a href="https://github.com/LawnchairLauncher/lawnicons-requests-dashboard" target="_blank" title="Last update: ${fullDate}">${timeAgo}</a>`;
     }
     countEl.innerHTML = displayText;
-    countEl.title = `Last update`;
 
     // Checkbox
     const hc = App.dom.headerCheck;
