@@ -1964,6 +1964,10 @@ const UI = {
 
     // Selection Bar
     document.getElementById("sbContributeBtn")?.addEventListener("click", () => {
+        if (App.state.contribution.length >= 20) {
+            Toast.show("Maximum 20 icons in contribution list.", "error");
+            return;
+        }
         App.state.selected.forEach(id => {
             const app = App.state.idMap.get(id);
             if (app && !App.state.contribution.some(a => a.componentName === id)) {
@@ -1971,7 +1975,8 @@ const UI = {
             }
         });
         this.saveContribution();        
-        Toast.show(`Added ${App.state.selected.size} to contribution`);
+        const count = App.state.selected.size;
+        Toast.show(`+${count} icon${count !== 1 ? 's' : ''} to contribution.`);
         Actions.clearAllSelections();
     });
 
@@ -2948,20 +2953,30 @@ const UI = {
           const iconUrl = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
           return Templates.contributionRow(app, iconUrl);
       }).join("");
-      
-      const downloadHtml = `
+
+      const allFieldsFilled = App.state.contribution.every(app => {
+          const overrides = App.state.contributionOverrides[app.componentName] || {};
+          const name = overrides.label || app.label;
+          const drawable = overrides.drawable || Utils.sanitizeDrawableName(name);
+          return name.trim() && drawable.trim();
+      });
+
+      const downloadHtml = allFieldsFilled ? `
           <div class="contribution-download-wrapper">
               <button class="sb-action-btn" id="contributionDownloadBtn">
                   <svg><use href="#ic-download"/></svg>
                   <span>Download</span>
               </button>
           </div>
-      `;
+      ` : '';
+      
       App.dom.container.innerHTML = downloadHtml + headerHtml + rowsHtml;
       
-      document.getElementById("contributionDownloadBtn").onclick = () => {
-          Actions.downloadContributionBundle();
-      };
+      if (allFieldsFilled) {
+          document.getElementById("contributionDownloadBtn").onclick = () => {
+              Actions.downloadContributionBundle();
+          };
+      }
   },
 
   updateContributionField(input) {
@@ -2993,6 +3008,17 @@ const UI = {
       const existsInLibrary = !!existingIcon;
       const isCustom = drawable !== defaultSvg;
       const libraryTitle = existingIcon ? `${existingIcon.name}\n${drawable}.svg` : 'Found in Lawnicons.';
+
+      const allFilled = App.state.contribution.every(app => {
+          const ov = App.state.contributionOverrides[app.componentName] || {};
+          const n = ov.label || app.label;
+          const d = ov.drawable || Utils.sanitizeDrawableName(n);
+          return n.trim() && d.trim();
+      });
+      const btn = document.getElementById("contributionDownloadBtn");
+      if (btn) {
+          btn.style.display = allFilled ? '' : 'none';
+      }      
       
       if (svgHint && svgHint.classList.contains('item-sub')) {
           svgHint.textContent = existsInLibrary ? 'Name in use.' : (isCustom ? 'Custom.' : 'Generated from name.');
