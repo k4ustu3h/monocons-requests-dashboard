@@ -93,6 +93,7 @@
     --space-md: 12px;
     --space-lg: 16px;
     --space-xl: 24px;
+
   /** Elevation tokens */
   --elevation-1: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
   --elevation-2: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
@@ -994,6 +995,117 @@ select:hover,
   align-items: center;
 }
 
+/* Contribution list */
+.contribution-header {
+    display: grid;
+    grid-template-columns: 80px minmax(240px, 400px) 240px auto;
+    align-items: center;
+    padding: var(--space-md) var(--space-lg);
+    border-bottom: 1px solid var(--outline-variant);
+    color: var(--on-surface);
+    font-weight: 700;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.contribution-row {
+    display: grid;
+    grid-template-columns: 80px minmax(240px, 400px) 240px auto;
+    align-items: center;
+    padding: var(--space-md) var(--space-lg);
+    border-bottom: 1px solid var(--outline-variant);
+}
+
+.contribution-container .name-col {
+    min-width: 0;
+    margin-right: var(--space-xl);
+    overflow: visible;
+}
+
+.contribution-container .name-row {
+    min-width: 0;
+    overflow: visible;
+}
+
+.contribution-container .name-details {
+    overflow: visible;
+}
+
+.contribution-container .contribution-name-input {
+    width: 100%;
+}
+
+.contribution-container .item-sub {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.contribution-name-input,
+.contribution-svg-input {
+    height: 40px;
+    background: var(--surface-container);
+    border: none;
+    border-radius: var(--shape-xlarge);
+    color: var(--on-surface-variant);
+    font-size: 14px;
+    padding: 0 var(--space-md);
+    font-family: inherit;
+    outline: none;
+    transition: box-shadow 0.2s;
+}
+
+.contribution-name-input:focus,
+.contribution-svg-input:focus {
+    box-shadow: 0 0 0 1px var(--on-surface-variant);
+}
+
+.contribution-name-input {
+    font-weight: 600;
+    color: var(--on-surface);
+}
+
+.contribution-svg-input {
+    width: 100%;
+    font-family: monospace;
+}
+
+.contribution-download-wrapper {
+    position: fixed;
+    bottom: var(--space-xl);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 900;
+    display: flex;
+    justify-content: center;
+}
+
+#contributionBtn {
+  border: none;
+  cursor: pointer;
+}
+
+.contribution-beta-badge {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    font-size: 10px;
+    padding: 1px 4px;
+    border-radius: var(--shape-xsmall);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: var(--primary-container);
+    color: var(--on-primary-container);
+    pointer-events: none;
+}
+
+.header-link-wrapper {
+    position: relative;
+    display: inline-flex;
+}
+
 /* Sortable Headers */
 .list-header .col.name,
 .list-header .col.req,
@@ -1106,7 +1218,7 @@ select:hover,
 .name-details {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs);
+  gap: var(--space-sm);
   min-width: 0;
 }
 
@@ -1120,7 +1232,8 @@ select:hover,
   min-width: 0;
   flex-shrink: 1;
 }
-.pkg-name {
+
+.item-sub {
   color: var(--on-surface-variant);
   font-size: 12px;
   font-family: monospace;

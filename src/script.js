@@ -138,6 +138,9 @@ const App = {
     existingIcons: [],
 
     actionMode: "new",
+    contributionActive: false,
+    contribution: [],
+    contributionOverrides: {},
     geoBatchConfig: null,
     geoBatchActive: false,
     existingSvgs: new Map(),
@@ -192,6 +195,7 @@ const App = {
     rowMenu: /** @type {any} */ (document.getElementById("rowMenu")),
     /** @type {HTMLDivElement} */
     toastBox: /** @type {any} */ (document.getElementById("toastContainer")),
+    contributionBtn: /** @type {HTMLButtonElement} */ (document.getElementById("contributionBtn")),
     /** @type {HTMLButtonElement} */
     geoBatchBtn: /** @type {any} */ (document.getElementById("geoBatchBtn")),
     /** @type {HTMLButtonElement} */
@@ -483,7 +487,7 @@ const Templates = {
                   ${tagHtml}
                   <span class="${appNameClass}">${name}</span>
               </div>
-              <span class="pkg-name" title="${id}">ID: ${id}</span>
+              <span class="item-sub" title="${id}">ID: ${id}</span>
           </div>
           </div>
         </div>
@@ -691,6 +695,77 @@ const Templates = {
         </div>
       </div>
     `;
+  },
+
+  /**
+   * @param {AppEntry} app
+   * @param {string} iconUrl
+   * @returns {string}
+   */
+  contributionRow(app, iconUrl) {
+      const id = app.componentName;
+      const overrides = App.state.contributionOverrides[id] || {};
+      const name = overrides.label || app.label;
+      const pkg = id.split('/')[0];
+      const drawable = overrides.drawable || app.drawable;
+      const originalDrawable = app.drawable;
+      const isUnknown = originalDrawable === "unknown" || name === "(Unknown App)";
+      const defaultSvg = Utils.sanitizeDrawableName(name);
+      const isCustom = overrides.drawable && drawable !== defaultSvg;
+      const svgHint = isCustom ? 'Custom.' : 'Generated from name.';
+
+      const iconHtml = isUnknown
+          ? `<div class="fallback-icon-row">No Icon</div>`
+          : `<img src="${iconUrl}" class="requested-icon" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" alt="${name}" />
+            <div class="fallback-icon-row" style="display:none">No Icon</div>`;
+
+      return `
+          <div class="contribution-row" data-id="${id}">
+              <div class="icon">${iconHtml}</div>
+              <div class="name-col">
+                  <div class="name-details">
+                      <div class="name-row">
+                          <input type="text" class="contribution-name-input" value="${name}" data-id="${id}" data-field="label" oninput="UI.updateContributionField(this)" title="Icon name" />
+                      </div>
+                      <span class="item-sub" title="${id}">ID: ${id}</span>
+                  </div>
+              </div>
+              <div class="col svg-name">
+                  <input type="text" class="contribution-svg-input" value="${drawable}" data-id="${id}" data-field="drawable" oninput="UI.updateContributionField(this)" title="SVG name" />
+                  <span class="item-sub">${svgHint}</span>
+              </div>
+              <div class="actions-col">
+                  <a class="action-btn" href="https://www.google.com/search?q=%22${pkg}%22" target="_blank" title="Search Google for package">
+                      <svg><use href="#ic-search"/></svg>
+                  </a>
+                  <a class="action-btn" href="${CONFIG.urls.playStore}${pkg}" target="_blank" title="Play Store">
+                      ${ICONS.play}
+                  </a>
+                  <div class="action-btn ctx-trigger" title="More actions" tabindex="0" role="button" aria-label="More actions" aria-haspopup="true">
+                      ${ICONS.dots}
+                  </div>
+              </div>
+          </div>
+      `;
+  },
+
+  contributionRowMenu(app) {
+      const pkg = app.componentName.split('/')[0];
+      return `
+          <div class="ctx-item" tabindex="0" role="menuitem" data-action="open-link" data-url="${CONFIG.urls.fDroid}${pkg}">
+              ${ICONS.fDroid} <span>F-Droid</span>
+          </div>
+          <div class="ctx-item" tabindex="0" role="menuitem" data-action="open-link" data-url="${CONFIG.urls.izzy}${pkg}">
+              ${ICONS.izzyOnDroid} <span>IzzyOnDroid</span>
+          </div>
+          <div class="ctx-item" tabindex="0" role="menuitem" data-action="open-link" data-url="${CONFIG.urls.galaxyStore}${pkg}">
+              ${ICONS.galaxyStore} <span>Galaxy Store</span>
+          </div>
+          <div class="ctx-divider"></div>
+          <div class="ctx-item" tabindex="0" role="menuitem" data-action="remove-from-contribution" data-id="${app.componentName}">
+              <span>Remove</span>
+          </div>
+      `;
   },
 
   /**
@@ -1184,9 +1259,70 @@ const Actions = {
       Toast.show("Failed to generate zip", "error");
     } finally {
       document.body.style.cursor = "default";
-      App.dom.sbDownloadBtn.innerHTML = originalText;
+      App.dom.sbDownloadBtn.innerHTML = ICONS.download;
     }
-  }
+  },
+
+  async downloadContributionBundle() {
+      if (typeof fflate === 'undefined') {
+          Toast.show("fflate library missing", "error");
+          return;
+      }
+
+      const list = App.state.contribution;
+      if (list.length === 0) return;
+
+      /** @type {Object.<string, Uint8Array | string>} */
+      const zipData = {};
+      let xmlAppFilter = "<resources>\n";
+
+      const usedDrawables = new Set();
+      const fetchPromises = [];
+
+      list.forEach(app => {
+          const row = document.querySelector(`.contribution-row[data-id="${app.componentName}"]`);
+          const nameInput = row?.querySelector(".contribution-name-input");
+          const svgInput = row?.querySelector(".contribution-svg-input");
+          
+          const label = nameInput?.value || app.label;
+          const drawable = svgInput?.value || app.drawable;
+          
+          let uniqueDrawable = drawable;
+          let c = 2;
+          while (usedDrawables.has(uniqueDrawable)) {
+              uniqueDrawable = `${drawable}_${c}`;
+              c++;
+          }
+          usedDrawables.add(uniqueDrawable);
+
+          xmlAppFilter += `    <item component="ComponentInfo{${app.componentName}}" drawable="${uniqueDrawable}" name="${label.replace(/"/g, '&quot;')}" />\n`;
+
+          const url = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
+          const p = fetch(url)
+              .then(r => r.ok ? r.arrayBuffer() : null)
+              .then(buf => {
+                  if (buf) zipData[`${uniqueDrawable}.png`] = new Uint8Array(buf);
+              })
+              .catch(() => {});
+          fetchPromises.push(p);
+      });
+
+      xmlAppFilter += "</resources>";
+      zipData["appfilter.xml"] = fflate.strToU8(xmlAppFilter);
+
+      await Promise.all(fetchPromises);
+      const content = fflate.zipSync(zipData, { level: 6 });
+
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(new Blob([content], { type: 'application/zip' }));
+      const date = new Date().toISOString().slice(5, 10);
+      link.download = `lawnicons-contribution-${date}.zip`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(link.href);
+  },
+
 };
 
 // ==========================================
@@ -1624,10 +1760,42 @@ const UI = {
   ],
 
   init() {
+
     if (App.state.regexMode) {
       App.dom.regexBtn.classList.add("active");
       Utils.setHidden(App.dom.geoBatchBtn, true);
     }
+
+    const savedList = localStorage.getItem("lawnicons_contribution");
+    if (savedList) {
+        try {
+            App.state.contribution = JSON.parse(savedList);
+        } catch {}
+    }
+    
+    const savedActive = localStorage.getItem("lawnicons_contribution_active");
+    if (savedActive === "true") {
+        App.state.contributionActive = true;
+        App.dom.contributionBtn?.classList.add("active");
+    }
+
+    const savedOverrides = localStorage.getItem("lawnicons_contribution_overrides");
+    if (savedOverrides) {
+        try {
+            App.state.contributionOverrides = JSON.parse(savedOverrides);
+        } catch {}
+    }
+
+    App.dom.contributionBtn?.addEventListener("click", () => {
+        App.state.contributionActive = !App.state.contributionActive;
+        App.dom.contributionBtn.classList.toggle("active", App.state.contributionActive);
+        if (!App.state.contributionActive) {
+            document.querySelector(".header-info h1").textContent = "Lawnicons";
+            App.dom.sentinel.style.display = "";
+        }
+        this.saveContribution();
+        this.render();
+    });
 
     if (App.state.geoBatchActive && App.state.geoBatchConfig !== null) {
       App.dom.geoBatchBtn.classList.add("active");
@@ -1776,6 +1944,18 @@ const UI = {
     });
 
     // Selection Bar
+    document.getElementById("sbContributeBtn")?.addEventListener("click", () => {
+        App.state.selected.forEach(id => {
+            const app = App.state.idMap.get(id);
+            if (app && !App.state.contribution.some(a => a.componentName === id)) {
+                App.state.contribution.push(app);
+            }
+        });
+        this.saveContribution();        
+        Toast.show(`Added ${App.state.selected.size} to contribution`);
+        Actions.clearAllSelections();
+    });
+
     App.dom.sbDownloadBtn.addEventListener("click", () => {
       App.state.actionMode = "new";
       Actions.downloadBundle();
@@ -1913,6 +2093,15 @@ const UI = {
               a.click();
               UI.closeContextMenu();
           }
+          return;
+      }
+
+      if (action === "remove-from-contribution") {
+          const id = actionEl.dataset.id;
+          App.state.contribution = App.state.contribution.filter(a => a.componentName !== id);
+          UI.saveContribution();
+          UI.render();
+          UI.closeContextMenu();
           return;
       }
 
@@ -2066,12 +2255,35 @@ const UI = {
 
       const trigger = target.closest('.ctx-trigger');
       if (trigger) {
-        e.stopPropagation();
-        const row = /** @type {HTMLElement} */ (trigger.closest('[data-id]'));
-        const id = row.dataset.id;
-        const app = App.state.idMap.get(id);
-        if (app) this.showRowMenu(e, app);
-        return;
+          if (App.state.contributionActive) {
+              e.stopPropagation();
+              const row = trigger.closest('[data-id]');
+              const id = row.dataset.id;
+              const app = App.state.contribution.find(a => a.componentName === id);
+              if (app) {
+                  App.dom.rowMenu.innerHTML = Templates.contributionRowMenu(app);
+                  const rect = trigger.getBoundingClientRect();
+                  const menu = App.dom.rowMenu;
+                  menu.style.visibility = "hidden";
+                  menu.showPopover();
+                  const w = menu.offsetWidth || 220;
+                  let x = rect.right - w;
+                  let y = rect.bottom + 4;
+                  if (x < 0) x = rect.right - w;
+                  if (y + 200 > window.innerHeight) y = rect.top - 200 - 4;
+                  menu.style.left = `${x}px`;
+                  menu.style.top = `${y}px`;
+                  menu.style.transformOrigin = "top right";
+                  menu.style.visibility = "visible";
+              }
+              return;
+          }
+          e.stopPropagation();
+          const row = /** @type {HTMLElement} */ (trigger.closest('[data-id]'));
+          const id = row.dataset.id;
+          const app = App.state.idMap.get(id);
+          if (app) this.showRowMenu(e, app);
+          return;
       }
 
       if (target.closest('a')) {
@@ -2084,8 +2296,8 @@ const UI = {
       }
 
       const item = /** @type {HTMLElement} */ (target.closest('[data-id]'));
-      if (item) {
-        Actions.toggleSelection(item.dataset.id, /** @type {MouseEvent} */(e));
+      if (item && !App.state.contributionActive) {
+          Actions.toggleSelection(item.dataset.id, /** @type {MouseEvent} */(e));
       }
     });
 
@@ -2249,6 +2461,14 @@ const UI = {
   },
 
   render() {
+    if (App.state.contributionActive) {
+        this.renderContributionMode();
+        return;
+    }
+
+    document.querySelector(".cards-row").classList.remove("is-hidden");
+    document.querySelector(".controls").classList.remove("is-hidden");    
+
     const s = App.state;
     App.dom.container.innerHTML = "";
     App.dom.container.className = s.view === "grid" ? "grid-container" : "";
@@ -2672,6 +2892,89 @@ const UI = {
 
     return selected;
   },
+
+  renderContributionMode() {
+      document.querySelector(".cards-row").classList.add("is-hidden");
+      document.querySelector(".controls").classList.add("is-hidden");
+      document.getElementById("iconLibraryResults")?.classList.add("is-hidden");
+      App.dom.listHeader.style.display = "none";
+      App.dom.sentinel.style.display = "none";
+      
+      document.querySelector(".header-info h1").textContent = "Contribution";
+      App.dom.headerCount.textContent = `${App.state.contribution.length} icons`;
+
+      App.dom.container.className = "contribution-container";
+      App.dom.sbBar.classList.remove("visible");
+
+      if (App.state.contribution.length === 0) {
+          App.dom.container.innerHTML = `<div class="empty-state">
+              <svg><use href="#ic-contribution-list"/></svg>
+              <h3>Contribution is empty</h3>
+              <p>Select icons in the request table and use the Contribute button.</p>
+          </div>`;
+          return;
+      }
+      
+      const headerHtml = `
+          <div class="contribution-header">
+              <div class="col icon">Icon</div>
+              <div class="col name">Name</div>
+              <div class="col svg-name">SVG name</div>
+          </div>
+      `;
+      
+      const rowsHtml = App.state.contribution.map(app => {
+          const iconUrl = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
+          return Templates.contributionRow(app, iconUrl);
+      }).join("");
+      
+      const downloadHtml = `
+          <div class="contribution-download-wrapper">
+              <button class="sb-action-btn" id="contributionDownloadBtn">
+                  <svg><use href="#ic-download"/></svg>
+                  <span>Download</span>
+              </button>
+          </div>
+      `;
+      App.dom.container.innerHTML = downloadHtml + headerHtml + rowsHtml;
+      
+      document.getElementById("contributionDownloadBtn").onclick = () => {
+          Actions.downloadContributionBundle();
+      };
+  },
+
+  updateContributionField(input) {
+      const id = input.dataset.id;
+      const field = input.dataset.field;
+      
+      if (!App.state.contributionOverrides[id]) {
+          App.state.contributionOverrides[id] = {};
+      }
+      App.state.contributionOverrides[id][field] = input.value;
+      
+      const row = input.closest('.contribution-row');
+      const nameInput = row.querySelector('.contribution-name-input');
+      const svgInput = row.querySelector('.contribution-svg-input');
+      const svgHint = svgInput.nextElementSibling;
+      
+      const name = nameInput.value;
+      const drawable = svgInput.value;
+      const defaultSvg = Utils.sanitizeDrawableName(name);
+      const isCustom = drawable !== defaultSvg;
+      
+      if (svgHint && svgHint.classList.contains('item-sub')) {
+          svgHint.textContent = isCustom ? 'Custom.' : 'Generated from name.';
+      }
+      
+      this.saveContribution();
+  },
+
+  saveContribution() {
+      localStorage.setItem("lawnicons_contribution", JSON.stringify(App.state.contribution));
+      localStorage.setItem("lawnicons_contribution_active", App.state.contributionActive);
+      localStorage.setItem("lawnicons_contribution_overrides", JSON.stringify(App.state.contributionOverrides));
+
+},
 
   renderDomainStats() {
     const data = App.state.domainStats;
