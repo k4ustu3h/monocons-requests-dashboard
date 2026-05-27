@@ -707,10 +707,10 @@ const Templates = {
       const overrides = App.state.contributionOverrides[id] || {};
       const name = overrides.label || app.label;
       const pkg = id.split('/')[0];
-      const drawable = overrides.drawable || app.drawable;
       const originalDrawable = app.drawable;
       const isUnknown = originalDrawable === "unknown" || name === "(Unknown App)";
       const defaultSvg = Utils.sanitizeDrawableName(name);
+      const drawable = overrides.drawable || defaultSvg;
       const isCustom = overrides.drawable && drawable !== defaultSvg;
       const svgHint = isCustom ? 'Custom.' : 'Generated from name.';
 
@@ -2920,6 +2920,7 @@ const UI = {
               <div class="col icon">Icon</div>
               <div class="col name">Name</div>
               <div class="col svg-name">SVG name</div>
+              <div class="col actions"></div>  
           </div>
       `;
       
