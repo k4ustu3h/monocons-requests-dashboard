@@ -940,27 +940,27 @@ const Toast = {
    * @param {"info" | "success" | "error"} [type]
    */
   show(text, type = "info") {
-    const key = `${text}-${type}`;
-    if (this.activeToasts.has(key)) return;
+      const key = `${text}-${type}`;
+      if (this.activeToasts.has(key)) return;
 
-    if (App.dom.toastBox.children.length >= 3) {
-      const first = App.dom.toastBox.firstElementChild;
-      if (first) this.remove(/** @type {HTMLElement} */(first));
-    }
+      if (App.dom.toastBox.children.length >= 3) {
+          const first = App.dom.toastBox.firstElementChild;
+          if (first) this.remove(/** @type {HTMLElement} */(first));
+      }
 
-    const el = document.createElement("div");
-    el.className = `toast toast-${type}`;
-    el.dataset.key = key;
-    this.activeToasts.add(key);
+      const el = document.createElement("div");
+      el.className = `toast toast-${type}`;
+      el.dataset.key = key;
+      this.activeToasts.add(key);
 
-    let iconSvg = ICONS.copy;
-    if (type === "error") iconSvg = `<svg><use href="#ic-error"/></svg>`; // Using search as alert icon placeholder
-    if (type === "success") iconSvg = `<svg><use href="#ic-download"/></svg>`;
+      let iconSvg = "";
+      if (type === "error") iconSvg = `<svg><use href="#ic-error"/></svg>`;
+      if (type === "success") iconSvg = `<svg><use href="#ic-download"/></svg>`;
 
-    el.innerHTML = Templates.toast(text, iconSvg);
-    App.dom.toastBox.appendChild(el);
+      el.innerHTML = Templates.toast(text, iconSvg);
+      App.dom.toastBox.appendChild(el);
 
-    setTimeout(() => this.remove(el), 2500);
+      setTimeout(() => this.remove(el), 2500);
   },
 
   /**
@@ -1806,6 +1806,10 @@ const UI = {
     }
 
     App.dom.contributionBtn?.addEventListener("click", () => {
+        if (!App.state.contributionActive && App.state.contribution.length === 0) {
+            Toast.show("Contribution is empty.");
+            return;
+        }
         App.state.contributionActive = !App.state.contributionActive;
         App.dom.contributionBtn.classList.toggle("active", App.state.contributionActive);
         if (!App.state.contributionActive) {
@@ -2929,15 +2933,6 @@ const UI = {
 
       App.dom.container.className = "contribution-container";
       App.dom.sbBar.classList.remove("visible");
-
-      if (App.state.contribution.length === 0) {
-          App.dom.container.innerHTML = `<div class="empty-state">
-              <svg><use href="#ic-contribution-list"/></svg>
-              <h3>Contribution is empty</h3>
-              <p>Select icons in the request table and use the Contribute button.</p>
-          </div>`;
-          return;
-      }
       
       const headerHtml = `
           <div class="contribution-header">
