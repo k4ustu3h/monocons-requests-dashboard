@@ -999,7 +999,7 @@ select:hover,
 .contribution-header,
 .contribution-row {
     display: grid;
-    grid-template-columns: 80px minmax(240px, 400px) minmax(240px, 320px) minmax(160px, auto);
+    grid-template-columns: 80px minmax(240px, 400px) minmax(200px, 280px) 40px minmax(160px, auto);
     align-items: center;
     padding: var(--space-md) var(--space-lg);
     border-bottom: 1px solid var(--outline-variant);
@@ -1017,6 +1017,10 @@ select:hover,
 .contribution-row .name-col,
 .contribution-row .col.svg-name {
     padding-right: var(--space-lg);
+}
+
+.col.svg-name {
+  margin-right: var(--space-sm);
 }
 
 .contribution-header .col.actions {
@@ -1192,6 +1196,7 @@ select:hover,
 .date-col {
   line-height: 1.4;
 }
+
 /* Name Column */
 .name-col {
   display: flex;

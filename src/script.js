@@ -711,8 +711,21 @@ const Templates = {
       const isUnknown = originalDrawable === "unknown" || name === "(Unknown App)";
       const defaultSvg = Utils.sanitizeDrawableName(name);
       const drawable = overrides.drawable || defaultSvg;
+      
+      const existingIcon = App.state.existingIcons.find(icon => icon.drawable === drawable);
+      const existsInLibrary = !!existingIcon;
       const isCustom = overrides.drawable && drawable !== defaultSvg;
-      const svgHint = isCustom ? 'Custom.' : 'Generated from name.';
+      const svgHint = existsInLibrary ? 'Name in use.' : (isCustom ? 'Custom.' : 'Generated from name.');
+      const libraryTitle = existingIcon ? `${existingIcon.name}\n${drawable}.svg` : 'Found in Lawnicons.';
+
+      const libraryIconHtml = existsInLibrary
+          ? `<span class="library-icon-card" title="${libraryTitle}">
+                <img src="https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/svgs/${drawable}.svg" 
+                      alt="${drawable}" 
+                      loading="lazy"
+                      onerror="this.parentElement.remove()" />
+            </span>`
+          : "";
 
       const iconHtml = isUnknown
           ? `<div class="fallback-icon-row">No Icon</div>`
@@ -733,6 +746,9 @@ const Templates = {
               <div class="col svg-name">
                   <input type="text" class="contribution-svg-input" value="${drawable}" data-id="${id}" data-field="drawable" oninput="UI.updateContributionField(this)" title="SVG name" />
                   <span class="item-sub">${svgHint}</span>
+              </div>
+              <div class="col library-icon">
+                  ${libraryIconHtml}
               </div>
               <div class="actions-col">
                   <a class="action-btn" href="https://www.google.com/search?q=%22${pkg}%22" target="_blank" title="Search Google for package">
@@ -1439,6 +1455,9 @@ const Data = {
             if (App.state.search && App.state.existingIcons.length > 0) {
                 UI.renderIconLibrary();
             }
+            if (App.state.contributionActive && App.state.existingIcons.length > 0) {
+                UI.renderContributionMode();
+            }            
         });
           UI.init();
           UI.buildQuickPickQueue();
@@ -2920,6 +2939,7 @@ const UI = {
               <div class="col icon">Icon</div>
               <div class="col name">Name</div>
               <div class="col svg-name">SVG name</div>
+              <div class="col library-icon"></div>
               <div class="col actions"></div>  
           </div>
       `;
@@ -2957,14 +2977,38 @@ const UI = {
       const nameInput = row.querySelector('.contribution-name-input');
       const svgInput = row.querySelector('.contribution-svg-input');
       const svgHint = svgInput.nextElementSibling;
+      const libraryIconCol = row.querySelector('.col.library-icon');
       
       const name = nameInput.value;
-      const drawable = svgInput.value;
+      let drawable = svgInput.value;
       const defaultSvg = Utils.sanitizeDrawableName(name);
+      
+      if (field === 'label') {
+          drawable = defaultSvg;
+          svgInput.value = drawable;
+          App.state.contributionOverrides[id].drawable = drawable;
+      }
+      
+      const existingIcon = App.state.existingIcons.find(icon => icon.drawable === drawable);
+      const existsInLibrary = !!existingIcon;
       const isCustom = drawable !== defaultSvg;
+      const libraryTitle = existingIcon ? `${existingIcon.name}\n${drawable}.svg` : 'Found in Lawnicons.';
       
       if (svgHint && svgHint.classList.contains('item-sub')) {
-          svgHint.textContent = isCustom ? 'Custom.' : 'Generated from name.';
+          svgHint.textContent = existsInLibrary ? 'Name in use.' : (isCustom ? 'Custom.' : 'Generated from name.');
+      }
+      
+      if (libraryIconCol) {
+          if (existsInLibrary) {
+              libraryIconCol.innerHTML = `<span class="library-icon-card" title="${libraryTitle}">
+                  <img src="https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/svgs/${drawable}.svg" 
+                      alt="${drawable}" 
+                      loading="lazy"
+                      onerror="this.parentElement.remove()" />
+              </span>`;
+          } else {
+              libraryIconCol.innerHTML = '';
+          }
       }
       
       this.saveContribution();
