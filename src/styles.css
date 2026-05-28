@@ -93,6 +93,7 @@
     --space-md: 12px;
     --space-lg: 16px;
     --space-xl: 24px;
+    --space-xxl: 32px;
 
   /** Elevation tokens */
   --elevation-1: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
@@ -1084,7 +1085,7 @@ select:hover,
 
 .contribution-download-wrapper {
     position: fixed;
-    bottom: var(--space-xl);
+    bottom: var(--space-xxl);
     left: 50%;
     transform: translateX(-50%);
     z-index: 900;
@@ -1641,8 +1642,9 @@ input[type="checkbox"]:indeterminate::after {
   padding: 10px;
 }
 
-#sbDownloadBtn {
-  flex: 1;
+#sbContributeBtn {
+    flex: 1;
+    justify-content: center;
 }
 
 /* Context Menus */
@@ -1885,11 +1887,23 @@ input[type="checkbox"]:indeterminate::after {
     flex-shrink: 0;
   }
 
-#supportedCard {
-    width: 210px;
-    min-width: 210px;
-    flex: 0 0 210px;
+  #supportedCard {
+      width: 210px;
+      min-width: 210px;
+      flex: 0 0 210px;
+    }
+
+  .selection-bar {
+      left: var(--space-xl);
+      right: var(--space-xl);
+      transform: translateX(0) translateY(100px);
+      width: auto;
   }
+
+  .selection-bar.visible {
+      transform: translateX(0) translateY(0);
+  }
+
 }
 
 /* Icon Library Results */

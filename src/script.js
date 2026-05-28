@@ -705,12 +705,14 @@ const Templates = {
   contributionRow(app, iconUrl) {
       const id = app.componentName;
       const overrides = App.state.contributionOverrides[id] || {};
-      const name = overrides.label || app.label;
+      const name = overrides.label !== undefined ? overrides.label : app.label;
       const pkg = id.split('/')[0];
       const originalDrawable = app.drawable;
       const isUnknown = originalDrawable === "unknown" || name === "(Unknown App)";
-      const defaultSvg = Utils.sanitizeDrawableName(name);
-      const drawable = overrides.drawable || defaultSvg;
+
+      const rawSvg = Utils.sanitizeDrawableName(name);
+      const defaultSvg = (rawSvg === 'icon' || rawSvg === 'unknown') ? '' : rawSvg;
+      const drawable = overrides.drawable !== undefined ? overrides.drawable : defaultSvg;
       
       const existingIcon = App.state.existingIcons.find(icon => icon.drawable === drawable);
       const existsInLibrary = !!existingIcon;
@@ -2950,9 +2952,9 @@ const UI = {
       }).join("");
 
       const allFieldsFilled = App.state.contribution.every(app => {
-          const overrides = App.state.contributionOverrides[app.componentName] || {};
-          const name = overrides.label || app.label;
-          const drawable = overrides.drawable || Utils.sanitizeDrawableName(name);
+          const ov = App.state.contributionOverrides[app.componentName] || {};
+          const name = ov.label !== undefined ? ov.label : app.label;
+          const drawable = ov.drawable !== undefined ? ov.drawable : Utils.sanitizeDrawableName(name);
           return name.trim() && drawable.trim();
       });
 
@@ -2994,9 +2996,16 @@ const UI = {
       const defaultSvg = Utils.sanitizeDrawableName(name);
       
       if (field === 'label') {
-          drawable = defaultSvg;
-          svgInput.value = drawable;
-          App.state.contributionOverrides[id].drawable = drawable;
+          const sanitized = Utils.sanitizeDrawableName(input.value);
+          if (sanitized === 'icon' || sanitized === 'unknown') {
+              drawable = '';
+              svgInput.value = '';
+              App.state.contributionOverrides[id].drawable = '';
+          } else {
+              drawable = sanitized;
+              svgInput.value = drawable;
+              App.state.contributionOverrides[id].drawable = drawable;
+          }
       }
       
       const existingIcon = App.state.existingIcons.find(icon => icon.drawable === drawable);
@@ -3004,15 +3013,16 @@ const UI = {
       const isCustom = drawable !== defaultSvg;
       const libraryTitle = existingIcon ? `${existingIcon.name}\n${drawable}.svg` : 'Found in Lawnicons.';
 
-      const allFilled = App.state.contribution.every(app => {
+      const allFieldsFilled = App.state.contribution.every(app => {
           const ov = App.state.contributionOverrides[app.componentName] || {};
-          const n = ov.label || app.label;
-          const d = ov.drawable || Utils.sanitizeDrawableName(n);
-          return n.trim() && d.trim();
+          const name = ov.label !== undefined ? ov.label : app.label;
+          const drawable = ov.drawable !== undefined ? ov.drawable : Utils.sanitizeDrawableName(name);
+          return name.trim() && drawable.trim();
       });
+
       const btn = document.getElementById("contributionDownloadBtn");
       if (btn) {
-          btn.style.display = allFilled ? '' : 'none';
+          btn.style.display = allFieldsFilled ? '' : 'none';
       }      
       
       if (svgHint && svgHint.classList.contains('item-sub')) {
