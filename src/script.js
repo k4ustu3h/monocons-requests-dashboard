@@ -1685,7 +1685,7 @@ const UI = {
 
     App.dom.contributionBtn?.addEventListener("click", () => {
         if (!App.state.contributionActive && App.state.contribution.length === 0) {
-            Toast.show("Contribution is empty.");
+            Toast.show("Contribution plan is empty.");
             return;
         }
         App.state.contributionActive = !App.state.contributionActive;
@@ -1822,7 +1822,7 @@ const UI = {
         });
         this.saveContribution();        
         const count = App.state.selected.size;
-        Toast.show(`+${count} icon${count !== 1 ? 's' : ''} to contribution.`);
+        Toast.show(`+${count} icon${count !== 1 ? 's' : ''} added to contribution plan.`);
         Actions.clearAllSelections();
     });
 
@@ -2563,7 +2563,7 @@ const UI = {
 
       App.dom.contributionBtn.style.display = "none";
 
-      document.querySelector(".header-info h1").textContent = "Contribution";
+      document.querySelector(".header-info h1").textContent = "Plan contribution";
       
       if (!document.getElementById("contributionBackBtn")) {
           document.querySelector(".header-left").insertAdjacentHTML("afterbegin", `
