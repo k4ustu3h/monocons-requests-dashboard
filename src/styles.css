@@ -913,6 +913,10 @@ select:hover,
     display: none;
 }
 
+.contribution-container {
+    padding-bottom: 104px;
+}
+
 .contribution-container .name-col {
     min-width: 0;
     overflow: visible;
