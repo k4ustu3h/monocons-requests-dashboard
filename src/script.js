@@ -1810,8 +1810,8 @@ const UI = {
 
     // Selection Bar
     document.getElementById("sbContributeBtn")?.addEventListener("click", () => {
-        if (App.state.contribution.length >= 20) {
-            Toast.show("Maximum 20 icons in contribution list.", "error");
+        if (App.state.contribution.length >= 30) {
+            Toast.show("Maximum 30 icons in contribution plan.", "error");
             return;
         }
         App.state.selected.forEach(id => {
