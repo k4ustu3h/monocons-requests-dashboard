@@ -1693,6 +1693,7 @@ const UI = {
         if (!App.state.contributionActive) {
             document.querySelector(".header-info h1").textContent = "Lawnicons";
             App.dom.sentinel.style.display = "";
+            App.dom.contributionBtn.style.display = "";
         }
         this.saveContribution();
         this.render();
@@ -2322,6 +2323,14 @@ const UI = {
         return;
     }
 
+    const backBtn = document.getElementById("contributionBackBtn");
+    if (backBtn) backBtn.remove();
+
+    document.querySelector(".header-icon").classList.remove("is-hidden");
+    document.getElementById("search-wrapper").classList.remove("is-hidden");
+    document.querySelector(".header-info h1").textContent = "Lawnicons";
+    App.dom.contributionBtn.style.display = "";
+
     document.querySelector(".cards-row").classList.remove("is-hidden");
     document.querySelector(".controls").classList.remove("is-hidden");    
 
@@ -2541,13 +2550,34 @@ const UI = {
   },
 
   renderContributionMode() {
+      document.querySelector(".header-icon").classList.add("is-hidden");
       document.querySelector(".cards-row").classList.add("is-hidden");
       document.querySelector(".controls").classList.add("is-hidden");
       document.getElementById("iconLibraryResults")?.classList.add("is-hidden");
+      document.getElementById("search-wrapper").classList.add("is-hidden");
+      document.getElementById("contributionCountBadge").style.display = "none";
       App.dom.listHeader.style.display = "none";
       App.dom.sentinel.style.display = "none";
-      
+
+      App.dom.contributionBtn.style.display = "none";
+
       document.querySelector(".header-info h1").textContent = "Contribution";
+      
+      if (!document.getElementById("contributionBackBtn")) {
+          document.querySelector(".header-left").insertAdjacentHTML("afterbegin", `
+              <button class="header-link back-btn" id="contributionBackBtn" title="Back to requests">
+                  <svg><use href="#ic-arrow-back"/></svg>
+              </button>
+          `);
+          document.getElementById("contributionBackBtn").onclick = () => {
+              App.state.contributionActive = false;
+              App.dom.contributionBtn.style.display = "";
+              App.dom.contributionBtn.classList.remove("active");
+              this.saveContribution();
+              this.render();
+          };
+      }
+      
       App.dom.headerCount.textContent = `${App.state.contribution.length} icons`;
 
       App.dom.container.className = "contribution-container";

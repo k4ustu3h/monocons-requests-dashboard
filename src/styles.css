@@ -978,9 +978,13 @@ select:hover,
     justify-content: center;
 }
 
-#contributionBtn {
+#contributionBtn,
+#contributionBackBtn {
   border: none;
   cursor: pointer;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
 }
 
 .contribution-count-badge {
