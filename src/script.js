@@ -724,8 +724,8 @@ const Templates = {
                   ${libraryIconHtml}
               </div>
               <div class="actions-col">
-                  <a class="action-btn" href="https://www.google.com/search?q=%22${pkg}%22" target="_blank" title="Search Google for package">
-                      <svg><use href="#ic-search"/></svg>
+                  <a class="action-btn" href="https://www.google.com/search?q=%22${pkg}%22" target="_blank" title="Google Search">
+                      <svg><use href="#ic-web-search"/></svg>
                   </a>
                   <a class="action-btn" href="${CONFIG.urls.playStore}${pkg}" target="_blank" title="Play Store">
                       ${ICONS.play}
