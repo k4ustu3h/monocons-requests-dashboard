@@ -1675,7 +1675,7 @@ const UI = {
         } catch {}
     }
     
-    const savedActive = localStorage.getItem("lawnicons_contribution_active");
+    const savedActive = sessionStorage.getItem("lawnicons_contribution_active");
     if (savedActive === "true") {
         App.state.contributionActive = true;
         App.dom.contributionBtn?.classList.add("active");
@@ -2699,7 +2699,7 @@ const UI = {
 
   saveContribution() {
       localStorage.setItem("lawnicons_contribution", JSON.stringify(App.state.contribution));
-      localStorage.setItem("lawnicons_contribution_active", App.state.contributionActive);
+      sessionStorage.setItem("lawnicons_contribution_active", App.state.contributionActive);
       localStorage.setItem("lawnicons_contribution_overrides", JSON.stringify(App.state.contributionOverrides));
       if (!App.state.contributionActive) {
           this.updateContributionBadge();
