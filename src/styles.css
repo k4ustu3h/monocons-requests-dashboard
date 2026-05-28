@@ -341,72 +341,6 @@ button.input-icon.active {
   height: 24px;
 }
 
-/* Geo batch */
-#geoBatchBtn {
-  width: auto;
-  height: 48px;
-  padding: 8px 12px;
-  gap: 6px;
-  white-space: nowrap;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border: none;
-  background: var(--surface-container);
-  border-radius: var(--shape-xlarge);
-  color: var(--on-surface-variant);
-  font-family: inherit;
-  transition: all 0.2s;
-}
-
-#geoBatchBtn:hover {
-  background: var(--surface-container-high);
-}
-
-#geoBatchBtn.active {
-  background: var(--secondary-container);
-  color: var(--on-secondary-container);
-}
-
-#geoBatchBtn.active svg {
-  color: var(--on-secondary-container);
-}
-
-#geoBatchBtn span {
-  font-size: 13px;
-  font-weight: 600;
-}
-
-#geoBatchBtn svg {
-  width: 24px;
-  height: 24px;
-}
-
-#geoBatchMenu {
-  position: fixed;
-  margin: 0;
-  background: var(--surface-container-high);
-  border-radius: var(--shape-medium);
-  border: none;
-  box-shadow: var(--elevation-3);
-  padding: var(--space-lg);
-  min-width: 280px;
-}
-
-#geoBatchMenu .domain-config .input-wrapper {
-  height: 36px;
-}
-
-#geoBatchMenu .domain-config-row .input-wrapper {
-  flex: 1;
-}
-
-#geoBatchMenu .input-wrapper input {
-  padding-left: var(--space-md);
-}
-
 /* Cards (shared) */
 .card {
   background: var(--surface-container-low);
@@ -780,55 +714,6 @@ button.input-icon.active {
   font-weight: 600;
   color: var(--on-surface);
   margin-top: var(--space-2xs);
-}
-
-.domain-config {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-md);
-}
-
-.domain-config .input-wrapper {
-  height: 36px;
-}
-
-.domain-config input:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
-.domain-config-row {
-  display: flex;
-  gap: var(--space-md);
-  align-items: center;
-}
-
-.domain-config-row .input-wrapper {
-  flex: 1;
-}
-
-.domain-config-btn-apply {
-  height: 36px;
-  padding: 0 var(--space-lg);
-  border-radius: var(--shape-xlarge-inc);
-  border: none;
-  font-size: 13px;
-  cursor: pointer;
-  font-family: inherit;
-  background: var(--primary);
-  color: var(--on-primary);
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.domain-config-btn-apply:hover {
-  background: var(--secondary);
-}
-
-.domain-config-btn-apply:disabled {
-  background: var(--surface-variant);
-  color: var(--on-surface-variant);
-  cursor: default;
 }
 
 /* =========================================
