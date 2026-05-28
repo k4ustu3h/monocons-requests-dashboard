@@ -2200,6 +2200,8 @@ const UI = {
       const target = /** @type {HTMLElement | null} */ (e.target);
       if (!target) return;
 
+      if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA') return;
+
       // --- 1. Selection & Actions (Enter/Space) ---
       if (!(e.ctrlKey || e.metaKey) && e.key === 'Enter' || e.key === ' ') {
         // A. Row/Card Selection
@@ -2699,7 +2701,9 @@ const UI = {
       localStorage.setItem("lawnicons_contribution", JSON.stringify(App.state.contribution));
       localStorage.setItem("lawnicons_contribution_active", App.state.contributionActive);
       localStorage.setItem("lawnicons_contribution_overrides", JSON.stringify(App.state.contributionOverrides));
-      this.updateContributionBadge();
+      if (!App.state.contributionActive) {
+          this.updateContributionBadge();
+      }
   },
 
   updateContributionBadge() {
