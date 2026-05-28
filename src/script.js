@@ -751,6 +751,9 @@ const Templates = {
               ${ICONS.galaxyStore} <span>Galaxy Store</span>
           </div>
           <div class="ctx-divider"></div>
+          <div class="ctx-item" tabindex="0" role="menuitem" data-action="restore-original" data-id="${app.componentName}">
+            <span>Restore original</span>
+          </div>
           <div class="ctx-item" tabindex="0" role="menuitem" data-action="remove-from-contribution" data-id="${app.componentName}">
               <span>Remove</span>
           </div>
@@ -1969,6 +1972,18 @@ const UI = {
           }
           return;
       }
+
+      if (action === "restore-original") {
+        const id = actionEl.dataset.id;
+        const app = App.state.contribution.find(a => a.componentName === id);
+        if (app) {
+          delete App.state.contributionOverrides[id];
+          UI.saveContribution();
+          UI.render();
+        }
+        UI.closeContextMenu();
+        return;
+      }      
 
       if (action === "remove-from-contribution") {
           const id = actionEl.dataset.id;
