@@ -2620,7 +2620,8 @@ const UI = {
           </div>
       `;
       
-      const rowsHtml = App.state.contribution.map(app => {
+      const sorted = [...App.state.contribution].sort((a, b) => a.label.localeCompare(b.label));
+      const rowsHtml = sorted.map(app => {
           const iconUrl = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
           return Templates.contributionRow(app, iconUrl);
       }).join("");
