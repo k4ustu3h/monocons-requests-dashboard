@@ -2648,16 +2648,34 @@ const UI = {
           return name.trim() && drawable.trim();
       });
 
-      const downloadHtml = allFieldsFilled ? `
-          <div class="contribution-download-wrapper">
-              <button class="sb-action-btn" id="contributionDownloadBtn">
-                  <svg><use href="#ic-download"/></svg>
-                  <span>Download</span>
-              </button>
-          </div>
+      const hasIcons = App.state.contribution.length > 0;
+
+      const clearHtml = hasIcons ? `
+        <button class="sb-action-btn sb-action-btn-icon contribution-clear-btn" id="contributionClearBtn" title="Clear all" style="position:fixed; bottom:var(--space-xxl); left:var(--space-xxl); z-index:900;">
+          <svg><use href="#ic-remove"/></svg>
+        </button>
       ` : '';
-      
-      App.dom.container.innerHTML = downloadHtml + headerHtml + rowsHtml;
+
+      const downloadHtml = (hasIcons && allFieldsFilled) ? `
+        <div class="contribution-download-wrapper">
+          <button class="sb-action-btn" id="contributionDownloadBtn">
+            <svg><use href="#ic-download"/></svg>
+            <span>Download</span>
+          </button>
+        </div>
+      ` : '';
+        
+      App.dom.container.innerHTML = clearHtml + downloadHtml + headerHtml + rowsHtml;
+
+      const clearBtn = document.getElementById("contributionClearBtn");
+      if (clearBtn) {
+        clearBtn.onclick = () => {
+          App.state.contribution = [];
+          App.state.contributionOverrides = {};
+          UI.saveContribution();
+          UI.render();
+        };
+      }      
       
       if (allFieldsFilled) {
           document.getElementById("contributionDownloadBtn").onclick = () => {

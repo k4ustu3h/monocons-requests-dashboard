@@ -982,6 +982,14 @@ select:hover,
     justify-content: center;
 }
 
+.sb-action-btn.contribution-clear-btn {
+  background: var(--secondary-container);
+  color: var(--on-secondary-container);
+}
+.sb-action-btn.contribution-clear-btn:hover {
+  background: var(--secondary-container-hover);
+}
+
 #contributionBtn,
 #contributionBackBtn {
   border: none;
