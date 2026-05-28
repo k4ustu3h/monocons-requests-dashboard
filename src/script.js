@@ -1685,7 +1685,7 @@ const UI = {
 
     App.dom.contributionBtn?.addEventListener("click", () => {
         if (!App.state.contributionActive && App.state.contribution.length === 0) {
-            Toast.show("Contribution plan is empty.");
+            Toast.show("Contribution plan is empty. Add at least 1 icon.");
             return;
         }
         App.state.contributionActive = !App.state.contributionActive;
