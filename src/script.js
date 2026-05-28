@@ -2337,6 +2337,11 @@ const UI = {
     document.querySelector(".header-info h1").textContent = "Lawnicons";
     App.dom.contributionBtn.style.display = "";
 
+    const headerRight = document.querySelector(".header-right");
+    headerRight.querySelectorAll("a:not(#appfilterLink)").forEach(a => a.classList.remove("is-hidden"));
+    const appfilterLink = document.getElementById("appfilterLink");
+    if (appfilterLink) appfilterLink.classList.add("is-hidden");
+
     document.querySelector(".cards-row").classList.remove("is-hidden");
     document.querySelector(".controls").classList.remove("is-hidden");    
 
@@ -2591,7 +2596,20 @@ const UI = {
 
       const count = App.state.contribution.length;
       App.dom.headerCount.textContent = `${count} icon${count !== 1 ? 's' : ''}`;
-      
+
+      const headerRight = document.querySelector(".header-right");
+      headerRight.querySelectorAll("a").forEach(a => a.classList.add("is-hidden"));
+
+      if (!document.getElementById("appfilterLink")) {
+        headerRight.insertAdjacentHTML("afterbegin", `
+          <a id="appfilterLink" href="https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/refs/heads/develop/app/assets/appfilter.xml" class="header-link" title="Current appfilter.xml">
+            <svg><use href="#ic-code-xml"/></svg>
+          </a>
+        `);
+      } else {
+        document.getElementById("appfilterLink").classList.remove("is-hidden");
+      }
+
       const headerHtml = `
           <div class="contribution-header">
               <div class="col icon">Icon</div>
