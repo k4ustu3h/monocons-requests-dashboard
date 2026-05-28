@@ -407,10 +407,6 @@
       "existing_drawable": "nothing_launcher"
     },
     {
-      "id": "com.fadcam/com.fadcam.MainActivity.AlternativeIcon",
-      "existing_drawable": "generic_camera"
-    },
-    {
       "id": "kr.co.swkim.tageditor/kr.co.swkim.tageditor.ui.splash.SplashActivity",
       "existing_drawable": "music_tag_editor"
     },
@@ -777,6 +773,10 @@
     {
       "id": "com.PaLoApp.calculator2/com.PaLoApp.calculator2.Calculator",
       "existing_drawable": "generic_calculator_plus_minus_multi_equal"
+    },
+    {
+      "id": "com.fadcam.beta/com.fadcam.MainActivity.MinimalIcon",
+      "existing_drawable": "fadcam"
     },
     {
       "id": "com.authenticator.authservice2/com.authenticator.authservice.controllers.settings.PasscodeCheckActivity",
