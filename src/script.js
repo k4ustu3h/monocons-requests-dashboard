@@ -959,7 +959,7 @@ const Toast = {
       if (type === "error") iconSvg = `<svg><use href="#ic-error"/></svg>`;
       if (type === "success") iconSvg = `<svg><use href="#ic-download"/></svg>`;
 
-      el.innerHTML = Templates.toast(text, iconSvg);
+      el.innerHTML = `${iconSvg} ${text}`;
       App.dom.toastBox.appendChild(el);
 
       setTimeout(() => this.remove(el), 2500);
@@ -1790,7 +1790,26 @@ const UI = {
     const savedList = localStorage.getItem("lawnicons_contribution");
     if (savedList) {
         try {
-            App.state.contribution = JSON.parse(savedList);
+            const parsed = JSON.parse(savedList);
+            const before = parsed.length;
+            App.state.contribution = parsed.filter(app => 
+                App.data.some(d => d.componentName === app.componentName)
+            );
+            
+            const savedOverrides = localStorage.getItem("lawnicons_contribution_overrides");
+            if (savedOverrides) {
+                const parsedOverrides = JSON.parse(savedOverrides);
+                App.state.contributionOverrides = {};
+                for (const [id, overrides] of Object.entries(parsedOverrides)) {
+                    if (App.state.contribution.some(a => a.componentName === id)) {
+                        App.state.contributionOverrides[id] = overrides;
+                    }
+                }
+            }
+            
+            if (App.state.contribution.length < before) {
+                this.saveContribution();
+            }
         } catch {}
     }
     
@@ -1800,12 +1819,7 @@ const UI = {
         App.dom.contributionBtn?.classList.add("active");
     }
 
-    const savedOverrides = localStorage.getItem("lawnicons_contribution_overrides");
-    if (savedOverrides) {
-        try {
-            App.state.contributionOverrides = JSON.parse(savedOverrides);
-        } catch {}
-    }
+    this.updateContributionBadge();    
 
     App.dom.contributionBtn?.addEventListener("click", () => {
         if (!App.state.contributionActive && App.state.contribution.length === 0) {
@@ -3049,8 +3063,16 @@ const UI = {
       localStorage.setItem("lawnicons_contribution", JSON.stringify(App.state.contribution));
       localStorage.setItem("lawnicons_contribution_active", App.state.contributionActive);
       localStorage.setItem("lawnicons_contribution_overrides", JSON.stringify(App.state.contributionOverrides));
+      this.updateContributionBadge();
+  },
 
-},
+  updateContributionBadge() {
+      const badge = document.getElementById("contributionCountBadge");
+      if (!badge) return;
+      const count = App.state.contribution.length;
+      badge.textContent = count;
+      badge.style.display = count > 0 ? "flex" : "none";
+  },  
 
   renderDomainStats() {
     const data = App.state.domainStats;

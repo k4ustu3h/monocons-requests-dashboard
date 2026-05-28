@@ -1098,18 +1098,21 @@ select:hover,
   cursor: pointer;
 }
 
-.contribution-beta-badge {
+.contribution-count-badge {
     position: absolute;
-    bottom: 2px;
-    right: 2px;
+    bottom: 0px;
+    right: 0px;
+    min-width: 16px;
+    height: 16px;
+    padding: 0 4px;
+    border-radius: var(--shape-full);
+    background: var(--secondary-container);
+    color: var(--on-secondary-container);
     font-size: 10px;
-    padding: 1px 4px;
-    border-radius: var(--shape-xsmall);
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    background: var(--primary-container);
-    color: var(--on-primary-container);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     pointer-events: none;
 }
 
@@ -1748,6 +1751,7 @@ input[type="checkbox"]:indeterminate::after {
   gap: var(--space-md);
   pointer-events: none;
 }
+
 .toast {
   background: var(--surface-container-high);
   color: var(--on-surface);
@@ -1767,17 +1771,15 @@ input[type="checkbox"]:indeterminate::after {
   transform: translateX(20px);
   animation: notifIn 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
+
 .toast.hiding {
   animation: notifOut 0.2s ease-in forwards;
 }
+
 .toast svg {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
-}
-.toast-title {
-  font-weight: 600;
-  font-size: 14px;
 }
 
 @keyframes notifIn {
