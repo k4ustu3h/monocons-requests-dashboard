@@ -2582,6 +2582,9 @@ const UI = {
 
       App.dom.container.className = "contribution-container";
       App.dom.sbBar.classList.remove("visible");
+
+      const count = App.state.contribution.length;
+      App.dom.headerCount.textContent = `${count} icon${count !== 1 ? 's' : ''}`;
       
       const headerHtml = `
           <div class="contribution-header">
