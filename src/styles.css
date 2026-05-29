@@ -903,8 +903,13 @@ select:hover,
   border-bottom: 1px solid var(--outline-variant);
 }
 
+
 .mode-select {
   width: 80px;
+}
+
+.contribution-row .icon {
+  display: flex;
 }
 
 .contribution-header {
