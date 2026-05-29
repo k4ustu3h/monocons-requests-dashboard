@@ -1692,7 +1692,7 @@ const UI = {
 
     App.dom.contributionBtn?.addEventListener("click", () => {
         if (!App.state.contributionActive && App.state.contribution.length === 0) {
-            Toast.show("Contribution plan is empty. Add at least 1 icon.");
+            Toast.show("Contribution plan is empty. Add at least 1 request.");
             return;
         }
         App.state.contributionActive = !App.state.contributionActive;
@@ -2651,7 +2651,7 @@ const UI = {
       const hasIcons = App.state.contribution.length > 0;
 
       const clearHtml = hasIcons ? `
-        <button class="sb-action-btn sb-action-btn-icon contribution-clear-btn" id="contributionClearBtn" title="Clear all" style="position:fixed; bottom:var(--space-xxl); left:var(--space-xxl); z-index:900;">
+        <button class="sb-action-btn sb-action-btn-icon contribution-clear-btn" id="contributionClearBtn" title="Remove all" style="position:fixed; bottom:var(--space-xxl); left:var(--space-xxl); z-index:900;">
           <svg><use href="#ic-remove"/></svg>
         </button>
       ` : '';
