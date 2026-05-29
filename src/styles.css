@@ -897,20 +897,14 @@ select:hover,
 .contribution-header,
 .contribution-row {
   display: grid;
-  grid-template-columns: 88px 80px minmax(240px, 400px) minmax(200px, 280px) 40px minmax(160px, auto);
+  grid-template-columns: 104px 80px minmax(240px, 400px) minmax(200px, 280px) 40px minmax(160px, auto);
   align-items: center;
   padding: var(--space-md) var(--space-lg);
   border-bottom: 1px solid var(--outline-variant);
 }
 
-.mode-toggle svg {
-  width: 20px;
-  height: 20px;
-  color: var(--on-surface-variant);
-}
-
-.mode-toggle svg.active {
-  color: var(--primary);
+.mode-select {
+  width: 80px;
 }
 
 .contribution-header {

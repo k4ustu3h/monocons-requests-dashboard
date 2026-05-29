@@ -710,10 +710,10 @@ const Templates = {
       return `
           <div class="contribution-row" data-id="${id}">
               <div class="col mode">
-              <button class="control-group-btn mode-toggle" data-action="mode-toggle" data-id="${id}" title="Add new icon or link app ID to existing icon">
-                <svg class="mode-new ${mode === 'new' ? 'active' : ''}"><use href="#ic-new"/></svg>
-                <svg class="mode-link ${mode === 'link' ? 'active' : ''}"><use href="#ic-link"/></svg>
-              </button>
+              <select class="chip mode-select" data-action="mode-select" data-id="${id}" style="height:32px; padding:0 28px 0 8px; font-size:13px;">
+                <option value="new" ${mode === 'new' ? 'selected' : ''}>New</option>
+                <option value="link" ${mode === 'link' ? 'selected' : ''}>Link</option>
+              </select>
               </div>
               <div class="icon">${iconHtml}</div>
               <div class="name-col">
@@ -2153,18 +2153,15 @@ const UI = {
           return;
         }
 
-        if (action === "mode-toggle") {
+        if (action === "mode-select") {
           const id = actionEl.dataset.id;
-          const mode = actionEl.querySelector(".mode-new.active") ? "link" : "new";
+          const mode = actionEl.value;
           if (!App.state.contributionOverrides[id]) App.state.contributionOverrides[id] = {};
           App.state.contributionOverrides[id].mode = mode;
-          actionEl.querySelector(".mode-new").classList.toggle("active", mode === "new");
-          actionEl.querySelector(".mode-link").classList.toggle("active", mode === "link");
-          actionEl.dataset.mode = mode;
           UI.saveContribution();
           UI.updateIssues();
           return;
-        }        
+        }      
         
       }
 
