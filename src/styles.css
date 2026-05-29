@@ -1043,13 +1043,13 @@ select:hover,
 
 .issues-list {
   display: flex;
+  flex-shrink: 0;
   gap: var(--space-sm);
-  overflow-x: auto;
-  scrollbar-width: none;
+  overflow-x: visible;
   height: 120px;
   align-items: stretch;
-  flex: 1;
-  min-width: 0;
+  width: max-content;
+  max-width: none;
 }
 
 .issues-list::-webkit-scrollbar {
