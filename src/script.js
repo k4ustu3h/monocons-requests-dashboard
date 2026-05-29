@@ -2851,14 +2851,15 @@ const UI = {
       App.dom.container.innerHTML = clearHtml + downloadHtml + headerHtml + rowsHtml;
 
       const clearBtn = document.getElementById("contributionClearBtn");
-      if (clearBtn) {
-        clearBtn.onclick = () => {
-          App.state.contribution = [];
-          App.state.contributionOverrides = {};
-          UI.saveContribution();
-          UI.render();
-        };
-      }      
+      clearBtn.onclick = () => {
+        App.state.contribution = [];
+        App.state.contributionOverrides = {};
+        App.state.contributionActive = false;
+        App.dom.contributionBtn.style.display = "";
+        App.dom.contributionBtn.classList.remove("active");
+        UI.saveContribution();
+        UI.render();
+      };
       
       if (downloadReady) {
           document.getElementById("contributionDownloadBtn").onclick = () => {
