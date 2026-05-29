@@ -2811,7 +2811,7 @@ const UI = {
       const issuesList = document.getElementById("contributionIssuesList");
       if (issuesList) {
         issuesList.innerHTML = issueEntries.map(issue => `
-          <div class="issue-item" data-action="issue-jump" data-issue="${issue.id}">
+          <div class="issue-item" data-action="issue-jump" data-issue="${issue.id}" ${issue.count > 0 ? `title="Show ${issue.count} issue${issue.count !== 1 ? 's' : ''}"` : ''}>
             <div class="issue-label">${issue.label}</div>
             <div class="issue-count">${issue.count}</div>
           </div>
@@ -2915,7 +2915,7 @@ const UI = {
       .sort((a, b) => b.count - a.count);
 
     list.innerHTML = issueEntries.map(issue => `
-      <div class="issue-item" data-action="issue-jump" data-issue="${issue.id}">
+      <div class="issue-item" data-action="issue-jump" data-issue="${issue.id}" ${issue.count > 0 ? `title="Show ${issue.count} issue${issue.count !== 1 ? 's' : ''}"` : ''}>
         <div class="issue-label">${issue.label}</div>
         <div class="issue-count">${issue.count}</div>
       </div>
