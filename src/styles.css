@@ -1029,6 +1029,60 @@ select:hover,
   min-width: 120px;
 }
 
+.issues-list {
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  scrollbar-width: none;
+  height: 120px;
+  align-items: stretch;
+  flex: 1;
+  min-width: 0;
+}
+
+.issues-list::-webkit-scrollbar {
+  display: none;
+}
+
+.issue-item {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  background: var(--surface-container);
+  border-radius: var(--shape-small);
+  cursor: pointer;
+  transition: background 0.2s;
+  padding: var(--space-sm) var(--space-lg);
+}
+
+.issue-item:hover {
+  background: var(--surface-container-high);
+}
+
+.issue-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--on-surface);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.issue-count {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--on-surface);
+}
+
+.contribution-name-input.issue-highlight,
+.contribution-svg-input.issue-highlight {
+  box-shadow: 0 0 0 1px var(--secondary);
+  background: var(--secondary-container);
+  color: var(--on-secondary-container);
+}
+
 /* Sortable Headers */
 .list-header .col.name,
 .list-header .col.req,

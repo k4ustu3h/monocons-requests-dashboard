@@ -2118,6 +2118,17 @@ const UI = {
           UI.render();
           return;
         }
+
+        if (action === "issue-jump") {
+          const issueId = actionEl.dataset.issue;
+          if (issueId) UI.jumpToIssue(issueId);
+          return;
+        }        
+      }
+
+      const input = target.closest(".contribution-name-input, .contribution-svg-input");
+      if (input) {
+        input.classList.remove("issue-highlight");
       }
 
       const libraryCard = target.closest('.library-icon-card');
@@ -2649,11 +2660,7 @@ const UI = {
               <canvas id="domainsPie"></canvas>
               <div class="chart-tooltip" id="domainsTooltip"></div>
             </div>
-            <div class="card is-hidden" id="contributionIssuesCard">
-              <div class="card-header">
-                <span class="card-title">Issues</span>
-              </div>
-            </div>
+            <div class="issues-list" id="contributionIssuesList"></div>
           </div>
         `);
       } else {
@@ -2760,6 +2767,56 @@ const UI = {
           tooltip.style.display = "none";
         };
       }
+
+      const issues = [
+        { id: "nameinuse", label: "SVG name in use" },
+        { id: "nameconflict", label: "Duplicate in plan" },
+        { id: "emptyfields", label: "Empty fields" },
+        { id: "invalidsvg", label: "Bad chars in SVG" },
+        { id: "startdigit", label: "No _ before digit" },
+      ];
+
+      const issueCounts = {};
+      issues.forEach(issue => issueCounts[issue.id] = 0);
+
+      App.state.contribution.forEach(app => {
+        const ov = App.state.contributionOverrides[app.componentName] || {};
+        const name = ov.label !== undefined ? ov.label : app.label;
+        const drawable = ov.drawable !== undefined ? ov.drawable : Utils.sanitizeDrawableName(name);
+
+        if (drawable && App.state.existingIcons.some(icon => icon.drawable === drawable)) {
+          issueCounts.nameinuse++;
+        }
+
+        if (drawable && App.state.contribution.filter(a => {
+          const aOv = App.state.contributionOverrides[a.componentName] || {};
+          const aName = aOv.label !== undefined ? aOv.label : a.label;
+          const aDrawable = aOv.drawable !== undefined ? aOv.drawable : Utils.sanitizeDrawableName(aName);
+          return aDrawable === drawable;
+        }).length > 1) {
+          issueCounts.nameconflict++;
+        }
+
+        if (!name.trim()) issueCounts.emptyfields++;
+        if (!drawable.trim()) issueCounts.emptyfields++;
+        if (drawable && /[^a-z0-9_]/.test(drawable)) issueCounts.invalidsvg++;
+        if (drawable && /^[0-9]/.test(drawable)) issueCounts.startdigit++;
+        if (name.includes("&") && !name.includes("&amp;")) issueCounts.unescaped++;
+      });
+
+      const issueEntries = issues
+        .map(issue => ({ ...issue, count: issueCounts[issue.id] }))
+        .sort((a, b) => b.count - a.count);
+
+      const issuesList = document.getElementById("contributionIssuesList");
+      if (issuesList) {
+        issuesList.innerHTML = issueEntries.map(issue => `
+          <div class="issue-item" data-action="issue-jump" data-issue="${issue.id}">
+            <div class="issue-label">${issue.label}</div>
+            <div class="issue-count">${issue.count}</div>
+          </div>
+        `).join("");
+      }
       
       const sorted = [...App.state.contribution].sort((a, b) => a.label.localeCompare(b.label));
       const rowsHtml = sorted.map(app => {
@@ -2767,12 +2824,7 @@ const UI = {
           return Templates.contributionRow(app, iconUrl);
       }).join("");
 
-      const allFieldsFilled = App.state.contribution.every(app => {
-          const ov = App.state.contributionOverrides[app.componentName] || {};
-          const name = ov.label !== undefined ? ov.label : app.label;
-          const drawable = ov.drawable !== undefined ? ov.drawable : Utils.sanitizeDrawableName(name);
-          return name.trim() && drawable.trim();
-      });
+      const downloadReady = issueCounts.emptyfields === 0 && issueCounts.invalidsvg === 0 && issueCounts.startdigit === 0;
 
       const hasIcons = App.state.contribution.length > 0;
 
@@ -2782,7 +2834,7 @@ const UI = {
         </button>
       ` : '';
 
-      const downloadHtml = (hasIcons && allFieldsFilled) ? `
+      const downloadHtml = (hasIcons && downloadReady) ? `
         <div class="contribution-download-wrapper">
           <button class="sb-action-btn" id="contributionDownloadBtn">
             <svg><use href="#ic-download"/></svg>
@@ -2803,11 +2855,136 @@ const UI = {
         };
       }      
       
-      if (allFieldsFilled) {
+      if (downloadReady) {
           document.getElementById("contributionDownloadBtn").onclick = () => {
               Actions.downloadContributionBundle();
           };
       }
+  },
+
+  updateIssues() {
+    const list = document.getElementById("contributionIssuesList");
+    if (!list) return null;
+
+    const issues = [
+      { id: "nameinuse", label: "SVG name in use" },
+      { id: "nameconflict", label: "Duplicate in plan" },
+      { id: "emptyfields", label: "Empty fields" },
+      { id: "invalidsvg", label: "Bad chars in SVG" },
+      { id: "startdigit", label: "No _ before digit" },
+    ];
+
+    const issueCounts = {};
+    issues.forEach(issue => issueCounts[issue.id] = 0);
+
+    App.state.contribution.forEach(app => {
+      const ov = App.state.contributionOverrides[app.componentName] || {};
+      const name = ov.label !== undefined ? ov.label : app.label;
+      const drawable = ov.drawable !== undefined ? ov.drawable : Utils.sanitizeDrawableName(name);
+
+      if (drawable && App.state.existingIcons.some(icon => icon.drawable === drawable)) {
+        issueCounts.nameinuse++;
+      }
+
+      const sameDrawable = App.state.contribution.filter(a => {
+        const aOv = App.state.contributionOverrides[a.componentName] || {};
+        const aName = aOv.label !== undefined ? aOv.label : a.label;
+        const aDrawable = aOv.drawable !== undefined ? aOv.drawable : Utils.sanitizeDrawableName(aName);
+        return aDrawable === drawable;
+      }).length;
+      if (drawable && sameDrawable > 1) {
+        issueCounts.nameconflict++;
+      }
+
+      if (!name.trim()) issueCounts.emptyfields++;
+      if (!drawable.trim()) issueCounts.emptyfields++;
+      if (drawable && /[^a-z0-9_]/.test(drawable)) issueCounts.invalidsvg++;
+      if (drawable && /^[0-9]/.test(drawable)) issueCounts.startdigit++;
+    });
+
+    const issueEntries = issues
+      .map(issue => ({ ...issue, count: issueCounts[issue.id] }))
+      .sort((a, b) => b.count - a.count);
+
+    list.innerHTML = issueEntries.map(issue => `
+      <div class="issue-item" data-action="issue-jump" data-issue="${issue.id}">
+        <div class="issue-label">${issue.label}</div>
+        <div class="issue-count">${issue.count}</div>
+      </div>
+    `).join("");
+
+    const downloadReady = issueCounts.emptyfields === 0 && issueCounts.invalidsvg === 0 && issueCounts.startdigit === 0;
+    const btn = document.getElementById("contributionDownloadBtn");
+    if (btn) {
+      btn.style.display = (App.state.contribution.length > 0 && downloadReady) ? '' : 'none';
+    }
+
+    return issueCounts;
+  },
+
+  jumpToIssue(issueId) {
+    const rows = document.querySelectorAll(".contribution-row");
+    if (!rows.length) return;
+
+    document.querySelectorAll(".issue-highlight").forEach(el => el.classList.remove("issue-highlight"));
+
+    for (const row of rows) {
+      const appId = row.dataset.id;
+      const app = App.state.contribution.find(a => a.componentName === appId);
+      if (!app) continue;
+
+      const ov = App.state.contributionOverrides[appId] || {};
+      const name = ov.label !== undefined ? ov.label : app.label;
+      const drawable = ov.drawable !== undefined ? ov.drawable : Utils.sanitizeDrawableName(name);
+
+      let match = false;
+      let highlightName = false;
+      let highlightSvg = false;
+
+      switch (issueId) {
+        case "nameinuse":
+          match = drawable && App.state.existingIcons.some(icon => icon.drawable === drawable);
+          highlightSvg = match;
+          break;
+        case "nameconflict":
+          match = drawable && App.state.contribution.filter(a => {
+            const aOv = App.state.contributionOverrides[a.componentName] || {};
+            const aName = aOv.label !== undefined ? aOv.label : a.label;
+            const aDrawable = aOv.drawable !== undefined ? aOv.drawable : Utils.sanitizeDrawableName(aName);
+            return aDrawable === drawable;
+          }).length > 1;
+          highlightSvg = match;
+          break;
+        case "emptyfields":
+          match = !name.trim() || !drawable.trim();
+          highlightName = !name.trim();
+          highlightSvg = !drawable.trim();
+          break;
+        case "invalidsvg":
+          match = drawable && /[^a-z0-9_]/.test(drawable);
+          highlightSvg = match;
+          break;
+        case "startdigit":
+          match = drawable && /^[0-9]/.test(drawable);
+          highlightSvg = match;
+          break;
+      }
+
+      if (match) {
+        if (highlightName) {
+          const nameInput = row.querySelector(".contribution-name-input");
+          if (nameInput) nameInput.classList.add("issue-highlight");
+        }
+        if (highlightSvg) {
+          const svgInput = row.querySelector(".contribution-svg-input");
+          if (svgInput) svgInput.classList.add("issue-highlight");
+        }
+      }
+    }
+
+    if (rows.length > 0 && document.querySelector(".issue-highlight")) {
+      document.querySelector(".issue-highlight").closest(".contribution-row")?.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
   },
 
   updateContributionField(input) {
@@ -2847,18 +3024,6 @@ const UI = {
       const isCustom = drawable !== defaultSvg;
       const libraryTitle = existingIcon ? `${existingIcon.name}\n${drawable}.svg` : 'Found in Lawnicons.';
 
-      const allFieldsFilled = App.state.contribution.every(app => {
-          const ov = App.state.contributionOverrides[app.componentName] || {};
-          const name = ov.label !== undefined ? ov.label : app.label;
-          const drawable = ov.drawable !== undefined ? ov.drawable : Utils.sanitizeDrawableName(name);
-          return name.trim() && drawable.trim();
-      });
-
-      const btn = document.getElementById("contributionDownloadBtn");
-      if (btn) {
-          btn.style.display = allFieldsFilled ? '' : 'none';
-      }      
-      
       if (svgHint && svgHint.classList.contains('item-sub')) {
           svgHint.textContent = existsInLibrary ? 'Name in use.' : (isCustom ? 'Custom.' : 'Generated from name.');
       }
@@ -2877,6 +3042,14 @@ const UI = {
       }
       
       this.saveContribution();
+      const issueCounts = this.updateIssues();
+      if (issueCounts) {
+        const downloadReady = issueCounts.emptyfields === 0 && issueCounts.invalidsvg === 0 && issueCounts.startdigit === 0;
+        const btn = document.getElementById("contributionDownloadBtn");
+        if (btn) {
+          btn.style.display = (App.state.contribution.length > 0 && downloadReady) ? '' : 'none';
+        }
+      }
   },
 
   saveContribution() {
