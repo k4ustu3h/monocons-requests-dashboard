@@ -2798,7 +2798,7 @@ const UI = {
 
       const issueEntries = issues
         .map(issue => ({ ...issue, count: issueCounts[issue.id] }))
-        .sort((a, b) => b.count - a.count);
+        .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 
       const issuesList = document.getElementById("contributionIssuesList");
       if (issuesList) {
@@ -2904,7 +2904,7 @@ const UI = {
 
     const issueEntries = issues
       .map(issue => ({ ...issue, count: issueCounts[issue.id] }))
-      .sort((a, b) => b.count - a.count);
+      .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 
     list.innerHTML = issueEntries.map(issue => `
       <div class="issue-item" data-action="issue-jump" data-issue="${issue.id}" ${issue.count > 0 ? `title="Show ${issue.count} issue${issue.count !== 1 ? 's' : ''}"` : ''}>
