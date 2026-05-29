@@ -1829,7 +1829,7 @@ const UI = {
         });
         this.saveContribution();        
         const count = App.state.selected.size;
-        Toast.show(`+${count} icon${count !== 1 ? 's' : ''} added to contribution plan.`);
+        Toast.show(`${count} icon${count !== 1 ? 's' : ''} added to contribution plan.`);
         Actions.clearAllSelections();
     });
 
