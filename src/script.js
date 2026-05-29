@@ -684,6 +684,8 @@ const Templates = {
       const rawSvg = Utils.sanitizeDrawableName(name);
       const defaultSvg = (rawSvg === 'icon' || rawSvg === 'unknown') ? '' : rawSvg;
       const drawable = overrides.drawable !== undefined ? overrides.drawable : defaultSvg;
+
+      const mode = (overrides.mode === "link") ? "link" : "new";
       
       const existingIcon = App.state.existingIcons.find(icon => icon.drawable === drawable);
       const existsInLibrary = !!existingIcon;
@@ -707,6 +709,12 @@ const Templates = {
 
       return `
           <div class="contribution-row" data-id="${id}">
+              <div class="col mode">
+              <button class="control-group-btn mode-toggle" data-action="mode-toggle" data-id="${id}" title="Add new icon or link app ID to existing icon">
+                <svg class="mode-new ${mode === 'new' ? 'active' : ''}"><use href="#ic-new"/></svg>
+                <svg class="mode-link ${mode === 'link' ? 'active' : ''}"><use href="#ic-link"/></svg>
+              </button>
+              </div>
               <div class="icon">${iconHtml}</div>
               <div class="name-col">
                   <div class="name-details">
@@ -1278,6 +1286,8 @@ const Actions = {
           
           const label = nameInput?.value || app.label;
           const drawable = svgInput?.value || app.drawable;
+
+          const mode = (App.state.contributionOverrides[app.componentName]?.mode === "link") ? "link" : "new";
           
           let uniqueDrawable = drawable;
           let c = 2;
@@ -1289,14 +1299,16 @@ const Actions = {
 
           xmlAppFilter += `    <item component="ComponentInfo{${app.componentName}}" drawable="${uniqueDrawable}" name="${label.replace(/"/g, '&quot;')}" />\n`;
 
-          const url = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
-          const p = fetch(url)
-              .then(r => r.ok ? r.arrayBuffer() : null)
-              .then(buf => {
-                  if (buf) zipData[`${uniqueDrawable}.png`] = new Uint8Array(buf);
-              })
-              .catch(() => {});
-          fetchPromises.push(p);
+          if (mode === "new") {
+              const url = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
+              const p = fetch(url)
+                  .then(r => r.ok ? r.arrayBuffer() : null)
+                  .then(buf => {
+                      if (buf) zipData[`${uniqueDrawable}.png`] = new Uint8Array(buf);
+                  })
+                  .catch(() => {});
+              fetchPromises.push(p);
+          }
       });
 
       xmlAppFilter += "</resources>";
@@ -2119,7 +2131,20 @@ const UI = {
           const issueId = actionEl.dataset.issue;
           if (issueId) UI.jumpToIssue(issueId);
           return;
+        }
+
+        if (action === "mode-toggle") {
+          const id = actionEl.dataset.id;
+          const mode = actionEl.querySelector(".mode-new.active") ? "link" : "new";
+          if (!App.state.contributionOverrides[id]) App.state.contributionOverrides[id] = {};
+          App.state.contributionOverrides[id].mode = mode;
+          actionEl.querySelector(".mode-new").classList.toggle("active", mode === "new");
+          actionEl.querySelector(".mode-link").classList.toggle("active", mode === "link");
+          actionEl.dataset.mode = mode;
+          UI.saveContribution();
+          return;
         }        
+        
       }
 
       const input = target.closest(".contribution-name-input, .contribution-svg-input");
@@ -2636,6 +2661,7 @@ const UI = {
 
       const headerHtml = `
           <div class="contribution-header">
+              <div class="col mode">Mode</div>
               <div class="col icon">Icon</div>
               <div class="col name">Name</div>
               <div class="col svg-name">SVG name</div>
