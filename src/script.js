@@ -1314,6 +1314,26 @@ const Actions = {
       xmlAppFilter += "</resources>";
       zipData["appfilter.xml"] = fflate.strToU8(xmlAppFilter);
 
+      let txtCommands = "";
+      list.forEach(app => {
+        const row = document.querySelector(`.contribution-row[data-id="${app.componentName}"]`);
+        const nameInput = row?.querySelector(".contribution-name-input");
+        const svgInput = row?.querySelector(".contribution-svg-input");
+        
+        const label = nameInput?.value || app.label;
+        const drawable = svgInput?.value || app.drawable;
+        const mode = (App.state.contributionOverrides[app.componentName]?.mode === "link") ? "link" : "new";
+        
+        const cmdType = mode === "new" ? "add" : "link";
+        const svgPath = mode === "new" ? `"${drawable}.svg"` : `"${drawable}"`;
+        txtCommands += `python3 ./icontool.py ${cmdType} ${svgPath} ${app.componentName} "${label.replace(/"/g, '\\"')}"\n`;
+      });
+
+      if (txtCommands) {
+        txtCommands = "Run from your Lawnicons repository folder.\n\n" + txtCommands;
+        zipData["icontool_commands.txt"] = fflate.strToU8(txtCommands);
+      }      
+
       await Promise.all(fetchPromises);
       const content = fflate.zipSync(zipData, { level: 6 });
 
