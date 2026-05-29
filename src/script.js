@@ -2689,10 +2689,12 @@ const UI = {
         let angle = -Math.PI / 2;
         const style = getComputedStyle(document.documentElement);
         const colors = [
-          style.getPropertyValue("--primary").trim(),
-          style.getPropertyValue("--secondary").trim(),
-          style.getPropertyValue("--tertiary").trim(),
-          style.getPropertyValue("--error").trim(),
+          style.getPropertyValue("--on-red-container").trim(),
+          style.getPropertyValue("--on-purple-container").trim(),
+          style.getPropertyValue("--on-mint-container").trim(),
+          style.getPropertyValue("--on-indigo-container").trim(),
+          style.getPropertyValue("--on-amber-container").trim(),
+          style.getPropertyValue("--on-steel-container").trim(),
           style.getPropertyValue("--on-pine-container").trim(),
           style.getPropertyValue("--on-flax-container").trim(),
           style.getPropertyValue("--on-teal-container").trim(),
@@ -2825,6 +2827,11 @@ const UI = {
       const downloadReady = issueCounts.emptyfields === 0 && issueCounts.invalidsvg === 0 && issueCounts.startdigit === 0;
 
       const hasIcons = App.state.contribution.length > 0;
+      if (!hasIcons) {
+        document.getElementById("contributionCards").classList.add("is-hidden");
+        App.dom.headerCount.textContent = "0 icons";
+        return;
+      }      
 
       const clearHtml = hasIcons ? `
         <button class="sb-action-btn sb-action-btn-icon contribution-clear-btn" id="contributionClearBtn" title="Remove all" style="position:fixed; bottom:var(--space-xxl); left:var(--space-xxl); z-index:900;">

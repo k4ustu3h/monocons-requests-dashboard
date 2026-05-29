@@ -75,6 +75,30 @@
   --pine-container: #2e4f1c;
   --on-pine-container: #c6efaa;
 
+  /* Source: #9C4040 */
+  --red-container: #5C1E1E;
+  --on-red-container: #ffcdd2;
+
+  /* Source: #7B4B9A */
+  --purple-container: #3D1D52;
+  --on-purple-container: #e8d5f5;
+
+  /* Source: #3A7D5C */
+  --mint-container: #1A4A32;
+  --on-mint-container: #b8e6d0;
+
+  /* Source: #5C6BC0 */
+  --indigo-container: #2A3478;
+  --on-indigo-container: #c5cae9;
+
+  /* Source: #D4852A */
+  --amber-container: #6B3D0A;
+  --on-amber-container: #ffe0b2;
+
+  /* Source: #4A90A4 */
+  --steel-container: #1E4D5C;
+  --on-steel-container: #b2dfee;  
+
   /** Shape tokens **/
   --shape-xsmall: 4px;
   --shape-small: 8px;
