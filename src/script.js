@@ -2778,7 +2778,9 @@ const UI = {
       App.state.contribution.forEach(app => {
         const ov = App.state.contributionOverrides[app.componentName] || {};
         const name = ov.label !== undefined ? ov.label : app.label;
-        const drawable = ov.drawable !== undefined ? ov.drawable : Utils.sanitizeDrawableName(name);
+        const rawSvg = Utils.sanitizeDrawableName(name);
+        const defaultSvg = (rawSvg === 'icon' || rawSvg === 'unknown') ? '' : rawSvg;
+        const drawable = ov.drawable !== undefined ? ov.drawable : defaultSvg;
 
         if (drawable && App.state.existingIcons.some(icon => icon.drawable === drawable)) {
           issueCounts.nameinuse++;
@@ -2876,7 +2878,9 @@ const UI = {
     App.state.contribution.forEach(app => {
       const ov = App.state.contributionOverrides[app.componentName] || {};
       const name = ov.label !== undefined ? ov.label : app.label;
-      const drawable = ov.drawable !== undefined ? ov.drawable : Utils.sanitizeDrawableName(name);
+      const rawSvg = Utils.sanitizeDrawableName(name);
+      const defaultSvg = (rawSvg === 'icon' || rawSvg === 'unknown') ? '' : rawSvg;
+      const drawable = ov.drawable !== undefined ? ov.drawable : defaultSvg;
 
       if (drawable && App.state.existingIcons.some(icon => icon.drawable === drawable)) {
         issueCounts.nameinuse++;
@@ -2931,7 +2935,9 @@ const UI = {
 
       const ov = App.state.contributionOverrides[appId] || {};
       const name = ov.label !== undefined ? ov.label : app.label;
-      const drawable = ov.drawable !== undefined ? ov.drawable : Utils.sanitizeDrawableName(name);
+      const rawSvg = Utils.sanitizeDrawableName(name);
+      const defaultSvg = (rawSvg === 'icon' || rawSvg === 'unknown') ? '' : rawSvg;
+      const drawable = ov.drawable !== undefined ? ov.drawable : defaultSvg;
 
       let match = false;
       let highlightName = false;
