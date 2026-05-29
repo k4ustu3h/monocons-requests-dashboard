@@ -2688,18 +2688,10 @@ const UI = {
         
         let angle = -Math.PI / 2;
         const style = getComputedStyle(document.documentElement);
-        const colors = [
-          style.getPropertyValue("--on-red-container").trim(),
-          style.getPropertyValue("--on-purple-container").trim(),
-          style.getPropertyValue("--on-mint-container").trim(),
-          style.getPropertyValue("--on-indigo-container").trim(),
-          style.getPropertyValue("--on-amber-container").trim(),
-          style.getPropertyValue("--on-steel-container").trim(),
-          style.getPropertyValue("--on-pine-container").trim(),
-          style.getPropertyValue("--on-flax-container").trim(),
-          style.getPropertyValue("--on-teal-container").trim(),
-          style.getPropertyValue("--on-orange-container").trim(),
-        ];
+        const colors = [];
+        for (let i = 1; i <= 10; i++) {
+          colors.push(style.getPropertyValue(`--chart-${i}`).trim());
+        }
         
         entries.forEach((entry, i) => {
           const slice = (entry[1] / total) * Math.PI * 2;
