@@ -2596,7 +2596,7 @@ const UI = {
 
       App.dom.contributionBtn.style.display = "none";
 
-      document.querySelector(".header-info h1").textContent = "Plan contribution";
+      document.querySelector(".header-info h1").textContent = "Contribution plan";
       
       if (!document.getElementById("contributionBackBtn")) {
           document.querySelector(".header-left").insertAdjacentHTML("afterbegin", `
