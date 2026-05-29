@@ -2162,6 +2162,7 @@ const UI = {
           actionEl.querySelector(".mode-link").classList.toggle("active", mode === "link");
           actionEl.dataset.mode = mode;
           UI.saveContribution();
+          UI.updateIssues();
           return;
         }        
         
@@ -2657,14 +2658,11 @@ const UI = {
               this.render();
           };
       }
-      
-      App.dom.headerCount.textContent = `${App.state.contribution.length} icons`;
 
       App.dom.container.className = "contribution-container";
       App.dom.sbBar.classList.remove("visible");
 
       const count = App.state.contribution.length;
-      App.dom.headerCount.textContent = `${count} icon${count !== 1 ? 's' : ''}`;
 
       const headerRight = document.querySelector(".header-right");
       headerRight.querySelectorAll("a").forEach(a => a.classList.add("is-hidden"));
@@ -2871,6 +2869,13 @@ const UI = {
         return;
       }      
 
+      const newCount = App.state.contribution.filter(a => (App.state.contributionOverrides[a.componentName]?.mode || "new") === "new").length;
+      const linkCount = App.state.contribution.length - newCount;
+      let parts = [];
+      if (newCount > 0) parts.push(`${newCount} new icon${newCount !== 1 ? 's' : ''}`);
+      if (linkCount > 0) parts.push(`${linkCount} link${linkCount !== 1 ? 's' : ''}`);
+      App.dom.headerCount.textContent = parts.join(' \u2022 ') || '0 icons';
+
       const clearHtml = hasIcons ? `
         <button class="sb-action-btn sb-action-btn-icon contribution-clear-btn" id="contributionClearBtn" title="Remove all" style="position:fixed; bottom:var(--space-xxl); left:var(--space-xxl); z-index:900;">
           <svg><use href="#ic-remove"/></svg>
@@ -2964,6 +2969,13 @@ const UI = {
     if (btn) {
       btn.style.display = (App.state.contribution.length > 0 && downloadReady) ? '' : 'none';
     }
+
+    const newCount = App.state.contribution.filter(a => (App.state.contributionOverrides[a.componentName]?.mode || "new") === "new").length;
+    const linkCount = App.state.contribution.length - newCount;
+    let parts = [];
+    if (newCount > 0) parts.push(`${newCount} new icon${newCount !== 1 ? 's' : ''}`);
+    if (linkCount > 0) parts.push(`${linkCount} link${linkCount !== 1 ? 's' : ''}`);
+    App.dom.headerCount.textContent = parts.join(' \u2022 ') || '0 icons';    
 
     return issueCounts;
   },
