@@ -68,54 +68,55 @@
   </header>
 
   <div class="cards-row">
-
-    <div id="supportedCard" class="card">
-      <div class="card-header">
-        <span class="status-pill status-supported">Supported</span>
+    <div id="mainCards" style="display:contents;">
+      <div id="supportedCard" class="card">
+        <div class="card-header">
+          <span class="status-pill status-supported">Supported</span>
+        </div>
+        <div class="card-sub is-hidden" id="supportedDesc">Requests with this status have higher priority.</div>
+        <a href="https://github.com/LawnchairLauncher/lawnicons#supporting" target="_blank" rel="noopener"
+          class="link is-hidden" id="supportedLink">Become a supporter</a>
       </div>
-      <div class="card-sub is-hidden" id="supportedDesc">Requests with this status have higher priority.</div>
-      <a href="https://github.com/LawnchairLauncher/lawnicons#supporting" target="_blank" rel="noopener"
-        class="link is-hidden" id="supportedLink">Become a supporter</a>
-    </div>
 
-    <div id="quickPickCard" class="card">
-      <div class="quick-pick-actions">
-        <div class="quick-pick-actions-bg">
-          <span title="Easy">
-            <svg id="quickPickEasy" class="active" data-action="quick-pick-mode" data-mode="easy"><use href="#ic-easy"/></svg>
-          </span>
-          <span title="Middle+">
-            <svg id="quickPickAll" data-action="quick-pick-mode" data-mode="middle"><use href="#ic-middle-plus"/></svg>
-          </span>
-          <a id="quickPickDownload" class="quick-pick-btn-icon" href="#" title="Download zip archive">
-            <svg><use href="#ic-download"/></svg>
-          </a>
+      <div id="quickPickCard" class="card">
+        <div class="quick-pick-actions">
+          <div class="quick-pick-actions-bg">
+            <span title="Easy">
+              <svg id="quickPickEasy" class="active" data-action="quick-pick-mode" data-mode="easy"><use href="#ic-easy"/></svg>
+            </span>
+            <span title="Middle+">
+              <svg id="quickPickAll" data-action="quick-pick-mode" data-mode="middle"><use href="#ic-middle-plus"/></svg>
+            </span>
+            <a id="quickPickDownload" class="quick-pick-btn-icon" href="#" title="Download zip archive">
+              <svg><use href="#ic-download"/></svg>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div id="activityCard" class="card">
-      <div class="card-header">
-        <span class="card-title">Activity</span>
-        <span class="card-sub" id="activitySub">new • done</span>
+      <div id="activityCard" class="card">
+        <div class="card-header">
+          <span class="card-title">Activity</span>
+          <span class="card-sub" id="activitySub">new • done</span>
+        </div>
+        <div id="activityChart" class="domain-stats"></div>
       </div>
-      <div id="activityChart" class="domain-stats"></div>
-    </div>
 
-    <div id="domainStatsCard" class="card">
-      <div class="card-header">
-        <span class="card-title">Top domains</span>
-        <span title="Top domains: countries with the most requests overall.">
-          <svg id="domainStatsMostRequested" class="active" data-action="domain-stats-mode" data-mode="requests"><use href="#ic-most-requested"/></svg>
-        </span>
-        <span title="Local impact: countries where the most requested apps matter most to locals.">
-          <svg id="domainStatsLocalImpact" data-action="domain-stats-mode" data-mode="local"><use href="#ic-local-impact"/></svg>
-        </span>
-        <span title="Lowest coverage: countries with the largest request backlog.">
-          <svg id="domainStatsLowestCoverage" data-action="domain-stats-mode" data-mode="coverage"><use href="#ic-lowest-coverage"/></svg>
-        </span>
+      <div id="domainStatsCard" class="card">
+        <div class="card-header">
+          <span class="card-title">Top domains</span>
+          <span title="Top domains: countries with the most requests overall.">
+            <svg id="domainStatsMostRequested" class="active" data-action="domain-stats-mode" data-mode="requests"><use href="#ic-most-requested"/></svg>
+          </span>
+          <span title="Local impact: countries where the most requested apps matter most to locals.">
+            <svg id="domainStatsLocalImpact" data-action="domain-stats-mode" data-mode="local"><use href="#ic-local-impact"/></svg>
+          </span>
+          <span title="Lowest coverage: countries with the largest request backlog.">
+            <svg id="domainStatsLowestCoverage" data-action="domain-stats-mode" data-mode="coverage"><use href="#ic-lowest-coverage"/></svg>
+          </span>
+        </div>
+        <div id="domainStats" class="domain-stats"></div>
       </div>
-      <div id="domainStats" class="domain-stats"></div>
     </div>
 
   </div>

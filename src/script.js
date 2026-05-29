@@ -2358,6 +2358,9 @@ const UI = {
     if (appfilterLink) appfilterLink.classList.add("is-hidden");
 
     document.querySelector(".cards-row").classList.remove("is-hidden");
+    document.getElementById("mainCards").classList.remove("is-hidden");
+    const contribCards = document.getElementById("contributionCards");
+    if (contribCards) contribCards.classList.add("is-hidden");
     document.querySelector(".controls").classList.remove("is-hidden");    
 
     const s = App.state;
@@ -2577,7 +2580,6 @@ const UI = {
 
   renderContributionMode() {
       document.querySelector(".header-icon").classList.add("is-hidden");
-      document.querySelector(".cards-row").classList.add("is-hidden");
       document.querySelector(".controls").classList.add("is-hidden");
       document.getElementById("iconLibraryResults")?.classList.add("is-hidden");
       document.getElementById("search-wrapper").classList.add("is-hidden");
@@ -2634,6 +2636,130 @@ const UI = {
               <div class="col actions"></div>  
           </div>
       `;
+
+      document.getElementById("mainCards").classList.add("is-hidden");
+
+      const cardsRow = document.querySelector(".cards-row");
+      cardsRow.classList.remove("is-hidden");
+
+      if (!document.getElementById("contributionCards")) {
+        cardsRow.insertAdjacentHTML("beforeend", `
+          <div id="contributionCards" style="display:contents;">
+            <div class="card" id="contributionDomainsCard">
+              <canvas id="domainsPie"></canvas>
+              <div class="chart-tooltip" id="domainsTooltip"></div>
+            </div>
+            <div class="card is-hidden" id="contributionIssuesCard">
+              <div class="card-header">
+                <span class="card-title">Issues</span>
+              </div>
+            </div>
+          </div>
+        `);
+      } else {
+        document.getElementById("contributionCards").classList.remove("is-hidden");
+      }
+
+      // Draw domains pie chart
+      const domainCounts = {};
+      App.state.contribution.forEach(app => {
+        const pkg = app.componentName.split('/')[0];
+        const domain = pkg.split('.')[0];
+        domainCounts[domain] = (domainCounts[domain] || 0) + 1;
+      });
+
+      const canvas = document.getElementById("domainsPie");
+      const tooltip = document.getElementById("domainsTooltip");
+      if (canvas) {
+        const ctx = canvas.getContext("2d");
+        const entries = Object.entries(domainCounts).sort((a, b) => b[1] - a[1]);
+        const total = entries.reduce((s, e) => s + e[1], 0);
+        
+        const dpr = window.devicePixelRatio || 1;
+        const size = 88;
+        canvas.width = size * dpr;
+        canvas.height = size * dpr;
+        canvas.style.width = size + "px";
+        canvas.style.height = size + "px";
+        ctx.scale(dpr, dpr);
+        
+        let angle = -Math.PI / 2;
+        const style = getComputedStyle(document.documentElement);
+        const colors = [
+          style.getPropertyValue("--primary").trim(),
+          style.getPropertyValue("--secondary").trim(),
+          style.getPropertyValue("--tertiary").trim(),
+          style.getPropertyValue("--error").trim(),
+          style.getPropertyValue("--on-pine-container").trim(),
+          style.getPropertyValue("--on-flax-container").trim(),
+          style.getPropertyValue("--on-teal-container").trim(),
+          style.getPropertyValue("--on-orange-container").trim(),
+        ];
+        
+        entries.forEach((entry, i) => {
+          const slice = (entry[1] / total) * Math.PI * 2;
+          const midAngle = angle + slice / 2;
+          const pct = entry[1] / total;
+          
+          ctx.beginPath();
+          ctx.moveTo(size / 2, size / 2);
+          ctx.arc(size / 2, size / 2, size / 2 - 2, angle, angle + slice);
+          ctx.closePath();
+          ctx.fillStyle = colors[i % colors.length];
+          ctx.fill();
+          
+          const label = entry[0].length <= 4 ? entry[0] : entry[0][0] + "..." + entry[0][entry[0].length - 1];
+
+          if (pct >= 0.2) {
+            const labelR = size / 2 * 0.6;
+            const lx = size / 2 + Math.cos(midAngle) * labelR;
+            const ly = size / 2 + Math.sin(midAngle) * labelR;
+            ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--surface").trim();
+            ctx.font = "600 10px " + getComputedStyle(document.documentElement).getPropertyValue("--font-main").trim();
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            ctx.fillText(label, lx, ly);
+          }
+          
+          angle += slice;
+        });
+
+        canvas.onmousemove = (e) => {
+          const rect = canvas.getBoundingClientRect();
+          const x = e.clientX - rect.left - size / 2;
+          const y = e.clientY - rect.top - size / 2;
+          const dist = Math.sqrt(x * x + y * y);
+          const r = size / 2 - 2;
+          
+          if (dist > r) {
+            tooltip.style.display = "none";
+            return;
+          }
+          
+          let mouseAngle = Math.atan2(y, x);
+          if (mouseAngle < -Math.PI / 2) mouseAngle += Math.PI * 2;
+          
+          let a = -Math.PI / 2;
+          for (let i = 0; i < entries.length; i++) {
+            const slice = (entries[i][1] / total) * Math.PI * 2;
+            if (mouseAngle >= a && mouseAngle < a + slice) {
+              const pct = ((entries[i][1] / total) * 100).toFixed(1);
+              tooltip.innerHTML = `<div class="tooltip-label">${entries[i][0]}</div><div class="tooltip-value">${entries[i][1]} icon${entries[i][1] !== 1 ? 's' : ''} (${pct}%)</div>`;
+              tooltip.style.display = "block";
+              const cardRect = document.getElementById("contributionDomainsCard").getBoundingClientRect();
+              tooltip.style.left = (e.clientX - cardRect.left + 12) + "px";
+              tooltip.style.top = (e.clientY - cardRect.top) + "px";
+              tooltip.style.transform = "translateY(-50%)";
+              break;
+            }
+            a += slice;
+          }
+        };
+
+        canvas.onmouseleave = () => {
+          tooltip.style.display = "none";
+        };
+      }
       
       const sorted = [...App.state.contribution].sort((a, b) => a.label.localeCompare(b.label));
       const rowsHtml = sorted.map(app => {
