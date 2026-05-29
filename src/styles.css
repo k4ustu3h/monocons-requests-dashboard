@@ -1060,14 +1060,14 @@ select:hover,
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   min-width: 80px;
   background: var(--surface-container-low);
   border-radius: var(--shape-small);
   cursor: pointer;
   transition: background 0.2s;
-  padding: var(--space-sm) var(--space-lg);
+  padding: var(--space-lg) var(--space-lg) 0 var(--space-lg);
 }
 
 .issue-item:hover {
@@ -1075,15 +1075,15 @@ select:hover,
 }
 
 .issue-label {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--on-surface);
-  text-align: center;
+  text-align: left;
   line-height: 1.2;
 }
 
 .issue-count {
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 700;
   color: var(--on-surface);
 }
