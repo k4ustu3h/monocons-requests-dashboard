@@ -3547,6 +3547,7 @@ const UI = {
 
           const inst = Utils.parseInstalls(app.installs);
           if (inst < 500000) return;
+          if (app.requestCount < 5) return;
 
           const isEasy = tags.has('easy');
           const isMatch = tags.has('match');
