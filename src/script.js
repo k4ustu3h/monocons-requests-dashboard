@@ -483,7 +483,7 @@ const Templates = {
           </div>
           </div>
         </div>
-        <div class="col req">${displayReq}${trendingDelta ? ` <span class="trend-indicator" title="Growth during last request period.">↑${trendingDelta}</span>` : ""}</div>        <div class="col creation-odds" title="Chance of this request being fulfilled within a year if you wait.">${displayOdds}</div>
+        <div class="col req">${displayReq}${trendingDelta ? ` <span class="trend-indicator" title="Growth from latest email import.">↑${trendingDelta}</span>` : ""}</div>        <div class="col creation-odds" title="Chance of this request being fulfilled within a year if you wait.">${displayOdds}</div>
         <div class="col install" title="${installsTitle}">${displayInstalls}</div>
         <div class="col first date-col">
           <div>${firstStr}</div>
