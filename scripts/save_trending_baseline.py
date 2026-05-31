@@ -8,13 +8,13 @@ Baseline resets if period_end is older than 30 days.
 import json
 import sys
 from pathlib import Path
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 REQUESTS_JSON = REPO_ROOT / "src/assets/requests.json"
 BASELINE_PATH = REPO_ROOT / "src/assets/trending_baseline.json"
 LAST_FETCH_PATH = REPO_ROOT / "src/assets/last_email_fetch.txt"
-
+MAPUTO = timezone(timedelta(hours=2))
 
 def load_baseline():
     if BASELINE_PATH.exists():
@@ -46,7 +46,7 @@ def get_next_fetch_date():
 
 
 def main():
-    today = date.today()
+    today = datetime.now(MAPUTO).date()
     baseline = load_baseline()
 
     # Reset if period_end is older than 30 days
@@ -72,10 +72,10 @@ def main():
 
     next_fetch = get_next_fetch_date()
 
-    # period_start: day before next fetch
+    # period_start: 1 day before next fetch
     if next_fetch and baseline.get("period_start") is None:
-        day_before_fetch = next_fetch - timedelta(days=1)
-        if today == day_before_fetch:
+        one_day_before_fetch = next_fetch - timedelta(days=1)
+        if today == one_day_before_fetch:
             baseline["period_start"] = entry
             print(f"Saved period_start with {len(snapshot)} entries")
             save_baseline(baseline)
