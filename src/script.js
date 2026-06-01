@@ -3680,13 +3680,21 @@ const UI = {
       }
       
       matches.sort((a, b) => {
-          const aDraw = a.drawable.toLowerCase().includes(term);
-          const bDraw = b.drawable.toLowerCase().includes(term);
-          if (aDraw !== bDraw) return aDraw ? -1 : 1;
+          const aDrawStarts = a.drawable.toLowerCase().startsWith(term);
+          const bDrawStarts = b.drawable.toLowerCase().startsWith(term);
+          if (aDrawStarts !== bDrawStarts) return aDrawStarts ? -1 : 1;
           
-          const aName = a.name.toLowerCase().includes(term);
-          const bName = b.name.toLowerCase().includes(term);
-          if (aName !== bName) return aName ? -1 : 1;
+          const aNameStarts = a.name.toLowerCase().startsWith(term);
+          const bNameStarts = b.name.toLowerCase().startsWith(term);
+          if (aNameStarts !== bNameStarts) return aNameStarts ? -1 : 1;
+          
+          const aDrawHas = a.drawable.toLowerCase().includes(term);
+          const bDrawHas = b.drawable.toLowerCase().includes(term);
+          if (aDrawHas !== bDrawHas) return aDrawHas ? -1 : 1;
+          
+          const aNameHas = a.name.toLowerCase().includes(term);
+          const bNameHas = b.name.toLowerCase().includes(term);
+          if (aNameHas !== bNameHas) return aNameHas ? -1 : 1;
           
           return a.drawable.localeCompare(b.drawable);
       });
