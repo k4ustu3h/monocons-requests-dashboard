@@ -49,17 +49,36 @@ def main():
     email_ids = messages[0].split()
     print(f"Found {len(email_ids)} unread emails.")
 
-    from email.utils import parsedate_to_datetime
-
-    sender_latest = {}
+    # Step 1: Fetch only headers to find latest email per sender
+    sender_candidates = {}
     for eid in email_ids:
+        status, msg_data = mail.fetch(eid, "(BODY.PEEK[HEADER])")
+        if status != "OK":
+            continue
+        header_bytes = msg_data[0][1]
+        msg = email.message_from_bytes(header_bytes)
+
+        sender = msg.get("From", "unknown")
+
+        # Quick check: skip emails unlikely to have ZIP attachments
+        content_type = msg.get("Content-Type", "")
+        if "multipart/mixed" not in content_type and "application/zip" not in content_type:
+            continue
+
+        if sender not in sender_candidates:
+            sender_candidates[sender] = eid
+
+    print(f"Candidates after header scan: {len(sender_candidates)} sender(s).")
+
+    # Step 2: Fetch full body only for candidates, check ZIP for real
+    sender_latest = {}
+    for sender, eid in sender_candidates.items():
         status, msg_data = mail.fetch(eid, "(RFC822)")
         if status != "OK":
             continue
         raw_email = msg_data[0][1]
         msg = email.message_from_bytes(raw_email)
 
-        # Check if email has ZIP attachment
         has_zip = False
         for part in msg.walk():
             if part.get_content_maintype() == 'application' and part.get_content_subtype() in ['zip', 'octet-stream']:
@@ -68,29 +87,16 @@ def main():
             if (filename := part.get_filename()) and filename.endswith('.zip'):
                 has_zip = True
                 break
-        
-        if not has_zip:
-            continue
 
-        sender = msg.get("From", "unknown")
-        date_str = msg.get("Date")
-        try:
-            date_obj = parsedate_to_datetime(date_str) if date_str else None
-        except:
-            date_obj = None
-        
-        if sender not in sender_latest or (date_obj and sender_latest[sender][0] and date_obj > sender_latest[sender][0]):
-            sender_latest[sender] = (date_obj, eid, raw_email)
+        if has_zip:
+            sender_latest[sender] = (eid, raw_email)
 
-    print(f"Found {len(email_ids)} unread emails from {len(sender_latest)} sender(s).")
+    print(f"Found {len(sender_latest)} sender(s) with ZIP attachments.")
 
     EMAILS_DIR.mkdir(parents=True, exist_ok=True)
     saved = 0
 
-    for sender, (_, eid, raw_email) in sender_latest.items():
-        msg = email.message_from_bytes(raw_email)
-        subject = msg.get("Subject", "no-subject")
-        safe_subject = "".join(c for c in subject if c.isalnum() or c in " _-").strip()
+    for sender, (eid, raw_email) in sender_latest.items():
         filename = f"{eid.decode()}.eml"
         filepath = EMAILS_DIR / filename
 
