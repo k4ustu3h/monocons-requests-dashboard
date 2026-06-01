@@ -2016,6 +2016,11 @@ const UI = {
       if (action === "remove-from-contribution") {
           const id = actionEl.dataset.id;
           App.state.contribution = App.state.contribution.filter(a => a.componentName !== id);
+          if (App.state.contribution.length === 0) {
+              App.state.contributionActive = false;
+              App.dom.contributionBtn.style.display = "";
+              App.dom.contributionBtn.classList.remove("active");
+          }
           UI.saveContribution();
           UI.render();
           UI.closeContextMenu();
