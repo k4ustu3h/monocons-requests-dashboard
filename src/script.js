@@ -237,12 +237,13 @@ const Utils = {
    * @returns {string}
    */
   sanitizeDrawableName(label) {
-    if (!label) return "unknown";
-    let name = label.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    name = name.toLowerCase().replace(/[^a-z0-9]+/g, "_");
-    name = name.replace(/^_+|_+$/g, "");
-    if (/^[0-9]/.test(name)) name = "_" + name;
-    return name || "icon";
+      if (!label) return "unknown";
+      let name = label.replace(/&amp;/g, " and ").replace(/&/g, " and ");
+      name = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      name = name.toLowerCase().replace(/[^a-z0-9]+/g, "_");
+      name = name.replace(/^_+|_+$/g, "");
+      if (/^[0-9]/.test(name)) name = "_" + name;
+      return name || "icon";
   },
 
   /**
@@ -299,7 +300,7 @@ const Utils = {
    */
   generateXml(app) {
     const cmp = app.componentName;
-    const name = app.label.replace(/"/g, '&quot;'); // Escape for XML
+    const name = app.label.replace(/&/g, '&amp;').replace(/"/g, '&quot;'); // Escape for XML
     const draw = Utils.sanitizeDrawableName(app.label);
     return `<item component="ComponentInfo{${cmp}}" drawable="${draw}" name="${name}" />`;
   },
@@ -676,7 +677,7 @@ const Templates = {
   contributionRow(app, iconUrl) {
       const id = app.componentName;
       const overrides = App.state.contributionOverrides[id] || {};
-      const name = overrides.label !== undefined ? overrides.label : app.label;
+      const name = (overrides.label !== undefined ? overrides.label : app.label).replace(/&/g, '&amp;');
       const pkg = id.split('/')[0];
       const originalDrawable = app.drawable;
       const isUnknown = originalDrawable === "unknown" || name === "(Unknown App)";
@@ -1177,8 +1178,8 @@ const Actions = {
       selectedApps.forEach(app => {
         const cmp = app.componentName;
         const pkg = cmp.split('/')[0];
-        const label = app.label.replace(/"/g, '&quot;');
-        const cmdLabel = app.label.replace(/"/g, '\\"');
+        const label = app.label.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+        const cmdLabel = app.label.replace(/&/g, '&amp;').replace(/'/g, "'\\''");
 
         // Resolve Drawable Name
         const appIdentity = app.componentName;
@@ -1317,11 +1318,11 @@ const Actions = {
           }
           usedDrawables.add(uniqueDrawable);
 
-          xmlAppFilter += `    <item component="ComponentInfo{${app.componentName}}" drawable="${uniqueDrawable}" name="${label.replace(/"/g, '&quot;')}" />\n`;
+          xmlAppFilter += `    <item component="ComponentInfo{${app.componentName}}" drawable="${uniqueDrawable}" name="${label.replace(/&/g, '&amp;').replace(/"/g, '&quot;')}" />\n`;
 
           const cmdType = mode === "new" ? "add" : "link";
           const svgPath = mode === "new" ? `"${drawable}.svg"` : `"${drawable}"`;
-          const cmdLabel = label.replace(/'/g, "'\\''");
+          const cmdLabel = label.replace(/&/g, '&amp;').replace(/'/g, "'\\''");
           txtCommands += `python3 ./icontool.py ${cmdType} ${svgPath} ${app.componentName} '${cmdLabel}'\n`;
 
           if (mode === "new") {
