@@ -1206,7 +1206,7 @@ const Actions = {
         // Commands
         const cmdType = mode === "new" ? "add" : "link";
         const svgPath = mode === "new" ? `"${drawable}.svg"` : `"${drawable}"`;
-        txtCommands += `python3 ./icontool.py ${cmdType} ${svgPath} ${cmp} "${cmdLabel}"\n`;
+        txtCommands += `python3 ./icontool.py ${cmdType} ${svgPath} ${cmp} '${cmdLabel}'\n`;
 
         // Queue Icon Fetch (only in "new" mode)
         if (mode === "new" && !zipData._icons[`${drawable}.png`]) {
@@ -1239,8 +1239,16 @@ const Actions = {
 
       // 3. Commands
       if (txtCommands) {
-        txtCommands = "Run from your Lawnicons repository folder.\n\n" + txtCommands;
-        zipData["icontool_commands.txt"] = fflate.strToU8(txtCommands);
+          txtCommands = `Run from your Lawnicons repository folder.
+
+      Make sure your branch is up-to-date:
+        git reset --hard upstream/develop
+
+      If sorting is needed:
+        python3 ./icontool.py sort
+
+      ${txtCommands}`;
+          zipData["icontool_commands.txt"] = fflate.strToU8(txtCommands);
       }
 
       // 4. Zip & Download
@@ -1278,18 +1286,27 @@ const Actions = {
       /** @type {Object.<string, Uint8Array | string>} */
       const zipData = {};
       let xmlAppFilter = "<resources>\n";
+      let txtCommands = "";
 
       const usedDrawables = new Set();
       const fetchPromises = [];
 
-      list.forEach(app => {
+      // Sort by label from inputs
+      const sorted = [...list].sort((a, b) => {
+        const rowA = document.querySelector(`.contribution-row[data-id="${a.componentName}"]`);
+        const rowB = document.querySelector(`.contribution-row[data-id="${b.componentName}"]`);
+        const nameA = rowA?.querySelector(".contribution-name-input")?.value || a.label;
+        const nameB = rowB?.querySelector(".contribution-name-input")?.value || b.label;
+        return nameA.localeCompare(nameB);
+      });
+
+      sorted.forEach(app => {
           const row = document.querySelector(`.contribution-row[data-id="${app.componentName}"]`);
           const nameInput = row?.querySelector(".contribution-name-input");
           const svgInput = row?.querySelector(".contribution-svg-input");
           
           const label = nameInput?.value || app.label;
           const drawable = svgInput?.value || app.drawable;
-
           const mode = (App.state.contributionOverrides[app.componentName]?.mode === "link") ? "link" : "new";
           
           let uniqueDrawable = drawable;
@@ -1301,6 +1318,11 @@ const Actions = {
           usedDrawables.add(uniqueDrawable);
 
           xmlAppFilter += `    <item component="ComponentInfo{${app.componentName}}" drawable="${uniqueDrawable}" name="${label.replace(/"/g, '&quot;')}" />\n`;
+
+          const cmdType = mode === "new" ? "add" : "link";
+          const svgPath = mode === "new" ? `"${drawable}.svg"` : `"${drawable}"`;
+          const cmdLabel = label.replace(/'/g, "'\\''");
+          txtCommands += `python3 ./icontool.py ${cmdType} ${svgPath} ${app.componentName} '${cmdLabel}'\n`;
 
           if (mode === "new") {
               const url = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
@@ -1317,25 +1339,18 @@ const Actions = {
       xmlAppFilter += "</resources>";
       zipData["appfilter.xml"] = fflate.strToU8(xmlAppFilter);
 
-      let txtCommands = "";
-      list.forEach(app => {
-        const row = document.querySelector(`.contribution-row[data-id="${app.componentName}"]`);
-        const nameInput = row?.querySelector(".contribution-name-input");
-        const svgInput = row?.querySelector(".contribution-svg-input");
-        
-        const label = nameInput?.value || app.label;
-        const drawable = svgInput?.value || app.drawable;
-        const mode = (App.state.contributionOverrides[app.componentName]?.mode === "link") ? "link" : "new";
-        
-        const cmdType = mode === "new" ? "add" : "link";
-        const svgPath = mode === "new" ? `"${drawable}.svg"` : `"${drawable}"`;
-        txtCommands += `python3 ./icontool.py ${cmdType} ${svgPath} ${app.componentName} "${label.replace(/"/g, '\\"')}"\n`;
-      });
-
       if (txtCommands) {
-        txtCommands = "Run from your Lawnicons repository folder.\n\n" + txtCommands;
+        txtCommands = `Run from your Lawnicons repository folder.
+
+  Make sure your branch is up-to-date:
+    git reset --hard upstream/develop
+
+  If sorting is needed:
+    python3 ./icontool.py sort
+
+  ${txtCommands}`;
         zipData["icontool_commands.txt"] = fflate.strToU8(txtCommands);
-      }      
+      }
 
       await Promise.all(fetchPromises);
       const content = fflate.zipSync(zipData, { level: 6 });
