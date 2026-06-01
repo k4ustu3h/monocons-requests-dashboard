@@ -20,6 +20,9 @@ SAVE_INTERVAL = 10         # Autosave every N requests
 MAX_CONSECUTIVE_ERRORS = 5 # Stop if IP blocked
 BATCH_LIMIT = 200         # Max apps to update per run (Set 0 for infinite)
 
+# Packages that don't exist in Play Store
+NON_PLAY_STORE_PREFIXES = ("org.chromium.webapk", "com.sec.android.app.sbrowser.webapk")
+
 # STATE
 DATA = None
 DEAD_SET = set()
@@ -132,6 +135,10 @@ def main():
         pkg = app['componentName'].split('/')[0]
 
         # Skip Logic
+        if pkg.startswith(NON_PLAY_STORE_PREFIXES):
+            DEAD_SET.add(pkg)
+            continue
+
         if pkg in DEAD_SET: continue
         if 'installs' in app and app.get('drawable') != 'unknown': continue
 
