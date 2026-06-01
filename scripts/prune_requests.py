@@ -537,7 +537,6 @@ def update_activity_stats(
     total: int,
     fulfilled_removed: int,
     expired_removed: int,
-    new_added: int,
 ) -> int:
     """Append daily stats point to stats_history.json for activity graph."""
     from datetime import date
@@ -552,7 +551,10 @@ def update_activity_stats(
                 history = json.load(f)
         except Exception:
             history = []
-    
+
+    last_total = history[-1]["total"] if history else total
+    new_added = total - last_total + fulfilled_removed + expired_removed
+
     entry = {
         "date": today,
         "total": total,
@@ -670,9 +672,6 @@ def update_fulfillment_history(removed_components: set[str], old_apps: dict) -> 
     
 def main() -> int:
 
-    with open(REQUESTS_JSON, "r") as f:
-        pre_total = len(json.load(f).get("apps", []))
-    
     # --- Fulfilled request pruning (depends on upstream appfilter changes) ---
     appfilter_changed = False
     fulfilled_removed = 0
@@ -746,14 +745,11 @@ def main() -> int:
     with open(REQUESTS_JSON, "r") as f:
         requests_data = json.load(f)
 
-    new_added = len(requests_data.get("apps", [])) - pre_total + fulfilled_removed + expired_removed        
-
     # --- Update activity stats ---
     history_count = update_activity_stats(
         total=len(requests_data.get("apps", [])),
         fulfilled_removed=fulfilled_removed,
         expired_removed=expired_removed,
-        new_added=new_added,
     )
     print(f"Activity stats updated: {history_count} entries")    
 
