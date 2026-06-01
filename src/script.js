@@ -2457,6 +2457,7 @@ const UI = {
     Data.process();
     Data.syncUrlState();
     this.updateHeader();
+    this.renderIconLibrary();
 
     const desc = document.getElementById("supportedDesc");
     const link = document.getElementById("supportedLink");
