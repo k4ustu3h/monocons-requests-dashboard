@@ -82,16 +82,16 @@ def save_state():
             json.dump(DATA, f, indent=2)
         
         # Load existing dead links, merge with new
-        existing_dead = set()
         if os.path.exists(DEAD_PATH):
             with open(DEAD_PATH, 'r') as f:
                 existing_dead = set(json.load(f))
-        new_dead = DEAD_SET - existing_dead
-        if new_dead:
-            existing_list = list(existing_dead)
-            existing_list.extend(sorted(new_dead))
-            with open(DEAD_PATH, 'w', encoding='utf-8') as f:
-                json.dump(existing_list, f, indent=2)
+            if DEAD_SET - existing_dead:
+                merged = sorted(DEAD_SET | existing_dead)
+                with open(DEAD_PATH, 'w') as f:
+                    json.dump(merged, f, indent=2)
+        else:
+            with open(DEAD_PATH, 'w') as f:
+                json.dump(sorted(DEAD_SET), f, indent=2)
         
         print("OK.")
     except Exception as e:
