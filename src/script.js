@@ -2879,14 +2879,14 @@ const UI = {
         </button>
       ` : '';
 
-      const downloadHtml = (hasIcons && downloadReady) ? `
+      const downloadHtml = `
         <div class="contribution-download-wrapper">
-          <button class="sb-action-btn" id="contributionDownloadBtn">
+          <button class="sb-action-btn" id="contributionDownloadBtn" style="${downloadReady ? '' : 'display:none'}">
             <svg><use href="#ic-download"/></svg>
             <span>Download</span>
           </button>
         </div>
-      ` : '';
+      `;
         
       App.dom.container.innerHTML = clearHtml + downloadHtml + headerHtml + rowsHtml;
 
