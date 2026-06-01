@@ -710,9 +710,12 @@ const Templates = {
       return `
           <div class="contribution-row" data-id="${id}">
               <div class="col mode">
-              <select class="chip mode-select" data-action="mode-select" data-id="${id}" style="height:32px; padding:0 28px 0 8px; font-size:13px;">
+              <select class="chip mode-select" data-action="mode-select" data-id="${id}">
                 <option value="new" ${mode === 'new' ? 'selected' : ''}>New</option>
                 <option value="link" ${mode === 'link' ? 'selected' : ''}>Link</option>
+                <option disabled>──────────</option>
+                <option value="set-all-new">Set all to new</option>
+                <option value="set-all-link">Set all to link</option>
               </select>
               </div>
               <div class="icon">${iconHtml}</div>
@@ -2161,12 +2164,24 @@ const UI = {
         if (action === "mode-select") {
           const id = actionEl.dataset.id;
           const mode = actionEl.value;
+          
+          if (mode === "set-all-new" || mode === "set-all-link") {
+            const newMode = mode === "set-all-new" ? "new" : "link";
+            App.state.contribution.forEach(a => {
+              if (!App.state.contributionOverrides[a.componentName]) App.state.contributionOverrides[a.componentName] = {};
+              App.state.contributionOverrides[a.componentName].mode = newMode;
+            });
+            UI.saveContribution();
+            UI.render();
+            return;
+          }
+          
           if (!App.state.contributionOverrides[id]) App.state.contributionOverrides[id] = {};
           App.state.contributionOverrides[id].mode = mode;
           UI.saveContribution();
           UI.updateIssues();
           return;
-        }      
+        }
         
       }
 
