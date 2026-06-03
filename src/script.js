@@ -403,6 +403,41 @@ const Utils = {
     }
   },
 
+  balancedScore(app) {
+      const pkg = app.componentName.split('/')[0];
+      const domain = pkg.split('.')[0];
+      const req = app.requestCount || 1;
+      const instStr = String(app.installs || '0').replace(/[,+]/g, '');
+      const inst = parseInt(instStr) || 1;
+      
+      const ds = App.state.domainStats[domain] || {};
+      const requests = ds.requests || 0;
+      const total = ds.total || 1;
+      const coverage = total >= 15 ? (requests / total) : 0.5;
+      const significance = total >= 15 ? 1.0 : 0.3;
+      
+      const population = App.state.domainStats._population || {};
+      const nonGeo = new Set(['ai','me','my','tv','fm','to','st','cc','ws','nu','tk','sh','is','as','je','gg','im','io','co','su','ac','bh','mf','nh','mo','bd','hk']);
+      const isCountry = (d) => d.length === 2 && !nonGeo.has(d) && d in population;
+      
+      let localImpact = 0;
+      if (isCountry(domain)) {
+        const pop = population[domain] || 1;
+        localImpact = Math.min((inst / 1_000_000) / pop * 50, 1);
+      }
+      
+      const now = Date.now() / 1000;
+      const ageDays = Math.max((now - (app.firstAppearance || now)) / 86400, 1);
+      
+      const w1 = 0.35, w2 = 0.25, w3 = 0.15, w4 = 0.12, w5 = 0.13;
+      
+      return (w1 * Math.log(req + 1) / Math.log(100) +
+              w2 * Math.log(inst + 1) / Math.log(100_000_000) +
+              w3 * coverage * significance +
+              w4 * localImpact * significance +
+              w5 * (1 / Math.log(ageDays + 1)));
+  },  
+
 };
 
 // ==========================================
@@ -1581,6 +1616,10 @@ const Data = {
     }    
 
     // Sort
+    if (s.sort === "balanced") {
+      data = data.filter(app => app.requestCount >= 4 && Utils.parseInstalls(app.installs) >= 500000);
+    }    
+
     data = [...data];
     if (s.sort === "rand") {
       for (let i = data.length - 1; i > 0; i--) {
@@ -1609,7 +1648,8 @@ const Data = {
           "name-asc": (a, b) => a.label.localeCompare(b.label) || getPop(b) - getPop(a),
           "name-desc": (a, b) => b.label.localeCompare(a.label) || getPop(b) - getPop(a),
           "time-desc": (a, b) => b.firstAppearance - a.firstAppearance || getPop(b) - getPop(a),
-          "time-asc": (a, b) => a.firstAppearance - b.firstAppearance || getPop(b) - getPop(a)
+          "time-asc": (a, b) => a.firstAppearance - b.firstAppearance || getPop(b) - getPop(a),
+          "balanced": (a, b) => Utils.balancedScore(b) - Utils.balancedScore(a) || (App.state.setsStats[b.componentName.split('/')[0]] || b.requestCount) - (App.state.setsStats[a.componentName.split('/')[0]] || a.requestCount),
       };
       if (sorters[s.sort]) data.sort(sorters[s.sort]);
     }
@@ -1694,6 +1734,7 @@ const UI = {
     { value: "name-asc", label: "Name (A-Z)" },
     { value: "name-desc", label: "Name (Z-A)" },
     { value: "trending", label: "Trending" },
+    { value: "balanced", label: "Balanced" },
     { value: "rand", label: "Random" }
   ],
 
