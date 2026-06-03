@@ -413,8 +413,8 @@ const Utils = {
       const ds = App.state.domainStats[domain] || {};
       const requests = ds.requests || 0;
       const total = ds.total || 1;
-      const coverage = total >= 15 ? (requests / total) : 0.5;
-      const significance = total >= 15 ? 1.0 : 0.3;
+      const coverage = total >= 10 ? (requests / total) : 0.5;
+      const significance = total >= 10 ? 1.0 : 0.3;
       
       const population = App.state.domainStats._population || {};
       const nonGeo = new Set(['ai','me','my','tv','fm','to','st','cc','ws','nu','tk','sh','is','as','je','gg','im','io','co','su','ac','bh','mf','nh','mo','bd','hk']);
