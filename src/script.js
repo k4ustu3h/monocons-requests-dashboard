@@ -1241,7 +1241,7 @@ const Actions = {
 
         // Commands
         const cmdType = mode === "new" ? "add" : "link";
-        const svgPath = mode === "new" ? `"${drawable}.svg"` : `"${drawable}"`;
+        const svgPath = mode === "new" ? `"new_icons/${drawable}.svg"` : `"${drawable}"`;
         txtCommands += `python3 ./icontool.py ${cmdType} ${svgPath} ${cmp} '${cmdLabel}'\n`;
 
         // Queue Icon Fetch (only in "new" mode)
@@ -1275,15 +1275,21 @@ const Actions = {
 
       // 3. Commands
       if (txtCommands) {
-          txtCommands = `Run from your Lawnicons repository folder.
-
-      Make sure your branch is up-to-date:
-        git reset --hard upstream/develop
-
-      If sorting is needed:
-        python3 ./icontool.py sort
-
-      ${txtCommands}`;
+          const instructions = [
+              "1. Open your Lawnicons repository folder.",
+              "2. Create a new_icons folder and move your SVGs there.",
+              "3. Run the commands below from the repository root in your terminal.",
+              "4. Remove the new_icons folder when done.",
+              "",
+              "Make sure your branch is up-to-date. If not and you are familiar with git, use:",
+              "  git reset --hard upstream/develop",
+              "",
+              "If sorting is needed:",
+              "  python3 ./icontool.py sort",
+              "",
+              "Commands:",
+          ].join("\n");
+          txtCommands = instructions + "\n" + txtCommands;
           zipData["icontool_commands.txt"] = fflate.strToU8(txtCommands);
       }
 
@@ -1356,7 +1362,7 @@ const Actions = {
           xmlAppFilter += `    <item component="ComponentInfo{${app.componentName}}" drawable="${uniqueDrawable}" name="${label.replace(/&/g, '&amp;').replace(/"/g, '&quot;')}" />\n`;
 
           const cmdType = mode === "new" ? "add" : "link";
-          const svgPath = mode === "new" ? `"${drawable}.svg"` : `"${drawable}"`;
+          const svgPath = mode === "new" ? `"new_icons/${drawable}.svg"` : `"${drawable}"`;
           const cmdLabel = label.replace(/&/g, '&amp;').replace(/'/g, "'\\''");
           txtCommands += `python3 ./icontool.py ${cmdType} ${svgPath} ${app.componentName} '${cmdLabel}'\n`;
 
@@ -1377,16 +1383,22 @@ const Actions = {
       zipData["appfilter.xml"] = fflate.strToU8(xmlAppFilter);
 
       if (txtCommands) {
-        txtCommands = `Run from your Lawnicons repository folder.
-
-  Make sure your branch is up-to-date:
-    git reset --hard upstream/develop
-
-  If sorting is needed:
-    python3 ./icontool.py sort
-
-  ${txtCommands}`;
-        zipData["icontool_commands.txt"] = fflate.strToU8(txtCommands);
+          const instructions = [
+              "1. Open your Lawnicons repository folder.",
+              "2. Create a new_icons folder and move your SVGs there.",
+              "3. Run the commands below from the repository root in your terminal.",
+              "4. Remove the new_icons folder when done.",
+              "",
+              "Make sure your branch is up-to-date. If not and you are familiar with git, use:",
+              "  git reset --hard upstream/develop",
+              "",
+              "If sorting is needed:",
+              "  python3 ./icontool.py sort",
+              "",
+              "Commands:",
+          ].join("\n");
+          txtCommands = instructions + "\n" + txtCommands;
+          zipData["icontool_commands.txt"] = fflate.strToU8(txtCommands);
       }
 
       await Promise.all(fetchPromises);
