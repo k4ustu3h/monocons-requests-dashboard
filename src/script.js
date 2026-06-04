@@ -1361,11 +1361,12 @@ const Actions = {
           txtCommands += `python3 ./icontool.py ${cmdType} ${svgPath} ${app.componentName} '${cmdLabel}'\n`;
 
           if (mode === "new") {
+              if (!zipData["_icons"]) zipData["_icons"] = {};
               const url = `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
               const p = fetch(url)
                   .then(r => r.ok ? r.arrayBuffer() : null)
                   .then(buf => {
-                      if (buf) zipData[`${uniqueDrawable}.png`] = new Uint8Array(buf);
+                      if (buf) zipData["_icons"][`${uniqueDrawable}.png`] = new Uint8Array(buf);
                   })
                   .catch(() => {});
               fetchPromises.push(p);
