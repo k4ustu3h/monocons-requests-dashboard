@@ -243,7 +243,7 @@ def update_supported_json(supported_path: Path, existing_supported: set[str], ne
     
     print(f"Updated supported.json with {len(new_components)} new components")
 
-def update_activity_stats_for_supporter(requests_path: Path, new_count: int, total: int):
+def update_activity_stats_for_supporter(requests_path: Path, new_added: int, total: int):
     """Record supporter additions in activity_stats.json."""
     activity_stats_path = requests_path / "activity_stats.json"
     today = date.today().isoformat()
@@ -254,13 +254,13 @@ def update_activity_stats_for_supporter(requests_path: Path, new_count: int, tot
             history = json.load(f)
     
     if history and history[-1]["date"] == today:
-        history[-1]["added"] = history[-1].get("added", 0) + new_count
+        history[-1]["added"] = history[-1].get("added", 0) + new_added
         history[-1]["total"] = total
     else:
         history.append({
             "date": today,
             "total": total,
-            "added": new_count,
+            "added": new_added,
             "fulfilled": 0,
             "expired": 0
         })
@@ -273,9 +273,9 @@ def run_pipeline(folder_path: Path, appfilter_path: Path, png_out_path: Path,
     zip_files = load_zips(folder_path)
 
     apps = parse_existing_requests_json(output_path)
-    old_count = len(apps)
+    apps_before = set(apps.keys())
     existing_supported = parse_existing_supported_json(supported_path)
-    
+
     apps, zip_components = parse_zips(zip_files, apps, png_out_path)
     
     if appfilter_path.exists():
@@ -287,9 +287,9 @@ def run_pipeline(folder_path: Path, appfilter_path: Path, png_out_path: Path,
     write_json_output(output_path, apps)
     update_supported_json(supported_path, existing_supported, zip_components)
 
-    new_count = max(0, len(apps) - old_count + (len(existing) if appfilter_path.exists() else 0))
-    if new_count > 0:
-        update_activity_stats_for_supporter(output_path.parent, new_count, len(apps))
+    new_added = len(set(apps.keys()) - apps_before)
+    if new_added > 0:
+        update_activity_stats_for_supporter(output_path.parent, new_added, len(apps))
 
     keep_pngs = {a["drawable"] for a in apps.values()}
     delete_unused_pngs(png_out_path, keep_pngs)
