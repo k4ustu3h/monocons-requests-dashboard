@@ -1,6 +1,6 @@
 {
   "count": 19862,
-  "lastUpdate": "2026-06-06",
+  "lastUpdate": "2026-06-09",
   "apps": [
     {
       "drawable": "friday_night_funkin",
@@ -78098,6 +78098,14 @@
       "requestCount": 2,
       "firstAppearance": 1779380936.0,
       "lastRequested": 1779577131.0
+    },
+    {
+      "drawable": "flow_4",
+      "label": "Flow",
+      "componentName": "io.github.aedev.flow/io.github.aedev.flow.IconDynamic",
+      "requestCount": 2,
+      "firstAppearance": 1779523304.0,
+      "lastRequested": 1780972028.1904964
     },
     {
       "drawable": "my_digi_3",
@@ -172689,14 +172697,6 @@
       "drawable": "anizen",
       "label": "AniZen",
       "componentName": "app.anizen/eu.kanade.tachiyomi.ui.main.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1779523304.0,
-      "lastRequested": 1779523304.0
-    },
-    {
-      "drawable": "flow_4",
-      "label": "Flow",
-      "componentName": "io.github.aedev.flow/io.github.aedev.flow.IconDynamic",
       "requestCount": 1,
       "firstAppearance": 1779523304.0,
       "lastRequested": 1779523304.0
