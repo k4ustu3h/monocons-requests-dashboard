@@ -1,56 +1,132 @@
-import imaplib
+"""
+Fetch unread emails from Gmail via IMAP and save as .eml files.
+Runs daily based on workflow trigger.
+"""
+
 import os
 import sys
+import imaplib
+import email
+from datetime import date
+from pathlib import Path
 
-# --- CONFIG ---
-EMAIL_USER = "monoconsrequest@gmail.com"
-EMAIL_PASS = os.environ.get("MONOCONS_GMAIL_PASS") 
-SAVE_DIR = "emails"
-# --------------
+REPO_ROOT = Path(__file__).resolve().parents[1]
+EMAILS_DIR = REPO_ROOT / "emails"
+LAST_FETCH_PATH = REPO_ROOT / "src/assets/last_email_fetch.txt"
+
+
+def should_fetch_today():
+    return True
+
 
 def main():
-    if not EMAIL_PASS:
-        print("🚨 Error: MONOCONS_GMAIL_PASS environment variable is not set!")
-        print("Run it like this: MONOCONS_GMAIL_PASS='your_password' python scripts/fetch_emails.py")
-        sys.exit(1)
-
-    os.makedirs(SAVE_DIR, exist_ok=True)
-    
-    print(f"Connecting to Gmail as {EMAIL_USER}...")
-    try:
-        mail = imaplib.IMAP4_SSL("imap.gmail.com")
-        mail.login(EMAIL_USER, EMAIL_PASS)
-    except Exception as e:
-        print(f"Login failed: {e}")
-        sys.exit(1)
-
-    mail.select("inbox")
-    
-    status, messages = mail.search(None, "UNSEEN") 
-    email_ids = messages[0].split()
-
-    if not email_ids:
-        print("No new emails found in Inbox.")
+    if not should_fetch_today():
+        print("Not the fetch day. Skipping email fetch.")
         return
 
-    print(f"Found {len(email_ids)} new emails. Downloading to {SAVE_DIR}/...")
+    user = os.environ.get("GMAIL_USER")
+    password = os.environ.get("GMAIL_APP_PASSWORD")
 
-    for e_id in email_ids:
-        _, data = mail.fetch(e_id, "(RFC822)")
-        raw_email = data[0][1]
+    if not user or not password:
+        print("Error: GMAIL_USER or GMAIL_APP_PASSWORD not set.")
+        sys.exit(1)
+
+    print("Connecting to Gmail...")
+    mail = imaplib.IMAP4_SSL("imap.gmail.com")
+    mail.login(user, password)
+    mail.select("inbox")
+
+    status, messages = mail.search(None, "UNSEEN")
+    if status != "OK" or not messages[0]:
+        print("No unread emails.")
+        mail.logout()
+        return
+
+    email_ids = messages[0].split()
+    MAX_EMAILS = 300
+    print(f"Found {len(email_ids)} unread emails.")
+
+    # Step 1: Fetch only headers to find latest email per sender
+    sender_candidates = {}
+    for eid in email_ids:
+        status, msg_data = mail.fetch(eid, "(BODY.PEEK[HEADER])")
+        if status != "OK":
+            continue
+        header_bytes = msg_data[0][1]
+        msg = email.message_from_bytes(header_bytes)
+
+        sender = msg.get("From", "unknown")
+
+        # Quick check: skip emails unlikely to have ZIP attachments
+        content_type = msg.get("Content-Type", "")
+        if "multipart/mixed" not in content_type and "application/zip" not in content_type:
+            continue
+
+        if sender not in sender_candidates:
+            sender_candidates[sender] = eid
+
+    print(f"Candidates after header scan: {len(sender_candidates)} sender(s).")
+
+
+    # Step 2: Limit candidates before full fetch
+    candidate_ids = set(sender_candidates.values())
+    if len(sender_candidates) > MAX_EMAILS:
+        print(f"Limiting to {MAX_EMAILS} candidates for full fetch ({len(sender_candidates)} total)")
+        sender_candidates = dict(list(sender_candidates.items())[:MAX_EMAILS])
+
+    sender_latest = {}
+    for sender, eid in sender_candidates.items():
+        status, msg_data = mail.fetch(eid, "(RFC822)")
+        if status != "OK":
+            continue
+        raw_email = msg_data[0][1]
+        msg = email.message_from_bytes(raw_email)
+
+        has_zip = False
+        for part in msg.walk():
+            if part.get_content_maintype() == 'application' and part.get_content_subtype() in ['zip', 'octet-stream']:
+                has_zip = True
+                break
+            if (filename := part.get_filename()) and filename.endswith('.zip'):
+                has_zip = True
+                break
+
+        if has_zip:
+            sender_latest[sender] = (eid, raw_email)
+
+    print(f"Found {len(sender_latest)} sender(s) with ZIP attachments.")
+
+    EMAILS_DIR.mkdir(parents=True, exist_ok=True)
+    saved = 0
+
+    for sender, (eid, raw_email) in sender_latest.items():  
         
-        # Save as .eml
-        filename = f"request_{e_id.decode('utf-8')}.eml"
-        filepath = os.path.join(SAVE_DIR, filename)
-        
+        filename = f"{eid.decode()}.eml"
+        filepath = EMAILS_DIR / filename
+
         with open(filepath, "wb") as f:
             f.write(raw_email)
-            
-        print(f"  -> Saved {filename}")
 
-    mail.close()
+        mail.store(eid, "+FLAGS", "\\Seen")
+        saved += 1
+
+    fetched_ids = set(sender_candidates.values())
+    saved_ids = {eid for eid, _ in sender_latest.values()}
+
+    for eid in email_ids:
+        if eid not in candidate_ids:
+            # Never made it past header scan (no ZIP)
+            mail.store(eid, "+FLAGS", "\\Seen")
+        elif eid in fetched_ids and eid not in saved_ids:
+            # Fully fetched but no ZIP found
+            mail.store(eid, "+FLAGS", "\\Seen")
+        # else: not fetched (over limit) — leave UNSEEN, or already saved — skip
+
     mail.logout()
-    print("Download complete!")
+    print(f"Done. Saved {saved} emails to {EMAILS_DIR}.")
+    LAST_FETCH_PATH.parent.mkdir(parents=True, exist_ok=True)
+    LAST_FETCH_PATH.write_text(date.today().isoformat())
+
 
 if __name__ == "__main__":
     main()
