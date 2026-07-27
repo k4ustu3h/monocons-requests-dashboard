@@ -282,17 +282,16 @@ def generate_stale_list() -> int:
         print("No requests with valid expiration dates found")
         return 0
 
-    earliest_expiration = min(date for _, date in request_expiration_dates)
-    window_end = earliest_expiration + THIRTY_DAYS_IN_SECONDS
+    window_end = now + THIRTY_DAYS_IN_SECONDS
 
-    start_date = time.strftime("%Y-%m-%d", time.localtime(earliest_expiration))
+    start_date = time.strftime("%Y-%m-%d", time.localtime(now))
     end_date = time.strftime("%Y-%m-%d", time.localtime(window_end))
     print(f"Stale window: {start_date} to {end_date}")
 
     stale_components = [
         comp_name 
         for comp_name, expiration_at in request_expiration_dates
-        if earliest_expiration <= expiration_at <= window_end
+        if now <= expiration_at <= window_end
     ]
 
     stale_components.sort()
