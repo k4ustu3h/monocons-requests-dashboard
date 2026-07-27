@@ -1,7 +1,7 @@
 ## 1. Purpose
 
 ### Project Summary
-A high-performance, vanilla-web dashboard for managing community icon requests for Lawnicons. It transforms static JSON datasets into an interactive triage tool for contributors to visualize, filter, and bulk-export assets and metadata.
+A high-performance, vanilla-web dashboard for managing community icon requests for Monocons. It transforms static JSON datasets into an interactive triage tool for contributors to visualize, filter, and bulk-export assets and metadata.
 
 ### Scope
 Included:
@@ -72,7 +72,7 @@ Excluded (non-goals):
 <resources>
   <item component="ComponentInfo{COMPONENT_NAME}" drawable="ICON_NAME" name="APP_NAME" />
   <!-- Example -->
-  <item component="ComponentInfo{app.lawnchair.lawnicons/app.lawnchair.lawnicons.MainActivity}" drawable="lawnicons" name="Lawnicons" />
+  <item component="ComponentInfo{k4ustu3h.monocons/k4ustu3h.monocons.MainActivity}" drawable="monocons" name="Monocons" />
 </resources>
 ```
 

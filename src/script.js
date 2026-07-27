@@ -3,7 +3,7 @@
 const fflate = /** @type {* & {fflate: any}} */ (window).fflate;
 
 /**
- * LAWNICONS REQUEST MANAGER
+ * MONOCONS REQUEST MANAGER
  */
 
 // ==========================================
@@ -645,7 +645,7 @@ const Templates = {
 
     const existingSvgHtml = existingDrawable
       ? `<span class="existing-svg-wrapper">
-         <img src="https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/svgs/${existingDrawable}.svg" 
+         <img src="https://raw.githubusercontent.com/k4ustu3h/monocons/main/svgs/${existingDrawable}.svg" 
               class="existing-svg" 
               alt="Icon of '${existingDrawable}'"
               title="${existingDrawable}.svg"
@@ -789,7 +789,7 @@ const Templates = {
    */
   libraryIconCard(icon) {
     const svgUrl =
-      `https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/svgs/${icon.drawable}.svg`;
+      `https://raw.githubusercontent.com/k4ustu3h/monocons/main/svgs/${icon.drawable}.svg`;
     return `
           <div class="library-icon-card"
               data-drawable="${icon.drawable}"
@@ -808,9 +808,9 @@ const Templates = {
    */
   libraryIconMenu(icon) {
     const svgUrl =
-      `https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/svgs/${icon.drawable}.svg`;
+      `https://raw.githubusercontent.com/k4ustu3h/monocons/main/svgs/${icon.drawable}.svg`;
     const githubUrl =
-      `https://github.com/LawnchairLauncher/lawnicons/blob/develop/svgs/${icon.drawable}.svg`;
+      `https://github.com/k4ustu3h/monocons/blob/main/svgs/${icon.drawable}.svg`;
     return `
           <div class="ctx-item" tabindex="0" role="menuitem" data-action="library-download-svg" data-url="${svgUrl}" data-drawable="${icon.drawable}">
               ${ICONS.download} <span>Download SVG</span>
@@ -935,11 +935,11 @@ const Templates = {
       : 'Generated from name.';
     const libraryTitle = existingIcon
       ? `${existingIcon.name}\n${drawable}.svg`
-      : 'Found in Lawnicons.';
+      : 'Found in Monocons.';
 
     const libraryIconHtml = existsInLibrary
       ? `<span class="library-icon-card" title="${libraryTitle}">
-                <img src="https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/svgs/${drawable}.svg" 
+                <img src="https://raw.githubusercontent.com/k4ustu3h/monocons/main/svgs/${drawable}.svg" 
                       alt="${drawable}" 
                       loading="lazy"
                       onerror="this.parentElement.remove()" />
@@ -1471,12 +1471,12 @@ const Actions = {
   withIcontoolInstructions(txtCommands) {
     if (!txtCommands) return '';
     const instructions = [
-      '1. Open your Lawnicons repository folder.',
+      '1. Open your Monocons repository folder.',
       '2. Copy your SVGs to the svgs folder.',
       '3. Run the commands below from the repository root in your terminal.',
       '',
       'Make sure your branch is up-to-date. If not and you are familiar with git, use:',
-      '  git reset --hard upstream/develop',
+      '  git reset --hard upstream/main',
       '',
       'If sorting is needed:',
       '  python3 ./icontool.py sort',
@@ -1722,8 +1722,8 @@ const Actions = {
 
       const date = new Date().toISOString().slice(5, 10); // MM-DD
       const name = mode === 'new'
-        ? `lawnicons-add-icons-${date}`
-        : `lawnicons-link-app-ids-${date}`;
+        ? `monocons-add-icons-${date}`
+        : `monocons-link-app-ids-${date}`;
       Actions.downloadZip(content, `${name}.zip`);
     } catch (e) {
       console.error(e);
@@ -1840,7 +1840,7 @@ const Actions = {
     );
 
     const date = new Date().toISOString().slice(5, 10);
-    Actions.downloadZip(content, `lawnicons-contribution-${date}.zip`);
+    Actions.downloadZip(content, `monocons-contribution-${date}.zip`);
   },
 };
 
@@ -2175,7 +2175,10 @@ const Data = {
           const graph = App.state.requestsGraph;
 
           data = data.filter((a) => {
-            if (regex.test(a.label) || regex.test(a.componentName)) {
+            if (
+              regex.test(a.label) ||
+              regex.test(a.componentName)
+            ) {
               return true;
             }
 
@@ -2456,7 +2459,7 @@ const UI = {
       App.dom.regexBtn.classList.add('active');
     }
 
-    const savedList = localStorage.getItem('lawnicons_contribution');
+    const savedList = localStorage.getItem('monocons_contribution');
     if (savedList) {
       try {
         /** @type {AppEntry[]} */
@@ -2467,7 +2470,7 @@ const UI = {
         );
 
         const savedOverrides = localStorage.getItem(
-          'lawnicons_contribution_overrides',
+          'monocons_contribution_overrides',
         );
         if (savedOverrides) {
           /** @type {Record<string, Overrides>} */
@@ -2503,11 +2506,11 @@ const UI = {
     }
 
     if (performance.navigation.type === 0) {
-      localStorage.setItem('lawnicons_contribution_active', 'false');
+      localStorage.setItem('monocons_contribution_active', 'false');
     }
 
     const savedActive = localStorage.getItem(
-      'lawnicons_contribution_active',
+      'monocons_contribution_active',
     );
     if (savedActive === 'true') {
       App.state.contributionActive = true;
@@ -2538,7 +2541,7 @@ const UI = {
       ?.addEventListener('click', () => {
         App.state.lowQualityActive = !App.state.lowQualityActive;
         if (!App.state.lowQualityActive) {
-          App.dom.header.textContent = 'Lawnicons';
+          App.dom.header.textContent = 'Monocons';
           App.dom.contributionBtn.style.display = '';
           document
             .getElementById('lowQualityBtn')
@@ -2567,7 +2570,7 @@ const UI = {
         App.state.contributionActive,
       );
       if (!App.state.contributionActive) {
-        App.dom.header.textContent = 'Lawnicons';
+        App.dom.header.textContent = 'Monocons';
         App.dom.sentinel.style.display = '';
         App.dom.contributionBtn.style.display = '';
       }
@@ -2919,7 +2922,7 @@ const UI = {
           const drawable = actionEl.dataset.drawable;
           if (drawable) {
             const svgUrl =
-              `https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/svgs/${drawable}.svg`;
+              `https://raw.githubusercontent.com/k4ustu3h/monocons/main/svgs/${drawable}.svg`;
             fetch(svgUrl)
               .then((r) => r.text())
               .then((svgText) => {
@@ -3338,7 +3341,10 @@ const UI = {
         const target = /** @type {HTMLElement | null} */ (e.target);
         if (!target) return;
 
-        if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA') {
+        if (
+          target.tagName === 'INPUT' ||
+          target.tagName === 'TEXTAREA'
+        ) {
           return;
         }
 
@@ -3513,7 +3519,7 @@ const UI = {
     document
       .getElementById('search-wrapper')
       ?.classList.remove('is-hidden');
-    App.dom.header.textContent = 'Lawnicons';
+    App.dom.header.textContent = 'Monocons';
     App.dom.contributionBtn.style.display = '';
     this.updateContributionBadge();
     this.updateLowQualityBadge();
@@ -3808,7 +3814,7 @@ const UI = {
         App.state.lastUpdate + 'T00:00:00',
       ).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
       displayText +=
-        ` • <a href="https://github.com/LawnchairLauncher/lawnicons-requests-dashboard" target="_blank" title="Last update: ${fullDate}">${timeAgo}</a>`;
+        ` • <a href="https://github.com/k4ustu3h/monocons-requests-dashboard" target="_blank" title="Last update: ${fullDate}">${timeAgo}</a>`;
     }
     countEl.innerHTML = displayText;
 
@@ -4136,7 +4142,7 @@ const UI = {
       headerRight?.insertAdjacentHTML(
         'afterbegin',
         `
-              <a id="appfilterLink" href="https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/refs/heads/develop/app/assets/appfilter.xml" class="header-link" title="Current appfilter.xml">
+              <a id="appfilterLink" href="https://raw.githubusercontent.com/k4ustu3h/monocons/refs/heads/main/app/assets/appfilter.xml" class="header-link" title="Current appfilter.xml">
                   <svg><use href="#ic-code-xml"/></svg>
               </a>
           `,
@@ -4186,7 +4192,7 @@ const UI = {
         let html = '';
         data.forEach((item) => {
           const svgUrl =
-            `https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/svgs/${item.drawable}.svg`;
+            `https://raw.githubusercontent.com/k4ustu3h/monocons/main/svgs/${item.drawable}.svg`;
           const issueList = item.issues
             .map((i) => `<div class="item-sub">${i}</div>`)
             .join('');
@@ -4300,7 +4306,7 @@ const UI = {
       headerRight?.insertAdjacentHTML(
         'afterbegin',
         `
-          <a id="appfilterLink" href="https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/refs/heads/develop/app/assets/appfilter.xml" class="header-link" title="Current appfilter.xml">
+          <a id="appfilterLink" href="https://raw.githubusercontent.com/k4ustu3h/monocons/refs/heads/main/app/assets/appfilter.xml" class="header-link" title="Current appfilter.xml">
             <svg><use href="#ic-code-xml"/></svg>
           </a>
         `,
@@ -4884,7 +4890,7 @@ const UI = {
     const isCustom = drawable !== defaultSvg;
     const libraryTitle = existingIcon
       ? `${existingIcon.name}\n${drawable}.svg`
-      : 'Found in Lawnicons.';
+      : 'Found in Monocons.';
 
     if (svgHint && svgHint.classList.contains('item-sub')) {
       svgHint.textContent = existsInLibrary
@@ -4898,7 +4904,7 @@ const UI = {
       if (existsInLibrary) {
         libraryIconCol.innerHTML =
           `<span class="library-icon-card" title="${libraryTitle}">
-                  <img src="https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/develop/svgs/${drawable}.svg" 
+                  <img src="https://raw.githubusercontent.com/k4ustu3h/monocons/main/svgs/${drawable}.svg" 
                       alt="${drawable}" 
                       loading="lazy"
                       onerror="this.parentElement.remove()" />
@@ -4925,15 +4931,15 @@ const UI = {
 
   saveContribution() {
     localStorage.setItem(
-      'lawnicons_contribution',
+      'monocons_contribution',
       JSON.stringify(App.state.contribution),
     );
     localStorage.setItem(
-      'lawnicons_contribution_active',
+      'monocons_contribution_active',
       App.state.contributionActive.toString(),
     );
     localStorage.setItem(
-      'lawnicons_contribution_overrides',
+      'monocons_contribution_overrides',
       JSON.stringify(App.state.contributionOverrides),
     );
     if (!App.state.contributionActive) {
@@ -5612,7 +5618,7 @@ const UI = {
     Utils.setHidden(container, false);
 
     const title = container.querySelector('.library-title');
-    if (title) title.textContent = 'Found in Lawnicons';
+    if (title) title.textContent = 'Found in Monocons';
 
     const grid = container.querySelector('.library-grid');
     if (grid) {
