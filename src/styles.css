@@ -2,14 +2,14 @@
    1. FONTS & VARIABLES
    ========================================= */
 @font-face {
-  font-family: "Manrope";
-  src: url("./assets/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-family: "Google Sans Flex";
+  src: url("./assets/GoogleSansFlex-VariableFont_GRAD,ROND,opsz,slnt,wdth,wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
 
 :root {
-  --font-main: "Manrope", sans-serif;
+  --font-main: "Google Sans Flex", sans-serif;
 
   /* Source: #379aff */
   --primary: rgb(164 201 254);
