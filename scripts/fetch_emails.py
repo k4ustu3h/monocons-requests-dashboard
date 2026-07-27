@@ -26,7 +26,7 @@ def main():
 
     mail.select("inbox")
     
-    status, messages = mail.search(None, "ALL") 
+    status, messages = mail.search(None, "UNSEEN") 
     email_ids = messages[0].split()
 
     if not email_ids:
