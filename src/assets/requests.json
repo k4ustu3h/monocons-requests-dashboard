@@ -1,5 +1,5 @@
 {
-  "count": 495,
+  "count": 490,
   "lastUpdate": "2026-07-28",
   "apps": [
     {
@@ -3971,15 +3971,6 @@
       "lastRequested": 1783980544.0
     },
     {
-      "drawable": "gboard",
-      "label": "Gboard",
-      "componentName": "com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.launcher.LauncherActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784527845.0,
-      "lastRequested": 1785176748.0,
-      "installs": "10,000,000,000+"
-    },
-    {
       "drawable": "backdrops",
       "label": "Backdrops",
       "componentName": "com.backdrops.wallpapers/com.backdrops.wallpapers.WelcomeActivity",
@@ -4004,15 +3995,6 @@
       "requestCount": 3,
       "firstAppearance": 1784727668.0,
       "lastRequested": 1784732692.0
-    },
-    {
-      "drawable": "amazon_pay_2",
-      "label": "Amazon Pay",
-      "componentName": "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonpay.AmazonPayHomeActivityAlias",
-      "requestCount": 3,
-      "firstAppearance": 1785067487.0,
-      "lastRequested": 1785067487.0,
-      "installs": "500,000,000+"
     },
     {
       "drawable": "app_picks",
@@ -4101,15 +4083,6 @@
       "lastRequested": 1785067487.0
     },
     {
-      "drawable": "vivaldi_2",
-      "label": "Vivaldi",
-      "componentName": "com.vivaldi.browser/com.vivaldi.browser.IconAlt0",
-      "requestCount": 3,
-      "firstAppearance": 1785067487.0,
-      "lastRequested": 1785067487.0,
-      "installs": "5,000,000+"
-    },
-    {
       "drawable": "jbl_headphones",
       "label": "JBL Headphones",
       "componentName": "jbl.stc.com/jbl.stc.com.activity.LauncherStartActivity",
@@ -4154,15 +4127,6 @@
       "lastRequested": 1785067487.0
     },
     {
-      "drawable": "antennapod",
-      "label": "AntennaPod",
-      "componentName": "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity",
-      "requestCount": 4,
-      "firstAppearance": 1784483478.0,
-      "lastRequested": 1784613518.0,
-      "installs": "1,000,000+"
-    },
-    {
       "drawable": "colorblendr",
       "label": "ColorBlendr",
       "componentName": "com.drdisagree.colorblendr/com.drdisagree.colorblendr.ui.activities.SplashActivity",
@@ -4203,15 +4167,6 @@
       "requestCount": 4,
       "firstAppearance": 1784727668.0,
       "lastRequested": 1784732692.0
-    },
-    {
-      "drawable": "aliexpress_2",
-      "label": "AliExpress",
-      "componentName": "com.alibaba.aliexpresshd/com.aliexpress.app.FirstActivity",
-      "requestCount": 4,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1784876456.0,
-      "installs": "500,000,000+"
     },
     {
       "drawable": "canta",
