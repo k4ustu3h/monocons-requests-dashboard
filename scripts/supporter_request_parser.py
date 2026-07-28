@@ -253,7 +253,7 @@ def update_supported_json(supported_path: Path, existing_supported: set[str], ne
     
     data = {
         "label": "Supported",
-        "description": "Requests from Open Collective backers and GitHub sponsors.",
+        "description": "Requests from GitHub sponsors.",
         "done": done,
         "total": done + len(updated_supported),
         "supported": sorted(list(updated_supported))
