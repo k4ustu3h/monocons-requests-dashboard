@@ -687,7 +687,10 @@
     "it.octogram.android/org.telegram.messenger.DefaultIcon": 2
   },
   "com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.launcher.LauncherActivity": {
-    "it.octogram.android/org.telegram.messenger.DefaultIcon": 2
+    "it.octogram.android/org.telegram.messenger.DefaultIcon": 2,
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
   },
   "com.meld.app/com.metrolist.music.MainActivityStatic": {
     "it.octogram.android/org.telegram.messenger.DefaultIcon": 2
@@ -1041,11 +1044,13 @@
   },
   "com.backdrops.wallpapers/com.backdrops.wallpapers.WelcomeActivity": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
-    "md.obsidian/md.obsidian.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 2,
     "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1,
     "ch.protonmail.android/ch.protonmail.android.MainActivity": 1,
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1,
-    "ru.karasevm.privatednstoggle/ru.karasevm.privatednstoggle.ui.MainActivity": 1
+    "ru.karasevm.privatednstoggle/ru.karasevm.privatednstoggle.ui.MainActivity": 1,
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
   },
   "com.gazlaws.codeboard/com.gazlaws.codeboard.MainActivity": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
@@ -1057,7 +1062,9 @@
   },
   "io.github.forkmaintainers.iceraven/io.github.forkmaintainers.iceraven.App": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
-    "md.obsidian/md.obsidian.MainActivity": 1
+    "md.obsidian/md.obsidian.MainActivity": 2,
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
   },
   "com.document.viewer.doc.reader/com.document.viewer.doc.reader.activity.NewSplashScreen": {
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 2
@@ -1599,7 +1606,10 @@
     "mx.pillofon/mx.diri.components.SplashScreenActivity": 2,
     "de.marmaro.krt.ffupdater/de.marmaro.krt.ffupdater.activity.main.MainActivity": 1,
     "th.co.truemoney.wallet/th.co.truemoney.wallet.activity.LoadingScreenActivity": 1,
-    "th.or.dga.citizenportal/th.or.dga.citizenportal.MainActivity": 1
+    "th.or.dga.citizenportal/th.or.dga.citizenportal.MainActivity": 1,
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
   },
   "com.mercadolibre/com.mercadolibre.SplashActivityAliasDefault": {
     "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 2,
@@ -2374,7 +2384,10 @@
     "ua.gov.reserveplus/ua.gov.reserveplus.MainActivity": 1,
     "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 1,
     "pl.extollite.bedrocktogetherapp/pl.extollite.bedrocktogetherapp.MainActivity": 1,
-    "pl.onet.poczta/pl.onet.poczta.MainActivity": 1
+    "pl.onet.poczta/pl.onet.poczta.MainActivity": 1,
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
   },
   "com.hero.iot/com.hero.iot.ui.splash.SplashActivity": {
     "uk.co.teambobk.f1calendarfree/uk.co.teambobk.f1calendarfree.SplashActivity": 1,
@@ -2553,7 +2566,10 @@
     "it.rainet/com.raiplayv2.MainActivity": 1,
     "it.docplanner/it.docplanner.MainActivity": 1,
     "it.autostrade.hct/com.hct.contotarga.EntryPointActivity": 1,
-    "it.niedermann.owncloud.notes/it.niedermann.owncloud.notes.main.MainActivity": 1
+    "it.niedermann.owncloud.notes/it.niedermann.owncloud.notes.main.MainActivity": 1,
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
   },
   "com.prozis.store/com.prozis.store.ui.activities.splash.SplashActivity": {
     "it.creaweb.ucicinemas/it.creaweb.ucicinemas.SplashActivity": 1,
@@ -2870,7 +2886,10 @@
     "mx.pillofon/mx.diri.components.SplashScreenActivity": 1,
     "pl.jmpolska.clos0.mojabiedronka/pl.jmpolska.mojabiedronka.presentation.flows.main.MainActivity": 1,
     "pl.extollite.bedrocktogetherapp/pl.extollite.bedrocktogetherapp.MainActivity": 1,
-    "pl.onet.poczta/pl.onet.poczta.MainActivity": 1
+    "pl.onet.poczta/pl.onet.poczta.MainActivity": 1,
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
   },
   "com.FreeDust.UnderDarkOffense/com.google.firebase.MessagingUnityPlayerActivity": {
     "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1,
@@ -3101,5 +3120,90 @@
   },
   "com.chiller3.bcr/com.chiller3.bcr.settings.SettingsActivityLauncher": {
     "uk.akane.accord/org.akanework.gramophone.ui.MainActivity": 1
+  },
+  "com.konylabs.capitalone/com.konylabs.capitalone.EnterpriseMobileBanking.LaunchActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "com.sei.android/com.sei.android.MainActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "com.patreon.android/com.patreon.android.screens.launcher.LauncherActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "com.github.digitallyrefined.androidipcamera/com.github.digitallyrefined.androidipcamera.activities.MainActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "com.lgeha.nuts/com.lgeha.nuts.MainActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "com.futo.platformplayer/com.futo.platformplayer.activities.MainActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "com.google.android.apps.giant/com.google.android.apps.giant.flutter.HostActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "rikka.appops/rikka.appops.home.HomeActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "com.asus.aihome/com.asus.aihome.MainActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "com.venmo/com.venmo.android.platform.AppExperienceLauncherActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "com.samsung.knox.securefolder/com.samsung.knox.securefolder.presentation.switcher.view.SecureFolderShortcutActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "com.futo.notes/com.futo.notes.MainActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "com.nvidia.shield.remote/com.nvidia.shield.remote.MainActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "dev.linwood.butterfly.nightly/dev.linwood.butterfly.MainActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "com.google.android.apps.labs.whisk/com.google.android.apps.labs.whisk.MainActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "com.google.android.apps.credentialmanager/com.google.android.apps.credentialmanager.launcher.LauncherActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "com.google.android.tv.remote/com.google.android.tv.remote.RemoteActivity": {
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
   }
 }

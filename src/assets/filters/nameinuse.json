@@ -3,6 +3,14 @@
   "description": "Requests with an existing app name and unknown package.",
   "nameinuse": [
     {
+      "id": "org.prauga.messages/org.prauga.messages.feature.main.MainActivity",
+      "existing_drawable": "messages"
+    },
+    {
+      "id": "com.sei.android/com.sei.android.MainActivity",
+      "existing_drawable": "seven_eleven"
+    },
+    {
       "id": "com.sadellie.unitto/com.sadellie.unitto.MainActivity",
       "existing_drawable": "generic_calculator_minus_multi_plus_equal"
     },
@@ -13,10 +21,6 @@
     {
       "id": "com.funbase.xradio/com.funbase.xradio.home.activity.MainActivity",
       "existing_drawable": "generic_fm_radio"
-    },
-    {
-      "id": "org.prauga.messages/org.prauga.messages.feature.main.MainActivity",
-      "existing_drawable": "messages"
     },
     {
       "id": "com.android.bbk.lockscreen3/com.android.bbk.lockscreen3.LockScreenActivity",

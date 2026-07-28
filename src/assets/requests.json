@@ -1,5 +1,5 @@
 {
-  "count": 476,
+  "count": 495,
   "lastUpdate": "2026-07-28",
   "apps": [
     {
@@ -547,14 +547,6 @@
       "installs": "500,000,000+"
     },
     {
-      "drawable": "iceraven",
-      "label": "Iceraven",
-      "componentName": "io.github.forkmaintainers.iceraven/io.github.forkmaintainers.iceraven.App",
-      "requestCount": 1,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1784569288.0
-    },
-    {
       "drawable": "kanade",
       "label": "Kanade",
       "componentName": "io.alexrintt.kanade/io.alexrintt.kanade.MainActivity",
@@ -673,15 +665,6 @@
       "firstAppearance": 1784569288.0,
       "lastRequested": 1784569288.0,
       "installs": "10,000+"
-    },
-    {
-      "drawable": "obsidian",
-      "label": "Obsidian",
-      "componentName": "md.obsidian/md.obsidian.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1784569288.0,
-      "installs": "5,000,000+"
     },
     {
       "drawable": "odyssey",
@@ -1006,15 +989,6 @@
       "firstAppearance": 1784483478.0,
       "lastRequested": 1784483478.0,
       "installs": "100,000+"
-    },
-    {
-      "drawable": "notebooklm",
-      "label": "NotebookLM",
-      "componentName": "com.google.android.apps.labs.language.tailwind/com.google.android.apps.labs.language.tailwind.MainActivityDev",
-      "requestCount": 1,
-      "firstAppearance": 1784483478.0,
-      "lastRequested": 1784483478.0,
-      "installs": "10,000,000+"
     },
     {
       "drawable": "nothing_icons_2",
@@ -1454,21 +1428,202 @@
       "lastRequested": 1784694557.0
     },
     {
+      "drawable": "7_eleven",
+      "label": "7-Eleven",
+      "componentName": "com.sei.android/com.sei.android.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0,
+      "installs": "10,000,000+"
+    },
+    {
+      "drawable": "asus_router",
+      "label": "ASUS Router",
+      "componentName": "com.asus.aihome/com.asus.aihome.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0,
+      "installs": "5,000,000+"
+    },
+    {
+      "drawable": "activity_launcher",
+      "label": "Activity Launcher",
+      "componentName": "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0
+    },
+    {
+      "drawable": "analytics",
+      "label": "Analytics",
+      "componentName": "com.google.android.apps.giant/com.google.android.apps.giant.flutter.HostActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0,
+      "installs": "10,000,000+"
+    },
+    {
+      "drawable": "android_ip_camera",
+      "label": "Android IP Camera",
+      "componentName": "com.github.digitallyrefined.androidipcamera/com.github.digitallyrefined.androidipcamera.activities.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0
+    },
+    {
+      "drawable": "android_tv",
+      "label": "Android TV",
+      "componentName": "com.google.android.tv.remote/com.google.android.tv.remote.RemoteActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0
+    },
+    {
+      "drawable": "app_ops",
+      "label": "App Ops",
+      "componentName": "rikka.appops/rikka.appops.home.HomeActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0,
+      "installs": "1,000,000+"
+    },
+    {
+      "drawable": "butterfly_nightly",
+      "label": "Butterfly Nightly",
+      "componentName": "dev.linwood.butterfly.nightly/dev.linwood.butterfly.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0
+    },
+    {
+      "drawable": "capital_one",
+      "label": "Capital One",
+      "componentName": "com.konylabs.capitalone/com.konylabs.capitalone.EnterpriseMobileBanking.LaunchActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0,
+      "installs": "50,000,000+"
+    },
+    {
+      "drawable": "futo_notes",
+      "label": "FUTO Notes",
+      "componentName": "com.futo.notes/com.futo.notes.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0,
+      "installs": "100+"
+    },
+    {
+      "drawable": "flow",
+      "label": "Flow",
+      "componentName": "com.google.android.apps.labs.whisk/com.google.android.apps.labs.whisk.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0,
+      "installs": "1,000,000+"
+    },
+    {
+      "drawable": "grayjay",
+      "label": "Grayjay",
+      "componentName": "com.futo.platformplayer/com.futo.platformplayer.activities.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0
+    },
+    {
+      "drawable": "izzyondroid",
+      "label": "IzzyOnDroid",
+      "componentName": "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0
+    },
+    {
+      "drawable": "lg_thinq",
+      "label": "LG ThinQ",
+      "componentName": "com.lgeha.nuts/com.lgeha.nuts.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0,
+      "installs": "100,000,000+"
+    },
+    {
+      "drawable": "passwords",
+      "label": "Passwords",
+      "componentName": "com.google.android.apps.credentialmanager/com.google.android.apps.credentialmanager.launcher.LauncherActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0,
+      "installs": "1+"
+    },
+    {
+      "drawable": "patreon",
+      "label": "Patreon",
+      "componentName": "com.patreon.android/com.patreon.android.screens.launcher.LauncherActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0,
+      "installs": "10,000,000+"
+    },
+    {
+      "drawable": "shield_tv",
+      "label": "SHIELD TV",
+      "componentName": "com.nvidia.shield.remote/com.nvidia.shield.remote.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0,
+      "installs": "1,000,000+"
+    },
+    {
+      "drawable": "secure_folder",
+      "label": "Secure Folder",
+      "componentName": "com.samsung.knox.securefolder/com.samsung.knox.securefolder.presentation.switcher.view.SecureFolderShortcutActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0
+    },
+    {
+      "drawable": "venmo",
+      "label": "Venmo",
+      "componentName": "com.venmo/com.venmo.android.platform.AppExperienceLauncherActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785176748.0,
+      "lastRequested": 1785176748.0,
+      "installs": "50,000,000+"
+    },
+    {
+      "drawable": "iceraven",
+      "label": "Iceraven",
+      "componentName": "io.github.forkmaintainers.iceraven/io.github.forkmaintainers.iceraven.App",
+      "requestCount": 2,
+      "firstAppearance": 1784569288.0,
+      "lastRequested": 1785176748.0
+    },
+    {
+      "drawable": "obsidian",
+      "label": "Obsidian",
+      "componentName": "md.obsidian/md.obsidian.MainActivity",
+      "requestCount": 2,
+      "firstAppearance": 1784569288.0,
+      "lastRequested": 1785176748.0,
+      "installs": "5,000,000+"
+    },
+    {
+      "drawable": "notebooklm",
+      "label": "NotebookLM",
+      "componentName": "com.google.android.apps.labs.language.tailwind/com.google.android.apps.labs.language.tailwind.MainActivityDev",
+      "requestCount": 2,
+      "firstAppearance": 1784483478.0,
+      "lastRequested": 1785176748.0,
+      "installs": "10,000,000+"
+    },
+    {
       "drawable": "firewall",
       "label": "Firewall",
       "componentName": "org.calyxos.datura/org.calyxos.datura.main.MainActivity",
       "requestCount": 2,
       "firstAppearance": 1784527845.0,
       "lastRequested": 1784527845.0
-    },
-    {
-      "drawable": "gboard",
-      "label": "Gboard",
-      "componentName": "com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.launcher.LauncherActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784527845.0,
-      "lastRequested": 1784527845.0,
-      "installs": "10,000,000,000+"
     },
     {
       "drawable": "job_hai_2",
@@ -1681,15 +1836,6 @@
       "requestCount": 2,
       "firstAppearance": 1784569288.0,
       "lastRequested": 1784569288.0
-    },
-    {
-      "drawable": "backdrops",
-      "label": "Backdrops",
-      "componentName": "com.backdrops.wallpapers/com.backdrops.wallpapers.WelcomeActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1784569288.0,
-      "installs": "5,000,000+"
     },
     {
       "drawable": "batstats",
@@ -3825,6 +3971,24 @@
       "lastRequested": 1783980544.0
     },
     {
+      "drawable": "gboard",
+      "label": "Gboard",
+      "componentName": "com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.launcher.LauncherActivity",
+      "requestCount": 3,
+      "firstAppearance": 1784527845.0,
+      "lastRequested": 1785176748.0,
+      "installs": "10,000,000,000+"
+    },
+    {
+      "drawable": "backdrops",
+      "label": "Backdrops",
+      "componentName": "com.backdrops.wallpapers/com.backdrops.wallpapers.WelcomeActivity",
+      "requestCount": 3,
+      "firstAppearance": 1784569288.0,
+      "lastRequested": 1785176748.0,
+      "installs": "5,000,000+"
+    },
+    {
       "drawable": "icon_8",
       "label": "\u8ba1\u7b97\u5668",
       "componentName": "com.marktka.calculatorYou/com.forz.calculator.MainActivity",
@@ -3840,15 +4004,6 @@
       "requestCount": 3,
       "firstAppearance": 1784727668.0,
       "lastRequested": 1784732692.0
-    },
-    {
-      "drawable": "sd_maid_se",
-      "label": "SD Maid SE",
-      "componentName": "eu.darken.sdmse/eu.darken.sdmse.main.ui.MainActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1784732692.0,
-      "installs": "1,000,000+"
     },
     {
       "drawable": "amazon_pay_2",
@@ -3980,6 +4135,15 @@
       "firstAppearance": 1784569288.0,
       "lastRequested": 1784953398.0,
       "installs": "5,000+"
+    },
+    {
+      "drawable": "sd_maid_se",
+      "label": "SD Maid SE",
+      "componentName": "eu.darken.sdmse/eu.darken.sdmse.main.ui.MainActivity",
+      "requestCount": 4,
+      "firstAppearance": 1784694557.0,
+      "lastRequested": 1785176748.0,
+      "installs": "1,000,000+"
     },
     {
       "drawable": "mihon",

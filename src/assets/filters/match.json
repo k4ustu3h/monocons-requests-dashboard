@@ -3,8 +3,32 @@
   "description": "Requests with an existing package.",
   "match": [
     {
-      "id": "com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.launcher.LauncherActivity",
-      "existing_drawable": "gboard"
+      "id": "com.hero.iot/com.hero.iot.ui.splash.SplashActivity",
+      "existing_drawable": "qubo"
+    },
+    {
+      "id": "com.nextcloud.client/com.nmc.android.ui.LauncherActivity",
+      "existing_drawable": "nextcloud"
+    },
+    {
+      "id": "com.lynxspa.prontotreno/com.ibm.android._redesign.HostActivity",
+      "existing_drawable": "trenitalia"
+    },
+    {
+      "id": "com.kratosle.unlim/com.kratosle.unlim.scenes.main.MainActivity",
+      "existing_drawable": "unlim_cloud"
+    },
+    {
+      "id": "app.revanced.android.youtube/app.revanced.android.youtube.revanced_original_1",
+      "existing_drawable": "youtube_revanced"
+    },
+    {
+      "id": "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity",
+      "existing_drawable": "activity_launcher"
+    },
+    {
+      "id": "com.patreon.android/com.patreon.android.screens.launcher.LauncherActivity",
+      "existing_drawable": "patreon"
     },
     {
       "id": "com.maxrave.simpmusic/com.maxrave.simpmusic.MainActivity",
@@ -69,6 +93,10 @@
     {
       "id": "com.zhiliaoapp.musically.go/com.zhiliaoapp.musically.go.mini.MainActivity",
       "existing_drawable": "tiktok"
+    },
+    {
+      "id": "com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.launcher.LauncherActivity",
+      "existing_drawable": "gboard"
     },
     {
       "id": "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonpay.AmazonPayHomeActivityAlias",

@@ -1,8 +1,8 @@
 {
   "com": {
-    "requests": 297,
+    "requests": 312,
     "done": 4083,
-    "total": 4380,
+    "total": 4395,
     "global": 0,
     "global_installs": 0
   },
@@ -14,11 +14,11 @@
     "global_installs": 0
   },
   "de": {
-    "requests": 209,
+    "requests": 230,
     "done": 75,
-    "total": 284,
-    "global": 205,
-    "global_installs": 6237960450
+    "total": 305,
+    "global": 225,
+    "global_installs": 16485960551
   },
   "it": {
     "requests": 93,
@@ -26,6 +26,13 @@
     "total": 117,
     "global": 76,
     "global_installs": 12147330100
+  },
+  "in": {
+    "requests": 74,
+    "done": 36,
+    "total": 110,
+    "global": 68,
+    "global_installs": 10888742601
   },
   "app": {
     "requests": 17,
@@ -40,13 +47,6 @@
     "total": 89,
     "global": 49,
     "global_installs": 185841300
-  },
-  "in": {
-    "requests": 51,
-    "done": 36,
-    "total": 87,
-    "global": 46,
-    "global_installs": 634742500
   },
   "ru": {
     "requests": 47,
@@ -75,6 +75,13 @@
     "total": 71,
     "global": 54,
     "global_installs": 1186990300
+  },
+  "md": {
+    "requests": 69,
+    "done": 0,
+    "total": 69,
+    "global": 68,
+    "global_installs": 11511426201
   },
   "ua": {
     "requests": 52,
@@ -111,13 +118,6 @@
     "global": 0,
     "global_installs": 0
   },
-  "md": {
-    "requests": 49,
-    "done": 0,
-    "total": 49,
-    "global": 48,
-    "global_installs": 1262426100
-  },
   "be": {
     "requests": 46,
     "done": 2,
@@ -153,19 +153,19 @@
     "global": 33,
     "global_installs": 928400000
   },
+  "dev": {
+    "requests": 4,
+    "done": 34,
+    "total": 38,
+    "global": 0,
+    "global_installs": 0
+  },
   "nz": {
     "requests": 38,
     "done": 0,
     "total": 38,
     "global": 37,
     "global_installs": 1158830100
-  },
-  "dev": {
-    "requests": 3,
-    "done": 34,
-    "total": 37,
-    "global": 0,
-    "global_installs": 0
   },
   "at": {
     "requests": 34,
@@ -765,6 +765,13 @@
   "repost": {
     "requests": 0,
     "done": 2,
+    "total": 2,
+    "global": 0,
+    "global_installs": 0
+  },
+  "rikka": {
+    "requests": 1,
+    "done": 1,
     "total": 2,
     "global": 0,
     "global_installs": 0
@@ -1561,13 +1568,6 @@
     "global_installs": 0
   },
   "remix": {
-    "requests": 0,
-    "done": 1,
-    "total": 1,
-    "global": 0,
-    "global_installs": 0
-  },
-  "rikka": {
     "requests": 0,
     "done": 1,
     "total": 1,
