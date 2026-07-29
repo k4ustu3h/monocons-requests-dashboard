@@ -61,6 +61,7 @@
   --surface-container-high: rgb(24 30 54);
   --surface-container-highest: rgb(29 36 63);
 
+  --primary-fixed: rgb(156 176 255);
   --secondary-container-hover: rgb(0 74 26);
 
   /* Source: #B33B15 */
@@ -1734,7 +1735,7 @@ input[type="checkbox"]:indeterminate::after {
 }
 
 .sb-action-btn:hover {
-  background: var(--secondary);
+  background: var(--primary-fixed);
 }
 
 .sb-action-btn svg {
