@@ -645,7 +645,7 @@ const Templates = {
 
     const existingSvgHtml = existingDrawable
       ? `<span class="existing-svg-wrapper">
-         <img src="https://raw.githubusercontent.com/k4ustu3h/monocons/main/svgs/${existingDrawable}.svg" 
+         <img src="https://raw.githubusercontent.com/k4ustu3h/monocons-android/main/svgs/${existingDrawable}.svg" 
               class="existing-svg" 
               alt="Icon of '${existingDrawable}'"
               title="${existingDrawable}.svg"
@@ -789,7 +789,7 @@ const Templates = {
    */
   libraryIconCard(icon) {
     const svgUrl =
-      `https://raw.githubusercontent.com/k4ustu3h/monocons/main/svgs/${icon.drawable}.svg`;
+      `https://raw.githubusercontent.com/k4ustu3h/monocons-android/main/svgs/${icon.drawable}.svg`;
     return `
           <div class="library-icon-card"
               data-drawable="${icon.drawable}"
@@ -808,9 +808,9 @@ const Templates = {
    */
   libraryIconMenu(icon) {
     const svgUrl =
-      `https://raw.githubusercontent.com/k4ustu3h/monocons/main/svgs/${icon.drawable}.svg`;
+      `https://raw.githubusercontent.com/k4ustu3h/monocons-android/main/svgs/${icon.drawable}.svg`;
     const githubUrl =
-      `https://github.com/k4ustu3h/monocons/blob/main/svgs/${icon.drawable}.svg`;
+      `https://github.com/k4ustu3h/monocons-android/blob/main/svgs/${icon.drawable}.svg`;
     return `
           <div class="ctx-item" tabindex="0" role="menuitem" data-action="library-download-svg" data-url="${svgUrl}" data-drawable="${icon.drawable}">
               ${ICONS.download} <span>Download SVG</span>
@@ -939,7 +939,7 @@ const Templates = {
 
     const libraryIconHtml = existsInLibrary
       ? `<span class="library-icon-card" title="${libraryTitle}">
-                <img src="https://raw.githubusercontent.com/k4ustu3h/monocons/main/svgs/${drawable}.svg" 
+                <img src="https://raw.githubusercontent.com/k4ustu3h/monocons-android/main/svgs/${drawable}.svg" 
                       alt="${drawable}" 
                       loading="lazy"
                       onerror="this.parentElement.remove()" />
@@ -1476,7 +1476,7 @@ const Actions = {
       '3. Run the commands below from the repository root in your terminal.',
       '',
       'Make sure your branch is up-to-date. If not and you are familiar with git, use:',
-      '  git reset --hard upstream/main',
+      '  git reset --hard upstream/develop',
       '',
       'If sorting is needed:',
       '  python3 ./icontool.py sort',
@@ -2188,20 +2188,21 @@ const Data = {
               if (domain === 'com' && !graph[comp]) return true;
             }
 
-            const domainMatch = s.search.match(/^\^([a-z]+)\\\./);
+            const domainMatch = s.search.match(/^\^\(([a-z|]+)\)\\\./);
             if (domainMatch) {
-              const searchDomain = domainMatch[1];
+              const searchDomains = domainMatch[1].split('|');
               const comp = a.componentName;
+              const graph = App.state.requestsGraph;
               if (graph[comp]) {
                 const neighbors = Object.keys(graph[comp]);
-                return neighbors.some(
-                  (n) =>
-                    n.split('/')[0].split('.')[0] ===
-                      searchDomain,
+                return neighbors.some((n) =>
+                  searchDomains.includes(
+                    n.split('/')[0].split('.')[0],
+                  )
                 );
               }
+              return false;
             }
-            return false;
           });
         } catch {
           data = [];
@@ -2922,7 +2923,7 @@ const UI = {
           const drawable = actionEl.dataset.drawable;
           if (drawable) {
             const svgUrl =
-              `https://raw.githubusercontent.com/k4ustu3h/monocons/main/svgs/${drawable}.svg`;
+              `https://raw.githubusercontent.com/k4ustu3h/monocons-android/main/svgs/${drawable}.svg`;
             fetch(svgUrl)
               .then((r) => r.text())
               .then((svgText) => {
@@ -4142,7 +4143,7 @@ const UI = {
       headerRight?.insertAdjacentHTML(
         'afterbegin',
         `
-              <a id="appfilterLink" href="https://raw.githubusercontent.com/k4ustu3h/monocons/refs/heads/main/app/assets/appfilter.xml" class="header-link" title="Current appfilter.xml">
+              <a id="appfilterLink" href="https://raw.githubusercontent.com/k4ustu3h/monocons-android/refs/heads/main/app/assets/appfilter.xml" class="header-link" title="Current appfilter.xml">
                   <svg><use href="#ic-code-xml"/></svg>
               </a>
           `,
@@ -4192,7 +4193,7 @@ const UI = {
         let html = '';
         data.forEach((item) => {
           const svgUrl =
-            `https://raw.githubusercontent.com/k4ustu3h/monocons/main/svgs/${item.drawable}.svg`;
+            `https://raw.githubusercontent.com/k4ustu3h/monocons-android/main/svgs/${item.drawable}.svg`;
           const issueList = item.issues
             .map((i) => `<div class="item-sub">${i}</div>`)
             .join('');
@@ -4306,7 +4307,7 @@ const UI = {
       headerRight?.insertAdjacentHTML(
         'afterbegin',
         `
-          <a id="appfilterLink" href="https://raw.githubusercontent.com/k4ustu3h/monocons/refs/heads/main/app/assets/appfilter.xml" class="header-link" title="Current appfilter.xml">
+          <a id="appfilterLink" href="https://raw.githubusercontent.com/k4ustu3h/monocons-android/refs/heads/main/app/assets/appfilter.xml" class="header-link" title="Current appfilter.xml">
             <svg><use href="#ic-code-xml"/></svg>
           </a>
         `,
@@ -4904,7 +4905,7 @@ const UI = {
       if (existsInLibrary) {
         libraryIconCol.innerHTML =
           `<span class="library-icon-card" title="${libraryTitle}">
-                  <img src="https://raw.githubusercontent.com/k4ustu3h/monocons/main/svgs/${drawable}.svg" 
+                  <img src="https://raw.githubusercontent.com/k4ustu3h/monocons-android/main/svgs/${drawable}.svg" 
                       alt="${drawable}" 
                       loading="lazy"
                       onerror="this.parentElement.remove()" />
