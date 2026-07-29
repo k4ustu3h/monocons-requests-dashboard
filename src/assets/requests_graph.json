@@ -29,10 +29,6 @@
     "pl.nask.mobywatel/pl.gov.mc.fringers.mobywatel.MainActivity": 2,
     "ua.gov.reserveplus/ua.gov.reserveplus.MainActivity": 2
   },
-  "com.oplus.consumerIRApp/com.oplus.consumerIRApp.navigation.LauncherActivity": {
-    "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonpay.AmazonPayHomeActivityAlias": 3,
-    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 3
-  },
   "com.oplus.aimemory/com.oplus.aimemory.MainActivity": {
     "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonpay.AmazonPayHomeActivityAlias": 3,
     "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 3
@@ -697,9 +693,6 @@
   "org.eu.mumulhl.ciyue/org.eu.mumulhl.ciyue.MainActivity": {
     "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2
   },
-  "com.maxrave.simpmusic/com.maxrave.simpmusic.MainActivity": {
-    "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2
-  },
   "com.qtrun.QuickTest/com.qtrun.nsg.LauncherActivity": {
     "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2
   },
@@ -977,14 +970,6 @@
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
     "md.obsidian/md.obsidian.MainActivity": 1
   },
-  "com.google.android.apps.classroom/com.google.android.apps.classroom.classroomflutter.MainActivity": {
-    "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
-    "md.obsidian/md.obsidian.MainActivity": 1,
-    "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1,
-    "ch.protonmail.android/ch.protonmail.android.MainActivity": 1,
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1,
-    "ru.karasevm.privatednstoggle/ru.karasevm.privatednstoggle.ui.MainActivity": 1
-  },
   "com.drdisagree.colorblendr/com.drdisagree.colorblendr.ui.activities.SplashActivity": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
     "md.obsidian/md.obsidian.MainActivity": 1,
@@ -1177,9 +1162,6 @@
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 2
   },
   "app.cricfy.tv/app.cricfy.tv.activities.SplashActivity": {
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 2
-  },
-  "com.android.deskclock/com.android.BBKClock.Timer": {
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 2
   },
   "com.tk.quicksearch/com.tk.quicksearch.app.MainActivityAliasDefault": {
@@ -1431,13 +1413,6 @@
     "mx.tokafintech.paypay/com.yak.wallet.SplashActivityAlias": 1,
     "mx.pillofon/mx.diri.components.SplashScreenActivity": 2
   },
-  "com.didiglobal.passenger/com.didi.sdk.splash.SplashActivity": {
-    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 2,
-    "st.android.imsspublico/crc642176304cdb761b92.Splash": 2,
-    "be.mygod.datasimtile/be.mygod.datasimtile.SimSettingsActivity": 1,
-    "mx.tokafintech.paypay/com.yak.wallet.SplashActivityAlias": 1,
-    "mx.pillofon/mx.diri.components.SplashScreenActivity": 2
-  },
   "com.streamflixreborn.streamflix/com.streamflixreborn.streamflix.activities.main.MainMobileActivity": {
     "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
     "st.android.imsspublico/crc642176304cdb761b92.Splash": 1,
@@ -1488,13 +1463,6 @@
     "mx.pillofon/mx.diri.components.SplashScreenActivity": 1
   },
   "com.vayunmathur.pdf/com.vayunmathur.pdf.MainActivity": {
-    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 2,
-    "st.android.imsspublico/crc642176304cdb761b92.Splash": 2,
-    "be.mygod.datasimtile/be.mygod.datasimtile.SimSettingsActivity": 1,
-    "mx.tokafintech.paypay/com.yak.wallet.SplashActivityAlias": 1,
-    "mx.pillofon/mx.diri.components.SplashScreenActivity": 2
-  },
-  "com.mercadopago.wallet/com.mercadopago.wallet.SplashActivityAliasDefault": {
     "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 2,
     "st.android.imsspublico/crc642176304cdb761b92.Splash": 2,
     "be.mygod.datasimtile/be.mygod.datasimtile.SimSettingsActivity": 1,
@@ -1614,11 +1582,6 @@
     "th.co.truemoney.wallet/th.co.truemoney.wallet.activity.LoadingScreenActivity": 1,
     "th.or.dga.citizenportal/th.or.dga.citizenportal.MainActivity": 1,
     "de.marmaro.krt.ffupdater/de.marmaro.krt.ffupdater.activity.main.MainActivity": 1
-  },
-  "com.aurora.store/com.aurora.store.MainActivity": {
-    "th.co.truemoney.wallet/th.co.truemoney.wallet.activity.LoadingScreenActivity": 2,
-    "th.or.dga.citizenportal/th.or.dga.citizenportal.MainActivity": 2,
-    "de.marmaro.krt.ffupdater/de.marmaro.krt.ffupdater.activity.main.MainActivity": 2
   },
   "com.MomoshStudios.IdleMiner/com.singular.unitybridge.SingularUnityActivity": {
     "th.co.truemoney.wallet/th.co.truemoney.wallet.activity.LoadingScreenActivity": 2,
@@ -1860,15 +1823,6 @@
     "pl.nask.mobywatel/pl.gov.mc.fringers.mobywatel.MainActivity": 2,
     "ua.gov.reserveplus/ua.gov.reserveplus.MainActivity": 2
   },
-  "com.mcdonalds.mobileapp/com.mcdonalds.mobileapp.SplashActivity": {
-    "pl.zabka.apb2c/pl.zabka.app.ui.TrikiSplashZappkaActivityTriki": 2,
-    "pl.jmpolska.clos0.mojabiedronka/pl.jmpolska.mojabiedronka.presentation.flows.main.MainActivity": 2,
-    "ua.gov.diia.app/ua.gov.diia.app.ui.activities.VendorActivity": 2,
-    "ua.privatbank.ap24/ua.privatbank.ap24v6.LauncherAliasDefault": 2,
-    "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2,
-    "pl.nask.mobywatel/pl.gov.mc.fringers.mobywatel.MainActivity": 2,
-    "ua.gov.reserveplus/ua.gov.reserveplus.MainActivity": 2
-  },
   "com.lidl.eci.lidlplus/es.lidlplus.i18n.StandardLauncher": {
     "pl.zabka.apb2c/pl.zabka.app.ui.TrikiSplashZappkaActivityTriki": 2,
     "pl.jmpolska.clos0.mojabiedronka/pl.jmpolska.mojabiedronka.presentation.flows.main.MainActivity": 2,
@@ -1961,11 +1915,6 @@
     "pl.extollite.bedrocktogetherapp/pl.extollite.bedrocktogetherapp.MainActivity": 2
   },
   "ai.seaart.seasoul/ai.seaart.seasoul.MainActivity": {
-    "pl.jmpolska.clos0.mojabiedronka/pl.jmpolska.mojabiedronka.presentation.flows.main.MainActivity": 2,
-    "pl.onet.poczta/pl.onet.poczta.MainActivity": 2,
-    "pl.extollite.bedrocktogetherapp/pl.extollite.bedrocktogetherapp.MainActivity": 2
-  },
-  "app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_rounded_2": {
     "pl.jmpolska.clos0.mojabiedronka/pl.jmpolska.mojabiedronka.presentation.flows.main.MainActivity": 2,
     "pl.onet.poczta/pl.onet.poczta.MainActivity": 2,
     "pl.extollite.bedrocktogetherapp/pl.extollite.bedrocktogetherapp.MainActivity": 2
