@@ -3,64 +3,20 @@
   "description": "Requests with an existing package.",
   "match": [
     {
-      "id": "com.hero.iot/com.hero.iot.ui.splash.SplashActivity",
-      "existing_drawable": "qubo"
-    },
-    {
-      "id": "com.nextcloud.client/com.nmc.android.ui.LauncherActivity",
-      "existing_drawable": "nextcloud"
-    },
-    {
-      "id": "com.lynxspa.prontotreno/com.ibm.android._redesign.HostActivity",
-      "existing_drawable": "trenitalia"
-    },
-    {
-      "id": "com.kratosle.unlim/com.kratosle.unlim.scenes.main.MainActivity",
-      "existing_drawable": "unlim_cloud"
-    },
-    {
-      "id": "app.revanced.android.youtube/app.revanced.android.youtube.revanced_original_1",
-      "existing_drawable": "youtube_revanced"
-    },
-    {
-      "id": "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity",
-      "existing_drawable": "activity_launcher"
-    },
-    {
-      "id": "com.patreon.android/com.patreon.android.screens.launcher.LauncherActivity",
-      "existing_drawable": "patreon"
-    },
-    {
-      "id": "com.dot.gallery/com.dot.gallery.Launcher_Gallery",
-      "existing_drawable": "generic_gallery"
-    },
-    {
       "id": "com.vivo.soundrecorder/com.android.activity.ReclistActivity",
       "existing_drawable": "generic_voice_recorder_waves"
     },
     {
-      "id": "deltazero.amarok.foss/deltazero.amarok.launcher.calendar",
-      "existing_drawable": "amarok"
-    },
-    {
-      "id": "com.nu.production/br.com.nubank.app.LegacySplashActivity",
-      "existing_drawable": "nubank"
-    },
-    {
-      "id": "de.marmaro.krt.ffupdater/de.marmaro.krt.ffupdater.activity.main.MainActivity",
-      "existing_drawable": "ffupdater"
-    },
-    {
-      "id": "org.akanework.gramophone/org.akanework.gramophone.ui.MainActivity",
-      "existing_drawable": "gramophone"
+      "id": "iad1tya.echo.music/iad1tya.echo.music.MainActivityStatic",
+      "existing_drawable": "echo_music"
     },
     {
       "id": "pl.zabka.apb2c/pl.zabka.app.ui.TrikiSplashZappkaActivityTriki",
       "existing_drawable": "zappka"
     },
     {
-      "id": "com.zhiliaoapp.musically.go/com.zhiliaoapp.musically.go.mini.MainActivity",
-      "existing_drawable": "tiktok"
+      "id": "iad1tya.echo.music/iad1tya.echo.music.MainActivityLegacy",
+      "existing_drawable": "echo_music"
     }
   ]
 }
