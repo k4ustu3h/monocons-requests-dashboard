@@ -3,7 +3,8 @@
    ========================================= */
 @font-face {
   font-family: "Google Sans Flex";
-  src: url("./assets/GoogleSansFlex-VariableFont_GRAD,ROND,opsz,slnt,wdth,wght.ttf") format("truetype");
+  src: url("./assets/GoogleSansFlex-VariableFont_GRAD,ROND,opsz,slnt,wdth,wght.ttf")
+    format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
@@ -11,53 +12,56 @@
 :root {
   --font-main: "Google Sans Flex", sans-serif;
 
-  /* Source: #379aff */
-  --primary: rgb(164 201 254);
+  /* Source: #2962ff */
+  --primary: rgb(124 152 255);
   --surface-tint: rgb(164 201 254);
-  --on-primary: rgb(0 49 92);
-  --primary-container: rgb(31 72 118);
-  --on-primary-container: rgb(211 227 255);
+  --on-primary: rgb(0 25 91);
+  --primary-container: rgb(24 88 246);
+  --on-primary-container: rgb(255 255 255);
 
-  --secondary: rgb(188 199 219);
-  --on-secondary: rgb(38 49 65);
-  --secondary-container: rgb(60 71 88);
-  --on-secondary-container: rgb(216 227 248);
+  /* Source: #00c853 */
+  --secondary: rgb(60 227 106);
+  --on-secondary: rgb(0 75 26);
+  --secondary-container: rgb(0 45 13);
+  --on-secondary-container: rgb(0 189 78);
 
-  --tertiary: rgb(217 189 227);
-  --on-tertiary: rgb(60 41 70);
-  --tertiary-container: rgb(84 63 94);
-  --on-tertiary-container: rgb(245 217 255);
+  /* Source: #ffd600 */
+  --tertiary: rgb(255 228 131);
+  --on-tertiary: rgb(99 82 0);
+  --tertiary-container: rgb(253 212 0);
+  --on-tertiary-container: rgb(89 74 0);
 
-  --error: rgb(255 180 171);
-  --on-error: rgb(105 0 5);
-  --error-container: rgb(147 0 10);
-  --on-error-container: rgb(255 218 214);
+  /* Source: #d50000 */
+  --error: rgb(255 114 94);
+  --on-error: rgb(74 0 0);
+  --error-container: rgb(215 3 1);
+  --on-error-container: rgb(255 231 227);
 
-  --surface: rgb(17 19 24);
-  --on-surface: rgb(225 226 233);
-  --on-surface-rgb: 225 226 233;
+  --surface: rgb(10 13 27);
+  --on-surface: rgb(224 228 255);
+  --on-surface-rgb: 224 228 255;
   --surface-variant: rgb(67 71 78);
-  --on-surface-variant: rgb(195 198 207);
+  --on-surface-variant: rgb(163 170 203);
 
-  --outline: rgb(141 145 153);
-  --outline-variant: rgb(67 71 78);
+  --outline: rgb(109 116 147);
+  --outline-variant: rgb(64 71 100);
 
   --shadow: rgb(0 0 0);
   --scrim: rgb(0 0 0);
 
-  --inverse-surface: rgb(225 226 233);
-  --inverse-on-surface: rgb(46 48 53);
-  --inverse-primary: rgb(58 96 143);
+  --inverse-surface: rgb(250 248 255);
+  --inverse-on-surface: rgb(81 84 101);
+  --inverse-primary: rgb(0 78 234);
 
-  --surface-dim: rgb(17 19 24);
-  --surface-bright: rgb(55 57 62);
-  --surface-container-lowest: rgb(12 14 19);
-  --surface-container-low: rgb(25 28 32);
-  --surface-container: rgb(29 32 36);
-  --surface-container-high: rgb(39 42 47);
-  --surface-container-highest: rgb(50 53 58);
+  --surface-dim: rgb(10 13 27);
+  --surface-bright: rgb(34 42 73);
+  --surface-container-lowest: rgb(0 0 0);
+  --surface-container-low: rgb(14 18 35);
+  --surface-container: rgb(19 25 45);
+  --surface-container-high: rgb(24 30 54);
+  --surface-container-highest: rgb(29 36 63);
 
-  --secondary-container-hover: rgb(71, 83, 102);
+  --secondary-container-hover: rgb(0 74 26);
 
   /* Source: #B33B15 */
   --orange-container: #723523;
