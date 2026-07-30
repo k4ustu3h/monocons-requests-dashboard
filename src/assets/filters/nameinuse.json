@@ -3,22 +3,6 @@
   "description": "Requests with an existing app name and unknown package.",
   "nameinuse": [
     {
-      "id": "org.prauga.messages/org.prauga.messages.feature.main.MainActivity",
-      "existing_drawable": "messages"
-    },
-    {
-      "id": "com.sei.android/com.sei.android.MainActivity",
-      "existing_drawable": "seven_eleven"
-    },
-    {
-      "id": "com.sadellie.unitto/com.sadellie.unitto.MainActivity",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal"
-    },
-    {
-      "id": "com.vayunmathur.camera/com.vayunmathur.camera.MainActivity",
-      "existing_drawable": "samsung_camera"
-    },
-    {
       "id": "com.funbase.xradio/com.funbase.xradio.home.activity.MainActivity",
       "existing_drawable": "generic_fm_radio"
     },
@@ -31,40 +15,12 @@
       "existing_drawable": "dolby"
     },
     {
-      "id": "com.goodwy.smsmessenger/com.goodwy.smsmessenger.activities.SplashActivity.Eight",
-      "existing_drawable": "messages"
-    },
-    {
-      "id": "com.internet.tvbrowser/com.internet.tvbrowser.MainActivity",
-      "existing_drawable": "generic_browser"
-    },
-    {
       "id": "com.miui.calculator.go/com.miui.calculator.cal.CalculatorActivity",
       "existing_drawable": "generic_calculator_minus_multi_plus_equal"
     },
     {
-      "id": "com.epicgames.ega/com.epicgames.portal.ui.MainActivity",
-      "existing_drawable": "epic_games"
-    },
-    {
-      "id": "org.fossify.musicplayer/org.fossify.musicplayer.activities.SplashActivity.Grey_black",
-      "existing_drawable": "generic_player"
-    },
-    {
-      "id": "com.roblox.client/com.roblox.client.startup.ActivitySplash",
-      "existing_drawable": "generic_shell"
-    },
-    {
-      "id": "com.gitlab.mudlej.MjPdfReader/com.gitlab.mudlej.MjPdfReader.Launcher",
-      "existing_drawable": "generic_pdf_square"
-    },
-    {
       "id": "com.oneplus.backuprestore/com.oplus.phoneclone.PhoneCloneMainActivity",
       "existing_drawable": "clone_phone"
-    },
-    {
-      "id": "com.oplus.phonemanager/com.oplus.phonemanager.FakeActivity",
-      "existing_drawable": "phone_manager"
     }
   ]
 }

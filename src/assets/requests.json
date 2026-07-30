@@ -1,5 +1,5 @@
 {
-  "count": 473,
+  "count": 457,
   "lastUpdate": "2026-07-30",
   "apps": [
     {
@@ -604,15 +604,6 @@
       "requestCount": 1,
       "firstAppearance": 1784569288.0,
       "lastRequested": 1784569288.0
-    },
-    {
-      "drawable": "messages",
-      "label": "Messages",
-      "componentName": "org.prauga.messages/org.prauga.messages.feature.main.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1784569288.0,
-      "installs": "1,000+"
     },
     {
       "drawable": "mindful",
@@ -1376,15 +1367,6 @@
       "installs": "50,000,000+"
     },
     {
-      "drawable": "7_eleven",
-      "label": "7-Eleven",
-      "componentName": "com.sei.android/com.sei.android.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785176748.0,
-      "lastRequested": 1785176748.0,
-      "installs": "10,000,000+"
-    },
-    {
       "drawable": "asus_router",
       "label": "ASUS Router",
       "componentName": "com.asus.aihome/com.asus.aihome.MainActivity",
@@ -1851,23 +1833,6 @@
       "drawable": "buge_app_manager",
       "label": "Buge App Manager",
       "componentName": "com.buge.appmanager/com.buge.appmanager.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1784569288.0
-    },
-    {
-      "drawable": "calculator_2",
-      "label": "Calculator",
-      "componentName": "com.sadellie.unitto/com.sadellie.unitto.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1784569288.0,
-      "installs": "100,000+"
-    },
-    {
-      "drawable": "camera",
-      "label": "Camera",
-      "componentName": "com.vayunmathur.camera/com.vayunmathur.camera.MainActivity",
       "requestCount": 2,
       "firstAppearance": 1784569288.0,
       "lastRequested": 1784569288.0
@@ -2556,14 +2521,6 @@
       "installs": "50,000+"
     },
     {
-      "drawable": "camara",
-      "label": "C\u00e1mara",
-      "componentName": "com.android.MGC_9_7_047/com.android.camera.CameraLauncher",
-      "requestCount": 2,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1784694557.0
-    },
-    {
       "drawable": "didi_finanzas_2",
       "label": "DiDi Finanzas",
       "componentName": "com.didiglobal.cashloan/com.didiglobal.loan.launcher.SplashActivity",
@@ -2576,14 +2533,6 @@
       "drawable": "dolby_atmos",
       "label": "Dolby Atmos",
       "componentName": "com.motorola.dolby.dolbyui/com.motorola.dolby.dolbyui.ui.LauncherActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1784694557.0
-    },
-    {
-      "drawable": "echo_music_1",
-      "label": "Echo Music",
-      "componentName": "iad1tya.echo.music/iad1tya.echo.music.MainActivityStatic",
       "requestCount": 2,
       "firstAppearance": 1784694557.0,
       "lastRequested": 1784694557.0
@@ -3278,15 +3227,6 @@
       "installs": "1,000,000+"
     },
     {
-      "drawable": "browser_2",
-      "label": "BROWSER",
-      "componentName": "com.internet.tvbrowser/com.internet.tvbrowser.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784876456.0,
-      "lastRequested": 1784876456.0,
-      "installs": "10,000,000+"
-    },
-    {
       "drawable": "calculator_1",
       "label": "Calculator",
       "componentName": "com.miui.calculator.go/com.miui.calculator.cal.CalculatorActivity",
@@ -3318,15 +3258,6 @@
       "firstAppearance": 1784876456.0,
       "lastRequested": 1784876456.0,
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "epic_games_2",
-      "label": "Epic Games",
-      "componentName": "com.epicgames.ega/com.epicgames.portal.ui.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784876456.0,
-      "lastRequested": 1784876456.0,
-      "installs": "5,000,000+"
     },
     {
       "drawable": "feedback_1",
@@ -3440,15 +3371,6 @@
       "installs": "1,000,000+"
     },
     {
-      "drawable": "music_player_2",
-      "label": "Music Player",
-      "componentName": "org.fossify.musicplayer/org.fossify.musicplayer.activities.SplashActivity.Grey_black",
-      "requestCount": 2,
-      "firstAppearance": 1784876456.0,
-      "lastRequested": 1784876456.0,
-      "installs": "50,000+"
-    },
-    {
       "drawable": "onet_poczta_2",
       "label": "Onet Poczta",
       "componentName": "pl.onet.poczta/pl.onet.poczta.MainActivity",
@@ -3491,15 +3413,6 @@
       "requestCount": 2,
       "firstAppearance": 1784876456.0,
       "lastRequested": 1784876456.0
-    },
-    {
-      "drawable": "roblox",
-      "label": "Roblox",
-      "componentName": "com.roblox.client/com.roblox.client.startup.ActivitySplash",
-      "requestCount": 2,
-      "firstAppearance": 1784876456.0,
-      "lastRequested": 1784876456.0,
-      "installs": "1,000,000,000+"
     },
     {
       "drawable": "sea_soul_2",
@@ -3623,15 +3536,6 @@
       "lastRequested": 1784953398.0
     },
     {
-      "drawable": "musikplayer_2",
-      "label": "Musikplayer",
-      "componentName": "org.fossify.musicplayer/org.fossify.musicplayer.activities.SplashActivity.Green",
-      "requestCount": 2,
-      "firstAppearance": 1784953398.0,
-      "lastRequested": 1784953398.0,
-      "installs": "50,000+"
-    },
-    {
       "drawable": "smart_tutor_2",
       "label": "Smart Tutor",
       "componentName": "com.rsupport.rs.activity.rsupport.aas2/com.rsupport.rs.activity.edit.IntroActivity",
@@ -3656,14 +3560,6 @@
       "firstAppearance": 1784949849.0,
       "lastRequested": 1784949849.0,
       "installs": "1,000,000,000+"
-    },
-    {
-      "drawable": "echo_music_2",
-      "label": "Echo Music",
-      "componentName": "iad1tya.echo.music/iad1tya.echo.music.MainActivityLegacy",
-      "requestCount": 2,
-      "firstAppearance": 1784949849.0,
-      "lastRequested": 1784949849.0
     },
     {
       "drawable": "fotmob_2",
@@ -3907,15 +3803,6 @@
       "lastRequested": 1785067487.0
     },
     {
-      "drawable": "navi_2",
-      "label": "Navi",
-      "componentName": "com.naviapp/com.naviapp.home.compose.activity.HomePageActivity",
-      "requestCount": 3,
-      "firstAppearance": 1785067487.0,
-      "lastRequested": 1785067487.0,
-      "installs": "100,000,000+"
-    },
-    {
       "drawable": "shadow_fight_2",
       "label": "Shadow Fight 2",
       "componentName": "com.nekki.shadowfight2.paid/com.google.firebase.MessagingUnityPlayerActivity",
@@ -4046,15 +3933,6 @@
       "installs": "5,000,000+"
     },
     {
-      "drawable": "mercado_libre_2",
-      "label": "Mercado Libre",
-      "componentName": "com.mercadolibre/com.mercadolibre.SplashActivityAliasDefault",
-      "requestCount": 4,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1784949849.0,
-      "installs": "500,000,000+"
-    },
-    {
       "drawable": "mi_fitness_2",
       "label": "Mi Fitness",
       "componentName": "com.xiaomi.wearable/com.xiaomi.fitness.login.SplashActivity",
@@ -4088,22 +3966,6 @@
       "requestCount": 5,
       "firstAppearance": 1784727668.0,
       "lastRequested": 1785353106.0
-    },
-    {
-      "drawable": "adns",
-      "label": "ADNS",
-      "componentName": "com.eyalm.adns/com.eyalm.adns.MainActivity",
-      "requestCount": 5,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1784694557.0
-    },
-    {
-      "drawable": "phone_manager",
-      "label": "Phone Manager",
-      "componentName": "com.oplus.phonemanager/com.oplus.phonemanager.FakeActivity",
-      "requestCount": 5,
-      "firstAppearance": 1784746278.0,
-      "lastRequested": 1785067487.0
     },
     {
       "drawable": "binary_eye_2",
