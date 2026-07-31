@@ -1,5 +1,14 @@
 {
-  "label": "Easy",
-  "description": "Requests that are quick to fulfill.",
-  "easy": []
+	"label": "Easy",
+	"description": "Requests that are quick to fulfill.",
+	"easy": [
+		"com.heytap.cloud/com.heytap.cloud.home.ui.CloudLauncherActivity",
+		"com.xiaomi.glgm/com.mig.play.Icon0",
+		"com.xiaomi.glgm/com.xiaomi.glgm.home.ui.category",
+		"eu.faircode.netguard/eu.faircode.netguard.ActivityMain",
+		"io.github.samolego.canta/io.github.samolego.canta.MainActivity",
+		"com.oneplus.backuprestore/com.oplus.phoneclone.PhoneCloneMainActivity",
+		"com.oplus.aimemory/com.oplus.aimemory.MainActivity",
+		"com.marktka.calculatorYou/com.forz.calculator.MainActivity"
+	]
 }
