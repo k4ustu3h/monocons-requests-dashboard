@@ -35,7 +35,7 @@ jobs:
         id: parse_emails
         run: |
           if [ "$(ls -A emails/ 2>/dev/null)" ]; then
-            python scripts/email_parser.py emails/ src/assets/appfilter.xml src/extracted_png src/assets
+            python scripts/email_parser.py emails/ src/assets/appfilter.xml src/extracted_images src/assets
             echo "emails_parsed=true" >> $GITHUB_OUTPUT
           else
             echo "No emails to parse."

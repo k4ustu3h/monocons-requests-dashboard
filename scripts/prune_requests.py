@@ -15,7 +15,7 @@ REQUESTS_JSON = REPO_ROOT / "src/assets/requests.json"
 EXTRACTED_IMAGE_DIR = REPO_ROOT / "src/extracted_images"
 FILTERS_DIR = REPO_ROOT / "src/assets/filters"
 
-UPSTREAM_APPFILTER = "https://raw.githubusercontent.com/k4ustu3h/monocons/main/app/assets/appfilter.xml"
+UPSTREAM_APPFILTER = "https://raw.githubusercontent.com/k4ustu3h/monocons-android/main/app/assets/appfilter.xml"
 
 COMPONENT_PATTERN = re.compile(r"ComponentInfo\{([^}]+)}")
 
