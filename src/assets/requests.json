@@ -1,6 +1,6 @@
 {
-  "count": 453,
-  "lastUpdate": "2026-07-30",
+  "count": 439,
+  "lastUpdate": "2026-07-31",
   "apps": [
     {
       "drawable": "clearscanner",
@@ -691,15 +691,6 @@
       "firstAppearance": 1784569288.0,
       "lastRequested": 1784569288.0,
       "installs": "100+"
-    },
-    {
-      "drawable": "vivo_store",
-      "label": "vivo Store",
-      "componentName": "com.vivo.website/com.vivo.website.activity.SplashActivity",
-      "requestCount": 1,
-      "firstAppearance": 1784613518.0,
-      "lastRequested": 1784613518.0,
-      "installs": "1,000,000,000+"
     },
     {
       "drawable": "sim_de_datos",
@@ -2008,15 +1999,6 @@
       "lastRequested": 1784613518.0
     },
     {
-      "drawable": "comet_2",
-      "label": "Comet",
-      "componentName": "ai.perplexity.comet/ai.perplexity.comet.ui.CometActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784613518.0,
-      "lastRequested": 1784613518.0,
-      "installs": "1,000,000+"
-    },
-    {
       "drawable": "document_viewer_2",
       "label": "Document Viewer",
       "componentName": "com.document.viewer.doc.reader/com.document.viewer.doc.reader.activity.NewSplashScreen",
@@ -2033,15 +2015,6 @@
       "firstAppearance": 1784613518.0,
       "lastRequested": 1784613518.0,
       "installs": "100,000+"
-    },
-    {
-      "drawable": "feedback",
-      "label": "Feedback",
-      "componentName": "com.vivo.website/com.vivo.website.feedback.HotQuestionEntry",
-      "requestCount": 2,
-      "firstAppearance": 1784613518.0,
-      "lastRequested": 1784613518.0,
-      "installs": "1,000,000,000+"
     },
     {
       "drawable": "file_manager_xfolder",
@@ -3001,14 +2974,6 @@
       "installs": "1,000+"
     },
     {
-      "drawable": "translate_you",
-      "label": "Translate You",
-      "componentName": "com.bnyro.translate/com.bnyro.translate.ui.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784732692.0,
-      "lastRequested": 1784732692.0
-    },
-    {
       "drawable": "truemoney_2",
       "label": "TrueMoney",
       "componentName": "th.co.truemoney.wallet/th.co.truemoney.wallet.activity.LoadingScreenActivity",
@@ -3699,15 +3664,6 @@
       "lastRequested": 1783980544.0
     },
     {
-      "drawable": "deepseek_2",
-      "label": "DeepSeek",
-      "componentName": "com.deepseek.chat/com.deepseek.chat.MainActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1785353106.0,
-      "installs": "50,000,000+"
-    },
-    {
       "drawable": "backdrops",
       "label": "Backdrops",
       "componentName": "com.backdrops.wallpapers/com.backdrops.wallpapers.WelcomeActivity",
@@ -3732,15 +3688,6 @@
       "requestCount": 3,
       "firstAppearance": 1785067487.0,
       "lastRequested": 1785067487.0
-    },
-    {
-      "drawable": "bhim_2",
-      "label": "BHIM",
-      "componentName": "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity",
-      "requestCount": 3,
-      "firstAppearance": 1785067487.0,
-      "lastRequested": 1785067487.0,
-      "installs": "100,000,000+"
     },
     {
       "drawable": "clone_phone_2",
@@ -3804,15 +3751,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "icon_pack_studio_2",
-      "label": "Icon Pack Studio",
-      "componentName": "ginlemon.iconpackstudio/ginlemon.iconpackstudio.editor.homeActivity.HomeActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1784732692.0,
-      "installs": "10,000,000+"
-    },
-    {
       "drawable": "notallyx_2",
       "label": "NotallyX",
       "componentName": "com.philkes.notallyx/com.philkes.notallyx.presentation.activity.main.MainActivity",
@@ -3828,48 +3766,6 @@
       "requestCount": 4,
       "firstAppearance": 1784727668.0,
       "lastRequested": 1785353106.0
-    },
-    {
-      "drawable": "sd_maid_se",
-      "label": "SD Maid SE",
-      "componentName": "eu.darken.sdmse/eu.darken.sdmse.main.ui.MainActivity",
-      "requestCount": 4,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1785176748.0,
-      "installs": "1,000,000+"
-    },
-    {
-      "drawable": "mihon",
-      "label": "Mihon",
-      "componentName": "app.mihon/eu.kanade.tachiyomi.ui.main.MainActivity",
-      "requestCount": 4,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1785067487.0
-    },
-    {
-      "drawable": "colorblendr",
-      "label": "ColorBlendr",
-      "componentName": "com.drdisagree.colorblendr/com.drdisagree.colorblendr.ui.activities.SplashActivity",
-      "requestCount": 4,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1784876456.0
-    },
-    {
-      "drawable": "exported_icon_pack",
-      "label": "Exported Icon Pack",
-      "componentName": "ginlemon.iconpackstudio.exported/ginlemon.iconpackstudio.exported.MainActivity",
-      "requestCount": 4,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1784732692.0
-    },
-    {
-      "drawable": "capcut_2",
-      "label": "CapCut",
-      "componentName": "com.lemon.lvoverseas/com.vega.main.MainActivity",
-      "requestCount": 4,
-      "firstAppearance": 1784613518.0,
-      "lastRequested": 1784876456.0,
-      "installs": "1,000,000,000+"
     },
     {
       "drawable": "netguard_2",
@@ -3899,15 +3795,6 @@
       "installs": "5,000,000+"
     },
     {
-      "drawable": "mi_fitness_2",
-      "label": "Mi Fitness",
-      "componentName": "com.xiaomi.wearable/com.xiaomi.fitness.login.SplashActivity",
-      "requestCount": 4,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1784746278.0,
-      "installs": "50,000,000+"
-    },
-    {
       "drawable": "biedronka",
       "label": "Biedronka",
       "componentName": "pl.jmpolska.clos0.mojabiedronka/pl.jmpolska.mojabiedronka.presentation.flows.main.MainActivity",
@@ -3932,15 +3819,6 @@
       "requestCount": 5,
       "firstAppearance": 1784727668.0,
       "lastRequested": 1785353106.0
-    },
-    {
-      "drawable": "binary_eye_2",
-      "label": "Binary Eye",
-      "componentName": "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity",
-      "requestCount": 5,
-      "firstAppearance": 1784483478.0,
-      "lastRequested": 1784746278.0,
-      "installs": "100,000+"
     },
     {
       "drawable": "oroaming",
