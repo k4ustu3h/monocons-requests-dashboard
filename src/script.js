@@ -1476,7 +1476,7 @@ const Actions = {
       '3. Run the commands below from the repository root in your terminal.',
       '',
       'Make sure your branch is up-to-date. If not and you are familiar with git, use:',
-      '  git reset --hard upstream/develop',
+      '  git reset --hard upstream/main',
       '',
       'If sorting is needed:',
       '  python3 ./icontool.py sort',
@@ -2189,8 +2189,6 @@ const Data = {
             }
 
             const domainMatch = s.search.match(/^\^([a-z]+)\\\./);
-
-            const domainMatch = s.search.match(/^\^\(([a-z|]+)\)\\\./);
             if (domainMatch) {
               const searchDomain = domainMatch[1];
               const comp = a.componentName;
