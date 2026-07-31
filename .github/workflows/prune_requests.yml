@@ -32,11 +32,14 @@ jobs:
         run: python scripts/fetch_emails.py
 
       - name: Parse emails
+        id: parse_emails
         run: |
           if [ "$(ls -A emails/ 2>/dev/null)" ]; then
             python scripts/email_parser.py emails/ src/assets/appfilter.xml src/extracted_png src/assets
+            echo "emails_parsed=true" >> $GITHUB_OUTPUT
           else
             echo "No emails to parse."
+            echo "emails_parsed=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Cleanup emails
@@ -54,9 +57,24 @@ jobs:
         run: python scripts/generate_auto_tags.py src/assets/requests.json src/assets/filters src/assets/appfilter.xml
 
       - name: Commit and push changes
-        if: steps.prune_requests.outputs.requests_changed == 'true' || github.event_name == 'workflow_dispatch'
+        if: steps.parse_emails.outputs.emails_parsed == 'true' || steps.prune_requests.outputs.requests_changed == 'true' || github.event_name == 'workflow_dispatch'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+
+          EMAILS_PARSED="${{ steps.parse_emails.outputs.emails_parsed }}"
+          PRUNED="${{ steps.prune_requests.outputs.requests_changed }}"
+
+          # Determine the commit message based on which steps succeeded
+          if [ "$EMAILS_PARSED" == "true" ] && [ "$PRUNED" == "true" ]; then
+            COMMIT_MSG="Update requests, and prune fulfilled and outdated requests"
+          elif [ "$EMAILS_PARSED" == "true" ]; then
+            COMMIT_MSG="Update requests"
+          elif [ "$PRUNED" == "true" ]; then
+            COMMIT_MSG="Prune fulfilled and outdated requests"
+          else
+            COMMIT_MSG="Update dashboard data"
+          fi
+
           git add .
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Prune fulfilled and outdated requests" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "$COMMIT_MSG" && git push)
