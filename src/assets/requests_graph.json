@@ -675,10 +675,12 @@
     "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2
   },
   "com.onlyoffice.documents/app.editors.manager.ui.activities.main.MainActivity": {
-    "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2
+    "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2,
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
   },
   "compress.joshattic.us/compress.joshattic.us.MainActivity": {
-    "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2
+    "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2,
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
   },
   "com.carriez.flutter_hbb/com.carriez.flutter_hbb.MainActivity": {
     "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2
@@ -817,7 +819,8 @@
     "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1,
     "ch.protonmail.android/ch.protonmail.android.MainActivity": 1,
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1,
-    "ru.karasevm.privatednstoggle/ru.karasevm.privatednstoggle.ui.MainActivity": 1
+    "ru.karasevm.privatednstoggle/ru.karasevm.privatednstoggle.ui.MainActivity": 1,
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
   },
   "org.diekaiju.duckassist/org.diekaiju.duckassist.MainActivity": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
@@ -1052,7 +1055,8 @@
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 2
   },
   "com.tk.quicksearch/com.tk.quicksearch.app.MainActivityAliasDefault": {
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 2
+    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 2,
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
   },
   "com.codeway.aitutor/com.codeway.aitutor.MainActivity": {
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 2
@@ -2417,5 +2421,107 @@
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
     "md.obsidian/md.obsidian.MainActivity": 1,
     "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+  },
+  "com.fsck.k9/net.thunderbird.app.common.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.zhiliaoapp.musically.go/com.zhiliaoapp.musically.go.mini.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.simplytranslate_mobile/com.simplytranslate_mobile.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.taxsee.taxsee/com.taxsee.taxsee.ui.activities.SplashScreen": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "org.zeam/org.zeam.presentation.activity.AppEntryActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "net.kollnig.missioncontrol/eu.faircode.netguard.ActivityMain": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.xiaomi.wearable/com.xiaomi.fitness.login.SplashActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.rspr.rspr_online/com.rspr.rspr_online.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "dev.dettmer.simplenotes/dev.dettmer.simplenotes.ui.main.ComposeMainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "dev.clombardo.dnsnet/dev.clombardo.dnsnet.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.FivekraD.BoingBoingAnimals/com.FivekraD.BoingBoingAnimals.RunnerActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.mi.globalbrowser/com.mi.globalbrowser.Main": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.kompact/com.kompact.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.miui.securitycenter/com.miui.securityscan.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.iudesk.android.photo.editor/app.activity.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.grabtaxi.passenger/com.grab.pax.newface.common.alias.DefaultLauncherAlias": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.hitrolab.audioeditor/com.hitrolab.audioeditor.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.ethereal.openscan/com.ethereal.openscan.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.wordtracer.app/com.wordtracer.app.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.eyewind.paperone/com.kong.paper.Main": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "InfinityLoop1309.NewPipeEnhanced/org.schabi.newpipe.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.pg_axis.ytcnv/com.pg_axis.ytcnv.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "app.bpjs.mobile/io.flutter.embedding.android.FlutterFragmentActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "me.lecaro.breakout/me.lecaro.breakout.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "nya.kitsunyan.foxydroid/nya.kitsunyan.foxydroid.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.miui.miservice/com.miui.miservice.main.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.android.thememanager/com.android.thememanager.ThemeResourceTabActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "photoeditor.cutout.backgrounderaser/com.min.n.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.thirtytwo.steps/com.thirtytwo.steps.MainActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "org.fossify.musicplayer/org.fossify.musicplayer.activities.SplashActivity.Green": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.shopee.shopeeseller/com.shopee.app.ui.home.HomeActivity_": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "ovo.id/ovo.id.common.activity.StartingActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.xiaomi.glgm/com.xiaomi.glgm.home.ui.SplashActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "org.futo.inputmethod.latin.playstore/org.futo.inputmethod.latin.uix.settings.SettingsActivity": {
+    "uk.co.openweather/uk.co.openweather.MainActivity": 1
   }
 }
