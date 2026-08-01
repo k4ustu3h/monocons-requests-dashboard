@@ -3,6 +3,10 @@
   "description": "Requests with an existing app name and unknown package.",
   "nameinuse": [
     {
+      "id": "com.oneplus.backuprestore/com.oplus.phoneclone.PhoneCloneMainActivity",
+      "existing_drawable": "clone_phone"
+    },
+    {
       "id": "com.funbase.xradio/com.funbase.xradio.home.activity.MainActivity",
       "existing_drawable": "generic_fm_radio"
     },
@@ -15,8 +19,36 @@
       "existing_drawable": "generic_calculator_minus_multi_plus_equal"
     },
     {
-      "id": "com.oneplus.backuprestore/com.oplus.phoneclone.PhoneCloneMainActivity",
-      "existing_drawable": "clone_phone"
+      "id": "dev.dettmer.simplenotes/dev.dettmer.simplenotes.ui.main.ComposeMainActivity",
+      "existing_drawable": "generic_notes"
+    },
+    {
+      "id": "domilopment.apkextractor/domilopment.apkextractor.MainActivity",
+      "existing_drawable": "generic_shell"
+    },
+    {
+      "id": "com.apkupdater.ci/com.apkupdater.ui.activity.MainActivity",
+      "existing_drawable": "apkupdater"
+    },
+    {
+      "id": "com.rianixia.camerb/com.android.camera.CameraLauncher",
+      "existing_drawable": "samsung_camera"
+    },
+    {
+      "id": "com.openappslabs.coffee/com.openappslabs.coffee.MainActivity",
+      "existing_drawable": "coffee"
+    },
+    {
+      "id": "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias",
+      "existing_drawable": "calendar"
+    },
+    {
+      "id": "com.splendapps.checkmate/com.splendapps.checkmate.activity.MainActivity",
+      "existing_drawable": "generic_chess"
+    },
+    {
+      "id": "com.vayunmathur.weather/com.vayunmathur.weather.MainActivity",
+      "existing_drawable": "weather"
     }
   ]
 }

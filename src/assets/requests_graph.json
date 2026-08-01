@@ -26,10 +26,6 @@
     "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonpay.AmazonPayHomeActivityAlias": 3,
     "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 3
   },
-  "money.super.payments/com.supermoney.payments.MainActivity": {
-    "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonpay.AmazonPayHomeActivityAlias": 3,
-    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 3
-  },
   "com.heytap.market/com.heytap.market.activity.MainActivity": {
     "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonpay.AmazonPayHomeActivityAlias": 3,
     "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 3
@@ -674,14 +670,6 @@
   "com.qtrun.QuickTest/com.qtrun.nsg.LauncherActivity": {
     "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2
   },
-  "com.onlyoffice.documents/app.editors.manager.ui.activities.main.MainActivity": {
-    "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2,
-    "uk.co.openweather/uk.co.openweather.MainActivity": 1
-  },
-  "compress.joshattic.us/compress.joshattic.us.MainActivity": {
-    "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2,
-    "uk.co.openweather/uk.co.openweather.MainActivity": 1
-  },
   "com.carriez.flutter_hbb/com.carriez.flutter_hbb.MainActivity": {
     "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2
   },
@@ -720,14 +708,6 @@
   "com.sidhant.path/com.sidhant.path.MainActivity": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
     "md.obsidian/md.obsidian.MainActivity": 1
-  },
-  "app.anizen/eu.kanade.tachiyomi.ui.main.MainActivity": {
-    "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
-    "md.obsidian/md.obsidian.MainActivity": 1,
-    "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1,
-    "ch.protonmail.android/ch.protonmail.android.MainActivity": 1,
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1,
-    "ru.karasevm.privatednstoggle/ru.karasevm.privatednstoggle.ui.MainActivity": 1
   },
   "com.vayunmathur.games.alchemist/com.vayunmathur.games.alchemist.MainActivity": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
@@ -813,15 +793,6 @@
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
     "md.obsidian/md.obsidian.MainActivity": 1
   },
-  "edge.roll/edge.roll.GameActivity": {
-    "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
-    "md.obsidian/md.obsidian.MainActivity": 1,
-    "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1,
-    "ch.protonmail.android/ch.protonmail.android.MainActivity": 1,
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1,
-    "ru.karasevm.privatednstoggle/ru.karasevm.privatednstoggle.ui.MainActivity": 1,
-    "uk.co.openweather/uk.co.openweather.MainActivity": 1
-  },
   "org.diekaiju.duckassist/org.diekaiju.duckassist.MainActivity": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
     "md.obsidian/md.obsidian.MainActivity": 1,
@@ -847,10 +818,6 @@
     "md.obsidian/md.obsidian.MainActivity": 1
   },
   "com.transsion.healthlife/com.transsion.healthlife.view.WelcomeActivity": {
-    "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
-    "md.obsidian/md.obsidian.MainActivity": 1
-  },
-  "com.philkes.notallyx/com.philkes.notallyx.presentation.activity.main.MainActivity": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
     "md.obsidian/md.obsidian.MainActivity": 1
   },
@@ -905,14 +872,6 @@
   "app.gyrolet.mpvrx/app.gyrolet.mpvrx.MainActivity": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
     "md.obsidian/md.obsidian.MainActivity": 1
-  },
-  "app.comaps.fdroid/app.organicmaps.DownloadResourcesActivity": {
-    "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
-    "md.obsidian/md.obsidian.MainActivity": 1,
-    "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1,
-    "ch.protonmail.android/ch.protonmail.android.MainActivity": 1,
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1,
-    "ru.karasevm.privatednstoggle/ru.karasevm.privatednstoggle.ui.MainActivity": 1
   },
   "app.batstats/app.batstats.battery.BatteryMainActivity": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
@@ -1123,11 +1082,6 @@
     "in.gov.udiseplus.gis/in.gov.udiseplus.gis.MainActivity": 2,
     "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 2
   },
-  "com.bigbasket.mobileapp/com.bigbasket.mobileapp.activity.SplashActivityDefault": {
-    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 2,
-    "in.gov.udiseplus.gis/in.gov.udiseplus.gis.MainActivity": 2,
-    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 2
-  },
   "nic.hp.mdm/nic.hp.mdm.SplashActivity": {
     "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 2,
     "in.gov.udiseplus.gis/in.gov.udiseplus.gis.MainActivity": 2,
@@ -1227,16 +1181,6 @@
     "be.mygod.datasimtile/be.mygod.datasimtile.SimSettingsActivity": 1,
     "mx.tokafintech.paypay/com.yak.wallet.SplashActivityAlias": 1,
     "mx.pillofon/mx.diri.components.SplashScreenActivity": 2
-  },
-  "com.xiaoji.egggame/com.xiaoji.egggame.MainActivity": {
-    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 2,
-    "st.android.imsspublico/crc642176304cdb761b92.Splash": 2,
-    "be.mygod.datasimtile/be.mygod.datasimtile.SimSettingsActivity": 1,
-    "mx.tokafintech.paypay/com.yak.wallet.SplashActivityAlias": 1,
-    "mx.pillofon/mx.diri.components.SplashScreenActivity": 2,
-    "pl.jmpolska.clos0.mojabiedronka/pl.jmpolska.mojabiedronka.presentation.flows.main.MainActivity": 2,
-    "pl.onet.poczta/pl.onet.poczta.MainActivity": 2,
-    "pl.extollite.bedrocktogetherapp/pl.extollite.bedrocktogetherapp.MainActivity": 2
   },
   "sansunsen3.imagesearcher/sansunsen3.imagesearcher.activity.MainActivity": {
     "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 2,
@@ -1355,7 +1299,9 @@
     "st.android.imsspublico/crc642176304cdb761b92.Splash": 2,
     "be.mygod.datasimtile/be.mygod.datasimtile.SimSettingsActivity": 1,
     "mx.tokafintech.paypay/com.yak.wallet.SplashActivityAlias": 1,
-    "mx.pillofon/mx.diri.components.SplashScreenActivity": 2
+    "mx.pillofon/mx.diri.components.SplashScreenActivity": 2,
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
   },
   "com.grability.rappi/com.rappi.discovery.onboarding.impl.activities.RappiMainEntryActivity": {
     "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 2,
@@ -1563,11 +1509,6 @@
     "th.or.dga.citizenportal/th.or.dga.citizenportal.MainActivity": 2,
     "de.marmaro.krt.ffupdater/de.marmaro.krt.ffupdater.activity.main.MainActivity": 2
   },
-  "ai.bohemian.multipolls/ai.bohemian.multipolls.MainActivity": {
-    "th.co.truemoney.wallet/th.co.truemoney.wallet.activity.LoadingScreenActivity": 2,
-    "th.or.dga.citizenportal/th.or.dga.citizenportal.MainActivity": 2,
-    "de.marmaro.krt.ffupdater/de.marmaro.krt.ffupdater.activity.main.MainActivity": 2
-  },
   "com.bstar.intl/tv.danmaku.bili.MainActivityV2": {
     "th.co.truemoney.wallet/th.co.truemoney.wallet.activity.LoadingScreenActivity": 2,
     "th.or.dga.citizenportal/th.or.dga.citizenportal.MainActivity": 2,
@@ -1708,7 +1649,9 @@
   "com.cxinventor.file.explorer/com.alphainventor.filemanager.activity.MainActivity": {
     "pl.jmpolska.clos0.mojabiedronka/pl.jmpolska.mojabiedronka.presentation.flows.main.MainActivity": 2,
     "pl.onet.poczta/pl.onet.poczta.MainActivity": 2,
-    "pl.extollite.bedrocktogetherapp/pl.extollite.bedrocktogetherapp.MainActivity": 2
+    "pl.extollite.bedrocktogetherapp/pl.extollite.bedrocktogetherapp.MainActivity": 2,
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
   },
   "org.maintainteam.hypatia/us.spotco.malwarescanner.MainActivity": {
     "pl.jmpolska.clos0.mojabiedronka/pl.jmpolska.mojabiedronka.presentation.flows.main.MainActivity": 2,
@@ -1941,7 +1884,9 @@
     "it.niedermann.owncloud.notes/it.niedermann.owncloud.notes.main.MainActivity": 1,
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
     "md.obsidian/md.obsidian.MainActivity": 1,
-    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1,
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
   },
   "com.prozis.store/com.prozis.store.ui.activities.splash.SplashActivity": {
     "it.creaweb.ucicinemas/it.creaweb.ucicinemas.SplashActivity": 1,
@@ -2415,7 +2360,9 @@
   "com.google.android.apps.credentialmanager/com.google.android.apps.credentialmanager.launcher.LauncherActivity": {
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
     "md.obsidian/md.obsidian.MainActivity": 1,
-    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1,
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
   },
   "com.google.android.tv.remote/com.google.android.tv.remote.RemoteActivity": {
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
@@ -2423,9 +2370,6 @@
     "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
   },
   "com.fsck.k9/net.thunderbird.app.common.MainActivity": {
-    "uk.co.openweather/uk.co.openweather.MainActivity": 1
-  },
-  "com.zhiliaoapp.musically.go/com.zhiliaoapp.musically.go.mini.MainActivity": {
     "uk.co.openweather/uk.co.openweather.MainActivity": 1
   },
   "com.simplytranslate_mobile/com.simplytranslate_mobile.MainActivity": {
@@ -2438,9 +2382,6 @@
     "uk.co.openweather/uk.co.openweather.MainActivity": 1
   },
   "net.kollnig.missioncontrol/eu.faircode.netguard.ActivityMain": {
-    "uk.co.openweather/uk.co.openweather.MainActivity": 1
-  },
-  "com.xiaomi.wearable/com.xiaomi.fitness.login.SplashActivity": {
     "uk.co.openweather/uk.co.openweather.MainActivity": 1
   },
   "com.rspr.rspr_online/com.rspr.rspr_online.MainActivity": {
@@ -2497,9 +2438,6 @@
   "nya.kitsunyan.foxydroid/nya.kitsunyan.foxydroid.MainActivity": {
     "uk.co.openweather/uk.co.openweather.MainActivity": 1
   },
-  "com.miui.miservice/com.miui.miservice.main.MainActivity": {
-    "uk.co.openweather/uk.co.openweather.MainActivity": 1
-  },
   "com.android.thememanager/com.android.thememanager.ThemeResourceTabActivity": {
     "uk.co.openweather/uk.co.openweather.MainActivity": 1
   },
@@ -2507,9 +2445,6 @@
     "uk.co.openweather/uk.co.openweather.MainActivity": 1
   },
   "com.thirtytwo.steps/com.thirtytwo.steps.MainActivity": {
-    "uk.co.openweather/uk.co.openweather.MainActivity": 1
-  },
-  "org.fossify.musicplayer/org.fossify.musicplayer.activities.SplashActivity.Green": {
     "uk.co.openweather/uk.co.openweather.MainActivity": 1
   },
   "com.shopee.shopeeseller/com.shopee.app.ui.home.HomeActivity_": {
@@ -2523,5 +2458,153 @@
   },
   "org.futo.inputmethod.latin.playstore/org.futo.inputmethod.latin.uix.settings.SettingsActivity": {
     "uk.co.openweather/uk.co.openweather.MainActivity": 1
+  },
+  "com.facebook.viewpoints/com.facebook.anna.app.activities.MainActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.flipkart.shopsy/com.flipkart.shopsy.SplashActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.flipkart.android/com.flipkart.android.IdSaleIconAlias": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.iexceed.appzillon.ippbMB/com.iexceed.appzillon.ippbMB.AppzillonMainScreen": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.bigheadtechies.diary/com.bigheadtechies.diary.Lastest.Activity.MainActivity.MainActivityMigration1": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.snaptube.premium/com.snaptube.premium.activity.MainExploreAlias": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.xnotes/com.xnotes.MainActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.openappslabs.fiveg/com.openappslabs.fiveg.MainActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.cris.utsmobile/com.cris.ima.utsonmobile.mainmenuitems.SplashActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.motorola.livewallpaper3/com.motorola.livewallpaper3.ui.menu.WallpaperMenuTrampolineActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "io.github.jd1378.otphelper/io.github.jd1378.otphelper.MainActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.onyx.galaxy.global.note/com.onyx.galaxy.note.ui.activity.SplashActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.mpokket.app/com.mpokket.app.login.presentation.screens.splash.SplashActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.motorola.genie/com.motorola.genie.main.start.LaunchActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "app.ninjavpn.android/app.ninjavpn.android.app.Dashboard": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.external.castle/com.gxgx.daqiandy.ui.splash.SplashActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.nic.mparivahan/com.nic.mparivahan.Welcome.SplashScreen": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.vayunmathur.weather/com.vayunmathur.weather.MainActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.splendapps.checkmate/com.splendapps.checkmate.activity.MainActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.sree.sreeleatherss/io.kodular.amitgoutam25.Sreeleathers_App.Screen1": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "xyz.penpencil.physicswala/com.penpencil.physicswallah.SplashActivityAliasNormal": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "io.moreless.tide/io.moreless.tide.activity.RouterActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.microsoft.bing/com.microsoft.sapphire.app.main.SapphireMainActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.shopping.limeroad/com.shopping.limeroad.Launcher2Activity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.jndapp.depth.live.wallpaper/com.jndapp.depth.live.wallpaper.MainActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.king.moja/com.dooflixv4.in.activities.SplashActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.supercell.clashofclans/com.supercell.titan.GameApp": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.snaplearn.mobile/com.snaplearn.mobile.MainActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.snapdeal.main/com.snapdeal.ui.material.activity.MaterialMainActivityDefault": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.tk.quicksearch/com.tk.quicksearch.app.MainActivityAliasForestLight": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.vayunmathur.office/com.vayunmathur.office.MainActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.dts.freefiremax/com.dts.freefireth.FFMainActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.xodo.pdf.reader/viewer.CompleteReaderMainActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.indusind.indie/com.indusind.indie.launcher_c29ee5c28889ac705b354b3d105de8a7b80866483f0b36e1e78e27b22462217b": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.google.android.apps.youtube.producer/com.google.android.apps.youtube.producer.application.MainActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "com.inod.screenofftimer/com.inod.screenofftimer.MainActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
+  },
+  "cris.org.in.prs.ima/cris.org.in.prs.ima.MainActivity": {
+    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
   }
 }
