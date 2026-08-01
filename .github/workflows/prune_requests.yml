@@ -35,15 +35,12 @@ jobs:
         id: parse_emails
         run: |
           if [ "$(ls -A emails/ 2>/dev/null)" ]; then
-            python scripts/email_parser.py emails/ src/assets/appfilter.xml src/extracted_images src/assets
+            echo "Y" | python scripts/email_parser.py emails/ src/assets/appfilter.xml src/extracted_images src/assets
             echo "emails_parsed=true" >> $GITHUB_OUTPUT
           else
             echo "No emails to parse."
             echo "emails_parsed=false" >> $GITHUB_OUTPUT
           fi
-
-      - name: Cleanup emails
-        run: rm -rf emails/
 
       - name: Save trending baseline
         run: python scripts/save_trending_baseline.py
