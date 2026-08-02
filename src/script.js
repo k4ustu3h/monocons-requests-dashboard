@@ -2250,8 +2250,8 @@ const Data = {
     }
 
     if (s.sort === 'finishers' && !App.state._finisherScores) {
-      Heuristics.calculateFinisherScores()
-    }    
+      Heuristics.calculateFinisherScores();
+    }
 
     data = [...data];
     if (s.sort === 'rand') {
@@ -2314,19 +2314,21 @@ const Data = {
               b.requestCount) -
             (App.state.setsStats[a.componentName.split('/')[0]] ||
               a.requestCount),
-        'finishers': (a, b) => {
+        finishers: (a, b) => {
           const dataA = App.state._finisherScores?.[a.componentName];
           const dataB = App.state._finisherScores?.[b.componentName];
-          
+
           if (dataA && dataB) {
-            if (dataA.score !== dataB.score) return dataB.score - dataA.score;
+            if (dataA.score !== dataB.score) {
+              return dataB.score - dataA.score;
+            }
             return dataA.avgSize - dataB.avgSize;
           }
           if (dataA) return -1;
           if (dataB) return 1;
-          
+
           return getPop(b) - getPop(a);
-        }, 
+        },
       };
       if (sorters[s.sort]) data.sort(sorters[s.sort]);
     }
@@ -2450,30 +2452,34 @@ const Heuristics = {
     return req / inst;
   },
 
-calculateFinisherScores() {
-  const screens = App.state.screensData;
-  const screenList = Object.values(screens).map(comps => new Set(comps));
-  /** @type {Record<string, {score: number, avgSize: number}>} */
-  const scores = {};
+  calculateFinisherScores() {
+    const screens = App.state.screensData;
+    const screenList = Object.values(screens).map(
+      (comps) => new Set(comps),
+    );
+    /** @type {Record<string, {score: number, avgSize: number}>} */
+    const scores = {};
 
-  const compToScreens = new Map();
-  for (const screen of screenList) {
-    for (const comp of screen) {
-      if (!compToScreens.has(comp)) compToScreens.set(comp, new Set());
-      compToScreens.get(comp).add(screen);
+    const compToScreens = new Map();
+    for (const screen of screenList) {
+      for (const comp of screen) {
+        if (!compToScreens.has(comp)) {
+          compToScreens.set(comp, new Set());
+        }
+        compToScreens.get(comp).add(screen);
+      }
     }
-  }
 
-  for (const [comp, scrns] of compToScreens) {
-    const closing = [...scrns].filter(s => s.size === 1);
-    const score = closing.length;
-    const totalSize = [...scrns].reduce((sum, s) => sum + s.size, 0);
-    const avgSize = scrns.size > 0 ? totalSize / scrns.size : Infinity;
-    scores[comp] = { score, avgSize };
-  }
+    for (const [comp, scrns] of compToScreens) {
+      const closing = [...scrns].filter((s) => s.size === 1);
+      const score = closing.length;
+      const totalSize = [...scrns].reduce((sum, s) => sum + s.size, 0);
+      const avgSize = scrns.size > 0 ? totalSize / scrns.size : Infinity;
+      scores[comp] = { score, avgSize };
+    }
 
-  App.state._finisherScores = scores;
-},
+    App.state._finisherScores = scores;
+  },
 };
 
 // ==========================================
@@ -5714,19 +5720,6 @@ const UI = {
     menu.style.top = `${y}px`;
     menu.style.transformOrigin = 'top left';
     menu.style.visibility = 'visible';
-  },
-
-  /**
-   * @param {HTMLElement} menuEl
-   */
-  focusMenu(menuEl) {
-    // Wait for browser to render the popover
-    requestAnimationFrame(() => {
-      const firstItem = /** @type {HTMLElement} */ (
-        menuEl.querySelector('.ctx-item')
-      );
-      if (firstItem) firstItem.focus();
-    });
   },
 
   closeContextMenu() {
