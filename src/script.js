@@ -77,7 +77,6 @@ const ISO_COUNTRIES = new Set([
   'bo',
   'br',
   'bs',
-  'bt',
   'bw',
   'by',
   'bz',
@@ -173,15 +172,12 @@ const ISO_COUNTRIES = new Set([
   'my',
   'mz',
   'na',
-  'nc',
   'ne',
-  'nf',
   'ng',
   'ni',
   'nl',
   'no',
   'np',
-  'nr',
   'nz',
   'om',
   'pa',
@@ -212,7 +208,6 @@ const ISO_COUNTRIES = new Set([
   'so',
   'sr',
   'ss',
-  'st',
   'sv',
   'sy',
   'sz',
@@ -233,14 +228,11 @@ const ISO_COUNTRIES = new Set([
   'us',
   'uy',
   'uz',
-  'va',
   'vc',
   've',
   'vi',
   'vn',
-  'vu',
   'ye',
-  'yt',
   'za',
   'zm',
   'zw',
@@ -621,7 +613,13 @@ const Templates = {
     let idPrefix = '';
     if (!ISO_COUNTRIES.has(domain) && App.state.requestsGraph[id]) {
       const neighbors = Object.keys(App.state.requestsGraph[id]);
-      const geoCountries = [...new Set(neighbors.map(n => n.split('/')[0].split('.')[0]).filter(d => ISO_COUNTRIES.has(d)))];
+      const geoCountries = [
+        ...new Set(
+          neighbors.map((n) => n.split('/')[0].split('.')[0]).filter((d) =>
+            ISO_COUNTRIES.has(d)
+          ),
+        ),
+      ];
       if (geoCountries.length === 1) {
         idPrefix = geoCountries[0] + ' • ';
       } else if (geoCountries.length >= 2 && geoCountries.length <= 3) {
