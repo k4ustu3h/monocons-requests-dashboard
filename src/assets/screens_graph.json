@@ -778,7 +778,6 @@
     "com.kick.mobile/com.kick.mobile.MainActivity"
   ],
   "scr-38": [
-    "com.fsck.k9/net.thunderbird.app.common.MainActivity",
     "com.tk.quicksearch/com.tk.quicksearch.app.MainActivityAliasDefault",
     "com.simplytranslate_mobile/com.simplytranslate_mobile.MainActivity",
     "com.taxsee.taxsee/com.taxsee.taxsee.ui.activities.SplashScreen",
@@ -792,7 +791,6 @@
     "com.kompact/com.kompact.MainActivity",
     "com.miui.securitycenter/com.miui.securityscan.MainActivity",
     "com.iudesk.android.photo.editor/app.activity.MainActivity",
-    "com.grabtaxi.passenger/com.grab.pax.newface.common.alias.DefaultLauncherAlias",
     "com.hitrolab.audioeditor/com.hitrolab.audioeditor.MainActivity",
     "com.ethereal.openscan/com.ethereal.openscan.MainActivity",
     "com.wordtracer.app/com.wordtracer.app.MainActivity",
@@ -803,7 +801,6 @@
     "me.lecaro.breakout/me.lecaro.breakout.MainActivity",
     "nya.kitsunyan.foxydroid/nya.kitsunyan.foxydroid.MainActivity",
     "com.android.thememanager/com.android.thememanager.ThemeResourceTabActivity",
-    "photoeditor.cutout.backgrounderaser/com.min.n.MainActivity",
     "com.thirtytwo.steps/com.thirtytwo.steps.MainActivity",
     "uk.co.openweather/uk.co.openweather.MainActivity",
     "com.shopee.shopeeseller/com.shopee.app.ui.home.HomeActivity_",
@@ -865,15 +862,13 @@
     "com.activitymanager/com.sdex.activityrunner.MainActivity",
     "com.aniverse.android/com.android.app.activities.HomeActivity",
     "com.miruronative/com.miruronative.MainActivity",
-    "com.yepgoryo.CaptureCap/com.yepgoryo.CaptureCap.MainActivity",
-    "com.apkupdater.ci/com.apkupdater.ui.activity.MainActivity"
+    "com.yepgoryo.CaptureCap/com.yepgoryo.CaptureCap.MainActivity"
   ],
   "scr-42": [
     "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias",
     "com.facebook.viewpoints/com.facebook.anna.app.activities.MainActivity",
     "com.flipkart.shopsy/com.flipkart.shopsy.SplashActivity",
     "com.motorola.gamemode/com.motorola.gamemode.ui.launcher.main.GameCenterActivity",
-    "com.flipkart.android/com.flipkart.android.IdSaleIconAlias",
     "com.iexceed.appzillon.ippbMB/com.iexceed.appzillon.ippbMB.AppzillonMainScreen",
     "com.bigheadtechies.diary/com.bigheadtechies.diary.Lastest.Activity.MainActivity.MainActivityMigration1",
     "com.snaptube.premium/com.snaptube.premium.activity.MainExploreAlias",
@@ -909,11 +904,7 @@
     "com.xodo.pdf.reader/viewer.CompleteReaderMainActivity",
     "com.indusind.indie/com.indusind.indie.launcher_c29ee5c28889ac705b354b3d105de8a7b80866483f0b36e1e78e27b22462217b",
     "com.google.android.apps.youtube.producer/com.google.android.apps.youtube.producer.application.MainActivity",
-    "com.inod.screenofftimer/com.inod.screenofftimer.MainActivity",
-    "cris.org.in.prs.ima/cris.org.in.prs.ima.MainActivity"
-  ],
-  "scr-43": [
-    "org.chromium.webapk.a13bcbd79270cd125_v2/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity"
+    "com.inod.screenofftimer/com.inod.screenofftimer.MainActivity"
   ],
   "scr-44": [
     "com.alibaba.intl.android.apps.poseidon/com.alibaba.intl.android.apps.poseidon.app.activity.ActivityMainMaterial",
@@ -1066,12 +1057,6 @@
     "com.bearinmind.equalizer314/com.bearinmind.equalizer314.MainActivity",
     "com.vayunmathur.pdf/com.vayunmathur.pdf.MainActivity"
   ],
-  "scr-48": [
-    "org.chromium.webapk.a13bcbd79270cd125_v2/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity",
-    "com.dp.logcatapp/com.dp.logcatapp.ui.MainActivity",
-    "cris.org.in.prs.ima/cris.org.in.prs.ima.MainActivity",
-    "com.instagram.moonshot/com.instagram.moonshot.mainactivity.MoonshotActivity"
-  ],
   "scr-49": [
     "com.companyname.andriodapp1/crc646350f44cde9e1cf7.MainActivity",
     "net.blip.android/net.blip.android.MainActivity",
@@ -1081,5 +1066,59 @@
     "com.microsoft.launcher/com.microsoft.launcher.Launcher",
     "com.stremio.one/com.stremio.android.MainActivity",
     "com.houseoflife.bitlord/org.proninyaroslav.libretorrent.ui.main.MainActivity"
+  ],
+  "scr-50": [
+    "dev.thomasbuilds.spectre/dev.thomasbuilds.spectre.MainActivity",
+    "com.kwasow.musekit/com.kwasow.musekit.MainActivity",
+    "app.phantom/app.phantom.MainActivity",
+    "com.oramainteractive.pixelorama/com.godot.game.GodotAppLauncher",
+    "com.dozingcatsoftware.vectorcamera/com.dozingcatsoftware.vectorcamera.MainActivity",
+    "ru.tech.imageresizershrinker/com.t8rin.imagetoolbox.app.presentation.AppActivity",
+    "com.venmo/com.venmo.android.platform.AppExperienceLauncherActivity",
+    "com.pixelfed/com.pixelfed.MainActivity",
+    "com.ledger.live/com.ledger.live.MainActivity",
+    "com.aurora.store/com.aurora.store.ComposeActivity",
+    "com.scee.psxandroid/com.scee.psxandroid.activity.TopActivity",
+    "com.onedebit.chime/com.onedebit.chime.MainActivity",
+    "com.costarastrology/com.costarastrology.root.RootActivity",
+    "com.coinbase.android/com.coinbase.retailnativeruntime.LaunchActivity",
+    "dev.jaimin.auraorbit/dev.jaimin.auraorbit.LiveWallpaperSettings",
+    "com.drdisagree.colorblendr/com.drdisagree.colorblendr.ui.activities.MainActivity",
+    "com.daniebeler.pfpixelix/com.daniebeler.pfpixelix.Icon02",
+    "com.vayunmathur.email/com.vayunmathur.email.MainActivity",
+    "com.bk.videotogif/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
+    "app.pwhs.universalinstaller/app.pwhs.universalinstaller.presentation.splash.SplashActivity"
+  ],
+  "scr-51": [
+    "com.catpuppyapp.puppygit.play.pro/com.catpuppyapp.puppygit.activity.MainActivity",
+    "app.ybee/app.ybee.main.ui.feature.YBeeActivity",
+    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity",
+    "dev.clombardo.dnsnet/dev.clombardo.dnsnet.MainActivity",
+    "com.google.android.apps.youtube.producer/com.google.android.apps.youtube.producer.application.MainActivity",
+    "com.tracfone.preload.accountservices/com.tracfone.preload.accountservices.MainActivity",
+    "org.freedownloadmanager.fdm/org.freedownloadmanager.fdm.MyActivity",
+    "com.venmo/com.venmo.android.platform.AppExperienceLauncherActivity",
+    "com.tracfone.tracfone.myaccount/com.tracfone.generic.myaccountcommonui.activity.launch.PreLaunchActivity",
+    "me.bmax.apatch/me.bmax.apatch.ui.MainActivity",
+    "com.huub.tiger/com.sliide.content.MainActivity",
+    "com.tracfone.simplemobile.myaccount/com.tracfone.generic.myaccountcommonui.activity.launch.PreLaunchActivity",
+    "com.walmart.android/com.walmart.glass.integration.splash.SplashActivity",
+    "com.google.android.apps.labs.language.tailwind/com.google.android.apps.labs.language.tailwind.MainActivityDev",
+    "com.microsoft.azure/crc6431cd41aa6ada328a.SplashScreenActivity",
+    "com.android.settings/com.android.settings.AccessibilitySettingsActivityForLauncherAlias",
+    "com.scopely.monopolygo/com.scopely.unity.ScopelyUnityActivity",
+    "com.dti.folderlauncher/com.dti.folderlauncher.MainActivity",
+    "com.freecash.app2/com.freecash.MainActivity",
+    "com.xfinity.digitalhome/com.xfinity.digitalhome.features.launch.splash.SplashActivity",
+    "app.polarbear/android.app.NativeActivity",
+    "com.wvlt.android.weather/com.wsi.android.weather.ui.SplashScreen",
+    "com.myos.camera/com.myos.camera.activity.CameraActivity",
+    "com.iiordanov.freebVNC/com.undatech.opaque.ConnectionGridActivity",
+    "com.handmark.expressweather/com.oneweather.app.MainActivity",
+    "com.nexon.ma/com.nexon.ma.MainActivity",
+    "com.ea.games.simsfreeplay_na/com.ea.games.simsfreeplay.GameActivity",
+    "com.anthonyla.paperize/com.anthonyla.paperize.presentation.MainActivity",
+    "cm.aptoide.pt/cm.aptoide.pt.view.MainActivity",
+    "com.peacocktv.peacockandroid/com.peacocktv.legacy.monolith.main.MainActivity"
   ]
 }

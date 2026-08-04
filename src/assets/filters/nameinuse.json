@@ -27,10 +27,6 @@
       "existing_drawable": "generic_shell"
     },
     {
-      "id": "com.apkupdater.ci/com.apkupdater.ui.activity.MainActivity",
-      "existing_drawable": "apkupdater"
-    },
-    {
       "id": "com.rianixia.camerb/com.android.camera.CameraLauncher",
       "existing_drawable": "samsung_camera"
     },
@@ -49,6 +45,26 @@
     {
       "id": "com.vayunmathur.weather/com.vayunmathur.weather.MainActivity",
       "existing_drawable": "weather"
+    },
+    {
+      "id": "com.bitwarden.authenticator/com.bitwarden.authenticator.MainActivity",
+      "existing_drawable": "generic_shell"
+    },
+    {
+      "id": "com.pixel.gallery/com.pixel.gallery.MainActivity",
+      "existing_drawable": "generic_gallery"
+    },
+    {
+      "id": "org.omnirom.omnijaws/org.omnirom.omnijaws.ui.WeatherDashboardActivity",
+      "existing_drawable": "weather"
+    },
+    {
+      "id": "com.vayunmathur.email/com.vayunmathur.email.MainActivity",
+      "existing_drawable": "generic_email"
+    },
+    {
+      "id": "com.myos.camera/com.myos.camera.activity.CameraActivity",
+      "existing_drawable": "samsung_camera"
     }
   ]
 }
