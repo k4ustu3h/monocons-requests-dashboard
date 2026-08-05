@@ -18,6 +18,7 @@ const CONFIG = {
     setsStatsPath: 'assets/stats/sets_stats.json',
     domainStatsPath: 'assets/stats/domain_stats.json',
     activityStatsPath: 'assets/stats/activity_stats.json',
+    contestPath: 'assets/contest.json',
     assetsPath: 'extracted_images/',
     iconExtension: '.webp',
     filterPath: 'assets/filters/',
@@ -53,190 +54,7 @@ const CONFIG = {
   },
 };
 
-const ISO_COUNTRIES = new Set([
-  'ad',
-  'ae',
-  'af',
-  'ag',
-  'al',
-  'am',
-  'ao',
-  'ar',
-  'at',
-  'au',
-  'az',
-  'ba',
-  'bb',
-  'bd',
-  'be',
-  'bf',
-  'bg',
-  'bh',
-  'bi',
-  'bj',
-  'bo',
-  'br',
-  'bs',
-  'bw',
-  'by',
-  'bz',
-  'ca',
-  'cd',
-  'cf',
-  'cg',
-  'ch',
-  'ci',
-  'cl',
-  'cm',
-  'cn',
-  'cr',
-  'cu',
-  'cv',
-  'cy',
-  'cz',
-  'de',
-  'dj',
-  'dk',
-  'dm',
-  'do',
-  'dz',
-  'ec',
-  'ee',
-  'eg',
-  'er',
-  'es',
-  'et',
-  'fi',
-  'fj',
-  'fr',
-  'ga',
-  'ge',
-  'gh',
-  'gm',
-  'gn',
-  'gq',
-  'gr',
-  'gt',
-  'gw',
-  'gy',
-  'hk',
-  'hn',
-  'hr',
-  'ht',
-  'hu',
-  'id',
-  'ie',
-  'il',
-  'in',
-  'iq',
-  'ir',
-  'it',
-  'jm',
-  'jo',
-  'jp',
-  'ke',
-  'kg',
-  'kh',
-  'km',
-  'kn',
-  'kp',
-  'kr',
-  'kw',
-  'ky',
-  'kz',
-  'la',
-  'lb',
-  'lc',
-  'li',
-  'lk',
-  'lr',
-  'ls',
-  'lt',
-  'lu',
-  'lv',
-  'ly',
-  'ma',
-  'mc',
-  'md',
-  'mg',
-  'mk',
-  'ml',
-  'mm',
-  'mn',
-  'mr',
-  'mt',
-  'mu',
-  'mv',
-  'mw',
-  'mx',
-  'my',
-  'mz',
-  'na',
-  'ne',
-  'ng',
-  'ni',
-  'nl',
-  'no',
-  'np',
-  'nz',
-  'om',
-  'pa',
-  'pe',
-  'pg',
-  'ph',
-  'pk',
-  'pl',
-  'pr',
-  'ps',
-  'pt',
-  'py',
-  'qa',
-  'ro',
-  'rs',
-  'ru',
-  'rw',
-  'sa',
-  'sc',
-  'sd',
-  'se',
-  'sg',
-  'si',
-  'sk',
-  'sl',
-  'sm',
-  'sn',
-  'so',
-  'sr',
-  'ss',
-  'sv',
-  'sy',
-  'sz',
-  'td',
-  'tg',
-  'th',
-  'tj',
-  'tl',
-  'tm',
-  'tn',
-  'tr',
-  'tt',
-  'tw',
-  'tz',
-  'ua',
-  'ug',
-  'uk',
-  'us',
-  'uy',
-  'uz',
-  'vc',
-  've',
-  'vi',
-  'vn',
-  'ye',
-  'za',
-  'zm',
-  'zw',
-]);
+const ISO_COUNTRIES = new Set(['ad','ae','af','ag','al','am','ao','ar','at','au','az','ba','bb','bd','be','bf','bg','bh','bi','bj','bo','br','bs','bw','by','bz','ca','cd','cf','cg','ch','ci','cl','cm','cn','cr','cu','cv','cy','cz','de','dj','dk','dm','do','dz','ec','ee','eg','er','es','et','fi','fj','fr','ga','ge','gh','gm','gn','gq','gr','gt','gw','gy','hk','hn','hr','ht','hu','id','ie','il','in','iq','ir','it','jm','jo','jp','ke','kg','kh','km','kn','kp','kr','kw','ky','kz','la','lb','lc','li','lk','lr','ls','lt','lu','lv','ly','ma','mc','md','mg','mk','ml','mm','mn','mr','mt','mu','mv','mw','mx','my','mz','na','ne','ng','ni','nl','no','np','nz','om','pa','pe','pg','ph','pk','pl','pr','ps','pt','py','qa','ro','rs','ru','rw','sa','sc','sd','se','sg','si','sk','sl','sm','sn','so','sr','ss','sv','sy','sz','td','tg','th','tj','tl','tm','tn','tr','tt','tw','tz','ua','ug','uk','us','uy','uz','vc','ve','vi','vn','ye','za','zm','zw']);
 
 const ICONS = {
   check: `<svg><use href="#ic-check"/></svg>`,
@@ -308,46 +126,31 @@ const App = {
     /** @type {HTMLDivElement} */
     listHeader: /** @type {any} */ (document.getElementById('listHeader')),
     /** @type {HTMLInputElement} */
-    headerCheck: /** @type {any} */ (
-      document.getElementById('headerCheck')
-    ),
+    headerCheck: /** @type {any} */ (document.getElementById('headerCheck')),
     /** @type {HTMLDivElement} */
-    headerCount: /** @type {any} */ (
-      document.getElementById('headerCount')
-    ),
+    headerCount: /** @type {any} */ (document.getElementById('headerCount')),
     /** @type {HTMLDivElement} */
-    sentinel: /** @type {any} */ (
-      document.getElementById('scrollSentinel')
-    ),
+    sentinel: /** @type {any} */ (document.getElementById('scrollSentinel')),
 
     /** @type {HTMLInputElement} */
-    inputSearch: /** @type {any} */ (
-      document.getElementById('searchInput')
-    ),
+    inputSearch: /** @type {any} */ (document.getElementById('searchInput')),
     /** @type {HTMLButtonElement} */
-    clearBtn: /** @type {any} */ (
-      document.getElementById('clearSearchBtn')
-    ),
+    clearBtn: /** @type {any} */ (document.getElementById('clearSearchBtn')),
     /** @type {HTMLButtonElement} */
     regexBtn: /** @type {any} */ (document.getElementById('regexBtn')),
 
     /** @type {HTMLDivElement} */
-    filterBox: /** @type {any} */ (
-      document.getElementById('filterContainer')
-    ),
+    filterBox: /** @type {any} */ (document.getElementById('filterContainer')),
 
     /** @type {HTMLButtonElement} */
-    mobileFilterBtn: /** @type {any} */ (
-      document.getElementById('mobileFilterBtn')
-    ),
+    mobileFilterBtn:
+      /** @type {any} */ (document.getElementById('mobileFilterBtn')),
     /** @type {HTMLSpanElement} */
-    mobileFilterCount: /** @type {any} */ (
-      document.getElementById('mobileFilterCount')
-    ),
+    mobileFilterCount:
+      /** @type {any} */ (document.getElementById('mobileFilterCount')),
     /** @type {HTMLElement} */
-    mobileFilterMenu: /** @type {any} */ (
-      document.getElementById('mobileFilterMenu')
-    ),
+    mobileFilterMenu:
+      /** @type {any} */ (document.getElementById('mobileFilterMenu')),
 
     /** @type {HTMLHeadingElement} */
     header: /** @type {any} */ (document.querySelector('.header-info h1')),
@@ -357,45 +160,32 @@ const App = {
     /** @type {HTMLDivElement} */
     sbCount: /** @type {any} */ (document.getElementById('sbCount')),
     /** @type {HTMLButtonElement} */
-    sbDownloadBtn: /** @type {any} */ (
-      document.getElementById('sbDownloadBtn')
-    ),
+    sbDownloadBtn:
+      /** @type {any} */ (document.getElementById('sbDownloadBtn')),
     /** @type {HTMLButtonElement} */
     sbMenuBtn: /** @type {any} */ (document.getElementById('sbMenuBtn')),
     /** @type {HTMLElement} */
     rowMenu: /** @type {any} */ (document.getElementById('rowMenu')),
     /** @type {HTMLDivElement} */
-    toastBox: /** @type {any} */ (
-      document.getElementById('toastContainer')
-    ),
-    contributionBtn: /** @type {HTMLButtonElement} */ (
-      document.getElementById('contributionBtn')
-    ),
+    toastBox: /** @type {any} */ (document.getElementById('toastContainer')),
+    contributionBtn: /** @type {HTMLButtonElement} */ (document.getElementById(
+      'contributionBtn',
+    )),
     /** @type {HTMLButtonElement} */
     sortBtn: /** @type {any} */ (document.getElementById('sortBtn')),
     /** @type {HTMLButtonElement} */
     viewBtn: /** @type {any} */ (document.getElementById('viewBtn')),
     /** @type {HTMLElement} */
-    viewIconList: /** @type {any} */ (
-      document.getElementById('viewIconList')
-    ),
+    viewIconList: /** @type {any} */ (document.getElementById('viewIconList')),
     /** @type {HTMLElement} */
-    viewIconGrid: /** @type {any} */ (
-      document.getElementById('viewIconGrid')
-    ),
+    viewIconGrid: /** @type {any} */ (document.getElementById('viewIconGrid')),
     /** @type {HTMLElement} */
     sortMenu: /** @type {any} */ (document.getElementById('sortMenu')),
     /** @type {HTMLSpanElement} */
     sortLabel: /** @type {any} */ (document.getElementById('sortLabel')),
-    mainTabs: /** @type {HTMLElement} */ (
-      document.getElementById('mainTabs')
-    ),
-    screenSortBtn: /** @type {HTMLButtonElement} */ (
-      document.getElementById('screenSortBtn')
-    ),
-    screenSortLabel: /** @type {HTMLSpanElement} */ (
-      document.getElementById('screenSortLabel')
-    ),
+    mainTabs: /** @type {HTMLElement} */ (document.getElementById('mainTabs')),
+    screenSortBtn: /** @type {HTMLButtonElement} */ (document.getElementById('screenSortBtn')),
+    screenSortLabel: /** @type {HTMLSpanElement} */ (document.getElementById('screenSortLabel')),
   },
 };
 
@@ -546,12 +336,10 @@ const Utils = {
    * @returns {string}
    */
   compactNumber(num) {
-    if (num >= 1000000000) {
-      return parseFloat((num / 1000000000).toFixed(1)) + 'B';
-    }
-    if (num >= 1000000) return parseFloat((num / 1000000).toFixed(1)) + 'M';
-    if (num >= 1000) return parseFloat((num / 1000).toFixed(1)) + 'K';
-    return num.toString();
+      if (num >= 1000000000) return parseFloat((num / 1000000000).toFixed(1)) + 'B';
+      if (num >= 1000000) return parseFloat((num / 1000000).toFixed(1)) + 'M';
+      if (num >= 1000) return parseFloat((num / 1000).toFixed(1)) + 'K';
+      return num.toString();
   },
 
   /**
@@ -559,9 +347,7 @@ const Utils = {
    * @param {boolean} hidden
    */
   setHidden(element, hidden) {
-    if (
-      !(element instanceof HTMLElement || element instanceof SVGElement)
-    ) {
+    if (!(element instanceof HTMLElement || element instanceof SVGElement)) {
       return;
     }
     element.classList.toggle('is-hidden', hidden);
@@ -613,13 +399,7 @@ const Templates = {
     let idPrefix = '';
     if (!ISO_COUNTRIES.has(domain) && App.state.requestsGraph[id]) {
       const neighbors = Object.keys(App.state.requestsGraph[id]);
-      const geoCountries = [
-        ...new Set(
-          neighbors.map((n) => n.split('/')[0].split('.')[0]).filter((d) =>
-            ISO_COUNTRIES.has(d)
-          ),
-        ),
-      ];
+      const geoCountries = [...new Set(neighbors.map(n => n.split('/')[0].split('.')[0]).filter(d => ISO_COUNTRIES.has(d)))];
       if (geoCountries.length === 1) {
         idPrefix = geoCountries[0] + ' • ';
       } else if (geoCountries.length >= 2 && geoCountries.length <= 3) {
@@ -635,14 +415,12 @@ const Templates = {
       : null;
     const appNameClass = isUnknown ? 'app-name is-hidden' : 'app-name';
 
-    const tagHtml = tags
-      .map((tagId) => {
-        const meta = App.state.filterMetadata.get(tagId);
-        const label = meta ? meta.label : tagId;
-        const desc = meta ? meta.description : '';
-        return `<span class="status-pill status-${tagId}" title="${desc}">${label}</span>`;
-      })
-      .join('');
+    const tagHtml = tags.map((tagId) => {
+      const meta = App.state.filterMetadata.get(tagId);
+      const label = meta ? meta.label : tagId;
+      const desc = meta ? meta.description : '';
+      return `<span class="status-pill status-${tagId}" title="${desc}">${label}</span>`;
+    }).join('');
 
     const existingSvgHtml = existingDrawable
       ? `<span class="existing-svg-wrapper">
@@ -662,12 +440,10 @@ const Templates = {
 
     const installsRaw = app.installs ? app.installs.replace(/[,+]/g, '') : null;
     const displayInstalls = installsRaw
-      ? new Intl.NumberFormat(
-        'en',
-        /** @type {Intl.NumberFormatOptions} */ {
-          notation: 'compact',
-        },
-      ).format(parseInt(installsRaw)) + '+'
+      ? new Intl.NumberFormat('en', /** @type {Intl.NumberFormatOptions} */ {
+        notation: 'compact',
+      })
+        .format(parseInt(installsRaw)) + '+'
       : '—';
     const installsTitle = installsRaw && installsRaw !== '0'
       ? `${app.installs} installs in Play Store`
@@ -769,11 +545,7 @@ const Templates = {
     return `
       <div class="grid-card ${
       isSelected ? 'selected' : ''
-    }" data-id="${id}" title="${label}\nFirst time: ${
-      Utils.formatDate(
-        app.firstAppearance,
-      )
-    }"
+    }" data-id="${id}" title="${label}\nFirst time: ${Utils.formatDate(app.firstAppearance)}"
         tabindex="0" role="checkbox" aria-checked="${isSelected}">
         ${contentHtml}
         <div class="grid-overlay-tags">${tagHtml}</div>
@@ -885,19 +657,15 @@ const Templates = {
    * @returns {string}
    */
   sortMenuItems(options, activeValue) {
-    return options
-      .map(
-        (opt) => `
+    return options.map((opt) => `
       <div class="ctx-item ${
-          activeValue === opt.value ? 'active' : ''
-        }" tabindex="0" role="menuitemradio" aria-checked="${
-          activeValue === opt.value
-        }" data-action="sort-option" data-value="${opt.value}">
+      activeValue === opt.value ? 'active' : ''
+    }" tabindex="0" role="menuitemradio" aria-checked="${
+      activeValue === opt.value
+    }" data-action="sort-option" data-value="${opt.value}">
         <span>${opt.label}</span>
       </div>
-    `,
-      )
-      .join('');
+    `).join('');
   },
 
   /**
@@ -908,32 +676,31 @@ const Templates = {
   contributionRow(app, iconUrl) {
     const id = app.componentName;
     const overrides = App.state.contributionOverrides[id] || {};
-    const name = (
-      overrides.label !== undefined ? overrides.label : app.label
-    ).replace(/&/g, '&amp;');
+    const name = (overrides.label !== undefined ? overrides.label : app.label)
+      .replace(/&/g, '&amp;');
     const pkg = id.split('/')[0];
     const originalDrawable = app.drawable;
     const isUnknown = originalDrawable === 'unknown' ||
       name === '(Unknown App)';
 
     const rawSvg = Utils.sanitizeDrawableName(name);
-    const defaultSvg = rawSvg === 'icon' || rawSvg === 'unknown' ? '' : rawSvg;
+    const defaultSvg = (rawSvg === 'icon' || rawSvg === 'unknown')
+      ? ''
+      : rawSvg;
     const drawable = overrides.drawable !== undefined
       ? overrides.drawable
       : defaultSvg;
 
-    const mode = overrides.mode === 'link' ? 'link' : 'new';
+    const mode = (overrides.mode === 'link') ? 'link' : 'new';
 
-    const existingIcon = App.state.existingIcons.find(
-      (icon) => icon.drawable === drawable,
+    const existingIcon = App.state.existingIcons.find((icon) =>
+      icon.drawable === drawable
     );
     const existsInLibrary = !!existingIcon;
     const isCustom = overrides.drawable && drawable !== defaultSvg;
     const svgHint = existsInLibrary
       ? 'Name in use.'
-      : isCustom
-      ? 'Custom.'
-      : 'Generated from name.';
+      : (isCustom ? 'Custom.' : 'Generated from name.');
     const libraryTitle = existingIcon
       ? `${existingIcon.name}\n${drawable}.svg`
       : 'Found in Monocons.';
@@ -1028,27 +795,18 @@ const Templates = {
    */
   domainStatsCard(entries, max) {
     return `<div class="card-chart has-bars">
-      ${
-      entries
-        .map(([domain, done, requests, total, global]) => {
-          const shortDomain = domain.length > 3 ? domain.slice(0, 3) : domain;
-          const doneH = ((done / max) * 100).toFixed(0);
-          const directH = (
-            ((requests - (global || 0)) / max) *
-            100
-          ).toFixed(0);
-          const globalH = (((global || 0) / max) * 100).toFixed(0);
-          return `<div class="domain-col" data-action="domain-filter" data-domain="${domain}" data-done="${done}" data-requests="${requests}" data-total="${total}" data-global="${
-            global || 0
-          }">
+      ${entries.map(([domain, done, requests, total, global]) => {
+        const shortDomain = domain.length > 3 ? domain.slice(0, 3) : domain;
+        const doneH = (done / max * 100).toFixed(0);
+        const directH = ((requests - (global || 0)) / max * 100).toFixed(0);
+        const globalH = ((global || 0) / max * 100).toFixed(0);
+        return `<div class="domain-col" data-action="domain-filter" data-domain="${domain}" data-done="${done}" data-requests="${requests}" data-total="${total}" data-global="${global || 0}">
           <div class="domain-col-fill domain-col-global" style="height:${globalH}%"></div>
           <div class="domain-col-fill domain-col-requests" style="height:${directH}%"></div>
           <div class="domain-col-fill domain-col-done" style="height:${doneH}%"></div>
           <span class="chart-label">${shortDomain}</span>
         </div>`;
-        })
-        .join('')
-    }
+      }).join('')}
     </div>
     <div class="tooltip"></div>`;
   },
@@ -1064,31 +822,14 @@ const Templates = {
    * @param {number} global
    * @returns {string}
    */
-  domainStatsTooltip(
-    domain,
-    done,
-    requests,
-    total,
-    mode,
-    extraValue,
-    population,
-    global,
-  ) {
-    const pct = total ? ((done / total) * 100).toFixed(1) : 0;
+  domainStatsTooltip(domain, done, requests, total, mode, extraValue, population, global) {
+    const pct = total ? (done / total * 100).toFixed(1) : 0;
     let extra = '';
     if (mode === 'local' && extraValue && population > 0) {
-      const pctLocals = (
-        (extraValue / 1_000_000 / population) *
-        100
-      ).toFixed(1);
+      const pctLocals = (extraValue / 1_000_000 / population * 100).toFixed(1);
       extra = `<div class="tooltip-value">Affects ${pctLocals}% locals</div>`;
     } else if (mode === 'coverage') {
-      extra = `<div class="tooltip-value">${
-        (
-          (requests / total) *
-          100
-        ).toFixed(1)
-      }% uncovered</div>`;
+      extra = `<div class="tooltip-value">${((requests / total) * 100).toFixed(1)}% uncovered</div>`;
     }
     let globalHtml = '';
     if (global > 0) {
@@ -1096,9 +837,7 @@ const Templates = {
     }
     return `<div class="tooltip-label">${domain}</div>
       ${globalHtml}
-      <div class="tooltip-value">${requests - global} local ${
-      requests - global === 1 ? 'request' : 'requests'
-    }</div>
+      <div class="tooltip-value">${requests - global} local ${requests - global === 1 ? 'request' : 'requests'}</div>
       <div class="tooltip-value">${done} done (${pct}%)</div>${extra}`;
   },
 
@@ -1195,13 +934,9 @@ const Templates = {
    * @returns {string}
    */
   regexAutocompleteList(matches) {
-    return matches
-      .map(
-        (domain) => `
+    return matches.map((domain) => `
       <div class="autocomplete-item" tabindex="0" role="option" data-action="regex-suggestion" data-value="^${domain}\\.">^${domain}\\.</div>
-    `,
-      )
-      .join('');
+    `).join('');
   },
 };
 
@@ -1229,12 +964,8 @@ const Components = {
       this.activeToasts.add(key);
 
       let iconSvg = '';
-      if (type === 'error') {
-        iconSvg = `<svg><use href="#ic-error"/></svg>`;
-      }
-      if (type === 'success') {
-        iconSvg = `<svg><use href="#ic-download"/></svg>`;
-      }
+      if (type === 'error') iconSvg = `<svg><use href="#ic-error"/></svg>`;
+      if (type === 'success') iconSvg = `<svg><use href="#ic-download"/></svg>`;
 
       el.innerHTML = `${iconSvg} ${text}`;
       App.dom.toastBox.appendChild(el);
@@ -1314,18 +1045,17 @@ const Actions = {
    */
   toggleSelection(id, event = null) {
     const s = App.state.selected;
-    const currentIdx = App.state.currentData.findIndex(
-      (a) => a.componentName === id,
+    const currentIdx = App.state.currentData.findIndex((a) =>
+      a.componentName === id
     );
 
     // Handle Shift Click
     if (
-      event &&
-      /** @type {MouseEvent} */ (event).shiftKey &&
+      event && /** @type {MouseEvent} */ (event).shiftKey &&
       App.state.lastSelectedId
     ) {
-      const lastIdx = App.state.currentData.findIndex(
-        (a) => a.componentName === App.state.lastSelectedId,
+      const lastIdx = App.state.currentData.findIndex((a) =>
+        a.componentName === App.state.lastSelectedId
       );
 
       getSelection()?.removeAllRanges();
@@ -1403,8 +1133,7 @@ const Actions = {
 
   clearAllSelections() {
     if (App.state.selected.size === 0) return;
-    document
-      .querySelectorAll('.list-row.selected, .grid-card.selected')
+    document.querySelectorAll('.list-row.selected, .grid-card.selected')
       .forEach((el) => {
         el.classList.remove('selected');
         /** @type {HTMLInputElement | null} */
@@ -1459,9 +1188,7 @@ const Actions = {
    */
   buildAppFilterItem(componentName, drawable, label) {
     return `    <item component="ComponentInfo{${componentName}}" drawable="${drawable}" name="${
-      Actions.escapeXmlAttr(
-        label,
-      )
+      Actions.escapeXmlAttr(label)
     }" />\n`;
   },
 
@@ -1500,7 +1227,7 @@ const Actions = {
     const url =
       `${CONFIG.data.assetsPath}${sourceDrawable}${CONFIG.data.iconExtension}`;
     const p = fetch(url)
-      .then((r) => (r.ok ? r.arrayBuffer() : null))
+      .then((r) => r.ok ? r.arrayBuffer() : null)
       .then((buf) => {
         if (buf) iconDir[fileName] = new Uint8Array(buf);
       })
@@ -1529,9 +1256,7 @@ const Actions = {
    */
   generateNamesAndIDs(ids = null) {
     const apps = Actions.resolveApps(ids);
-    return apps
-      .map((app) => `${app.label}\n${app.componentName}`)
-      .join('\n\n');
+    return apps.map((app) => `${app.label}\n${app.componentName}`).join('\n\n');
   },
 
   /**
@@ -1551,9 +1276,8 @@ const Actions = {
   },
 
   copySelectedPkgs() {
-    const pkgs = Actions.resolveApps([...App.state.selected]).map(
-      (app) => app.componentName.split('/')[0],
-    );
+    const pkgs = Actions.resolveApps([...App.state.selected])
+      .map((app) => app.componentName.split('/')[0]);
     Actions.copyToClipboard([...new Set(pkgs)].join('\n'));
     Actions.closeSbMenu();
   },
@@ -1667,11 +1391,7 @@ const Actions = {
         }
 
         // Appfilter entry
-        xmlAppFilter += Actions.buildAppFilterItem(
-          cmp,
-          drawable,
-          app.label,
-        );
+        xmlAppFilter += Actions.buildAppFilterItem(cmp, drawable, app.label);
 
         // Commands
         const cmdType = 'link';
@@ -1680,9 +1400,8 @@ const Actions = {
           `python3 ./icontool.py ${cmdType} ${svgPath} ${cmp} '${cmdLabel}'\n`;
 
         if (mode === 'new') {
-          const iconDir = /** @type {import('fflate').Zippable} */ (
-            zipData._icons
-          );
+          const iconDir =
+            /** @type {import('fflate').Zippable} */ (zipData._icons);
           Actions.queueIconFetch(
             iconDir,
             drawable,
@@ -1701,9 +1420,9 @@ const Actions = {
 
       // 2. Config
       const filterConfig = {
-        label: 'Selection',
-        description: 'Sample description',
-        selection: selectedApps.map((a) => a.componentName),
+        'label': 'Selection',
+        'description': 'Sample description',
+        'selection': selectedApps.map((a) => a.componentName),
       };
       zipData['filter_config.json'] = fflate.strToU8(
         JSON.stringify(filterConfig, null, 2),
@@ -1717,9 +1436,8 @@ const Actions = {
       }
 
       // 4. Zip & Download
-      const content = /** @type {BlobPart} */ (
-        fflate.zipSync(zipData, { level: 6 })
-      );
+      const content =
+        /** @type {BlobPart} */ (fflate.zipSync(zipData, { level: 6 }));
 
       const date = new Date().toISOString().slice(5, 10); // MM-DD
       const name = mode === 'new'
@@ -1761,16 +1479,10 @@ const Actions = {
       const rowB = document.querySelector(
         `.contribution-row[data-id="${b.componentName}"]`,
       );
-      const nameA = /** @type {string} */ (
-        /** @type {HTMLInputElement} */ (
-          rowA?.querySelector('.contribution-name-input')
-        )?.value || a.label
-      );
-      const nameB = /** @type {string} */ (
-        /** @type {HTMLInputElement} */ (
-          rowB?.querySelector('.contribution-name-input')
-        )?.value || b.label
-      );
+      const nameA = /** @type {string} */ (/** @type {HTMLInputElement} */ (rowA
+        ?.querySelector('.contribution-name-input'))?.value || a.label);
+      const nameB = /** @type {string} */ (/** @type {HTMLInputElement} */ (rowB
+        ?.querySelector('.contribution-name-input'))?.value || b.label);
       return nameA.localeCompare(nameB);
     });
 
@@ -1778,19 +1490,21 @@ const Actions = {
       const row = document.querySelector(
         `.contribution-row[data-id="${app.componentName}"]`,
       );
-      const nameInput = /** @type {HTMLInputElement | null} */ (
-        row?.querySelector('.contribution-name-input')
-      );
-      const svgInput = /** @type {HTMLInputElement | null} */ (
-        row?.querySelector('.contribution-svg-input')
-      );
+      const nameInput =
+        /** @type {HTMLInputElement | null} */ (row?.querySelector(
+          '.contribution-name-input',
+        ));
+      const svgInput =
+        /** @type {HTMLInputElement | null} */ (row?.querySelector(
+          '.contribution-svg-input',
+        ));
 
       const label = nameInput?.value || app.label;
       const drawable = svgInput?.value || app.drawable;
-      const mode = App.state.contributionOverrides[app.componentName]?.mode ===
-          'link'
-        ? 'link'
-        : 'new';
+      const mode =
+        (App.state.contributionOverrides[app.componentName]?.mode === 'link')
+          ? 'link'
+          : 'new';
 
       let uniqueDrawable = drawable;
       let c = 2;
@@ -1814,9 +1528,8 @@ const Actions = {
 
       if (mode === 'new') {
         if (!zipData['_icons']) zipData['_icons'] = {};
-        const iconDir = /** @type {import('fflate').Zippable} */ (
-          zipData['_icons']
-        );
+        const iconDir =
+          /** @type {import('fflate').Zippable} */ (zipData['_icons']);
         Actions.queueIconFetch(
           iconDir,
           uniqueDrawable,
@@ -1836,9 +1549,8 @@ const Actions = {
     }
 
     await Promise.all(fetchPromises);
-    const content = /** @type {BlobPart} */ (
-      fflate.zipSync(zipData, { level: 6 })
-    );
+    const content =
+      /** @type {BlobPart} */ (fflate.zipSync(zipData, { level: 6 }));
 
     const date = new Date().toISOString().slice(5, 10);
     Actions.downloadZip(content, `monocons-contribution-${date}.zip`);
@@ -1899,8 +1611,7 @@ const Data = {
       this._processFilters(filterObjects, App.state.filterMetadata);
 
       // Update supported card counter
-      const supportedObj =
-        filterObjects[CONFIG.data.filters.indexOf('supported')];
+      const supportedObj = filterObjects[CONFIG.data.filters.indexOf('supported')];
       if (supportedObj?.done !== undefined) {
         const el = document.getElementById('supportedSub');
         if (el) {
@@ -1908,23 +1619,14 @@ const Data = {
           const total = supportedObj.total;
           el.textContent = done === total
             ? `${Utils.compactNumber(done)} done`
-            : `${Utils.compactNumber(done)} of ${
-              Utils.compactNumber(
-                total,
-              )
-            } done`;
+            : `${Utils.compactNumber(done)} of ${Utils.compactNumber(total)} done`;
         }
       }
 
-      App.state.screensData = await this.fetchJson(
-        CONFIG.data.screensGraphPath,
-        {},
-      );
-      App.state.requestsGraph = await this.fetchJson(
-        CONFIG.data.requestsGraphPath,
-        {},
-      );
-
+      App.state.screensData = await this.fetchJson(CONFIG.data.screensGraphPath, {});
+      App.state.requestsGraph = await this.fetchJson(CONFIG.data.requestsGraphPath, {});
+      App.state.contestData = await this.fetchJson(CONFIG.data.contestPath, []);
+      
       // Load optional data
       await Promise.all([
         (async () => {
@@ -1939,11 +1641,9 @@ const Data = {
 
           /** @type {number[]} */
           const ttfs = history
-            .filter(
-              (h) => h.label_factor !== 5 && h.label_factor !== 1,
-            )
-            .map((h) => (h.fulfilled - h.firstAppearance) / 86400)
-            .sort((a, b) => a - b);
+              .filter(h => h.label_factor !== 5 && h.label_factor !== 1)
+              .map(h => (h.fulfilled - h.firstAppearance) / 86400)
+              .sort((a, b) => a - b);
 
           if (ttfs.length > 0) {
             const medianIndex = Math.floor(ttfs.length / 2);
@@ -1952,20 +1652,17 @@ const Data = {
           }
 
           const supTTFs = history
-            .filter((h) => h.label_factor === 6)
-            .map((h) => (h.fulfilled - h.firstAppearance) / 86400)
-            .sort((a, b) => a - b);
+              .filter(h => h.label_factor === 6)
+              .map(h => (h.fulfilled - h.firstAppearance) / 86400)
+              .sort((a, b) => a - b);
 
           if (supTTFs.length > 0) {
             const supMedian = supTTFs[Math.floor(supTTFs.length / 2)];
-            App.state.supportedSpeedup = App.state.medianTTF
-              ? (App.state.medianTTF / supMedian).toFixed(1)
-              : null;
+            App.state.supportedSpeedup = App.state.medianTTF ? (App.state.medianTTF / supMedian).toFixed(1) : null;
             if (App.state.supportedSpeedup) {
               const descEl = document.getElementById('supportedDesc');
               if (descEl) {
-                descEl.innerHTML =
-                  `Supported requests are fulfilled <span style="color: var(--on-teal-container); font-weight: 700;">${App.state.supportedSpeedup}x faster</span>.`;
+                descEl.innerHTML = `Supported requests are fulfilled <span style="color: var(--on-teal-container); font-weight: 700;">${App.state.supportedSpeedup}x faster</span>.`;
               }
             }
           }
@@ -1977,22 +1674,14 @@ const Data = {
             {},
           );
           if (
-            !(
-              baseline?.period_start?.snapshot &&
-              baseline?.period_end?.snapshot
-            )
-          ) {
-            return;
-          }
+            !(baseline?.period_start?.snapshot &&
+              baseline?.period_end?.snapshot)
+          ) return;
 
           const startSnapshot = baseline.period_start.snapshot;
           const endSnapshot = baseline.period_end.snapshot;
           App.state.trendingDeltas = {};
-          for (
-            const [comp, endCount] of Object.entries(
-              endSnapshot,
-            )
-          ) {
+          for (const [comp, endCount] of Object.entries(endSnapshot)) {
             const startCount = startSnapshot[comp] || 0;
             const delta = endCount - startCount;
             if (delta > 0) {
@@ -2000,9 +1689,7 @@ const Data = {
             }
           }
         })(),
-      ]).catch(() => {
-        /* no-op */
-      });
+      ]).catch(() => {/* no-op */});
     } catch (error) {
       console.error('Critical initialization failure:', error);
       Components.Toast.show('Failed to load data', 'error');
@@ -2051,13 +1738,8 @@ const Data = {
           const appId = typeof item === 'string' ? item : item.id;
           this.addTag(appId, id);
           if (typeof item === 'object' && item.existing_drawable) {
-            if (!App.state.existingSvgs) {
-              App.state.existingSvgs = new Map();
-            }
-            App.state.existingSvgs.set(
-              appId,
-              item.existing_drawable,
-            );
+            if (!App.state.existingSvgs) App.state.existingSvgs = new Map();
+            App.state.existingSvgs.set(appId, item.existing_drawable);
           }
         });
       }
@@ -2174,21 +1856,16 @@ const Data = {
           const regex = new RegExp(query.text, 'i');
           const isUsSearch = query.text === '^us\\.';
           const graph = App.state.requestsGraph;
-
+          
           data = data.filter((a) => {
-            if (
-              regex.test(a.label) ||
-              regex.test(a.componentName)
-            ) {
-              return true;
-            }
-
+            if (regex.test(a.label) || regex.test(a.componentName)) return true;
+            
             if (isUsSearch) {
               const comp = a.componentName;
               const domain = comp.split('/')[0].split('.')[0];
               if (domain === 'com' && !graph[comp]) return true;
             }
-
+            
             const domainMatch = s.search.match(/^\^([a-z]+)\\\./);
             if (domainMatch) {
               const searchDomain = domainMatch[1];
@@ -2196,11 +1873,7 @@ const Data = {
               const graph = App.state.requestsGraph;
               if (graph[comp]) {
                 const neighbors = Object.keys(graph[comp]);
-                return neighbors.some(
-                  (n) =>
-                    n.split('/')[0].split('.')[0] ===
-                      searchDomain,
-                );
+                return neighbors.some(n => n.split('/')[0].split('.')[0] === searchDomain);
               }
             }
             const multiDomainMatch = s.search.match(/^\^\(([a-z|]+)\)\\\./);
@@ -2210,11 +1883,7 @@ const Data = {
               const graph = App.state.requestsGraph;
               if (graph[comp]) {
                 const neighbors = Object.keys(graph[comp]);
-                return neighbors.some((n) =>
-                  searchDomains.includes(
-                    n.split('/')[0].split('.')[0],
-                  )
-                );
+                return neighbors.some(n => searchDomains.includes(n.split('/')[0].split('.')[0]));
               }
               return false;
             }
@@ -2224,35 +1893,30 @@ const Data = {
         }
       } else {
         const term = query.text.toLowerCase();
-        data = data.filter(
-          (a) =>
-            a.label.toLowerCase().includes(term) ||
-            a.componentName.toLowerCase().includes(term),
+        data = data.filter((a) =>
+          a.label.toLowerCase().includes(term) ||
+          a.componentName.toLowerCase().includes(term)
         );
       }
     }
 
     // Set filter
     if (query.isSet) {
-      data = data.filter(
-        (app) =>
-          App.state.setsStats[app.componentName.split('/')[0]] !==
-            undefined,
+      data = data.filter((app) =>
+        App.state.setsStats[app.componentName.split('/')[0]] !== undefined
       );
     }
 
     // Sort
     if (s.sort === 'underrated') {
-      data = data.filter(
-        (app) =>
-          app.requestCount >= 10 &&
-          Utils.parseInstalls(app.installs) > 0,
+      data = data.filter((app) =>
+        app.requestCount >= 10 && Utils.parseInstalls(app.installs) > 0
       );
     }
 
     if (s.sort === 'finishers' && !App.state._finisherScores) {
-      Heuristics.calculateFinisherScores();
-    }
+      Heuristics.calculateFinisherScores()
+    }    
 
     data = [...data];
     if (s.sort === 'rand') {
@@ -2271,65 +1935,59 @@ const Data = {
       const sorters = {
         'req-desc': (a, b) =>
           getPop(b) - getPop(a) ||
-          a.componentName
-            .split('/')[0]
-            .localeCompare(b.componentName.split('/')[0]),
+          a.componentName.split('/')[0].localeCompare(
+            b.componentName.split('/')[0],
+          ),
         'req-asc': (a, b) =>
           getPop(a) - getPop(b) ||
-          a.componentName
-            .split('/')[0]
-            .localeCompare(b.componentName.split('/')[0]),
-        trending: (a, b) => {
+          a.componentName.split('/')[0].localeCompare(
+            b.componentName.split('/')[0],
+          ),
+        'trending': (a, b) => {
           const deltaA = App.state.trendingDeltas[a.componentName] || 0;
           const deltaB = App.state.trendingDeltas[b.componentName] || 0;
           return deltaB - deltaA || getPop(b) - getPop(a);
         },
         'install-desc': (a, b) =>
-          Utils.parseInstalls(b.installs) -
-            Utils.parseInstalls(a.installs) ||
+          Utils.parseInstalls(b.installs) - Utils.parseInstalls(a.installs) ||
           getPop(b) - getPop(a) ||
-          a.componentName
-            .split('/')[0]
-            .localeCompare(b.componentName.split('/')[0]),
+          a.componentName.split('/')[0].localeCompare(
+            b.componentName.split('/')[0],
+          ),
         'install-asc': (a, b) =>
-          Utils.parseInstalls(a.installs) -
-            Utils.parseInstalls(b.installs) ||
+          Utils.parseInstalls(a.installs) - Utils.parseInstalls(b.installs) ||
           getPop(b) - getPop(a) ||
-          a.componentName
-            .split('/')[0]
-            .localeCompare(b.componentName.split('/')[0]),
+          a.componentName.split('/')[0].localeCompare(
+            b.componentName.split('/')[0],
+          ),
         'name-asc': (a, b) =>
           a.label.localeCompare(b.label) || getPop(b) - getPop(a),
         'name-desc': (a, b) =>
           b.label.localeCompare(a.label) || getPop(b) - getPop(a),
         'time-desc': (a, b) =>
-          b.firstAppearance - a.firstAppearance ||
-          getPop(b) - getPop(a),
+          b.firstAppearance - a.firstAppearance || getPop(b) - getPop(a),
         'time-asc': (a, b) =>
-          a.firstAppearance - b.firstAppearance ||
-          getPop(b) - getPop(a),
-        underrated: (a, b) =>
+          a.firstAppearance - b.firstAppearance || getPop(b) - getPop(a),
+        'underrated': (a, b) =>
           Heuristics.calculateUnderratedScore(b) -
             Heuristics.calculateUnderratedScore(a) ||
           (App.state.setsStats[b.componentName.split('/')[0]] ||
               b.requestCount) -
             (App.state.setsStats[a.componentName.split('/')[0]] ||
               a.requestCount),
-        finishers: (a, b) => {
+        'finishers': (a, b) => {
           const dataA = App.state._finisherScores?.[a.componentName];
           const dataB = App.state._finisherScores?.[b.componentName];
-
+          
           if (dataA && dataB) {
-            if (dataA.score !== dataB.score) {
-              return dataB.score - dataA.score;
-            }
+            if (dataA.score !== dataB.score) return dataB.score - dataA.score;
             return dataA.avgSize - dataB.avgSize;
           }
           if (dataA) return -1;
           if (dataB) return 1;
-
+          
           return getPop(b) - getPop(a);
-        },
+        }, 
       };
       if (sorters[s.sort]) data.sort(sorters[s.sort]);
     }
@@ -2358,18 +2016,14 @@ const Data = {
       App.dom.regexBtn.classList.add('active');
     }
     if (params.has('filters')) {
-      params
-        .get('filters')
-        ?.split(',')
-        .forEach((t) => {
-          if (CONFIG.data.filters.includes(t)) {
-            App.state.activeFilters.add(t);
-          }
-        });
+      params.get('filters')?.split(',').forEach((t) => {
+        if (CONFIG.data.filters.includes(t)) App.state.activeFilters.add(t);
+      });
     }
     if (params.has('tab')) {
       const tab = params.get('tab');
       if (tab === 'screens') App.state.activeTab = 'screens';
+      else if (tab === 'contest') App.state.activeTab = 'contest';
     }
     if (params.has('screen')) {
       const screenId = params.get('screen');
@@ -2410,17 +2064,16 @@ const Data = {
 
     if (s.activeTab !== 'requests') params.set('tab', s.activeTab);
     else params.delete('tab');
-
+    
     if (s.activeScreenFilter) {
-      const screenEntry = Object.entries(s.screensData).find(
-        ([_, ids]) =>
-          ids.length === s.activeScreenFilter.length &&
-          ids.every((id) => s.activeScreenFilter.includes(id)),
+      const screenEntry = Object.entries(s.screensData).find(([_, ids]) => 
+        ids.length === s.activeScreenFilter.length && 
+        ids.every(id => s.activeScreenFilter.includes(id))
       );
       if (screenEntry) params.set('screen', screenEntry[0]);
     } else {
       params.delete('screen');
-    }
+    }    
 
     if (App.state.lowQualityActive) {
       params.set('page', 'low-quality-icons');
@@ -2453,34 +2106,30 @@ const Heuristics = {
     return req / inst;
   },
 
-  calculateFinisherScores() {
-    const screens = App.state.screensData;
-    const screenList = Object.values(screens).map(
-      (comps) => new Set(comps),
-    );
-    /** @type {Record<string, {score: number, avgSize: number}>} */
-    const scores = {};
+calculateFinisherScores() {
+  const screens = App.state.screensData;
+  const screenList = Object.values(screens).map(comps => new Set(comps));
+  /** @type {Record<string, {score: number, avgSize: number}>} */
+  const scores = {};
 
-    const compToScreens = new Map();
-    for (const screen of screenList) {
-      for (const comp of screen) {
-        if (!compToScreens.has(comp)) {
-          compToScreens.set(comp, new Set());
-        }
-        compToScreens.get(comp).add(screen);
-      }
+  const compToScreens = new Map();
+  for (const screen of screenList) {
+    for (const comp of screen) {
+      if (!compToScreens.has(comp)) compToScreens.set(comp, new Set());
+      compToScreens.get(comp).add(screen);
     }
+  }
 
-    for (const [comp, scrns] of compToScreens) {
-      const closing = [...scrns].filter((s) => s.size === 1);
-      const score = closing.length;
-      const totalSize = [...scrns].reduce((sum, s) => sum + s.size, 0);
-      const avgSize = scrns.size > 0 ? totalSize / scrns.size : Infinity;
-      scores[comp] = { score, avgSize };
-    }
+  for (const [comp, scrns] of compToScreens) {
+    const closing = [...scrns].filter(s => s.size === 1);
+    const score = closing.length;
+    const totalSize = [...scrns].reduce((sum, s) => sum + s.size, 0);
+    const avgSize = scrns.size > 0 ? totalSize / scrns.size : Infinity;
+    scores[comp] = { score, avgSize };
+  }
 
-    App.state._finisherScores = scores;
-  },
+  App.state._finisherScores = scores;
+},
 };
 
 // ==========================================
@@ -2524,7 +2173,7 @@ const UI = {
       App.dom.regexBtn.classList.add('active');
     }
 
-    const savedList = localStorage.getItem('monocons_contribution');
+    const savedList = localStorage.getItem('lawnicons_contribution');
     if (savedList) {
       try {
         /** @type {AppEntry[]} */
@@ -2535,22 +2184,14 @@ const UI = {
         );
 
         const savedOverrides = localStorage.getItem(
-          'monocons_contribution_overrides',
+          'lawnicons_contribution_overrides',
         );
         if (savedOverrides) {
           /** @type {Record<string, Overrides>} */
           const parsedOverrides = JSON.parse(savedOverrides);
           App.state.contributionOverrides = {};
-          for (
-            const [id, overrides] of Object.entries(
-              parsedOverrides,
-            )
-          ) {
-            if (
-              App.state.contribution.some(
-                (a) => a.componentName === id,
-              )
-            ) {
+          for (const [id, overrides] of Object.entries(parsedOverrides)) {
+            if (App.state.contribution.some((a) => a.componentName === id)) {
               App.state.contributionOverrides[id] = overrides;
             }
           }
@@ -2565,29 +2206,22 @@ const UI = {
           tags.add('plan');
           App.state.appTags.set(app.componentName, tags);
         });
-      } catch {
-        /* no-op */
-      }
+      } catch { /* no-op */ }
     }
 
     if (performance.navigation.type === 0) {
-      localStorage.setItem('monocons_contribution_active', 'false');
+      localStorage.setItem('lawnicons_contribution_active', 'false');
     }
 
-    const savedActive = localStorage.getItem(
-      'monocons_contribution_active',
-    );
+    const savedActive = localStorage.getItem('lawnicons_contribution_active');
     if (savedActive === 'true') {
       App.state.contributionActive = true;
       App.dom.contributionBtn?.classList.add('active');
     }
 
-    document.querySelectorAll('.tab').forEach((tab) => {
-      tab.classList.toggle(
-        'active',
-        tab.dataset.tab === App.state.activeTab,
-      );
-    });
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.classList.toggle('active', tab.dataset.tab === App.state.activeTab);
+    });    
 
     this.updateContributionBadge();
     this.renderDomainStats();
@@ -2601,28 +2235,23 @@ const UI = {
   },
 
   handleEvents() {
-    document
-      .getElementById('lowQualityBtn')
-      ?.addEventListener('click', () => {
-        App.state.lowQualityActive = !App.state.lowQualityActive;
-        if (!App.state.lowQualityActive) {
-          App.dom.header.textContent = 'Monocons';
-          App.dom.contributionBtn.style.display = '';
-          document
-            .getElementById('lowQualityBtn')
-            ?.classList.remove('active');
-        } else {
-          App.state.contributionActive = false;
-          App.dom.contributionBtn.classList.remove('active');
-        }
-        this.render();
-        Data.syncUrlState();
-      });
+    document.getElementById('lowQualityBtn')?.addEventListener('click', () => {
+      App.state.lowQualityActive = !App.state.lowQualityActive;
+      if (!App.state.lowQualityActive) {
+        App.dom.header.textContent = 'Monocons';
+        App.dom.contributionBtn.style.display = '';
+        document.getElementById('lowQualityBtn')?.classList.remove('active');
+      } else {
+        App.state.contributionActive = false;
+        App.dom.contributionBtn.classList.remove('active');
+      }
+      this.render();
+      Data.syncUrlState();
+    });
 
     App.dom.contributionBtn?.addEventListener('click', () => {
       if (
-        !App.state.contributionActive &&
-        App.state.contribution.length === 0
+        !App.state.contributionActive && App.state.contribution.length === 0
       ) {
         Components.Toast.show(
           'Contribution plan is empty. Add at least 1 request.',
@@ -2644,29 +2273,25 @@ const UI = {
       Data.syncUrlState();
     });
 
-    document
-      .querySelectorAll("[data-action='domain-stats-mode']")
-      .forEach((el) => {
+    document.querySelectorAll("[data-action='domain-stats-mode']").forEach(
+      (el) => {
         el.addEventListener('click', () => {
           const e = /** @type HTMLElement */ (el);
           const mode = e.dataset.mode;
           if (!mode) return;
           App.state.domainStatsMode = mode;
-          document
-            .querySelectorAll("[data-action='domain-stats-mode']")
+          document.querySelectorAll("[data-action='domain-stats-mode']")
             .forEach((sp) => {
               const s = /** @type HTMLElement */ (sp);
               const span = s.closest('span');
               if (span) {
-                span.classList.toggle(
-                  'active',
-                  s.dataset.mode === mode,
-                );
+                span.classList.toggle('active', s.dataset.mode === mode);
               }
             });
           this.renderDomainStats();
         });
-      });
+      },
+    );
 
     App.dom.mainTabs?.addEventListener('click', (e) => {
       const tab = /** @type {HTMLElement} */ (e.target).closest('.tab');
@@ -2674,13 +2299,20 @@ const UI = {
       App.state.activeTab = tab.dataset.tab;
       if (App.state.activeTab === 'requests') {
         App.state.activeScreenFilter = null;
-      }
-      document
-        .querySelectorAll('.tab')
-        .forEach((t) => t.classList.remove('active'));
+      }      
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
       this.render();
     });
+
+    document.querySelectorAll('#contestSection .tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        App.state.activeTab = 'contest';
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        UI.renderContest();
+      });
+    });    
 
     const activeMode = App.state.domainStatsMode;
     const activeSvg = document.querySelector(
@@ -2691,9 +2323,9 @@ const UI = {
       if (span) span.classList.add('active');
     }
 
-    document
-      .getElementById('quickPickDownload')
-      ?.addEventListener('click', (e) => {
+    document.getElementById('quickPickDownload')?.addEventListener(
+      'click',
+      (e) => {
         e.preventDefault();
         const queue = App.state.quickPickMode === 'easy'
           ? App.state._quickPickEasy
@@ -2703,48 +2335,47 @@ const UI = {
         App.state.selected.clear();
         App.state.selected.add(app.componentName);
         Actions.downloadBundle();
-      });
+      },
+    );
 
-    document
-      .querySelectorAll("[data-action='quick-pick-mode']")
-      .forEach((el) => {
+    document.querySelectorAll("[data-action='quick-pick-mode']").forEach(
+      (el) => {
         el.addEventListener('click', () => {
           const e = /** @type HTMLElement */ (el);
           const mode = e.dataset.mode;
           if (!mode) return;
           App.state.quickPickMode = mode;
-          document
-            .querySelectorAll("[data-action='quick-pick-mode']")
-            .forEach((sp) => {
+          document.querySelectorAll("[data-action='quick-pick-mode']").forEach(
+            (sp) => {
               const s = /** @type HTMLElement */ (sp);
               const span = s.closest('span');
               if (span) {
-                span.classList.toggle(
-                  'active',
-                  s.dataset.mode === mode,
-                );
+                span.classList.toggle('active', s.dataset.mode === mode);
               }
-            });
+            },
+          );
           this.pickRandomQuickPick();
         });
-      });
+      },
+    );
 
     let resizeTimer = 0;
     addEventListener('resize', () => {
       this.renderDomainStats();
       this.renderActivityCard();
-      if (App.state.activeTab !== 'screens') return;
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => UI.layoutMasonry(), 100);
+      if (App.state.activeTab === 'screens') {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => UI.layoutMasonry(), 100);
+      }
+      if (App.state.activeTab === 'contest') {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => UI.layoutMasonry(), 100);
+      }
     });
 
-    App.dom.container.addEventListener(
-      'error',
-      (event) => {
-        Utils.handleImageError(event);
-      },
-      true,
-    );
+    App.dom.container.addEventListener('error', (event) => {
+      Utils.handleImageError(event);
+    }, true);
 
     App.dom.inputSearch.addEventListener('input', (e) => {
       const target = /** @type HTMLInputElement */ (e.target);
@@ -2769,23 +2400,17 @@ const UI = {
 
     App.dom.screenSortBtn?.addEventListener('click', () => {
       const menu = App.dom.sortMenu;
-      menu.innerHTML = UI.screenSortOptions
-        .map(
-          (opt) => `
-        <div class="ctx-item ${
-            App.state.screenSort === opt.value ? 'active' : ''
-          }" 
+      menu.innerHTML = UI.screenSortOptions.map(opt => `
+        <div class="ctx-item ${App.state.screenSort === opt.value ? 'active' : ''}" 
             data-action="screen-sort-option" data-value="${opt.value}">
           <span>${opt.label}</span>
         </div>
-      `,
-        )
-        .join('');
+      `).join('');
       const rect = App.dom.screenSortBtn.getBoundingClientRect();
       menu.style.left = rect.left + 'px';
-      menu.style.top = rect.bottom + 8 + 'px';
+      menu.style.top = (rect.bottom + 8) + 'px';
       menu.showPopover();
-    });
+    });    
 
     App.dom.viewBtn.addEventListener('click', () => {
       App.state.view = App.state.view === 'list' ? 'grid' : 'list';
@@ -2813,7 +2438,7 @@ const UI = {
       'change',
       (e) =>
         Actions.toggleSelectAll(
-          /** @type {HTMLInputElement} */ (e.target).checked,
+          (/** @type {HTMLInputElement} */ (e.target)).checked,
         ),
     );
 
@@ -2821,16 +2446,13 @@ const UI = {
       this.showMobileFilterPopover();
     });
 
-    document
-      .getElementById('sbContributeBtn')
-      ?.addEventListener('click', () => {
+    document.getElementById('sbContributeBtn')?.addEventListener(
+      'click',
+      () => {
         App.state.selected.forEach((id) => {
           const app = App.state.idMap.get(id);
           if (
-            app &&
-            !App.state.contribution.some(
-              (a) => a.componentName === id,
-            )
+            app && !App.state.contribution.some((a) => a.componentName === id)
           ) {
             App.state.contribution.push(app);
             const tags = App.state.appTags.get(id.toString()) || new Set();
@@ -2845,7 +2467,8 @@ const UI = {
         );
         Actions.clearAllSelections();
         this.render();
-      });
+      },
+    );
 
     App.dom.sbDownloadBtn.addEventListener('click', () => {
       App.state.actionMode = 'new';
@@ -2857,11 +2480,9 @@ const UI = {
       if (!menu) return;
 
       menu.innerHTML = Templates.selectionBarMenu();
-      const rect = /** @type {DOMRect} */ (
-        /** @type {HTMLElement} */ (
-          e.currentTarget
-        ).getBoundingClientRect()
-      );
+      const rect =
+        /** @type {DOMRect} */ (/** @type {HTMLElement} */ (e.currentTarget)
+          .getBoundingClientRect());
 
       menu.style.visibility = 'hidden';
       menu.showPopover();
@@ -2887,9 +2508,8 @@ const UI = {
     };
 
     Object.entries(headers).forEach(([selector, key]) => {
-      const el = /** @type {HTMLElement} */ (
-        App.dom.listHeader.querySelector(selector)
-      );
+      const el =
+        /** @type {HTMLElement} */ (App.dom.listHeader.querySelector(selector));
       if (el) {
         el.title = 'Click to sort';
         el.onclick = () =>
@@ -2901,9 +2521,8 @@ const UI = {
       const e = /** @type {MouseEvent} */ (el);
       const target = /** @type {HTMLElement} */ (e.target);
 
-      const actionEl = /** @type {HTMLElement | null} */ (
-        target.closest('[data-action]')
-      );
+      const actionEl =
+        /** @type {HTMLElement | null} */ (target.closest('[data-action]'));
       if (actionEl) {
         const action = actionEl.dataset.action;
 
@@ -2921,12 +2540,7 @@ const UI = {
                     types: [
                       {
                         description: 'Image',
-                        accept: {
-                          'image/webp': [
-                            CONFIG.data
-                              .iconExtension,
-                          ],
-                        },
+                        accept: { 'image/webp': [CONFIG.data.iconExtension] },
                       },
                     ],
                   });
@@ -2936,9 +2550,7 @@ const UI = {
                 } catch (e) {
                   const err = /** @type {Error} */ (e);
                   if (err.name === 'AbortError') {
-                    console.log(
-                      'User cancelled the save dialog.',
-                    );
+                    console.log('User cancelled the save dialog.');
                     return;
                   }
 
@@ -2950,10 +2562,7 @@ const UI = {
                 }
               })
               .catch(() =>
-                Components.Toast.show(
-                  'Failed to download image',
-                  'error',
-                )
+                Components.Toast.show('Failed to download image', 'error')
               );
           }
           return;
@@ -2973,10 +2582,7 @@ const UI = {
                 URL.revokeObjectURL(a.href);
               })
               .catch(() =>
-                Components.Toast.show(
-                  'Failed to download SVG',
-                  'error',
-                )
+                Components.Toast.show('Failed to download SVG', 'error')
               );
           }
           UI.closeContextMenu();
@@ -2994,10 +2600,7 @@ const UI = {
                 Actions.copyToClipboard(svgText);
               })
               .catch(() => {
-                Components.Toast.show(
-                  'Failed to copy SVG',
-                  'error',
-                );
+                Components.Toast.show('Failed to copy SVG', 'error');
               });
           }
           UI.closeContextMenu();
@@ -3028,8 +2631,8 @@ const UI = {
 
         if (action === 'restore-original') {
           const id = actionEl.dataset.id;
-          const app = App.state.contribution.find(
-            (a) => a.componentName === id,
+          const app = App.state.contribution.find((a) =>
+            a.componentName === id
           );
           if (app && id) {
             delete App.state.contributionOverrides[id];
@@ -3042,8 +2645,8 @@ const UI = {
 
         if (action === 'remove-from-contribution') {
           const id = actionEl.dataset.id ?? '';
-          App.state.contribution = App.state.contribution.filter(
-            (a) => a.componentName !== id,
+          App.state.contribution = App.state.contribution.filter((a) =>
+            a.componentName !== id
           );
           const tags = App.state.appTags.get(id.toString());
           if (tags) tags.delete('plan');
@@ -3140,14 +2743,9 @@ const UI = {
           const screenId = actionEl.dataset.screenId;
           if (screenId && App.state.screensData[screenId]) {
             const ids = App.state.screensData[screenId];
-            ids.forEach((id) => {
+            ids.forEach(id => {
               const app = App.state.idMap.get(id);
-              if (
-                app &&
-                !App.state.contribution.some(
-                  (a) => a.componentName === id,
-                )
-              ) {
+              if (app && !App.state.contribution.some(a => a.componentName === id)) {
                 App.state.contribution.push(app);
                 const tags = App.state.appTags.get(id) || new Set();
                 tags.add('plan');
@@ -3156,9 +2754,7 @@ const UI = {
             });
             UI.saveContribution();
             UI.updateContributionBadge();
-            Components.Toast.show(
-              `${ids.length} icons added to plan`,
-            );
+            Components.Toast.show(`${ids.length} icons added to plan`);
           }
           return;
         }
@@ -3200,9 +2796,7 @@ const UI = {
 
         if (action === 'sort-header-toggle') {
           const key = actionEl.dataset.sortKey;
-          if (key) {
-            Actions.toggleSortHeader(/** @type {SortKeys} */ (key));
-          }
+          if (key) Actions.toggleSortHeader(/** @type {SortKeys} */ (key));
           return;
         }
 
@@ -3226,30 +2820,20 @@ const UI = {
         }
 
         if (action === 'mode-select') {
-          const id = /** @type {'link' | 'new' | undefined} */ (
-            actionEl.dataset.id
-          );
+          const id =
+            /** @type {'link' | 'new' | undefined} */ (actionEl.dataset.id);
           const e = /** @type HTMLInputElement */ (actionEl);
           const mode =
-            /** @type {'link' | 'new' | 'set-all-new' | 'set-all-link'} */ (
-              e.value
-            );
+            /** @type {'link' | 'new' | 'set-all-new' | 'set-all-link'} */ (e
+              .value);
 
           if (mode === 'set-all-new' || mode === 'set-all-link') {
             const newMode = mode === 'set-all-new' ? 'new' : 'link';
             App.state.contribution.forEach((a) => {
-              if (
-                !App.state.contributionOverrides[
-                  a.componentName
-                ]
-              ) {
-                App.state.contributionOverrides[
-                  a.componentName
-                ] = {};
+              if (!App.state.contributionOverrides[a.componentName]) {
+                App.state.contributionOverrides[a.componentName] = {};
               }
-              App.state.contributionOverrides[
-                a.componentName
-              ].mode = newMode;
+              App.state.contributionOverrides[a.componentName].mode = newMode;
             });
             UI.saveContribution();
             UI.render();
@@ -3275,14 +2859,13 @@ const UI = {
         input.classList.remove('issue-highlight');
       }
 
-      const libraryCard = /** @type {HTMLElement} */ (
-        target.closest('.library-icon-card')
-      );
+      const libraryCard =
+        /** @type {HTMLElement} */ (target.closest('.library-icon-card'));
       if (libraryCard) {
         e.stopPropagation();
         const drawable = libraryCard.dataset.drawable;
-        const icon = App.state.existingIcons.find(
-          (i) => i.drawable === drawable,
+        const icon = App.state.existingIcons.find((i) =>
+          i.drawable === drawable
         );
         if (icon) this.showLibraryIconMenu(e, icon);
         return;
@@ -3292,13 +2875,11 @@ const UI = {
       if (trigger) {
         if (App.state.contributionActive) {
           e.stopPropagation();
-          const row = /** @type {HTMLElement} */ (
-            trigger.closest('[data-id]')
-          );
+          const row = /** @type {HTMLElement} */ (trigger.closest('[data-id]'));
           if (!row) return;
           const id = row.dataset.id;
-          const app = App.state.contribution.find(
-            (a) => a.componentName === id,
+          const app = App.state.contribution.find((a) =>
+            a.componentName === id
           );
           if (app) {
             App.dom.rowMenu.innerHTML = Templates.contributionRowMenu(app);
@@ -3319,9 +2900,7 @@ const UI = {
           return;
         }
         e.stopPropagation();
-        const row = /** @type {HTMLElement} */ (
-          trigger.closest('[data-id]')
-        );
+        const row = /** @type {HTMLElement} */ (trigger.closest('[data-id]'));
         if (!row) return;
         const id = row.dataset.id;
         if (!id) return;
@@ -3336,22 +2915,16 @@ const UI = {
       }
 
       if (
-        this.regexListEl &&
-        !this.regexListEl.contains(target) &&
+        this.regexListEl && !this.regexListEl.contains(target) &&
         target !== App.dom.inputSearch
       ) {
         this.hideRegexAutocomplete();
       }
 
-      const item = /** @type {HTMLElement} */ (
-        target.closest('[data-id]')
-      );
+      const item = /** @type {HTMLElement} */ (target.closest('[data-id]'));
       if (!item || !item.dataset.id) return;
       if (!App.state.contributionActive) {
-        Actions.toggleSelection(
-          item.dataset.id,
-          /** @type {MouseEvent} */ (e),
-        );
+        Actions.toggleSelection(item.dataset.id, /** @type {MouseEvent} */ (e));
       }
     });
 
@@ -3366,15 +2939,12 @@ const UI = {
       }
 
       if (
-        target.tagName === 'INPUT' &&
-        /** @type {HTMLInputElement} */
+        target.tagName === 'INPUT' && /** @type {HTMLInputElement} */
         (target).type !== 'checkbox'
-      ) {
-        return;
-      }
+      ) return;
 
       // 1. Focus Search (/ or Ctrl + K)
-      if (e.key === '/' || ((e.ctrlKey || e.metaKey) && e.key === 'k')) {
+      if (e.key === '/' || (e.ctrlKey || e.metaKey) && e.key === 'k') {
         e.preventDefault();
         App.dom.inputSearch.focus();
       }
@@ -3406,18 +2976,10 @@ const UI = {
         const target = /** @type {HTMLElement | null} */ (e.target);
         if (!target) return;
 
-        if (
-          target.tagName === 'INPUT' ||
-          target.tagName === 'TEXTAREA'
-        ) {
-          return;
-        }
+        if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA') return;
 
         // --- 1. Selection & Actions (Enter/Space) ---
-        if (
-          (!(e.ctrlKey || e.metaKey) && e.key === 'Enter') ||
-          e.key === ' '
-        ) {
+        if (!(e.ctrlKey || e.metaKey) && e.key === 'Enter' || e.key === ' ') {
           // A. Row/Card Selection
           if (
             target.classList.contains('list-row') ||
@@ -3433,9 +2995,8 @@ const UI = {
           if (target.classList.contains('ctx-trigger')) {
             e.preventDefault();
             e.stopPropagation();
-            const row = /** @type {HTMLElement | null} */ (
-              target.closest('[data-id]')
-            );
+            const row =
+              /** @type {HTMLElement | null} */ (target.closest('[data-id]'));
             if (!row) return;
             const id = row.dataset.id;
             if (!id) return;
@@ -3455,26 +3016,18 @@ const UI = {
 
         // --- 2. Navigation (Arrow Keys) ---
         if (
-          [
-            'ArrowUp',
-            'ArrowDown',
-            'ArrowLeft',
-            'ArrowRight',
-          ].includes(e.key)
+          ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.key)
         ) {
-          const item = /** @type {HTMLElement | null} */ (
-            target.closest('[data-id]')
-          );
+          const item =
+            /** @type {HTMLElement | null} */ (target.closest('[data-id]'));
           if (!item) return;
 
           e.preventDefault(); // Prevent scrolling
 
           // Get only valid items (ignore loaders/sentinels)
-          const items = /** @type {HTMLElement[]} */ (
-            Array.from(
-              App.dom.container.querySelectorAll('[data-id]'),
-            )
-          );
+          const items = /** @type {HTMLElement[]} */ (Array.from(
+            App.dom.container.querySelectorAll('[data-id]'),
+          ));
           const index = items.indexOf(item);
           let nextIndex = index;
 
@@ -3504,24 +3057,23 @@ const UI = {
 
     const menus = ['rowMenu', 'mobileFilterMenu', 'sortMenu'];
     menus.forEach((id) => {
-      const menu = /** @type {HTMLElement} */ (
-        App.dom[/** @type {keyof typeof App.dom} */ (id)]
-      );
+      const menu = /** @type {HTMLElement} */ (App
+        .dom[/** @type {keyof typeof App.dom} */ (id)]);
       if (!menu) return;
 
       if (menu) {
         menu.addEventListener('toggle', (e) => {
           if (e.newState === 'closed') {
             // Wait for CSS transition
-            setTimeout(() => (menu.innerHTML = ''), 200);
+            setTimeout(() => menu.innerHTML = '', 200);
           }
         });
       }
 
       menu.addEventListener('keydown', (e) => {
-        const items = /** @type {HTMLElement[]} */ (
-          Array.from(menu.querySelectorAll('.ctx-item'))
-        );
+        const items = /** @type {HTMLElement[]} */ (Array.from(
+          menu.querySelectorAll('.ctx-item'),
+        ));
         const index = items.indexOf(
           /** @type {HTMLElement} */ (document.activeElement),
         );
@@ -3536,7 +3088,7 @@ const UI = {
           prev.focus();
         } else if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          /** @type {HTMLElement} */ (document.activeElement).click();
+          (/** @type {HTMLElement} */ (document.activeElement)).click();
         } else if (e.key === 'Tab') {
           e.preventDefault();
           this.closeContextMenu();
@@ -3546,22 +3098,17 @@ const UI = {
   },
 
   initObserver() {
-    this.observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          const more = this.loadMore();
-          App.dom.sentinel.style.opacity = more ? '1' : '0';
-        }
-      },
-      { rootMargin: '400px' },
-    );
+    this.observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        const more = this.loadMore();
+        App.dom.sentinel.style.opacity = more ? '1' : '0';
+      }
+    }, { rootMargin: '400px' });
     this.observer.observe(App.dom.sentinel);
   },
 
   render() {
-    document
-      .getElementById('lowQualityBtn')
-      ?.parentElement?.classList.remove('is-hidden');
+    document.getElementById('lowQualityBtn')?.parentElement?.classList.remove('is-hidden');
 
     if (App.state.lowQualityActive) {
       this.renderLowQualityMode();
@@ -3581,18 +3128,16 @@ const UI = {
     if (backBtn) backBtn.remove();
 
     document.querySelector('.header-icon')?.classList.remove('is-hidden');
-    document
-      .getElementById('search-wrapper')
-      ?.classList.remove('is-hidden');
+    document.getElementById('search-wrapper')?.classList.remove('is-hidden');
     App.dom.header.textContent = 'Monocons';
     App.dom.contributionBtn.style.display = '';
     this.updateContributionBadge();
     this.updateLowQualityBadge();
 
     const headerRight = document.querySelector('.header-right');
-    headerRight
-      ?.querySelectorAll('a:not(#appfilterLink)')
-      ?.forEach((a) => a.classList.remove('is-hidden'));
+    headerRight?.querySelectorAll('a:not(#appfilterLink)')?.forEach((a) =>
+      a.classList.remove('is-hidden')
+    );
     const appfilterLink = document.getElementById('appfilterLink');
     if (appfilterLink) appfilterLink.classList.add('is-hidden');
 
@@ -3600,6 +3145,15 @@ const UI = {
     document.getElementById('mainCards')?.classList.remove('is-hidden');
     const contribCards = document.getElementById('contributionCards');
     if (contribCards) contribCards.classList.add('is-hidden');
+
+    const contestTab = document.querySelector('.tab[data-tab="contest"]');
+    if (contestTab) {
+      if (App.state.contestData && App.state.contestData.length > 0) {
+        contestTab.classList.remove('is-hidden');
+      } else {
+        contestTab.classList.add('is-hidden');
+      }
+    }
 
     const s = App.state;
     App.dom.container.innerHTML = '';
@@ -3609,10 +3163,8 @@ const UI = {
     this.syncFilterTagState();
     Data.process();
     if (s.activeScreenFilter) {
-      s.currentData = s.currentData.filter((app) =>
-        s.activeScreenFilter.includes(app.componentName)
-      );
-    }
+      s.currentData = s.currentData.filter(app => s.activeScreenFilter.includes(app.componentName));
+    }    
     Data.syncUrlState();
     this.updateHeader();
     this.renderIconLibrary();
@@ -3628,16 +3180,23 @@ const UI = {
       document.querySelector('.controls')?.classList.add('is-hidden');
       tabsEl.classList.remove('is-hidden');
       App.dom.screenSortBtn.classList.remove('is-hidden');
-      const activeLabel = UI.screenSortOptions.find((o) =>
-        o.value === s.screenSort
-      )
-        ?.label || 'Most requested';
+      const activeLabel = UI.screenSortOptions.find(o => o.value === s.screenSort)?.label || 'Most requested';
       App.dom.screenSortLabel.textContent = activeLabel;
       App.dom.listHeader.style.display = 'none';
       App.dom.sentinel.style.display = 'none';
       this.renderScreens();
       return;
     }
+
+    if (App.state.activeTab === 'contest') {
+      document.querySelector('.controls')?.classList.add('is-hidden');
+      document.getElementById('mainTabs')?.classList.remove('is-hidden');
+      App.dom.screenSortBtn.classList.add('is-hidden');
+      App.dom.listHeader.style.display = 'none';
+      App.dom.sentinel.style.display = 'none';
+      this.renderContest();
+      return;
+    }    
 
     if (s.currentData.length === 0) {
       App.dom.container.innerHTML = Templates.emptyState();
@@ -3707,14 +3266,12 @@ const UI = {
     return true;
   },
 
-  layoutMasonry() {
+layoutMasonry() {
     const container = App.dom.container;
-    const cards = [...container.children].filter(
-      (c) => c instanceof HTMLElement,
-    );
+    const cards = [...container.children].filter(c => c instanceof HTMLElement);
     if (cards.length === 0) return;
 
-    cards.forEach((c) => {
+    cards.forEach(c => {
       c.style.position = '';
       c.style.width = '';
       c.style.left = '';
@@ -3723,29 +3280,26 @@ const UI = {
     container.style.position = '';
     container.style.height = '';
 
-    const gap = 16;
+    const gap = parseFloat(getComputedStyle(container).columnGap) || parseFloat(getComputedStyle(container).gap) || 16;
     const containerParent = container.parentElement;
     if (!containerParent) return;
     const containerWidth = containerParent.getBoundingClientRect().width;
 
     if (containerWidth < 500) {
-      cards.forEach((c) => {
+      cards.forEach(c => {
         c.style.marginBottom = `${gap}px`;
       });
       return;
     }
 
-    const columnCount = Math.max(
-      1,
-      Math.floor((containerWidth + gap) / (216 + gap)),
-    );
+    const columnCount = Math.max(1, Math.floor((containerWidth + gap) / (216 + gap)));
     const cardWidth = (containerWidth - (columnCount - 1) * gap) / columnCount;
 
-    cards.forEach((c) => {
+    cards.forEach(c => {
       c.style.width = `${cardWidth}px`;
     });
 
-    const heights = cards.map((c) => c.getBoundingClientRect().height);
+    const heights = cards.map(c => c.getBoundingClientRect().height);
 
     container.style.position = 'relative';
     const colHeights = new Array(columnCount).fill(0);
@@ -3759,15 +3313,13 @@ const UI = {
     });
 
     container.style.height = `${Math.max(...colHeights)}px`;
-  },
+},
 
   showSortMenu() {
     const menu = App.dom.sortMenu;
     const options = UI.sortOptions.filter((opt) => {
-      return !(
-        opt.value === 'trending' &&
-        Object.keys(App.state.trendingDeltas).length === 0
-      );
+      return !(opt.value === 'trending' &&
+        Object.keys(App.state.trendingDeltas).length === 0);
     });
 
     menu.innerHTML = Templates.sortMenuItems(options, App.state.sort);
@@ -3784,7 +3336,7 @@ const UI = {
 
     const rect = App.dom.sortBtn.getBoundingClientRect();
     menu.style.left = rect.left + 'px';
-    menu.style.top = rect.bottom + 8 + 'px';
+    menu.style.top = (rect.bottom + 8) + 'px';
     menu.showPopover();
   },
 
@@ -3793,25 +3345,19 @@ const UI = {
     if (!c) return;
     c.innerHTML = '';
 
-    if (
-      App.state.activeScreenFilter &&
-      App.state.activeTab === 'requests'
-    ) {
+    if (App.state.activeScreenFilter && App.state.activeTab === 'requests') {
       const btn = document.createElement('button');
       btn.className = 'tag tag-screen chip active';
-      const screenEntry = Object.entries(App.state.screensData).find(
-        ([_, ids]) =>
-          ids.length === App.state.activeScreenFilter.length &&
-          ids.every((id) => App.state.activeScreenFilter.includes(id)),
+      const screenEntry = Object.entries(App.state.screensData).find(([_, ids]) => 
+        ids.length === App.state.activeScreenFilter.length && 
+        ids.every(id => App.state.activeScreenFilter.includes(id))
       );
-      const screenId = screenEntry
-        ? screenEntry[0].replace(/^scr-0+/, 'scr-')
-        : 'screen';
+      const screenId = screenEntry ? screenEntry[0].replace(/^scr-0+/, 'scr-') : 'screen';
       btn.textContent = screenId;
       btn.title = 'Clear screen filter';
       btn.dataset.action = 'clear-screen-filter';
       c.insertBefore(btn, c.firstChild);
-    }
+    }    
 
     CONFIG.data.filters.forEach((id) => {
       let count = 0;
@@ -3829,10 +3375,7 @@ const UI = {
       btn.title = meta.description || `Filter by ${meta.label}`;
       btn.dataset.action = 'filter-tag-toggle';
       btn.dataset.filterId = id;
-      btn.setAttribute(
-        'aria-pressed',
-        String(App.state.activeFilters.has(id)),
-      );
+      btn.setAttribute('aria-pressed', String(App.state.activeFilters.has(id)));
       if (App.state.activeFilters.has(id)) btn.classList.add('active');
       c.appendChild(btn);
     });
@@ -3860,9 +3403,9 @@ const UI = {
     const isSelected = App.state.selected.has(id);
     document.querySelectorAll(`[data-id="${id}"]`).forEach((el) => {
       el.classList.toggle('selected', isSelected);
-      const cb = /** @type {HTMLInputElement} */ (
-        el.querySelector("input[type='checkbox']")
-      );
+      const cb = /** @type {HTMLInputElement} */ (el.querySelector(
+        "input[type='checkbox']",
+      ));
       if (cb) cb.checked = isSelected;
     });
   },
@@ -3875,11 +3418,10 @@ const UI = {
     let displayText = `${Utils.compactNumber(total)} requests`;
     if (App.state.lastUpdate) {
       const timeAgo = Utils.timeAgo(App.state.lastUpdate);
-      const fullDate = new Date(
-        App.state.lastUpdate + 'T00:00:00',
-      ).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      const fullDate = new Date(App.state.lastUpdate + 'T00:00:00')
+        .toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
       displayText +=
-        ` • <a href="https://github.com/k4ustu3h/monocons-requests-dashboard" target="_blank" title="Last update: ${fullDate}">${timeAgo}</a>`;
+        ` • <a href="https://github.com/k4ustu3h/monocons-android-requests-dashboard" target="_blank" title="Last update: ${fullDate}">${timeAgo}</a>`;
     }
     countEl.innerHTML = displayText;
 
@@ -3929,8 +3471,7 @@ const UI = {
 
     const screens = s.screensData;
     if (!screens || Object.keys(screens).length === 0) {
-      App.dom.container.innerHTML =
-        '<div class="empty-state"><h3>No screens yet</h3><p>Screens will appear after email parsing.</p></div>';
+      App.dom.container.innerHTML = '<div class="empty-state"><h3>No screens yet</h3><p>Screens will appear after email parsing.</p></div>';
       return;
     }
 
@@ -3941,7 +3482,7 @@ const UI = {
       let supportedCount = 0;
       const previewIcons = [];
 
-      ids.forEach((comp) => {
+      ids.forEach(comp => {
         const app = s.idMap.get(comp);
         if (!app) return;
         totalReq += app.requestCount || 0;
@@ -3959,14 +3500,14 @@ const UI = {
       });
 
       return {
-        id,
-        ids,
-        count: ids.length,
-        sumReq: totalReq,
-        sumInst: totalInst,
-        easyPct: ids.length ? Math.round((easyCount / ids.length) * 100) : 0,
-        supportedCount,
-        previewIcons,
+          id,
+          ids,
+          count: ids.length,
+          sumReq: totalReq,
+          sumInst: totalInst,
+          easyPct: ids.length ? Math.round(easyCount / ids.length * 100) : 0,
+          supportedCount,
+          previewIcons,
       };
     });
 
@@ -3985,96 +3526,62 @@ const UI = {
     const activeFilters = new Set([...s.activeFilters, ...query.tags]);
 
     if (query.text) {
-      entries = entries.filter((screen) => {
-        return screen.ids.some((comp) => {
+      entries = entries.filter(screen => {
+        return screen.ids.some(comp => {
           const app = s.idMap.get(comp);
           if (!app) return false;
 
           if (s.regexMode) {
             try {
               const regex = new RegExp(query.text, 'i');
-              return (
-                regex.test(app.label) ||
-                regex.test(app.componentName)
-              );
-            } catch {
-              return false;
-            }
+              return regex.test(app.label) || regex.test(app.componentName);
+            } catch { return false; }
           } else {
             const term = query.text.toLowerCase();
-            return (
-              app.label.toLowerCase().includes(term) ||
-              app.componentName.toLowerCase().includes(term)
-            );
+            return app.label.toLowerCase().includes(term) ||
+              app.componentName.toLowerCase().includes(term);
           }
         });
       });
     }
 
     if (entries.length === 0) {
-      App.dom.container.innerHTML =
-        '<div class="empty-state"><svg><use href="#ic-search"/></svg><h3>No screens found</h3><p>Try adjusting your search or filters.</p></div>';
+      App.dom.container.innerHTML = '<div class="empty-state"><svg><use href="#ic-search"/></svg><h3>No screens found</h3><p>Try adjusting your search or filters.</p></div>';
       App.dom.container.className = '';
       return;
-    }
+    }    
 
-    entries.forEach((screen) => {
+    entries.forEach(screen => {
       const card = document.createElement('div');
       card.className = 'screen-card';
       card.dataset.screenId = screen.id;
 
       const cols = Math.min(screen.previewIcons.length, 3);
-      let previewHtml =
-        '<div class="screen-preview" style="grid-template-columns:repeat(' +
-        cols +
-        ',56px);">';
-      screen.previewIcons.forEach((icon) => {
-        previewHtml += '<img src="' +
-          CONFIG.data.assetsPath +
-          icon.drawable +
-          CONFIG.data.iconExtension +
-          '" class="screen-preview-icon" loading="lazy" onerror="this.style.display=\'none\'" alt="' +
-          icon.label +
-          '" />';
+      let previewHtml = '<div class="screen-preview" style="grid-template-columns:repeat(' + cols + ',56px);">';
+      screen.previewIcons.forEach(icon => {
+        previewHtml += '<img src="' + CONFIG.data.assetsPath + icon.drawable + CONFIG.data.iconExtension + '" class="screen-preview-icon" loading="lazy" onerror="this.style.display=\'none\'" alt="' + icon.label + '" />';
       });
       previewHtml += '</div>';
 
       const iconLabel = screen.count === 1 ? 'icon' : 'icons';
       const reqLabel = screen.count === 1 ? 'request' : 'requests';
-      const supLabel = screen.supportedCount === 1
-        ? 'supported icon'
-        : 'supported icons';
+      const supLabel = screen.supportedCount === 1 ? 'supported icon' : 'supported icons';
 
-      card.innerHTML = (screen.supportedCount > 0
-        ? '<span class="status-pill status-supported screen-card-supported">' +
-          screen.supportedCount +
-          ' ' +
-          supLabel +
-          '</span>'
-        : '') +
+      card.innerHTML = 
+        (screen.supportedCount > 0 ? '<span class="status-pill status-supported screen-card-supported">' + screen.supportedCount + ' ' + supLabel + '</span>' : '') +
         previewHtml +
-        (function () {
+        (function() {
           const countries = new Set();
           const graph = App.state.requestsGraph;
           if (graph) {
-            screen.ids.forEach((comp) => {
+            screen.ids.forEach(comp => {
               const domain = comp.split('/')[0].split('.')[0];
               if (ISO_COUNTRIES.has(domain)) {
                 countries.add(domain);
               } else if (graph[comp]) {
-                const geoNeighbors = Object.keys(
-                  graph[comp],
-                ).filter((n) =>
-                  ISO_COUNTRIES.has(
-                    n.split('/')[0].split('.')[0],
-                  )
-                );
+                const geoNeighbors = Object.keys(graph[comp]).filter(n => ISO_COUNTRIES.has(n.split('/')[0].split('.')[0]));
                 if (geoNeighbors.length > 0) {
-                  geoNeighbors.forEach((n) =>
-                    countries.add(
-                      n.split('/')[0].split('.')[0],
-                    )
-                  );
+                  geoNeighbors.forEach(n => countries.add(n.split('/')[0].split('.')[0]));
                 } else {
                   countries.add('us');
                 }
@@ -4085,58 +3592,18 @@ const UI = {
           }
           const arr = [...countries].sort();
           const countryStr = arr.length > 3 ? 'global' : arr.join(', ');
-          return (
-            '<div class="screen-card-header"><span>' +
-            screen.id +
-            '</span>' +
-            (countryStr
-              ? '<span class="screen-card-countries">' +
-                countryStr +
-                '</span>'
-              : '') +
-            '</div>'
-          );
+          return '<div class="screen-card-header"><span>' + screen.id + '</span>' + (countryStr ? '<span class="screen-card-countries">' + countryStr + '</span>' : '') + '</div>';
         })() +
-        '<div class="screen-card-description">' +
-        screen.count +
-        ' ' +
-        iconLabel +
-        '</div>' +
-        '<div class="screen-card-description">' +
-        Utils.compactNumber(screen.sumReq) +
-        ' ' +
-        reqLabel +
-        '</div>' +
-        (screen.sumInst > 0
-          ? '<div class="screen-card-description">' +
-            Utils.compactNumber(screen.sumInst) +
-            ' installs</div>'
-          : '') +
-        (screen.easyPct > 0
-          ? '<div class="screen-card-description">' +
-            screen.easyPct +
-            '% easy</div>'
-          : '') +
-        '<button class="screen-card-add-to-plan" data-action="screen-add-to-plan" data-screen-id="' +
-        screen.id +
-        '" title="Add to plan"><svg><use href="#ic-add-to-plan"/></svg></button>';
+        '<div class="screen-card-description">' + screen.count + ' ' + iconLabel + '</div>' +
+        '<div class="screen-card-description">' + Utils.compactNumber(screen.sumReq) + ' ' + reqLabel + '</div>' +
+        (screen.sumInst > 0 ? '<div class="screen-card-description">' + Utils.compactNumber(screen.sumInst) + ' installs</div>' : '') +   (screen.easyPct > 0 ? '<div class="screen-card-description">' + screen.easyPct + '% easy</div>' : '') +
+        '<button class="screen-card-add-to-plan" data-action="screen-add-to-plan" data-screen-id="' + screen.id + '" title="Add to plan"><svg><use href="#ic-add-to-plan"/></svg></button>';
 
       card.addEventListener('click', (e) => {
-        if (
-          e.target instanceof HTMLElement &&
-          e.target.closest('[data-action]')
-        ) {
-          return;
-        }
+        if (e.target instanceof HTMLElement && e.target.closest('[data-action]')) return;
         App.state.activeTab = 'requests';
-        document
-          .querySelectorAll('.tab')
-          .forEach((t) =>
-            t.classList.remove('active')
-          );
-        document
-          .querySelector('.tab[data-tab="requests"]')
-          ?.classList.add('active');
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelector('.tab[data-tab="requests"]')?.classList.add('active');
         App.state.activeScreenFilter = screen.ids;
         Data.syncUrlState();
         this.render();
@@ -4148,17 +3615,67 @@ const UI = {
     this.layoutMasonry();
   },
 
+  renderContest() {
+    App.dom.container.innerHTML = '';
+    App.dom.container.className = 'screens-grid';
+    App.dom.sbBar.classList.remove('visible');
+    document.querySelector('.controls')?.classList.add('is-hidden');
+    App.dom.screenSortBtn.classList.add('is-hidden');
+    App.dom.listHeader.style.display = 'none';
+    App.dom.sentinel.style.display = 'none';
+    document.getElementById('contestSection')?.classList.remove('is-hidden');
+
+    const entries = App.state.contestData;
+    entries.forEach(entry => {
+      const card = document.createElement('div');
+      card.className = 'screen-card';
+      card.innerHTML = `
+        <div class="screen-preview" style="grid-template-columns:1fr; grid-auto-rows:auto;">
+          <img src="${entry.url}" loading="lazy" alt="Entry #${entry.id}" style="width:100%; height:auto; border-radius:var(--shape-small);" onclick="window.open('${entry.url}')" />
+        </div>
+        <div class="screen-card-header"><span>#${entry.id}</span></div>
+        <div class="screen-card-description">${entry.author}</div>
+      `;
+      card.addEventListener('click', () => {
+        window.open(entry.url);
+      });
+      App.dom.container.appendChild(card);
+    });
+
+    const images = App.dom.container.querySelectorAll('img');
+    let loaded = 0;
+    const total = images.length;
+
+    if (total === 0) {
+      this.layoutMasonry();
+    } else {
+      images.forEach(img => {
+        const onDone = () => {
+          loaded++;
+          if (loaded === total) {
+            setTimeout(() => {
+              this.layoutMasonry();
+              setTimeout(() => this.layoutMasonry(), 100);
+            }, 200);
+          }
+        };
+        if (img.naturalWidth > 0) {
+          onDone();
+        } else {
+          img.onload = onDone;
+          img.onerror = onDone;
+        }
+      });
+    }
+  },
+
   renderLowQualityMode() {
     document.querySelector('.header-icon')?.classList.add('is-hidden');
     document.querySelector('.controls')?.classList.add('is-hidden');
-    document
-      .getElementById('iconLibraryResults')
-      ?.classList.add('is-hidden');
+    document.getElementById('iconLibraryResults')?.classList.add('is-hidden');
     document.getElementById('search-wrapper')?.classList.add('is-hidden');
     document.getElementById('mainTabs')?.classList.add('is-hidden');
-    document
-      .getElementById('lowQualityBtn')
-      ?.parentElement?.classList.add('is-hidden');
+    document.getElementById('lowQualityBtn')?.parentElement?.classList.add('is-hidden');
     App.dom.screenSortBtn.classList.add('is-hidden');
     App.dom.listHeader.style.display = 'none';
     App.dom.sentinel.style.display = 'none';
@@ -4185,9 +3702,7 @@ const UI = {
       if (newLowQABack) {
         newLowQABack.onclick = () => {
           App.state.lowQualityActive = false;
-          document
-            .getElementById('lowQualityBtn')
-            ?.classList.remove('active');
+          document.getElementById('lowQualityBtn')?.classList.remove('active');
           this.render();
           Data.syncUrlState();
         };
@@ -4199,9 +3714,9 @@ const UI = {
       ? App.state.lowQualityData.length
       : 0;
     App.dom.headerCount.textContent = `${count} icon${count !== 1 ? 's' : ''}`;
-    headerRight
-      ?.querySelectorAll('a')
-      ?.forEach((a) => a.classList.add('is-hidden'));
+    headerRight?.querySelectorAll('a')?.forEach((a) =>
+      a.classList.add('is-hidden')
+    );
 
     if (!document.getElementById('appfilterLink')) {
       headerRight?.insertAdjacentHTML(
@@ -4213,9 +3728,7 @@ const UI = {
           `,
       );
     } else {
-      document
-        .getElementById('appfilterLink')
-        ?.classList.remove('is-hidden');
+      document.getElementById('appfilterLink')?.classList.remove('is-hidden');
     }
 
     document.getElementById('mainCards')?.classList.add('is-hidden');
@@ -4232,9 +3745,7 @@ const UI = {
         }`;
         if (data.length === 0) {
           App.state.lowQualityActive = false;
-          document
-            .getElementById('lowQualityBtn')
-            ?.classList.remove('active');
+          document.getElementById('lowQualityBtn')?.classList.remove('active');
           Components.Toast.show('All existing icons look good.');
           this.render();
           return;
@@ -4258,14 +3769,12 @@ const UI = {
         data.forEach((item) => {
           const svgUrl =
             `https://raw.githubusercontent.com/k4ustu3h/monocons-android/main/svgs/${item.drawable}.svg`;
-          const issueList = item.issues
-            .map((i) => `<div class="item-sub">${i}</div>`)
-            .join('');
+          const issueList = item.issues.map((i) =>
+            `<div class="item-sub">${i}</div>`
+          ).join('');
           html += `
                       <div class="library-icon-card" data-drawable="${item.drawable}" title="${
-            item.issues.join(
-              '\n',
-            )
+            item.issues.join('\n')
           }">
                           <img src="${svgUrl}" alt="${item.drawable}" loading="lazy" onerror="this.parentElement.remove()" />
                           <div class="qa-issues">${issueList}</div>
@@ -4295,9 +3804,7 @@ const UI = {
       return;
     }
 
-    const count = App.state.lowQualityData
-      ? App.state.lowQualityData.length
-      : 0;
+    const count = App.state.lowQualityData ? App.state.lowQualityData.length : 0;
     if (count > 0) {
       wrapper.classList.remove('is-hidden');
       if (badge) {
@@ -4313,21 +3820,15 @@ const UI = {
   renderContributionMode() {
     document.querySelector('.header-icon')?.classList.add('is-hidden');
     document.querySelector('.controls')?.classList.add('is-hidden');
-    document
-      .getElementById('iconLibraryResults')
-      ?.classList.add('is-hidden');
+    document.getElementById('iconLibraryResults')?.classList.add('is-hidden');
     document.getElementById('search-wrapper')?.classList.add('is-hidden');
     document.getElementById('mainTabs')?.classList.add('is-hidden');
-    document
-      .getElementById('lowQualityBtn')
-      ?.parentElement?.classList.add('is-hidden');
+    document.getElementById('lowQualityBtn')?.parentElement?.classList.add('is-hidden');
     App.dom.screenSortBtn.classList.add('is-hidden');
     const contributionCountBadge = document.getElementById(
       'contributionCountBadge',
     );
-    if (contributionCountBadge) {
-      contributionCountBadge.style.display = 'none';
-    }
+    if (contributionCountBadge) contributionCountBadge.style.display = 'none';
     App.dom.listHeader.style.display = 'none';
     App.dom.sentinel.style.display = 'none';
 
@@ -4363,9 +3864,9 @@ const UI = {
     App.dom.sbBar.classList.remove('visible');
 
     const headerRight = document.querySelector('.header-right');
-    headerRight
-      ?.querySelectorAll('a')
-      .forEach((a) => a.classList.add('is-hidden'));
+    headerRight?.querySelectorAll('a').forEach((a) =>
+      a.classList.add('is-hidden')
+    );
 
     if (!document.getElementById('appfilterLink')) {
       headerRight?.insertAdjacentHTML(
@@ -4377,9 +3878,7 @@ const UI = {
         `,
       );
     } else {
-      document
-        .getElementById('appfilterLink')
-        ?.classList.remove('is-hidden');
+      document.getElementById('appfilterLink')?.classList.remove('is-hidden');
     }
 
     const headerHtml = `
@@ -4412,9 +3911,9 @@ const UI = {
         `,
       );
     } else {
-      document
-        .getElementById('contributionCards')
-        ?.classList.remove('is-hidden');
+      document.getElementById('contributionCards')?.classList.remove(
+        'is-hidden',
+      );
     }
 
     // Draw domains pie chart
@@ -4426,17 +3925,14 @@ const UI = {
       domainCounts[domain] = (domainCounts[domain] || 0) + 1;
     });
 
-    const canvas = /** @type {HTMLCanvasElement} */ (
-      document.getElementById('domainsPie')
-    );
+    const canvas =
+      /** @type {HTMLCanvasElement} */ (document.getElementById('domainsPie'));
     const tooltip = document.getElementById('domainsTooltip');
     if (canvas) {
       const ctx = canvas.getContext('2d');
       if (!ctx) return;
 
-      const entries = Object.entries(domainCounts).sort(
-        (a, b) => b[1] - a[1],
-      );
+      const entries = Object.entries(domainCounts).sort((a, b) => b[1] - a[1]);
       const total = entries.reduce((s, e) => s + e[1], 0);
 
       const dpr = devicePixelRatio || 1;
@@ -4472,16 +3968,15 @@ const UI = {
           : entry[0][0] + '...' + entry[0][entry[0].length - 1];
 
         if (pct >= 0.2) {
-          const labelR = (size / 2) * 0.6;
+          const labelR = size / 2 * 0.6;
           const lx = size / 2 + Math.cos(midAngle) * labelR;
           const ly = size / 2 + Math.sin(midAngle) * labelR;
           ctx.fillStyle = getComputedStyle(document.documentElement)
-            .getPropertyValue('--surface')
-            .trim();
+            .getPropertyValue('--surface').trim();
           ctx.font = '600 10px ' +
-            getComputedStyle(document.documentElement)
-              .getPropertyValue('--font-main')
-              .trim();
+            getComputedStyle(document.documentElement).getPropertyValue(
+              '--font-main',
+            ).trim();
           ctx.textAlign = 'center';
           ctx.textBaseline = 'middle';
           ctx.fillText(label, lx, ly);
@@ -4517,9 +4012,7 @@ const UI = {
             }</div><div class="tooltip-value">${entries[i][1]} icon${
               entries[i][1] !== 1 ? 's' : ''
             } (${pct}%)</div>`;
-            const card = document.getElementById(
-              'contributionDomainsCard',
-            );
+            const card = document.getElementById('contributionDomainsCard');
             const cardRect = card?.getBoundingClientRect();
             if (!cardRect) return;
             const left = e.clientX - cardRect.left + 12;
@@ -4546,29 +4039,26 @@ const UI = {
 
     /** @type {{ [key: string]: number }} */
     const issueCounts = {};
-    issues.forEach((issue) => (issueCounts[issue.id] = 0));
+    issues.forEach((issue) => issueCounts[issue.id] = 0);
 
     App.state.contribution.forEach((app) => {
       const ov = App.state.contributionOverrides[app.componentName] || {};
       const name = ov.label !== undefined ? ov.label : app.label;
       const rawSvg = Utils.sanitizeDrawableName(name);
-      const defaultSvg = rawSvg === 'icon' || rawSvg === 'unknown'
+      const defaultSvg = (rawSvg === 'icon' || rawSvg === 'unknown')
         ? ''
         : rawSvg;
       const drawable = ov.drawable !== undefined ? ov.drawable : defaultSvg;
 
       if (
         drawable &&
-        App.state.existingIcons.some(
-          (icon) => icon.drawable === drawable,
-        )
+        App.state.existingIcons.some((icon) => icon.drawable === drawable)
       ) {
         issueCounts.nameinuse++;
       }
 
       if (
-        drawable &&
-        App.state.contribution.filter((a) => {
+        drawable && App.state.contribution.filter((a) => {
             const aOv = App.state.contributionOverrides[a.componentName] || {};
             const aName = aOv.label !== undefined ? aOv.label : a.label;
             const aDrawable = aOv.drawable !== undefined
@@ -4582,9 +4072,7 @@ const UI = {
 
       if (!name.trim()) issueCounts.emptyfields++;
       if (!drawable.trim()) issueCounts.emptyfields++;
-      if (drawable && /[^a-z0-9_]/.test(drawable)) {
-        issueCounts.invalidsvg++;
-      }
+      if (drawable && /[^a-z0-9_]/.test(drawable)) issueCounts.invalidsvg++;
       if (drawable && /^[0-9]/.test(drawable)) issueCounts.startdigit++;
       if (name.includes('&') && !name.includes('&amp;')) {
         issueCounts.unescaped++;
@@ -4593,59 +4081,46 @@ const UI = {
 
     const issueEntries = issues
       .map((issue) => ({ ...issue, count: issueCounts[issue.id] }))
-      .sort(
-        (a, b) => b.count - a.count || a.label.localeCompare(b.label),
-      );
+      .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 
     const issuesList = document.getElementById('contributionIssuesList');
     if (issuesList) {
-      issuesList.innerHTML = issueEntries
-        .map(
-          (issue) => `
+      issuesList.innerHTML = issueEntries.map((issue) => `
           <div class="issue-item" data-action="issue-jump" data-issue="${issue.id}" ${
-            issue.count > 0
-              ? `title="Show ${issue.count} issue${
-                issue.count !== 1 ? 's' : ''
-              }"`
-              : ''
-          }>
+        issue.count > 0
+          ? `title="Show ${issue.count} issue${issue.count !== 1 ? 's' : ''}"`
+          : ''
+      }>
             <div class="issue-label">${issue.label}</div>
             <div class="issue-count">${issue.count}</div>
           </div>
-        `,
-        )
-        .join('');
+        `).join('');
     }
 
     const sorted = [...App.state.contribution].sort((a, b) =>
       a.label.localeCompare(b.label)
     );
-    const rowsHtml = sorted
-      .map((app) => {
-        const iconUrl =
-          `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
-        return Templates.contributionRow(app, iconUrl);
-      })
-      .join('');
+    const rowsHtml = sorted.map((app) => {
+      const iconUrl =
+        `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
+      return Templates.contributionRow(app, iconUrl);
+    }).join('');
 
     const downloadReady = issueCounts.emptyfields === 0 &&
-      issueCounts.invalidsvg === 0 &&
-      issueCounts.startdigit === 0;
+      issueCounts.invalidsvg === 0 && issueCounts.startdigit === 0;
 
     const hasIcons = App.state.contribution.length > 0;
     if (!hasIcons) {
-      document
-        .getElementById('contributionCards')
-        ?.classList.add('is-hidden');
+      document.getElementById('contributionCards')?.classList.add('is-hidden');
       App.dom.headerCount.textContent = '0 icons';
       return;
     }
 
-    const newCount = App.state.contribution.filter(
-      (a) =>
-        (App.state.contributionOverrides[a.componentName]?.mode ||
-          'new') === 'new',
-    ).length;
+    const newCount =
+      App.state.contribution.filter((a) =>
+        (App.state.contributionOverrides[a.componentName]?.mode || 'new') ===
+          'new'
+      ).length;
     const linkCount = App.state.contribution.length - newCount;
     const parts = [];
     if (newCount > 0) {
@@ -4697,16 +4172,14 @@ const UI = {
     }
 
     if (downloadReady) {
-      const downloadBtn = document.getElementById(
-        'contributionDownloadBtn',
-      );
+      const downloadBtn = document.getElementById('contributionDownloadBtn');
       if (downloadBtn) {
         downloadBtn.onclick = () => {
           Actions.downloadContributionBundle();
         };
       }
     }
-  },
+  },  
 
   updateIssues() {
     const list = document.getElementById('contributionIssuesList');
@@ -4722,22 +4195,20 @@ const UI = {
 
     /** @type {{ [key: string]: number }} */
     const issueCounts = {};
-    issues.forEach((issue) => (issueCounts[issue.id] = 0));
+    issues.forEach((issue) => issueCounts[issue.id] = 0);
 
     App.state.contribution.forEach((app) => {
       const ov = App.state.contributionOverrides[app.componentName] || {};
       const name = ov.label !== undefined ? ov.label : app.label;
       const rawSvg = Utils.sanitizeDrawableName(name);
-      const defaultSvg = rawSvg === 'icon' || rawSvg === 'unknown'
+      const defaultSvg = (rawSvg === 'icon' || rawSvg === 'unknown')
         ? ''
         : rawSvg;
       const drawable = ov.drawable !== undefined ? ov.drawable : defaultSvg;
 
       if (
         drawable &&
-        App.state.existingIcons.some(
-          (icon) => icon.drawable === drawable,
-        )
+        App.state.existingIcons.some((icon) => icon.drawable === drawable)
       ) {
         issueCounts.nameinuse++;
       }
@@ -4756,48 +4227,39 @@ const UI = {
 
       if (!name.trim()) issueCounts.emptyfields++;
       if (!drawable.trim()) issueCounts.emptyfields++;
-      if (drawable && /[^a-z0-9_]/.test(drawable)) {
-        issueCounts.invalidsvg++;
-      }
+      if (drawable && /[^a-z0-9_]/.test(drawable)) issueCounts.invalidsvg++;
       if (drawable && /^[0-9]/.test(drawable)) issueCounts.startdigit++;
     });
 
     const issueEntries = issues
       .map((issue) => ({ ...issue, count: issueCounts[issue.id] }))
-      .sort(
-        (a, b) => b.count - a.count || a.label.localeCompare(b.label),
-      );
+      .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 
-    list.innerHTML = issueEntries
-      .map(
-        (issue) => `
+    list.innerHTML = issueEntries.map((issue) => `
       <div class="issue-item" data-action="issue-jump" data-issue="${issue.id}" ${
-          issue.count > 0
-            ? `title="Show ${issue.count} issue${issue.count !== 1 ? 's' : ''}"`
-            : ''
-        }>
+      issue.count > 0
+        ? `title="Show ${issue.count} issue${issue.count !== 1 ? 's' : ''}"`
+        : ''
+    }>
         <div class="issue-label">${issue.label}</div>
         <div class="issue-count">${issue.count}</div>
       </div>
-    `,
-      )
-      .join('');
+    `).join('');
 
     const downloadReady = issueCounts.emptyfields === 0 &&
-      issueCounts.invalidsvg === 0 &&
-      issueCounts.startdigit === 0;
+      issueCounts.invalidsvg === 0 && issueCounts.startdigit === 0;
     const btn = document.getElementById('contributionDownloadBtn');
     if (btn) {
-      btn.style.display = App.state.contribution.length > 0 && downloadReady
+      btn.style.display = (App.state.contribution.length > 0 && downloadReady)
         ? ''
         : 'none';
     }
 
-    const newCount = App.state.contribution.filter(
-      (a) =>
-        (App.state.contributionOverrides[a.componentName]?.mode ||
-          'new') === 'new',
-    ).length;
+    const newCount =
+      App.state.contribution.filter((a) =>
+        (App.state.contributionOverrides[a.componentName]?.mode || 'new') ===
+          'new'
+      ).length;
     const linkCount = App.state.contribution.length - newCount;
     const parts = [];
     if (newCount > 0) {
@@ -4815,26 +4277,25 @@ const UI = {
    * @param {string} issueId
    */
   jumpToIssue(issueId) {
-    const rows = /** @type {NodeListOf<HTMLElement>} */ (
-      document.querySelectorAll('.contribution-row')
-    );
+    const rows =
+      /** @type {NodeListOf<HTMLElement>} */ (document.querySelectorAll(
+        '.contribution-row',
+      ));
     if (!rows.length) return;
 
-    document
-      .querySelectorAll('.issue-highlight')
-      .forEach((el) => el.classList.remove('issue-highlight'));
+    document.querySelectorAll('.issue-highlight').forEach((el) =>
+      el.classList.remove('issue-highlight')
+    );
 
     for (const row of rows) {
       const appId = row.dataset.id ?? '';
-      const app = App.state.contribution.find(
-        (a) => a.componentName === appId,
-      );
+      const app = App.state.contribution.find((a) => a.componentName === appId);
       if (!app) continue;
 
       const ov = App.state.contributionOverrides[appId] || {};
       const name = ov.label !== undefined ? ov.label : app.label;
       const rawSvg = Utils.sanitizeDrawableName(name);
-      const defaultSvg = rawSvg === 'icon' || rawSvg === 'unknown'
+      const defaultSvg = (rawSvg === 'icon' || rawSvg === 'unknown')
         ? ''
         : rawSvg;
       const drawable = ov.drawable !== undefined ? ov.drawable : defaultSvg;
@@ -4846,17 +4307,13 @@ const UI = {
       switch (issueId) {
         case 'nameinuse':
           match = !!drawable &&
-            App.state.existingIcons.some(
-              (icon) => icon.drawable === drawable,
-            );
+            App.state.existingIcons.some((icon) => icon.drawable === drawable);
           highlightSvg = match;
           break;
         case 'nameconflict':
-          match = !!drawable &&
-            App.state.contribution.filter((a) => {
-                const aOv = App.state.contributionOverrides[
-                  a.componentName
-                ] || {};
+          match = !!drawable && App.state.contribution.filter((a) => {
+                const aOv = App.state.contributionOverrides[a.componentName] ||
+                  {};
                 const aName = aOv.label !== undefined ? aOv.label : a.label;
                 const aDrawable = aOv.drawable !== undefined
                   ? aOv.drawable
@@ -4882,24 +4339,18 @@ const UI = {
 
       if (match) {
         if (highlightName) {
-          const nameInput = row.querySelector(
-            '.contribution-name-input',
-          );
+          const nameInput = row.querySelector('.contribution-name-input');
           if (nameInput) nameInput.classList.add('issue-highlight');
         }
         if (highlightSvg) {
-          const svgInput = row.querySelector(
-            '.contribution-svg-input',
-          );
+          const svgInput = row.querySelector('.contribution-svg-input');
           if (svgInput) svgInput.classList.add('issue-highlight');
         }
       }
     }
 
     if (rows.length > 0 && document.querySelector('.issue-highlight')) {
-      document
-        .querySelector('.issue-highlight')
-        ?.closest('.contribution-row')
+      document.querySelector('.issue-highlight')?.closest('.contribution-row')
         ?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   },
@@ -4918,18 +4369,19 @@ const UI = {
 
     const row = input.closest('.contribution-row');
     if (!row) return;
-    const nameInput = /** @type {HTMLInputElement | null} */ (
-      row?.querySelector('.contribution-name-input')
-    );
-    const svgInput = /** @type {HTMLInputElement | null} */ (
-      row?.querySelector('.contribution-svg-input')
-    );
-    const svgHint = /** @type {HTMLElement | null} */ (
-      svgInput?.nextElementSibling
-    );
-    const libraryIconCol = /** @type {HTMLDivElement | null} */ (
-      row?.querySelector('.col.library-icon')
-    );
+    const nameInput =
+      /** @type {HTMLInputElement | null} */ (row?.querySelector(
+        '.contribution-name-input',
+      ));
+    const svgInput = /** @type {HTMLInputElement | null} */ (row?.querySelector(
+      '.contribution-svg-input',
+    ));
+    const svgHint =
+      /** @type {HTMLElement | null} */ (svgInput?.nextElementSibling);
+    const libraryIconCol =
+      /** @type {HTMLDivElement | null} */ (row?.querySelector(
+        '.col.library-icon',
+      ));
 
     const name = nameInput?.value ?? '';
     let drawable = svgInput?.value;
@@ -4948,8 +4400,8 @@ const UI = {
       }
     }
 
-    const existingIcon = App.state.existingIcons.find(
-      (icon) => icon.drawable === drawable,
+    const existingIcon = App.state.existingIcons.find((icon) =>
+      icon.drawable === drawable
     );
     const existsInLibrary = !!existingIcon;
     const isCustom = drawable !== defaultSvg;
@@ -4960,9 +4412,7 @@ const UI = {
     if (svgHint && svgHint.classList.contains('item-sub')) {
       svgHint.textContent = existsInLibrary
         ? 'Name in use.'
-        : isCustom
-        ? 'Custom.'
-        : 'Generated from name.';
+        : (isCustom ? 'Custom.' : 'Generated from name.');
     }
 
     if (libraryIconCol) {
@@ -4983,11 +4433,10 @@ const UI = {
     const issueCounts = this.updateIssues();
     if (issueCounts) {
       const downloadReady = issueCounts.emptyfields === 0 &&
-        issueCounts.invalidsvg === 0 &&
-        issueCounts.startdigit === 0;
+        issueCounts.invalidsvg === 0 && issueCounts.startdigit === 0;
       const btn = document.getElementById('contributionDownloadBtn');
       if (btn) {
-        btn.style.display = App.state.contribution.length > 0 && downloadReady
+        btn.style.display = (App.state.contribution.length > 0 && downloadReady)
           ? ''
           : 'none';
       }
@@ -4996,15 +4445,15 @@ const UI = {
 
   saveContribution() {
     localStorage.setItem(
-      'monocons_contribution',
+      'lawnicons_contribution',
       JSON.stringify(App.state.contribution),
     );
     localStorage.setItem(
-      'monocons_contribution_active',
+      'lawnicons_contribution_active',
       App.state.contributionActive.toString(),
     );
     localStorage.setItem(
-      'monocons_contribution_overrides',
+      'lawnicons_contribution_overrides',
       JSON.stringify(App.state.contributionOverrides),
     );
     if (!App.state.contributionActive) {
@@ -5037,7 +4486,7 @@ const UI = {
     const isCountry = (/** @type {string} */ domain) =>
       ISO_COUNTRIES.has(domain);
     const mode = App.state.domainStatsMode;
-    const population = data._population || {};
+    const population = (data._population) || {};
 
     if (!App.state._domainAvgInstalls) {
       App.state._domainAvgInstalls = {};
@@ -5062,16 +4511,11 @@ const UI = {
 
       // Add global_installs to domain stats for local impact
       for (const [domain, stats] of Object.entries(data)) {
-        if (
-          isCountry(domain) &&
-          stats.global_installs > 0 &&
-          stats.global > 0
-        ) {
+        if (isCountry(domain) && stats.global_installs > 0 && stats.global > 0) {
           const avgGlobalInst = stats.global_installs / stats.global;
           const pop = population[domain] || 1;
           if (avgGlobalInst / 1_000_000 > pop) continue;
-          domainSumsI[domain] = (domainSumsI[domain] || 0) +
-            stats.global_installs;
+          domainSumsI[domain] = (domainSumsI[domain] || 0) + stats.global_installs;
           domainCountsI[domain] = (domainCountsI[domain] || 0) + stats.global;
         }
       }
@@ -5086,13 +4530,7 @@ const UI = {
     /** @type {[string, any, number, number, number][]} */
     let entries = Object.entries(data)
       .filter(([domain]) => isCountry(domain) && domain !== '_population')
-      .map(([domain, stats]) => [
-        domain,
-        stats.done,
-        stats.requests,
-        stats.total,
-        stats.global || 0,
-      ]);
+      .map(([domain, stats]) => [domain, stats.done, stats.requests, stats.total, stats.global || 0]);
 
     if (mode === 'local') {
       entries = entries
@@ -5131,9 +4569,9 @@ const UI = {
       else title.textContent = 'Country distribution';
     }
 
-    const sub = /** @type {HTMLElement} */ (
-      document.querySelector('#domainStatsCard .card-sub')
-    );
+    const sub = /** @type {HTMLElement} */ (document.querySelector(
+      '#domainStatsCard .card-sub',
+    ));
     if (sub) sub.style.display = 'none';
 
     container.innerHTML = Templates.domainStatsCard(entries, max);
@@ -5144,9 +4582,9 @@ const UI = {
 
     container.addEventListener('mousemove', (el) => {
       const e = /** @type {MouseEvent} */ (el);
-      const col = /** @type {HTMLElement} */ (
-        /** @type {HTMLElement} */ (e.target).closest('.domain-col')
-      );
+      const col =
+        /** @type {HTMLElement} */ (/** @type {HTMLElement} */ (e.target)
+          .closest('.domain-col'));
       if (!col) {
         Components.Tooltip.hide(tooltip);
         return;
@@ -5166,7 +4604,7 @@ const UI = {
         mode,
         avgInst,
         pop,
-        globalVal,
+        globalVal
       );
 
       const rect = col.getBoundingClientRect();
@@ -5198,11 +4636,9 @@ const UI = {
     if (rawDays.length > 0) {
       filledDays.push(rawDays[0]);
       for (let i = 1; i < rawDays.length; i++) {
-        const prevDate = /** @type {Date} */ (
-          new Date(
-            filledDays[filledDays.length - 1].date + 'T12:00:00',
-          )
-        );
+        const prevDate = /** @type {Date} */ (new Date(
+          filledDays[filledDays.length - 1].date + 'T12:00:00',
+        ));
         const currDate = new Date(rawDays[i].date + 'T12:00:00');
         while (prevDate.getTime() + 86400000 < currDate.getTime()) {
           prevDate.setTime(prevDate.getTime() + 86400000);
@@ -5225,8 +4661,8 @@ const UI = {
     // Resolved as main line
     const maxRemoved = Math.max(...days.map((d) => d.fulfilled || 0), 1);
     const resolvedPoints = days.map((d, i) => ({
-      x: (i / (days.length - 1)) * 100,
-      y: 100 - ((d.fulfilled || 0) / maxRemoved) * 100,
+      x: i / (days.length - 1) * 100,
+      y: 100 - (d.fulfilled || 0) / maxRemoved * 100,
     }));
 
     const maxAdded = Math.max(...days.map((d) => d.added || 0), 1);
@@ -5242,9 +4678,7 @@ const UI = {
         const cp2x = ((points[i - 1].x + points[i].x) / 2).toFixed(1);
         const cp2y = points[i].y.toFixed(1);
         d += ` C ${cp1x},${cp1y} ${cp2x},${cp2y} ${points[i].x.toFixed(1)},${
-          points[
-            i
-          ].y.toFixed(1)
+          points[i].y.toFixed(1)
         }`;
       }
       return d;
@@ -5281,11 +4715,7 @@ const UI = {
         <span class="chart-label">${lastLabel}</span>
     `;
 
-    container.innerHTML = Templates.activityCard(
-      pathResolved,
-      '',
-      dayLabels,
-    );
+    container.innerHTML = Templates.activityCard(pathResolved, '', dayLabels);
 
     const dotsSvg = container.querySelector('.activity-dots-svg');
     if (dotsSvg) {
@@ -5302,46 +4732,37 @@ const UI = {
         return 3;
       };
 
-      dotsSvg.innerHTML = days
-        .map((d, i) => {
-          const x = ((i / (days.length - 1)) * w).toFixed(1);
-          const added = d.added || 0;
-          if (added === 0) return '';
-          const r = getSize(added);
-          return `<circle cx="${x}" cy="${
-            r + 2
-          }" r="${r}" class="activity-added-dot" />`;
-        })
-        .join('');
+      dotsSvg.innerHTML = days.map((d, i) => {
+        const x = (i / (days.length - 1) * w).toFixed(1);
+        const added = d.added || 0;
+        if (added === 0) return '';
+        const r = getSize(added);
+        return `<circle cx="${x}" cy="${
+          r + 2
+        }" r="${r}" class="activity-added-dot" />`;
+      }).join('');
     }
 
-    const totalFulfilled = days.reduce(
-      (sum, d) => sum + (d.fulfilled || 0),
-      0,
-    );
+    const totalFulfilled = days.reduce((sum, d) => sum + (d.fulfilled || 0), 0);
     const subEl = document.getElementById('activitySub');
     if (subEl) {
       subEl.textContent = `${Utils.compactNumber(totalNew)} new • ${
-        Utils.compactNumber(
-          totalFulfilled,
-        )
+        Utils.compactNumber(totalFulfilled)
       } done`;
     }
 
     const paceEl = document.getElementById('activityPace');
     if (paceEl && App.state.medianTTF !== undefined) {
       paceEl.textContent = `${App.state.medianTTF}d from ask to icon`;
-      paceEl.title =
-        `Median time from request to icon, based on ${App.state.medianTTFCount} fulfilled requests.`;
+      paceEl.title = `Median time from request to icon, based on ${App.state.medianTTFCount} fulfilled requests.`;
     }
 
     /** @type {SVGElement | null} */
     const svg = container.querySelector('.activity-svg');
     if (!svg) return;
 
-    const tooltip = /** @type {HTMLElement | null} */ (
-      container.querySelector('.tooltip')
-    );
+    const tooltip =
+      /** @type {HTMLElement | null} */ (container.querySelector('.tooltip'));
     if (!tooltip) return;
 
     const vLine = document.createElementNS(
@@ -5359,10 +4780,10 @@ const UI = {
 
     svg.addEventListener('mousemove', (e) => {
       const svgRect = svg.getBoundingClientRect();
-      const x = ((e.clientX - svgRect.left) / svgRect.width) * 100;
-      const idx = Math.round((x / 100) * (days.length - 1));
+      const x = (e.clientX - svgRect.left) / svgRect.width * 100;
+      const idx = Math.round(x / 100 * (days.length - 1));
       const clamped = Math.min(days.length - 1, Math.max(0, idx));
-      const snapX = (clamped / (days.length - 1)) * 100;
+      const snapX = clamped / (days.length - 1) * 100;
 
       vLine.setAttribute('x1', snapX.toString());
       vLine.setAttribute('x2', snapX.toString());
@@ -5380,17 +4801,11 @@ const UI = {
 
       const dateParts = days[clamped].date.toString().split('-');
       const formattedDate = `${monthNames[parseInt(dateParts[1]) - 1]} ${
-        parseInt(
-          dateParts[2],
-        )
+        parseInt(dateParts[2])
       }`;
-      const html = Templates.activityTooltip(
-        formattedDate,
-        added,
-        fulfilled,
-      );
+      const html = Templates.activityTooltip(formattedDate, added, fulfilled);
 
-      const left = (snapX / 100) * svgRect.width + 12;
+      const left = snapX / 100 * svgRect.width + 12;
 
       Components.Tooltip.show(tooltip, html, left, 0, container);
     });
@@ -5441,9 +4856,8 @@ const UI = {
    */
   showRowMenu(e, app) {
     App.dom.rowMenu.innerHTML = Templates.rowMenu(app);
-    const trigger = /** @type {HTMLElement} */ (
-      e.target.closest('.ctx-trigger')
-    );
+    const trigger =
+      /** @type {HTMLElement} */ (e.target.closest('.ctx-trigger'));
     const rect = trigger.getBoundingClientRect();
     const menu = App.dom.rowMenu;
 
@@ -5470,14 +4884,11 @@ const UI = {
 
     // Screen filter
     if (App.state.activeScreenFilter) {
-      const screenEntry = Object.entries(App.state.screensData).find(
-        ([_, ids]) =>
-          ids.length === App.state.activeScreenFilter.length &&
-          ids.every((id) => App.state.activeScreenFilter.includes(id)),
+      const screenEntry = Object.entries(App.state.screensData).find(([_, ids]) => 
+        ids.length === App.state.activeScreenFilter.length && 
+        ids.every(id => App.state.activeScreenFilter.includes(id))
       );
-      const screenId = screenEntry
-        ? screenEntry[0].replace(/^scr-0+/, 'scr-')
-        : 'screen';
+      const screenId = screenEntry ? screenEntry[0].replace(/^scr-0+/, 'scr-') : 'screen';
       menu.innerHTML += `
         <div class="ctx-item active" data-action="clear-screen-filter">
           <span class="check-icon">${ICONS.check}</span>
@@ -5487,19 +4898,17 @@ const UI = {
     }
 
     const s = App.state.activeFilters;
-    menu.innerHTML += CONFIG.data.filters
-      .map((id) => {
-        let count = 0;
-        App.state.appTags.forEach((tags) => {
-          if (tags.has(id)) count++;
-        });
-        if (count === 0) return '';
+    menu.innerHTML += CONFIG.data.filters.map((id) => {
+      let count = 0;
+      App.state.appTags.forEach((tags) => {
+        if (tags.has(id)) count++;
+      });
+      if (count === 0) return '';
 
-        const meta = App.state.filterMetadata.get(id);
-        if (!meta) return '';
-        return Templates.mobileFilterItem(id, meta.label, s.has(id));
-      })
-      .join('');
+      const meta = App.state.filterMetadata.get(id);
+      if (!meta) return '';
+      return Templates.mobileFilterItem(id, meta.label, s.has(id));
+    }).join('');
 
     const rect = App.dom.mobileFilterBtn.getBoundingClientRect();
     menu.style.visibility = 'hidden';
@@ -5535,14 +4944,14 @@ const UI = {
       const unf = s.requests || 0;
       const avg = Math.round(domainInstalls[d] / domainInstCounts[d]);
       const pop = POP[d] || 1;
-      localImpact[d] = (unf * avg) / pop;
+      localImpact[d] = unf * avg / pop;
     }
 
     const liValues = Object.values(localImpact).sort((a, b) => a - b);
     const n = liValues.length;
     const q1 = liValues[Math.floor(n / 4)] || 0;
     const q2 = liValues[Math.floor(n / 2)] || 0;
-    const q3 = liValues[Math.floor((3 * n) / 4)] || 0;
+    const q3 = liValues[Math.floor(3 * n / 4)] || 0;
 
     const quartileUrgency = (/** @type {number} */ li) => {
       if (li >= q3) return 1.0;
@@ -5619,8 +5028,7 @@ const UI = {
     const card = document.getElementById('quickPickCard');
     if (!card) return;
 
-    card.style.backgroundImage =
-      `url('${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}')`;
+    card.style.backgroundImage = `url('${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}')`;
     card.style.backgroundSize = 'cover';
     card.style.backgroundPosition = 'center';
     card.style.backgroundRepeat = 'no-repeat';
@@ -5687,10 +5095,9 @@ const UI = {
 
     const grid = container.querySelector('.library-grid');
     if (grid) {
-      grid.innerHTML = matches
-        .slice(0, 20)
-        .map((icon) => Templates.libraryIconCard(icon))
-        .join('');
+      grid.innerHTML = matches.slice(0, 20).map((icon) =>
+        Templates.libraryIconCard(icon)
+      ).join('');
     }
   },
 
@@ -5701,9 +5108,9 @@ const UI = {
   showLibraryIconMenu(e, icon) {
     const menu = App.dom.rowMenu;
     menu.innerHTML = Templates.libraryIconMenu(icon);
-    const target = /** @type {HTMLElement} */ (
-      /** @type {HTMLElement} */ (e.target)?.closest('.library-icon-card')
-    );
+    const target =
+      /** @type {HTMLElement} */ (/** @type {HTMLElement} */ (e.target)
+        ?.closest('.library-icon-card'));
     const rect = target.getBoundingClientRect();
 
     menu.style.visibility = 'hidden';
@@ -5726,19 +5133,13 @@ const UI = {
   closeContextMenu() {
     try {
       /** @type {any} */ (App.dom.sortMenu).hidePopover();
-    } catch {
-      /* no-op*/
-    }
+    } catch { /* no-op*/ }
     try {
       /** @type {any} */ (App.dom.rowMenu).hidePopover();
-    } catch {
-      /* no-op */
-    }
+    } catch { /* no-op */ }
     try {
       /** @type {any} */ (App.dom.mobileFilterMenu).hidePopover();
-    } catch {
-      /* no-op */
-    }
+    } catch { /* no-op */ }
 
     setTimeout(() => {
       App.dom.rowMenu.innerHTML = '';
