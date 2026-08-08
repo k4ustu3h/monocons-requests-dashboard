@@ -23,7 +23,7 @@ jobs:
           python-version: "3.13"
 
       - name: Install dependencies
-        run: pip install requests google-play-scraper lxml Pillow
+        run: pip install requests google-play-scraper lxml Pillow svgelements
 
       - name: Fetch new emails
         env:
@@ -52,6 +52,19 @@ jobs:
       - name: Auto generate tags
         if: steps.prune_requests.outputs.appfilter_changed == 'true'
         run: python scripts/generate_auto_tags.py src/assets/requests.json src/assets/filters src/assets/appfilter.xml
+
+      - name: Clone Monocons SVGs
+        run: |
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/k4ustu3h/monocons-android.git monocons-temp
+          cd monocons-temp
+          git sparse-checkout set svgs
+          cd ..
+          mkdir -p src/assets/qa_issues/svgs
+          cp -r monocons-temp/svgs/* src/assets/qa_issues/svgs/
+          rm -rf monocons-temp
+
+      - name: Run incremental review
+        run: python scripts/incremental_review.py
 
       - name: Commit and push changes
         if: steps.parse_emails.outputs.emails_parsed == 'true' || steps.prune_requests.outputs.requests_changed == 'true' || github.event_name == 'workflow_dispatch'
