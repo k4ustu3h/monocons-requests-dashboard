@@ -1,15 +1,7 @@
 {
-  "count": 709,
-  "lastUpdate": "2026-08-07",
+  "count": 696,
+  "lastUpdate": "2026-08-08",
   "apps": [
-    {
-      "drawable": "oroaming",
-      "label": "ORoaming",
-      "componentName": "com.redteamobile.roaming/com.redteamobile.roaming.MainActivity",
-      "requestCount": 6,
-      "firstAppearance": 1784732692.0,
-      "lastRequested": 1785353106.0
-    },
     {
       "drawable": "game_center",
       "label": "Game Center",
@@ -70,15 +62,6 @@
       "firstAppearance": 1784613518.0,
       "lastRequested": 1785567577.0,
       "installs": "10,000+"
-    },
-    {
-      "drawable": "backdrops",
-      "label": "Backdrops",
-      "componentName": "com.backdrops.wallpapers/com.backdrops.wallpapers.WelcomeActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1785176748.0,
-      "installs": "5,000,000+"
     },
     {
       "drawable": "icon_8",
@@ -184,15 +167,6 @@
       "firstAppearance": 1784613518.0,
       "lastRequested": 1785814905.0,
       "installs": "10,000+"
-    },
-    {
-      "drawable": "ps_app",
-      "label": "PS App",
-      "componentName": "com.scee.psxandroid/com.scee.psxandroid.activity.TopActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784876456.0,
-      "lastRequested": 1785814905.0,
-      "installs": "100,000,000+"
     },
     {
       "drawable": "unnamed_icon_2_1",
@@ -338,14 +312,6 @@
       "firstAppearance": 1784544069.0,
       "lastRequested": 1784544069.0,
       "installs": "10,000+"
-    },
-    {
-      "drawable": "rustdesk",
-      "label": "RustDesk",
-      "componentName": "com.carriez.flutter_hbb/com.carriez.flutter_hbb.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784544069.0,
-      "lastRequested": 1784544069.0
     },
     {
       "drawable": "unnamed_icon",
@@ -1043,15 +1009,6 @@
       "firstAppearance": 1784694557.0,
       "lastRequested": 1784694557.0,
       "installs": "10,000+"
-    },
-    {
-      "drawable": "hbo_max",
-      "label": "HBO Max",
-      "componentName": "com.wbd.stream/com.wbd.fuse.appcore.FuseActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1784694557.0,
-      "installs": "100,000,000+"
     },
     {
       "drawable": "hsbc_mexico",
@@ -1912,15 +1869,6 @@
       "installs": "100,000+"
     },
     {
-      "drawable": "linkhub_2",
-      "label": "LinkHub",
-      "componentName": "com.amrdeveloper.linkhub/com.amrdeveloper.linkhub.ui.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784953398.0,
-      "lastRequested": 1784953398.0,
-      "installs": "5,000+"
-    },
-    {
       "drawable": "smart_tutor_2",
       "label": "Smart Tutor",
       "componentName": "com.rsupport.rs.activity.rsupport.aas2/com.rsupport.rs.activity.edit.IntroActivity",
@@ -2640,15 +2588,6 @@
       "firstAppearance": 1784483478.0,
       "lastRequested": 1784483478.0,
       "installs": "100,000+"
-    },
-    {
-      "drawable": "indeed",
-      "label": "Indeed",
-      "componentName": "com.indeed.android.jobsearch/com.indeed.android.jobsearch.LaunchActivity",
-      "requestCount": 1,
-      "firstAppearance": 1784483478.0,
-      "lastRequested": 1784483478.0,
-      "installs": "100,000,000+"
     },
     {
       "drawable": "ingv",
@@ -3681,15 +3620,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "kick",
-      "label": "Kick",
-      "componentName": "com.kick.mobile/com.kick.mobile.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785353106.0,
-      "lastRequested": 1785353106.0,
-      "installs": "50,000,000+"
-    },
-    {
       "drawable": "skyscanner",
       "label": "Skyscanner",
       "componentName": "net.skyscanner.android.main/net.skyscanner.shell.ui.activity.SplashActivity",
@@ -3956,15 +3886,6 @@
       "firstAppearance": 1785583786.0,
       "lastRequested": 1785583786.0,
       "installs": "500,000,000+"
-    },
-    {
-      "drawable": "free_fire",
-      "label": "Free Fire",
-      "componentName": "com.dts.freefireth/com.dts.freefireth.FFMainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785583786.0,
-      "lastRequested": 1785583786.0,
-      "installs": "1,000,000,000+"
     },
     {
       "drawable": "mindustry",
@@ -4350,15 +4271,6 @@
       "lastRequested": 1785641224.0
     },
     {
-      "drawable": "bing_2",
-      "label": "Bing",
-      "componentName": "com.microsoft.bing/com.microsoft.sapphire.app.main.SapphireMainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785641224.0,
-      "lastRequested": 1785641224.0,
-      "installs": "100,000,000+"
-    },
-    {
       "drawable": "calendar",
       "label": "Calendar",
       "componentName": "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias",
@@ -4428,15 +4340,6 @@
       "lastRequested": 1785641224.0
     },
     {
-      "drawable": "free_fire_max",
-      "label": "Free Fire MAX",
-      "componentName": "com.dts.freefiremax/com.dts.freefireth.FFMainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785641224.0,
-      "lastRequested": 1785641224.0,
-      "installs": "500,000,000+"
-    },
-    {
       "drawable": "indie_2",
       "label": "INDIE",
       "componentName": "com.indusind.indie/com.indusind.indie.launcher_c29ee5c28889ac705b354b3d105de8a7b80866483f0b36e1e78e27b22462217b",
@@ -4458,15 +4361,6 @@
       "drawable": "ippb_mobile_2",
       "label": "IPPB Mobile",
       "componentName": "com.iexceed.appzillon.ippbMB/com.iexceed.appzillon.ippbMB.AppzillonMainScreen",
-      "requestCount": 1,
-      "firstAppearance": 1785641224.0,
-      "lastRequested": 1785641224.0,
-      "installs": "100,000,000+"
-    },
-    {
-      "drawable": "limeroad",
-      "label": "Limeroad",
-      "componentName": "com.shopping.limeroad/com.shopping.limeroad.Launcher2Activity",
       "requestCount": 1,
       "firstAppearance": 1785641224.0,
       "lastRequested": 1785641224.0,
@@ -4531,15 +4425,6 @@
       "requestCount": 1,
       "firstAppearance": 1785641224.0,
       "lastRequested": 1785641224.0
-    },
-    {
-      "drawable": "shopsy_2",
-      "label": "Shopsy",
-      "componentName": "com.flipkart.shopsy/com.flipkart.shopsy.SplashActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785641224.0,
-      "lastRequested": 1785641224.0,
-      "installs": "100,000,000+"
     },
     {
       "drawable": "shreelather_2",
@@ -4647,15 +4532,6 @@
       "firstAppearance": 1785638115.0,
       "lastRequested": 1785638115.0,
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "alibaba_com",
-      "label": "Alibaba.com",
-      "componentName": "com.alibaba.intl.android.apps.poseidon/com.alibaba.intl.android.apps.poseidon.app.activity.ActivityMainMaterial",
-      "requestCount": 1,
-      "firstAppearance": 1785638115.0,
-      "lastRequested": 1785638115.0,
-      "installs": "500,000,000+"
     },
     {
       "drawable": "animetail",
@@ -6098,15 +5974,6 @@
       "installs": "5,000,000+"
     },
     {
-      "drawable": "walmart",
-      "label": "Walmart",
-      "componentName": "com.walmart.android/com.walmart.glass.integration.splash.SplashActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785857238.0,
-      "lastRequested": 1785857238.0,
-      "installs": "100,000,000+"
-    },
-    {
       "drawable": "wvlt_weather_2",
       "label": "WVLT Weather",
       "componentName": "com.wvlt.android.weather/com.wsi.android.weather.ui.SplashScreen",
@@ -6167,6 +6034,24 @@
       "firstAppearance": 1785880321.0,
       "lastRequested": 1785880321.0,
       "installs": "500,000,000+"
+    },
+    {
+      "drawable": "mathway",
+      "label": "Mathway",
+      "componentName": "com.bagatrix.mathway.android/com.chegg.feature.mathway.ui.splash.SplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1786218186.0,
+      "lastRequested": 1786218186.0,
+      "installs": "50,000,000+"
+    },
+    {
+      "drawable": "pdf_merge_2",
+      "label": "PDF Merge",
+      "componentName": "com.benzveen.utility.pdftool/com.benzveen.utility.pdftool.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1786218186.0,
+      "lastRequested": 1786218186.0,
+      "installs": "5,000,000+"
     }
   ]
 }

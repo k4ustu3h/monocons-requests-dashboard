@@ -7,13 +7,6 @@
     "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonpay.AmazonPayHomeActivityAlias": 3,
     "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 3
   },
-  "com.redteamobile.roaming/com.redteamobile.roaming.MainActivity": {
-    "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonpay.AmazonPayHomeActivityAlias": 3,
-    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 3,
-    "th.co.truemoney.wallet/th.co.truemoney.wallet.activity.LoadingScreenActivity": 2,
-    "th.or.dga.citizenportal/th.or.dga.citizenportal.MainActivity": 2,
-    "de.marmaro.krt.ffupdater/de.marmaro.krt.ffupdater.activity.main.MainActivity": 2
-  },
   "com.oplus.aimemory/com.oplus.aimemory.MainActivity": {
     "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonpay.AmazonPayHomeActivityAlias": 3,
     "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 3
@@ -422,23 +415,6 @@
     "it.alfonsino.delivery/it.alfonsino.delivery.SplashScreen": 1,
     "it.pagopa.io.app/it.pagopa.io.app.MainActivity": 1
   },
-  "com.indeed.android.jobsearch/com.indeed.android.jobsearch.LaunchActivity": {
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1,
-    "at.bitfire.davdroid/at.bitfire.davdroid.ui.AccountsActivity": 1,
-    "ua.acclorite.book_story/ua.acclorite.book_story.presentation.main.MainActivity": 1,
-    "it.feltrinelli/it.feltrinelli.ui.splash.SplashActivity": 1,
-    "it.iliad/it.iliad.presentation.MainActivity": 1,
-    "it.ingv.terremoti/it.dimension.ingvterremoti.ui.MainActivity": 1,
-    "fr.doctolib.www/fr.doctolib.www.MainActivity": 1,
-    "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 1,
-    "it.anm.anm/it.anm.anm.MainActivity": 1,
-    "it.italotreno/it.italotreno.MainActivity": 1,
-    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.MainActivity": 1,
-    "it.la7.it/com.tns.NativeScriptActivity": 1,
-    "it.in4matic.adisurceat/it.in4matic.flutter_custom_app.MainActivity": 1,
-    "it.alfonsino.delivery/it.alfonsino.delivery.SplashScreen": 1,
-    "it.pagopa.io.app/it.pagopa.io.app.MainActivity": 1
-  },
   "com.baluchon.app/com.comptesvacances.app.MainActivity": {
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1,
     "at.bitfire.davdroid/at.bitfire.davdroid.ui.AccountsActivity": 1,
@@ -670,9 +646,6 @@
   "com.qtrun.QuickTest/com.qtrun.nsg.LauncherActivity": {
     "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2
   },
-  "com.carriez.flutter_hbb/com.carriez.flutter_hbb.MainActivity": {
-    "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2
-  },
   "com.kin.easynotes/com.kin.easynotes.presentation.MainActivity": {
     "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 2
   },
@@ -880,16 +853,6 @@
     "ch.protonmail.android/ch.protonmail.android.MainActivity": 1,
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1,
     "ru.karasevm.privatednstoggle/ru.karasevm.privatednstoggle.ui.MainActivity": 1
-  },
-  "com.backdrops.wallpapers/com.backdrops.wallpapers.WelcomeActivity": {
-    "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
-    "md.obsidian/md.obsidian.MainActivity": 2,
-    "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1,
-    "ch.protonmail.android/ch.protonmail.android.MainActivity": 1,
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1,
-    "ru.karasevm.privatednstoggle/ru.karasevm.privatednstoggle.ui.MainActivity": 1,
-    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
-    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 1
   },
   "com.gazlaws.codeboard/com.gazlaws.codeboard.MainActivity": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
@@ -1191,13 +1154,6 @@
     "be.mygod.datasimtile/be.mygod.datasimtile.SimSettingsActivity": 1,
     "mx.tokafintech.paypay/com.yak.wallet.SplashActivityAlias": 1,
     "mx.pillofon/mx.diri.components.SplashScreenActivity": 1
-  },
-  "com.wbd.stream/com.wbd.fuse.appcore.FuseActivity": {
-    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 2,
-    "st.android.imsspublico/crc642176304cdb761b92.Splash": 2,
-    "be.mygod.datasimtile/be.mygod.datasimtile.SimSettingsActivity": 1,
-    "mx.tokafintech.paypay/com.yak.wallet.SplashActivityAlias": 1,
-    "mx.pillofon/mx.diri.components.SplashScreenActivity": 2
   },
   "com.qcymall.googleearphonesetup/com.qcymall.earphonesetup.ui.FirstStartActivityV2": {
     "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 2,
@@ -1679,12 +1635,6 @@
     "pl.jmpolska.clos0.mojabiedronka/pl.jmpolska.mojabiedronka.presentation.flows.main.MainActivity": 2,
     "pl.onet.poczta/pl.onet.poczta.MainActivity": 2,
     "pl.extollite.bedrocktogetherapp/pl.extollite.bedrocktogetherapp.MainActivity": 2
-  },
-  "com.scee.psxandroid/com.scee.psxandroid.activity.TopActivity": {
-    "pl.jmpolska.clos0.mojabiedronka/pl.jmpolska.mojabiedronka.presentation.flows.main.MainActivity": 2,
-    "pl.onet.poczta/pl.onet.poczta.MainActivity": 2,
-    "pl.extollite.bedrocktogetherapp/pl.extollite.bedrocktogetherapp.MainActivity": 2,
-    "ru.tech.imageresizershrinker/com.t8rin.imagetoolbox.app.presentation.AppActivity": 1
   },
   "com.miui.cleaner.go/com.miui.cleaner.MainActivity": {
     "pl.jmpolska.clos0.mojabiedronka/pl.jmpolska.mojabiedronka.presentation.flows.main.MainActivity": 2,
@@ -2412,10 +2362,6 @@
     "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
     "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
   },
-  "com.flipkart.shopsy/com.flipkart.shopsy.SplashActivity": {
-    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
-    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
-  },
   "com.iexceed.appzillon.ippbMB/com.iexceed.appzillon.ippbMB.AppzillonMainScreen": {
     "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
     "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
@@ -2488,14 +2434,6 @@
     "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
     "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
   },
-  "com.microsoft.bing/com.microsoft.sapphire.app.main.SapphireMainActivity": {
-    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
-    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
-  },
-  "com.shopping.limeroad/com.shopping.limeroad.Launcher2Activity": {
-    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
-    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
-  },
   "com.jndapp.depth.live.wallpaper/com.jndapp.depth.live.wallpaper.MainActivity": {
     "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
     "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
@@ -2524,10 +2462,6 @@
     "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
     "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
   },
-  "com.dts.freefiremax/com.dts.freefireth.FFMainActivity": {
-    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
-    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
-  },
   "com.xodo.pdf.reader/viewer.CompleteReaderMainActivity": {
     "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
     "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
@@ -2545,18 +2479,6 @@
   "com.inod.screenofftimer/com.inod.screenofftimer.MainActivity": {
     "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 1,
     "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 1
-  },
-  "com.alibaba.intl.android.apps.poseidon/com.alibaba.intl.android.apps.poseidon.app.activity.ActivityMainMaterial": {
-    "br.gov.caixa.fgts.trabalhador/br.gov.caixa.fgts.trabalhador.ui.login.compose.SplashFgtsActivity": 1,
-    "br.gov.meugovbr/br.gov.meugovbr.MainActivity": 1,
-    "br.com.brainweb.ifood/br.com.brainweb.ifood.AppIcon": 1,
-    "br.com.intermedium/br.com.intermedium.splash.SplashActivity": 1,
-    "br.com.correios.preatendimento/br.com.correios.preatendimento.MainActivity": 1,
-    "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 1,
-    "br.com.brisanet.minhabrisa/br.com.brisanet.minhabrisa.MainActivity": 1,
-    "br.com.timbrasil.meutim/br.com.timbrasil.meutim.MainActivityDefault": 1,
-    "br.com.meliuz/br.com.meliuz.MainActivity": 1,
-    "br.com.neon/br.lXkha6.njxV17.c4JtS0.duA2M6.zcaTD1.iN6jx0": 1
   },
   "com.SinkHoleStudio.OguForest/com.unity3d.player.UnityPlayerActivity": {
     "br.gov.caixa.fgts.trabalhador/br.gov.caixa.fgts.trabalhador.ui.login.compose.SplashFgtsActivity": 1,
@@ -3675,10 +3597,6 @@
     "cm.aptoide.pt/cm.aptoide.pt.view.MainActivity": 1
   },
   "com.tracfone.simplemobile.myaccount/com.tracfone.generic.myaccountcommonui.activity.launch.PreLaunchActivity": {
-    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
-    "cm.aptoide.pt/cm.aptoide.pt.view.MainActivity": 1
-  },
-  "com.walmart.android/com.walmart.glass.integration.splash.SplashActivity": {
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 1,
     "cm.aptoide.pt/cm.aptoide.pt.view.MainActivity": 1
   },
