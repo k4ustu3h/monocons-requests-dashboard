@@ -1,6 +1,6 @@
 {
-  "count": 682,
-  "lastUpdate": "2026-08-09",
+  "count": 672,
+  "lastUpdate": "2026-08-10",
   "apps": [
     {
       "drawable": "game_center",
@@ -561,14 +561,6 @@
       "installs": "500,000+"
     },
     {
-      "drawable": "huawei_health",
-      "label": "Huawei Health",
-      "componentName": "com.huawei.health/com.huawei.health.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784613518.0,
-      "lastRequested": 1784613518.0
-    },
-    {
       "drawable": "laxmi_sunrise_mobile_banking",
       "label": "Laxmi Sunrise Mobile Banking",
       "componentName": "com.laxmibank.mobilemoney/com.laxmibank.mobilemoney.MainActivity",
@@ -629,15 +621,6 @@
       "firstAppearance": 1784613518.0,
       "lastRequested": 1784613518.0,
       "installs": "1,000,000+"
-    },
-    {
-      "drawable": "ncell_app",
-      "label": "Ncell App",
-      "componentName": "com.mventus.ncell.activity/com.mventus.ncell.activity.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784613518.0,
-      "lastRequested": 1784613518.0,
-      "installs": "10,000,000+"
     },
     {
       "drawable": "nepali_news",
@@ -1005,15 +988,6 @@
       "installs": "5,000,000+"
     },
     {
-      "drawable": "moto_unplugged",
-      "label": "Moto Unplugged",
-      "componentName": "com.motorola.om/com.motorola.om.presentation.LauncherActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1784694557.0,
-      "installs": "100,000,000+"
-    },
-    {
       "drawable": "photon_camera",
       "label": "Photon Camera",
       "componentName": "com.meitu.meiyancamera/com.hinnka.mycamera.MainActivity",
@@ -1059,15 +1033,6 @@
       "installs": "5,000,000+"
     },
     {
-      "drawable": "rappi",
-      "label": "Rappi",
-      "componentName": "com.grability.rappi/com.rappi.discovery.onboarding.impl.activities.RappiMainEntryActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1784694557.0,
-      "installs": "100,000,000+"
-    },
-    {
       "drawable": "running",
       "label": "Running",
       "componentName": "com.runtastic.android/com.runtastic.android.activities.StartActivity",
@@ -1075,14 +1040,6 @@
       "firstAppearance": 1784694557.0,
       "lastRequested": 1784694557.0,
       "installs": "50,000,000+"
-    },
-    {
-      "drawable": "rush",
-      "label": "Rush",
-      "componentName": "com.shub39.rush/com.shub39.rush.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1784694557.0
     },
     {
       "drawable": "aosmium",
@@ -1739,14 +1696,6 @@
       "firstAppearance": 1784876456.0,
       "lastRequested": 1784876456.0,
       "installs": "100,000+"
-    },
-    {
-      "drawable": "spotui",
-      "label": "spotui",
-      "componentName": "com.music.spotui/com.music.spotui.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784876456.0,
-      "lastRequested": 1784876456.0
     },
     {
       "drawable": "top_games",
@@ -4579,15 +4528,6 @@
       "installs": "1,000,000+"
     },
     {
-      "drawable": "dimo",
-      "label": "Dimo",
-      "componentName": "com.motorola.ccc.notification/com.motorola.engageapp.ui.MotopayActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785638115.0,
-      "lastRequested": 1785638115.0,
-      "installs": "1,000,000,000+"
-    },
-    {
       "drawable": "drastic",
       "label": "DraStic",
       "componentName": "com.dsemu.drastic/com.dsemu.drastic.DraSticActivity",
@@ -4700,24 +4640,6 @@
       "lastRequested": 1785638115.0
     },
     {
-      "drawable": "hello_feed",
-      "label": "Hello Feed",
-      "componentName": "com.motorola.ccc.notification/com.motorola.engageapp.ui.HelloFeedActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785638115.0,
-      "lastRequested": 1785638115.0,
-      "installs": "1,000,000,000+"
-    },
-    {
-      "drawable": "helloyou",
-      "label": "helloYOU",
-      "componentName": "com.motorola.ccc.notification/com.motorola.loyaltywebview.LoyaltyActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785638115.0,
-      "lastRequested": 1785638115.0,
-      "installs": "1,000,000,000+"
-    },
-    {
       "drawable": "instant_armory",
       "label": "Instant Armory",
       "componentName": "air.com.trapStreetStudios.instantArmory/air.com.trapStreetStudios.instantArmory.AIRAppEntry",
@@ -4811,15 +4733,6 @@
       "firstAppearance": 1785638115.0,
       "lastRequested": 1785638115.0,
       "installs": "100,000,000+"
-    },
-    {
-      "drawable": "moto_store",
-      "label": "Moto Store",
-      "componentName": "com.motorola.ccc.notification/com.motorola.engageapp.ui.MarketplaceActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785638115.0,
-      "lastRequested": 1785638115.0,
-      "installs": "1,000,000,000+"
     },
     {
       "drawable": "meliuz",
