@@ -23,10 +23,6 @@
       "existing_drawable": "generic_notes"
     },
     {
-      "id": "com.rianixia.camerb/com.android.camera.CameraLauncher",
-      "existing_drawable": "samsung_camera"
-    },
-    {
       "id": "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias",
       "existing_drawable": "calendar"
     },
@@ -45,6 +41,18 @@
     {
       "id": "com.myos.camera/com.myos.camera.activity.CameraActivity",
       "existing_drawable": "samsung_camera"
+    },
+    {
+      "id": "com.rianixia.camerb/com.android.camera.CameraLauncher",
+      "existing_drawable": "samsung_camera"
+    },
+    {
+      "id": "com.files.shortcut/com.files.Archivos",
+      "existing_drawable": "generic_files"
+    },
+    {
+      "id": "dev.materii.gloom/gloom.icons.classic.Main",
+      "existing_drawable": "gloom"
     }
   ]
 }
