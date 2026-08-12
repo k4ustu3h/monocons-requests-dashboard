@@ -753,7 +753,8 @@
   },
   "com.noodlecake.altosodyssey/com.unity3d.player.UnityPlayerActivity": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
-    "md.obsidian/md.obsidian.MainActivity": 1
+    "md.obsidian/md.obsidian.MainActivity": 2,
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1
   },
   "com.playdigious.deadcells.mobile/com.playdigious.deadcells.mobile.DeadCellsLoading": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 2,
@@ -991,9 +992,6 @@
   "com.streetwriters.notesnook/com.streetwriters.notesnook.MainActivity": {
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 3
   },
-  "com.ritesh.cashiro/com.ritesh.cashiro.MainActivityOriginal": {
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 3
-  },
   "com.jndapp.nothing.widgets.pack/com.jndapp.nothing.widgets.pack.MainActivity": {
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 3
   },
@@ -1125,11 +1123,17 @@
     "mx.pillofon/mx.diri.components.SplashScreenActivity": 3
   },
   "io.github.samolego.canta/io.github.samolego.canta.MainActivity": {
-    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 3,
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 4,
     "st.android.imsspublico/crc642176304cdb761b92.Splash": 2,
     "be.mygod.datasimtile/be.mygod.datasimtile.SimSettingsActivity": 2,
     "mx.tokafintech.paypay/com.yak.wallet.SplashActivityAlias": 1,
-    "mx.pillofon/mx.diri.components.SplashScreenActivity": 3
+    "mx.pillofon/mx.diri.components.SplashScreenActivity": 3,
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
   },
   "com.robtopx.geometryjump/com.robtopx.geometryjump.GeometryJump": {
     "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 3,
@@ -1230,11 +1234,15 @@
     "mx.pillofon/mx.diri.components.SplashScreenActivity": 3
   },
   "com.Sitio/mx.profuturo.profuturomvil.SplashScreen": {
-    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 3,
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 4,
     "st.android.imsspublico/crc642176304cdb761b92.Splash": 2,
     "be.mygod.datasimtile/be.mygod.datasimtile.SimSettingsActivity": 2,
     "mx.tokafintech.paypay/com.yak.wallet.SplashActivityAlias": 1,
-    "mx.pillofon/mx.diri.components.SplashScreenActivity": 3
+    "mx.pillofon/mx.diri.components.SplashScreenActivity": 3,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
   },
   "com.motorola.timeweatherwidget/com.motorola.commandcenter.MainActivity": {
     "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 3,
@@ -1468,7 +1476,9 @@
     "ua.privatbank.ap24/ua.privatbank.ap24v6.LauncherAliasDefault": 3,
     "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 3,
     "pl.nask.mobywatel/pl.gov.mc.fringers.mobywatel.MainActivity": 3,
-    "ua.gov.reserveplus/ua.gov.reserveplus.MainActivity": 3
+    "ua.gov.reserveplus/ua.gov.reserveplus.MainActivity": 3,
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
   },
   "com.justgym.mobile/com.cityfit.mobile.presentation.screen.EntryActivity": {
     "pl.zabka.apb2c/pl.zabka.app.ui.TrikiSplashZappkaActivityTriki": 3,
@@ -2197,19 +2207,6 @@
     "md.obsidian/md.obsidian.MainActivity": 2,
     "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 2
   },
-  "com.google.android.apps.giant/com.google.android.apps.giant.flutter.HostActivity": {
-    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
-    "md.obsidian/md.obsidian.MainActivity": 2,
-    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 2,
-    "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 1,
-    "br.com.correios.preatendimento/br.com.correios.preatendimento.MainActivity": 1,
-    "br.com.neon/br.lXkha6.njxV17.c4JtS0.duA2M6.zcaTD1.iN6jx0": 1,
-    "jp.pokemon.pokemontcgp/com.unity3d.player.UnityPlayerActivity": 1,
-    "br.com.serasaexperian.consumidor/br.com.serasaexperian.consumidor.onboarding.features.splash.view.SplashScreenActivity": 1,
-    "br.com.brainweb.ifood/br.com.brainweb.ifood.AppIcon": 1,
-    "br.com.brisanet.minhabrisa/br.com.brisanet.minhabrisa.MainActivity": 1,
-    "br.gov.dataprev.sinefacil/br.gov.dataprev.sinefacil.MainActivity": 1
-  },
   "rikka.appops/rikka.appops.home.HomeActivity": {
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
     "md.obsidian/md.obsidian.MainActivity": 2,
@@ -2244,14 +2241,8 @@
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
     "md.obsidian/md.obsidian.MainActivity": 2,
     "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 2,
-    "in.fudr.nbc/in.fudr.nbc.MainActivity": 1
-  },
-  "com.google.android.apps.credentialmanager/com.google.android.apps.credentialmanager.launcher.LauncherActivity": {
-    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
-    "md.obsidian/md.obsidian.MainActivity": 2,
-    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 2,
-    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 2,
-    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 2
+    "in.fudr.nbc/in.fudr.nbc.MainActivity": 1,
+    "cm.aptoide.pt/com.aptoide.android.aptoidegames.MainActivity": 1
   },
   "com.google.android.tv.remote/com.google.android.tv.remote.RemoteActivity": {
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
@@ -2291,7 +2282,9 @@
     "uk.co.openweather/uk.co.openweather.MainActivity": 2
   },
   "com.miui.securitycenter/com.miui.securityscan.MainActivity": {
-    "uk.co.openweather/uk.co.openweather.MainActivity": 2
+    "uk.co.openweather/uk.co.openweather.MainActivity": 2,
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
   },
   "com.iudesk.android.photo.editor/app.activity.MainActivity": {
     "uk.co.openweather/uk.co.openweather.MainActivity": 2
@@ -2326,7 +2319,9 @@
     "uk.co.openweather/uk.co.openweather.MainActivity": 2
   },
   "com.android.thememanager/com.android.thememanager.ThemeResourceTabActivity": {
-    "uk.co.openweather/uk.co.openweather.MainActivity": 2
+    "uk.co.openweather/uk.co.openweather.MainActivity": 2,
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
   },
   "com.thirtytwo.steps/com.thirtytwo.steps.MainActivity": {
     "uk.co.openweather/uk.co.openweather.MainActivity": 2
@@ -3072,7 +3067,9 @@
     "br.com.catho.app.vagas.empregos/com.catho.app.feature.splash.view.SplashActivity": 1,
     "br.gov.caixa.tem/br.gov.caixa.tem.ui.activities.SplashScreenAnimation": 1,
     "br.gov.datasus.cnsdigital/br.gov.datasus.cnsdigital.MainActivity": 1,
-    "us.avenue/us.uGZSp9.sACtW1": 1
+    "us.avenue/us.uGZSp9.sACtW1": 1,
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
   },
   "com.mc.alexawidget/com.mc.alexawidget.ui.MainActivity": {
     "br.jus.tse.eleitoral.etitulo/br.jus.tse.eleitoral.etitulo.MainActivity": 1,
@@ -3565,7 +3562,9 @@
   },
   "org.freedownloadmanager.fdm/org.freedownloadmanager.fdm.MyActivity": {
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
-    "cm.aptoide.pt/cm.aptoide.pt.view.MainActivity": 2
+    "cm.aptoide.pt/cm.aptoide.pt.view.MainActivity": 2,
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
   },
   "com.tracfone.tracfone.myaccount/com.tracfone.generic.myaccountcommonui.activity.launch.PreLaunchActivity": {
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
@@ -3719,19 +3718,11 @@
     "fr.kanis.foldio/fr.kanis.foldio.MainActivity": 1,
     "de.lijucay.damier/de.lijucay.damier.MainActivity": 1
   },
-  "com.markel.flowstate/com.markel.flowstate.MainActivity": {
-    "fr.kanis.foldio/fr.kanis.foldio.MainActivity": 1,
-    "de.lijucay.damier/de.lijucay.damier.MainActivity": 1
-  },
   "com.gabedeveloper.cuphead/com.unity3d.player.UnityPlayerActivity": {
     "fr.kanis.foldio/fr.kanis.foldio.MainActivity": 1,
     "de.lijucay.damier/de.lijucay.damier.MainActivity": 1
   },
   "com.wstxda.gsl/com.wstxda.gsl.shortcut.games.CricketShortcut": {
-    "fr.kanis.foldio/fr.kanis.foldio.MainActivity": 1,
-    "de.lijucay.damier/de.lijucay.damier.MainActivity": 1
-  },
-  "com.wstxda.gsl/com.wstxda.gsl.shortcut.FinanceShortcut": {
     "fr.kanis.foldio/fr.kanis.foldio.MainActivity": 1,
     "de.lijucay.damier/de.lijucay.damier.MainActivity": 1
   },
@@ -4376,7 +4367,250 @@
   },
   "st.android.imsspublico/crc642176304cdb761b92.Splash": {
     "mx.pillofon/mx.diri.components.SplashScreenActivity": 1,
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 2,
+    "be.mygod.datasimtile/be.mygod.datasimtile.SimSettingsActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "com.gaijingames.wtm/com.gaijingames.wtm.wtm": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "slowscript.warpinator/slowscript.warpinator.MainActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "net.one97.selfcare.globacom/net.one97.selfcare.globacom.authentication.SplashScreen": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "net.apex_designs.payback2/net.apex_designs.payback2.PaybackActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "com.airtel.africa.selfcare/com.airtel.africa.selfcare.feature.login.activity.LoginActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "com.Roika.Darkrise/com.unity3d.player.UnityPlayerActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "com.noaisu.loliSnatcher/com.noaisu.loliSnatcher.MainActivityAlias_LoSn": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "info.dvkr.screenstream/info.dvkr.screenstream.SingleActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "com.deniscerri.ytdl/com.deniscerri.ytdl.Default": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "juloo.keyboard2/juloo.keyboard2.LauncherActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "com.ninauth.mobile/com.ninauth.mobile.activity.MainActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "com.miui.huanji/com.miui.huanji.MainActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "team.opay.pay/team.opay.pay.home.DexloadActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "com.Arturo254.opentune/com.arturo254.opentune.MainActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "io.github.landwarderer.futon/io.github.landwarderer.futon.main.ui.MainActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "com.codedead.advancedpassgen/com.codedead.advancedpassgen.MainActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "com.mardous.booming/com.mardous.booming.activities.MainActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "com.aldagames.zombieshooter/com.unity3d.player.UnityPlayerActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "com.termux.api/com.termux.api.activities.TermuxAPILauncherActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "com.ohbibi.fps/com.ohbibi.AndroidActivity.OhbibiUnityPlayerActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "com.nekki.shadowfight3/com.nekki.unityplugins.NekkiNativeActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "nextapp.fx/nextapp.fx.ui.ExplorerActivity": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "livio.pack.lang.en_US/livio.pack.lang.en_US.DictionaryView": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "com.microsoft.launcher/com.microsoft.launcher.Launcher": {
+    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
+    "md.obsidian/md.obsidian.MainActivity": 1
+  },
+  "com.llmproxy/com.llmproxy.MainActivity": {
     "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
-    "be.mygod.datasimtile/be.mygod.datasimtile.SimSettingsActivity": 1
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "com.moonshot.kimichat/com.moonshot.kimichat.MainActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "org.chromium.webapk.a8e7efffbf377b441_v2/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "org.chromium.webapk.aee732dd30a4136cc_v2/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "org.torproject.android/org.torproject.android.OrbotActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "com.facebook.pages.app/com.facebook.pages.app.auth.PagesManagerLoginActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "com.infonavit.micuentainfonavit/com.infonavit.micuentainfonavit.ui.login.SplashActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "com.coppel.coppelapp/lBX5d8.ju6n46.iywM39.chi1e3.xqKkP8.p645Q4": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "aenu.ax360e.free/aenu.ax360e.MainActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "com.offsec.nethunter.store/org.fdroid.fdroid.views.main.MainActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "com.att.miatt/com.comviva.webaxn.ui.WebAxnActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "su.sniff.cepter/su.sniff.cepter.SplashActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "com.pagopopmobile/com.pagopopmobile.MainActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "com.stripe.android.dashboard/com.stripe.android.dashboard.MainActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "com.mi.earphone/com.xiaomi.fitness.login.SplashActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "com.happymod.apk/com.happymod.apk.hmmvp.main.LaunchActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "org.revengi.app/org.revengi.app.MainActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "host.exp.exponent/host.exp.exponent.experience.HomeActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "com.offsec.nethunter.kex/com.iiordanov.bVNC.bVNC": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "com.android.pedometer/com.android.pedometer.MainActivity": {
+    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
+    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
+    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
+    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
+  },
+  "com.diskwalaapp/com.diskwalaapp.MainActivity": {
+    "cm.aptoide.pt/com.aptoide.android.aptoidegames.MainActivity": 1
   }
 }

@@ -31,10 +31,6 @@
       "existing_drawable": "app_manager"
     },
     {
-      "id": "com.wstxda.gsl/com.wstxda.gsl.shortcut.FinanceShortcut",
-      "existing_drawable": "weather_google_shortcuts_launcher"
-    },
-    {
       "id": "com.alensw.PicFolder/com.alensw.PicFolder.ValidatorActivity",
       "existing_drawable": "quickpic"
     },
@@ -49,6 +45,10 @@
     {
       "id": "com.picpay/com.picpay.PicpayIconAlias",
       "existing_drawable": "picpay"
+    },
+    {
+      "id": "com.termux.api/com.termux.api.activities.TermuxAPILauncherActivity",
+      "existing_drawable": "termux"
     }
   ]
 }
