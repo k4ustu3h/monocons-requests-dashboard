@@ -49,6 +49,10 @@
     {
       "id": "com.termux.api/com.termux.api.activities.TermuxAPILauncherActivity",
       "existing_drawable": "termux"
+    },
+    {
+      "id": "com.stripe.android.dashboard/com.stripe.android.dashboard.MainActivity",
+      "existing_drawable": "stripe"
     }
   ]
 }

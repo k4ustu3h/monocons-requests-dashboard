@@ -1,29 +1,12 @@
 {
-  "count": 822,
-  "lastUpdate": "2026-08-12",
+  "count": 805,
+  "lastUpdate": "2026-08-13",
   "apps": [
     {
       "drawable": "game_center",
       "label": "Game Center",
       "componentName": "com.nearme.gamecenter/com.nearme.gamecenter.ui.activity.SplashActivity",
       "requestCount": 8,
-      "firstAppearance": 1784727668.0,
-      "lastRequested": 1785372906.0
-    },
-    {
-      "drawable": "canta",
-      "label": "Canta",
-      "componentName": "io.github.samolego.canta/io.github.samolego.canta.MainActivity",
-      "requestCount": 8,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1786535294.0,
-      "installs": "500,000+"
-    },
-    {
-      "drawable": "heytap_cloud",
-      "label": "HeyTap Cloud",
-      "componentName": "com.heytap.cloud/com.heytap.cloud.home.ui.CloudLauncherActivity",
-      "requestCount": 7,
       "firstAppearance": 1784727668.0,
       "lastRequested": 1785372906.0
     },
@@ -55,15 +38,6 @@
       "installs": "50,000+"
     },
     {
-      "drawable": "quick_search",
-      "label": "Quick Search",
-      "componentName": "com.tk.quicksearch/com.tk.quicksearch.app.MainActivityAliasDefault",
-      "requestCount": 5,
-      "firstAppearance": 1784613518.0,
-      "lastRequested": 1785567577.0,
-      "installs": "10,000+"
-    },
-    {
       "drawable": "icon",
       "label": "\u8ba1\u7b97\u5668",
       "componentName": "com.marktka.calculatorYou/com.forz.calculator.MainActivity",
@@ -89,15 +63,6 @@
       "firstAppearance": 1784694557.0,
       "lastRequested": 1785641224.0,
       "installs": "500,000,000+"
-    },
-    {
-      "drawable": "cx_file_explorer",
-      "label": "Cx File Explorer",
-      "componentName": "com.cxinventor.file.explorer/com.alphainventor.filemanager.activity.MainActivity",
-      "requestCount": 5,
-      "firstAppearance": 1784876456.0,
-      "lastRequested": 1785641224.0,
-      "installs": "10,000,000+"
     },
     {
       "drawable": "app_picks",
@@ -211,15 +176,6 @@
       "lastRequested": 1785791466.0
     },
     {
-      "drawable": "dnsnet",
-      "label": "DNSNet",
-      "componentName": "dev.clombardo.dnsnet/dev.clombardo.dnsnet.MainActivity",
-      "requestCount": 4,
-      "firstAppearance": 1785567577.0,
-      "lastRequested": 1785857238.0,
-      "installs": "500,000+"
-    },
-    {
       "drawable": "yt_create",
       "label": "YT Create",
       "componentName": "com.google.android.apps.youtube.producer/com.google.android.apps.youtube.producer.application.MainActivity",
@@ -238,15 +194,6 @@
       "installs": "5,000,000+"
     },
     {
-      "drawable": "hsbc_mexico",
-      "label": "HSBC M\u00e9xico",
-      "componentName": "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity",
-      "requestCount": 4,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1786535294.0,
-      "installs": "10,000,000+"
-    },
-    {
       "drawable": "imss_digital",
       "label": "IMSS Digital",
       "componentName": "st.android.imsspublico/crc642176304cdb761b92.Splash",
@@ -256,15 +203,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "profuturo_movil",
-      "label": "Profuturo M\u00f3vil",
-      "componentName": "com.Sitio/mx.profuturo.profuturomvil.SplashScreen",
-      "requestCount": 4,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1786535294.0,
-      "installs": "1,000,000+"
-    },
-    {
       "drawable": "waterfox",
       "label": "Waterfox",
       "componentName": "net.waterfox.android.release/net.waterfox.android.release.App",
@@ -272,15 +210,6 @@
       "firstAppearance": 1784746278.0,
       "lastRequested": 1786534190.0,
       "installs": "100,000+"
-    },
-    {
-      "drawable": "flow",
-      "label": "Flow",
-      "componentName": "com.google.android.apps.labs.whisk/com.google.android.apps.labs.whisk.MainActivity",
-      "requestCount": 4,
-      "firstAppearance": 1783086305.0,
-      "lastRequested": 1786554220.0,
-      "installs": "5,000,000+"
     },
     {
       "drawable": "unnamed_icon_2_1",
@@ -1303,15 +1232,6 @@
       "installs": "50,000,000+"
     },
     {
-      "drawable": "shopeepay",
-      "label": "ShopeePay",
-      "componentName": "com.beeasy.airpay/com.airpay.login.integration.splash.SplashActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784732692.0,
-      "lastRequested": 1784752492.0,
-      "installs": "10,000,000+"
-    },
-    {
       "drawable": "spamblocker",
       "label": "SpamBlocker",
       "componentName": "spam.blocker/spam.blocker.ui.main.MainActivity",
@@ -1371,15 +1291,6 @@
       "firstAppearance": 1784732692.0,
       "lastRequested": 1784752492.0,
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "icon",
-      "label": "\u0e1b\u0e0f\u0e34\u0e17\u0e34\u0e19",
-      "componentName": "com.oplus.calendar/com.android.calendar.AllInOneActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784732692.0,
-      "lastRequested": 1784752492.0,
-      "installs": "100,000,000+"
     },
     {
       "drawable": "alexcalc",
@@ -1972,15 +1883,6 @@
       "requestCount": 3,
       "firstAppearance": 1783980544.0,
       "lastRequested": 1784000344.0
-    },
-    {
-      "drawable": "thor",
-      "label": "Thor",
-      "componentName": "com.valhalla.thor/com.valhalla.thor.HomeActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1785791466.0,
-      "installs": "10,000+"
     },
     {
       "drawable": "device_help",
@@ -2939,15 +2841,6 @@
       "installs": "50,000,000+"
     },
     {
-      "drawable": "quick_search_1",
-      "label": "Quick Search",
-      "componentName": "com.tk.quicksearch/com.tk.quicksearch.app.MainActivityAliasForestLight",
-      "requestCount": 2,
-      "firstAppearance": 1785641224.0,
-      "lastRequested": 1785641224.0,
-      "installs": "10,000+"
-    },
-    {
       "drawable": "screen_off_timer",
       "label": "Screen Off Timer",
       "componentName": "com.inod.screenofftimer/com.inod.screenofftimer.MainActivity",
@@ -3421,15 +3314,6 @@
       "requestCount": 2,
       "firstAppearance": 1785791466.0,
       "lastRequested": 1785791466.0
-    },
-    {
-      "drawable": "shopeepay",
-      "label": "ShopeePay",
-      "componentName": "com.shopeepay.id/com.shopee.app.ui.home.HomeActivity_",
-      "requestCount": 2,
-      "firstAppearance": 1785791466.0,
-      "lastRequested": 1785791466.0,
-      "installs": "50,000,000+"
     },
     {
       "drawable": "uniscore",
@@ -6728,14 +6612,6 @@
       "installs": "10+"
     },
     {
-      "drawable": "booming_music",
-      "label": "Booming Music",
-      "componentName": "com.mardous.booming/com.mardous.booming.activities.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786534190.0,
-      "lastRequested": 1786534190.0
-    },
-    {
       "drawable": "darkrise",
       "label": "Darkrise",
       "componentName": "com.Roika.Darkrise/com.unity3d.player.UnityPlayerActivity",
@@ -6963,23 +6839,6 @@
       "lastRequested": 1786535294.0
     },
     {
-      "drawable": "expo_go",
-      "label": "Expo Go",
-      "componentName": "host.exp.exponent/host.exp.exponent.experience.HomeActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786535294.0,
-      "lastRequested": 1786535294.0,
-      "installs": "5,000,000+"
-    },
-    {
-      "drawable": "f_droid",
-      "label": "F-Droid",
-      "componentName": "com.offsec.nethunter.store/org.fdroid.fdroid.views.main.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786535294.0,
-      "lastRequested": 1786535294.0
-    },
-    {
       "drawable": "happymod",
       "label": "HappyMod",
       "componentName": "com.happymod.apk/com.happymod.apk.hmmvp.main.LaunchActivity",
@@ -7020,15 +6879,6 @@
       "firstAppearance": 1786535294.0,
       "lastRequested": 1786535294.0,
       "installs": "5,000,000+"
-    },
-    {
-      "drawable": "mi_att",
-      "label": "Mi ATT",
-      "componentName": "com.att.miatt/com.comviva.webaxn.ui.WebAxnActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786535294.0,
-      "lastRequested": 1786535294.0,
-      "installs": "10,000,000+"
     },
     {
       "drawable": "nethunter_kex",

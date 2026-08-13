@@ -39,6 +39,10 @@
       "existing_drawable": "generic_gallery"
     },
     {
+      "id": "com.samsung.android.galaxycontinuity/com.samsung.android.galaxycontinuity.SplashActivity",
+      "existing_drawable": "google_flow"
+    },
+    {
       "id": "com.myos.camera/com.myos.camera.activity.CameraActivity",
       "existing_drawable": "samsung_camera"
     },
@@ -57,10 +61,6 @@
     {
       "id": "com.airtel.africa.selfcare/com.airtel.africa.selfcare.feature.login.activity.LoginActivity",
       "existing_drawable": "myairtel"
-    },
-    {
-      "id": "com.offsec.nethunter.store/org.fdroid.fdroid.views.main.MainActivity",
-      "existing_drawable": "f_droid"
     }
   ]
 }
