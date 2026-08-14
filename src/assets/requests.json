@@ -1,6 +1,6 @@
 {
-  "count": 805,
-  "lastUpdate": "2026-08-13",
+  "count": 791,
+  "lastUpdate": "2026-08-14",
   "apps": [
     {
       "drawable": "game_center",
@@ -123,14 +123,6 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784766078.0,
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "iceraven",
-      "label": "Iceraven",
-      "componentName": "io.github.forkmaintainers.iceraven/io.github.forkmaintainers.iceraven.App",
-      "requestCount": 4,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1785196548.0
     },
     {
       "drawable": "clash_royale",
@@ -272,14 +264,6 @@
       "installs": "1,000+"
     },
     {
-      "drawable": "flclash",
-      "label": "FlClash",
-      "componentName": "com.follow.clash/com.follow.clash.MainActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784544069.0,
-      "lastRequested": 1784563869.0
-    },
-    {
       "drawable": "freeotp",
       "label": "FreeOTP+",
       "componentName": "org.liberty.android.freeotpplus/org.fedorahosted.freeotp.ui.MainActivity",
@@ -356,14 +340,6 @@
       "lastRequested": 1784563869.0
     },
     {
-      "drawable": "alchemist",
-      "label": "Alchemist",
-      "componentName": "com.vayunmathur.games.alchemist/com.vayunmathur.games.alchemist.MainActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1784589088.0
-    },
-    {
       "drawable": "all_who_wander",
       "label": "All Who Wander",
       "componentName": "com.FrumpydoodleGames.AllWhoWander/com.unity3d.player.UnityPlayerActivity",
@@ -431,14 +407,6 @@
       "firstAppearance": 1784569288.0,
       "lastRequested": 1784589088.0,
       "installs": "100,000+"
-    },
-    {
-      "drawable": "flux",
-      "label": "Flux",
-      "componentName": "com.flux/com.flux.MainActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1784589088.0
     },
     {
       "drawable": "fm_radio",
@@ -711,15 +679,6 @@
       "lastRequested": 1784633318.0
     },
     {
-      "drawable": "ted",
-      "label": "TED",
-      "componentName": "com.ted.android/com.ted.android.MainActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784613518.0,
-      "lastRequested": 1784633318.0,
-      "installs": "10,000,000+"
-    },
-    {
       "drawable": "themes",
       "label": "Themes",
       "componentName": "com.bbk.theme/com.bbk.theme.Theme",
@@ -888,15 +847,6 @@
       "firstAppearance": 1784694557.0,
       "lastRequested": 1784714357.0,
       "installs": "500+"
-    },
-    {
-      "drawable": "cinemex",
-      "label": "Cinemex",
-      "componentName": "com.cinemex/com.cinemex.cinemex.views.activities.SplashActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1784714357.0,
-      "installs": "10,000,000+"
     },
     {
       "drawable": "clima",
@@ -1354,14 +1304,6 @@
       "lastRequested": 1784766078.0
     },
     {
-      "drawable": "nekovideo",
-      "label": "NekoVideo",
-      "componentName": "com.nkls.nekovideo/com.nkls.nekovideo.MainActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784746278.0,
-      "lastRequested": 1784766078.0
-    },
-    {
       "drawable": "pkp_intercity",
       "label": "PKP INTERCITY",
       "componentName": "pkp.ic.eicmobile/pkp.ic.eicmobile.MainActivity",
@@ -1378,14 +1320,6 @@
       "firstAppearance": 1784746278.0,
       "lastRequested": 1784766078.0,
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "velune",
-      "label": "Velune",
-      "componentName": "com.nikhil.yt/com.nikhil.yt.MainActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784746278.0,
-      "lastRequested": 1784766078.0
     },
     {
       "drawable": "icon",
@@ -1697,14 +1631,6 @@
       "installs": "100,000,000+"
     },
     {
-      "drawable": "suntimes",
-      "label": "Suntimes",
-      "componentName": "com.forrestguice.suntimeswidget/com.forrestguice.suntimeswidget.SuntimesLaunchActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784953398.0,
-      "lastRequested": 1784973198.0
-    },
-    {
       "drawable": "block_blast",
       "label": "Block Blast!",
       "componentName": "com.block.juggle/org.cocos2dx.javascript.AppActivity",
@@ -1721,14 +1647,6 @@
       "firstAppearance": 1784949849.0,
       "lastRequested": 1784969649.0,
       "installs": "50,000,000+"
-    },
-    {
-      "drawable": "lunabeat",
-      "label": "LunaBeat",
-      "componentName": "com.example.LyricBox/com.example.LyricBox.PermissionGuideActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784949849.0,
-      "lastRequested": 1784969649.0
     },
     {
       "drawable": "marble_master",
@@ -1792,15 +1710,6 @@
       "drawable": "secure_vpn",
       "label": "Secure VPN",
       "componentName": "com.fast.free.unblock.secure.vpn/com.signallab.secure.activity.SplashActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784949849.0,
-      "lastRequested": 1784969649.0,
-      "installs": "100,000,000+"
-    },
-    {
-      "drawable": "seekee",
-      "label": "Seekee",
-      "componentName": "com.enzo.paulo/com.enzo.model_home.MainActivity",
       "requestCount": 3,
       "firstAppearance": 1784949849.0,
       "lastRequested": 1784969649.0,
@@ -3700,6 +3609,15 @@
       "requestCount": 2,
       "firstAppearance": 1785669383.0,
       "lastRequested": 1786534190.0,
+      "installs": "10,000,000+"
+    },
+    {
+      "drawable": "diskwala",
+      "label": "Diskwala",
+      "componentName": "com.diskwalaapp/com.diskwalaapp.MainActivity",
+      "requestCount": 2,
+      "firstAppearance": 1786554220.0,
+      "lastRequested": 1786752541.0,
       "installs": "10,000,000+"
     },
     {
@@ -5871,14 +5789,6 @@
       "lastRequested": 1785602037.0
     },
     {
-      "drawable": "games",
-      "label": "Games",
-      "componentName": "com.wstxda.gsl/com.wstxda.gsl.shortcut.GamesShortcut",
-      "requestCount": 1,
-      "firstAppearance": 1785602037.0,
-      "lastRequested": 1785602037.0
-    },
-    {
       "drawable": "geto",
       "label": "Geto",
       "componentName": "com.android.geto/com.android.geto.activity.main.MainActivity",
@@ -5903,14 +5813,6 @@
       "firstAppearance": 1785602037.0,
       "lastRequested": 1785602037.0,
       "installs": "10,000+"
-    },
-    {
-      "drawable": "gloom",
-      "label": "Gloom",
-      "componentName": "dev.materii.gloom/gloom.icons.classic.Main",
-      "requestCount": 1,
-      "firstAppearance": 1785602037.0,
-      "lastRequested": 1785602037.0
     },
     {
       "drawable": "gopeed",
@@ -6682,15 +6584,6 @@
       "installs": "100,000,000+"
     },
     {
-      "drawable": "my_airtel",
-      "label": "My Airtel",
-      "componentName": "com.airtel.africa.selfcare/com.airtel.africa.selfcare.feature.login.activity.LoginActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786534190.0,
-      "lastRequested": 1786534190.0,
-      "installs": "50,000,000+"
-    },
-    {
       "drawable": "ninauth",
       "label": "NINAuth",
       "componentName": "com.ninauth.mobile/com.ninauth.mobile.activity.MainActivity",
@@ -6941,23 +6834,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "stripe",
-      "label": "Stripe",
-      "componentName": "com.stripe.android.dashboard/com.stripe.android.dashboard.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786535294.0,
-      "lastRequested": 1786535294.0,
-      "installs": "1,000,000+"
-    },
-    {
-      "drawable": "stripe_identity",
-      "label": "Stripe Identity",
-      "componentName": "org.chromium.webapk.a8e7efffbf377b441_v2/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786535294.0,
-      "lastRequested": 1786535294.0
-    },
-    {
       "drawable": "xiaomi_earbuds",
       "label": "Xiaomi Earbuds",
       "componentName": "com.mi.earphone/com.xiaomi.fitness.login.SplashActivity",
@@ -6985,13 +6861,22 @@
       "installs": "500,000+"
     },
     {
-      "drawable": "diskwala",
-      "label": "Diskwala",
-      "componentName": "com.diskwalaapp/com.diskwalaapp.MainActivity",
+      "drawable": "duolingo",
+      "label": "Duolingo",
+      "componentName": "com.duolingo/com.duolingo.app.PreStreakSaver8Launcher",
       "requestCount": 1,
-      "firstAppearance": 1786554220.0,
-      "lastRequested": 1786554220.0,
-      "installs": "10,000,000+"
+      "firstAppearance": 1786752541.0,
+      "lastRequested": 1786752541.0,
+      "installs": "500,000,000+"
+    },
+    {
+      "drawable": "myshiprocket",
+      "label": "myShiprocket",
+      "componentName": "com.shiprocket.consumer.orbit/com.shiprocket.consumer.orbit.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1786752541.0,
+      "lastRequested": 1786752541.0,
+      "installs": "1,000,000+"
     }
   ]
 }
