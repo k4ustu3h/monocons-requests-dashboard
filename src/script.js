@@ -3442,7 +3442,7 @@ layoutMasonry() {
       const fullDate = new Date(App.state.lastUpdate + 'T00:00:00')
         .toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
       displayText +=
-        ` • <a href="https://github.com/k4ustu3h/monocons-android-requests-dashboard" target="_blank" title="Last update: ${fullDate}">${timeAgo}</a>`;
+        ` • <a href="https://github.com/k4ustu3h/monocons-requests-dashboard" target="_blank" title="Last update: ${fullDate}">${timeAgo}</a>`;
     }
     countEl.innerHTML = displayText;
 
