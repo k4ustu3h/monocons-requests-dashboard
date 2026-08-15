@@ -698,10 +698,6 @@
   "me.rerere.rikkahub/me.rerere.rikkahub.RouteActivity": {
     "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 3
   },
-  "com.marktka.calculatorYou/com.forz.calculator.MainActivity": {
-    "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 3,
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 2
-  },
   "com.PigeonGames.Phigros/com.unity3d.player.UnityPlayerActivity": {
     "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 3
   },
@@ -980,9 +976,6 @@
   "io.github.giuig.auraninja/io.github.giuig.auraninja.MainActivity": {
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 3
   },
-  "com.anydo/com.anydo.activity.SplashActivity": {
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 3
-  },
   "com.yandex.yango/ru.yandex.taxi.activity.MainActivity": {
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 3
   },
@@ -1000,14 +993,6 @@
   },
   "com.oceanwing.soundcore/com.oceanwing.soundcore.activity.WelcomeActivity": {
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 2
-  },
-  "com.nearme.gamecenter/com.nearme.gamecenter.ui.activity.SplashActivity": {
-    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 3,
-    "in.gov.udiseplus.gis/in.gov.udiseplus.gis.MainActivity": 3,
-    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 3,
-    "th.co.truemoney.wallet/th.co.truemoney.wallet.activity.LoadingScreenActivity": 3,
-    "th.or.dga.citizenportal/th.or.dga.citizenportal.MainActivity": 3,
-    "de.marmaro.krt.ffupdater/de.marmaro.krt.ffupdater.activity.main.MainActivity": 3
   },
   "com.mobile.canaraepassbook/com.mobile.canaraepassbook.EbookSplashActivity": {
     "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 3,
@@ -1436,10 +1421,6 @@
   "com.pikashow.mobile/com.pikashow.mobile.MainActivity": {
     "cn.wps.moffice_eng/cn.wps.moffice.documentmanager.PreStartActivity": 3
   },
-  "com.bhu.namaste/com.bhu.namaste.MainActivity": {
-    "cn.wps.moffice_eng/cn.wps.moffice.documentmanager.PreStartActivity": 3,
-    "de.szalkowski.activitylauncher/de.szalkowski.activitylauncher.entrypoint.MainActivity": 3
-  },
   "com.miui.videoplayer/com.miui.video.global.app.LauncherAlias": {
     "pl.jmpolska.clos0.mojabiedronka/pl.jmpolska.mojabiedronka.presentation.flows.main.MainActivity": 3,
     "pl.onet.poczta/pl.onet.poczta.MainActivity": 3,
@@ -1500,17 +1481,7 @@
     "pl.onet.poczta/pl.onet.poczta.MainActivity": 3,
     "pl.extollite.bedrocktogetherapp/pl.extollite.bedrocktogetherapp.MainActivity": 3
   },
-  "com.xiaomi.glgm/com.xiaomi.glgm.home.ui.category": {
-    "pl.jmpolska.clos0.mojabiedronka/pl.jmpolska.mojabiedronka.presentation.flows.main.MainActivity": 3,
-    "pl.onet.poczta/pl.onet.poczta.MainActivity": 3,
-    "pl.extollite.bedrocktogetherapp/pl.extollite.bedrocktogetherapp.MainActivity": 3
-  },
   "com.miui.calculator.go/com.miui.calculator.cal.CalculatorActivity": {
-    "pl.jmpolska.clos0.mojabiedronka/pl.jmpolska.mojabiedronka.presentation.flows.main.MainActivity": 3,
-    "pl.onet.poczta/pl.onet.poczta.MainActivity": 3,
-    "pl.extollite.bedrocktogetherapp/pl.extollite.bedrocktogetherapp.MainActivity": 3
-  },
-  "com.xiaomi.glgm/com.mig.play.Icon0": {
     "pl.jmpolska.clos0.mojabiedronka/pl.jmpolska.mojabiedronka.presentation.flows.main.MainActivity": 3,
     "pl.onet.poczta/pl.onet.poczta.MainActivity": 3,
     "pl.extollite.bedrocktogetherapp/pl.extollite.bedrocktogetherapp.MainActivity": 3
@@ -2204,9 +2175,6 @@
   "ovo.id/ovo.id.common.activity.StartingActivity": {
     "uk.co.openweather/uk.co.openweather.MainActivity": 2
   },
-  "com.xiaomi.glgm/com.xiaomi.glgm.home.ui.SplashActivity": {
-    "uk.co.openweather/uk.co.openweather.MainActivity": 2
-  },
   "org.futo.inputmethod.latin.playstore/org.futo.inputmethod.latin.uix.settings.SettingsActivity": {
     "uk.co.openweather/uk.co.openweather.MainActivity": 2
   },
@@ -2321,12 +2289,6 @@
   "com.indusind.indie/com.indusind.indie.launcher_c29ee5c28889ac705b354b3d105de8a7b80866483f0b36e1e78e27b22462217b": {
     "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 2,
     "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 2
-  },
-  "com.google.android.apps.youtube.producer/com.google.android.apps.youtube.producer.application.MainActivity": {
-    "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 2,
-    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 2,
-    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
-    "cm.aptoide.pt/cm.aptoide.pt.view.MainActivity": 2
   },
   "com.inod.screenofftimer/com.inod.screenofftimer.MainActivity": {
     "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 2,
@@ -3442,10 +3404,6 @@
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
     "cm.aptoide.pt/cm.aptoide.pt.view.MainActivity": 2
   },
-  "com.microsoft.azure/crc6431cd41aa6ada328a.SplashScreenActivity": {
-    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
-    "cm.aptoide.pt/cm.aptoide.pt.view.MainActivity": 2
-  },
   "com.android.settings/com.android.settings.AccessibilitySettingsActivityForLauncherAlias": {
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
     "cm.aptoide.pt/cm.aptoide.pt.view.MainActivity": 2
@@ -4294,10 +4252,6 @@
     "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
     "md.obsidian/md.obsidian.MainActivity": 1
   },
-  "com.termux.api/com.termux.api.activities.TermuxAPILauncherActivity": {
-    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
-    "md.obsidian/md.obsidian.MainActivity": 1
-  },
   "com.ohbibi.fps/com.ohbibi.AndroidActivity.OhbibiUnityPlayerActivity": {
     "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
     "md.obsidian/md.obsidian.MainActivity": 1
@@ -4354,13 +4308,6 @@
     "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
   },
   "com.infonavit.micuentainfonavit/com.infonavit.micuentainfonavit.ui.login.SplashActivity": {
-    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
-    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
-    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
-    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
-    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
-  },
-  "com.coppel.coppelapp/lBX5d8.ju6n46.iywM39.chi1e3.xqKkP8.p645Q4": {
     "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
     "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
     "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,

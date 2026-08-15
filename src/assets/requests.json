@@ -1,15 +1,7 @@
 {
-  "count": 791,
-  "lastUpdate": "2026-08-14",
+  "count": 778,
+  "lastUpdate": "2026-08-15",
   "apps": [
-    {
-      "drawable": "game_center",
-      "label": "Game Center",
-      "componentName": "com.nearme.gamecenter/com.nearme.gamecenter.ui.activity.SplashActivity",
-      "requestCount": 8,
-      "firstAppearance": 1784727668.0,
-      "lastRequested": 1785372906.0
-    },
     {
       "drawable": "netguard",
       "label": "NetGuard",
@@ -27,24 +19,6 @@
       "firstAppearance": 1784746278.0,
       "lastRequested": 1784896256.0,
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "namaste_bhu",
-      "label": "Namaste BHU",
-      "componentName": "com.bhu.namaste/com.bhu.namaste.MainActivity",
-      "requestCount": 6,
-      "firstAppearance": 1783516094.0,
-      "lastRequested": 1784375487.0,
-      "installs": "50,000+"
-    },
-    {
-      "drawable": "icon",
-      "label": "\u8ba1\u7b97\u5668",
-      "componentName": "com.marktka.calculatorYou/com.forz.calculator.MainActivity",
-      "requestCount": 5,
-      "firstAppearance": 1784544069.0,
-      "lastRequested": 1784633318.0,
-      "installs": "50,000+"
     },
     {
       "drawable": "geometry_dash",
@@ -166,15 +140,6 @@
       "requestCount": 4,
       "firstAppearance": 1785711968.0,
       "lastRequested": 1785791466.0
-    },
-    {
-      "drawable": "yt_create",
-      "label": "YT Create",
-      "componentName": "com.google.android.apps.youtube.producer/com.google.android.apps.youtube.producer.application.MainActivity",
-      "requestCount": 4,
-      "firstAppearance": 1785641224.0,
-      "lastRequested": 1785857238.0,
-      "installs": "10,000,000+"
     },
     {
       "drawable": "obsidian",
@@ -467,15 +432,6 @@
       "requestCount": 3,
       "firstAppearance": 1784613518.0,
       "lastRequested": 1784633318.0
-    },
-    {
-      "drawable": "any_do",
-      "label": "Any.do",
-      "componentName": "com.anydo/com.anydo.activity.SplashActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784613518.0,
-      "lastRequested": 1784633318.0,
-      "installs": "10,000,000+"
     },
     {
       "drawable": "auraninja",
@@ -1406,14 +1362,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "game_center_1",
-      "label": "Game Center",
-      "componentName": "com.xiaomi.glgm/com.mig.play.Icon0",
-      "requestCount": 3,
-      "firstAppearance": 1784876456.0,
-      "lastRequested": 1784896256.0
-    },
-    {
       "drawable": "hypatia",
       "label": "Hypatia",
       "componentName": "org.maintainteam.hypatia/us.spotco.malwarescanner.MainActivity",
@@ -1560,14 +1508,6 @@
       "firstAppearance": 1784876456.0,
       "lastRequested": 1784896256.0,
       "installs": "100,000+"
-    },
-    {
-      "drawable": "top_games",
-      "label": "Top games",
-      "componentName": "com.xiaomi.glgm/com.xiaomi.glgm.home.ui.category",
-      "requestCount": 3,
-      "firstAppearance": 1784876456.0,
-      "lastRequested": 1784896256.0
     },
     {
       "drawable": "appmgr_pro_iii",
@@ -2419,14 +2359,6 @@
       "firstAppearance": 1785567577.0,
       "lastRequested": 1785567577.0,
       "installs": "100,000+"
-    },
-    {
-      "drawable": "game_center_1",
-      "label": "Game Center",
-      "componentName": "com.xiaomi.glgm/com.xiaomi.glgm.home.ui.SplashActivity",
-      "requestCount": 2,
-      "firstAppearance": 1785567577.0,
-      "lastRequested": 1785567577.0
     },
     {
       "drawable": "kompact",
@@ -3425,15 +3357,6 @@
       "requestCount": 2,
       "firstAppearance": 1785857238.0,
       "lastRequested": 1785857238.0
-    },
-    {
-      "drawable": "azure",
-      "label": "Azure",
-      "componentName": "com.microsoft.azure/crc6431cd41aa6ada328a.SplashScreenActivity",
-      "requestCount": 2,
-      "firstAppearance": 1785857238.0,
-      "lastRequested": 1785857238.0,
-      "installs": "1,000,000+"
     },
     {
       "drawable": "bvnc_free",
@@ -6636,14 +6559,6 @@
       "installs": "100,000,000+"
     },
     {
-      "drawable": "termux_api",
-      "label": "Termux:API",
-      "componentName": "com.termux.api/com.termux.api.activities.TermuxAPILauncherActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786534190.0,
-      "lastRequested": 1786534190.0
-    },
-    {
       "drawable": "the_walking_zombie_2",
       "label": "The Walking Zombie 2",
       "componentName": "com.aldagames.zombieshooter/com.unity3d.player.UnityPlayerActivity",
@@ -6722,14 +6637,6 @@
       "firstAppearance": 1786535294.0,
       "lastRequested": 1786535294.0,
       "installs": "100,000,000+"
-    },
-    {
-      "drawable": "coppel",
-      "label": "Coppel",
-      "componentName": "com.coppel.coppelapp/lBX5d8.ju6n46.iywM39.chi1e3.xqKkP8.p645Q4",
-      "requestCount": 1,
-      "firstAppearance": 1786535294.0,
-      "lastRequested": 1786535294.0
     },
     {
       "drawable": "happymod",
@@ -6859,24 +6766,6 @@
       "firstAppearance": 1786535294.0,
       "lastRequested": 1786535294.0,
       "installs": "500,000+"
-    },
-    {
-      "drawable": "duolingo",
-      "label": "Duolingo",
-      "componentName": "com.duolingo/com.duolingo.app.PreStreakSaver8Launcher",
-      "requestCount": 1,
-      "firstAppearance": 1786752541.0,
-      "lastRequested": 1786752541.0,
-      "installs": "500,000,000+"
-    },
-    {
-      "drawable": "myshiprocket",
-      "label": "myShiprocket",
-      "componentName": "com.shiprocket.consumer.orbit/com.shiprocket.consumer.orbit.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786752541.0,
-      "lastRequested": 1786752541.0,
-      "installs": "1,000,000+"
     }
   ]
 }
