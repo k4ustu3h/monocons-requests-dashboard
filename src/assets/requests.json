@@ -1,6 +1,6 @@
 {
-  "count": 772,
-  "lastUpdate": "2026-08-16",
+  "count": 784,
+  "lastUpdate": "2026-08-17",
   "apps": [
     {
       "drawable": "biedronka",
@@ -248,6 +248,14 @@
       "firstAppearance": 1784727668.0,
       "lastRequested": 1786887873.0,
       "installs": "100,000+"
+    },
+    {
+      "drawable": "haven",
+      "label": "Haven",
+      "componentName": "io.github.kennethchoinfosec.haven/io.github.kennethchoinfosec.haven.ui.MainActivity",
+      "requestCount": 4,
+      "firstAppearance": 1784732692.0,
+      "lastRequested": 1786975728.0
     },
     {
       "drawable": "unnamed_icon_2_1",
@@ -948,14 +956,6 @@
       "drawable": "graphhopper_maps",
       "label": "GraphHopper Maps",
       "componentName": "com.graphhopper.maps/com.graphhopper.maps.MainActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784732692.0,
-      "lastRequested": 1784752492.0
-    },
-    {
-      "drawable": "haven",
-      "label": "Haven",
-      "componentName": "io.github.kennethchoinfosec.haven/io.github.kennethchoinfosec.haven.ui.MainActivity",
       "requestCount": 3,
       "firstAppearance": 1784732692.0,
       "lastRequested": 1784752492.0
@@ -3492,6 +3492,58 @@
       "installs": "10,000,000+"
     },
     {
+      "drawable": "accrescent",
+      "label": "Accrescent",
+      "componentName": "app.accrescent.client/app.accrescent.client.ui.MainActivity",
+      "requestCount": 2,
+      "firstAppearance": 1785602037.0,
+      "lastRequested": 1786975728.0
+    },
+    {
+      "drawable": "appverifier",
+      "label": "AppVerifier",
+      "componentName": "dev.soupslurpr.appverifier/dev.soupslurpr.appverifier.MainActivity",
+      "requestCount": 2,
+      "firstAppearance": 1785602037.0,
+      "lastRequested": 1786975728.0
+    },
+    {
+      "drawable": "bus_masters_india",
+      "label": "Bus Masters India",
+      "componentName": "com.highbrowinteractive.bus.masters.india.highway.driving.simulator.game/com.unity3d.player.UnityPlayerActivity",
+      "requestCount": 2,
+      "firstAppearance": 1783086305.0,
+      "lastRequested": 1787018463.0,
+      "installs": "5,000,000+"
+    },
+    {
+      "drawable": "mob_control",
+      "label": "Mob Control",
+      "componentName": "com.vincentb.MobControl/com.google.firebase.MessagingUnityPlayerActivity",
+      "requestCount": 2,
+      "firstAppearance": 1783086305.0,
+      "lastRequested": 1787018463.0,
+      "installs": "100,000,000+"
+    },
+    {
+      "drawable": "ntes",
+      "label": "NTES",
+      "componentName": "cris.icms.ntes/cris.icms.ntes.LaunchApp",
+      "requestCount": 2,
+      "firstAppearance": 1783086305.0,
+      "lastRequested": 1787018463.0,
+      "installs": "10,000,000+"
+    },
+    {
+      "drawable": "subway_city",
+      "label": "Subway City",
+      "componentName": "com.sybogames.subway.surfers.game/com.google.firebase.MessagingUnityPlayerActivity",
+      "requestCount": 2,
+      "firstAppearance": 1783086305.0,
+      "lastRequested": 1787018463.0,
+      "installs": "10,000,000+"
+    },
+    {
       "drawable": "clearscanner",
       "label": "ClearScanner",
       "componentName": "com.indymobileapp.document.scanner/com.indymobile.app.activity.SplashScreenActivity",
@@ -4484,14 +4536,6 @@
       "lastRequested": 1785602037.0
     },
     {
-      "drawable": "accrescent",
-      "label": "Accrescent",
-      "componentName": "app.accrescent.client/app.accrescent.client.ui.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785602037.0,
-      "lastRequested": 1785602037.0
-    },
-    {
       "drawable": "activity_manager",
       "label": "Activity Manager",
       "componentName": "com.activitymanager/com.sdex.activityrunner.MainActivity",
@@ -4569,14 +4613,6 @@
       "drawable": "anymex",
       "label": "AnymeX",
       "componentName": "com.ryan.anymex/com.ryan.anymex.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785602037.0,
-      "lastRequested": 1785602037.0
-    },
-    {
-      "drawable": "appverifier",
-      "label": "AppVerifier",
-      "componentName": "dev.soupslurpr.appverifier/dev.soupslurpr.appverifier.MainActivity",
       "requestCount": 1,
       "firstAppearance": 1785602037.0,
       "lastRequested": 1785602037.0
@@ -6322,15 +6358,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "bus_masters_india",
-      "label": "Bus Masters India",
-      "componentName": "com.highbrowinteractive.bus.masters.india.highway.driving.simulator.game/com.unity3d.player.UnityPlayerActivity",
-      "requestCount": 1,
-      "firstAppearance": 1783086305.0,
-      "lastRequested": 1783086305.0,
-      "installs": "5,000,000+"
-    },
-    {
       "drawable": "hole_io",
       "label": "Hole.io",
       "componentName": "io.voodoo.holeio/com.google.firebase.MessagingUnityPlayerActivity",
@@ -6340,24 +6367,6 @@
       "installs": "100,000,000+"
     },
     {
-      "drawable": "mob_control",
-      "label": "Mob Control",
-      "componentName": "com.vincentb.MobControl/com.google.firebase.MessagingUnityPlayerActivity",
-      "requestCount": 1,
-      "firstAppearance": 1783086305.0,
-      "lastRequested": 1783086305.0,
-      "installs": "100,000,000+"
-    },
-    {
-      "drawable": "ntes",
-      "label": "NTES",
-      "componentName": "cris.icms.ntes/cris.icms.ntes.LaunchApp",
-      "requestCount": 1,
-      "firstAppearance": 1783086305.0,
-      "lastRequested": 1783086305.0,
-      "installs": "10,000,000+"
-    },
-    {
       "drawable": "smart_tools",
       "label": "Smart Tools",
       "componentName": "com.pcmehanik.smarttoolbox/com.pcmehanik.smarttoolsutilities.MainActivity",
@@ -6365,15 +6374,6 @@
       "firstAppearance": 1783086305.0,
       "lastRequested": 1783086305.0,
       "installs": "1,000,000+"
-    },
-    {
-      "drawable": "subway_city",
-      "label": "Subway City",
-      "componentName": "com.sybogames.subway.surfers.game/com.google.firebase.MessagingUnityPlayerActivity",
-      "requestCount": 1,
-      "firstAppearance": 1783086305.0,
-      "lastRequested": 1783086305.0,
-      "installs": "10,000,000+"
     },
     {
       "drawable": "advanced_passgen",
@@ -6714,6 +6714,107 @@
       "firstAppearance": 1786535294.0,
       "lastRequested": 1786535294.0,
       "installs": "500,000+"
+    },
+    {
+      "drawable": "hole_io_1",
+      "label": "Hole.io",
+      "componentName": "io.voodoo.holeio/com.unity3d.player.UnityPlayerActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787018463.0,
+      "lastRequested": 1787018463.0,
+      "installs": "100,000,000+"
+    },
+    {
+      "drawable": "refract",
+      "label": "Refract",
+      "componentName": "com.prism.refract/com.prism.refract.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787018463.0,
+      "lastRequested": 1787018463.0,
+      "installs": "50,000+"
+    },
+    {
+      "drawable": "zebpay",
+      "label": "Zebpay",
+      "componentName": "zebpay.Application/com.zebpay.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787018463.0,
+      "lastRequested": 1787018463.0,
+      "installs": "5,000,000+"
+    },
+    {
+      "drawable": "app_store",
+      "label": "App Store",
+      "componentName": "app.grapheneos.apps/app.grapheneos.apps.ui.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1786975728.0,
+      "lastRequested": 1786975728.0
+    },
+    {
+      "drawable": "auditor",
+      "label": "Auditor",
+      "componentName": "app.attestation.auditor/app.attestation.auditor.AttestationActivity",
+      "requestCount": 1,
+      "firstAppearance": 1786975728.0,
+      "lastRequested": 1786975728.0
+    },
+    {
+      "drawable": "easy_notes_1",
+      "label": "Easy Notes",
+      "componentName": "me.easyapps.easynotes/com.kin.easynotes.presentation.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1786975728.0,
+      "lastRequested": 1786975728.0
+    },
+    {
+      "drawable": "futo_keyboard_1",
+      "label": "FUTO Keyboard",
+      "componentName": "org.futo.inputmethod.latin/org.futo.inputmethod.latin.uix.settings.SettingsActivity",
+      "requestCount": 1,
+      "firstAppearance": 1786975728.0,
+      "lastRequested": 1786975728.0
+    },
+    {
+      "drawable": "info",
+      "label": "Info",
+      "componentName": "app.grapheneos.info/app.grapheneos.info.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1786975728.0,
+      "lastRequested": 1786975728.0
+    },
+    {
+      "drawable": "lumo",
+      "label": "Lumo",
+      "componentName": "me.proton.android.lumo/me.proton.android.lumo.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1786975728.0,
+      "lastRequested": 1786975728.0,
+      "installs": "100,000+"
+    },
+    {
+      "drawable": "molly",
+      "label": "Molly",
+      "componentName": "im.molly.app/org.thoughtcrime.securesms.RoutingActivityAltBubbles",
+      "requestCount": 1,
+      "firstAppearance": 1786975728.0,
+      "lastRequested": 1786975728.0
+    },
+    {
+      "drawable": "ntfy",
+      "label": "ntfy",
+      "componentName": "io.heckel.ntfy/io.heckel.ntfy.ui.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1786975728.0,
+      "lastRequested": 1786975728.0,
+      "installs": "100,000+"
+    },
+    {
+      "drawable": "passchain",
+      "label": "Passchain",
+      "componentName": "s1m.hwfido2provider/s1m.hwfido2provider.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1786975728.0,
+      "lastRequested": 1786975728.0
     }
   ]
 }
