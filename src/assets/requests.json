@@ -1,6 +1,6 @@
 {
-  "count": 784,
-  "lastUpdate": "2026-08-17",
+  "count": 776,
+  "lastUpdate": "2026-08-18",
   "apps": [
     {
       "drawable": "biedronka",
@@ -1750,6 +1750,42 @@
       "installs": "1,000,000+"
     },
     {
+      "drawable": "bus_masters_india",
+      "label": "Bus Masters India",
+      "componentName": "com.highbrowinteractive.bus.masters.india.highway.driving.simulator.game/com.unity3d.player.UnityPlayerActivity",
+      "requestCount": 3,
+      "firstAppearance": 1783086305.0,
+      "lastRequested": 1787096773.0,
+      "installs": "5,000,000+"
+    },
+    {
+      "drawable": "mob_control",
+      "label": "Mob Control",
+      "componentName": "com.vincentb.MobControl/com.google.firebase.MessagingUnityPlayerActivity",
+      "requestCount": 3,
+      "firstAppearance": 1783086305.0,
+      "lastRequested": 1787096773.0,
+      "installs": "100,000,000+"
+    },
+    {
+      "drawable": "ntes",
+      "label": "NTES",
+      "componentName": "cris.icms.ntes/cris.icms.ntes.LaunchApp",
+      "requestCount": 3,
+      "firstAppearance": 1783086305.0,
+      "lastRequested": 1787096773.0,
+      "installs": "10,000,000+"
+    },
+    {
+      "drawable": "subway_city",
+      "label": "Subway City",
+      "componentName": "com.sybogames.subway.surfers.game/com.google.firebase.MessagingUnityPlayerActivity",
+      "requestCount": 3,
+      "firstAppearance": 1783086305.0,
+      "lastRequested": 1787096773.0,
+      "installs": "10,000,000+"
+    },
+    {
       "drawable": "soundcore",
       "label": "soundcore",
       "componentName": "com.oceanwing.soundcore/com.oceanwing.soundcore.activity.WelcomeActivity",
@@ -2832,14 +2868,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "ai_hub",
-      "label": "AI Hub",
-      "componentName": "com.foss.aihub/com.foss.aihub.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1785669383.0,
-      "lastRequested": 1785669383.0
-    },
-    {
       "drawable": "amazfaces",
       "label": "AmazFaces",
       "componentName": "com.amazfitwatchfaces.st/com.amazfitwatchfaces.st.MainActivity",
@@ -2987,14 +3015,6 @@
       "firstAppearance": 1785791466.0,
       "lastRequested": 1785791466.0,
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "equalizer314",
-      "label": "Equalizer314",
-      "componentName": "com.bearinmind.equalizer314/com.bearinmind.equalizer314.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1785791466.0,
-      "lastRequested": 1785791466.0
     },
     {
       "drawable": "everlasting_android_tweak",
@@ -3508,40 +3528,22 @@
       "lastRequested": 1786975728.0
     },
     {
-      "drawable": "bus_masters_india",
-      "label": "Bus Masters India",
-      "componentName": "com.highbrowinteractive.bus.masters.india.highway.driving.simulator.game/com.unity3d.player.UnityPlayerActivity",
+      "drawable": "hole_io_1",
+      "label": "Hole.io",
+      "componentName": "io.voodoo.holeio/com.unity3d.player.UnityPlayerActivity",
       "requestCount": 2,
-      "firstAppearance": 1783086305.0,
-      "lastRequested": 1787018463.0,
-      "installs": "5,000,000+"
-    },
-    {
-      "drawable": "mob_control",
-      "label": "Mob Control",
-      "componentName": "com.vincentb.MobControl/com.google.firebase.MessagingUnityPlayerActivity",
-      "requestCount": 2,
-      "firstAppearance": 1783086305.0,
-      "lastRequested": 1787018463.0,
+      "firstAppearance": 1787018463.0,
+      "lastRequested": 1787096773.0,
       "installs": "100,000,000+"
     },
     {
-      "drawable": "ntes",
-      "label": "NTES",
-      "componentName": "cris.icms.ntes/cris.icms.ntes.LaunchApp",
+      "drawable": "refract",
+      "label": "Refract",
+      "componentName": "com.prism.refract/com.prism.refract.MainActivity",
       "requestCount": 2,
-      "firstAppearance": 1783086305.0,
-      "lastRequested": 1787018463.0,
-      "installs": "10,000,000+"
-    },
-    {
-      "drawable": "subway_city",
-      "label": "Subway City",
-      "componentName": "com.sybogames.subway.surfers.game/com.google.firebase.MessagingUnityPlayerActivity",
-      "requestCount": 2,
-      "firstAppearance": 1783086305.0,
-      "lastRequested": 1787018463.0,
-      "installs": "10,000,000+"
+      "firstAppearance": 1787018463.0,
+      "lastRequested": 1787096773.0,
+      "installs": "50,000+"
     },
     {
       "drawable": "clearscanner",
@@ -5365,14 +5367,6 @@
       "installs": "100,000+"
     },
     {
-      "drawable": "nope_remote",
-      "label": "Nope Remote",
-      "componentName": "com.monuk7735.nope.remote/com.monuk7735.nope.remote.HomeActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785669383.0,
-      "lastRequested": 1785669383.0
-    },
-    {
       "drawable": "notepost",
       "label": "NotePost",
       "componentName": "com.netsyms.NotePostApp/com.netsyms.NotePostApp.MainActivity",
@@ -5696,14 +5690,6 @@
       "lastRequested": 1785602037.0
     },
     {
-      "drawable": "geto",
-      "label": "Geto",
-      "componentName": "com.android.geto/com.android.geto.activity.main.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785602037.0,
-      "lastRequested": 1785602037.0
-    },
-    {
       "drawable": "getting_over_it",
       "label": "Getting Over It",
       "componentName": "com.noodlecake.gettingoverit/com.unity3d.player.UnityPlayerActivity",
@@ -5975,15 +5961,6 @@
       "firstAppearance": 1785669383.0,
       "lastRequested": 1785669383.0,
       "installs": "100,000+"
-    },
-    {
-      "drawable": "picpay",
-      "label": "PicPay",
-      "componentName": "com.picpay/com.picpay.PicpayIconAlias",
-      "requestCount": 1,
-      "firstAppearance": 1785669383.0,
-      "lastRequested": 1785669383.0,
-      "installs": "100,000,000+"
     },
     {
       "drawable": "pierre",
@@ -6716,49 +6693,6 @@
       "installs": "500,000+"
     },
     {
-      "drawable": "hole_io_1",
-      "label": "Hole.io",
-      "componentName": "io.voodoo.holeio/com.unity3d.player.UnityPlayerActivity",
-      "requestCount": 1,
-      "firstAppearance": 1787018463.0,
-      "lastRequested": 1787018463.0,
-      "installs": "100,000,000+"
-    },
-    {
-      "drawable": "refract",
-      "label": "Refract",
-      "componentName": "com.prism.refract/com.prism.refract.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1787018463.0,
-      "lastRequested": 1787018463.0,
-      "installs": "50,000+"
-    },
-    {
-      "drawable": "zebpay",
-      "label": "Zebpay",
-      "componentName": "zebpay.Application/com.zebpay.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1787018463.0,
-      "lastRequested": 1787018463.0,
-      "installs": "5,000,000+"
-    },
-    {
-      "drawable": "app_store",
-      "label": "App Store",
-      "componentName": "app.grapheneos.apps/app.grapheneos.apps.ui.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786975728.0,
-      "lastRequested": 1786975728.0
-    },
-    {
-      "drawable": "auditor",
-      "label": "Auditor",
-      "componentName": "app.attestation.auditor/app.attestation.auditor.AttestationActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786975728.0,
-      "lastRequested": 1786975728.0
-    },
-    {
       "drawable": "easy_notes_1",
       "label": "Easy Notes",
       "componentName": "me.easyapps.easynotes/com.kin.easynotes.presentation.MainActivity",
@@ -6770,14 +6704,6 @@
       "drawable": "futo_keyboard_1",
       "label": "FUTO Keyboard",
       "componentName": "org.futo.inputmethod.latin/org.futo.inputmethod.latin.uix.settings.SettingsActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786975728.0,
-      "lastRequested": 1786975728.0
-    },
-    {
-      "drawable": "info",
-      "label": "Info",
-      "componentName": "app.grapheneos.info/app.grapheneos.info.MainActivity",
       "requestCount": 1,
       "firstAppearance": 1786975728.0,
       "lastRequested": 1786975728.0
@@ -6800,21 +6726,30 @@
       "lastRequested": 1786975728.0
     },
     {
-      "drawable": "ntfy",
-      "label": "ntfy",
-      "componentName": "io.heckel.ntfy/io.heckel.ntfy.ui.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786975728.0,
-      "lastRequested": 1786975728.0,
-      "installs": "100,000+"
-    },
-    {
       "drawable": "passchain",
       "label": "Passchain",
       "componentName": "s1m.hwfido2provider/s1m.hwfido2provider.MainActivity",
       "requestCount": 1,
       "firstAppearance": 1786975728.0,
       "lastRequested": 1786975728.0
+    },
+    {
+      "drawable": "bingers",
+      "label": "Bingers",
+      "componentName": "app.bingers/app.bingers.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787096773.0,
+      "lastRequested": 1787096773.0,
+      "installs": "50,000+"
+    },
+    {
+      "drawable": "tvtracker",
+      "label": "TVTracker",
+      "componentName": "com.alphabetiq.tvtracker/com.alphabetiq.tvtracker.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787096773.0,
+      "lastRequested": 1787096773.0,
+      "installs": "100+"
     }
   ]
 }
