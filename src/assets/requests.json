@@ -1,6 +1,6 @@
 {
-  "count": 776,
-  "lastUpdate": "2026-08-18",
+  "count": 822,
+  "lastUpdate": "2026-08-20",
   "apps": [
     {
       "drawable": "biedronka",
@@ -6750,6 +6750,404 @@
       "firstAppearance": 1787096773.0,
       "lastRequested": 1787096773.0,
       "installs": "100+"
+    },
+    {
+      "drawable": "ado_movil",
+      "label": "ADO M\u00f3vil",
+      "componentName": "com.mobilityado.ado/com.mobilityado.ado.views.splash.ActSplashScreen",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "1,000,000+"
+    },
+    {
+      "drawable": "agc_toolkit",
+      "label": "AGC Toolkit",
+      "componentName": "com.agc.gcam_tools/com.agc.gcam_tools.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "100,000+"
+    },
+    {
+      "drawable": "airnote",
+      "label": "AirNote",
+      "componentName": "com.babelsoftware.airnote/com.babelsoftware.airnote.presentation.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0
+    },
+    {
+      "drawable": "alwayson",
+      "label": "AlwaysOn",
+      "componentName": "io.github.domi04151309.alwayson/io.github.domi04151309.alwayson.activities.SplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0
+    },
+    {
+      "drawable": "amazon_photos",
+      "label": "Amazon Photos",
+      "componentName": "com.amazon.clouddrive.photos/com.amazon.photos.activity.LauncherActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "50,000,000+"
+    },
+    {
+      "drawable": "appstract",
+      "label": "Appstract",
+      "componentName": "dev.appstract.iconpack/dev.appstract.iconpack.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0
+    },
+    {
+      "drawable": "banco_plata",
+      "label": "Banco Plata",
+      "componentName": "dif.tech.plata/dif.tech.plata.platform.feature.root.RootActivity.Main",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "10,000,000+"
+    },
+    {
+      "drawable": "baubap",
+      "label": "Baubap",
+      "componentName": "com.baubap/com.baubap.presentation.splash.SplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0
+    },
+    {
+      "drawable": "bbva_sos",
+      "label": "BBVA SOS",
+      "componentName": "mx.com.segurosbancomer.autoalerta/com.bbva.bbva_sos.module.home.HomeActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "1,000,000+"
+    },
+    {
+      "drawable": "betascout",
+      "label": "BetaScout",
+      "componentName": "org.jarsi.betascout/org.jarsi.betascout.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0
+    },
+    {
+      "drawable": "blu",
+      "label": "Blu",
+      "componentName": "com.blufinance.android/com.blufinance.android.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "500,000+"
+    },
+    {
+      "drawable": "bring",
+      "label": "Bring!",
+      "componentName": "ch.publisheria.bring/ch.publisheria.bring.activities.BringMainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "10,000,000+"
+    },
+    {
+      "drawable": "broadlink",
+      "label": "BroadLink",
+      "componentName": "cn.com.broadlink.econtrol.international/cn.com.broadlink.unify.app.main.activity.LoadingActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "1,000,000+"
+    },
+    {
+      "drawable": "busuu",
+      "label": "Busuu",
+      "componentName": "com.busuu.android.enc/com.busuu.android.bootstrap.presentation.BootStrapActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "50,000,000+"
+    },
+    {
+      "drawable": "cenit",
+      "label": "Cenit",
+      "componentName": "ai.cenit.app/ai.cenit.app.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "10,000+"
+    },
+    {
+      "drawable": "cetesdirecto",
+      "label": "cetesdirecto",
+      "componentName": "air.com.cetesdirecto.cetesmobile/air.com.cetesdirecto.cetesmobile.PantallaBienvenida",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "1,000,000+"
+    },
+    {
+      "drawable": "cfe_contigo",
+      "label": "CFE Contigo",
+      "componentName": "mx.com.cfe.cfecontigo/mx.com.cfe.cfecontigo.ui.login.LoginActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "10,000,000+"
+    },
+    {
+      "drawable": "cinepolis_go",
+      "label": "Cin\u00e9polis Go",
+      "componentName": "com.cinepolis.go/u7UlR0.irZrZ4.o0SPU8.bROwz9",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "5,000,000+"
+    },
+    {
+      "drawable": "claro_juegos",
+      "label": "Claro Juegos",
+      "componentName": "com.gameloft.android.gdc/com.gameloft.android.gdc.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0
+    },
+    {
+      "drawable": "clonar_telefono",
+      "label": "Clonar tel\u00e9fono",
+      "componentName": "com.coloros.backuprestore/com.oplus.phoneclone.PhoneCloneMainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "10,000,000+"
+    },
+    {
+      "drawable": "cuscon",
+      "label": "cuscon",
+      "componentName": "com.froxot.cuscon.foss/com.froxot.cuscon.activities.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0
+    },
+    {
+      "drawable": "cyc_suite_mobile",
+      "label": "CyC Suite Mobile",
+      "componentName": "com.cyc.suite/com.cyc.suite.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0
+    },
+    {
+      "drawable": "camara",
+      "label": "C\u00e1mara",
+      "componentName": "com.ss.android.ugc.aweme/com.android.camera.CameraLauncher",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0
+    },
+    {
+      "drawable": "delta",
+      "label": "Delta",
+      "componentName": "website.leifs.delta.foss/website.leifs.delta.activities.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0
+    },
+    {
+      "drawable": "diagnosticos_enfermeria",
+      "label": "Diagnosticos_Enfermeria",
+      "componentName": "com.example.diagnosticos_enfermeria/com.example.diagnosticos_enfermeria.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0
+    },
+    {
+      "drawable": "dji_go_4",
+      "label": "DJI GO 4",
+      "componentName": "dji.go.v4/dji.pilot.main.activity.DJILauncherActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0
+    },
+    {
+      "drawable": "dnfd",
+      "label": "DNfD",
+      "componentName": "in.aaremm.offthegrid/in.aaremm.offthegrid.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "1,000+"
+    },
+    {
+      "drawable": "documents",
+      "label": "Documents",
+      "componentName": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Green",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "50+"
+    },
+    {
+      "drawable": "dollphone",
+      "label": "Dollphone",
+      "componentName": "me.x2gd4.dollphone/me.x2gd4.dollphone.activities.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "500+"
+    },
+    {
+      "drawable": "doopla",
+      "label": "Doopla",
+      "componentName": "com.doopla.doopla_app/com.example.doopla_app.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0
+    },
+    {
+      "drawable": "downdetector",
+      "label": "Downdetector",
+      "componentName": "org.chromium.webapk.a17d9989f012341e1_v2/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0
+    },
+    {
+      "drawable": "dronedeploy",
+      "label": "DroneDeploy",
+      "componentName": "com.dronedeploy.beta/com.dronedeploy.beta.ui.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "500,000+"
+    },
+    {
+      "drawable": "dwg_fastview",
+      "label": "DWG FastView",
+      "componentName": "com.gstarmc.android/com.stone.app.ui.activity.AppSplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "10,000,000+"
+    },
+    {
+      "drawable": "elevenlabs",
+      "label": "ElevenLabs",
+      "componentName": "io.elevenlabs.coreapp/io.elevenlabs.coreapp.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "5,000,000+"
+    },
+    {
+      "drawable": "elevenreader",
+      "label": "ElevenReader",
+      "componentName": "io.elevenlabs.readerapp/io.elevenlabs.readerapp.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "1,000,000+"
+    },
+    {
+      "drawable": "emlid_flow",
+      "label": "Emlid Flow",
+      "componentName": "com.emlid.reachview3/com.emlid.reachview3.ui.main.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "100,000+"
+    },
+    {
+      "drawable": "epson_smart_panel",
+      "label": "Epson Smart Panel",
+      "componentName": "com.epson.epsonsmart/com.epson.epsonsmart.controller.splash.SplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "10,000,000+"
+    },
+    {
+      "drawable": "essential_shortcuts",
+      "label": "Essential Shortcuts",
+      "componentName": "com.essential.shortcuts/com.essential.shortcuts.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "1,000+"
+    },
+    {
+      "drawable": "etheria_restart",
+      "label": "Etheria:Restart",
+      "componentName": "com.xd.etheria.gp.glb/com.epicgames.ue4.SplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "1,000,000+"
+    },
+    {
+      "drawable": "ever_haptics",
+      "label": "Ever Haptics",
+      "componentName": "com.coolappstore.everhaptics.by.svhp/com.hapticks.app.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0
+    },
+    {
+      "drawable": "family_link",
+      "label": "Family Link",
+      "componentName": "com.google.android.apps.kids.familylink/com.google.android.apps.kids.familylink.flutter.standalone.HomeActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "100,000,000+"
+    },
+    {
+      "drawable": "fiio_music",
+      "label": "FIIO Music",
+      "componentName": "com.fiio.music/com.fiio.music.activity.SplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "500,000+"
+    },
+    {
+      "drawable": "filmora",
+      "label": "Filmora",
+      "componentName": "com.wondershare.filmorago/com.filmorago.phone.ui.SplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "100,000,000+"
+    },
+    {
+      "drawable": "flo",
+      "label": "Flo",
+      "componentName": "org.iggymedia.periodtracker/org.iggymedia.periodtracker.activities.InitialActivityPremium",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "100,000,000+"
+    },
+    {
+      "drawable": "g500",
+      "label": "G500",
+      "componentName": "com.g500/com.g500.login.WelcomeActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "500,000+"
+    },
+    {
+      "drawable": "gadgetbridge",
+      "label": "Gadgetbridge",
+      "componentName": "nodomain.freeyourgadget.gadgetbridge/nodomain.freeyourgadget.gadgetbridge.activities.ControlCenterv2",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0
     }
   ]
 }
