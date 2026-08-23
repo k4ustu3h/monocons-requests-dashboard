@@ -1,8 +1,8 @@
 {
   "com": {
-    "requests": 453,
+    "requests": 473,
     "done": 4522,
-    "total": 4975,
+    "total": 4995,
     "global": 0,
     "global_installs": 0
   },
@@ -42,11 +42,11 @@
     "global_installs": 2349281210
   },
   "us": {
-    "requests": 139,
+    "requests": 138,
     "done": 6,
-    "total": 145,
-    "global": 139,
-    "global_installs": 3177647410
+    "total": 144,
+    "global": 138,
+    "global_installs": 3177597410
   },
   "ch": {
     "requests": 100,
@@ -56,11 +56,18 @@
     "global_installs": 2109692800
   },
   "app": {
-    "requests": 19,
+    "requests": 20,
     "done": 112,
-    "total": 131,
+    "total": 132,
     "global": 0,
     "global_installs": 0
+  },
+  "jp": {
+    "requests": 82,
+    "done": 26,
+    "total": 108,
+    "global": 79,
+    "global_installs": 2191920100
   },
   "ru": {
     "requests": 64,
@@ -75,13 +82,6 @@
     "total": 95,
     "global": 66,
     "global_installs": 1934610800
-  },
-  "jp": {
-    "requests": 61,
-    "done": 26,
-    "total": 87,
-    "global": 59,
-    "global_installs": 2191920100
   },
   "cn": {
     "requests": 68,
@@ -112,11 +112,11 @@
     "global_installs": 0
   },
   "md": {
-    "requests": 63,
+    "requests": 69,
     "done": 1,
-    "total": 64,
-    "global": 63,
-    "global_installs": 1847020210
+    "total": 70,
+    "global": 69,
+    "global_installs": 1857070210
   },
   "net": {
     "requests": 12,
@@ -224,9 +224,9 @@
     "global_installs": 0
   },
   "apps": {
-    "requests": 1,
+    "requests": 2,
     "done": 16,
-    "total": 17,
+    "total": 18,
     "global": 0,
     "global_installs": 0
   },
@@ -944,6 +944,13 @@
     "global": 0,
     "global_installs": 0
   },
+  "and": {
+    "requests": 1,
+    "done": 0,
+    "total": 1,
+    "global": 0,
+    "global_installs": 0
+  },
   "anddea": {
     "requests": 0,
     "done": 1,
@@ -1143,6 +1150,13 @@
   "devs": {
     "requests": 0,
     "done": 1,
+    "total": 1,
+    "global": 0,
+    "global_installs": 0
+  },
+  "diamond": {
+    "requests": 1,
+    "done": 0,
     "total": 1,
     "global": 0,
     "global_installs": 0
@@ -1953,6 +1967,13 @@
     "global_installs": 0
   },
   "superfreeze": {
+    "requests": 1,
+    "done": 0,
+    "total": 1,
+    "global": 0,
+    "global_installs": 0
+  },
+  "suzuki": {
     "requests": 1,
     "done": 0,
     "total": 1,
