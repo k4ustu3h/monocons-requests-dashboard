@@ -1,6 +1,6 @@
 {
-  "count": 817,
-  "lastUpdate": "2026-08-23",
+  "count": 810,
+  "lastUpdate": "2026-08-24",
   "apps": [
     {
       "drawable": "geometry_dash",
@@ -6754,15 +6754,6 @@
       "lastRequested": 1787184542.0
     },
     {
-      "drawable": "dnfd",
-      "label": "DNfD",
-      "componentName": "in.aaremm.offthegrid/in.aaremm.offthegrid.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1787184542.0,
-      "lastRequested": 1787184542.0,
-      "installs": "1,000+"
-    },
-    {
       "drawable": "dollphone",
       "label": "Dollphone",
       "componentName": "me.x2gd4.dollphone/me.x2gd4.dollphone.activities.MainActivity",
@@ -6894,24 +6885,6 @@
       "installs": "10,000+"
     },
     {
-      "drawable": "opentv",
-      "label": "OpenTV",
-      "componentName": "com.insightfy.opentv/com.insightfy.opentv.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1787505756.0,
-      "lastRequested": 1787505756.0,
-      "installs": "100+"
-    },
-    {
-      "drawable": "suzuki_ride_connect",
-      "label": "Suzuki Ride Connect",
-      "componentName": "suzuki.com.suzuki/com.suzuki.activity.SplashActivity",
-      "requestCount": 1,
-      "firstAppearance": 1787505756.0,
-      "lastRequested": 1787505756.0,
-      "installs": "1,000,000+"
-    },
-    {
       "drawable": "tv_watch_time",
       "label": "TV Watch Time",
       "componentName": "app.tvwatchtime.mobile/app.tvwatchtime.mobile.MainActivity",
@@ -6919,15 +6892,6 @@
       "firstAppearance": 1787505756.0,
       "lastRequested": 1787505756.0,
       "installs": "5,000+"
-    },
-    {
-      "drawable": "agoda",
-      "label": "Agoda",
-      "componentName": "com.agoda.mobile.consumer/com.agoda.mobile.consumer.screens.splash.alias.IconEventAppLauncherActivityAlias",
-      "requestCount": 1,
-      "firstAppearance": 1787478045.0,
-      "lastRequested": 1787478045.0,
-      "installs": "100,000,000+"
     },
     {
       "drawable": "bus_traffic_fever",
@@ -6948,15 +6912,6 @@
       "installs": "500,000,000+"
     },
     {
-      "drawable": "cleartrip",
-      "label": "Cleartrip",
-      "componentName": "com.cleartrip.android/com.cleartrip.android.common.activities.DefaultIconAlias",
-      "requestCount": 1,
-      "firstAppearance": 1787478045.0,
-      "lastRequested": 1787478045.0,
-      "installs": "10,000,000+"
-    },
-    {
       "drawable": "eshare",
       "label": "EShare",
       "componentName": "com.eshare.clientv2/com.eshare.clientv2.MainActivity",
@@ -6973,15 +6928,6 @@
       "firstAppearance": 1787478045.0,
       "lastRequested": 1787478045.0,
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "goibibo",
-      "label": "Goibibo",
-      "componentName": "com.goibibo/com.goibibo.common.HomeActivityAliasBirthday",
-      "requestCount": 1,
-      "firstAppearance": 1787478045.0,
-      "lastRequested": 1787478045.0,
-      "installs": "50,000,000+"
     },
     {
       "drawable": "hole_em_all",
@@ -7056,24 +7002,6 @@
       "installs": "50,000,000+"
     },
     {
-      "drawable": "rapido",
-      "label": "Rapido",
-      "componentName": "com.rapido.passenger/com.rapido.passenger.FlagAlias",
-      "requestCount": 1,
-      "firstAppearance": 1787478045.0,
-      "lastRequested": 1787478045.0,
-      "installs": "100,000,000+"
-    },
-    {
-      "drawable": "shein",
-      "label": "SHEIN",
-      "componentName": "com.ril.shein/com.ril.shein.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1787478045.0,
-      "lastRequested": 1787478045.0,
-      "installs": "10,000,000+"
-    },
-    {
       "drawable": "speedometer",
       "label": "Speedometer",
       "componentName": "apps.r.speedometer/apps.r.speedometer.StartTheme.Charcoal",
@@ -7108,6 +7036,15 @@
       "firstAppearance": 1787478045.0,
       "lastRequested": 1787478045.0,
       "installs": "100,000+"
+    },
+    {
+      "drawable": "duolingo",
+      "label": "Duolingo",
+      "componentName": "com.duolingo/com.duolingo.app.PreStreakSaver9Launcher",
+      "requestCount": 1,
+      "firstAppearance": 1787602025.0,
+      "lastRequested": 1787602025.0,
+      "installs": "500,000,000+"
     }
   ]
 }
