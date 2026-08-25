@@ -1,6 +1,6 @@
 {
-  "count": 810,
-  "lastUpdate": "2026-08-24",
+  "count": 799,
+  "lastUpdate": "2026-08-25",
   "apps": [
     {
       "drawable": "geometry_dash",
@@ -21,26 +21,9 @@
       "installs": "100,000+"
     },
     {
-      "drawable": "app_picks",
-      "label": "APP Picks",
-      "componentName": "com.heytap.market/com.heytap.market.activity.MainActivity",
-      "requestCount": 4,
-      "firstAppearance": 1785067487.0,
-      "lastRequested": 1785087287.0
-    },
-    {
       "drawable": "clone_phone_2",
       "label": "Clone Phone",
       "componentName": "com.oneplus.backuprestore/com.oplus.phoneclone.PhoneCloneMainActivity",
-      "requestCount": 4,
-      "firstAppearance": 1785067487.0,
-      "lastRequested": 1785087287.0,
-      "installs": "10,000,000+"
-    },
-    {
-      "drawable": "heymelody",
-      "label": "HeyMelody",
-      "componentName": "com.heytap.headset/com.heytap.headset.component.startup.StartupActivity",
       "requestCount": 4,
       "firstAppearance": 1785067487.0,
       "lastRequested": 1785087287.0,
@@ -425,15 +408,6 @@
       "firstAppearance": 1784569288.0,
       "lastRequested": 1784589088.0,
       "installs": "1,000,000+"
-    },
-    {
-      "drawable": "flud",
-      "label": "Flud+",
-      "componentName": "com.delphicoder.flud.paid/com.delphicoder.flud.MainActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1784589088.0,
-      "installs": "100,000+"
     },
     {
       "drawable": "fm_radio",
@@ -2878,15 +2852,6 @@
       "installs": "1,000,000+"
     },
     {
-      "drawable": "camscanner",
-      "label": "CamScanner",
-      "componentName": "com.intsig.camscanner/com.intsig.camscanner.mainmenu.mainactivity.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1785791466.0,
-      "lastRequested": 1785791466.0,
-      "installs": "500,000,000+"
-    },
-    {
       "drawable": "clock_nightly",
       "label": "Clock nightly",
       "componentName": "com.best.deskclock.nightly/com.best.deskclock.DeskClock",
@@ -3289,15 +3254,6 @@
       "requestCount": 2,
       "firstAppearance": 1785857238.0,
       "lastRequested": 1785857238.0
-    },
-    {
-      "drawable": "sims_freeplay",
-      "label": "Sims FreePlay",
-      "componentName": "com.ea.games.simsfreeplay_na/com.ea.games.simsfreeplay.GameActivity",
-      "requestCount": 2,
-      "firstAppearance": 1785857238.0,
-      "lastRequested": 1785857238.0,
-      "installs": "10,000,000+"
     },
     {
       "drawable": "thedaily",
@@ -5919,15 +5875,6 @@
       "installs": "50,000,000+"
     },
     {
-      "drawable": "santander",
-      "label": "Santander",
-      "componentName": "com.santander.app/com.santander.app.splash.AppStartActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785669383.0,
-      "lastRequested": 1785669383.0,
-      "installs": "100,000,000+"
-    },
-    {
       "drawable": "saylo",
       "label": "Saylo",
       "componentName": "com.xverse.aistory/com.xverse.aistory.MainActivity",
@@ -6353,14 +6300,6 @@
       "installs": "100,000+"
     },
     {
-      "drawable": "ytdlnis",
-      "label": "YTDLnis",
-      "componentName": "com.deniscerri.ytdl/com.deniscerri.ytdl.Default",
-      "requestCount": 1,
-      "firstAppearance": 1786534190.0,
-      "lastRequested": 1786534190.0
-    },
-    {
       "drawable": "zugate",
       "label": "ZUGate",
       "componentName": "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity",
@@ -6447,15 +6386,6 @@
       "lastRequested": 1786535294.0
     },
     {
-      "drawable": "ollama_local_ai",
-      "label": "Ollama Local AI",
-      "componentName": "com.llmproxy/com.llmproxy.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786535294.0,
-      "lastRequested": 1786535294.0,
-      "installs": "5,000+"
-    },
-    {
       "drawable": "orbot",
       "label": "Orbot",
       "componentName": "org.torproject.android/org.torproject.android.OrbotActivity",
@@ -6479,15 +6409,6 @@
       "requestCount": 1,
       "firstAppearance": 1786535294.0,
       "lastRequested": 1786535294.0
-    },
-    {
-      "drawable": "santander",
-      "label": "Santander",
-      "componentName": "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786535294.0,
-      "lastRequested": 1786535294.0,
-      "installs": "10,000,000+"
     },
     {
       "drawable": "spin_by_oxxo",
@@ -6993,15 +6914,6 @@
       "installs": "50,000,000+"
     },
     {
-      "drawable": "oken_scanner",
-      "label": "OKEN Scanner",
-      "componentName": "com.cambyte.okenscan/com.intsig.camscanner.launcher.WelcomeDefaultActivity",
-      "requestCount": 1,
-      "firstAppearance": 1787478045.0,
-      "lastRequested": 1787478045.0,
-      "installs": "50,000,000+"
-    },
-    {
       "drawable": "speedometer",
       "label": "Speedometer",
       "componentName": "apps.r.speedometer/apps.r.speedometer.StartTheme.Charcoal",
@@ -7036,15 +6948,6 @@
       "firstAppearance": 1787478045.0,
       "lastRequested": 1787478045.0,
       "installs": "100,000+"
-    },
-    {
-      "drawable": "duolingo",
-      "label": "Duolingo",
-      "componentName": "com.duolingo/com.duolingo.app.PreStreakSaver9Launcher",
-      "requestCount": 1,
-      "firstAppearance": 1787602025.0,
-      "lastRequested": 1787602025.0,
-      "installs": "500,000,000+"
     }
   ]
 }

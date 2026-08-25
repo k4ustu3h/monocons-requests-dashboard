@@ -1,8 +1,4 @@
 {
-  "com.heytap.headset/com.heytap.headset.component.startup.StartupActivity": {
-    "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonpay.AmazonPayHomeActivityAlias": 4,
-    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 4
-  },
   "com.coloros.translate/com.coloros.translate.ui.MainActivity": {
     "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonpay.AmazonPayHomeActivityAlias": 4,
     "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 4
@@ -16,10 +12,6 @@
     "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 4
   },
   "com.oneplus.backuprestore/com.oplus.phoneclone.PhoneCloneMainActivity": {
-    "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonpay.AmazonPayHomeActivityAlias": 4,
-    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 4
-  },
-  "com.heytap.market/com.heytap.market.activity.MainActivity": {
     "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonpay.AmazonPayHomeActivityAlias": 4,
     "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 4
   },
@@ -816,14 +808,6 @@
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1
   },
   "com.buge.appmanager/com.buge.appmanager.MainActivity": {
-    "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 2,
-    "md.obsidian/md.obsidian.MainActivity": 1,
-    "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1,
-    "ch.protonmail.android/ch.protonmail.android.MainActivity": 2,
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 2,
-    "ru.karasevm.privatednstoggle/ru.karasevm.privatednstoggle.ui.MainActivity": 1
-  },
-  "com.delphicoder.flud.paid/com.delphicoder.flud.MainActivity": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 2,
     "md.obsidian/md.obsidian.MainActivity": 1,
     "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1,
@@ -3189,10 +3173,6 @@
     "id.dana/id.dana.onboarding.splash.DanaSplashActivity": 2,
     "id.qoin.korlantas.user/id.qoin.korlantas.user.MainActivity": 2
   },
-  "com.intsig.camscanner/com.intsig.camscanner.mainmenu.mainactivity.MainActivity": {
-    "id.dana/id.dana.onboarding.splash.DanaSplashActivity": 2,
-    "id.qoin.korlantas.user/id.qoin.korlantas.user.MainActivity": 2
-  },
   "hgxorplysxzqq.uf/j.Kx.C.sl": {
     "id.dana/id.dana.onboarding.splash.DanaSplashActivity": 2,
     "id.qoin.korlantas.user/id.qoin.korlantas.user.MainActivity": 2
@@ -3324,10 +3304,6 @@
     "cm.aptoide.pt/cm.aptoide.pt.view.MainActivity": 2
   },
   "com.nexon.ma/com.nexon.ma.MainActivity": {
-    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
-    "cm.aptoide.pt/cm.aptoide.pt.view.MainActivity": 2
-  },
-  "com.ea.games.simsfreeplay_na/com.ea.games.simsfreeplay.GameActivity": {
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
     "cm.aptoide.pt/cm.aptoide.pt.view.MainActivity": 2
   },
@@ -3795,14 +3771,6 @@
     "br.com.gabba.Caixa/br.n3oGO4.g8WUn8.tsSIb4.ui.fPyyF0.xB4QS8": 1,
     "br.com.mobile.ticket/br.com.mobile.ticket.MainActivity": 1
   },
-  "com.santander.app/com.santander.app.splash.AppStartActivity": {
-    "us.avenue/us.uGZSp9.sACtW1": 1,
-    "br.com.odontosfera.uniodontojundiai/br.com.odontosfera.uniodontojundiai.MainActivity": 1,
-    "it.dbtecno.pizzaboypro/it.dbtecno.pizzaboypro.MainActivity": 1,
-    "it.dbtecno.pizzaboygbapro/it.dbtecno.pizzaboygbapro.MainActivity": 1,
-    "br.com.gabba.Caixa/br.n3oGO4.g8WUn8.tsSIb4.ui.fPyyF0.xB4QS8": 1,
-    "br.com.mobile.ticket/br.com.mobile.ticket.MainActivity": 1
-  },
   "ai.socialapps.speakmaster/com.snapquiz.app.InitActivity": {
     "us.avenue/us.uGZSp9.sACtW1": 1,
     "br.com.odontosfera.uniodontojundiai/br.com.odontosfera.uniodontojundiai.MainActivity": 1,
@@ -4083,10 +4051,6 @@
     "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
     "md.obsidian/md.obsidian.MainActivity": 1
   },
-  "com.deniscerri.ytdl/com.deniscerri.ytdl.Default": {
-    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
-    "md.obsidian/md.obsidian.MainActivity": 1
-  },
   "juloo.keyboard2/juloo.keyboard2.LauncherActivity": {
     "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
     "md.obsidian/md.obsidian.MainActivity": 1
@@ -4138,13 +4102,6 @@
   "com.microsoft.launcher/com.microsoft.launcher.Launcher": {
     "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
     "md.obsidian/md.obsidian.MainActivity": 1
-  },
-  "com.llmproxy/com.llmproxy.MainActivity": {
-    "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
-    "mx.zenfi.app/mx.zenfi.app.MainActivity": 1,
-    "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 1,
-    "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 1,
-    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1
   },
   "com.moonshot.kimichat/com.moonshot.kimichat.MainActivity": {
     "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 1,
@@ -4475,9 +4432,6 @@
     "md.obsidian/md.obsidian.MainActivity": 1
   },
   "com.localhostlimited.memeinstants/com.localhostlimited.memeinstants.activities.MainActivity": {
-    "jp.co.goodroid.hyper.busflow/com.unity3d.player.UnityPlayerActivity": 1
-  },
-  "com.cambyte.okenscan/com.intsig.camscanner.launcher.WelcomeDefaultActivity": {
     "jp.co.goodroid.hyper.busflow/com.unity3d.player.UnityPlayerActivity": 1
   },
   "com.zostel.app.android/com.zostel.app.android.MainActivity": {
