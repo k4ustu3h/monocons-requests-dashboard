@@ -1,25 +1,7 @@
 {
-  "count": 799,
-  "lastUpdate": "2026-08-25",
+  "count": 783,
+  "lastUpdate": "2026-08-27",
   "apps": [
-    {
-      "drawable": "geometry_dash",
-      "label": "Geometry Dash",
-      "componentName": "com.robtopx.geometryjump/com.robtopx.geometryjump.GeometryJump",
-      "requestCount": 5,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1785583786.0,
-      "installs": "10,000,000+"
-    },
-    {
-      "drawable": "waterfox",
-      "label": "Waterfox",
-      "componentName": "net.waterfox.android.release/net.waterfox.android.release.App",
-      "requestCount": 5,
-      "firstAppearance": 1784746278.0,
-      "lastRequested": 1787505756.0,
-      "installs": "100,000+"
-    },
     {
       "drawable": "clone_phone_2",
       "label": "Clone Phone",
@@ -179,15 +161,6 @@
       "installs": "1,000,000+"
     },
     {
-      "drawable": "shaadi",
-      "label": "Shaadi",
-      "componentName": "com.shaadi.android/com.shaadi.android.feature.splash.SplashScreenActivity",
-      "requestCount": 4,
-      "firstAppearance": 1784727668.0,
-      "lastRequested": 1786887873.0,
-      "installs": "10,000,000+"
-    },
-    {
       "drawable": "shvr",
       "label": "SHVR",
       "componentName": "com.moe.shvr/com.moe.shvr.MainActivity",
@@ -221,6 +194,51 @@
       "requestCount": 4,
       "firstAppearance": 1784732692.0,
       "lastRequested": 1786975728.0
+    },
+    {
+      "drawable": "bus_masters_india",
+      "label": "Bus Masters India",
+      "componentName": "com.highbrowinteractive.bus.masters.india.highway.driving.simulator.game/com.unity3d.player.UnityPlayerActivity",
+      "requestCount": 4,
+      "firstAppearance": 1783086305.0,
+      "lastRequested": 1787786894.0,
+      "installs": "5,000,000+"
+    },
+    {
+      "drawable": "mob_control",
+      "label": "Mob Control",
+      "componentName": "com.vincentb.MobControl/com.google.firebase.MessagingUnityPlayerActivity",
+      "requestCount": 4,
+      "firstAppearance": 1783086305.0,
+      "lastRequested": 1787786894.0,
+      "installs": "100,000,000+"
+    },
+    {
+      "drawable": "ntes",
+      "label": "NTES",
+      "componentName": "cris.icms.ntes/cris.icms.ntes.LaunchApp",
+      "requestCount": 4,
+      "firstAppearance": 1783086305.0,
+      "lastRequested": 1787786894.0,
+      "installs": "10,000,000+"
+    },
+    {
+      "drawable": "subway_city",
+      "label": "Subway City",
+      "componentName": "com.sybogames.subway.surfers.game/com.google.firebase.MessagingUnityPlayerActivity",
+      "requestCount": 4,
+      "firstAppearance": 1783086305.0,
+      "lastRequested": 1787786894.0,
+      "installs": "10,000,000+"
+    },
+    {
+      "drawable": "refract",
+      "label": "Refract",
+      "componentName": "com.prism.refract/com.prism.refract.MainActivity",
+      "requestCount": 4,
+      "firstAppearance": 1787018463.0,
+      "lastRequested": 1787786894.0,
+      "installs": "50,000+"
     },
     {
       "drawable": "unnamed_icon_2_1",
@@ -272,15 +290,6 @@
       "firstAppearance": 1784527845.0,
       "lastRequested": 1784547645.0,
       "installs": "10,000+"
-    },
-    {
-      "drawable": "easy_notes",
-      "label": "Easy Notes",
-      "componentName": "com.kin.easynotes/com.kin.easynotes.presentation.MainActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784544069.0,
-      "lastRequested": 1784563869.0,
-      "installs": "1,000+"
     },
     {
       "drawable": "freeotp",
@@ -716,15 +725,6 @@
       "installs": "500+"
     },
     {
-      "drawable": "clima",
-      "label": "Clima",
-      "componentName": "com.motorola.timeweatherwidget/com.motorola.commandcenter.MainActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784694557.0,
-      "lastRequested": 1784714357.0,
-      "installs": "1,000,000,000+"
-    },
-    {
       "drawable": "cozylife",
       "label": "CozyLife",
       "componentName": "app.clpro.app/com.sibodoit.app.ui.page.StartUpActivity",
@@ -918,15 +918,6 @@
       "lastRequested": 1784752492.0
     },
     {
-      "drawable": "milieu",
-      "label": "milieu",
-      "componentName": "com.milieu/com.milieu.MainActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784732692.0,
-      "lastRequested": 1784752492.0,
-      "installs": "5,000,000+"
-    },
-    {
       "drawable": "myais",
       "label": "myAIS",
       "componentName": "com.ais.mimo.eservice/com.ais.mimo.eservice.MainActivity",
@@ -1074,15 +1065,6 @@
       "firstAppearance": 1784732692.0,
       "lastRequested": 1784752492.0,
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "alexcalc",
-      "label": "AlexCalc",
-      "componentName": "net.alexbarry.calc_android/net.alexbarry.calc_android.MainActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784746278.0,
-      "lastRequested": 1784766078.0,
-      "installs": "500+"
     },
     {
       "drawable": "jakdojade",
@@ -1370,23 +1352,6 @@
       "installs": "100,000+"
     },
     {
-      "drawable": "average_data_usage_widget",
-      "label": "Average data usage widget",
-      "componentName": "com.trianguloy.continuousDataUsage/com.trianguloy.continuousDataUsage.activities.Main",
-      "requestCount": 3,
-      "firstAppearance": 1784953398.0,
-      "lastRequested": 1784973198.0,
-      "installs": "10,000+"
-    },
-    {
-      "drawable": "einkbro",
-      "label": "EinkBro",
-      "componentName": "info.plateaukao.einkbro/info.plateaukao.einkbro.activity.BrowserActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784953398.0,
-      "lastRequested": 1784973198.0
-    },
-    {
       "drawable": "genius_scan",
       "label": "Genius Scan",
       "componentName": "com.thegrizzlylabs.geniusscan.free/com.thegrizzlylabs.geniusscan.ui.welcome.WelcomeActivity",
@@ -1412,15 +1377,6 @@
       "firstAppearance": 1784953398.0,
       "lastRequested": 1784973198.0,
       "installs": "100,000,000+"
-    },
-    {
-      "drawable": "block_blast",
-      "label": "Block Blast!",
-      "componentName": "com.block.juggle/org.cocos2dx.javascript.AppActivity",
-      "requestCount": 3,
-      "firstAppearance": 1784949849.0,
-      "lastRequested": 1784969649.0,
-      "installs": "1,000,000,000+"
     },
     {
       "drawable": "fotmob",
@@ -1577,15 +1533,6 @@
       "lastRequested": 1784000344.0
     },
     {
-      "drawable": "device_help",
-      "label": "Device Help",
-      "componentName": "com.motorola.genie/com.motorola.genie.main.start.LaunchActivity",
-      "requestCount": 3,
-      "firstAppearance": 1785638115.0,
-      "lastRequested": 1785641224.0,
-      "installs": "1,000,000,000+"
-    },
-    {
       "drawable": "achar_vagas_infojobs",
       "label": "Achar vagas - Infojobs",
       "componentName": "com.infojobs.phone/com.infojobs.app.Main",
@@ -1629,42 +1576,6 @@
       "installs": "1,000,000+"
     },
     {
-      "drawable": "bus_masters_india",
-      "label": "Bus Masters India",
-      "componentName": "com.highbrowinteractive.bus.masters.india.highway.driving.simulator.game/com.unity3d.player.UnityPlayerActivity",
-      "requestCount": 3,
-      "firstAppearance": 1783086305.0,
-      "lastRequested": 1787096773.0,
-      "installs": "5,000,000+"
-    },
-    {
-      "drawable": "mob_control",
-      "label": "Mob Control",
-      "componentName": "com.vincentb.MobControl/com.google.firebase.MessagingUnityPlayerActivity",
-      "requestCount": 3,
-      "firstAppearance": 1783086305.0,
-      "lastRequested": 1787096773.0,
-      "installs": "100,000,000+"
-    },
-    {
-      "drawable": "ntes",
-      "label": "NTES",
-      "componentName": "cris.icms.ntes/cris.icms.ntes.LaunchApp",
-      "requestCount": 3,
-      "firstAppearance": 1783086305.0,
-      "lastRequested": 1787096773.0,
-      "installs": "10,000,000+"
-    },
-    {
-      "drawable": "subway_city",
-      "label": "Subway City",
-      "componentName": "com.sybogames.subway.surfers.game/com.google.firebase.MessagingUnityPlayerActivity",
-      "requestCount": 3,
-      "firstAppearance": 1783086305.0,
-      "lastRequested": 1787096773.0,
-      "installs": "10,000,000+"
-    },
-    {
       "drawable": "diskwala",
       "label": "Diskwala",
       "componentName": "com.diskwalaapp/com.diskwalaapp.MainActivity",
@@ -1674,13 +1585,13 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "refract",
-      "label": "Refract",
-      "componentName": "com.prism.refract/com.prism.refract.MainActivity",
+      "drawable": "hole_io_1",
+      "label": "Hole.io",
+      "componentName": "io.voodoo.holeio/com.unity3d.player.UnityPlayerActivity",
       "requestCount": 3,
       "firstAppearance": 1787018463.0,
-      "lastRequested": 1787505756.0,
-      "installs": "50,000+"
+      "lastRequested": 1787786894.0,
+      "installs": "100,000,000+"
     },
     {
       "drawable": "soundcore",
@@ -1937,15 +1848,6 @@
       "requestCount": 2,
       "firstAppearance": 1784569288.0,
       "lastRequested": 1784589088.0
-    },
-    {
-      "drawable": "lazada",
-      "label": "Lazada",
-      "componentName": "com.lazada.android/com.lazada.activities.EnterActivity",
-      "requestCount": 2,
-      "firstAppearance": 1784569288.0,
-      "lastRequested": 1784589088.0,
-      "installs": "500,000,000+"
     },
     {
       "drawable": "lichess",
@@ -2241,15 +2143,6 @@
       "installs": "100,000+"
     },
     {
-      "drawable": "kompact",
-      "label": "Kompact",
-      "componentName": "com.kompact/com.kompact.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1785567577.0,
-      "lastRequested": 1785567577.0,
-      "installs": "100+"
-    },
-    {
       "drawable": "maxim",
       "label": "maxim \ud83d\ude95",
       "componentName": "com.taxsee.taxsee/com.taxsee.taxsee.ui.activities.SplashScreen",
@@ -2398,15 +2291,6 @@
       "installs": "100,000,000+"
     },
     {
-      "drawable": "fc_mobile",
-      "label": "FC Mobile",
-      "componentName": "com.ea.gp.fifamobile/com.ea.gp.fifamobile.FifaMainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1785583786.0,
-      "lastRequested": 1785583786.0,
-      "installs": "500,000,000+"
-    },
-    {
       "drawable": "mindustry",
       "label": "Mindustry",
       "componentName": "io.anuke.mindustry/mindustry.android.AndroidLauncher",
@@ -2543,15 +2427,6 @@
       "requestCount": 2,
       "firstAppearance": 1785641224.0,
       "lastRequested": 1785641224.0
-    },
-    {
-      "drawable": "pw",
-      "label": "PW",
-      "componentName": "xyz.penpencil.physicswala/com.penpencil.physicswallah.SplashActivityAliasNormal",
-      "requestCount": 2,
-      "firstAppearance": 1785641224.0,
-      "lastRequested": 1785641224.0,
-      "installs": "50,000,000+"
     },
     {
       "drawable": "screen_off_timer",
@@ -3342,15 +3217,6 @@
       "requestCount": 2,
       "firstAppearance": 1785602037.0,
       "lastRequested": 1786975728.0
-    },
-    {
-      "drawable": "hole_io_1",
-      "label": "Hole.io",
-      "componentName": "io.voodoo.holeio/com.unity3d.player.UnityPlayerActivity",
-      "requestCount": 2,
-      "firstAppearance": 1787018463.0,
-      "lastRequested": 1787096773.0,
-      "installs": "100,000,000+"
     },
     {
       "drawable": "clearscanner",
@@ -6052,15 +5918,6 @@
       "installs": "500,000+"
     },
     {
-      "drawable": "vinted",
-      "label": "Vinted",
-      "componentName": "fr.vinted/com.vinted.feature.shell.MDActivity",
-      "requestCount": 1,
-      "firstAppearance": 1784503278.0,
-      "lastRequested": 1784503278.0,
-      "installs": "100,000,000+"
-    },
-    {
       "drawable": "wavelength",
       "label": "Wavelength",
       "componentName": "com.PalmCourt.Wavelength/com.google.firebase.MessagingUnityPlayerActivity",
@@ -6095,15 +5952,6 @@
       "firstAppearance": 1784503278.0,
       "lastRequested": 1784503278.0,
       "installs": "10,000,000+"
-    },
-    {
-      "drawable": "zalando",
-      "label": "Zalando",
-      "componentName": "de.zalando.mobile/de.zalando.mobile.ui.start.SplashActivity",
-      "requestCount": 1,
-      "firstAppearance": 1784503278.0,
-      "lastRequested": 1784503278.0,
-      "installs": "100,000,000+"
     },
     {
       "drawable": "bat_bms",
@@ -6447,14 +6295,6 @@
       "installs": "500,000+"
     },
     {
-      "drawable": "easy_notes_1",
-      "label": "Easy Notes",
-      "componentName": "me.easyapps.easynotes/com.kin.easynotes.presentation.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786975728.0,
-      "lastRequested": 1786975728.0
-    },
-    {
       "drawable": "futo_keyboard_1",
       "label": "FUTO Keyboard",
       "componentName": "org.futo.inputmethod.latin/org.futo.inputmethod.latin.uix.settings.SettingsActivity",
@@ -6654,14 +6494,6 @@
       "drawable": "camara",
       "label": "C\u00e1mara",
       "componentName": "com.ss.android.ugc.aweme/com.android.camera.CameraLauncher",
-      "requestCount": 1,
-      "firstAppearance": 1787184542.0,
-      "lastRequested": 1787184542.0
-    },
-    {
-      "drawable": "delta",
-      "label": "Delta",
-      "componentName": "website.leifs.delta.foss/website.leifs.delta.activities.MainActivity",
       "requestCount": 1,
       "firstAppearance": 1787184542.0,
       "lastRequested": 1787184542.0
@@ -6948,6 +6780,33 @@
       "firstAppearance": 1787478045.0,
       "lastRequested": 1787478045.0,
       "installs": "100,000+"
+    },
+    {
+      "drawable": "duolingo",
+      "label": "Duolingo\ud83d\udc40",
+      "componentName": "com.duolingo/com.duolingo.app.StreakSaverLauncherEyes",
+      "requestCount": 1,
+      "firstAppearance": 1787786894.0,
+      "lastRequested": 1787786894.0,
+      "installs": "500,000,000+"
+    },
+    {
+      "drawable": "ludo_king",
+      "label": "Ludo King",
+      "componentName": "com.ludo.king/com.unity3d.player.FoldablePlayerActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787786894.0,
+      "lastRequested": 1787786894.0,
+      "installs": "1,000,000,000+"
+    },
+    {
+      "drawable": "serializd",
+      "label": "Serializd",
+      "componentName": "com.serializdmobile/com.serializdmobile.LauncherDefault",
+      "requestCount": 1,
+      "firstAppearance": 1787786894.0,
+      "lastRequested": 1787786894.0,
+      "installs": "500,000+"
     }
   ]
 }

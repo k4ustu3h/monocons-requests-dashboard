@@ -11,6 +11,10 @@
       "existing_drawable": "settings"
     },
     {
+      "id": "com.google.audio.hearing.visualization.accessibility.scribe/com.google.audio.hearing.visualization.accessibility.scribe.MainActivity",
+      "existing_drawable": "sound_notifications"
+    },
+    {
       "id": "com.wstxda.gsl/com.wstxda.gsl.shortcut.AssistantShortcut",
       "existing_drawable": "weather_google_shortcuts_launcher"
     },
@@ -37,6 +41,10 @@
     {
       "id": "com.ss.android.ugc.aweme/com.android.camera.CameraLauncher",
       "existing_drawable": "tiktok"
+    },
+    {
+      "id": "com.duolingo/com.duolingo.app.StreakSaverLauncherEyes",
+      "existing_drawable": "duolingo"
     }
   ]
 }
