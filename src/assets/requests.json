@@ -1,6 +1,6 @@
 {
-  "count": 783,
-  "lastUpdate": "2026-08-27",
+  "count": 785,
+  "lastUpdate": "2026-08-28",
   "apps": [
     {
       "drawable": "clone_phone_2",
@@ -6807,6 +6807,24 @@
       "firstAppearance": 1787786894.0,
       "lastRequested": 1787786894.0,
       "installs": "500,000+"
+    },
+    {
+      "drawable": "bandle",
+      "label": "Bandle",
+      "componentName": "com.bandlegame.bandleguessasong/com.bandlegame.bandleguessasong.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787853538.0,
+      "lastRequested": 1787853538.0,
+      "installs": "500,000+"
+    },
+    {
+      "drawable": "boat_hearables",
+      "label": "boAt Hearables",
+      "componentName": "com.boAt.hearables/com.boAt.hearables.ui.main.SplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787853538.0,
+      "lastRequested": 1787853538.0,
+      "installs": "10,000,000+"
     }
   ]
 }
