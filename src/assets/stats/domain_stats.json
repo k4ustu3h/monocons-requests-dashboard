@@ -1,8 +1,8 @@
 {
   "com": {
-    "requests": 450,
+    "requests": 456,
     "done": 4595,
-    "total": 5045,
+    "total": 5051,
     "global": 0,
     "global_installs": 0
   },
@@ -14,11 +14,11 @@
     "global_installs": 0
   },
   "de": {
-    "requests": 220,
+    "requests": 233,
     "done": 84,
-    "total": 304,
-    "global": 219,
-    "global_installs": 4568207160
+    "total": 317,
+    "global": 231,
+    "global_installs": 4568357160
   },
   "in": {
     "requests": 123,
@@ -46,7 +46,7 @@
     "done": 6,
     "total": 144,
     "global": 138,
-    "global_installs": 3068087410
+    "global_installs": 3078587410
   },
   "ch": {
     "requests": 97,
@@ -97,19 +97,19 @@
     "global": 69,
     "global_installs": 827285010
   },
+  "io": {
+    "requests": 38,
+    "done": 42,
+    "total": 80,
+    "global": 0,
+    "global_installs": 0
+  },
   "mx": {
     "requests": 71,
     "done": 7,
     "total": 78,
     "global": 64,
     "global_installs": 1205972000
-  },
-  "io": {
-    "requests": 35,
-    "done": 42,
-    "total": 77,
-    "global": 0,
-    "global_installs": 0
   },
   "md": {
     "requests": 63,
@@ -236,6 +236,13 @@
     "total": 18,
     "global": 0,
     "global_installs": 0
+  },
+  "ml": {
+    "requests": 14,
+    "done": 0,
+    "total": 14,
+    "global": 13,
+    "global_installs": 500150000
   },
   "tv": {
     "requests": 0,
@@ -800,6 +807,13 @@
   "notion": {
     "requests": 0,
     "done": 2,
+    "total": 2,
+    "global": 0,
+    "global_installs": 0
+  },
+  "photo": {
+    "requests": 1,
+    "done": 1,
     "total": 2,
     "global": 0,
     "global_installs": 0
@@ -1722,13 +1736,6 @@
     "global_installs": 0
   },
   "pdfreader": {
-    "requests": 0,
-    "done": 1,
-    "total": 1,
-    "global": 0,
-    "global_installs": 0
-  },
-  "photo": {
     "requests": 0,
     "done": 1,
     "total": 1,
