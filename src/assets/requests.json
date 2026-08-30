@@ -1,6 +1,6 @@
 {
-  "count": 797,
-  "lastUpdate": "2026-08-29",
+  "count": 799,
+  "lastUpdate": "2026-08-30",
   "apps": [
     {
       "drawable": "clash_royale",
@@ -6931,6 +6931,24 @@
       "firstAppearance": 1787930908.0,
       "lastRequested": 1787930908.0,
       "installs": "100,000,000+"
+    },
+    {
+      "drawable": "duolingo_1",
+      "label": "Duolingo\ud83d\udea8",
+      "componentName": "com.duolingo/com.duolingo.app.StreakSaverLauncherSiren",
+      "requestCount": 1,
+      "firstAppearance": 1788038619.0,
+      "lastRequested": 1788038619.0,
+      "installs": "500,000,000+"
+    },
+    {
+      "drawable": "bob_world_2_0",
+      "label": "bob World 2.0",
+      "componentName": "com.bankofbaroda.bobworlddmb/com.digitalmobileapp.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1788038619.0,
+      "lastRequested": 1788038619.0,
+      "installs": "500,000+"
     }
   ]
 }
