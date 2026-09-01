@@ -88,7 +88,6 @@
   "scr-6": [
     "com.eepiemi.materialbook/com.eepiemi.materialbook.MainActivity",
     "com.sidhant.path/com.sidhant.path.MainActivity",
-    "org.lichess.mobileV2/org.lichess.mobileV2.MainActivity",
     "exe.bbllw8.anemo/exe.bbllw8.anemo.shell.LauncherActivity",
     "com.noodlecake.altosodyssey/com.unity3d.player.UnityPlayerActivity",
     "com.playdigious.deadcells.mobile/com.playdigious.deadcells.mobile.DeadCellsLoading",
@@ -135,7 +134,6 @@
     "com.vivo.vhome/com.vivo.vhome.ir.ui.IRDeviceManageActivity",
     "com.roehl.habitkit/com.roehl.habitkit.MainActivity",
     "com.example.photoswooper/com.example.photoswooper.MainActivity",
-    "com.streetwriters.notesnook/com.streetwriters.notesnook.MainActivity",
     "com.jndapp.nothing.widgets.pack/com.jndapp.nothing.widgets.pack.MainActivity",
     "com.syaau.NepaliNews/com.syaau.nepalinews.MainActivity",
     "com.vivo.soundrecorder/com.android.activity.ReclistActivity",
@@ -400,7 +398,6 @@
     "com.minar.birday/com.minar.birday.activities.MainActivity",
     "one4studio.iconpack.lenawhite/com.one4studio.iconpack.MainActivity",
     "com.document.viewer.doc.reader/com.document.viewer.doc.reader.activity.NewSplashScreen",
-    "com.streetwriters.notesnook/com.streetwriters.notesnook.MainActivity",
     "com.vivo.imanager/com.iqoo.secure.MainActivity",
     "com.ilv.vradio/com.ilv.vradio.MainActivity",
     "com.otp.octopilauncher/com.otp.octopilauncher.MainActivity",
@@ -566,9 +563,7 @@
   "scr-37": [
     "com.sportzx.live/com.sportzx.live.activities.SplashActivity",
     "com.confirmtkt.lite/com.confirmtkt.lite.LaunchActivity",
-    "net.skyscanner.android.main/net.skyscanner.shell.ui.activity.SplashActivity",
     "com.axiel7.anihyou/com.axiel7.anihyou.ui.screens.main.MainActivity",
-    "money.jupiter/money.jupiter.MainActivityDefault",
     "org.breezyweather/org.breezyweather.ui.main.MainActivity",
     "com.supercell.clashofclans/com.supercell.titan.GameApp",
     "org.torproject.vpn/org.torproject.vpn.ui.iconsetting.model.LauncherDefault"
@@ -783,7 +778,6 @@
     "com.pixel.gallery/com.pixel.gallery.MainActivity",
     "com.mpm.brompit/com.mpm.brompit.MainActivity",
     "com.wizconnected.wiz2/com.wizconnected.wiz2.MainActivity",
-    "io.github.a13e300.ksuwebui/io.github.a13e300.ksuwebui.MainActivity",
     "app.bpjs.mobile/io.flutter.embedding.android.FlutterFragmentActivity",
     "org.frknkrc44.hma_oss/org.frknkrc44.hma_oss.MainActivityLauncher",
     "com.unity.uniscore/com.unity.uniscore.MainActivity",
@@ -878,7 +872,6 @@
     "com.android.axion.sandbox/com.android.axion.sandbox.MainActivity",
     "com.wizconnected.wiz2/com.wizconnected.wiz2.MainActivity",
     "org.lineageos.audiofx/org.lineageos.audiofx.activity.ActivityMusic",
-    "io.github.a13e300.ksuwebui/io.github.a13e300.ksuwebui.MainActivity",
     "com.yn.shappky/com.yn.shappky.MainActivity",
     "icu.nullptr.applistdetector/icu.nullptr.applistdetector.MainActivity",
     "com.adilhanney.saber/com.adilhanney.saber.MainActivity",
@@ -987,7 +980,6 @@
     "io.github.giuig.auraninja/io.github.giuig.auraninja.MainActivity",
     "xyz.klinker.messenger/xyz.klinker.messenger.activity.MessengerActivity",
     "com.vivo.soundrecorder/com.android.activity.ReclistActivity",
-    "com.streetwriters.notesnook/com.streetwriters.notesnook.MainActivity",
     "com.otp.octopilauncher/com.otp.octopilauncher.MainActivity"
   ],
   "scr-62": [
@@ -1202,7 +1194,6 @@
     "com.subtlesignals.gradientweather/com.subtlesignals.gradientweather.IconSunny",
     "com.transsion.healthlife/com.transsion.healthlife.view.WelcomeActivity",
     "com.rubex.nfile/com.rubex.nfile.MainActivityDefault",
-    "org.lichess.mobileV2/org.lichess.mobileV2.MainActivity",
     "exe.bbllw8.anemo/exe.bbllw8.anemo.shell.LauncherActivity",
     "com.gazlaws.codeboard/com.gazlaws.codeboard.MainActivity",
     "app.komikku/eu.kanade.tachiyomi.ui.main.MainActivity",
@@ -1317,10 +1308,8 @@
     "com.fortia.gestion.movil/crc64f231f2e6508d810a.MainActivity"
   ],
   "scr-79": [
-    "net.skyscanner.android.main/net.skyscanner.shell.ui.activity.SplashActivity",
     "com.confirmtkt.lite/com.confirmtkt.lite.LaunchActivity",
     "org.torproject.vpn/org.torproject.vpn.ui.iconsetting.model.LauncherDefault",
-    "money.jupiter/money.jupiter.MainActivityDefault",
     "com.supercell.clashofclans/com.supercell.titan.GameApp",
     "org.breezyweather/org.breezyweather.ui.main.MainActivity",
     "com.axiel7.anihyou/com.axiel7.anihyou.ui.screens.main.MainActivity",
@@ -1536,35 +1525,20 @@
     "cris.icms.ntes/cris.icms.ntes.LaunchApp",
     "com.prism.refract/com.prism.refract.MainActivity",
     "com.highbrowinteractive.bus.masters.india.highway.driving.simulator.game/com.unity3d.player.UnityPlayerActivity",
-    "com.serializdmobile/com.serializdmobile.LauncherDefault",
     "com.sybogames.subway.surfers.game/com.google.firebase.MessagingUnityPlayerActivity",
     "io.voodoo.holeio/com.unity3d.player.UnityPlayerActivity",
-    "com.ludo.king/com.unity3d.player.FoldablePlayerActivity",
-    "com.duolingo/com.duolingo.app.StreakSaverLauncherEyes"
+    "com.ludo.king/com.unity3d.player.FoldablePlayerActivity"
   ],
   "scr-97": [
-    "com.boAt.hearables/com.boAt.hearables.ui.main.SplashActivity",
     "com.bandlegame.bandleguessasong/com.bandlegame.bandleguessasong.MainActivity"
   ],
   "scr-98": [
     "io.ente.photos/io.ente.photos.IconGreen",
-    "com.dropbox.android/com.dropbox.android.activity.DropboxBrowser",
     "apps.automan.blurwallpaper/apps.automan.blurwallpaper.MainActivity",
-    "com.github.andreyasadchy.xtrakick/com.xtrakick.app.ui.main.MainActivity",
-    "ml.docilealligator.infinityforreddit.plus/ml.docilealligator.infinityforreddit.activities.MainActivity",
-    "io.filen.app/io.filen.app.MainActivity",
-    "io.simplelogin.android/io.simplelogin.android.module.startup.StartupActivity",
-    "com.vivaldi.browser/com.vivaldi.browser.IconAlt20",
-    "com.yahoo.mobile.client.android.mail/com.yahoo.mobile.client.android.mail.activity.MainActivity",
     "com.linkbox.plus.android/com.linkbox.app.LauncherActivity",
     "photo.editor.photoeditor.photoeditorpro/com.camerasideas.collagemaker.activity.DummyActivity",
-    "com.github.andreyasadchy.xtra/com.github.andreyasadchy.xtra.ui.main.MainActivity",
     "de.tutao.tutanota/de.tutao.tutanota.MainActivity",
     "io.ente.auth/io.ente.auth.IconDefault",
     "com.supercell.clashroyale/com.supercell.titan.GameApp"
-  ],
-  "scr-99": [
-    "com.bankofbaroda.bobworlddmb/com.digitalmobileapp.MainActivity",
-    "com.duolingo/com.duolingo.app.StreakSaverLauncherSiren"
   ]
 }
