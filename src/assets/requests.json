@@ -1,6 +1,6 @@
 {
-  "count": 781,
-  "lastUpdate": "2026-09-01",
+  "count": 782,
+  "lastUpdate": "2026-09-02",
   "apps": [
     {
       "drawable": "clash_royale",
@@ -6790,6 +6790,15 @@
       "firstAppearance": 1787930908.0,
       "lastRequested": 1787930908.0,
       "installs": "1,000,000+"
+    },
+    {
+      "drawable": "duolingo",
+      "label": "Duolingo",
+      "componentName": "com.duolingo/com.duolingo.app.FixedRetentionChallengeLauncher",
+      "requestCount": 1,
+      "firstAppearance": 1788229486.0,
+      "lastRequested": 1788229486.0,
+      "installs": "500,000,000+"
     }
   ]
 }
