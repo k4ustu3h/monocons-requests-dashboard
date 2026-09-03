@@ -1,5 +1,5 @@
 {
-  "count": 777,
+  "count": 778,
   "lastUpdate": "2026-09-03",
   "apps": [
     {
@@ -193,7 +193,7 @@
       "firstAppearance": 1784727668.0,
       "lastRequested": 1786887873.0,
       "installs": "1,000,000+",
-      "roi_score": 5716,
+      "roi_score": 5718,
       "priority": "Critical"
     },
     {
@@ -204,7 +204,7 @@
       "firstAppearance": 1784727668.0,
       "lastRequested": 1786887873.0,
       "installs": "1,000,000+",
-      "roi_score": 5716,
+      "roi_score": 5718,
       "priority": "Critical"
     },
     {
@@ -3199,7 +3199,7 @@
       "firstAppearance": 1785669383.0,
       "lastRequested": 1785669383.0,
       "installs": "1,000,000+",
-      "roi_score": 5000,
+      "roi_score": 5001,
       "priority": "Critical"
     },
     {
@@ -3210,7 +3210,7 @@
       "firstAppearance": 1785669383.0,
       "lastRequested": 1785669383.0,
       "installs": "1,000,000+",
-      "roi_score": 5000,
+      "roi_score": 5001,
       "priority": "Critical"
     },
     {
@@ -8308,6 +8308,17 @@
       "lastRequested": 1788375842.0,
       "installs": "1,000,000+",
       "roi_score": 1313,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "duolingo",
+      "label": "Duolingo\u2753",
+      "componentName": "com.duolingo/com.duolingo.app.StreakSaverLauncher3EmojiQuestionMark",
+      "requestCount": 1,
+      "firstAppearance": 1788473363.0,
+      "lastRequested": 1788473363.0,
+      "installs": "500,000,000+",
+      "roi_score": 338,
       "priority": "Medium"
     }
   ]
