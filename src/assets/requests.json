@@ -1,6 +1,6 @@
 {
-  "count": 782,
-  "lastUpdate": "2026-09-02",
+  "count": 777,
+  "lastUpdate": "2026-09-03",
   "apps": [
     {
       "drawable": "clash_royale",
@@ -2230,14 +2230,6 @@
       "lastRequested": 1785567577.0
     },
     {
-      "drawable": "word_tracer",
-      "label": "Word Tracer",
-      "componentName": "com.wordtracer.app/com.wordtracer.app.MainActivity",
-      "requestCount": 2,
-      "firstAppearance": 1785567577.0,
-      "lastRequested": 1785567577.0
-    },
-    {
       "drawable": "youtube_conv_axs",
       "label": "YouTube Conv.axs",
       "componentName": "com.pg_axis.ytcnv/com.pg_axis.ytcnv.MainActivity",
@@ -3901,15 +3893,6 @@
       "firstAppearance": 1784483478.0,
       "lastRequested": 1784483478.0,
       "installs": "1,000,000+"
-    },
-    {
-      "drawable": "trascrizione_istantanea",
-      "label": "Trascrizione Istantanea",
-      "componentName": "com.google.audio.hearing.visualization.accessibility.scribe/com.google.audio.hearing.visualization.accessibility.scribe.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1784483478.0,
-      "lastRequested": 1784483478.0,
-      "installs": "1,000,000,000+"
     },
     {
       "drawable": "uci_cinemas",
@@ -6122,15 +6105,6 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "banco_azteca",
-      "label": "Banco Azteca",
-      "componentName": "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity",
-      "requestCount": 1,
-      "firstAppearance": 1786535294.0,
-      "lastRequested": 1786535294.0,
-      "installs": "50,000,000+"
-    },
-    {
       "drawable": "business_suite",
       "label": "Business Suite",
       "componentName": "com.facebook.pages.app/com.facebook.pages.app.auth.PagesManagerLoginActivity",
@@ -6307,15 +6281,6 @@
       "requestCount": 1,
       "firstAppearance": 1787184542.0,
       "lastRequested": 1787184542.0
-    },
-    {
-      "drawable": "amazon_photos",
-      "label": "Amazon Photos",
-      "componentName": "com.amazon.clouddrive.photos/com.amazon.photos.activity.LauncherActivity",
-      "requestCount": 1,
-      "firstAppearance": 1787184542.0,
-      "lastRequested": 1787184542.0,
-      "installs": "50,000,000+"
     },
     {
       "drawable": "appstract",
@@ -6783,22 +6748,13 @@
       "installs": "10,000,000+"
     },
     {
-      "drawable": "tuta",
-      "label": "Tuta",
-      "componentName": "de.tutao.tutanota/de.tutao.tutanota.MainActivity",
+      "drawable": "ownly",
+      "label": "Ownly",
+      "componentName": "com.ownly.customer/com.ownly.customer.MainActivityDefaultIcon",
       "requestCount": 1,
-      "firstAppearance": 1787930908.0,
-      "lastRequested": 1787930908.0,
+      "firstAppearance": 1788375842.0,
+      "lastRequested": 1788375842.0,
       "installs": "1,000,000+"
-    },
-    {
-      "drawable": "duolingo",
-      "label": "Duolingo",
-      "componentName": "com.duolingo/com.duolingo.app.FixedRetentionChallengeLauncher",
-      "requestCount": 1,
-      "firstAppearance": 1788229486.0,
-      "lastRequested": 1788229486.0,
-      "installs": "500,000,000+"
     }
   ]
 }
