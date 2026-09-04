@@ -105,6 +105,14 @@
     {
       "id": "dev.raincord.manager/com.aliucord.manager.MainActivity",
       "existing_drawable": "rain"
+    },
+    {
+      "id": "com.cron.calendar/com.cron.calendar.MainActivity",
+      "existing_drawable": "notion"
+    },
+    {
+      "id": "com.ubercab.eats/com.ubercab.eats.core.activity.LauncherActivity",
+      "existing_drawable": "uber"
     }
   ]
 }

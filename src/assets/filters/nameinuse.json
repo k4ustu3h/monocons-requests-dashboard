@@ -57,6 +57,22 @@
     {
       "id": "dev.raincord.app/com.discord.main.MainDefault",
       "existing_drawable": "rain"
+    },
+    {
+      "id": "com.transsion.smartmessage/com.android.messaging.ui.conversationlist.ConversationListActivity",
+      "existing_drawable": "right_messages"
+    },
+    {
+      "id": "com.shubham.notes/com.shubham.notes.ui.Activities.startup.FirstPage",
+      "existing_drawable": "generic_notes"
+    },
+    {
+      "id": "com.haseeb.recorder/com.haseeb.recorder.MainActivity",
+      "existing_drawable": "screen_recorder"
+    },
+    {
+      "id": "com.linuxauthority.screenrecorder/com.linuxauthority.screenrecorder.ui.main.MainActivity",
+      "existing_drawable": "screen_recorder"
     }
   ]
 }
