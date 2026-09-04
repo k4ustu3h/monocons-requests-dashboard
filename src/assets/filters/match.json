@@ -11,10 +11,6 @@
       "existing_drawable": "settings"
     },
     {
-      "id": "com.wstxda.gsl/com.wstxda.gsl.shortcut.AssistantShortcut",
-      "existing_drawable": "weather_google_shortcuts_launcher"
-    },
-    {
       "id": "com.example.calculator/com.example.calculator.MainActivity",
       "existing_drawable": "generic_calculator_plus_minus_multi_equal"
     },
@@ -51,26 +47,6 @@
       "existing_drawable": "zulip"
     },
     {
-      "id": "com.wstxda.gsl/com.wstxda.gsl.shortcut.IncognitoShortcut",
-      "existing_drawable": "weather_google_shortcuts_launcher"
-    },
-    {
-      "id": "com.wstxda.gsl/com.wstxda.gsl.shortcut.LensShortcut",
-      "existing_drawable": "weather_google_shortcuts_launcher"
-    },
-    {
-      "id": "com.wstxda.gsl/com.wstxda.gsl.shortcut.games.MinesweeperShortcut",
-      "existing_drawable": "weather_google_shortcuts_launcher"
-    },
-    {
-      "id": "com.wstxda.gsl/com.wstxda.gsl.shortcut.games.PacmanShortcut",
-      "existing_drawable": "weather_google_shortcuts_launcher"
-    },
-    {
-      "id": "com.wstxda.gsl/com.wstxda.gsl.shortcut.PasswordManagerShortcut",
-      "existing_drawable": "weather_google_shortcuts_launcher"
-    },
-    {
       "id": "com.pashapuma.pix.material.you.iconpack/com.pashapuma.pix.material.you.iconpack.activities.MainActivity",
       "existing_drawable": "pix_material_you_icon_pack"
     },
@@ -79,16 +55,8 @@
       "existing_drawable": "pix_material_you_dark_and_light_icon_pack"
     },
     {
-      "id": "com.wstxda.gsl/com.wstxda.gsl.shortcut.QuickShareShortcut",
-      "existing_drawable": "weather_google_shortcuts_launcher"
-    },
-    {
       "id": "me.ash.reader/me.ash.reader.infrastructure.android.MainActivity",
       "existing_drawable": "read_you"
-    },
-    {
-      "id": "com.wstxda.gsl/com.wstxda.gsl.shortcut.ScannerShortcut",
-      "existing_drawable": "weather_google_shortcuts_launcher"
     }
   ]
 }
