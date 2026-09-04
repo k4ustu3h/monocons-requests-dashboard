@@ -2,7 +2,7 @@
 Save trending baseline snapshots for comparing request counts between email fetches.
 period_start: saved the day before the next scheduled fetch.
 period_end: saved the day after emails were fetched (last_email_fetch.txt updated).
-Baseline resets if period_end is older than 30 days.
+Baseline resets if period_end is older than 7 days.
 """
 
 import json
@@ -42,18 +42,18 @@ def get_next_fetch_date():
     if not LAST_FETCH_PATH.exists():
         return None
     last = date.fromisoformat(LAST_FETCH_PATH.read_text().strip())
-    return last + timedelta(days=60)
+    return last + timedelta(days=7)
 
 
 def main():
     today = datetime.now(MAPUTO).date()
     baseline = load_baseline()
 
-    # Reset if period_end is older than 30 days
+    # Reset if period_end is older than 7 days
     if baseline.get("period_end") and baseline["period_end"].get("date"):
         end_date = datetime.strptime(baseline["period_end"]["date"], "%Y-%m-%d").date()
-        if (today - end_date).days > 30:
-            print("Baseline older than 30 days. Deleting.")
+        if (today - end_date).days > 7:
+            print("Baseline older than 7 days. Deleting.")
             BASELINE_PATH.unlink(missing_ok=True)
             baseline = {"period_start": None, "period_end": None}
 
