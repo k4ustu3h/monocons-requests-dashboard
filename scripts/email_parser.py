@@ -396,32 +396,6 @@ def write_json_output(output_path: Path, apps: dict):
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
-def save_trending_snapshot(period_key, apps, output_path):
-    baseline_path = output_path.parent / "stats" / "trending_baseline.json"
-    baseline = {}
-    if baseline_path.exists():
-        with open(baseline_path, "r", encoding="utf-8") as f:
-            baseline = json.load(f)
-    
-    snapshot = {}
-    for app in apps:
-        comp = app.get("componentName", "")
-        req = app.get("requestCount", 0)
-        if comp and req >= 10:
-            snapshot[comp] = req
-    
-    baseline[period_key] = {
-        "date": date.today().isoformat(),
-        "total": len(apps),
-        "snapshot": snapshot
-    }
-    
-    baseline_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(baseline_path, "w", encoding="utf-8") as f:
-        json.dump(baseline, f, indent=2)
-    print(f"Saved trending {period_key} with {len(snapshot)} entries")
-
-
 def deduplicate_emails(email_files):
     sender_latest = {}
     for file_path in email_files:
@@ -457,10 +431,6 @@ def run_pipeline(folder_path: Path, appfilter_path: Path, image_out_path: Path, 
         email_files = deduplicate_emails(email_files)
 
     apps = parse_existing_requests_json(output_path)
-    
-    # Save period_start before parsing
-    if email_files:
-        save_trending_snapshot("period_start", list(apps.values()), output_path)
 
     apps = parse_emails(email_files, apps, image_out_path, output_path.parent, appfilter_path)
 
@@ -471,10 +441,6 @@ def run_pipeline(folder_path: Path, appfilter_path: Path, image_out_path: Path, 
         print("Warning: appfilter.xml not found, skipping deduplication.")
 
     write_json_output(output_path, apps)
-
-    # Save period_end after parsing
-    if email_files:
-        save_trending_snapshot("period_end", list(apps.values()), output_path)
 
     keep_images = {a["drawable"] for a in apps.values()}
     delete_unused_images(image_out_path, keep_images)
