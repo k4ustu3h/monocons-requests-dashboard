@@ -798,7 +798,13 @@
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 2,
     "md.obsidian/md.obsidian.MainActivity": 1,
     "ch.protonmail.android/ch.protonmail.android.MainActivity": 1,
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1
+    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1,
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
   },
   "com.buge.appmanager/com.buge.appmanager.MainActivity": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 2,
@@ -896,9 +902,6 @@
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 3
   },
   "com.meroshare.app/com.meroshare.app.components.login.LoginContainerActivity": {
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 3
-  },
-  "com.loora.app/com.loora.app.MainActivityDefault": {
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 3
   },
   "com.f1soft.megafonebank.activities.starter/com.f1soft.megafonebank.activities.starter.MainActivity": {
@@ -1123,7 +1126,13 @@
   "org.breezyweather/org.breezyweather.ui.main.MainActivity": {
     "th.co.truemoney.wallet/th.co.truemoney.wallet.activity.LoadingScreenActivity": 1,
     "th.or.dga.citizenportal/th.or.dga.citizenportal.MainActivity": 1,
-    "de.marmaro.krt.ffupdater/de.marmaro.krt.ffupdater.activity.main.MainActivity": 1
+    "de.marmaro.krt.ffupdater/de.marmaro.krt.ffupdater.activity.main.MainActivity": 1,
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
   },
   "com.liteapks.androidapps/com.liteapks.androidapps.ui.home.HomeActivity": {
     "th.co.truemoney.wallet/th.co.truemoney.wallet.activity.LoadingScreenActivity": 3,
@@ -1283,7 +1292,13 @@
     "ua.privatbank.ap24/ua.privatbank.ap24v6.LauncherAliasDefault": 3,
     "de.markusfisch.android.binaryeye/de.markusfisch.android.binaryeye.activity.SplashActivity": 3,
     "pl.nask.mobywatel/pl.gov.mc.fringers.mobywatel.MainActivity": 3,
-    "ua.gov.reserveplus/ua.gov.reserveplus.MainActivity": 3
+    "ua.gov.reserveplus/ua.gov.reserveplus.MainActivity": 3,
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
   },
   "fork.risin42.nagramx/org.telegram.messenger.NeonIcon": {
     "pl.zabka.apb2c/pl.zabka.app.ui.TrikiSplashZappkaActivityTriki": 3,
@@ -1908,11 +1923,6 @@
     "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 2
   },
   "com.futo.platformplayer/com.futo.platformplayer.activities.MainActivity": {
-    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
-    "md.obsidian/md.obsidian.MainActivity": 2,
-    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 2
-  },
-  "rikka.appops/rikka.appops.home.HomeActivity": {
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
     "md.obsidian/md.obsidian.MainActivity": 2,
     "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 2
@@ -2966,23 +2976,13 @@
     "br.com.odontosfera.uniodontojundiai/br.com.odontosfera.uniodontojundiai.MainActivity": 1,
     "it.dbtecno.pizzaboypro/it.dbtecno.pizzaboypro.MainActivity": 1,
     "it.dbtecno.pizzaboygbapro/it.dbtecno.pizzaboygbapro.MainActivity": 1,
-    "br.com.mobile.ticket/br.com.mobile.ticket.MainActivity": 1
-  },
-  "com.amazfitwatchfaces.st/com.amazfitwatchfaces.st.MainActivity": {
-    "br.jus.tse.eleitoral.etitulo/br.jus.tse.eleitoral.etitulo.MainActivity": 1,
-    "br.org.sesc.credencialvirtual/br.org.sesc.credencialvirtual.MainActivity": 1,
-    "pl.patrykgoworowski.cornieicons/pl.patrykgoworowski.cornieicons.MainActivity": 1,
-    "pl.patrykgoworowski.mintypro/pl.patrykgoworowski.mintypro.MainActivity": 1,
-    "br.com.gabba.Caixa/br.n3oGO4.g8WUn8.tsSIb4.ui.fPyyF0.xB4QS8": 2,
-    "pl.patrykgoworowski.cornieoldie/pl.patrykgoworowski.cornieoldie.MainActivity": 1,
-    "br.com.catho.app.vagas.empregos/com.catho.app.feature.splash.view.SplashActivity": 1,
-    "br.gov.caixa.tem/br.gov.caixa.tem.ui.activities.SplashScreenAnimation": 1,
-    "br.gov.datasus.cnsdigital/br.gov.datasus.cnsdigital.MainActivity": 1,
-    "us.avenue/us.uGZSp9.sACtW1": 2,
-    "br.com.odontosfera.uniodontojundiai/br.com.odontosfera.uniodontojundiai.MainActivity": 1,
-    "it.dbtecno.pizzaboypro/it.dbtecno.pizzaboypro.MainActivity": 1,
-    "it.dbtecno.pizzaboygbapro/it.dbtecno.pizzaboygbapro.MainActivity": 1,
-    "br.com.mobile.ticket/br.com.mobile.ticket.MainActivity": 1
+    "br.com.mobile.ticket/br.com.mobile.ticket.MainActivity": 1,
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
   },
   "com.digibites.accubattery/com.digibites.abatterysaver.BatterySaverActivity": {
     "br.jus.tse.eleitoral.etitulo/br.jus.tse.eleitoral.etitulo.MainActivity": 1,
@@ -3062,7 +3062,13 @@
   },
   "com.adilhanney.saber/com.adilhanney.saber.MainActivity": {
     "id.dana/id.dana.onboarding.splash.DanaSplashActivity": 2,
-    "id.qoin.korlantas.user/id.qoin.korlantas.user.MainActivity": 2
+    "id.qoin.korlantas.user/id.qoin.korlantas.user.MainActivity": 2,
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
   },
   "com.best.deskclock.nightly/com.best.deskclock.DeskClock": {
     "id.dana/id.dana.onboarding.splash.DanaSplashActivity": 2,
@@ -3147,12 +3153,6 @@
   "com.tracfone.preload.accountservices/com.tracfone.preload.accountservices.MainActivity": {
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
     "cm.aptoide.pt/cm.aptoide.pt.view.MainActivity": 2
-  },
-  "org.freedownloadmanager.fdm/org.freedownloadmanager.fdm.MyActivity": {
-    "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
-    "cm.aptoide.pt/cm.aptoide.pt.view.MainActivity": 2,
-    "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 1,
-    "md.obsidian/md.obsidian.MainActivity": 1
   },
   "com.tracfone.tracfone.myaccount/com.tracfone.generic.myaccountcommonui.activity.launch.PreLaunchActivity": {
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 2,
@@ -4115,13 +4115,6 @@
     "mx.com.segurosbancomer.autoalerta/com.bbva.bbva_sos.module.home.HomeActivity": 1,
     "mx.com.cfe.cfecontigo/mx.com.cfe.cfecontigo.ui.login.LoginActivity": 1
   },
-  "com.dronedeploy.beta/com.dronedeploy.beta.ui.MainActivity": {
-    "in.aaremm.offthegrid/in.aaremm.offthegrid.MainActivity": 1,
-    "cn.com.broadlink.econtrol.international/cn.com.broadlink.unify.app.main.activity.LoadingActivity": 1,
-    "ch.publisheria.bring/ch.publisheria.bring.activities.BringMainActivity": 1,
-    "mx.com.segurosbancomer.autoalerta/com.bbva.bbva_sos.module.home.HomeActivity": 1,
-    "mx.com.cfe.cfecontigo/mx.com.cfe.cfecontigo.ui.login.LoginActivity": 1
-  },
   "dif.tech.plata/dif.tech.plata.platform.feature.root.RootActivity.Main": {
     "in.aaremm.offthegrid/in.aaremm.offthegrid.MainActivity": 1,
     "cn.com.broadlink.econtrol.international/cn.com.broadlink.unify.app.main.activity.LoadingActivity": 1,
@@ -4381,5 +4374,277 @@
   "io.ente.auth/io.ente.auth.IconDefault": {
     "ml.docilealligator.infinityforreddit.plus/ml.docilealligator.infinityforreddit.activities.MainActivity": 1,
     "de.tutao.tutanota/de.tutao.tutanota.MainActivity": 1
+  },
+  "dev.collinsthomas.memhogs/dev.collinsthomas.memhogs.MainActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "im.molly.app/org.thoughtcrime.securesms.RoutingActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.hisense.juconnect.connectlife/com.hisense.juconnect.connectlife.MainActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "org.futo.inputmethod.latin/org.futo.inputmethod.latin.uix.settings.SettingsActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.tencent.mm/com.tencent.mm.ui.LauncherUI": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.popovicialinc.gama/com.popovicialinc.gama.MainActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.server.auditor.ssh.client/com.server.auditor.ssh.client.navigation.MainActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.zulipmobile/com.zulip.flutter.MainActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.eg.android.AlipayGphone/com.eg.android.AlipayGphone.AlipayLogin": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.YoStarEN.MahjongSoul/com.yostar.sdk.bridge.YostarSDKPlayerAct": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.ea.game.pvzfree_row/com.ea.game.pvzfree_row.PvZActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.tony.appbooster/com.tony.appbooster.presentation.activity.MainActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.moodle.moodlemobile/com.moodle.moodlemobile.MainActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.guiforge.bati/com.guiforge.bati.MainActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "org.readera/com.readera.MainActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "dev.raincord.manager/com.aliucord.manager.MainActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "dev.raincord.app/com.discord.main.MainDefault": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.zen.application/com.zen.entrypoint.presentation.EntryPointActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.hamondev.shevery/moe.shizuku.manager.MainActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "tv.danmaku.bili/tv.danmaku.bili.MainActivityV2": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "cloud.shelly.smartcontrol/cloud.shelly.smartcontrol.MainActivity_Default": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.tailscale.ipn/com.tailscale.ipn.MainActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "io.github.turboims.pixel/io.github.vvb2060.ims.SplashActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.kaufland.Kaufland/com.kaufland.kaufland.splash.SplashActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.rosan.installer.x.revived/com.rosan.installer.ui.activity.LauncherAlias": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_1": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.gymrealm.rfitness/crc64292f16cf132be143.MainActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.cogwheel.LuCIMobile/com.cogwheel.LuCIMobile.MainActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.paget96.batteryguru/com.paget96.batteryguru.activities.SplashScreen": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "net.mullvad.mullvadvpn/net.mullvad.mullvadvpn.feature.appearance.impl.obfuscation.MainActivityAltDefault": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.adilhanney.no_more_background/com.adilhanney.no_more_background.MainActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.halfbrick.jetpackjoyride/com.halfbrick.mortar.MortarGameLauncherActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.ddt.dotdotbuy/com.ddt.dotdotbuy.ui.activity.main.StartupAdvertisementActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
+  },
+  "com.bfs.fibank/com.bfs.fibank.ui.onboarding.OnBoardingActivity": {
+    "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 1,
+    "bg.billa.app/digital.riag.appsolution.MainActivity": 1,
+    "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 1,
+    "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 1,
+    "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 1,
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 1
   }
 }

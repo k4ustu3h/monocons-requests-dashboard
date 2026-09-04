@@ -71,10 +71,6 @@
       "existing_drawable": "apkupdater"
     },
     {
-      "id": "io.github.gracethings.bubblenotice/io.github.gracethings.bubblenotice.MainActivity",
-      "existing_drawable": "generic_bubble_level"
-    },
-    {
       "id": "br.gov.caixa.tem/br.gov.caixa.tem.ui.activities.SplashScreenAnimation",
       "existing_drawable": "caixa"
     },
@@ -105,6 +101,10 @@
     {
       "id": "mx.com.segurosbancomer.autoalerta/com.bbva.bbva_sos.module.home.HomeActivity",
       "existing_drawable": "bbva"
+    },
+    {
+      "id": "dev.raincord.manager/com.aliucord.manager.MainActivity",
+      "existing_drawable": "rain"
     }
   ]
 }
