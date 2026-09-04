@@ -1,13 +1,13 @@
 """
 Fetch unread emails from Gmail via IMAP and save as .eml files.
-Runs daily based on workflow trigger.
+Runs every 7 days based on the last fetch date.
 """
 
 import os
 import sys
 import imaplib
 import email
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -16,6 +16,10 @@ LAST_FETCH_PATH = REPO_ROOT / "src/assets/last_email_fetch.txt"
 
 
 def should_fetch_today():
+    today = date.today()
+    if LAST_FETCH_PATH.exists():
+        last = date.fromisoformat(LAST_FETCH_PATH.read_text().strip())
+        return today >= last + timedelta(days=7)
     return True
 
 
@@ -66,7 +70,6 @@ def main():
             sender_candidates[sender] = eid
 
     print(f"Candidates after header scan: {len(sender_candidates)} sender(s).")
-
 
     # Step 2: Limit candidates before full fetch
     candidate_ids = set(sender_candidates.values())
