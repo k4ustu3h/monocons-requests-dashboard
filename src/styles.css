@@ -1452,6 +1452,14 @@ select:hover,
   color: var(--on-teal-container);
 }
 
+.status-pill.status-supported {
+  text-decoration: none;
+}
+
+.status-pill.status-supported:hover {
+  text-decoration: underline;
+}
+
 .status-easy {
   background: var(--tertiary-container);
   color: var(--on-tertiary-container);
@@ -1471,6 +1479,7 @@ select:hover,
   background: var(--orange-container);
   color: var(--on-orange-container);
 }
+
 .status-match {
   background: var(--pine-container);
   color: var(--on-pine-container);
