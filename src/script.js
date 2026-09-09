@@ -3,7 +3,7 @@
 const fflate = /** @type {* & {fflate: any}} */ (window).fflate;
 
 /**
- * MONOCONS REQUEST MANAGER
+ * MONOCONS REQUEST DASHBOARD
  */
 
 // ==========================================
