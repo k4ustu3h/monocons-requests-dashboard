@@ -1,12 +1,11 @@
 """
 Save trending baseline snapshots for comparing request counts between email fetches.
-period_start: saved the day before the next scheduled fetch.
-period_end: saved the day after emails were fetched (last_email_fetch.txt updated).
-Baseline resets if period_end is older than 7 days.
+period_start: the snapshot of the database right before the latest fetch.
+period_end: the live snapshot updated daily.
+This continuous rolling approach ensures the file is never deleted and history is maintained.
 """
 
 import json
-import sys
 from pathlib import Path
 from datetime import date, datetime, timedelta, timezone
 
@@ -24,6 +23,7 @@ def load_baseline():
 
 
 def save_baseline(data):
+    BASELINE_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(BASELINE_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
@@ -38,63 +38,49 @@ def build_snapshot(apps, min_req=10):
     return snapshot
 
 
-def get_next_fetch_date():
-    if not LAST_FETCH_PATH.exists():
-        return None
-    last = date.fromisoformat(LAST_FETCH_PATH.read_text().strip())
-    return last + timedelta(days=7)
-
-
 def main():
     today = datetime.now(MAPUTO).date()
     baseline = load_baseline()
 
-    # Reset if period_end is older than 7 days
-    if baseline.get("period_end") and baseline["period_end"].get("date"):
-        end_date = datetime.strptime(baseline["period_end"]["date"], "%Y-%m-%d").date()
-        if (today - end_date).days > 7:
-            print("Baseline older than 7 days. Deleting.")
-            BASELINE_PATH.unlink(missing_ok=True)
-            baseline = {"period_start": None, "period_end": None}
-
+    # Load current requests
     with open(REQUESTS_JSON, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    apps = data["apps"]
+    apps = data.get("apps", [])
     total = data.get("count", len(apps))
     snapshot = build_snapshot(apps)
 
-    entry = {
+    current_state = {
         "date": today.isoformat(),
         "total": total,
         "snapshot": snapshot
     }
 
-    next_fetch = get_next_fetch_date()
-
-    # period_start: 1 day before next fetch
-    if next_fetch and baseline.get("period_start") is None:
-        one_day_before_fetch = next_fetch - timedelta(days=1)
-        if today == one_day_before_fetch:
-            baseline["period_start"] = entry
-            print(f"Saved period_start with {len(snapshot)} entries")
-            save_baseline(baseline)
-            return
-
-    # period_end: day after last fetch
+    # Check if emails were fetched today
+    last_fetch_date = None
     if LAST_FETCH_PATH.exists():
-        last_fetch = date.fromisoformat(LAST_FETCH_PATH.read_text().strip())
-        day_after_fetch = last_fetch + timedelta(days=1)
-        if today == day_after_fetch and baseline.get("period_start") is not None and baseline.get("period_end") is None:
-            start_snapshot = baseline["period_start"]["snapshot"]
-            filtered_snapshot = {k: v for k, v in snapshot.items() if k in start_snapshot}
-            entry["snapshot"] = filtered_snapshot
-            baseline["period_end"] = entry
-            print(f"Saved period_end with {len(filtered_snapshot)} entries")
-            save_baseline(baseline)
-            return
+        last_fetch_date = date.fromisoformat(LAST_FETCH_PATH.read_text().strip())
 
-    print("No snapshot needed at this time.")
+    # If today is a fetch day, roll the OLD period_end into the NEW period_start.
+    # This securely captures the exact "Before Fetch" vs "After Fetch" delta!
+    if last_fetch_date == today:
+        if baseline.get("period_end") and baseline["period_end"]["date"] != today.isoformat():
+            baseline["period_start"] = baseline["period_end"]
+            print("Fetch day! Rolled previous period_end into new period_start.")
+
+    # Initial fallback for the very first time the script runs
+    if not baseline.get("period_start"):
+        baseline["period_start"] = current_state
+
+    # Always update period_end to the current state
+    start_snapshot = baseline["period_start"]["snapshot"]
+    filtered_snapshot = {k: v for k, v in snapshot.items() if k in start_snapshot}
+    current_state["snapshot"] = filtered_snapshot
+    
+    baseline["period_end"] = current_state
+    print(f"Updated trending period_end with {len(filtered_snapshot)} entries.")
+
+    save_baseline(baseline)
 
 
 if __name__ == "__main__":
