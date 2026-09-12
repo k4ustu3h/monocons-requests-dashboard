@@ -671,8 +671,11 @@ def calculate_roi_scores():
     with open(REPO_ROOT / "src/assets/screens_graph.json") as f:
         screens_graph = json.load(f)
     
-    with open(REPO_ROOT / "src/assets/stats/trending_baseline.json") as f:
-        trending = json.load(f)
+    trending_file = REPO_ROOT / "src/assets/stats/trending_baseline.json"
+    trending = {}
+    if trending_file.exists():
+        with open(trending_file) as f:
+            trending = json.load(f)
     
     # 90d May-July 2026
     # Some countries estimated from median loss/requests ratio (2.05)
