@@ -1412,7 +1412,7 @@ select:hover,
   color: var(--on-clay-container);
 }
 
-.status-wip {
+.status-rare {
   background: var(--primary-container);
   color: var(--on-primary-container);
 }
