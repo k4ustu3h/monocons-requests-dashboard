@@ -69,6 +69,14 @@
     {
       "id": "com.linuxauthority.screenrecorder/com.linuxauthority.screenrecorder.ui.main.MainActivity",
       "existing_drawable": "screen_recorder"
+    },
+    {
+      "id": "io.github.aedev.flow/io.github.aedev.flow.IconAmoled",
+      "existing_drawable": "google_flow"
+    },
+    {
+      "id": "launcher.libre.dev/ch.deletescape.lawnchair.notes.NotesActivity",
+      "existing_drawable": "generic_notes"
     }
   ]
 }
