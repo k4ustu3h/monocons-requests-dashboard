@@ -39,6 +39,8 @@ Excluded (non-goals):
 ### `requests.json` Structure
 - `firstAppearance` and `lastRequested` are Unix timestamps (seconds since epoch).
 - `installs` is a string with commas and a plus sign (e.g., "100,000,000+").
+- `roi_score` is a numeric value representing ranking priority based on ROI.
+- `priority` is a priority tier ("Critical", "High", "Medium", "Low") and is omitted if `roi_score` is 0.
 
 ```json
 {
@@ -52,7 +54,9 @@ Excluded (non-goals):
       "lastRequested": 1767196800.0,
       "label": "App Title",
       "componentName": "com.example/com.example.MainActivity",
-      "installs": "100,000,000+"
+      "installs": "100,000,000+",
+      "roi_score": 5390,
+      "priority": "Critical"
     },
     {
       "drawable": "subway_city",
@@ -61,7 +65,9 @@ Excluded (non-goals):
       "lastRequested": 1767196800.0,
       "label": "App Title",
       "componentName": "com.example.foo/com.example.foo.MainActivity",
-      "installs": "500,000+"
+      "installs": "500,000+",
+      "roi_score": 501,
+      "priority": "Medium"
     }
   ]
 }
@@ -69,6 +75,7 @@ Excluded (non-goals):
 
 ### `appfilter.xml` structure
 ```xml
+<!-- Note: Generated exports omit the <resources> wrapper for easy appending -->
 <resources>
   <item component="ComponentInfo{COMPONENT_NAME}" drawable="ICON_NAME" name="APP_NAME" />
   <!-- Example -->
@@ -89,7 +96,7 @@ Forbidden:
 ## 3. Invariants (Must Never Break)
 
 Functional:
-- URL parameters must be the source of truth for `q`, `view`, `sort`, `regex`, `filters`, and `geo` on page load.
+- URL parameters must be the source of truth for `q`, `view`, `sort`, `regex`, `filters`, and `page` on page load.
 - Selection state (`App.state.selected`) must persist through search, filter, sort, and view updates.
 - Regex mode and geo-batch mode must remain mutually exclusive in UI state and control visibility.
 - Exported filenames in ZIP must match the generated `drawable` values written to `appfilter.xml`, `icontool_commands.txt`, and PR/link metadata.
@@ -111,7 +118,7 @@ Performance:
 2. **State:** Update `App.state` and related lookup initialization if the runtime data shape changes.
 3. **JSDoc:** Update `@typedef` / `@type` annotations in `script.js` when adding state, filter metadata, or dataset fields.
 4. **URL Sync:** If behavior is deep-linkable, update both `Data.loadUrlState()` and `Data.syncUrlState()`.
-5. **Processing Path:** If search, tags, sort, or geo batching change, update `Utils.parseSearchQuery()`, `Data.process()`, and any dependent UI controls together.
+5. **Processing Path:** If search, tags, sort, or page modes change, update `Utils.parseSearchQuery()`, `Data.process()`, and any dependent UI controls together.
 6. **Exports:** If bundle contents or drawable naming change, keep `appfilter.xml`, `filter_config.json`, `icontool_commands.txt`, and PR output synchronized.
 7. **Accessibility:** Ensure new interactive elements have `tabindex`, `role`, and keyboard listeners or menu navigation support.
 
@@ -146,8 +153,8 @@ Error Handling:
 
 - **requests.json:** The primary database.
 - **Filter JSONs:** Provide labels/descriptions and per-app tag membership, optionally with `existing_drawable` metadata.
-- **Analytics JSONs:** `sets_stats.json`, `creation_odds.json`, `domain_stats.json`, and `activity_stats.json` enrich ranking and dashboard cards.
-- **URL:** Query parameters (`q`, `view`, `sort`, `regex`, `filters`, `geo`) act as environment state.
+- **Analytics JSONs:** `sets_stats.json`, `creation_odds.json`, `domain_stats.json`, `activity_stats.json`, `fulfillment_history.json`, and `trending_baseline.json` enrich ranking and dashboard cards.
+- **URL:** Query parameters (`q`, `view`, `sort`, `regex`, `filters`, `page`) act as environment state.
 
 ## 8. Decision Priorities
 
@@ -160,7 +167,7 @@ Error Handling:
 
 - **DOM Collisions:** Wiping `innerHTML` is acceptable at the start of a full render, but incremental list growth must still happen through `loadMore()` appending to avoid jank.
 - **Event Delegation:** Use `e.target.closest()` carefully across SVG/icon children and popover menu items; click handling is no longer limited to the root container.
-- **Mode Coupling:** Regex mode and geo-batch mode share the same search affordance and can drift out of sync if visibility and state toggles are not updated together.
+- **Mode Coupling:** Regex mode and page modes share the same search affordance and can drift out of sync if visibility and state toggles are not updated together.
 - **Filter Data Shape:** Filter files may contain strings or objects; code that assumes one shape will silently drop metadata like `existing_drawable`.
 - **Regex:** Invalid regex input in search must be caught via `try/catch` to prevent app crash.
 
