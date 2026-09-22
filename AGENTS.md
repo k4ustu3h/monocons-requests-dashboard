@@ -25,15 +25,15 @@ Excluded (non-goals):
 - **Build system:** Static Deployment (Vercel).
 
 ### High-Level Structure
-- **Data Layer:** `requests.json` plus auxiliary analytics/filter datasets (`sets_stats.json`, `creation_odds.json`, `domain_stats.json`, `activity_stats.json`, and `assets/filters/*.json`).
-- **State Layer:** Runtime state is centralized in `App.state` with lookup maps for IDs, tags, filter metadata, existing SVG links, analytics tables, and URL-backed UI mode.
+- **Data Layer:** `requests.json` plus auxiliary analytics/filter datasets (`sets_stats.json`, `creation_odds.json`, `domain_stats.json`, `activity_stats.json`, and `assets/filters/*.json`). External data sources like `appfilter.xml` and `lawnicons_appfilter.xml` are also fetched at runtime.
+- **State Layer:** Runtime state is centralized in `App.state` with lookup maps for IDs, tags, filter metadata, existing SVG links, analytics tables, dual appfilters (`existingIcons` and `lawniconsIcons`), and URL-backed UI mode.
 - **Namespace Layer:** Logic is encapsulated in `App`, `Data`, `UI`, `Actions`, `Utils`, and `Templates` objects.
 - **Event Layer:** Input handling is split between document-level delegation, targeted control listeners, popover menus, and keyboard navigation handlers.
 - **Data flow:** Static JSON → `Promise.all` fetch/init → `App.state` maps/analytics → `Data.process()` → `UI.render()` / `UI.loadMore()` → `Templates` / DOM.
 
 ### Filter Dataset Shape
 - Filter JSON files are keyed by filter ID.
-- Entries may be simple component-name strings or objects with metadata such as `id` and `existing_drawable`.
+- Entries may be simple component-name strings or objects with metadata such as `id`, `existing_drawable`, or `lawnicons_drawable`.
 - `unlabeled` is computed at runtime from requests that have no other tags.
 
 ### `requests.json` Structure
@@ -101,6 +101,7 @@ Functional:
 - Regex mode and geo-batch mode must remain mutually exclusive in UI state and control visibility.
 - Exported filenames in ZIP must match the generated `drawable` values written to `appfilter.xml`, `icontool_commands.txt`, and PR/link metadata.
 - Drawable collision handling must stay deterministic: the same label/package pair reuses one drawable, while conflicting names for different apps receive stable suffixes.
+- When copying appfilter entries for apps in Lawnicons (`in_lawnicons` filter), all components from both the upstream appfilter and the lawnicons appfilter must be copied instead of just the primary component.
 
 Architectural:
 - String HTML fragments should reside in the `Templates` object; direct DOM creation is acceptable for small controls, observers, and focus/tooltip plumbing.
@@ -170,6 +171,7 @@ Error Handling:
 - **Mode Coupling:** Regex mode and page modes share the same search affordance and can drift out of sync if visibility and state toggles are not updated together.
 - **Filter Data Shape:** Filter files may contain strings or objects; code that assumes one shape will silently drop metadata like `existing_drawable`.
 - **Regex:** Invalid regex input in search must be caught via `try/catch` to prevent app crash.
+- **Third-Party Drawables:** If a third-party filter (like Lawnicons) includes metadata for an existing SVG, use a distinct key (e.g., `lawnicons_drawable`) rather than `existing_drawable`. The dashboard automatically tries to load `existing_drawable` as a local Monocons SVG, resulting in 404s if the file isn't present in `assets/qa_issues/svgs/`.
 
 ## 10. Contribution Boundaries
 
