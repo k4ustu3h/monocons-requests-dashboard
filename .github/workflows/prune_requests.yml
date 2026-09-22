@@ -52,6 +52,7 @@ jobs:
       - name: Auto generate tags
         run: |
           python scripts/generate_auto_tags.py src/assets/requests.json src/assets/filters src/assets/appfilter.xml
+          python scripts/update_foss_tags.py
           python scripts/generate_lawnicons_tags.py src/assets/requests.json src/assets/filters src/assets/lawnicons_appfilter.xml
 
       - name: Clone Monocons SVGs
