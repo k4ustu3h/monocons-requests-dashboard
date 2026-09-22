@@ -37,6 +37,7 @@ const CONFIG = {
       'match',
       'akin',
       'stale',
+      'in_lawnicons',
       'unlabeled',
     ],
   },

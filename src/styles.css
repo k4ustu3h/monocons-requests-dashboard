@@ -1518,6 +1518,11 @@ select:hover,
 	color: var(--on-flax-container);
 }
 
+.status-in_lawnicons {
+	background: var(--secondary-container);
+	color: var(--on-secondary-container);
+}
+
 .status-unlabeled {
 	display: none;
 }
