@@ -1545,7 +1545,36 @@ const Actions = {
     const apps = Actions.resolveApps(ids);
     let xml = '';
     apps.forEach((app) => {
-      xml += `    ${Utils.generateXml(app)}\n`;
+      const cmp = app.componentName;
+      const tags = App.state.appTags.get(cmp);
+
+      if (tags && tags.has('in_lawnicons')) {
+        const pkg = cmp.split('/')[0];
+        const pkgPrefix = `${pkg}/`;
+        
+        const matchedIcons = [];
+        App.state.existingIcons.forEach(icon => {
+          if (icon.component.startsWith(pkgPrefix)) matchedIcons.push(icon);
+        });
+        App.state.lawniconsIcons.forEach(icon => {
+          if (icon.component.startsWith(pkgPrefix)) matchedIcons.push(icon);
+        });
+
+        if (matchedIcons.length > 0) {
+          const uniqueComps = new Set();
+          matchedIcons.forEach(icon => {
+            if (!uniqueComps.has(icon.component)) {
+              uniqueComps.add(icon.component);
+              const name = icon.name.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+              xml += `    <item component="ComponentInfo{${icon.component}}" drawable="${icon.drawable}" name="${name}" />\n`;
+            }
+          });
+        } else {
+          xml += `    ${Utils.generateXml(app)}\n`;
+        }
+      } else {
+        xml += `    ${Utils.generateXml(app)}\n`;
+      }
     });
     return xml;
   },
@@ -1977,40 +2006,51 @@ const Data = {
   },
 
   async loadAppfilterXml() {
-    /** @type {Icon[]} */
-    let icons = [];
+    /**
+     * @param {string} url
+     * @returns {Promise<Icon[]>}
+     */
+    const fetchIcons = async (url) => {
+      try {
+        const response = await fetch(url);
+        if (!response.ok) return [];
+        const xmlText = await response.text();
 
-    try {
-      const response = await fetch('assets/appfilter.xml');
-      if (!response.ok) throw new Error('Failed to fetch appfilter.xml');
-      const xmlText = await response.text();
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+        const items = xmlDoc.querySelectorAll('item');
 
-      const parser = new DOMParser();
-      const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
-      const items = xmlDoc.querySelectorAll('item');
+        const parsedIcons = [];
+        items.forEach((item) => {
+          const component = item.getAttribute('component') || '';
+          const drawable = item.getAttribute('drawable') || '';
+          const name = item.getAttribute('name') || '';
 
-      items.forEach((item) => {
-        const component = item.getAttribute('component') || '';
-        const drawable = item.getAttribute('drawable') || '';
-        const name = item.getAttribute('name') || '';
+          if (drawable && component) {
+            const match = component.match(/ComponentInfo\{([^}]+)}/);
+            const componentName = match ? match[1] : component;
 
-        if (drawable && component) {
-          const match = component.match(/ComponentInfo\{([^}]+)}/);
-          const componentName = match ? match[1] : component;
+            parsedIcons.push({
+              drawable: drawable,
+              name: name,
+              component: componentName,
+            });
+          }
+        });
+        return parsedIcons;
+      } catch (e) {
+        console.error(`Error loading ${url}:`, e);
+        return [];
+      }
+    };
 
-          icons.push({
-            drawable: drawable,
-            name: name,
-            component: componentName,
-          });
-        }
-      });
-    } catch (e) {
-      console.error('Error loading appfilter:', e);
-      icons = [];
-    }
+    const [existingIcons, lawniconsIcons] = await Promise.all([
+      fetchIcons('assets/appfilter.xml'),
+      fetchIcons('assets/lawnicons_appfilter.xml'),
+    ]);
 
-    App.state.existingIcons = icons;
+    App.state.existingIcons = existingIcons;
+    App.state.lawniconsIcons = lawniconsIcons;
 
     if (App.state.existingIcons.length === 0) return;
 
