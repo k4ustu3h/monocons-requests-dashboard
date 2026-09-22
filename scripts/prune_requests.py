@@ -15,7 +15,10 @@ REQUESTS_JSON = REPO_ROOT / "src/assets/requests.json"
 EXTRACTED_IMAGE_DIR = REPO_ROOT / "src/extracted_images"
 FILTERS_DIR = REPO_ROOT / "src/assets/filters"
 
+LOCAL_LAWNICONS_APPFILTER = REPO_ROOT / "src/assets/lawnicons_appfilter.xml"
+
 UPSTREAM_APPFILTER = "https://raw.githubusercontent.com/k4ustu3h/monocons-android/main/app/assets/appfilter.xml"
+LAWNICONS_APPFILTER = "https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/refs/heads/develop/app/assets/appfilter.xml"
 
 COMPONENT_PATTERN = re.compile(r"ComponentInfo\{([^}]+)}")
 DYNAMIC_PACKAGES_PATH = REPO_ROOT / "src/assets/dynamic_packages.json"
@@ -29,20 +32,20 @@ def set_workflow_output(name: str, value: str) -> None:
         f.write(f"{name}={value}\n")
 
 
-def fetch_upstream_appfilter() -> bytes:
+def fetch_appfilter(url: str) -> bytes:
     errors = []
     try:
-        with urllib.request.urlopen(UPSTREAM_APPFILTER, timeout=30) as response:
+        with urllib.request.urlopen(url, timeout=30) as response:
             body = response.read()
-            print(f"Fetched upstream appfilter from: {UPSTREAM_APPFILTER}")
+            print(f"Fetched appfilter from: {url}")
             return body
     except urllib.error.HTTPError as err:
-        errors.append(f"{UPSTREAM_APPFILTER} -> HTTP {err.code}")
+        errors.append(f"{url} -> HTTP {err.code}")
     except urllib.error.URLError as err:
-        errors.append(f"{UPSTREAM_APPFILTER} -> {err.reason}")
+        errors.append(f"{url} -> {err.reason}")
 
     details = "\n".join(errors)
-    raise RuntimeError(f"Failed to download upstream appfilter.xml:\n{details}")
+    raise RuntimeError(f"Failed to download appfilter:\n{details}")
 
 
 def extract_component(component_attr: str) -> str:
@@ -1014,7 +1017,8 @@ def main() -> int:
     fulfilled_removed = 0
 
     try:
-        upstream_xml = fetch_upstream_appfilter()
+        upstream_xml = fetch_appfilter(UPSTREAM_APPFILTER)
+        lawnicons_xml = fetch_appfilter(LAWNICONS_APPFILTER)
     except RuntimeError as err:
         print(f"Error: {err}")
         set_workflow_output("appfilter_changed", "error")
@@ -1027,9 +1031,17 @@ def main() -> int:
     else:
         appfilter_changed = True
 
+    if LOCAL_LAWNICONS_APPFILTER.exists():
+        local_lawnicons_xml = LOCAL_LAWNICONS_APPFILTER.read_bytes()
+        if local_lawnicons_xml != lawnicons_xml:
+            appfilter_changed = True
+    else:
+        appfilter_changed = True
+
     if appfilter_changed:
         LOCAL_APPFILTER.write_bytes(upstream_xml)
-        print(f"Updated local appfilter at: {LOCAL_APPFILTER}")
+        LOCAL_LAWNICONS_APPFILTER.write_bytes(lawnicons_xml)
+        print(f"Updated local appfilters.")
 
         # Save old state before pruning
         with open(REQUESTS_JSON, "r") as f:
