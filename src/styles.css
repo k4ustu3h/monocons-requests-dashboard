@@ -1523,6 +1523,11 @@ select:hover,
 	color: var(--on-secondary-container);
 }
 
+.status-links {
+	background: var(--tertiary-container);
+	color: var(--on-tertiary-container);
+}
+
 .status-unlabeled {
 	display: none;
 }

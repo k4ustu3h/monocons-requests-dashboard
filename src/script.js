@@ -38,6 +38,7 @@ const CONFIG = {
       'akin',
       'stale',
       'in_lawnicons',
+      'links',
       'unlabeled',
     ],
   },
