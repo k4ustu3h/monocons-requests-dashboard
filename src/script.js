@@ -5,11 +5,16 @@ const fflate = /** @type {* & {fflate: any}} */ (window).fflate;
 /** @typedef {[string, number, number, number, number, number]} DomainEntry */
 
 /**
- * @typedef {Object} FulfillmentHistory
+ * @typedef {Object} AppEntry
+ * @property {string} componentName
+ * @property {string} label
+ * @property {string} drawable
+ * @property {number} requestCount
  * @property {number} firstAppearance
- * @property {number} fulfilled
- * @property {number} popularity
- * @property {number} label_factor
+ * @property {number} lastRequested
+ * @property {string} [installs]
+ * @property {number} [roi_score]
+ * @property {string} [priority]
  */
 
 /**
@@ -427,7 +432,7 @@ const Utils = {
 
   /**
    * @param {string} rawQuery
-   * @returns {{ text: string; tags: Set<string>, isSet: boolean }}
+   * @returns {{ text: string; tags: Set<string> }}
    */
   parseSearchQuery(rawQuery) {
     const result = { text: '', tags: new Set() };
@@ -435,7 +440,6 @@ const Utils = {
 
     const cleanQuery = rawQuery.replace(tokenRegex, (_, tag) => {
       const lowerTag = tag.toLowerCase();
-      // Check if tag exists in config
       if (CONFIG.data.filters.includes(lowerTag)) {
         result.tags.add(lowerTag);
       }
@@ -886,10 +890,6 @@ const Templates = {
     const drawable = overrides.drawable !== undefined
       ? overrides.drawable
       : defaultSvg;
-
-    const country = overrides.country || '';
-    const countryName = country ? (COUNTRIES[country] || country) : '';
-    const countryDisplay = country ? `${countryName} (${country})` : '';
 
     const mode = (overrides.mode === 'link') ? 'link' : 'new';
 
@@ -2541,71 +2541,6 @@ const UI = {
     App.dom.container.addEventListener('error', (event) => {
       Utils.handleImageError(event);
     }, true);
-
-    // Country input — show suggestions
-    App.dom.container.addEventListener('input', (e) => {
-      const target = e.target;
-      if (!(target instanceof HTMLInputElement)) return;
-      if (!target.classList.contains('contribution-country-input')) return;
-      UI.showCountrySuggestions(target);
-    });
-
-    // Country suggestion click
-    App.dom.container.addEventListener('click', (e) => {
-      const target = e.target;
-      if (!(target instanceof HTMLElement)) return;
-      const sugg = target.closest('.country-suggestion');
-      if (sugg) UI.applyCountrySuggestion(sugg);
-    });
-
-    App.dom.container.addEventListener('focusin', (e) => {
-      const target = e.target;
-      if (!(target instanceof HTMLInputElement)) return;
-      if (!target.classList.contains('contribution-country-input')) return;
-      UI.showCountrySuggestions(target, true);
-    });
-
-    // Country input blur — hide suggestions + validate
-    App.dom.container.addEventListener('focusout', (e) => {
-      const target = e.target;
-      if (!(target instanceof HTMLInputElement)) return;
-      if (!target.classList.contains('contribution-country-input')) return;
-      
-      const value = target.value.trim();
-      const wrapper = target.closest('.country-autocomplete');
-      const id = wrapper?.dataset.id;
-      const hidden = wrapper?.querySelector('.contribution-country-value');
-      
-      let code = null;
-      const m = value.match(/\(([a-z]{2})\)$/i);
-      if (m) code = m[1].toLowerCase();
-      else if (/^[a-z]{2}$/i.test(value) && COUNTRIES[value.toLowerCase()]) {
-        code = value.toLowerCase();
-      }
-      
-      if (code) {
-        const name = COUNTRIES[code] || code;
-        target.value = `${name} (${code})`;
-        if (hidden) hidden.value = code;
-        if (id) {
-          if (!App.state.contributionOverrides[id]) {
-            App.state.contributionOverrides[id] = {};
-          }
-          App.state.contributionOverrides[id].country = code;
-          UI.saveContribution();
-        }
-      } else if (!value) {
-        if (hidden) hidden.value = '';
-        if (id && App.state.contributionOverrides[id]) {
-          delete App.state.contributionOverrides[id].country;
-          UI.saveContribution();
-        }
-      }
-      
-      setTimeout(() => {
-        wrapper?.querySelector('.country-suggestions')?.classList.add('is-hidden');
-      }, 150);
-    });
 
     /** @type {number | undefined} */
     let searchTimeout;
@@ -4585,18 +4520,14 @@ renderContributionMode() {
       `
       : '';
 
-    const downloadHtml = `
-        <div class="contribution-download-wrapper">
-          <button class="sb-action-btn secondary" id="contributionCopyCountriesBtn">
-            <svg><use href="#ic-copy"/></svg>
-            <span>Copy countries</span>
-          </button>
-          <button class="sb-action-btn" id="contributionDownloadBtn">
-            <svg><use href="#ic-download"/></svg>
-            <span>Download</span>
-          </button>
-        </div>
-      `;
+      const downloadHtml = `
+          <div class="contribution-download-wrapper">
+            <button class="sb-action-btn" id="contributionDownloadBtn">
+              <svg><use href="#ic-download"/></svg>
+              <span>Download</span>
+            </button>
+          </div>
+        `;
 
     App.dom.container.innerHTML = clearHtml + downloadHtml + headerHtml +
       rowsHtml;
@@ -4615,11 +4546,6 @@ renderContributionMode() {
         UI.saveContribution();
         UI.render();
       };
-    }
-
-    const copyCountriesBtn = document.getElementById('contributionCopyCountriesBtn');
-    if (copyCountriesBtn) {
-      copyCountriesBtn.onclick = () => { this.copyCountries(); };
     }
 
     if (downloadReady) {
@@ -4987,141 +4913,6 @@ renderContributionMode() {
           : 'none';
       }
     }
-  },
-
-  showCountrySuggestions(input, showTop = false) {
-    let term = input.value.trim().toLowerCase();
-    term = term.replace(/\s*\([a-z]{0,2}\)?$/i, '').trim();
-    const wrapper = input.closest('.country-autocomplete');
-    if (!wrapper) return;
-    
-    let suggestions = wrapper.querySelector('.country-suggestions');
-    if (!suggestions) {
-      suggestions = document.createElement('div');
-      suggestions.className = 'country-suggestions';
-      wrapper.appendChild(suggestions);
-    }
-    
-    if (!term && !showTop) {
-      suggestions.classList.add('is-hidden');
-      return;
-    }
-    
-    let matches;
-    
-    if (!term && showTop) {
-      matches = TOP_COUNTRIES.map(code => ({ code, name: COUNTRIES[code] || code }));
-    } else {
-      matches = Object.entries(COUNTRIES)
-        .map(([code, name]) => ({ code, name }))
-        .filter(c => 
-          c.name.toLowerCase().includes(term) || 
-          c.code.toLowerCase() === term
-        )
-        .sort((a, b) => {
-          const aStart = a.name.toLowerCase().startsWith(term) || a.code === term;
-          const bStart = b.name.toLowerCase().startsWith(term) || b.code === term;
-          if (aStart !== bStart) return aStart ? -1 : 1;
-          return a.name.localeCompare(b.name);
-        })
-        .slice(0, 5);
-    }
-    
-    if (!matches.length) {
-      suggestions.classList.add('is-hidden');
-      return;
-    }
-    
-    let html = matches.map(c => 
-      `<div class="country-suggestion" data-code="${c.code}" data-name="${c.name}">${c.name} (${c.code})</div>`
-    ).join('');
-    
-    // If exactly 1 match — add "Set all" option
-    if (matches.length === 1) {
-      const c = matches[0];
-      html += `<div class="country-suggestion country-suggestion-all" data-code="${c.code}" data-name="${c.name}" data-set-all="true">Set all to ${c.name} (${c.code})</div>`;
-    }
-    
-    suggestions.innerHTML = html;
-    suggestions.classList.remove('is-hidden');
-  },
-
-  applyCountrySuggestion(suggEl) {
-    const wrapper = suggEl.closest('.country-autocomplete');
-    if (!wrapper) return;
-    const code = suggEl.dataset.code;
-    const name = suggEl.dataset.name;
-    const setAll = suggEl.dataset.setAll === 'true';
-    
-    if (setAll) {
-      // Apply to all contribution entries
-      App.state.contribution.forEach(app => {
-        const id = app.componentName;
-        if (!App.state.contributionOverrides[id]) {
-          App.state.contributionOverrides[id] = {};
-        }
-        App.state.contributionOverrides[id].country = code;
-      });
-      
-      // Update all visible inputs
-      document.querySelectorAll('.contribution-country-input').forEach(input => {
-        input.value = `${name} (${code})`;
-      });
-      document.querySelectorAll('.contribution-country-value').forEach(hidden => {
-        hidden.value = code;
-      });
-      
-      // Hide all suggestion lists
-      document.querySelectorAll('.country-suggestions').forEach(s => s.classList.add('is-hidden'));
-      
-      this.saveContribution();
-      return;
-    }
-    
-    // Regular single-apply
-    const id = wrapper.dataset.id;
-    const input = wrapper.querySelector('.contribution-country-input');
-    const hidden = wrapper.querySelector('.contribution-country-value');
-    if (input) input.value = `${name} (${code})`;
-    if (hidden) hidden.value = code;
-    
-    wrapper.querySelector('.country-suggestions')?.classList.add('is-hidden');
-    
-    if (!App.state.contributionOverrides[id]) {
-      App.state.contributionOverrides[id] = {};
-    }
-    App.state.contributionOverrides[id].country = code;
-    this.saveContribution();
-  },
-
-  copyCountries() {
-    const grouped = {};
-    App.state.contribution.forEach((app) => {
-      const id = app.componentName;
-      const country = App.state.contributionOverrides[id]?.country;
-      if (!country) return;
-      const pkg = id.split('/')[0];
-      if (!grouped[country]) grouped[country] = [];
-      grouped[country].push(pkg);
-    });
-    
-    if (!Object.keys(grouped).length) {
-      Components.Toast.show('No countries selected');
-      return;
-    }
-    
-    const sorted = {};
-    Object.keys(grouped).sort().forEach(k => {
-      sorted[k] = [...new Set(grouped[k])].sort();
-    });
-    
-    const lines = Object.keys(sorted).map(code => {
-      const pkgs = sorted[code].join(', ');
-      return `${code}: ${pkgs}`;
-    });
-    
-    const output = '```\n' + lines.join('\n') + '\n```';
-    Actions.copyToClipboard(output);
   },
 
   saveContribution() {
