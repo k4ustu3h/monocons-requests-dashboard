@@ -960,7 +960,7 @@ select:hover,
 .contribution-row {
 	display: grid;
 	grid-template-columns:
-		104px 80px minmax(180px, 260px) 240px minmax(160px, 280px)
+		104px 80px minmax(180px, 260px) minmax(160px, 280px)
 		40px minmax(160px, auto);
 	align-items: center;
 	padding: var(--space-md) var(--space-lg);
