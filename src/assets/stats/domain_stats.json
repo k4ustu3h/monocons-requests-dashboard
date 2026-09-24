@@ -1,8 +1,8 @@
 {
   "com": {
-    "requests": 511,
-    "done": 4841,
-    "total": 5352,
+    "requests": 510,
+    "done": 4844,
+    "total": 5354,
     "global": 0,
     "global_installs": 0
   },
@@ -14,25 +14,18 @@
     "global_installs": 0
   },
   "de": {
-    "requests": 350,
+    "requests": 348,
     "done": 87,
-    "total": 437,
-    "global": 345,
-    "global_installs": 3792593325
+    "total": 435,
+    "global": 343,
+    "global_installs": 3782493325
   },
   "ch": {
-    "requests": 184,
+    "requests": 183,
     "done": 41,
-    "total": 225,
-    "global": 184,
-    "global_installs": 1559999420
-  },
-  "in": {
-    "requests": 159,
-    "done": 63,
-    "total": 222,
-    "global": 157,
-    "global_installs": 1573578120
+    "total": 224,
+    "global": 183,
+    "global_installs": 1549999420
   },
   "br": {
     "requests": 187,
@@ -41,12 +34,19 @@
     "global": 173,
     "global_installs": 455587415
   },
-  "jp": {
+  "in": {
     "requests": 158,
+    "done": 63,
+    "total": 221,
+    "global": 156,
+    "global_installs": 1563578120
+  },
+  "jp": {
+    "requests": 157,
     "done": 27,
-    "total": 185,
-    "global": 154,
-    "global_installs": 1846695820
+    "total": 184,
+    "global": 153,
+    "global_installs": 1836695820
   },
   "ru": {
     "requests": 131,
@@ -70,18 +70,18 @@
     "global_installs": 0
   },
   "us": {
-    "requests": 129,
+    "requests": 127,
     "done": 6,
-    "total": 135,
-    "global": 129,
-    "global_installs": 2842557410
+    "total": 133,
+    "global": 127,
+    "global_installs": 2791557410
   },
   "mx": {
-    "requests": 120,
+    "requests": 119,
     "done": 13,
-    "total": 133,
-    "global": 111,
-    "global_installs": 1413895620
+    "total": 132,
+    "global": 110,
+    "global_installs": 1403895620
   },
   "md": {
     "requests": 123,
@@ -146,19 +146,19 @@
     "global": 51,
     "global_installs": 235610100
   },
-  "es": {
-    "requests": 55,
-    "done": 3,
-    "total": 58,
-    "global": 54,
-    "global_installs": 378373120
-  },
   "dev": {
     "requests": 18,
     "done": 39,
     "total": 57,
     "global": 0,
     "global_installs": 0
+  },
+  "es": {
+    "requests": 54,
+    "done": 3,
+    "total": 57,
+    "global": 53,
+    "global_installs": 368373120
   },
   "cz": {
     "requests": 50,
@@ -2191,8 +2191,8 @@
     "global_installs": 0
   },
   "telecom": {
-    "requests": 1,
-    "done": 0,
+    "requests": 0,
+    "done": 1,
     "total": 1,
     "global": 0,
     "global_installs": 0
