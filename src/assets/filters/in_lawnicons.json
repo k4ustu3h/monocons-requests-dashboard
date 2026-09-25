@@ -35,10 +35,6 @@
       "lawnicons_drawable": "finshell_pay"
     },
     {
-      "id": "com.oneplus.brickmode/com.oneplus.brickmode.activity.MainControlActivity",
-      "lawnicons_drawable": "oneplus_zen_space"
-    },
-    {
       "id": "com.sybogames.subway.surfers.game/com.google.firebase.MessagingUnityPlayerActivity",
       "lawnicons_drawable": "subway_surfers"
     },
@@ -237,10 +233,6 @@
     {
       "id": "com.miui.theme.lite/com.miui.theme.lite.WallpaperPickerActivity",
       "lawnicons_drawable": "mint_themes"
-    },
-    {
-      "id": "pl.onet.poczta/pl.onet.poczta.MainActivity",
-      "lawnicons_drawable": "onet_poczta"
     },
     {
       "id": "com.thegrizzlylabs.geniusscan.free/com.thegrizzlylabs.geniusscan.ui.welcome.WelcomeActivity",
@@ -879,10 +871,6 @@
       "lawnicons_drawable": "lnreader"
     },
     {
-      "id": "io.metamask/io.metamask.MainActivity",
-      "lawnicons_drawable": "metamask"
-    },
-    {
       "id": "br.com.meliuz/br.com.meliuz.MainActivity",
       "lawnicons_drawable": "meliuz"
     },
@@ -1319,10 +1307,6 @@
       "lawnicons_drawable": "material_notes"
     },
     {
-      "id": "uk.akane.omni/uk.akane.omni.ui.MainActivity",
-      "lawnicons_drawable": "omni"
-    },
-    {
       "id": "com.kaleedtc.privacium/com.kaleedtc.privacium.MainActivity",
       "lawnicons_drawable": "privacium"
     },
@@ -1407,10 +1391,6 @@
       "lawnicons_drawable": "save_it_later"
     },
     {
-      "id": "com.smashco.smash/com.smashco.smash.controllers.SplashScreenActivity",
-      "lawnicons_drawable": "smash"
-    },
-    {
       "id": "com.zhenxiang.superimage/com.zhenxiang.superimage.MainActivity",
       "lawnicons_drawable": "superimage"
     },
@@ -1485,6 +1465,142 @@
     {
       "id": "com.samsung.android.app.tips/com.samsung.android.app.tips.TipsMainActivity",
       "lawnicons_drawable": "samsung_tips"
+    },
+    {
+      "id": "com.arn.scrobble/com.arn.scrobble.main.MainActivity",
+      "lawnicons_drawable": "pano_scrobbler"
+    },
+    {
+      "id": "org.y20k.transistor/org.y20k.transistor.MainActivity",
+      "lawnicons_drawable": "transistor_radio"
+    },
+    {
+      "id": "com.ancestry.android.apps.ancestry/com.ancestry.android.apps.ancestry.startup.StartupActivity",
+      "lawnicons_drawable": "ancestry"
+    },
+    {
+      "id": "com.apple.atve.androidtv.appletv/com.apple.android.tv.MainActivity",
+      "lawnicons_drawable": "apple_tv"
+    },
+    {
+      "id": "com.audible.application/com.audible.application.MainLauncher",
+      "lawnicons_drawable": "audible"
+    },
+    {
+      "id": "app.letsbewell.android/com.carebook.android.module.entrypoint.EntryPointActivity",
+      "lawnicons_drawable": "be_well"
+    },
+    {
+      "id": "com.borrowell.strangelove/com.borrowell.strangelove.MainActivity",
+      "lawnicons_drawable": "borrowell"
+    },
+    {
+      "id": "com.samsung.android.app.cameraassistant/com.samsung.android.app.cameraassistant.MainActivity",
+      "lawnicons_drawable": "samsung_camera_assistant"
+    },
+    {
+      "id": "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity",
+      "lawnicons_drawable": "canon_camera_connect"
+    },
+    {
+      "id": "com.clubhouse.app/com.clubhouse.android.ui.ClubhouseActivity",
+      "lawnicons_drawable": "clubhouse"
+    },
+    {
+      "id": "com.samsung.android.app.sketchbook/com.samsung.android.app.sketchbook.application.DrawingActivity",
+      "lawnicons_drawable": "samsung_creative_studio"
+    },
+    {
+      "id": "com.samsung.android.displayassistant/com.samsung.android.displayassistant.presentation.ui.main.DisplayAssistantMainActivity",
+      "lawnicons_drawable": "samsung_display_assistant"
+    },
+    {
+      "id": "com.samsung.android.app.find/com.samsung.android.app.find.MainActivity",
+      "lawnicons_drawable": "samsung_find"
+    },
+    {
+      "id": "com.samsung.android.gallery.assistant.app/com.samsung.android.gallery.assistant.app.activity.launcher.LauncherActivity",
+      "lawnicons_drawable": "samsung_gallery_assistant"
+    },
+    {
+      "id": "com.samsung.android.game.honeyplayplus/com.samsung.android.game.honeyplayplus.main.ui.LaunchActivity",
+      "lawnicons_drawable": "samsung_game_booster_plus"
+    },
+    {
+      "id": "com.samsung.android.goodlock/com.samsung.android.goodlock.MainActivity",
+      "lawnicons_drawable": "samsung_good_lock"
+    },
+    {
+      "id": "com.grammarly.android.keyboard/com.grammarly.widget.launcher.LauncherActivity",
+      "lawnicons_drawable": "grammarly"
+    },
+    {
+      "id": "com.samsung.android.app.interpreter/com.samsung.android.app.interpreter.interpretation.view.InterpretationLauncherActivity",
+      "lawnicons_drawable": "samsung_interpreter"
+    },
+    {
+      "id": "com.life360.android.safetymapd/com.life360.koko.LauncherNormal",
+      "lawnicons_drawable": "life360"
+    },
+    {
+      "id": "com.samsung.android.mdx/com.samsung.android.mdx.windowslink.tileservice.LinkToWidowsLauncherActivityDummy",
+      "lawnicons_drawable": "samsung_media_and_devices"
+    },
+    {
+      "id": "com.samsung.android.voc/com.samsung.android.voc.LauncherActivity",
+      "lawnicons_drawable": "samsung_members"
+    },
+    {
+      "id": "com.samsung.systemui.notilus/com.samsung.systemui.notilus.NotiCenterPage",
+      "lawnicons_drawable": "samsung_notistar"
+    },
+    {
+      "id": "com.paypal.android.p2pmobile/com.paypal.oslo.app.MainActivity",
+      "lawnicons_drawable": "paypal"
+    },
+    {
+      "id": "com.sap.mdc.loblaw.nativ/com.loblaw.pcoptimum.android.app.view.main.LauncherActivity",
+      "lawnicons_drawable": "pc_optimum"
+    },
+    {
+      "id": "com.pizzahut.canada/com.pizzahut.canada.MainActivity",
+      "lawnicons_drawable": "pizza_hut"
+    },
+    {
+      "id": "com.samsung.android.app.reminder/com.samsung.android.app.reminder.ui.LaunchMainActivity",
+      "lawnicons_drawable": "samsung_reminder"
+    },
+    {
+      "id": "com.samsung.android.oneconnect/com.samsung.android.oneconnect.ui.SCMainActivity",
+      "lawnicons_drawable": "samsung_smartthings"
+    },
+    {
+      "id": "com.samsung.android.soundassistant/com.samsung.android.soundassistant.activities.MainActivity",
+      "lawnicons_drawable": "samsung_sound_assistant"
+    },
+    {
+      "id": "com.subway.mobile.subwayapp03/com.subway.na.lower.MainActivity",
+      "lawnicons_drawable": "subway"
+    },
+    {
+      "id": "com.samsung.android.themedesigner/com.samsung.android.themedesigner.ui.view.SplashComposeActivity",
+      "lawnicons_drawable": "samsung_theme_park"
+    },
+    {
+      "id": "com.canadiantire.triangle/ca.triangle.app.splash_screen.SplashActivity",
+      "lawnicons_drawable": "triangle"
+    },
+    {
+      "id": "dev.sasikanth.rss.reader/dev.sasikanth.rss.reader.MainActivityDarkJade",
+      "lawnicons_drawable": "twine"
+    },
+    {
+      "id": "com.samsung.android.wonderland.wallpaper/com.samsung.android.wonderland.wallpaper.settings.LandingActivity",
+      "lawnicons_drawable": "samsung_wonderland"
+    },
+    {
+      "id": "com.workday.workdroidapp/com.workday.workdroidapp.server.login.LauncherActivity",
+      "lawnicons_drawable": "workday"
     }
   ]
 }

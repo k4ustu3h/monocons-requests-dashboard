@@ -77,6 +77,14 @@
     {
       "id": "launcher.libre.dev/ch.deletescape.lawnchair.notes.NotesActivity",
       "existing_drawable": "generic_notes"
+    },
+    {
+      "id": "com.samsung.android.app.interpreter/com.samsung.android.app.interpreter.interpretation.view.InterpretationLauncherActivity",
+      "existing_drawable": "interpreter"
+    },
+    {
+      "id": "com.samsung.android.mdx/com.samsung.android.mdx.windowslink.tileservice.LinkToWidowsLauncherActivityDummy",
+      "existing_drawable": "microsoft_link"
     }
   ]
 }

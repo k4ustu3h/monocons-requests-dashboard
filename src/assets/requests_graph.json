@@ -924,7 +924,10 @@
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 4
   },
   "com.oceanwing.soundcore/com.oceanwing.soundcore.activity.WelcomeActivity": {
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 3
+    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 3,
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
   },
   "com.mobile.canaraepassbook/com.mobile.canaraepassbook.EbookSplashActivity": {
     "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 5,
@@ -942,11 +945,6 @@
     "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4
   },
   "com.canarabank.mobility/com.canarabank.mobility.MainActivity": {
-    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 5,
-    "in.gov.udiseplus.gis/in.gov.udiseplus.gis.MainActivity": 5,
-    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4
-  },
-  "com.oneplus.brickmode/com.oneplus.brickmode.activity.MainControlActivity": {
     "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 5,
     "in.gov.udiseplus.gis/in.gov.udiseplus.gis.MainActivity": 5,
     "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4
@@ -2245,7 +2243,10 @@
   "com.samsung.knox.securefolder/com.samsung.knox.securefolder.presentation.switcher.view.SecureFolderShortcutActivity": {
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 3,
     "md.obsidian/md.obsidian.MainActivity": 3,
-    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 3
+    "de.szalkowski.activitylauncher.oss/de.szalkowski.activitylauncher.entrypoint.MainActivity": 3,
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
   },
   "com.futo.notes/com.futo.notes.MainActivity": {
     "in.sunilpaulmathew.izzyondroid/in.sunilpaulmathew.izzyondroid.MainActivity": 3,
@@ -2756,21 +2757,6 @@
     "br.gov.dataprev.sinefacil/br.gov.dataprev.sinefacil.MainActivity": 1
   },
   "app.gamenative/app.gamenative.MainActivityAliasDefault": {
-    "br.gov.caixa.fgts.trabalhador/br.gov.caixa.fgts.trabalhador.ui.login.compose.SplashFgtsActivity": 2,
-    "br.gov.meugovbr/br.gov.meugovbr.MainActivity": 2,
-    "br.com.brainweb.ifood/br.com.brainweb.ifood.AppIcon": 2,
-    "br.com.intermedium/br.com.intermedium.splash.SplashActivity": 2,
-    "br.com.correios.preatendimento/br.com.correios.preatendimento.MainActivity": 2,
-    "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 2,
-    "br.com.brisanet.minhabrisa/br.com.brisanet.minhabrisa.MainActivity": 2,
-    "br.com.timbrasil.meutim/br.com.timbrasil.meutim.MainActivityDefault": 2,
-    "br.com.meliuz/br.com.meliuz.MainActivity": 2,
-    "br.com.neon/br.lXkha6.njxV17.c4JtS0.duA2M6.zcaTD1.iN6jx0": 2,
-    "br.com.serasaexperian.consumidor/br.com.serasaexperian.consumidor.onboarding.features.splash.view.SplashScreenActivity": 1,
-    "jp.pokemon.pokemontcgp/com.unity3d.player.UnityPlayerActivity": 1,
-    "br.gov.dataprev.sinefacil/br.gov.dataprev.sinefacil.MainActivity": 1
-  },
-  "io.metamask/io.metamask.MainActivity": {
     "br.gov.caixa.fgts.trabalhador/br.gov.caixa.fgts.trabalhador.ui.login.compose.SplashFgtsActivity": 2,
     "br.gov.meugovbr/br.gov.meugovbr.MainActivity": 2,
     "br.com.brainweb.ifood/br.com.brainweb.ifood.AppIcon": 2,
@@ -4865,7 +4851,10 @@
     "cn.com.broadlink.econtrol.international/cn.com.broadlink.unify.app.main.activity.LoadingActivity": 1,
     "ch.publisheria.bring/ch.publisheria.bring.activities.BringMainActivity": 1,
     "mx.com.segurosbancomer.autoalerta/com.bbva.bbva_sos.module.home.HomeActivity": 1,
-    "mx.com.cfe.cfecontigo/mx.com.cfe.cfecontigo.ui.login.LoginActivity": 1
+    "mx.com.cfe.cfecontigo/mx.com.cfe.cfecontigo.ui.login.LoginActivity": 1,
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
   },
   "com.epson.epsonsmart/com.epson.epsonsmart.controller.splash.SplashActivity": {
     "in.aaremm.offthegrid/in.aaremm.offthegrid.MainActivity": 1,
@@ -5741,20 +5730,6 @@
     "de.lemke.oneurl/de.lemke.oneurl.ui.MainActivity": 1,
     "mx.gob.sat.satid/host.exp.exponent.MainActivity": 1
   },
-  "com.smashco.smash/com.smashco.smash.controllers.SplashScreenActivity": {
-    "mx.com.suburbia.shoppingapp/mx.com.suburbia.shoppingapp.icon.AppIcon": 1,
-    "ch.publisheria.bring/ch.publisheria.bring.activities.BringMainActivity": 1,
-    "jp.pokemon.pokemonunite/com.nishiki.pgame.n.PGameLauncherActivity": 1,
-    "mx.vexi.appmovil/mx.vexi.appmovil.MainActivity": 1,
-    "mx.com.liverpool.shoppingapp/mx.com.liverpool.shoppingapp.icon.AppIcon": 1,
-    "es.rafalense.telegram.themes/es.rafalense.telegram.themes.activities.SplashActivity": 1,
-    "mx.com.tala/co.tala.global.switchover.launch.UniversalLauncherActivity": 1,
-    "in.aaremm.offthegrid/in.aaremm.offthegrid.MainActivity": 1,
-    "mx.novacard/com.dynamic_bank.dynamic_bank.MainActivity": 1,
-    "mx.com.modelorama.now/com.abi.bees.tada.MainActivity": 1,
-    "de.lemke.oneurl/de.lemke.oneurl.ui.MainActivity": 1,
-    "mx.gob.sat.satid/host.exp.exponent.MainActivity": 1
-  },
   "com.droid4you.application.wallet/com.droid4you.application.wallet.DispatcherActivity": {
     "mx.com.suburbia.shoppingapp/mx.com.suburbia.shoppingapp.icon.AppIcon": 1,
     "ch.publisheria.bring/ch.publisheria.bring.activities.BringMainActivity": 1,
@@ -6518,5 +6493,230 @@
     "ec.otecel.tuenti/ec.otecel.tuenti.MainActivity": 1,
     "md.obsidian/md.obsidian.MainActivity": 1,
     "ec.edu.espol.academico.academico/ec.edu.espol.academico.academico.MainActivity": 1
+  },
+  "com.samsung.android.app.find/com.samsung.android.app.find.MainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "app.letsbewell.android/com.carebook.android.module.entrypoint.EntryPointActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.audible.application/com.audible.application.MainLauncher": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.sap.mdc.loblaw.nativ/com.loblaw.pcoptimum.android.app.view.main.LauncherActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.leadaxe.lxbox/com.leadaxe.lxbox.MainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.samsung.android.goodlock/com.samsung.android.goodlock.MainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.life360.android.safetymapd/com.life360.koko.LauncherNormal": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.pizzahut.canada/com.pizzahut.canada.MainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.simplygood.ct/ca.triangle.retail.canadiantire.splash_screen.SplashActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.samsung.android.app.reminder/com.samsung.android.app.reminder.ui.LaunchMainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.samsung.android.app.sketchbook/com.samsung.android.app.sketchbook.application.DrawingActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.thinkware.lima/com.thinkware.mobileviewer.scene.SplashActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.samsung.systemui.notilus/com.samsung.systemui.notilus.NotiCenterPage": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.samsung.android.oneconnect/com.samsung.android.oneconnect.ui.SCMainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.borrowell.strangelove/com.borrowell.strangelove.MainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.samsung.android.wonderland.wallpaper/com.samsung.android.wonderland.wallpaper.settings.LandingActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.grammarly.android.keyboard/com.grammarly.widget.launcher.LauncherActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.rbc.mobile.android/com.rbc.mobile.bud.pre_auth.common.activity.SplashActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.ancestry.android.apps.ancestry/com.ancestry.android.apps.ancestry.startup.StartupActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.samsung.android.gallery.assistant.app/com.samsung.android.gallery.assistant.app.activity.launcher.LauncherActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.samsung.android.displayassistant/com.samsung.android.displayassistant.presentation.ui.main.DisplayAssistantMainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.workday.workdroidapp/com.workday.workdroidapp.server.login.LauncherActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.samsung.android.app.cameraassistant/com.samsung.android.app.cameraassistant.MainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.samsung.android.themedesigner/com.samsung.android.themedesigner.ui.view.SplashComposeActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.td.insurance/com.td.insurance.activities.view.SplashActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.givex.cws5.barburrito/com.google.androidbrowserhelper.trusted.LauncherActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.apple.atve.androidtv.appletv/com.apple.android.tv.MainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.canadiantire.triangle/ca.triangle.app.splash_screen.SplashActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.samsung.android.soundassistant/com.samsung.android.soundassistant.activities.MainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.paypal.android.p2pmobile/com.paypal.oslo.app.MainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.amanoteam.flonne/org.telegram.messenger.DefaultIcon": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.samsung.android.voc/com.samsung.android.voc.LauncherActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "ai.leonardo.leonardo/ai.leonardo.MainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.casio.wac_app/com.casio.wac_app.MainActivityDefault": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "image.canon/image.canon.MainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.skullcandy.skulliq/com.bragi.earbuds.presentation.main.MainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "dev.sasikanth.rss.reader/dev.sasikanth.rss.reader.MainActivityDarkJade": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.samsung.android.mdx/com.samsung.android.mdx.windowslink.tileservice.LinkToWidowsLauncherActivityDummy": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "mini.video.chat/mini.video.chat.ui.MainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.subway.mobile.subwayapp03/com.subway.na.lower.MainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.samsung.android.game.honeyplayplus/com.samsung.android.game.honeyplayplus.main.ui.LaunchActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "app.skullcandy/com.skullcandy_app.MainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.samsung.android.app.interpreter/com.samsung.android.app.interpreter.interpretation.view.InterpretationLauncherActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.clubhouse.app/com.clubhouse.android.ui.ClubhouseActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+  },
+  "com.binauralbeat/com.binauralbeat.MainActivity": {
+    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
+    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
   }
 }

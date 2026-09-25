@@ -107,8 +107,28 @@
       "existing_drawable": "rain"
     },
     {
+      "id": "com.rebelroot.omni/com.rebelroot.omni.MainActivityDefault",
+      "existing_drawable": "omni"
+    },
+    {
       "id": "io.github.mouse233.localsendkotlin/io.github.mouse233.localsendkotlin.MainActivity",
       "existing_drawable": "localsend"
+    },
+    {
+      "id": "com.samsung.android.app.cameraassistant/com.samsung.android.app.cameraassistant.MainActivity",
+      "existing_drawable": "samsung_camera"
+    },
+    {
+      "id": "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity",
+      "existing_drawable": "samsung_camera"
+    },
+    {
+      "id": "com.samsung.android.gallery.assistant.app/com.samsung.android.gallery.assistant.app.activity.launcher.LauncherActivity",
+      "existing_drawable": "generic_gallery"
+    },
+    {
+      "id": "com.samsung.android.soundassistant/com.samsung.android.soundassistant.activities.MainActivity",
+      "existing_drawable": "generic_shell"
     }
   ]
 }
