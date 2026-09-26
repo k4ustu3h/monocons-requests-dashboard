@@ -64,7 +64,7 @@ def run_linter(icons):
         drawable = Path(report["file_path"]).stem
         issues = [
             r["message"] for r in report.get("results", [])
-            if r.get("status") == "FAIL" and r.get("id") in ALLOWED_RULES
+            if r.get("status") in {"FAIL", "REVIEW", "WARN"} and r.get("id") in ALLOWED_RULES
         ]
         if issues:
             findings[drawable] = issues
