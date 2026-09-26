@@ -3,6 +3,10 @@
   "description": "Requests potentially related to existing single-word names.",
   "akin": [
     {
+      "id": "com.sybogames.subway.surfers.game/com.google.firebase.MessagingUnityPlayerActivity",
+      "existing_drawable": "subway"
+    },
+    {
       "id": "xyz.klinker.messenger/xyz.klinker.messenger.activity.MessengerActivity",
       "existing_drawable": "pulse"
     },
@@ -109,6 +113,10 @@
     {
       "id": "com.rebelroot.omni/com.rebelroot.omni.MainActivityDefault",
       "existing_drawable": "omni"
+    },
+    {
+      "id": "com.kiloo.subwaysurf/com.sybogames.chili.multidex.ChiliMultidexSupportActivity",
+      "existing_drawable": "subway"
     },
     {
       "id": "io.github.mouse233.localsendkotlin/io.github.mouse233.localsendkotlin.MainActivity",
