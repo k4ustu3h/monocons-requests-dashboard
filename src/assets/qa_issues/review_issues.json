@@ -701,6 +701,12 @@
     ]
   },
   {
+    "drawable": "linwood_butterfly_nightly",
+    "issues": [
+      "SVG file size exceeds 3KB. Avoid excessive density."
+    ]
+  },
+  {
     "drawable": "live_transcribe",
     "issues": [
       "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
@@ -776,6 +782,12 @@
   },
   {
     "drawable": "metamask",
+    "issues": [
+      "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
+    ]
+  },
+  {
+    "drawable": "mi_mover",
     "issues": [
       "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
     ]
@@ -1393,6 +1405,12 @@
   },
   {
     "drawable": "taskbar",
+    "issues": [
+      "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
+    ]
+  },
+  {
+    "drawable": "taskmanager",
     "issues": [
       "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
     ]
