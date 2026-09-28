@@ -1569,6 +1569,11 @@ const Actions = {
               xml += `    <item component="ComponentInfo{${icon.component}}" drawable="${icon.drawable}" name="${name}" />\n`;
             }
           });
+          if (!uniqueComps.has(app.componentName)) {
+            const baseDrawable = matchedIcons[0].drawable;
+            const name = app.label.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+            xml += `    <item component="ComponentInfo{${app.componentName}}" drawable="${baseDrawable}" name="${name}" />\n`;
+          }
         } else {
           xml += `    ${Utils.generateXml(app)}\n`;
         }
