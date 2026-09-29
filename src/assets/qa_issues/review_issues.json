@@ -12,6 +12,12 @@
     ]
   },
   {
+    "drawable": "accrescent",
+    "issues": [
+      "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
+    ]
+  },
+  {
     "drawable": "activity_launcher",
     "issues": [
       "SVG file size exceeds 3KB. Avoid excessive density."
@@ -92,6 +98,13 @@
   {
     "drawable": "anizen",
     "issues": [
+      "SVG file size exceeds 3KB. Avoid excessive density."
+    ]
+  },
+  {
+    "drawable": "antisplit_m",
+    "issues": [
+      "Transparency 'stop-opacity' in <stop>. Ensure transparency is necessary to match the original icon.",
       "SVG file size exceeds 3KB. Avoid excessive density."
     ]
   },
@@ -289,6 +302,12 @@
     "drawable": "comaps",
     "issues": [
       "Transparency 'fill-opacity' in <path>. Ensure transparency is necessary to match the original icon."
+    ]
+  },
+  {
+    "drawable": "continuum",
+    "issues": [
+      "SVG file size exceeds 3KB. Avoid excessive density."
     ]
   },
   {
@@ -546,6 +565,12 @@
     "drawable": "gta_sa",
     "issues": [
       "SVG file size exceeds 3KB. Avoid excessive density."
+    ]
+  },
+  {
+    "drawable": "guitartuna",
+    "issues": [
+      "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
     ]
   },
   {
