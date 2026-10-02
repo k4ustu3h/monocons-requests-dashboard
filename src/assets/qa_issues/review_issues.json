@@ -127,6 +127,12 @@
     ]
   },
   {
+    "drawable": "applist_detector",
+    "issues": [
+      "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
+    ]
+  },
+  {
     "drawable": "applock_pro",
     "issues": [
       "SVG file size exceeds 3KB. Avoid excessive density."
@@ -195,6 +201,12 @@
   },
   {
     "drawable": "borealis_icon_pack",
+    "issues": [
+      "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
+    ]
+  },
+  {
+    "drawable": "borrowell",
     "issues": [
       "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
     ]
@@ -1462,6 +1474,12 @@
     "drawable": "tor_vpn",
     "issues": [
       "SVG file size exceeds 3KB. Avoid excessive density."
+    ]
+  },
+  {
+    "drawable": "triangle",
+    "issues": [
+      "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
     ]
   },
   {

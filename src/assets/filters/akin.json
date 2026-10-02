@@ -137,6 +137,18 @@
     {
       "id": "com.samsung.android.soundassistant/com.samsung.android.soundassistant.activities.MainActivity",
       "existing_drawable": "generic_shell"
+    },
+    {
+      "id": "com.neave.zoomearth/com.neave.zoomearth.MainActivity",
+      "existing_drawable": "zoom"
+    },
+    {
+      "id": "com.hitappsgames.wordsolitaire/com.unity3d.player.UnityPlayerActivity",
+      "existing_drawable": "microsoft_solitaire"
+    },
+    {
+      "id": "com.aliucord.manager/com.aliucord.manager.MainActivity",
+      "existing_drawable": "discord"
     }
   ]
 }

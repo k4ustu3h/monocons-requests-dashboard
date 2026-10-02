@@ -491,10 +491,6 @@
       "lawnicons_drawable": "zaza_remote"
     },
     {
-      "id": "icu.nullptr.applistdetector/icu.nullptr.applistdetector.MainActivity",
-      "lawnicons_drawable": "applist_detector"
-    },
-    {
       "id": "org.frknkrc44.hma_oss/org.frknkrc44.hma_oss.MainActivityLauncher",
       "lawnicons_drawable": "hma_oss"
     },
@@ -1011,10 +1007,6 @@
       "lawnicons_drawable": "loli_snatcher"
     },
     {
-      "id": "team.opay.pay/team.opay.pay.home.DexloadActivity",
-      "lawnicons_drawable": "opay"
-    },
-    {
       "id": "net.apex_designs.payback2/net.apex_designs.payback2.PaybackActivity",
       "lawnicons_drawable": "payback_2"
     },
@@ -1243,16 +1235,8 @@
       "lawnicons_drawable": "mi_wi_fi"
     },
     {
-      "id": "co.nelo.nelo/co.nelo.nelo.MainActivity",
-      "lawnicons_drawable": "nelo"
-    },
-    {
       "id": "com.neutroncode.mp/com.neutroncode.mp.NeutronMPCore",
       "lawnicons_drawable": "neutron_music_player"
-    },
-    {
-      "id": "com.nexowallet/com.nexowallet.MainActivity",
-      "lawnicons_drawable": "nexo"
     },
     {
       "id": "com.oppo.community.global/com.oplus.community.activity.LauncherActivity",
@@ -1339,16 +1323,8 @@
       "lawnicons_drawable": "samsung_tips"
     },
     {
-      "id": "com.ancestry.android.apps.ancestry/com.ancestry.android.apps.ancestry.startup.StartupActivity",
-      "lawnicons_drawable": "ancestry"
-    },
-    {
       "id": "app.letsbewell.android/com.carebook.android.module.entrypoint.EntryPointActivity",
       "lawnicons_drawable": "be_well"
-    },
-    {
-      "id": "com.borrowell.strangelove/com.borrowell.strangelove.MainActivity",
-      "lawnicons_drawable": "borrowell"
     },
     {
       "id": "com.samsung.android.app.cameraassistant/com.samsung.android.app.cameraassistant.MainActivity",
@@ -1403,10 +1379,6 @@
       "lawnicons_drawable": "samsung_reminder"
     },
     {
-      "id": "com.samsung.android.oneconnect/com.samsung.android.oneconnect.ui.SCMainActivity",
-      "lawnicons_drawable": "samsung_smartthings"
-    },
-    {
       "id": "com.samsung.android.soundassistant/com.samsung.android.soundassistant.activities.MainActivity",
       "lawnicons_drawable": "samsung_sound_assistant"
     },
@@ -1415,16 +1387,340 @@
       "lawnicons_drawable": "samsung_theme_park"
     },
     {
-      "id": "com.canadiantire.triangle/ca.triangle.app.splash_screen.SplashActivity",
-      "lawnicons_drawable": "triangle"
-    },
-    {
       "id": "com.samsung.android.wonderland.wallpaper/com.samsung.android.wonderland.wallpaper.settings.LandingActivity",
       "lawnicons_drawable": "samsung_wonderland"
     },
     {
       "id": "com.workday.workdroidapp/com.workday.workdroidapp.server.login.LauncherActivity",
       "lawnicons_drawable": "workday"
+    },
+    {
+      "id": "com.elevatelabs.geonosis/com.elevatelabs.geonosis.MainActivity",
+      "lawnicons_drawable": "balance"
+    },
+    {
+      "id": "com.microsoft.windowsintune.companyportal/com.microsoft.windowsintune.companyportal.views.SplashActivity",
+      "lawnicons_drawable": "intune_company_portal"
+    },
+    {
+      "id": "in.swiggy.android.instamart/in.swiggy.android.HomeIcon",
+      "lawnicons_drawable": "swiggy"
+    },
+    {
+      "id": "com.microsoft.office.officelens/com.microsoft.office.officelens.MainActivity",
+      "lawnicons_drawable": "microsoft_lens"
+    },
+    {
+      "id": "in.medibuddy/in.medibuddy.ui.splash.SplashActivity",
+      "lawnicons_drawable": "medibuddy"
+    },
+    {
+      "id": "com.moveinsync.ets/com.moveinsync.ets.launch.newlaunch.NewLaunchActivity",
+      "lawnicons_drawable": "moveinsync"
+    },
+    {
+      "id": "com.mygate.user/com.mygate.user.LauncherDefault",
+      "lawnicons_drawable": "mygate"
+    },
+    {
+      "id": "in.juspay.nammayatri/com.mobility.movingtech.AppIconAlias_default",
+      "lawnicons_drawable": "namma_yatri"
+    },
+    {
+      "id": "wtf.riedel.onesec/wtf.riedel.onesec.OneSecActivity",
+      "lawnicons_drawable": "one_sec"
+    },
+    {
+      "id": "com.techmash.playo/com.techmash.playo.view.MainActivity",
+      "lawnicons_drawable": "playo"
+    },
+    {
+      "id": "com.Splitwise.SplitwiseMobile/com.Splitwise.SplitwiseMobile.views.SplitwiseSplashScreen",
+      "lawnicons_drawable": "splitwise"
+    },
+    {
+      "id": "com.tplink.tether/com.tplink.tether.WelcomeActivity",
+      "lawnicons_drawable": "tp_link_tether"
+    },
+    {
+      "id": "org.fdroid.fdroid/org.fdroid.IconActivity",
+      "lawnicons_drawable": "f_droid"
+    },
+    {
+      "id": "com.getmimo/com.getmimo.ui.SplashActivity_default",
+      "lawnicons_drawable": "mimo"
+    },
+    {
+      "id": "com.myntra.android/com.myntra.android.activities.react.ReactActivity.BFF_PRIMARY",
+      "lawnicons_drawable": "myntra"
+    },
+    {
+      "id": "app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_scaled_1",
+      "lawnicons_drawable": "generic_player"
+    },
+    {
+      "id": "so.cosmos.www/so.cosmos.www.MainActivity",
+      "lawnicons_drawable": "cosmos"
+    },
+    {
+      "id": "com.axiel7.moelist/com.axiel7.moelist.MainActivity",
+      "lawnicons_drawable": "moelist"
+    },
+    {
+      "id": "com.roblox.client/com.roblox.client.startup.LauncherAliasMain",
+      "lawnicons_drawable": "roblox"
+    },
+    {
+      "id": "com.prajwalch.torrentsearch/com.prajwalch.torrentsearch.ui.main.MainActivity",
+      "lawnicons_drawable": "torrent_search"
+    },
+    {
+      "id": "com.jndapp.cartoon.crayon.iconpack/com.jndapp.cartoon.crayon.iconpack.MainActivity",
+      "lawnicons_drawable": "crayon_icons"
+    },
+    {
+      "id": "com.crispy.icons.flatedge.iconpack/com.crispy.icons.flatedge.iconpack.activities.MainActivity",
+      "lawnicons_drawable": "crispy_icons"
+    },
+    {
+      "id": "flar2.devcheck/flar2.devcheck.MainActivity",
+      "lawnicons_drawable": "devcheck"
+    },
+    {
+      "id": "com.kumobius.android.duet/com.kumobius.android.KumoAppActivity",
+      "lawnicons_drawable": "duet"
+    },
+    {
+      "id": "com.edzondm.linebit/com.edzondm.linebit.MainActivity",
+      "lawnicons_drawable": "linebit_icons"
+    },
+    {
+      "id": "com.oriondev.moneywallet/com.oriondev.moneywallet.ui.activity.LauncherActivity",
+      "lawnicons_drawable": "moneywallet"
+    },
+    {
+      "id": "mx.openbank.modelbank/com.gruposantander.modelbank.android.feature.security.okmx.subfeatures.login.presentation.host.LoginHostMxActivity",
+      "lawnicons_drawable": "openbank"
+    },
+    {
+      "id": "com.arjunarora.pix_you_cornflower_dark_icons/com.arjunarora.pix_you_cornflower_dark_icons.MainActivity",
+      "lawnicons_drawable": "pix_you_dark_icons"
+    },
+    {
+      "id": "com.sivale.android/mcvYF2.zCdsx6.w9nT40.xS9qQ6",
+      "lawnicons_drawable": "up_si_vale"
+    },
+    {
+      "id": "com.miruta.mty/com.miruta.mty.MainActivity",
+      "lawnicons_drawable": "urbani"
+    },
+    {
+      "id": "com.dozingcatsoftware.bouncy/com.dozingcatsoftware.bouncy.BouncyActivity",
+      "lawnicons_drawable": "vector_pinball"
+    },
+    {
+      "id": "vintage.icon.pack.ddt/dev.ddt.dashboard.engine.MainActivity",
+      "lawnicons_drawable": "viral_icons"
+    },
+    {
+      "id": "com.neave.zoomearth/com.neave.zoomearth.MainActivity",
+      "lawnicons_drawable": "zoom_earth"
+    },
+    {
+      "id": "fr.free.moncomptefree/presentation.newfree.root.common.ui.ApplicationMainActivity",
+      "lawnicons_drawable": "free"
+    },
+    {
+      "id": "fr.freebox.network/networkapp.presentation.main.ui.MainActivity",
+      "lawnicons_drawable": "freebox_connect"
+    },
+    {
+      "id": "fi.digia.suomi112/fi.digia.suomi112.MainActivity",
+      "lawnicons_drawable": "generic_112"
+    },
+    {
+      "id": "org.connectbot/org.connectbot.ui.MainActivity",
+      "lawnicons_drawable": "connectbot"
+    },
+    {
+      "id": "com.fandom.playercompanion/com.fandom.feature.splash.SplashActivity",
+      "lawnicons_drawable": "d_and_d_beyond"
+    },
+    {
+      "id": "org.handmadeideas.floccus/org.handmadeideas.floccus.MainActivity",
+      "lawnicons_drawable": "floccus"
+    },
+    {
+      "id": "at.bitfire.icsdroid/at.bitfire.icsdroid.MainActivity",
+      "lawnicons_drawable": "icsx5"
+    },
+    {
+      "id": "fi.ruokakesko.k_ruoka/fi.ruokakesko.k_ruoka.MainActivity",
+      "lawnicons_drawable": "k_ruoka"
+    },
+    {
+      "id": "fi.danskebank.mobilepay/com.dnb.vipps.android.startup.ui.StartupActivity",
+      "lawnicons_drawable": "vipps_mobilepay"
+    },
+    {
+      "id": "de.luhmer.owncloudnewsreader/de.luhmer.owncloudnewsreader.NewsReaderListActivity",
+      "lawnicons_drawable": "nextcloud_news"
+    },
+    {
+      "id": "de.tnmgl.ntodotxt/de.tnmgl.ntodotxt.MainActivity",
+      "lawnicons_drawable": "tasky"
+    },
+    {
+      "id": "fi.op.android.opmobiili/fi.op.android.opmobiili.common.mainui.MainActivity",
+      "lawnicons_drawable": "op_mobiili"
+    },
+    {
+      "id": "im.angry.openeuicc/im.angry.openeuicc.ui.PrivilegedMainActivity",
+      "lawnicons_drawable": "pixel_ims"
+    },
+    {
+      "id": "org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.MainActivity",
+      "lawnicons_drawable": "openkeychain"
+    },
+    {
+      "id": "app.pachli/app.pachli.feature.intentrouter.IntentRouterActivity",
+      "lawnicons_drawable": "pachli"
+    },
+    {
+      "id": "app.passwordstore.pando85/app.passwordstore.ui.main.LaunchActivity",
+      "lawnicons_drawable": "password_store"
+    },
+    {
+      "id": "app.simple.peri/app.simple.peri.activities.main.MainComposeActivity",
+      "lawnicons_drawable": "peristyle"
+    },
+    {
+      "id": "se.postnord.private/com.postnord.MaCMainActivity",
+      "lawnicons_drawable": "postnord"
+    },
+    {
+      "id": "com.sweak.qralarm/com.sweak.qralarm.app.activity.MainActivity",
+      "lawnicons_drawable": "qralarm"
+    },
+    {
+      "id": "com.github.olga_yakovleva.rhvoice.android/com.github.olga_yakovleva.rhvoice.android.MainActivity",
+      "lawnicons_drawable": "rhvoice"
+    },
+    {
+      "id": "de.tobiasbielefeld.solitaire/de.tobiasbielefeld.solitaire.ui.GameSelector",
+      "lawnicons_drawable": "simple_solitaire_collection"
+    },
+    {
+      "id": "com.google.android.stardroid/com.google.android.stardroid.ui.MainActivity",
+      "lawnicons_drawable": "sky_map"
+    },
+    {
+      "id": "fi.suomi.viestit/fi.suomi.viestit.MainActivity",
+      "lawnicons_drawable": "suomi_fi"
+    },
+    {
+      "id": "dev.davidv.translator/dev.davidv.translator.MainActivity",
+      "lawnicons_drawable": "monocles_translator"
+    },
+    {
+      "id": "org.moire.ultrasonic/org.moire.ultrasonic.activity.NavigationActivity",
+      "lawnicons_drawable": "ultrasonic"
+    },
+    {
+      "id": "com.wolt.android/com.wolt.android.activities.LauncherActivity",
+      "lawnicons_drawable": "wolt"
+    },
+    {
+      "id": "io.yarsa.games.ludo/com.unity3d.player.UnityPlayerActivity",
+      "lawnicons_drawable": "ludo_king"
+    },
+    {
+      "id": "com.magicpin.local/com.local.magicpin.screensplash.SplashScreen.DEFAULT_NEW",
+      "lawnicons_drawable": "magicpin"
+    },
+    {
+      "id": "com.makemytrip/com.mmt.travel.app.home.ui.SplashActivityPrimary",
+      "lawnicons_drawable": "makemytrip"
+    },
+    {
+      "id": "com.buyhatke.assistant/com.buyhatke.assistant.views.activities.MainActivity",
+      "lawnicons_drawable": "buyhatke"
+    },
+    {
+      "id": "io.github.aedev.flow/io.github.aedev.flow.IconFlowPlay",
+      "lawnicons_drawable": "flow"
+    },
+    {
+      "id": "com.saggitt.omega/com.saggitt.omega.OmegaLauncher",
+      "lawnicons_drawable": "neo_launcher"
+    },
+    {
+      "id": "jqsoft.apps.periodictable.hd/jqsoft.apps.periodictable.hd.PeriodicTable",
+      "lawnicons_drawable": "periodic_table"
+    },
+    {
+      "id": "com.leekleak.trafficlight/com.leekleak.trafficlight.MainActivity",
+      "lawnicons_drawable": "traffic_light"
+    },
+    {
+      "id": "com.trianguloy.urlchecker/com.trianguloy.urlchecker.activities.MainActivity",
+      "lawnicons_drawable": "urlcheck"
+    },
+    {
+      "id": "org.altruist.BajajExperia/com.bfl.superapp.onboarding.revamp.activity.DefaultTheme",
+      "lawnicons_drawable": "bajaj_finserv"
+    },
+    {
+      "id": "app.netmirror.netmirrornew/app.netmirror.netmirrornew.MainActivity",
+      "lawnicons_drawable": "netmirror"
+    },
+    {
+      "id": "one4studio.iconpack.lenaadaptive/com.one4studio.iconpack.MainActivity",
+      "lawnicons_drawable": "lena_adaptive_icons"
+    },
+    {
+      "id": "com.fastemulator.gba/com.fastemulator.gba.RomListActivity",
+      "lawnicons_drawable": "my_boy"
+    },
+    {
+      "id": "com.fastemulator.gbc/com.fastemulator.gbc.RomListActivity",
+      "lawnicons_drawable": "my_oldboy"
+    },
+    {
+      "id": "com.imaginstudio.imagetools.pixellab/com.imaginstudio.imagetools.pixellab.MainActivity",
+      "lawnicons_drawable": "pixellab"
+    },
+    {
+      "id": "com.sonymobile.sketch/com.sonymobile.sketch.dashboard.DashboardActivity",
+      "lawnicons_drawable": "sony_sketch"
+    },
+    {
+      "id": "com.aliucord.manager/com.aliucord.manager.MainActivity",
+      "lawnicons_drawable": "aliucord_installer"
+    },
+    {
+      "id": "com.here.app.maps/com.here.app.wego.MainActivity",
+      "lawnicons_drawable": "here_wego"
+    },
+    {
+      "id": "app.alextran.immich/app.alextran.immich.MainActivity",
+      "lawnicons_drawable": "immich"
+    },
+    {
+      "id": "com.overdrive.mobile.android.libby/com.overdrive.mobile.android.nautilus.ui.Activity_Main",
+      "lawnicons_drawable": "libby"
+    },
+    {
+      "id": "proton.android.meet/proton.android.meet.activity.MainActivity",
+      "lawnicons_drawable": "proton_meet"
+    },
+    {
+      "id": "com.eddyizm.degoogled.tempus/com.eddyizm.tempus.ui.activity.MainActivity",
+      "lawnicons_drawable": "tempus"
+    },
+    {
+      "id": "dubrowgn.wattz/dubrowgn.wattz.MainActivity",
+      "lawnicons_drawable": "wattz"
     }
   ]
 }
