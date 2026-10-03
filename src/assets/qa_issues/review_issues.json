@@ -763,6 +763,12 @@
     ]
   },
   {
+    "drawable": "lune",
+    "issues": [
+      "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
+    ]
+  },
+  {
     "drawable": "m64plus_fz",
     "issues": [
       "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
@@ -1039,6 +1045,12 @@
     ]
   },
   {
+    "drawable": "openkeychain",
+    "issues": [
+      "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
+    ]
+  },
+  {
     "drawable": "owncloud",
     "issues": [
       "SVG file size exceeds 3KB. Avoid excessive density."
@@ -1132,6 +1144,12 @@
     "drawable": "pocket_paint",
     "issues": [
       "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
+    ]
+  },
+  {
+    "drawable": "pollar",
+    "issues": [
+      "SVG file size exceeds 3KB. Avoid excessive density."
     ]
   },
   {
@@ -1514,6 +1532,12 @@
   },
   {
     "drawable": "uno",
+    "issues": [
+      "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
+    ]
+  },
+  {
+    "drawable": "vipps_mobilepay",
     "issues": [
       "Transparency 'opacity' in <path>. Ensure transparency is necessary to match the original icon."
     ]
