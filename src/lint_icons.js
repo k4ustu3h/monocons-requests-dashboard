@@ -1,5 +1,5 @@
 // scripts/lint_icons.js — SVG linter for browser, 1:1 port of Monocons Python lint_icons.py
-// Active rules: C01, C07, C10, O01
+// Active rules: C01, C07, C10, C11, O01
 
 /**
  * Parse CSS style attribute into key-value map
@@ -159,6 +159,16 @@ function lintSVG(content) {
         } else if (rxVal < 6 || rxVal > 32) {
           issues.push(`Rect rx='${rx}' out of 6-32 range.`);
         }
+      }
+    });
+
+    // ---------------------------------------------------------
+    // C11: Disallow <style> tags
+    // ---------------------------------------------------------
+    allElements.forEach((el) => {
+      const tag = el.tagName.toLowerCase();
+      if (tag === 'style') {
+        issues.push('<style> tags are not allowed. Use inline attributes instead.');
       }
     });
 
