@@ -1,5 +1,5 @@
 // scripts/lint_icons.js — SVG linter for browser, 1:1 port of Monocons Python lint_icons.py
-// Active rules: C01, C05, C07, C10, O01
+// Active rules: C01, C07, C10, O01
 
 /**
  * Parse CSS style attribute into key-value map
@@ -55,57 +55,7 @@ function lintSVG(content) {
       issues.push(`Invalid canvas: viewBox=${vbFmt}, w=${w}, h=${h}`);
     }
 
-    // ---------------------------------------------------------
-    // C05: Transparency (Monocons allows 1 / 1.0, flags others for REVIEW)
-    // ---------------------------------------------------------
-    const forbiddenAttrs = [
-      'opacity',
-      'fill-opacity',
-      'stroke-opacity',
-      'stop-opacity',
-    ];
 
-    allElements.forEach((el) => {
-      const tag = el.tagName.toLowerCase();
-
-      // Check direct attributes
-      for (const attr of forbiddenAttrs) {
-        const val = el.getAttribute(attr);
-        if (!val) continue;
-
-        const normalized = val.trim().toLowerCase();
-        if (
-          attr.includes('opacity') &&
-          (normalized === '1' || normalized === '1.0')
-        ) {
-          continue;
-        }
-
-        issues.push(
-          `Transparency '${attr}' in <${tag}>. Ensure transparency is necessary to match the original icon.`,
-        );
-      }
-
-      // Check inline styles
-      const styleVal = el.getAttribute('style');
-      if (styleVal) {
-        const styleMap = parseStyleAttribute(styleVal);
-        for (const prop of forbiddenAttrs) {
-          if (styleMap[prop] !== undefined) {
-            const normalized = styleMap[prop].trim().toLowerCase();
-            if (
-              prop.includes('opacity') &&
-              (normalized === '1' || normalized === '1.0')
-            ) {
-              continue;
-            }
-            issues.push(
-              `Transparency '${prop}' in style on <${tag}>. Avoid unnecessary transparency.`,
-            );
-          }
-        }
-      }
-    });
 
     // ---------------------------------------------------------
     // C07: Monochrome colors

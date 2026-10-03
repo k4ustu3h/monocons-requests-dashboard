@@ -58,7 +58,7 @@ def run_linter(icons):
         print(f"Failed to parse linter output")
         return {}
 
-    ALLOWED_RULES = {'C01', 'C05', 'C06', 'C07', 'O01'}   
+    ALLOWED_RULES = {'C01', 'C06', 'C07', 'O01'}   
     findings = {}
     for report in reports:
         drawable = Path(report["file_path"]).stem
