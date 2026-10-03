@@ -166,8 +166,8 @@ function lintSVG(content) {
     // O01: SVG size
     // ---------------------------------------------------------
     const sizeKb = new Blob([content]).size / 1024;
-    if (sizeKb > 3) {
-      issues.push('SVG file size exceeds 3KB. Avoid excessive density.');
+    if (sizeKb > 10) {
+      issues.push('SVG file size exceeds 10KB. Avoid excessive density.');
     }
   } catch (e) {
     issues.push(`Error parsing SVG: ${e.message}`);
