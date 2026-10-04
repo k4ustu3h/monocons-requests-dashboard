@@ -1,0 +1,271 @@
+{
+  "count": 24,
+  "lastUpdate": "2026-10-05",
+  "apps": [
+    {
+      "drawable": "jbl_headphones",
+      "label": "JBL Headphones",
+      "componentName": "jbl.stc.com/jbl.stc.com.activity.LauncherStartActivity",
+      "requestCount": 6,
+      "firstAppearance": 1784489449.0,
+      "lastRequested": 1784766078.0,
+      "installs": "10,000,000+",
+      "roi_score": 8784,
+      "priority": "High"
+    },
+    {
+      "drawable": "mobile_jkn",
+      "label": "Mobile JKN",
+      "componentName": "app.bpjs.mobile/io.flutter.embedding.android.FlutterFragmentActivity",
+      "requestCount": 6,
+      "firstAppearance": 1785547777.0,
+      "lastRequested": 1785791466.0,
+      "installs": "50,000,000+",
+      "roi_score": 16291,
+      "priority": "High"
+    },
+    {
+      "drawable": "finshell_pay",
+      "label": "FinShell Pay",
+      "componentName": "com.finshell.fin/com.finshell.fin.activity.MainActivity",
+      "requestCount": 5,
+      "firstAppearance": 1784727668.0,
+      "lastRequested": 1786887873.0,
+      "installs": "100,000,000+",
+      "roi_score": 2672,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "themes",
+      "label": "Themes",
+      "componentName": "com.bbk.theme/com.bbk.theme.Theme",
+      "requestCount": 4,
+      "firstAppearance": 1784613518.0,
+      "lastRequested": 1784633318.0,
+      "installs": "1,000,000,000+",
+      "roi_score": 4724,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "mi_video",
+      "label": "Mi Video",
+      "componentName": "com.miui.videoplayer/com.miui.video.global.app.LauncherAlias",
+      "requestCount": 4,
+      "firstAppearance": 1784876456.0,
+      "lastRequested": 1784896256.0,
+      "installs": "1,000,000,000+",
+      "roi_score": 4196,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "phoenix",
+      "label": "Phoenix",
+      "componentName": "com.transsion.phoenix/com.proj.sun.activity.LaunchActivity",
+      "requestCount": 4,
+      "firstAppearance": 1783980544.0,
+      "lastRequested": 1784000344.0,
+      "installs": "1,000,000,000+",
+      "roi_score": 5552,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "hios_launcher",
+      "label": "HiOS Launcher",
+      "componentName": "com.transsion.hilauncher/com.android.launcher3.DynamicVirtualEntryActivity",
+      "requestCount": 3,
+      "firstAppearance": 1784569288.0,
+      "lastRequested": 1784589088.0,
+      "installs": "500,000,000+",
+      "roi_score": 3932,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "mi_browser",
+      "label": "Mi Browser",
+      "componentName": "com.mi.globalbrowser/com.mi.globalbrowser.Main",
+      "requestCount": 3,
+      "firstAppearance": 1785547777.0,
+      "lastRequested": 1785567577.0,
+      "installs": "1,000,000,000+",
+      "roi_score": 4467,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "viewpoints",
+      "label": "Viewpoints",
+      "componentName": "com.facebook.viewpoints/com.facebook.anna.app.activities.MainActivity",
+      "requestCount": 3,
+      "firstAppearance": 1785621424.0,
+      "lastRequested": 1785641224.0,
+      "installs": "10,000,000+",
+      "roi_score": 5893,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "wifi_warden",
+      "label": "WiFi Warden",
+      "componentName": "com.xti.wifiwarden/com.xti.wifiwarden.CopyDBS",
+      "requestCount": 3,
+      "firstAppearance": 1785771666.0,
+      "lastRequested": 1785791466.0,
+      "installs": "10,000,000+",
+      "roi_score": 5318,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "thedaily",
+      "label": "TheDaily",
+      "componentName": "com.huub.tiger/com.sliide.content.MainActivity",
+      "requestCount": 3,
+      "firstAppearance": 1785837438.0,
+      "lastRequested": 1785857238.0,
+      "installs": "10,000,000+",
+      "roi_score": 5459,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "zombie_tsunami",
+      "label": "Zombie Tsunami",
+      "componentName": "net.mobigame.zombietsunami/net.mobigame.zombietsunami.ZombieActivity",
+      "requestCount": 3,
+      "firstAppearance": 1785860521.0,
+      "lastRequested": 1785880321.0,
+      "installs": "500,000,000+",
+      "roi_score": 8314,
+      "priority": "High"
+    },
+    {
+      "drawable": "steam_link",
+      "label": "Steam Link",
+      "componentName": "com.valvesoftware.steamlink/com.valvesoftware.steamlink.SteamShellActivity",
+      "requestCount": 2,
+      "firstAppearance": 1784483478.0,
+      "lastRequested": 1784483478.0,
+      "installs": "10,000,000+",
+      "roi_score": 4211,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "steam_chat",
+      "label": "Steam Chat",
+      "componentName": "com.valvesoftware.android.steam.friendsui/com.valvesoftware.android.steam.friendsui.MainActivity",
+      "requestCount": 2,
+      "firstAppearance": 1785618315.0,
+      "lastRequested": 1785638115.0,
+      "installs": "10,000,000+",
+      "roi_score": 4482,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "wavelet",
+      "label": "Wavelet",
+      "componentName": "com.pittvandewitt.wavelet/com.pittvandewitt.wavelet.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1785669383.0,
+      "lastRequested": 1785669383.0,
+      "installs": "5,000,000+",
+      "roi_score": 2428,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "broadlink",
+      "label": "BroadLink",
+      "componentName": "cn.com.broadlink.econtrol.international/cn.com.broadlink.unify.app.main.activity.LoadingActivity",
+      "requestCount": 1,
+      "firstAppearance": 1787184542.0,
+      "lastRequested": 1787184542.0,
+      "installs": "1,000,000+",
+      "roi_score": 5908,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "candy_crush_soda",
+      "label": "Candy Crush Soda",
+      "componentName": "com.king.candycrushsodasaga/com.king.candycrushsodasaga.StritzActivity",
+      "requestCount": 3,
+      "firstAppearance": 1787458245.0,
+      "lastRequested": 1790538050.0,
+      "installs": "500,000,000+",
+      "roi_score": 3145,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "star_walk_2",
+      "label": "Star Walk 2",
+      "componentName": "com.vitotechnology.StarWalk2Free/com.google.firebase.MessagingUnityPlayerActivity",
+      "requestCount": 3,
+      "firstAppearance": 1787458245.0,
+      "lastRequested": 1790538050.0,
+      "installs": "10,000,000+",
+      "roi_score": 4845,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "plants_vs__zombies_free",
+      "label": "Plants vs. Zombies FREE",
+      "componentName": "com.ea.game.pvzfree_row/com.ea.game.pvzfree_row.PvZActivity",
+      "requestCount": 2,
+      "firstAppearance": 1788455751.0,
+      "lastRequested": 1788475551.0,
+      "installs": "500,000,000+",
+      "roi_score": 2736,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "carrom_disc_pool",
+      "label": "Carrom Disc Pool",
+      "componentName": "com.miniclip.carrom/com.miniclip.carrom.CarromActivity",
+      "requestCount": 2,
+      "firstAppearance": 1789462855.0,
+      "lastRequested": 1790458135.0,
+      "installs": "500,000,000+",
+      "roi_score": 2898,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "emochi",
+      "label": "Emochi",
+      "componentName": "com.flow.mobile/com.flow.mobile.ui.SplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1789558996.0,
+      "lastRequested": 1789558996.0,
+      "installs": "10,000,000+",
+      "roi_score": 2232,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "subway_surf",
+      "label": "Subway Surf",
+      "componentName": "com.kiloo.subwaysurf/com.sybogames.chili.multidex.ChiliMultidexSupportActivity",
+      "requestCount": 1,
+      "firstAppearance": 1789558996.0,
+      "lastRequested": 1789558996.0,
+      "installs": "1,000,000,000+",
+      "roi_score": 2040,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "members",
+      "label": "Members",
+      "componentName": "com.samsung.android.voc/com.samsung.android.voc.LauncherActivity",
+      "requestCount": 1,
+      "firstAppearance": 1789756062.0,
+      "lastRequested": 1789756062.0,
+      "installs": "1,000,000,000+",
+      "roi_score": 2221,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "mygate",
+      "label": "mygate",
+      "componentName": "com.mygate.user/com.mygate.user.LauncherDefault",
+      "requestCount": 1,
+      "firstAppearance": 1790904496.0,
+      "lastRequested": 1790904496.0,
+      "installs": "5,000,000+",
+      "roi_score": 2140,
+      "priority": "Medium"
+    }
+  ],
+  "totalCount": 908
+}
