@@ -3,10 +3,6 @@
   "description": "Requests with an existing app name and unknown package.",
   "nameinuse": [
     {
-      "id": "com.oneplus.backuprestore/com.oplus.phoneclone.PhoneCloneMainActivity",
-      "existing_drawable": "clone_phone"
-    },
-    {
       "id": "com.funbase.xradio/com.funbase.xradio.home.activity.MainActivity",
       "existing_drawable": "generic_fm_radio"
     },

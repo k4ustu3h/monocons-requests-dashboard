@@ -3,10 +3,6 @@
   "description": "Requests that are already supported by the Lawnicons app.",
   "in_lawnicons": [
     {
-      "id": "com.oneplus.backuprestore/com.oplus.phoneclone.PhoneCloneMainActivity",
-      "lawnicons_drawable": "oneplus_clone_phone"
-    },
-    {
       "id": "com.oplus.aimemory/com.oplus.aimemory.MainActivity",
       "lawnicons_drawable": "oneplus_mind_space"
     },
@@ -323,10 +319,6 @@
       "lawnicons_drawable": "unit_converter"
     },
     {
-      "id": "fr.doctolib.www/fr.doctolib.www.MainActivity",
-      "lawnicons_drawable": "doctolib"
-    },
-    {
       "id": "com.mttnow.droid.easyjet/com.easyjet.travel.android.MainActivity",
       "lawnicons_drawable": "easyjet"
     },
@@ -431,10 +423,6 @@
       "lawnicons_drawable": "really_bad_chess"
     },
     {
-      "id": "com.iexceed.appzillon.ippbMB/com.iexceed.appzillon.ippbMB.AppzillonMainScreen",
-      "lawnicons_drawable": "ippb"
-    },
-    {
       "id": "com.mpokket.app/com.mpokket.app.login.presentation.screens.splash.SplashActivity",
       "lawnicons_drawable": "mpokket"
     },
@@ -493,10 +481,6 @@
     {
       "id": "com.android.axion.sandbox/com.android.axion.sandbox.MainActivity",
       "lawnicons_drawable": "axion_os_sandbox"
-    },
-    {
-      "id": "com.xiaomi.smarthome/com.xiaomi.smarthome.SmartHomeMainActivity",
-      "lawnicons_drawable": "mi_home"
     },
     {
       "id": "com.samsung.android.galaxycontinuity/com.samsung.android.galaxycontinuity.SplashActivity",
@@ -603,10 +587,6 @@
       "lawnicons_drawable": "io"
     },
     {
-      "id": "com.justeat.app.it/com.jet.singleactivity.ui.MainActivity",
-      "lawnicons_drawable": "just_eat"
-    },
-    {
       "id": "org.koitharu.kotatsu/org.koitharu.kotatsu.main.ui.MainActivity",
       "lawnicons_drawable": "kotatsu"
     },
@@ -643,16 +623,8 @@
       "lawnicons_drawable": "intesa"
     },
     {
-      "id": "com.mubi/com.mubi.ui.MainActivity",
-      "lawnicons_drawable": "mubi"
-    },
-    {
       "id": "com.nothing.icon.free/com.nothing.icon.free.MainActivity",
       "lawnicons_drawable": "nothing_icons"
-    },
-    {
-      "id": "com.pcloud.pcloud/com.pcloud.screens.Main",
-      "lawnicons_drawable": "pcloud"
     },
     {
       "id": "com.posteitaliane.spim/it.posteitaliane.df_home.splash.SplashActivity",
@@ -693,10 +665,6 @@
     {
       "id": "it.thespacecinema.android/com.vue.MainActivity",
       "lawnicons_drawable": "the_space"
-    },
-    {
-      "id": "com.lafourchette.lafourchette/com.fork.android.app.launch.LaunchActivity",
-      "lawnicons_drawable": "thefork"
     },
     {
       "id": "com.tplink.tpplc/com.tplink.tpplc.AppLaunchActivity",
@@ -939,10 +907,6 @@
       "lawnicons_drawable": "pixverse"
     },
     {
-      "id": "ai.socialapps.speakmaster/com.snapquiz.app.InitActivity",
-      "lawnicons_drawable": "polybuzz"
-    },
-    {
       "id": "dev.octoshrimpy.quik.fdroid/dev.octoshrimpy.quik.feature.main.MainActivity",
       "lawnicons_drawable": "qksms"
     },
@@ -1007,10 +971,6 @@
       "lawnicons_drawable": "zugate"
     },
     {
-      "id": "com.facebook.pages.app/com.facebook.pages.app.auth.PagesManagerLoginActivity",
-      "lawnicons_drawable": "meta_business_suite"
-    },
-    {
       "id": "com.happymod.apk/com.happymod.apk.hmmvp.main.LaunchActivity",
       "lawnicons_drawable": "happymod"
     },
@@ -1021,10 +981,6 @@
     {
       "id": "org.torproject.android/org.torproject.android.OrbotActivity",
       "lawnicons_drawable": "orbot"
-    },
-    {
-      "id": "com.mi.earphone/com.xiaomi.fitness.login.SplashActivity",
-      "lawnicons_drawable": "xiaomi_earbuds"
     },
     {
       "id": "org.futo.inputmethod.latin/org.futo.inputmethod.latin.uix.settings.SettingsActivity",
@@ -1295,10 +1251,6 @@
       "lawnicons_drawable": "emochi"
     },
     {
-      "id": "com.jazibkhan.equalizer/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
-      "lawnicons_drawable": "flat_equalizer"
-    },
-    {
       "id": "com.kiloo.subwaysurf/com.sybogames.chili.multidex.ChiliMultidexSupportActivity",
       "lawnicons_drawable": "subway_surfers"
     },
@@ -1537,10 +1489,6 @@
     {
       "id": "com.overdrive.mobile.android.libby/com.overdrive.mobile.android.nautilus.ui.Activity_Main",
       "lawnicons_drawable": "libby"
-    },
-    {
-      "id": "proton.android.meet/proton.android.meet.activity.MainActivity",
-      "lawnicons_drawable": "proton_meet"
     }
   ]
 }
