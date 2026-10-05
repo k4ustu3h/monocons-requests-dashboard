@@ -177,6 +177,13 @@ body {
 	text-decoration-color: var(--primary);
 }
 
+.toast .link {
+	font-size: inherit;
+	cursor: pointer;
+	margin-top: 0;
+	align-self: center;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
 	width: 8px;
@@ -636,7 +643,6 @@ button.input-icon.active {
 		transform 0.05s ease-out,
 		display 0.05s allow-discrete;
 	visibility: hidden;
-	pointer-events: none;
 }
 
 .tooltip.visible {
