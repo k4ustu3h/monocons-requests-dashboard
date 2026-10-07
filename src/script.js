@@ -2429,10 +2429,7 @@ const UI = {
       try {
         /** @type {AppEntry[]} */
         const parsed = JSON.parse(savedList);
-        const before = parsed.length;
-        App.state.contribution = parsed.filter((app) =>
-          App.data.some((d) => d.componentName === app.componentName)
-        );
+        App.state.contribution = parsed;
 
         const savedOverrides = localStorage.getItem(
           'monocons_contribution_overrides',
@@ -2446,10 +2443,6 @@ const UI = {
               App.state.contributionOverrides[id] = overrides;
             }
           }
-        }
-
-        if (App.state.contribution.length < before) {
-          this.saveContribution();
         }
 
         App.state.contribution.forEach((app) => {
@@ -3358,7 +3351,8 @@ const UI = {
     this.observer.observe(App.dom.sentinel);
   },
 
-  render() {
+  async render() {
+
     if (App.state.lowQualityActive) {
       document.getElementById('sectionTitle')?.classList.add('is-hidden');
       this.renderLowQualityMode();
@@ -3373,7 +3367,7 @@ const UI = {
 
     if (App.state.contributionActive) {
       document.getElementById('sectionTitle')?.classList.add('is-hidden');
-      this.renderContributionMode();
+      await this.renderContributionMode();
       return;
     }
 
@@ -4176,7 +4170,22 @@ layoutMasonry() {
     return lintSVG(content);
   },
 
-renderContributionMode() {
+  async renderContributionMode() {
+    // Load low-priority requests so contribution plan has full data
+    if (!App.state.lowLoaded) {
+        await Data.loadLowRequests();
+    }
+
+    // Clean up dead entries from contribution plan
+    const beforeCount = App.state.contribution.length;
+    App.state.contribution = App.state.contribution.filter((app) =>
+        App.data.some((d) => d.componentName === app.componentName)
+    );
+    if (App.state.contribution.length < beforeCount) {
+        UI.saveContribution();
+        console.log(`Cleaned ${beforeCount - App.state.contribution.length} dead contributions`);
+    }
+
     document.querySelector('.header-icon')?.classList.add('is-hidden');
     document.querySelector('.controls')?.classList.add('is-hidden');
     document.getElementById('iconLibraryResults')?.classList.add('is-hidden');
