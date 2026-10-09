@@ -35,10 +35,6 @@
       "existing_drawable": "samsung_camera"
     },
     {
-      "id": "app.morphe.android.apps.photos/com.google.android.apps.photos.home.HomeActivity",
-      "existing_drawable": "generic_photo_library"
-    },
-    {
       "id": "com.rianixia.camerb/com.android.camera.CameraLauncher",
       "existing_drawable": "samsung_camera"
     },
@@ -77,6 +73,38 @@
     {
       "id": "com.samsung.android.app.interpreter/com.samsung.android.app.interpreter.interpretation.view.InterpretationLauncherActivity",
       "existing_drawable": "interpreter"
+    },
+    {
+      "id": "app.passwordstore.agrahn/app.passwordstore.ui.main.LaunchActivity",
+      "existing_drawable": "password_store"
+    },
+    {
+      "id": "com.stratumauth.app/com.stratumauth.app.MainActivity",
+      "existing_drawable": "generic_shell"
+    },
+    {
+      "id": "com.motorola.camera5/com.motorola.camera.Camera",
+      "existing_drawable": "samsung_camera"
+    },
+    {
+      "id": "com.vivo.browser/com.vivo.browser.BrowserActivity",
+      "existing_drawable": "generic_browser"
+    },
+    {
+      "id": "com.iqoo.secure/com.iqoo.secure.MainActivity",
+      "existing_drawable": "phone_manager"
+    },
+    {
+      "id": "com.vivo.weather/com.vivo.weather.WeatherMain",
+      "existing_drawable": "weather"
+    },
+    {
+      "id": "deltazero.amarok/deltazero.amarok.launcher.default",
+      "existing_drawable": "amarok"
+    },
+    {
+      "id": "dev.msfjarvis.aps/com.zeapo.pwdstore.LaunchActivity",
+      "existing_drawable": "password_store"
     }
   ]
 }
