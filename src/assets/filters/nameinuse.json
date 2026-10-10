@@ -43,10 +43,6 @@
       "existing_drawable": "generic_files"
     },
     {
-      "id": "org.futo.inputmethod.latin/org.futo.inputmethod.latin.uix.settings.SettingsActivity",
-      "existing_drawable": "futo_keyboard"
-    },
-    {
       "id": "dev.raincord.app/com.discord.main.MainDefault",
       "existing_drawable": "rain"
     },
@@ -73,6 +69,10 @@
     {
       "id": "com.samsung.android.app.interpreter/com.samsung.android.app.interpreter.interpretation.view.InterpretationLauncherActivity",
       "existing_drawable": "interpreter"
+    },
+    {
+      "id": "com.github.catfriend1.syncthingfork/com.nutomic.syncthingandroid.onboarding.OnboardingActivity",
+      "existing_drawable": "syncthing"
     },
     {
       "id": "app.passwordstore.agrahn/app.passwordstore.ui.main.LaunchActivity",
