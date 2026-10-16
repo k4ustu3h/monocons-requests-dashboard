@@ -627,7 +627,9 @@
     "ch.protonmail.android/ch.protonmail.android.MainActivity": 2,
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 2,
     "ru.karasevm.privatednstoggle/ru.karasevm.privatednstoggle.ui.MainActivity": 1,
-    "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1
+    "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1,
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
   },
   "com.subtlesignals.gradientweather/com.subtlesignals.gradientweather.IconSunny": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 3,
@@ -677,7 +679,11 @@
     "ch.protonmail.android/ch.protonmail.android.MainActivity": 2,
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 2,
     "ru.karasevm.privatednstoggle/ru.karasevm.privatednstoggle.ui.MainActivity": 1,
-    "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1
+    "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1,
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
   },
   "com.rubex.nfile/com.rubex.nfile.MainActivityDefault": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 3,
@@ -770,7 +776,7 @@
   },
   "com.bbk.theme/com.bbk.theme.Theme": {
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 4,
-    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 1
+    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 2
   },
   "xyz.klinker.messenger/xyz.klinker.messenger.activity.MessengerActivity": {
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 4
@@ -1227,7 +1233,11 @@
   },
   "com.transsion.phoenix/com.proj.sun.activity.LaunchActivity": {
     "cn.wps.moffice_eng/cn.wps.moffice.documentmanager.PreStartActivity": 4,
-    "cn.xender/cn.xender.ui.activity.SplashActivity": 4
+    "cn.xender/cn.xender.ui.activity.SplashActivity": 4,
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
   },
   "com.KatanLabs.tilematchpuzzlemaster/com.unity3d.player.UnityPlayerActivity": {
     "cn.wps.moffice_eng/cn.wps.moffice.documentmanager.PreStartActivity": 4,
@@ -1252,7 +1262,7 @@
     "ch.protonmail.android/ch.protonmail.android.RoutingActivity": 2,
     "in.swiggy.partnerapp/in.swiggy.partnerapp.MainActivity": 2,
     "in.indwealth/com.indwealth.android.ui.splash.SplashActivity": 2,
-    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 1
+    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 2
   },
   "com.monnet.social.monnet/com.monnet.social.monnet.MainActivity": {
     "it.creaweb.ucicinemas/it.creaweb.ucicinemas.SplashActivity": 1,
@@ -1985,7 +1995,8 @@
   },
   "com.facebook.viewpoints/com.facebook.anna.app.activities.MainActivity": {
     "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 3,
-    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 3
+    "in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity": 3,
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
   },
   "com.bigheadtechies.diary/com.bigheadtechies.diary.Lastest.Activity.MainActivity.MainActivityMigration1": {
     "de.jeanlucmakiola.calendula/de.jeanlucmakiola.calendula.CalendarNameAlias": 3,
@@ -4100,7 +4111,8 @@
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1
   },
   "com.highbrowinteractive.bus.masters.india.highway.driving.simulator.game/com.unity3d.player.UnityPlayerActivity": {
-    "in.fudr.nbc/in.fudr.nbc.MainActivity": 2
+    "in.fudr.nbc/in.fudr.nbc.MainActivity": 2,
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
   },
   "com.pcmehanik.smarttoolbox/com.pcmehanik.smarttoolsutilities.MainActivity": {
     "in.fudr.nbc/in.fudr.nbc.MainActivity": 2
@@ -4109,7 +4121,10 @@
     "in.fudr.nbc/in.fudr.nbc.MainActivity": 2
   },
   "com.sybogames.subway.surfers.game/com.google.firebase.MessagingUnityPlayerActivity": {
-    "in.fudr.nbc/in.fudr.nbc.MainActivity": 2
+    "in.fudr.nbc/in.fudr.nbc.MainActivity": 2,
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1,
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
   },
   "com.bms.grenergy/com.bms.grenergy.ui_grenergy.activity.StartPageActivityGrenergy": {
     "in.fudr.nbc/in.fudr.nbc.MainActivity": 2
@@ -4198,7 +4213,11 @@
     "mx.zenfi.app/mx.zenfi.app.MainActivity": 2,
     "mx.com.bancoazteca.bazdigitalmovil/mx.com.bancoazteca.bancadigital.landing.presentation.view.LandingActivity": 2,
     "mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.splash.SplashActivity": 2,
-    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 2
+    "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 2,
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
   },
   "com.pagopopmobile/com.pagopopmobile.MainActivity": {
     "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 2,
@@ -4427,7 +4446,8 @@
     "md.obsidian/md.obsidian.MainActivity": 1
   },
   "com.prism.refract/com.prism.refract.MainActivity": {
-    "md.obsidian/md.obsidian.MainActivity": 1
+    "md.obsidian/md.obsidian.MainActivity": 1,
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
   },
   "app.tvwatchtime.mobile/app.tvwatchtime.mobile.MainActivity": {
     "md.obsidian/md.obsidian.MainActivity": 1
@@ -4537,7 +4557,11 @@
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
     "es.aeat.pin24h/es.aeat.pin24h.presentation.activities.splash.SplashActivity": 1,
     "jp.co.sony.playmemoriesmobile.proremote/jp.co.sony.playmemoriesmobile.proremote.ui.main.activities.MainActivity": 1,
-    "es.gob.interior.policia.midni/es.gob.interior.policia.midni.ui.MainActivity": 1
+    "es.gob.interior.policia.midni/es.gob.interior.policia.midni.ui.MainActivity": 1,
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
   },
   "com.guiforge.bati/com.guiforge.bati.MainActivity": {
     "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 2,
@@ -4545,7 +4569,8 @@
     "bg.emag.android/ro.emag.android.cleancode.app.ActivityStart": 2,
     "bg.mobiltel.android.selfcare/bg.mobiltel.android.selfcare.MainActivity": 2,
     "bg.isic.myisicapp/bg.isic.myisicapp.MainActivity": 2,
-    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 2
+    "ly.com.tahaben.farhan/ly.com.tahaben.farhan.MainActivity": 2,
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
   },
   "org.readera/com.readera.MainActivity": {
     "de.dm.meindm.android/de.dm.meindm.android.welcome.StartActivity": 2,
@@ -4651,7 +4676,11 @@
     "ch.protonmail.android/ch.protonmail.android.MainActivity": 1,
     "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1,
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1,
-    "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1
+    "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
   },
   "com.transsion.scanningrecharger/com.transsion.scanningrecharger.view.activity.SplashActivity": {
     "md.obsidian/md.obsidian.MainActivity": 1,
@@ -4659,7 +4688,11 @@
     "ch.protonmail.android/ch.protonmail.android.MainActivity": 1,
     "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1,
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1,
-    "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1
+    "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
   },
   "com.comandosbr.shizuku/com.comandosbr.shizuku.MainActivity": {
     "de.moekadu.metronomenext/de.moekadu.metronomenext.MainActivity": 1,
@@ -5003,7 +5036,11 @@
     "ru.tech.imageresizershrinker/com.t8rin.imagetoolbox.app.presentation.AppActivity": 1,
     "hr.dtakac.prognoza/hr.dtakac.prognoza.ui.MainActivity": 1,
     "br.com.rodrigokolb.realdrum/br.com.rodrigokolb.realdrum.MainActivity": 1,
-    "de.schliweb.makeacopy.light/de.schliweb.makeacopy.MainActivity": 1
+    "de.schliweb.makeacopy.light/de.schliweb.makeacopy.MainActivity": 1,
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
   },
   "org.openlibrary.testing.twa/org.openlibrary.testing.twa.LauncherActivity": {
     "de.moekadu.metronomenext/de.moekadu.metronomenext.MainActivity": 1,
@@ -5810,7 +5847,9 @@
     "br.andre.almeida.novodigito/br.andre.almeida.novodigito.NovoDigitoActivity": 1,
     "br.jus.tse.resultados/br.jus.tse.resultados.MainActivity": 1,
     "br.com.cittabus/br.com.cittati.cittamobi_flutter.MainActivity": 1,
-    "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 1
+    "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 1,
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
   },
   "app.letsbewell.android/com.carebook.android.module.entrypoint.EntryPointActivity": {
     "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
@@ -5871,7 +5910,9 @@
     "br.andre.almeida.novodigito/br.andre.almeida.novodigito.NovoDigitoActivity": 1,
     "br.jus.tse.resultados/br.jus.tse.resultados.MainActivity": 1,
     "br.com.cittabus/br.com.cittati.cittamobi_flutter.MainActivity": 1,
-    "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 1
+    "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 1,
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
   },
   "com.samsung.android.app.sketchbook/com.samsung.android.app.sketchbook.application.DrawingActivity": {
     "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
@@ -6329,7 +6370,8 @@
     "fi.op.android.opmobiili/fi.op.android.opmobiili.common.mainui.MainActivity": 1
   },
   "io.yarsa.games.ludo/com.unity3d.player.UnityPlayerActivity": {
-    "jp.co.goodroid.hyper.busflow/com.unity3d.player.UnityPlayerActivity": 1
+    "jp.co.goodroid.hyper.busflow/com.unity3d.player.UnityPlayerActivity": 1,
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
   },
   "com.kulfi.app/com.kulfi.app.MainActivity": {
     "jp.co.goodroid.hyper.busflow/com.unity3d.player.UnityPlayerActivity": 1
@@ -6569,7 +6611,9 @@
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
     "es.aeat.pin24h/es.aeat.pin24h.presentation.activities.splash.SplashActivity": 1,
     "jp.co.sony.playmemoriesmobile.proremote/jp.co.sony.playmemoriesmobile.proremote.ui.main.activities.MainActivity": 1,
-    "es.gob.interior.policia.midni/es.gob.interior.policia.midni.ui.MainActivity": 1
+    "es.gob.interior.policia.midni/es.gob.interior.policia.midni.ui.MainActivity": 1,
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
   },
   "com.tectrasystems.violoncello/com.tectrasystems.violoncello.MainActivity": {
     "it.piemonte.arpa.openoise/it.piemonte.arpa.openoise.MainActivity": 1,
@@ -7105,7 +7149,11 @@
     "fr.emersion.goguma/fr.emersion.goguma.MainActivity": 1,
     "de.kaffeemitkoffein.imagepipe/de.kaffeemitkoffein.imagepipe.ImageReceiver": 1,
     "de.reimardoeffinger.quickdic/com.hughes.android.dictionary.DictionaryManagerActivity": 1,
-    "cz.hipercalc/app.hipercalc.CalculatorActivity": 1
+    "cz.hipercalc/app.hipercalc.CalculatorActivity": 1,
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
   },
   "app.passwordstore.agrahn/app.passwordstore.ui.main.LaunchActivity": {
     "fi.skyjake.lagrange/fi.skyjake.lagrange.LagrangeActivity": 1,
@@ -7200,7 +7248,8 @@
     "ru.execbit.aiolauncher/ru.execbit.aiolauncher.ui.MainActivity": 1,
     "at.tomtasche.reader/at.tomtasche.reader.ui.activity.MainActivity": 1,
     "ba.korpa.user/ba.korpa.user.ui.SplashActivity": 1,
-    "ba.haloo.cscmobile/crc645fb50cdb22b86402.MainActivity": 1
+    "ba.haloo.cscmobile/crc645fb50cdb22b86402.MainActivity": 1,
+    "uk.co.powdertoy.tpt/uk.co.powdertoy.tpt.MainActivity": 1
   },
   "io.gitlab.libre_librivox_listener/com.ryanheise.audioservice.AudioServiceActivity": {
     "fi.skyjake.lagrange/fi.skyjake.lagrange.LagrangeActivity": 1,
@@ -7473,22 +7522,23 @@
   },
   "com.ludo.king/com.gametion.ludoking.LudoKingPlayerActivity": {
     "jp.nonbili.noutube/jp.nonbili.noutube.MainActivity": 1,
-    "ls.bloomee.musicplayer/com.ryanheise.audioservice.AudioServiceActivity": 1
+    "ls.bloomee.musicplayer/com.ryanheise.audioservice.AudioServiceActivity": 1,
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
   },
   "com.google.android.apps.finance/com.google.android.apps.finance.home.HomeActivity": {
     "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1,
     "in.svt.wblandsinfo/in.svt.wblandsinfo.MainActivity": 1
   },
   "com.aryan.reader/com.aryan.reader.MainActivity": {
-    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1,
+    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 2,
     "in.svt.wblandsinfo/in.svt.wblandsinfo.MainActivity": 1
   },
   "com.athermobileapp/com.athermobileapp.AppIcon5": {
-    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1,
+    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 2,
     "in.svt.wblandsinfo/in.svt.wblandsinfo.MainActivity": 1
   },
   "com.dayoneapp.dayone/com.dayoneapp.dayone.appicon.DefaultIconAlias": {
-    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1,
+    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 2,
     "in.svt.wblandsinfo/in.svt.wblandsinfo.MainActivity": 1
   },
   "com.ft.news/com.ft.news.presentation.main.MainActivity": {
@@ -7499,31 +7549,31 @@
     "br.com.gold360.skeelo/br.com.gold360.goldebooks.SplashActivity": 1
   },
   "com.iqoo.secure/com.iqoo.secure.MainActivity": {
-    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 1
+    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 2
   },
   "com.vivo.vtouch/com.wibo.bigbang.ocr.ui.SplashActivity": {
-    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 1
+    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 2
   },
   "com.vivo.browser/com.vivo.browser.BrowserActivity": {
-    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 1
+    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 2
   },
   "egov.app/egov.app.ui.splash.SplashActivity": {
-    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 1
+    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 2
   },
   "com.vivo.Tips/com.vivo.Tips.MainActivity": {
-    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 1
+    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 2
   },
   "com.vivo.weather/com.vivo.weather.WeatherMain": {
-    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 1
+    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 2
   },
   "com.bbk.appstore/com.bbk.appstore.ui.AppStore": {
-    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 1
+    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 2
   },
   "com.vivo.health/com.vivo.health.main.activity.GuideActivity": {
-    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 1
+    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 2
   },
   "com.smart.consumer.app/com.smart.consumer.app.view.splash.OnboardingActivity": {
-    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 1
+    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 2
   },
   "com.tazztone.losslesscut/com.tazztone.losslesscut.ui.MainActivity": {
     "rs.in.dbase.downloader/rs.in.dbase.downloader.MainActivity": 1,
@@ -8563,7 +8613,9 @@
     "br.valete.app/com.ryanheise.audioservice.AudioServiceActivity": 1,
     "br.com.trinitysolucoes.saemobile/com.enel.brasil.MainActivity": 1,
     "br.com.metrosp.appmetro/br.com.metrosp.appmetro.MainActivity": 1,
-    "br.org.missao.militante/br.org.missao.MainActivity": 1
+    "br.org.missao.militante/br.org.missao.MainActivity": 1,
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
   },
   "com.gwitko.conduit/com.gwitko.conduit.MainActivity": {
     "br.com.vivo.vivoeasy/br.com.zup.vivoeasy3.presentation.MainActivity": 1,
@@ -9188,5 +9240,441 @@
     "at.tomtasche.reader/at.tomtasche.reader.ui.activity.MainActivity": 1,
     "ba.korpa.user/ba.korpa.user.ui.SplashActivity": 1,
     "ba.haloo.cscmobile/crc645fb50cdb22b86402.MainActivity": 1
+  },
+  "com.italiano.simplyadaptive/com.italiano.simplyadaptive.MainActivity": {
+    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 1
+  },
+  "com.kia.mykia/com.kia.mykia.ui.screens.splash.SplashActivity": {
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
+  },
+  "com.fsn.nykaa.man/com.fsn.nykaa.default": {
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
+  },
+  "com.voodoo.almanac/com.google.firebase.MessagingUnityPlayerActivity": {
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
+  },
+  "org.monogram/org.monogram.MainActivity": {
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
+  },
+  "io.voodoo.holeio/com.unity3d.player.UnityPlayerActivity": {
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
+  },
+  "io.yarsa.games.snakenladder/com.unity3d.player.UnityPlayerActivity": {
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
+  },
+  "com.ferrero.applayduGP/com.unity3d.player.appui.AppUIActivity": {
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
+  },
+  "com.vincentb.MobControl/com.vincentb.mobcontrol.VkQualityUnityPlayerActivity": {
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
+  },
+  "com.lucky_apps.RainViewer/com.lucky_apps.rainviewer.root.ui.RootActivity": {
+    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1
+  },
+  "org.koreader.launcher/org.koreader.launcher.MainActivity": {
+    "uk.co.powdertoy.tpt/uk.co.powdertoy.tpt.MainActivity": 1
+  },
+  "xyz.ptgms.tosdr/xyz.ptgms.tosdr.MainActivity": {
+    "uk.co.powdertoy.tpt/uk.co.powdertoy.tpt.MainActivity": 1
+  },
+  "tech.coddy.coddyapp/tech.coddy.coddyapp.MainActivity": {
+    "uk.co.powdertoy.tpt/uk.co.powdertoy.tpt.MainActivity": 1
+  },
+  "com.vgleadsheets/com.vgleadsheets.remaster.RemasteredActivity": {
+    "uk.co.powdertoy.tpt/uk.co.powdertoy.tpt.MainActivity": 1
+  },
+  "com.tinder/com.tinder.launch.internal.activities.LoginActivity": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "com.naviapp/com.naviapp.HomePageActivityDefault": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "com.ftw_and_co.happn/com.ftw_and_co.happn.ui.splash.SplashActivity": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "com.programiz.learnc/com.programiz.learnpython.MainActivity": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "com.rsupport.rs.activity.rsupport.aas2/com.rsupport.rs.activity.edit.IntroActivity": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "com.samsung.android.app.spage/com.samsung.android.app.spage.main.LauncherActivity": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "com.samsung.sree/com.samsung.sree.ui.MainActivity": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "com.infrasofttech.CentralBank/com.infrasofttech.centralbank.SplashActivity": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "com.cinehd/com.cinehd.SplashAdActivity": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "org.cris.kmmts/org.cris.kmmts.activity.SplashScreen": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "com.snapdeal.main/com.snapdeal.ui.material.activity.MaterialMainActivitySecond": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "com.mobile.cbiepassbook/com.mobile.cbiepassbook.EbookSplashActivity": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "com.meesho.supply/com.meesho.supply.saleSept25": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "com.appslab.glass.widgets/com.appslab.glass.widgets.MainActivity": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "com.mygalaxy/com.mygalaxy.views.activity.SplashScreenActivity": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "com.amazon.mp3.galaxy/com.amazon.mp3.client.activity.LauncherActivity": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "com.instagram.android/com.instagram.android.activity.MainTabActivity.throwback": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "com.schmoozeapps.schmooze/com.schmoozeapps.schmooze.MainActivity": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "app.gamma.mobile/app.gamma.mobile.MainActivity": {
+    "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+  },
+  "net.bat.store/net.bat.store.DefaultIconAliasActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.transsion.carlcare/com.transsion.carlcare.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "pro.bingbon.app/pro.bingintl.ui.activity.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.transsion.batterylab.icon/com.transsion.batterylab.icon.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.aistudio.boxboxclub.kxrmfz/com.example.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "net.metaquotes.metatrader5/net.metaquotes.metatrader5.ui.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "app.progres.webetu/app.progres.webetu.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "top.jtmonster.jhentai/top.jtmonster.jhentai.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "io.github.edo9300.edopro/io.github.edo9300.edopro.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "io.github.drumber.kitsune/io.github.drumber.kitsune.ui.main.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.smartlife.nebula/com.smartlife.nebula.activity.SplashActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.transsion.magicshow/com.transsion.magicmovie.activity.TRSplashActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.transsion.aivoiceassistant/com.transsion.aivoiceassistant.ai.aiability.help.activity.HelpActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.zalexdev.stryker/com.zalexdev.stryker.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.funbase.xradio/com.transsion.fm.main.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.transsion.insync/com.transsion.insync.FlashActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.transsion.smartpanel/com.transsion.gamemode.activity.GameSpaceActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.casdata.plcladdersimulator2/com.casdata.plcladdersimulator2.android.AndroidLauncher": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "ai.manus.agents/ai.manus.agents.launcher.CueBlueGear": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.transsion.wezone/com.transsion.wezone.ui.splash.SplashActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.trassion.infinix.xclub/com.trassion.infinix.xclub.ui.main.activity.SplashActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.offsec.nhterm/com.offsec.nhterm.ui.term.NeoTermActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "org.chromium.webapk.a0ba2c7507a3ea5b8_v2/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.wael.mangamello/com.wael.mangamello.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.abmo.mangaslayer/com.abmo.mangaslayer.presentation.main.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.asa.xnotelite/com.asa.xnotelite.note.activity.LuanchAcitivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.bybit.app/com.bybit.pro.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.tradingview.tradingviewapp/com.tradingview.tradingviewapp.root.view.RootActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.fyxtech.muslim/com.fyxtech.muslim.LauncherActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.aistudio.frenchlearn.xqzpmk/com.example.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "net.nymtech.nymvpn/net.nymtech.nymvpn.ui.MainActivityDefault": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "org.hamak.mangareader/org.hamak.mangareader.feature.main.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.facebook.adsmanager/com.facebook.adsmanager.AdsManagerLoginActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.transsnet.store/com.afmobi.palmplay.StartActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.zalexdev.stryker/com.zalexdev.stryker.TerminalLauncher": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "cb.f.ys.n.x.iitsd/b.nYy": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.redotpay/com.redotpay.MainActivity.default": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.riftapps.animerift/com.riftapps.animerift.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.transsion.letswitch/com.transsion.letswitch.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.and.games505.TerrariaPaid/com.unity3d.player.UnityPlayerActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.hijacker/com.hijacker.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.exness.android.pa/com.exness.features.entry.impl.presentation.EntryActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.manga.mangawave/com.manga.mangawave.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "org.matrix.vector.manager/org.matrix.vector.manager.ui.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.rlmobile.ascent/com.google.android.apps.chrome.Main": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.moonstudio.mapcoc/com.moonstudio.mapcoc.MainMenuActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.lsd.wififrankenstein/com.lsd.wififrankenstein.MainActivity_Default": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.blizzard225.wallpapersetter/com.blizzard225.wallpapersetter.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.transsion.wifiplaytogether/com.transsion.wifiplaytogether.activity.WelcomeActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.transsion.XOSLauncher/com.android.launcher3.DynamicVirtualEntryActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.apkpure.aegon/com.apkpure.aegon.main.activity.FirstSeemPageActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.joeykrim.rootcheck/com.joeykrim.rootcheck.MainActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
+  },
+  "com.KaibaCorporation.KaibaPro2/com.unity3d.player.UnityPlayerActivity": {
+    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
+    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
+    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
+    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
   }
 }
