@@ -3,6 +3,10 @@
   "description": "Requests with an existing app name and unknown package.",
   "nameinuse": [
     {
+      "id": "io.github.kennethchoinfosec.haven/io.github.kennethchoinfosec.haven.ui.MainActivity",
+      "existing_drawable": "haven"
+    },
+    {
       "id": "com.funbase.xradio/com.funbase.xradio.home.activity.MainActivity",
       "existing_drawable": "generic_fm_radio"
     },
@@ -71,14 +75,6 @@
       "existing_drawable": "interpreter"
     },
     {
-      "id": "com.github.catfriend1.syncthingfork/com.nutomic.syncthingandroid.onboarding.OnboardingActivity",
-      "existing_drawable": "syncthing"
-    },
-    {
-      "id": "app.passwordstore.agrahn/app.passwordstore.ui.main.LaunchActivity",
-      "existing_drawable": "password_store"
-    },
-    {
       "id": "com.stratumauth.app/com.stratumauth.app.MainActivity",
       "existing_drawable": "generic_shell"
     },
@@ -93,10 +89,6 @@
     {
       "id": "com.vivo.weather/com.vivo.weather.WeatherMain",
       "existing_drawable": "weather"
-    },
-    {
-      "id": "deltazero.amarok/deltazero.amarok.launcher.default",
-      "existing_drawable": "amarok"
     },
     {
       "id": "dev.msfjarvis.aps/com.zeapo.pwdstore.LaunchActivity",
