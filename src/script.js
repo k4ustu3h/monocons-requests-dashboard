@@ -945,19 +945,6 @@ const Templates = {
                       <span class="item-sub" title="${id}">ID: ${id}</span>
                   </div>
               </div>
-              <div class="col country">
-                <div class="country-autocomplete" data-id="${id}">
-                  <input 
-                    type="text" 
-                    class="contribution-country-input"
-                    value="${countryDisplay}"
-                    autocomplete="off"
-                    data-id="${id}"
-                  />
-                  <input type="hidden" class="contribution-country-value" value="${country}" />
-                </div>
-                <span class="item-sub">Country or ISO code.</span>
-              </div>
               <div class="col svg-name">
                   <input type="text" class="contribution-svg-input" value="${drawable}" data-id="${id}" data-field="drawable" oninput="UI.updateContributionField(this)" title="SVG name" />
                   <span class="item-sub">${svgHint}</span>
@@ -4329,7 +4316,6 @@ layoutMasonry() {
               <div class="col mode">Mode</div>
               <div class="col icon">Icon</div>
               <div class="col name">Name</div>
-              <div class="col country">Country</div>
               <div class="col svg-name">SVG name</div>
               <div class="col library-icon"></div>
               <div class="col actions"></div>  
