@@ -28,7 +28,7 @@ def save_baseline(data):
         json.dump(data, f, indent=2)
 
 
-def build_snapshot(apps, min_req=10):
+def build_snapshot(apps, min_req=1):
     snapshot = {}
     for app in apps:
         comp = app.get("componentName", "")
@@ -48,7 +48,7 @@ def main():
 
     apps = data.get("apps", [])
     total = data.get("count", len(apps))
-    snapshot = build_snapshot(apps)
+    snapshot = build_snapshot(apps, min_req=1)
 
     current_state = {
         "date": today.isoformat(),
@@ -64,21 +64,17 @@ def main():
     # If today is a fetch day, roll the OLD period_end into the NEW period_start.
     # This securely captures the exact "Before Fetch" vs "After Fetch" delta!
     if last_fetch_date == today:
-        if baseline.get("period_end") and baseline["period_end"]["date"] != today.isoformat():
+        if baseline.get("period_end") and baseline["period_end"].get("snapshot") and baseline["period_end"]["date"] != today.isoformat():
             baseline["period_start"] = baseline["period_end"]
             print("Fetch day! Rolled previous period_end into new period_start.")
 
-    # Initial fallback for the very first time the script runs
-    if not baseline.get("period_start"):
+    # Initial fallback if period_start is missing or empty
+    if not baseline.get("period_start") or not baseline["period_start"].get("snapshot"):
         baseline["period_start"] = current_state
 
     # Always update period_end to the current state
-    start_snapshot = baseline["period_start"]["snapshot"]
-    filtered_snapshot = {k: v for k, v in snapshot.items() if k in start_snapshot}
-    current_state["snapshot"] = filtered_snapshot
-    
     baseline["period_end"] = current_state
-    print(f"Updated trending period_end with {len(filtered_snapshot)} entries.")
+    print(f"Updated trending period_end with {len(snapshot)} entries.")
 
     save_baseline(baseline)
 

@@ -1956,10 +1956,12 @@ const Data = {
           const endSnapshot = baseline.period_end.snapshot;
           App.state.trendingDeltas = {};
           for (const [comp, endCount] of Object.entries(endSnapshot)) {
-            const startCount = startSnapshot[comp] || 0;
-            const delta = endCount - startCount;
-            if (delta > 0) {
-              App.state.trendingDeltas[comp] = delta;
+            const startCount = startSnapshot[comp];
+            if (startCount !== undefined) {
+              const delta = endCount - startCount;
+              if (delta > 0) {
+                App.state.trendingDeltas[comp] = delta;
+              }
             }
           }
         })(),
