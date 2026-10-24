@@ -2139,47 +2139,62 @@ input[type="checkbox"]:indeterminate::after {
 }
 
 .section-header-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--space-md);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: var(--space-md);
 }
 
 .section-header-row .library-title {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
-#copyDynamicMatchesBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-xs);
-  padding: var(--space-sm) var(--space-md);
-  background: var(--surface-container-low);
-  border: none;
-  border-radius: var(--shape-small);
-  color: var(--on-surface);
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
-  white-space: nowrap;
+#copyDynamicMatchesBtn,
+#expandLibraryBtn {
+	display: flex;
+	align-items: center;
+	gap: var(--space-xs);
+	padding: var(--space-xs) var(--space-sm);
+	background: var(--surface-container-low);
+	border: none;
+	border-radius: var(--shape-small);
+	color: var(--on-surface);
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.2s;
+	white-space: nowrap;
 }
 
-#copyDynamicMatchesBtn:hover {
-  background: var(--surface-container-high);
+#copyDynamicMatchesBtn:hover,
+#expandLibraryBtn:hover {
+	background: var(--surface-container-high);
 }
 
-#copyDynamicMatchesBtn svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
-  color: var(--on-surface-variant);
-  transition: color 0.2s;
+#copyDynamicMatchesBtn svg,
+#expandLibraryBtn svg {
+	width: 20px;
+	height: 20px;
+	color: var(--on-surface-variant);
+	transition: color 0.2s;
 }
 
-#copyDynamicMatchesBtn:hover svg {
-  color: var(--on-surface);
+#copyDynamicMatchesBtn:hover svg,
+#expandLibraryBtn:hover svg {
+	color: var(--on-surface);
+}
+
+.icon-library-results.expanded .library-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+	gap: var(--space-sm);
+	overflow-x: visible;
+	padding-bottom: var(--space-md);
+}
+
+.icon-library-results.expanded {
+	max-height: none;
+	overflow: visible;
 }
 
 /* Screens */
