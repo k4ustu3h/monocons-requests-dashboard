@@ -1,45 +1,45 @@
 {
   "com": {
-    "requests": 763,
-    "done": 5221,
-    "total": 5984,
+    "requests": 752,
+    "done": 5253,
+    "total": 6005,
     "global": 0,
     "global_installs": 0
   },
   "org": {
-    "requests": 46,
-    "done": 663,
+    "requests": 45,
+    "done": 664,
     "total": 709,
     "global": 0,
     "global_installs": 0
   },
   "de": {
-    "requests": 465,
+    "requests": 464,
     "done": 102,
-    "total": 567,
-    "global": 453,
+    "total": 566,
+    "global": 452,
     "global_installs": 4820262525
   },
   "jp": {
-    "requests": 334,
+    "requests": 324,
     "done": 30,
-    "total": 364,
-    "global": 325,
-    "global_installs": 10112986580
+    "total": 354,
+    "global": 315,
+    "global_installs": 9983886580
   },
   "br": {
-    "requests": 305,
+    "requests": 302,
     "done": 50,
-    "total": 355,
-    "global": 280,
-    "global_installs": 2244006225
+    "total": 352,
+    "global": 277,
+    "global_installs": 2233996225
   },
   "in": {
-    "requests": 219,
+    "requests": 218,
     "done": 69,
-    "total": 288,
-    "global": 212,
-    "global_installs": 2699551620
+    "total": 287,
+    "global": 211,
+    "global_installs": 2698551620
   },
   "ru": {
     "requests": 218,
@@ -77,18 +77,11 @@
     "global_installs": 0
   },
   "uk": {
-    "requests": 124,
+    "requests": 118,
     "done": 13,
-    "total": 137,
-    "global": 121,
-    "global_installs": 2667540205
-  },
-  "pl": {
-    "requests": 106,
-    "done": 28,
-    "total": 134,
-    "global": 100,
-    "global_installs": 3208781310
+    "total": 131,
+    "global": 115,
+    "global_installs": 2545440205
   },
   "us": {
     "requests": 124,
@@ -104,9 +97,16 @@
     "global": 0,
     "global_installs": 0
   },
+  "pl": {
+    "requests": 100,
+    "done": 28,
+    "total": 128,
+    "global": 94,
+    "global_installs": 3086681310
+  },
   "net": {
-    "requests": 14,
-    "done": 106,
+    "requests": 13,
+    "done": 107,
     "total": 120,
     "global": 0,
     "global_installs": 0
@@ -154,9 +154,9 @@
     "global_installs": 1873082600
   },
   "dev": {
-    "requests": 23,
-    "done": 49,
-    "total": 72,
+    "requests": 22,
+    "done": 52,
+    "total": 74,
     "global": 0,
     "global_installs": 0
   },
@@ -181,19 +181,19 @@
     "global": 42,
     "global_installs": 490931000
   },
-  "au": {
-    "requests": 25,
-    "done": 26,
-    "total": 51,
-    "global": 25,
-    "global_installs": 207760500
-  },
   "ua": {
     "requests": 39,
     "done": 11,
     "total": 50,
     "global": 37,
     "global_installs": 175310100
+  },
+  "au": {
+    "requests": 22,
+    "done": 26,
+    "total": 48,
+    "global": 22,
+    "global_installs": 196750500
   },
   "me": {
     "requests": 11,
@@ -244,13 +244,6 @@
     "global": 23,
     "global_installs": 388751000
   },
-  "dk": {
-    "requests": 26,
-    "done": 0,
-    "total": 26,
-    "global": 25,
-    "global_installs": 1351160000
-  },
   "cm": {
     "requests": 15,
     "done": 10,
@@ -293,6 +286,13 @@
     "global": 0,
     "global_installs": 0
   },
+  "dk": {
+    "requests": 20,
+    "done": 0,
+    "total": 20,
+    "global": 19,
+    "global_installs": 1229060000
+  },
   "be": {
     "requests": 16,
     "done": 3,
@@ -321,13 +321,6 @@
     "global": 0,
     "global_installs": 0
   },
-  "ls": {
-    "requests": 18,
-    "done": 0,
-    "total": 18,
-    "global": 17,
-    "global_installs": 2170000200
-  },
   "im": {
     "requests": 1,
     "done": 16,
@@ -355,6 +348,13 @@
     "total": 15,
     "global": 0,
     "global_installs": 0
+  },
+  "ls": {
+    "requests": 14,
+    "done": 0,
+    "total": 14,
+    "global": 13,
+    "global_installs": 2163000200
   },
   "co": {
     "requests": 4,
@@ -506,6 +506,13 @@
   "free": {
     "requests": 1,
     "done": 4,
+    "total": 5,
+    "global": 0,
+    "global_installs": 0
+  },
+  "keepass2android": {
+    "requests": 0,
+    "done": 5,
     "total": 5,
     "global": 0,
     "global_installs": 0
@@ -898,13 +905,6 @@
   "il": {
     "requests": 0,
     "done": 2,
-    "total": 2,
-    "global": 0,
-    "global_installs": 0
-  },
-  "keepass2android": {
-    "requests": 1,
-    "done": 1,
     "total": 2,
     "global": 0,
     "global_installs": 0
