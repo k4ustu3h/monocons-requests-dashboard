@@ -459,7 +459,7 @@ const Utils = {
   generateXml(app) {
     const cmp = app.componentName;
     const name = app.label.replace(/&/g, '&amp;').replace(/"/g, '&quot;'); // Escape for XML
-    const draw = Utils.sanitizeDrawableName(app.label);
+    const draw = App.state.existingSvgs?.get(cmp) || (app.isLinkOnly ? app.drawable : Utils.sanitizeDrawableName(app.label));
     return `<item component="ComponentInfo{${cmp}}" drawable="${draw}" name="${name}" />`;
   },
 
@@ -624,7 +624,7 @@ const Templates = {
       return `<span class="status-pill status-${tagId}" title="${desc}">${label}</span>`;
     }).join('');
 
-    const existingSvgHtml = existingDrawable
+    const existingSvgHtml = (existingDrawable && !app.isLinkOnly)
       ? `<span class="existing-svg-wrapper">
          <img src="${CONFIG.data.svgPath}${existingDrawable}.svg" 
               class="existing-svg" 
@@ -635,10 +635,20 @@ const Templates = {
        </span>`
       : '';
 
+    const isSvgIcon = app.isLinkOnly && existingDrawable;
     const iconHtml = isUnknown
       ? `<div class="fallback-icon-row">No Icon</div>`
-      : `<img src="${iconUrl}" class="requested-icon" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" alt="${name}" />
-         <div class="fallback-icon-row" style="display:none">No Icon</div>`;
+      : (isSvgIcon
+        ? `<span class="existing-svg-wrapper">
+             <img src="${iconUrl}" 
+                  class="existing-svg" 
+                  alt="Icon of '${existingDrawable}'"
+                  title="${existingDrawable}.svg"
+                  loading="lazy"
+                  data-error-mode="hide-wrapper" />
+           </span>`
+        : `<img src="${iconUrl}" class="requested-icon" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" alt="${name}" />
+           <div class="fallback-icon-row" style="display:none">No Icon</div>`);
 
     const installsRaw = app.installs ? app.installs.replace(/[,+]/g, '') : null;
     const displayInstalls = installsRaw
@@ -653,9 +663,11 @@ const Templates = {
     const trendingDelta = App.state.trendingDeltas[app.componentName];
     const reqValue = App.state.setsStats[pkg] || app.requestCount;
     const isSet = App.state.setsStats[pkg] !== undefined;
-    const displayReq = isSet
-      ? `<span title="Combined requests for this package.">${reqValue.toLocaleString()}S</span>`
-      : reqValue.toLocaleString();
+    const displayReq = app.isLinkOnly
+      ? '—'
+      : (isSet
+        ? `<span title="Combined requests for this package.">${reqValue.toLocaleString()}S</span>`
+        : reqValue.toLocaleString());
 
     return `
       <div class="list-row ${isSelected ? 'selected' : ''}"
@@ -721,6 +733,11 @@ const Templates = {
     let contentHtml;
     const label = app.label === '(Unknown App)' ? id.split('/')[0] : app.label;
 
+    const existingDrawable = App.state.existingSvgs
+      ? App.state.existingSvgs.get(id)
+      : null;
+    const isSvgIcon = app.isLinkOnly && (existingDrawable || app.drawable);
+
     if (isUnknown) {
       contentHtml = `
         <div class="fallback-icon-grid">
@@ -728,6 +745,12 @@ const Templates = {
           <div class="fallback-icon-grid-label">${label}</div>
         </div>
       `;
+    } else if (isSvgIcon) {
+      contentHtml = `
+        <span class="existing-svg-wrapper">
+          <img src="${iconUrl}" class="existing-svg" loading="lazy" alt="${label}" />
+        </span>
+        <div class="fallback-icon-grid is-hidden">No Icon</div>`;
     } else {
       contentHtml =
         `<img src="${iconUrl}" loading="lazy" data-error-mode="show-next-fallback" alt="${label}" />
@@ -1545,7 +1568,7 @@ const Actions = {
       const cmp = app.componentName;
       const tags = App.state.appTags.get(cmp);
 
-      if (tags && tags.has('in_lawnicons')) {
+      if (tags && (tags.has('in_lawnicons') || tags.has('links'))) {
         const pkg = cmp.split('/')[0];
         const pkgPrefix = `${pkg}/`;
         
@@ -1558,18 +1581,23 @@ const Actions = {
         });
 
         if (matchedIcons.length > 0) {
+          const targetDrawable = App.state.existingSvgs?.get(cmp) ||
+            App.state.existingIcons.find(icon => icon.component.startsWith(pkgPrefix))?.drawable ||
+            app.drawable ||
+            matchedIcons[0].drawable;
+
           const uniqueComps = new Set();
           matchedIcons.forEach(icon => {
             if (!uniqueComps.has(icon.component)) {
               uniqueComps.add(icon.component);
               const name = icon.name.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
-              xml += `    <item component="ComponentInfo{${icon.component}}" drawable="${icon.drawable}" name="${name}" />\n`;
+              const drawable = (tags.has('links') || !icon.drawable) ? targetDrawable : icon.drawable;
+              xml += `    <item component="ComponentInfo{${icon.component}}" drawable="${drawable}" name="${name}" />\n`;
             }
           });
           if (!uniqueComps.has(app.componentName)) {
-            const baseDrawable = matchedIcons[0].drawable;
             const name = app.label.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
-            xml += `    <item component="ComponentInfo{${app.componentName}}" drawable="${baseDrawable}" name="${name}" />\n`;
+            xml += `    <item component="ComponentInfo{${app.componentName}}" drawable="${targetDrawable}" name="${name}" />\n`;
           }
         } else {
           xml += `    ${Utils.generateXml(app)}\n`;
@@ -2015,6 +2043,23 @@ const Data = {
             if (!App.state.existingSvgs) App.state.existingSvgs = new Map();
             App.state.existingSvgs.set(appId, item.existing_drawable);
           }
+          if (id === 'links' && !App.state.idMap.has(appId)) {
+            const label = (typeof item === 'object' && item.name) || appId.split('/')[0];
+            const drawable = (typeof item === 'object' && item.existing_drawable) || 'unknown';
+            /** @type {AppEntry} */
+            const syntheticApp = {
+              componentName: appId,
+              drawable: drawable,
+              label: label,
+              requestCount: 0,
+              firstAppearance: 0,
+              lastRequested: 0,
+              installs: '—',
+              isLinkOnly: true,
+            };
+            App.state.idMap.set(appId, syntheticApp);
+            App.data.push(syntheticApp);
+          }
         });
       }
     });
@@ -2118,6 +2163,7 @@ const Data = {
    */
   computeUnlabeled(tagId) {
     App.data.forEach((app) => {
+      if (app.isLinkOnly) return;
       const id = app.componentName;
       const existingTags = App.state.appTags.get(id);
       if (!existingTags || existingTags.size === 0) {
@@ -2196,6 +2242,11 @@ const Data = {
     // Search
     const query = Utils.parseSearchQuery(s.search);
     const activeFilters = new Set([...s.activeFilters, ...query.tags]);
+
+    // If neither 'links' filter is active nor user is searching by text, exclude link-only items
+    if (!activeFilters.has('links') && !query.text) {
+      data = data.filter((app) => !app.isLinkOnly);
+    }
 
     // Filter
     if (activeFilters.size > 0) {
@@ -2777,17 +2828,21 @@ const UI = {
           const url = actionEl.dataset.url;
           const drawable = actionEl.dataset.drawable;
           if (url && drawable) {
+            const isSvg = url.endsWith('.svg');
+            const ext = isSvg ? '.svg' : CONFIG.data.iconExtension;
             fetch(url)
               .then((r) => r.blob())
               .then(async (blob) => {
                 try {
                   // @ts-expect-error: File System Access API
                   const handle = await showSaveFilePicker({
-                    suggestedName: `${drawable}${CONFIG.data.iconExtension}`,
+                    suggestedName: `${drawable}${ext}`,
                     types: [
                       {
-                        description: 'Image',
-                        accept: { 'image/webp': [CONFIG.data.iconExtension] },
+                        description: isSvg ? 'SVG Icon' : 'Image',
+                        accept: isSvg
+                          ? { 'image/svg+xml': ['.svg'] }
+                          : { 'image/webp': [CONFIG.data.iconExtension] },
                       },
                     ],
                   });
@@ -2803,7 +2858,7 @@ const UI = {
 
                   const a = document.createElement('a');
                   a.href = URL.createObjectURL(blob);
-                  a.download = `${drawable}${CONFIG.data.iconExtension}`;
+                  a.download = `${drawable}${ext}`;
                   a.click();
                   URL.revokeObjectURL(a.href);
                 }
@@ -3552,8 +3607,13 @@ const UI = {
     batch.forEach((app) => {
       const id = app.componentName;
       const isSelected = s.selected.has(id);
+      const existingDrawable = App.state.existingSvgs
+        ? App.state.existingSvgs.get(id)
+        : null;
       const iconUrl =
-        `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
+        app.isLinkOnly && (existingDrawable || app.drawable)
+          ? `${CONFIG.data.svgPath}${existingDrawable || app.drawable}.svg`
+          : `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
 
       let html;
       const tags = Utils.getTagsForApp(id);

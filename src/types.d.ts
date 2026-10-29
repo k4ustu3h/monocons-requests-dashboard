@@ -22,6 +22,9 @@ declare global {
     firstAppearance: number;
     lastRequested: number;
     installs?: string;
+    roi_score?: number;
+    priority?: string;
+    isLinkOnly?: boolean;
   }
 
   type SortKeys = 'name' | 'req' | 'odds' | 'install' | 'time';
@@ -34,10 +37,11 @@ declare global {
   interface FilterContents {
     id: string;
     existing_drawable: string;
+    name?: string;
   }
 
   interface Filter extends FilterMetadata {
-    [key: string]: string | FilterContents[] | undefined;
+    [key: string]: string | (string | FilterContents)[] | undefined;
   }
 
   interface Icon {

@@ -4,30 +4,46 @@ import os
 import re
 import xml.etree.ElementTree as ET
 
-def load_appfilter_packages(appfilter_path):
-    existing_packages = {}  # package -> {'drawable': str, 'components': set(str)}
-    if not os.path.exists(appfilter_path):
-        print(f"Warning: {appfilter_path} not found.")
-        return existing_packages
+def parse_appfilter(path):
+    components = {}  # cname -> {'drawable': str, 'name': str}
+    drawables = set()
+    pkg_map = {}  # pkg -> {'drawables': set(), 'components': set(), 'first_name': str, 'first_drawable': str}
+
+    if not os.path.exists(path):
+        print(f"Warning: {path} not found.")
+        return components, drawables, pkg_map
 
     try:
-        tree = ET.parse(appfilter_path)
+        tree = ET.parse(path)
         root = tree.getroot()
-        
         for item in root.findall('item'):
+            comp = item.get('component', '')
             drawable = item.get('drawable', '')
-            comp = item.get('component')
-            if comp:
-                match = re.search(r'ComponentInfo\{([^/]+)', comp)
-                if match:
-                    pkg = match.group(1)
-                    if pkg not in existing_packages:
-                        existing_packages[pkg] = {'drawable': drawable, 'components': set()}
-                    existing_packages[pkg]['components'].add(comp)
-    except Exception as e:
-        print(f"Error parsing appfilter: {e}")
+            name = item.get('name', '')
+            match = re.search(r'ComponentInfo\{([^}]+)\}', comp)
+            cname = match.group(1) if match else comp
+            if not cname:
+                continue
 
-    return existing_packages
+            components[cname] = {'drawable': drawable, 'name': name}
+            if drawable:
+                drawables.add(drawable)
+
+            pkg = cname.split('/')[0]
+            if pkg not in pkg_map:
+                pkg_map[pkg] = {
+                    'drawables': set(),
+                    'components': set(),
+                    'first_name': name,
+                    'first_drawable': drawable
+                }
+            if drawable:
+                pkg_map[pkg]['drawables'].add(drawable)
+            pkg_map[pkg]['components'].add(cname)
+    except Exception as e:
+        print(f"Error parsing appfilter {path}: {e}")
+
+    return components, drawables, pkg_map
 
 def main(input_file, output_dir, lawnicons_appfilter_path, monocons_appfilter_path):
     os.makedirs(output_dir, exist_ok=True)
@@ -35,33 +51,94 @@ def main(input_file, output_dir, lawnicons_appfilter_path, monocons_appfilter_pa
     try:
         with open(input_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
-            apps = data['apps']
+            apps = data.get('apps', [])
     except FileNotFoundError:
         print(f"Error: {input_file} not found.")
         return
 
-    lawnicons_packages = load_appfilter_packages(lawnicons_appfilter_path)
-    monocons_packages = load_appfilter_packages(monocons_appfilter_path)
-    
+    m_comps, m_drawables, m_pkg_map = parse_appfilter(monocons_appfilter_path)
+    l_comps, l_drawables, l_pkg_map = parse_appfilter(lawnicons_appfilter_path)
+
+    # Determine SVG directory for verifying Monocons drawables
+    svg_dir = os.path.join(os.path.dirname(monocons_appfilter_path), "qa_issues", "svgs")
+    if not os.path.exists(svg_dir):
+        svg_dir = os.path.join("src", "assets", "qa_issues", "svgs")
+
+    print(f"Scanning {len(apps)} requests and {len(l_comps)} Lawnicons components...")
+
+    # 1. in_lawnicons: Requests from requests.json whose package exists in Lawnicons
     in_lawnicons_data = []
+    for app in apps:
+        app_id = app.get('componentName')
+        if not app_id:
+            continue
+        pkg = app_id.split('/')[0]
+        if pkg in l_pkg_map:
+            in_lawnicons_data.append({
+                "id": app_id,
+                "lawnicons_drawable": l_pkg_map[pkg]['first_drawable']
+            })
+
+    # 2. links: All new Lawnicons components not in Monocons where Monocons has the drawable,
+    # plus any open requests in requests.json where Lawnicons has extra components for the package.
+    seen_links = set()
     links_data = []
 
-    print(f"Scanning {len(apps)} requests...")
+    for cname, l_info in l_comps.items():
+        if cname in m_comps:
+            continue  # Already supported in Monocons
+
+        pkg = cname.split('/')[0]
+        l_draw = l_info['drawable']
+        l_name = l_info['name']
+
+        matched_drawable = None
+        if pkg in m_pkg_map:
+            pkg_draws = m_pkg_map[pkg]['drawables']
+            if l_draw in pkg_draws:
+                matched_drawable = l_draw
+            elif len(pkg_draws) == 1:
+                matched_drawable = list(pkg_draws)[0]
+            elif l_draw in m_drawables:
+                matched_drawable = l_draw
+            elif len(pkg_draws) > 0:
+                matched_drawable = list(pkg_draws)[0]
+        elif l_draw in m_drawables:
+            matched_drawable = l_draw
+
+        if matched_drawable:
+            svg_file = os.path.join(svg_dir, f"{matched_drawable}.svg")
+            if not os.path.exists(svg_dir) or os.path.exists(svg_file):
+                seen_links.add(cname)
+                app_name = l_name or m_pkg_map.get(pkg, {}).get('first_name') or cname.split('/')[-1]
+                links_data.append({
+                    "id": cname,
+                    "existing_drawable": matched_drawable,
+                    "name": app_name
+                })
 
     for app in apps:
         app_id = app.get('componentName')
-        if not app_id: continue
-        
+        if not app_id or app_id in seen_links:
+            continue
         pkg = app_id.split('/')[0]
-        
-        if pkg in lawnicons_packages:
-            in_lawnicons_data.append({"id": app_id, "lawnicons_drawable": lawnicons_packages[pkg]['drawable']})
-            
-            l_comps = lawnicons_packages[pkg]['components']
-            m_comps = monocons_packages.get(pkg, {}).get('components', set())
-            
-            if len(m_comps) > 0 and len(l_comps) > len(m_comps):
-                links_data.append(app_id)
+        if pkg in l_pkg_map and pkg in m_pkg_map:
+            l_comps_set = l_pkg_map[pkg]['components']
+            m_comps_set = m_pkg_map[pkg]['components']
+            if len(m_comps_set) > 0 and len(l_comps_set) > len(m_comps_set):
+                pkg_draws = m_pkg_map[pkg]['drawables']
+                matched_drawable = list(pkg_draws)[0] if pkg_draws else None
+                if matched_drawable:
+                    svg_file = os.path.join(svg_dir, f"{matched_drawable}.svg")
+                    if not os.path.exists(svg_dir) or os.path.exists(svg_file):
+                        seen_links.add(app_id)
+                        links_data.append({
+                            "id": app_id,
+                            "existing_drawable": matched_drawable,
+                            "name": app.get('label') or app_id.split('/')[-1]
+                        })
+
+    links_data.sort(key=lambda x: (x.get('name', '').lower(), x.get('id', '')))
 
     output_path = os.path.join(output_dir, "in_lawnicons.json")
     output_data = {
@@ -91,5 +168,5 @@ if __name__ == "__main__":
     parser.add_argument("lawnicons_appfilter_path", help="Path to lawnicons_appfilter.xml")
     parser.add_argument("monocons_appfilter_path", help="Path to upstream appfilter.xml")
     args = parser.parse_args()
-    
+
     main(args.input_file, args.output_dir, args.lawnicons_appfilter_path, args.monocons_appfilter_path)

@@ -1299,6 +1299,16 @@ select:hover,
 	filter: brightness(0) invert(0.9);
 }
 
+.grid-card .existing-svg-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.grid-card .existing-svg {
+	width: 50%;
+	height: 50%;
+}
+
 .list-row .col.first {
 	font-size: 15px;
 	font-weight: 500;
