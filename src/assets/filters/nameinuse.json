@@ -93,6 +93,26 @@
     {
       "id": "com.vivo.weather/com.vivo.weather.WeatherMain",
       "existing_drawable": "weather"
+    },
+    {
+      "id": "com.hihonor.calendar/com.android.calendar.AllInOneActivity",
+      "existing_drawable": "calendar"
+    },
+    {
+      "id": "echo.music.iad1tya/echo.music.iad1tya.MainActivityAlias",
+      "existing_drawable": "echo_music"
+    },
+    {
+      "id": "com.hihonor.filemanager/com.hihonor.filemanager.common.view.activity.SplashActivity",
+      "existing_drawable": "generic_files"
+    },
+    {
+      "id": "com.hihonor.android.totemweather/com.hihonor.android.totemweather.WeatherHome",
+      "existing_drawable": "weather"
+    },
+    {
+      "id": "ch.protonvpn.android.reproducible/ch.protonvpn.android.RoutingActivity",
+      "existing_drawable": "proton_vpn"
     }
   ]
 }

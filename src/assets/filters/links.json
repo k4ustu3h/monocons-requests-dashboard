@@ -259,7 +259,7 @@
     },
     {
       "id": "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonnow.AmazonNowHomeActivityAlias",
-      "existing_drawable": "amazon_pay",
+      "existing_drawable": "amazon_shopping",
       "name": "Amazon Now"
     },
     {
@@ -2174,7 +2174,7 @@
     },
     {
       "id": "com.dede.android_eggs/com.dede.android_eggs.main.EasterEggsActivity",
-      "existing_drawable": "easter_eggs_17",
+      "existing_drawable": "easter_eggs_14",
       "name": "Easter Eggs"
     },
     {
@@ -3184,12 +3184,12 @@
     },
     {
       "id": "com.google.android.googlequicksearchbox/com.google.android.apps.search.soundsearch.shortcut.AddShortcutActivity",
-      "existing_drawable": "google",
+      "existing_drawable": "google_gemini",
       "name": "Google"
     },
     {
       "id": "com.google.android.googlequicksearchbox/com.google.android.apps.search.soundsearch.shortcut.AliasAddShortcutActivity",
-      "existing_drawable": "google",
+      "existing_drawable": "google_gemini",
       "name": "Google"
     },
     {
@@ -3246,6 +3246,11 @@
       "id": "com.google.android.apps.chromecast.app/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "google_home",
       "name": "Google Home"
+    },
+    {
+      "id": "com.google.android.apps.messaging/com.google.android.apps.messaging.dittosatellite.impl.DittoWebActivity",
+      "existing_drawable": "messages",
+      "name": "Google Messages"
     },
     {
       "id": "com.google.android.apps.messaging/com.google.android.archive.ReactivateActivity",
@@ -4291,11 +4296,6 @@
       "id": "org.proninyaroslav.libretorrent/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "libretorrent",
       "name": "LibreTorrent"
-    },
-    {
-      "id": "com.github.libretube.debug/com.github.libretube.Default",
-      "existing_drawable": "libretube",
-      "name": "LibreTube Debug"
     },
     {
       "id": "at.lieferservice.android/com.takeaway.android.Startup",

@@ -3268,7 +3268,10 @@
     "br.gov.caixa.fgts.trabalhador/br.gov.caixa.fgts.trabalhador.ui.login.compose.SplashFgtsActivity": 1,
     "br.gov.meugovbr/br.gov.meugovbr.MainActivity": 1,
     "br.com.timbrasil.meutim/br.com.timbrasil.meutim.MainActivityDefault": 1,
-    "br.com.intermedium/br.com.intermedium.splash.SplashActivity": 1
+    "br.com.intermedium/br.com.intermedium.splash.SplashActivity": 1,
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
   },
   "com.world.youcinemobile/com.mobile.brasiltv.activity.SplashAty": {
     "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 2,
@@ -4205,7 +4208,10 @@
     "it.belloworld.mercurygram/org.telegram.messenger.DefaultIcon": 1,
     "at.tomtasche.reader/at.tomtasche.reader.ui.activity.MainActivity": 1,
     "de.nostream.nclock/de.nostream.nclock.MainActivity": 1,
-    "de.j4velin.wifiAutoOff/de.j4velin.wifiAutoOff.Preferences": 1
+    "de.j4velin.wifiAutoOff/de.j4velin.wifiAutoOff.Preferences": 1,
+    "ch.protonvpn.android.reproducible/ch.protonvpn.android.RoutingActivity": 1,
+    "pt.minsaude.spms.ces/pt.minsaude.spms.sns24.dev.MainActivity": 1,
+    "id.gov.pt/pt.gov.ama.app_id_gov.MainActivity": 1
   },
   "com.cyc.suite/com.cyc.suite.MainActivity": {
     "in.aaremm.offthegrid/in.aaremm.offthegrid.MainActivity": 1,
@@ -4694,7 +4700,10 @@
     "ru.tech.imageresizershrinker/com.t8rin.imagetoolbox.app.presentation.AppActivity": 1,
     "hr.dtakac.prognoza/hr.dtakac.prognoza.ui.MainActivity": 1,
     "br.com.rodrigokolb.realdrum/br.com.rodrigokolb.realdrum.MainActivity": 1,
-    "de.schliweb.makeacopy.light/de.schliweb.makeacopy.MainActivity": 1
+    "de.schliweb.makeacopy.light/de.schliweb.makeacopy.MainActivity": 1,
+    "ch.protonvpn.android.reproducible/ch.protonvpn.android.RoutingActivity": 1,
+    "pt.minsaude.spms.ces/pt.minsaude.spms.sns24.dev.MainActivity": 1,
+    "id.gov.pt/pt.gov.ama.app_id_gov.MainActivity": 1
   },
   "com.baidaidai.rootless_store/com.baidaidai.rootless_store.MainActivity": {
     "de.moekadu.metronomenext/de.moekadu.metronomenext.MainActivity": 1,
@@ -9234,5 +9243,788 @@
     "uk.co.powdertoy.tpt/uk.co.powdertoy.tpt.MainActivity": 1,
     "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
     "dk.tacit.android.foldersync.lite/dk.tacit.android.foldersync.activity.MainActivity": 1
+  },
+  "io.github.dorumrr.de1984/io.github.dorumrr.de1984.ui.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.wageworks.ezreceipts/com.wageworks.ezreceipts.a_framework.ui.LoginHostActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "org.msufcu.mobile/org.msufcu.mobile.activities.SplashActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "chat.simplex.app/chat.simplex.app.MainActivity_default": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "org.scrib.transcriber/org.scrib.transcriber.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.sega.persona5.the.phantomx.en/com.unity3d.player.P5XUnityPlayerActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.att.mobile.android.vvm/com.att.mobile.android.vvm.screen.WelcomeActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.koa.mobileapp/com.example.koa_mobile_application_v4.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.softek.ofxclmobile.greatlakescu/com.softek.mfm.login.ui.LoginActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.hcsc.android.providerfinderil/com.hcsc.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.scannerradio/com.scannerradio.ui.main.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.termux.x11/com.termux.x11.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.navyfederal.android/org.navyfederal.android.NFCUActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "org.hlwd.bible/org.hlwd.bible.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.rvlife.rvlife/com.rvlife.rvlife.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "app.getknit.knit/app.getknit.knit.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "helium314.localbackend/org.fitchfamily.android.dejavu.SettingsActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.unicalculator.app/com.unicalculator.app.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "org.kiwix.kiwixmobile/org.kiwix.kiwixmobile.main.KiwixMainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.micplugin/com.micplugin.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.jgeek00.adguard_home_manager/com.jgeek00.adguard_home_manager.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "me.aap.fermata.auto.debug/me.aap.fermata.ui.activity.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.hulu.plus/com.hulu.features.splash.SplashActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.app.equran/com.app.equran.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.aurora.store.nightly/com.aurora.store.ComposeActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "chat.fluffy.fluffychat/chat.fluffy.fluffychat.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.bartixxx.opflashcontrol/com.bartixxx.opflashcontrol.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.regions.mobbanking/com.regions.mobilebanking.applaunch.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.mcu.reolink/com.android.bc.login.WelcomeActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.iiordanov.freeaSPICE/com.undatech.opaque.ConnectionGridActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.square_enix.android_googleplay.FFVII/jp.co.d4e.materialg.ExpansionFileDownloaderActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.kinou.gameassist/com.kinou.gameassist.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "org.openobservatory.ooniprobe/org.ooni.probe.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.tsheets.android.hammerhead/com.tsheets.android.modules.applicationStartUp.SplashActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "org.nslabs.ir_blaster/org.nslabs.ir_blaster.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.aquawater.app/com.aquawater.app.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.aurora.warden/com.aurora.warden.ui.activities.AuroraActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.quranapp.android/com.quranapp.android.activities.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.leohearts.alternativeUnlockHook/com.leohearts.alternativeUnlockHook.SettingsActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.leon.sxtools/io.github.annson24.sxtools.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.usaa.mobile.android.usaa/com.usaa.mobile.android.app.entry.view.MainEntryActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "gov.va.mobileapp/gov.va.mobileapp.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.creditkarma.mobile/com.creditkarma.mobile.welcome.ui.WelcomeActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.riteshsahu.SMSBackupRestore/com.riteshsahu.SMSBackupRestore.activities.IntroActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.gelakinetic.mtgfam/com.gelakinetic.mtgfam.FamiliarActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.proxmox.app.pve_flutter_frontend/com.proxmox.app.pve_flutter_frontend.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "org.jpi59.ethiccompass/org.jpi59.ethiccompass.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.passportparking.mobile.parkchicago/com.passportparking.mobile.SplashActivityChicago": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "dev.seerr.mobileapp/dev.seerr.mobileapp.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.google.android.projection.gearhead.xunlocked/com.google.android.projection.gearhead.xunlocked.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.tplink.omada/com.tplink.omada.SplashActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "io.music_assistant.client/io.music_assistant.client.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.republicservices.myresource/com.republicservices.myresource.main.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.liamcottle.meshcore.android/com.liamcottle.meshcore.android.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.drdisagree.pixellauncherenhanced/com.drdisagree.pixellauncherenhanced.ui.activities.SplashActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "top.nkbe.npatch/top.nkbe.npatch.ui.activity.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.dergoogler.mmrl.wx/com.dergoogler.mmrl.wx.ui.activity.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.pennymac.app/com.pennymac.mobilepaydev.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.endroid.latch/com.endroid.latch.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.vayunmathur.health/com.vayunmathur.health.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "org.birthdayadapter/fr.heinisch.birthdayadapter.ui.BaseActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.vivaldi.browser/com.vivaldi.browser.IconAlt16": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.github.mistermo_vibecode.voiceplus/voice.app.features.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "org.woheller69.ttsengine/com.k2fsa.sherpa.onnx.tts.engine.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.brother.ptouch.colorlabeleditor2/com.brother.ptouch.colorlabeleditor2.module.splash.SplashActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.cat.hole.puzzle.aos/co.ab180.airbridge.unity.AirbridgeActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.dergoogler.mmrl.wx/com.dergoogler.mmrl.wx.ui.activity.FileExplorerActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.ecobee.athenamobile/com.ecobee.athenamobile.launcher.LauncherActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.tollway/com.tollway.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "org.cf0x.konamiku/org.cf0x.konamiku.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.droiddeck.launcher/com.droiddeck.launcher.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.premisehealth.android/epic.mychart.android.library.prelogin.SplashActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.creditunion4262.production/com.q2.app.core.ui.LauncherActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "org.client.scrcpy/org.client.scrcpy.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.freakurl.apps.ollama/com.freakurl.apps.ollama.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.comed.mobile/com.exelon.mobile.ui.unauthenticated.UnauthenticatedActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.cbs.app/com.paramount.android.pplus.features.splash.mobile.integration.SplashActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.linkedin.android/com.linkedin.android.authenticator.FallFestivalActivityAlias": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.drdisagree.iconify/com.drdisagree.iconify.app.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "org.illiana.illiana/com.cuanativeandroidrdc.mobile.activity.ActivityNavigation": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.phonevalley.progressive/com.phonevalley.progressive.common.activities.SplashActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.github.nicorac.bcrgui/com.github.nicorac.bcrgui.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.nianticlabs.pikmin/com.nianticproject.ichigo.IchigoUnityPlayerActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.orgzlyrevived/com.orgzly.android.ui.LauncherActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.trustdevice.android.demo/cn.tongdun.android.activitys.SplashActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.iyps/com.iyps.activities.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.fca.myconnect.ram.nafta/com.fcagroup.global.myuconnect.activity.SplashActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "org.pbskids.video/org.pbskids.video.ui.root.MainActivity": {
+    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
+    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
+    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+  },
+  "com.amatacticalmedia.fieldops_technician/com.amatacticalmedia.fieldops_technician.MainActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "combank.com.combankdigital/eu.afse.omnia.prototype.usecases.splash.SplashScreenActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "app.affine.pro/app.affine.pro.MainActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.hihonor.gamecenter/com.hihonor.gamecenter.bu_games_display.splash.SplashActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.hihonor.android.thememanager/com.hihonor.android.thememanager.PageActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.mahersafadi.electron/com.mahersafadi.electron.MainActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.daraz.android/com.lazada.activities.EnterActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.myfitnesspal.android/com.myfitnesspal.android.splash.SplashActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "net.omobio.dialogsc/net.omobio.dialogsc.MainActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.hihonor.calendar/com.android.calendar.AllInOneActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.bashsoftware.boycott/com.bashsoftware.boycott.MainActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.journable.app/com.journable.app.MainActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.chimbori.hermitcrab/com.chimbori.hermitcrab.AdminActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.mahersafadi.salati/com.example.salati.MainActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.baseus.intelligent/com.baseus.intelligent.view.SplashNewActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.deepstash/com.deepstash.MainActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.turtlebeach.swarm2/crc64e12e3a6fc12408ce.MainActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.payoneer.android/com.payoneer.SplashActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.quranly.app/com.quranly.app.MainActivity.default": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.hihonor.tips/com.hihonor.tips.launch.ui.SplashActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.levelinfinite.sgameGlobal/com.levelinfinite.sgameGlobal.SGameGlobalActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.hihonor.android.totemweather/com.hihonor.android.totemweather.WeatherHome": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.omobio.etisalatone/com.omobio.etisalatone.MainActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.galaxyrio.gracelauncher/com.galaxyrio.gracelauncher.SettingsActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.hihonor.filemanager/com.hihonor.filemanager.common.view.activity.SplashActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.inspiredandroid.braincup/com.inspiredandroid.braincup.MainActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.sl.koko.bnpl/com.sl.koko.bnpl.activity.MainActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "net.combank.passbook/net.combank.passbook.ui.launcher.LauncherActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.pickme.passenger/com.pickme.passenger.MainActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.hihonor.android.remotecontroller/com.hihonor.android.remotecontroller.app.RemoteControllerActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.hihonor.appmarket/com.hihonor.appmarket.module.splash.Splash": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.opera.mini.native/com.opera.android.Default": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.remitly.androidapp/com.remitly.androidapp.MainActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.hihonor.magichome/com.hihonor.magichome.oversea.app.WelcomeActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.hihonor.health/com.hihonor.health.splash.SplashActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.castle.sefirah/com.castle.sefirah.MainActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.hnb.digital.payApp/com.hnb.digital.payApp.Splash": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.prayer_times/com.prayer_times.MainActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.slt.selfcare/com.slt.selfcare.SplashActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.hnb.DigitalApp/com.hnb.DigitalApp.Splash": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.hihonor.magicvoice/com.hihonor.magicvoice.aipanel.ui.activity.AiPanelWelcomeActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "echo.music.iad1tya/echo.music.iad1tya.MainActivityAlias": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.ceb.lk.cebcare/com.ceb.lk.cebcare.SelectorActivity": {
+    "lk.hac.halalindex/lk.hac.hac.MainActivity": 1,
+    "lk.tc.finpal/lk.tc.finpal.MainActivity": 1,
+    "co.app.id_mgTSMMMKrj/co.app.id_mgTSMMMKrj.MainActivity": 1
+  },
+  "com.iris.gallery/com.iris.gallery.MainActivity": {
+    "ch.protonvpn.android.reproducible/ch.protonvpn.android.RoutingActivity": 1,
+    "pt.minsaude.spms.ces/pt.minsaude.spms.sns24.dev.MainActivity": 1,
+    "id.gov.pt/pt.gov.ama.app_id_gov.MainActivity": 1
+  },
+  "io.ente.photos.fdroid/io.ente.photos.fdroid.IconDuckyHuggingE": {
+    "ch.protonvpn.android.reproducible/ch.protonvpn.android.RoutingActivity": 1,
+    "pt.minsaude.spms.ces/pt.minsaude.spms.sns24.dev.MainActivity": 1,
+    "id.gov.pt/pt.gov.ama.app_id_gov.MainActivity": 1
+  },
+  "com.seca.phone/com.seca.phone.MainActivity": {
+    "ch.protonvpn.android.reproducible/ch.protonvpn.android.RoutingActivity": 1,
+    "pt.minsaude.spms.ces/pt.minsaude.spms.sns24.dev.MainActivity": 1,
+    "id.gov.pt/pt.gov.ama.app_id_gov.MainActivity": 1
+  },
+  "com.mkx.hrttracker/com.mkx.hrttracker.MainActivity": {
+    "ch.protonvpn.android.reproducible/ch.protonvpn.android.RoutingActivity": 1,
+    "pt.minsaude.spms.ces/pt.minsaude.spms.sns24.dev.MainActivity": 1,
+    "id.gov.pt/pt.gov.ama.app_id_gov.MainActivity": 1
+  },
+  "io.pcontacts.app/io.pcontacts.app.MainActivity": {
+    "ch.protonvpn.android.reproducible/ch.protonvpn.android.RoutingActivity": 1,
+    "pt.minsaude.spms.ces/pt.minsaude.spms.sns24.dev.MainActivity": 1,
+    "id.gov.pt/pt.gov.ama.app_id_gov.MainActivity": 1
+  },
+  "chromahub.rhythm.app/chromahub.rhythm.app.activities.MainActivity": {
+    "ch.protonvpn.android.reproducible/ch.protonvpn.android.RoutingActivity": 1,
+    "pt.minsaude.spms.ces/pt.minsaude.spms.sns24.dev.MainActivity": 1,
+    "id.gov.pt/pt.gov.ama.app_id_gov.MainActivity": 1
+  },
+  "com.huawei.smartaudio/com.huawei.smartaudio.ui.view.SplashActivity": {
+    "ch.protonvpn.android.reproducible/ch.protonvpn.android.RoutingActivity": 1,
+    "pt.minsaude.spms.ces/pt.minsaude.spms.sns24.dev.MainActivity": 1,
+    "id.gov.pt/pt.gov.ama.app_id_gov.MainActivity": 1
+  },
+  "com.prismgallery.app/com.example.amoledgallery.LauncherIos": {
+    "ch.protonvpn.android.reproducible/ch.protonvpn.android.RoutingActivity": 1,
+    "pt.minsaude.spms.ces/pt.minsaude.spms.sns24.dev.MainActivity": 1,
+    "id.gov.pt/pt.gov.ama.app_id_gov.MainActivity": 1
   }
 }
