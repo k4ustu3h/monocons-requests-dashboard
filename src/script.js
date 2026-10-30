@@ -1427,13 +1427,21 @@ const Actions = {
    * @returns {AppEntry[]}
    */
   resolveApps(ids = null) {
+    const seen = new Set();
     if (ids) {
       return ids.flatMap((id) => {
+        if (seen.has(id)) return [];
+        seen.add(id);
         const app = App.state.idMap.get(id);
         return app ? [app] : [];
       });
     }
-    return App.data.filter((a) => App.state.selected.has(a.componentName));
+    return App.data.filter((a) => {
+      if (!App.state.selected.has(a.componentName)) return false;
+      if (seen.has(a.componentName)) return false;
+      seen.add(a.componentName);
+      return true;
+    });
   },
 
   /**
@@ -1590,6 +1598,7 @@ const Actions = {
   generateAppFilterXml(ids = null) {
     const apps = Actions.resolveApps(ids);
     let xml = '';
+    const globalSeen = new Set();
     apps.forEach((app) => {
       const cmp = app.componentName;
       const tags = App.state.appTags.get(cmp);
@@ -1627,10 +1636,9 @@ const Actions = {
 
         if (matchedIcons.length > 0 || (app.components && app.components.length > 0)) {
           const finalDrawable = targetDrawable || matchedIcons[0]?.drawable || app.drawable;
-          const uniqueComps = new Set();
           matchedIcons.forEach(icon => {
-            if (!uniqueComps.has(icon.component)) {
-              uniqueComps.add(icon.component);
+            if (!globalSeen.has(icon.component)) {
+              globalSeen.add(icon.component);
               const name = icon.name.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
               const drawable = (tags.has('links') || !icon.drawable) ? finalDrawable : icon.drawable;
               xml += `    <item component="ComponentInfo{${icon.component}}" drawable="${drawable}" name="${name}" />\n`;
@@ -1638,8 +1646,8 @@ const Actions = {
           });
           if (app.components) {
             app.components.forEach(c => {
-              if (!uniqueComps.has(c)) {
-                uniqueComps.add(c);
+              if (!globalSeen.has(c)) {
+                globalSeen.add(c);
                 const lawnIcon = App.state.lawniconsIcons.find(i => i.component === c);
                 const rawName = lawnIcon?.name || app.label;
                 const name = rawName.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
@@ -1647,14 +1655,17 @@ const Actions = {
               }
             });
           }
-          if (!uniqueComps.has(app.componentName)) {
+          if (!globalSeen.has(app.componentName)) {
+            globalSeen.add(app.componentName);
             const name = app.label.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
             xml += `    <item component="ComponentInfo{${app.componentName}}" drawable="${finalDrawable}" name="${name}" />\n`;
           }
-        } else {
+        } else if (!globalSeen.has(app.componentName)) {
+          globalSeen.add(app.componentName);
           xml += `    ${Utils.generateXml(app)}\n`;
         }
-      } else {
+      } else if (!globalSeen.has(app.componentName)) {
+        globalSeen.add(app.componentName);
         xml += `    ${Utils.generateXml(app)}\n`;
       }
     });
@@ -2257,8 +2268,20 @@ const Data = {
       try {
           const data = await this.fetchJson(CONFIG.data.endpointLow, {});
           const apps = data.apps || [];
-          App.data = App.data.concat(apps);
-          apps.forEach(app => App.state.idMap.set(app.componentName, app));
+          const newApps = [];
+          apps.forEach((app) => {
+            const existing = App.state.idMap.get(app.componentName);
+            if (existing) {
+              const comps = existing.components;
+              Object.assign(existing, app);
+              if (comps) existing.components = comps;
+              existing.isLinkOnly = false;
+            } else {
+              App.state.idMap.set(app.componentName, app);
+              newApps.push(app);
+            }
+          });
+          App.data = App.data.concat(newApps);
           App.state.lowLoaded = true;
           
           this.resolveLinkedComponents();
@@ -2493,6 +2516,14 @@ const Data = {
         return Array.from(activeFilters).every((fid) => tags.has(fid));
       });
     }
+
+    // Deduplicate by componentName
+    const seenComps = new Set();
+    data = data.filter((app) => {
+      if (seenComps.has(app.componentName)) return false;
+      seenComps.add(app.componentName);
+      return true;
+    });
 
     // Text Search
     if (query.text) {
