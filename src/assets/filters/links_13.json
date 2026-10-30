@@ -1,0 +1,258 @@
+{
+  "label": "Links",
+  "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
+  "batch": 13,
+  "total_batches": 23,
+  "links": [
+    {
+      "id": "com.lge.vvm/com.lge.vvm.launcher.VVMLauncherActivity",
+      "existing_drawable": "generic_voicemail",
+      "name": "LG Voicemail"
+    },
+    {
+      "id": "org.proninyaroslav.libretorrent/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "libretorrent",
+      "name": "LibreTorrent"
+    },
+    {
+      "id": "com.adobe.lrmobile/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "lightroom",
+      "name": "Lightroom"
+    },
+    {
+      "id": "com.grice.call/com.grice.call.icon.Default",
+      "existing_drawable": "generic_dialer",
+      "name": "Liquid Dialer"
+    },
+    {
+      "id": "com.wallpaper.liveloop/com.wallpaper.liveloop.StartActivity",
+      "existing_drawable": "liveloop",
+      "name": "LiveLoop"
+    },
+    {
+      "id": "com.cvc953.localplayer/com.cvc953.localplayer.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Local Player"
+    },
+    {
+      "id": "com.dn0ne.lotus/com.dn0ne.player.MainActivity",
+      "existing_drawable": "lotus",
+      "name": "Lotus"
+    },
+    {
+      "id": "com.op.lspdoze/com.op.lspdoze.ui.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "LSPDoze"
+    },
+    {
+      "id": "org.lsposed.manager/org.lsposed.manager.ui.activity.ComposeActivity",
+      "existing_drawable": "lsposed",
+      "name": "LSPosed"
+    },
+    {
+      "id": "app.lunatask.android/app.lunatask.android.MainActivity",
+      "existing_drawable": "tasks",
+      "name": "Lunatask"
+    },
+    {
+      "id": "io.material.catalog/io.material.catalog.main.MainActivity",
+      "existing_drawable": "compose_material_catalog",
+      "name": "M3 Catalog"
+    },
+    {
+      "id": "com.j.m3play/com.j.m3play.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "M3Play"
+    },
+    {
+      "id": "com.arlosoft.macrodroid.clone/com.arlosoft.macrodroid.intro.IntroActivity",
+      "existing_drawable": "macrodroid",
+      "name": "MacroDroid"
+    },
+    {
+      "id": "com.arlosoft.macrodroid/com.arlosoft.macrodroid.intro.ToastActivity",
+      "existing_drawable": "macrodroid",
+      "name": "MacroDroid"
+    },
+    {
+      "id": "com.topjohnwu.magisk/x.COMPONENT_PLACEHOLDER_2",
+      "existing_drawable": "magisk",
+      "name": "Magisk"
+    },
+    {
+      "id": "mahjong.free.games/com.google.firebase.MessagingUnityPlayerActivity",
+      "existing_drawable": "generic_mahjong",
+      "name": "Mahjong"
+    },
+    {
+      "id": "com.nebula.mahjongtile/com.unity3d.player.UnityPlayerActivity.Default",
+      "existing_drawable": "generic_mahjong",
+      "name": "Mahjong Blast"
+    },
+    {
+      "id": "com.zoundindustries.marshallbt/com.zoundindustries.marshallbt.ui.activity.DeviceSettingsActivity",
+      "existing_drawable": "marshall_multi_room",
+      "name": "Marshall Bluetooth"
+    },
+    {
+      "id": "com.devmaru.audio/com.devmaru.audio.activity.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "MaruAudio"
+    },
+    {
+      "id": "com.numero.material_gallery/com.numero.material_gallery.MainActivity",
+      "existing_drawable": "compose_material_catalog",
+      "name": "Material Components Gallery"
+    },
+    {
+      "id": "material.expressive.kwgt/material.expressive.kwgt.MainActivity",
+      "existing_drawable": "m3_expressive_widgets",
+      "name": "Material Expressive Widget"
+    },
+    {
+      "id": "com.nemynew.materialsearch/com.nemynew.materialsearch.MainActivity",
+      "existing_drawable": "generic_search",
+      "name": "Material Search"
+    },
+    {
+      "id": "eu.eleader.mobilebanking.bre/pl.mbank.companymobile.SplashScreen",
+      "existing_drawable": "mbank",
+      "name": "mBank CompanyMobile"
+    },
+    {
+      "id": "com.mcdo.mcdonalds/com.gigigo.mcdonaldsbr.ui.activities.splash.SplashActivityDefault",
+      "existing_drawable": "mcdonalds",
+      "name": "McDonald's"
+    },
+    {
+      "id": "com.mcdonalds.app/com.mcdonalds.app.LauncherDefault",
+      "existing_drawable": "mcdonalds",
+      "name": "McDonald's"
+    },
+    {
+      "id": "il.co.inmanage.mcdonalds/il.co.inmanage.mcdonalds.activities.UnifiedMcActivity",
+      "existing_drawable": "mcdonalds",
+      "name": "McDonald's"
+    },
+    {
+      "id": "com.melmeligy.mediadownloader/com.melmeligy.mediadownloader.MainActivity",
+      "existing_drawable": "generic_download_shelf",
+      "name": "Media Downloader"
+    },
+    {
+      "id": "com.medium.reader/com.medium.android.donkey.launcher.LauncherActivity",
+      "existing_drawable": "medium",
+      "name": "Medium"
+    },
+    {
+      "id": "com.anticor.mellowdark/com.anticor.mellowdark.MainActivity",
+      "existing_drawable": "mellow_dark_icon_pack",
+      "name": "Mellow Dark Icons"
+    },
+    {
+      "id": "nz.co.menulog.m/com.justeat.splash.ui.SplashActivity",
+      "existing_drawable": "just_eat",
+      "name": "Menulog"
+    },
+    {
+      "id": "com.android.messaging/com.android.mms.ui.ConversationList",
+      "existing_drawable": "messages",
+      "name": "Messages"
+    },
+    {
+      "id": "foundation.e.message/com.moez.QKSMS.feature.main.MainActivity",
+      "existing_drawable": "messages",
+      "name": "Messages"
+    },
+    {
+      "id": "com.facebook.orca.morphe/com.facebook.orca.auth.StartScreenActivity",
+      "existing_drawable": "messenger",
+      "name": "Messenger"
+    },
+    {
+      "id": "com.appelis.mojemetrosk/com.appelis.mojemetrosk.ApplicationLoading",
+      "existing_drawable": "metro",
+      "name": "METRO"
+    },
+    {
+      "id": "io.github.muntashirakon.Music/code.name.monkey.retromusic.activities.MainActivity",
+      "existing_drawable": "retro_music",
+      "name": "Metro"
+    },
+    {
+      "id": "de.metro.alex.customer.digitalcard.metro/com.metronom.app.companion.ui.main.MainActivity",
+      "existing_drawable": "metro",
+      "name": "METRO Companion"
+    },
+    {
+      "id": "com.xiaomi.smarthome.tv.global4/com.xiaomi.smarthome.tv.ui.MainActivity",
+      "existing_drawable": "mi_home",
+      "name": "Mi Home"
+    },
+    {
+      "id": "com.xiaomi.smarthomv/com.xiaomi.smarthome.SmartHomeMainActivity",
+      "existing_drawable": "mi_home",
+      "name": "Mi Home"
+    },
+    {
+      "id": "com.speedymovil.wire/com.speedymovil.wire.MainActivity",
+      "existing_drawable": "mi_telcel",
+      "name": "Mi Telcel"
+    },
+    {
+      "id": "com.gold.android.gms/org.microg.gms.ui.SettingsActivity",
+      "existing_drawable": "microg_settings",
+      "name": "MicroG"
+    },
+    {
+      "id": "net.bitplane.android.microphone/net.bitplane.android.microphone.MicrophoneActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "Microphone"
+    },
+    {
+      "id": "com.microsoft.office.officehubrow/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "microsoft_365",
+      "name": "Microsoft 365 Copilot"
+    },
+    {
+      "id": "com.microsoft.bing/com.microsoft.sapphire.app.main.LauncherAlias",
+      "existing_drawable": "bing",
+      "name": "Microsoft Bing"
+    },
+    {
+      "id": "com.microsoft.copilot/com.microsoft.copilotn.MainActivityDefault",
+      "existing_drawable": "microsoft_copilot",
+      "name": "Microsoft Copilot"
+    },
+    {
+      "id": "com.microsoft.emmx.dev/com.google.android.apps.chrome.Main",
+      "existing_drawable": "microsoft_edge",
+      "name": "Microsoft Edge Dev"
+    },
+    {
+      "id": "com.microsoft.appmanager/com.microsoft.appmanager.oem.setting.OemSettingsActivity",
+      "existing_drawable": "microsoft_link",
+      "name": "Microsoft Link to Windows"
+    },
+    {
+      "id": "com.microsoft.stream/com.microsoft.stream.ui.activities.SplashActivity",
+      "existing_drawable": "microsoft_stream",
+      "name": "Microsoft Stream"
+    },
+    {
+      "id": "com.microsoft.teams/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "microsoft_teams",
+      "name": "Microsoft Teams"
+    },
+    {
+      "id": "com.microsoft.xcloud/com.microsoft.xcloud.MainActivity",
+      "existing_drawable": "xbox",
+      "name": "Microsoft XCloud"
+    },
+    {
+      "id": "com.hanver.wdsj/com.mojang.minecraftpe.MainActivity",
+      "existing_drawable": "minecraft",
+      "name": "Minecraft"
+    }
+  ]
+}

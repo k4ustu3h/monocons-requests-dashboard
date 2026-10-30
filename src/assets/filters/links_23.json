@@ -1,0 +1,183 @@
+{
+  "label": "Links",
+  "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
+  "batch": 23,
+  "total_batches": 23,
+  "links": [
+    {
+      "id": "com.kapp.youtube.finam/com.kapp.youtube.ui.MainActivity",
+      "existing_drawable": "ymusic",
+      "name": "YMusic Clone"
+    },
+    {
+      "id": "com.sbi.lotusintouch/com.sbi.yono.MainActivity",
+      "existing_drawable": "yono_sbi",
+      "name": "YONO SBI"
+    },
+    {
+      "id": "com.morphe.youtube/com.morphe.youtube.morphe_original_1",
+      "existing_drawable": "youtube",
+      "name": "YouTube"
+    },
+    {
+      "id": "com.google.android.youtube/app.morphe.android.youtube.morphe_black_1",
+      "existing_drawable": "youtube",
+      "name": "YouTube Morphe"
+    },
+    {
+      "id": "yt.morphe.noname.exe/yt.morphe.noname.exe.morphe_black_2",
+      "existing_drawable": "morphe",
+      "name": "YouTube Morphe"
+    },
+    {
+      "id": "anddea.yrf.tube.music/com.google.android.apps.youtube.music.activities.MusicActivity",
+      "existing_drawable": "generic_player",
+      "name": "YouTube Music"
+    },
+    {
+      "id": "com.google.android.apps.youtube.music/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "youtube_music",
+      "name": "YouTube Music"
+    },
+    {
+      "id": "com.morphe.youtube.music/com.morphe.youtube.music.morphe_original_1",
+      "existing_drawable": "generic_player",
+      "name": "YouTube Music"
+    },
+    {
+      "id": "ytm.morphe.noname.exe/ytm.morphe.noname.exe.morphe_original_1",
+      "existing_drawable": "generic_player",
+      "name": "YouTube Music"
+    },
+    {
+      "id": "com.minimalnumbersllc/com.minimalnumbersllc.revanced_scaled_3",
+      "existing_drawable": "youtube_revanced",
+      "name": "YouTube ReVanced"
+    },
+    {
+      "id": "app.rvx.android.youtube/com.google.android.youtube.app.honeycomb.Shell",
+      "existing_drawable": "youtube",
+      "name": "YouTube ReVanced Extended"
+    },
+    {
+      "id": "com.google.android.youtube.tvunplugged/com.google.android.apps.youtube.tvunplugged.activity.MainActivity",
+      "existing_drawable": "youtube_tv",
+      "name": "YouTube TV"
+    },
+    {
+      "id": "com.wssdlc/com.whatsapp.Main",
+      "existing_drawable": "whatsapp",
+      "name": "YoWhatsApp"
+    },
+    {
+      "id": "com.dewmobile.kuaiya.play/com.qshare.app.activity.FirstActivity",
+      "existing_drawable": "zapya",
+      "name": "Zapya"
+    },
+    {
+      "id": "net.zedge.android/net.zedge.android.MainOctoberFest",
+      "existing_drawable": "zedge",
+      "name": "Zedge"
+    },
+    {
+      "id": "pl.znanylekarz/pl.znanylekarz.MainActivity",
+      "existing_drawable": "doctoralia",
+      "name": "ZnanyLekarz"
+    },
+    {
+      "id": "com.zoho.assist/com.zoho.assist.ui.landing.view.LandingPageActivity",
+      "existing_drawable": "zoho_assist",
+      "name": "Zoho Assist"
+    },
+    {
+      "id": "com.zoho.notebook/com.zoho.notebook.activities.DefaultIconAlias",
+      "existing_drawable": "zoho_notebook",
+      "name": "Zoho Notebook"
+    },
+    {
+      "id": "com.zoho.zohoone/com.zoho.zohoone.applock.AppLockActivity",
+      "existing_drawable": "zoho_one",
+      "name": "Zoho One"
+    },
+    {
+      "id": "com.zoho.zohooneuser/com.zoho.zohooneuser.AppLockActivity",
+      "existing_drawable": "zoho_one",
+      "name": "Zoho One"
+    },
+    {
+      "id": "com.zoho.mail.task/com.zoho.mail.task.MainActivity",
+      "existing_drawable": "zoho_todo",
+      "name": "Zoho ToDo"
+    },
+    {
+      "id": "com.application.services.partner/com.application.services.partner.ui.activities.SplashActivity",
+      "existing_drawable": "zomato",
+      "name": "Zomato Restaurant Partner"
+    },
+    {
+      "id": "com.zozoplayer/com.zozoplayer.ui.activities.MainActivity",
+      "existing_drawable": "generic_player",
+      "name": "ZoZo Player"
+    },
+    {
+      "id": "com.zte.videoplayer/com.zte.videoplayer.stock.VideoStockBrowserActivity",
+      "existing_drawable": "jiocinema",
+      "name": "ZTE Video Player"
+    },
+    {
+      "id": "ru.megamarket.marketplace/ru.goods.marketplace.SingleActivity",
+      "existing_drawable": "megamarket",
+      "name": "\u041c\u0435\u0433\u0430\u043c\u0430\u0440\u043a\u0435\u0442 ~~ Megamarket"
+    },
+    {
+      "id": "com.pervayapomosh/com.pervayapomosh.MainActivity",
+      "existing_drawable": "generic_aid",
+      "name": "\u041f\u0435\u0440\u0432\u0430\u044f \u041f\u043e\u043c\u043e\u0449\u044c ~~ First Aid"
+    },
+    {
+      "id": "com.podsas.sasflix/com.podsas.sasflix.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "\u0421\u0410\u0421\u0424\u041b\u0418\u041a\u0421 ~~ SASFLIX"
+    },
+    {
+      "id": "com.tenbis.tbapp/com.tenbis.tbapp.features.home.HomeNavigationActivity",
+      "existing_drawable": "just_eat",
+      "name": "\u05ea\u05df \u05d1\u05d9\u05e1 ~~ 10bis"
+    },
+    {
+      "id": "com.samanpr.blu/com.samanpr.blu.BLUE",
+      "existing_drawable": "blu",
+      "name": "\u0628\u0644\u0648 ~~ blu"
+    },
+    {
+      "id": "com.landmarkgroup.maxstores/com.landmarkgroupreactapps.SplashActivity",
+      "existing_drawable": "max_fashion",
+      "name": "\u0645\u0627\u0643\u0633 \u0641\u0627\u0634\u0648\u0646 ~~ Max Fashion"
+    },
+    {
+      "id": "jp.dreambrain.adiorama/com.cognizantorderserv.kfcindiadroid.MainActivity",
+      "existing_drawable": "kfc",
+      "name": "\u30b1\u30f3\u30bf\u30c3\u30ad\u30fc\u30d5\u30e9\u30a4\u30c9\u30c1\u30ad\u30f3 ~~ KFC"
+    },
+    {
+      "id": "com.lemon.lv/com.vega.launcher.precondition.PreInstallConfirmActivity",
+      "existing_drawable": "capcut",
+      "name": "\u526a\u6620 ~~ CapCut"
+    },
+    {
+      "id": "com.pic.catcher/com.pic.catcher.ui.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "\u56fe\u7247\u6355\u624b ~~ Pic Catcher"
+    },
+    {
+      "id": "com.alwaysrotate/com.alwaysrotate.alwaysrotate",
+      "existing_drawable": "generic_rotation",
+      "name": "\u5c4f\u5e55\u65cb\u8f49 ~~ Screen Rotation"
+    },
+    {
+      "id": "cn.lyric.getter/cn.lyric.getter.launcher",
+      "existing_drawable": "generic_shell",
+      "name": "\u6b4c\u8bcd\u83b7\u53d6 ~~ Lyric Getter"
+    }
+  ]
+}

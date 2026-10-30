@@ -1,0 +1,258 @@
+{
+  "label": "Links",
+  "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
+  "batch": 20,
+  "total_batches": 23,
+  "links": [
+    {
+      "id": "com.peoplefun.wordsolitaire/com.unity3d.player.UnityPlayerActivity",
+      "existing_drawable": "generic_solitaire",
+      "name": "Solitaire"
+    },
+    {
+      "id": "com.solo.link.music.player.pro/com.jober.music.player.ui.activity.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "SoloPro"
+    },
+    {
+      "id": "com.luna.music/com.soundcloud.android.launcher.LauncherActivity",
+      "existing_drawable": "soundcloud",
+      "name": "SoundCloud"
+    },
+    {
+      "id": "com.soundcloud.android.revanced/com.soundcloud.android.launcher.LauncherActivity",
+      "existing_drawable": "soundcloud",
+      "name": "SoundCloud"
+    },
+    {
+      "id": "com.leetlab.scloudmate.mp3downloaderfor.soundcloud/com.leetlab.scloudmate.mp3downloaderfor.soundcloud.MainActivity",
+      "existing_drawable": "generic_download_shelf",
+      "name": "SoundLoadMate"
+    },
+    {
+      "id": "com.henrikherzig.playintegritychecker/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "spic",
+      "name": "SPIC"
+    },
+    {
+      "id": "it.deviato.spotifuck/it.deviato.spotifuck.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotifuck"
+    },
+    {
+      "id": "com.spotify.music.revanced/com.spotify.music.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify"
+    },
+    {
+      "id": "com.spotify.musix/com.spotify.musix.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify"
+    },
+    {
+      "id": "com.spotify.premium/com.spotify.musid.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify Premium"
+    },
+    {
+      "id": "com.spotify.music.web/it.deviato.spotifuck.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify Web"
+    },
+    {
+      "id": "com.spoti.plus/com.spotify.music.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify X"
+    },
+    {
+      "id": "com.spoti/com.spotify.music.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify X"
+    },
+    {
+      "id": "com.spotify.music.clone/com.spotify.music.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify X"
+    },
+    {
+      "id": "spoti.plus/com.spotify.music.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify X"
+    },
+    {
+      "id": "su.aprelteam.spotishka/com.spotify.musid.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotishka"
+    },
+    {
+      "id": "com.squareup/com.squareup.ui.main.MainActivity",
+      "existing_drawable": "square",
+      "name": "Square"
+    },
+    {
+      "id": "com.vitotechnology.StarWalk2Free/ru.rustore.unitysdk.RuStoreUnityActivity",
+      "existing_drawable": "star_walk_2",
+      "name": "Star Walk 2"
+    },
+    {
+      "id": "com.starbucks.bh/com.starbucks.emea.app.splash.SplashActivity",
+      "existing_drawable": "starbucks",
+      "name": "Starbucks"
+    },
+    {
+      "id": "com.starbucks.ch/com.starbucks.emea.app.splash.SplashActivity",
+      "existing_drawable": "starbucks",
+      "name": "Starbucks"
+    },
+    {
+      "id": "com.starbucks.fr/com.starbucks.emea.app.splash.SplashActivity",
+      "existing_drawable": "starbucks",
+      "name": "Starbucks"
+    },
+    {
+      "id": "com.starbucks.peru/com.starbucks.peru.MainActivity",
+      "existing_drawable": "starbucks",
+      "name": "Starbucks"
+    },
+    {
+      "id": "com.starbucks.singapore/com.starbucks.singapore.MainActivity",
+      "existing_drawable": "starbucks",
+      "name": "Starbucks"
+    },
+    {
+      "id": "com.starbucks.uk/com.starbucks.emea.app.splash.SplashActivity",
+      "existing_drawable": "starbucks",
+      "name": "Starbucks"
+    },
+    {
+      "id": "com.starbucksrewards.gt/com.starbucksrewards.gt.MainActivity",
+      "existing_drawable": "starbucks",
+      "name": "Starbucks Rewards"
+    },
+    {
+      "id": "com.starmakerinteractive.starmaker/com.ushowmedia.starmaker.activity.SplashActivity",
+      "existing_drawable": "starmaker",
+      "name": "StarMaker"
+    },
+    {
+      "id": "com.starmakerinteractive.thevoice/com.ushowmedia.starmaker.splash.SplashActivity",
+      "existing_drawable": "starmaker",
+      "name": "StarMaker Lite"
+    },
+    {
+      "id": "com.angkorworld.note/com.angkorworld.memo.activities.MainActivity",
+      "existing_drawable": "samsung_notes",
+      "name": "Sticky Notepad"
+    },
+    {
+      "id": "app.streamcompanion/app.streamcompanion.MainActivity",
+      "existing_drawable": "generic_player",
+      "name": "Stream Companion"
+    },
+    {
+      "id": "com.stremio.one/com.stremio.tv.MainActivity",
+      "existing_drawable": "stremio",
+      "name": "Stremio"
+    },
+    {
+      "id": "com.loyaltyplant.partner.subway/crc64eb65ea6159fb1028.RootActivity",
+      "existing_drawable": "subway",
+      "name": "Subway"
+    },
+    {
+      "id": "com.subway.mobile.emea.germany/com.subway.mobile.subwayapp03.ui.SplashActivity",
+      "existing_drawable": "subway",
+      "name": "Subway"
+    },
+    {
+      "id": "com.subway.mobile.emea.tuki/com.subway.mobile.subwayapp03.ui.SplashActivity",
+      "existing_drawable": "subway",
+      "name": "Subway"
+    },
+    {
+      "id": "com.subway.subway/com.subway.subway.SplashActivity",
+      "existing_drawable": "subway",
+      "name": "Subway"
+    },
+    {
+      "id": "com.subwaycard/com.subwaycard.v2.activities.DispatchActivity",
+      "existing_drawable": "subway",
+      "name": "Subway"
+    },
+    {
+      "id": "com.wahalla.subwaybr/com.wahalla.subwaybr.MainActivity",
+      "existing_drawable": "subway",
+      "name": "Subway"
+    },
+    {
+      "id": "nz.co.subcard.app/crc643f56eb19e392e7ef.MainActivity",
+      "existing_drawable": "subway",
+      "name": "Subway"
+    },
+    {
+      "id": "com.hrincescumihai.sudoku/com.hrincescumihai.sudoku.app.MainActivity",
+      "existing_drawable": "generic_sudoku",
+      "name": "Sudoku"
+    },
+    {
+      "id": "com.sumone/com.sumone.MainActivityDefault",
+      "existing_drawable": "sumone",
+      "name": "SumOne"
+    },
+    {
+      "id": "com.superb.launcher/com.superb.iconpack.presentation.activity.IconPackActivity",
+      "existing_drawable": "themed_icon_calendar_31",
+      "name": "Superb Launcher Icons"
+    },
+    {
+      "id": "org.swiftapps.swiftbackup/com.min.n.MainActivity",
+      "existing_drawable": "swift_backup",
+      "name": "Swift Backup"
+    },
+    {
+      "id": "org.akanework.symphonica/org.akanework.symphonica.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Symphonica"
+    },
+    {
+      "id": "com.sync.mobileapp/com.sync.mobileapp.activities.SplashActivity",
+      "existing_drawable": "sync",
+      "name": "Sync"
+    },
+    {
+      "id": "com.github.catfriend1.syncthingandroid.debug/com.nutomic.syncthingandroid.activities.FirstStartActivity",
+      "existing_drawable": "syncthing",
+      "name": "Syncthing Debug"
+    },
+    {
+      "id": "io.github.martchus.syncthingtray/io.github.martchus.syncthingtray.MainActivity",
+      "existing_drawable": "syncthing",
+      "name": "Syncthing Tray"
+    },
+    {
+      "id": "ch.lieferservice.android/com.takeaway.android.activity.Splash",
+      "existing_drawable": "just_eat",
+      "name": "Takeaway"
+    },
+    {
+      "id": "com.bgmenu.android/com.takeaway.android.activity.Splash",
+      "existing_drawable": "just_eat",
+      "name": "Takeaway"
+    },
+    {
+      "id": "lu.takeaway.android/com.takeaway.android.activity.Splash",
+      "existing_drawable": "just_eat",
+      "name": "Takeaway"
+    },
+    {
+      "id": "pt.takeaway.android/com.takeaway.android.activity.Splash",
+      "existing_drawable": "just_eat",
+      "name": "Takeaway"
+    },
+    {
+      "id": "ro.ascendnet.android.agregator/com.takeaway.android.activity.Splash",
+      "existing_drawable": "just_eat",
+      "name": "Takeaway"
+    }
+  ]
+}

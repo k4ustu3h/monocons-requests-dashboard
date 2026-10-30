@@ -1,0 +1,258 @@
+{
+  "label": "Links",
+  "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
+  "batch": 6,
+  "total_batches": 23,
+  "links": [
+    {
+      "id": "com.amazon.photos/com.amazon.photos.MainActivity",
+      "existing_drawable": "amazon_photos",
+      "name": "Amazon Photos"
+    },
+    {
+      "id": "com.google.android.projection.gearhead.phonescreen/com.google.android.projection.gearhead.phonescreen.ShortcutActivity",
+      "existing_drawable": "android_auto",
+      "name": "Android Auto"
+    },
+    {
+      "id": "com.google.android.projection.gearhead/com.google.android.projection.gearhead.companion.AndroidAutoActivity",
+      "existing_drawable": "android_auto",
+      "name": "Android Auto"
+    },
+    {
+      "id": "com.htetznaing.adbotg/com.htetznaing.adbotg.MainActivity",
+      "existing_drawable": "ladb",
+      "name": "Android Debug Bridge"
+    },
+    {
+      "id": "com.google.android.apps.work.clouddpc/com.google.android.apps.work.clouddpc.ui.MainActivity",
+      "existing_drawable": "device_policy",
+      "name": "Android Device Policy"
+    },
+    {
+      "id": "com.rovio.baba/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "angry_birds_2",
+      "name": "Angry Birds 2"
+    },
+    {
+      "id": "com.kamwithk.ankiconnectandroid/com.kamwithk.ankiconnectandroid.MainActivity",
+      "existing_drawable": "ladb",
+      "name": "Ankiconnect"
+    },
+    {
+      "id": "com.anydesk.anydeskandroid/com.anydesk.anydeskandroid.gui.activity.HubActivity",
+      "existing_drawable": "anydesk",
+      "name": "AnyDesk"
+    },
+    {
+      "id": "com.inwepo.apkinstaller/com.inwepo.apkinstaller.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "APK Installer"
+    },
+    {
+      "id": "foundation.e.apps/foundation.e.apps.ui.MainActivity",
+      "existing_drawable": "app_lounge",
+      "name": "App Lounge"
+    },
+    {
+      "id": "com.example.libusbAndroidTest/com.example.libusbAndroidTest.MainActivity",
+      "existing_drawable": "drivedroid",
+      "name": "Apple Dongle Volume Fixer"
+    },
+    {
+      "id": "com.tsng.applistdetector/com.tsng.applistdetector.ui.MainActivity",
+      "existing_drawable": "applist_detector",
+      "name": "Applist Detector"
+    },
+    {
+      "id": "com.ibragunduz.applockpro/com.ibragunduz.applockpro.NormalMode",
+      "existing_drawable": "applock_pro",
+      "name": "Applock Pro"
+    },
+    {
+      "id": "io.zenzy.applock/io.zenzy.applock.MusicLauncher",
+      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
+      "name": "AppLock VIP"
+    },
+    {
+      "id": "com.tomclaw.appsend_rb/com.tomclaw.appsend_rb.screen.apps.AppsActivity",
+      "existing_drawable": "appsend",
+      "name": "AppSend"
+    },
+    {
+      "id": "com.asus.filemanager/com.asus.filemanager.activity.FileManagerActivity",
+      "existing_drawable": "asus_file_manager",
+      "name": "ASUS File Manager"
+    },
+    {
+      "id": "com.huaqin.FM/com.huaqin.FM.FM",
+      "existing_drawable": "generic_fm_radio",
+      "name": "Asus FM Radio"
+    },
+    {
+      "id": "com.audible.application.kindle/com.audible.application.MainLauncher",
+      "existing_drawable": "audible",
+      "name": "Audible"
+    },
+    {
+      "id": "com.musicplayer.playermusic/com.musicplayer.playermusic.activities.AudifyStartActivity",
+      "existing_drawable": "just_player",
+      "name": "Audify Player"
+    },
+    {
+      "id": "audioeditor.musiceditor.soundeditor.songeditor/com.min.n.MainActivity",
+      "existing_drawable": "generic_audio_editor",
+      "name": "Audio Editor"
+    },
+    {
+      "id": "com.awystudio.awplayer/com.awystudio.awplayer.activities.AllowAccessActivity",
+      "existing_drawable": "just_player",
+      "name": "AW Player"
+    },
+    {
+      "id": "com.WEKA.MATRIX/com.exteragram.messenger.DefaultIcon",
+      "existing_drawable": "ayugram",
+      "name": "AyuGram"
+    },
+    {
+      "id": "org.azahar_emu.azahar/org.citra.citra_emu.ui.main.MainActivity",
+      "existing_drawable": "azahar_emulator",
+      "name": "Azahar Emulator"
+    },
+    {
+      "id": "com.bajaj.salesapp/com.bajaj.salesapp.ui.activity.splash.SplashActivity",
+      "existing_drawable": "bajaj_finserv",
+      "name": "Bajaj Sales One"
+    },
+    {
+      "id": "br.com.bancopan.cartoes/com.btg.pactual.banking.SplashScreenActivity",
+      "existing_drawable": "banco_pan",
+      "name": "Banco PAN"
+    },
+    {
+      "id": "com.infonow.bofa/com.bofa.ecom.marvel.application.Black",
+      "existing_drawable": "bofa",
+      "name": "Bank of America"
+    },
+    {
+      "id": "com.barclaycardus/com.barclaycardus.login.SplashActivity",
+      "existing_drawable": "barclays_bank",
+      "name": "Barclays Bank"
+    },
+    {
+      "id": "com.paget96.batterygurv/com.paget96.batterygurv.activities.SplashScreen",
+      "existing_drawable": "battery_guru",
+      "name": "Battery Guru"
+    },
+    {
+      "id": "co.com.bbva.mb/com.bbva.glomohybrid.splash.presentation.view.SplashActivity",
+      "existing_drawable": "bbva",
+      "name": "BBVA"
+    },
+    {
+      "id": "com.bbva.glomo.uy/com.bbva.glomohybrid.splash.presentation.view.SplashActivity",
+      "existing_drawable": "bbva",
+      "name": "BBVA"
+    },
+    {
+      "id": "com.bbva.italy/com.bbva.woody.app.modules.initial.splash.view.SplashActivity",
+      "existing_drawable": "bbva",
+      "name": "BBVA"
+    },
+    {
+      "id": "com.bbva.nxt_argentina/com.bbva.glomohybrid.splash.presentation.view.SplashActivity",
+      "existing_drawable": "bbva",
+      "name": "BBVA"
+    },
+    {
+      "id": "com.bbva.nxt_peru/com.bbva.woody.app.modules.initial.splash.view.SplashActivity",
+      "existing_drawable": "bbva",
+      "name": "BBVA"
+    },
+    {
+      "id": "pe.bbvacontinental.mimundo/pe.bbvacontinental.mimundo.MainActivity",
+      "existing_drawable": "bbva",
+      "name": "BBVA Beneficios"
+    },
+    {
+      "id": "com.totaltexto.bancamovil/com.bbva.buzz.modules.startup.StartActivity",
+      "existing_drawable": "bbva",
+      "name": "BBVA Provinet"
+    },
+    {
+      "id": "com.quickplay.android.bellmediaplayer/ca.bell.fiberemote.boot.BootstrapActivity",
+      "existing_drawable": "just_player",
+      "name": "Bell Fibe TV"
+    },
+    {
+      "id": "com.bereal.ft/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "bereal",
+      "name": "BeReal."
+    },
+    {
+      "id": "br.com.bernoulli.bplay/com.unity3d.player.UnityPlayerActivity",
+      "existing_drawable": "generic_player",
+      "name": "Bernoulli Play"
+    },
+    {
+      "id": "org.telegram.BifToGram/org.telegram.messenger.PremiumIcon",
+      "existing_drawable": "bgram",
+      "name": "BGram"
+    },
+    {
+      "id": "in.org.npci.upiapp/zrgvwqive.Z",
+      "existing_drawable": "bhim",
+      "name": "BHIM"
+    },
+    {
+      "id": "com.kanna.bible/com.kanna.bible.activities.StartActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Bible"
+    },
+    {
+      "id": "com.bible.holy.bible.for.women/com.offline.bible.IconDefault",
+      "existing_drawable": "generic_bible",
+      "name": "Bible for Women"
+    },
+    {
+      "id": "com.azwstudios.theholybible.kjv/com.azwstudios.theholybible.MainActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Bible KJV"
+    },
+    {
+      "id": "com.gyc.ace.kjv/com.gyc.ace.kjv.ActivityWelcome",
+      "existing_drawable": "generic_bible",
+      "name": "Bible KJV"
+    },
+    {
+      "id": "com.hmobile.biblekjv/com.hmobile.biblekjv.MainActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Bible KJV"
+    },
+    {
+      "id": "com.azwstudios.theholybible.frls/com.azwstudios.theholybible.MainActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Bible Louis Segond"
+    },
+    {
+      "id": "at.billa.service/digital.riag.appsolution.MainActivity",
+      "existing_drawable": "billa",
+      "name": "BILLA"
+    },
+    {
+      "id": "com.binance.us/com.binance.dev.SplashActivity",
+      "existing_drawable": "binance",
+      "name": "Binance"
+    },
+    {
+      "id": "com.cloud.tr/binance.app.main.module.StartActivity",
+      "existing_drawable": "binance",
+      "name": "Binance"
+    },
+    {
+      "id": "com.candywriter.bitlife/com.releasedata.ReleaseDataActivity.SplashActivityKing",
+      "existing_drawable": "bitlife",
+      "name": "BitLife"
+    }
+  ]
+}

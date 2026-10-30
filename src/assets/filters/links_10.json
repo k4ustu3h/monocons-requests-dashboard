@@ -1,0 +1,258 @@
+{
+  "label": "Links",
+  "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
+  "batch": 10,
+  "total_batches": 23,
+  "links": [
+    {
+      "id": "com.exness.android.go/com.exness.features.entry.impl.presentation.EntryActivity",
+      "existing_drawable": "exness",
+      "name": "Exness Go"
+    },
+    {
+      "id": "com.smartpesa.pog.mp/com.smartpesa.pog.activity.LauncherSplash",
+      "existing_drawable": "mercado_pago",
+      "name": "Extens\u00e3o Point Tap"
+    },
+    {
+      "id": "com.exteraless.app/org.telegram.messenger.TelegramIcon",
+      "existing_drawable": "telegram",
+      "name": "exteraless"
+    },
+    {
+      "id": "com.facebook.lite/com.aincrad.application.MainActivity",
+      "existing_drawable": "facebook",
+      "name": "Facebook Lite"
+    },
+    {
+      "id": "com.fairphone.android.fairbudsapp/com.fairphone.fairsound.ui.activity.MainActivity",
+      "existing_drawable": "generic_voice_recorder_waves",
+      "name": "Fairbuds"
+    },
+    {
+      "id": "com.blogspot.novalabsandroid.fakecallerid/com.blogspot.novalabsandroid.fakecallerid.ConfigCallActivity",
+      "existing_drawable": "generic_dialer",
+      "name": "Fake Call"
+    },
+    {
+      "id": "com.dox.fpoweroff/com.dox.fpoweroff.activity.MainActivity",
+      "existing_drawable": "generic_power",
+      "name": "Fake Power Off"
+    },
+    {
+      "id": "com.miraclegames.farlight84/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "farlight_84",
+      "name": "Farlight 84"
+    },
+    {
+      "id": "com.file.manager.file.organizer.file.explorer.manage.files/com.file.manager.file.organizer.file.explorer.manage.files.ui.activity.splash.SplashActivity",
+      "existing_drawable": "generic_files",
+      "name": "File Manager"
+    },
+    {
+      "id": "net.east_hino.standard_explorer/net.east_hino.standard_explorer.ui.ActivityMain",
+      "existing_drawable": "generic_files",
+      "name": "File Manager Shortcut"
+    },
+    {
+      "id": "de.dwins.financeguru/de.dwins.financeguru.MainActivity",
+      "existing_drawable": "finanzguru",
+      "name": "Finanzguru"
+    },
+    {
+      "id": "nl.moeilijkedingen.jellyfinaudioplayer/nl.moeilijkedingen.jellyfinaudioplayer.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Fintunes"
+    },
+    {
+      "id": "org.mozilla.firefox/org.mozilla.firefox.AppMinimal",
+      "existing_drawable": "firefox",
+      "name": "Firefox"
+    },
+    {
+      "id": "com.samruston.twitter/com.samruston.twitter.Launcher8",
+      "existing_drawable": "flamingo",
+      "name": "Flamingo"
+    },
+    {
+      "id": "appinventor.ai_logiscool869.FlappyCopter/appinventor.ai_logiscool869.FlappyCopter.Screen1",
+      "existing_drawable": "flappy_bird",
+      "name": "Flappy Copter"
+    },
+    {
+      "id": "com.flashfoodapp.android/com.flashfoodapp.android.MainActivity",
+      "existing_drawable": "flashfood",
+      "name": "Flashfood"
+    },
+    {
+      "id": "flashgram.org.web/org.telegram.messenger.DefaultIcon",
+      "existing_drawable": "telegram",
+      "name": "Flashgram"
+    },
+    {
+      "id": "eu.livesport.FlashScore_com/eu.livesport.LiveSport_cz.SplashScreenActivity",
+      "existing_drawable": "flashscore",
+      "name": "Flashscore"
+    },
+    {
+      "id": "com.flickr.android/com.flickr.android.MainActivity",
+      "existing_drawable": "flickr",
+      "name": "Flickr"
+    },
+    {
+      "id": "com.flipkart.android/com.flipkart.android.SASALELEIconAlias",
+      "existing_drawable": "flipkart",
+      "name": "Flipkart"
+    },
+    {
+      "id": "de.flixbus.app/de.meinfernbus.Main",
+      "existing_drawable": "flixbus",
+      "name": "FlixBus"
+    },
+    {
+      "id": "de.bendix.flux/de.bendix.flux.MainActivity",
+      "existing_drawable": "flux",
+      "name": "Flux"
+    },
+    {
+      "id": "com.eurekateam.fmradio/com.eurekateam.fmradio.MainActivity",
+      "existing_drawable": "generic_fm_radio",
+      "name": "FM Radio"
+    },
+    {
+      "id": "com.liveradio.fmradio.radiotuner.radiostation.amradio/com.liveradio.fmradio.radiotuner.radiostation.amradio.ui.activities.SplashActivity",
+      "existing_drawable": "generic_fm_radio",
+      "name": "FM Radio"
+    },
+    {
+      "id": "me.jajae.fmradio/me.jajae.fmradio.MainActivity",
+      "existing_drawable": "generic_fm_radio",
+      "name": "FM Radio"
+    },
+    {
+      "id": "com.ngc.fora/com.ngc.fora.ForaDictionary",
+      "existing_drawable": "generic_search",
+      "name": "Fora Dictionary"
+    },
+    {
+      "id": "com.freemusic.offline.bus/com.project.gugu.music.ui.activity.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Free Music"
+    },
+    {
+      "id": "com.yy.musicfm.global/com.project.gugu.music.ui.activity.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Free Music"
+    },
+    {
+      "id": "com.miui.gallery/com.miui.gallery.MainActivity",
+      "existing_drawable": "generic_gallery",
+      "name": "Gallery"
+    },
+    {
+      "id": "com.tobykurien.google_news/com.tobykurien.google_news.GoogleNewsActivity",
+      "existing_drawable": "generic_earth",
+      "name": "GApps Browser"
+    },
+    {
+      "id": "com.gbinsta.android/com.gbinsta.android.activity.MainTabActivity0",
+      "existing_drawable": "instagram",
+      "name": "GBInstagram"
+    },
+    {
+      "id": "com.google.android.inputmethod.latin/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "gboard",
+      "name": "Gboard"
+    },
+    {
+      "id": "dev.jason.com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.launcher.LauncherActivity",
+      "existing_drawable": "gboard",
+      "name": "Gboard"
+    },
+    {
+      "id": "com.gbwhatsapp/com.gbwhatsapp.Icon0",
+      "existing_drawable": "whatsapp",
+      "name": "GBWhatsApp"
+    },
+    {
+      "id": "com.appgcam.gcamera/com.appgcam.gcamera.ui.SplashActivity",
+      "existing_drawable": "generic_camera",
+      "name": "GCam"
+    },
+    {
+      "id": "com.globe.gcash.android/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "gcash",
+      "name": "GCash"
+    },
+    {
+      "id": "free.programming.programming/free.programming.programming.SaleIcon",
+      "existing_drawable": "geeksforgeeks",
+      "name": "GeeksforGeeks"
+    },
+    {
+      "id": "com.thegrizzlylabs.geniusscan/com.thegrizzlylabs.geniusscan.ui.welcome.WelcomeActivity",
+      "existing_drawable": "genius_scan",
+      "name": "Genius Scan"
+    },
+    {
+      "id": "org.geogebra.android/org.geogebra.android.android.activity.SplashScreenActivity",
+      "existing_drawable": "graphing_calc",
+      "name": "GeoGebra Graphing Calculator"
+    },
+    {
+      "id": "com.robtopx.geometryjump/com.mod.activity.SplashActivity",
+      "existing_drawable": "geometry_dash",
+      "name": "Geometry Dash"
+    },
+    {
+      "id": "com.ghosten.player/com.ghosten.player.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "Ghosten Player"
+    },
+    {
+      "id": "io.mo.glassmic/io.mo.glassmic.MainActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "GlassMic"
+    },
+    {
+      "id": "nl.viter.glider/nl.viter.glider.MainActivity",
+      "existing_drawable": "glider",
+      "name": "Glider"
+    },
+    {
+      "id": "ph.gomo.gomoph/ph.gomo.gomoph.MainActivity",
+      "existing_drawable": "gomo_ph",
+      "name": "GOMO PH"
+    },
+    {
+      "id": "com.android.quicksearchbox/com.android.quicksearchbox.SearchActivity",
+      "existing_drawable": "google",
+      "name": "Google"
+    },
+    {
+      "id": "com.google.android.apps.searchlite/com.google.android.googlequicksearchbox.SearchActivity",
+      "existing_drawable": "google",
+      "name": "Google"
+    },
+    {
+      "id": "com.google.android.apps.googleassistant/com.google.android.apps.googleassistant.AssistantActivityV2",
+      "existing_drawable": "google_assistant",
+      "name": "Google Assistant"
+    },
+    {
+      "id": "com.google.android.apps.dynamite/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "google_chat",
+      "name": "Google Chat"
+    },
+    {
+      "id": "com.google.android.talk/com.google.android.talk.SigningInActivity",
+      "existing_drawable": "google_chat",
+      "name": "Google Chat"
+    },
+    {
+      "id": "com.google.android.contacts/com.google.android.youtube.app.honeycomb.Shell",
+      "existing_drawable": "google_contacts",
+      "name": "Google Contacts"
+    }
+  ]
+}

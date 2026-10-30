@@ -1,0 +1,258 @@
+{
+  "label": "Links",
+  "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
+  "batch": 16,
+  "total_batches": 23,
+  "links": [
+    {
+      "id": "com.applus.notepad.note/com.applus.notepad.Splash",
+      "existing_drawable": "samsung_notes",
+      "name": "Notes"
+    },
+    {
+      "id": "com.rkkvishva.nothing_dialer/com.rkkvishva.nothing_dialer.LauncherAliasRed",
+      "existing_drawable": "generic_dialer",
+      "name": "Nothing Dialer"
+    },
+    {
+      "id": "nl.nshispeed/nl.nsinternational.mobile.android.startup.StartupActivity",
+      "existing_drawable": "ns",
+      "name": "NS International"
+    },
+    {
+      "id": "cn.nubia.myfile/zte.com.cn.filer.FileMgrActivity",
+      "existing_drawable": "generic_files",
+      "name": "Nubia File Manager"
+    },
+    {
+      "id": "tz.co.wadau.nyimbozakristo/tz.co.wadau.nyimbozakristo.SplashScreenActivity",
+      "existing_drawable": "apple_music",
+      "name": "Nyimbo za Kristo"
+    },
+    {
+      "id": "com.fsn.nds/com.fsn.nds.festiveIcon",
+      "existing_drawable": "nykaa_fashion",
+      "name": "Nykaa Fashion"
+    },
+    {
+      "id": "com.coloros.relax/com.coloros.relax.function.MainActivity",
+      "existing_drawable": "o_relax",
+      "name": "O Relax"
+    },
+    {
+      "id": "com.oneplus.relax/com.coloros.relax.ui.MainActivity",
+      "existing_drawable": "o_relax",
+      "name": "O Relax"
+    },
+    {
+      "id": "ua.slandq/pl.tablica2.app.startup.activity.StartupActivity",
+      "existing_drawable": "olx",
+      "name": "OLX"
+    },
+    {
+      "id": "one.next.player/one.next.player.MainActivity",
+      "existing_drawable": "generic_player",
+      "name": "One Player"
+    },
+    {
+      "id": "one.only.player/one.only.player.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "Only Player"
+    },
+    {
+      "id": "com.yuriy.openradio/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
+      "existing_drawable": "open_radio",
+      "name": "Open Radio"
+    },
+    {
+      "id": "us.openbank.digital/com.gruposantander.modelbank.android.feature.security.subfeatures.prelogin.presentation.PreLoginActivity",
+      "existing_drawable": "openbank",
+      "name": "Openbank"
+    },
+    {
+      "id": "com.thirtydegreesray.openhub/com.thirtydegreesray.openhub.ui.activity.SplashActivity",
+      "existing_drawable": "github",
+      "name": "OpenHub"
+    },
+    {
+      "id": "de.dennisguse.opentracks.playstore/de.dennisguse.opentracks.introduction.IntroductionActivity",
+      "existing_drawable": "opentracks",
+      "name": "OpenTracks"
+    },
+    {
+      "id": "com.opera.mini.native.beta/com.opera.android.Default",
+      "existing_drawable": "opera_browser",
+      "name": "Opera Mini Beta"
+    },
+    {
+      "id": "com.orange.rn.dop/com.orange.rn.dop.MainActivity",
+      "existing_drawable": "orange_flex",
+      "name": "Orange Flex"
+    },
+    {
+      "id": "app.organicmaps.web/app.organicmaps.DownloadResourcesActivity",
+      "existing_drawable": "organic_maps",
+      "name": "Organic Maps"
+    },
+    {
+      "id": "com.bskit.osint/com.bskit.osint.MainActivity",
+      "existing_drawable": "generic_search",
+      "name": "OSINT"
+    },
+    {
+      "id": "ru.otpbank.mobile/ru.otpbank.mobile.presentation.activity.AppActivity",
+      "existing_drawable": "otp_bank",
+      "name": "OTP Bank"
+    },
+    {
+      "id": "org.otrsc.android/org.otrsc.android.MainActivity",
+      "existing_drawable": "zcalc",
+      "name": "OTR Speed Calculator"
+    },
+    {
+      "id": "com.bintianqi.owndroid/com.bintianqi.owndroid.AliasActivity",
+      "existing_drawable": "netguard",
+      "name": "OwnDroid"
+    },
+    {
+      "id": "ru.ozon.app.android/ru.ozon.app.android.ui.start.AppHostActivity",
+      "existing_drawable": "ozon",
+      "name": "OZON"
+    },
+    {
+      "id": "br.com.uol.ps.myaccount/br.com.uol.ps.myaccount.main.MainActivity",
+      "existing_drawable": "pagbank",
+      "name": "PagBank"
+    },
+    {
+      "id": "com.bonc.paintmyroom/com.bonc.paint_my_room.MainActivity",
+      "existing_drawable": "substratum_lite",
+      "name": "Paint my Room"
+    },
+    {
+      "id": "ca.chancehorizon.paseo/ca.chancehorizon.paseo.SplashActivity",
+      "existing_drawable": "paseo",
+      "name": "Paseo"
+    },
+    {
+      "id": "app.passwordstore/app.passwordstore.ui.main.LaunchActivity",
+      "existing_drawable": "password_store",
+      "name": "Password Store"
+    },
+    {
+      "id": "com.emanuelef.remote_capture/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "pcapdroid",
+      "name": "PCAPdroid"
+    },
+    {
+      "id": "com.pcapdroid.mitm/com.pcapdroid.mitm.MainActivity",
+      "existing_drawable": "pcapdroid",
+      "name": "PCAPdroid"
+    },
+    {
+      "id": "com.xsdev.pdfreader.pdfeditor.pdf.document/com.rpdev.docreadermainV2.SplashActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "PDF Editor"
+    },
+    {
+      "id": "SVS.pdfinspector/SVS.pdfinspector.MainActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "PDF Inspector"
+    },
+    {
+      "id": "com.document.pdf.scanner.free.all/com.document.pdf.scanner.ui.ReaderSplashActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "PDF Reader"
+    },
+    {
+      "id": "com.gamma.pdfreader/com.gammaplay.multidocreader.MainActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "PDF Reader"
+    },
+    {
+      "id": "com.ikame.pdf.pdfreader.pdfviewer.editor/com.ikame.pdf.reader.presentation.main.MainActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "PDF Reader"
+    },
+    {
+      "id": "com.pdfreader.editor.viewer.pdfviewer/com.pdfreader.editor.presentation.splash.SplashActivity",
+      "existing_drawable": "generic_pdf_square",
+      "name": "PDF Reader"
+    },
+    {
+      "id": "com.pdfreaderapp.alldocumentreader.pdfviewer/com.adjut.sdkwallpaperx.SplashActivity",
+      "existing_drawable": "generic_pdf_square",
+      "name": "PDF Reader"
+    },
+    {
+      "id": "com.trustedapp.pdfreaderpdfviewer/com.trustedapp.pdfreader.view.fosplash.FOSplashActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "PDF Reader"
+    },
+    {
+      "id": "pdf.pdfreader.pdfviewer.pdfeditor/com.office.pdfreader.ui.splash.SplashActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "PDF Reader"
+    },
+    {
+      "id": "pdfreader.pdfviewer.officetool.pdfscanner/pdfreader.pdfviewer.officetool.pdfscanner.views.activities.splash.SplashLatestActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "PDF Reader"
+    },
+    {
+      "id": "pl.pekao.pekaosa.peopaykids/com.pekao.peokids.presentation.main.view.MainActivity",
+      "existing_drawable": "peopay",
+      "name": "PeoPay KIDS"
+    },
+    {
+      "id": "august.mendeleev.pro/august.mendeleev.pro.ui.main.MainActivity",
+      "existing_drawable": "periodic_table",
+      "name": "Periodic Table"
+    },
+    {
+      "id": "com.google.android.apps.safetyhub/com.google.android.apps.safetyhub.home.HomePageAppInfoEntry",
+      "existing_drawable": "personal_safety",
+      "name": "Personal Safety"
+    },
+    {
+      "id": "com.itau.pers/br.com.itau.pf.modules.features.appUse.appStart.splash.view.SplashActivity",
+      "existing_drawable": "itau",
+      "name": "Personnalit\u00e9"
+    },
+    {
+      "id": "com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity",
+      "existing_drawable": "google_phone",
+      "name": "Phone"
+    },
+    {
+      "id": "com.instabridge.android/com.instabridge.android.callerid.DialerActivityCompose",
+      "existing_drawable": "generic_dialer",
+      "name": "Phone"
+    },
+    {
+      "id": "com.map.photostamp/com.pravin.photostamp.activities.SplashActivity",
+      "existing_drawable": "generic_camera",
+      "name": "PhotoStamp Camera"
+    },
+    {
+      "id": "brobata.physiboard/brobata.physiboard.MainActivity",
+      "existing_drawable": "termux",
+      "name": "PhysiBoard"
+    },
+    {
+      "id": "xyz.penpencil.physicswala/com.penpencil.physicswallah.SplashActivityAliasIndependenceDay",
+      "existing_drawable": "physics_wallah_pw",
+      "name": "Physics Wallah (PW)"
+    },
+    {
+      "id": "com.markduenas.android.apigen/com.markduenas.android.apigen.MainActivity",
+      "existing_drawable": "generic_pi",
+      "name": "Pi Generator"
+    },
+    {
+      "id": "com.picsart.studio.light/com.socialin.android.photo.picsinphoto.MainPagerActivity",
+      "existing_drawable": "picsart",
+      "name": "Picsart"
+    }
+  ]
+}

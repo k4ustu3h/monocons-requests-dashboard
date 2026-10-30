@@ -198,6 +198,9 @@ declare global {
     activePage?: string;
     quickPickMode?: string;
     lowQualityData?: ReviewIssues[];
+    linksBatchIndex?: number;
+    linksTotalBatches?: number;
+    linksLoading?: boolean;
     _quickPickEasy?: (AppEntry & { _score: number })[];
     _quickPickMiddle?: (AppEntry & { _score: number })[];
     _lastQuickPickIdx?: number;

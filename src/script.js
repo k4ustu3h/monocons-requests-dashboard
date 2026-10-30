@@ -312,6 +312,9 @@ const App = {
     existingIcons: [],
     lowLoaded: false,
     lowLoading: false,
+    linksBatchIndex: 0,
+    linksTotalBatches: 0,
+    linksLoading: false,
 
     actionMode: 'new',
     lowQualityActive: false,
@@ -2189,12 +2192,18 @@ const Data = {
     if (App.state.contributionActive) UI.renderContributionMode();
   },
 
-  resolveLinkedComponents() {
+  /**
+   * @param {AppEntry[] | null} [targetApps]
+   */
+  resolveLinkedComponents(targetApps = null) {
     const lawniconsIcons = App.state.lawniconsIcons || [];
     const existingIcons = App.state.existingIcons || [];
     if (lawniconsIcons.length === 0 && existingIcons.length === 0) return;
 
-    App.data.forEach((app) => {
+    const apps = targetApps || App.data;
+    const existingComps = new Set(existingIcons.map((e) => e.component));
+
+    apps.forEach((app) => {
       const cmp = app.componentName;
       const tags = App.state.appTags.get(cmp);
       if (!tags || (!tags.has('links') && !tags.has('in_lawnicons'))) return;
@@ -2275,12 +2284,110 @@ const Data = {
         unlabeled: [],
       };
     }
+    if (id === 'links') {
+      const [reqData, l1Data] = await Promise.all([
+        this.fetchFilterData('links_requested'),
+        this.fetchFilterData('links_1'),
+      ]);
+      const reqItems = reqData?.links || reqData?.links_requested || [];
+      const l1Items = l1Data?.links || l1Data?.links_1 || [];
+      App.state.linksBatchIndex = 1;
+      App.state.linksTotalBatches = l1Data?.total_batches || 1;
+      return {
+        label: l1Data?.label || reqData?.label || 'Links',
+        description: l1Data?.description || reqData?.description || 'Apps supported in Monocons but with additional components linked in Lawnicons.',
+        links: [...reqItems, ...l1Items],
+      };
+    }
     try {
       const res = await fetch(`${CONFIG.data.filterPath}${id}.json`);
       if (!res.ok) return null;
       return await res.json();
     } catch {
       return null;
+    }
+  },
+
+  hasMoreLinks() {
+    return App.state.linksBatchIndex < App.state.linksTotalBatches;
+  },
+
+  async loadNextLinksBatch() {
+    if (App.state.linksLoading || !this.hasMoreLinks()) return false;
+    App.state.linksLoading = true;
+
+    const nextIndex = App.state.linksBatchIndex + 1;
+    try {
+      const data = await this.fetchFilterData(`links_${nextIndex}`);
+      if (!data) {
+        App.state.linksLoading = false;
+        return false;
+      }
+
+      const items = data.links || data[`links_${nextIndex}`] || [];
+      if (!Array.isArray(items) || items.length === 0) {
+        App.state.linksBatchIndex = App.state.linksTotalBatches;
+        App.state.linksLoading = false;
+        return false;
+      }
+
+      const newApps = [];
+      items.forEach((item) => {
+        const appId = typeof item === 'string' ? item : item.id;
+        this.addTag(appId, 'links');
+        if (typeof item === 'object' && item.existing_drawable) {
+          if (!App.state.existingSvgs) App.state.existingSvgs = new Map();
+          App.state.existingSvgs.set(appId, item.existing_drawable);
+        }
+        const comps = (typeof item === 'object' && Array.isArray(item.components)) ? item.components : [appId];
+        if (!App.state.idMap.has(appId)) {
+          const label = (typeof item === 'object' && item.name) || appId.split('/')[0];
+          const drawable = (typeof item === 'object' && item.existing_drawable) || 'unknown';
+          /** @type {AppEntry} */
+          const syntheticApp = {
+            componentName: appId,
+            drawable: drawable,
+            label: label,
+            requestCount: 0,
+            firstAppearance: 0,
+            lastRequested: 0,
+            installs: '—',
+            isLinkOnly: true,
+            components: comps,
+          };
+          App.state.idMap.set(appId, syntheticApp);
+          App.data.push(syntheticApp);
+          newApps.push(syntheticApp);
+        } else {
+          const existingApp = App.state.idMap.get(appId);
+          if (existingApp && (!existingApp.components || existingApp.components.length === 1)) {
+            existingApp.components = comps;
+          }
+          if (existingApp) newApps.push(existingApp);
+        }
+        comps.forEach((c) => {
+          this.addTag(c, 'links');
+          if (typeof item === 'object' && item.existing_drawable) {
+            if (!App.state.existingSvgs) App.state.existingSvgs = new Map();
+            App.state.existingSvgs.set(c, item.existing_drawable);
+          }
+          if (!App.state.idMap.has(c)) {
+            App.state.idMap.set(c, App.state.idMap.get(appId));
+          }
+        });
+      });
+
+      this.resolveLinkedComponents(newApps);
+      App.state.linksBatchIndex = nextIndex;
+      if (data.total_batches) {
+        App.state.linksTotalBatches = data.total_batches;
+      }
+      return true;
+    } catch (e) {
+      console.error(`Failed to load links batch ${nextIndex}:`, e);
+      return false;
+    } finally {
+      App.state.linksLoading = false;
     }
   },
 
@@ -3590,10 +3697,42 @@ const UI = {
                 return;
             }
             const more = this.loadMore();
-            App.dom.sentinel.style.opacity = more ? '1' : '0';
+            App.dom.sentinel.style.opacity = (more || Data.hasMoreLinks()) ? '1' : '0';
+
+            if (Data.hasMoreLinks() && !App.state.linksLoading) {
+                const loaded = await Data.loadNextLinksBatch();
+                if (loaded) {
+                    if (App.state.activeFilters.has('links') || App.state.search) {
+                        Data.process();
+                        const moreAfter = this.loadMore();
+                        App.dom.sentinel.style.opacity = (moreAfter || Data.hasMoreLinks()) ? '1' : '0';
+                    }
+                    this.checkSentinel();
+                }
+            }
         }
     }, { rootMargin: '400px' });
     this.observer.observe(App.dom.sentinel);
+  },
+
+  async checkSentinel() {
+    if (!App.dom.sentinel) return;
+    const rect = App.dom.sentinel.getBoundingClientRect();
+    if (rect.top <= window.innerHeight + 400) {
+      if (Data.hasMoreLinks() && !App.state.linksLoading) {
+        const loaded = await Data.loadNextLinksBatch();
+        if (loaded) {
+          if (App.state.activeFilters.has('links') || App.state.search) {
+            Data.process();
+            const moreAfter = this.loadMore();
+            App.dom.sentinel.style.opacity = (moreAfter || Data.hasMoreLinks()) ? '1' : '0';
+          }
+          if (Data.hasMoreLinks()) {
+            setTimeout(() => this.checkSentinel(), 60);
+          }
+        }
+      }
+    }
   },
 
   async render() {
@@ -3722,6 +3861,10 @@ const UI = {
     App.dom.sentinel.style.display = '';
     App.dom.screenSortBtn.classList.add('is-hidden');
     document.querySelector('.controls')?.classList.remove('is-hidden');
+
+    if (App.state.activeFilters.has('links') && Data.hasMoreLinks()) {
+      this.checkSentinel();
+    }
   },
 
   /**

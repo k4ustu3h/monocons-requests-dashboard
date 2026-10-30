@@ -1,4 +1,5 @@
 import argparse
+import glob
 import json
 import os
 import re
@@ -123,7 +124,20 @@ def main(input_file, output_dir, lawnicons_appfilter_path, monocons_appfilter_pa
                     if not link_groups[key]["name"] and app_name:
                         link_groups[key]["name"] = app_name
 
-    req_app_ids = {app.get('componentName') for app in apps if app.get('componentName')}
+    req_app_ids = set()
+    input_dir = os.path.dirname(input_file) or "."
+    for req_path in glob.glob(os.path.join(input_dir, "request*.json")):
+        try:
+            with open(req_path, 'r', encoding='utf-8') as f:
+                r_data = json.load(f)
+                for a in r_data.get('apps', []):
+                    cname = a.get('componentName')
+                    if cname:
+                        req_app_ids.add(cname)
+        except Exception:
+            pass
+    if not req_app_ids:
+        req_app_ids = {app.get('componentName') for app in apps if app.get('componentName')}
 
     for app in apps:
         app_id = app.get('componentName')
@@ -163,18 +177,32 @@ def main(input_file, output_dir, lawnicons_appfilter_path, monocons_appfilter_pa
             else:
                 group["id"] = sorted(comps)[0]
 
-    links_data = []
+    links_requested = []
+    links_other = []
+
     for group in link_groups.values():
+        comps = group["components"]
+        is_requested = group["id"] in req_app_ids or any(c in req_app_ids for c in comps)
+        if is_requested and group["id"] not in req_app_ids:
+            req_matches = [c for c in comps if c in req_app_ids]
+            if req_matches:
+                group["id"] = req_matches[0]
+
         item = {
             "id": group["id"],
             "existing_drawable": group["existing_drawable"],
             "name": group["name"]
         }
-        if len(group["components"]) > 1:
-            item["components"] = sorted(group["components"])
-        links_data.append(item)
+        if len(comps) > 1:
+            item["components"] = sorted(comps)
 
-    links_data.sort(key=lambda x: (x.get('name', '').lower(), x.get('id', '')))
+        if is_requested:
+            links_requested.append(item)
+        else:
+            links_other.append(item)
+
+    links_requested.sort(key=lambda x: (-len(x.get("components", [x["id"]])), x.get("name", "").lower(), x.get("id", "")))
+    links_other.sort(key=lambda x: (-len(x.get("components", [x["id"]])), x.get("name", "").lower(), x.get("id", "")))
 
     output_path = os.path.join(output_dir, "in_lawnicons.json")
     output_data = {
@@ -185,17 +213,49 @@ def main(input_file, output_dir, lawnicons_appfilter_path, monocons_appfilter_pa
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(output_data, f, indent=2)
 
-    output_path_links = os.path.join(output_dir, "links.json")
-    output_data_links = {
+    # Clean up any existing links_*.json and legacy links.json files in output_dir
+    legacy_links_file = os.path.join(output_dir, "links.json")
+    if os.path.exists(legacy_links_file):
+        try:
+            os.remove(legacy_links_file)
+        except OSError:
+            pass
+
+    for old_file in glob.glob(os.path.join(output_dir, "links_*.json")):
+        try:
+            os.remove(old_file)
+        except OSError:
+            pass
+
+    # 1. Write links_requested.json
+    output_path_requested = os.path.join(output_dir, "links_requested.json")
+    output_data_requested = {
         "label": "Links",
         "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
-        "links": links_data
+        "links": links_requested
     }
-    with open(output_path_links, 'w', encoding='utf-8') as f:
-        json.dump(output_data_links, f, indent=2)
+    with open(output_path_requested, 'w', encoding='utf-8') as f:
+        json.dump(output_data_requested, f, indent=2)
+
+    # 2. Split links_other into chunks of 50 items: links_1.json, links_2.json, ...
+    chunk_size = 50
+    num_chunks = (len(links_other) + chunk_size - 1) // chunk_size if links_other else 1
+    for i in range(num_chunks):
+        chunk = links_other[i * chunk_size : (i + 1) * chunk_size]
+        output_path_chunk = os.path.join(output_dir, f"links_{i + 1}.json")
+        output_data_chunk = {
+            "label": "Links",
+            "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
+            "batch": i + 1,
+            "total_batches": num_chunks,
+            "links": chunk
+        }
+        with open(output_path_chunk, 'w', encoding='utf-8') as f:
+            json.dump(output_data_chunk, f, indent=2)
 
     print(f"Generated tags: {len(in_lawnicons_data)} in Lawnicons.")
-    print(f"Generated tags: {len(links_data)} in Links.")
+    print(f"Generated tags: {len(links_requested)} in Links (requested).")
+    print(f"Generated tags: {len(links_other)} in Links (other) across {num_chunks} files.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate Lawnicons filters")

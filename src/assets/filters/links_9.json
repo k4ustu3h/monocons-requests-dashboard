@@ -1,0 +1,258 @@
+{
+  "label": "Links",
+  "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
+  "batch": 9,
+  "total_batches": 23,
+  "links": [
+    {
+      "id": "com.opensource.i2pradio/com.opensource.i2pradio.MainActivity",
+      "existing_drawable": "generic_fm_radio",
+      "name": "deutsia radio"
+    },
+    {
+      "id": "io.illescasDaniel.devSnippets/io.illescasDaniel.devSnippets.MainActivity",
+      "existing_drawable": "generic_braces",
+      "name": "DevSnippets"
+    },
+    {
+      "id": "com.dhl.frt.mittdhl/com.dhl.frt.mittdhl.MainActivity",
+      "existing_drawable": "dhl",
+      "name": "DHL"
+    },
+    {
+      "id": "com.dhlparcel.consumerapp/com.dhlparcel.consumerapp.MainActivity",
+      "existing_drawable": "dhl",
+      "name": "DHL eCom"
+    },
+    {
+      "id": "com.pixelcrater.Diaro/com.pixelcrater.Diaro.MainActivity",
+      "existing_drawable": "diaro",
+      "name": "Diaro"
+    },
+    {
+      "id": "com.adeeteya.digital_calculator/com.adeeteya.digital_calculator.MainActivity",
+      "existing_drawable": "zcalc",
+      "name": "Digital Calculator"
+    },
+    {
+      "id": "com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.settings.MultiPaneLauncherActivity",
+      "existing_drawable": "digital_wellbeing",
+      "name": "Digital Wellbeing"
+    },
+    {
+      "id": "com.alibaba.android.rimet/com.alibaba.android.rimet.biz.SplashActivity",
+      "existing_drawable": "dingtalk",
+      "name": "DingTalk"
+    },
+    {
+      "id": "com.discord.morphe/com.discord.main.MainDefault",
+      "existing_drawable": "discord",
+      "name": "Discord"
+    },
+    {
+      "id": "com.discore/com.discord.main.MainDefault",
+      "existing_drawable": "discord",
+      "name": "Discord"
+    },
+    {
+      "id": "com.discovery.discoveryplus.mobile/com.wbd.fuse.appcore.FuseActivity",
+      "existing_drawable": "discoveryplus",
+      "name": "discovery+"
+    },
+    {
+      "id": "com.discovery.dplay/com.wbd.fuse.appcore.FuseActivity",
+      "existing_drawable": "discoveryplus",
+      "name": "discovery+"
+    },
+    {
+      "id": "br.com.doctoralia/com.app.MainActivity",
+      "existing_drawable": "doctoralia",
+      "name": "Doctoralia"
+    },
+    {
+      "id": "co.doctoralia/co.doctoralia.MainActivity",
+      "existing_drawable": "doctoralia",
+      "name": "Doctoralia"
+    },
+    {
+      "id": "es.doctoralia/es.doctoralia.MainActivity",
+      "existing_drawable": "doctoralia",
+      "name": "Doctoralia"
+    },
+    {
+      "id": "com.eniyihekim/com.eniyihekim.MainActivity",
+      "existing_drawable": "doctoralia",
+      "name": "DoktorTakvimi"
+    },
+    {
+      "id": "com.dolby.dolby234/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "dolby",
+      "name": "Dolby On"
+    },
+    {
+      "id": "com.dolby.exphub/com.dolby.exphub.namespace.MainActivity",
+      "existing_drawable": "dolby",
+      "name": "Dolby XP"
+    },
+    {
+      "id": "org.dolphinemu.mmjr/org.dolphinemu.dolphinemu.ui.main.MainActivity",
+      "existing_drawable": "dolphin_emulator",
+      "name": "Dolphin MMJR2"
+    },
+    {
+      "id": "com.Dominos/com.Dominos.activity.alias.LauncherRepublicAlias",
+      "existing_drawable": "dominos_pizza",
+      "name": "Domino's Pizza"
+    },
+    {
+      "id": "com.daufood.ppt/com.iproject.dominos.ui.splash.SplashActivity",
+      "existing_drawable": "dominos_pizza",
+      "name": "Domino's Pizza"
+    },
+    {
+      "id": "com.dominos.latin.america/com.dominos.latin.america.MainActivity",
+      "existing_drawable": "dominos_pizza",
+      "name": "Domino's Pizza"
+    },
+    {
+      "id": "tr.com.dominos/com.dominosmobileapp.MainActivity",
+      "existing_drawable": "dominos_pizza",
+      "name": "Domino's Pizza"
+    },
+    {
+      "id": "zena.dominos/com.dominos.loadingscreen.InitialLaunchActivity",
+      "existing_drawable": "dominos_pizza",
+      "name": "Domino's Pizza"
+    },
+    {
+      "id": "com.firstyogi.dothing/com.firstyogi.dothing.SigninActivity",
+      "existing_drawable": "tasky",
+      "name": "Dothing"
+    },
+    {
+      "id": "com.android.providers.downloads.ui/.DownloadList",
+      "existing_drawable": "generic_download_arrow",
+      "name": "Downloads"
+    },
+    {
+      "id": "pizza.dpe.globaldelivery/com.dominos.driver.presentation.DriverActivity",
+      "existing_drawable": "dominos_pizza",
+      "name": "DPE GPS Driver"
+    },
+    {
+      "id": "com.dropbox.dash/com.dropbox.dash.auth.impl.view.AuthActivity",
+      "existing_drawable": "dropbox",
+      "name": "Dropbox Dash"
+    },
+    {
+      "id": "com.dsplayer.app/com.dsplayer.app.features.videobrowser.ui.VideoBrowserActivity",
+      "existing_drawable": "just_player",
+      "name": "DS Player"
+    },
+    {
+      "id": "com.olxmena.horizontal/com.olxmena.horizontal.MainActivity",
+      "existing_drawable": "olx",
+      "name": "dubizzle"
+    },
+    {
+      "id": "io.github.luyifei2011.dvdcontroller/io.github.luyifei2011.dvdcontroller.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "DVD Controller"
+    },
+    {
+      "id": "com.jmsys.earth3d/com.jmsys.earth3d.SplashActivity",
+      "existing_drawable": "generic_earth",
+      "name": "Earth3D"
+    },
+    {
+      "id": "com.dede.android_eggs/com.dede.android_eggs.main.EasterEggsActivity",
+      "existing_drawable": "easter_eggs_14",
+      "name": "Easter Eggs"
+    },
+    {
+      "id": "easy.bible.read.understand.simple/org.mainsoft.newbible.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Easy Bible"
+    },
+    {
+      "id": "easy.launcher/easy.launcher.ime.promo.ImePromoActivity",
+      "existing_drawable": "generic_keyboard",
+      "name": "Easy Keyboard"
+    },
+    {
+      "id": "com.cem.pianokeyboard.pianomusic/com.cem.piano.guide.ui.activities.IntroActivity",
+      "existing_drawable": "generic_piano",
+      "name": "Easy Piano"
+    },
+    {
+      "id": "com.hwqgrhhjfd.idlefastfood/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "eatventure",
+      "name": "Eatventure"
+    },
+    {
+      "id": "com.ebay.mobile/com.ebay.mobile.home.impl.main.MainActivity",
+      "existing_drawable": "ebay",
+      "name": "eBay"
+    },
+    {
+      "id": "com.miHoYo.Yuanshen/org.yuzu.yuzu_emu.ui.main.MainActivity",
+      "existing_drawable": "genshin_impact",
+      "name": "Eden"
+    },
+    {
+      "id": "com.edesur.movil/com.edesur.movil.MainActivity",
+      "existing_drawable": "enel",
+      "name": "Edesur"
+    },
+    {
+      "id": "com.auxbrain.egginc/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "egg_inc",
+      "name": "Egg, Inc."
+    },
+    {
+      "id": "io.element.android.x/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "element_x",
+      "name": "Element X"
+    },
+    {
+      "id": "hu.emag.android/ro.emag.android.cleancode.app.ActivityStart",
+      "existing_drawable": "emag",
+      "name": "eMAG"
+    },
+    {
+      "id": "br.com.deway.coelce/br.com.deway.coelce.MainActivity",
+      "existing_drawable": "enel",
+      "name": "Enel"
+    },
+    {
+      "id": "it.enel/com.example.it_full_digital.MainActivity",
+      "existing_drawable": "enel",
+      "name": "Enel"
+    },
+    {
+      "id": "english.swahili.bible/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "English Swahili Bible"
+    },
+    {
+      "id": "english.swahili.bible.bilingual/org.mainsoft.newbible.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "English Swahili Bible Takatifu"
+    },
+    {
+      "id": "com.sameerasw.essentials/com.sameerasw.essentials.MainActivityLegacy",
+      "existing_drawable": "essentials",
+      "name": "Essentials"
+    },
+    {
+      "id": "com.coolappstore.everdialer.by.svhp/com.coolappstore.everdialer.by.svhp.MainActivityNothingIcon",
+      "existing_drawable": "generic_dialer",
+      "name": "Ever Dialer"
+    },
+    {
+      "id": "com.coolkit/com.coolkit.MainActivity",
+      "existing_drawable": "ewelink",
+      "name": "eWeLink"
+    }
+  ]
+}

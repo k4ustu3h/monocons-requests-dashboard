@@ -1,0 +1,524 @@
+{
+  "label": "Links",
+  "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
+  "batch": 2,
+  "total_batches": 23,
+  "links": [
+    {
+      "id": "de.burgerking.kingfinder/de.burgerking.kingfinder.ui.main.MainActivity",
+      "existing_drawable": "burger_king",
+      "name": "Burger King",
+      "components": [
+        "de.burgerking.kingfinder/de.burgerking.kingfinder.ui.main.MainActivity",
+        "de.burgerking.kingfinder/de.xroot.burgerking.ui.activity.SplashScreenActivity",
+        "de.burgerking.kingfinder/rbi.android.app.Launcher",
+        "de.burgerking.kingfinder/rbi.android.app.MainActivity"
+      ]
+    },
+    {
+      "id": "com.sosauce.cutemusic/com.sosauce.chocola.core.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Chocola",
+      "components": [
+        "com.sosauce.cutemusic/com.sosauce.chocola.core.MainActivity",
+        "com.sosauce.cutemusic/com.sosauce.chocola.presentation.MainActivity",
+        "com.sosauce.cutemusic/com.sosauce.cutemusic.main.MainActivity",
+        "com.sosauce.cutemusic/com.sosauce.cutemusic.presentation.MainActivity"
+      ]
+    },
+    {
+      "id": "com.cinepolis.go/mq8sb0.i23Vf5.k89nv4.uxDcO1",
+      "existing_drawable": "cinepolis",
+      "name": "Cin\u00e9polis",
+      "components": [
+        "com.cinepolis.go/mq8sb0.i23Vf5.k89nv4.uxDcO1",
+        "com.cinepolis.go/rP0md4.iRGq56.lWEu00.lnPc45",
+        "com.cinepolis.go/rdJuX3.bDz349.aoHYS3.bAAnl4",
+        "com.cinepolis.go/wAZ6x9.hHiQM6.uSl4e3.yODEW4"
+      ]
+    },
+    {
+      "id": "com.rockstargames.gtasa/com.fastman92.main_activity_launcher.MainActivity",
+      "existing_drawable": "gta_sa",
+      "name": "Grand Theft Auto: San Andreas",
+      "components": [
+        "com.rockstargames.gtasa/com.d.a",
+        "com.rockstargames.gtasa/com.fastman92.main_activity_launcher.MainActivity",
+        "com.rockstargames.gtasa/com.gamein.i.a.WelcomeActivity",
+        "com.rockstargames.gtasa/com.rockstargames.gtasa.GameActivity"
+      ]
+    },
+    {
+      "id": "com.oasisfeng.greenify/com.oasisfeng.greenify.GreenifyShortcut",
+      "existing_drawable": "greenify",
+      "name": "Greenify",
+      "components": [
+        "com.oasisfeng.greenify/com.oasisfeng.greenify.GreenifyShortcut",
+        "com.oasisfeng.greenify/com.oasisfeng.greenify.HibernateAndLockScreen",
+        "com.oasisfeng.greenify/com.oasisfeng.greenify.NewGreenifyActivity",
+        "com.oasisfeng.greenify/com.oasisfeng.greenify.PilotActivity"
+      ]
+    },
+    {
+      "id": "com.grubhub.android/com.grubhub.AppBaseLibrary.android.GHSSplashActivity",
+      "existing_drawable": "just_eat",
+      "name": "Grubhub",
+      "components": [
+        "com.grubhub.android/com.grubhub.AppBaseLibrary.android.GHSSplashActivity",
+        "com.grubhub.android/com.grubhub.AppBaseLibrary.android.splash.SplashActivity",
+        "com.grubhub.android/com.grubhub.android.j5.activities.StartActivity",
+        "com.grubhub.android/com.grubhub.dinerapp.android.splash.SplashActivity"
+      ]
+    },
+    {
+      "id": "com.justeat.app.ie/com.justeat.app.ui.MainActivity",
+      "existing_drawable": "just_eat",
+      "name": "Just Eat",
+      "components": [
+        "com.justeat.app.ie/com.justeat.app.ui.MainActivity",
+        "com.justeat.app.ie/com.justeat.app.ui.SplashActivity",
+        "com.justeat.app.ie/com.justeat.splash.ui.SplashActivity",
+        "com.justeat.app.ie/com.takeaway.android.activity.Splash"
+      ]
+    },
+    {
+      "id": "br.com.neon/br.eCzu24.tFBoY9.fWPjK2.lbOHK6.b6sG73.cgbuM3",
+      "existing_drawable": "neon",
+      "name": "Neon",
+      "components": [
+        "br.com.neon/br.eCzu24.tFBoY9.fWPjK2.lbOHK6.b6sG73.cgbuM3",
+        "br.com.neon/br.eXsz71.cPIYq5.jGayW9.qTQxu5.pJLD23.zLjjn2",
+        "br.com.neon/br.oT9qx8.gDPfj3.sm0YB6.wS3Hm4.zZK680.av80I8",
+        "br.com.neon/br.uvdw14.yfo8p7.eM0gy5.cT9Cj7.ovqDn5.zEIdX0"
+      ]
+    },
+    {
+      "id": "com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivity",
+      "existing_drawable": "pepper",
+      "name": "Pepper",
+      "components": [
+        "com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivity",
+        "com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+        "com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivityGoldIcon",
+        "com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivityLightIcon"
+      ]
+    },
+    {
+      "id": "com.yourdelivery.pyszne/com.jet.singleactivity.ui.MainActivity",
+      "existing_drawable": "just_eat",
+      "name": "Pyszne",
+      "components": [
+        "com.yourdelivery.pyszne/com.jet.singleactivity.ui.MainActivity",
+        "com.yourdelivery.pyszne/com.justeat.splash.ui.SplashActivity",
+        "com.yourdelivery.pyszne/com.takeaway.android.activity.Splash",
+        "com.yourdelivery.pyszne/com.yopeso.lieferando.SplashActivity"
+      ]
+    },
+    {
+      "id": "com.android.stk/com.android.stk.SecondaryStkMain",
+      "existing_drawable": "sim_toolkit",
+      "name": "SIM Toolkit",
+      "components": [
+        "com.android.stk/com.android.stk.SecondaryStkMain",
+        "com.android.stk/com.android.stk.SplashActivity",
+        "com.android.stk/com.android.stk.StkLauncherActivityTelcel1",
+        "com.android.stk/com.android.stk.UniStkMain"
+      ]
+    },
+    {
+      "id": "com.ncconsulting.skipthedishes_android/ca.skipthedishes.customer.activities.NotificationReceiverActivity",
+      "existing_drawable": "just_eat",
+      "name": "SkipTheDishes",
+      "components": [
+        "com.ncconsulting.skipthedishes_android/ca.skipthedishes.customer.activities.NotificationReceiverActivity",
+        "com.ncconsulting.skipthedishes_android/ca.skipthedishes.customer.activities.SplashActivity",
+        "com.ncconsulting.skipthedishes_android/ca.skipthedishes.customer.features.splash.ui.SplashActivity",
+        "com.ncconsulting.skipthedishes_android/com.ncconsulting.skipthedishes_android.activities.SplashActivity"
+      ]
+    },
+    {
+      "id": "com.soundcloud.android/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "soundcloud",
+      "name": "SoundCloud",
+      "components": [
+        "com.soundcloud.android/com.google.android.archive.ReactivateActivity",
+        "com.soundcloud.android/com.soundcloud.android.launcher.LauncherActivityBlackIconAlias",
+        "com.soundcloud.android/com.soundcloud.android.launcher.LauncherActivityChromeIconAlias",
+        "com.soundcloud.android/com.soundcloud.android.launcher.LauncherActivityOgIconAlias"
+      ]
+    },
+    {
+      "id": "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_dark_5",
+      "existing_drawable": "morphe",
+      "name": "YouTube Music",
+      "components": [
+        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_dark_5",
+        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_light_1",
+        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_play_3",
+        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_play_black_1"
+      ]
+    },
+    {
+      "id": "app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_original_2",
+      "existing_drawable": "generic_player",
+      "name": "YouTube Music",
+      "components": [
+        "app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_original_2",
+        "app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_original_3",
+        "app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_original_4",
+        "app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_rounded_4"
+      ]
+    },
+    {
+      "id": "com.vkontakte.android/com.vk.android.launcher.icons.IconAlias.EventIcon3",
+      "existing_drawable": "vkontakte",
+      "name": "\u0412\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u0435 ~~ VK",
+      "components": [
+        "com.vkontakte.android/com.vk.android.launcher.icons.IconAlias.EventIcon3",
+        "com.vkontakte.android/com.vk.android.launcher.icons.IconAlias.EventIcon7",
+        "com.vkontakte.android/com.vk.android.launcher.icons.IconAlias.StaticIcon1",
+        "com.vkontakte.android/com.vk.android.launcher.icons.IconAlias.StaticIcon3"
+      ]
+    },
+    {
+      "id": "com.amazon.venezia/com.amazon.venezia.activities.MainActivity",
+      "existing_drawable": "amazon_appstore",
+      "name": "Amazon Appstore",
+      "components": [
+        "com.amazon.venezia/com.amazon.appstore.shortcut.AppsGamesShortcutActivity",
+        "com.amazon.venezia/com.amazon.venezia.Venezia",
+        "com.amazon.venezia/com.amazon.venezia.activities.MainActivity"
+      ]
+    },
+    {
+      "id": "com.apple.android.music/com.google.android.apps.youtube.music.activities.MusicActivity",
+      "existing_drawable": "apple_music",
+      "name": "Apple Music",
+      "components": [
+        "com.apple.android.music/com.google.android.apps.youtube.music.activities.MusicActivity",
+        "com.apple.android.music/com.google.android.archive.ReactivateActivity",
+        "com.apple.android.music/com.soundcloud.android.launcher.LauncherActivity"
+      ]
+    },
+    {
+      "id": "org.telegram.messenger.web/com.exteragram.messenger.AmethystIcon",
+      "existing_drawable": "telegram",
+      "name": "AyuGram",
+      "components": [
+        "org.telegram.messenger.web/com.exteragram.messenger.AmethystIcon",
+        "org.telegram.messenger.web/com.exteragram.messenger.DefaultIcon",
+        "org.telegram.messenger.web/com.exteragram.messenger.MonetIconExtera"
+      ]
+    },
+    {
+      "id": "com.android.calendar/com.android.calendar.LaunchTasksActivity",
+      "existing_drawable": "themed_icon_calendar_31",
+      "name": "Calendar",
+      "components": [
+        "com.android.calendar/com.android.calendar.LaunchTasksActivity",
+        "com.android.calendar/com.hmct.calendar.activity.FirstAdvertActivity",
+        "com.android.calendar/com.meizu.flyme.calendar.AllInOneActivity"
+      ]
+    },
+    {
+      "id": "com.openai.chatgpt/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "openai",
+      "name": "ChatGPT",
+      "components": [
+        "com.openai.chatgpt/com.google.android.archive.ReactivateActivity",
+        "com.openai.chatgpt/com.openai.chatgpt.CodexLauncherActivity",
+        "com.openai.chatgpt/md.elway.evo.screen.chat.ChatActivity"
+      ]
+    },
+    {
+      "id": "com.chollometro/com.pepper.apps.android.presentation.MainActivity",
+      "existing_drawable": "pepper",
+      "name": "Chollometro",
+      "components": [
+        "com.chollometro/com.pepper.apps.android.presentation.MainActivity",
+        "com.chollometro/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+        "com.chollometro/com.pepper.apps.android.presentation.MainActivityLightIcon"
+      ]
+    },
+    {
+      "id": "com.citymapper.app.release/com.citymapper.app.MainActivity_Goth",
+      "existing_drawable": "citymapper",
+      "name": "Citymapper",
+      "components": [
+        "com.citymapper.app.release/com.citymapper.app.MainActivity_Goth",
+        "com.citymapper.app.release/com.citymapper.app.MainActivity_NotGreen",
+        "com.citymapper.app.release/com.citymapper.app.MainActivity_NotGreen3"
+      ]
+    },
+    {
+      "id": "com.duolingo/com.duolingo.app.InactiveRockLauncher",
+      "existing_drawable": "duolingo",
+      "name": "Duolingo",
+      "components": [
+        "com.duolingo/com.duolingo.app.InactiveRockLauncher",
+        "com.duolingo/com.duolingo.app.InactiveScreamLauncher",
+        "com.duolingo/com.duolingo.app.StreakSaverLauncher3"
+      ]
+    },
+    {
+      "id": "com.google.android.apps.messaging/com.kyant.vanilla.MainActivity",
+      "existing_drawable": "messages",
+      "name": "Google Messages",
+      "components": [
+        "com.google.android.apps.messaging/com.google.android.apps.messaging.dittosatellite.impl.DittoWebActivity",
+        "com.google.android.apps.messaging/com.google.android.archive.ReactivateActivity",
+        "com.google.android.apps.messaging/com.kyant.vanilla.MainActivity"
+      ]
+    },
+    {
+      "id": "com.grabtaxi.passenger/com.grab.pax.newface.common.alias.GlobalYearEndLauncherAlias",
+      "existing_drawable": "grab",
+      "name": "Grab",
+      "components": [
+        "com.grabtaxi.passenger/com.grab.pax.newface.common.alias.GlobalYearEndLauncherAlias",
+        "com.grabtaxi.passenger/com.grab.pax.newface.common.alias.MyCampaignLauncherAlias",
+        "com.grabtaxi.passenger/com.grab.pax.newface.common.alias.ThaiCampaignLauncherAlias"
+      ]
+    },
+    {
+      "id": "com.indus.appstore/com.indus.appstore.DefaultIconLauncherActivityAlias",
+      "existing_drawable": "indus_appstore",
+      "name": "Indus Appstore",
+      "components": [
+        "com.indus.appstore/com.indus.appstore.DefaultIconLauncherActivityAlias",
+        "com.indus.appstore/com.indus.appstore.NewIconLauncherActivityAlias",
+        "com.indus.appstore/com.indus.appstore.applicationLayer.onboarding.activity.LauncherActivity"
+      ]
+    },
+    {
+      "id": "com.instapro2.android/com.instagram.android.activity.MainTabActivity1",
+      "existing_drawable": "instagram",
+      "name": "InstaPro 2",
+      "components": [
+        "com.instapro2.android/com.instagram.android.activity.MainTabActivity1",
+        "com.instapro2.android/com.instagram.android.activity.MainTabActivity13",
+        "com.instapro2.android/com.instagram.android.activity.MainTabActivity14"
+      ]
+    },
+    {
+      "id": "org.khanacademy.android/icon.black",
+      "existing_drawable": "khan_academy",
+      "name": "Khan Academy",
+      "components": [
+        "org.khanacademy.android/icon.black",
+        "org.khanacademy.android/icon.darker",
+        "org.khanacademy.android/icon.rainbow"
+      ]
+    },
+    {
+      "id": "de.komoot.android/de.komoot.android.ui.RootActivity",
+      "existing_drawable": "komoot",
+      "name": "komoot",
+      "components": [
+        "de.komoot.android/de.komoot.android.ui.RootActivity",
+        "de.komoot.android/de.komoot.android.ui.RootActivityClassic",
+        "de.komoot.android/de.komoot.android.ui.RootActivityDefault"
+      ]
+    },
+    {
+      "id": "meditofoundation.medito/com.meditofoundation.medito.MainActivity",
+      "existing_drawable": "medito",
+      "name": "Medito",
+      "components": [
+        "meditofoundation.medito/com.meditofoundation.medito.MainActivity",
+        "meditofoundation.medito/meditofoundation.medito.MainActivity.classic",
+        "meditofoundation.medito/meditofoundation.medito.MainActivity.dusk"
+      ]
+    },
+    {
+      "id": "com.menulog.m/com.jet.singleactivity.ui.MainActivity",
+      "existing_drawable": "just_eat",
+      "name": "Menulog",
+      "components": [
+        "com.menulog.m/com.jet.singleactivity.ui.MainActivity",
+        "com.menulog.m/com.justeat.app.ui.SplashActivity",
+        "com.menulog.m/com.justeat.splash.ui.SplashActivity"
+      ]
+    },
+    {
+      "id": "com.motorola.mobiledesktop/com.motorola.readyfor.MainActivityLauncherIconAlias",
+      "existing_drawable": "ready_for",
+      "name": "Moto Smart Connect",
+      "components": [
+        "com.motorola.mobiledesktop/com.motorola.readyfor.MainActivityLauncherIconAlias",
+        "com.motorola.mobiledesktop/com.motorola.readyfor.NearbyDisplaysLauncherIconAlias",
+        "com.motorola.mobiledesktop/com.motorola.readyfor.display.ui.NearbyDisplaysActivity"
+      ]
+    },
+    {
+      "id": "com.shaiban.audioplayer.mplayer/com.shaiban.audioplayer.mplayer.app.navigation.NavigatingActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Player",
+      "components": [
+        "com.shaiban.audioplayer.mplayer/com.shaiban.audioplayer.mplayer.app.navigation.NavigatingActivity",
+        "com.shaiban.audioplayer.mplayer/com.shaiban.audioplayer.mplayer.common.splash.NavigatingActivity",
+        "com.shaiban.audioplayer.mplayer/com.shaiban.audioplayer.mplayer.ui.activities.SplashActivity"
+      ]
+    },
+    {
+      "id": "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p5",
+      "existing_drawable": "my_pixel",
+      "name": "My Pixel",
+      "components": [
+        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p5",
+        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p8",
+        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.pFold"
+      ]
+    },
+    {
+      "id": "com.tippingcanoe.mydealz/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+      "existing_drawable": "mydealz",
+      "name": "mydealz",
+      "components": [
+        "com.tippingcanoe.mydealz/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+        "com.tippingcanoe.mydealz/com.pepper.apps.android.presentation.MainActivityLightIcon",
+        "com.tippingcanoe.mydealz/com.pepper.apps.android.presentation.MainActivitySilverIcon"
+      ]
+    },
+    {
+      "id": "com.opera.browser.beta/com.opera.Launcher5",
+      "existing_drawable": "opera_browser",
+      "name": "Opera Beta",
+      "components": [
+        "com.opera.browser.beta/com.opera.Launcher5",
+        "com.opera.browser.beta/com.opera.Launcher6",
+        "com.opera.browser.beta/com.opera.Launcher7"
+      ]
+    },
+    {
+      "id": "com.tippingcanoe.pepperpl/com.pepper.apps.android.app.activity.MainActivity",
+      "existing_drawable": "pepper",
+      "name": "Pepper",
+      "components": [
+        "com.tippingcanoe.pepperpl/com.pepper.apps.android.app.activity.MainActivity",
+        "com.tippingcanoe.pepperpl/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+        "com.tippingcanoe.pepperpl/com.pepper.apps.android.presentation.MainActivityLightIcon"
+      ]
+    },
+    {
+      "id": "mendeleev.redlime/mendeleev.redlime.ui.MainActivity",
+      "existing_drawable": "periodic_table",
+      "name": "Periodic Table",
+      "components": [
+        "mendeleev.redlime/mendeleev.redlime.ui.MainActivity",
+        "mendeleev.redlime/mendeleev.redlime.ui.main.MainActivity",
+        "mendeleev.redlime/redlime.pereodic.MainActivity"
+      ]
+    },
+    {
+      "id": "com.microblink.photomath/com.microblink.photomath.main.MainActivity",
+      "existing_drawable": "photomath",
+      "name": "Photomath",
+      "components": [
+        "com.microblink.photomath/com.google.android.archive.ReactivateActivity",
+        "com.microblink.photomath/com.microblink.photomath.main.LauncherActivity",
+        "com.microblink.photomath/com.microblink.photomath.main.MainActivity"
+      ]
+    },
+    {
+      "id": "com.nianticlabs.pokemongo/m.u.h.a.MainActivity",
+      "existing_drawable": "pokemon_go",
+      "name": "Pok\u00e9mon GO",
+      "components": [
+        "com.nianticlabs.pokemongo/com.google.android.archive.ReactivateActivity",
+        "com.nianticlabs.pokemongo/com.nianticlabs.platform.launcher.NianticUnityPlayerActivity",
+        "com.nianticlabs.pokemongo/m.u.h.a.MainActivity"
+      ]
+    },
+    {
+      "id": "ch.protonmail.android/ch.protonmail.android.RoutingCalculator",
+      "existing_drawable": "proton_mail",
+      "name": "Proton Mail",
+      "components": [
+        "ch.protonmail.android/ch.protonmail.android.RoutingCalculator",
+        "ch.protonmail.android/ch.protonmail.android.RoutingNotes",
+        "ch.protonmail.android/ch.protonmail.android.RoutingWeather"
+      ]
+    },
+    {
+      "id": "com.psiphon3.subscription/ca.psiphon.psiphon4.MainActivity",
+      "existing_drawable": "psiphon",
+      "name": "Psiphon Pro",
+      "components": [
+        "com.psiphon3.subscription/ca.psiphon.psiphon4.MainActivity",
+        "com.psiphon3.subscription/com.psiphon3.StatusActivity",
+        "com.psiphon3.subscription/com.qihoo.util.StartActivity"
+      ]
+    },
+    {
+      "id": "com.satispay.customer/com.satispay.customer.home.HomeActivity",
+      "existing_drawable": "satispay",
+      "name": "Satispay",
+      "components": [
+        "com.satispay.customer/com.satispay.customer.home.HomeActivity",
+        "com.satispay.customer/com.satispay.customer.home.SplashActivity",
+        "com.satispay.customer/com.satispay.customer.main.SplashActivity"
+      ]
+    },
+    {
+      "id": "com.android.stk2/com.android.stk.StkLauncherActivity_DualSim",
+      "existing_drawable": "sim_toolkit",
+      "name": "SIM Toolkit",
+      "components": [
+        "com.android.stk2/com.android.stk.StkLauncherActivity_DualSim",
+        "com.android.stk2/com.android.stk2.Stk2LauncherActivity",
+        "com.android.stk2/com.android.stk2.StkLauncherActivity2"
+      ]
+    },
+    {
+      "id": "com.netease.sky/com.netease.ntunisdk.external.protocol.ProtocolLauncher",
+      "existing_drawable": "sky_children_of_the_light",
+      "name": "Sky: Children of the Light",
+      "components": [
+        "com.netease.sky/com.netease.ntunisdk.external.protocol.ProtocolLauncher",
+        "com.netease.sky/com.tgc.sky.TGCBootActivity",
+        "com.netease.sky/com.tgc.sky.netease.GameActivity_Netease"
+      ]
+    },
+    {
+      "id": "be.pizza.android/com.jet.singleactivity.ui.MainActivity",
+      "existing_drawable": "just_eat",
+      "name": "Takeaway",
+      "components": [
+        "be.pizza.android/com.jet.singleactivity.ui.MainActivity",
+        "be.pizza.android/com.takeaway.android.Startup",
+        "be.pizza.android/com.takeaway.android.activity.Splash"
+      ]
+    },
+    {
+      "id": "com.todoist/com.todoist.alias.HomeActivityBlueberry",
+      "existing_drawable": "todoist",
+      "name": "Todoist",
+      "components": [
+        "com.todoist/com.todoist.alias.HomeActivityBlueberry",
+        "com.todoist/com.todoist.alias.HomeActivityKale",
+        "com.todoist/com.todoist.alias.HomeActivityMoonstone"
+      ]
+    },
+    {
+      "id": "com.advasoft.touchretouch/com.advasoft.touchretouch4.MainActivity",
+      "existing_drawable": "retouch_advasoft",
+      "name": "TouchRetouch",
+      "components": [
+        "com.advasoft.touchretouch/com.advasoft.touchretouch.LicenseActivityAlias2",
+        "com.advasoft.touchretouch/com.advasoft.touchretouch4.MainActivity",
+        "com.advasoft.touchretouch/com.advasoft.touchretouch4.MainActivityCH"
+      ]
+    },
+    {
+      "id": "com.avuscapital.trading212/com.avuscapital.trading212.MainActivity",
+      "existing_drawable": "trading_212",
+      "name": "Trading 212",
+      "components": [
+        "com.avuscapital.trading212/com.avuscapital.trading212.MainActivity",
+        "com.avuscapital.trading212/com.avuscapital.trading212lib.modules.prelogin.WelcomeActivity",
+        "com.avuscapital.trading212/com.trading212.MainActivity"
+      ]
+    }
+  ]
+}

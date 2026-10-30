@@ -1,0 +1,994 @@
+{
+  "label": "Links",
+  "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
+  "batch": 1,
+  "total_batches": 23,
+  "links": [
+    {
+      "id": "org.telegram.messenger/com.exteragram.messenger.AmethystIcon",
+      "existing_drawable": "telegram",
+      "name": "AyuGram",
+      "components": [
+        "org.telegram.messenger/com.exteragram.messenger.AmethystIcon",
+        "org.telegram.messenger/com.exteragram.messenger.AyuGramYaPlus",
+        "org.telegram.messenger/com.exteragram.messenger.DefaultIcon",
+        "org.telegram.messenger/com.exteragram.messenger.ExteraIcon",
+        "org.telegram.messenger/com.exteragram.messenger.MonetIcon",
+        "org.telegram.messenger/com.exteragram.messenger.MonetIconExtera",
+        "org.telegram.messenger/com.exteragram.messenger.NeoIcon",
+        "org.telegram.messenger/com.exteragram.messenger.SusIcon",
+        "org.telegram.messenger/org.telegram.messenger.ClassicIcon",
+        "org.telegram.messenger/org.telegram.messenger.ColoredIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramAquaIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramClassicIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramDefaultIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramNekoAquaIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramNekoMusheenIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramNekoNeonIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramNekoPremiumIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramNekoPusheenIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramNekoRainbowIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramNekoSpaceIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramNekoTurboIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramNoxIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramPremiumIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramThemedClassicIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramThemedXEyeIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramTurboIcon",
+        "org.telegram.messenger/org.telegram.messenger.MomogramVintageIcon",
+        "org.telegram.messenger/org.telegram.messenger.NekoAquaIcon",
+        "org.telegram.messenger/org.telegram.messenger.NekoMusheenIcon",
+        "org.telegram.messenger/org.telegram.messenger.NekoNeonIcon",
+        "org.telegram.messenger/org.telegram.messenger.NekoPremiumIcon",
+        "org.telegram.messenger/org.telegram.messenger.NekoPusheenIcon",
+        "org.telegram.messenger/org.telegram.messenger.NekoRainbowIcon",
+        "org.telegram.messenger/org.telegram.messenger.NekoSpaceIcon",
+        "org.telegram.messenger/org.telegram.messenger.NekoTurboIcon",
+        "org.telegram.messenger/org.telegram.messenger.ThemedClassicIcon",
+        "org.telegram.messenger/org.telegram.messenger.ThemedXEyeIcon"
+      ]
+    },
+    {
+      "id": "com.snapchat.android/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "snapchat",
+      "name": "Snapchat",
+      "components": [
+        "com.snapchat.android/com.google.android.archive.ReactivateActivity",
+        "com.snapchat.android/com.snapchat.android.AiWaveAlias",
+        "com.snapchat.android/com.snapchat.android.BlackMarbleAlias",
+        "com.snapchat.android/com.snapchat.android.BlackPantherAlias",
+        "com.snapchat.android/com.snapchat.android.ChromeDripAlias",
+        "com.snapchat.android/com.snapchat.android.ClassicGhostAlias",
+        "com.snapchat.android/com.snapchat.android.ColorRibbonsAlias",
+        "com.snapchat.android/com.snapchat.android.DeniseAbAlias",
+        "com.snapchat.android/com.snapchat.android.DiwaliGoldFrameAlias",
+        "com.snapchat.android/com.snapchat.android.EdgyTextAlias",
+        "com.snapchat.android/com.snapchat.android.Icon22Alias",
+        "com.snapchat.android/com.snapchat.android.JokerAlias",
+        "com.snapchat.android/com.snapchat.android.LauncherActivity",
+        "com.snapchat.android/com.snapchat.android.LavaAlias",
+        "com.snapchat.android/com.snapchat.android.NeonAlias",
+        "com.snapchat.android/com.snapchat.android.NeonGhostAlias",
+        "com.snapchat.android/com.snapchat.android.NorthlightAlias",
+        "com.snapchat.android/com.snapchat.android.PixelAlias",
+        "com.snapchat.android/com.snapchat.android.Plus2Alias",
+        "com.snapchat.android/com.snapchat.android.Plus3Alias",
+        "com.snapchat.android/com.snapchat.android.PlusBlackAlias",
+        "com.snapchat.android/com.snapchat.android.PlushAlias",
+        "com.snapchat.android/com.snapchat.android.PurpleAlias",
+        "com.snapchat.android/com.snapchat.android.RetroCartoonAlias",
+        "com.snapchat.android/com.snapchat.android.SharpieDoodleAlias",
+        "com.snapchat.android/com.snapchat.android.SilkAlias",
+        "com.snapchat.android/com.snapchat.android.SnapBalloonAlias",
+        "com.snapchat.android/com.snapchat.android.SnappyDoodleAlias",
+        "com.snapchat.android/com.snapchat.android.SprayPaintAlias",
+        "com.snapchat.android/com.snapchat.android.TealAlias",
+        "com.snapchat.android/com.snapchat.android.VDayChromeAlias",
+        "com.snapchat.android/com.snapchat.android.VhsAlias",
+        "com.snapchat.android/com.snapchat.android.XrayGhostAlias",
+        "com.snapchat.android/com.snapchat.android.YellowPinkAlias",
+        "com.snapchat.android/com.snapchat.android.thanksgivingleafAlias"
+      ]
+    },
+    {
+      "id": "uz.unnarsx.cherrygram/.CG_Icon_Cherry",
+      "existing_drawable": "telegram",
+      "name": "Cherrygram",
+      "components": [
+        "uz.unnarsx.cherrygram/.CG_Icon_Cherry",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.AquaIcon",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Aqua",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Cherry_NY",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Dark",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Dark_Bra",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Dark_NY",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Green",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Laguna",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Lavanda",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Monet_Pixel",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Monet_Samsung",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Night",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Sunrise",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Sunset",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Turbo",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Violet_Sunset_Bra",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_White_Cherry",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_White_Cherry_Bra",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.DarkIcon",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.GreenIcon",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.LagunaIcon",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.LavandaIcon",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.Monet_Icon_Pixel",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.Monet_Icon_Samsung",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.NoxIcon",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.Old_Icon",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.PremiumIcon",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.SunriseIcon",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.SunsetIcon",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.TurboIcon",
+        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.White_Icon"
+      ]
+    },
+    {
+      "id": "com.aliucord/com.discord.MainActivity",
+      "existing_drawable": "discord",
+      "name": "Aliucord",
+      "components": [
+        "com.aliucord/com.discord.MainActivity",
+        "com.aliucord/com.discord.app.AppActivity",
+        "com.aliucord/com.discord.main.MainActivity",
+        "com.aliucord/com.discord.main.MainAngry",
+        "com.aliucord/com.discord.main.MainBeanie",
+        "com.aliucord/com.discord.main.MainBlush",
+        "com.aliucord/com.discord.main.MainBrandDark",
+        "com.aliucord/com.discord.main.MainBrandInverted",
+        "com.aliucord/com.discord.main.MainCamo",
+        "com.aliucord/com.discord.main.MainCherryBlossom",
+        "com.aliucord/com.discord.main.MainCircuit",
+        "com.aliucord/com.discord.main.MainClydeStein",
+        "com.aliucord/com.discord.main.MainController",
+        "com.aliucord/com.discord.main.MainDefault",
+        "com.aliucord/com.discord.main.MainDrip",
+        "com.aliucord/com.discord.main.MainGalaxy",
+        "com.aliucord/com.discord.main.MainGaming",
+        "com.aliucord/com.discord.main.MainHoloWaves",
+        "com.aliucord/com.discord.main.MainManga",
+        "com.aliucord/com.discord.main.MainMatteDark",
+        "com.aliucord/com.discord.main.MainMatteLight",
+        "com.aliucord/com.discord.main.MainMushroom",
+        "com.aliucord/com.discord.main.MainPastel",
+        "com.aliucord/com.discord.main.MainPirate",
+        "com.aliucord/com.discord.main.MainSlimy",
+        "com.aliucord/com.discord.main.MainSunset",
+        "com.aliucord/com.discord.main.MainY2K",
+        "com.aliucord/com.discord.main.MainZombie"
+      ]
+    },
+    {
+      "id": "com.discord/com.discord.main.MainAngry",
+      "existing_drawable": "discord",
+      "name": "Discord",
+      "components": [
+        "com.discord/com.discord.main.MainAngry",
+        "com.discord/com.discord.main.MainBeanie",
+        "com.discord/com.discord.main.MainBlurpleTwilight",
+        "com.discord/com.discord.main.MainBlush",
+        "com.discord/com.discord.main.MainBrandInverted",
+        "com.discord/com.discord.main.MainCamo",
+        "com.discord/com.discord.main.MainCherryBlossom",
+        "com.discord/com.discord.main.MainCircuit",
+        "com.discord/com.discord.main.MainClydeStein",
+        "com.discord/com.discord.main.MainController",
+        "com.discord/com.discord.main.MainDrip",
+        "com.discord/com.discord.main.MainGalaxy",
+        "com.discord/com.discord.main.MainGaming",
+        "com.discord/com.discord.main.MainHoloWaves",
+        "com.discord/com.discord.main.MainInRainbows",
+        "com.discord/com.discord.main.MainManga",
+        "com.discord/com.discord.main.MainMatteDark",
+        "com.discord/com.discord.main.MainMatteLight",
+        "com.discord/com.discord.main.MainMidnightPrism",
+        "com.discord/com.discord.main.MainMushroom",
+        "com.discord/com.discord.main.MainPastel",
+        "com.discord/com.discord.main.MainPirate",
+        "com.discord/com.discord.main.MainSlimy",
+        "com.discord/com.discord.main.MainSunset",
+        "com.discord/com.discord.main.MainY2K",
+        "com.discord/com.discord.main.MainZombie",
+        "com.discord/com.discord.screens.ScreenAux",
+        "com.discord/com.google.android.archive.ReactivateActivity"
+      ]
+    },
+    {
+      "id": "dev.beefers.vendetta/com.discord.main.MainAngry",
+      "existing_drawable": "discord",
+      "name": "Vendetta",
+      "components": [
+        "dev.beefers.vendetta/com.discord.main.MainAngry",
+        "dev.beefers.vendetta/com.discord.main.MainBeanie",
+        "dev.beefers.vendetta/com.discord.main.MainBlush",
+        "dev.beefers.vendetta/com.discord.main.MainBrandDark",
+        "dev.beefers.vendetta/com.discord.main.MainBrandInverted",
+        "dev.beefers.vendetta/com.discord.main.MainCamo",
+        "dev.beefers.vendetta/com.discord.main.MainCherryBlossom",
+        "dev.beefers.vendetta/com.discord.main.MainCircuit",
+        "dev.beefers.vendetta/com.discord.main.MainClydeStein",
+        "dev.beefers.vendetta/com.discord.main.MainController",
+        "dev.beefers.vendetta/com.discord.main.MainDefault",
+        "dev.beefers.vendetta/com.discord.main.MainDrip",
+        "dev.beefers.vendetta/com.discord.main.MainGalaxy",
+        "dev.beefers.vendetta/com.discord.main.MainGaming",
+        "dev.beefers.vendetta/com.discord.main.MainHoloWaves",
+        "dev.beefers.vendetta/com.discord.main.MainManga",
+        "dev.beefers.vendetta/com.discord.main.MainMatteDark",
+        "dev.beefers.vendetta/com.discord.main.MainMatteLight",
+        "dev.beefers.vendetta/com.discord.main.MainMushroom",
+        "dev.beefers.vendetta/com.discord.main.MainPastel",
+        "dev.beefers.vendetta/com.discord.main.MainPirate",
+        "dev.beefers.vendetta/com.discord.main.MainSlimy",
+        "dev.beefers.vendetta/com.discord.main.MainSunset",
+        "dev.beefers.vendetta/com.discord.main.MainY2K",
+        "dev.beefers.vendetta/com.discord.main.MainZombie"
+      ]
+    },
+    {
+      "id": "com.iMe.android/org.telegram.messenger.AquaIcon",
+      "existing_drawable": "ime",
+      "name": "iMe",
+      "components": [
+        "com.iMe.android/org.telegram.messenger.AquaIcon",
+        "com.iMe.android/org.telegram.messenger.CloudIcon",
+        "com.iMe.android/org.telegram.messenger.DarkIcon",
+        "com.iMe.android/org.telegram.messenger.DefaultIcon",
+        "com.iMe.android/org.telegram.messenger.MaterialIcon",
+        "com.iMe.android/org.telegram.messenger.MerioIcon",
+        "com.iMe.android/org.telegram.messenger.MusheenIcon",
+        "com.iMe.android/org.telegram.messenger.NeonIcon",
+        "com.iMe.android/org.telegram.messenger.NoxIcon",
+        "com.iMe.android/org.telegram.messenger.OldSchoolIcon",
+        "com.iMe.android/org.telegram.messenger.PremiumIcon",
+        "com.iMe.android/org.telegram.messenger.RainbowIcon",
+        "com.iMe.android/org.telegram.messenger.SpaceIcon",
+        "com.iMe.android/org.telegram.messenger.TurboIcon",
+        "com.iMe.android/org.telegram.messenger.VintageIcon",
+        "com.iMe.android/org.telegram.ui.LaunchActivity",
+        "com.iMe.android/org.telegram.ui.LaunchActivityBlackIcon",
+        "com.iMe.android/org.telegram.ui.LaunchActivityBlueLightIcon",
+        "com.iMe.android/org.telegram.ui.LaunchActivityDefaultIcon",
+        "com.iMe.android/org.telegram.ui.LaunchActivityKeyIcon",
+        "com.iMe.android/org.telegram.ui.LaunchActivitySpaceIcon"
+      ]
+    },
+    {
+      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt0",
+      "existing_drawable": "vivaldi",
+      "name": "Vivaldi Snapshot",
+      "components": [
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt0",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt1",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt10",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt11",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt12",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt13",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt14",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt15",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt16",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt17",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt18",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt19",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt2",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt20",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt3",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt4",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt5",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt6",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt7",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt8",
+        "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt9"
+      ]
+    },
+    {
+      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppCool",
+      "existing_drawable": "fennec",
+      "name": "Fennec",
+      "components": [
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppCool",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppFlaming",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppGradientBlueHour",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppGradientGoldenHour",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppGradientMidnight",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppGradientNorthernLights",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppGradientSunrise",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppGradientSunset",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppGradientTwilight",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppMinimal",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppPixelated",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppPride",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppRetro2004",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppSolidBlue",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppSolidDark",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppSolidGreen",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppSolidLight",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppSolidPurple",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppSolidPurpleDark",
+        "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppSolidRed"
+      ]
+    },
+    {
+      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppCool",
+      "existing_drawable": "firefox_beta",
+      "name": "Firefox Beta",
+      "components": [
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppCool",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppFlaming",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppGradientBlueHour",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppGradientGoldenHour",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppGradientMidnight",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppGradientNorthernLights",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppGradientSunrise",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppGradientSunset",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppGradientTwilight",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppMinimal",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppPixelated",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppPride",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppRetro2004",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppSolidBlue",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppSolidDark",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppSolidGreen",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppSolidLight",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppSolidPurple",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppSolidPurpleDark",
+        "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppSolidRed"
+      ]
+    },
+    {
+      "id": "org.mozilla.fenix/org.mozilla.fenix.AppCool",
+      "existing_drawable": "firefox_nightly",
+      "name": "Firefox Nightly",
+      "components": [
+        "org.mozilla.fenix/org.mozilla.fenix.AppCool",
+        "org.mozilla.fenix/org.mozilla.fenix.AppFlaming",
+        "org.mozilla.fenix/org.mozilla.fenix.AppGradientBlueHour",
+        "org.mozilla.fenix/org.mozilla.fenix.AppGradientGoldenHour",
+        "org.mozilla.fenix/org.mozilla.fenix.AppGradientMidnight",
+        "org.mozilla.fenix/org.mozilla.fenix.AppGradientNorthernLights",
+        "org.mozilla.fenix/org.mozilla.fenix.AppGradientSunrise",
+        "org.mozilla.fenix/org.mozilla.fenix.AppGradientSunset",
+        "org.mozilla.fenix/org.mozilla.fenix.AppGradientTwilight",
+        "org.mozilla.fenix/org.mozilla.fenix.AppMinimal",
+        "org.mozilla.fenix/org.mozilla.fenix.AppPixelated",
+        "org.mozilla.fenix/org.mozilla.fenix.AppPride",
+        "org.mozilla.fenix/org.mozilla.fenix.AppRetro2004",
+        "org.mozilla.fenix/org.mozilla.fenix.AppSolidBlue",
+        "org.mozilla.fenix/org.mozilla.fenix.AppSolidDark",
+        "org.mozilla.fenix/org.mozilla.fenix.AppSolidGreen",
+        "org.mozilla.fenix/org.mozilla.fenix.AppSolidLight",
+        "org.mozilla.fenix/org.mozilla.fenix.AppSolidPurple",
+        "org.mozilla.fenix/org.mozilla.fenix.AppSolidPurpleDark",
+        "org.mozilla.fenix/org.mozilla.fenix.AppSolidRed"
+      ]
+    },
+    {
+      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Amber",
+      "existing_drawable": "fossify_documents",
+      "name": "Fossify Documents",
+      "components": [
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Amber",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Blue",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Blue_grey",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Brown",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Cyan",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Deep_orange",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Deep_purple",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Grey_black",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Indigo",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Light_blue",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Light_green",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Lime",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Orange",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Pink",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Purple",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Red",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Teal",
+        "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Yellow"
+      ]
+    },
+    {
+      "id": "xyz.nextalone.nagram/org.telegram.messenger.AquaIcon",
+      "existing_drawable": "nagram",
+      "name": "Nagram",
+      "components": [
+        "xyz.nextalone.nagram/org.telegram.messenger.AquaIcon",
+        "xyz.nextalone.nagram/org.telegram.messenger.BlueIcon",
+        "xyz.nextalone.nagram/org.telegram.messenger.CloudIcon",
+        "xyz.nextalone.nagram/org.telegram.messenger.DarkBlueIcon",
+        "xyz.nextalone.nagram/org.telegram.messenger.DarkIcon",
+        "xyz.nextalone.nagram/org.telegram.messenger.GoogleIcon",
+        "xyz.nextalone.nagram/org.telegram.messenger.MaterialIcon",
+        "xyz.nextalone.nagram/org.telegram.messenger.MerioIcon",
+        "xyz.nextalone.nagram/org.telegram.messenger.MusheenIcon",
+        "xyz.nextalone.nagram/org.telegram.messenger.NeonIcon",
+        "xyz.nextalone.nagram/org.telegram.messenger.NielloIcon",
+        "xyz.nextalone.nagram/org.telegram.messenger.NoxIcon",
+        "xyz.nextalone.nagram/org.telegram.messenger.OldSchoolIcon",
+        "xyz.nextalone.nagram/org.telegram.messenger.RainbowIcon",
+        "xyz.nextalone.nagram/org.telegram.messenger.SpaceIcon",
+        "xyz.nextalone.nagram/org.telegram.messenger.TurboIcon",
+        "xyz.nextalone.nagram/org.telegram.messenger.VintageIcon",
+        "xyz.nextalone.nagram/org.telegram.ui.LaunchActivity"
+      ]
+    },
+    {
+      "id": "com.radolyn.ayugram/com.exteragram.messenger.AmethystIcon",
+      "existing_drawable": "ayugram",
+      "name": "AyuGram",
+      "components": [
+        "com.radolyn.ayugram/com.exteragram.messenger.AmethystIcon",
+        "com.radolyn.ayugram/com.exteragram.messenger.AyuGramAlt",
+        "com.radolyn.ayugram/com.exteragram.messenger.AyuGramBard",
+        "com.radolyn.ayugram/com.exteragram.messenger.AyuGramDiscord",
+        "com.radolyn.ayugram/com.exteragram.messenger.AyuGramExtera",
+        "com.radolyn.ayugram/com.exteragram.messenger.AyuGramNothing",
+        "com.radolyn.ayugram/com.exteragram.messenger.AyuGramSpotify",
+        "com.radolyn.ayugram/com.exteragram.messenger.AyuGramYaPlus",
+        "com.radolyn.ayugram/com.exteragram.messenger.Dsgn480Icon",
+        "com.radolyn.ayugram/com.exteragram.messenger.GoogleIcon",
+        "com.radolyn.ayugram/com.exteragram.messenger.MonetIcon",
+        "com.radolyn.ayugram/com.exteragram.messenger.MonetIconExtera",
+        "com.radolyn.ayugram/com.exteragram.messenger.NeoIcon",
+        "com.radolyn.ayugram/com.exteragram.messenger.OrbitIcon",
+        "com.radolyn.ayugram/com.exteragram.messenger.OriginsIcon",
+        "com.radolyn.ayugram/com.exteragram.messenger.SapphireIcon",
+        "com.radolyn.ayugram/com.exteragram.messenger.SpaceIcon"
+      ]
+    },
+    {
+      "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Amber",
+      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
+      "name": "Simple Calculator",
+      "components": [
+        "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Amber",
+        "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Blue",
+        "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Blue_grey",
+        "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Brown",
+        "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Cyan",
+        "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Deep_purple",
+        "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Green",
+        "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Indigo",
+        "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Light_blue",
+        "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Light_green",
+        "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Lime",
+        "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Pink",
+        "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Purple",
+        "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Red",
+        "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Teal",
+        "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Yellow",
+        "com.simplemobiletools.calculator/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity.Orange"
+      ]
+    },
+    {
+      "id": "org.telegram.mdgram/org.telegram.mdgram.AquaIcon",
+      "existing_drawable": "mdgram",
+      "name": "MDGram",
+      "components": [
+        "org.telegram.mdgram/org.telegram.mdgram.AquaIcon",
+        "org.telegram.mdgram/org.telegram.mdgram.CloudIcon",
+        "org.telegram.mdgram/org.telegram.mdgram.Color",
+        "org.telegram.mdgram/org.telegram.mdgram.DarkIcon",
+        "org.telegram.mdgram/org.telegram.mdgram.MaterialIcon",
+        "org.telegram.mdgram/org.telegram.mdgram.MerioIcon",
+        "org.telegram.mdgram/org.telegram.mdgram.MusheenIcon",
+        "org.telegram.mdgram/org.telegram.mdgram.NeonIcon",
+        "org.telegram.mdgram/org.telegram.mdgram.NoxIcon",
+        "org.telegram.mdgram/org.telegram.mdgram.OldSchoolIcon",
+        "org.telegram.mdgram/org.telegram.mdgram.PremiumIcon",
+        "org.telegram.mdgram/org.telegram.mdgram.RainbowIcon",
+        "org.telegram.mdgram/org.telegram.mdgram.SpaceIcon",
+        "org.telegram.mdgram/org.telegram.mdgram.TurboIcon",
+        "org.telegram.mdgram/org.telegram.mdgram.VintageIcon",
+        "org.telegram.mdgram/org.telegram.ui.LaunchActivity"
+      ]
+    },
+    {
+      "id": "com.exteragram.messenger/com.exteragram.messenger.AmethystIcon",
+      "existing_drawable": "exteragram",
+      "name": "exteraGram",
+      "components": [
+        "com.exteragram.messenger/com.exteragram.messenger.AmethystIcon",
+        "com.exteragram.messenger/com.exteragram.messenger.AuroraIcon",
+        "com.exteragram.messenger/com.exteragram.messenger.CyberpunkIcon",
+        "com.exteragram.messenger/com.exteragram.messenger.Dsgn480Icon",
+        "com.exteragram.messenger/com.exteragram.messenger.GoogleIcon",
+        "com.exteragram.messenger/com.exteragram.messenger.InvincibleIcon",
+        "com.exteragram.messenger/com.exteragram.messenger.MonetIcon",
+        "com.exteragram.messenger/com.exteragram.messenger.NeoIcon",
+        "com.exteragram.messenger/com.exteragram.messenger.OrbitIcon",
+        "com.exteragram.messenger/com.exteragram.messenger.OriginsIcon",
+        "com.exteragram.messenger/com.exteragram.messenger.SapphireIcon",
+        "com.exteragram.messenger/com.exteragram.messenger.SpaceIcon",
+        "com.exteragram.messenger/com.exteragram.messenger.SunsetIcon",
+        "com.exteragram.messenger/com.exteragram.messenger.SusIcon",
+        "com.exteragram.messenger/com.exteragram.messenger.WinterIcon"
+      ]
+    },
+    {
+      "id": "org.forkclient.messenger.beta/org.telegram.messenger.AquaIcon",
+      "existing_drawable": "telegram",
+      "name": "Fork Client",
+      "components": [
+        "org.forkclient.messenger.beta/org.telegram.messenger.AquaIcon",
+        "org.forkclient.messenger.beta/org.telegram.messenger.CloudIcon",
+        "org.forkclient.messenger.beta/org.telegram.messenger.DarkIcon",
+        "org.forkclient.messenger.beta/org.telegram.messenger.DefaultIcon",
+        "org.forkclient.messenger.beta/org.telegram.messenger.MaterialIcon",
+        "org.forkclient.messenger.beta/org.telegram.messenger.MerioIcon",
+        "org.forkclient.messenger.beta/org.telegram.messenger.MusheenIcon",
+        "org.forkclient.messenger.beta/org.telegram.messenger.NeonIcon",
+        "org.forkclient.messenger.beta/org.telegram.messenger.NoxIcon",
+        "org.forkclient.messenger.beta/org.telegram.messenger.OldSchoolIcon",
+        "org.forkclient.messenger.beta/org.telegram.messenger.PremiumIcon",
+        "org.forkclient.messenger.beta/org.telegram.messenger.RainbowIcon",
+        "org.forkclient.messenger.beta/org.telegram.messenger.SpaceIcon",
+        "org.forkclient.messenger.beta/org.telegram.messenger.TurboIcon",
+        "org.forkclient.messenger.beta/org.telegram.messenger.VintageIcon"
+      ]
+    },
+    {
+      "id": "org.telegram.plus/org.telegram.messenger.AquaIcon",
+      "existing_drawable": "plus_messenger",
+      "name": "Plus Messenger",
+      "components": [
+        "org.telegram.plus/org.telegram.messenger.AquaIcon",
+        "org.telegram.plus/org.telegram.messenger.CloudIcon",
+        "org.telegram.plus/org.telegram.messenger.DarkIcon",
+        "org.telegram.plus/org.telegram.messenger.MaterialIcon",
+        "org.telegram.plus/org.telegram.messenger.MerioIcon",
+        "org.telegram.plus/org.telegram.messenger.MusheenIcon",
+        "org.telegram.plus/org.telegram.messenger.NeonIcon",
+        "org.telegram.plus/org.telegram.messenger.NoxIcon",
+        "org.telegram.plus/org.telegram.messenger.OldSchoolIcon",
+        "org.telegram.plus/org.telegram.messenger.PlusIcon",
+        "org.telegram.plus/org.telegram.messenger.PremiumIcon",
+        "org.telegram.plus/org.telegram.messenger.RainbowIcon",
+        "org.telegram.plus/org.telegram.messenger.SpaceIcon",
+        "org.telegram.plus/org.telegram.messenger.VintageIcon"
+      ]
+    },
+    {
+      "id": "tw.nekomimi.nekogram/org.telegram.messenger.AquaIcon",
+      "existing_drawable": "nekogram",
+      "name": "Nekogram",
+      "components": [
+        "tw.nekomimi.nekogram/org.telegram.messenger.AquaIcon",
+        "tw.nekomimi.nekogram/org.telegram.messenger.CloudIcon",
+        "tw.nekomimi.nekogram/org.telegram.messenger.DarkIcon",
+        "tw.nekomimi.nekogram/org.telegram.messenger.MerioIcon",
+        "tw.nekomimi.nekogram/org.telegram.messenger.NeonIcon",
+        "tw.nekomimi.nekogram/org.telegram.messenger.NoxIcon",
+        "tw.nekomimi.nekogram/org.telegram.messenger.OldSchoolIcon",
+        "tw.nekomimi.nekogram/org.telegram.messenger.PremiumIcon",
+        "tw.nekomimi.nekogram/org.telegram.messenger.RainbowIcon",
+        "tw.nekomimi.nekogram/org.telegram.messenger.SpaceIcon",
+        "tw.nekomimi.nekogram/org.telegram.messenger.TurboIcon",
+        "tw.nekomimi.nekogram/org.telegram.messenger.VintageIcon"
+      ]
+    },
+    {
+      "id": "org.thoughtcrime.securesms/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "signal",
+      "name": "Signal",
+      "components": [
+        "org.thoughtcrime.securesms/com.google.android.archive.ReactivateActivity",
+        "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltBubbles",
+        "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltChat",
+        "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltColor",
+        "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltDark",
+        "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltDarkVariant",
+        "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltNews",
+        "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltNotes",
+        "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltWaves",
+        "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltWeather",
+        "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltWhite",
+        "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltYellow"
+      ]
+    },
+    {
+      "id": "com.reddit.frontpage/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "reddit",
+      "name": "Reddit",
+      "components": [
+        "com.reddit.frontpage/com.google.android.archive.ReactivateActivity",
+        "com.reddit.frontpage/launcher.alien_blue",
+        "com.reddit.frontpage/launcher.astronaut",
+        "com.reddit.frontpage/launcher.neon",
+        "com.reddit.frontpage/launcher.pixels",
+        "com.reddit.frontpage/launcher.planet",
+        "com.reddit.frontpage/launcher.pullover",
+        "com.reddit.frontpage/launcher.redditgifts",
+        "com.reddit.frontpage/launcher.stocks",
+        "com.reddit.frontpage/launcher.tothemoon",
+        "com.reddit.frontpage/launcher.worldcup2026"
+      ]
+    },
+    {
+      "id": "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon10",
+      "existing_drawable": "x",
+      "name": "X",
+      "components": [
+        "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon10",
+        "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon11",
+        "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon12",
+        "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon13",
+        "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon14",
+        "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon2",
+        "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon3",
+        "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon4",
+        "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon6",
+        "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon7",
+        "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon8"
+      ]
+    },
+    {
+      "id": "com.facebook.katana/com.facebook.katana.LoginActivity.blue_fb",
+      "existing_drawable": "facebook",
+      "name": "Facebook",
+      "components": [
+        "com.facebook.katana/com.facebook.katana.LoginActivity.blue_fb",
+        "com.facebook.katana/com.facebook.katana.LoginActivity.dreamy_ic",
+        "com.facebook.katana/com.facebook.katana.LoginActivity.fab_ic",
+        "com.facebook.katana/com.facebook.katana.LoginActivity.fierce_ic",
+        "com.facebook.katana/com.facebook.katana.LoginActivity.katana",
+        "com.facebook.katana/com.facebook.katana.LoginActivity.loved_ic",
+        "com.facebook.katana/com.facebook.katana.LoginActivity.quiet_cool",
+        "com.facebook.katana/com.facebook.katana.LoginActivity.vaporwave_ic",
+        "com.facebook.katana/com.facebook.katana.LoginActivity.worldcup_ic"
+      ]
+    },
+    {
+      "id": "com.opera.browser/com.opera.Launcher1",
+      "existing_drawable": "opera_browser",
+      "name": "Opera",
+      "components": [
+        "com.opera.browser/com.opera.Launcher1",
+        "com.opera.browser/com.opera.Launcher11",
+        "com.opera.browser/com.opera.Launcher2",
+        "com.opera.browser/com.opera.Launcher3",
+        "com.opera.browser/com.opera.Launcher4",
+        "com.opera.browser/com.opera.Launcher5",
+        "com.opera.browser/com.opera.Launcher6",
+        "com.opera.browser/com.opera.Launcher8",
+        "com.opera.browser/com.opera.Launcher9"
+      ]
+    },
+    {
+      "id": "com.maxmpz.equalizer/com.maxmpz.audioplayer.black_play_adaptive",
+      "existing_drawable": "poweramp_equalizer",
+      "name": "Poweramp Equalizer",
+      "components": [
+        "com.maxmpz.equalizer/com.maxmpz.audioplayer.black_play_adaptive",
+        "com.maxmpz.equalizer/com.maxmpz.audioplayer.classic",
+        "com.maxmpz.equalizer/com.maxmpz.audioplayer.rounded_inverted_mu",
+        "com.maxmpz.equalizer/com.maxmpz.audioplayer.rounded_mu",
+        "com.maxmpz.equalizer/com.maxmpz.audioplayer.rounded_play_mu",
+        "com.maxmpz.equalizer/com.maxmpz.audioplayer.standard_mu",
+        "com.maxmpz.equalizer/com.maxmpz.audioplayer.white_play_adaptive",
+        "com.maxmpz.equalizer/com.maxmpz.audioplayer.zap_plain_adaptive",
+        "com.maxmpz.equalizer/com.maxmpz.audioplayer.zap_round"
+      ]
+    },
+    {
+      "id": "moe.rukamori.archivetune/moe.rukamori.archivetune.launcher.IconAlias31c9b8daccc0313a9210a441",
+      "existing_drawable": "archivetune",
+      "name": "ArchiveTune",
+      "components": [
+        "moe.rukamori.archivetune/moe.rukamori.archivetune.launcher.IconAlias31c9b8daccc0313a9210a441",
+        "moe.rukamori.archivetune/moe.rukamori.archivetune.launcher.IconAlias544376e2699c4931e8414c1b",
+        "moe.rukamori.archivetune/moe.rukamori.archivetune.launcher.IconAlias7e8ad21dc797a86d2b9bc23d",
+        "moe.rukamori.archivetune/moe.rukamori.archivetune.launcher.IconAlias9e93960b0c46754338571b4f",
+        "moe.rukamori.archivetune/moe.rukamori.archivetune.launcher.IconAliasbf8bd3c3adfb819408994c22",
+        "moe.rukamori.archivetune/moe.rukamori.archivetune.launcher.IconAliasd31cf09f615e039e347c6a84",
+        "moe.rukamori.archivetune/moe.rukamori.archivetune.launcher.IconAliasd8836aa281d013ca23229cfc",
+        "moe.rukamori.archivetune/moe.rukamori.archivetune.launcher.IconAliase48c7256a521b7d6bc1a2866"
+      ]
+    },
+    {
+      "id": "io.github.pyoncord.app/com.discord.main.MainBlurpleTwilight",
+      "existing_drawable": "discord",
+      "name": "Bunny",
+      "components": [
+        "io.github.pyoncord.app/com.discord.main.MainBlurpleTwilight",
+        "io.github.pyoncord.app/com.discord.main.MainBlush",
+        "io.github.pyoncord.app/com.discord.main.MainController",
+        "io.github.pyoncord.app/com.discord.main.MainDefault",
+        "io.github.pyoncord.app/com.discord.main.MainInRainbows",
+        "io.github.pyoncord.app/com.discord.main.MainManga",
+        "io.github.pyoncord.app/com.discord.main.MainMatteDark",
+        "io.github.pyoncord.app/com.discord.main.MainMidnightPrism"
+      ]
+    },
+    {
+      "id": "com.simplemobiletools.calendar/com.simplemobiletools.calendar.activities.SplashActivity.Amber",
+      "existing_drawable": "simple_calendar",
+      "name": "Simple Calendar",
+      "components": [
+        "com.simplemobiletools.calendar/com.simplemobiletools.calendar.activities.SplashActivity.Amber",
+        "com.simplemobiletools.calendar/com.simplemobiletools.calendar.activities.SplashActivity.Brown",
+        "com.simplemobiletools.calendar/com.simplemobiletools.calendar.activities.SplashActivity.Deep_orange",
+        "com.simplemobiletools.calendar/com.simplemobiletools.calendar.activities.SplashActivity.Deep_purple",
+        "com.simplemobiletools.calendar/com.simplemobiletools.calendar.activities.SplashActivity.Green",
+        "com.simplemobiletools.calendar/com.simplemobiletools.calendar.activities.SplashActivity.Light_green",
+        "com.simplemobiletools.calendar/com.simplemobiletools.calendar.activities.SplashActivity.Lime",
+        "com.simplemobiletools.calendar/com.simplemobiletools.calendar.activities.SplashActivity.Teal"
+      ]
+    },
+    {
+      "id": "re.sova.five/re.sova.five.EventIcon1",
+      "existing_drawable": "sova_five",
+      "name": "SOVA V RE",
+      "components": [
+        "re.sova.five/re.sova.five.EventIcon1",
+        "re.sova.five/re.sova.five.EventIcon5",
+        "re.sova.five/re.sova.five.OffName",
+        "re.sova.five/re.sova.five.OffSova",
+        "re.sova.five/re.sova.five.SovaAlter",
+        "re.sova.five/re.sova.five.SovaVkName",
+        "re.sova.five/re.sova.five.SovaVkNameAlter",
+        "re.sova.five/re.sova.five.StaticIcon3"
+      ]
+    },
+    {
+      "id": "app.morphe.android.youtube/app.morphe.android.youtube.morphe_black_4",
+      "existing_drawable": "morphe",
+      "name": "YouTube",
+      "components": [
+        "app.morphe.android.youtube/app.morphe.android.youtube.morphe_black_4",
+        "app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_1",
+        "app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_2",
+        "app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_3",
+        "app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_black_1",
+        "app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_black_2",
+        "app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_black_3",
+        "app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_black_5"
+      ]
+    },
+    {
+      "id": "com.whatsapp/com.whatsapp.AppIcon03",
+      "existing_drawable": "whatsapp",
+      "name": "WhatsApp",
+      "components": [
+        "com.whatsapp/com.whatsapp.AppIcon03",
+        "com.whatsapp/com.whatsapp.AppIcon04",
+        "com.whatsapp/com.whatsapp.AppIcon09",
+        "com.whatsapp/com.whatsapp.AppIcon10",
+        "com.whatsapp/com.whatsapp.AppIcon11",
+        "com.whatsapp/com.whatsapp.Icon0",
+        "com.whatsapp/com.whatsapp.Icon43"
+      ]
+    },
+    {
+      "id": "burgerking.com.br.appandroid/burgerking.com.br.appandroid.MainAliasNormal",
+      "existing_drawable": "burger_king",
+      "name": "Burger King",
+      "components": [
+        "burgerking.com.br.appandroid/burgerking.com.br.appandroid.MainAliasNormal",
+        "burgerking.com.br.appandroid/burgerking.com.br.appandroid.splash.SplashActivityAlias",
+        "burgerking.com.br.appandroid/burgerking.com.br.appandroid.splash.SplashActivity_",
+        "burgerking.com.br.appandroid/burgerking.com.br.appandroid.splash.presentation.SplashActivity",
+        "burgerking.com.br.appandroid/com.google.android.archive.ReactivateActivity",
+        "burgerking.com.br.appandroid/edeploy.com.br.delivery.splash.SplashActivity_"
+      ]
+    },
+    {
+      "id": "cc.forestapp/cc.forestapp.activities.main.MainActivity",
+      "existing_drawable": "forest",
+      "name": "Forest",
+      "components": [
+        "cc.forestapp/cc.forestapp.activities.PlantView.PlantViewController",
+        "cc.forestapp/cc.forestapp.activities.launch.LaunchActivity",
+        "cc.forestapp/cc.forestapp.activities.main.MainActivity",
+        "cc.forestapp/cc.forestapp.activities.plant.PlantViewController",
+        "cc.forestapp/com.google.android.archive.ReactivateActivity",
+        "cc.forestapp/com.jeremy.SplashSpotActivity"
+      ]
+    },
+    {
+      "id": "com.justeat.app.uk/com.jet.singleactivity.ui.MainActivity",
+      "existing_drawable": "just_eat",
+      "name": "Just Eat",
+      "components": [
+        "com.justeat.app.uk/com.jet.singleactivity.ui.MainActivity",
+        "com.justeat.app.uk/com.justeat.app.ui.MainActivity",
+        "com.justeat.app.uk/com.justeat.app.ui.SplashActivity",
+        "com.justeat.app.uk/com.justeat.app.ui.splash.SplashActivity",
+        "com.justeat.app.uk/com.justeat.splash.ui.SplashActivity",
+        "com.justeat.app.uk/com.takeaway.android.activity.Splash"
+      ]
+    },
+    {
+      "id": "app.mdgram.android/app.mdgram.android.AquaIcon",
+      "existing_drawable": "mdgram",
+      "name": "MDGram",
+      "components": [
+        "app.mdgram.android/app.mdgram.android.AquaIcon",
+        "app.mdgram.android/app.mdgram.android.Color",
+        "app.mdgram.android/app.mdgram.android.DefaultIcon",
+        "app.mdgram.android/app.mdgram.android.MaterialYou",
+        "app.mdgram.android/app.mdgram.android.NoxIcon",
+        "app.mdgram.android/app.mdgram.android.VintageIcon"
+      ]
+    },
+    {
+      "id": "com.microsoft.emmx/com.microsoft.ruby.Main1",
+      "existing_drawable": "microsoft_edge",
+      "name": "Microsoft Edge",
+      "components": [
+        "com.microsoft.emmx/com.microsoft.ruby.Main1",
+        "com.microsoft.emmx/com.microsoft.ruby.Main2",
+        "com.microsoft.emmx/com.microsoft.ruby.Main3",
+        "com.microsoft.emmx/com.microsoft.ruby.Main4",
+        "com.microsoft.emmx/com.microsoft.ruby.Main7",
+        "com.microsoft.emmx/com.microsoft.ruby.Main9"
+      ]
+    },
+    {
+      "id": "com.google.android.gms/com.google.android.gms.nearby.sharing.main.MainActivity",
+      "existing_drawable": "microg_settings",
+      "name": "Quick Share",
+      "components": [
+        "com.google.android.gms/com.google.android.gms.nearby.sharing.ReceiveSurfaceActivity",
+        "com.google.android.gms/com.google.android.gms.nearby.sharing.ShareSheetActivity",
+        "com.google.android.gms/com.google.android.gms.nearby.sharing.SharingLauncherActivity",
+        "com.google.android.gms/com.google.android.gms.nearby.sharing.main.MainActivity",
+        "com.google.android.gms/com.google.android.gms.nearby.sharing.settings.SettingsActivity",
+        "com.google.android.gms/com.google.android.gms.nearby.sharing.ui.DiscoveryActivity"
+      ]
+    },
+    {
+      "id": "com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Amber",
+      "existing_drawable": "simple_calendar",
+      "name": "Simple Calendar Pro",
+      "components": [
+        "com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Amber",
+        "com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Brown",
+        "com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Green",
+        "com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Indigo",
+        "com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Lime",
+        "com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Yellow"
+      ]
+    },
+    {
+      "id": "com.spotify.music/com.music.spotui.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify",
+      "components": [
+        "com.spotify.music/com.google.android.archive.ReactivateActivity",
+        "com.spotify.music/com.jojoy.delegate.JojoyInstallerActivity",
+        "com.spotify.music/com.music.spotui.MainActivity",
+        "com.spotify.music/com.pollock_roe.AppOpenAdActivity",
+        "com.spotify.music/com.spotify.music.main.MainScreenActivity",
+        "com.spotify.music/io.github.darkplayoff.yayma.MainActivity"
+      ]
+    },
+    {
+      "id": "pl.zabka.apb2c/pl.zabka.apb2c.ui.ZappkaActivity",
+      "existing_drawable": "zappka",
+      "name": "\u017cappka",
+      "components": [
+        "pl.zabka.apb2c/pl.zabka.apb2c.ui.ZappkaActivity",
+        "pl.zabka.apb2c/pl.zabka.apb2c.ui.ZappkaActivityDefault",
+        "pl.zabka.apb2c/pl.zabka.apb2c.ui.ZappkaActivityWinterSeason",
+        "pl.zabka.apb2c/pl.zabka.app.ui.ZappkaActivityDefault",
+        "pl.zabka.apb2c/pl.zabka.app.ui.ZappkaActivityTriki",
+        "pl.zabka.apb2c/pl.zabka.app.ui.ZappkaActivityWinterSeason"
+      ]
+    },
+    {
+      "id": "com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.MainActivity",
+      "existing_drawable": "google",
+      "name": "Google",
+      "components": [
+        "com.google.android.googlequicksearchbox/com.google.android.apps.search.soundsearch.shortcut.AddShortcutActivity",
+        "com.google.android.googlequicksearchbox/com.google.android.apps.search.soundsearch.shortcut.AliasAddShortcutActivity",
+        "com.google.android.googlequicksearchbox/com.google.android.apps.search.weather.entrypoints.appicon.WeatherAppIconActivity",
+        "com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.MainActivity",
+        "com.google.android.googlequicksearchbox/com.google.android.search.clientui.SearchServiceClientActivity"
+      ]
+    },
+    {
+      "id": "ir.ilmili.telegraph/org.telegram.messenger.GraphIconBlack",
+      "existing_drawable": "telegram",
+      "name": "Graph Messenger",
+      "components": [
+        "ir.ilmili.telegraph/org.telegram.messenger.GraphIconBlack",
+        "ir.ilmili.telegraph/org.telegram.messenger.GraphIconRed",
+        "ir.ilmili.telegraph/org.telegram.messenger.GraphIconWhite",
+        "ir.ilmili.telegraph/org.telegram.messenger.NoxIcon",
+        "ir.ilmili.telegraph/org.telegram.messenger.TelegramIcon"
+      ]
+    },
+    {
+      "id": "com.justeat.app.es/com.jet.singleactivity.ui.MainActivity",
+      "existing_drawable": "just_eat",
+      "name": "Just Eat",
+      "components": [
+        "com.justeat.app.es/com.jet.singleactivity.ui.MainActivity",
+        "com.justeat.app.es/com.justeat.app.ui.MainActivity",
+        "com.justeat.app.es/com.justeat.app.ui.SplashActivity",
+        "com.justeat.app.es/com.justeat.splash.ui.SplashActivity",
+        "com.justeat.app.es/com.takeaway.android.activity.Splash"
+      ]
+    },
+    {
+      "id": "com.takeaway.android/com.jet.singleactivity.ui.MainActivity",
+      "existing_drawable": "just_eat",
+      "name": "Just Eat",
+      "components": [
+        "com.takeaway.android/com.jet.singleactivity.ui.MainActivity",
+        "com.takeaway.android/com.justeat.splash.ui.SplashActivity",
+        "com.takeaway.android/com.takeaway.android.Startup",
+        "com.takeaway.android/com.takeaway.android.Welcome",
+        "com.takeaway.android/com.takeaway.android.activity.Splash"
+      ]
+    },
+    {
+      "id": "com.yopeso.lieferando/com.jet.singleactivity.ui.MainActivity",
+      "existing_drawable": "just_eat",
+      "name": "Lieferando",
+      "components": [
+        "com.yopeso.lieferando/com.jet.singleactivity.ui.MainActivity",
+        "com.yopeso.lieferando/com.justeat.splash.ui.SplashActivity",
+        "com.yopeso.lieferando/com.takeaway.android.Startup",
+        "com.yopeso.lieferando/com.takeaway.android.activity.Splash",
+        "com.yopeso.lieferando/com.yopeso.lieferando.SplashActivity"
+      ]
+    },
+    {
+      "id": "com.mojang.minecraftpe/com.byfen.archiver.MainActivity",
+      "existing_drawable": "minecraft",
+      "name": "Minecraft",
+      "components": [
+        "com.mojang.minecraftpe/com.byfen.archiver.MainActivity",
+        "com.mojang.minecraftpe/com.fiveplay.mod.RMS.Recovery",
+        "com.mojang.minecraftpe/com.google.android.archive.ReactivateActivity",
+        "com.mojang.minecraftpe/com.jojoy.delegate.JojoyInstallerActivity",
+        "com.mojang.minecraftpe/com.me.game.pmupdatesdk.MainActivity"
+      ]
+    },
+    {
+      "id": "cu.etecsa.cubacel.tr.tm/cu.etecsa.cubacel.tr.tm.SyVnUVixci",
+      "existing_drawable": "transfermovil",
+      "name": "Transfermovil",
+      "components": [
+        "cu.etecsa.cubacel.tr.tm/cu.etecsa.cubacel.tr.tm.SyVnUVixci",
+        "cu.etecsa.cubacel.tr.tm/cu.etecsa.cubacel.tr.tm.WUsd6Bt7CT",
+        "cu.etecsa.cubacel.tr.tm/cu.etecsa.cubacel.tr.tm.dQIGCe2zqB",
+        "cu.etecsa.cubacel.tr.tm/cu.etecsa.cubacel.tr.tm.prPzLeyxKk",
+        "cu.etecsa.cubacel.tr.tm/cu.etecsa.cubacel.tr.tm.tPLup7yN75"
+      ]
+    },
+    {
+      "id": "ch.viseca.visecaone/com.netcetera.visecaone.android.feature.branding.alias_activities.BanqueCantonaleDeFribourgAliasActivity",
+      "existing_drawable": "viseca_one",
+      "name": "Viseca One",
+      "components": [
+        "ch.viseca.visecaone/com.netcetera.visecaone.android.feature.branding.alias_activities.BanqueCantonaleDeFribourgAliasActivity",
+        "ch.viseca.visecaone/com.netcetera.visecaone.android.feature.branding.alias_activities.DefaultBrandAliasActivity",
+        "ch.viseca.visecaone/com.netcetera.visecaone.android.feature.branding.alias_activities.MigrosBankDEAliasActivity",
+        "ch.viseca.visecaone/com.netcetera.visecaone.android.feature.branding.alias_activities.RaiffeisenBankAliasActivity",
+        "ch.viseca.visecaone/com.netcetera.visecaone.android.feature.branding.alias_activities.ZurcherKantonalBankAliasActivity"
+      ]
+    },
+    {
+      "id": "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_custom_5",
+      "existing_drawable": "generic_player",
+      "name": "YouTube Music",
+      "components": [
+        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_custom_5",
+        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_2",
+        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_3",
+        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_5",
+        "app.morphe.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity"
+      ]
+    }
+  ]
+}

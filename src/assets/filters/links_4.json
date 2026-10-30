@@ -1,0 +1,458 @@
+{
+  "label": "Links",
+  "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
+  "batch": 4,
+  "total_batches": 23,
+  "links": [
+    {
+      "id": "james.dsp/me.timschneeberger.rootlessjamesdsp.activity.MainActivity",
+      "existing_drawable": "rootless_james_dsp",
+      "name": "JamesDSP",
+      "components": [
+        "james.dsp/james.dsp.activity.DSPManager",
+        "james.dsp/me.timschneeberger.rootlessjamesdsp.activity.MainActivity"
+      ]
+    },
+    {
+      "id": "com.eat.ch/com.jet.singleactivity.ui.MainActivity",
+      "existing_drawable": "just_eat",
+      "name": "Just Eat",
+      "components": [
+        "com.eat.ch/com.jet.singleactivity.ui.MainActivity",
+        "com.eat.ch/com.takeaway.android.activity.Splash"
+      ]
+    },
+    {
+      "id": "com.justeat.app.fr/com.justeat.app.ui.SplashActivity",
+      "existing_drawable": "just_eat",
+      "name": "Just Eat",
+      "components": [
+        "com.justeat.app.fr/com.justeat.app.ui.SplashActivity",
+        "com.justeat.app.fr/com.takeaway.android.activity.Splash"
+      ]
+    },
+    {
+      "id": "keepass2android.keepass2android_nonet/crc64c98c008c0cd742cb.KeePass",
+      "existing_drawable": "keepass2android",
+      "name": "Keepass2Android Offline",
+      "components": [
+        "keepass2android.keepass2android_nonet/crc64c98c008c0cd742cb.KeePass",
+        "keepass2android.keepass2android_nonet/crc64dd09b2a2e58bb27d.KeePass"
+      ]
+    },
+    {
+      "id": "cocobo1.pupu.app/com.discord.main.MainDefault",
+      "existing_drawable": "discord",
+      "name": "Kettu",
+      "components": [
+        "cocobo1.pupu.app/com.discord.main.MainDefault",
+        "cocobo1.pupu.app/com.discord.main.MainGalaxy"
+      ]
+    },
+    {
+      "id": "com.kfc.nl.mobileapp/com.kfc.nl.mobileapp.MainActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC",
+      "components": [
+        "com.kfc.nl.mobileapp/com.kfc.nl.mobileapp.MainActivity",
+        "com.kfc.nl.mobileapp/com.usemenu.MenuAndroidApplication.SplashActivity"
+      ]
+    },
+    {
+      "id": "com.kfc_polska/com.kfc_polska.ui.activities.MainActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC",
+      "components": [
+        "com.kfc_polska/com.kfc_polska.ui.activities.MainActivity",
+        "com.kfc_polska/com.kfc_polska.ui.activities.OnboardActivity"
+      ]
+    },
+    {
+      "id": "com.nanoequipment.kfc/com.nanoequipment.kfc.MainActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC",
+      "components": [
+        "com.nanoequipment.kfc/com.nanoequipment.kfc.MainActivity",
+        "com.nanoequipment.kfc/com.nanoequipment.kfc.SplashActivity"
+      ]
+    },
+    {
+      "id": "com.yum.kfc/com.yum.kfc.MainActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC",
+      "components": [
+        "com.yum.kfc/com.yum.kfc.MainActivity",
+        "com.yum.kfc/crc64ded25ac84fd66723.MainActivity"
+      ]
+    },
+    {
+      "id": "es.kfc.spain/com.kfces.orderserv.MainActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC",
+      "components": [
+        "es.kfc.spain/com.kfces.orderserv.MainActivity",
+        "es.kfc.spain/com.kfces.orderserv.SplashImageActivity"
+      ]
+    },
+    {
+      "id": "org.kustom.widget.pro/a.y.z.HZ",
+      "existing_drawable": "kwgt_pro",
+      "name": "KWGT Pro Key",
+      "components": [
+        "org.kustom.widget.pro/a.y.z.HZ",
+        "org.kustom.widget.pro/android.app.AppDetailsActivity"
+      ]
+    },
+    {
+      "id": "at.lieferservice.android/com.takeaway.android.Startup",
+      "existing_drawable": "just_eat",
+      "name": "Lieferando",
+      "components": [
+        "at.lieferservice.android/com.takeaway.android.Startup",
+        "at.lieferservice.android/com.takeaway.android.activity.Splash"
+      ]
+    },
+    {
+      "id": "de.lieferservice.android/com.takeaway.android.Startup",
+      "existing_drawable": "just_eat",
+      "name": "Lieferservice",
+      "components": [
+        "de.lieferservice.android/com.takeaway.android.Startup",
+        "de.lieferservice.android/com.takeaway.android.activity.Splash"
+      ]
+    },
+    {
+      "id": "jp.naver.line.android/jp.naver.line.android.basic_1",
+      "existing_drawable": "line",
+      "name": "LINE",
+      "components": [
+        "jp.naver.line.android/jp.naver.line.android.basic_1",
+        "jp.naver.line.android/jp.naver.line.android.design_cherry_blossom"
+      ]
+    },
+    {
+      "id": "com.android.mms/com.android.mms.tab.MmsMainActivity",
+      "existing_drawable": "messages",
+      "name": "Messages",
+      "components": [
+        "com.android.mms/com.android.mms.tab.MmsMainActivity",
+        "com.android.mms/com.freeme.mms.FreemeConversationList"
+      ]
+    },
+    {
+      "id": "in.co.metro.customerappmetro/in.co.metro.customerappmetro.DefaultIcon",
+      "existing_drawable": "metro",
+      "name": "Metro",
+      "components": [
+        "in.co.metro.customerappmetro/in.co.metro.customerappmetro.DefaultIcon",
+        "in.co.metro.customerappmetro/in.co.metro.customerappmetro.newlogin.activities.MetroSplashActivity"
+      ]
+    },
+    {
+      "id": "com.microsoft.emmx.canary/com.microsoft.ruby.Main3",
+      "existing_drawable": "microsoft_edge",
+      "name": "Microsoft Edge Canary",
+      "components": [
+        "com.microsoft.emmx.canary/com.microsoft.ruby.Main3",
+        "com.microsoft.emmx.canary/com.microsoft.ruby.Main6"
+      ]
+    },
+    {
+      "id": "com.minimalisttodolist.pleasebethelastrecyclerview/com.minimalisttodolist.pleasebethelastrecyclerview.MainActivity",
+      "existing_drawable": "tasks",
+      "name": "Minimalist",
+      "components": [
+        "com.minimalisttodolist.pleasebethelastrecyclerview/com.minimalisttodolist.pleasebethelastrecyclerview.MainActivity",
+        "com.minimalisttodolist.pleasebethelastrecyclerview/com.minimalisttodolist.pleasebethelastrecyclerview.MainActivityAlias"
+      ]
+    },
+    {
+      "id": "app.morphe.manager/app.morphe.manager.MainActivity_Light_2",
+      "existing_drawable": "morphe",
+      "name": "Morphe",
+      "components": [
+        "app.morphe.manager/app.morphe.manager.MainActivity_Light_2",
+        "app.morphe.manager/app.morphe.manager.MainActivity_Light_3"
+      ]
+    },
+    {
+      "id": "com.motorola.systemui.desk/com.motorola.taskbar.bar.ExternalModeChooserActivity",
+      "existing_drawable": "moto",
+      "name": "Moto Tutorial",
+      "components": [
+        "com.motorola.systemui.desk/com.motorola.taskbar.bar.ExternalModeChooserActivity",
+        "com.motorola.systemui.desk/com.motorola.taskbar.onboard.OnBoardActivity"
+      ]
+    },
+    {
+      "id": "com.github.musicyou/com.github.musicyou.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Music You",
+      "components": [
+        "com.github.musicyou/com.github.musicyou.MainActivity",
+        "com.github.musicyou/it.vfsfitvnm.vimusic.MainActivity"
+      ]
+    },
+    {
+      "id": "nu.gpu.nagram/org.telegram.messenger.DarkGreenIcon",
+      "existing_drawable": "nagram",
+      "name": "Nagram X",
+      "components": [
+        "nu.gpu.nagram/org.telegram.messenger.DarkGreenIcon",
+        "nu.gpu.nagram/org.telegram.messenger.NeonIcon"
+      ]
+    },
+    {
+      "id": "fork.risin42.nagramx/org.telegram.messenger.ColorfulIcon",
+      "existing_drawable": "nagram",
+      "name": "Nagram XF",
+      "components": [
+        "fork.risin42.nagramx/org.telegram.messenger.ColorfulIcon",
+        "fork.risin42.nagramx/org.telegram.messenger.DarkBlueIcon"
+      ]
+    },
+    {
+      "id": "com.machiav3lli.backup/com.machiav3lli.backup.activities.MainActivityX",
+      "existing_drawable": "neo_backup",
+      "name": "Neo Backup",
+      "components": [
+        "com.machiav3lli.backup/com.machiav3lli.backup.activities.MainActivityX",
+        "com.machiav3lli.backup/com.machiav3lli.backup.ui.activities.NeoActivity"
+      ]
+    },
+    {
+      "id": "com.netflix.mediaclient/com.piyush.music.activities.main.MainActivity",
+      "existing_drawable": "netflix",
+      "name": "Netflix",
+      "components": [
+        "com.netflix.mediaclient/com.google.android.archive.ReactivateActivity",
+        "com.netflix.mediaclient/com.piyush.music.activities.main.MainActivity"
+      ]
+    },
+    {
+      "id": "nl.ns.android.activity/nl.ns.app.shell.startup.start.StartActivity",
+      "existing_drawable": "ns",
+      "name": "NS",
+      "components": [
+        "nl.ns.android.activity/nl.ns.app.shell.startup.start.StartActivity",
+        "nl.ns.android.activity/nl.ns.feature.startup.start.StartActivity"
+      ]
+    },
+    {
+      "id": "com.coloros.onekeylockscreen/com.coloros.onekeylockscreen.OppoLockScreen",
+      "existing_drawable": "one_tap_lock_screen",
+      "name": "One-Tap Lock Screen",
+      "components": [
+        "com.coloros.onekeylockscreen/com.coloros.onekeylockscreen.OppoLockScreen",
+        "com.coloros.onekeylockscreen/com.heytap.onekeylockscreen.OneKeyLockScreen"
+      ]
+    },
+    {
+      "id": "com.oneplus.bbs/com.oneplus.community.activity.LauncherActivity",
+      "existing_drawable": "oneplus_community",
+      "name": "OnePlus Community",
+      "components": [
+        "com.oneplus.bbs/com.oneplus.community.activity.LauncherActivity",
+        "com.oneplus.bbs/com.oplus.community.activity.LauncherActivity"
+      ]
+    },
+    {
+      "id": "com.cbs.ca/com.paramount.android.pplus.features.splash.mobile.integration.SplashActivity",
+      "existing_drawable": "paramount_plus",
+      "name": "Paramount+",
+      "components": [
+        "com.cbs.ca/com.paramount.android.pplus.features.splash.mobile.integration.SplashActivity",
+        "com.cbs.ca/com.paramount.android.pplus.splash.tv.ui.activity.SplashMediatorActivity"
+      ]
+    },
+    {
+      "id": "net.one97.paytm/net.one97.paytm.alias_icon_stage2",
+      "existing_drawable": "paytm",
+      "name": "Paytm",
+      "components": [
+        "net.one97.paytm/net.one97.paytm.alias_icon_stage2",
+        "net.one97.paytm/net.one97.paytm.alias_icon_stage3"
+      ]
+    },
+    {
+      "id": "softax.pekao.powerpay/softax.pekao.powerpay.frontend.screen.home.SplashActivity",
+      "existing_drawable": "peopay",
+      "name": "PeoPay",
+      "components": [
+        "softax.pekao.powerpay/softax.pekao.powerpay.frontend.screen.home.SplashActivity",
+        "softax.pekao.powerpay/softax.pekao.powerpay.screen.Menu"
+      ]
+    },
+    {
+      "id": "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+      "existing_drawable": "pepper",
+      "name": "Pepper",
+      "components": [
+        "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+        "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityLightIcon"
+      ]
+    },
+    {
+      "id": "se.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+      "existing_drawable": "pepper",
+      "name": "Pepper",
+      "components": [
+        "se.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+        "se.pepperdeals/com.pepper.apps.android.presentation.MainActivityLightIcon"
+      ]
+    },
+    {
+      "id": "ai.perplexity.app.android/ai.perplexity.app.android.authorization.exception.MainActivity",
+      "existing_drawable": "perplexity",
+      "name": "Perplexity",
+      "components": [
+        "ai.perplexity.app.android/ai.perplexity.app.android.authorization.exception.MainActivity",
+        "ai.perplexity.app.android/com.google.android.archive.ReactivateActivity"
+      ]
+    },
+    {
+      "id": "com.grice.dialer/com.grice.dialer.icon.Default",
+      "existing_drawable": "generic_dialer",
+      "name": "Phone",
+      "components": [
+        "com.grice.dialer/com.grice.dialer.icon.Default",
+        "com.grice.dialer/com.grice.dialer.icon.IOS"
+      ]
+    },
+    {
+      "id": "com.pinterest/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "pinterest",
+      "name": "Pinterest",
+      "components": [
+        "com.pinterest/com.google.android.archive.ReactivateActivity",
+        "com.pinterest/com.pinterest.LauncherActivity"
+      ]
+    },
+    {
+      "id": "com.imc.pizzahut/com.deliverymobileapp.MainActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut",
+      "components": [
+        "com.imc.pizzahut/com.deliverymobileapp.MainActivity",
+        "com.imc.pizzahut/com.imc.pizzahut.MainActivity"
+      ]
+    },
+    {
+      "id": "com.pizzahutpl/com.pizzahut_pl.MainActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut",
+      "components": [
+        "com.pizzahutpl/com.pizzahut_pl.MainActivity",
+        "com.pizzahutpl/pl.looksoft.pizzahut.ui.splash.SplashActivity"
+      ]
+    },
+    {
+      "id": "nz.co.pizzahut/com.pizzahut.extra.view.splash.DefaultSplashActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut",
+      "components": [
+        "nz.co.pizzahut/com.pizzahut.extra.view.splash.DefaultSplashActivity",
+        "nz.co.pizzahut/com.pizzahut.general.activities.DefaultSplashActivity"
+      ]
+    },
+    {
+      "id": "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2",
+      "existing_drawable": "just_player",
+      "name": "PlayBack",
+      "components": [
+        "com.androxus.playback/com.androxus.playback.presentation.SplashActivity",
+        "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2"
+      ]
+    },
+    {
+      "id": "com.primety.sodexomobile/com.primety.sodexomobile.ui.PlxActivity",
+      "existing_drawable": "pluxee",
+      "name": "Pluxee",
+      "components": [
+        "com.primety.sodexomobile/com.primety.sodexomobile.ui.PlxActivity",
+        "com.primety.sodexomobile/com.primety.sodexomobile.ui.splash.RoutingActivity"
+      ]
+    },
+    {
+      "id": "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+      "existing_drawable": "pepper",
+      "name": "Preisj\u00e4ger",
+      "components": [
+        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityLightIcon"
+      ]
+    },
+    {
+      "id": "com.spookyhousestudios.progressbar95/com.byfen.archiver.MainActivity",
+      "existing_drawable": "progressbar95",
+      "name": "Progressbar95",
+      "components": [
+        "com.spookyhousestudios.progressbar95/com.byfen.archiver.MainActivity",
+        "com.spookyhousestudios.progressbar95/com.google.android.archive.ReactivateActivity"
+      ]
+    },
+    {
+      "id": "com.drsants.eggproject/com.drsants.eggproject.activities.Splash",
+      "existing_drawable": "project_themer",
+      "name": "Project Themer",
+      "components": [
+        "com.drsants.eggproject/com.drsants.eggproject.activities.Splash",
+        "com.drsants.eggproject/com.drsants.eggproject.activities.SplashActivity"
+      ]
+    },
+    {
+      "id": "ch.protonvpn.android/ch.protonvpn.android.RoutingCalculator",
+      "existing_drawable": "proton_vpn",
+      "name": "Proton VPN",
+      "components": [
+        "ch.protonvpn.android/ch.protonvpn.android.RoutingCalculator",
+        "ch.protonvpn.android/ch.protonvpn.android.RoutingWeather"
+      ]
+    },
+    {
+      "id": "com.tencent.qqmusic/com.google.android.apps.youtube.music.activities.MusicActivity",
+      "existing_drawable": "qqmusic",
+      "name": "QQ\u97f3\u4e50 ~~ QQMusic",
+      "components": [
+        "com.tencent.qqmusic/com.google.android.apps.youtube.music.activities.MusicActivity",
+        "com.tencent.qqmusic/com.qihoo.util.StartActivity"
+      ]
+    },
+    {
+      "id": "com.ykart.tool.qrcodegen/com.ykart.tool.qrcodegen.MainActivity",
+      "existing_drawable": "generic_qr_reader",
+      "name": "QR Code Generator",
+      "components": [
+        "com.ykart.tool.qrcodegen/com.ykart.tool.qrcodegen.MainActivity",
+        "com.ykart.tool.qrcodegen/com.ykart.tool.qrcodegen.SplashScreenActivity"
+      ]
+    },
+    {
+      "id": "com.bigwinepot.nwdn.international/com.bigwinepot.nwdn.MainActivity",
+      "existing_drawable": "remini",
+      "name": "Remini",
+      "components": [
+        "com.bigwinepot.nwdn.international/com.bendingspoons.remini.wfqYU",
+        "com.bigwinepot.nwdn.international/com.bigwinepot.nwdn.MainActivity"
+      ]
+    },
+    {
+      "id": "com.b_lam.resplash/com.b_lam.resplash.activities.MainActivity",
+      "existing_drawable": "resplash",
+      "name": "Resplash",
+      "components": [
+        "com.b_lam.resplash/com.b_lam.resplash.activities.MainActivity",
+        "com.b_lam.resplash/com.b_lam.resplash.activities.SplashActivity"
+      ]
+    },
+    {
+      "id": "app.revenge/com.discord.main.MainCamo",
+      "existing_drawable": "discord",
+      "name": "Revenge",
+      "components": [
+        "app.revenge/com.discord.main.MainCamo",
+        "app.revenge/com.discord.main.MainDefault"
+      ]
+    }
+  ]
+}
