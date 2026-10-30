@@ -165,11 +165,14 @@ def main(input_file, output_dir, lawnicons_appfilter_path, monocons_appfilter_pa
 
     links_data = []
     for group in link_groups.values():
-        links_data.append({
+        item = {
             "id": group["id"],
             "existing_drawable": group["existing_drawable"],
             "name": group["name"]
-        })
+        }
+        if len(group["components"]) > 1:
+            item["components"] = sorted(group["components"])
+        links_data.append(item)
 
     links_data.sort(key=lambda x: (x.get('name', '').lower(), x.get('id', '')))
 

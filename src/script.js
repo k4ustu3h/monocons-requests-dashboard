@@ -665,8 +665,9 @@ const Templates = {
     const trendingDelta = App.state.trendingDeltas[app.componentName];
     const reqValue = App.state.setsStats[pkg] || app.requestCount;
     const isSet = App.state.setsStats[pkg] !== undefined;
+    const linkedCount = app.components ? app.components.length : 1;
     const displayReq = app.isLinkOnly
-      ? '—'
+      ? `<span title="${linkedCount} linked component${linkedCount === 1 ? '' : 's'}.">${linkedCount.toLocaleString()}</span>`
       : (isSet
         ? `<span title="Combined requests for this package.">${reqValue.toLocaleString()}S</span>`
         : reqValue.toLocaleString());
@@ -2206,16 +2207,10 @@ const Data = {
       compSet.add(cmp);
 
       if (tags.has('links')) {
+        const existingComps = new Set(existingIcons.map((e) => e.component));
         lawniconsIcons.forEach((icon) => {
           if (icon.component.startsWith(pkgPrefix)) {
-            if (icon.drawable === targetDrawable || !icon.drawable) {
-              compSet.add(icon.component);
-            }
-          }
-        });
-        existingIcons.forEach((icon) => {
-          if (icon.component.startsWith(pkgPrefix)) {
-            if (icon.drawable === targetDrawable || !icon.drawable) {
+            if ((icon.drawable === targetDrawable || !icon.drawable) && !existingComps.has(icon.component)) {
               compSet.add(icon.component);
             }
           }
@@ -2475,6 +2470,9 @@ const Data = {
       /** @type {(app: AppEntry) => number} */
       const getPop = (app) => {
         const pkg = app.componentName.split('/')[0];
+        if (app.isLinkOnly) {
+          return app.components ? app.components.length : 1;
+        }
         return App.state.setsStats[pkg] || app.requestCount;
       };
 
