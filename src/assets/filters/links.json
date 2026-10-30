@@ -28,17 +28,7 @@
       "name": "9GAG"
     },
     {
-      "id": "com.ninegag.android.app/com.ninegag.android.app.ui.SplashScreenActivity",
-      "existing_drawable": "ninegag",
-      "name": "9GAG"
-    },
-    {
       "id": "com.foxdebug.acode/com.foxdebug.acode.MainActivity",
-      "existing_drawable": "acode",
-      "name": "Acode"
-    },
-    {
-      "id": "com.foxdebug.acode/com.foxdebug.acode.MainActivityIconDefault",
       "existing_drawable": "acode",
       "name": "Acode"
     },
@@ -93,141 +83,6 @@
       "name": "Aliucord"
     },
     {
-      "id": "com.aliucord/com.discord.app.AppActivity",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainActivity",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainAngry",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainBeanie",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainBlush",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainBrandDark",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainBrandInverted",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainCamo",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainCherryBlossom",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainCircuit",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainClydeStein",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainController",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainDefault",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainDrip",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainGalaxy",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainGaming",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainHoloWaves",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainManga",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainMatteDark",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainMatteLight",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainMushroom",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainPastel",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainPirate",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainSlimy",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainSunset",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainY2K",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
-      "id": "com.aliucord/com.discord.main.MainZombie",
-      "existing_drawable": "discord",
-      "name": "Aliucord"
-    },
-    {
       "id": "com.pdfmerge.imagetopdf.pdfmaker/com.pdfmerge.imagetopdf.pdfmaker.screen.home.SplashScreen",
       "existing_drawable": "generic_pdf_square",
       "name": "All PDF Maker"
@@ -243,23 +98,13 @@
       "name": "AMAZE!"
     },
     {
-      "id": "com.amazon.venezia/com.amazon.appstore.shortcut.AppsGamesShortcutActivity",
-      "existing_drawable": "amazon_appstore",
-      "name": "Amazon AppStore"
-    },
-    {
-      "id": "com.amazon.venezia/com.amazon.venezia.Venezia",
-      "existing_drawable": "amazon_appstore",
-      "name": "Amazon AppStore"
-    },
-    {
       "id": "com.amazon.venezia/com.amazon.venezia.activities.MainActivity",
       "existing_drawable": "amazon_appstore",
       "name": "Amazon Appstore"
     },
     {
       "id": "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonnow.AmazonNowHomeActivityAlias",
-      "existing_drawable": "amazon_shopping",
+      "existing_drawable": "amazon_pay",
       "name": "Amazon Now"
     },
     {
@@ -308,11 +153,6 @@
       "name": "Antimine"
     },
     {
-      "id": "com.logical.minato/dev.lucasnlm.antimine.main.MainActivity",
-      "existing_drawable": "antimine",
-      "name": "Antimine"
-    },
-    {
       "id": "com.anydesk.anydeskandroid/com.anydesk.anydeskandroid.gui.activity.HubActivity",
       "existing_drawable": "anydesk",
       "name": "AnyDesk"
@@ -333,11 +173,6 @@
       "name": "App Assist"
     },
     {
-      "id": "net.west_hino.app_assist/net.west_hino.app_assist.ui.ActivityMain",
-      "existing_drawable": "ladb",
-      "name": "App Assist"
-    },
-    {
       "id": "foundation.e.apps/foundation.e.apps.ui.MainActivity",
       "existing_drawable": "app_lounge",
       "name": "App Lounge"
@@ -349,11 +184,6 @@
     },
     {
       "id": "com.apple.android.music/com.google.android.apps.youtube.music.activities.MusicActivity",
-      "existing_drawable": "apple_music",
-      "name": "Apple Music"
-    },
-    {
-      "id": "com.apple.android.music/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "apple_music",
       "name": "Apple Music"
     },
@@ -383,41 +213,6 @@
       "name": "ArchiveTune"
     },
     {
-      "id": "moe.rukamori.archivetune/moe.rukamori.archivetune.launcher.IconAlias544376e2699c4931e8414c1b",
-      "existing_drawable": "archivetune",
-      "name": "ArchiveTune"
-    },
-    {
-      "id": "moe.rukamori.archivetune/moe.rukamori.archivetune.launcher.IconAlias7e8ad21dc797a86d2b9bc23d",
-      "existing_drawable": "archivetune",
-      "name": "ArchiveTune"
-    },
-    {
-      "id": "moe.rukamori.archivetune/moe.rukamori.archivetune.launcher.IconAlias9e93960b0c46754338571b4f",
-      "existing_drawable": "archivetune",
-      "name": "ArchiveTune"
-    },
-    {
-      "id": "moe.rukamori.archivetune/moe.rukamori.archivetune.launcher.IconAliasbf8bd3c3adfb819408994c22",
-      "existing_drawable": "archivetune",
-      "name": "ArchiveTune"
-    },
-    {
-      "id": "moe.rukamori.archivetune/moe.rukamori.archivetune.launcher.IconAliasd31cf09f615e039e347c6a84",
-      "existing_drawable": "archivetune",
-      "name": "ArchiveTune"
-    },
-    {
-      "id": "moe.rukamori.archivetune/moe.rukamori.archivetune.launcher.IconAliasd8836aa281d013ca23229cfc",
-      "existing_drawable": "archivetune",
-      "name": "ArchiveTune"
-    },
-    {
-      "id": "moe.rukamori.archivetune/moe.rukamori.archivetune.launcher.IconAliase48c7256a521b7d6bc1a2866",
-      "existing_drawable": "archivetune",
-      "name": "ArchiveTune"
-    },
-    {
       "id": "com.asus.filemanager/com.asus.filemanager.activity.FileManagerActivity",
       "existing_drawable": "asus_file_manager",
       "name": "ASUS File Manager"
@@ -429,11 +224,6 @@
     },
     {
       "id": "com.requapp.requ/com.requapp.requ.features.splash.SplashActivity",
-      "existing_drawable": "attapoll",
-      "name": "AttaPoll"
-    },
-    {
-      "id": "com.requapp.requ/com.requapp.requ.launcher.LauncherActivity",
       "existing_drawable": "attapoll",
       "name": "AttaPoll"
     },
@@ -455,7 +245,7 @@
     {
       "id": "com.aurora.store.nightly/com.aurora.store.ComposeActivity",
       "existing_drawable": "aurora_store_nightly",
-      "name": "Aurora Store Nightly"
+      "name": "Aurora Store"
     },
     {
       "id": "com.awystudio.awplayer/com.awystudio.awplayer.activities.AllowAccessActivity",
@@ -473,137 +263,12 @@
       "name": "AyuGram"
     },
     {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.AyuGramAlt",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.AyuGramBard",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.AyuGramDiscord",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.AyuGramExtera",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.AyuGramNothing",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.AyuGramSpotify",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.AyuGramYaPlus",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.Dsgn480Icon",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.GoogleIcon",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.MonetIcon",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.MonetIconExtera",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.NeoIcon",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.OrbitIcon",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.OriginsIcon",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.SapphireIcon",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.SpaceIcon",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
       "id": "org.telegram.messenger.web/com.exteragram.messenger.AmethystIcon",
       "existing_drawable": "telegram",
       "name": "AyuGram"
     },
     {
-      "id": "org.telegram.messenger.web/com.exteragram.messenger.DefaultIcon",
-      "existing_drawable": "telegram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "org.telegram.messenger.web/com.exteragram.messenger.MonetIconExtera",
-      "existing_drawable": "telegram",
-      "name": "AyuGram"
-    },
-    {
       "id": "org.telegram.messenger/com.exteragram.messenger.AmethystIcon",
-      "existing_drawable": "telegram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "org.telegram.messenger/com.exteragram.messenger.AyuGramYaPlus",
-      "existing_drawable": "telegram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "org.telegram.messenger/com.exteragram.messenger.DefaultIcon",
-      "existing_drawable": "telegram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "org.telegram.messenger/com.exteragram.messenger.ExteraIcon",
-      "existing_drawable": "telegram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "org.telegram.messenger/com.exteragram.messenger.MonetIcon",
-      "existing_drawable": "telegram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "org.telegram.messenger/com.exteragram.messenger.MonetIconExtera",
-      "existing_drawable": "telegram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "org.telegram.messenger/com.exteragram.messenger.NeoIcon",
-      "existing_drawable": "telegram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "org.telegram.messenger/com.exteragram.messenger.SusIcon",
       "existing_drawable": "telegram",
       "name": "AyuGram"
     },
@@ -748,11 +413,6 @@
       "name": "Bistro.sk"
     },
     {
-      "id": "sk.azet.bistro/ui.Onboarding",
-      "existing_drawable": "just_eat",
-      "name": "Bistro.sk"
-    },
-    {
       "id": "com.candywriter.bitlife/com.releasedata.ReleaseDataActivity.SplashActivityKing",
       "existing_drawable": "bitlife",
       "name": "BitLife"
@@ -778,17 +438,7 @@
       "name": "Block Blast!"
     },
     {
-      "id": "com.block.juggle/org.cocos2dx.javascript.AppActivity.Default",
-      "existing_drawable": "block_blast",
-      "name": "Block Blast!"
-    },
-    {
       "id": "com.bluecord/com.discord.app.AppActivity",
-      "existing_drawable": "discord",
-      "name": "Bluecord"
-    },
-    {
-      "id": "com.bluecord/com.discord.app.AppActivity$Main",
       "existing_drawable": "discord",
       "name": "Bluecord"
     },
@@ -808,17 +458,7 @@
       "name": "Boo"
     },
     {
-      "id": "enterprises.dating.boo/enterprises.dating.boo.MainActivityDefault",
-      "existing_drawable": "boo",
-      "name": "Boo"
-    },
-    {
       "id": "com.booking/com.booking.startup.HomeActivityDefaultIcon",
-      "existing_drawable": "booking",
-      "name": "Booking"
-    },
-    {
-      "id": "com.booking/com.booking.startup.HomeActivityMonochromeIcon",
       "existing_drawable": "booking",
       "name": "Booking"
     },
@@ -888,47 +528,7 @@
       "name": "Bunny"
     },
     {
-      "id": "io.github.pyoncord.app/com.discord.main.MainBlush",
-      "existing_drawable": "discord",
-      "name": "Bunny"
-    },
-    {
-      "id": "io.github.pyoncord.app/com.discord.main.MainController",
-      "existing_drawable": "discord",
-      "name": "Bunny"
-    },
-    {
-      "id": "io.github.pyoncord.app/com.discord.main.MainDefault",
-      "existing_drawable": "discord",
-      "name": "Bunny"
-    },
-    {
-      "id": "io.github.pyoncord.app/com.discord.main.MainInRainbows",
-      "existing_drawable": "discord",
-      "name": "Bunny"
-    },
-    {
-      "id": "io.github.pyoncord.app/com.discord.main.MainManga",
-      "existing_drawable": "discord",
-      "name": "Bunny"
-    },
-    {
-      "id": "io.github.pyoncord.app/com.discord.main.MainMatteDark",
-      "existing_drawable": "discord",
-      "name": "Bunny"
-    },
-    {
-      "id": "io.github.pyoncord.app/com.discord.main.MainMidnightPrism",
-      "existing_drawable": "discord",
-      "name": "Bunny"
-    },
-    {
       "id": "ar.burgerking/com.usemenu.MenuAndroidApplication.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "ar.burgerking/rbi.android.app.Launcher",
       "existing_drawable": "burger_king",
       "name": "Burger King"
     },
@@ -944,31 +544,6 @@
     },
     {
       "id": "burgerking.com.br.appandroid/burgerking.com.br.appandroid.MainAliasNormal",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "burgerking.com.br.appandroid/burgerking.com.br.appandroid.splash.SplashActivityAlias",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "burgerking.com.br.appandroid/burgerking.com.br.appandroid.splash.SplashActivity_",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "burgerking.com.br.appandroid/burgerking.com.br.appandroid.splash.presentation.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "burgerking.com.br.appandroid/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "burgerking.com.br.appandroid/edeploy.com.br.delivery.splash.SplashActivity_",
       "existing_drawable": "burger_king",
       "name": "Burger King"
     },
@@ -989,11 +564,6 @@
     },
     {
       "id": "com.bk.pt/es.burgerking.android.presentation.walkthrough.WalkthroughIntroActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "com.bk.pt/rbi.android.app.Launcher",
       "existing_drawable": "burger_king",
       "name": "Burger King"
     },
@@ -1038,11 +608,6 @@
       "name": "Burger King"
     },
     {
-      "id": "com.emn8.mobilem8.nativeapp.bkuk/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
       "id": "com.emn8.mobilem8.nativeapp.bkuk/rbi.android.app.MainActivity",
       "existing_drawable": "burger_king",
       "name": "Burger King"
@@ -1083,27 +648,7 @@
       "name": "Burger King"
     },
     {
-      "id": "com.whopper/com.whopper.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
       "id": "de.burgerking.kingfinder/de.burgerking.kingfinder.ui.main.MainActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "de.burgerking.kingfinder/de.xroot.burgerking.ui.activity.SplashScreenActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "de.burgerking.kingfinder/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "de.burgerking.kingfinder/rbi.android.app.MainActivity",
       "existing_drawable": "burger_king",
       "name": "Burger King"
     },
@@ -1114,11 +659,6 @@
     },
     {
       "id": "es.burgerking.android/es.burgerking.android.presentation.walkthrough.WalkthroughIntroActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "es.burgerking.android/rbi.android.app.Launcher",
       "existing_drawable": "burger_king",
       "name": "Burger King"
     },
@@ -1173,11 +713,6 @@
       "name": "Burger King"
     },
     {
-      "id": "za.co.wigroup.burgerking/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
       "id": "za.co.wigroup.burgerking/rbi.android.app.MainActivity",
       "existing_drawable": "burger_king",
       "name": "Burger King"
@@ -1213,11 +748,6 @@
       "name": "Calculator"
     },
     {
-      "id": "com.calculator.applock.photovault.hideapp.safe/com.calculator.applock.photovault.hideapp.safe.SplashActivity.calculator4",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Calculator"
-    },
-    {
       "id": "com.jzhk.calculator/com.jzhk.calculator.Calculator",
       "existing_drawable": "generic_calculator_plus_minus_multi_equal",
       "name": "Calculator"
@@ -1229,11 +759,6 @@
     },
     {
       "id": "com.android.calendar/com.android.calendar.LaunchTasksActivity",
-      "existing_drawable": "themed_icon_calendar_31",
-      "name": "Calendar"
-    },
-    {
-      "id": "com.android.calendar/com.meizu.flyme.calendar.AllInOneActivity",
       "existing_drawable": "themed_icon_calendar_31",
       "name": "Calendar"
     },
@@ -1323,11 +848,6 @@
       "name": "Car Scanner"
     },
     {
-      "id": "com.ovz.russcanner/crc64a67336b41654b146.MainActivity",
-      "existing_drawable": "generic_engine",
-      "name": "Car Scanner"
-    },
-    {
       "id": "com.google.android.ims/com.google.android.ims.ui.WifiCallingSettingsActivity",
       "existing_drawable": "carrier_services",
       "name": "Carrier Services"
@@ -1348,17 +868,7 @@
       "name": "Cats are Liquid - A Better Place (ABP)"
     },
     {
-      "id": "com.lastquarterstudios.catsareliquidabp/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "cats_are_liquid_apb",
-      "name": "Cats are Liquid - A Better Place (ABP)"
-    },
-    {
       "id": "com.openai.chatgpt/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "openai",
-      "name": "ChatGPT"
-    },
-    {
-      "id": "com.openai.chatgpt/md.elway.evo.screen.chat.ChatActivity",
       "existing_drawable": "openai",
       "name": "ChatGPT"
     },
@@ -1369,161 +879,6 @@
     },
     {
       "id": "uz.unnarsx.cherrygram/.CG_Icon_Cherry",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.AquaIcon",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Aqua",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Cherry_NY",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Dark",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Dark_Bra",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Dark_NY",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Green",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Laguna",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Lavanda",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Monet_Pixel",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Monet_Samsung",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Night",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Sunrise",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Sunset",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Turbo",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Violet_Sunset_Bra",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_White_Cherry",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_White_Cherry_Bra",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.DarkIcon",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.GreenIcon",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.LagunaIcon",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.LavandaIcon",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.Monet_Icon_Pixel",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.Monet_Icon_Samsung",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.NoxIcon",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.Old_Icon",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.PremiumIcon",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.SunriseIcon",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.SunsetIcon",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.TurboIcon",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram"
-    },
-    {
-      "id": "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.White_Icon",
       "existing_drawable": "telegram",
       "name": "Cherrygram"
     },
@@ -1543,22 +898,7 @@
       "name": "Chocola"
     },
     {
-      "id": "com.sosauce.cutemusic/com.sosauce.chocola.presentation.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Chocola"
-    },
-    {
       "id": "com.chollometro/com.pepper.apps.android.presentation.MainActivity",
-      "existing_drawable": "pepper",
-      "name": "Chollometro"
-    },
-    {
-      "id": "com.chollometro/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-      "existing_drawable": "pepper",
-      "name": "Chollometro"
-    },
-    {
-      "id": "com.chollometro/com.pepper.apps.android.presentation.MainActivityLightIcon",
       "existing_drawable": "pepper",
       "name": "Chollometro"
     },
@@ -1573,37 +913,12 @@
       "name": "Cin\u00e9polis"
     },
     {
-      "id": "com.cinepolis.go/rdJuX3.bDz349.aoHYS3.bAAnl4",
-      "existing_drawable": "cinepolis",
-      "name": "Cin\u00e9polis"
-    },
-    {
       "id": "com.ia.cinepolis.india/com.ia.cinepolis.india.MainActivity",
       "existing_drawable": "cinepolis",
       "name": "Cin\u00e9polis"
     },
     {
-      "id": "com.cinepolis.go/rP0md4.iRGq56.lWEu00.lnPc45",
-      "existing_drawable": "cinepolis",
-      "name": "Cin\u00e9polis Go"
-    },
-    {
-      "id": "com.cinepolis.go/wAZ6x9.hHiQM6.uSl4e3.yODEW4",
-      "existing_drawable": "cinepolis",
-      "name": "Cin\u00e9polis Go"
-    },
-    {
       "id": "com.citymapper.app.release/com.citymapper.app.MainActivity_Goth",
-      "existing_drawable": "citymapper",
-      "name": "Citymapper"
-    },
-    {
-      "id": "com.citymapper.app.release/com.citymapper.app.MainActivity_NotGreen",
-      "existing_drawable": "citymapper",
-      "name": "Citymapper"
-    },
-    {
-      "id": "com.citymapper.app.release/com.citymapper.app.MainActivity_NotGreen3",
       "existing_drawable": "citymapper",
       "name": "Citymapper"
     },
@@ -1618,22 +933,12 @@
       "name": "Clipious"
     },
     {
-      "id": "com.github.lamarios.clipious/com.ryanheise.audioservice.AudioServiceActivity",
-      "existing_drawable": "just_player",
-      "name": "Clipious"
-    },
-    {
       "id": "com.bluelight.computer.winlauncher.prolauncher/com.bluelight.computer.winlauncher.prolauncher.googleclock.main.DeskClock",
       "existing_drawable": "generic_clock",
       "name": "Clock"
     },
     {
       "id": "com.bnyro.clock/com.bnyro.clock.ui.MainActivityAlternative",
-      "existing_drawable": "generic_clock",
-      "name": "Clock You"
-    },
-    {
-      "id": "com.bnyro.clock/com.bnyro.clock.ui.MainActivityDefault",
       "existing_drawable": "generic_clock",
       "name": "Clock You"
     },
@@ -1648,27 +953,12 @@
       "name": "Codecademy Go"
     },
     {
-      "id": "com.openai.chatgpt/com.openai.chatgpt.CodexLauncherActivity",
-      "existing_drawable": "openai",
-      "name": "Codex"
-    },
-    {
-      "id": "org.toshi/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "coinbase_wallet",
-      "name": "Coinbase Wallet"
-    },
-    {
       "id": "org.toshi/com.toshi.application.MainActivity",
       "existing_drawable": "coinbase_wallet",
       "name": "Coinbase Wallet"
     },
     {
       "id": "asia.coins.mobile/com.coins.coinsapp.modulelauncher.internal.splash.activity.SplashActivityV2",
-      "existing_drawable": "coins_ph",
-      "name": "Coins"
-    },
-    {
-      "id": "asia.coins.mobile/com.coins.coinsapp.modulepllauncher.internal.splash.activity.PLSplashActivity",
       "existing_drawable": "coins_ph",
       "name": "Coins"
     },
@@ -1698,6 +988,11 @@
       "name": "Connect You"
     },
     {
+      "id": "com.sh.smart.caller/com.android.dialer.ContactMainActivity",
+      "existing_drawable": "generic_dialer",
+      "name": "Contacts"
+    },
+    {
       "id": "icontacts.ios.dialer.icall/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
       "existing_drawable": "generic_dialer",
       "name": "Contacts & Phone Call"
@@ -1706,11 +1001,6 @@
       "id": "cool.s20.camera/com.camera.function.main.privacy.CoolCameraPrivacyActivity",
       "existing_drawable": "nothing_camera",
       "name": "Cool S20 Camera"
-    },
-    {
-      "id": "ca.bellmedia.cravetv/awl.application.brand.SplashActivity",
-      "existing_drawable": "crave",
-      "name": "Crave"
     },
     {
       "id": "ca.bellmedia.cravetv/entpay.awe.mobile.presentation.MainActivity",
@@ -1723,19 +1013,9 @@
       "name": "Curve"
     },
     {
-      "id": "com.imaginecurve.curve.prd/com.curve.startup.launch.LaunchActivity",
-      "existing_drawable": "curve",
-      "name": "Curve"
-    },
-    {
-      "id": "com.sosauce.cutemusic/com.sosauce.cutemusic.main.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "CuteMusic"
-    },
-    {
-      "id": "com.sosauce.cutemusic/com.sosauce.cutemusic.presentation.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "CuteMusic"
+      "id": "com.ss.android.ugc.aweme/com.android.camera.CameraLauncher",
+      "existing_drawable": "tiktok",
+      "name": "C\u00e1mara"
     },
     {
       "id": "com.dvdb.bergnotes/com.dvdb.dnotes.MainActivity",
@@ -1768,11 +1048,6 @@
       "name": "Dashlane"
     },
     {
-      "id": "com.dashlane/com.dashlane.ui.activities.Login",
-      "existing_drawable": "dashlane",
-      "name": "Dashlane"
-    },
-    {
       "id": "com.shisui.debloater/com.shisui.debloater.MainActivity",
       "existing_drawable": "generic_shell",
       "name": "Debloat-X Universal"
@@ -1789,11 +1064,6 @@
     },
     {
       "id": "deezer.android.app/com.deezer.android.ui.activity.LauncherActivityValentines",
-      "existing_drawable": "deezer",
-      "name": "Deezer"
-    },
-    {
-      "id": "deezer.android.app/com.jojoy.delegate.JojoyInstallerActivity",
       "existing_drawable": "deezer",
       "name": "Deezer"
     },
@@ -1853,11 +1123,6 @@
       "name": "Digital Wellbeing"
     },
     {
-      "id": "com.actionlauncher.pixelshortcuts/pixelshortcuts.loaders.WellbeingLoader",
-      "existing_drawable": "digital_wellbeing",
-      "name": "Digital Wellbeing"
-    },
-    {
       "id": "com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.settings.MultiPaneLauncherActivity",
       "existing_drawable": "digital_wellbeing",
       "name": "Digital Wellbeing"
@@ -1874,141 +1139,6 @@
     },
     {
       "id": "com.discord/com.discord.main.MainAngry",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainBeanie",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainBlurpleTwilight",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainBlush",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainBrandInverted",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainCamo",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainCherryBlossom",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainCircuit",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainClydeStein",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainController",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainDrip",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainGalaxy",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainGaming",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainHoloWaves",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainInRainbows",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainManga",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainMatteDark",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainMatteLight",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainMidnightPrism",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainMushroom",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainPastel",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainPirate",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainSlimy",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainSunset",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainY2K",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.main.MainZombie",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.discord.screens.ScreenAux",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discord/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "discord",
       "name": "Discord"
     },
@@ -2033,11 +1163,6 @@
       "name": "Djezzy"
     },
     {
-      "id": "com.djezzy.internet/com.djezzy.internet.ui.activities.SplashActivity",
-      "existing_drawable": "just_player",
-      "name": "Djezzy"
-    },
-    {
       "id": "br.com.doctoralia/com.app.MainActivity",
       "existing_drawable": "doctoralia",
       "name": "Doctoralia"
@@ -2054,11 +1179,6 @@
     },
     {
       "id": "mx.com.doctoralia/com.app.MainActivity",
-      "existing_drawable": "doctoralia",
-      "name": "Doctoralia"
-    },
-    {
-      "id": "mx.com.doctoralia/mx.com.doctoralia.MainActivity",
       "existing_drawable": "doctoralia",
       "name": "Doctoralia"
     },
@@ -2099,11 +1219,6 @@
     },
     {
       "id": "com.molo.dominos/com.dominos.loadingscreen.InitialLaunchActivity",
-      "existing_drawable": "dominos_pizza",
-      "name": "Domino's Pizza"
-    },
-    {
-      "id": "com.molo.dominos/qZ0tC9.i9dGK4.cDkNE3.qYYFl8",
       "existing_drawable": "dominos_pizza",
       "name": "Domino's Pizza"
     },
@@ -2149,16 +1264,6 @@
     },
     {
       "id": "com.duolingo/com.duolingo.app.InactiveRockLauncher",
-      "existing_drawable": "duolingo",
-      "name": "Duolingo"
-    },
-    {
-      "id": "com.duolingo/com.duolingo.app.InactiveScreamLauncher",
-      "existing_drawable": "duolingo",
-      "name": "Duolingo"
-    },
-    {
-      "id": "com.duolingo/com.duolingo.app.StreakSaverLauncher3",
       "existing_drawable": "duolingo",
       "name": "Duolingo"
     },
@@ -2233,11 +1338,6 @@
       "name": "eMAG"
     },
     {
-      "id": "ro.emag.android/ro.emag.android.cleancode.app.ActivityStartAlias",
-      "existing_drawable": "emag",
-      "name": "eMAG"
-    },
-    {
       "id": "br.com.deway.coelce/br.com.deway.coelce.MainActivity",
       "existing_drawable": "enel",
       "name": "Enel"
@@ -2288,122 +1388,12 @@
       "name": "exteraGram"
     },
     {
-      "id": "com.exteragram.messenger/com.exteragram.messenger.AuroraIcon",
-      "existing_drawable": "exteragram",
-      "name": "exteraGram"
-    },
-    {
-      "id": "com.exteragram.messenger/com.exteragram.messenger.CyberpunkIcon",
-      "existing_drawable": "exteragram",
-      "name": "exteraGram"
-    },
-    {
-      "id": "com.exteragram.messenger/com.exteragram.messenger.Dsgn480Icon",
-      "existing_drawable": "exteragram",
-      "name": "exteraGram"
-    },
-    {
-      "id": "com.exteragram.messenger/com.exteragram.messenger.GoogleIcon",
-      "existing_drawable": "exteragram",
-      "name": "exteraGram"
-    },
-    {
-      "id": "com.exteragram.messenger/com.exteragram.messenger.InvincibleIcon",
-      "existing_drawable": "exteragram",
-      "name": "exteraGram"
-    },
-    {
-      "id": "com.exteragram.messenger/com.exteragram.messenger.MonetIcon",
-      "existing_drawable": "exteragram",
-      "name": "exteraGram"
-    },
-    {
-      "id": "com.exteragram.messenger/com.exteragram.messenger.NeoIcon",
-      "existing_drawable": "exteragram",
-      "name": "exteraGram"
-    },
-    {
-      "id": "com.exteragram.messenger/com.exteragram.messenger.OrbitIcon",
-      "existing_drawable": "exteragram",
-      "name": "exteraGram"
-    },
-    {
-      "id": "com.exteragram.messenger/com.exteragram.messenger.OriginsIcon",
-      "existing_drawable": "exteragram",
-      "name": "exteraGram"
-    },
-    {
-      "id": "com.exteragram.messenger/com.exteragram.messenger.SapphireIcon",
-      "existing_drawable": "exteragram",
-      "name": "exteraGram"
-    },
-    {
-      "id": "com.exteragram.messenger/com.exteragram.messenger.SpaceIcon",
-      "existing_drawable": "exteragram",
-      "name": "exteraGram"
-    },
-    {
-      "id": "com.exteragram.messenger/com.exteragram.messenger.SunsetIcon",
-      "existing_drawable": "exteragram",
-      "name": "exteraGram"
-    },
-    {
-      "id": "com.exteragram.messenger/com.exteragram.messenger.SusIcon",
-      "existing_drawable": "exteragram",
-      "name": "exteraGram"
-    },
-    {
-      "id": "com.exteragram.messenger/com.exteragram.messenger.WinterIcon",
-      "existing_drawable": "exteragram",
-      "name": "exteraGram"
-    },
-    {
       "id": "com.exteraless.app/org.telegram.messenger.TelegramIcon",
       "existing_drawable": "telegram",
       "name": "exteraless"
     },
     {
       "id": "com.facebook.katana/com.facebook.katana.LoginActivity.blue_fb",
-      "existing_drawable": "facebook",
-      "name": "Facebook"
-    },
-    {
-      "id": "com.facebook.katana/com.facebook.katana.LoginActivity.dreamy_ic",
-      "existing_drawable": "facebook",
-      "name": "Facebook"
-    },
-    {
-      "id": "com.facebook.katana/com.facebook.katana.LoginActivity.fab_ic",
-      "existing_drawable": "facebook",
-      "name": "Facebook"
-    },
-    {
-      "id": "com.facebook.katana/com.facebook.katana.LoginActivity.fierce_ic",
-      "existing_drawable": "facebook",
-      "name": "Facebook"
-    },
-    {
-      "id": "com.facebook.katana/com.facebook.katana.LoginActivity.katana",
-      "existing_drawable": "facebook",
-      "name": "Facebook"
-    },
-    {
-      "id": "com.facebook.katana/com.facebook.katana.LoginActivity.loved_ic",
-      "existing_drawable": "facebook",
-      "name": "Facebook"
-    },
-    {
-      "id": "com.facebook.katana/com.facebook.katana.LoginActivity.quiet_cool",
-      "existing_drawable": "facebook",
-      "name": "Facebook"
-    },
-    {
-      "id": "com.facebook.katana/com.facebook.katana.LoginActivity.vaporwave_ic",
-      "existing_drawable": "facebook",
-      "name": "Facebook"
-    },
-    {
-      "id": "com.facebook.katana/com.facebook.katana.LoginActivity.worldcup_ic",
       "existing_drawable": "facebook",
       "name": "Facebook"
     },
@@ -2434,101 +1424,6 @@
     },
     {
       "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppCool",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppFlaming",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppGradientBlueHour",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppGradientGoldenHour",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppGradientMidnight",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppGradientNorthernLights",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppGradientSunrise",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppGradientSunset",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppGradientTwilight",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppMinimal",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppPixelated",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppPride",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppRetro2004",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppSolidBlue",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppSolidDark",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppSolidGreen",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppSolidLight",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppSolidPurple",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppSolidPurpleDark",
-      "existing_drawable": "fennec",
-      "name": "Fennec"
-    },
-    {
-      "id": "org.mozilla.fennec_fdroid/org.mozilla.fennec_fdroid.AppSolidRed",
       "existing_drawable": "fennec",
       "name": "Fennec"
     },
@@ -2573,197 +1468,7 @@
       "name": "Firefox Beta"
     },
     {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppFlaming",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppGradientBlueHour",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppGradientGoldenHour",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppGradientMidnight",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppGradientNorthernLights",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppGradientSunrise",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppGradientSunset",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppGradientTwilight",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppMinimal",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppPixelated",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppPride",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppRetro2004",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppSolidBlue",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppSolidDark",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppSolidGreen",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppSolidLight",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppSolidPurple",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppSolidPurpleDark",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
-      "id": "org.mozilla.firefox_beta/org.mozilla.firefox_beta.AppSolidRed",
-      "existing_drawable": "firefox_beta",
-      "name": "Firefox Beta"
-    },
-    {
       "id": "org.mozilla.fenix/org.mozilla.fenix.AppCool",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppFlaming",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppGradientBlueHour",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppGradientGoldenHour",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppGradientMidnight",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppGradientNorthernLights",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppGradientSunrise",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppGradientSunset",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppGradientTwilight",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppMinimal",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppPixelated",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppPride",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppRetro2004",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppSolidBlue",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppSolidDark",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppSolidGreen",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppSolidLight",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppSolidPurple",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppSolidPurpleDark",
-      "existing_drawable": "firefox_nightly",
-      "name": "Firefox Nightly"
-    },
-    {
-      "id": "org.mozilla.fenix/org.mozilla.fenix.AppSolidRed",
       "existing_drawable": "firefox_nightly",
       "name": "Firefox Nightly"
     },
@@ -2833,32 +1538,7 @@
       "name": "Fora Dictionary"
     },
     {
-      "id": "cc.forestapp/cc.forestapp.activities.PlantView.PlantViewController",
-      "existing_drawable": "forest",
-      "name": "Forest"
-    },
-    {
-      "id": "cc.forestapp/cc.forestapp.activities.launch.LaunchActivity",
-      "existing_drawable": "forest",
-      "name": "Forest"
-    },
-    {
       "id": "cc.forestapp/cc.forestapp.activities.main.MainActivity",
-      "existing_drawable": "forest",
-      "name": "Forest"
-    },
-    {
-      "id": "cc.forestapp/cc.forestapp.activities.plant.PlantViewController",
-      "existing_drawable": "forest",
-      "name": "Forest"
-    },
-    {
-      "id": "cc.forestapp/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "forest",
-      "name": "Forest"
-    },
-    {
-      "id": "cc.forestapp/com.jeremy.SplashSpotActivity",
       "existing_drawable": "forest",
       "name": "Forest"
     },
@@ -2868,172 +1548,12 @@
       "name": "Fork Client"
     },
     {
-      "id": "org.forkclient.messenger.beta/org.telegram.messenger.CloudIcon",
-      "existing_drawable": "telegram",
-      "name": "Fork Client"
-    },
-    {
-      "id": "org.forkclient.messenger.beta/org.telegram.messenger.DarkIcon",
-      "existing_drawable": "telegram",
-      "name": "Fork Client"
-    },
-    {
-      "id": "org.forkclient.messenger.beta/org.telegram.messenger.DefaultIcon",
-      "existing_drawable": "telegram",
-      "name": "Fork Client"
-    },
-    {
-      "id": "org.forkclient.messenger.beta/org.telegram.messenger.MaterialIcon",
-      "existing_drawable": "telegram",
-      "name": "Fork Client"
-    },
-    {
-      "id": "org.forkclient.messenger.beta/org.telegram.messenger.MerioIcon",
-      "existing_drawable": "telegram",
-      "name": "Fork Client"
-    },
-    {
-      "id": "org.forkclient.messenger.beta/org.telegram.messenger.MusheenIcon",
-      "existing_drawable": "telegram",
-      "name": "Fork Client"
-    },
-    {
-      "id": "org.forkclient.messenger.beta/org.telegram.messenger.NeonIcon",
-      "existing_drawable": "telegram",
-      "name": "Fork Client"
-    },
-    {
-      "id": "org.forkclient.messenger.beta/org.telegram.messenger.NoxIcon",
-      "existing_drawable": "telegram",
-      "name": "Fork Client"
-    },
-    {
-      "id": "org.forkclient.messenger.beta/org.telegram.messenger.OldSchoolIcon",
-      "existing_drawable": "telegram",
-      "name": "Fork Client"
-    },
-    {
-      "id": "org.forkclient.messenger.beta/org.telegram.messenger.PremiumIcon",
-      "existing_drawable": "telegram",
-      "name": "Fork Client"
-    },
-    {
-      "id": "org.forkclient.messenger.beta/org.telegram.messenger.RainbowIcon",
-      "existing_drawable": "telegram",
-      "name": "Fork Client"
-    },
-    {
-      "id": "org.forkclient.messenger.beta/org.telegram.messenger.SpaceIcon",
-      "existing_drawable": "telegram",
-      "name": "Fork Client"
-    },
-    {
-      "id": "org.forkclient.messenger.beta/org.telegram.messenger.TurboIcon",
-      "existing_drawable": "telegram",
-      "name": "Fork Client"
-    },
-    {
-      "id": "org.forkclient.messenger.beta/org.telegram.messenger.VintageIcon",
-      "existing_drawable": "telegram",
-      "name": "Fork Client"
-    },
-    {
       "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Amber",
       "existing_drawable": "fossify_documents",
       "name": "Fossify Documents"
     },
     {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Blue",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Blue_grey",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Brown",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Cyan",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Deep_orange",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Deep_purple",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Grey_black",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Indigo",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Light_blue",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Light_green",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Lime",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Orange",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Pink",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Purple",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Red",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Teal",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
-      "id": "org.fossify.documents/org.fossify.documents.activities.SplashActivity.Yellow",
-      "existing_drawable": "fossify_documents",
-      "name": "Fossify Documents"
-    },
-    {
       "id": "com.fplay.activity/com.fptplay.mobile.DefaultLauncherAlias",
-      "existing_drawable": "just_player",
-      "name": "FPT Play"
-    },
-    {
-      "id": "com.fplay.activity/com.fptplay.mobile.WelcomeActivity",
       "existing_drawable": "just_player",
       "name": "FPT Play"
     },
@@ -3088,11 +1608,6 @@
       "name": "GBWhatsApp"
     },
     {
-      "id": "com.universe.messenger/com.universe.messenger.Icon2",
-      "existing_drawable": "whatsapp",
-      "name": "GBWhatsApp"
-    },
-    {
       "id": "com.appgcam.gcamera/com.appgcam.gcamera.ui.SplashActivity",
       "existing_drawable": "generic_camera",
       "name": "GCam"
@@ -3123,11 +1638,6 @@
       "name": "Geometric Weather"
     },
     {
-      "id": "wangdaye.com.geometricweather/wangdaye.com.geometricweather.UserInterface.MainActivity",
-      "existing_drawable": "geometric_weather",
-      "name": "Geometric Weather"
-    },
-    {
       "id": "com.robtopx.geometryjump/com.mod.activity.SplashActivity",
       "existing_drawable": "geometry_dash",
       "name": "Geometry Dash"
@@ -3153,22 +1663,12 @@
       "name": "GlobeOne"
     },
     {
-      "id": "ph.com.globe.globeonesuperapp/ph.com.globe.globeonesuperapp.environment.EnvironmentSelectorActivity",
-      "existing_drawable": "globeone",
-      "name": "GlobeOne"
-    },
-    {
       "id": "ph.gomo.gomoph/ph.gomo.gomoph.MainActivity",
       "existing_drawable": "gomo_ph",
       "name": "GOMO PH"
     },
     {
       "id": "com.goodreads/com.goodreads.android.activity.MainActivity",
-      "existing_drawable": "goodreads",
-      "name": "Goodreads"
-    },
-    {
-      "id": "com.goodreads/com.goodreads.kindle.ui.activity.SplashActivity",
       "existing_drawable": "goodreads",
       "name": "Goodreads"
     },
@@ -3183,27 +1683,7 @@
       "name": "Google"
     },
     {
-      "id": "com.google.android.googlequicksearchbox/com.google.android.apps.search.soundsearch.shortcut.AddShortcutActivity",
-      "existing_drawable": "google_gemini",
-      "name": "Google"
-    },
-    {
-      "id": "com.google.android.googlequicksearchbox/com.google.android.apps.search.soundsearch.shortcut.AliasAddShortcutActivity",
-      "existing_drawable": "google_gemini",
-      "name": "Google"
-    },
-    {
-      "id": "com.google.android.googlequicksearchbox/com.google.android.apps.search.weather.entrypoints.appicon.WeatherAppIconActivity",
-      "existing_drawable": "google",
-      "name": "Google"
-    },
-    {
       "id": "com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.MainActivity",
-      "existing_drawable": "google",
-      "name": "Google"
-    },
-    {
-      "id": "com.google.android.googlequicksearchbox/com.google.android.search.clientui.SearchServiceClientActivity",
       "existing_drawable": "google",
       "name": "Google"
     },
@@ -3228,11 +1708,6 @@
       "name": "Google Contacts"
     },
     {
-      "id": "com.android.contacts/com.gionee.contacts.activities.BaseActivity",
-      "existing_drawable": "google_contacts",
-      "name": "Google Contacts"
-    },
-    {
       "id": "com.google.android.contacts/com.google.android.youtube.app.honeycomb.Shell",
       "existing_drawable": "google_contacts",
       "name": "Google Contacts"
@@ -3246,16 +1721,6 @@
       "id": "com.google.android.apps.chromecast.app/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "google_home",
       "name": "Google Home"
-    },
-    {
-      "id": "com.google.android.apps.messaging/com.google.android.apps.messaging.dittosatellite.impl.DittoWebActivity",
-      "existing_drawable": "messages",
-      "name": "Google Messages"
-    },
-    {
-      "id": "com.google.android.apps.messaging/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "messages",
-      "name": "Google Messages"
     },
     {
       "id": "com.google.android.apps.messaging/com.kyant.vanilla.MainActivity",
@@ -3283,27 +1748,12 @@
       "name": "Google Wallet"
     },
     {
-      "id": "com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.home.HomeActivity",
-      "existing_drawable": "google_wallet",
-      "name": "Google Wallet"
-    },
-    {
       "id": "it.infocert.mobile.dike/it.infocert.mobile.dike.DikeActivity",
       "existing_drawable": "tasky",
       "name": "GoSign"
     },
     {
       "id": "com.grabtaxi.passenger/com.grab.pax.newface.common.alias.GlobalYearEndLauncherAlias",
-      "existing_drawable": "grab",
-      "name": "Grab"
-    },
-    {
-      "id": "com.grabtaxi.passenger/com.grab.pax.newface.common.alias.MyCampaignLauncherAlias",
-      "existing_drawable": "grab",
-      "name": "Grab"
-    },
-    {
-      "id": "com.grabtaxi.passenger/com.grab.pax.newface.common.alias.ThaiCampaignLauncherAlias",
       "existing_drawable": "grab",
       "name": "Grab"
     },
@@ -3318,47 +1768,12 @@
       "name": "Grand Piano"
     },
     {
-      "id": "com.rockstargames.gtasa/com.d.a",
-      "existing_drawable": "gta_sa",
-      "name": "Grand Theft Auto: San Andreas"
-    },
-    {
       "id": "com.rockstargames.gtasa/com.fastman92.main_activity_launcher.MainActivity",
       "existing_drawable": "gta_sa",
       "name": "Grand Theft Auto: San Andreas"
     },
     {
-      "id": "com.rockstargames.gtasa/com.gamein.i.a.WelcomeActivity",
-      "existing_drawable": "gta_sa",
-      "name": "Grand Theft Auto: San Andreas"
-    },
-    {
-      "id": "com.rockstargames.gtasa/com.rockstargames.gtasa.GameActivity",
-      "existing_drawable": "gta_sa",
-      "name": "Grand Theft Auto: San Andreas"
-    },
-    {
       "id": "ir.ilmili.telegraph/org.telegram.messenger.GraphIconBlack",
-      "existing_drawable": "telegram",
-      "name": "Graph Messenger"
-    },
-    {
-      "id": "ir.ilmili.telegraph/org.telegram.messenger.GraphIconRed",
-      "existing_drawable": "telegram",
-      "name": "Graph Messenger"
-    },
-    {
-      "id": "ir.ilmili.telegraph/org.telegram.messenger.GraphIconWhite",
-      "existing_drawable": "telegram",
-      "name": "Graph Messenger"
-    },
-    {
-      "id": "ir.ilmili.telegraph/org.telegram.messenger.NoxIcon",
-      "existing_drawable": "telegram",
-      "name": "Graph Messenger"
-    },
-    {
-      "id": "ir.ilmili.telegraph/org.telegram.messenger.TelegramIcon",
       "existing_drawable": "telegram",
       "name": "Graph Messenger"
     },
@@ -3378,42 +1793,12 @@
       "name": "Greenify"
     },
     {
-      "id": "com.oasisfeng.greenify/com.oasisfeng.greenify.HibernateAndLockScreen",
-      "existing_drawable": "greenify",
-      "name": "Greenify"
-    },
-    {
-      "id": "com.oasisfeng.greenify/com.oasisfeng.greenify.NewGreenifyActivity",
-      "existing_drawable": "greenify",
-      "name": "Greenify"
-    },
-    {
-      "id": "com.oasisfeng.greenify/com.oasisfeng.greenify.PilotActivity",
-      "existing_drawable": "greenify",
-      "name": "Greenify"
-    },
-    {
       "id": "com.grindrapp.android/com.grindrapp.android.HomeActivityPhoneBlack",
       "existing_drawable": "generic_dialer",
       "name": "Grindr Phone"
     },
     {
       "id": "com.grubhub.android/com.grubhub.AppBaseLibrary.android.GHSSplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Grubhub"
-    },
-    {
-      "id": "com.grubhub.android/com.grubhub.AppBaseLibrary.android.splash.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Grubhub"
-    },
-    {
-      "id": "com.grubhub.android/com.grubhub.android.j5.activities.StartActivity",
-      "existing_drawable": "just_eat",
-      "name": "Grubhub"
-    },
-    {
-      "id": "com.grubhub.android/com.grubhub.dinerapp.android.splash.SplashActivity",
       "existing_drawable": "just_eat",
       "name": "Grubhub"
     },
@@ -3468,11 +1853,6 @@
       "name": "hotukdeals"
     },
     {
-      "id": "com.tippingcanoe.hukd/com.pepper.apps.android.presentation.MainActivityLightIcon",
-      "existing_drawable": "pepper",
-      "name": "hotukdeals"
-    },
-    {
       "id": "sg.com.hsbc.hsbcsingapore/com.hsbc.mobilebanking.ui.PlatformHubDashboardActivity",
       "existing_drawable": "hsbc",
       "name": "HSBC"
@@ -3499,11 +1879,6 @@
     },
     {
       "id": "jp.ne.ibis.ibispaint.app/jp.ne.ibis.ibispaintx.app.InitializeCheckActivity",
-      "existing_drawable": "ibis_paint",
-      "name": "ibis Paint"
-    },
-    {
-      "id": "jp.ne.ibis.ibispaint.app/jp.ne.ibis.ibispaintx.app.market.MarketAuthenticationActivity",
       "existing_drawable": "ibis_paint",
       "name": "ibis Paint"
     },
@@ -3538,122 +1913,12 @@
       "name": "iMe"
     },
     {
-      "id": "com.iMe.android/org.telegram.messenger.CloudIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.messenger.DarkIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.messenger.DefaultIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.messenger.MaterialIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.messenger.MerioIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.messenger.MusheenIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.messenger.NeonIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.messenger.NoxIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.messenger.OldSchoolIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.messenger.PremiumIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.messenger.RainbowIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.messenger.SpaceIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.messenger.TurboIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.messenger.VintageIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.ui.LaunchActivity",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.ui.LaunchActivityBlackIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.ui.LaunchActivityBlueLightIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.ui.LaunchActivityDefaultIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.ui.LaunchActivityKeyIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
-      "id": "com.iMe.android/org.telegram.ui.LaunchActivitySpaceIcon",
-      "existing_drawable": "ime",
-      "name": "iMe"
-    },
-    {
       "id": "in.goindigo.android/in.goindigo.android.ui.modules.splash.SplashActivity",
       "existing_drawable": "indigo",
       "name": "IndiGo"
     },
     {
       "id": "com.indus.appstore/com.indus.appstore.DefaultIconLauncherActivityAlias",
-      "existing_drawable": "indus_appstore",
-      "name": "Indus Appstore"
-    },
-    {
-      "id": "com.indus.appstore/com.indus.appstore.NewIconLauncherActivityAlias",
-      "existing_drawable": "indus_appstore",
-      "name": "Indus Appstore"
-    },
-    {
-      "id": "com.indus.appstore/com.indus.appstore.applicationLayer.onboarding.activity.LauncherActivity",
       "existing_drawable": "indus_appstore",
       "name": "Indus Appstore"
     },
@@ -3688,11 +1953,6 @@
       "name": "InPost"
     },
     {
-      "id": "pl.inpost.inmobile/pl.inpost.inmobile.splashScreen.presentation.SplashScreenActivity",
-      "existing_drawable": "inpost",
-      "name": "InPost"
-    },
-    {
       "id": "uk.co.inpost.inmobile/pl.inpost.inmobile.splashScreen.presentation.SplashScreenActivity",
       "existing_drawable": "inpost",
       "name": "InPost"
@@ -3723,22 +1983,7 @@
       "name": "Instant Gaming"
     },
     {
-      "id": "com.instantgaming.android/com.instantgaming.android.classic_icon",
-      "existing_drawable": "instant_gaming",
-      "name": "Instant Gaming"
-    },
-    {
       "id": "com.instapro2.android/com.instagram.android.activity.MainTabActivity1",
-      "existing_drawable": "instagram",
-      "name": "InstaPro 2"
-    },
-    {
-      "id": "com.instapro2.android/com.instagram.android.activity.MainTabActivity13",
-      "existing_drawable": "instagram",
-      "name": "InstaPro 2"
-    },
-    {
-      "id": "com.instapro2.android/com.instagram.android.activity.MainTabActivity14",
       "existing_drawable": "instagram",
       "name": "InstaPro 2"
     },
@@ -3753,22 +1998,12 @@
       "name": "Internet Browser"
     },
     {
-      "id": "com.internet.speed.meter.lite/com.internet.speed.meter.lite.Main",
-      "existing_drawable": "internet_speed_meter",
-      "name": "Internet Speed Meter Lite"
-    },
-    {
       "id": "com.internet.speed.meter.lite/com.internet.speed.meter.lite.MainActivity",
       "existing_drawable": "internet_speed_meter",
       "name": "Internet Speed Meter Lite"
     },
     {
       "id": "com.massimobiolcati.irealb/com.massimobiolcati.irealb.MainActivity",
-      "existing_drawable": "ireal_pro",
-      "name": "iReal Pro"
-    },
-    {
-      "id": "com.massimobiolcati.irealb/com.massimobiolcati.irealb.startup.StartupActivity",
       "existing_drawable": "ireal_pro",
       "name": "iReal Pro"
     },
@@ -3801,11 +2036,6 @@
       "id": "com.inphase.itv/com.inphase.itv.StartActivity",
       "existing_drawable": "ladb",
       "name": "i\u89c6 ~~ iShi"
-    },
-    {
-      "id": "james.dsp/james.dsp.activity.DSPManager",
-      "existing_drawable": "rootless_james_dsp",
-      "name": "JamesDSP"
     },
     {
       "id": "james.dsp/me.timschneeberger.rootlessjamesdsp.activity.MainActivity",
@@ -3853,11 +2083,6 @@
       "name": "Just Eat"
     },
     {
-      "id": "com.eat.ch/com.takeaway.android.activity.Splash",
-      "existing_drawable": "just_eat",
-      "name": "Just Eat"
-    },
-    {
       "id": "com.justeat.app.dk/com.takeaway.android.activity.Splash",
       "existing_drawable": "just_eat",
       "name": "Just Eat"
@@ -3868,32 +2093,7 @@
       "name": "Just Eat"
     },
     {
-      "id": "com.justeat.app.es/com.justeat.app.ui.MainActivity",
-      "existing_drawable": "just_eat",
-      "name": "Just Eat"
-    },
-    {
-      "id": "com.justeat.app.es/com.justeat.app.ui.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Just Eat"
-    },
-    {
-      "id": "com.justeat.app.es/com.justeat.splash.ui.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Just Eat"
-    },
-    {
-      "id": "com.justeat.app.es/com.takeaway.android.activity.Splash",
-      "existing_drawable": "just_eat",
-      "name": "Just Eat"
-    },
-    {
       "id": "com.justeat.app.fr/com.justeat.app.ui.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Just Eat"
-    },
-    {
-      "id": "com.justeat.app.fr/com.takeaway.android.activity.Splash",
       "existing_drawable": "just_eat",
       "name": "Just Eat"
     },
@@ -3903,47 +2103,7 @@
       "name": "Just Eat"
     },
     {
-      "id": "com.justeat.app.ie/com.justeat.app.ui.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Just Eat"
-    },
-    {
-      "id": "com.justeat.app.ie/com.justeat.splash.ui.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Just Eat"
-    },
-    {
-      "id": "com.justeat.app.ie/com.takeaway.android.activity.Splash",
-      "existing_drawable": "just_eat",
-      "name": "Just Eat"
-    },
-    {
       "id": "com.justeat.app.uk/com.jet.singleactivity.ui.MainActivity",
-      "existing_drawable": "just_eat",
-      "name": "Just Eat"
-    },
-    {
-      "id": "com.justeat.app.uk/com.justeat.app.ui.MainActivity",
-      "existing_drawable": "just_eat",
-      "name": "Just Eat"
-    },
-    {
-      "id": "com.justeat.app.uk/com.justeat.app.ui.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Just Eat"
-    },
-    {
-      "id": "com.justeat.app.uk/com.justeat.app.ui.splash.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Just Eat"
-    },
-    {
-      "id": "com.justeat.app.uk/com.justeat.splash.ui.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Just Eat"
-    },
-    {
-      "id": "com.justeat.app.uk/com.takeaway.android.activity.Splash",
       "existing_drawable": "just_eat",
       "name": "Just Eat"
     },
@@ -3973,11 +2133,6 @@
       "name": "Keepass2Android Offline"
     },
     {
-      "id": "keepass2android.keepass2android_nonet/crc64dd09b2a2e58bb27d.KeePass",
-      "existing_drawable": "keepass2android",
-      "name": "Keepass2Android Offline"
-    },
-    {
       "id": "com.ivanovsky.passnotes/com.ivanovsky.passnotes.presentation.StartActivity",
       "existing_drawable": "one_tap_lock_screen",
       "name": "KeePassVault"
@@ -3989,11 +2144,6 @@
     },
     {
       "id": "cocobo1.pupu.app/com.discord.main.MainDefault",
-      "existing_drawable": "discord",
-      "name": "Kettu"
-    },
-    {
-      "id": "cocobo1.pupu.app/com.discord.main.MainGalaxy",
       "existing_drawable": "discord",
       "name": "Kettu"
     },
@@ -4023,11 +2173,6 @@
       "name": "KFC"
     },
     {
-      "id": "com.kfc.nl.mobileapp/com.usemenu.MenuAndroidApplication.SplashActivity",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
       "id": "com.kfc.tt/com.kfc.tt.SplashActivity",
       "existing_drawable": "kfc",
       "name": "KFC"
@@ -4039,11 +2184,6 @@
     },
     {
       "id": "com.kfc_polska/com.kfc_polska.ui.activities.MainActivity",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
-      "id": "com.kfc_polska/com.kfc_polska.ui.activities.OnboardActivity",
       "existing_drawable": "kfc",
       "name": "KFC"
     },
@@ -4078,11 +2218,6 @@
       "name": "KFC"
     },
     {
-      "id": "com.nanoequipment.kfc/com.nanoequipment.kfc.SplashActivity",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
       "id": "com.yum.kfc.ro/com.yum.kfc.ro.MainActivity",
       "existing_drawable": "kfc",
       "name": "KFC"
@@ -4093,32 +2228,12 @@
       "name": "KFC"
     },
     {
-      "id": "com.yum.kfc/crc64ded25ac84fd66723.MainActivity",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
       "id": "es.kfc.spain/com.kfces.orderserv.MainActivity",
       "existing_drawable": "kfc",
       "name": "KFC"
     },
     {
-      "id": "es.kfc.spain/com.kfces.orderserv.SplashImageActivity",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
       "id": "org.khanacademy.android/icon.black",
-      "existing_drawable": "khan_academy",
-      "name": "Khan Academy"
-    },
-    {
-      "id": "org.khanacademy.android/icon.darker",
-      "existing_drawable": "khan_academy",
-      "name": "Khan Academy"
-    },
-    {
-      "id": "org.khanacademy.android/icon.rainbow",
       "existing_drawable": "khan_academy",
       "name": "Khan Academy"
     },
@@ -4158,27 +2273,12 @@
       "name": "komoot"
     },
     {
-      "id": "de.komoot.android/de.komoot.android.ui.RootActivityClassic",
-      "existing_drawable": "komoot",
-      "name": "Komoot"
-    },
-    {
-      "id": "de.komoot.android/de.komoot.android.ui.RootActivityDefault",
-      "existing_drawable": "komoot",
-      "name": "Komoot"
-    },
-    {
       "id": "com.kotak811mobilebankingapp.instantsavingsupiscanandpayrecharge/com.kotak811mobilebankingapp.instantsavingsupiscanandpayrecharge.MainActivityKotakOld",
       "existing_drawable": "kotak811",
       "name": "Kotak811"
     },
     {
       "id": "org.kustom.widget.pro/a.y.z.HZ",
-      "existing_drawable": "kwgt_pro",
-      "name": "KWGT Pro Key"
-    },
-    {
-      "id": "org.kustom.widget.pro/android.app.AppDetailsActivity",
       "existing_drawable": "kwgt_pro",
       "name": "KWGT Pro Key"
     },
@@ -4303,42 +2403,12 @@
       "name": "Lieferando"
     },
     {
-      "id": "at.lieferservice.android/com.takeaway.android.activity.Splash",
-      "existing_drawable": "just_eat",
-      "name": "Lieferando"
-    },
-    {
       "id": "com.yopeso.lieferando/com.jet.singleactivity.ui.MainActivity",
       "existing_drawable": "just_eat",
       "name": "Lieferando"
     },
     {
-      "id": "com.yopeso.lieferando/com.justeat.splash.ui.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Lieferando"
-    },
-    {
-      "id": "com.yopeso.lieferando/com.takeaway.android.Startup",
-      "existing_drawable": "just_eat",
-      "name": "Lieferando"
-    },
-    {
-      "id": "com.yopeso.lieferando/com.takeaway.android.activity.Splash",
-      "existing_drawable": "just_eat",
-      "name": "Lieferando"
-    },
-    {
-      "id": "com.yopeso.lieferando/com.yopeso.lieferando.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Lieferando"
-    },
-    {
       "id": "de.lieferservice.android/com.takeaway.android.Startup",
-      "existing_drawable": "just_eat",
-      "name": "Lieferservice"
-    },
-    {
-      "id": "de.lieferservice.android/com.takeaway.android.activity.Splash",
       "existing_drawable": "just_eat",
       "name": "Lieferservice"
     },
@@ -4353,62 +2423,7 @@
       "name": "LINE"
     },
     {
-      "id": "jp.naver.line.android/jp.naver.line.android.design_cherry_blossom",
-      "existing_drawable": "line",
-      "name": "LINE"
-    },
-    {
-      "id": "com.linkedin.android/com.linkedin.android.authenticator.AATestDefaultActivityAlias",
-      "existing_drawable": "linkedin",
-      "name": "LinkedIn"
-    },
-    {
-      "id": "com.linkedin.android/com.linkedin.android.authenticator.BackToSchoolActivityAlias",
-      "existing_drawable": "linkedin",
-      "name": "LinkedIn"
-    },
-    {
-      "id": "com.linkedin.android/com.linkedin.android.authenticator.CarnivalFestivalActivityAlias",
-      "existing_drawable": "linkedin",
-      "name": "LinkedIn"
-    },
-    {
-      "id": "com.linkedin.android/com.linkedin.android.authenticator.EarthFestivalActivityAlias",
-      "existing_drawable": "linkedin",
-      "name": "LinkedIn"
-    },
-    {
       "id": "com.linkedin.android/com.linkedin.android.authenticator.FallFestivalActivityAlias",
-      "existing_drawable": "linkedin",
-      "name": "LinkedIn"
-    },
-    {
-      "id": "com.linkedin.android/com.linkedin.android.authenticator.IntlWomensDayActivityAlias",
-      "existing_drawable": "linkedin",
-      "name": "LinkedIn"
-    },
-    {
-      "id": "com.linkedin.android/com.linkedin.android.authenticator.NYEFestivalActivityAlias",
-      "existing_drawable": "linkedin",
-      "name": "LinkedIn"
-    },
-    {
-      "id": "com.linkedin.android/com.linkedin.android.authenticator.PremiumV1ActivityAlias",
-      "existing_drawable": "linkedin",
-      "name": "LinkedIn"
-    },
-    {
-      "id": "com.linkedin.android/com.linkedin.android.authenticator.SpringActivityAlias",
-      "existing_drawable": "linkedin",
-      "name": "LinkedIn"
-    },
-    {
-      "id": "com.linkedin.android/com.linkedin.android.authenticator.WinterFestivalActivityAlias",
-      "existing_drawable": "linkedin",
-      "name": "LinkedIn"
-    },
-    {
-      "id": "com.linkedin.android/com.linkedin.android.authenticator.YIRActivityAlias",
       "existing_drawable": "linkedin",
       "name": "LinkedIn"
     },
@@ -4421,11 +2436,6 @@
       "id": "com.wallpaper.liveloop/com.wallpaper.liveloop.StartActivity",
       "existing_drawable": "liveloop",
       "name": "LiveLoop"
-    },
-    {
-      "id": "com.ss.android.ugc.aweme/com.android.camera.CameraLauncher",
-      "existing_drawable": "tiktok",
-      "name": "LMC 8.4"
     },
     {
       "id": "com.cvc953.localplayer/com.cvc953.localplayer.MainActivity",
@@ -4538,107 +2548,7 @@
       "name": "MDGram"
     },
     {
-      "id": "app.mdgram.android/app.mdgram.android.Color",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "app.mdgram.android/app.mdgram.android.DefaultIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "app.mdgram.android/app.mdgram.android.MaterialYou",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "app.mdgram.android/app.mdgram.android.NoxIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "app.mdgram.android/app.mdgram.android.VintageIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
       "id": "org.telegram.mdgram/org.telegram.mdgram.AquaIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "org.telegram.mdgram/org.telegram.mdgram.CloudIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "org.telegram.mdgram/org.telegram.mdgram.Color",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "org.telegram.mdgram/org.telegram.mdgram.DarkIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "org.telegram.mdgram/org.telegram.mdgram.MaterialIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "org.telegram.mdgram/org.telegram.mdgram.MerioIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "org.telegram.mdgram/org.telegram.mdgram.MusheenIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "org.telegram.mdgram/org.telegram.mdgram.NeonIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "org.telegram.mdgram/org.telegram.mdgram.NoxIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "org.telegram.mdgram/org.telegram.mdgram.OldSchoolIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "org.telegram.mdgram/org.telegram.mdgram.PremiumIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "org.telegram.mdgram/org.telegram.mdgram.RainbowIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "org.telegram.mdgram/org.telegram.mdgram.SpaceIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "org.telegram.mdgram/org.telegram.mdgram.TurboIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "org.telegram.mdgram/org.telegram.mdgram.VintageIcon",
-      "existing_drawable": "mdgram",
-      "name": "MDGram"
-    },
-    {
-      "id": "org.telegram.mdgram/org.telegram.ui.LaunchActivity",
       "existing_drawable": "mdgram",
       "name": "MDGram"
     },
@@ -4649,16 +2559,6 @@
     },
     {
       "id": "meditofoundation.medito/com.meditofoundation.medito.MainActivity",
-      "existing_drawable": "medito",
-      "name": "Medito"
-    },
-    {
-      "id": "meditofoundation.medito/meditofoundation.medito.MainActivity.classic",
-      "existing_drawable": "medito",
-      "name": "Medito"
-    },
-    {
-      "id": "meditofoundation.medito/meditofoundation.medito.MainActivity.dusk",
       "existing_drawable": "medito",
       "name": "Medito"
     },
@@ -4678,49 +2578,14 @@
       "name": "Menulog"
     },
     {
-      "id": "com.menulog.m/com.justeat.app.ui.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Menulog"
-    },
-    {
-      "id": "com.menulog.m/com.justeat.splash.ui.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Menulog"
-    },
-    {
       "id": "nz.co.menulog.m/com.justeat.splash.ui.SplashActivity",
       "existing_drawable": "just_eat",
       "name": "Menulog"
     },
     {
-      "id": "com.mercadolibre/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "mercado_pago",
-      "name": "Mercado Libre"
-    },
-    {
-      "id": "com.mercadolibre/com.mercadolibre.SplashActivityAliasMundialBra",
-      "existing_drawable": "mercado_pago",
-      "name": "Mercado Libre"
-    },
-    {
-      "id": "com.mercadolibre/com.mercadolibre.SplashActivityAliasMundialMex",
-      "existing_drawable": "mercado_pago",
-      "name": "Mercado Libre"
-    },
-    {
-      "id": "com.mercadolibre/com.mercadolibre.SplashActivityAliasMundialOfficialFifa",
-      "existing_drawable": "mercado_pago",
-      "name": "Mercado Libre"
-    },
-    {
       "id": "com.mercadolibre/com.mercadolibre.SplashActivityAliasDoubleDate10",
       "existing_drawable": "mercado_pago",
-      "name": "Mercado Livre"
-    },
-    {
-      "id": "com.mercadolibre/com.mercadolibre.SplashActivityAliasDoubleDate9",
-      "existing_drawable": "mercado_pago",
-      "name": "Mercado Livre"
+      "name": "Mercado Libre"
     },
     {
       "id": "com.android.messaging/com.android.mms.ui.ConversationList",
@@ -4729,11 +2594,6 @@
     },
     {
       "id": "com.android.mms/com.android.mms.tab.MmsMainActivity",
-      "existing_drawable": "messages",
-      "name": "Messages"
-    },
-    {
-      "id": "com.android.mms/com.freeme.mms.FreemeConversationList",
       "existing_drawable": "messages",
       "name": "Messages"
     },
@@ -4771,11 +2631,6 @@
       "id": "de.metro.alex.customer.digitalcard.metro/com.metronom.app.companion.ui.main.MainActivity",
       "existing_drawable": "metro",
       "name": "METRO Companion"
-    },
-    {
-      "id": "in.co.metro.customerappmetro/in.co.metro.customerappmetro.newlogin.activities.MetroSplashActivity",
-      "existing_drawable": "metro",
-      "name": "Metro Wholesale B2B Shopping"
     },
     {
       "id": "com.xiaomi.smarthome.tv.global4/com.xiaomi.smarthome.tv.ui.MainActivity",
@@ -4823,37 +2678,7 @@
       "name": "Microsoft Edge"
     },
     {
-      "id": "com.microsoft.emmx/com.microsoft.ruby.Main2",
-      "existing_drawable": "microsoft_edge",
-      "name": "Microsoft Edge"
-    },
-    {
-      "id": "com.microsoft.emmx/com.microsoft.ruby.Main3",
-      "existing_drawable": "microsoft_edge",
-      "name": "Microsoft Edge"
-    },
-    {
-      "id": "com.microsoft.emmx/com.microsoft.ruby.Main4",
-      "existing_drawable": "microsoft_edge",
-      "name": "Microsoft Edge"
-    },
-    {
-      "id": "com.microsoft.emmx/com.microsoft.ruby.Main7",
-      "existing_drawable": "microsoft_edge",
-      "name": "Microsoft Edge"
-    },
-    {
-      "id": "com.microsoft.emmx/com.microsoft.ruby.Main9",
-      "existing_drawable": "microsoft_edge",
-      "name": "Microsoft Edge"
-    },
-    {
       "id": "com.microsoft.emmx.canary/com.microsoft.ruby.Main3",
-      "existing_drawable": "microsoft_edge",
-      "name": "Microsoft Edge Canary"
-    },
-    {
-      "id": "com.microsoft.emmx.canary/com.microsoft.ruby.Main6",
       "existing_drawable": "microsoft_edge",
       "name": "Microsoft Edge Canary"
     },
@@ -4904,26 +2729,6 @@
     },
     {
       "id": "com.mojang.minecraftpe/com.byfen.archiver.MainActivity",
-      "existing_drawable": "minecraft",
-      "name": "Minecraft"
-    },
-    {
-      "id": "com.mojang.minecraftpe/com.fiveplay.mod.RMS.Recovery",
-      "existing_drawable": "minecraft",
-      "name": "Minecraft"
-    },
-    {
-      "id": "com.mojang.minecraftpe/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "minecraft",
-      "name": "Minecraft"
-    },
-    {
-      "id": "com.mojang.minecraftpe/com.jojoy.delegate.JojoyInstallerActivity",
-      "existing_drawable": "minecraft",
-      "name": "Minecraft"
-    },
-    {
-      "id": "com.mojang.minecraftpe/com.me.game.pmupdatesdk.MainActivity",
       "existing_drawable": "minecraft",
       "name": "Minecraft"
     },
@@ -5013,151 +2818,6 @@
       "name": "Momentum"
     },
     {
-      "id": "org.telegram.messenger/org.telegram.messenger.ClassicIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.ColoredIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramAquaIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramClassicIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramDefaultIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramNekoAquaIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramNekoMusheenIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramNekoNeonIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramNekoPremiumIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramNekoPusheenIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramNekoRainbowIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramNekoSpaceIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramNekoTurboIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramNoxIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramPremiumIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramThemedClassicIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramThemedXEyeIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramTurboIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.MomogramVintageIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.NekoAquaIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.NekoMusheenIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.NekoNeonIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.NekoPremiumIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.NekoPusheenIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.NekoRainbowIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.NekoSpaceIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.NekoTurboIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.ThemedClassicIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
-      "id": "org.telegram.messenger/org.telegram.messenger.ThemedXEyeIcon",
-      "existing_drawable": "telegram",
-      "name": "Momogram"
-    },
-    {
       "id": "com.netflix.NGP.MonumentValley1/com.unity3d.player.UnityPlayerActivity",
       "existing_drawable": "monument_valley",
       "name": "Monument Valley"
@@ -5183,11 +2843,6 @@
       "name": "Morphe"
     },
     {
-      "id": "app.morphe.manager/app.morphe.manager.MainActivity_Light_3",
-      "existing_drawable": "morphe",
-      "name": "Morphe"
-    },
-    {
       "id": "com.morphpatches.app/com.webtoapp.ui.shell.ShellActivity",
       "existing_drawable": "morphe",
       "name": "Morphe Patches"
@@ -5208,22 +2863,7 @@
       "name": "Moto Smart Connect"
     },
     {
-      "id": "com.motorola.mobiledesktop/com.motorola.readyfor.NearbyDisplaysLauncherIconAlias",
-      "existing_drawable": "ready_for",
-      "name": "Moto Smart Connect"
-    },
-    {
-      "id": "com.motorola.mobiledesktop/com.motorola.readyfor.display.ui.NearbyDisplaysActivity",
-      "existing_drawable": "ready_for",
-      "name": "Moto Smart Connect"
-    },
-    {
       "id": "com.motorola.systemui.desk/com.motorola.taskbar.bar.ExternalModeChooserActivity",
-      "existing_drawable": "moto",
-      "name": "Moto Tutorial"
-    },
-    {
-      "id": "com.motorola.systemui.desk/com.motorola.taskbar.onboard.OnBoardActivity",
       "existing_drawable": "moto",
       "name": "Moto Tutorial"
     },
@@ -5363,11 +3003,6 @@
       "name": "Music Player"
     },
     {
-      "id": "com.shaiban.audioplayer.mplayer/com.shaiban.audioplayer.mplayer.common.splash.NavigatingActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player"
-    },
-    {
       "id": "media.audioplayer.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
       "existing_drawable": "apple_music",
       "name": "Music Player"
@@ -5418,11 +3053,6 @@
       "name": "Music You"
     },
     {
-      "id": "com.github.musicyou/it.vfsfitvnm.vimusic.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Music You"
-    },
-    {
       "id": "jl.musicalnotes/jl.musicalnotes.activity.MainActivity",
       "existing_drawable": "music_player",
       "name": "Musical Notes"
@@ -5436,11 +3066,6 @@
       "id": "com.ttnet.muzik/com.ttnet.muzik.DefaultAppIconAlias",
       "existing_drawable": "music_player",
       "name": "Muud"
-    },
-    {
-      "id": "com.shaiban.audioplayer.mplayer/com.shaiban.audioplayer.mplayer.ui.activities.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Muzio Player"
     },
     {
       "id": "hu.mvmnext.onlineugyintezes/com.nkmomni.app.screen.splash.SplashActivity",
@@ -5483,16 +3108,6 @@
       "name": "My Pixel"
     },
     {
-      "id": "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p8",
-      "existing_drawable": "my_pixel",
-      "name": "My Pixel"
-    },
-    {
-      "id": "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.pFold",
-      "existing_drawable": "my_pixel",
-      "name": "My Pixel"
-    },
-    {
       "id": "com.vodafone.selfservis/com.vodafone.selfservis.FiveGAlias",
       "existing_drawable": "my_vodafone",
       "name": "My Vodafone 5G"
@@ -5504,16 +3119,6 @@
     },
     {
       "id": "com.tippingcanoe.mydealz/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-      "existing_drawable": "mydealz",
-      "name": "mydealz"
-    },
-    {
-      "id": "com.tippingcanoe.mydealz/com.pepper.apps.android.presentation.MainActivityLightIcon",
-      "existing_drawable": "mydealz",
-      "name": "mydealz"
-    },
-    {
-      "id": "com.tippingcanoe.mydealz/com.pepper.apps.android.presentation.MainActivitySilverIcon",
       "existing_drawable": "mydealz",
       "name": "mydealz"
     },
@@ -5553,107 +3158,12 @@
       "name": "Nagram"
     },
     {
-      "id": "xyz.nextalone.nagram/org.telegram.messenger.BlueIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram"
-    },
-    {
-      "id": "xyz.nextalone.nagram/org.telegram.messenger.CloudIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram"
-    },
-    {
-      "id": "xyz.nextalone.nagram/org.telegram.messenger.DarkBlueIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram"
-    },
-    {
-      "id": "xyz.nextalone.nagram/org.telegram.messenger.DarkIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram"
-    },
-    {
-      "id": "xyz.nextalone.nagram/org.telegram.messenger.GoogleIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram"
-    },
-    {
-      "id": "xyz.nextalone.nagram/org.telegram.messenger.MaterialIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram"
-    },
-    {
-      "id": "xyz.nextalone.nagram/org.telegram.messenger.MerioIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram"
-    },
-    {
-      "id": "xyz.nextalone.nagram/org.telegram.messenger.MusheenIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram"
-    },
-    {
-      "id": "xyz.nextalone.nagram/org.telegram.messenger.NeonIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram"
-    },
-    {
-      "id": "xyz.nextalone.nagram/org.telegram.messenger.NoxIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram"
-    },
-    {
-      "id": "xyz.nextalone.nagram/org.telegram.messenger.OldSchoolIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram"
-    },
-    {
-      "id": "xyz.nextalone.nagram/org.telegram.messenger.RainbowIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram"
-    },
-    {
-      "id": "xyz.nextalone.nagram/org.telegram.messenger.SpaceIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram"
-    },
-    {
-      "id": "xyz.nextalone.nagram/org.telegram.messenger.TurboIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram"
-    },
-    {
-      "id": "xyz.nextalone.nagram/org.telegram.messenger.VintageIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram"
-    },
-    {
-      "id": "xyz.nextalone.nagram/org.telegram.ui.LaunchActivity",
-      "existing_drawable": "nagram",
-      "name": "Nagram"
-    },
-    {
-      "id": "xyz.nextalone.nagram/org.telegram.messenger.NielloIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram Niello Icon"
-    },
-    {
       "id": "nu.gpu.nagram/org.telegram.messenger.DarkGreenIcon",
       "existing_drawable": "nagram",
       "name": "Nagram X"
     },
     {
-      "id": "nu.gpu.nagram/org.telegram.messenger.NeonIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram X"
-    },
-    {
       "id": "fork.risin42.nagramx/org.telegram.messenger.ColorfulIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram XF"
-    },
-    {
-      "id": "fork.risin42.nagramx/org.telegram.messenger.DarkBlueIcon",
       "existing_drawable": "nagram",
       "name": "Nagram XF"
     },
@@ -5673,67 +3183,7 @@
       "name": "Nekogram"
     },
     {
-      "id": "tw.nekomimi.nekogram/org.telegram.messenger.CloudIcon",
-      "existing_drawable": "nekogram",
-      "name": "Nekogram"
-    },
-    {
-      "id": "tw.nekomimi.nekogram/org.telegram.messenger.DarkIcon",
-      "existing_drawable": "nekogram",
-      "name": "Nekogram"
-    },
-    {
-      "id": "tw.nekomimi.nekogram/org.telegram.messenger.MerioIcon",
-      "existing_drawable": "nekogram",
-      "name": "Nekogram"
-    },
-    {
-      "id": "tw.nekomimi.nekogram/org.telegram.messenger.NeonIcon",
-      "existing_drawable": "nekogram",
-      "name": "Nekogram"
-    },
-    {
-      "id": "tw.nekomimi.nekogram/org.telegram.messenger.NoxIcon",
-      "existing_drawable": "nekogram",
-      "name": "Nekogram"
-    },
-    {
-      "id": "tw.nekomimi.nekogram/org.telegram.messenger.OldSchoolIcon",
-      "existing_drawable": "nekogram",
-      "name": "Nekogram"
-    },
-    {
-      "id": "tw.nekomimi.nekogram/org.telegram.messenger.PremiumIcon",
-      "existing_drawable": "nekogram",
-      "name": "Nekogram"
-    },
-    {
-      "id": "tw.nekomimi.nekogram/org.telegram.messenger.RainbowIcon",
-      "existing_drawable": "nekogram",
-      "name": "Nekogram"
-    },
-    {
-      "id": "tw.nekomimi.nekogram/org.telegram.messenger.SpaceIcon",
-      "existing_drawable": "nekogram",
-      "name": "Nekogram"
-    },
-    {
-      "id": "tw.nekomimi.nekogram/org.telegram.messenger.TurboIcon",
-      "existing_drawable": "nekogram",
-      "name": "Nekogram"
-    },
-    {
-      "id": "tw.nekomimi.nekogram/org.telegram.messenger.VintageIcon",
-      "existing_drawable": "nekogram",
-      "name": "Nekogram"
-    },
-    {
       "id": "com.machiav3lli.backup/com.machiav3lli.backup.activities.MainActivityX",
-      "existing_drawable": "neo_backup",
-      "name": "Neo Backup"
-    },
-    {
-      "id": "com.machiav3lli.backup/com.machiav3lli.backup.ui.activities.NeoActivity",
       "existing_drawable": "neo_backup",
       "name": "Neo Backup"
     },
@@ -5741,26 +3191,6 @@
       "id": "br.com.neon/br.eCzu24.tFBoY9.fWPjK2.lbOHK6.b6sG73.cgbuM3",
       "existing_drawable": "neon",
       "name": "Neon"
-    },
-    {
-      "id": "br.com.neon/br.eXsz71.cPIYq5.jGayW9.qTQxu5.pJLD23.zLjjn2",
-      "existing_drawable": "neon",
-      "name": "Neon"
-    },
-    {
-      "id": "br.com.neon/br.oT9qx8.gDPfj3.sm0YB6.wS3Hm4.zZK680.av80I8",
-      "existing_drawable": "neon",
-      "name": "Neon"
-    },
-    {
-      "id": "br.com.neon/br.uvdw14.yfo8p7.eM0gy5.cT9Cj7.ovqDn5.zEIdX0",
-      "existing_drawable": "neon",
-      "name": "Neon"
-    },
-    {
-      "id": "com.netflix.mediaclient/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "netflix",
-      "name": "Netflix"
     },
     {
       "id": "com.netflix.mediaclient/com.piyush.music.activities.main.MainActivity",
@@ -5883,11 +3313,6 @@
       "name": "NS"
     },
     {
-      "id": "nl.ns.android.activity/nl.ns.feature.startup.start.StartActivity",
-      "existing_drawable": "ns",
-      "name": "NS"
-    },
-    {
       "id": "nl.nshispeed/nl.nsinternational.mobile.android.startup.StartupActivity",
       "existing_drawable": "ns",
       "name": "NS International"
@@ -5933,17 +3358,7 @@
       "name": "One-Tap Lock Screen"
     },
     {
-      "id": "com.coloros.onekeylockscreen/com.heytap.onekeylockscreen.OneKeyLockScreen",
-      "existing_drawable": "one_tap_lock_screen",
-      "name": "One-Tap Lock Screen"
-    },
-    {
       "id": "com.oneplus.bbs/com.oneplus.community.activity.LauncherActivity",
-      "existing_drawable": "oneplus_community",
-      "name": "OnePlus Community"
-    },
-    {
-      "id": "com.oneplus.bbs/com.oplus.community.activity.LauncherActivity",
       "existing_drawable": "oneplus_community",
       "name": "OnePlus Community"
     },
@@ -5978,67 +3393,12 @@
       "name": "Opera"
     },
     {
-      "id": "com.opera.browser/com.opera.Launcher11",
-      "existing_drawable": "opera_browser",
-      "name": "Opera"
-    },
-    {
-      "id": "com.opera.browser/com.opera.Launcher2",
-      "existing_drawable": "opera_browser",
-      "name": "Opera"
-    },
-    {
-      "id": "com.opera.browser/com.opera.Launcher3",
-      "existing_drawable": "opera_browser",
-      "name": "Opera"
-    },
-    {
-      "id": "com.opera.browser/com.opera.Launcher4",
-      "existing_drawable": "opera_browser",
-      "name": "Opera"
-    },
-    {
-      "id": "com.opera.browser/com.opera.Launcher5",
-      "existing_drawable": "opera_browser",
-      "name": "Opera"
-    },
-    {
-      "id": "com.opera.browser/com.opera.Launcher6",
-      "existing_drawable": "opera_browser",
-      "name": "Opera"
-    },
-    {
-      "id": "com.opera.browser/com.opera.Launcher8",
-      "existing_drawable": "opera_browser",
-      "name": "Opera"
-    },
-    {
-      "id": "com.opera.browser/com.opera.Launcher9",
-      "existing_drawable": "opera_browser",
-      "name": "Opera"
-    },
-    {
       "id": "com.opera.browser.beta/com.opera.Launcher5",
       "existing_drawable": "opera_browser",
       "name": "Opera Beta"
     },
     {
-      "id": "com.opera.browser.beta/com.opera.Launcher6",
-      "existing_drawable": "opera_browser",
-      "name": "Opera Beta"
-    },
-    {
-      "id": "com.opera.browser.beta/com.opera.Launcher7",
-      "existing_drawable": "opera_browser",
-      "name": "Opera Beta"
-    },
-    {
       "id": "com.opera.mini.native/com.opera.android.Default",
-      "existing_drawable": "opera_browser",
-      "name": "Opera Mini"
-    },
-    {
-      "id": "com.opera.mini.native/com.opera.android.Launcher1",
       "existing_drawable": "opera_browser",
       "name": "Opera Mini"
     },
@@ -6108,11 +3468,6 @@
       "name": "Paramount+"
     },
     {
-      "id": "com.cbs.ca/com.paramount.android.pplus.splash.tv.ui.activity.SplashMediatorActivity",
-      "existing_drawable": "paramount_plus",
-      "name": "Paramount+"
-    },
-    {
       "id": "ca.chancehorizon.paseo/ca.chancehorizon.paseo.SplashActivity",
       "existing_drawable": "paseo",
       "name": "Paseo"
@@ -6124,11 +3479,6 @@
     },
     {
       "id": "net.one97.paytm/net.one97.paytm.alias_icon_stage2",
-      "existing_drawable": "paytm",
-      "name": "Paytm"
-    },
-    {
-      "id": "net.one97.paytm/net.one97.paytm.alias_icon_stage3",
       "existing_drawable": "paytm",
       "name": "Paytm"
     },
@@ -6198,11 +3548,6 @@
       "name": "PeoPay"
     },
     {
-      "id": "softax.pekao.powerpay/softax.pekao.powerpay.screen.Menu",
-      "existing_drawable": "peopay",
-      "name": "PeoPay"
-    },
-    {
       "id": "pl.pekao.pekaosa.peopaykids/com.pekao.peokids.presentation.main.view.MainActivity",
       "existing_drawable": "peopay",
       "name": "PeoPay KIDS"
@@ -6213,27 +3558,7 @@
       "name": "Pepper"
     },
     {
-      "id": "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityLightIcon",
-      "existing_drawable": "pepper",
-      "name": "Pepper"
-    },
-    {
       "id": "com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivity",
-      "existing_drawable": "pepper",
-      "name": "Pepper"
-    },
-    {
-      "id": "com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-      "existing_drawable": "pepper",
-      "name": "Pepper"
-    },
-    {
-      "id": "com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivityGoldIcon",
-      "existing_drawable": "pepper",
-      "name": "Pepper"
-    },
-    {
-      "id": "com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivityLightIcon",
       "existing_drawable": "pepper",
       "name": "Pepper"
     },
@@ -6243,22 +3568,7 @@
       "name": "Pepper"
     },
     {
-      "id": "com.tippingcanoe.pepperpl/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-      "existing_drawable": "pepper",
-      "name": "Pepper"
-    },
-    {
-      "id": "com.tippingcanoe.pepperpl/com.pepper.apps.android.presentation.MainActivityLightIcon",
-      "existing_drawable": "pepper",
-      "name": "Pepper"
-    },
-    {
       "id": "se.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-      "existing_drawable": "pepper",
-      "name": "Pepper"
-    },
-    {
-      "id": "se.pepperdeals/com.pepper.apps.android.presentation.MainActivityLightIcon",
       "existing_drawable": "pepper",
       "name": "Pepper"
     },
@@ -6273,22 +3583,7 @@
       "name": "Periodic Table"
     },
     {
-      "id": "mendeleev.redlime/mendeleev.redlime.ui.main.MainActivity",
-      "existing_drawable": "periodic_table",
-      "name": "Periodic Table"
-    },
-    {
-      "id": "mendeleev.redlime/redlime.pereodic.MainActivity",
-      "existing_drawable": "periodic_table",
-      "name": "Periodic Table"
-    },
-    {
       "id": "ai.perplexity.app.android/ai.perplexity.app.android.authorization.exception.MainActivity",
-      "existing_drawable": "perplexity",
-      "name": "Perplexity"
-    },
-    {
-      "id": "ai.perplexity.app.android/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "perplexity",
       "name": "Perplexity"
     },
@@ -6313,24 +3608,9 @@
       "name": "Phone"
     },
     {
-      "id": "com.grice.dialer/com.grice.dialer.icon.IOS",
-      "existing_drawable": "generic_dialer",
-      "name": "Phone"
-    },
-    {
       "id": "com.instabridge.android/com.instabridge.android.callerid.DialerActivityCompose",
       "existing_drawable": "generic_dialer",
       "name": "Phone"
-    },
-    {
-      "id": "com.microblink.photomath/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "photomath",
-      "name": "Photomath"
-    },
-    {
-      "id": "com.microblink.photomath/com.microblink.photomath.main.LauncherActivity",
-      "existing_drawable": "photomath",
-      "name": "Photomath"
     },
     {
       "id": "com.microblink.photomath/com.microblink.photomath.main.MainActivity",
@@ -6388,11 +3668,6 @@
       "name": "Pinterest"
     },
     {
-      "id": "com.pinterest/com.pinterest.LauncherActivity",
-      "existing_drawable": "pinterest",
-      "name": "Pinterest"
-    },
-    {
       "id": "project.pipepipe.app/project.pipepipe.app.MainActivity",
       "existing_drawable": "pipepipe",
       "name": "PipePipe"
@@ -6414,11 +3689,6 @@
     },
     {
       "id": "com.imc.pizzahut/com.deliverymobileapp.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
-    },
-    {
-      "id": "com.imc.pizzahut/com.imc.pizzahut.MainActivity",
       "existing_drawable": "pizza_hut",
       "name": "Pizza Hut"
     },
@@ -6488,11 +3758,6 @@
       "name": "Pizza Hut"
     },
     {
-      "id": "com.pizzahutpl/pl.looksoft.pizzahut.ui.splash.SplashActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
-    },
-    {
       "id": "com.pizzahutuk.orderingApp/com.pizzahutuk.orderingApp.MainActivity",
       "existing_drawable": "pizza_hut",
       "name": "Pizza Hut"
@@ -6513,11 +3778,6 @@
       "name": "Pizza Hut"
     },
     {
-      "id": "nz.co.pizzahut/com.pizzahut.general.activities.DefaultSplashActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
-    },
-    {
       "id": "tr.com.pizzahut/tr.com.pizzahut.MainActivity",
       "existing_drawable": "pizza_hut",
       "name": "Pizza Hut"
@@ -6533,82 +3793,12 @@
       "name": "Platinum Karaoke Songbook"
     },
     {
-      "id": "com.androxus.playback/com.androxus.playback.presentation.SplashActivity",
+      "id": "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2",
       "existing_drawable": "just_player",
       "name": "PlayBack"
     },
     {
-      "id": "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2",
-      "existing_drawable": "just_player",
-      "name": "Playback"
-    },
-    {
       "id": "org.telegram.plus/org.telegram.messenger.AquaIcon",
-      "existing_drawable": "plus_messenger",
-      "name": "Plus Messenger"
-    },
-    {
-      "id": "org.telegram.plus/org.telegram.messenger.CloudIcon",
-      "existing_drawable": "plus_messenger",
-      "name": "Plus Messenger"
-    },
-    {
-      "id": "org.telegram.plus/org.telegram.messenger.DarkIcon",
-      "existing_drawable": "plus_messenger",
-      "name": "Plus Messenger"
-    },
-    {
-      "id": "org.telegram.plus/org.telegram.messenger.MaterialIcon",
-      "existing_drawable": "plus_messenger",
-      "name": "Plus Messenger"
-    },
-    {
-      "id": "org.telegram.plus/org.telegram.messenger.MerioIcon",
-      "existing_drawable": "plus_messenger",
-      "name": "Plus Messenger"
-    },
-    {
-      "id": "org.telegram.plus/org.telegram.messenger.MusheenIcon",
-      "existing_drawable": "plus_messenger",
-      "name": "Plus Messenger"
-    },
-    {
-      "id": "org.telegram.plus/org.telegram.messenger.NeonIcon",
-      "existing_drawable": "plus_messenger",
-      "name": "Plus Messenger"
-    },
-    {
-      "id": "org.telegram.plus/org.telegram.messenger.NoxIcon",
-      "existing_drawable": "plus_messenger",
-      "name": "Plus Messenger"
-    },
-    {
-      "id": "org.telegram.plus/org.telegram.messenger.OldSchoolIcon",
-      "existing_drawable": "plus_messenger",
-      "name": "Plus Messenger"
-    },
-    {
-      "id": "org.telegram.plus/org.telegram.messenger.PlusIcon",
-      "existing_drawable": "plus_messenger",
-      "name": "Plus Messenger"
-    },
-    {
-      "id": "org.telegram.plus/org.telegram.messenger.PremiumIcon",
-      "existing_drawable": "plus_messenger",
-      "name": "Plus Messenger"
-    },
-    {
-      "id": "org.telegram.plus/org.telegram.messenger.RainbowIcon",
-      "existing_drawable": "plus_messenger",
-      "name": "Plus Messenger"
-    },
-    {
-      "id": "org.telegram.plus/org.telegram.messenger.SpaceIcon",
-      "existing_drawable": "plus_messenger",
-      "name": "Plus Messenger"
-    },
-    {
-      "id": "org.telegram.plus/org.telegram.messenger.VintageIcon",
       "existing_drawable": "plus_messenger",
       "name": "Plus Messenger"
     },
@@ -6634,11 +3824,6 @@
     },
     {
       "id": "com.primety.sodexomobile/com.primety.sodexomobile.ui.PlxActivity",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee"
-    },
-    {
-      "id": "com.primety.sodexomobile/com.primety.sodexomobile.ui.splash.RoutingActivity",
       "existing_drawable": "pluxee",
       "name": "Pluxee"
     },
@@ -6698,16 +3883,6 @@
       "name": "Pok\u00e9mon GO"
     },
     {
-      "id": "com.nianticlabs.pokemongo/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "pokemon_go",
-      "name": "Pok\u00e9mon GO"
-    },
-    {
-      "id": "com.nianticlabs.pokemongo/com.nianticlabs.platform.launcher.NianticUnityPlayerActivity",
-      "existing_drawable": "pokemon_go",
-      "name": "Pok\u00e9mon GO"
-    },
-    {
       "id": "com.nianticlabs.pokemongo/m.u.h.a.MainActivity",
       "existing_drawable": "pokemon_go",
       "name": "Pok\u00e9mon GO"
@@ -6723,46 +3898,6 @@
       "name": "Poweramp Equalizer"
     },
     {
-      "id": "com.maxmpz.equalizer/com.maxmpz.audioplayer.classic",
-      "existing_drawable": "poweramp_equalizer",
-      "name": "Poweramp Equalizer"
-    },
-    {
-      "id": "com.maxmpz.equalizer/com.maxmpz.audioplayer.rounded_inverted_mu",
-      "existing_drawable": "poweramp_equalizer",
-      "name": "Poweramp Equalizer"
-    },
-    {
-      "id": "com.maxmpz.equalizer/com.maxmpz.audioplayer.rounded_mu",
-      "existing_drawable": "poweramp_equalizer",
-      "name": "Poweramp Equalizer"
-    },
-    {
-      "id": "com.maxmpz.equalizer/com.maxmpz.audioplayer.rounded_play_mu",
-      "existing_drawable": "poweramp_equalizer",
-      "name": "Poweramp Equalizer"
-    },
-    {
-      "id": "com.maxmpz.equalizer/com.maxmpz.audioplayer.standard_mu",
-      "existing_drawable": "poweramp_equalizer",
-      "name": "Poweramp Equalizer"
-    },
-    {
-      "id": "com.maxmpz.equalizer/com.maxmpz.audioplayer.white_play_adaptive",
-      "existing_drawable": "poweramp_equalizer",
-      "name": "Poweramp Equalizer"
-    },
-    {
-      "id": "com.maxmpz.equalizer/com.maxmpz.audioplayer.zap_plain_adaptive",
-      "existing_drawable": "poweramp_equalizer",
-      "name": "Poweramp Equalizer"
-    },
-    {
-      "id": "com.maxmpz.equalizer/com.maxmpz.audioplayer.zap_round",
-      "existing_drawable": "poweramp_equalizer",
-      "name": "Poweramp Equalizer Zap Icon"
-    },
-    {
       "id": "com.maxmpz.audioplayer.unlock/com.maxmpz.audioplayer.unlock.RedirectorActivity",
       "existing_drawable": "poweramp_full_unlocker",
       "name": "Poweramp Full Unlocker"
@@ -6774,11 +3909,6 @@
     },
     {
       "id": "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-      "existing_drawable": "pepper",
-      "name": "Preisj\u00e4ger"
-    },
-    {
-      "id": "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityLightIcon",
       "existing_drawable": "pepper",
       "name": "Preisj\u00e4ger"
     },
@@ -6808,32 +3938,12 @@
       "name": "Progressbar95"
     },
     {
-      "id": "com.spookyhousestudios.progressbar95/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "progressbar95",
-      "name": "Progressbar95"
-    },
-    {
       "id": "com.drsants.eggproject/com.drsants.eggproject.activities.Splash",
       "existing_drawable": "project_themer",
       "name": "Project Themer"
     },
     {
-      "id": "com.drsants.eggproject/com.drsants.eggproject.activities.SplashActivity",
-      "existing_drawable": "project_themer",
-      "name": "Project Themer"
-    },
-    {
       "id": "ch.protonmail.android/ch.protonmail.android.RoutingCalculator",
-      "existing_drawable": "proton_mail",
-      "name": "Proton Mail"
-    },
-    {
-      "id": "ch.protonmail.android/ch.protonmail.android.RoutingNotes",
-      "existing_drawable": "proton_mail",
-      "name": "Proton Mail"
-    },
-    {
-      "id": "ch.protonmail.android/ch.protonmail.android.RoutingWeather",
       "existing_drawable": "proton_mail",
       "name": "Proton Mail"
     },
@@ -6853,27 +3963,12 @@
       "name": "Proton VPN"
     },
     {
-      "id": "ch.protonvpn.android/ch.protonvpn.android.RoutingWeather",
-      "existing_drawable": "proton_vpn",
-      "name": "Proton VPN"
-    },
-    {
       "id": "com.psiphon3/com.psiphon3.MainActivity",
       "existing_drawable": "psiphon",
       "name": "Psiphon"
     },
     {
       "id": "com.psiphon3.subscription/ca.psiphon.psiphon4.MainActivity",
-      "existing_drawable": "psiphon",
-      "name": "Psiphon Pro"
-    },
-    {
-      "id": "com.psiphon3.subscription/com.psiphon3.StatusActivity",
-      "existing_drawable": "psiphon",
-      "name": "Psiphon Pro"
-    },
-    {
-      "id": "com.psiphon3.subscription/com.qihoo.util.StartActivity",
       "existing_drawable": "psiphon",
       "name": "Psiphon Pro"
     },
@@ -6928,27 +4023,7 @@
       "name": "Pyszne"
     },
     {
-      "id": "com.yourdelivery.pyszne/com.justeat.splash.ui.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Pyszne"
-    },
-    {
-      "id": "com.yourdelivery.pyszne/com.takeaway.android.activity.Splash",
-      "existing_drawable": "just_eat",
-      "name": "Pyszne"
-    },
-    {
-      "id": "com.yourdelivery.pyszne/com.yopeso.lieferando.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Pyszne"
-    },
-    {
       "id": "com.tencent.qqmusic/com.google.android.apps.youtube.music.activities.MusicActivity",
-      "existing_drawable": "qqmusic",
-      "name": "QQ\u97f3\u4e50 ~~ QQMusic"
-    },
-    {
-      "id": "com.tencent.qqmusic/com.qihoo.util.StartActivity",
       "existing_drawable": "qqmusic",
       "name": "QQ\u97f3\u4e50 ~~ QQMusic"
     },
@@ -6974,11 +4049,6 @@
     },
     {
       "id": "com.ykart.tool.qrcodegen/com.ykart.tool.qrcodegen.MainActivity",
-      "existing_drawable": "generic_qr_reader",
-      "name": "QR Code Generator"
-    },
-    {
-      "id": "com.ykart.tool.qrcodegen/com.ykart.tool.qrcodegen.SplashScreenActivity",
       "existing_drawable": "generic_qr_reader",
       "name": "QR Code Generator"
     },
@@ -7033,39 +4103,9 @@
       "name": "Quick Search"
     },
     {
-      "id": "com.google.android.gms/com.google.android.gms.nearby.sharing.ReceiveSurfaceActivity",
-      "existing_drawable": "microg_settings",
-      "name": "Quick Share"
-    },
-    {
-      "id": "com.google.android.gms/com.google.android.gms.nearby.sharing.ShareSheetActivity",
-      "existing_drawable": "microg_settings",
-      "name": "Quick Share"
-    },
-    {
-      "id": "com.google.android.gms/com.google.android.gms.nearby.sharing.SharingLauncherActivity",
-      "existing_drawable": "microg_settings",
-      "name": "Quick Share"
-    },
-    {
       "id": "com.google.android.gms/com.google.android.gms.nearby.sharing.main.MainActivity",
       "existing_drawable": "microg_settings",
       "name": "Quick Share"
-    },
-    {
-      "id": "com.google.android.gms/com.google.android.gms.nearby.sharing.settings.SettingsActivity",
-      "existing_drawable": "microg_settings",
-      "name": "Quick Share"
-    },
-    {
-      "id": "com.google.android.gms/com.google.android.gms.nearby.sharing.ui.DiscoveryActivity",
-      "existing_drawable": "microg_settings",
-      "name": "Quick Share"
-    },
-    {
-      "id": "com.alensw.PicFolder/com.alensw.PicFolder.MainActivity",
-      "existing_drawable": "quickpic",
-      "name": "QuickPic"
     },
     {
       "id": "dev.octoshrimpy.quik.fdroid/dev.octoshrimpy.quik.feature.main.MainActivity",
@@ -7118,62 +4158,17 @@
       "name": "Reboot"
     },
     {
+      "id": "com.vivo.soundrecorder/com.android.activity.ReclistActivity",
+      "existing_drawable": "generic_voice_recorder_waves",
+      "name": "Recorder"
+    },
+    {
       "id": "com.reddit.frontpage.rvx/launcher.default",
       "existing_drawable": "reddit",
       "name": "Reddit"
     },
     {
       "id": "com.reddit.frontpage/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "reddit",
-      "name": "Reddit"
-    },
-    {
-      "id": "com.reddit.frontpage/launcher.alien_blue",
-      "existing_drawable": "reddit",
-      "name": "Reddit"
-    },
-    {
-      "id": "com.reddit.frontpage/launcher.astronaut",
-      "existing_drawable": "reddit",
-      "name": "Reddit"
-    },
-    {
-      "id": "com.reddit.frontpage/launcher.neon",
-      "existing_drawable": "reddit",
-      "name": "Reddit"
-    },
-    {
-      "id": "com.reddit.frontpage/launcher.pixels",
-      "existing_drawable": "reddit",
-      "name": "Reddit"
-    },
-    {
-      "id": "com.reddit.frontpage/launcher.planet",
-      "existing_drawable": "reddit",
-      "name": "Reddit"
-    },
-    {
-      "id": "com.reddit.frontpage/launcher.pullover",
-      "existing_drawable": "reddit",
-      "name": "Reddit"
-    },
-    {
-      "id": "com.reddit.frontpage/launcher.redditgifts",
-      "existing_drawable": "reddit",
-      "name": "Reddit"
-    },
-    {
-      "id": "com.reddit.frontpage/launcher.stocks",
-      "existing_drawable": "reddit",
-      "name": "Reddit"
-    },
-    {
-      "id": "com.reddit.frontpage/launcher.tothemoon",
-      "existing_drawable": "reddit",
-      "name": "Reddit"
-    },
-    {
-      "id": "com.reddit.frontpage/launcher.worldcup2026",
       "existing_drawable": "reddit",
       "name": "Reddit"
     },
@@ -7186,11 +4181,6 @@
       "id": "com.dot.gallery/com.dot.gallery.Launcher_ReFra",
       "existing_drawable": "refra",
       "name": "ReFra"
-    },
-    {
-      "id": "com.bigwinepot.nwdn.international/com.bendingspoons.remini.wfqYU",
-      "existing_drawable": "remini",
-      "name": "Remini"
     },
     {
       "id": "com.bigwinepot.nwdn.international/com.bigwinepot.nwdn.MainActivity",
@@ -7218,11 +4208,6 @@
       "name": "Resplash"
     },
     {
-      "id": "com.b_lam.resplash/com.b_lam.resplash.activities.SplashActivity",
-      "existing_drawable": "resplash",
-      "name": "Resplash"
-    },
-    {
       "id": "code.name.monkey.retromusic/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "retro_music",
       "name": "Retro Music"
@@ -7244,11 +4229,6 @@
     },
     {
       "id": "app.revenge/com.discord.main.MainCamo",
-      "existing_drawable": "discord",
-      "name": "Revenge"
-    },
-    {
-      "id": "app.revenge/com.discord.main.MainDefault",
       "existing_drawable": "discord",
       "name": "Revenge"
     },
@@ -7288,11 +4268,6 @@
       "name": "Rostic's"
     },
     {
-      "id": "ru.kfc.kfc_delivery/ru.kfc.kfc_delivery.MainActivity",
-      "existing_drawable": "kfc",
-      "name": "Rostic's"
-    },
-    {
       "id": "com.vanniktech.rssreader/com.vanniktech.rssreader.RssReaderMainActivity",
       "existing_drawable": "twine",
       "name": "RSS Reader"
@@ -7313,27 +4288,12 @@
       "name": "SAI"
     },
     {
-      "id": "com.mtv.sai/com.mtv.sai.ui.activities.main.MainActivity",
-      "existing_drawable": "sai",
-      "name": "SAI"
-    },
-    {
-      "id": "com.samsung.android.scan3d/com.samsung.android.scan3d.main.Scan3DActivity",
-      "existing_drawable": "samsung_camera",
+      "id": "com.samsung.android.scan3d/com.google.android.apps.cameralite.capture.CaptureActivity",
+      "existing_drawable": "generic_camera",
       "name": "Samsung 3D Scanner"
     },
     {
-      "id": "com.samsung.android.scan3d/com.google.android.apps.cameralite.capture.CaptureActivity",
-      "existing_drawable": "generic_camera",
-      "name": "Samsung Camera"
-    },
-    {
       "id": "com.samsung.android.contacts/com.android.contacts.activities.PeopleActivity",
-      "existing_drawable": "samsung_contacts",
-      "name": "Samsung Contacts"
-    },
-    {
-      "id": "com.samsung.android.contacts/com.android.dialer.DialtactsActivity",
       "existing_drawable": "samsung_contacts",
       "name": "Samsung Contacts"
     },
@@ -7383,11 +4343,6 @@
       "name": "Samsung Routines +"
     },
     {
-      "id": "com.samsung.android.app.routineplus/com.samsung.android.app.routineplus.main.RoutinePlusSplashActivity",
-      "existing_drawable": "samsung_routines_plus",
-      "name": "Samsung Routines +"
-    },
-    {
       "id": "com.samsung.android.galaxy/com.samsung.android.galaxy.MainActivity",
       "existing_drawable": "samsung_shop",
       "name": "Samsung Shop"
@@ -7418,27 +4373,12 @@
       "name": "Satispay"
     },
     {
-      "id": "com.satispay.customer/com.satispay.customer.home.SplashActivity",
-      "existing_drawable": "satispay",
-      "name": "Satispay"
-    },
-    {
-      "id": "com.satispay.customer/com.satispay.customer.main.SplashActivity",
-      "existing_drawable": "satispay",
-      "name": "Satispay"
-    },
-    {
       "id": "com.hwjan18v2021.qrcodescanner/com.uysystem.qrcodescanner.MainActivity",
       "existing_drawable": "generic_qr_reader",
       "name": "Scan Me"
     },
     {
       "id": "de.westnordost.streetcomplete.expert/de.westnordost.streetcomplete.screens.MainActivity",
-      "existing_drawable": "streetcomplete",
-      "name": "SCEE"
-    },
-    {
-      "id": "de.westnordost.streetcomplete.expert/de.westnordost.streetcomplete.screens.main.MainActivity",
       "existing_drawable": "streetcomplete",
       "name": "SCEE"
     },
@@ -7483,11 +4423,6 @@
       "name": "ShiggyCord"
     },
     {
-      "id": "dev.shiggy.cord/com.discord.main.MainDefault",
-      "existing_drawable": "discord",
-      "name": "ShiggyCord"
-    },
-    {
       "id": "moe.shizuku.privileged.api/af.shizuku.manager.LauncherAlias",
       "existing_drawable": "shizuku",
       "name": "Shizuku"
@@ -7513,77 +4448,7 @@
       "name": "Signal"
     },
     {
-      "id": "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltBubbles",
-      "existing_drawable": "signal",
-      "name": "Signal"
-    },
-    {
-      "id": "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltChat",
-      "existing_drawable": "signal",
-      "name": "Signal"
-    },
-    {
-      "id": "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltColor",
-      "existing_drawable": "signal",
-      "name": "Signal"
-    },
-    {
-      "id": "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltDark",
-      "existing_drawable": "signal",
-      "name": "Signal"
-    },
-    {
-      "id": "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltDarkVariant",
-      "existing_drawable": "signal",
-      "name": "Signal"
-    },
-    {
-      "id": "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltNews",
-      "existing_drawable": "signal",
-      "name": "Signal"
-    },
-    {
-      "id": "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltNotes",
-      "existing_drawable": "signal",
-      "name": "Signal"
-    },
-    {
-      "id": "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltWaves",
-      "existing_drawable": "signal",
-      "name": "Signal"
-    },
-    {
-      "id": "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltWeather",
-      "existing_drawable": "signal",
-      "name": "Signal"
-    },
-    {
-      "id": "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltWhite",
-      "existing_drawable": "signal",
-      "name": "Signal"
-    },
-    {
-      "id": "org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivityAltYellow",
-      "existing_drawable": "signal",
-      "name": "Signal"
-    },
-    {
       "id": "com.android.stk/com.android.stk.SecondaryStkMain",
-      "existing_drawable": "sim_toolkit",
-      "name": "SIM Toolkit"
-    },
-    {
-      "id": "com.android.stk/com.android.stk.SplashActivity",
-      "existing_drawable": "sim_toolkit",
-      "name": "SIM Toolkit"
-    },
-    {
-      "id": "com.android.stk/com.android.stk.StkLauncherActivityTelcel1",
-      "existing_drawable": "sim_toolkit",
-      "name": "SIM Toolkit"
-    },
-    {
-      "id": "com.android.stk/com.android.stk.UniStkMain",
       "existing_drawable": "sim_toolkit",
       "name": "SIM Toolkit"
     },
@@ -7593,97 +4458,7 @@
       "name": "SIM Toolkit"
     },
     {
-      "id": "com.android.stk2/com.android.stk2.Stk2LauncherActivity",
-      "existing_drawable": "sim_toolkit",
-      "name": "SIM Toolkit"
-    },
-    {
-      "id": "com.android.stk2/com.android.stk2.StkLauncherActivity2",
-      "existing_drawable": "sim_toolkit",
-      "name": "SIM Toolkit"
-    },
-    {
       "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Amber",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Simple Calculator"
-    },
-    {
-      "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Blue",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Simple Calculator"
-    },
-    {
-      "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Blue_grey",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Simple Calculator"
-    },
-    {
-      "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Brown",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Simple Calculator"
-    },
-    {
-      "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Cyan",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Simple Calculator"
-    },
-    {
-      "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Deep_purple",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Simple Calculator"
-    },
-    {
-      "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Green",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Simple Calculator"
-    },
-    {
-      "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Indigo",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Simple Calculator"
-    },
-    {
-      "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Light_blue",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Simple Calculator"
-    },
-    {
-      "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Light_green",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Simple Calculator"
-    },
-    {
-      "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Lime",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Simple Calculator"
-    },
-    {
-      "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Pink",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Simple Calculator"
-    },
-    {
-      "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Purple",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Simple Calculator"
-    },
-    {
-      "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Red",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Simple Calculator"
-    },
-    {
-      "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Teal",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Simple Calculator"
-    },
-    {
-      "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Yellow",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "Simple Calculator"
-    },
-    {
-      "id": "com.simplemobiletools.calculator/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity.Orange",
       "existing_drawable": "generic_calculator_minus_multi_plus_equal",
       "name": "Simple Calculator"
     },
@@ -7693,67 +4468,7 @@
       "name": "Simple Calendar"
     },
     {
-      "id": "com.simplemobiletools.calendar/com.simplemobiletools.calendar.activities.SplashActivity.Brown",
-      "existing_drawable": "simple_calendar",
-      "name": "Simple Calendar"
-    },
-    {
-      "id": "com.simplemobiletools.calendar/com.simplemobiletools.calendar.activities.SplashActivity.Deep_orange",
-      "existing_drawable": "simple_calendar",
-      "name": "Simple Calendar"
-    },
-    {
-      "id": "com.simplemobiletools.calendar/com.simplemobiletools.calendar.activities.SplashActivity.Deep_purple",
-      "existing_drawable": "simple_calendar",
-      "name": "Simple Calendar"
-    },
-    {
-      "id": "com.simplemobiletools.calendar/com.simplemobiletools.calendar.activities.SplashActivity.Green",
-      "existing_drawable": "simple_calendar",
-      "name": "Simple Calendar"
-    },
-    {
-      "id": "com.simplemobiletools.calendar/com.simplemobiletools.calendar.activities.SplashActivity.Light_green",
-      "existing_drawable": "simple_calendar",
-      "name": "Simple Calendar"
-    },
-    {
-      "id": "com.simplemobiletools.calendar/com.simplemobiletools.calendar.activities.SplashActivity.Lime",
-      "existing_drawable": "simple_calendar",
-      "name": "Simple Calendar"
-    },
-    {
-      "id": "com.simplemobiletools.calendar/com.simplemobiletools.calendar.activities.SplashActivity.Teal",
-      "existing_drawable": "simple_calendar",
-      "name": "Simple Calendar"
-    },
-    {
       "id": "com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Amber",
-      "existing_drawable": "simple_calendar",
-      "name": "Simple Calendar Pro"
-    },
-    {
-      "id": "com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Brown",
-      "existing_drawable": "simple_calendar",
-      "name": "Simple Calendar Pro"
-    },
-    {
-      "id": "com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Green",
-      "existing_drawable": "simple_calendar",
-      "name": "Simple Calendar Pro"
-    },
-    {
-      "id": "com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Indigo",
-      "existing_drawable": "simple_calendar",
-      "name": "Simple Calendar Pro"
-    },
-    {
-      "id": "com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Lime",
-      "existing_drawable": "simple_calendar",
-      "name": "Simple Calendar Pro"
-    },
-    {
-      "id": "com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Yellow",
       "existing_drawable": "simple_calendar",
       "name": "Simple Calendar Pro"
     },
@@ -7798,27 +4513,7 @@
       "name": "SkipTheDishes"
     },
     {
-      "id": "com.ncconsulting.skipthedishes_android/ca.skipthedishes.customer.activities.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "SkipTheDishes"
-    },
-    {
-      "id": "com.ncconsulting.skipthedishes_android/ca.skipthedishes.customer.features.splash.ui.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "SkipTheDishes"
-    },
-    {
-      "id": "com.ncconsulting.skipthedishes_android/com.ncconsulting.skipthedishes_android.activities.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "SkipTheDishes"
-    },
-    {
       "id": "com.pavelrekun.skit.premium/com.pavelrekun.skit.containers.PrimaryContainerActivity",
-      "existing_drawable": "skit_premium",
-      "name": "Skit Premium"
-    },
-    {
-      "id": "com.pavelrekun.skit.premium/com.pavelrekun.skit.navigation.NavigationActivity",
       "existing_drawable": "skit_premium",
       "name": "Skit Premium"
     },
@@ -7843,11 +4538,6 @@
       "name": "Sky Tonight"
     },
     {
-      "id": "com.vitotechnology.sky.tonight.map.star.walk/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "star_walk_2",
-      "name": "Sky Tonight"
-    },
-    {
       "id": "com.netease.sky.bilibili/com.netease.ntunisdk.external.protocol.ProtocolLauncher",
       "existing_drawable": "sky_children_of_the_light",
       "name": "Sky: Children of the Light"
@@ -7859,16 +4549,6 @@
     },
     {
       "id": "com.netease.sky/com.netease.ntunisdk.external.protocol.ProtocolLauncher",
-      "existing_drawable": "sky_children_of_the_light",
-      "name": "Sky: Children of the Light"
-    },
-    {
-      "id": "com.netease.sky/com.tgc.sky.TGCBootActivity",
-      "existing_drawable": "sky_children_of_the_light",
-      "name": "Sky: Children of the Light"
-    },
-    {
-      "id": "com.netease.sky/com.tgc.sky.netease.GameActivity_Netease",
       "existing_drawable": "sky_children_of_the_light",
       "name": "Sky: Children of the Light"
     },
@@ -7893,11 +4573,6 @@
       "name": "Smart Banka"
     },
     {
-      "id": "cz.moneta.smartbanka/cz.moneta.smartbanka.launcher_686141975e221accca6ceb1b6e62e095b8fb2c185a9131321c1c69a78c24100c",
-      "existing_drawable": "moneta",
-      "name": "Smart Banka"
-    },
-    {
       "id": "kr.sira.calculator/kr.sira.calculator.SplashActivity",
       "existing_drawable": "generic_calculator_plus_minus_multi_equal",
       "name": "Smart Calculator by Smart Tools"
@@ -7913,184 +4588,9 @@
       "name": "Smart Timetable"
     },
     {
-      "id": "com.sh.smart.caller/com.android.dialer.ContactMainActivity",
-      "existing_drawable": "generic_dialer",
-      "name": "SmartCaller"
-    },
-    {
       "id": "com.snapchat.android/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "snapchat",
       "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.AiWaveAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.BlackMarbleAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.BlackPantherAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.ChromeDripAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.ClassicGhostAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.ColorRibbonsAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.DeniseAbAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.DiwaliGoldFrameAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.EdgyTextAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.Icon22Alias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.JokerAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.LauncherActivity",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.LavaAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.NeonAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.NeonGhostAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.NorthlightAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.PixelAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.Plus3Alias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.PlusBlackAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.PlushAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.PurpleAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.RetroCartoonAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.SharpieDoodleAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.SilkAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.SnapBalloonAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.SnappyDoodleAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.SprayPaintAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.TealAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.VDayChromeAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.VhsAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.XrayGhostAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.YellowPinkAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.thanksgivingleafAlias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat"
-    },
-    {
-      "id": "com.snapchat.android/com.snapchat.android.Plus2Alias",
-      "existing_drawable": "snapchat",
-      "name": "Snapchat Plus"
     },
     {
       "id": "com.fmsys.snapdrop/com.google.android.archive.ReactivateActivity",
@@ -8133,11 +4633,6 @@
       "name": "SoloPro"
     },
     {
-      "id": "com.apple.android.music/com.soundcloud.android.launcher.LauncherActivity",
-      "existing_drawable": "apple_music",
-      "name": "SoundCloud"
-    },
-    {
       "id": "com.luna.music/com.soundcloud.android.launcher.LauncherActivity",
       "existing_drawable": "soundcloud",
       "name": "SoundCloud"
@@ -8153,62 +4648,12 @@
       "name": "SoundCloud"
     },
     {
-      "id": "com.soundcloud.android/com.soundcloud.android.launcher.LauncherActivityBlackIconAlias",
-      "existing_drawable": "soundcloud",
-      "name": "SoundCloud"
-    },
-    {
-      "id": "com.soundcloud.android/com.soundcloud.android.launcher.LauncherActivityChromeIconAlias",
-      "existing_drawable": "soundcloud",
-      "name": "SoundCloud"
-    },
-    {
-      "id": "com.soundcloud.android/com.soundcloud.android.launcher.LauncherActivityOgIconAlias",
-      "existing_drawable": "soundcloud",
-      "name": "SoundCloud"
-    },
-    {
       "id": "com.leetlab.scloudmate.mp3downloaderfor.soundcloud/com.leetlab.scloudmate.mp3downloaderfor.soundcloud.MainActivity",
       "existing_drawable": "generic_download_shelf",
       "name": "SoundLoadMate"
     },
     {
       "id": "re.sova.five/re.sova.five.EventIcon1",
-      "existing_drawable": "sova_five",
-      "name": "SOVA V RE"
-    },
-    {
-      "id": "re.sova.five/re.sova.five.EventIcon5",
-      "existing_drawable": "sova_five",
-      "name": "SOVA V RE"
-    },
-    {
-      "id": "re.sova.five/re.sova.five.OffName",
-      "existing_drawable": "sova_five",
-      "name": "SOVA V RE"
-    },
-    {
-      "id": "re.sova.five/re.sova.five.OffSova",
-      "existing_drawable": "sova_five",
-      "name": "SOVA V RE"
-    },
-    {
-      "id": "re.sova.five/re.sova.five.SovaAlter",
-      "existing_drawable": "sova_five",
-      "name": "SOVA V RE"
-    },
-    {
-      "id": "re.sova.five/re.sova.five.SovaVkName",
-      "existing_drawable": "sova_five",
-      "name": "SOVA V RE"
-    },
-    {
-      "id": "re.sova.five/re.sova.five.SovaVkNameAlter",
-      "existing_drawable": "sova_five",
-      "name": "SOVA V RE"
-    },
-    {
-      "id": "re.sova.five/re.sova.five.StaticIcon3",
       "existing_drawable": "sova_five",
       "name": "SOVA V RE"
     },
@@ -8233,27 +4678,7 @@
       "name": "Spotify"
     },
     {
-      "id": "com.spotify.music/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "spotify",
-      "name": "Spotify"
-    },
-    {
-      "id": "com.spotify.music/com.jojoy.delegate.JojoyInstallerActivity",
-      "existing_drawable": "spotify",
-      "name": "Spotify"
-    },
-    {
       "id": "com.spotify.music/com.music.spotui.MainActivity",
-      "existing_drawable": "spotify",
-      "name": "Spotify"
-    },
-    {
-      "id": "com.spotify.music/com.pollock_roe.AppOpenAdActivity",
-      "existing_drawable": "spotify",
-      "name": "Spotify"
-    },
-    {
-      "id": "com.spotify.music/com.spotify.music.main.MainScreenActivity",
       "existing_drawable": "spotify",
       "name": "Spotify"
     },
@@ -8293,22 +4718,12 @@
       "name": "Spotify X"
     },
     {
-      "id": "com.spotify.music/io.github.darkplayoff.yayma.MainActivity",
-      "existing_drawable": "spotify",
-      "name": "Spotify YAYMA"
-    },
-    {
       "id": "su.aprelteam.spotishka/com.spotify.musid.MainActivity",
       "existing_drawable": "spotify",
       "name": "Spotishka"
     },
     {
       "id": "com.spotiweb.app.nemecio/com.spoticap.app.MainActivity",
-      "existing_drawable": "spotify",
-      "name": "SpotiWeb"
-    },
-    {
-      "id": "com.spotiweb.app.nemecio/com.spotiweb.app.nemecio.MainActivity",
       "existing_drawable": "spotify",
       "name": "SpotiWeb"
     },
@@ -8388,11 +4803,6 @@
       "name": "Subway"
     },
     {
-      "id": "au.com.subcard.app/crc643f56eb19e392e7ef.MainActivity",
-      "existing_drawable": "subway",
-      "name": "Subway"
-    },
-    {
       "id": "com.loyaltyplant.partner.subway/crc64eb65ea6159fb1028.RootActivity",
       "existing_drawable": "subway",
       "name": "Subway"
@@ -8428,7 +4838,7 @@
       "name": "Subway"
     },
     {
-      "id": "com.easybrain.sudoku.android/com.google.android.archive.ReactivateActivity",
+      "id": "com.easybrain.sudoku.android/com.easybrain.sudoku.android.SplashActivity",
       "existing_drawable": "generic_sudoku",
       "name": "Sudoku"
     },
@@ -8436,11 +4846,6 @@
       "id": "com.hrincescumihai.sudoku/com.hrincescumihai.sudoku.app.MainActivity",
       "existing_drawable": "generic_sudoku",
       "name": "Sudoku"
-    },
-    {
-      "id": "com.easybrain.sudoku.android/com.easybrain.sudoku.android.SplashActivity",
-      "existing_drawable": "generic_sudoku",
-      "name": "Sudoku.com"
     },
     {
       "id": "com.sumone/com.sumone.MainActivityDefault",
@@ -8451,11 +4856,6 @@
       "id": "com.superb.launcher/com.superb.iconpack.presentation.activity.IconPackActivity",
       "existing_drawable": "themed_icon_calendar_31",
       "name": "Superb Launcher Icons"
-    },
-    {
-      "id": "se.svt.android.svtplay/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "just_player",
-      "name": "SVT Play"
     },
     {
       "id": "se.svt.android.svtplay/se.svt.svtplay.ui.mobile.MainActivity",
@@ -8489,16 +4889,6 @@
     },
     {
       "id": "be.pizza.android/com.jet.singleactivity.ui.MainActivity",
-      "existing_drawable": "just_eat",
-      "name": "Takeaway"
-    },
-    {
-      "id": "be.pizza.android/com.takeaway.android.Startup",
-      "existing_drawable": "just_eat",
-      "name": "Takeaway"
-    },
-    {
-      "id": "be.pizza.android/com.takeaway.android.activity.Splash",
       "existing_drawable": "just_eat",
       "name": "Takeaway"
     },
@@ -8568,17 +4958,7 @@
       "name": "Tasks"
     },
     {
-      "id": "org.tasks/com.todoroo.astrid.activity.TaskListActivity.Green",
-      "existing_drawable": "tasks",
-      "name": "Tasks"
-    },
-    {
       "id": "kz.tele2.app/kz.sardarpro.tele2.ui.launcher.LauncherActivity",
-      "existing_drawable": "tele2",
-      "name": "Tele2"
-    },
-    {
-      "id": "kz.tele2.app/kz.sardarpro.tele2.ui.launcher.alias.LauncherActivityAliasSpring",
       "existing_drawable": "tele2",
       "name": "Tele2"
     },
@@ -8594,11 +4974,6 @@
     },
     {
       "id": "org.telegram.messenger.beta/org.telegram.messenger.NoxIcon",
-      "existing_drawable": "telegram",
-      "name": "Telegram Beta"
-    },
-    {
-      "id": "org.telegram.messenger.beta/org.telegram.messenger.PremiumIcon",
       "existing_drawable": "telegram",
       "name": "Telegram Beta"
     },
@@ -8643,26 +5018,6 @@
       "name": "Threads"
     },
     {
-      "id": "com.takeaway.android/com.justeat.splash.ui.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Thuisbezorgd"
-    },
-    {
-      "id": "com.takeaway.android/com.takeaway.android.Startup",
-      "existing_drawable": "just_eat",
-      "name": "Thuisbezorgd"
-    },
-    {
-      "id": "com.takeaway.android/com.takeaway.android.Welcome",
-      "existing_drawable": "just_eat",
-      "name": "Thuisbezorgd"
-    },
-    {
-      "id": "com.takeaway.android/com.takeaway.android.activity.Splash",
-      "existing_drawable": "just_eat",
-      "name": "Thuisbezorgd"
-    },
-    {
       "id": "com.ticktick.task/com.ticktick.task.HomeAlia_ai",
       "existing_drawable": "ticktick",
       "name": "TickTick"
@@ -8678,24 +5033,9 @@
       "name": "TikTok Lite"
     },
     {
-      "id": "digital.rbi.timhortons/digital.rbi.timhortons.presentation.launch.LaunchActivity",
-      "existing_drawable": "tim_hortons",
-      "name": "Tim Hortons"
-    },
-    {
       "id": "digital.rbi.timhortons/rbi.android.app.MainActivity",
       "existing_drawable": "tim_hortons",
       "name": "Tim Hortons"
-    },
-    {
-      "id": "com.minimalisttodolist.pleasebethelastrecyclerview/com.minimalisttodolist.pleasebethelastrecyclerview.MainActivityAlias",
-      "existing_drawable": "tasks",
-      "name": "To Do"
-    },
-    {
-      "id": "com.splendapps.splendo/com.splendapps.splendo.activity.MainActivity",
-      "existing_drawable": "tasks",
-      "name": "To Do List"
     },
     {
       "id": "com.todoist/com.todoist.alias.HomeActivityBlueberry",
@@ -8703,27 +5043,7 @@
       "name": "Todoist"
     },
     {
-      "id": "com.todoist/com.todoist.alias.HomeActivityKale",
-      "existing_drawable": "todoist",
-      "name": "Todoist"
-    },
-    {
-      "id": "com.todoist/com.todoist.alias.HomeActivityMoonstone",
-      "existing_drawable": "todoist",
-      "name": "Todoist"
-    },
-    {
-      "id": "com.advasoft.touchretouch/com.advasoft.touchretouch.LicenseActivityAlias2",
-      "existing_drawable": "retouch_advasoft",
-      "name": "TouchRetouch"
-    },
-    {
       "id": "com.advasoft.touchretouch/com.advasoft.touchretouch4.MainActivity",
-      "existing_drawable": "retouch_advasoft",
-      "name": "TouchRetouch"
-    },
-    {
-      "id": "com.advasoft.touchretouch/com.advasoft.touchretouch4.MainActivityCH",
       "existing_drawable": "retouch_advasoft",
       "name": "TouchRetouch"
     },
@@ -8733,22 +5053,7 @@
       "name": "Track & Graph"
     },
     {
-      "id": "com.samco.trackandgraph/com.samco.trackandgraph.main.MainActivity",
-      "existing_drawable": "generic_aid",
-      "name": "Track & Graph"
-    },
-    {
       "id": "com.avuscapital.trading212/com.avuscapital.trading212.MainActivity",
-      "existing_drawable": "trading_212",
-      "name": "Trading 212"
-    },
-    {
-      "id": "com.avuscapital.trading212/com.avuscapital.trading212lib.modules.prelogin.WelcomeActivity",
-      "existing_drawable": "trading_212",
-      "name": "Trading 212"
-    },
-    {
-      "id": "com.avuscapital.trading212/com.trading212.MainActivity",
       "existing_drawable": "trading_212",
       "name": "Trading 212"
     },
@@ -8773,37 +5078,12 @@
       "name": "Transfermovil"
     },
     {
-      "id": "cu.etecsa.cubacel.tr.tm/cu.etecsa.cubacel.tr.tm.WUsd6Bt7CT",
-      "existing_drawable": "transfermovil",
-      "name": "Transfermovil"
-    },
-    {
-      "id": "cu.etecsa.cubacel.tr.tm/cu.etecsa.cubacel.tr.tm.tPLup7yN75",
-      "existing_drawable": "transfermovil",
-      "name": "Transfermovil"
-    },
-    {
-      "id": "cu.etecsa.cubacel.tr.tm/cu.etecsa.cubacel.tr.tm.dQIGCe2zqB",
-      "existing_drawable": "transfermovil",
-      "name": "Transferm\u00f3vil"
-    },
-    {
-      "id": "cu.etecsa.cubacel.tr.tm/cu.etecsa.cubacel.tr.tm.prPzLeyxKk",
-      "existing_drawable": "transfermovil",
-      "name": "Transferm\u00f3vil"
-    },
-    {
       "id": "com.truecaller/com.truecaller.ui.TrueCallerUI",
       "existing_drawable": "generic_dialer",
       "name": "Truecaller"
     },
     {
       "id": "com.wallet.crypto.trustapp/com.wallet.crypto.trustapp.ui.app.AppActivity.default",
-      "existing_drawable": "trust_wallet",
-      "name": "Trust Wallet"
-    },
-    {
-      "id": "com.wallet.crypto.trustapp/com.wallet.crypto.trustapp.ui.app.AppActivity.trust_gray",
       "existing_drawable": "trust_wallet",
       "name": "Trust Wallet"
     },
@@ -8828,11 +5108,6 @@
       "name": "Twitch"
     },
     {
-      "id": "tv.twitch.android.app/tv.twitch.starshot64.app.StarshotActivity",
-      "existing_drawable": "twitch",
-      "name": "Twitch"
-    },
-    {
       "id": "tv.twitch.android.app.revanced/tv.twitch.android.app.core.LandingActivity",
       "existing_drawable": "twitch",
       "name": "Twitch Revanced"
@@ -8849,16 +5124,6 @@
     },
     {
       "id": "com.ubercab/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "uber",
-      "name": "Uber"
-    },
-    {
-      "id": "com.ubercab/com.ubercab.UBUberActivity",
-      "existing_drawable": "uber",
-      "name": "Uber"
-    },
-    {
-      "id": "com.ubercab/com.ubercab.activities.MapActivity",
       "existing_drawable": "uber",
       "name": "Uber"
     },
@@ -8889,11 +5154,6 @@
     },
     {
       "id": "in.gov.umang.negd.g2c/in.gov.umang.negd.g2c.kotlin.ui.splash.SplashActivity",
-      "existing_drawable": "umang",
-      "name": "UMANG"
-    },
-    {
-      "id": "in.gov.umang.negd.g2c/in.gov.umang.negd.g2c.ui.base.splash_screen.SplashActivity",
       "existing_drawable": "umang",
       "name": "UMANG"
     },
@@ -8983,126 +5243,6 @@
       "name": "Vendetta"
     },
     {
-      "id": "dev.beefers.vendetta/com.discord.main.MainBeanie",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainBlush",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainBrandDark",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainBrandInverted",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainCamo",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainCherryBlossom",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainCircuit",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainClydeStein",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainController",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainDefault",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainDrip",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainGalaxy",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainGaming",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainHoloWaves",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainManga",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainMatteDark",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainMatteLight",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainMushroom",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainPastel",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainPirate",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainSlimy",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainSunset",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainY2K",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainZombie",
-      "existing_drawable": "discord",
-      "name": "Vendetta"
-    },
-    {
       "id": "com.verseview.songbook/com.verseview.songbook.MainActivity",
       "existing_drawable": "apple_music",
       "name": "VerseVIEW Christian Song Book"
@@ -9143,11 +5283,6 @@
       "name": "Vietnammm"
     },
     {
-      "id": "com.vietnammm.android/com.takeaway.android.activity.Splash",
-      "existing_drawable": "just_eat",
-      "name": "Vietnammm"
-    },
-    {
       "id": "com.aam.viper4android/com.aam.viper4android.MainActivity",
       "existing_drawable": "viper4android",
       "name": "ViPER4Android FX"
@@ -9163,16 +5298,6 @@
       "name": "Vipps MobilePay"
     },
     {
-      "id": "dk.danskebank.mobilepay/com.dnb.vipps.consentcard.activities.SplashActivity",
-      "existing_drawable": "vipps_mobilepay",
-      "name": "Vipps MobilePay"
-    },
-    {
-      "id": "dk.danskebank.mobilepay/dk.danskebank.p2p.ui.login.LoginActivity",
-      "existing_drawable": "vipps_mobilepay",
-      "name": "Vipps MobilePay"
-    },
-    {
       "id": "com.virtualpiano.musicalkeyboard/com.unity3d.player.UnityPlayerActivity",
       "existing_drawable": "generic_piano",
       "name": "Virtual Pianino"
@@ -9183,222 +5308,12 @@
       "name": "Viseca One"
     },
     {
-      "id": "ch.viseca.visecaone/com.netcetera.visecaone.android.feature.branding.alias_activities.DefaultBrandAliasActivity",
-      "existing_drawable": "viseca_one",
-      "name": "Viseca One"
-    },
-    {
-      "id": "ch.viseca.visecaone/com.netcetera.visecaone.android.feature.branding.alias_activities.MigrosBankDEAliasActivity",
-      "existing_drawable": "viseca_one",
-      "name": "Viseca One"
-    },
-    {
-      "id": "ch.viseca.visecaone/com.netcetera.visecaone.android.feature.branding.alias_activities.RaiffeisenBankAliasActivity",
-      "existing_drawable": "viseca_one",
-      "name": "Viseca One"
-    },
-    {
-      "id": "ch.viseca.visecaone/com.netcetera.visecaone.android.feature.branding.alias_activities.ZurcherKantonalBankAliasActivity",
-      "existing_drawable": "viseca_one",
-      "name": "Viseca One"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt1",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt10",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt11",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt12",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt13",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt14",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt15",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
       "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt16",
       "existing_drawable": "vivaldi",
       "name": "Vivaldi"
     },
     {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt17",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt18",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt19",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt2",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt3",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt4",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt5",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt6",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt7",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt8",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt9",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi"
-    },
-    {
       "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt0",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt1",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt10",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt11",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt12",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt13",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt14",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt15",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt16",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt17",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt18",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt19",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt2",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt20",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt3",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt4",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt5",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt6",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt7",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt8",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi Snapshot"
-    },
-    {
-      "id": "com.vivaldi.browser.snapshot/com.vivaldi.browser.snapshot.IconAlt9",
       "existing_drawable": "vivaldi",
       "name": "Vivaldi Snapshot"
     },
@@ -9426,11 +5341,6 @@
       "id": "br.com.m4u.recarga.vivo/br.com.m4u.recarga.vivo.MainActivity",
       "existing_drawable": "vivo",
       "name": "vivo Pay"
-    },
-    {
-      "id": "com.vivo.soundrecorder/com.android.activity.ReclistActivity",
-      "existing_drawable": "generic_voice_recorder_waves",
-      "name": "vivo Recorder"
     },
     {
       "id": "org.videolan.vlc/com.google.android.youtube.app.honeycomb.Shell",
@@ -9478,11 +5388,6 @@
       "name": "VPN Indonesia"
     },
     {
-      "id": "com.android.calendar/com.hmct.calendar.activity.FirstAdvertActivity",
-      "existing_drawable": "themed_icon_calendar_31",
-      "name": "Vsmart Calendar"
-    },
-    {
       "id": "sk.vub.mobile/sk.vub.mobile.VubMainActivity",
       "existing_drawable": "intesa",
       "name": "V\u00daB"
@@ -9491,11 +5396,6 @@
       "id": "sk.vub.banking/com.internationalvalueservices.digical.MainActivity",
       "existing_drawable": "intesa",
       "name": "V\u00daB Banking"
-    },
-    {
-      "id": "fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.ArticlesListActivity",
-      "existing_drawable": "wallabag",
-      "name": "wallabag"
     },
     {
       "id": "fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.MainActivity",
@@ -9523,11 +5423,6 @@
       "name": "Wear OS"
     },
     {
-      "id": "com.google.android.wearable.app.cn/com.google.android.clockwork.companion.launcher.LauncherActivity",
-      "existing_drawable": "wear_os",
-      "name": "Wear OS"
-    },
-    {
       "id": "cz.martykan.webtube/cz.martykan.webtube.MainActivity",
       "existing_drawable": "generic_player",
       "name": "WebTube"
@@ -9544,36 +5439,6 @@
     },
     {
       "id": "com.whatsapp/com.whatsapp.AppIcon03",
-      "existing_drawable": "whatsapp",
-      "name": "WhatsApp"
-    },
-    {
-      "id": "com.whatsapp/com.whatsapp.AppIcon04",
-      "existing_drawable": "whatsapp",
-      "name": "WhatsApp"
-    },
-    {
-      "id": "com.whatsapp/com.whatsapp.AppIcon09",
-      "existing_drawable": "whatsapp",
-      "name": "WhatsApp"
-    },
-    {
-      "id": "com.whatsapp/com.whatsapp.AppIcon10",
-      "existing_drawable": "whatsapp",
-      "name": "WhatsApp"
-    },
-    {
-      "id": "com.whatsapp/com.whatsapp.AppIcon11",
-      "existing_drawable": "whatsapp",
-      "name": "WhatsApp"
-    },
-    {
-      "id": "com.whatsapp/com.whatsapp.Icon0",
-      "existing_drawable": "whatsapp",
-      "name": "WhatsApp"
-    },
-    {
-      "id": "com.whatsapp/com.whatsapp.Icon43",
       "existing_drawable": "whatsapp",
       "name": "WhatsApp"
     },
@@ -9603,22 +5468,12 @@
       "name": "World Clock v2"
     },
     {
-      "id": "de.ericz.worldclockv2/de.ericz.worldclockv2.MainActivity",
-      "existing_drawable": "generic_earth",
-      "name": "World Clock v2"
-    },
-    {
       "id": "com.azwstudios.theholybible.web/com.azwstudios.theholybible.MainActivity",
       "existing_drawable": "generic_bible",
       "name": "World English Bible"
     },
     {
       "id": "com.qbis.guessthecountry/dev.axmol.app.AppActivity",
-      "existing_drawable": "generic_earth",
-      "name": "World Map Quiz"
-    },
-    {
-      "id": "com.qbis.guessthecountry/org.cocos2dx.cpp.AppActivity",
       "existing_drawable": "generic_earth",
       "name": "World Map Quiz"
     },
@@ -9634,56 +5489,6 @@
     },
     {
       "id": "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon10",
-      "existing_drawable": "x",
-      "name": "X"
-    },
-    {
-      "id": "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon11",
-      "existing_drawable": "x",
-      "name": "X"
-    },
-    {
-      "id": "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon12",
-      "existing_drawable": "x",
-      "name": "X"
-    },
-    {
-      "id": "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon13",
-      "existing_drawable": "x",
-      "name": "X"
-    },
-    {
-      "id": "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon14",
-      "existing_drawable": "x",
-      "name": "X"
-    },
-    {
-      "id": "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon2",
-      "existing_drawable": "x",
-      "name": "X"
-    },
-    {
-      "id": "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon3",
-      "existing_drawable": "x",
-      "name": "X"
-    },
-    {
-      "id": "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon4",
-      "existing_drawable": "x",
-      "name": "X"
-    },
-    {
-      "id": "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon6",
-      "existing_drawable": "x",
-      "name": "X"
-    },
-    {
-      "id": "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon7",
-      "existing_drawable": "x",
-      "name": "X"
-    },
-    {
-      "id": "com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon8",
       "existing_drawable": "x",
       "name": "X"
     },
@@ -9728,11 +5533,6 @@
       "name": "Xiaomi Game Center"
     },
     {
-      "id": "com.xiaomi.glgm/com.mig.play.Icon5",
-      "existing_drawable": "xiaomi_game_center",
-      "name": "Xiaomi Game Center"
-    },
-    {
       "id": "com.miui.weather2/com.miui.weather2.WeatherBaseScreen",
       "existing_drawable": "weather",
       "name": "Xiaomi Weather"
@@ -9763,64 +5563,19 @@
       "name": "YONO SBI"
     },
     {
+      "id": "app.morphe.android.youtube/app.morphe.android.youtube.morphe_black_4",
+      "existing_drawable": "morphe",
+      "name": "YouTube"
+    },
+    {
       "id": "app.morphe.android.youtube/app.morphe.android.youtube.morphe_custom_5",
       "existing_drawable": "youtube",
-      "name": "YouTube"
-    },
-    {
-      "id": "app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_5",
-      "existing_drawable": "youtube",
-      "name": "YouTube"
-    },
-    {
-      "id": "app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_1",
-      "existing_drawable": "morphe",
-      "name": "YouTube"
-    },
-    {
-      "id": "app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_black_1",
-      "existing_drawable": "morphe",
       "name": "YouTube"
     },
     {
       "id": "com.morphe.youtube/com.morphe.youtube.morphe_original_1",
       "existing_drawable": "youtube",
       "name": "YouTube"
-    },
-    {
-      "id": "app.morphe.android.youtube/app.morphe.android.youtube.morphe_black_4",
-      "existing_drawable": "morphe",
-      "name": "Youtube Morphe"
-    },
-    {
-      "id": "app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_3",
-      "existing_drawable": "youtube",
-      "name": "YouTube Morphe"
-    },
-    {
-      "id": "app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_2",
-      "existing_drawable": "morphe",
-      "name": "YouTube Morphe"
-    },
-    {
-      "id": "app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_3",
-      "existing_drawable": "morphe",
-      "name": "YouTube Morphe"
-    },
-    {
-      "id": "app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_black_2",
-      "existing_drawable": "morphe",
-      "name": "YouTube Morphe"
-    },
-    {
-      "id": "app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_black_3",
-      "existing_drawable": "morphe",
-      "name": "YouTube Morphe"
-    },
-    {
-      "id": "app.morphe.android.youtube/app.morphe.android.youtube.morphe_play_black_5",
-      "existing_drawable": "morphe",
-      "name": "YouTube Morphe"
     },
     {
       "id": "com.google.android.youtube/app.morphe.android.youtube.morphe_black_1",
@@ -9843,23 +5598,8 @@
       "name": "YouTube Music"
     },
     {
-      "id": "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_light_1",
+      "id": "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_dark_5",
       "existing_drawable": "morphe",
-      "name": "YouTube Music"
-    },
-    {
-      "id": "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_5",
-      "existing_drawable": "generic_player",
-      "name": "YouTube Music"
-    },
-    {
-      "id": "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_play_black_1",
-      "existing_drawable": "morphe",
-      "name": "Youtube Music"
-    },
-    {
-      "id": "app.morphe.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity",
-      "existing_drawable": "generic_player",
       "name": "YouTube Music"
     },
     {
@@ -9868,17 +5608,7 @@
       "name": "YouTube Music"
     },
     {
-      "id": "app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_original_4",
-      "existing_drawable": "generic_player",
-      "name": "YouTube Music"
-    },
-    {
       "id": "com.android.youtube.music.premium/com.android.youtube.music.premium.morphe_original_1",
-      "existing_drawable": "generic_player_pro",
-      "name": "YouTube Music"
-    },
-    {
-      "id": "com.android.youtube.music.premium/com.google.android.apps.youtube.music.activities.MusicActivity",
       "existing_drawable": "generic_player_pro",
       "name": "YouTube Music"
     },
@@ -9893,11 +5623,6 @@
       "name": "YouTube Music"
     },
     {
-      "id": "com.google.android.music/com.google.android.music.tombstone.LauncherActivity",
-      "existing_drawable": "generic_player",
-      "name": "YouTube Music"
-    },
-    {
       "id": "com.morphe.youtube.music/com.morphe.youtube.music.morphe_original_1",
       "existing_drawable": "generic_player",
       "name": "YouTube Music"
@@ -9906,36 +5631,6 @@
       "id": "ytm.morphe.noname.exe/ytm.morphe.noname.exe.morphe_original_1",
       "existing_drawable": "generic_player",
       "name": "YouTube Music"
-    },
-    {
-      "id": "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_dark_5",
-      "existing_drawable": "morphe",
-      "name": "YouTube Music Morphe"
-    },
-    {
-      "id": "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_2",
-      "existing_drawable": "generic_player",
-      "name": "YouTube Music Morphe"
-    },
-    {
-      "id": "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_3",
-      "existing_drawable": "generic_player",
-      "name": "YouTube Music Morphe"
-    },
-    {
-      "id": "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_play_3",
-      "existing_drawable": "morphe",
-      "name": "YouTube Music Morphe"
-    },
-    {
-      "id": "app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_original_3",
-      "existing_drawable": "generic_player",
-      "name": "YouTube Music ReVanced"
-    },
-    {
-      "id": "app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_rounded_4",
-      "existing_drawable": "generic_player",
-      "name": "YouTube Music ReVanced"
     },
     {
       "id": "com.minimalnumbersllc/com.minimalnumbersllc.revanced_scaled_3",
@@ -9963,11 +5658,6 @@
       "name": "Yr"
     },
     {
-      "id": "no.nrk.yr/no.nrk.yr.SplashScreenActivity",
-      "existing_drawable": "yr",
-      "name": "Yr"
-    },
-    {
       "id": "com.dewmobile.kuaiya.play/com.qshare.app.activity.FirstActivity",
       "existing_drawable": "zapya",
       "name": "Zapya"
@@ -9979,11 +5669,6 @@
     },
     {
       "id": "ch.zkb.twint/ch.zkb.twint.ui.StartActivity",
-      "existing_drawable": "twint",
-      "name": "ZKB Twint"
-    },
-    {
-      "id": "ch.zkb.twint/ch.zkb.twint.ui.startup.StartupActivity",
       "existing_drawable": "twint",
       "name": "ZKB Twint"
     },
@@ -10038,47 +5723,7 @@
       "name": "\u017cappka"
     },
     {
-      "id": "pl.zabka.apb2c/pl.zabka.apb2c.ui.ZappkaActivityDefault",
-      "existing_drawable": "zappka",
-      "name": "\u017cappka"
-    },
-    {
-      "id": "pl.zabka.apb2c/pl.zabka.apb2c.ui.ZappkaActivityWinterSeason",
-      "existing_drawable": "zappka",
-      "name": "\u017cappka"
-    },
-    {
-      "id": "pl.zabka.apb2c/pl.zabka.app.ui.ZappkaActivityDefault",
-      "existing_drawable": "zappka",
-      "name": "\u017cappka"
-    },
-    {
-      "id": "pl.zabka.apb2c/pl.zabka.app.ui.ZappkaActivityTriki",
-      "existing_drawable": "zappka",
-      "name": "\u017cappka"
-    },
-    {
-      "id": "pl.zabka.apb2c/pl.zabka.app.ui.ZappkaActivityWinterSeason",
-      "existing_drawable": "zappka",
-      "name": "\u017cappka"
-    },
-    {
       "id": "com.vkontakte.android/com.vk.android.launcher.icons.IconAlias.EventIcon3",
-      "existing_drawable": "vkontakte",
-      "name": "\u0412\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u0435 ~~ VK"
-    },
-    {
-      "id": "com.vkontakte.android/com.vk.android.launcher.icons.IconAlias.EventIcon7",
-      "existing_drawable": "vkontakte",
-      "name": "\u0412\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u0435 ~~ VK"
-    },
-    {
-      "id": "com.vkontakte.android/com.vk.android.launcher.icons.IconAlias.StaticIcon1",
-      "existing_drawable": "vkontakte",
-      "name": "\u0412\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u0435 ~~ VK"
-    },
-    {
-      "id": "com.vkontakte.android/com.vk.android.launcher.icons.IconAlias.StaticIcon3",
       "existing_drawable": "vkontakte",
       "name": "\u0412\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u0435 ~~ VK"
     },
@@ -10099,11 +5744,6 @@
     },
     {
       "id": "ru.yandex.weatherplugin/ru.yandex.weatherplugin.ui.activity.SplashActivity.Main",
-      "existing_drawable": "yandex_weather",
-      "name": "\u042f\u043d\u0434\u0435\u043a\u0441 \u041f\u043e\u0433\u043e\u0434\u0430 ~~ Yandex Weather"
-    },
-    {
-      "id": "ru.yandex.weatherplugin/ru.yandex.weatherplugin.ui.common.activity.SplashActivity",
       "existing_drawable": "yandex_weather",
       "name": "\u042f\u043d\u0434\u0435\u043a\u0441 \u041f\u043e\u0433\u043e\u0434\u0430 ~~ Yandex Weather"
     },
@@ -10153,27 +5793,7 @@
       "name": "\u817e\u8baf\u89c6\u9891 ~~ Tencent Video ~~ WeTV"
     },
     {
-      "id": "com.tencent.qqlive/com.tencent.qqlive.ona.activity.StartActivity",
-      "existing_drawable": "qqlive",
-      "name": "\u817e\u8baf\u89c6\u9891 ~~ Tencent Video ~~ WeTV"
-    },
-    {
-      "id": "com.tencent.qqlive/com.tencent.qqlive.ona.activity.WelcomeActivity",
-      "existing_drawable": "qqlive",
-      "name": "\u817e\u8baf\u89c6\u9891 ~~ Tencent Video ~~ WeTV"
-    },
-    {
       "id": "com.huanchengfly.tieba.post/com.huanchengfly.tieba.post.MainActivityIconInvert",
-      "existing_drawable": "tieba_lite",
-      "name": "\u8d34\u5427 Lite ~~ Tieba Lite"
-    },
-    {
-      "id": "com.huanchengfly.tieba.post/com.huanchengfly.tieba.post.MainActivityIconThemed",
-      "existing_drawable": "tieba_lite",
-      "name": "\u8d34\u5427 Lite ~~ Tieba Lite"
-    },
-    {
-      "id": "com.huanchengfly.tieba.post/com.huanchengfly.tieba.post.MainActivityV2",
       "existing_drawable": "tieba_lite",
       "name": "\u8d34\u5427 Lite ~~ Tieba Lite"
     }

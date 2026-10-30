@@ -15,6 +15,8 @@ const fflate = /** @type {* & {fflate: any}} */ (window).fflate;
  * @property {string} [installs]
  * @property {number} [roi_score]
  * @property {string} [priority]
+ * @property {boolean} [isLinkOnly]
+ * @property {string[]} [components]
  */
 
 /**
@@ -669,6 +671,12 @@ const Templates = {
         ? `<span title="Combined requests for this package.">${reqValue.toLocaleString()}S</span>`
         : reqValue.toLocaleString());
 
+    const extraCount = app.components ? app.components.length - 1 : 0;
+    const extraText = extraCount > 0 ? ` (+${extraCount} more)` : '';
+    const subTitle = extraCount > 0
+      ? `${idPrefix}${id}\n\nComponents (${app.components.length}):\n${app.components.join('\n')}`
+      : `${idPrefix}${id}`;
+
     return `
       <div class="list-row ${isSelected ? 'selected' : ''}"
         data-id="${id}"
@@ -689,7 +697,7 @@ const Templates = {
                   ${tagHtml}
                   <span class="${appNameClass}">${name}</span>
               </div>
-              <span class="item-sub" title="${idPrefix}${id}">ID: ${idPrefix}${id}</span>
+              <span class="item-sub" title="${subTitle}">ID: ${idPrefix}${id}${extraText}</span>
           </div>
           </div>
         </div>
@@ -767,10 +775,16 @@ const Templates = {
       })
       .join('');
 
+    const extraCount = app.components ? app.components.length - 1 : 0;
+    const compsInfo = extraCount > 0 ? ` (${app.components.length} components)` : '';
+    const gridTitle = extraCount > 0
+      ? `${label}${compsInfo}\nFirst time: ${Utils.formatDate(app.firstAppearance)}\n\nComponents:\n${app.components.join('\n')}`
+      : `${label}\nFirst time: ${Utils.formatDate(app.firstAppearance)}`;
+
     return `
       <div class="grid-card ${
       isSelected ? 'selected' : ''
-    }" data-id="${id}" title="${label}\nFirst time: ${Utils.formatDate(app.firstAppearance)}"
+    }" data-id="${id}" title="${gridTitle}"
         tabindex="0" role="checkbox" aria-checked="${isSelected}">
         ${contentHtml}
         <div class="grid-overlay-tags">${tagHtml}</div>
@@ -1510,7 +1524,10 @@ const Actions = {
    */
   generateNamesAndIDs(ids = null) {
     const apps = Actions.resolveApps(ids);
-    return apps.map((app) => `${app.label}\n${app.componentName}`).join('\n\n');
+    return apps.map((app) => {
+      const comps = (app.components && app.components.length > 0) ? app.components : [app.componentName];
+      return comps.map((c) => `${app.label}\n${c}`).join('\n\n');
+    }).join('\n\n');
   },
 
   /**
@@ -1538,7 +1555,12 @@ const Actions = {
 
   /** @param {string} id */
   copyFilterEntry(id) {
-    Actions.copyToClipboard(`"${id}",`);
+    const app = App.state.idMap.get(id);
+    if (app?.components && app.components.length > 1) {
+      Actions.copyToClipboard(app.components.map((c) => `"${c}",`).join('\n'));
+    } else {
+      Actions.copyToClipboard(`"${id}",`);
+    }
   },
 
   /**
@@ -1573,31 +1595,57 @@ const Actions = {
         const pkgPrefix = `${pkg}/`;
         
         const matchedIcons = [];
-        App.state.existingIcons.forEach(icon => {
-          if (icon.component.startsWith(pkgPrefix)) matchedIcons.push(icon);
-        });
-        App.state.lawniconsIcons.forEach(icon => {
-          if (icon.component.startsWith(pkgPrefix)) matchedIcons.push(icon);
-        });
+        const targetDrawable = App.state.existingSvgs?.get(cmp) ||
+          App.state.existingIcons.find(icon => icon.component.startsWith(pkgPrefix))?.drawable ||
+          app.drawable ||
+          '';
 
-        if (matchedIcons.length > 0) {
-          const targetDrawable = App.state.existingSvgs?.get(cmp) ||
-            App.state.existingIcons.find(icon => icon.component.startsWith(pkgPrefix))?.drawable ||
-            app.drawable ||
-            matchedIcons[0].drawable;
+        if (tags.has('links')) {
+          const compsSet = new Set(app.components || [cmp]);
+          App.state.existingIcons.forEach(icon => {
+            if (compsSet.has(icon.component) || (icon.component.startsWith(pkgPrefix) && icon.drawable === targetDrawable)) {
+              matchedIcons.push(icon);
+            }
+          });
+          App.state.lawniconsIcons.forEach(icon => {
+            if (compsSet.has(icon.component) || (icon.component.startsWith(pkgPrefix) && (icon.drawable === targetDrawable || !icon.drawable))) {
+              matchedIcons.push(icon);
+            }
+          });
+        } else {
+          App.state.existingIcons.forEach(icon => {
+            if (icon.component.startsWith(pkgPrefix)) matchedIcons.push(icon);
+          });
+          App.state.lawniconsIcons.forEach(icon => {
+            if (icon.component.startsWith(pkgPrefix)) matchedIcons.push(icon);
+          });
+        }
 
+        if (matchedIcons.length > 0 || (app.components && app.components.length > 0)) {
+          const finalDrawable = targetDrawable || matchedIcons[0]?.drawable || app.drawable;
           const uniqueComps = new Set();
           matchedIcons.forEach(icon => {
             if (!uniqueComps.has(icon.component)) {
               uniqueComps.add(icon.component);
               const name = icon.name.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
-              const drawable = (tags.has('links') || !icon.drawable) ? targetDrawable : icon.drawable;
+              const drawable = (tags.has('links') || !icon.drawable) ? finalDrawable : icon.drawable;
               xml += `    <item component="ComponentInfo{${icon.component}}" drawable="${drawable}" name="${name}" />\n`;
             }
           });
+          if (app.components) {
+            app.components.forEach(c => {
+              if (!uniqueComps.has(c)) {
+                uniqueComps.add(c);
+                const lawnIcon = App.state.lawniconsIcons.find(i => i.component === c);
+                const rawName = lawnIcon?.name || app.label;
+                const name = rawName.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+                xml += `    <item component="ComponentInfo{${c}}" drawable="${finalDrawable}" name="${name}" />\n`;
+              }
+            });
+          }
           if (!uniqueComps.has(app.componentName)) {
             const name = app.label.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
-            xml += `    <item component="ComponentInfo{${app.componentName}}" drawable="${targetDrawable}" name="${name}" />\n`;
+            xml += `    <item component="ComponentInfo{${app.componentName}}" drawable="${finalDrawable}" name="${name}" />\n`;
           }
         } else {
           xml += `    ${Utils.generateXml(app)}\n`;
@@ -1682,14 +1730,15 @@ const Actions = {
           assignedDrawables.set(appIdentity, drawable);
         }
 
-        // Appfilter entry
-        xmlAppFilter += Actions.buildAppFilterItem(cmp, drawable, app.label);
-
-        // Commands
+        // Appfilter entry & Commands
+        const comps = (app.components && app.components.length > 0) ? app.components : [cmp];
         const cmdType = 'link';
         const svgPath = `"${drawable}.svg"`;
-        txtCommands +=
-          `python3 ./icontool.py ${cmdType} ${svgPath} ${cmp} '${cmdLabel}'\n`;
+        comps.forEach((c) => {
+          xmlAppFilter += Actions.buildAppFilterItem(c, drawable, app.label);
+          txtCommands +=
+            `python3 ./icontool.py ${cmdType} ${svgPath} ${c} '${cmdLabel}'\n`;
+        });
 
         if (mode === 'new') {
           const iconDir =
@@ -1713,7 +1762,7 @@ const Actions = {
       const filterConfig = {
         'label': 'Selection',
         'description': 'Sample description',
-        'selection': selectedApps.map((a) => a.componentName),
+        'selection': selectedApps.flatMap((a) => (a.components && a.components.length > 0) ? a.components : [a.componentName]),
       };
       zipData['filter_config.json'] = fflate.strToU8(
         JSON.stringify(filterConfig, null, 2),
@@ -1805,17 +1854,20 @@ const Actions = {
       }
       usedDrawables.add(uniqueDrawable);
 
-      xmlAppFilter += Actions.buildAppFilterItem(
-        app.componentName,
-        uniqueDrawable,
-        label,
-      );
-
+      const comps = (app.components && app.components.length > 0) ? app.components : [app.componentName];
       const cmdType = 'link';
       const svgPath = `"${drawable}.svg"`;
       const cmdLabel = Actions.escapeCommandLabel(label);
-      txtCommands +=
-        `python3 ./icontool.py ${cmdType} ${svgPath} ${app.componentName} '${cmdLabel}'\n`;
+
+      comps.forEach((c) => {
+        xmlAppFilter += Actions.buildAppFilterItem(
+          c,
+          uniqueDrawable,
+          label,
+        );
+        txtCommands +=
+          `python3 ./icontool.py ${cmdType} ${svgPath} ${c} '${cmdLabel}'\n`;
+      });
 
       if (mode === 'new') {
         if (!zipData['_icons']) zipData['_icons'] = {};
@@ -2043,22 +2095,38 @@ const Data = {
             if (!App.state.existingSvgs) App.state.existingSvgs = new Map();
             App.state.existingSvgs.set(appId, item.existing_drawable);
           }
-          if (id === 'links' && !App.state.idMap.has(appId)) {
-            const label = (typeof item === 'object' && item.name) || appId.split('/')[0];
-            const drawable = (typeof item === 'object' && item.existing_drawable) || 'unknown';
-            /** @type {AppEntry} */
-            const syntheticApp = {
-              componentName: appId,
-              drawable: drawable,
-              label: label,
-              requestCount: 0,
-              firstAppearance: 0,
-              lastRequested: 0,
-              installs: '—',
-              isLinkOnly: true,
-            };
-            App.state.idMap.set(appId, syntheticApp);
-            App.data.push(syntheticApp);
+          if (id === 'links') {
+            const comps = (typeof item === 'object' && Array.isArray(item.components)) ? item.components : [appId];
+            if (!App.state.idMap.has(appId)) {
+              const label = (typeof item === 'object' && item.name) || appId.split('/')[0];
+              const drawable = (typeof item === 'object' && item.existing_drawable) || 'unknown';
+              /** @type {AppEntry} */
+              const syntheticApp = {
+                componentName: appId,
+                drawable: drawable,
+                label: label,
+                requestCount: 0,
+                firstAppearance: 0,
+                lastRequested: 0,
+                installs: '—',
+                isLinkOnly: true,
+                components: comps,
+              };
+              App.state.idMap.set(appId, syntheticApp);
+              App.data.push(syntheticApp);
+            } else {
+              const existingApp = App.state.idMap.get(appId);
+              if (existingApp && (!existingApp.components || existingApp.components.length === 1)) {
+                existingApp.components = comps;
+              }
+            }
+            comps.forEach((c) => {
+              this.addTag(c, id);
+              if (typeof item === 'object' && item.existing_drawable) {
+                if (!App.state.existingSvgs) App.state.existingSvgs = new Map();
+                App.state.existingSvgs.set(c, item.existing_drawable);
+              }
+            });
           }
         });
       }
@@ -2114,8 +2182,69 @@ const Data = {
 
     if (App.state.existingIcons.length === 0) return;
 
+    this.resolveLinkedComponents();
+
     if (App.state.search) UI.renderIconLibrary();
     if (App.state.contributionActive) UI.renderContributionMode();
+  },
+
+  resolveLinkedComponents() {
+    const lawniconsIcons = App.state.lawniconsIcons || [];
+    const existingIcons = App.state.existingIcons || [];
+    if (lawniconsIcons.length === 0 && existingIcons.length === 0) return;
+
+    App.data.forEach((app) => {
+      const cmp = app.componentName;
+      const tags = App.state.appTags.get(cmp);
+      if (!tags || (!tags.has('links') && !tags.has('in_lawnicons'))) return;
+
+      const pkg = cmp.split('/')[0];
+      const pkgPrefix = `${pkg}/`;
+      const targetDrawable = App.state.existingSvgs?.get(cmp) || app.drawable;
+
+      const compSet = new Set(app.components || [cmp]);
+      compSet.add(cmp);
+
+      if (tags.has('links')) {
+        lawniconsIcons.forEach((icon) => {
+          if (icon.component.startsWith(pkgPrefix)) {
+            if (icon.drawable === targetDrawable || !icon.drawable) {
+              compSet.add(icon.component);
+            }
+          }
+        });
+        existingIcons.forEach((icon) => {
+          if (icon.component.startsWith(pkgPrefix)) {
+            if (icon.drawable === targetDrawable || !icon.drawable) {
+              compSet.add(icon.component);
+            }
+          }
+        });
+      } else if (tags.has('in_lawnicons')) {
+        lawniconsIcons.forEach((icon) => {
+          if (icon.component.startsWith(pkgPrefix)) compSet.add(icon.component);
+        });
+        existingIcons.forEach((icon) => {
+          if (icon.component.startsWith(pkgPrefix)) compSet.add(icon.component);
+        });
+      }
+
+      const allComps = Array.from(compSet);
+      app.components = allComps;
+
+      allComps.forEach((c) => {
+        if (!App.state.idMap.has(c)) {
+          App.state.idMap.set(c, app);
+        }
+        if (targetDrawable && !App.state.existingSvgs?.has(c)) {
+          if (!App.state.existingSvgs) App.state.existingSvgs = new Map();
+          App.state.existingSvgs.set(c, targetDrawable);
+        }
+        if (tags.has('links')) {
+          this.addTag(c, 'links');
+        }
+      });
+    });
   },
 
   async loadLowRequests() {
@@ -2128,6 +2257,8 @@ const Data = {
           apps.forEach(app => App.state.idMap.set(app.componentName, app));
           App.state.lowLoaded = true;
           
+          this.resolveLinkedComponents();
+
           // Re-compute unlabeled for all data
           this.computeUnlabeled('unlabeled');
       } catch (e) {
@@ -2229,7 +2360,10 @@ const Data = {
       const label = existing ? existing.name : app.label;
       const safeLabel = label.replace(/'/g, "'\\''");
       
-      commands.push(`python3 ./icontool.py link "${drawable}.svg" ${app.componentName} '${safeLabel}'`);
+      const comps = (app.components && app.components.length > 0) ? app.components : [app.componentName];
+      for (const comp of comps) {
+        commands.push(`python3 ./icontool.py link "${drawable}.svg" ${comp} '${safeLabel}'`);
+      }
     }
 
     return commands;
@@ -2286,7 +2420,7 @@ const Data = {
             const graph = App.state.requestsGraph;
             
             data = data.filter((a) => {
-              if (regex.test(a.label) || regex.test(a.componentName)) return true;
+              if (regex.test(a.label) || regex.test(a.componentName) || (a.components && a.components.some(c => regex.test(c)))) return true;
               
               if (isUsSearch) {
                 const comp = a.componentName;
@@ -2323,7 +2457,8 @@ const Data = {
           const term = query.text.toLowerCase();
           data = data.filter((a) =>
             a.label.toLowerCase().includes(term) ||
-            a.componentName.toLowerCase().includes(term)
+            a.componentName.toLowerCase().includes(term) ||
+            (a.components && a.components.some(c => c.toLowerCase().includes(term)))
           );
         }
       }
@@ -3029,9 +3164,11 @@ const UI = {
         }
 
         if (action === 'sb-copy-filter-entries') {
-          const entries = [...App.state.selected]
-            .map((id) => `"${id}",`)
-            .join('\n');
+          const apps = Actions.resolveApps([...App.state.selected]);
+          const entries = apps.flatMap((app) => {
+            const comps = (app.components && app.components.length > 0) ? app.components : [app.componentName];
+            return comps.map((id) => `"${id}",`);
+          }).join('\n');
           Actions.copyToClipboard(entries);
           Actions.closeSbMenu();
           return;
@@ -3898,12 +4035,13 @@ layoutMasonry() {
           if (s.regexMode) {
             try {
               const regex = new RegExp(query.text, 'i');
-              return regex.test(app.label) || regex.test(app.componentName);
+              return regex.test(app.label) || regex.test(app.componentName) || (app.components && app.components.some(c => regex.test(c)));
             } catch { return false; }
           } else {
             const term = query.text.toLowerCase();
             return app.label.toLowerCase().includes(term) ||
-              app.componentName.toLowerCase().includes(term);
+              app.componentName.toLowerCase().includes(term) ||
+              (app.components && app.components.some(c => c.toLowerCase().includes(term)));
           }
         });
       });

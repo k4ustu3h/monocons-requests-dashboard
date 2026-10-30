@@ -81,8 +81,8 @@ def main(input_file, output_dir, lawnicons_appfilter_path, monocons_appfilter_pa
 
     # 2. links: All new Lawnicons components not in Monocons where Monocons has the drawable,
     # plus any open requests in requests.json where Lawnicons has extra components for the package.
-    seen_links = set()
-    links_data = []
+    # Group items by (package, matched_drawable) so aliases are merged into a single item.
+    link_groups = {}  # key: (pkg, matched_drawable) -> dict
 
     for cname, l_info in l_comps.items():
         if cname in m_comps:
@@ -94,49 +94,82 @@ def main(input_file, output_dir, lawnicons_appfilter_path, monocons_appfilter_pa
 
         matched_drawable = None
         if pkg in m_pkg_map:
-            pkg_draws = m_pkg_map[pkg]['drawables']
+            pkg_draws = sorted(m_pkg_map[pkg]['drawables'])
             if l_draw in pkg_draws:
                 matched_drawable = l_draw
             elif len(pkg_draws) == 1:
-                matched_drawable = list(pkg_draws)[0]
+                matched_drawable = pkg_draws[0]
             elif l_draw in m_drawables:
                 matched_drawable = l_draw
             elif len(pkg_draws) > 0:
-                matched_drawable = list(pkg_draws)[0]
+                matched_drawable = pkg_draws[0]
         elif l_draw in m_drawables:
             matched_drawable = l_draw
 
         if matched_drawable:
             svg_file = os.path.join(svg_dir, f"{matched_drawable}.svg")
             if not os.path.exists(svg_dir) or os.path.exists(svg_file):
-                seen_links.add(cname)
+                key = (pkg, matched_drawable)
                 app_name = l_name or m_pkg_map.get(pkg, {}).get('first_name') or cname.split('/')[-1]
-                links_data.append({
-                    "id": cname,
-                    "existing_drawable": matched_drawable,
-                    "name": app_name
-                })
+                if key not in link_groups:
+                    link_groups[key] = {
+                        "id": cname,
+                        "existing_drawable": matched_drawable,
+                        "name": app_name,
+                        "components": [cname]
+                    }
+                else:
+                    link_groups[key]["components"].append(cname)
+                    if not link_groups[key]["name"] and app_name:
+                        link_groups[key]["name"] = app_name
+
+    req_app_ids = {app.get('componentName') for app in apps if app.get('componentName')}
 
     for app in apps:
         app_id = app.get('componentName')
-        if not app_id or app_id in seen_links:
+        if not app_id:
             continue
         pkg = app_id.split('/')[0]
         if pkg in l_pkg_map and pkg in m_pkg_map:
             l_comps_set = l_pkg_map[pkg]['components']
             m_comps_set = m_pkg_map[pkg]['components']
             if len(m_comps_set) > 0 and len(l_comps_set) > len(m_comps_set):
-                pkg_draws = m_pkg_map[pkg]['drawables']
-                matched_drawable = list(pkg_draws)[0] if pkg_draws else None
+                pkg_draws = sorted(m_pkg_map[pkg]['drawables'])
+                matched_drawable = pkg_draws[0] if pkg_draws else None
                 if matched_drawable:
                     svg_file = os.path.join(svg_dir, f"{matched_drawable}.svg")
                     if not os.path.exists(svg_dir) or os.path.exists(svg_file):
-                        seen_links.add(app_id)
-                        links_data.append({
-                            "id": app_id,
-                            "existing_drawable": matched_drawable,
-                            "name": app.get('label') or app_id.split('/')[-1]
-                        })
+                        key = (pkg, matched_drawable)
+                        if key in link_groups:
+                            link_groups[key]["id"] = app_id
+                            if app.get('label'):
+                                link_groups[key]["name"] = app.get('label')
+                            if app_id not in link_groups[key]["components"]:
+                                link_groups[key]["components"].append(app_id)
+                        else:
+                            link_groups[key] = {
+                                "id": app_id,
+                                "existing_drawable": matched_drawable,
+                                "name": app.get('label') or app_id.split('/')[-1],
+                                "components": [app_id]
+                            }
+
+    for key, group in link_groups.items():
+        comps = group["components"]
+        if group["id"] not in req_app_ids:
+            main_acts = [c for c in comps if '.MainActivity' in c]
+            if main_acts:
+                group["id"] = sorted(main_acts)[0]
+            else:
+                group["id"] = sorted(comps)[0]
+
+    links_data = []
+    for group in link_groups.values():
+        links_data.append({
+            "id": group["id"],
+            "existing_drawable": group["existing_drawable"],
+            "name": group["name"]
+        })
 
     links_data.sort(key=lambda x: (x.get('name', '').lower(), x.get('id', '')))
 

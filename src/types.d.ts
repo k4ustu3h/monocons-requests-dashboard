@@ -25,6 +25,7 @@ declare global {
     roi_score?: number;
     priority?: string;
     isLinkOnly?: boolean;
+    components?: string[];
   }
 
   type SortKeys = 'name' | 'req' | 'odds' | 'install' | 'time';
@@ -38,6 +39,7 @@ declare global {
     id: string;
     existing_drawable: string;
     name?: string;
+    components?: string[];
   }
 
   interface Filter extends FilterMetadata {
