@@ -2,257 +2,257 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 18,
-  "total_batches": 23,
+  "total_batches": 21,
   "links": [
     {
-      "id": "com.psiphon3/com.psiphon3.MainActivity",
-      "existing_drawable": "psiphon",
-      "name": "Psiphon"
+      "id": "com.soundcloud.android.revanced/com.soundcloud.android.launcher.LauncherActivity",
+      "existing_drawable": "soundcloud",
+      "name": "SoundCloud"
     },
     {
-      "id": "com.pubg.krmobile/com.epicgames.ue4.SplashActivity",
-      "existing_drawable": "pubg",
-      "name": "PUBG"
+      "id": "com.leetlab.scloudmate.mp3downloaderfor.soundcloud/com.leetlab.scloudmate.mp3downloaderfor.soundcloud.MainActivity",
+      "existing_drawable": "generic_download_shelf",
+      "name": "SoundLoadMate"
     },
     {
-      "id": "com.rekoo.pubgm/com.epicgames.ue4.SplashActivity",
-      "existing_drawable": "pubg",
-      "name": "PUBG"
+      "id": "com.henrikherzig.playintegritychecker/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "spic",
+      "name": "SPIC"
     },
     {
-      "id": "com.tencent.tmgp.pubgmhd/com.epicgames.ue4.SplashActivity",
-      "existing_drawable": "pubg",
-      "name": "PUBG"
+      "id": "it.deviato.spotifuck/it.deviato.spotifuck.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotifuck"
     },
     {
-      "id": "com.vng.pubgmobile/com.epicgames.ue4.SplashActivity",
-      "existing_drawable": "pubg",
-      "name": "PUBG"
+      "id": "com.spotify.music.revanced/com.spotify.music.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify"
     },
     {
-      "id": "com.tencent.igxiaomi/com.tencent.igxiaomi.MainActivity",
-      "existing_drawable": "pubg",
-      "name": "PUBG Gift Box"
+      "id": "com.spotify.musix/com.spotify.musix.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify"
     },
     {
-      "id": "com.tencent.iglite/com.epicgames.ue4.SplashActivity",
-      "existing_drawable": "pubg",
-      "name": "PUBG LITE"
+      "id": "com.spotify.premium/com.spotify.musid.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify Premium"
     },
     {
-      "id": "au.gov.vic.ptv/au.gov.vic.ptv.ui.splash.SplashActivity",
-      "existing_drawable": "ptv",
-      "name": "Public Transport Victoria (PTV)"
+      "id": "com.spotify.music.web/it.deviato.spotifuck.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify Web"
     },
     {
-      "id": "dev.pulsewallpaper.app/dev.pulsewallpaper.app.activity.ActivitySplash",
-      "existing_drawable": "pulse",
-      "name": "Pulse"
+      "id": "com.spoti.plus/com.spotify.music.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify X"
     },
     {
-      "id": "pure.lite.browser/com.pure.browser.MainActivity",
-      "existing_drawable": "pure_web_browser",
-      "name": "Pure Web Browser"
+      "id": "com.spoti/com.spotify.music.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify X"
     },
     {
-      "id": "com.tencent.qqmusiclite/com.tencent.qqmusiclite.SplashActivity",
-      "existing_drawable": "qqmusic",
-      "name": "QQ\u97f3\u4e50 ~~ QQMusic"
+      "id": "com.spotify.music.clone/com.spotify.music.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify X"
     },
     {
-      "id": "com.qr.code.reader.scanner.qrscan.android/ch.android.launcher.AppStartupActivity",
-      "existing_drawable": "generic_qr_reader",
-      "name": "QR &amp; Barcode Scanner"
+      "id": "spoti.plus/com.spotify.music.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotify X"
     },
     {
-      "id": "com.vtool.qrcodereader.barcodescanner/com.ecomobile.qrcode.screens.splash.SplashActivity",
-      "existing_drawable": "generic_qr_reader",
-      "name": "QR &amp; Barcode Scanner"
+      "id": "su.aprelteam.spotishka/com.spotify.musid.MainActivity",
+      "existing_drawable": "spotify",
+      "name": "Spotishka"
     },
     {
-      "id": "com.noa.smartscanai/com.noa.smartscanai.ui.MainActivity",
-      "existing_drawable": "generic_qr_reader",
-      "name": "QR and Barcode Scanner"
+      "id": "com.squareup/com.squareup.ui.main.MainActivity",
+      "existing_drawable": "square",
+      "name": "Square"
     },
     {
-      "id": "com.axiomatic.qrcodereader/com.axiomatic.qrcodereader.MainActivity",
-      "existing_drawable": "generic_qr_reader",
-      "name": "QR Code Reader"
+      "id": "com.vitotechnology.StarWalk2Free/ru.rustore.unitysdk.RuStoreUnityActivity",
+      "existing_drawable": "star_walk_2",
+      "name": "Star Walk 2"
     },
     {
-      "id": "com.gamma.scan.app/com.atharok.barcodescanner.ads.SplashActivity",
-      "existing_drawable": "generic_qr_reader",
-      "name": "QR Code Reader"
+      "id": "com.starbucks.bh/com.starbucks.emea.app.splash.SplashActivity",
+      "existing_drawable": "starbucks",
+      "name": "Starbucks"
     },
     {
-      "id": "com.qrfamily.qrcodereaderscanner/com.qrfamily.qrcodereaderscanner.scanner.activity.SplashActivity",
-      "existing_drawable": "generic_qr_reader",
-      "name": "QR Code Reader"
+      "id": "com.starbucks.ch/com.starbucks.emea.app.splash.SplashActivity",
+      "existing_drawable": "starbucks",
+      "name": "Starbucks"
     },
     {
-      "id": "com.a1pha.qrcodescanner/com.a1pha.qrcodescanner.MainActivity",
-      "existing_drawable": "generic_qr_reader",
-      "name": "QR Code Scanner"
+      "id": "com.starbucks.fr/com.starbucks.emea.app.splash.SplashActivity",
+      "existing_drawable": "starbucks",
+      "name": "Starbucks"
     },
     {
-      "id": "qr.code.scanner.qr.code.reader/com.gamma.barcodeapp.ui.BarcodeCaptureActivity",
-      "existing_drawable": "generic_qr_reader",
-      "name": "QR Code Scanner"
+      "id": "com.starbucks.peru/com.starbucks.peru.MainActivity",
+      "existing_drawable": "starbucks",
+      "name": "Starbucks"
     },
     {
-      "id": "qrcode.qrcodescanner.qrcodereader.barcode.barcodescanner/com.superfast.qrcode.activity.SplashActivity",
-      "existing_drawable": "generic_qr_reader",
-      "name": "QR Code Scanner"
+      "id": "com.starbucks.singapore/com.starbucks.singapore.MainActivity",
+      "existing_drawable": "starbucks",
+      "name": "Starbucks"
     },
     {
-      "id": "qrcodescanner.barcodescanner.qrscanner.qrcodereader/qrcodescanner.barcodescanner.qrscanner.qrcodereader.page.launcher.WelcomeActivity",
-      "existing_drawable": "generic_qr_reader",
-      "name": "QR Code Scanner"
+      "id": "com.starbucks.uk/com.starbucks.emea.app.splash.SplashActivity",
+      "existing_drawable": "starbucks",
+      "name": "Starbucks"
     },
     {
-      "id": "com.digitalchemy.barcodeplus/com.digitalchemy.barcodeplus.ui.screen.MainScreenActivity",
-      "existing_drawable": "generic_qr_reader",
-      "name": "QR Scanner Plus"
+      "id": "com.starbucksrewards.gt/com.starbucksrewards.gt.MainActivity",
+      "existing_drawable": "starbucks",
+      "name": "Starbucks Rewards"
     },
     {
-      "id": "com.tomer.draw/com.tomer.draw.gallery.MainActivity",
-      "existing_drawable": "another_notes",
-      "name": "Quick Draw Everywhere"
+      "id": "com.starmakerinteractive.starmaker/com.ushowmedia.starmaker.activity.SplashActivity",
+      "existing_drawable": "starmaker",
+      "name": "StarMaker"
     },
     {
-      "id": "com.tk.quicksearch/com.tk.quicksearch.app.MainActivityAliasAuroraLight",
-      "existing_drawable": "quick_search",
-      "name": "Quick Search"
+      "id": "com.starmakerinteractive.thevoice/com.ushowmedia.starmaker.splash.SplashActivity",
+      "existing_drawable": "starmaker",
+      "name": "StarMaker Lite"
     },
     {
-      "id": "dev.octoshrimpy.quik/dev.octoshrimpy.quik.feature.main.MainActivity",
-      "existing_drawable": "qksms",
-      "name": "QUIK SMS"
+      "id": "com.angkorworld.note/com.angkorworld.memo.activities.MainActivity",
+      "existing_drawable": "samsung_notes",
+      "name": "Sticky Notepad"
     },
     {
-      "id": "com.radio.fmradio/com.radio.fmradio.activities.SplashActivityAliasMain",
-      "existing_drawable": "generic_fm_radio",
-      "name": "Radio FM"
+      "id": "app.streamcompanion/app.streamcompanion.MainActivity",
+      "existing_drawable": "generic_player",
+      "name": "Stream Companion"
     },
     {
-      "id": "radio.fm.online/com.appmind.countryradios.screens.splash.SplashActivity",
-      "existing_drawable": "generic_fm_radio",
-      "name": "Radio FM"
+      "id": "com.stremio.one/com.stremio.tv.MainActivity",
+      "existing_drawable": "stremio",
+      "name": "Stremio"
     },
     {
-      "id": "net.metapps.watersounds/net.metapps.relaxsounds.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Rain Sounds"
+      "id": "com.loyaltyplant.partner.subway/crc64eb65ea6159fb1028.RootActivity",
+      "existing_drawable": "subway",
+      "name": "Subway"
     },
     {
-      "id": "com.devgary.ready/com.devgary.ready.application.ReadyApplication",
-      "existing_drawable": "reddit",
-      "name": "Ready For Reddit"
+      "id": "com.subway.mobile.emea.germany/com.subway.mobile.subwayapp03.ui.SplashActivity",
+      "existing_drawable": "subway",
+      "name": "Subway"
     },
     {
-      "id": "com.realme.link/com.realme.ui.SplashActivity",
-      "existing_drawable": "realme_link",
-      "name": "realme Link"
+      "id": "com.subway.mobile.emea.tuki/com.subway.mobile.subwayapp03.ui.SplashActivity",
+      "existing_drawable": "subway",
+      "name": "Subway"
     },
     {
-      "id": "com.realme.linkcn/com.realme.link.home.SplashActivity",
-      "existing_drawable": "realme_link",
-      "name": "realme Link"
+      "id": "com.subway.subway/com.subway.subway.SplashActivity",
+      "existing_drawable": "subway",
+      "name": "Subway"
     },
     {
-      "id": "appinventor.ai_pralayaranjan24.Reboot/androidbuilder.ab_ranjanlitu12.Reboot_one_ad.Screen1",
-      "existing_drawable": "generic_power",
-      "name": "Reboot"
+      "id": "com.subwaycard/com.subwaycard.v2.activities.DispatchActivity",
+      "existing_drawable": "subway",
+      "name": "Subway"
     },
     {
-      "id": "com.reddit.frontpage.rvx/launcher.default",
-      "existing_drawable": "reddit",
-      "name": "Reddit"
+      "id": "com.wahalla.subwaybr/com.wahalla.subwaybr.MainActivity",
+      "existing_drawable": "subway",
+      "name": "Subway"
     },
     {
-      "id": "com.dot.gallery.gplay/com.dot.gallery.Launcher_ReFra",
-      "existing_drawable": "refra",
-      "name": "ReFra"
+      "id": "nz.co.subcard.app/crc643f56eb19e392e7ef.MainActivity",
+      "existing_drawable": "subway",
+      "name": "Subway"
     },
     {
-      "id": "com.dot.gallery/com.dot.gallery.Launcher_ReFra",
-      "existing_drawable": "refra",
-      "name": "ReFra"
+      "id": "com.hrincescumihai.sudoku/com.hrincescumihai.sudoku.app.MainActivity",
+      "existing_drawable": "generic_sudoku",
+      "name": "Sudoku"
     },
     {
-      "id": "com.remini.xyy/com.bendingspoons.remini.MainActivity",
-      "existing_drawable": "remini",
-      "name": "Remini"
+      "id": "com.sumone/com.sumone.MainActivityDefault",
+      "existing_drawable": "sumone",
+      "name": "SumOne"
     },
     {
-      "id": "com.remini.xyz/com.bendingspoons.remini.MainActivity",
-      "existing_drawable": "remini",
-      "name": "Remini"
+      "id": "com.superb.launcher/com.superb.iconpack.presentation.activity.IconPackActivity",
+      "existing_drawable": "themed_icon_calendar_31",
+      "name": "Superb Launcher Icons"
     },
     {
-      "id": "android.rk.RockVideoPlayer/android.rk.RockVideoPlayer.RockVideoPlayer",
-      "existing_drawable": "just_player",
-      "name": "ReproductorVideo"
+      "id": "org.swiftapps.swiftbackup/com.min.n.MainActivity",
+      "existing_drawable": "swift_backup",
+      "name": "Swift Backup"
     },
     {
-      "id": "code.name.monkey.retromusic/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "retro_music",
-      "name": "Retro Music"
-    },
-    {
-      "id": "com.retroarch.ra32/com.retroarch.browser.mainmenu.MainMenuActivity",
-      "existing_drawable": "retroarch",
-      "name": "RetroArch"
-    },
-    {
-      "id": "com.retroarch.aarch64/com.retroarch.browser.mainmenu.MainMenuActivity",
-      "existing_drawable": "retroarch",
-      "name": "RetroArch Plus"
-    },
-    {
-      "id": "com.termux.revancify.blue/com.termux.revancify.MainActivity",
-      "existing_drawable": "rvx_manager",
-      "name": "Revancify"
-    },
-    {
-      "id": "com.ringapp/com.ring.launch.LaunchActivity",
-      "existing_drawable": "ring",
-      "name": "Ring"
-    },
-    {
-      "id": "com.androidrocker.audiocutter/com.androidrocker.audiocutter.MySplashActivity",
-      "existing_drawable": "sony_music",
-      "name": "Ringtone Maker"
-    },
-    {
-      "id": "com.leonidbuzmacov.ringtonerotator/com.leonidbuzmacov.ringtonerotator.MainActivity",
+      "id": "org.akanework.symphonica/org.akanework.symphonica.MainActivity",
       "existing_drawable": "music_player",
-      "name": "Ringtone Rotator"
+      "name": "Symphonica"
     },
     {
-      "id": "com.roblox.client.samsunggalaxy/com.roblox.client.startup.LauncherAliasMain",
-      "existing_drawable": "roblox",
-      "name": "Roblox"
+      "id": "com.sync.mobileapp/com.sync.mobileapp.activities.SplashActivity",
+      "existing_drawable": "sync",
+      "name": "Sync"
     },
     {
-      "id": "com.roblox.client.vnggames/com.roblox.client.startup.LauncherAliasMain",
-      "existing_drawable": "roblox",
-      "name": "Roblox"
+      "id": "com.github.catfriend1.syncthingandroid.debug/com.nutomic.syncthingandroid.activities.FirstStartActivity",
+      "existing_drawable": "syncthing",
+      "name": "Syncthing Debug"
     },
     {
-      "id": "com.tinybyteapps.robyte/com.tinybyteapps.robyte.MainActivity",
-      "existing_drawable": "roku",
-      "name": "RoByte"
+      "id": "io.github.martchus.syncthingtray/io.github.martchus.syncthingtray.MainActivity",
+      "existing_drawable": "syncthing",
+      "name": "Syncthing Tray"
     },
     {
-      "id": "com.vanniktech.rssreader/com.vanniktech.rssreader.RssReaderMainActivity",
-      "existing_drawable": "twine",
-      "name": "RSS Reader"
+      "id": "ch.lieferservice.android/com.takeaway.android.activity.Splash",
+      "existing_drawable": "just_eat",
+      "name": "Takeaway"
     },
     {
-      "id": "com.rvx.reddit/launcher.default",
-      "existing_drawable": "reddit",
-      "name": "RVX Lite Reddit"
+      "id": "com.bgmenu.android/com.takeaway.android.activity.Splash",
+      "existing_drawable": "just_eat",
+      "name": "Takeaway"
+    },
+    {
+      "id": "lu.takeaway.android/com.takeaway.android.activity.Splash",
+      "existing_drawable": "just_eat",
+      "name": "Takeaway"
+    },
+    {
+      "id": "pt.takeaway.android/com.takeaway.android.activity.Splash",
+      "existing_drawable": "just_eat",
+      "name": "Takeaway"
+    },
+    {
+      "id": "ro.ascendnet.android.agregator/com.takeaway.android.activity.Splash",
+      "existing_drawable": "just_eat",
+      "name": "Takeaway"
+    },
+    {
+      "id": "uk.takeaway.android/com.takeaway.android.activity.Splash",
+      "existing_drawable": "just_eat",
+      "name": "Takeaway"
+    },
+    {
+      "id": "com.book.tamilbible/com.book.tamilbible.SplashActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Tamil Bible"
+    },
+    {
+      "id": "com.tamil.bible.audio/com.ryanheise.audioservice.AudioServiceActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Tamil Bible"
     }
   ]
 }

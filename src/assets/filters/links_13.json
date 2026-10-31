@@ -2,257 +2,257 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 13,
-  "total_batches": 23,
+  "total_batches": 21,
   "links": [
     {
-      "id": "com.lge.vvm/com.lge.vvm.launcher.VVMLauncherActivity",
-      "existing_drawable": "generic_voicemail",
-      "name": "LG Voicemail"
+      "id": "media.music.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Player"
     },
     {
-      "id": "org.proninyaroslav.libretorrent/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "libretorrent",
-      "name": "LibreTorrent"
+      "id": "music.musicplayer/com.android.music.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Player"
     },
     {
-      "id": "com.adobe.lrmobile/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "lightroom",
-      "name": "Lightroom"
+      "id": "musicplayer.hdvideoplayer.backgroundmusic/musicplayer.hdvideoplayer.backgroundmusic.myActivities.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Player"
     },
     {
-      "id": "com.grice.call/com.grice.call.icon.Default",
+      "id": "musicplayer.theme.bass.equalizer/musicplayer.theme.bass.equalizer.activity.StartPageActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music player"
+    },
+    {
+      "id": "com.iven.musicplayergo/com.iven.musicplayergo.MainActivity",
+      "existing_drawable": "music_player_go",
+      "name": "Music Player GO"
+    },
+    {
+      "id": "musicplayer.musicapp.playmusic.mp3player/musicplayer.musicapp.playmusic.mp3player.ui.splash.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Player Offline & MP3"
+    },
+    {
+      "id": "jl.musicalnotes/jl.musicalnotes.activity.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Musical Notes"
+    },
+    {
+      "id": "com.muso.musicplayer/com.muso.musicplayer.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Muso"
+    },
+    {
+      "id": "com.ttnet.muzik/com.ttnet.muzik.DefaultAppIconAlias",
+      "existing_drawable": "music_player",
+      "name": "Muud"
+    },
+    {
+      "id": "hu.mvmnext.onlineugyintezes/com.nkmomni.app.screen.splash.SplashActivity",
+      "existing_drawable": "substratum_lite",
+      "name": "MVM Next"
+    },
+    {
+      "id": "com.mx.plus/com.mxtech.videoplayer.pro.ActivityMediaList",
+      "existing_drawable": "just_player",
+      "name": "MX Player"
+    },
+    {
+      "id": "com.mxtech.videoplayer.ae/com.mxtech.videoplayer.ae.ActivityWelcomeMX",
+      "existing_drawable": "just_player",
+      "name": "MX Player"
+    },
+    {
+      "id": "com.samsung.android.airtel.stubapp/com.samsung.android.airtel.stubapp.ui.StubActivity",
+      "existing_drawable": "my_airtel",
+      "name": "My Airtel"
+    },
+    {
+      "id": "fcabank.myfcabank/fcabank.myfcabank.MainActivity",
+      "existing_drawable": "credit_agricole",
+      "name": "My CA Auto Bank"
+    },
+    {
+      "id": "com.myfiles.filefolder.filemanager/com.myfiles.filefolder.filemanager.Ui.activity.SplashActivityNew",
+      "existing_drawable": "generic_files",
+      "name": "My Files"
+    },
+    {
+      "id": "com.bti.myPiano/com.bti.myPiano.myPiano",
+      "existing_drawable": "generic_piano",
+      "name": "My Piano"
+    },
+    {
+      "id": "com.vodafone.selfservis/com.vodafone.selfservis.FiveGAlias",
+      "existing_drawable": "my_vodafone",
+      "name": "My Vodafone 5G"
+    },
+    {
+      "id": "my.com.sevenelevenmy.app/my.com.sevenelevenmy.app.MainActivity",
+      "existing_drawable": "_7_eleven",
+      "name": "My7E"
+    },
+    {
+      "id": "com.myinsta.android/com.instagram.android.activity.MainTabActivity",
+      "existing_drawable": "instagram",
+      "name": "MyInsta"
+    },
+    {
+      "id": "com.jio.myjio/com.jio.myjio.dashboard.activities.SplashActivityAlias2",
+      "existing_drawable": "myjio",
+      "name": "MyJio"
+    },
+    {
+      "id": "com.solaredge.homeowner/com.solaredge.homeowner.MainActivity",
+      "existing_drawable": "mysolaredge",
+      "name": "mySolarEdge"
+    },
+    {
+      "id": "com.telkomsel.telkomselcm/com.telkomsel.telkomselcm.launcher_fd7e80b7d960d23fa7a39d68edda4df39982a283dcce91869492fcc244a1df93",
+      "existing_drawable": "mytelkomsel",
+      "name": "MyTelkomsel"
+    },
+    {
+      "id": "com.tsel.telkomselku/com.tsel.telkomselku.presentation.dynamiciframe.DynamicIframeActivity",
+      "existing_drawable": "mytelkomsel",
+      "name": "MyTelkomsel"
+    },
+    {
+      "id": "com.appgeneration.itunerfree/com.appgeneration.mytunerlib.ui.activities.SplashActivity",
+      "existing_drawable": "generic_fm_radio",
+      "name": "myTuner"
+    },
+    {
+      "id": "net.metapps.naturesounds/net.metapps.relaxsounds.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Nature Sounds"
+    },
+    {
+      "id": "naukriApp.appModules.login/naukriApp.appModules.login.TopTierSplashActivityAlias",
+      "existing_drawable": "naukri",
+      "name": "Naukri"
+    },
+    {
+      "id": "com.netflix.mediaclieog/com.razpay.apk.ServerActivity",
+      "existing_drawable": "netflix",
+      "name": "Netflix"
+    },
+    {
+      "id": "pl.lebihan.network/pl.lebihan.network.RadioNetwork",
       "existing_drawable": "generic_dialer",
-      "name": "Liquid Dialer"
+      "name": "Network"
     },
     {
-      "id": "com.wallpaper.liveloop/com.wallpaper.liveloop.StartActivity",
-      "existing_drawable": "liveloop",
-      "name": "LiveLoop"
+      "id": "org.schabi.newpipe.debug.release0252/org.schabi.newpipe.MainActivity",
+      "existing_drawable": "newpipe",
+      "name": "NewPipe"
     },
     {
-      "id": "com.cvc953.localplayer/com.cvc953.localplayer.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Local Player"
+      "id": "org.schabi.newpipe.morphe/org.schabi.newpipe.MainActivity",
+      "existing_drawable": "newpipe",
+      "name": "NewPipe"
     },
     {
-      "id": "com.dn0ne.lotus/com.dn0ne.player.MainActivity",
-      "existing_drawable": "lotus",
-      "name": "Lotus"
+      "id": "com.javulticat.newpipe/org.schabi.newpipe.MainActivity",
+      "existing_drawable": "newpipe",
+      "name": "NewPipe SponsorBlock"
     },
     {
-      "id": "com.op.lspdoze/com.op.lspdoze.ui.MainActivity",
-      "existing_drawable": "generic_shell",
-      "name": "LSPDoze"
+      "id": "livio.rssreader/livio.rssreader.RSSReader",
+      "existing_drawable": "twine",
+      "name": "News Reader"
     },
     {
-      "id": "org.lsposed.manager/org.lsposed.manager.ui.activity.ComposeActivity",
-      "existing_drawable": "lsposed",
-      "name": "LSPosed"
+      "id": "com.deutschebahn.app.android/db.vendo.android.vendigator.view.main.MainActivity",
+      "existing_drawable": "db_navigator",
+      "name": "Next DB Navigator"
     },
     {
-      "id": "app.lunatask.android/app.lunatask.android.MainActivity",
+      "id": "com.nextcloud.android.beta/com.nmc.android.ui.LauncherActivity",
+      "existing_drawable": "nextcloud",
+      "name": "Nextcloud Dev"
+    },
+    {
+      "id": "com.nextcloud.tasks/com.nextcloud.tasks.MainActivity",
       "existing_drawable": "tasks",
-      "name": "Lunatask"
+      "name": "Nextcloud Tasks"
     },
     {
-      "id": "io.material.catalog/io.material.catalog.main.MainActivity",
-      "existing_drawable": "compose_material_catalog",
-      "name": "M3 Catalog"
+      "id": "com.example.nextdns/com.example.nextdns.MainActivity",
+      "existing_drawable": "nextdns",
+      "name": "NextDNS"
     },
     {
-      "id": "com.j.m3play/com.j.m3play.MainActivity",
+      "id": "com.nexuskeet/com.nexuskeet.MainActivity",
+      "existing_drawable": "generic_player",
+      "name": "NexusKeet"
+    },
+    {
+      "id": "br.com.gruposbf.nike/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "nike",
+      "name": "Nike"
+    },
+    {
+      "id": "com.holybible.nivbible/org.mainsoft.newbible.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "NIV Bible"
+    },
+    {
+      "id": "new.king.james.version.bible.nkjv/org.mainsoft.newbible.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "NKJV Bible"
+    },
+    {
+      "id": "xyz.nextalone.nnngram/org.telegram.messenger.OFFICIAL",
+      "existing_drawable": "nullgram",
+      "name": "NMM File Manager"
+    },
+    {
+      "id": "com.droidheat.musicplayer/com.droidheat.musicplayer.ui.activities.SplashActivity",
       "existing_drawable": "music_player",
-      "name": "M3Play"
+      "name": "Noad Music Player"
     },
     {
-      "id": "com.arlosoft.macrodroid.clone/com.arlosoft.macrodroid.intro.IntroActivity",
-      "existing_drawable": "macrodroid",
-      "name": "MacroDroid"
+      "id": "com.nordvpn.android.teams/com.nordvpn.android.nordlayer.MainActivity",
+      "existing_drawable": "nord_android",
+      "name": "NordLayer"
     },
     {
-      "id": "com.arlosoft.macrodroid/com.arlosoft.macrodroid.intro.ToastActivity",
-      "existing_drawable": "macrodroid",
-      "name": "MacroDroid"
+      "id": "com.nordlocker.android.encrypt.cloud/com.nordlocker.android.encrypt.cloud.activity.MainActivity",
+      "existing_drawable": "nord_android",
+      "name": "NordLocker"
     },
     {
-      "id": "com.topjohnwu.magisk/x.COMPONENT_PLACEHOLDER_2",
-      "existing_drawable": "magisk",
-      "name": "Magisk"
+      "id": "com.nordpass.android.app.password.manager/com.nordpass.android.ui.splash.SplashActivity",
+      "existing_drawable": "nord_android",
+      "name": "NordPass"
     },
     {
-      "id": "mahjong.free.games/com.google.firebase.MessagingUnityPlayerActivity",
-      "existing_drawable": "generic_mahjong",
-      "name": "Mahjong"
+      "id": "com.atomczak.notepat/com.atomczak.notepat.MainActivity",
+      "existing_drawable": "samsung_notes",
+      "name": "Notepad"
     },
     {
-      "id": "com.nebula.mahjongtile/com.unity3d.player.UnityPlayerActivity.Default",
-      "existing_drawable": "generic_mahjong",
-      "name": "Mahjong Blast"
+      "id": "com.applus.notepad.note/com.applus.notepad.Splash",
+      "existing_drawable": "samsung_notes",
+      "name": "Notes"
     },
     {
-      "id": "com.zoundindustries.marshallbt/com.zoundindustries.marshallbt.ui.activity.DeviceSettingsActivity",
-      "existing_drawable": "marshall_multi_room",
-      "name": "Marshall Bluetooth"
+      "id": "com.rkkvishva.nothing_dialer/com.rkkvishva.nothing_dialer.LauncherAliasRed",
+      "existing_drawable": "generic_dialer",
+      "name": "Nothing Dialer"
     },
     {
-      "id": "com.devmaru.audio/com.devmaru.audio.activity.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "MaruAudio"
+      "id": "nl.nshispeed/nl.nsinternational.mobile.android.startup.StartupActivity",
+      "existing_drawable": "ns",
+      "name": "NS International"
     },
     {
-      "id": "com.numero.material_gallery/com.numero.material_gallery.MainActivity",
-      "existing_drawable": "compose_material_catalog",
-      "name": "Material Components Gallery"
-    },
-    {
-      "id": "material.expressive.kwgt/material.expressive.kwgt.MainActivity",
-      "existing_drawable": "m3_expressive_widgets",
-      "name": "Material Expressive Widget"
-    },
-    {
-      "id": "com.nemynew.materialsearch/com.nemynew.materialsearch.MainActivity",
-      "existing_drawable": "generic_search",
-      "name": "Material Search"
-    },
-    {
-      "id": "eu.eleader.mobilebanking.bre/pl.mbank.companymobile.SplashScreen",
-      "existing_drawable": "mbank",
-      "name": "mBank CompanyMobile"
-    },
-    {
-      "id": "com.mcdo.mcdonalds/com.gigigo.mcdonaldsbr.ui.activities.splash.SplashActivityDefault",
-      "existing_drawable": "mcdonalds",
-      "name": "McDonald's"
-    },
-    {
-      "id": "com.mcdonalds.app/com.mcdonalds.app.LauncherDefault",
-      "existing_drawable": "mcdonalds",
-      "name": "McDonald's"
-    },
-    {
-      "id": "il.co.inmanage.mcdonalds/il.co.inmanage.mcdonalds.activities.UnifiedMcActivity",
-      "existing_drawable": "mcdonalds",
-      "name": "McDonald's"
-    },
-    {
-      "id": "com.melmeligy.mediadownloader/com.melmeligy.mediadownloader.MainActivity",
-      "existing_drawable": "generic_download_shelf",
-      "name": "Media Downloader"
-    },
-    {
-      "id": "com.medium.reader/com.medium.android.donkey.launcher.LauncherActivity",
-      "existing_drawable": "medium",
-      "name": "Medium"
-    },
-    {
-      "id": "com.anticor.mellowdark/com.anticor.mellowdark.MainActivity",
-      "existing_drawable": "mellow_dark_icon_pack",
-      "name": "Mellow Dark Icons"
-    },
-    {
-      "id": "nz.co.menulog.m/com.justeat.splash.ui.SplashActivity",
-      "existing_drawable": "just_eat",
-      "name": "Menulog"
-    },
-    {
-      "id": "com.android.messaging/com.android.mms.ui.ConversationList",
-      "existing_drawable": "messages",
-      "name": "Messages"
-    },
-    {
-      "id": "foundation.e.message/com.moez.QKSMS.feature.main.MainActivity",
-      "existing_drawable": "messages",
-      "name": "Messages"
-    },
-    {
-      "id": "com.facebook.orca.morphe/com.facebook.orca.auth.StartScreenActivity",
-      "existing_drawable": "messenger",
-      "name": "Messenger"
-    },
-    {
-      "id": "com.appelis.mojemetrosk/com.appelis.mojemetrosk.ApplicationLoading",
-      "existing_drawable": "metro",
-      "name": "METRO"
-    },
-    {
-      "id": "io.github.muntashirakon.Music/code.name.monkey.retromusic.activities.MainActivity",
-      "existing_drawable": "retro_music",
-      "name": "Metro"
-    },
-    {
-      "id": "de.metro.alex.customer.digitalcard.metro/com.metronom.app.companion.ui.main.MainActivity",
-      "existing_drawable": "metro",
-      "name": "METRO Companion"
-    },
-    {
-      "id": "com.xiaomi.smarthome.tv.global4/com.xiaomi.smarthome.tv.ui.MainActivity",
-      "existing_drawable": "mi_home",
-      "name": "Mi Home"
-    },
-    {
-      "id": "com.xiaomi.smarthomv/com.xiaomi.smarthome.SmartHomeMainActivity",
-      "existing_drawable": "mi_home",
-      "name": "Mi Home"
-    },
-    {
-      "id": "com.speedymovil.wire/com.speedymovil.wire.MainActivity",
-      "existing_drawable": "mi_telcel",
-      "name": "Mi Telcel"
-    },
-    {
-      "id": "com.gold.android.gms/org.microg.gms.ui.SettingsActivity",
-      "existing_drawable": "microg_settings",
-      "name": "MicroG"
-    },
-    {
-      "id": "net.bitplane.android.microphone/net.bitplane.android.microphone.MicrophoneActivity",
-      "existing_drawable": "generic_microphone",
-      "name": "Microphone"
-    },
-    {
-      "id": "com.microsoft.office.officehubrow/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "microsoft_365",
-      "name": "Microsoft 365 Copilot"
-    },
-    {
-      "id": "com.microsoft.bing/com.microsoft.sapphire.app.main.LauncherAlias",
-      "existing_drawable": "bing",
-      "name": "Microsoft Bing"
-    },
-    {
-      "id": "com.microsoft.copilot/com.microsoft.copilotn.MainActivityDefault",
-      "existing_drawable": "microsoft_copilot",
-      "name": "Microsoft Copilot"
-    },
-    {
-      "id": "com.microsoft.emmx.dev/com.google.android.apps.chrome.Main",
-      "existing_drawable": "microsoft_edge",
-      "name": "Microsoft Edge Dev"
-    },
-    {
-      "id": "com.microsoft.appmanager/com.microsoft.appmanager.oem.setting.OemSettingsActivity",
-      "existing_drawable": "microsoft_link",
-      "name": "Microsoft Link to Windows"
-    },
-    {
-      "id": "com.microsoft.stream/com.microsoft.stream.ui.activities.SplashActivity",
-      "existing_drawable": "microsoft_stream",
-      "name": "Microsoft Stream"
-    },
-    {
-      "id": "com.microsoft.teams/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "microsoft_teams",
-      "name": "Microsoft Teams"
-    },
-    {
-      "id": "com.microsoft.xcloud/com.microsoft.xcloud.MainActivity",
-      "existing_drawable": "xbox",
-      "name": "Microsoft XCloud"
-    },
-    {
-      "id": "com.hanver.wdsj/com.mojang.minecraftpe.MainActivity",
-      "existing_drawable": "minecraft",
-      "name": "Minecraft"
+      "id": "cn.nubia.myfile/zte.com.cn.filer.FileMgrActivity",
+      "existing_drawable": "generic_files",
+      "name": "Nubia File Manager"
     }
   ]
 }

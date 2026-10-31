@@ -2,257 +2,257 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 17,
-  "total_batches": 23,
+  "total_batches": 21,
   "links": [
     {
-      "id": "com.picsart.studio/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "picsart",
-      "name": "Picsart"
+      "id": "com.sec.android.app.music/com.sec.android.app.music.Default",
+      "existing_drawable": "samsung_music",
+      "name": "Samsung Music"
     },
     {
-      "id": "com.instagram.android.piko/com.instagram.android.activity.MainTabActivity",
-      "existing_drawable": "instagram",
-      "name": "Piko Instagram"
+      "id": "com.samsung.android.snote/com.samsung.android.snote.control.ui.filemanager.MainHomeActivity",
+      "existing_drawable": "samsung_notes",
+      "name": "Samsung Notes"
     },
     {
-      "id": "tv.danmaku.bili/tv.danmaku.bili.MainActivity",
-      "existing_drawable": "bilibili",
-      "name": "PiliPlusX"
+      "id": "com.samsung.android.authfw/com.samsung.android.authfw.samsungpass.launcher.EntryLauncherJPN",
+      "existing_drawable": "samsung_pass",
+      "name": "Samsung Pass"
     },
     {
-      "id": "dev.sasikanth.pinnit2/dev.sasikanth.pinnit.MainActivity",
-      "existing_drawable": "pinnit",
-      "name": "Pinnit"
+      "id": "com.samsung.android.samsungpass/com.samsung.android.samsungpass.launcher.EntryLauncherJPN",
+      "existing_drawable": "samsung_pass",
+      "name": "Samsung Pass"
     },
     {
-      "id": "project.pipepipe.app/project.pipepipe.app.MainActivity",
-      "existing_drawable": "pipepipe",
-      "name": "PipePipe"
+      "id": "com.samsung.android.brdigitalaccount/com.samsung.android.brdigitalaccount.ui.spayminiwelcome.SPayMiniWelcomeActivity",
+      "existing_drawable": "samsung_pay_mini",
+      "name": "Samsung Pay Mini"
     },
     {
-      "id": "com.pashapuma.pix.material.you.iconpack/com.jojoy.delegate.JojoyInstallerActivity",
-      "existing_drawable": "pix_material_you_icon_pack",
-      "name": "Pix Material You Icons"
+      "id": "com.samsung.android.privateshare/com.samsung.android.privacy.view.MainActivity.launcher",
+      "existing_drawable": "samsung_private_share",
+      "name": "Samsung Private Share"
     },
     {
-      "id": "com.lostf1sh.pixelplayeross/com.lostf1sh.pixelplayeross.MainActivity",
-      "existing_drawable": "pixelplay",
-      "name": "PixelPlayerOSS"
+      "id": "com.samsung.android.galaxy/com.samsung.android.galaxy.MainActivity",
+      "existing_drawable": "samsung_shop",
+      "name": "Samsung Shop"
     },
     {
-      "id": "com.expremio.pizzahut/com.expremio.mobileapp.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "com.samsung.ecomm/com.samsung.ecomm.global.shop_app.MainActivity",
+      "existing_drawable": "samsung_shop",
+      "name": "Samsung Shop"
     },
     {
-      "id": "com.mx.pizzahutuk.orderingApp/com.mx.pizzahutuk.orderingApp.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "com.samsungar.shop/com.samsungar.shop.MainActivity",
+      "existing_drawable": "samsung_shop",
+      "name": "Samsung Shop"
     },
     {
-      "id": "com.ph.egypt/com.americana.me.ui.onboarding.splash.SplashActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "no.santanderconsumer.mobilbank/com.netbankmobile.MainActivity",
+      "existing_drawable": "santander",
+      "name": "Santander"
     },
     {
-      "id": "com.pizzahut.app.vn/com.pizzahut.app.vn.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "com.saq.android/com.saq.android.main.MainActivity",
+      "existing_drawable": "saq",
+      "name": "SAQ"
     },
     {
-      "id": "com.pizzahut.app/com.pizzahut.app.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "com.hwjan18v2021.qrcodescanner/com.uysystem.qrcodescanner.MainActivity",
+      "existing_drawable": "generic_qr_reader",
+      "name": "Scan Me"
     },
     {
-      "id": "com.pizzahut.chile/com.pizzahut.chile.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "com.takeaway.driver/com.takeaway.driver.LauncherActivity",
+      "existing_drawable": "just_eat",
+      "name": "Scoober"
     },
     {
-      "id": "com.pizzahut.ecuador/com.pizzahut.ecuador.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "recorder.screenrecorder.videoeditor/com.recorder.screenrecorder.home.splash.pre.PreSplashActivity",
+      "existing_drawable": "screen_recorder",
+      "name": "Screen Recorder"
     },
     {
-      "id": "com.pizzahut.ksa/com.americana.me.ui.onboarding.splash.SplashActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "eu.thedarken.sdm/eu.thedarken.sdm.SDMMainActivity",
+      "existing_drawable": "sd_maid",
+      "name": "SD Maid"
     },
     {
-      "id": "com.pizzahut.malaysia/com.pizzahut.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "com.afterecho.android.setorientation/com.afterecho.android.setorientation.SetOrientationActivity",
+      "existing_drawable": "generic_rotation",
+      "name": "Set Orientation"
     },
     {
-      "id": "com.pizzahut.ph/com.pizzahut.extra.view.splash.DefaultSplashActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "com.googlecode.eyesfree.setorientation/com.googlecode.eyesfree.setorientation.SetOrientationActivity",
+      "existing_drawable": "generic_rotation",
+      "name": "Set Orientation"
     },
     {
-      "id": "com.pizzahut.za/com.pizzahut.za.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "ss.colytitse.setappfull/ss.colytitse.setappfull.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "SetAppFull"
     },
     {
-      "id": "com.pizzahut/host.exp.exponent.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "com.shazam.android/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "shazam",
+      "name": "Shazam"
     },
     {
-      "id": "com.pizzahutau/com.pizzahutau.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "moe.shizuku.privileged.api/af.shizuku.manager.LauncherAlias",
+      "existing_drawable": "shizuku",
+      "name": "Shizuku"
     },
     {
-      "id": "com.pizzahutuk.orderingApp/com.pizzahutuk.orderingApp.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "com.shopee.mx/com.shopee.app.biz.home.ui.home.HomeActivity",
+      "existing_drawable": "shopee",
+      "name": "Shopee"
     },
     {
-      "id": "com.yum.pizzahut/com.yum.pizzahut.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "app.shosetsu.android/app.shosetsu.android.activity.MainActivity",
+      "existing_drawable": "shosetsu",
+      "name": "Shosetsu"
     },
     {
-      "id": "lk.gamma.pizzakraft.PizzaHut/lk.gamma.pizzakraft.PizzaHut.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "org.ShuzaGramV2.com.web/org.telegram.messenger.DefaultIcon",
+      "existing_drawable": "telegram",
+      "name": "ShuzaGram"
     },
     {
-      "id": "tr.com.pizzahut/tr.com.pizzahut.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "id": "com.simplemobiletools.contacts/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
+      "existing_drawable": "generic_contacts",
+      "name": "Simple Contacts"
     },
     {
-      "id": "com.freevpnplanet/com.vpnapp.MainActivity",
-      "existing_drawable": "planet_vpn",
-      "name": "Planet VPN"
+      "id": "com.simplemobiletools.gallery/com.onyx.gallery.activities.NewMainActivity",
+      "existing_drawable": "simple_gallery",
+      "name": "Simple Gallery"
     },
     {
-      "id": "com.ihenvyr.platinum_karaoke_songbook_app/com.ihenvyr.platinum_karaoke_songbook_app.MainActivity",
+      "id": "com.github.anrimian.musicplayer/com.github.anrimian.musicplayer.ui.main.MainActivity",
       "existing_drawable": "music_player",
-      "name": "Platinum Karaoke Songbook"
+      "name": "Simple Music Player"
     },
     {
-      "id": "org.telegram.plut/org.telegram.messenger.DefaultIcon",
-      "existing_drawable": "plus_messenger",
-      "name": "Plus Messenger"
+      "id": "com.simplemobiletools.smsmessenger/com.simplemobiletools.smsmessenger.activities.SimplePhSplashActivity.Orange",
+      "existing_drawable": "messages",
+      "name": "Simple SMS Messenger"
     },
     {
-      "id": "agency.equilibrio.sodexomexico/agency.equilibrio.sodexomexico.MainActivity",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee"
+      "id": "io.simplelogin.android.fdroid/io.simplelogin.android.MainActivity",
+      "existing_drawable": "simplelogin",
+      "name": "SimpleLogin"
     },
     {
-      "id": "com.guerdons.passresto/com.sodexo.passresto.loading.presentation.activites.LoadingActivity",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee"
-    },
-    {
-      "id": "com.pluxeegroup.consumers.global/com.pluxeegroup.consumers.global.MainActivity",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee"
-    },
-    {
-      "id": "com.sodexo.app.pt/es.alt10.project.android.MainAppActivity",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee"
-    },
-    {
-      "id": "com.sodexo.brsuk.spree/crc648faee5076442e488.SplashActivity",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee"
-    },
-    {
-      "id": "com.sodexo.consumers.chile/com.sodexo.consumers.SplashActivity",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee"
-    },
-    {
-      "id": "com.sodexo.consumers.colombia/com.sodexo.consumers.SplashActivity",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee"
-    },
-    {
-      "id": "com.sodexo.cwc.ro/com.sodexo.globalconsumer.feature.splash.presentation.LauncherActivity",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee"
-    },
-    {
-      "id": "com.sodexo.flexogift/com.sodexo.flexogift.MainActivity",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee"
-    },
-    {
-      "id": "com.sodexo.mySodexoCard/crc64745a3a06fa799bcb.MainActivity",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee"
-    },
-    {
-      "id": "pl.sodexo.dlaciebie2.app/pl.sodexo.dlaciebie2.app.ui.login.LoginActivity",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee"
-    },
-    {
-      "id": "sodexo.mobile/one.adastra.sodexo.login.activity.LoginActivity",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee"
-    },
-    {
-      "id": "com.wedoogift/com.glady.MainActivityic_launcher",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee Cadeaux"
-    },
-    {
-      "id": "com.nianticlabs.pokemongo.ares/com.nianticproject.holoholo.libholoholo.unity.UnityMainActivity",
-      "existing_drawable": "pokemon_go",
-      "name": "Pok\u00e9mon GO"
-    },
-    {
-      "id": "com.polette.shop.app/com.polette.shop.app.MainActivity",
-      "existing_drawable": "lenskart",
-      "name": "polette"
-    },
-    {
-      "id": "com.maxmpz.audioplayer.unlock/com.maxmpz.audioplayer.unlock.RedirectorActivity",
-      "existing_drawable": "poweramp_full_unlocker",
-      "name": "Poweramp Full Unlocker"
-    },
-    {
-      "id": "org.ppsspp.ppsspp/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "ppsspp",
-      "name": "PPSSPP"
-    },
-    {
-      "id": "gpm.tnt_premier/one.premier.handheld.presentationlayer.activities.SplashActivity",
+      "id": "com.lighttigerxiv.simple.mp/com.lighttigerxiv.simple.mp.compose.activities.main.MainActivity",
       "existing_drawable": "just_player",
-      "name": "PREMIER"
+      "name": "SimpleMP"
     },
     {
-      "id": "com.dynamixsoftware.printershare.amazon/com.dynamixsoftware.printershare.ActivityMain",
-      "existing_drawable": "generic_printer",
-      "name": "PrinterShare"
+      "id": "com.delco.courier/com.delco.courier.MainActivity",
+      "existing_drawable": "just_eat",
+      "name": "Skip"
     },
     {
-      "id": "com.privateinternetaccess.android/com.kape.vpn.MainActivity",
-      "existing_drawable": "pia",
-      "name": "Private Internet Access VPN"
+      "id": "com.bskyb.skygo/com.bskyb.skygo.features.startup.StartupActivity",
+      "existing_drawable": "just_player",
+      "name": "Sky Go"
     },
     {
-      "id": "com.housestudio.progressbar95/com.byfen.archiver.MainActivity",
-      "existing_drawable": "progressbar95",
-      "name": "Progressbar95"
+      "id": "de.sky.bw/com.bskyb.skygo.features.startup.StartupActivity",
+      "existing_drawable": "just_player",
+      "name": "Sky Go"
     },
     {
-      "id": "ch.protonvpn.android.morphe/ch.protonvpn.android.RoutingActivity",
-      "existing_drawable": "proton_vpn",
-      "name": "Proton VPN"
+      "id": "it.sky.anywhere/com.bskyb.skygo.features.startup.StartupActivity",
+      "existing_drawable": "just_player",
+      "name": "Sky Go"
     },
     {
-      "id": "ch.protonvpn.android.revanced/ch.protonvpn.android.RoutingActivity",
-      "existing_drawable": "proton_vpn",
-      "name": "Proton VPN"
+      "id": "com.netease.sky.bilibili/com.netease.ntunisdk.external.protocol.ProtocolLauncher",
+      "existing_drawable": "sky_children_of_the_light",
+      "name": "Sky: Children of the Light"
+    },
+    {
+      "id": "com.netease.sky.vivo/com.netease.ntunisdk.external.protocol.ProtocolLauncher",
+      "existing_drawable": "sky_children_of_the_light",
+      "name": "Sky: Children of the Light"
+    },
+    {
+      "id": "com.microsoft.office.lync15/com.microsoft.office.sfb.common.ui.splash.EntryPoint",
+      "existing_drawable": "skype",
+      "name": "Skype for Business"
+    },
+    {
+      "id": "com.illusions.skyworthuniversalremotecontrol/com.illusions.skyworthuniversalremotecontrol.remotecontrol.SplashActivity",
+      "existing_drawable": "generic_power",
+      "name": "Skyworth TV Remote"
+    },
+    {
+      "id": "com.proframeapps.videoframeplayer/com.proframeapps.videoframeplayer.ui.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "Slow Motion Frame Video Player"
+    },
+    {
+      "id": "kr.sira.calculator/kr.sira.calculator.SplashActivity",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "Smart Calculator by Smart Tools"
+    },
+    {
+      "id": "ginlemon.flowerfree/ginlemon.flower.locker.LockerActivity",
+      "existing_drawable": "smart_launcher",
+      "name": "Smart Launcher"
+    },
+    {
+      "id": "app.smart.timetables/app.smart.timetables.MainActivity",
+      "existing_drawable": "smart_timetable",
+      "name": "Smart Timetable"
+    },
+    {
+      "id": "com.fmsys.snapdrop/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "snapdrop",
+      "name": "Snapdrop"
+    },
+    {
+      "id": "net.snapdrop/net.snapdrop.MainActivity",
+      "existing_drawable": "snapdrop",
+      "name": "Snapdrop"
+    },
+    {
+      "id": "me.rhunk.snapenhance.manager/me.rhunk.snapenhance.manager.ui.MainActivity",
+      "existing_drawable": "snapenhance",
+      "name": "SnapEnhance"
+    },
+    {
+      "id": "me.rhunk.snapenhance/me.rhunk.snapenhance.ui.manager.MainActivity",
+      "existing_drawable": "snapenhance",
+      "name": "SnapEnhance"
+    },
+    {
+      "id": "com.moonfrog.solitaire.club/com.unity3d.player.UnityPlayerActivity",
+      "existing_drawable": "generic_solitaire",
+      "name": "Solitaire"
+    },
+    {
+      "id": "com.netflix.NGP.Solitaire/com.mobilityware.sflnativeandroidutils.SFLLaunchActivity",
+      "existing_drawable": "generic_solitaire",
+      "name": "Solitaire"
+    },
+    {
+      "id": "com.peoplefun.wordsolitaire/com.unity3d.player.UnityPlayerActivity",
+      "existing_drawable": "generic_solitaire",
+      "name": "Solitaire"
+    },
+    {
+      "id": "com.solo.link.music.player.pro/com.jober.music.player.ui.activity.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "SoloPro"
+    },
+    {
+      "id": "com.luna.music/com.soundcloud.android.launcher.LauncherActivity",
+      "existing_drawable": "soundcloud",
+      "name": "SoundCloud"
     }
   ]
 }

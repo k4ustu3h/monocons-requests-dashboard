@@ -2,257 +2,257 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 20,
-  "total_batches": 23,
+  "total_batches": 21,
   "links": [
     {
-      "id": "com.peoplefun.wordsolitaire/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "generic_solitaire",
-      "name": "Solitaire"
-    },
-    {
-      "id": "com.solo.link.music.player.pro/com.jober.music.player.ui.activity.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "SoloPro"
-    },
-    {
-      "id": "com.luna.music/com.soundcloud.android.launcher.LauncherActivity",
-      "existing_drawable": "soundcloud",
-      "name": "SoundCloud"
-    },
-    {
-      "id": "com.soundcloud.android.revanced/com.soundcloud.android.launcher.LauncherActivity",
-      "existing_drawable": "soundcloud",
-      "name": "SoundCloud"
-    },
-    {
-      "id": "com.leetlab.scloudmate.mp3downloaderfor.soundcloud/com.leetlab.scloudmate.mp3downloaderfor.soundcloud.MainActivity",
-      "existing_drawable": "generic_download_shelf",
-      "name": "SoundLoadMate"
-    },
-    {
-      "id": "com.henrikherzig.playintegritychecker/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "spic",
-      "name": "SPIC"
-    },
-    {
-      "id": "it.deviato.spotifuck/it.deviato.spotifuck.MainActivity",
-      "existing_drawable": "spotify",
-      "name": "Spotifuck"
-    },
-    {
-      "id": "com.spotify.music.revanced/com.spotify.music.MainActivity",
-      "existing_drawable": "spotify",
-      "name": "Spotify"
-    },
-    {
-      "id": "com.spotify.musix/com.spotify.musix.MainActivity",
-      "existing_drawable": "spotify",
-      "name": "Spotify"
-    },
-    {
-      "id": "com.spotify.premium/com.spotify.musid.MainActivity",
-      "existing_drawable": "spotify",
-      "name": "Spotify Premium"
-    },
-    {
-      "id": "com.spotify.music.web/it.deviato.spotifuck.MainActivity",
-      "existing_drawable": "spotify",
-      "name": "Spotify Web"
-    },
-    {
-      "id": "com.spoti.plus/com.spotify.music.MainActivity",
-      "existing_drawable": "spotify",
-      "name": "Spotify X"
-    },
-    {
-      "id": "com.spoti/com.spotify.music.MainActivity",
-      "existing_drawable": "spotify",
-      "name": "Spotify X"
-    },
-    {
-      "id": "com.spotify.music.clone/com.spotify.music.MainActivity",
-      "existing_drawable": "spotify",
-      "name": "Spotify X"
-    },
-    {
-      "id": "spoti.plus/com.spotify.music.MainActivity",
-      "existing_drawable": "spotify",
-      "name": "Spotify X"
-    },
-    {
-      "id": "su.aprelteam.spotishka/com.spotify.musid.MainActivity",
-      "existing_drawable": "spotify",
-      "name": "Spotishka"
-    },
-    {
-      "id": "com.squareup/com.squareup.ui.main.MainActivity",
-      "existing_drawable": "square",
-      "name": "Square"
-    },
-    {
-      "id": "com.vitotechnology.StarWalk2Free/ru.rustore.unitysdk.RuStoreUnityActivity",
-      "existing_drawable": "star_walk_2",
-      "name": "Star Walk 2"
-    },
-    {
-      "id": "com.starbucks.bh/com.starbucks.emea.app.splash.SplashActivity",
-      "existing_drawable": "starbucks",
-      "name": "Starbucks"
-    },
-    {
-      "id": "com.starbucks.ch/com.starbucks.emea.app.splash.SplashActivity",
-      "existing_drawable": "starbucks",
-      "name": "Starbucks"
-    },
-    {
-      "id": "com.starbucks.fr/com.starbucks.emea.app.splash.SplashActivity",
-      "existing_drawable": "starbucks",
-      "name": "Starbucks"
-    },
-    {
-      "id": "com.starbucks.peru/com.starbucks.peru.MainActivity",
-      "existing_drawable": "starbucks",
-      "name": "Starbucks"
-    },
-    {
-      "id": "com.starbucks.singapore/com.starbucks.singapore.MainActivity",
-      "existing_drawable": "starbucks",
-      "name": "Starbucks"
-    },
-    {
-      "id": "com.starbucks.uk/com.starbucks.emea.app.splash.SplashActivity",
-      "existing_drawable": "starbucks",
-      "name": "Starbucks"
-    },
-    {
-      "id": "com.starbucksrewards.gt/com.starbucksrewards.gt.MainActivity",
-      "existing_drawable": "starbucks",
-      "name": "Starbucks Rewards"
-    },
-    {
-      "id": "com.starmakerinteractive.starmaker/com.ushowmedia.starmaker.activity.SplashActivity",
-      "existing_drawable": "starmaker",
-      "name": "StarMaker"
-    },
-    {
-      "id": "com.starmakerinteractive.thevoice/com.ushowmedia.starmaker.splash.SplashActivity",
-      "existing_drawable": "starmaker",
-      "name": "StarMaker Lite"
-    },
-    {
-      "id": "com.angkorworld.note/com.angkorworld.memo.activities.MainActivity",
-      "existing_drawable": "samsung_notes",
-      "name": "Sticky Notepad"
-    },
-    {
-      "id": "app.streamcompanion/app.streamcompanion.MainActivity",
+      "id": "com.mediatek.videoplayer/com.mediatek.videoplayer.MovieListActivity",
       "existing_drawable": "generic_player",
-      "name": "Stream Companion"
+      "name": "Video"
     },
     {
-      "id": "com.stremio.one/com.stremio.tv.MainActivity",
-      "existing_drawable": "stremio",
-      "name": "Stremio"
+      "id": "by.likee.downloader.without.watermark/me.lik.downloader._dev_ui._dev_SplashActivity",
+      "existing_drawable": "generic_download_shelf",
+      "name": "Video downloader for Likee"
     },
     {
-      "id": "com.loyaltyplant.partner.subway/crc64eb65ea6159fb1028.RootActivity",
-      "existing_drawable": "subway",
-      "name": "Subway"
+      "id": "com.doionline.videolivewallpaper/com.doionline.videolivewallpaper.MainActivity",
+      "existing_drawable": "video_live_wallpaper",
+      "name": "Video Live Wallpaper"
     },
     {
-      "id": "com.subway.mobile.emea.germany/com.subway.mobile.subwayapp03.ui.SplashActivity",
-      "existing_drawable": "subway",
-      "name": "Subway"
+      "id": "com.naing.vwallpaper/com.naing.vwallpaper.MainActivity",
+      "existing_drawable": "video_live_wallpaper",
+      "name": "Video Live Wallpaper"
     },
     {
-      "id": "com.subway.mobile.emea.tuki/com.subway.mobile.subwayapp03.ui.SplashActivity",
-      "existing_drawable": "subway",
-      "name": "Subway"
+      "id": "com.softwinner.videoplayer/com.softwinner.videoplayer.view.activity.HomePageActivity",
+      "existing_drawable": "just_player",
+      "name": "Video Player"
     },
     {
-      "id": "com.subway.subway/com.subway.subway.SplashActivity",
-      "existing_drawable": "subway",
-      "name": "Subway"
+      "id": "com.llsl.viper4android/com.llsl.viper4android.ui.MainActivity",
+      "existing_drawable": "viper4android",
+      "name": "ViPER4Android"
     },
     {
-      "id": "com.subwaycard/com.subwaycard.v2.activities.DispatchActivity",
-      "existing_drawable": "subway",
-      "name": "Subway"
+      "id": "com.aam.viper4android/com.aam.viper4android.MainActivity",
+      "existing_drawable": "viper4android",
+      "name": "ViPER4Android FX"
     },
     {
-      "id": "com.wahalla.subwaybr/com.wahalla.subwaybr.MainActivity",
-      "existing_drawable": "subway",
-      "name": "Subway"
+      "id": "com.wstxda.viper4android/com.wstxda.viper4android.MainActivity",
+      "existing_drawable": "viper4android",
+      "name": "ViPER4Android FX"
     },
     {
-      "id": "nz.co.subcard.app/crc643f56eb19e392e7ef.MainActivity",
-      "existing_drawable": "subway",
-      "name": "Subway"
+      "id": "com.virtualpiano.musicalkeyboard/com.unity3d.player.UnityPlayerActivity",
+      "existing_drawable": "generic_piano",
+      "name": "Virtual Pianino"
     },
     {
-      "id": "com.hrincescumihai.sudoku/com.hrincescumihai.sudoku.app.MainActivity",
-      "existing_drawable": "generic_sudoku",
-      "name": "Sudoku"
+      "id": "com.vivo.calculator/com.android.bbkcalculator.Calculator",
+      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
+      "name": "vivo Calculator"
     },
     {
-      "id": "com.sumone/com.sumone.MainActivityDefault",
-      "existing_drawable": "sumone",
-      "name": "SumOne"
+      "id": "br.com.vivo.meuvivoempresas/br.com.vivo.meuvivoempresas.activities.SplashActivity",
+      "existing_drawable": "vivo",
+      "name": "Vivo Empresas"
     },
     {
-      "id": "com.superb.launcher/com.superb.iconpack.presentation.activity.IconPackActivity",
-      "existing_drawable": "themed_icon_calendar_31",
-      "name": "Superb Launcher Icons"
+      "id": "com.vivo.notes/com.android.notes.Notes",
+      "existing_drawable": "generic_notes",
+      "name": "vivo Notes"
     },
     {
-      "id": "org.swiftapps.swiftbackup/com.min.n.MainActivity",
-      "existing_drawable": "swift_backup",
-      "name": "Swift Backup"
+      "id": "br.com.m4u.recarga.vivo/br.com.m4u.recarga.vivo.MainActivity",
+      "existing_drawable": "vivo",
+      "name": "vivo Pay"
     },
     {
-      "id": "org.akanework.symphonica/org.akanework.symphonica.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Symphonica"
+      "id": "org.videolan.vlc/com.google.android.youtube.app.honeycomb.Shell",
+      "existing_drawable": "vlc",
+      "name": "VLC"
     },
     {
-      "id": "com.sync.mobileapp/com.sync.mobileapp.activities.SplashActivity",
-      "existing_drawable": "sync",
-      "name": "Sync"
+      "id": "org.videolan.vlc.debug/org.videolan.vlc.StartActivity",
+      "existing_drawable": "vlc",
+      "name": "VLC Debug"
     },
     {
-      "id": "com.github.catfriend1.syncthingandroid.debug/com.nutomic.syncthingandroid.activities.FirstStartActivity",
-      "existing_drawable": "syncthing",
-      "name": "Syncthing Debug"
+      "id": "adarshurs.android.vlcmobileremote/adarshurs.android.vlcmobileremote.MainActivity",
+      "existing_drawable": "vlc",
+      "name": "VLC Mobile Remote"
     },
     {
-      "id": "io.github.martchus.syncthingtray/io.github.martchus.syncthingtray.MainActivity",
-      "existing_drawable": "syncthing",
-      "name": "Syncthing Tray"
+      "id": "za.co.vodacom.vodapay/za.co.vodacom.vodapay.onboarding.splash.SplashActivity",
+      "existing_drawable": "my_vodafone",
+      "name": "VodaPay"
     },
     {
-      "id": "ch.lieferservice.android/com.takeaway.android.activity.Splash",
-      "existing_drawable": "just_eat",
-      "name": "Takeaway"
+      "id": "com.raytechnoto.glab.voicerecorder/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "Voice Recorder"
     },
     {
-      "id": "com.bgmenu.android/com.takeaway.android.activity.Splash",
-      "existing_drawable": "just_eat",
-      "name": "Takeaway"
+      "id": "com.prometheusinteractive.voice_launcher/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "Voice Search"
     },
     {
-      "id": "lu.takeaway.android/com.takeaway.android.activity.Splash",
-      "existing_drawable": "just_eat",
-      "name": "Takeaway"
+      "id": "com.DevExtras.VoiceTools/crc64ebabd5372c0ee16b.MainActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "Voice Tools"
     },
     {
-      "id": "pt.takeaway.android/com.takeaway.android.activity.Splash",
-      "existing_drawable": "just_eat",
-      "name": "Takeaway"
+      "id": "com.zaza.beatbox/com.zaza.beatbox.pagesredesign.main.MainActivity",
+      "existing_drawable": "generic_audio_editor",
+      "name": "VoxBox Audio Editor"
     },
     {
-      "id": "ro.ascendnet.android.agregator/com.takeaway.android.activity.Splash",
-      "existing_drawable": "just_eat",
-      "name": "Takeaway"
+      "id": "com.free.vpn.indonesia.proxy.planet/com.vpnapp.MainActivity",
+      "existing_drawable": "planet_vpn",
+      "name": "VPN Indonesia"
+    },
+    {
+      "id": "sk.vub.mobile/sk.vub.mobile.VubMainActivity",
+      "existing_drawable": "intesa",
+      "name": "V\u00daB"
+    },
+    {
+      "id": "sk.vub.banking/com.internationalvalueservices.digical.MainActivity",
+      "existing_drawable": "intesa",
+      "name": "V\u00daB Banking"
+    },
+    {
+      "id": "com.feresr.walpy/com.feresr.wallpapers.SplashActivity",
+      "existing_drawable": "walpy",
+      "name": "Walpy"
+    },
+    {
+      "id": "net.waterfox.android.release/net.waterfox.android.release.AppMomo",
+      "existing_drawable": "waterfox",
+      "name": "Waterfox"
+    },
+    {
+      "id": "com.wavegram.messenger.web/org.telegram.messenger.DefaultIcon",
+      "existing_drawable": "telegram",
+      "name": "WaveGram"
+    },
+    {
+      "id": "cz.martykan.webtube/cz.martykan.webtube.MainActivity",
+      "existing_drawable": "generic_player",
+      "name": "WebTube"
+    },
+    {
+      "id": "com.sathwbg.easymessager/com.sathwbg.easymessager.Icon0",
+      "existing_drawable": "whatsapp",
+      "name": "WhatsApp"
+    },
+    {
+      "id": "com.somessenger.site/com.whatsapp.Main",
+      "existing_drawable": "whatsapp",
+      "name": "WhatsApp"
+    },
+    {
+      "id": "ru.andr7e.wifimonitor/ru.andr7e.deviceinfohw.DeviceInfoActivity",
+      "existing_drawable": "wifi_analyzer_open_source",
+      "name": "Wi-Fi Monitor"
+    },
+    {
+      "id": "com.windscribe.vpn/com.windscribe.mobile.ui.preferences.icons.VaporScribeActivity",
+      "existing_drawable": "windscribe",
+      "name": "Windscribe"
+    },
+    {
+      "id": "com.wolt.courierapp/com.wolt.courierapp.MainActivity",
+      "existing_drawable": "wolt",
+      "name": "Wolt Courier Partner"
+    },
+    {
+      "id": "mobilesmart.convert.word.to.pdf.documents/mobilesmart.convert.word.to.pdf.documents.main",
+      "existing_drawable": "generic_pdf_square",
+      "name": "Word to PDF Converter"
+    },
+    {
+      "id": "com.azwstudios.theholybible.web/com.azwstudios.theholybible.MainActivity",
+      "existing_drawable": "generic_bible",
+      "name": "World English Bible"
+    },
+    {
+      "id": "com.sigseg.android.worldmap/com.sigseg.android.map.ImageViewerActivity",
+      "existing_drawable": "generic_earth",
+      "name": "WorldMap"
+    },
+    {
+      "id": "cn.wps.moffice_eng/cn.wps.moffice.documentmanager.ab.proxy.en.scan_b",
+      "existing_drawable": "wps_office",
+      "name": "WPS Office"
+    },
+    {
+      "id": "com.twitter.androie/com.twitter.androie.StartActivity",
+      "existing_drawable": "x",
+      "name": "X"
+    },
+    {
+      "id": "com.twitter.aeromod/com.twitter.aeromod.StartActivity",
+      "existing_drawable": "x",
+      "name": "X Aeromod"
+    },
+    {
+      "id": "me.teble.xposed.autodaily/me.teble.xposed.autodaily.activity.common.MainActivityAlias",
+      "existing_drawable": "tasky",
+      "name": "XAutoDaily"
+    },
+    {
+      "id": "com.microsoft.xboxone.smartglass.beta/com.microsoft.xbox.LauncherActivity",
+      "existing_drawable": "xbox",
+      "name": "Xbox Beta"
+    },
+    {
+      "id": "com.xda.labs.play/com.xda.labs.one.ui.ForumLinkHandlerActivity",
+      "existing_drawable": "xda",
+      "name": "XDA"
+    },
+    {
+      "id": "com.xda.developers.hifueiayevvxlaovwza/com.appyet.activity.MainActivity",
+      "existing_drawable": "xda",
+      "name": "XDA Developers"
+    },
+    {
+      "id": "com.rk.axion/com.rk.activities.main.MainActivity",
+      "existing_drawable": "xed_editor",
+      "name": "Xed-Editor"
+    },
+    {
+      "id": "com.miui.weather2/com.miui.weather2.WeatherBaseScreen",
+      "existing_drawable": "weather",
+      "name": "Xiaomi Weather"
+    },
+    {
+      "id": "com.github.tianma8023.xposed.smscode/com.github.tianma8023.xposed.smscode.HomeActivityAlias",
+      "existing_drawable": "sms_organizer",
+      "name": "XposedSmsCode"
+    },
+    {
+      "id": "de.yaacc/de.yaacc.browser.TabBrowserActivity",
+      "existing_drawable": "generic_player",
+      "name": "YAACC"
+    },
+    {
+      "id": "com.yeelight.yeelight_fluid/com.yeelight.yeelight_fluid.MainActivity",
+      "existing_drawable": "yeelight",
+      "name": "Yeelight"
+    },
+    {
+      "id": "com.kapp.youtube.finam/com.kapp.youtube.ui.MainActivity",
+      "existing_drawable": "ymusic",
+      "name": "YMusic Clone"
+    },
+    {
+      "id": "com.sbi.lotusintouch/com.sbi.yono.MainActivity",
+      "existing_drawable": "yono_sbi",
+      "name": "YONO SBI"
     }
   ]
 }

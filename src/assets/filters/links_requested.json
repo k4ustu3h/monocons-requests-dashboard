@@ -3,63 +3,6 @@
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "links": [
     {
-      "id": "com.vivaldi.browser/com.vivaldi.browser.IconAlt16",
-      "existing_drawable": "vivaldi",
-      "name": "Vivaldi",
-      "components": [
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt1",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt10",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt11",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt12",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt13",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt14",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt15",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt16",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt17",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt18",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt19",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt2",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt3",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt4",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt5",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt6",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt7",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt8",
-        "com.vivaldi.browser/com.vivaldi.browser.IconAlt9"
-      ]
-    },
-    {
-      "id": "com.linkedin.android/com.linkedin.android.authenticator.FallFestivalActivityAlias",
-      "existing_drawable": "linkedin",
-      "name": "LinkedIn",
-      "components": [
-        "com.linkedin.android/com.linkedin.android.authenticator.AATestDefaultActivityAlias",
-        "com.linkedin.android/com.linkedin.android.authenticator.BackToSchoolActivityAlias",
-        "com.linkedin.android/com.linkedin.android.authenticator.CarnivalFestivalActivityAlias",
-        "com.linkedin.android/com.linkedin.android.authenticator.EarthFestivalActivityAlias",
-        "com.linkedin.android/com.linkedin.android.authenticator.FallFestivalActivityAlias",
-        "com.linkedin.android/com.linkedin.android.authenticator.IntlWomensDayActivityAlias",
-        "com.linkedin.android/com.linkedin.android.authenticator.NYEFestivalActivityAlias",
-        "com.linkedin.android/com.linkedin.android.authenticator.PremiumV1ActivityAlias",
-        "com.linkedin.android/com.linkedin.android.authenticator.SpringActivityAlias",
-        "com.linkedin.android/com.linkedin.android.authenticator.WinterFestivalActivityAlias",
-        "com.linkedin.android/com.linkedin.android.authenticator.YIRActivityAlias"
-      ]
-    },
-    {
-      "id": "com.mercadolibre/com.mercadolibre.SplashActivityAliasDoubleDate10",
-      "existing_drawable": "mercado_pago",
-      "name": "Mercado Libre",
-      "components": [
-        "com.mercadolibre/com.google.android.archive.ReactivateActivity",
-        "com.mercadolibre/com.mercadolibre.SplashActivityAliasDoubleDate10",
-        "com.mercadolibre/com.mercadolibre.SplashActivityAliasDoubleDate9",
-        "com.mercadolibre/com.mercadolibre.SplashActivityAliasMundialBra",
-        "com.mercadolibre/com.mercadolibre.SplashActivityAliasMundialMex",
-        "com.mercadolibre/com.mercadolibre.SplashActivityAliasMundialOfficialFifa"
-      ]
-    },
-    {
       "id": "com.alensw.PicFolder/com.alensw.PicFolder.ValidatorActivity",
       "existing_drawable": "quickpic",
       "name": "Gallery",
@@ -69,37 +12,9 @@
       ]
     },
     {
-      "id": "com.opera.mini.native/com.opera.android.Default",
-      "existing_drawable": "opera_browser",
-      "name": "Opera Mini",
-      "components": [
-        "com.opera.mini.native/com.opera.android.Default",
-        "com.opera.mini.native/com.opera.android.Launcher1"
-      ]
-    },
-    {
-      "id": "com.samsung.android.app.routineplus/com.samsung.android.app.routineplus.main.RoutinePlusLauncher",
-      "existing_drawable": "samsung_routines_plus",
-      "name": "Samsung Routines +",
-      "components": [
-        "com.samsung.android.app.routineplus/com.samsung.android.app.routineplus.main.RoutinePlusLauncher",
-        "com.samsung.android.app.routineplus/com.samsung.android.app.routineplus.main.RoutinePlusSplashActivity"
-      ]
-    },
-    {
-      "id": "com.google.android.projection.gearhead.xunlocked/com.google.android.projection.gearhead.xunlocked.MainActivity",
-      "existing_drawable": "android_auto",
-      "name": "Android Auto"
-    },
-    {
       "id": "remix.myplayer/remix.myplayer.ui.activity.ComposeActivity",
       "existing_drawable": "music_player",
       "name": "APlayer"
-    },
-    {
-      "id": "com.aurora.store.nightly/com.aurora.store.ComposeActivity",
-      "existing_drawable": "aurora_store_nightly",
-      "name": "Aurora Store"
     },
     {
       "id": "com.hihonor.calendar/com.android.calendar.AllInOneActivity",
@@ -127,11 +42,6 @@
       "name": "Files: Shortcut"
     },
     {
-      "id": "in.swiggy.android.instamart/in.swiggy.android.HomeIcon",
-      "existing_drawable": "swiggy",
-      "name": "Instamart"
-    },
-    {
       "id": "com.kyotoplayer/com.kyotoplayer.ui.screens.MainActivity",
       "existing_drawable": "just_player",
       "name": "KYOTO Player"
@@ -152,16 +62,6 @@
       "name": "P2Play"
     },
     {
-      "id": "com.cbs.app/com.paramount.android.pplus.features.splash.mobile.integration.SplashActivity",
-      "existing_drawable": "paramount_plus",
-      "name": "Paramount+"
-    },
-    {
-      "id": "dev.octoshrimpy.quik.fdroid/dev.octoshrimpy.quik.feature.main.MainActivity",
-      "existing_drawable": "qksms",
-      "name": "QUIK SMS"
-    },
-    {
       "id": "dev.raincord.app/com.discord.main.MainDefault",
       "existing_drawable": "discord",
       "name": "Rain"
@@ -170,11 +70,6 @@
       "id": "com.vivo.soundrecorder/com.android.activity.ReclistActivity",
       "existing_drawable": "generic_voice_recorder_waves",
       "name": "Recorder"
-    },
-    {
-      "id": "br.com.vivo.vivoeasy/br.com.zup.vivoeasy3.presentation.MainActivity",
-      "existing_drawable": "vivo",
-      "name": "vivo Easy"
     }
   ]
 }

@@ -2,257 +2,257 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 6,
-  "total_batches": 23,
+  "total_batches": 21,
   "links": [
     {
-      "id": "com.amazon.photos/com.amazon.photos.MainActivity",
-      "existing_drawable": "amazon_photos",
-      "name": "Amazon Photos"
+      "id": "calculatorlock.calculatorvault.photovault.hider/calculatorlock.calculatorvault.photovault.hider.SplashActivity",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "Calculator Lock"
     },
     {
-      "id": "com.google.android.projection.gearhead.phonescreen/com.google.android.projection.gearhead.phonescreen.ShortcutActivity",
-      "existing_drawable": "android_auto",
-      "name": "Android Auto"
+      "id": "com.bbk.calendar/com.bbk.calendar.MainActivity",
+      "existing_drawable": "calendar",
+      "name": "Calendar"
     },
     {
-      "id": "com.google.android.projection.gearhead/com.google.android.projection.gearhead.companion.AndroidAutoActivity",
-      "existing_drawable": "android_auto",
-      "name": "Android Auto"
+      "id": "com.calendar.taskschedule/com.calendar.taskschedule.SplashActivity",
+      "existing_drawable": "calendar",
+      "name": "Calendar"
     },
     {
-      "id": "com.htetznaing.adbotg/com.htetznaing.adbotg.MainActivity",
-      "existing_drawable": "ladb",
-      "name": "Android Debug Bridge"
+      "id": "org.withouthat.acalendarplus/org.withouthat.acalendar.tasks.TasksActivity",
+      "existing_drawable": "themed_icon_calendar_31",
+      "name": "Calendar"
     },
     {
-      "id": "com.google.android.apps.work.clouddpc/com.google.android.apps.work.clouddpc.ui.MainActivity",
-      "existing_drawable": "device_policy",
-      "name": "Android Device Policy"
+      "id": "calendar.agenda.calendarplanner.agendaplanner/com.calendar.aurora.activity.SplashActivity",
+      "existing_drawable": "calendar",
+      "name": "Calendar Planner"
     },
     {
-      "id": "com.rovio.baba/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "angry_birds_2",
-      "name": "Angry Birds 2"
+      "id": "com.m24apps.acr/com.m24apps.acr.activities.SplashActivityV3",
+      "existing_drawable": "generic_dialer",
+      "name": "Call Recorder"
     },
     {
-      "id": "com.kamwithk.ankiconnectandroid/com.kamwithk.ankiconnectandroid.MainActivity",
-      "existing_drawable": "ladb",
-      "name": "Ankiconnect"
+      "id": "com.dmobileapps.camera/com.dmobileapps.camera.MainActivity",
+      "existing_drawable": "generic_camera",
+      "name": "Camera"
     },
     {
-      "id": "com.anydesk.anydeskandroid/com.anydesk.anydeskandroid.gui.activity.HubActivity",
-      "existing_drawable": "anydesk",
-      "name": "AnyDesk"
+      "id": "com.google.android.GoogleCamerb3/com.android.camera.CameraLauncher",
+      "existing_drawable": "generic_camera",
+      "name": "Camera"
     },
     {
-      "id": "com.inwepo.apkinstaller/com.inwepo.apkinstaller.MainActivity",
+      "id": "com.google.android.apps.googlecamera.fishfood/com.android.camera.CameraLauncher",
+      "existing_drawable": "generic_camera",
+      "name": "Camera"
+    },
+    {
+      "id": "com.softwinner.camera/com.softwinner.camera.CameraLauncher",
+      "existing_drawable": "generic_camera",
+      "name": "Camera"
+    },
+    {
+      "id": "com.king.candycrushsaga.flexion/com.king.candycrushsaga.FlexionActivity",
+      "existing_drawable": "candy_crush_saga",
+      "name": "Candy Crush Saga"
+    },
+    {
+      "id": "cn.canva.editor/com.canva.app.editor.splash.DataConsentSplashActivity",
+      "existing_drawable": "canva",
+      "name": "Canva"
+    },
+    {
+      "id": "com.canva.editor.samsung/com.canva.app.editor.splash.SplashActivity",
+      "existing_drawable": "canva",
+      "name": "Canva"
+    },
+    {
+      "id": "com.canva.editor/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "canva",
+      "name": "Canva"
+    },
+    {
+      "id": "com.lemon.lvoverseas.morphe/com.vega.launcher.precondition.PreInstallConfirmActivity",
+      "existing_drawable": "capcut",
+      "name": "CapCut"
+    },
+    {
+      "id": "com.ovz.carscanner.rustore/crc646a6dd679b318c207.MainActivity",
+      "existing_drawable": "generic_engine",
+      "name": "Car Scanner"
+    },
+    {
+      "id": "com.google.android.ims/com.google.android.ims.ui.WifiCallingSettingsActivity",
+      "existing_drawable": "carrier_services",
+      "name": "Carrier Services"
+    },
+    {
+      "id": "maps.jaoloonda.android.aaad_a39e4f/com.thekirankumar.youtubeauto2.activity.MainPhoneActivity",
+      "existing_drawable": "youtube",
+      "name": "CarStream"
+    },
+    {
+      "id": "com.itemstudio.castro/com.itemstudio.castro.navigation.NavigationActivity",
+      "existing_drawable": "castro",
+      "name": "Castro"
+    },
+    {
+      "id": "com.gamma.checkers/com.unity3d.player.UnityPlayerActivity",
+      "existing_drawable": "generic_checkers",
+      "name": "Checkers"
+    },
+    {
+      "id": "com.birds.chess/com.dynamo.android.DefoldActivity",
+      "existing_drawable": "generic_chess",
+      "name": "Chess"
+    },
+    {
+      "id": "com.llx.chess/com.llx.chess.AndroidLauncher",
+      "existing_drawable": "generic_chess",
+      "name": "Chess"
+    },
+    {
+      "id": "com.google.chromeremotedesktop/com.google.remoting.androidwrapper.MainActivity",
+      "existing_drawable": "chrome_remote_desktop",
+      "name": "Chrome Remote Desktop"
+    },
+    {
+      "id": "com.ia.cinepolis.india/com.ia.cinepolis.india.MainActivity",
+      "existing_drawable": "cinepolis",
+      "name": "Cin\u00e9polis"
+    },
+    {
+      "id": "com.sgebrelibanos.aderaser/com.sgebrelibanos.aderaser.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "CleanTube"
+    },
+    {
+      "id": "com.bluelight.computer.winlauncher.prolauncher/com.bluelight.computer.winlauncher.prolauncher.googleclock.main.DeskClock",
+      "existing_drawable": "generic_clock",
+      "name": "Clock"
+    },
+    {
+      "id": "com.pengyou.cloneapp/com.pengyou.cloneapp.hide.Splash",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "Clone App Calculator Icon"
+    },
+    {
+      "id": "com.ryzac.codecademygo/com.ryzac.codecademygo.MainActivity",
+      "existing_drawable": "codecademy_go",
+      "name": "Codecademy Go"
+    },
+    {
+      "id": "com.collabora.libreoffice.snapshot/org.libreoffice.androidapp.ui.LibreOfficeUIActivity",
+      "existing_drawable": "collabora_office",
+      "name": "Collabora Office"
+    },
+    {
+      "id": "com.apps.offbeat.colorpalette/com.apps.offbeat.colorpalette.MainActivity",
+      "existing_drawable": "substratum_lite",
+      "name": "Color Palette"
+    },
+    {
+      "id": "com.blogspot.yashas003.colorpalette/com.blogspot.yashas003.colorpalette.activities.SplashScreen",
+      "existing_drawable": "substratum_lite",
+      "name": "Color Palette"
+    },
+    {
+      "id": "app.comaps.huawei/app.organicmaps.DownloadResourcesActivity",
+      "existing_drawable": "comaps",
+      "name": "CoMaps"
+    },
+    {
+      "id": "com.bnyro.contacts/com.bnyro.contacts.ui.activities.MainActivity",
+      "existing_drawable": "generic_contacts",
+      "name": "Connect You"
+    },
+    {
+      "id": "icontacts.ios.dialer.icall/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
+      "existing_drawable": "generic_dialer",
+      "name": "Contacts & Phone Call"
+    },
+    {
+      "id": "cool.s20.camera/com.camera.function.main.privacy.CoolCameraPrivacyActivity",
+      "existing_drawable": "nothing_camera",
+      "name": "Cool S20 Camera"
+    },
+    {
+      "id": "com.dvdb.bergnotes/com.dvdb.dnotes.MainActivity",
+      "existing_drawable": "another_notes",
+      "name": "D Notes"
+    },
+    {
+      "id": "com.dtasks.app/com.dtasks.app.MainActivity",
+      "existing_drawable": "tasks",
+      "name": "D/Tasks"
+    },
+    {
+      "id": "com.damonplay.damonps2.free/com.damonplay.damonps2.SplashActivity",
+      "existing_drawable": "ppsspp",
+      "name": "DamonPS2"
+    },
+    {
+      "id": "com.dariaos.recorder/com.dariaos.recorder.ui.MainActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "DariaOS Recorder"
+    },
+    {
+      "id": "com.darkevo.iconpack/com.darkevo.iconpack.activities.MainActivity",
       "existing_drawable": "generic_shell",
-      "name": "APK Installer"
+      "name": "Dark Evo"
     },
     {
-      "id": "foundation.e.apps/foundation.e.apps.ui.MainActivity",
-      "existing_drawable": "app_lounge",
-      "name": "App Lounge"
+      "id": "com.shisui.debloater/com.shisui.debloater.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "Debloat-X Universal"
     },
     {
-      "id": "com.example.libusbAndroidTest/com.example.libusbAndroidTest.MainActivity",
-      "existing_drawable": "drivedroid",
-      "name": "Apple Dongle Volume Fixer"
+      "id": "com.deepl.mobiletranslator/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "deepl",
+      "name": "DeepL"
     },
     {
-      "id": "com.tsng.applistdetector/com.tsng.applistdetector.ui.MainActivity",
-      "existing_drawable": "applist_detector",
-      "name": "Applist Detector"
+      "id": "com.example.deeplviewer/com.example.deeplviewer.activity.MainActivity",
+      "existing_drawable": "deepl",
+      "name": "DeepL"
     },
     {
-      "id": "com.ibragunduz.applockpro/com.ibragunduz.applockpro.NormalMode",
-      "existing_drawable": "applock_pro",
-      "name": "Applock Pro"
+      "id": "de.orrs.deliveries/de.orrs.deliveries.DeliveryListActivity",
+      "existing_drawable": "deliveries",
+      "name": "Deliveries"
     },
     {
-      "id": "io.zenzy.applock/io.zenzy.applock.MusicLauncher",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "AppLock VIP"
+      "id": "website.leifs.delta.fossdc/website.leifs.delta.activities.MainActivity",
+      "existing_drawable": "delta_icons",
+      "name": "Delta Icons"
     },
     {
-      "id": "com.tomclaw.appsend_rb/com.tomclaw.appsend_rb.screen.apps.AppsActivity",
-      "existing_drawable": "appsend",
-      "name": "AppSend"
+      "id": "com.dmholdings.denonremoteapp/com.dmholdings.remoteapp.Startup",
+      "existing_drawable": "just_player",
+      "name": "Denon Remote"
     },
     {
-      "id": "com.asus.filemanager/com.asus.filemanager.activity.FileManagerActivity",
-      "existing_drawable": "asus_file_manager",
-      "name": "ASUS File Manager"
+      "id": "ddt.destroyer.icon.pack/ddt.destroyer.icon.pack.MainActivity",
+      "existing_drawable": "desaturate_icon_pack",
+      "name": "Desaturate Icons"
     },
     {
-      "id": "com.huaqin.FM/com.huaqin.FM.FM",
+      "id": "com.opensource.i2pradio/com.opensource.i2pradio.MainActivity",
       "existing_drawable": "generic_fm_radio",
-      "name": "Asus FM Radio"
+      "name": "deutsia radio"
     },
     {
-      "id": "com.audible.application.kindle/com.audible.application.MainLauncher",
-      "existing_drawable": "audible",
-      "name": "Audible"
+      "id": "io.illescasDaniel.devSnippets/io.illescasDaniel.devSnippets.MainActivity",
+      "existing_drawable": "generic_braces",
+      "name": "DevSnippets"
     },
     {
-      "id": "com.musicplayer.playermusic/com.musicplayer.playermusic.activities.AudifyStartActivity",
-      "existing_drawable": "just_player",
-      "name": "Audify Player"
-    },
-    {
-      "id": "audioeditor.musiceditor.soundeditor.songeditor/com.min.n.MainActivity",
-      "existing_drawable": "generic_audio_editor",
-      "name": "Audio Editor"
-    },
-    {
-      "id": "com.awystudio.awplayer/com.awystudio.awplayer.activities.AllowAccessActivity",
-      "existing_drawable": "just_player",
-      "name": "AW Player"
-    },
-    {
-      "id": "com.WEKA.MATRIX/com.exteragram.messenger.DefaultIcon",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "org.azahar_emu.azahar/org.citra.citra_emu.ui.main.MainActivity",
-      "existing_drawable": "azahar_emulator",
-      "name": "Azahar Emulator"
-    },
-    {
-      "id": "com.bajaj.salesapp/com.bajaj.salesapp.ui.activity.splash.SplashActivity",
-      "existing_drawable": "bajaj_finserv",
-      "name": "Bajaj Sales One"
-    },
-    {
-      "id": "br.com.bancopan.cartoes/com.btg.pactual.banking.SplashScreenActivity",
-      "existing_drawable": "banco_pan",
-      "name": "Banco PAN"
-    },
-    {
-      "id": "com.infonow.bofa/com.bofa.ecom.marvel.application.Black",
-      "existing_drawable": "bofa",
-      "name": "Bank of America"
-    },
-    {
-      "id": "com.barclaycardus/com.barclaycardus.login.SplashActivity",
-      "existing_drawable": "barclays_bank",
-      "name": "Barclays Bank"
-    },
-    {
-      "id": "com.paget96.batterygurv/com.paget96.batterygurv.activities.SplashScreen",
-      "existing_drawable": "battery_guru",
-      "name": "Battery Guru"
-    },
-    {
-      "id": "co.com.bbva.mb/com.bbva.glomohybrid.splash.presentation.view.SplashActivity",
-      "existing_drawable": "bbva",
-      "name": "BBVA"
-    },
-    {
-      "id": "com.bbva.glomo.uy/com.bbva.glomohybrid.splash.presentation.view.SplashActivity",
-      "existing_drawable": "bbva",
-      "name": "BBVA"
-    },
-    {
-      "id": "com.bbva.italy/com.bbva.woody.app.modules.initial.splash.view.SplashActivity",
-      "existing_drawable": "bbva",
-      "name": "BBVA"
-    },
-    {
-      "id": "com.bbva.nxt_argentina/com.bbva.glomohybrid.splash.presentation.view.SplashActivity",
-      "existing_drawable": "bbva",
-      "name": "BBVA"
-    },
-    {
-      "id": "com.bbva.nxt_peru/com.bbva.woody.app.modules.initial.splash.view.SplashActivity",
-      "existing_drawable": "bbva",
-      "name": "BBVA"
-    },
-    {
-      "id": "pe.bbvacontinental.mimundo/pe.bbvacontinental.mimundo.MainActivity",
-      "existing_drawable": "bbva",
-      "name": "BBVA Beneficios"
-    },
-    {
-      "id": "com.totaltexto.bancamovil/com.bbva.buzz.modules.startup.StartActivity",
-      "existing_drawable": "bbva",
-      "name": "BBVA Provinet"
-    },
-    {
-      "id": "com.quickplay.android.bellmediaplayer/ca.bell.fiberemote.boot.BootstrapActivity",
-      "existing_drawable": "just_player",
-      "name": "Bell Fibe TV"
-    },
-    {
-      "id": "com.bereal.ft/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "bereal",
-      "name": "BeReal."
-    },
-    {
-      "id": "br.com.bernoulli.bplay/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "generic_player",
-      "name": "Bernoulli Play"
-    },
-    {
-      "id": "org.telegram.BifToGram/org.telegram.messenger.PremiumIcon",
-      "existing_drawable": "bgram",
-      "name": "BGram"
-    },
-    {
-      "id": "in.org.npci.upiapp/zrgvwqive.Z",
-      "existing_drawable": "bhim",
-      "name": "BHIM"
-    },
-    {
-      "id": "com.kanna.bible/com.kanna.bible.activities.StartActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Bible"
-    },
-    {
-      "id": "com.bible.holy.bible.for.women/com.offline.bible.IconDefault",
-      "existing_drawable": "generic_bible",
-      "name": "Bible for Women"
-    },
-    {
-      "id": "com.azwstudios.theholybible.kjv/com.azwstudios.theholybible.MainActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Bible KJV"
-    },
-    {
-      "id": "com.gyc.ace.kjv/com.gyc.ace.kjv.ActivityWelcome",
-      "existing_drawable": "generic_bible",
-      "name": "Bible KJV"
-    },
-    {
-      "id": "com.hmobile.biblekjv/com.hmobile.biblekjv.MainActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Bible KJV"
-    },
-    {
-      "id": "com.azwstudios.theholybible.frls/com.azwstudios.theholybible.MainActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Bible Louis Segond"
-    },
-    {
-      "id": "at.billa.service/digital.riag.appsolution.MainActivity",
-      "existing_drawable": "billa",
-      "name": "BILLA"
-    },
-    {
-      "id": "com.binance.us/com.binance.dev.SplashActivity",
-      "existing_drawable": "binance",
-      "name": "Binance"
-    },
-    {
-      "id": "com.cloud.tr/binance.app.main.module.StartActivity",
-      "existing_drawable": "binance",
-      "name": "Binance"
-    },
-    {
-      "id": "com.candywriter.bitlife/com.releasedata.ReleaseDataActivity.SplashActivityKing",
-      "existing_drawable": "bitlife",
-      "name": "BitLife"
+      "id": "com.dhl.frt.mittdhl/com.dhl.frt.mittdhl.MainActivity",
+      "existing_drawable": "dhl",
+      "name": "DHL"
     }
   ]
 }

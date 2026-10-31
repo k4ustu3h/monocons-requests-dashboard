@@ -2,257 +2,257 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 19,
-  "total_batches": 23,
+  "total_batches": 21,
   "links": [
     {
-      "id": "app.rvx.manager/app.revanced.manager.MainActivity",
-      "existing_drawable": "youtube_revanced",
-      "name": "RVX Manager"
-    },
-    {
-      "id": "com.samsung.android.messaging/com.samsung.android.messaging.ui.ConversationListActivity",
-      "existing_drawable": "samsung_messages",
-      "name": "Samsung Messages"
-    },
-    {
-      "id": "com.samsung.android.app.routines/com.samsung.android.app.routines.settings.RoutineLaunchActivity",
-      "existing_drawable": "samsung_routines_plus",
-      "name": "Samsung Modes and Routines"
-    },
-    {
-      "id": "com.sec.android.app.music/com.sec.android.app.music.Default",
-      "existing_drawable": "samsung_music",
-      "name": "Samsung Music"
-    },
-    {
-      "id": "com.samsung.android.snote/com.samsung.android.snote.control.ui.filemanager.MainHomeActivity",
-      "existing_drawable": "samsung_notes",
-      "name": "Samsung Notes"
-    },
-    {
-      "id": "com.samsung.android.authfw/com.samsung.android.authfw.samsungpass.launcher.EntryLauncherJPN",
-      "existing_drawable": "samsung_pass",
-      "name": "Samsung Pass"
-    },
-    {
-      "id": "com.samsung.android.samsungpass/com.samsung.android.samsungpass.launcher.EntryLauncherJPN",
-      "existing_drawable": "samsung_pass",
-      "name": "Samsung Pass"
-    },
-    {
-      "id": "com.samsung.android.brdigitalaccount/com.samsung.android.brdigitalaccount.ui.spayminiwelcome.SPayMiniWelcomeActivity",
-      "existing_drawable": "samsung_pay_mini",
-      "name": "Samsung Pay Mini"
-    },
-    {
-      "id": "com.samsung.android.privateshare/com.samsung.android.privacy.view.MainActivity.launcher",
-      "existing_drawable": "samsung_private_share",
-      "name": "Samsung Private Share"
-    },
-    {
-      "id": "com.samsung.android.galaxy/com.samsung.android.galaxy.MainActivity",
-      "existing_drawable": "samsung_shop",
-      "name": "Samsung Shop"
-    },
-    {
-      "id": "com.samsung.ecomm/com.samsung.ecomm.global.shop_app.MainActivity",
-      "existing_drawable": "samsung_shop",
-      "name": "Samsung Shop"
-    },
-    {
-      "id": "com.samsungar.shop/com.samsungar.shop.MainActivity",
-      "existing_drawable": "samsung_shop",
-      "name": "Samsung Shop"
-    },
-    {
-      "id": "no.santanderconsumer.mobilbank/com.netbankmobile.MainActivity",
-      "existing_drawable": "santander",
-      "name": "Santander"
-    },
-    {
-      "id": "com.saq.android/com.saq.android.main.MainActivity",
-      "existing_drawable": "saq",
-      "name": "SAQ"
-    },
-    {
-      "id": "com.hwjan18v2021.qrcodescanner/com.uysystem.qrcodescanner.MainActivity",
-      "existing_drawable": "generic_qr_reader",
-      "name": "Scan Me"
-    },
-    {
-      "id": "com.takeaway.driver/com.takeaway.driver.LauncherActivity",
-      "existing_drawable": "just_eat",
-      "name": "Scoober"
-    },
-    {
-      "id": "recorder.screenrecorder.videoeditor/com.recorder.screenrecorder.home.splash.pre.PreSplashActivity",
-      "existing_drawable": "screen_recorder",
-      "name": "Screen Recorder"
-    },
-    {
-      "id": "eu.thedarken.sdm/eu.thedarken.sdm.SDMMainActivity",
-      "existing_drawable": "sd_maid",
-      "name": "SD Maid"
-    },
-    {
-      "id": "com.afterecho.android.setorientation/com.afterecho.android.setorientation.SetOrientationActivity",
+      "id": "com.gabm.screenrotationcontrol/com.gabm.tapandturn.ui.MainActivity",
       "existing_drawable": "generic_rotation",
-      "name": "Set Orientation"
+      "name": "Tap 'n' Turn"
     },
     {
-      "id": "com.googlecode.eyesfree.setorientation/com.googlecode.eyesfree.setorientation.SetOrientationActivity",
-      "existing_drawable": "generic_rotation",
-      "name": "Set Orientation"
+      "id": "com.kieronquinn.app.taptap/com.kieronquinn.app.taptap.ui.activities.SettingsActivity",
+      "existing_drawable": "tap_tap",
+      "name": "Tap, Tap"
     },
     {
-      "id": "ss.colytitse.setappfull/ss.colytitse.setappfull.MainActivity",
-      "existing_drawable": "generic_shell",
-      "name": "SetAppFull"
+      "id": "com.quoord.tapatalkpro.activity/com.quoord.tapatalkpro.activity.directory.EntryActivity",
+      "existing_drawable": "tapatalk_pro",
+      "name": "Tapatalk"
     },
     {
-      "id": "com.shazam.android/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "shazam",
-      "name": "Shazam"
+      "id": "com.taptap.global.lite/com.play.taptap.ui.SplashAct",
+      "existing_drawable": "taptap",
+      "name": "TapTap Lite"
     },
     {
-      "id": "moe.shizuku.privileged.api/af.shizuku.manager.LauncherAlias",
-      "existing_drawable": "shizuku",
-      "name": "Shizuku"
+      "id": "lt.tele2.tsa/lt.tele2.tsa.features.onboarding.OnboardingActivity",
+      "existing_drawable": "tele2",
+      "name": "Tele2"
     },
     {
-      "id": "com.shopee.mx/com.shopee.app.biz.home.ui.home.HomeActivity",
-      "existing_drawable": "shopee",
-      "name": "Shopee"
-    },
-    {
-      "id": "app.shosetsu.android/app.shosetsu.android.activity.MainActivity",
-      "existing_drawable": "shosetsu",
-      "name": "Shosetsu"
-    },
-    {
-      "id": "org.ShuzaGramV2.com.web/org.telegram.messenger.DefaultIcon",
+      "id": "org.mytelegram.messenger/org.telegram.messenger.DefaultIcon",
       "existing_drawable": "telegram",
-      "name": "ShuzaGram"
+      "name": "Telegram"
     },
     {
-      "id": "com.simplemobiletools.contacts/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
-      "existing_drawable": "generic_contacts",
-      "name": "Simple Contacts"
+      "id": "v.d.d.answercall/v.d.d.answercall.MainFrActivity",
+      "existing_drawable": "generic_dialer",
+      "name": "Tel\u00e9fono"
     },
     {
-      "id": "com.simplemobiletools.gallery/com.onyx.gallery.activities.NewMainActivity",
-      "existing_drawable": "simple_gallery",
-      "name": "Simple Gallery"
+      "id": "top.receivesms.app/top.receivesms.app.MainActivity",
+      "existing_drawable": "generic_email",
+      "name": "Temp Number"
     },
     {
-      "id": "com.github.anrimian.musicplayer/com.github.anrimian.musicplayer.ui.main.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Simple Music Player"
+      "id": "com.eddyizm.tempus/com.cappielloantonio.tempo.ui.activity.MainActivity",
+      "existing_drawable": "tempus",
+      "name": "Tempus"
     },
     {
-      "id": "com.simplemobiletools.smsmessenger/com.simplemobiletools.smsmessenger.activities.SimplePhSplashActivity.Orange",
-      "existing_drawable": "messages",
-      "name": "Simple SMS Messenger"
+      "id": "com.android.virtualization.terminal/com.android.virtualization.terminal.LauncherActivity",
+      "existing_drawable": "terminal",
+      "name": "Terminal"
     },
     {
-      "id": "io.simplelogin.android.fdroid/io.simplelogin.android.MainActivity",
-      "existing_drawable": "simplelogin",
-      "name": "SimpleLogin"
+      "id": "net.termux/com.termux.app.TermuxActivity",
+      "existing_drawable": "termux",
+      "name": "Termux:Monet"
     },
     {
-      "id": "com.lighttigerxiv.simple.mp/com.lighttigerxiv.simple.mp.compose.activities.main.MainActivity",
-      "existing_drawable": "just_player",
-      "name": "SimpleMP"
+      "id": "com.contactstopdfconverter.app.androidx/com.contactstopdfconverter.app.androidx.SplashScreen",
+      "existing_drawable": "generic_pdf_file",
+      "name": "Text to PDF"
     },
     {
-      "id": "com.delco.courier/com.delco.courier.MainActivity",
-      "existing_drawable": "just_eat",
-      "name": "Skip"
+      "id": "com.the.the_reverse_audio/com.the.the_reverse_audio.MainActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "The Reverse Audio"
     },
     {
-      "id": "com.bskyb.skygo/com.bskyb.skygo.features.startup.StartupActivity",
-      "existing_drawable": "just_player",
-      "name": "Sky Go"
+      "id": "com.instagram.barcelona/com.instagram.barcelona.InternalLauncher",
+      "existing_drawable": "threads",
+      "name": "Threads"
     },
     {
-      "id": "de.sky.bw/com.bskyb.skygo.features.startup.StartupActivity",
-      "existing_drawable": "just_player",
-      "name": "Sky Go"
+      "id": "com.ticktick.task/com.ticktick.task.HomeAlia_ai",
+      "existing_drawable": "ticktick",
+      "name": "TickTick"
     },
     {
-      "id": "it.sky.anywhere/com.bskyb.skygo.features.startup.StartupActivity",
-      "existing_drawable": "just_player",
-      "name": "Sky Go"
+      "id": "com.android.tidal.campaigninstaller/com.android.campaigninstaller.MainActivity",
+      "existing_drawable": "tidal",
+      "name": "TIDAL"
     },
     {
-      "id": "com.netease.sky.bilibili/com.netease.ntunisdk.external.protocol.ProtocolLauncher",
-      "existing_drawable": "sky_children_of_the_light",
-      "name": "Sky: Children of the Light"
+      "id": "com.tiktok.lite.go/com.zhiliaoapp.musically.go.mini.MainActivity",
+      "existing_drawable": "tiktok",
+      "name": "TikTok Lite"
     },
     {
-      "id": "com.netease.sky.vivo/com.netease.ntunisdk.external.protocol.ProtocolLauncher",
-      "existing_drawable": "sky_children_of_the_light",
-      "name": "Sky: Children of the Light"
+      "id": "com.kylecorry.trail_sense.dev/com.kylecorry.trail_sense.main.MainActivity",
+      "existing_drawable": "trail_sense",
+      "name": "Trail Sense"
     },
     {
-      "id": "com.microsoft.office.lync15/com.microsoft.office.sfb.common.ui.splash.EntryPoint",
-      "existing_drawable": "skype",
-      "name": "Skype for Business"
+      "id": "com.kylecorry.trail_sense.github/com.kylecorry.trail_sense.main.MainActivity",
+      "existing_drawable": "trail_sense",
+      "name": "Trail Sense"
     },
     {
-      "id": "com.illusions.skyworthuniversalremotecontrol/com.illusions.skyworthuniversalremotecontrol.remotecontrol.SplashActivity",
+      "id": "com.td.transvoice/com.td.transvoice.MainActivity",
+      "existing_drawable": "generic_voice",
+      "name": "Trans Voice"
+    },
+    {
+      "id": "com.truecaller/com.truecaller.ui.TrueCallerUI",
+      "existing_drawable": "generic_dialer",
+      "name": "Truecaller"
+    },
+    {
+      "id": "com.tumblr/com.tumblr.ui.activity.RootActivity",
+      "existing_drawable": "tumblr",
+      "name": "Tumblr"
+    },
+    {
+      "id": "com.free.vpn.turkey.proxy.planet/com.vpnapp.MainActivity",
+      "existing_drawable": "planet_vpn",
+      "name": "Turkey VPN"
+    },
+    {
+      "id": "com.tuya.smart/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "tuya",
+      "name": "Tuya Smart"
+    },
+    {
+      "id": "tv.twitch.android.app.revanced/tv.twitch.android.app.core.LandingActivity",
+      "existing_drawable": "twitch",
+      "name": "Twitch Revanced"
+    },
+    {
+      "id": "com.tmobile.pr.mytmobile/com.telekom.tworld.dashboard.DashboardActivity",
+      "existing_drawable": "tmobile",
+      "name": "T\u2011Mobile"
+    },
+    {
+      "id": "com.hk.s.all.video.player/com.hk.s.all.video.player.HlsPlay",
+      "existing_drawable": "generic_player",
+      "name": "U Player"
+    },
+    {
+      "id": "com.ubs.Paymit.android/com.ubs.Paymit.android.P2PMobileBankingAppAndroidActivity",
+      "existing_drawable": "twint",
+      "name": "UBS TWINT"
+    },
+    {
+      "id": "com.android.test.uibench/com.android.test.uibench.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "UiBench"
+    },
+    {
+      "id": "com.ultimateguitar.tabs/com.ultimateguitar.ugpro.UGMainActivity",
+      "existing_drawable": "ultimate_guitar",
+      "name": "Ultimate Guitar"
+    },
+    {
+      "id": "com.ultimateguitar.ugpro/com.ultimateguitar.ugpro.ui.activity.StartUpActivity",
+      "existing_drawable": "ultimate_guitar",
+      "name": "Ultimate Guitar"
+    },
+    {
+      "id": "com.mixapplications.ultimateusb/com.mixapplications.ultimateusb.MainActivity",
+      "existing_drawable": "drivedroid",
+      "name": "Ultimate USB"
+    },
+    {
+      "id": "com.ubnt.easyunifi/com.ubnt.unifi.network.welcome.WelcomeActivity",
+      "existing_drawable": "unifi",
+      "name": "UniFi"
+    },
+    {
+      "id": "com.uniqlo.au.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.DummyLauncherActivity",
+      "existing_drawable": "uniqlo",
+      "name": "UNIQLO"
+    },
+    {
+      "id": "com.uniqlo.my.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.DummyLauncherActivity",
+      "existing_drawable": "uniqlo",
+      "name": "UNIQLO"
+    },
+    {
+      "id": "com.uniqlo.vn.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.DummyLauncherActivity",
+      "existing_drawable": "uniqlo",
+      "name": "UNIQLO"
+    },
+    {
+      "id": "com.yek.android.uniqlo/com.yek.android.uniqlo.activity.WelcomeActivity",
+      "existing_drawable": "uniqlo",
+      "name": "UNIQLO"
+    },
+    {
+      "id": "com.raafiya.universalacremotecontrol/com.raafiya.universalacremotecontrol.remotecontrol.SplashActivity",
       "existing_drawable": "generic_power",
-      "name": "Skyworth TV Remote"
+      "name": "Universal AC Remote Control"
     },
     {
-      "id": "com.proframeapps.videoframeplayer/com.proframeapps.videoframeplayer.ui.MainActivity",
+      "id": "com.letscontrol.universalprojectorremotecontrol/com.letscontrol.universalprojectorremotecontrol.remotecontrol.SplashActivity",
+      "existing_drawable": "generic_power",
+      "name": "Universal Projector Remote Control"
+    },
+    {
+      "id": "com.matteljv.uno/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "uno",
+      "name": "UNO!"
+    },
+    {
+      "id": "com.sivale.android/bROnt1.buE8K9.dFxEY4.t3cy29",
+      "existing_drawable": "up_si_vale",
+      "name": "Up S\u00ed Vale"
+    },
+    {
+      "id": "com.uphold.wallet/com.uphold.wallet.SplashActivity",
+      "existing_drawable": "uphold",
+      "name": "Uphold"
+    },
+    {
+      "id": "info.t4w.vp/info.t4w.vp.view.MainActivity",
       "existing_drawable": "just_player",
-      "name": "Slow Motion Frame Video Player"
+      "name": "Url Video Player"
     },
     {
-      "id": "kr.sira.calculator/kr.sira.calculator.SplashActivity",
-      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "Smart Calculator by Smart Tools"
+      "id": "com.trianguloy.urlchecker.clone/com.trianguloy.urlchecker.activities.MainActivity",
+      "existing_drawable": "urlcheck",
+      "name": "URLCheck"
     },
     {
-      "id": "ginlemon.flowerfree/ginlemon.flower.locker.LockerActivity",
-      "existing_drawable": "smart_launcher",
-      "name": "Smart Launcher"
+      "id": "com.free.vpn.usa.proxy.planet/com.vpnapp.MainActivity",
+      "existing_drawable": "planet_vpn",
+      "name": "USA VPN"
     },
     {
-      "id": "app.smart.timetables/app.smart.timetables.MainActivity",
-      "existing_drawable": "smart_timetable",
-      "name": "Smart Timetable"
+      "id": "com.extreamsd.usbaudiorecorderpro/com.extreamsd.usbaudiorecordershared.AllTabsActivity",
+      "existing_drawable": "drivedroid",
+      "name": "USB Audio Recorder PRO"
     },
     {
-      "id": "com.fmsys.snapdrop/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "snapdrop",
-      "name": "Snapdrop"
+      "id": "com.enginex0.usbmassstorage/com.enginex0.usbmassstorage.MainActivity",
+      "existing_drawable": "drivedroid",
+      "name": "USB Mass Storage"
     },
     {
-      "id": "net.snapdrop/net.snapdrop.MainActivity",
-      "existing_drawable": "snapdrop",
-      "name": "Snapdrop"
+      "id": "com.iven.iconify/com.iven.vectorify.ui.MainActivity",
+      "existing_drawable": "another_notes",
+      "name": "Vectorify Da Home!"
     },
     {
-      "id": "me.rhunk.snapenhance.manager/me.rhunk.snapenhance.manager.ui.MainActivity",
-      "existing_drawable": "snapenhance",
-      "name": "SnapEnhance"
+      "id": "com.verseview.songbook/com.verseview.songbook.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "VerseVIEW Christian Song Book"
     },
     {
-      "id": "me.rhunk.snapenhance/me.rhunk.snapenhance.ui.manager.MainActivity",
-      "existing_drawable": "snapenhance",
-      "name": "SnapEnhance"
-    },
-    {
-      "id": "com.moonfrog.solitaire.club/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "generic_solitaire",
-      "name": "Solitaire"
-    },
-    {
-      "id": "com.netflix.NGP.Solitaire/com.mobilityware.sflnativeandroidutils.SFLLaunchActivity",
-      "existing_drawable": "generic_solitaire",
-      "name": "Solitaire"
+      "id": "com.viber.voip/com.viber.voip.WelcomeActivity.Night",
+      "existing_drawable": "viber",
+      "name": "Viber"
     }
   ]
 }

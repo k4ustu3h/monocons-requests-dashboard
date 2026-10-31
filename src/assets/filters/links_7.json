@@ -2,257 +2,257 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 7,
-  "total_batches": 23,
+  "total_batches": 21,
   "links": [
     {
-      "id": "com.goodgamestudios.bitlife.br.portugues.simulacao.de.vida/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "bitlife",
-      "name": "BitLife"
+      "id": "com.dhlparcel.consumerapp/com.dhlparcel.consumerapp.MainActivity",
+      "existing_drawable": "dhl",
+      "name": "DHL eCom"
     },
     {
-      "id": "com.goodgamestudios.bitlife.es.espanol.simulador.de.vida/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "bitlife",
-      "name": "BitLife"
+      "id": "com.pixelcrater.Diaro/com.pixelcrater.Diaro.MainActivity",
+      "existing_drawable": "diaro",
+      "name": "Diaro"
     },
     {
-      "id": "com.goodgamestudios.bitlife.fr.francais.simulation.de.vie/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "bitlife",
-      "name": "BitLife"
+      "id": "com.adeeteya.digital_calculator/com.adeeteya.digital_calculator.MainActivity",
+      "existing_drawable": "zcalc",
+      "name": "Digital Calculator"
     },
     {
-      "id": "de.deltacity.android.blutspende/de.deltacity.android.blutspende.activities.SplashScreenActivity",
-      "existing_drawable": "generic_aid",
-      "name": "Blutspende"
+      "id": "com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.settings.MultiPaneLauncherActivity",
+      "existing_drawable": "digital_wellbeing",
+      "name": "Digital Wellbeing"
     },
     {
-      "id": "de.wellenvogel.bonjourbrowser/de.wellenvogel.bonjourbrowser.MainActivity",
-      "existing_drawable": "wifi_analyzer_open_source",
-      "name": "BonjourBrowser"
+      "id": "com.alibaba.android.rimet/com.alibaba.android.rimet.biz.SplashActivity",
+      "existing_drawable": "dingtalk",
+      "name": "DingTalk"
     },
     {
-      "id": "my.com.myboost/com.boostorium.activity.common.SplashActivity",
-      "existing_drawable": "boost",
-      "name": "Boost"
+      "id": "com.discord.morphe/com.discord.main.MainDefault",
+      "existing_drawable": "discord",
+      "name": "Discord"
     },
     {
-      "id": "com.unvoid.borealis/com.unvoid.borealis.activities.MainActivity",
-      "existing_drawable": "borealis_icon_pack",
-      "name": "Borealis Icons"
+      "id": "com.discore/com.discord.main.MainDefault",
+      "existing_drawable": "discord",
+      "name": "Discord"
     },
     {
-      "id": "com.d2l.brightspace.student.android/com.d2l.brightspace.android.ui.DispatchActivity",
-      "existing_drawable": "pulse",
-      "name": "Brightspace Pulse"
+      "id": "com.discovery.discoveryplus.mobile/com.wbd.fuse.appcore.FuseActivity",
+      "existing_drawable": "discoveryplus",
+      "name": "discovery+"
     },
     {
-      "id": "org.bromite.bromite/org.chromium.chrome.browser.ChromeTabbedActivity",
-      "existing_drawable": "bromite",
-      "name": "Bromite"
+      "id": "com.discovery.dplay/com.wbd.fuse.appcore.FuseActivity",
+      "existing_drawable": "discoveryplus",
+      "name": "discovery+"
     },
     {
-      "id": "com.faceplus.bubble.breaker/org.cocos2dx.cpp.AppActivity",
-      "existing_drawable": "generic_bubble_shooter",
-      "name": "Bubble Breaker"
+      "id": "br.com.doctoralia/com.app.MainActivity",
+      "existing_drawable": "doctoralia",
+      "name": "Doctoralia"
     },
     {
-      "id": "com.examobile.bubblelevel/com.examobile.bubblelevel.activity.MainActivity",
-      "existing_drawable": "generic_bubble_level",
-      "name": "Bubble Level"
+      "id": "co.doctoralia/co.doctoralia.MainActivity",
+      "existing_drawable": "doctoralia",
+      "name": "Doctoralia"
     },
     {
-      "id": "level.bubblelevel.ruler/level.bubblelevel.ruler.MainActivity",
-      "existing_drawable": "generic_bubble_level",
-      "name": "Bubble Level"
+      "id": "es.doctoralia/es.doctoralia.MainActivity",
+      "existing_drawable": "doctoralia",
+      "name": "Doctoralia"
     },
     {
-      "id": "net.androgames.level/net.androgames.level.Level$LevelStarterActivity",
-      "existing_drawable": "generic_bubble_level",
-      "name": "Bubble level"
+      "id": "com.eniyihekim/com.eniyihekim.MainActivity",
+      "existing_drawable": "doctoralia",
+      "name": "DoktorTakvimi"
     },
     {
-      "id": "com.bitmango.go.bubblepop/com.p1splatform.core.CustomActivity",
-      "existing_drawable": "generic_bubble_shooter",
-      "name": "Bubble Pop!"
+      "id": "com.dolby.dolby234/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "dolby",
+      "name": "Dolby On"
     },
     {
-      "id": "com.bubbleshooter.popbubbles.collectcards/org.cocos2dx.cpp.AppActivity",
-      "existing_drawable": "generic_bubble_shooter",
-      "name": "Bubble Shooter"
+      "id": "com.dolby.exphub/com.dolby.exphub.namespace.MainActivity",
+      "existing_drawable": "dolby",
+      "name": "Dolby XP"
     },
     {
-      "id": "com.excellenth5game.bubblepopmaster/org.cocos2dx.javascript.AppActivity",
-      "existing_drawable": "generic_bubble_shooter",
-      "name": "Bubblepop Master"
+      "id": "org.dolphinemu.mmjr/org.dolphinemu.dolphinemu.ui.main.MainActivity",
+      "existing_drawable": "dolphin_emulator",
+      "name": "Dolphin MMJR2"
     },
     {
-      "id": "com.dwarfplanet.bundle/com.dwarfplanet.bundle.v5.app.MainActivity",
-      "existing_drawable": "bundle",
-      "name": "Bundle"
+      "id": "com.Dominos/com.Dominos.activity.alias.LauncherRepublicAlias",
+      "existing_drawable": "dominos_pizza",
+      "name": "Domino's Pizza"
     },
     {
-      "id": "at.burgerking.kingfinder.app/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.daufood.ppt/com.iproject.dominos.ui.splash.SplashActivity",
+      "existing_drawable": "dominos_pizza",
+      "name": "Domino's Pizza"
     },
     {
-      "id": "bo.burgerking/com.usemenu.MenuAndroidApplication.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.dominos.latin.america/com.dominos.latin.america.MainActivity",
+      "existing_drawable": "dominos_pizza",
+      "name": "Domino's Pizza"
     },
     {
-      "id": "com.ajvierci.burgerking/com.ajvierci.burgerking.MainActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "tr.com.dominos/com.dominosmobileapp.MainActivity",
+      "existing_drawable": "dominos_pizza",
+      "name": "Domino's Pizza"
     },
     {
-      "id": "com.app.burgerking/com.app.burgerking.ui.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "zena.dominos/com.dominos.loadingscreen.InitialLaunchActivity",
+      "existing_drawable": "dominos_pizza",
+      "name": "Domino's Pizza"
     },
     {
-      "id": "com.bk.ch/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.firstyogi.dothing/com.firstyogi.dothing.SigninActivity",
+      "existing_drawable": "tasky",
+      "name": "Dothing"
     },
     {
-      "id": "com.burgerking.egypt/com.skylinedynamics.bk.splash.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.android.providers.downloads.ui/.DownloadList",
+      "existing_drawable": "generic_download_arrow",
+      "name": "Downloads"
     },
     {
-      "id": "com.burgerking.morocco/com.skylinedynamics.bk.splash.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "pizza.dpe.globaldelivery/com.dominos.driver.presentation.DriverActivity",
+      "existing_drawable": "dominos_pizza",
+      "name": "DPE GPS Driver"
     },
     {
-      "id": "com.burgerking.uae/com.skylinedynamics.bk.splash.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.dropbox.dash/com.dropbox.dash.auth.impl.view.AuthActivity",
+      "existing_drawable": "dropbox",
+      "name": "Dropbox Dash"
     },
     {
-      "id": "com.burgerkingcz/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.dsplayer.app/com.dsplayer.app.features.videobrowser.ui.VideoBrowserActivity",
+      "existing_drawable": "just_player",
+      "name": "DS Player"
     },
     {
-      "id": "com.burgerkingpl/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.olxmena.horizontal/com.olxmena.horizontal.MainActivity",
+      "existing_drawable": "olx",
+      "name": "dubizzle"
     },
     {
-      "id": "com.bzbs.burgerking/com.bzbs.burgerking.ui.splash.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "io.github.luyifei2011.dvdcontroller/io.github.luyifei2011.dvdcontroller.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "DVD Controller"
     },
     {
-      "id": "com.crazycake.burgerkingchile/com.usemenu.MenuAndroidApplication.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.jmsys.earth3d/com.jmsys.earth3d.SplashActivity",
+      "existing_drawable": "generic_earth",
+      "name": "Earth3D"
     },
     {
-      "id": "com.emn8.mobilem8.nativeapp.bkca/com.emn8.mobilem8.nativeapp.bkca.MainActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.dede.android_eggs/com.dede.android_eggs.main.EasterEggsActivity",
+      "existing_drawable": "easter_eggs_14",
+      "name": "Easter Eggs"
     },
     {
-      "id": "com.expremio.burgerking/com.expremio.mobileapp.MainActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "easy.bible.read.understand.simple/org.mainsoft.newbible.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Easy Bible"
     },
     {
-      "id": "com.loyaltyplant.partner.burgerkingrussia/md5c15b5e312b7dce9fda6779ac9af30c1f.StartApplication",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "easy.launcher/easy.launcher.ime.promo.ImePromoActivity",
+      "existing_drawable": "generic_keyboard",
+      "name": "Easy Keyboard"
     },
     {
-      "id": "com.nosmk.burgerking/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.cem.pianokeyboard.pianomusic/com.cem.piano.guide.ui.activities.IntroActivity",
+      "existing_drawable": "generic_piano",
+      "name": "Easy Piano"
     },
     {
-      "id": "com.smt.BurguerKing/com.smt.BurguerKing.MainActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.hwqgrhhjfd.idlefastfood/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "eatventure",
+      "name": "Eatventure"
     },
     {
-      "id": "com.tapstonapp.bkkz/com.tapstonapp.bkkz.MainActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.ebay.mobile/com.ebay.mobile.home.impl.main.MainActivity",
+      "existing_drawable": "ebay",
+      "name": "eBay"
     },
     {
-      "id": "com.tillster.bk_philippines/com.tillster.bk_philippines.MainActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.miHoYo.Yuanshen/org.yuzu.yuzu_emu.ui.main.MainActivity",
+      "existing_drawable": "genshin_impact",
+      "name": "Eden"
     },
     {
-      "id": "dk.burgerking.orderapp/com.deazy.popeyes.MainActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.edesur.movil/com.edesur.movil.MainActivity",
+      "existing_drawable": "enel",
+      "name": "Edesur"
     },
     {
-      "id": "fi.restel.bk.android/fi.restel.foodandevents.MainActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.auxbrain.egginc/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "egg_inc",
+      "name": "Egg, Inc."
     },
     {
-      "id": "ng.burgerking/com.usemenu.MenuAndroidApplication.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "io.element.android.x/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "element_x",
+      "name": "Element X"
     },
     {
-      "id": "nl.burgerking.app/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "hu.emag.android/ro.emag.android.cleancode.app.ActivityStart",
+      "existing_drawable": "emag",
+      "name": "eMAG"
     },
     {
-      "id": "no.burgerking.ordersapp/com.deazy.popeyes.MainActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "br.com.deway.coelce/br.com.deway.coelce.MainActivity",
+      "existing_drawable": "enel",
+      "name": "Enel"
     },
     {
-      "id": "nz.burgerking.kingfinder/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "it.enel/com.example.it_full_digital.MainActivity",
+      "existing_drawable": "enel",
+      "name": "Enel"
     },
     {
-      "id": "ph.burgerking/com.usemenu.MenuAndroidApplication.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "english.swahili.bible/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "English Swahili Bible"
     },
     {
-      "id": "pl.burgerking.android/it.burgerking.android.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "english.swahili.bible.bilingual/org.mainsoft.newbible.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "English Swahili Bible Takatifu"
     },
     {
-      "id": "ro.burgerking.kingfinder/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.sameerasw.essentials/com.sameerasw.essentials.MainActivityLegacy",
+      "existing_drawable": "essentials",
+      "name": "Essentials"
     },
     {
-      "id": "ru.burgerking/ru.burgerking.feature.main.impl.presentation.MainActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.coolappstore.everdialer.by.svhp/com.coolappstore.everdialer.by.svhp.MainActivityNothingIcon",
+      "existing_drawable": "generic_dialer",
+      "name": "Ever Dialer"
     },
     {
-      "id": "uy.com.burgerking/com.usemenu.MenuAndroidApplication.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "id": "com.coolkit/com.coolkit.MainActivity",
+      "existing_drawable": "ewelink",
+      "name": "eWeLink"
     },
     {
-      "id": "com.mathieu.budmaldash00/com.mathieu.budmaldash00.GeometryJump",
-      "existing_drawable": "geometry_dash",
-      "name": "BurmalDash"
+      "id": "com.exness.android.go/com.exness.features.entry.impl.presentation.EntryActivity",
+      "existing_drawable": "exness",
+      "name": "Exness Go"
     },
     {
-      "id": "com.bybit.eu/com.bybit.pro.MainActivity",
-      "existing_drawable": "bybit",
-      "name": "Bybit"
+      "id": "com.smartpesa.pog.mp/com.smartpesa.pog.activity.LauncherSplash",
+      "existing_drawable": "mercado_pago",
+      "name": "Extens\u00e3o Point Tap"
     },
     {
-      "id": "pl.creditagricole.nmobi/pl.creditagricole.nmobi.MainActivity",
-      "existing_drawable": "credit_agricole",
-      "name": "CA24"
+      "id": "com.exteraless.app/org.telegram.messenger.TelegramIcon",
+      "existing_drawable": "telegram",
+      "name": "exteraless"
     }
   ]
 }
