@@ -2,68 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 3,
-  "total_batches": 19,
+  "total_batches": 17,
   "links": [
-    {
-      "id": "com.pdfmerge.imagetopdf.pdfmaker/com.pdfmerge.imagetopdf.pdfmaker.screen.home.SplashScreen",
-      "existing_drawable": "generic_pdf_square",
-      "name": "All PDF Maker"
-    },
-    {
-      "id": "pdfreader.pdfviewer.free.officetool/pdfreader.pdfviewer.free.officetool.ui.R3WelcomeActivity",
-      "existing_drawable": "generic_pdf_file",
-      "name": "All PDF Reader"
-    },
-    {
-      "id": "com.crazylabs.amaze.game/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "amaze",
-      "name": "AMAZE!"
-    },
-    {
-      "id": "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonnow.AmazonNowHomeActivityAlias",
-      "existing_drawable": "amazon_pay",
-      "name": "Amazon Now"
-    },
-    {
-      "id": "com.amazon.photos/com.amazon.photos.MainActivity",
-      "existing_drawable": "amazon_photos",
-      "name": "Amazon Photos"
-    },
-    {
-      "id": "com.htetznaing.adbotg/com.htetznaing.adbotg.MainActivity",
-      "existing_drawable": "ladb",
-      "name": "Android Debug Bridge"
-    },
-    {
-      "id": "com.kamwithk.ankiconnectandroid/com.kamwithk.ankiconnectandroid.MainActivity",
-      "existing_drawable": "ladb",
-      "name": "Ankiconnect"
-    },
-    {
-      "id": "com.anydesk.anydeskandroid/com.anydesk.anydeskandroid.gui.activity.HubActivity",
-      "existing_drawable": "anydesk",
-      "name": "AnyDesk"
-    },
-    {
-      "id": "com.inwepo.apkinstaller/com.inwepo.apkinstaller.MainActivity",
-      "existing_drawable": "generic_shell",
-      "name": "APK Installer"
-    },
-    {
-      "id": "com.example.libusbAndroidTest/com.example.libusbAndroidTest.MainActivity",
-      "existing_drawable": "drivedroid",
-      "name": "Apple Dongle Volume Fixer"
-    },
-    {
-      "id": "io.zenzy.applock/io.zenzy.applock.MusicLauncher",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "AppLock VIP"
-    },
-    {
-      "id": "com.tomclaw.appsend_rb/com.tomclaw.appsend_rb.screen.apps.AppsActivity",
-      "existing_drawable": "appsend",
-      "name": "AppSend"
-    },
     {
       "id": "com.asus.filemanager/com.asus.filemanager.activity.FileManagerActivity",
       "existing_drawable": "asus_file_manager",
@@ -110,11 +50,6 @@
       "name": "Banco PAN"
     },
     {
-      "id": "com.paget96.batterygurv/com.paget96.batterygurv.activities.SplashScreen",
-      "existing_drawable": "battery_guru",
-      "name": "Battery Guru"
-    },
-    {
       "id": "co.com.bbva.mb/com.bbva.glomohybrid.splash.presentation.view.SplashActivity",
       "existing_drawable": "bbva",
       "name": "BBVA"
@@ -128,11 +63,6 @@
       "id": "br.com.bernoulli.bplay/com.unity3d.player.UnityPlayerActivity",
       "existing_drawable": "generic_player",
       "name": "Bernoulli Play"
-    },
-    {
-      "id": "org.telegram.BifToGram/org.telegram.messenger.PremiumIcon",
-      "existing_drawable": "bgram",
-      "name": "BGram"
     },
     {
       "id": "com.kanna.bible/com.kanna.bible.activities.StartActivity",
@@ -170,34 +100,9 @@
       "name": "BILLA"
     },
     {
-      "id": "com.candywriter.bitlife/com.releasedata.ReleaseDataActivity.SplashActivityKing",
-      "existing_drawable": "bitlife",
-      "name": "BitLife"
-    },
-    {
-      "id": "com.goodgamestudios.bitlife.br.portugues.simulacao.de.vida/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "bitlife",
-      "name": "BitLife"
-    },
-    {
-      "id": "com.goodgamestudios.bitlife.es.espanol.simulador.de.vida/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "bitlife",
-      "name": "BitLife"
-    },
-    {
-      "id": "com.goodgamestudios.bitlife.fr.francais.simulation.de.vie/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "bitlife",
-      "name": "BitLife"
-    },
-    {
       "id": "com.d2l.brightspace.student.android/com.d2l.brightspace.android.ui.DispatchActivity",
       "existing_drawable": "pulse",
       "name": "Brightspace Pulse"
-    },
-    {
-      "id": "com.faceplus.bubble.breaker/org.cocos2dx.cpp.AppActivity",
-      "existing_drawable": "generic_bubble_shooter",
-      "name": "Bubble Breaker"
     },
     {
       "id": "com.examobile.bubblelevel/com.examobile.bubblelevel.activity.MainActivity",
@@ -213,26 +118,6 @@
       "id": "net.androgames.level/net.androgames.level.Level$LevelStarterActivity",
       "existing_drawable": "generic_bubble_level",
       "name": "Bubble level"
-    },
-    {
-      "id": "com.bitmango.go.bubblepop/com.p1splatform.core.CustomActivity",
-      "existing_drawable": "generic_bubble_shooter",
-      "name": "Bubble Pop!"
-    },
-    {
-      "id": "com.bubbleshooter.popbubbles.collectcards/org.cocos2dx.cpp.AppActivity",
-      "existing_drawable": "generic_bubble_shooter",
-      "name": "Bubble Shooter"
-    },
-    {
-      "id": "com.excellenth5game.bubblepopmaster/org.cocos2dx.javascript.AppActivity",
-      "existing_drawable": "generic_bubble_shooter",
-      "name": "Bubblepop Master"
-    },
-    {
-      "id": "com.dwarfplanet.bundle/com.dwarfplanet.bundle.v5.app.MainActivity",
-      "existing_drawable": "bundle",
-      "name": "Bundle"
     },
     {
       "id": "at.burgerking.kingfinder.app/rbi.android.app.Launcher",
@@ -253,6 +138,121 @@
       "id": "com.app.burgerking/com.app.burgerking.ui.SplashActivity",
       "existing_drawable": "burger_king",
       "name": "Burger King"
+    },
+    {
+      "id": "com.bk.ch/rbi.android.app.Launcher",
+      "existing_drawable": "burger_king",
+      "name": "Burger King"
+    },
+    {
+      "id": "com.burgerking.egypt/com.skylinedynamics.bk.splash.SplashActivity",
+      "existing_drawable": "burger_king",
+      "name": "Burger King"
+    },
+    {
+      "id": "com.burgerking.morocco/com.skylinedynamics.bk.splash.SplashActivity",
+      "existing_drawable": "burger_king",
+      "name": "Burger King"
+    },
+    {
+      "id": "com.burgerking.uae/com.skylinedynamics.bk.splash.SplashActivity",
+      "existing_drawable": "burger_king",
+      "name": "Burger King"
+    },
+    {
+      "id": "com.burgerkingcz/rbi.android.app.Launcher",
+      "existing_drawable": "burger_king",
+      "name": "Burger King"
+    },
+    {
+      "id": "com.burgerkingpl/rbi.android.app.Launcher",
+      "existing_drawable": "burger_king",
+      "name": "Burger King"
+    },
+    {
+      "id": "com.bzbs.burgerking/com.bzbs.burgerking.ui.splash.SplashActivity",
+      "existing_drawable": "burger_king",
+      "name": "Burger King"
+    },
+    {
+      "id": "com.crazycake.burgerkingchile/com.usemenu.MenuAndroidApplication.SplashActivity",
+      "existing_drawable": "burger_king",
+      "name": "Burger King"
+    },
+    {
+      "id": "com.emn8.mobilem8.nativeapp.bkca/com.emn8.mobilem8.nativeapp.bkca.MainActivity",
+      "existing_drawable": "burger_king",
+      "name": "Burger King"
+    },
+    {
+      "id": "com.expremio.burgerking/com.expremio.mobileapp.MainActivity",
+      "existing_drawable": "burger_king",
+      "name": "Burger King"
+    },
+    {
+      "id": "com.mathieu.budmaldash00/com.mathieu.budmaldash00.GeometryJump",
+      "existing_drawable": "geometry_dash",
+      "name": "BurmalDash"
+    },
+    {
+      "id": "com.bybit.eu/com.bybit.pro.MainActivity",
+      "existing_drawable": "bybit",
+      "name": "Bybit"
+    },
+    {
+      "id": "br.com.gabba.Caixa/br.nQiBi9.qATmb9.es8m45.ui.fobmI3.n45ls8",
+      "existing_drawable": "caixa",
+      "name": "CAIXA"
+    },
+    {
+      "id": "com.candl.athena/com.candl.athena.activity.Calculator",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "CALCU"
+    },
+    {
+      "id": "com.jzhk.calculator/com.jzhk.calculator.Calculator",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "Calculator"
+    },
+    {
+      "id": "calculatorlock.calculatorvault.photovault.hider/calculatorlock.calculatorvault.photovault.hider.SplashActivity",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "Calculator Lock"
+    },
+    {
+      "id": "com.bbk.calendar/com.bbk.calendar.MainActivity",
+      "existing_drawable": "calendar",
+      "name": "Calendar"
+    },
+    {
+      "id": "com.calendar.taskschedule/com.calendar.taskschedule.SplashActivity",
+      "existing_drawable": "calendar",
+      "name": "Calendar"
+    },
+    {
+      "id": "org.withouthat.acalendarplus/org.withouthat.acalendar.tasks.TasksActivity",
+      "existing_drawable": "themed_icon_calendar_31",
+      "name": "Calendar"
+    },
+    {
+      "id": "calendar.agenda.calendarplanner.agendaplanner/com.calendar.aurora.activity.SplashActivity",
+      "existing_drawable": "calendar",
+      "name": "Calendar Planner"
+    },
+    {
+      "id": "com.m24apps.acr/com.m24apps.acr.activities.SplashActivityV3",
+      "existing_drawable": "generic_dialer",
+      "name": "Call Recorder"
+    },
+    {
+      "id": "com.dmobileapps.camera/com.dmobileapps.camera.MainActivity",
+      "existing_drawable": "generic_camera",
+      "name": "Camera"
+    },
+    {
+      "id": "com.google.android.GoogleCamerb3/com.android.camera.CameraLauncher",
+      "existing_drawable": "generic_camera",
+      "name": "Camera"
     }
   ]
 }

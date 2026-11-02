@@ -2,7 +2,7 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 1,
-  "total_batches": 19,
+  "total_batches": 17,
   "links": [
     {
       "id": "org.telegram.messenger/com.exteragram.messenger.AmethystIcon",
@@ -523,16 +523,6 @@
       ]
     },
     {
-      "id": "com.tencent.qqlive/com.tencent.qqlive.activity.WelcomeActivity",
-      "existing_drawable": "qqlive",
-      "name": "\u817e\u8baf\u89c6\u9891 ~~ Tencent Video ~~ WeTV",
-      "components": [
-        "com.tencent.qqlive/com.tencent.qqlive.activity.WelcomeActivity",
-        "com.tencent.qqlive/com.tencent.qqlive.ona.activity.StartActivity",
-        "com.tencent.qqlive/com.tencent.qqlive.ona.activity.WelcomeActivity"
-      ]
-    },
-    {
       "id": "com.huanchengfly.tieba.post/com.huanchengfly.tieba.post.MainActivityIconInvert",
       "existing_drawable": "tieba_lite",
       "name": "\u8d34\u5427 Lite ~~ Tieba Lite",
@@ -549,15 +539,6 @@
       "components": [
         "com.bluecord/com.discord.app.AppActivity",
         "com.bluecord/com.discord.app.AppActivity$Main"
-      ]
-    },
-    {
-      "id": "ar.burgerking/com.usemenu.MenuAndroidApplication.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King",
-      "components": [
-        "ar.burgerking/com.usemenu.MenuAndroidApplication.SplashActivity",
-        "ar.burgerking/rbi.android.app.Launcher"
       ]
     },
     {
@@ -606,15 +587,6 @@
       ]
     },
     {
-      "id": "ca.bellmedia.cravetv/entpay.awe.mobile.presentation.MainActivity",
-      "existing_drawable": "crave",
-      "name": "Crave",
-      "components": [
-        "ca.bellmedia.cravetv/awl.application.brand.SplashActivity",
-        "ca.bellmedia.cravetv/entpay.awe.mobile.presentation.MainActivity"
-      ]
-    },
-    {
       "id": "com.actionlauncher.pixelshortcuts/pixelshortcuts.loaders.WellbeingDashboardLoader",
       "existing_drawable": "digital_wellbeing",
       "name": "Digital Wellbeing",
@@ -642,24 +614,6 @@
       ]
     },
     {
-      "id": "wangdaye.com.geometricweather/wangdaye.com.geometricweather.Activity.MainActivity",
-      "existing_drawable": "geometric_weather",
-      "name": "Geometric Weather",
-      "components": [
-        "wangdaye.com.geometricweather/wangdaye.com.geometricweather.Activity.MainActivity",
-        "wangdaye.com.geometricweather/wangdaye.com.geometricweather.UserInterface.MainActivity"
-      ]
-    },
-    {
-      "id": "ph.com.globe.globeonesuperapp/ph.com.globe.globeonesuperapp.BaseActivityDefault",
-      "existing_drawable": "globeone",
-      "name": "GlobeOne",
-      "components": [
-        "ph.com.globe.globeonesuperapp/ph.com.globe.globeonesuperapp.BaseActivityDefault",
-        "ph.com.globe.globeonesuperapp/ph.com.globe.globeonesuperapp.environment.EnvironmentSelectorActivity"
-      ]
-    },
-    {
       "id": "com.tippingcanoe.hukd/com.pepper.apps.android.presentation.MainActivityDarkIcon",
       "existing_drawable": "pepper",
       "name": "hotukdeals",
@@ -678,15 +632,6 @@
       ]
     },
     {
-      "id": "at.lieferservice.android/com.takeaway.android.Startup",
-      "existing_drawable": "just_eat",
-      "name": "Lieferando",
-      "components": [
-        "at.lieferservice.android/com.takeaway.android.Startup",
-        "at.lieferservice.android/com.takeaway.android.activity.Splash"
-      ]
-    },
-    {
       "id": "com.android.mms/com.android.mms.tab.MmsMainActivity",
       "existing_drawable": "messages",
       "name": "Messages",
@@ -702,6 +647,60 @@
       "components": [
         "in.co.metro.customerappmetro/in.co.metro.customerappmetro.DefaultIcon",
         "in.co.metro.customerappmetro/in.co.metro.customerappmetro.newlogin.activities.MetroSplashActivity"
+      ]
+    },
+    {
+      "id": "com.microsoft.emmx.canary/com.microsoft.ruby.Main3",
+      "existing_drawable": "microsoft_edge",
+      "name": "Microsoft Edge Canary",
+      "components": [
+        "com.microsoft.emmx.canary/com.microsoft.ruby.Main3",
+        "com.microsoft.emmx.canary/com.microsoft.ruby.Main6"
+      ]
+    },
+    {
+      "id": "com.minimalisttodolist.pleasebethelastrecyclerview/com.minimalisttodolist.pleasebethelastrecyclerview.MainActivity",
+      "existing_drawable": "tasks",
+      "name": "Minimalist",
+      "components": [
+        "com.minimalisttodolist.pleasebethelastrecyclerview/com.minimalisttodolist.pleasebethelastrecyclerview.MainActivity",
+        "com.minimalisttodolist.pleasebethelastrecyclerview/com.minimalisttodolist.pleasebethelastrecyclerview.MainActivityAlias"
+      ]
+    },
+    {
+      "id": "app.morphe.manager/app.morphe.manager.MainActivity_Light_2",
+      "existing_drawable": "morphe",
+      "name": "Morphe",
+      "components": [
+        "app.morphe.manager/app.morphe.manager.MainActivity_Light_2",
+        "app.morphe.manager/app.morphe.manager.MainActivity_Light_3"
+      ]
+    },
+    {
+      "id": "com.github.musicyou/com.github.musicyou.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Music You",
+      "components": [
+        "com.github.musicyou/com.github.musicyou.MainActivity",
+        "com.github.musicyou/it.vfsfitvnm.vimusic.MainActivity"
+      ]
+    },
+    {
+      "id": "nu.gpu.nagram/org.telegram.messenger.DarkGreenIcon",
+      "existing_drawable": "nagram",
+      "name": "Nagram X",
+      "components": [
+        "nu.gpu.nagram/org.telegram.messenger.DarkGreenIcon",
+        "nu.gpu.nagram/org.telegram.messenger.NeonIcon"
+      ]
+    },
+    {
+      "id": "fork.risin42.nagramx/org.telegram.messenger.ColorfulIcon",
+      "existing_drawable": "nagram",
+      "name": "Nagram XF",
+      "components": [
+        "fork.risin42.nagramx/org.telegram.messenger.ColorfulIcon",
+        "fork.risin42.nagramx/org.telegram.messenger.DarkBlueIcon"
       ]
     }
   ]

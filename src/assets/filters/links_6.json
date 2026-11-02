@@ -2,202 +2,12 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 6,
-  "total_batches": 19,
+  "total_batches": 17,
   "links": [
-    {
-      "id": "com.exness.android.go/com.exness.features.entry.impl.presentation.EntryActivity",
-      "existing_drawable": "exness",
-      "name": "Exness Go"
-    },
-    {
-      "id": "com.smartpesa.pog.mp/com.smartpesa.pog.activity.LauncherSplash",
-      "existing_drawable": "mercado_pago",
-      "name": "Extens\u00e3o Point Tap"
-    },
-    {
-      "id": "com.exteraless.app/org.telegram.messenger.TelegramIcon",
-      "existing_drawable": "telegram",
-      "name": "exteraless"
-    },
-    {
-      "id": "com.facebook.lite/com.aincrad.application.MainActivity",
-      "existing_drawable": "facebook",
-      "name": "Facebook Lite"
-    },
-    {
-      "id": "com.fairphone.android.fairbudsapp/com.fairphone.fairsound.ui.activity.MainActivity",
-      "existing_drawable": "generic_voice_recorder_waves",
-      "name": "Fairbuds"
-    },
-    {
-      "id": "com.blogspot.novalabsandroid.fakecallerid/com.blogspot.novalabsandroid.fakecallerid.ConfigCallActivity",
-      "existing_drawable": "generic_dialer",
-      "name": "Fake Call"
-    },
-    {
-      "id": "com.dox.fpoweroff/com.dox.fpoweroff.activity.MainActivity",
-      "existing_drawable": "generic_power",
-      "name": "Fake Power Off"
-    },
-    {
-      "id": "org.familysearch.mobile/org.familysearch.mobile.ui.activity.LauncherActivity",
-      "existing_drawable": "family_tree",
-      "name": "FamilySearch Tree"
-    },
-    {
-      "id": "com.miraclegames.farlight84/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "farlight_84",
-      "name": "Farlight 84"
-    },
-    {
-      "id": "com.file.manager.file.organizer.file.explorer.manage.files/com.file.manager.file.organizer.file.explorer.manage.files.ui.activity.splash.SplashActivity",
-      "existing_drawable": "generic_files",
-      "name": "File Manager"
-    },
-    {
-      "id": "net.east_hino.standard_explorer/net.east_hino.standard_explorer.ui.ActivityMain",
-      "existing_drawable": "generic_files",
-      "name": "File Manager Shortcut"
-    },
-    {
-      "id": "de.dwins.financeguru/de.dwins.financeguru.MainActivity",
-      "existing_drawable": "finanzguru",
-      "name": "Finanzguru"
-    },
-    {
-      "id": "nl.moeilijkedingen.jellyfinaudioplayer/nl.moeilijkedingen.jellyfinaudioplayer.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Fintunes"
-    },
-    {
-      "id": "com.samruston.twitter/com.samruston.twitter.Launcher8",
-      "existing_drawable": "flamingo",
-      "name": "Flamingo"
-    },
-    {
-      "id": "appinventor.ai_logiscool869.FlappyCopter/appinventor.ai_logiscool869.FlappyCopter.Screen1",
-      "existing_drawable": "flappy_bird",
-      "name": "Flappy Copter"
-    },
-    {
-      "id": "com.flashfoodapp.android/com.flashfoodapp.android.MainActivity",
-      "existing_drawable": "flashfood",
-      "name": "Flashfood"
-    },
-    {
-      "id": "flashgram.org.web/org.telegram.messenger.DefaultIcon",
-      "existing_drawable": "telegram",
-      "name": "Flashgram"
-    },
-    {
-      "id": "eu.livesport.FlashScore_com/eu.livesport.LiveSport_cz.SplashScreenActivity",
-      "existing_drawable": "flashscore",
-      "name": "Flashscore"
-    },
-    {
-      "id": "com.flickr.android/com.flickr.android.MainActivity",
-      "existing_drawable": "flickr",
-      "name": "Flickr"
-    },
-    {
-      "id": "com.flipkart.android/com.flipkart.android.SASALELEIconAlias",
-      "existing_drawable": "flipkart",
-      "name": "Flipkart"
-    },
-    {
-      "id": "de.flixbus.app/de.meinfernbus.Main",
-      "existing_drawable": "flixbus",
-      "name": "FlixBus"
-    },
-    {
-      "id": "de.bendix.flux/de.bendix.flux.MainActivity",
-      "existing_drawable": "flux",
-      "name": "Flux"
-    },
-    {
-      "id": "com.eurekateam.fmradio/com.eurekateam.fmradio.MainActivity",
-      "existing_drawable": "generic_fm_radio",
-      "name": "FM Radio"
-    },
-    {
-      "id": "com.liveradio.fmradio.radiotuner.radiostation.amradio/com.liveradio.fmradio.radiotuner.radiostation.amradio.ui.activities.SplashActivity",
-      "existing_drawable": "generic_fm_radio",
-      "name": "FM Radio"
-    },
-    {
-      "id": "me.jajae.fmradio/me.jajae.fmradio.MainActivity",
-      "existing_drawable": "generic_fm_radio",
-      "name": "FM Radio"
-    },
-    {
-      "id": "com.ngc.fora/com.ngc.fora.ForaDictionary",
-      "existing_drawable": "generic_search",
-      "name": "Fora Dictionary"
-    },
-    {
-      "id": "com.freemusic.offline.bus/com.project.gugu.music.ui.activity.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Free Music"
-    },
-    {
-      "id": "com.yy.musicfm.global/com.project.gugu.music.ui.activity.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Free Music"
-    },
-    {
-      "id": "com.miui.gallery/com.miui.gallery.MainActivity",
-      "existing_drawable": "generic_gallery",
-      "name": "Gallery"
-    },
-    {
-      "id": "com.tobykurien.google_news/com.tobykurien.google_news.GoogleNewsActivity",
-      "existing_drawable": "generic_earth",
-      "name": "GApps Browser"
-    },
-    {
-      "id": "com.gbinsta.android/com.gbinsta.android.activity.MainTabActivity0",
-      "existing_drawable": "instagram",
-      "name": "GBInstagram"
-    },
-    {
-      "id": "com.google.android.inputmethod.latin/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "gboard",
-      "name": "Gboard"
-    },
-    {
-      "id": "dev.jason.com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.launcher.LauncherActivity",
-      "existing_drawable": "gboard",
-      "name": "Gboard"
-    },
-    {
-      "id": "com.gbwhatsapp/com.gbwhatsapp.Icon0",
-      "existing_drawable": "whatsapp",
-      "name": "GBWhatsApp"
-    },
-    {
-      "id": "com.appgcam.gcamera/com.appgcam.gcamera.ui.SplashActivity",
-      "existing_drawable": "generic_camera",
-      "name": "GCam"
-    },
-    {
-      "id": "com.globe.gcash.android/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "gcash",
-      "name": "GCash"
-    },
-    {
-      "id": "free.programming.programming/free.programming.programming.SaleIcon",
-      "existing_drawable": "geeksforgeeks",
-      "name": "GeeksforGeeks"
-    },
     {
       "id": "com.thegrizzlylabs.geniusscan/com.thegrizzlylabs.geniusscan.ui.welcome.WelcomeActivity",
       "existing_drawable": "genius_scan",
       "name": "Genius Scan"
-    },
-    {
-      "id": "com.robtopx.geometryjump/com.mod.activity.SplashActivity",
-      "existing_drawable": "geometry_dash",
-      "name": "Geometry Dash"
     },
     {
       "id": "com.ghosten.player/com.ghosten.player.MainActivity",
@@ -208,11 +18,6 @@
       "id": "io.mo.glassmic/io.mo.glassmic.MainActivity",
       "existing_drawable": "generic_microphone",
       "name": "GlassMic"
-    },
-    {
-      "id": "nl.viter.glider/nl.viter.glider.MainActivity",
-      "existing_drawable": "glider",
-      "name": "Glider"
     },
     {
       "id": "com.android.quicksearchbox/com.android.quicksearchbox.SearchActivity",
@@ -253,6 +58,201 @@
       "id": "com.google.android.apps.chromecast.app/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "google_home",
       "name": "Google Home"
+    },
+    {
+      "id": "com.google.android.apps.subscriptions.red/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "google_one",
+      "name": "Google One"
+    },
+    {
+      "id": "com.google.android.apps.books/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "google_play_books",
+      "name": "Google Play Books"
+    },
+    {
+      "id": "com.google.android.videos/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "google_tv",
+      "name": "Google TV"
+    },
+    {
+      "id": "it.infocert.mobile.dike/it.infocert.mobile.dike.DikeActivity",
+      "existing_drawable": "tasky",
+      "name": "GoSign"
+    },
+    {
+      "id": "com.grabtaxi.driver2/com.grab.driver.splashscreen.screen.SplashScreen",
+      "existing_drawable": "grab",
+      "name": "Grab Driver"
+    },
+    {
+      "id": "app.pg.grandpiano/app.pg.grandpiano.ActivityMain",
+      "existing_drawable": "generic_piano",
+      "name": "Grand Piano"
+    },
+    {
+      "id": "com.area120.grasshopper/com.area120.grasshopper.MainActivity",
+      "existing_drawable": "grasshopper",
+      "name": "Grasshopper"
+    },
+    {
+      "id": "com.futo.platformplayer.playstore/com.futo.platformplayer.activities.MainActivity",
+      "existing_drawable": "grayjay",
+      "name": "Grayjay"
+    },
+    {
+      "id": "com.grindrapp.android/com.grindrapp.android.HomeActivityPhoneBlack",
+      "existing_drawable": "generic_dialer",
+      "name": "Grindr Phone"
+    },
+    {
+      "id": "com.ovelin.guitartuna/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "guitartuna",
+      "name": "GuitarTuna"
+    },
+    {
+      "id": "com.getsomeheadspace.android/com.getsomeheadspace.android.MainActivity",
+      "existing_drawable": "headspace",
+      "name": "Headspace"
+    },
+    {
+      "id": "com.heytap.music/com.allsaints.music.SplashDefaultActivity",
+      "existing_drawable": "heytap_music",
+      "name": "HeyTap Music"
+    },
+    {
+      "id": "com.heytap.themestore/com.nearme.themespace.activities.ThemeActivity",
+      "existing_drawable": "theme_store",
+      "name": "HeyTap Theme"
+    },
+    {
+      "id": "com.nearme.themespace/com.nearme.themespace.activities.ThemeActivity",
+      "existing_drawable": "theme_store",
+      "name": "HeyTap Theme Store"
+    },
+    {
+      "id": "com.nearme.themestore/com.nearme.themespace.activities.ThemeActivity",
+      "existing_drawable": "theme_store",
+      "name": "HeyTap Theme Store"
+    },
+    {
+      "id": "tad.hideapps.hiddenspace.apphider.webapps/tad.hideapps.hiddenspace.apphider.webapps.Calculator",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "Hide Apps Calculator Icon"
+    },
+    {
+      "id": "com.blueskyapps.englishbible/com.blueskyapps.mainbible.SplashActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Holy Bible"
+    },
+    {
+      "id": "com.epsoftgroup.lasantabiblia/com.epsoftgroup.lasantabiblia.activities.SplashSetupActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Holy Bible"
+    },
+    {
+      "id": "com.huawei.music/com.android.mediacenter.PageActivity",
+      "existing_drawable": "huawei_music",
+      "name": "Huawei Music"
+    },
+    {
+      "id": "com.huawei.music.local/com.huawei.music.local.main.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Huawei Music Player"
+    },
+    {
+      "id": "com.huawei.android.hwouc/com.huawei.android.hwouc.ui.activities.MainEntranceActivity",
+      "existing_drawable": "huawei_software_update",
+      "name": "Huawei Software Update"
+    },
+    {
+      "id": "imagetopdf.pdfmaker.pdfconverter.pdfreader/imagetopdf.pdfmaker.pdfconverter.pdfreader.ui.I2SplashActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "Image to PDF"
+    },
+    {
+      "id": "com.readpdf.pdfreader.pdfviewer/com.readpdf.pdfreader.pdfviewer.view.activity.splash.FoSplashActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "Image to PDF Converter"
+    },
+    {
+      "id": "ru.tech.imageresizershrinker/ru.tech.imageresizershrinker.app.presentation.AppActivity",
+      "existing_drawable": "image_toolbox",
+      "name": "Image Toolbox"
+    },
+    {
+      "id": "io.deveem.byemydpi2/app.vpn.ui.MainActivity",
+      "existing_drawable": "secure_vpn",
+      "name": "Imba VPN"
+    },
+    {
+      "id": "com.grykuby.minesweeper/com.google.firebase.MessagingUnityPlayerActivity",
+      "existing_drawable": "generic_minesweeper",
+      "name": "Infinite Minesweeper"
+    },
+    {
+      "id": "au.com.ing.banking/com.ing.banking.framework.features.welcome.WelcomeActivity",
+      "existing_drawable": "ing",
+      "name": "ING"
+    },
+    {
+      "id": "com.fabtune.innertune.music/com.metrolist.music.MainActivity",
+      "existing_drawable": "innertune",
+      "name": "InnerTune"
+    },
+    {
+      "id": "com.zionhuang.music.debug/com.zionhuang.music.MainActivity",
+      "existing_drawable": "innertune",
+      "name": "InnerTune Debug"
+    },
+    {
+      "id": "com.instafel.android/com.instagram.android.activity.MainTabActivity",
+      "existing_drawable": "instagram",
+      "name": "Instafel"
+    },
+    {
+      "id": "com.instaflow.android/com.instagram.android.activity.MainTabActivity",
+      "existing_drawable": "instagram",
+      "name": "InstaFlow"
+    },
+    {
+      "id": "com.android.packageinstaller/com.rosan.installer.ui.activity.LauncherAlias",
+      "existing_drawable": "installerx",
+      "name": "InstallerX Revived"
+    },
+    {
+      "id": "com.oasisfeng.island/com.oasisfeng.island.settings.SettingsActivity",
+      "existing_drawable": "island",
+      "name": "Insular"
+    },
+    {
+      "id": "com.heytap.browser/com.heytap.browser.action.games_folder.BrowserGamesFolderActivity",
+      "existing_drawable": "generic_browser",
+      "name": "Internet Browser"
+    },
+    {
+      "id": "iTunes.Sync.Android/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "iSyncr"
+    },
+    {
+      "id": "com.konylabs.ItauMobileBank/cl.itau.splash.SplashScreenActivity",
+      "existing_drawable": "itau",
+      "name": "Ita\u00fa"
+    },
+    {
+      "id": "be.bmid.itsme/be.bmid.bootstrap.impl.ui.BootstrapActivity",
+      "existing_drawable": "itsme",
+      "name": "itsme"
+    },
+    {
+      "id": "com.inphase.itv/com.inphase.itv.StartActivity",
+      "existing_drawable": "ladb",
+      "name": "i\u89c6 ~~ iShi"
+    },
+    {
+      "id": "com.olx.ssa.ug/ng.jiji.app.ui.splash.SplashActivity",
+      "existing_drawable": "olx",
+      "name": "Jiji"
     }
   ]
 }

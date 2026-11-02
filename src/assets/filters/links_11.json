@@ -2,257 +2,257 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 11,
-  "total_batches": 19,
+  "total_batches": 17,
   "links": [
     {
-      "id": "com.ttnet.muzik/com.ttnet.muzik.DefaultAppIconAlias",
-      "existing_drawable": "music_player",
-      "name": "Muud"
+      "id": "com.orange.rn.dop/com.orange.rn.dop.MainActivity",
+      "existing_drawable": "orange_flex",
+      "name": "Orange Flex"
     },
     {
-      "id": "hu.mvmnext.onlineugyintezes/com.nkmomni.app.screen.splash.SplashActivity",
+      "id": "app.organicmaps.web/app.organicmaps.DownloadResourcesActivity",
+      "existing_drawable": "organic_maps",
+      "name": "Organic Maps"
+    },
+    {
+      "id": "com.bskit.osint/com.bskit.osint.MainActivity",
+      "existing_drawable": "generic_search",
+      "name": "OSINT"
+    },
+    {
+      "id": "org.otrsc.android/org.otrsc.android.MainActivity",
+      "existing_drawable": "zcalc",
+      "name": "OTR Speed Calculator"
+    },
+    {
+      "id": "com.bintianqi.owndroid/com.bintianqi.owndroid.AliasActivity",
+      "existing_drawable": "netguard",
+      "name": "OwnDroid"
+    },
+    {
+      "id": "br.com.uol.ps.myaccount/br.com.uol.ps.myaccount.main.MainActivity",
+      "existing_drawable": "pagbank",
+      "name": "PagBank"
+    },
+    {
+      "id": "com.bonc.paintmyroom/com.bonc.paint_my_room.MainActivity",
       "existing_drawable": "substratum_lite",
-      "name": "MVM Next"
+      "name": "Paint my Room"
     },
     {
-      "id": "com.mx.plus/com.mxtech.videoplayer.pro.ActivityMediaList",
-      "existing_drawable": "just_player",
-      "name": "MX Player"
+      "id": "ca.chancehorizon.paseo/ca.chancehorizon.paseo.SplashActivity",
+      "existing_drawable": "paseo",
+      "name": "Paseo"
     },
     {
-      "id": "com.mxtech.videoplayer.ae/com.mxtech.videoplayer.ae.ActivityWelcomeMX",
-      "existing_drawable": "just_player",
-      "name": "MX Player"
+      "id": "app.passwordstore/app.passwordstore.ui.main.LaunchActivity",
+      "existing_drawable": "password_store",
+      "name": "Password Store"
     },
     {
-      "id": "com.samsung.android.airtel.stubapp/com.samsung.android.airtel.stubapp.ui.StubActivity",
-      "existing_drawable": "my_airtel",
-      "name": "My Airtel"
+      "id": "com.emanuelef.remote_capture/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "pcapdroid",
+      "name": "PCAPdroid"
     },
     {
-      "id": "fcabank.myfcabank/fcabank.myfcabank.MainActivity",
-      "existing_drawable": "credit_agricole",
-      "name": "My CA Auto Bank"
+      "id": "com.pcapdroid.mitm/com.pcapdroid.mitm.MainActivity",
+      "existing_drawable": "pcapdroid",
+      "name": "PCAPdroid"
     },
     {
-      "id": "com.myfiles.filefolder.filemanager/com.myfiles.filefolder.filemanager.Ui.activity.SplashActivityNew",
-      "existing_drawable": "generic_files",
-      "name": "My Files"
+      "id": "com.xsdev.pdfreader.pdfeditor.pdf.document/com.rpdev.docreadermainV2.SplashActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "PDF Editor"
     },
     {
-      "id": "com.bti.myPiano/com.bti.myPiano.myPiano",
-      "existing_drawable": "generic_piano",
-      "name": "My Piano"
+      "id": "SVS.pdfinspector/SVS.pdfinspector.MainActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "PDF Inspector"
     },
     {
-      "id": "com.vodafone.selfservis/com.vodafone.selfservis.FiveGAlias",
-      "existing_drawable": "my_vodafone",
-      "name": "My Vodafone 5G"
+      "id": "com.document.pdf.scanner.free.all/com.document.pdf.scanner.ui.ReaderSplashActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "PDF Reader"
     },
     {
-      "id": "my.com.sevenelevenmy.app/my.com.sevenelevenmy.app.MainActivity",
-      "existing_drawable": "_7_eleven",
-      "name": "My7E"
+      "id": "com.gamma.pdfreader/com.gammaplay.multidocreader.MainActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "PDF Reader"
     },
     {
-      "id": "com.myinsta.android/com.instagram.android.activity.MainTabActivity",
+      "id": "com.ikame.pdf.pdfreader.pdfviewer.editor/com.ikame.pdf.reader.presentation.main.MainActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "PDF Reader"
+    },
+    {
+      "id": "com.pdfreader.editor.viewer.pdfviewer/com.pdfreader.editor.presentation.splash.SplashActivity",
+      "existing_drawable": "generic_pdf_square",
+      "name": "PDF Reader"
+    },
+    {
+      "id": "com.pdfreaderapp.alldocumentreader.pdfviewer/com.adjut.sdkwallpaperx.SplashActivity",
+      "existing_drawable": "generic_pdf_square",
+      "name": "PDF Reader"
+    },
+    {
+      "id": "com.trustedapp.pdfreaderpdfviewer/com.trustedapp.pdfreader.view.fosplash.FOSplashActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "PDF Reader"
+    },
+    {
+      "id": "pdf.pdfreader.pdfviewer.pdfeditor/com.office.pdfreader.ui.splash.SplashActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "PDF Reader"
+    },
+    {
+      "id": "pdfreader.pdfviewer.officetool.pdfscanner/pdfreader.pdfviewer.officetool.pdfscanner.views.activities.splash.SplashLatestActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "PDF Reader"
+    },
+    {
+      "id": "pl.pekao.pekaosa.peopaykids/com.pekao.peokids.presentation.main.view.MainActivity",
+      "existing_drawable": "peopay",
+      "name": "PeoPay KIDS"
+    },
+    {
+      "id": "august.mendeleev.pro/august.mendeleev.pro.ui.main.MainActivity",
+      "existing_drawable": "periodic_table",
+      "name": "Periodic Table"
+    },
+    {
+      "id": "com.google.android.apps.safetyhub/com.google.android.apps.safetyhub.home.HomePageAppInfoEntry",
+      "existing_drawable": "personal_safety",
+      "name": "Personal Safety"
+    },
+    {
+      "id": "com.itau.pers/br.com.itau.pf.modules.features.appUse.appStart.splash.view.SplashActivity",
+      "existing_drawable": "itau",
+      "name": "Personnalit\u00e9"
+    },
+    {
+      "id": "com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity",
+      "existing_drawable": "google_phone",
+      "name": "Phone"
+    },
+    {
+      "id": "com.instabridge.android/com.instabridge.android.callerid.DialerActivityCompose",
+      "existing_drawable": "generic_dialer",
+      "name": "Phone"
+    },
+    {
+      "id": "com.map.photostamp/com.pravin.photostamp.activities.SplashActivity",
+      "existing_drawable": "generic_camera",
+      "name": "PhotoStamp Camera"
+    },
+    {
+      "id": "brobata.physiboard/brobata.physiboard.MainActivity",
+      "existing_drawable": "termux",
+      "name": "PhysiBoard"
+    },
+    {
+      "id": "com.markduenas.android.apigen/com.markduenas.android.apigen.MainActivity",
+      "existing_drawable": "generic_pi",
+      "name": "Pi Generator"
+    },
+    {
+      "id": "com.picsart.studio.light/com.socialin.android.photo.picsinphoto.MainPagerActivity",
+      "existing_drawable": "picsart",
+      "name": "Picsart"
+    },
+    {
+      "id": "com.picsart.studio/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "picsart",
+      "name": "Picsart"
+    },
+    {
+      "id": "com.instagram.android.piko/com.instagram.android.activity.MainTabActivity",
       "existing_drawable": "instagram",
-      "name": "MyInsta"
+      "name": "Piko Instagram"
     },
     {
-      "id": "com.jio.myjio/com.jio.myjio.dashboard.activities.SplashActivityAlias2",
-      "existing_drawable": "myjio",
-      "name": "MyJio"
+      "id": "dev.sasikanth.pinnit2/dev.sasikanth.pinnit.MainActivity",
+      "existing_drawable": "pinnit",
+      "name": "Pinnit"
     },
     {
-      "id": "com.solaredge.homeowner/com.solaredge.homeowner.MainActivity",
-      "existing_drawable": "mysolaredge",
-      "name": "mySolarEdge"
+      "id": "com.pashapuma.pix.material.you.iconpack/com.jojoy.delegate.JojoyInstallerActivity",
+      "existing_drawable": "pix_material_you_icon_pack",
+      "name": "Pix Material You Icons"
     },
     {
-      "id": "com.telkomsel.telkomselcm/com.telkomsel.telkomselcm.launcher_fd7e80b7d960d23fa7a39d68edda4df39982a283dcce91869492fcc244a1df93",
-      "existing_drawable": "mytelkomsel",
-      "name": "MyTelkomsel"
+      "id": "com.lostf1sh.pixelplayeross/com.lostf1sh.pixelplayeross.MainActivity",
+      "existing_drawable": "pixelplay",
+      "name": "PixelPlayerOSS"
     },
     {
-      "id": "com.tsel.telkomselku/com.tsel.telkomselku.presentation.dynamiciframe.DynamicIframeActivity",
-      "existing_drawable": "mytelkomsel",
-      "name": "MyTelkomsel"
+      "id": "com.expremio.pizzahut/com.expremio.mobileapp.MainActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut"
     },
     {
-      "id": "com.appgeneration.itunerfree/com.appgeneration.mytunerlib.ui.activities.SplashActivity",
-      "existing_drawable": "generic_fm_radio",
-      "name": "myTuner"
+      "id": "com.mx.pizzahutuk.orderingApp/com.mx.pizzahutuk.orderingApp.MainActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut"
     },
     {
-      "id": "net.metapps.naturesounds/net.metapps.relaxsounds.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Nature Sounds"
+      "id": "com.ph.egypt/com.americana.me.ui.onboarding.splash.SplashActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut"
     },
     {
-      "id": "naukriApp.appModules.login/naukriApp.appModules.login.TopTierSplashActivityAlias",
-      "existing_drawable": "naukri",
-      "name": "Naukri"
+      "id": "com.pizzahut.app.vn/com.pizzahut.app.vn.MainActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut"
     },
     {
-      "id": "com.netflix.mediaclieog/com.razpay.apk.ServerActivity",
-      "existing_drawable": "netflix",
-      "name": "Netflix"
+      "id": "com.pizzahut.app/com.pizzahut.app.MainActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut"
     },
     {
-      "id": "pl.lebihan.network/pl.lebihan.network.RadioNetwork",
-      "existing_drawable": "generic_dialer",
-      "name": "Network"
+      "id": "com.pizzahut.chile/com.pizzahut.chile.MainActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut"
     },
     {
-      "id": "org.schabi.newpipe.debug.release0252/org.schabi.newpipe.MainActivity",
-      "existing_drawable": "newpipe",
-      "name": "NewPipe"
+      "id": "com.pizzahut.ecuador/com.pizzahut.ecuador.MainActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut"
     },
     {
-      "id": "org.schabi.newpipe.morphe/org.schabi.newpipe.MainActivity",
-      "existing_drawable": "newpipe",
-      "name": "NewPipe"
+      "id": "com.pizzahut.ksa/com.americana.me.ui.onboarding.splash.SplashActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut"
     },
     {
-      "id": "com.javulticat.newpipe/org.schabi.newpipe.MainActivity",
-      "existing_drawable": "newpipe",
-      "name": "NewPipe SponsorBlock"
+      "id": "com.pizzahut.malaysia/com.pizzahut.MainActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut"
     },
     {
-      "id": "livio.rssreader/livio.rssreader.RSSReader",
-      "existing_drawable": "twine",
-      "name": "News Reader"
+      "id": "com.pizzahut.ph/com.pizzahut.extra.view.splash.DefaultSplashActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut"
     },
     {
-      "id": "com.deutschebahn.app.android/db.vendo.android.vendigator.view.main.MainActivity",
-      "existing_drawable": "db_navigator",
-      "name": "Next DB Navigator"
+      "id": "com.pizzahut.za/com.pizzahut.za.MainActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut"
     },
     {
-      "id": "com.nextcloud.android.beta/com.nmc.android.ui.LauncherActivity",
-      "existing_drawable": "nextcloud",
-      "name": "Nextcloud Dev"
+      "id": "com.pizzahut/host.exp.exponent.MainActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut"
     },
     {
-      "id": "com.nextcloud.tasks/com.nextcloud.tasks.MainActivity",
-      "existing_drawable": "tasks",
-      "name": "Nextcloud Tasks"
+      "id": "com.pizzahutau/com.pizzahutau.MainActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut"
     },
     {
-      "id": "com.example.nextdns/com.example.nextdns.MainActivity",
-      "existing_drawable": "nextdns",
-      "name": "NextDNS"
-    },
-    {
-      "id": "com.nexuskeet/com.nexuskeet.MainActivity",
-      "existing_drawable": "generic_player",
-      "name": "NexusKeet"
-    },
-    {
-      "id": "br.com.gruposbf.nike/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "nike",
-      "name": "Nike"
-    },
-    {
-      "id": "com.holybible.nivbible/org.mainsoft.newbible.activity.LaunchActivity",
-      "existing_drawable": "generic_bible",
-      "name": "NIV Bible"
-    },
-    {
-      "id": "new.king.james.version.bible.nkjv/org.mainsoft.newbible.activity.LaunchActivity",
-      "existing_drawable": "generic_bible",
-      "name": "NKJV Bible"
-    },
-    {
-      "id": "xyz.nextalone.nnngram/org.telegram.messenger.OFFICIAL",
-      "existing_drawable": "nullgram",
-      "name": "NMM File Manager"
-    },
-    {
-      "id": "com.droidheat.musicplayer/com.droidheat.musicplayer.ui.activities.SplashActivity",
-      "existing_drawable": "music_player",
-      "name": "Noad Music Player"
-    },
-    {
-      "id": "com.nordvpn.android.teams/com.nordvpn.android.nordlayer.MainActivity",
-      "existing_drawable": "nord_android",
-      "name": "NordLayer"
-    },
-    {
-      "id": "com.nordlocker.android.encrypt.cloud/com.nordlocker.android.encrypt.cloud.activity.MainActivity",
-      "existing_drawable": "nord_android",
-      "name": "NordLocker"
-    },
-    {
-      "id": "com.nordpass.android.app.password.manager/com.nordpass.android.ui.splash.SplashActivity",
-      "existing_drawable": "nord_android",
-      "name": "NordPass"
-    },
-    {
-      "id": "com.atomczak.notepat/com.atomczak.notepat.MainActivity",
-      "existing_drawable": "samsung_notes",
-      "name": "Notepad"
-    },
-    {
-      "id": "com.applus.notepad.note/com.applus.notepad.Splash",
-      "existing_drawable": "samsung_notes",
-      "name": "Notes"
-    },
-    {
-      "id": "com.rkkvishva.nothing_dialer/com.rkkvishva.nothing_dialer.LauncherAliasRed",
-      "existing_drawable": "generic_dialer",
-      "name": "Nothing Dialer"
-    },
-    {
-      "id": "cn.nubia.myfile/zte.com.cn.filer.FileMgrActivity",
-      "existing_drawable": "generic_files",
-      "name": "Nubia File Manager"
-    },
-    {
-      "id": "tz.co.wadau.nyimbozakristo/tz.co.wadau.nyimbozakristo.SplashScreenActivity",
-      "existing_drawable": "apple_music",
-      "name": "Nyimbo za Kristo"
-    },
-    {
-      "id": "com.fsn.nds/com.fsn.nds.festiveIcon",
-      "existing_drawable": "nykaa_fashion",
-      "name": "Nykaa Fashion"
-    },
-    {
-      "id": "com.coloros.relax/com.coloros.relax.function.MainActivity",
-      "existing_drawable": "o_relax",
-      "name": "O Relax"
-    },
-    {
-      "id": "com.oneplus.relax/com.coloros.relax.ui.MainActivity",
-      "existing_drawable": "o_relax",
-      "name": "O Relax"
-    },
-    {
-      "id": "ua.slandq/pl.tablica2.app.startup.activity.StartupActivity",
-      "existing_drawable": "olx",
-      "name": "OLX"
-    },
-    {
-      "id": "one.next.player/one.next.player.MainActivity",
-      "existing_drawable": "generic_player",
-      "name": "One Player"
-    },
-    {
-      "id": "one.only.player/one.only.player.MainActivity",
-      "existing_drawable": "just_player",
-      "name": "Only Player"
-    },
-    {
-      "id": "com.yuriy.openradio/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
-      "existing_drawable": "open_radio",
-      "name": "Open Radio"
-    },
-    {
-      "id": "us.openbank.digital/com.gruposantander.modelbank.android.feature.security.subfeatures.prelogin.presentation.PreLoginActivity",
-      "existing_drawable": "openbank",
-      "name": "Openbank"
+      "id": "com.pizzahutuk.orderingApp/com.pizzahutuk.orderingApp.MainActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut"
     }
   ]
 }

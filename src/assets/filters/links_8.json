@@ -2,223 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 8,
-  "total_batches": 19,
+  "total_batches": 17,
   "links": [
-    {
-      "id": "at.gv.bmi.KATWARN/at.gv.bmi.KATWARN.MainActivity",
-      "existing_drawable": "katwarn",
-      "name": "KATWARN"
-    },
-    {
-      "id": "com.ivanovsky.passnotes/com.ivanovsky.passnotes.presentation.StartActivity",
-      "existing_drawable": "one_tap_lock_screen",
-      "name": "KeePassVault"
-    },
-    {
-      "id": "com.kowx712.supermanager/me.weishu.kernelsu.MainActivityOfficial",
-      "existing_drawable": "kernelsu",
-      "name": "KernelSU"
-    },
-    {
-      "id": "com.cts.kfcthailand/com.cognizantorderserv.kfcindiadroid.MainActivity",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
-      "id": "com.grupoatwork.uq.kfc.pt.release/io.flutter.embedding.android.FlutterActivity",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
-      "id": "com.kfc.malaysia/com.kfc.malaysia.activity.MainActivity",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
-      "id": "com.kfc.mobile/com.kfc.mobile.MainActivity",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
-      "id": "com.kfc.tt/com.kfc.tt.SplashActivity",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
-      "id": "com.kfc.us.mobile/com.kfc.us.mobile.MainActivityDefault",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
-      "id": "com.kfc_rs/com.kfc_polska.ui.main.MainActivity",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
-      "id": "com.kfcaus.ordering/com.kfcaus.ordering.ui.KfcLaunchActivity",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
-      "id": "com.kfcecuador.kfc/com.kfcecuador.kfc.MainActivity",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
-      "id": "com.kfcnz.orderserv/com.kfcnz.orderserv.MainActivity",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
-      "id": "com.kineticcafe.kfccolonelsclub/com.cognizantorderserv.kfcindiadroid.MainActivity",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
-      "id": "com.yum.kfc.ro/com.yum.kfc.ro.MainActivity",
-      "existing_drawable": "kfc",
-      "name": "KFC"
-    },
-    {
-      "id": "com.kick.streaming/com.kick.streaming.MainActivity",
-      "existing_drawable": "kick",
-      "name": "Kick"
-    },
-    {
-      "id": "com.easybrain.killer.sudoku.free/com.easybrain.killer.sudoku.free.SplashActivity",
-      "existing_drawable": "generic_sudoku",
-      "name": "Killer Sudoku"
-    },
-    {
-      "id": "bible.kingjamesbiblelite/com.bible.kingjamesbiblelite.ac.base.SplashScreen",
-      "existing_drawable": "generic_bible",
-      "name": "King James Bible"
-    },
-    {
-      "id": "com.xxi.film.kitanonton/com.xxi.film.kitanonton.MainActivity",
-      "existing_drawable": "just_player",
-      "name": "KITA NONTON"
-    },
-    {
-      "id": "wiktoria.goroch.bible_kjva.AOUSFCKLLRSGYXYC/king.james.bible.android.activity.LaunchActivity",
-      "existing_drawable": "generic_bible",
-      "name": "KJVA Bible"
-    },
-    {
-      "id": "com.ebay.kleinanzeigen/com.ebay.kleinanzeigen.ui.main.MainActivity",
-      "existing_drawable": "kleinanzeigen",
-      "name": "Kleinanzeigen"
-    },
-    {
-      "id": "com.kotak811mobilebankingapp.instantsavingsupiscanandpayrecharge/com.kotak811mobilebankingapp.instantsavingsupiscanandpayrecharge.MainActivityKotakOld",
-      "existing_drawable": "kotak811",
-      "name": "Kotak811"
-    },
-    {
-      "id": "la.bible.francaise.gratuit/king.james.bible.android.activity.LaunchActivity",
-      "existing_drawable": "generic_bible",
-      "name": "La Bible"
-    },
-    {
-      "id": "wiktoria.goroch.biblie_darby_french.AOURPEFFEFFAWZYR/king.james.bible.android.activity.LaunchActivity",
-      "existing_drawable": "generic_bible",
-      "name": "La Bible"
-    },
-    {
-      "id": "com.creciendodev.com.saintebible_bds/com.creciendodev.com.saintebible_bds.SplashScreen",
-      "existing_drawable": "generic_bible",
-      "name": "La Bible Du Semeur"
-    },
-    {
-      "id": "biblia.habla.hoy.AOVGMDRFUVODNBOFPU/king.james.bible.android.activity.LaunchActivity",
-      "existing_drawable": "generic_bible",
-      "name": "La Biblia"
-    },
-    {
-      "id": "la.biblia.catolica.latinoamericana/king.james.bible.android.activity.LaunchActivity",
-      "existing_drawable": "generic_bible",
-      "name": "La Biblia"
-    },
-    {
-      "id": "com.draco.ladb.free/com.draco.ladb.views.MainActivity",
-      "existing_drawable": "ladb",
-      "name": "LADB"
-    },
-    {
-      "id": "org.larpgram.cc/org.telegram.messenger.DefaultIcon",
-      "existing_drawable": "telegram",
-      "name": "larpgram"
-    },
-    {
-      "id": "com.lastpass.lpandroid/com.lastpass.lpandroid.activity.MainActivity",
-      "existing_drawable": "lastpass",
-      "name": "LastPass"
-    },
-    {
-      "id": "com.lastpass.authenticator/com.lastpass.authenticator.ui.MainActivity",
-      "existing_drawable": "lastpass",
-      "name": "LastPass Authenticator"
-    },
-    {
-      "id": "com.bearinmind.launcher314/com.bearinmind.launcher314.MainActivity",
-      "existing_drawable": "generic_power",
-      "name": "Launcher314"
-    },
-    {
-      "id": "com.zte.mifavor.launcher/app.lawnchair.LawnchairLauncher",
-      "existing_drawable": "lawnchair",
-      "name": "Lawnchair"
-    },
-    {
-      "id": "com.flass.layoutinspect/com.flass.layoutinspect.activity.MainActivityAlias",
-      "existing_drawable": "generic_shell",
-      "name": "Layout Inspect"
-    },
-    {
-      "id": "com.citrus.citruspay/com.citrus.citruspay.Onboarding.view.activities.SplashActivity",
-      "existing_drawable": "lazypay",
-      "name": "LazyPay"
-    },
-    {
-      "id": "de.melvil.noten/de.melvil.noten.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Learn Music Notes"
-    },
-    {
-      "id": "com.learn.piano.music.instrument/com.example.pianoapplication.MainActivity",
-      "existing_drawable": "generic_piano",
-      "name": "Learn Piano"
-    },
-    {
-      "id": "com.lenovo.FileBrowser2/com.lenovo.FileBrowser.activities.FileBrowserMain",
-      "existing_drawable": "generic_files",
-      "name": "Lenovo File Manager"
-    },
-    {
-      "id": "com.tblenovo.lenovotips/com.tblenovo.lenovotips.ui.activity.WelcomeActivity",
-      "existing_drawable": "pixel_tips",
-      "name": "Lenovo Tips"
-    },
-    {
-      "id": "com.zui.notes/com.zui.notes.home.MainActivity",
-      "existing_drawable": "generic_notes",
-      "name": "Lenovo ZUI Notepad"
-    },
-    {
-      "id": "com.letterboxd.letterboxd/com.letterboxd.letterboxd.MainActivity_icon_blackswan",
-      "existing_drawable": "letterboxd",
-      "name": "Letterboxd"
-    },
-    {
-      "id": "com.lge.music/com.lge.music.MusicBrowserActivity",
-      "existing_drawable": "apple_music",
-      "name": "LG Music"
-    },
-    {
-      "id": "com.lge.vvm/com.lge.vvm.launcher.VVMLauncherActivity",
-      "existing_drawable": "generic_voicemail",
-      "name": "LG Voicemail"
-    },
     {
       "id": "com.adobe.lrmobile/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "lightroom",
@@ -253,6 +38,221 @@
       "id": "app.lunatask.android/app.lunatask.android.MainActivity",
       "existing_drawable": "tasks",
       "name": "Lunatask"
+    },
+    {
+      "id": "com.j.m3play/com.j.m3play.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "M3Play"
+    },
+    {
+      "id": "com.arlosoft.macrodroid.clone/com.arlosoft.macrodroid.intro.IntroActivity",
+      "existing_drawable": "macrodroid",
+      "name": "MacroDroid"
+    },
+    {
+      "id": "com.arlosoft.macrodroid/com.arlosoft.macrodroid.intro.ToastActivity",
+      "existing_drawable": "macrodroid",
+      "name": "MacroDroid"
+    },
+    {
+      "id": "com.topjohnwu.magisk/x.COMPONENT_PLACEHOLDER_2",
+      "existing_drawable": "magisk",
+      "name": "Magisk"
+    },
+    {
+      "id": "com.nebula.mahjongtile/com.unity3d.player.UnityPlayerActivity.Default",
+      "existing_drawable": "generic_mahjong",
+      "name": "Mahjong Blast"
+    },
+    {
+      "id": "com.zoundindustries.marshallbt/com.zoundindustries.marshallbt.ui.activity.DeviceSettingsActivity",
+      "existing_drawable": "marshall_multi_room",
+      "name": "Marshall Bluetooth"
+    },
+    {
+      "id": "com.devmaru.audio/com.devmaru.audio.activity.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "MaruAudio"
+    },
+    {
+      "id": "com.numero.material_gallery/com.numero.material_gallery.MainActivity",
+      "existing_drawable": "compose_material_catalog",
+      "name": "Material Components Gallery"
+    },
+    {
+      "id": "material.expressive.kwgt/material.expressive.kwgt.MainActivity",
+      "existing_drawable": "m3_expressive_widgets",
+      "name": "Material Expressive Widget"
+    },
+    {
+      "id": "com.nemynew.materialsearch/com.nemynew.materialsearch.MainActivity",
+      "existing_drawable": "generic_search",
+      "name": "Material Search"
+    },
+    {
+      "id": "eu.eleader.mobilebanking.bre/pl.mbank.companymobile.SplashScreen",
+      "existing_drawable": "mbank",
+      "name": "mBank CompanyMobile"
+    },
+    {
+      "id": "com.mcdo.mcdonalds/com.gigigo.mcdonaldsbr.ui.activities.splash.SplashActivityDefault",
+      "existing_drawable": "mcdonalds",
+      "name": "McDonald's"
+    },
+    {
+      "id": "com.mcdonalds.app/com.mcdonalds.app.LauncherDefault",
+      "existing_drawable": "mcdonalds",
+      "name": "McDonald's"
+    },
+    {
+      "id": "com.melmeligy.mediadownloader/com.melmeligy.mediadownloader.MainActivity",
+      "existing_drawable": "generic_download_shelf",
+      "name": "Media Downloader"
+    },
+    {
+      "id": "com.medium.reader/com.medium.android.donkey.launcher.LauncherActivity",
+      "existing_drawable": "medium",
+      "name": "Medium"
+    },
+    {
+      "id": "com.anticor.mellowdark/com.anticor.mellowdark.MainActivity",
+      "existing_drawable": "mellow_dark_icon_pack",
+      "name": "Mellow Dark Icons"
+    },
+    {
+      "id": "com.android.messaging/com.android.mms.ui.ConversationList",
+      "existing_drawable": "messages",
+      "name": "Messages"
+    },
+    {
+      "id": "foundation.e.message/com.moez.QKSMS.feature.main.MainActivity",
+      "existing_drawable": "messages",
+      "name": "Messages"
+    },
+    {
+      "id": "com.facebook.orca.morphe/com.facebook.orca.auth.StartScreenActivity",
+      "existing_drawable": "messenger",
+      "name": "Messenger"
+    },
+    {
+      "id": "com.appelis.mojemetrosk/com.appelis.mojemetrosk.ApplicationLoading",
+      "existing_drawable": "metro",
+      "name": "METRO"
+    },
+    {
+      "id": "de.metro.alex.customer.digitalcard.metro/com.metronom.app.companion.ui.main.MainActivity",
+      "existing_drawable": "metro",
+      "name": "METRO Companion"
+    },
+    {
+      "id": "com.xiaomi.smarthome.tv.global4/com.xiaomi.smarthome.tv.ui.MainActivity",
+      "existing_drawable": "mi_home",
+      "name": "Mi Home"
+    },
+    {
+      "id": "com.xiaomi.smarthomv/com.xiaomi.smarthome.SmartHomeMainActivity",
+      "existing_drawable": "mi_home",
+      "name": "Mi Home"
+    },
+    {
+      "id": "com.speedymovil.wire/com.speedymovil.wire.MainActivity",
+      "existing_drawable": "mi_telcel",
+      "name": "Mi Telcel"
+    },
+    {
+      "id": "com.gold.android.gms/org.microg.gms.ui.SettingsActivity",
+      "existing_drawable": "microg_settings",
+      "name": "MicroG"
+    },
+    {
+      "id": "net.bitplane.android.microphone/net.bitplane.android.microphone.MicrophoneActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "Microphone"
+    },
+    {
+      "id": "com.microsoft.office.officehubrow/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "microsoft_365",
+      "name": "Microsoft 365 Copilot"
+    },
+    {
+      "id": "com.microsoft.bing/com.microsoft.sapphire.app.main.LauncherAlias",
+      "existing_drawable": "bing",
+      "name": "Microsoft Bing"
+    },
+    {
+      "id": "com.microsoft.copilot/com.microsoft.copilotn.MainActivityDefault",
+      "existing_drawable": "microsoft_copilot",
+      "name": "Microsoft Copilot"
+    },
+    {
+      "id": "com.microsoft.emmx.dev/com.google.android.apps.chrome.Main",
+      "existing_drawable": "microsoft_edge",
+      "name": "Microsoft Edge Dev"
+    },
+    {
+      "id": "com.microsoft.appmanager/com.microsoft.appmanager.oem.setting.OemSettingsActivity",
+      "existing_drawable": "microsoft_link",
+      "name": "Microsoft Link to Windows"
+    },
+    {
+      "id": "com.microsoft.stream/com.microsoft.stream.ui.activities.SplashActivity",
+      "existing_drawable": "microsoft_stream",
+      "name": "Microsoft Stream"
+    },
+    {
+      "id": "com.microsoft.teams/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "microsoft_teams",
+      "name": "Microsoft Teams"
+    },
+    {
+      "id": "com.microsoft.xcloud/com.microsoft.xcloud.MainActivity",
+      "existing_drawable": "xbox",
+      "name": "Microsoft XCloud"
+    },
+    {
+      "id": "com.hanver.wdsj/com.mojang.minecraftpe.MainActivity",
+      "existing_drawable": "minecraft",
+      "name": "Minecraft"
+    },
+    {
+      "id": "com.mojang.mine261301/com.mojang.minecraftpe.MainActivity",
+      "existing_drawable": "minecraft",
+      "name": "Minecraft"
+    },
+    {
+      "id": "com.mojang.minecraftpe.hajsp/com.mojang.minecraftpe.MainActivity",
+      "existing_drawable": "minecraft",
+      "name": "Minecraft"
+    },
+    {
+      "id": "com.mojang.minecraftpe.patch/com.mojang.minecraftpe.MainActivity",
+      "existing_drawable": "minecraft",
+      "name": "Minecraft"
+    },
+    {
+      "id": "com.mojang.minecraftpe46ng/com.mojang.minecraftpe.MainActivity",
+      "existing_drawable": "minecraft",
+      "name": "Minecraft"
+    },
+    {
+      "id": "com.mojang.minecraftpe682/com.mojang.minecraftpe.MainActivity",
+      "existing_drawable": "minecraft",
+      "name": "Minecraft"
+    },
+    {
+      "id": "com.mojang.minecraftperclone/com.mojang.minecraftpe.MainActivity",
+      "existing_drawable": "minecraft",
+      "name": "Minecraft"
+    },
+    {
+      "id": "com.mojang.minecraftpx/com.mojang.minecraftpe.MainActivity",
+      "existing_drawable": "minecraft",
+      "name": "Minecraft"
+    },
+    {
+      "id": "com.mojang.minecraftqf/com.mojang.minecraftpe.MainActivity",
+      "existing_drawable": "minecraft",
+      "name": "Minecraft"
     }
   ]
 }

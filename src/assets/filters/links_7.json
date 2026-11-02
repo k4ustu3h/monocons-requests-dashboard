@@ -2,223 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 7,
-  "total_batches": 19,
+  "total_batches": 17,
   "links": [
-    {
-      "id": "com.google.android.apps.subscriptions.red/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "google_one",
-      "name": "Google One"
-    },
-    {
-      "id": "com.google.android.apps.books/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "google_play_books",
-      "name": "Google Play Books"
-    },
-    {
-      "id": "com.google.android.videos/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "google_tv",
-      "name": "Google TV"
-    },
-    {
-      "id": "it.infocert.mobile.dike/it.infocert.mobile.dike.DikeActivity",
-      "existing_drawable": "tasky",
-      "name": "GoSign"
-    },
-    {
-      "id": "com.grabtaxi.driver2/com.grab.driver.splashscreen.screen.SplashScreen",
-      "existing_drawable": "grab",
-      "name": "Grab Driver"
-    },
-    {
-      "id": "app.pg.grandpiano/app.pg.grandpiano.ActivityMain",
-      "existing_drawable": "generic_piano",
-      "name": "Grand Piano"
-    },
-    {
-      "id": "com.area120.grasshopper/com.area120.grasshopper.MainActivity",
-      "existing_drawable": "grasshopper",
-      "name": "Grasshopper"
-    },
-    {
-      "id": "com.futo.platformplayer.playstore/com.futo.platformplayer.activities.MainActivity",
-      "existing_drawable": "grayjay",
-      "name": "Grayjay"
-    },
-    {
-      "id": "com.grindrapp.android/com.grindrapp.android.HomeActivityPhoneBlack",
-      "existing_drawable": "generic_dialer",
-      "name": "Grindr Phone"
-    },
-    {
-      "id": "com.ovelin.guitartuna/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "guitartuna",
-      "name": "GuitarTuna"
-    },
-    {
-      "id": "com.getsomeheadspace.android/com.getsomeheadspace.android.MainActivity",
-      "existing_drawable": "headspace",
-      "name": "Headspace"
-    },
-    {
-      "id": "com.heytap.music/com.allsaints.music.SplashDefaultActivity",
-      "existing_drawable": "heytap_music",
-      "name": "HeyTap Music"
-    },
-    {
-      "id": "com.heytap.themestore/com.nearme.themespace.activities.ThemeActivity",
-      "existing_drawable": "theme_store",
-      "name": "HeyTap Theme"
-    },
-    {
-      "id": "com.nearme.themespace/com.nearme.themespace.activities.ThemeActivity",
-      "existing_drawable": "theme_store",
-      "name": "HeyTap Theme Store"
-    },
-    {
-      "id": "com.nearme.themestore/com.nearme.themespace.activities.ThemeActivity",
-      "existing_drawable": "theme_store",
-      "name": "HeyTap Theme Store"
-    },
-    {
-      "id": "tad.hideapps.hiddenspace.apphider.webapps/tad.hideapps.hiddenspace.apphider.webapps.Calculator",
-      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "Hide Apps Calculator Icon"
-    },
-    {
-      "id": "com.blueskyapps.englishbible/com.blueskyapps.mainbible.SplashActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Holy Bible"
-    },
-    {
-      "id": "com.epsoftgroup.lasantabiblia/com.epsoftgroup.lasantabiblia.activities.SplashSetupActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Holy Bible"
-    },
-    {
-      "id": "com.huawei.music/com.android.mediacenter.PageActivity",
-      "existing_drawable": "huawei_music",
-      "name": "Huawei Music"
-    },
-    {
-      "id": "com.huawei.music.local/com.huawei.music.local.main.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Huawei Music Player"
-    },
-    {
-      "id": "com.huawei.android.hwouc/com.huawei.android.hwouc.ui.activities.MainEntranceActivity",
-      "existing_drawable": "huawei_software_update",
-      "name": "Huawei Software Update"
-    },
-    {
-      "id": "imagetopdf.pdfmaker.pdfconverter.pdfreader/imagetopdf.pdfmaker.pdfconverter.pdfreader.ui.I2SplashActivity",
-      "existing_drawable": "generic_pdf_file",
-      "name": "Image to PDF"
-    },
-    {
-      "id": "com.readpdf.pdfreader.pdfviewer/com.readpdf.pdfreader.pdfviewer.view.activity.splash.FoSplashActivity",
-      "existing_drawable": "generic_pdf_file",
-      "name": "Image to PDF Converter"
-    },
-    {
-      "id": "ru.tech.imageresizershrinker/ru.tech.imageresizershrinker.app.presentation.AppActivity",
-      "existing_drawable": "image_toolbox",
-      "name": "Image Toolbox"
-    },
-    {
-      "id": "io.deveem.byemydpi2/app.vpn.ui.MainActivity",
-      "existing_drawable": "secure_vpn",
-      "name": "Imba VPN"
-    },
-    {
-      "id": "in.goindigo.android/in.goindigo.android.ui.modules.splash.SplashActivity",
-      "existing_drawable": "indigo",
-      "name": "IndiGo"
-    },
-    {
-      "id": "com.grykuby.minesweeper/com.google.firebase.MessagingUnityPlayerActivity",
-      "existing_drawable": "generic_minesweeper",
-      "name": "Infinite Minesweeper"
-    },
-    {
-      "id": "au.com.ing.banking/com.ing.banking.framework.features.welcome.WelcomeActivity",
-      "existing_drawable": "ing",
-      "name": "ING"
-    },
-    {
-      "id": "de.ingdiba.bankingapp/com.ing.mobile.diba.startup.SplashActivityProgress",
-      "existing_drawable": "ing",
-      "name": "ING"
-    },
-    {
-      "id": "com.fabtune.innertune.music/com.metrolist.music.MainActivity",
-      "existing_drawable": "innertune",
-      "name": "InnerTune"
-    },
-    {
-      "id": "com.zionhuang.music.debug/com.zionhuang.music.MainActivity",
-      "existing_drawable": "innertune",
-      "name": "InnerTune Debug"
-    },
-    {
-      "id": "com.instafel.android/com.instagram.android.activity.MainTabActivity",
-      "existing_drawable": "instagram",
-      "name": "Instafel"
-    },
-    {
-      "id": "com.instaflow.android/com.instagram.android.activity.MainTabActivity",
-      "existing_drawable": "instagram",
-      "name": "InstaFlow"
-    },
-    {
-      "id": "com.android.packageinstaller/com.rosan.installer.ui.activity.LauncherAlias",
-      "existing_drawable": "installerx",
-      "name": "InstallerX Revived"
-    },
-    {
-      "id": "com.oasisfeng.island/com.oasisfeng.island.settings.SettingsActivity",
-      "existing_drawable": "island",
-      "name": "Insular"
-    },
-    {
-      "id": "com.heytap.browser/com.heytap.browser.action.games_folder.BrowserGamesFolderActivity",
-      "existing_drawable": "generic_browser",
-      "name": "Internet Browser"
-    },
-    {
-      "id": "iTunes.Sync.Android/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "iSyncr"
-    },
-    {
-      "id": "com.uy.itau.appitauuypf/com.uy.itau.appitauuypf.splash.view.RoutingActivity",
-      "existing_drawable": "itau",
-      "name": "Itau"
-    },
-    {
-      "id": "com.konylabs.ItauMobileBank/cl.itau.splash.SplashScreenActivity",
-      "existing_drawable": "itau",
-      "name": "Ita\u00fa"
-    },
-    {
-      "id": "be.bmid.itsme/be.bmid.bootstrap.impl.ui.BootstrapActivity",
-      "existing_drawable": "itsme",
-      "name": "itsme"
-    },
-    {
-      "id": "hr.izzi.izziapp/hr.izzi.izziapp.MainActivity",
-      "existing_drawable": "izzi",
-      "name": "IZZI"
-    },
-    {
-      "id": "com.inphase.itv/com.inphase.itv.StartActivity",
-      "existing_drawable": "ladb",
-      "name": "i\u89c6 ~~ iShi"
-    },
-    {
-      "id": "com.olx.ssa.ug/ng.jiji.app.ui.splash.SplashActivity",
-      "existing_drawable": "olx",
-      "name": "Jiji"
-    },
     {
       "id": "com.jio.media.ondemand/com.razpay.apk.HaipeeKnk",
       "existing_drawable": "jiocinema",
@@ -253,6 +38,221 @@
       "id": "com.kaorin.theme.iconpack/com.kaorin.theme.iconpack.activities.MainActivity",
       "existing_drawable": "kaorin_icon_pack",
       "name": "Kaorin Icons"
+    },
+    {
+      "id": "at.gv.bmi.KATWARN/at.gv.bmi.KATWARN.MainActivity",
+      "existing_drawable": "katwarn",
+      "name": "KATWARN"
+    },
+    {
+      "id": "com.ivanovsky.passnotes/com.ivanovsky.passnotes.presentation.StartActivity",
+      "existing_drawable": "one_tap_lock_screen",
+      "name": "KeePassVault"
+    },
+    {
+      "id": "com.kowx712.supermanager/me.weishu.kernelsu.MainActivityOfficial",
+      "existing_drawable": "kernelsu",
+      "name": "KernelSU"
+    },
+    {
+      "id": "com.cts.kfcthailand/com.cognizantorderserv.kfcindiadroid.MainActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC"
+    },
+    {
+      "id": "com.grupoatwork.uq.kfc.pt.release/io.flutter.embedding.android.FlutterActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC"
+    },
+    {
+      "id": "com.kfc.malaysia/com.kfc.malaysia.activity.MainActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC"
+    },
+    {
+      "id": "com.kfc.mobile/com.kfc.mobile.MainActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC"
+    },
+    {
+      "id": "com.kfc.tt/com.kfc.tt.SplashActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC"
+    },
+    {
+      "id": "com.kfc.us.mobile/com.kfc.us.mobile.MainActivityDefault",
+      "existing_drawable": "kfc",
+      "name": "KFC"
+    },
+    {
+      "id": "com.kfc_rs/com.kfc_polska.ui.main.MainActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC"
+    },
+    {
+      "id": "com.kfcaus.ordering/com.kfcaus.ordering.ui.KfcLaunchActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC"
+    },
+    {
+      "id": "com.kfcecuador.kfc/com.kfcecuador.kfc.MainActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC"
+    },
+    {
+      "id": "com.kfcnz.orderserv/com.kfcnz.orderserv.MainActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC"
+    },
+    {
+      "id": "com.kineticcafe.kfccolonelsclub/com.cognizantorderserv.kfcindiadroid.MainActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC"
+    },
+    {
+      "id": "com.yum.kfc.ro/com.yum.kfc.ro.MainActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC"
+    },
+    {
+      "id": "com.kick.streaming/com.kick.streaming.MainActivity",
+      "existing_drawable": "kick",
+      "name": "Kick"
+    },
+    {
+      "id": "com.easybrain.killer.sudoku.free/com.easybrain.killer.sudoku.free.SplashActivity",
+      "existing_drawable": "generic_sudoku",
+      "name": "Killer Sudoku"
+    },
+    {
+      "id": "bible.kingjamesbiblelite/com.bible.kingjamesbiblelite.ac.base.SplashScreen",
+      "existing_drawable": "generic_bible",
+      "name": "King James Bible"
+    },
+    {
+      "id": "com.xxi.film.kitanonton/com.xxi.film.kitanonton.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "KITA NONTON"
+    },
+    {
+      "id": "wiktoria.goroch.bible_kjva.AOUSFCKLLRSGYXYC/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "KJVA Bible"
+    },
+    {
+      "id": "com.ebay.kleinanzeigen/com.ebay.kleinanzeigen.ui.main.MainActivity",
+      "existing_drawable": "kleinanzeigen",
+      "name": "Kleinanzeigen"
+    },
+    {
+      "id": "com.kotak811mobilebankingapp.instantsavingsupiscanandpayrecharge/com.kotak811mobilebankingapp.instantsavingsupiscanandpayrecharge.MainActivityKotakOld",
+      "existing_drawable": "kotak811",
+      "name": "Kotak811"
+    },
+    {
+      "id": "la.bible.francaise.gratuit/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "La Bible"
+    },
+    {
+      "id": "wiktoria.goroch.biblie_darby_french.AOURPEFFEFFAWZYR/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "La Bible"
+    },
+    {
+      "id": "com.creciendodev.com.saintebible_bds/com.creciendodev.com.saintebible_bds.SplashScreen",
+      "existing_drawable": "generic_bible",
+      "name": "La Bible Du Semeur"
+    },
+    {
+      "id": "biblia.habla.hoy.AOVGMDRFUVODNBOFPU/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "La Biblia"
+    },
+    {
+      "id": "la.biblia.catolica.latinoamericana/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "La Biblia"
+    },
+    {
+      "id": "com.draco.ladb.free/com.draco.ladb.views.MainActivity",
+      "existing_drawable": "ladb",
+      "name": "LADB"
+    },
+    {
+      "id": "org.larpgram.cc/org.telegram.messenger.DefaultIcon",
+      "existing_drawable": "telegram",
+      "name": "larpgram"
+    },
+    {
+      "id": "com.lastpass.lpandroid/com.lastpass.lpandroid.activity.MainActivity",
+      "existing_drawable": "lastpass",
+      "name": "LastPass"
+    },
+    {
+      "id": "com.lastpass.authenticator/com.lastpass.authenticator.ui.MainActivity",
+      "existing_drawable": "lastpass",
+      "name": "LastPass Authenticator"
+    },
+    {
+      "id": "com.bearinmind.launcher314/com.bearinmind.launcher314.MainActivity",
+      "existing_drawable": "generic_power",
+      "name": "Launcher314"
+    },
+    {
+      "id": "com.zte.mifavor.launcher/app.lawnchair.LawnchairLauncher",
+      "existing_drawable": "lawnchair",
+      "name": "Lawnchair"
+    },
+    {
+      "id": "com.flass.layoutinspect/com.flass.layoutinspect.activity.MainActivityAlias",
+      "existing_drawable": "generic_shell",
+      "name": "Layout Inspect"
+    },
+    {
+      "id": "com.citrus.citruspay/com.citrus.citruspay.Onboarding.view.activities.SplashActivity",
+      "existing_drawable": "lazypay",
+      "name": "LazyPay"
+    },
+    {
+      "id": "de.melvil.noten/de.melvil.noten.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Learn Music Notes"
+    },
+    {
+      "id": "com.learn.piano.music.instrument/com.example.pianoapplication.MainActivity",
+      "existing_drawable": "generic_piano",
+      "name": "Learn Piano"
+    },
+    {
+      "id": "com.lenovo.FileBrowser2/com.lenovo.FileBrowser.activities.FileBrowserMain",
+      "existing_drawable": "generic_files",
+      "name": "Lenovo File Manager"
+    },
+    {
+      "id": "com.tblenovo.lenovotips/com.tblenovo.lenovotips.ui.activity.WelcomeActivity",
+      "existing_drawable": "pixel_tips",
+      "name": "Lenovo Tips"
+    },
+    {
+      "id": "com.zui.notes/com.zui.notes.home.MainActivity",
+      "existing_drawable": "generic_notes",
+      "name": "Lenovo ZUI Notepad"
+    },
+    {
+      "id": "com.letterboxd.letterboxd/com.letterboxd.letterboxd.MainActivity_icon_blackswan",
+      "existing_drawable": "letterboxd",
+      "name": "Letterboxd"
+    },
+    {
+      "id": "com.lge.music/com.lge.music.MusicBrowserActivity",
+      "existing_drawable": "apple_music",
+      "name": "LG Music"
+    },
+    {
+      "id": "com.lge.vvm/com.lge.vvm.launcher.VVMLauncherActivity",
+      "existing_drawable": "generic_voicemail",
+      "name": "LG Voicemail"
     }
   ]
 }

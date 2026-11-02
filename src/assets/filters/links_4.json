@@ -2,123 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 4,
-  "total_batches": 19,
+  "total_batches": 17,
   "links": [
-    {
-      "id": "com.bk.ch/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "com.burgerking.egypt/com.skylinedynamics.bk.splash.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "com.burgerking.morocco/com.skylinedynamics.bk.splash.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "com.burgerking.uae/com.skylinedynamics.bk.splash.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "com.burgerkingcz/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "com.burgerkingpl/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "com.bzbs.burgerking/com.bzbs.burgerking.ui.splash.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "com.crazycake.burgerkingchile/com.usemenu.MenuAndroidApplication.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "com.emn8.mobilem8.nativeapp.bkca/com.emn8.mobilem8.nativeapp.bkca.MainActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "com.expremio.burgerking/com.expremio.mobileapp.MainActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "com.mathieu.budmaldash00/com.mathieu.budmaldash00.GeometryJump",
-      "existing_drawable": "geometry_dash",
-      "name": "BurmalDash"
-    },
-    {
-      "id": "com.bybit.eu/com.bybit.pro.MainActivity",
-      "existing_drawable": "bybit",
-      "name": "Bybit"
-    },
-    {
-      "id": "br.com.gabba.Caixa/br.nQiBi9.qATmb9.es8m45.ui.fobmI3.n45ls8",
-      "existing_drawable": "caixa",
-      "name": "CAIXA"
-    },
-    {
-      "id": "com.candl.athena/com.candl.athena.activity.Calculator",
-      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "CALCU"
-    },
-    {
-      "id": "com.jzhk.calculator/com.jzhk.calculator.Calculator",
-      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "Calculator"
-    },
-    {
-      "id": "calculatorlock.calculatorvault.photovault.hider/calculatorlock.calculatorvault.photovault.hider.SplashActivity",
-      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "Calculator Lock"
-    },
-    {
-      "id": "com.bbk.calendar/com.bbk.calendar.MainActivity",
-      "existing_drawable": "calendar",
-      "name": "Calendar"
-    },
-    {
-      "id": "com.calendar.taskschedule/com.calendar.taskschedule.SplashActivity",
-      "existing_drawable": "calendar",
-      "name": "Calendar"
-    },
-    {
-      "id": "org.withouthat.acalendarplus/org.withouthat.acalendar.tasks.TasksActivity",
-      "existing_drawable": "themed_icon_calendar_31",
-      "name": "Calendar"
-    },
-    {
-      "id": "calendar.agenda.calendarplanner.agendaplanner/com.calendar.aurora.activity.SplashActivity",
-      "existing_drawable": "calendar",
-      "name": "Calendar Planner"
-    },
-    {
-      "id": "com.m24apps.acr/com.m24apps.acr.activities.SplashActivityV3",
-      "existing_drawable": "generic_dialer",
-      "name": "Call Recorder"
-    },
-    {
-      "id": "com.dmobileapps.camera/com.dmobileapps.camera.MainActivity",
-      "existing_drawable": "generic_camera",
-      "name": "Camera"
-    },
-    {
-      "id": "com.google.android.GoogleCamerb3/com.android.camera.CameraLauncher",
-      "existing_drawable": "generic_camera",
-      "name": "Camera"
-    },
     {
       "id": "com.google.android.apps.googlecamera.fishfood/com.android.camera.CameraLauncher",
       "existing_drawable": "generic_camera",
@@ -128,11 +13,6 @@
       "id": "com.softwinner.camera/com.softwinner.camera.CameraLauncher",
       "existing_drawable": "generic_camera",
       "name": "Camera"
-    },
-    {
-      "id": "com.king.candycrushsaga.flexion/com.king.candycrushsaga.FlexionActivity",
-      "existing_drawable": "candy_crush_saga",
-      "name": "Candy Crush Saga"
     },
     {
       "id": "cn.canva.editor/com.canva.app.editor.splash.DataConsentSplashActivity",
@@ -150,11 +30,6 @@
       "name": "Canva"
     },
     {
-      "id": "com.lemon.lvoverseas.morphe/com.vega.launcher.precondition.PreInstallConfirmActivity",
-      "existing_drawable": "capcut",
-      "name": "CapCut"
-    },
-    {
       "id": "com.ovz.carscanner.rustore/crc646a6dd679b318c207.MainActivity",
       "existing_drawable": "generic_engine",
       "name": "Car Scanner"
@@ -170,11 +45,6 @@
       "name": "CarStream"
     },
     {
-      "id": "com.itemstudio.castro/com.itemstudio.castro.navigation.NavigationActivity",
-      "existing_drawable": "castro",
-      "name": "Castro"
-    },
-    {
       "id": "com.gamma.checkers/com.unity3d.player.UnityPlayerActivity",
       "existing_drawable": "generic_checkers",
       "name": "Checkers"
@@ -188,16 +58,6 @@
       "id": "com.llx.chess/com.llx.chess.AndroidLauncher",
       "existing_drawable": "generic_chess",
       "name": "Chess"
-    },
-    {
-      "id": "com.google.chromeremotedesktop/com.google.remoting.androidwrapper.MainActivity",
-      "existing_drawable": "chrome_remote_desktop",
-      "name": "Chrome Remote Desktop"
-    },
-    {
-      "id": "com.ia.cinepolis.india/com.ia.cinepolis.india.MainActivity",
-      "existing_drawable": "cinepolis",
-      "name": "Cin\u00e9polis"
     },
     {
       "id": "com.sgebrelibanos.aderaser/com.sgebrelibanos.aderaser.MainActivity",
@@ -253,6 +113,146 @@
       "id": "com.dvdb.bergnotes/com.dvdb.dnotes.MainActivity",
       "existing_drawable": "another_notes",
       "name": "D Notes"
+    },
+    {
+      "id": "com.dtasks.app/com.dtasks.app.MainActivity",
+      "existing_drawable": "tasks",
+      "name": "D/Tasks"
+    },
+    {
+      "id": "com.damonplay.damonps2.free/com.damonplay.damonps2.SplashActivity",
+      "existing_drawable": "ppsspp",
+      "name": "DamonPS2"
+    },
+    {
+      "id": "com.dariaos.recorder/com.dariaos.recorder.ui.MainActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "DariaOS Recorder"
+    },
+    {
+      "id": "com.darkevo.iconpack/com.darkevo.iconpack.activities.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "Dark Evo"
+    },
+    {
+      "id": "com.shisui.debloater/com.shisui.debloater.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "Debloat-X Universal"
+    },
+    {
+      "id": "com.deepl.mobiletranslator/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "deepl",
+      "name": "DeepL"
+    },
+    {
+      "id": "com.example.deeplviewer/com.example.deeplviewer.activity.MainActivity",
+      "existing_drawable": "deepl",
+      "name": "DeepL"
+    },
+    {
+      "id": "com.dmholdings.denonremoteapp/com.dmholdings.remoteapp.Startup",
+      "existing_drawable": "just_player",
+      "name": "Denon Remote"
+    },
+    {
+      "id": "com.opensource.i2pradio/com.opensource.i2pradio.MainActivity",
+      "existing_drawable": "generic_fm_radio",
+      "name": "deutsia radio"
+    },
+    {
+      "id": "io.illescasDaniel.devSnippets/io.illescasDaniel.devSnippets.MainActivity",
+      "existing_drawable": "generic_braces",
+      "name": "DevSnippets"
+    },
+    {
+      "id": "com.dhl.frt.mittdhl/com.dhl.frt.mittdhl.MainActivity",
+      "existing_drawable": "dhl",
+      "name": "DHL"
+    },
+    {
+      "id": "com.dhlparcel.consumerapp/com.dhlparcel.consumerapp.MainActivity",
+      "existing_drawable": "dhl",
+      "name": "DHL eCom"
+    },
+    {
+      "id": "com.pixelcrater.Diaro/com.pixelcrater.Diaro.MainActivity",
+      "existing_drawable": "diaro",
+      "name": "Diaro"
+    },
+    {
+      "id": "com.adeeteya.digital_calculator/com.adeeteya.digital_calculator.MainActivity",
+      "existing_drawable": "zcalc",
+      "name": "Digital Calculator"
+    },
+    {
+      "id": "com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.settings.MultiPaneLauncherActivity",
+      "existing_drawable": "digital_wellbeing",
+      "name": "Digital Wellbeing"
+    },
+    {
+      "id": "com.alibaba.android.rimet/com.alibaba.android.rimet.biz.SplashActivity",
+      "existing_drawable": "dingtalk",
+      "name": "DingTalk"
+    },
+    {
+      "id": "com.discord.morphe/com.discord.main.MainDefault",
+      "existing_drawable": "discord",
+      "name": "Discord"
+    },
+    {
+      "id": "com.discore/com.discord.main.MainDefault",
+      "existing_drawable": "discord",
+      "name": "Discord"
+    },
+    {
+      "id": "com.discovery.discoveryplus.mobile/com.wbd.fuse.appcore.FuseActivity",
+      "existing_drawable": "discoveryplus",
+      "name": "discovery+"
+    },
+    {
+      "id": "com.discovery.dplay/com.wbd.fuse.appcore.FuseActivity",
+      "existing_drawable": "discoveryplus",
+      "name": "discovery+"
+    },
+    {
+      "id": "br.com.doctoralia/com.app.MainActivity",
+      "existing_drawable": "doctoralia",
+      "name": "Doctoralia"
+    },
+    {
+      "id": "co.doctoralia/co.doctoralia.MainActivity",
+      "existing_drawable": "doctoralia",
+      "name": "Doctoralia"
+    },
+    {
+      "id": "com.eniyihekim/com.eniyihekim.MainActivity",
+      "existing_drawable": "doctoralia",
+      "name": "DoktorTakvimi"
+    },
+    {
+      "id": "com.dolby.dolby234/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "dolby",
+      "name": "Dolby On"
+    },
+    {
+      "id": "com.dolby.exphub/com.dolby.exphub.namespace.MainActivity",
+      "existing_drawable": "dolby",
+      "name": "Dolby XP"
+    },
+    {
+      "id": "com.Dominos/com.Dominos.activity.alias.LauncherRepublicAlias",
+      "existing_drawable": "dominos_pizza",
+      "name": "Domino's Pizza"
+    },
+    {
+      "id": "com.daufood.ppt/com.iproject.dominos.ui.splash.SplashActivity",
+      "existing_drawable": "dominos_pizza",
+      "name": "Domino's Pizza"
+    },
+    {
+      "id": "com.dominos.latin.america/com.dominos.latin.america.MainActivity",
+      "existing_drawable": "dominos_pizza",
+      "name": "Domino's Pizza"
     }
   ]
 }

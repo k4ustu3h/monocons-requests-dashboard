@@ -2,62 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 2,
-  "total_batches": 19,
+  "total_batches": 17,
   "links": [
-    {
-      "id": "com.microsoft.emmx.canary/com.microsoft.ruby.Main3",
-      "existing_drawable": "microsoft_edge",
-      "name": "Microsoft Edge Canary",
-      "components": [
-        "com.microsoft.emmx.canary/com.microsoft.ruby.Main3",
-        "com.microsoft.emmx.canary/com.microsoft.ruby.Main6"
-      ]
-    },
-    {
-      "id": "com.minimalisttodolist.pleasebethelastrecyclerview/com.minimalisttodolist.pleasebethelastrecyclerview.MainActivity",
-      "existing_drawable": "tasks",
-      "name": "Minimalist",
-      "components": [
-        "com.minimalisttodolist.pleasebethelastrecyclerview/com.minimalisttodolist.pleasebethelastrecyclerview.MainActivity",
-        "com.minimalisttodolist.pleasebethelastrecyclerview/com.minimalisttodolist.pleasebethelastrecyclerview.MainActivityAlias"
-      ]
-    },
-    {
-      "id": "app.morphe.manager/app.morphe.manager.MainActivity_Light_2",
-      "existing_drawable": "morphe",
-      "name": "Morphe",
-      "components": [
-        "app.morphe.manager/app.morphe.manager.MainActivity_Light_2",
-        "app.morphe.manager/app.morphe.manager.MainActivity_Light_3"
-      ]
-    },
-    {
-      "id": "com.github.musicyou/com.github.musicyou.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Music You",
-      "components": [
-        "com.github.musicyou/com.github.musicyou.MainActivity",
-        "com.github.musicyou/it.vfsfitvnm.vimusic.MainActivity"
-      ]
-    },
-    {
-      "id": "nu.gpu.nagram/org.telegram.messenger.DarkGreenIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram X",
-      "components": [
-        "nu.gpu.nagram/org.telegram.messenger.DarkGreenIcon",
-        "nu.gpu.nagram/org.telegram.messenger.NeonIcon"
-      ]
-    },
-    {
-      "id": "fork.risin42.nagramx/org.telegram.messenger.ColorfulIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram XF",
-      "components": [
-        "fork.risin42.nagramx/org.telegram.messenger.ColorfulIcon",
-        "fork.risin42.nagramx/org.telegram.messenger.DarkBlueIcon"
-      ]
-    },
     {
       "id": "com.coloros.onekeylockscreen/com.coloros.onekeylockscreen.OppoLockScreen",
       "existing_drawable": "one_tap_lock_screen",
@@ -101,24 +47,6 @@
       "components": [
         "com.grice.dialer/com.grice.dialer.icon.Default",
         "com.grice.dialer/com.grice.dialer.icon.IOS"
-      ]
-    },
-    {
-      "id": "com.imc.pizzahut/com.deliverymobileapp.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut",
-      "components": [
-        "com.imc.pizzahut/com.deliverymobileapp.MainActivity",
-        "com.imc.pizzahut/com.imc.pizzahut.MainActivity"
-      ]
-    },
-    {
-      "id": "com.pizzahutpl/com.pizzahut_pl.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut",
-      "components": [
-        "com.pizzahutpl/com.pizzahut_pl.MainActivity",
-        "com.pizzahutpl/pl.looksoft.pizzahut.ui.splash.SplashActivity"
       ]
     },
     {
@@ -194,24 +122,6 @@
       ]
     },
     {
-      "id": "ru.kfc.kfc_delivery/com.kfc.MainActivity",
-      "existing_drawable": "kfc",
-      "name": "Rostic's",
-      "components": [
-        "ru.kfc.kfc_delivery/com.kfc.MainActivity",
-        "ru.kfc.kfc_delivery/ru.kfc.kfc_delivery.MainActivity"
-      ]
-    },
-    {
-      "id": "com.mtv.sai/com.mtv.sai.ui.activities.MainActivity",
-      "existing_drawable": "sai",
-      "name": "SAI",
-      "components": [
-        "com.mtv.sai/com.mtv.sai.ui.activities.MainActivity",
-        "com.mtv.sai/com.mtv.sai.ui.activities.main.MainActivity"
-      ]
-    },
-    {
       "id": "com.samsung.android.scan3d/com.google.android.apps.cameralite.capture.CaptureActivity",
       "existing_drawable": "generic_camera",
       "name": "Samsung 3D Scanner",
@@ -221,39 +131,12 @@
       ]
     },
     {
-      "id": "com.samsung.android.contacts/com.android.contacts.activities.PeopleActivity",
-      "existing_drawable": "samsung_contacts",
-      "name": "Samsung Contacts",
-      "components": [
-        "com.samsung.android.contacts/com.android.contacts.activities.PeopleActivity",
-        "com.samsung.android.contacts/com.android.dialer.DialtactsActivity"
-      ]
-    },
-    {
-      "id": "de.westnordost.streetcomplete.expert/de.westnordost.streetcomplete.screens.MainActivity",
-      "existing_drawable": "streetcomplete",
-      "name": "SCEE",
-      "components": [
-        "de.westnordost.streetcomplete.expert/de.westnordost.streetcomplete.screens.MainActivity",
-        "de.westnordost.streetcomplete.expert/de.westnordost.streetcomplete.screens.main.MainActivity"
-      ]
-    },
-    {
       "id": "dev.shiggy.cord/com.discord.main.MainBlush",
       "existing_drawable": "discord",
       "name": "ShiggyCord",
       "components": [
         "dev.shiggy.cord/com.discord.main.MainBlush",
         "dev.shiggy.cord/com.discord.main.MainDefault"
-      ]
-    },
-    {
-      "id": "com.pavelrekun.skit.premium/com.pavelrekun.skit.containers.PrimaryContainerActivity",
-      "existing_drawable": "skit_premium",
-      "name": "Skit Premium",
-      "components": [
-        "com.pavelrekun.skit.premium/com.pavelrekun.skit.containers.PrimaryContainerActivity",
-        "com.pavelrekun.skit.premium/com.pavelrekun.skit.navigation.NavigationActivity"
       ]
     },
     {
@@ -326,6 +209,15 @@
       "components": [
         "com.google.android.wearable.app.cn/com.google.android.clockwork.companion.StatusActivity",
         "com.google.android.wearable.app.cn/com.google.android.clockwork.companion.launcher.LauncherActivity"
+      ]
+    },
+    {
+      "id": "com.inmobi.weather/com.handmark.expressweather.ui.activities.MainActivity",
+      "existing_drawable": "_1weather",
+      "name": "Weather",
+      "components": [
+        "com.inmobi.weather/com.handmark.expressweather.ui.activities.MainActivity",
+        "com.inmobi.weather/com.weather.app.common.MainActivity"
       ]
     },
     {
@@ -417,6 +309,66 @@
       "id": "dev.goodwy.phone/dev.goodwy.phone.activities.SplashActivity.Original",
       "existing_drawable": "generic_dialer",
       "name": "Alight Phone"
+    },
+    {
+      "id": "com.pdfmerge.imagetopdf.pdfmaker/com.pdfmerge.imagetopdf.pdfmaker.screen.home.SplashScreen",
+      "existing_drawable": "generic_pdf_square",
+      "name": "All PDF Maker"
+    },
+    {
+      "id": "pdfreader.pdfviewer.free.officetool/pdfreader.pdfviewer.free.officetool.ui.R3WelcomeActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "All PDF Reader"
+    },
+    {
+      "id": "com.crazylabs.amaze.game/com.unity3d.player.UnityPlayerActivity",
+      "existing_drawable": "amaze",
+      "name": "AMAZE!"
+    },
+    {
+      "id": "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonnow.AmazonNowHomeActivityAlias",
+      "existing_drawable": "amazon_pay",
+      "name": "Amazon Now"
+    },
+    {
+      "id": "com.amazon.photos/com.amazon.photos.MainActivity",
+      "existing_drawable": "amazon_photos",
+      "name": "Amazon Photos"
+    },
+    {
+      "id": "com.htetznaing.adbotg/com.htetznaing.adbotg.MainActivity",
+      "existing_drawable": "ladb",
+      "name": "Android Debug Bridge"
+    },
+    {
+      "id": "com.kamwithk.ankiconnectandroid/com.kamwithk.ankiconnectandroid.MainActivity",
+      "existing_drawable": "ladb",
+      "name": "Ankiconnect"
+    },
+    {
+      "id": "com.anydesk.anydeskandroid/com.anydesk.anydeskandroid.gui.activity.HubActivity",
+      "existing_drawable": "anydesk",
+      "name": "AnyDesk"
+    },
+    {
+      "id": "com.inwepo.apkinstaller/com.inwepo.apkinstaller.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "APK Installer"
+    },
+    {
+      "id": "com.example.libusbAndroidTest/com.example.libusbAndroidTest.MainActivity",
+      "existing_drawable": "drivedroid",
+      "name": "Apple Dongle Volume Fixer"
+    },
+    {
+      "id": "io.zenzy.applock/io.zenzy.applock.MusicLauncher",
+      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
+      "name": "AppLock VIP"
+    },
+    {
+      "id": "com.tomclaw.appsend_rb/com.tomclaw.appsend_rb.screen.apps.AppsActivity",
+      "existing_drawable": "appsend",
+      "name": "AppSend"
     }
   ]
 }
