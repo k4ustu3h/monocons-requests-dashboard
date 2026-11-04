@@ -7,17 +7,23 @@
     {
       "id": "com.simplemobiletools.gallery/com.onyx.gallery.activities.NewMainActivity",
       "existing_drawable": "simple_gallery",
-      "name": "Simple Gallery"
+      "name": "Simple Gallery",
+      "installs": "10,000,000+",
+      "drawable": "simple_gallery"
     },
     {
       "id": "com.github.anrimian.musicplayer/com.github.anrimian.musicplayer.ui.main.MainActivity",
       "existing_drawable": "music_player",
-      "name": "Simple Music Player"
+      "name": "Simple Music Player",
+      "installs": "5,000,000+",
+      "drawable": "simple_music_player"
     },
     {
       "id": "com.simplemobiletools.smsmessenger/com.simplemobiletools.smsmessenger.activities.SimplePhSplashActivity.Orange",
       "existing_drawable": "messages",
-      "name": "Simple SMS Messenger"
+      "name": "Simple SMS Messenger",
+      "installs": "5,000,000+",
+      "drawable": "simple_sms_messenger"
     },
     {
       "id": "io.simplelogin.android.fdroid/io.simplelogin.android.MainActivity",
@@ -32,22 +38,30 @@
     {
       "id": "com.delco.courier/com.delco.courier.MainActivity",
       "existing_drawable": "just_eat",
-      "name": "Skip"
+      "name": "Skip",
+      "installs": "500,000+",
+      "drawable": "skip"
     },
     {
       "id": "com.bskyb.skygo/com.bskyb.skygo.features.startup.StartupActivity",
       "existing_drawable": "just_player",
-      "name": "Sky Go"
+      "name": "Sky Go",
+      "installs": "10,000,000+",
+      "drawable": "sky_go"
     },
     {
       "id": "de.sky.bw/com.bskyb.skygo.features.startup.StartupActivity",
       "existing_drawable": "just_player",
-      "name": "Sky Go"
+      "name": "Sky Go",
+      "installs": "5,000,000+",
+      "drawable": "sky_go"
     },
     {
       "id": "it.sky.anywhere/com.bskyb.skygo.features.startup.StartupActivity",
       "existing_drawable": "just_player",
-      "name": "Sky Go"
+      "name": "Sky Go",
+      "installs": "5,000,000+",
+      "drawable": "sky_go"
     },
     {
       "id": "com.netease.sky.bilibili/com.netease.ntunisdk.external.protocol.ProtocolLauncher",
@@ -62,37 +76,51 @@
     {
       "id": "com.microsoft.office.lync15/com.microsoft.office.sfb.common.ui.splash.EntryPoint",
       "existing_drawable": "skype",
-      "name": "Skype for Business"
+      "name": "Skype for Business",
+      "installs": "10,000,000+",
+      "drawable": "skype_for_business"
     },
     {
       "id": "com.illusions.skyworthuniversalremotecontrol/com.illusions.skyworthuniversalremotecontrol.remotecontrol.SplashActivity",
       "existing_drawable": "generic_power",
-      "name": "Skyworth TV Remote"
+      "name": "Skyworth TV Remote",
+      "installs": "500,000+",
+      "drawable": "skyworth_tv_remote"
     },
     {
       "id": "com.proframeapps.videoframeplayer/com.proframeapps.videoframeplayer.ui.MainActivity",
       "existing_drawable": "just_player",
-      "name": "Slow Motion Frame Video Player"
+      "name": "Slow Motion Frame Video Player",
+      "installs": "1,000,000+",
+      "drawable": "slow_motion_frame_video_player"
     },
     {
       "id": "kr.sira.calculator/kr.sira.calculator.SplashActivity",
       "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "Smart Calculator by Smart Tools"
+      "name": "Smart Calculator by Smart Tools",
+      "installs": "5,000+",
+      "drawable": "smart_calculator_by_smart_tools"
     },
     {
       "id": "ginlemon.flowerfree/ginlemon.flower.locker.LockerActivity",
       "existing_drawable": "smart_launcher",
-      "name": "Smart Launcher"
+      "name": "Smart Launcher",
+      "installs": "50,000,000+",
+      "drawable": "smart_launcher"
     },
     {
       "id": "app.smart.timetables/app.smart.timetables.MainActivity",
       "existing_drawable": "smart_timetable",
-      "name": "Smart Timetable"
+      "name": "Smart Timetable",
+      "installs": "500,000+",
+      "drawable": "smart_timetable"
     },
     {
       "id": "com.fmsys.snapdrop/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "snapdrop",
-      "name": "Snapdrop"
+      "name": "Snapdrop",
+      "installs": "5,000,000+",
+      "drawable": "snapdrop"
     },
     {
       "id": "me.rhunk.snapenhance.manager/me.rhunk.snapenhance.manager.ui.MainActivity",
@@ -112,17 +140,23 @@
     {
       "id": "com.netflix.NGP.Solitaire/com.mobilityware.sflnativeandroidutils.SFLLaunchActivity",
       "existing_drawable": "generic_solitaire",
-      "name": "Solitaire"
+      "name": "Solitaire",
+      "installs": "1,000,000+",
+      "drawable": "solitaire"
     },
     {
       "id": "com.peoplefun.wordsolitaire/com.unity3d.player.UnityPlayerActivity",
       "existing_drawable": "generic_solitaire",
-      "name": "Solitaire"
+      "name": "Solitaire",
+      "installs": "1,000,000+",
+      "drawable": "solitaire"
     },
     {
       "id": "com.solo.link.music.player.pro/com.jober.music.player.ui.activity.SplashActivity",
       "existing_drawable": "apple_music",
-      "name": "SoloPro"
+      "name": "SoloPro",
+      "installs": "1,000,000+",
+      "drawable": "solopro"
     },
     {
       "id": "com.luna.music/com.soundcloud.android.launcher.LauncherActivity",
@@ -137,12 +171,16 @@
     {
       "id": "com.leetlab.scloudmate.mp3downloaderfor.soundcloud/com.leetlab.scloudmate.mp3downloaderfor.soundcloud.MainActivity",
       "existing_drawable": "generic_download_shelf",
-      "name": "SoundLoadMate"
+      "name": "SoundLoadMate",
+      "installs": "10,000+",
+      "drawable": "soundloadmate"
     },
     {
       "id": "com.henrikherzig.playintegritychecker/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "spic",
-      "name": "SPIC"
+      "name": "SPIC",
+      "installs": "100,000+",
+      "drawable": "spic"
     },
     {
       "id": "it.deviato.spotifuck/it.deviato.spotifuck.MainActivity",
@@ -187,72 +225,100 @@
     {
       "id": "com.squareup/com.squareup.ui.main.MainActivity",
       "existing_drawable": "square",
-      "name": "Square"
+      "name": "Square",
+      "installs": "10,000,000+",
+      "drawable": "square"
     },
     {
       "id": "com.vitotechnology.StarWalk2Free/ru.rustore.unitysdk.RuStoreUnityActivity",
       "existing_drawable": "star_walk_2",
-      "name": "Star Walk 2"
+      "name": "Star Walk 2",
+      "installs": "10,000,000+",
+      "drawable": "star_walk_2"
     },
     {
       "id": "com.starbucks.bh/com.starbucks.emea.app.splash.SplashActivity",
       "existing_drawable": "starbucks",
-      "name": "Starbucks"
+      "name": "Starbucks",
+      "installs": "10,000+",
+      "drawable": "starbucks"
     },
     {
       "id": "com.starbucks.ch/com.starbucks.emea.app.splash.SplashActivity",
       "existing_drawable": "starbucks",
-      "name": "Starbucks"
+      "name": "Starbucks",
+      "installs": "50,000+",
+      "drawable": "starbucks"
     },
     {
       "id": "com.starbucks.fr/com.starbucks.emea.app.splash.SplashActivity",
       "existing_drawable": "starbucks",
-      "name": "Starbucks"
+      "name": "Starbucks",
+      "installs": "500,000+",
+      "drawable": "starbucks"
     },
     {
       "id": "com.starbucks.peru/com.starbucks.peru.MainActivity",
       "existing_drawable": "starbucks",
-      "name": "Starbucks"
+      "name": "Starbucks",
+      "installs": "1,000,000+",
+      "drawable": "starbucks"
     },
     {
       "id": "com.starbucks.singapore/com.starbucks.singapore.MainActivity",
       "existing_drawable": "starbucks",
-      "name": "Starbucks"
+      "name": "Starbucks",
+      "installs": "500,000+",
+      "drawable": "starbucks"
     },
     {
       "id": "com.starbucks.uk/com.starbucks.emea.app.splash.SplashActivity",
       "existing_drawable": "starbucks",
-      "name": "Starbucks"
+      "name": "Starbucks",
+      "installs": "1,000,000+",
+      "drawable": "starbucks"
     },
     {
       "id": "com.starbucksrewards.gt/com.starbucksrewards.gt.MainActivity",
       "existing_drawable": "starbucks",
-      "name": "Starbucks Rewards"
+      "name": "Starbucks Rewards",
+      "installs": "100,000+",
+      "drawable": "starbucks_rewards"
     },
     {
       "id": "com.starmakerinteractive.starmaker/com.ushowmedia.starmaker.activity.SplashActivity",
       "existing_drawable": "starmaker",
-      "name": "StarMaker"
+      "name": "StarMaker",
+      "installs": "500,000,000+",
+      "drawable": "starmaker"
     },
     {
       "id": "com.starmakerinteractive.thevoice/com.ushowmedia.starmaker.splash.SplashActivity",
       "existing_drawable": "starmaker",
-      "name": "StarMaker Lite"
+      "name": "StarMaker Lite",
+      "installs": "10,000,000+",
+      "drawable": "starmaker_lite"
     },
     {
       "id": "com.angkorworld.note/com.angkorworld.memo.activities.MainActivity",
       "existing_drawable": "samsung_notes",
-      "name": "Sticky Notepad"
+      "name": "Sticky Notepad",
+      "installs": "1,000,000+",
+      "drawable": "sticky_notepad"
     },
     {
       "id": "app.streamcompanion/app.streamcompanion.MainActivity",
       "existing_drawable": "generic_player",
-      "name": "Stream Companion"
+      "name": "Stream Companion",
+      "installs": "5,000+",
+      "drawable": "stream_companion"
     },
     {
       "id": "com.stremio.one/com.stremio.tv.MainActivity",
       "existing_drawable": "stremio",
-      "name": "Stremio"
+      "name": "Stremio",
+      "installs": "10,000,000+",
+      "drawable": "stremio"
     }
   ]
 }

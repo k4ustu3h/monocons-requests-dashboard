@@ -7,17 +7,23 @@
     {
       "id": "com.loyaltyplant.partner.subway/crc64eb65ea6159fb1028.RootActivity",
       "existing_drawable": "subway",
-      "name": "Subway"
+      "name": "Subway",
+      "installs": "500,000+",
+      "drawable": "subway"
     },
     {
       "id": "com.subway.mobile.emea.germany/com.subway.mobile.subwayapp03.ui.SplashActivity",
       "existing_drawable": "subway",
-      "name": "Subway"
+      "name": "Subway",
+      "installs": "1,000,000+",
+      "drawable": "subway"
     },
     {
       "id": "com.subway.mobile.emea.tuki/com.subway.mobile.subwayapp03.ui.SplashActivity",
       "existing_drawable": "subway",
-      "name": "Subway"
+      "name": "Subway",
+      "installs": "1,000,000+",
+      "drawable": "subway"
     },
     {
       "id": "com.subway.subway/com.subway.subway.SplashActivity",
@@ -27,7 +33,9 @@
     {
       "id": "com.subwaycard/com.subwaycard.v2.activities.DispatchActivity",
       "existing_drawable": "subway",
-      "name": "Subway"
+      "name": "Subway",
+      "installs": "100,000+",
+      "drawable": "subway"
     },
     {
       "id": "com.wahalla.subwaybr/com.wahalla.subwaybr.MainActivity",
@@ -37,22 +45,30 @@
     {
       "id": "nz.co.subcard.app/crc643f56eb19e392e7ef.MainActivity",
       "existing_drawable": "subway",
-      "name": "Subway"
+      "name": "Subway",
+      "installs": "100,000+",
+      "drawable": "subway"
     },
     {
       "id": "com.hrincescumihai.sudoku/com.hrincescumihai.sudoku.app.MainActivity",
       "existing_drawable": "generic_sudoku",
-      "name": "Sudoku"
+      "name": "Sudoku",
+      "installs": "10,000+",
+      "drawable": "sudoku"
     },
     {
       "id": "com.sumone/com.sumone.MainActivityDefault",
       "existing_drawable": "sumone",
-      "name": "SumOne"
+      "name": "SumOne",
+      "installs": "5,000,000+",
+      "drawable": "sumone"
     },
     {
       "id": "com.superb.launcher/com.superb.iconpack.presentation.activity.IconPackActivity",
       "existing_drawable": "themed_icon_calendar_31",
-      "name": "Superb Launcher Icons"
+      "name": "Superb Launcher Icons",
+      "installs": "100,000+",
+      "drawable": "superb_launcher_icons"
     },
     {
       "id": "org.akanework.symphonica/org.akanework.symphonica.MainActivity",
@@ -62,7 +78,9 @@
     {
       "id": "com.sync.mobileapp/com.sync.mobileapp.activities.SplashActivity",
       "existing_drawable": "sync",
-      "name": "Sync"
+      "name": "Sync",
+      "installs": "1,000,000+",
+      "drawable": "sync"
     },
     {
       "id": "com.github.catfriend1.syncthingandroid.debug/com.nutomic.syncthingandroid.activities.FirstStartActivity",
@@ -82,22 +100,30 @@
     {
       "id": "com.bgmenu.android/com.takeaway.android.activity.Splash",
       "existing_drawable": "just_eat",
-      "name": "Takeaway"
+      "name": "Takeaway",
+      "installs": "500,000+",
+      "drawable": "takeaway"
     },
     {
       "id": "lu.takeaway.android/com.takeaway.android.activity.Splash",
       "existing_drawable": "just_eat",
-      "name": "Takeaway"
+      "name": "Takeaway",
+      "installs": "10,000+",
+      "drawable": "takeaway"
     },
     {
       "id": "com.book.tamilbible/com.book.tamilbible.SplashActivity",
       "existing_drawable": "generic_bible",
-      "name": "Tamil Bible"
+      "name": "Tamil Bible",
+      "installs": "1,000,000+",
+      "drawable": "tamil_bible"
     },
     {
       "id": "com.tamil.bible.audio/com.ryanheise.audioservice.AudioServiceActivity",
       "existing_drawable": "generic_bible",
-      "name": "Tamil Bible"
+      "name": "Tamil Bible",
+      "installs": "100,000+",
+      "drawable": "tamil_bible"
     },
     {
       "id": "com.gabm.screenrotationcontrol/com.gabm.tapandturn.ui.MainActivity",
@@ -112,17 +138,23 @@
     {
       "id": "com.quoord.tapatalkpro.activity/com.quoord.tapatalkpro.activity.directory.EntryActivity",
       "existing_drawable": "tapatalk_pro",
-      "name": "Tapatalk"
+      "name": "Tapatalk",
+      "installs": "10,000,000+",
+      "drawable": "tapatalk"
     },
     {
       "id": "com.taptap.global.lite/com.play.taptap.ui.SplashAct",
       "existing_drawable": "taptap",
-      "name": "TapTap Lite"
+      "name": "TapTap Lite",
+      "installs": "10,000,000+",
+      "drawable": "taptap_lite"
     },
     {
       "id": "lt.tele2.tsa/lt.tele2.tsa.features.onboarding.OnboardingActivity",
       "existing_drawable": "tele2",
-      "name": "Tele2"
+      "name": "Tele2",
+      "installs": "1,000,000+",
+      "drawable": "tele2"
     },
     {
       "id": "org.mytelegram.messenger/org.telegram.messenger.DefaultIcon",
@@ -132,12 +164,16 @@
     {
       "id": "v.d.d.answercall/v.d.d.answercall.MainFrActivity",
       "existing_drawable": "generic_dialer",
-      "name": "Tel\u00e9fono"
+      "name": "Tel\u00e9fono",
+      "installs": "10,000,000+",
+      "drawable": "v_d_d_answercall"
     },
     {
       "id": "top.receivesms.app/top.receivesms.app.MainActivity",
       "existing_drawable": "generic_email",
-      "name": "Temp Number"
+      "name": "Temp Number",
+      "installs": "500,000+",
+      "drawable": "temp_number"
     },
     {
       "id": "com.eddyizm.tempus/com.cappielloantonio.tempo.ui.activity.MainActivity",
@@ -157,22 +193,30 @@
     {
       "id": "com.contactstopdfconverter.app.androidx/com.contactstopdfconverter.app.androidx.SplashScreen",
       "existing_drawable": "generic_pdf_file",
-      "name": "Text to PDF"
+      "name": "Text to PDF",
+      "installs": "500,000+",
+      "drawable": "text_to_pdf"
     },
     {
       "id": "com.the.the_reverse_audio/com.the.the_reverse_audio.MainActivity",
       "existing_drawable": "generic_microphone",
-      "name": "The Reverse Audio"
+      "name": "The Reverse Audio",
+      "installs": "1,000,000+",
+      "drawable": "the_reverse_audio"
     },
     {
       "id": "com.instagram.barcelona/com.instagram.barcelona.InternalLauncher",
       "existing_drawable": "threads",
-      "name": "Threads"
+      "name": "Threads",
+      "installs": "500,000,000+",
+      "drawable": "threads"
     },
     {
       "id": "com.ticktick.task/com.ticktick.task.HomeAlia_ai",
       "existing_drawable": "ticktick",
-      "name": "TickTick"
+      "name": "TickTick",
+      "installs": "10,000,000+",
+      "drawable": "ticktick"
     },
     {
       "id": "com.android.tidal.campaigninstaller/com.android.campaigninstaller.MainActivity",
@@ -182,7 +226,9 @@
     {
       "id": "com.tiktok.lite.go/com.zhiliaoapp.musically.go.mini.MainActivity",
       "existing_drawable": "tiktok",
-      "name": "TikTok Lite"
+      "name": "TikTok Lite",
+      "installs": "10,000,000+",
+      "drawable": "tiktok_lite"
     },
     {
       "id": "com.kylecorry.trail_sense.dev/com.kylecorry.trail_sense.main.MainActivity",
@@ -197,27 +243,37 @@
     {
       "id": "com.td.transvoice/com.td.transvoice.MainActivity",
       "existing_drawable": "generic_voice",
-      "name": "Trans Voice"
+      "name": "Trans Voice",
+      "installs": "10,000+",
+      "drawable": "trans_voice"
     },
     {
       "id": "com.truecaller/com.truecaller.ui.TrueCallerUI",
       "existing_drawable": "generic_dialer",
-      "name": "Truecaller"
+      "name": "Truecaller",
+      "installs": "1,000,000,000+",
+      "drawable": "truecaller"
     },
     {
       "id": "com.tumblr/com.tumblr.ui.activity.RootActivity",
       "existing_drawable": "tumblr",
-      "name": "Tumblr"
+      "name": "Tumblr",
+      "installs": "100,000,000+",
+      "drawable": "tumblr"
     },
     {
       "id": "com.free.vpn.turkey.proxy.planet/com.vpnapp.MainActivity",
       "existing_drawable": "planet_vpn",
-      "name": "Turkey VPN"
+      "name": "Turkey VPN",
+      "installs": "500,000+",
+      "drawable": "turkey_vpn"
     },
     {
       "id": "com.tuya.smart/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "tuya",
-      "name": "Tuya Smart"
+      "name": "Tuya Smart",
+      "installs": "10,000,000+",
+      "drawable": "tuya_smart"
     },
     {
       "id": "com.tmobile.pr.mytmobile/com.telekom.tworld.dashboard.DashboardActivity",
@@ -227,12 +283,16 @@
     {
       "id": "com.hk.s.all.video.player/com.hk.s.all.video.player.HlsPlay",
       "existing_drawable": "generic_player",
-      "name": "U Player"
+      "name": "U Player",
+      "installs": "1,000,000+",
+      "drawable": "u_player"
     },
     {
       "id": "com.ubs.Paymit.android/com.ubs.Paymit.android.P2PMobileBankingAppAndroidActivity",
       "existing_drawable": "twint",
-      "name": "UBS TWINT"
+      "name": "UBS TWINT",
+      "installs": "1,000,000+",
+      "drawable": "ubs_twint"
     },
     {
       "id": "com.android.test.uibench/com.android.test.uibench.MainActivity",
@@ -242,17 +302,23 @@
     {
       "id": "com.ultimateguitar.tabs/com.ultimateguitar.ugpro.UGMainActivity",
       "existing_drawable": "ultimate_guitar",
-      "name": "Ultimate Guitar"
+      "name": "Ultimate Guitar",
+      "installs": "10,000,000+",
+      "drawable": "ultimate_guitar"
     },
     {
       "id": "com.ultimateguitar.ugpro/com.ultimateguitar.ugpro.ui.activity.StartUpActivity",
       "existing_drawable": "ultimate_guitar",
-      "name": "Ultimate Guitar"
+      "name": "Ultimate Guitar",
+      "installs": "500,000+",
+      "drawable": "ultimate_guitar"
     },
     {
       "id": "com.mixapplications.ultimateusb/com.mixapplications.ultimateusb.MainActivity",
       "existing_drawable": "drivedroid",
-      "name": "Ultimate USB"
+      "name": "Ultimate USB",
+      "installs": "1,000,000+",
+      "drawable": "ultimate_usb"
     }
   ]
 }

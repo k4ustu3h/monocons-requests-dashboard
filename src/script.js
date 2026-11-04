@@ -630,7 +630,9 @@ const Templates = {
       return `<span class="status-pill status-${tagId}" title="${desc}">${label}</span>`;
     }).join('');
 
-    const existingSvgHtml = (existingDrawable && !app.isLinkOnly)
+    const hasExtractedImage = app.drawable && app.drawable !== 'unknown' && app.drawable !== existingDrawable;
+
+    const existingSvgHtml = (existingDrawable && (!app.isLinkOnly || hasExtractedImage))
       ? `<span class="existing-svg-wrapper">
          <img src="${CONFIG.data.svgPath}${existingDrawable}.svg" 
               class="existing-svg" 
@@ -641,7 +643,7 @@ const Templates = {
        </span>`
       : '';
 
-    const isSvgIcon = app.isLinkOnly && existingDrawable;
+    const isSvgIcon = app.isLinkOnly && !hasExtractedImage && existingDrawable;
     const iconHtml = isUnknown
       ? `<div class="fallback-icon-row">No Icon</div>`
       : (isSvgIcon
@@ -750,7 +752,8 @@ const Templates = {
     const existingDrawable = App.state.existingSvgs
       ? App.state.existingSvgs.get(id)
       : null;
-    const isSvgIcon = app.isLinkOnly && (existingDrawable || app.drawable);
+    const hasExtractedImage = app.drawable && app.drawable !== 'unknown' && app.drawable !== existingDrawable;
+    const isSvgIcon = app.isLinkOnly && !hasExtractedImage && (existingDrawable || app.drawable);
 
     if (isUnknown) {
       contentHtml = `
@@ -783,9 +786,10 @@ const Templates = {
 
     const extraCount = app.components ? app.components.length - 1 : 0;
     const compsInfo = extraCount > 0 ? ` (${app.components.length} components)` : '';
+    const installsInfo = app.installs && app.installs !== '—' ? `\nInstalls: ${app.installs}` : '';
     const gridTitle = extraCount > 0
-      ? `${label}${compsInfo}\nFirst time: ${Utils.formatDate(app.firstAppearance)}\n\nComponents:\n${app.components.join('\n')}`
-      : `${label}\nFirst time: ${Utils.formatDate(app.firstAppearance)}`;
+      ? `${label}${compsInfo}${installsInfo}\nFirst time: ${Utils.formatDate(app.firstAppearance)}\n\nComponents:\n${app.components.join('\n')}`
+      : `${label}${installsInfo}\nFirst time: ${Utils.formatDate(app.firstAppearance)}`;
 
     return `
       <div class="grid-card ${
@@ -2116,7 +2120,7 @@ const Data = {
             const comps = (typeof item === 'object' && Array.isArray(item.components)) ? item.components : [appId];
             if (!App.state.idMap.has(appId)) {
               const label = (typeof item === 'object' && item.name) || appId.split('/')[0];
-              const drawable = (typeof item === 'object' && item.existing_drawable) || 'unknown';
+              const drawable = (typeof item === 'object' && (item.drawable || item.existing_drawable)) || 'unknown';
               /** @type {AppEntry} */
               const syntheticApp = {
                 componentName: appId,
@@ -2125,7 +2129,7 @@ const Data = {
                 requestCount: 0,
                 firstAppearance: 0,
                 lastRequested: 0,
-                installs: '—',
+                installs: (typeof item === 'object' && item.installs) || '—',
                 isLinkOnly: true,
                 components: comps,
               };
@@ -2135,6 +2139,9 @@ const Data = {
               const existingApp = App.state.idMap.get(appId);
               if (existingApp && (!existingApp.components || existingApp.components.length === 1)) {
                 existingApp.components = comps;
+              }
+              if (existingApp && typeof item === 'object' && item.installs && (!existingApp.installs || existingApp.installs === '—')) {
+                existingApp.installs = item.installs;
               }
             }
             comps.forEach((c) => {
@@ -2370,7 +2377,7 @@ const Data = {
         const comps = (typeof item === 'object' && Array.isArray(item.components)) ? item.components : [appId];
         if (!App.state.idMap.has(appId)) {
           const label = (typeof item === 'object' && item.name) || appId.split('/')[0];
-          const drawable = (typeof item === 'object' && item.existing_drawable) || 'unknown';
+          const drawable = (typeof item === 'object' && (item.drawable || item.existing_drawable)) || 'unknown';
           /** @type {AppEntry} */
           const syntheticApp = {
             componentName: appId,
@@ -2379,7 +2386,7 @@ const Data = {
             requestCount: 0,
             firstAppearance: 0,
             lastRequested: 0,
-            installs: '—',
+            installs: (typeof item === 'object' && item.installs) || '—',
             isLinkOnly: true,
             components: comps,
           };
@@ -2390,6 +2397,9 @@ const Data = {
           const existingApp = App.state.idMap.get(appId);
           if (existingApp && (!existingApp.components || existingApp.components.length === 1)) {
             existingApp.components = comps;
+          }
+          if (existingApp && typeof item === 'object' && item.installs && (!existingApp.installs || existingApp.installs === '—')) {
+            existingApp.installs = item.installs;
           }
           if (existingApp) newApps.push(existingApp);
         }
@@ -3968,8 +3978,9 @@ const UI = {
       const existingDrawable = App.state.existingSvgs
         ? App.state.existingSvgs.get(id)
         : null;
+      const hasExtractedImage = app.drawable && app.drawable !== 'unknown' && app.drawable !== existingDrawable;
       const iconUrl =
-        app.isLinkOnly && (existingDrawable || app.drawable)
+        app.isLinkOnly && !hasExtractedImage && (existingDrawable || app.drawable)
           ? `${CONFIG.data.svgPath}${existingDrawable || app.drawable}.svg`
           : `${CONFIG.data.assetsPath}${app.drawable}${CONFIG.data.iconExtension}`;
 

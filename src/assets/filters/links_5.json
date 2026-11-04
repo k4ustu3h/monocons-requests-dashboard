@@ -7,7 +7,9 @@
     {
       "id": "com.firstyogi.dothing/com.firstyogi.dothing.SigninActivity",
       "existing_drawable": "tasky",
-      "name": "Dothing"
+      "name": "Dothing",
+      "installs": "5,000+",
+      "drawable": "dothing"
     },
     {
       "id": "com.android.providers.downloads.ui/.DownloadList",
@@ -17,17 +19,23 @@
     {
       "id": "com.dropbox.dash/com.dropbox.dash.auth.impl.view.AuthActivity",
       "existing_drawable": "dropbox",
-      "name": "Dropbox Dash"
+      "name": "Dropbox Dash",
+      "installs": "5,000+",
+      "drawable": "dropbox_dash"
     },
     {
       "id": "com.dsplayer.app/com.dsplayer.app.features.videobrowser.ui.VideoBrowserActivity",
       "existing_drawable": "just_player",
-      "name": "DS Player"
+      "name": "DS Player",
+      "installs": "10,000+",
+      "drawable": "ds_player"
     },
     {
       "id": "com.olxmena.horizontal/com.olxmena.horizontal.MainActivity",
       "existing_drawable": "olx",
-      "name": "dubizzle"
+      "name": "dubizzle",
+      "installs": "10,000,000+",
+      "drawable": "dubizzle"
     },
     {
       "id": "io.github.luyifei2011.dvdcontroller/io.github.luyifei2011.dvdcontroller.MainActivity",
@@ -37,37 +45,51 @@
     {
       "id": "com.jmsys.earth3d/com.jmsys.earth3d.SplashActivity",
       "existing_drawable": "generic_earth",
-      "name": "Earth3D"
+      "name": "Earth3D",
+      "installs": "10,000,000+",
+      "drawable": "earth3d"
     },
     {
       "id": "com.dede.android_eggs/com.dede.android_eggs.main.EasterEggsActivity",
       "existing_drawable": "easter_eggs_14",
-      "name": "Easter Eggs"
+      "name": "Easter Eggs",
+      "installs": "100,000+",
+      "drawable": "easter_eggs"
     },
     {
       "id": "easy.bible.read.understand.simple/org.mainsoft.newbible.activity.LaunchActivity",
       "existing_drawable": "generic_bible",
-      "name": "Easy Bible"
+      "name": "Easy Bible",
+      "installs": "1,000,000+",
+      "drawable": "easy_bible"
     },
     {
       "id": "easy.launcher/easy.launcher.ime.promo.ImePromoActivity",
       "existing_drawable": "generic_keyboard",
-      "name": "Easy Keyboard"
+      "name": "Easy Keyboard",
+      "installs": "10,000,000+",
+      "drawable": "easy_keyboard"
     },
     {
       "id": "com.cem.pianokeyboard.pianomusic/com.cem.piano.guide.ui.activities.IntroActivity",
       "existing_drawable": "generic_piano",
-      "name": "Easy Piano"
+      "name": "Easy Piano",
+      "installs": "500,000+",
+      "drawable": "easy_piano"
     },
     {
       "id": "com.hwqgrhhjfd.idlefastfood/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "eatventure",
-      "name": "Eatventure"
+      "name": "Eatventure",
+      "installs": "50,000,000+",
+      "drawable": "eatventure"
     },
     {
       "id": "com.ebay.mobile/com.ebay.mobile.home.impl.main.MainActivity",
       "existing_drawable": "ebay",
-      "name": "eBay"
+      "name": "eBay",
+      "installs": "100,000,000+",
+      "drawable": "ebay"
     },
     {
       "id": "com.miHoYo.Yuanshen/org.yuzu.yuzu_emu.ui.main.MainActivity",
@@ -77,27 +99,37 @@
     {
       "id": "com.edesur.movil/com.edesur.movil.MainActivity",
       "existing_drawable": "enel",
-      "name": "Edesur"
+      "name": "Edesur",
+      "installs": "1,000,000+",
+      "drawable": "edesur"
     },
     {
       "id": "com.auxbrain.egginc/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "egg_inc",
-      "name": "Egg, Inc."
+      "name": "Egg, Inc.",
+      "installs": "10,000,000+",
+      "drawable": "egg_inc"
     },
     {
       "id": "br.com.deway.coelce/br.com.deway.coelce.MainActivity",
       "existing_drawable": "enel",
-      "name": "Enel"
+      "name": "Enel",
+      "installs": "1,000,000+",
+      "drawable": "enel"
     },
     {
       "id": "english.swahili.bible/king.james.bible.android.activity.LaunchActivity",
       "existing_drawable": "generic_bible",
-      "name": "English Swahili Bible"
+      "name": "English Swahili Bible",
+      "installs": "1,000,000+",
+      "drawable": "english_swahili_bible"
     },
     {
       "id": "english.swahili.bible.bilingual/org.mainsoft.newbible.activity.LaunchActivity",
       "existing_drawable": "generic_bible",
-      "name": "English Swahili Bible Takatifu"
+      "name": "English Swahili Bible Takatifu",
+      "installs": "1,000,000+",
+      "drawable": "english_swahili_bible_takatifu"
     },
     {
       "id": "com.coolappstore.everdialer.by.svhp/com.coolappstore.everdialer.by.svhp.MainActivityNothingIcon",
@@ -107,12 +139,16 @@
     {
       "id": "com.coolkit/com.coolkit.MainActivity",
       "existing_drawable": "ewelink",
-      "name": "eWeLink"
+      "name": "eWeLink",
+      "installs": "5,000,000+",
+      "drawable": "ewelink"
     },
     {
       "id": "com.exness.android.go/com.exness.features.entry.impl.presentation.EntryActivity",
       "existing_drawable": "exness",
-      "name": "Exness Go"
+      "name": "Exness Go",
+      "installs": "5,000,000+",
+      "drawable": "exness_go"
     },
     {
       "id": "com.exteraless.app/org.telegram.messenger.TelegramIcon",
@@ -122,42 +158,58 @@
     {
       "id": "com.facebook.lite/com.aincrad.application.MainActivity",
       "existing_drawable": "facebook",
-      "name": "Facebook Lite"
+      "name": "Facebook Lite",
+      "installs": "1,000,000,000+",
+      "drawable": "facebook_lite"
     },
     {
       "id": "com.fairphone.android.fairbudsapp/com.fairphone.fairsound.ui.activity.MainActivity",
       "existing_drawable": "generic_voice_recorder_waves",
-      "name": "Fairbuds"
+      "name": "Fairbuds",
+      "installs": "10,000+",
+      "drawable": "fairbuds"
     },
     {
       "id": "com.blogspot.novalabsandroid.fakecallerid/com.blogspot.novalabsandroid.fakecallerid.ConfigCallActivity",
       "existing_drawable": "generic_dialer",
-      "name": "Fake Call"
+      "name": "Fake Call",
+      "installs": "1,000,000+",
+      "drawable": "fake_call"
     },
     {
       "id": "com.dox.fpoweroff/com.dox.fpoweroff.activity.MainActivity",
       "existing_drawable": "generic_power",
-      "name": "Fake Power Off"
+      "name": "Fake Power Off",
+      "installs": "10,000+",
+      "drawable": "fake_power_off"
     },
     {
       "id": "com.miraclegames.farlight84/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "farlight_84",
-      "name": "Farlight 84"
+      "name": "Farlight 84",
+      "installs": "10,000,000+",
+      "drawable": "farlight_84"
     },
     {
       "id": "com.file.manager.file.organizer.file.explorer.manage.files/com.file.manager.file.organizer.file.explorer.manage.files.ui.activity.splash.SplashActivity",
       "existing_drawable": "generic_files",
-      "name": "File Manager"
+      "name": "File Manager",
+      "installs": "1,000,000+",
+      "drawable": "file_manager"
     },
     {
       "id": "net.east_hino.standard_explorer/net.east_hino.standard_explorer.ui.ActivityMain",
       "existing_drawable": "generic_files",
-      "name": "File Manager Shortcut"
+      "name": "File Manager Shortcut",
+      "installs": "10,000+",
+      "drawable": "file_manager_shortcut"
     },
     {
       "id": "nl.moeilijkedingen.jellyfinaudioplayer/nl.moeilijkedingen.jellyfinaudioplayer.MainActivity",
       "existing_drawable": "apple_music",
-      "name": "Fintunes"
+      "name": "Fintunes",
+      "installs": "10,000+",
+      "drawable": "fintunes"
     },
     {
       "id": "appinventor.ai_logiscool869.FlappyCopter/appinventor.ai_logiscool869.FlappyCopter.Screen1",
@@ -167,7 +219,9 @@
     {
       "id": "com.flashfoodapp.android/com.flashfoodapp.android.MainActivity",
       "existing_drawable": "flashfood",
-      "name": "Flashfood"
+      "name": "Flashfood",
+      "installs": "1,000,000+",
+      "drawable": "flashfood"
     },
     {
       "id": "flashgram.org.web/org.telegram.messenger.DefaultIcon",
@@ -177,12 +231,16 @@
     {
       "id": "com.flickr.android/com.flickr.android.MainActivity",
       "existing_drawable": "flickr",
-      "name": "Flickr"
+      "name": "Flickr",
+      "installs": "1,000,000+",
+      "drawable": "flickr"
     },
     {
       "id": "com.flipkart.android/com.flipkart.android.SASALELEIconAlias",
       "existing_drawable": "flipkart",
-      "name": "Flipkart"
+      "name": "Flipkart",
+      "installs": "1,000,000,000+",
+      "drawable": "flipkart"
     },
     {
       "id": "com.eurekateam.fmradio/com.eurekateam.fmradio.MainActivity",
@@ -192,17 +250,23 @@
     {
       "id": "com.liveradio.fmradio.radiotuner.radiostation.amradio/com.liveradio.fmradio.radiotuner.radiostation.amradio.ui.activities.SplashActivity",
       "existing_drawable": "generic_fm_radio",
-      "name": "FM Radio"
+      "name": "FM Radio",
+      "installs": "5,000,000+",
+      "drawable": "fm_radio"
     },
     {
       "id": "me.jajae.fmradio/me.jajae.fmradio.MainActivity",
       "existing_drawable": "generic_fm_radio",
-      "name": "FM Radio"
+      "name": "FM Radio",
+      "installs": "10,000+",
+      "drawable": "fm_radio"
     },
     {
       "id": "com.ngc.fora/com.ngc.fora.ForaDictionary",
       "existing_drawable": "generic_search",
-      "name": "Fora Dictionary"
+      "name": "Fora Dictionary",
+      "installs": "100,000+",
+      "drawable": "fora_dictionary"
     },
     {
       "id": "com.freemusic.offline.bus/com.project.gugu.music.ui.activity.SplashActivity",
@@ -232,7 +296,9 @@
     {
       "id": "com.google.android.inputmethod.latin/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "gboard",
-      "name": "Gboard"
+      "name": "Gboard",
+      "installs": "10,000,000,000+",
+      "drawable": "gboard"
     },
     {
       "id": "dev.jason.com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.launcher.LauncherActivity",
@@ -247,12 +313,16 @@
     {
       "id": "com.appgcam.gcamera/com.appgcam.gcamera.ui.SplashActivity",
       "existing_drawable": "generic_camera",
-      "name": "GCam"
+      "name": "GCam",
+      "installs": "1,000,000+",
+      "drawable": "gcam"
     },
     {
       "id": "com.globe.gcash.android/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "gcash",
-      "name": "GCash"
+      "name": "GCash",
+      "installs": "100,000,000+",
+      "drawable": "gcash"
     }
   ]
 }

@@ -20,7 +20,9 @@
       "components": [
         "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
         "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityLightIcon"
-      ]
+      ],
+      "installs": "5,000+",
+      "drawable": "pepper"
     },
     {
       "id": "se.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
@@ -29,7 +31,9 @@
       "components": [
         "se.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
         "se.pepperdeals/com.pepper.apps.android.presentation.MainActivityLightIcon"
-      ]
+      ],
+      "installs": "50,000+",
+      "drawable": "pepper"
     },
     {
       "id": "ai.perplexity.app.android/ai.perplexity.app.android.authorization.exception.MainActivity",
@@ -38,7 +42,9 @@
       "components": [
         "ai.perplexity.app.android/ai.perplexity.app.android.authorization.exception.MainActivity",
         "ai.perplexity.app.android/com.google.android.archive.ReactivateActivity"
-      ]
+      ],
+      "installs": "100,000,000+",
+      "drawable": "perplexity"
     },
     {
       "id": "com.grice.dialer/com.grice.dialer.icon.Default",
@@ -47,7 +53,9 @@
       "components": [
         "com.grice.dialer/com.grice.dialer.icon.Default",
         "com.grice.dialer/com.grice.dialer.icon.IOS"
-      ]
+      ],
+      "installs": "10,000,000+",
+      "drawable": "phone"
     },
     {
       "id": "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2",
@@ -56,7 +64,9 @@
       "components": [
         "com.androxus.playback/com.androxus.playback.presentation.SplashActivity",
         "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2"
-      ]
+      ],
+      "installs": "1,000,000+",
+      "drawable": "playback"
     },
     {
       "id": "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
@@ -65,7 +75,9 @@
       "components": [
         "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
         "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityLightIcon"
-      ]
+      ],
+      "installs": "100,000+",
+      "drawable": "com_preisjaeger"
     },
     {
       "id": "com.drsants.eggproject/com.drsants.eggproject.activities.Splash",
@@ -74,7 +86,9 @@
       "components": [
         "com.drsants.eggproject/com.drsants.eggproject.activities.Splash",
         "com.drsants.eggproject/com.drsants.eggproject.activities.SplashActivity"
-      ]
+      ],
+      "installs": "5,000+",
+      "drawable": "project_themer"
     },
     {
       "id": "ch.protonvpn.android/ch.protonvpn.android.RoutingCalculator",
@@ -83,7 +97,9 @@
       "components": [
         "ch.protonvpn.android/ch.protonvpn.android.RoutingCalculator",
         "ch.protonvpn.android/ch.protonvpn.android.RoutingWeather"
-      ]
+      ],
+      "installs": "100,000,000+",
+      "drawable": "proton_vpn"
     },
     {
       "id": "com.ykart.tool.qrcodegen/com.ykart.tool.qrcodegen.MainActivity",
@@ -92,7 +108,9 @@
       "components": [
         "com.ykart.tool.qrcodegen/com.ykart.tool.qrcodegen.MainActivity",
         "com.ykart.tool.qrcodegen/com.ykart.tool.qrcodegen.SplashScreenActivity"
-      ]
+      ],
+      "installs": "1,000,000+",
+      "drawable": "qr_code_generator"
     },
     {
       "id": "com.bigwinepot.nwdn.international/com.bigwinepot.nwdn.MainActivity",
@@ -101,7 +119,9 @@
       "components": [
         "com.bigwinepot.nwdn.international/com.bendingspoons.remini.wfqYU",
         "com.bigwinepot.nwdn.international/com.bigwinepot.nwdn.MainActivity"
-      ]
+      ],
+      "installs": "500,000,000+",
+      "drawable": "remini"
     },
     {
       "id": "com.b_lam.resplash/com.b_lam.resplash.activities.MainActivity",
@@ -110,7 +130,9 @@
       "components": [
         "com.b_lam.resplash/com.b_lam.resplash.activities.MainActivity",
         "com.b_lam.resplash/com.b_lam.resplash.activities.SplashActivity"
-      ]
+      ],
+      "installs": "1,000,000+",
+      "drawable": "resplash"
     },
     {
       "id": "app.revenge/com.discord.main.MainCamo",
@@ -146,7 +168,9 @@
       "components": [
         "com.vitotechnology.sky.tonight.map.star.walk/com.google.firebase.MessagingUnityPlayerActivity",
         "com.vitotechnology.sky.tonight.map.star.walk/com.unity3d.player.UnityPlayerActivity"
-      ]
+      ],
+      "installs": "5,000,000+",
+      "drawable": "sky_tonight"
     },
     {
       "id": "com.splendapps.splendo/com.splendapps.splendo.MainActivity",
@@ -155,7 +179,9 @@
       "components": [
         "com.splendapps.splendo/com.splendapps.splendo.MainActivity",
         "com.splendapps.splendo/com.splendapps.splendo.activity.MainActivity"
-      ]
+      ],
+      "installs": "10,000,000+",
+      "drawable": "splendo"
     },
     {
       "id": "au.com.subcard.app/crc643a5d7573d6311bd7.MainActivity",
@@ -164,7 +190,9 @@
       "components": [
         "au.com.subcard.app/crc643a5d7573d6311bd7.MainActivity",
         "au.com.subcard.app/crc643f56eb19e392e7ef.MainActivity"
-      ]
+      ],
+      "installs": "500,000+",
+      "drawable": "subway"
     },
     {
       "id": "com.easybrain.sudoku.android/com.easybrain.sudoku.android.SplashActivity",
@@ -173,7 +201,9 @@
       "components": [
         "com.easybrain.sudoku.android/com.easybrain.sudoku.android.SplashActivity",
         "com.easybrain.sudoku.android/com.google.android.archive.ReactivateActivity"
-      ]
+      ],
+      "installs": "100,000,000+",
+      "drawable": "sudoku"
     },
     {
       "id": "se.svt.android.svtplay/se.svt.svtplay.ui.mobile.MainActivity",
@@ -182,7 +212,9 @@
       "components": [
         "se.svt.android.svtplay/com.google.android.archive.ReactivateActivity",
         "se.svt.android.svtplay/se.svt.svtplay.ui.mobile.MainActivity"
-      ]
+      ],
+      "installs": "5,000,000+",
+      "drawable": "svt_play"
     },
     {
       "id": "org.telegram.messenger.beta/org.telegram.messenger.NoxIcon",
@@ -200,7 +232,9 @@
       "components": [
         "com.samco.trackandgraph/com.samco.trackandgraph.MainActivity",
         "com.samco.trackandgraph/com.samco.trackandgraph.main.MainActivity"
-      ]
+      ],
+      "installs": "50,000+",
+      "drawable": "track_graph"
     },
     {
       "id": "com.google.android.wearable.app.cn/com.google.android.clockwork.companion.StatusActivity",
@@ -218,7 +252,9 @@
       "components": [
         "com.inmobi.weather/com.handmark.expressweather.ui.activities.MainActivity",
         "com.inmobi.weather/com.weather.app.common.MainActivity"
-      ]
+      ],
+      "installs": "100,000,000+",
+      "drawable": "weather"
     },
     {
       "id": "de.ericz.worldclockv2/com.example.world_clock_v2.MainActivity",
@@ -227,7 +263,9 @@
       "components": [
         "de.ericz.worldclockv2/com.example.world_clock_v2.MainActivity",
         "de.ericz.worldclockv2/de.ericz.worldclockv2.MainActivity"
-      ]
+      ],
+      "installs": "100+",
+      "drawable": "world_clock_v2"
     },
     {
       "id": "com.qbis.guessthecountry/dev.axmol.app.AppActivity",
@@ -236,7 +274,9 @@
       "components": [
         "com.qbis.guessthecountry/dev.axmol.app.AppActivity",
         "com.qbis.guessthecountry/org.cocos2dx.cpp.AppActivity"
-      ]
+      ],
+      "installs": "5,000,000+",
+      "drawable": "world_map_quiz"
     },
     {
       "id": "com.android.youtube.music.premium/com.android.youtube.music.premium.morphe_original_1",
@@ -254,7 +294,9 @@
       "components": [
         "com.google.android.music/com.android.music.activitymanagement.TopLevelActivity",
         "com.google.android.music/com.google.android.music.tombstone.LauncherActivity"
-      ]
+      ],
+      "installs": "5,000,000,000+",
+      "drawable": "youtube_music"
     },
     {
       "id": "ch.zkb.twint/ch.zkb.twint.ui.StartActivity",
@@ -263,7 +305,9 @@
       "components": [
         "ch.zkb.twint/ch.zkb.twint.ui.StartActivity",
         "ch.zkb.twint/ch.zkb.twint.ui.startup.StartupActivity"
-      ]
+      ],
+      "installs": "100,000+",
+      "drawable": "zkb_twint"
     },
     {
       "id": "com.mojanprs.minecrafto/com.mojang.minecraftpe.MainActivity",
@@ -273,12 +317,16 @@
     {
       "id": "com.github.superadb/com.github.superadb.SplashActivity",
       "existing_drawable": "ladb",
-      "name": "ADB"
+      "name": "ADB",
+      "installs": "10,000+",
+      "drawable": "adb"
     },
     {
       "id": "app.adbotg.shell/app.adbotg.shell.views.MainActivity",
       "existing_drawable": "ladb",
-      "name": "ADB OTG Shell"
+      "name": "ADB OTG Shell",
+      "installs": "100,000+",
+      "drawable": "adb_otg_shell"
     },
     {
       "id": "crixec.adbtoolkitsinstall/crixec.adbtoolkitsinstall.MainActivity",
@@ -293,42 +341,58 @@
     {
       "id": "com.ais.mimo.AISPlay/net.vimmi.core.launcher.StartupActivity",
       "existing_drawable": "just_player",
-      "name": "AIS PLAY"
+      "name": "AIS PLAY",
+      "installs": "10,000,000+",
+      "drawable": "ais_play"
     },
     {
       "id": "free.alquran.holyquran/free.alquran.holyquran.view.DisclaimerActivityNew",
       "existing_drawable": "generic_quran",
-      "name": "Al Quran"
+      "name": "Al Quran",
+      "installs": "50,000,000+",
+      "drawable": "al_quran"
     },
     {
       "id": "algar.telecom.meusservicos/algar.telecom.meusservicos.MainActivity",
       "existing_drawable": "just_player",
-      "name": "Algar Telecom"
+      "name": "Algar Telecom",
+      "installs": "1,000,000+",
+      "drawable": "algar_telecom"
     },
     {
       "id": "dev.goodwy.phone/dev.goodwy.phone.activities.SplashActivity.Original",
       "existing_drawable": "generic_dialer",
-      "name": "Alight Phone"
+      "name": "Alight Phone",
+      "installs": "100,000+",
+      "drawable": "alight_phone"
     },
     {
       "id": "com.pdfmerge.imagetopdf.pdfmaker/com.pdfmerge.imagetopdf.pdfmaker.screen.home.SplashScreen",
       "existing_drawable": "generic_pdf_square",
-      "name": "All PDF Maker"
+      "name": "All PDF Maker",
+      "installs": "10,000,000+",
+      "drawable": "all_pdf_maker"
     },
     {
       "id": "pdfreader.pdfviewer.free.officetool/pdfreader.pdfviewer.free.officetool.ui.R3WelcomeActivity",
       "existing_drawable": "generic_pdf_file",
-      "name": "All PDF Reader"
+      "name": "All PDF Reader",
+      "installs": "10,000,000+",
+      "drawable": "all_pdf_reader"
     },
     {
       "id": "com.crazylabs.amaze.game/com.unity3d.player.UnityPlayerActivity",
       "existing_drawable": "amaze",
-      "name": "AMAZE!"
+      "name": "AMAZE!",
+      "installs": "100,000,000+",
+      "drawable": "amaze"
     },
     {
       "id": "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonnow.AmazonNowHomeActivityAlias",
       "existing_drawable": "amazon_pay",
-      "name": "Amazon Now"
+      "name": "Amazon Now",
+      "installs": "500,000,000+",
+      "drawable": "amazon_now"
     },
     {
       "id": "com.amazon.photos/com.amazon.photos.MainActivity",
@@ -338,7 +402,9 @@
     {
       "id": "com.htetznaing.adbotg/com.htetznaing.adbotg.MainActivity",
       "existing_drawable": "ladb",
-      "name": "Android Debug Bridge"
+      "name": "Android Debug Bridge",
+      "installs": "1,000,000+",
+      "drawable": "android_debug_bridge"
     },
     {
       "id": "com.kamwithk.ankiconnectandroid/com.kamwithk.ankiconnectandroid.MainActivity",
@@ -348,12 +414,16 @@
     {
       "id": "com.anydesk.anydeskandroid/com.anydesk.anydeskandroid.gui.activity.HubActivity",
       "existing_drawable": "anydesk",
-      "name": "AnyDesk"
+      "name": "AnyDesk",
+      "installs": "100,000,000+",
+      "drawable": "anydesk"
     },
     {
       "id": "com.inwepo.apkinstaller/com.inwepo.apkinstaller.MainActivity",
       "existing_drawable": "generic_shell",
-      "name": "APK Installer"
+      "name": "APK Installer",
+      "installs": "100,000+",
+      "drawable": "apk_installer"
     },
     {
       "id": "com.example.libusbAndroidTest/com.example.libusbAndroidTest.MainActivity",
@@ -363,12 +433,16 @@
     {
       "id": "io.zenzy.applock/io.zenzy.applock.MusicLauncher",
       "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "AppLock VIP"
+      "name": "AppLock VIP",
+      "installs": "1,000,000+",
+      "drawable": "applock_vip"
     },
     {
       "id": "com.tomclaw.appsend_rb/com.tomclaw.appsend_rb.screen.apps.AppsActivity",
       "existing_drawable": "appsend",
-      "name": "AppSend"
+      "name": "AppSend",
+      "installs": "10,000+",
+      "drawable": "appsend"
     }
   ]
 }

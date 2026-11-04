@@ -12,17 +12,23 @@
     {
       "id": "com.jpl.jiomart/com.jcpjiomart.MainActivityAlias1",
       "existing_drawable": "jiomart",
-      "name": "JioMart"
+      "name": "JioMart",
+      "installs": "100,000,000+",
+      "drawable": "jiomart"
     },
     {
       "id": "com.jio.media.jiobeats/com.jio.media.jiobeats.InitActivityAliasProPlus",
       "existing_drawable": "jiosaavn",
-      "name": "JioSaavn"
+      "name": "JioSaavn",
+      "installs": "500,000,000+",
+      "drawable": "jiosaavn"
     },
     {
       "id": "com.aconvert.jpg2pdf/com.aconvert.jpg2pdf.MainActivity",
       "existing_drawable": "generic_pdf_square",
-      "name": "JPG to PDF Converter"
+      "name": "JPG to PDF Converter",
+      "installs": "10,000,000+",
+      "drawable": "jpg_to_pdf_converter"
     },
     {
       "id": "com.facebook.katanb/com.facebook.katanb.LoginActivity",
@@ -32,7 +38,9 @@
     {
       "id": "com.justeat.app.dk/com.takeaway.android.activity.Splash",
       "existing_drawable": "just_eat",
-      "name": "Just Eat"
+      "name": "Just Eat",
+      "installs": "500,000+",
+      "drawable": "just_eat"
     },
     {
       "id": "com.kaorin.theme.iconpack/com.kaorin.theme.iconpack.activities.MainActivity",
@@ -57,122 +65,170 @@
     {
       "id": "com.cts.kfcthailand/com.cognizantorderserv.kfcindiadroid.MainActivity",
       "existing_drawable": "kfc",
-      "name": "KFC"
+      "name": "KFC",
+      "installs": "1,000,000+",
+      "drawable": "kfc"
     },
     {
       "id": "com.grupoatwork.uq.kfc.pt.release/io.flutter.embedding.android.FlutterActivity",
       "existing_drawable": "kfc",
-      "name": "KFC"
+      "name": "KFC",
+      "installs": "100,000+",
+      "drawable": "kfc"
     },
     {
       "id": "com.kfc.malaysia/com.kfc.malaysia.activity.MainActivity",
       "existing_drawable": "kfc",
-      "name": "KFC"
+      "name": "KFC",
+      "installs": "5,000,000+",
+      "drawable": "kfc"
     },
     {
       "id": "com.kfc.mobile/com.kfc.mobile.MainActivity",
       "existing_drawable": "kfc",
-      "name": "KFC"
+      "name": "KFC",
+      "installs": "1,000,000+",
+      "drawable": "kfc"
     },
     {
       "id": "com.kfc.tt/com.kfc.tt.SplashActivity",
       "existing_drawable": "kfc",
-      "name": "KFC"
+      "name": "KFC",
+      "installs": "100,000+",
+      "drawable": "kfc"
     },
     {
       "id": "com.kfc.us.mobile/com.kfc.us.mobile.MainActivityDefault",
       "existing_drawable": "kfc",
-      "name": "KFC"
+      "name": "KFC",
+      "installs": "5,000,000+",
+      "drawable": "kfc"
     },
     {
       "id": "com.kfc_rs/com.kfc_polska.ui.main.MainActivity",
       "existing_drawable": "kfc",
-      "name": "KFC"
+      "name": "KFC",
+      "installs": "50,000+",
+      "drawable": "kfc"
     },
     {
       "id": "com.kfcaus.ordering/com.kfcaus.ordering.ui.KfcLaunchActivity",
       "existing_drawable": "kfc",
-      "name": "KFC"
+      "name": "KFC",
+      "installs": "1,000,000+",
+      "drawable": "kfc"
     },
     {
       "id": "com.kfcecuador.kfc/com.kfcecuador.kfc.MainActivity",
       "existing_drawable": "kfc",
-      "name": "KFC"
+      "name": "KFC",
+      "installs": "10,000,000+",
+      "drawable": "kfc"
     },
     {
       "id": "com.kfcnz.orderserv/com.kfcnz.orderserv.MainActivity",
       "existing_drawable": "kfc",
-      "name": "KFC"
+      "name": "KFC",
+      "installs": "500,000+",
+      "drawable": "kfc"
     },
     {
       "id": "com.kineticcafe.kfccolonelsclub/com.cognizantorderserv.kfcindiadroid.MainActivity",
       "existing_drawable": "kfc",
-      "name": "KFC"
+      "name": "KFC",
+      "installs": "1,000,000+",
+      "drawable": "kfc"
     },
     {
       "id": "com.yum.kfc.ro/com.yum.kfc.ro.MainActivity",
       "existing_drawable": "kfc",
-      "name": "KFC"
+      "name": "KFC",
+      "installs": "500,000+",
+      "drawable": "kfc"
     },
     {
       "id": "com.kick.streaming/com.kick.streaming.MainActivity",
       "existing_drawable": "kick",
-      "name": "Kick"
+      "name": "Kick",
+      "installs": "1,000,000+",
+      "drawable": "kick"
     },
     {
       "id": "com.easybrain.killer.sudoku.free/com.easybrain.killer.sudoku.free.SplashActivity",
       "existing_drawable": "generic_sudoku",
-      "name": "Killer Sudoku"
+      "name": "Killer Sudoku",
+      "installs": "10,000,000+",
+      "drawable": "killer_sudoku"
     },
     {
       "id": "bible.kingjamesbiblelite/com.bible.kingjamesbiblelite.ac.base.SplashScreen",
       "existing_drawable": "generic_bible",
-      "name": "King James Bible"
+      "name": "King James Bible",
+      "installs": "10,000,000+",
+      "drawable": "king_james_bible"
     },
     {
       "id": "com.xxi.film.kitanonton/com.xxi.film.kitanonton.MainActivity",
       "existing_drawable": "just_player",
-      "name": "KITA NONTON"
+      "name": "KITA NONTON",
+      "installs": "100,000+",
+      "drawable": "kita_nonton"
     },
     {
       "id": "wiktoria.goroch.bible_kjva.AOUSFCKLLRSGYXYC/king.james.bible.android.activity.LaunchActivity",
       "existing_drawable": "generic_bible",
-      "name": "KJVA Bible"
+      "name": "KJVA Bible",
+      "installs": "500,000+",
+      "drawable": "kjva_bible"
     },
     {
       "id": "com.ebay.kleinanzeigen/com.ebay.kleinanzeigen.ui.main.MainActivity",
       "existing_drawable": "kleinanzeigen",
-      "name": "Kleinanzeigen"
+      "name": "Kleinanzeigen",
+      "installs": "50,000,000+",
+      "drawable": "kleinanzeigen"
     },
     {
       "id": "com.kotak811mobilebankingapp.instantsavingsupiscanandpayrecharge/com.kotak811mobilebankingapp.instantsavingsupiscanandpayrecharge.MainActivityKotakOld",
       "existing_drawable": "kotak811",
-      "name": "Kotak811"
+      "name": "Kotak811",
+      "installs": "50,000,000+",
+      "drawable": "kotak811"
     },
     {
       "id": "la.bible.francaise.gratuit/king.james.bible.android.activity.LaunchActivity",
       "existing_drawable": "generic_bible",
-      "name": "La Bible"
+      "name": "La Bible",
+      "installs": "100,000+",
+      "drawable": "la_bible"
     },
     {
       "id": "wiktoria.goroch.biblie_darby_french.AOURPEFFEFFAWZYR/king.james.bible.android.activity.LaunchActivity",
       "existing_drawable": "generic_bible",
-      "name": "La Bible"
+      "name": "La Bible",
+      "installs": "100,000+",
+      "drawable": "la_bible"
     },
     {
       "id": "com.creciendodev.com.saintebible_bds/com.creciendodev.com.saintebible_bds.SplashScreen",
       "existing_drawable": "generic_bible",
-      "name": "La Bible Du Semeur"
+      "name": "La Bible Du Semeur",
+      "installs": "500,000+",
+      "drawable": "la_bible_du_semeur"
     },
     {
       "id": "biblia.habla.hoy.AOVGMDRFUVODNBOFPU/king.james.bible.android.activity.LaunchActivity",
       "existing_drawable": "generic_bible",
-      "name": "La Biblia"
+      "name": "La Biblia",
+      "installs": "1,000,000+",
+      "drawable": "la_biblia"
     },
     {
       "id": "la.biblia.catolica.latinoamericana/king.james.bible.android.activity.LaunchActivity",
       "existing_drawable": "generic_bible",
-      "name": "La Biblia"
+      "name": "La Biblia",
+      "installs": "1,000,000+",
+      "drawable": "la_biblia"
     },
     {
       "id": "com.draco.ladb.free/com.draco.ladb.views.MainActivity",
@@ -187,12 +243,16 @@
     {
       "id": "com.lastpass.lpandroid/com.lastpass.lpandroid.activity.MainActivity",
       "existing_drawable": "lastpass",
-      "name": "LastPass"
+      "name": "LastPass",
+      "installs": "10,000,000+",
+      "drawable": "lastpass"
     },
     {
       "id": "com.lastpass.authenticator/com.lastpass.authenticator.ui.MainActivity",
       "existing_drawable": "lastpass",
-      "name": "LastPass Authenticator"
+      "name": "LastPass Authenticator",
+      "installs": "1,000,000+",
+      "drawable": "lastpass_authenticator"
     },
     {
       "id": "com.bearinmind.launcher314/com.bearinmind.launcher314.MainActivity",
@@ -212,17 +272,23 @@
     {
       "id": "com.citrus.citruspay/com.citrus.citruspay.Onboarding.view.activities.SplashActivity",
       "existing_drawable": "lazypay",
-      "name": "LazyPay"
+      "name": "LazyPay",
+      "installs": "10,000,000+",
+      "drawable": "lazypay"
     },
     {
       "id": "de.melvil.noten/de.melvil.noten.MainActivity",
       "existing_drawable": "apple_music",
-      "name": "Learn Music Notes"
+      "name": "Learn Music Notes",
+      "installs": "100,000+",
+      "drawable": "learn_music_notes"
     },
     {
       "id": "com.learn.piano.music.instrument/com.example.pianoapplication.MainActivity",
       "existing_drawable": "generic_piano",
-      "name": "Learn Piano"
+      "name": "Learn Piano",
+      "installs": "100,000+",
+      "drawable": "learn_piano"
     },
     {
       "id": "com.lenovo.FileBrowser2/com.lenovo.FileBrowser.activities.FileBrowserMain",
@@ -242,7 +308,9 @@
     {
       "id": "com.letterboxd.letterboxd/com.letterboxd.letterboxd.MainActivity_icon_blackswan",
       "existing_drawable": "letterboxd",
-      "name": "Letterboxd"
+      "name": "Letterboxd",
+      "installs": "10,000,000+",
+      "drawable": "letterboxd"
     },
     {
       "id": "com.lge.music/com.lge.music.MusicBrowserActivity",

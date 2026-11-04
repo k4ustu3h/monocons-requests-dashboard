@@ -12,12 +12,16 @@
     {
       "id": "com.mojang.minecrafttrialpe/com.mojang.minecraftpe.MainActivity",
       "existing_drawable": "minecraft",
-      "name": "Minecraft Trial"
+      "name": "Minecraft Trial",
+      "installs": "100,000,000+",
+      "drawable": "minecraft_trial"
     },
     {
       "id": "umito.android.minipiano/umito.android.shared.minipiano.splashscreen.SplashScreenActivity",
       "existing_drawable": "generic_piano",
-      "name": "Mini Piano"
+      "name": "Mini Piano",
+      "installs": "10,000,000+",
+      "drawable": "mini_piano"
     },
     {
       "id": "bored.codebyk.mintcalc/bored.codebyk.mintcalc.MainActivity",
@@ -27,7 +31,9 @@
     {
       "id": "com.mizuvoip.mizudroid.app/com.mizuvoip.mizudroid.app.TabAct",
       "existing_drawable": "generic_dialer",
-      "name": "MizuDroid"
+      "name": "MizuDroid",
+      "installs": "1,000,000+",
+      "drawable": "mizudroid"
     },
     {
       "id": "com.mobile.legends/com.google.android.archive.ReactivateActivity",
@@ -42,7 +48,9 @@
     {
       "id": "com.next.innovation.takatak/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity",
       "existing_drawable": "generic_player",
-      "name": "Moj Lite"
+      "name": "Moj Lite",
+      "installs": "100,000,000+",
+      "drawable": "moj_lite"
     },
     {
       "id": "com.netflix.NGP.MonumentValley1/com.unity3d.player.UnityPlayerActivity",
@@ -72,12 +80,16 @@
     {
       "id": "com.motorola.motobuds/com.motorola.motobuds.ui.activity.LandingPageROWActivity",
       "existing_drawable": "moto_buds",
-      "name": "Moto Buds"
+      "name": "Moto Buds",
+      "installs": "1,000,000+",
+      "drawable": "moto_buds"
     },
     {
       "id": "com.rn_sgw/com.rn_sgw.MainActivity",
       "existing_drawable": "moto",
-      "name": "Moto hellovoice"
+      "name": "Moto hellovoice",
+      "installs": "100,000+",
+      "drawable": "moto_hellovoice"
     },
     {
       "id": "com.community.mbox.afen/com.transsion.subroom.activity.SplashActivity",
@@ -112,7 +124,9 @@
     {
       "id": "com.gargan.abismo/com.gargan.abismo.module_home.HomeActivityNew",
       "existing_drawable": "moviebox",
-      "name": "MovieBox HD"
+      "name": "MovieBox HD",
+      "installs": "10,000,000+",
+      "drawable": "moviebox_hd"
     },
     {
       "id": "com.community.mbox.tv/com.transsion.subroom.activity.SplashActivity",
@@ -122,7 +136,9 @@
     {
       "id": "com.movistar.android.mimovistar.es/com.movistar.android.mimovistar.es.MainActivity",
       "existing_drawable": "movistar",
-      "name": "Movistar"
+      "name": "Movistar",
+      "installs": "10,000,000+",
+      "drawable": "movistar"
     },
     {
       "id": "bin.mt.plus/bin.mt.plus.Main",
@@ -152,7 +168,9 @@
     {
       "id": "siva.app.music7pro/siva.app.music7pro.app.activities.M7Player",
       "existing_drawable": "apple_music",
-      "name": "Music 7 Pro"
+      "name": "Music 7 Pro",
+      "installs": "1,000,000+",
+      "drawable": "music_7_pro"
     },
     {
       "id": "com.appmusicdownload.musicdownloadervani2app/com.appmusicdownload.musicdownloadervani2app.view.splash.SplashActivity",
@@ -182,17 +200,23 @@
     {
       "id": "com.musicdownloader.musicfreeapp825v2/com.musicdownloader.appdownloadmusic25.ui.splash.SplashActivity",
       "existing_drawable": "apple_music",
-      "name": "Music Downloader"
+      "name": "Music Downloader",
+      "installs": "1,000,000+",
+      "drawable": "music_downloader"
     },
     {
       "id": "audioplayer.free.music.player/com.ijoysoft.music.activity.WelcomeActivity",
       "existing_drawable": "apple_music",
-      "name": "Music Player"
+      "name": "Music Player",
+      "installs": "10,000,000+",
+      "drawable": "music_player"
     },
     {
       "id": "com.media.music.mp3.musicplayer/com.media.music.ui.main.MainActivity",
       "existing_drawable": "apple_music",
-      "name": "Music player"
+      "name": "Music player",
+      "installs": "100,000,000+",
+      "drawable": "music_player"
     },
     {
       "id": "com.musicplan.playermusic/com.musicplan.playermusic.activities.MainActivity",
@@ -207,42 +231,58 @@
     {
       "id": "com.rocks.music/com.rocks.music.musicplayer.MusicSplash",
       "existing_drawable": "apple_music",
-      "name": "Music Player"
+      "name": "Music Player",
+      "installs": "5,000,000+",
+      "drawable": "music_player"
     },
     {
       "id": "media.audioplayer.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
       "existing_drawable": "apple_music",
-      "name": "Music Player"
+      "name": "Music Player",
+      "installs": "100,000,000+",
+      "drawable": "music_player"
     },
     {
       "id": "media.mp3player.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
       "existing_drawable": "apple_music",
-      "name": "Music Player"
+      "name": "Music Player",
+      "installs": "10,000,000+",
+      "drawable": "music_player"
     },
     {
       "id": "media.music.mp3player.musicplayer/media.music.mp3player.musicplayer.ui.main.MainMPActivity",
       "existing_drawable": "apple_music",
-      "name": "Music player"
+      "name": "Music player",
+      "installs": "50,000,000+",
+      "drawable": "music_player"
     },
     {
       "id": "media.music.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
       "existing_drawable": "apple_music",
-      "name": "Music Player"
+      "name": "Music Player",
+      "installs": "100,000,000+",
+      "drawable": "music_player"
     },
     {
       "id": "music.musicplayer/com.android.music.SplashActivity",
       "existing_drawable": "apple_music",
-      "name": "Music Player"
+      "name": "Music Player",
+      "installs": "50,000,000+",
+      "drawable": "music_player"
     },
     {
       "id": "musicplayer.hdvideoplayer.backgroundmusic/musicplayer.hdvideoplayer.backgroundmusic.myActivities.MainActivity",
       "existing_drawable": "apple_music",
-      "name": "Music Player"
+      "name": "Music Player",
+      "installs": "50,000,000+",
+      "drawable": "music_player"
     },
     {
       "id": "musicplayer.theme.bass.equalizer/musicplayer.theme.bass.equalizer.activity.StartPageActivity",
       "existing_drawable": "apple_music",
-      "name": "Music player"
+      "name": "Music player",
+      "installs": "10,000,000+",
+      "drawable": "music_player"
     },
     {
       "id": "com.iven.musicplayergo/com.iven.musicplayergo.MainActivity",
@@ -252,7 +292,9 @@
     {
       "id": "musicplayer.musicapp.playmusic.mp3player/musicplayer.musicapp.playmusic.mp3player.ui.splash.SplashActivity",
       "existing_drawable": "apple_music",
-      "name": "Music Player Offline & MP3"
+      "name": "Music Player Offline & MP3",
+      "installs": "10,000,000+",
+      "drawable": "music_player_offline_mp3"
     }
   ]
 }

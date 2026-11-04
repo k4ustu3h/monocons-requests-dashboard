@@ -55,6 +55,10 @@ jobs:
           python -u scripts/update_foss_tags.py
           python scripts/generate_lawnicons_tags.py src/assets/requests.json src/assets/filters src/assets/lawnicons_appfilter.xml src/assets/appfilter.xml
 
+      - name: Dump Play Store info for links
+        id: dump_links
+        run: python scripts/dump_play_info_links.py
+
       - name: Clone Monocons SVGs
         run: |
           git clone --depth 1 --filter=blob:none --sparse https://github.com/k4ustu3h/monocons-android.git monocons-temp
@@ -69,13 +73,14 @@ jobs:
         run: python scripts/incremental_review.py
 
       - name: Commit and push changes
-        if: steps.parse_emails.outputs.emails_parsed == 'true' || steps.prune_requests.outputs.requests_changed == 'true' || github.event_name == 'workflow_dispatch'
+        if: steps.parse_emails.outputs.emails_parsed == 'true' || steps.prune_requests.outputs.requests_changed == 'true' || steps.dump_links.outputs.links_changed == 'true' || github.event_name == 'workflow_dispatch'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
           EMAILS_PARSED="${{ steps.parse_emails.outputs.emails_parsed }}"
           PRUNED="${{ steps.prune_requests.outputs.requests_changed }}"
+          LINKS_CHANGED="${{ steps.dump_links.outputs.links_changed }}"
 
           # Determine the commit message based on which steps succeeded
           if [ "$EMAILS_PARSED" == "true" ] && [ "$PRUNED" == "true" ]; then
@@ -84,6 +89,8 @@ jobs:
             COMMIT_MSG="Update requests"
           elif [ "$PRUNED" == "true" ]; then
             COMMIT_MSG="Prune fulfilled and outdated requests"
+          elif [ "$LINKS_CHANGED" == "true" ]; then
+            COMMIT_MSG="Update links Play Store info"
           else
             COMMIT_MSG="Update dashboard data"
           fi

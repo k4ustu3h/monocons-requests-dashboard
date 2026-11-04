@@ -7,7 +7,9 @@
     {
       "id": "com.thegrizzlylabs.geniusscan/com.thegrizzlylabs.geniusscan.ui.welcome.WelcomeActivity",
       "existing_drawable": "genius_scan",
-      "name": "Genius Scan"
+      "name": "Genius Scan",
+      "installs": "100,000+",
+      "drawable": "genius_scan"
     },
     {
       "id": "com.ghosten.player/com.ghosten.player.MainActivity",
@@ -27,17 +29,23 @@
     {
       "id": "com.google.android.apps.searchlite/com.google.android.googlequicksearchbox.SearchActivity",
       "existing_drawable": "google",
-      "name": "Google"
+      "name": "Google",
+      "installs": "1,000,000,000+",
+      "drawable": "google"
     },
     {
       "id": "com.google.android.apps.googleassistant/com.google.android.apps.googleassistant.AssistantActivityV2",
       "existing_drawable": "google_assistant",
-      "name": "Google Assistant"
+      "name": "Google Assistant",
+      "installs": "5,000,000,000+",
+      "drawable": "google_assistant"
     },
     {
       "id": "com.google.android.apps.dynamite/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "google_chat",
-      "name": "Google Chat"
+      "name": "Google Chat",
+      "installs": "50,000,000+",
+      "drawable": "google_chat"
     },
     {
       "id": "com.google.android.talk/com.google.android.talk.SigningInActivity",
@@ -47,47 +55,65 @@
     {
       "id": "com.google.android.contacts/com.google.android.youtube.app.honeycomb.Shell",
       "existing_drawable": "google_contacts",
-      "name": "Google Contacts"
+      "name": "Google Contacts",
+      "installs": "5,000,000,000+",
+      "drawable": "google_contacts"
     },
     {
       "id": "com.google.android.apps.adm/com.google.android.apps.adm.LicenseActivity",
       "existing_drawable": "find_my_device",
-      "name": "Google Find Hub"
+      "name": "Google Find Hub",
+      "installs": "1,000,000,000+",
+      "drawable": "google_find_hub"
     },
     {
       "id": "com.google.android.apps.chromecast.app/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "google_home",
-      "name": "Google Home"
+      "name": "Google Home",
+      "installs": "1,000,000,000+",
+      "drawable": "google_home"
     },
     {
       "id": "com.google.android.apps.subscriptions.red/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "google_one",
-      "name": "Google One"
+      "name": "Google One",
+      "installs": "1,000,000,000+",
+      "drawable": "google_one"
     },
     {
       "id": "com.google.android.apps.books/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "google_play_books",
-      "name": "Google Play Books"
+      "name": "Google Play Books",
+      "installs": "1,000,000,000+",
+      "drawable": "google_play_books"
     },
     {
       "id": "com.google.android.videos/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "google_tv",
-      "name": "Google TV"
+      "name": "Google TV",
+      "installs": "10,000,000,000+",
+      "drawable": "google_tv"
     },
     {
       "id": "it.infocert.mobile.dike/it.infocert.mobile.dike.DikeActivity",
       "existing_drawable": "tasky",
-      "name": "GoSign"
+      "name": "GoSign",
+      "installs": "500,000+",
+      "drawable": "gosign"
     },
     {
       "id": "com.grabtaxi.driver2/com.grab.driver.splashscreen.screen.SplashScreen",
       "existing_drawable": "grab",
-      "name": "Grab Driver"
+      "name": "Grab Driver",
+      "installs": "50,000,000+",
+      "drawable": "grab_driver"
     },
     {
       "id": "app.pg.grandpiano/app.pg.grandpiano.ActivityMain",
       "existing_drawable": "generic_piano",
-      "name": "Grand Piano"
+      "name": "Grand Piano",
+      "installs": "5,000,000+",
+      "drawable": "grand_piano"
     },
     {
       "id": "com.area120.grasshopper/com.area120.grasshopper.MainActivity",
@@ -97,32 +123,44 @@
     {
       "id": "com.futo.platformplayer.playstore/com.futo.platformplayer.activities.MainActivity",
       "existing_drawable": "grayjay",
-      "name": "Grayjay"
+      "name": "Grayjay",
+      "installs": "100,000+",
+      "drawable": "grayjay"
     },
     {
       "id": "com.grindrapp.android/com.grindrapp.android.HomeActivityPhoneBlack",
       "existing_drawable": "generic_dialer",
-      "name": "Grindr Phone"
+      "name": "Grindr Phone",
+      "installs": "50,000,000+",
+      "drawable": "grindr_phone"
     },
     {
       "id": "com.ovelin.guitartuna/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "guitartuna",
-      "name": "GuitarTuna"
+      "name": "GuitarTuna",
+      "installs": "100,000,000+",
+      "drawable": "guitartuna"
     },
     {
       "id": "com.getsomeheadspace.android/com.getsomeheadspace.android.MainActivity",
       "existing_drawable": "headspace",
-      "name": "Headspace"
+      "name": "Headspace",
+      "installs": "10,000,000+",
+      "drawable": "headspace"
     },
     {
       "id": "com.heytap.music/com.allsaints.music.SplashDefaultActivity",
       "existing_drawable": "heytap_music",
-      "name": "HeyTap Music"
+      "name": "HeyTap Music",
+      "installs": "1,000,000,000+",
+      "drawable": "heytap_music"
     },
     {
       "id": "com.heytap.themestore/com.nearme.themespace.activities.ThemeActivity",
       "existing_drawable": "theme_store",
-      "name": "HeyTap Theme"
+      "name": "HeyTap Theme",
+      "installs": "1,000,000,000+",
+      "drawable": "heytap_theme"
     },
     {
       "id": "com.nearme.themespace/com.nearme.themespace.activities.ThemeActivity",
@@ -137,7 +175,9 @@
     {
       "id": "tad.hideapps.hiddenspace.apphider.webapps/tad.hideapps.hiddenspace.apphider.webapps.Calculator",
       "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "Hide Apps Calculator Icon"
+      "name": "Hide Apps Calculator Icon",
+      "installs": "10,000,000+",
+      "drawable": "hide_apps_calculator_icon"
     },
     {
       "id": "com.blueskyapps.englishbible/com.blueskyapps.mainbible.SplashActivity",
@@ -147,7 +187,9 @@
     {
       "id": "com.epsoftgroup.lasantabiblia/com.epsoftgroup.lasantabiblia.activities.SplashSetupActivity",
       "existing_drawable": "generic_bible",
-      "name": "Holy Bible"
+      "name": "Holy Bible",
+      "installs": "1,000,000+",
+      "drawable": "holy_bible"
     },
     {
       "id": "com.huawei.music/com.android.mediacenter.PageActivity",
@@ -167,32 +209,44 @@
     {
       "id": "imagetopdf.pdfmaker.pdfconverter.pdfreader/imagetopdf.pdfmaker.pdfconverter.pdfreader.ui.I2SplashActivity",
       "existing_drawable": "generic_pdf_file",
-      "name": "Image to PDF"
+      "name": "Image to PDF",
+      "installs": "10,000,000+",
+      "drawable": "image_to_pdf"
     },
     {
       "id": "com.readpdf.pdfreader.pdfviewer/com.readpdf.pdfreader.pdfviewer.view.activity.splash.FoSplashActivity",
       "existing_drawable": "generic_pdf_file",
-      "name": "Image to PDF Converter"
+      "name": "Image to PDF Converter",
+      "installs": "10,000,000+",
+      "drawable": "image_to_pdf_converter"
     },
     {
       "id": "ru.tech.imageresizershrinker/ru.tech.imageresizershrinker.app.presentation.AppActivity",
       "existing_drawable": "image_toolbox",
-      "name": "Image Toolbox"
+      "name": "Image Toolbox",
+      "installs": "500,000+",
+      "drawable": "image_toolbox"
     },
     {
       "id": "io.deveem.byemydpi2/app.vpn.ui.MainActivity",
       "existing_drawable": "secure_vpn",
-      "name": "Imba VPN"
+      "name": "Imba VPN",
+      "installs": "1,000,000+",
+      "drawable": "imba_vpn"
     },
     {
       "id": "com.grykuby.minesweeper/com.google.firebase.MessagingUnityPlayerActivity",
       "existing_drawable": "generic_minesweeper",
-      "name": "Infinite Minesweeper"
+      "name": "Infinite Minesweeper",
+      "installs": "1,000,000+",
+      "drawable": "infinite_minesweeper"
     },
     {
       "id": "au.com.ing.banking/com.ing.banking.framework.features.welcome.WelcomeActivity",
       "existing_drawable": "ing",
-      "name": "ING"
+      "name": "ING",
+      "installs": "100,000+",
+      "drawable": "ing"
     },
     {
       "id": "com.fabtune.innertune.music/com.metrolist.music.MainActivity",
@@ -222,27 +276,37 @@
     {
       "id": "com.oasisfeng.island/com.oasisfeng.island.settings.SettingsActivity",
       "existing_drawable": "island",
-      "name": "Insular"
+      "name": "Insular",
+      "installs": "10,000,000+",
+      "drawable": "insular"
     },
     {
       "id": "com.heytap.browser/com.heytap.browser.action.games_folder.BrowserGamesFolderActivity",
       "existing_drawable": "generic_browser",
-      "name": "Internet Browser"
+      "name": "Internet Browser",
+      "installs": "1,000,000,000+",
+      "drawable": "internet_browser"
     },
     {
       "id": "iTunes.Sync.Android/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
       "existing_drawable": "apple_music",
-      "name": "iSyncr"
+      "name": "iSyncr",
+      "installs": "5,000,000+",
+      "drawable": "isyncr"
     },
     {
       "id": "com.konylabs.ItauMobileBank/cl.itau.splash.SplashScreenActivity",
       "existing_drawable": "itau",
-      "name": "Ita\u00fa"
+      "name": "Ita\u00fa",
+      "installs": "1,000,000+",
+      "drawable": "com_konylabs_ItauMobileBank"
     },
     {
       "id": "be.bmid.itsme/be.bmid.bootstrap.impl.ui.BootstrapActivity",
       "existing_drawable": "itsme",
-      "name": "itsme"
+      "name": "itsme",
+      "installs": "5,000,000+",
+      "drawable": "itsme"
     },
     {
       "id": "com.inphase.itv/com.inphase.itv.StartActivity",
@@ -252,7 +316,9 @@
     {
       "id": "com.olx.ssa.ug/ng.jiji.app.ui.splash.SplashActivity",
       "existing_drawable": "olx",
-      "name": "Jiji"
+      "name": "Jiji",
+      "installs": "1,000,000+",
+      "drawable": "jiji"
     }
   ]
 }

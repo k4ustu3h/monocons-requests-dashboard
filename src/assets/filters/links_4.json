@@ -27,7 +27,9 @@
     {
       "id": "com.canva.editor/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "canva",
-      "name": "Canva"
+      "name": "Canva",
+      "installs": "500,000,000+",
+      "drawable": "canva"
     },
     {
       "id": "com.ovz.carscanner.rustore/crc646a6dd679b318c207.MainActivity",
@@ -37,7 +39,9 @@
     {
       "id": "com.google.android.ims/com.google.android.ims.ui.WifiCallingSettingsActivity",
       "existing_drawable": "carrier_services",
-      "name": "Carrier Services"
+      "name": "Carrier Services",
+      "installs": "5,000,000,000+",
+      "drawable": "carrier_services"
     },
     {
       "id": "maps.jaoloonda.android.aaad_a39e4f/com.thekirankumar.youtubeauto2.activity.MainPhoneActivity",
@@ -47,32 +51,44 @@
     {
       "id": "com.gamma.checkers/com.unity3d.player.UnityPlayerActivity",
       "existing_drawable": "generic_checkers",
-      "name": "Checkers"
+      "name": "Checkers",
+      "installs": "10,000,000+",
+      "drawable": "checkers"
     },
     {
       "id": "com.birds.chess/com.dynamo.android.DefoldActivity",
       "existing_drawable": "generic_chess",
-      "name": "Chess"
+      "name": "Chess",
+      "installs": "1,000,000+",
+      "drawable": "chess"
     },
     {
       "id": "com.llx.chess/com.llx.chess.AndroidLauncher",
       "existing_drawable": "generic_chess",
-      "name": "Chess"
+      "name": "Chess",
+      "installs": "100,000,000+",
+      "drawable": "chess"
     },
     {
       "id": "com.sgebrelibanos.aderaser/com.sgebrelibanos.aderaser.MainActivity",
       "existing_drawable": "just_player",
-      "name": "CleanTube"
+      "name": "CleanTube",
+      "installs": "1,000,000+",
+      "drawable": "cleantube"
     },
     {
       "id": "com.bluelight.computer.winlauncher.prolauncher/com.bluelight.computer.winlauncher.prolauncher.googleclock.main.DeskClock",
       "existing_drawable": "generic_clock",
-      "name": "Clock"
+      "name": "Clock",
+      "installs": "1,000,000+",
+      "drawable": "clock"
     },
     {
       "id": "com.pengyou.cloneapp/com.pengyou.cloneapp.hide.Splash",
       "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "Clone App Calculator Icon"
+      "name": "Clone App Calculator Icon",
+      "installs": "10,000,000+",
+      "drawable": "clone_app_calculator_icon"
     },
     {
       "id": "com.collabora.libreoffice.snapshot/org.libreoffice.androidapp.ui.LibreOfficeUIActivity",
@@ -82,12 +98,16 @@
     {
       "id": "com.apps.offbeat.colorpalette/com.apps.offbeat.colorpalette.MainActivity",
       "existing_drawable": "substratum_lite",
-      "name": "Color Palette"
+      "name": "Color Palette",
+      "installs": "100,000+",
+      "drawable": "color_palette"
     },
     {
       "id": "com.blogspot.yashas003.colorpalette/com.blogspot.yashas003.colorpalette.activities.SplashScreen",
       "existing_drawable": "substratum_lite",
-      "name": "Color Palette"
+      "name": "Color Palette",
+      "installs": "100,000+",
+      "drawable": "color_palette"
     },
     {
       "id": "app.comaps.huawei/app.organicmaps.DownloadResourcesActivity",
@@ -102,17 +122,23 @@
     {
       "id": "icontacts.ios.dialer.icall/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
       "existing_drawable": "generic_dialer",
-      "name": "Contacts & Phone Call"
+      "name": "Contacts & Phone Call",
+      "installs": "1,000,000+",
+      "drawable": "contacts_phone_call"
     },
     {
       "id": "cool.s20.camera/com.camera.function.main.privacy.CoolCameraPrivacyActivity",
       "existing_drawable": "nothing_camera",
-      "name": "Cool S20 Camera"
+      "name": "Cool S20 Camera",
+      "installs": "1,000,000+",
+      "drawable": "cool_s20_camera"
     },
     {
       "id": "com.dvdb.bergnotes/com.dvdb.dnotes.MainActivity",
       "existing_drawable": "another_notes",
-      "name": "D Notes"
+      "name": "D Notes",
+      "installs": "500,000+",
+      "drawable": "d_notes"
     },
     {
       "id": "com.dtasks.app/com.dtasks.app.MainActivity",
@@ -122,7 +148,9 @@
     {
       "id": "com.damonplay.damonps2.free/com.damonplay.damonps2.SplashActivity",
       "existing_drawable": "ppsspp",
-      "name": "DamonPS2"
+      "name": "DamonPS2",
+      "installs": "10,000,000+",
+      "drawable": "damonps2"
     },
     {
       "id": "com.dariaos.recorder/com.dariaos.recorder.ui.MainActivity",
@@ -132,7 +160,9 @@
     {
       "id": "com.darkevo.iconpack/com.darkevo.iconpack.activities.MainActivity",
       "existing_drawable": "generic_shell",
-      "name": "Dark Evo"
+      "name": "Dark Evo",
+      "installs": "1,000+",
+      "drawable": "dark_evo"
     },
     {
       "id": "com.shisui.debloater/com.shisui.debloater.MainActivity",
@@ -142,7 +172,9 @@
     {
       "id": "com.deepl.mobiletranslator/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "deepl",
-      "name": "DeepL"
+      "name": "DeepL",
+      "installs": "10,000,000+",
+      "drawable": "deepl"
     },
     {
       "id": "com.example.deeplviewer/com.example.deeplviewer.activity.MainActivity",
@@ -162,12 +194,16 @@
     {
       "id": "io.illescasDaniel.devSnippets/io.illescasDaniel.devSnippets.MainActivity",
       "existing_drawable": "generic_braces",
-      "name": "DevSnippets"
+      "name": "DevSnippets",
+      "installs": "10,000+",
+      "drawable": "devsnippets"
     },
     {
       "id": "com.dhl.frt.mittdhl/com.dhl.frt.mittdhl.MainActivity",
       "existing_drawable": "dhl",
-      "name": "DHL"
+      "name": "DHL",
+      "installs": "100,000+",
+      "drawable": "dhl"
     },
     {
       "id": "com.dhlparcel.consumerapp/com.dhlparcel.consumerapp.MainActivity",
@@ -177,22 +213,30 @@
     {
       "id": "com.pixelcrater.Diaro/com.pixelcrater.Diaro.MainActivity",
       "existing_drawable": "diaro",
-      "name": "Diaro"
+      "name": "Diaro",
+      "installs": "5,000,000+",
+      "drawable": "diaro"
     },
     {
       "id": "com.adeeteya.digital_calculator/com.adeeteya.digital_calculator.MainActivity",
       "existing_drawable": "zcalc",
-      "name": "Digital Calculator"
+      "name": "Digital Calculator",
+      "installs": "1,000+",
+      "drawable": "digital_calculator"
     },
     {
       "id": "com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.settings.MultiPaneLauncherActivity",
       "existing_drawable": "digital_wellbeing",
-      "name": "Digital Wellbeing"
+      "name": "Digital Wellbeing",
+      "installs": "10,000,000,000+",
+      "drawable": "digital_wellbeing"
     },
     {
       "id": "com.alibaba.android.rimet/com.alibaba.android.rimet.biz.SplashActivity",
       "existing_drawable": "dingtalk",
-      "name": "DingTalk"
+      "name": "DingTalk",
+      "installs": "5,000,000+",
+      "drawable": "dingtalk"
     },
     {
       "id": "com.discord.morphe/com.discord.main.MainDefault",
@@ -207,52 +251,72 @@
     {
       "id": "com.discovery.discoveryplus.mobile/com.wbd.fuse.appcore.FuseActivity",
       "existing_drawable": "discoveryplus",
-      "name": "discovery+"
+      "name": "discovery+",
+      "installs": "10,000,000+",
+      "drawable": "discovery"
     },
     {
       "id": "com.discovery.dplay/com.wbd.fuse.appcore.FuseActivity",
       "existing_drawable": "discoveryplus",
-      "name": "discovery+"
+      "name": "discovery+",
+      "installs": "10,000,000+",
+      "drawable": "discovery"
     },
     {
       "id": "br.com.doctoralia/com.app.MainActivity",
       "existing_drawable": "doctoralia",
-      "name": "Doctoralia"
+      "name": "Doctoralia",
+      "installs": "5,000,000+",
+      "drawable": "doctoralia"
     },
     {
       "id": "co.doctoralia/co.doctoralia.MainActivity",
       "existing_drawable": "doctoralia",
-      "name": "Doctoralia"
+      "name": "Doctoralia",
+      "installs": "500,000+",
+      "drawable": "doctoralia"
     },
     {
       "id": "com.eniyihekim/com.eniyihekim.MainActivity",
       "existing_drawable": "doctoralia",
-      "name": "DoktorTakvimi"
+      "name": "DoktorTakvimi",
+      "installs": "1,000,000+",
+      "drawable": "doktortakvimi"
     },
     {
       "id": "com.dolby.dolby234/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "dolby",
-      "name": "Dolby On"
+      "name": "Dolby On",
+      "installs": "10,000,000+",
+      "drawable": "dolby_on"
     },
     {
       "id": "com.dolby.exphub/com.dolby.exphub.namespace.MainActivity",
       "existing_drawable": "dolby",
-      "name": "Dolby XP"
+      "name": "Dolby XP",
+      "installs": "500,000+",
+      "drawable": "dolby_xp"
     },
     {
       "id": "com.Dominos/com.Dominos.activity.alias.LauncherRepublicAlias",
       "existing_drawable": "dominos_pizza",
-      "name": "Domino's Pizza"
+      "name": "Domino's Pizza",
+      "installs": "100,000,000+",
+      "drawable": "dominos_pizza"
     },
     {
       "id": "com.daufood.ppt/com.iproject.dominos.ui.splash.SplashActivity",
       "existing_drawable": "dominos_pizza",
-      "name": "Domino's Pizza"
+      "name": "Domino's Pizza",
+      "installs": "100,000+",
+      "drawable": "dominos_pizza"
     },
     {
       "id": "com.dominos.latin.america/com.dominos.latin.america.MainActivity",
       "existing_drawable": "dominos_pizza",
-      "name": "Domino's Pizza"
+      "name": "Domino's Pizza",
+      "installs": "1,000,000+",
+      "drawable": "dominos_pizza"
     }
   ]
 }

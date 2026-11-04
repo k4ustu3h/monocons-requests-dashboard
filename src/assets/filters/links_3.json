@@ -22,17 +22,23 @@
     {
       "id": "com.musicplayer.playermusic/com.musicplayer.playermusic.activities.AudifyStartActivity",
       "existing_drawable": "just_player",
-      "name": "Audify Player"
+      "name": "Audify Player",
+      "installs": "50,000,000+",
+      "drawable": "audify_player"
     },
     {
       "id": "audioeditor.musiceditor.soundeditor.songeditor/com.min.n.MainActivity",
       "existing_drawable": "generic_audio_editor",
-      "name": "Audio Editor"
+      "name": "Audio Editor",
+      "installs": "50,000,000+",
+      "drawable": "audio_editor"
     },
     {
       "id": "com.awystudio.awplayer/com.awystudio.awplayer.activities.AllowAccessActivity",
       "existing_drawable": "just_player",
-      "name": "AW Player"
+      "name": "AW Player",
+      "installs": "1,000,000+",
+      "drawable": "aw_player"
     },
     {
       "id": "com.WEKA.MATRIX/com.exteragram.messenger.DefaultIcon",
@@ -47,82 +53,114 @@
     {
       "id": "br.com.bancopan.cartoes/com.btg.pactual.banking.SplashScreenActivity",
       "existing_drawable": "banco_pan",
-      "name": "Banco PAN"
+      "name": "Banco PAN",
+      "installs": "50,000,000+",
+      "drawable": "banco_pan"
     },
     {
       "id": "co.com.bbva.mb/com.bbva.glomohybrid.splash.presentation.view.SplashActivity",
       "existing_drawable": "bbva",
-      "name": "BBVA"
+      "name": "BBVA",
+      "installs": "10,000,000+",
+      "drawable": "bbva"
     },
     {
       "id": "com.quickplay.android.bellmediaplayer/ca.bell.fiberemote.boot.BootstrapActivity",
       "existing_drawable": "just_player",
-      "name": "Bell Fibe TV"
+      "name": "Bell Fibe TV",
+      "installs": "10,000,000+",
+      "drawable": "bell_fibe_tv"
     },
     {
       "id": "br.com.bernoulli.bplay/com.unity3d.player.UnityPlayerActivity",
       "existing_drawable": "generic_player",
-      "name": "Bernoulli Play"
+      "name": "Bernoulli Play",
+      "installs": "100,000+",
+      "drawable": "bernoulli_play"
     },
     {
       "id": "com.kanna.bible/com.kanna.bible.activities.StartActivity",
       "existing_drawable": "generic_bible",
-      "name": "Bible"
+      "name": "Bible",
+      "installs": "10,000+",
+      "drawable": "bible"
     },
     {
       "id": "com.bible.holy.bible.for.women/com.offline.bible.IconDefault",
       "existing_drawable": "generic_bible",
-      "name": "Bible for Women"
+      "name": "Bible for Women",
+      "installs": "10,000,000+",
+      "drawable": "bible_for_women"
     },
     {
       "id": "com.azwstudios.theholybible.kjv/com.azwstudios.theholybible.MainActivity",
       "existing_drawable": "generic_bible",
-      "name": "Bible KJV"
+      "name": "Bible KJV",
+      "installs": "5,000,000+",
+      "drawable": "bible_kjv"
     },
     {
       "id": "com.gyc.ace.kjv/com.gyc.ace.kjv.ActivityWelcome",
       "existing_drawable": "generic_bible",
-      "name": "Bible KJV"
+      "name": "Bible KJV",
+      "installs": "5,000,000+",
+      "drawable": "bible_kjv"
     },
     {
       "id": "com.hmobile.biblekjv/com.hmobile.biblekjv.MainActivity",
       "existing_drawable": "generic_bible",
-      "name": "Bible KJV"
+      "name": "Bible KJV",
+      "installs": "10,000,000+",
+      "drawable": "bible_kjv"
     },
     {
       "id": "com.azwstudios.theholybible.frls/com.azwstudios.theholybible.MainActivity",
       "existing_drawable": "generic_bible",
-      "name": "Bible Louis Segond"
+      "name": "Bible Louis Segond",
+      "installs": "500,000+",
+      "drawable": "bible_louis_segond"
     },
     {
       "id": "at.billa.service/digital.riag.appsolution.MainActivity",
       "existing_drawable": "billa",
-      "name": "BILLA"
+      "name": "BILLA",
+      "installs": "1,000,000+",
+      "drawable": "billa"
     },
     {
       "id": "com.d2l.brightspace.student.android/com.d2l.brightspace.android.ui.DispatchActivity",
       "existing_drawable": "pulse",
-      "name": "Brightspace Pulse"
+      "name": "Brightspace Pulse",
+      "installs": "1,000,000+",
+      "drawable": "brightspace_pulse"
     },
     {
       "id": "com.examobile.bubblelevel/com.examobile.bubblelevel.activity.MainActivity",
       "existing_drawable": "generic_bubble_level",
-      "name": "Bubble Level"
+      "name": "Bubble Level",
+      "installs": "5,000,000+",
+      "drawable": "bubble_level"
     },
     {
       "id": "level.bubblelevel.ruler/level.bubblelevel.ruler.MainActivity",
       "existing_drawable": "generic_bubble_level",
-      "name": "Bubble Level"
+      "name": "Bubble Level",
+      "installs": "1,000,000+",
+      "drawable": "bubble_level"
     },
     {
       "id": "net.androgames.level/net.androgames.level.Level$LevelStarterActivity",
       "existing_drawable": "generic_bubble_level",
-      "name": "Bubble level"
+      "name": "Bubble level",
+      "installs": "10,000,000+",
+      "drawable": "bubble_level"
     },
     {
       "id": "at.burgerking.kingfinder.app/rbi.android.app.Launcher",
       "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "name": "Burger King",
+      "installs": "100,000+",
+      "drawable": "burger_king"
     },
     {
       "id": "bo.burgerking/com.usemenu.MenuAndroidApplication.SplashActivity",
@@ -132,7 +170,9 @@
     {
       "id": "com.ajvierci.burgerking/com.ajvierci.burgerking.MainActivity",
       "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "name": "Burger King",
+      "installs": "100,000+",
+      "drawable": "burger_king"
     },
     {
       "id": "com.app.burgerking/com.app.burgerking.ui.SplashActivity",
@@ -142,52 +182,72 @@
     {
       "id": "com.bk.ch/rbi.android.app.Launcher",
       "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "name": "Burger King",
+      "installs": "500,000+",
+      "drawable": "burger_king"
     },
     {
       "id": "com.burgerking.egypt/com.skylinedynamics.bk.splash.SplashActivity",
       "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "name": "Burger King",
+      "installs": "50,000+",
+      "drawable": "burger_king"
     },
     {
       "id": "com.burgerking.morocco/com.skylinedynamics.bk.splash.SplashActivity",
       "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "name": "Burger King",
+      "installs": "100,000+",
+      "drawable": "burger_king"
     },
     {
       "id": "com.burgerking.uae/com.skylinedynamics.bk.splash.SplashActivity",
       "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "name": "Burger King",
+      "installs": "100,000+",
+      "drawable": "burger_king"
     },
     {
       "id": "com.burgerkingcz/rbi.android.app.Launcher",
       "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "name": "Burger King",
+      "installs": "100,000+",
+      "drawable": "burger_king"
     },
     {
       "id": "com.burgerkingpl/rbi.android.app.Launcher",
       "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "name": "Burger King",
+      "installs": "1,000,000+",
+      "drawable": "burger_king"
     },
     {
       "id": "com.bzbs.burgerking/com.bzbs.burgerking.ui.splash.SplashActivity",
       "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "name": "Burger King",
+      "installs": "500,000+",
+      "drawable": "burger_king"
     },
     {
       "id": "com.crazycake.burgerkingchile/com.usemenu.MenuAndroidApplication.SplashActivity",
       "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "name": "Burger King",
+      "installs": "1,000,000+",
+      "drawable": "burger_king"
     },
     {
       "id": "com.emn8.mobilem8.nativeapp.bkca/com.emn8.mobilem8.nativeapp.bkca.MainActivity",
       "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "name": "Burger King",
+      "installs": "1,000,000+",
+      "drawable": "burger_king"
     },
     {
       "id": "com.expremio.burgerking/com.expremio.mobileapp.MainActivity",
       "existing_drawable": "burger_king",
-      "name": "Burger King"
+      "name": "Burger King",
+      "installs": "1,000,000+",
+      "drawable": "burger_king"
     },
     {
       "id": "com.mathieu.budmaldash00/com.mathieu.budmaldash00.GeometryJump",
@@ -197,17 +257,23 @@
     {
       "id": "com.bybit.eu/com.bybit.pro.MainActivity",
       "existing_drawable": "bybit",
-      "name": "Bybit"
+      "name": "Bybit",
+      "installs": "500,000+",
+      "drawable": "bybit"
     },
     {
       "id": "br.com.gabba.Caixa/br.nQiBi9.qATmb9.es8m45.ui.fobmI3.n45ls8",
       "existing_drawable": "caixa",
-      "name": "CAIXA"
+      "name": "CAIXA",
+      "installs": "100,000,000+",
+      "drawable": "caixa"
     },
     {
       "id": "com.candl.athena/com.candl.athena.activity.Calculator",
       "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "CALCU"
+      "name": "CALCU",
+      "installs": "10,000,000+",
+      "drawable": "calcu"
     },
     {
       "id": "com.jzhk.calculator/com.jzhk.calculator.Calculator",
@@ -217,7 +283,9 @@
     {
       "id": "calculatorlock.calculatorvault.photovault.hider/calculatorlock.calculatorvault.photovault.hider.SplashActivity",
       "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "Calculator Lock"
+      "name": "Calculator Lock",
+      "installs": "50,000,000+",
+      "drawable": "calculator_lock"
     },
     {
       "id": "com.bbk.calendar/com.bbk.calendar.MainActivity",
@@ -227,27 +295,37 @@
     {
       "id": "com.calendar.taskschedule/com.calendar.taskschedule.SplashActivity",
       "existing_drawable": "calendar",
-      "name": "Calendar"
+      "name": "Calendar",
+      "installs": "100,000+",
+      "drawable": "calendar"
     },
     {
       "id": "org.withouthat.acalendarplus/org.withouthat.acalendar.tasks.TasksActivity",
       "existing_drawable": "themed_icon_calendar_31",
-      "name": "Calendar"
+      "name": "Calendar",
+      "installs": "500,000+",
+      "drawable": "calendar"
     },
     {
       "id": "calendar.agenda.calendarplanner.agendaplanner/com.calendar.aurora.activity.SplashActivity",
       "existing_drawable": "calendar",
-      "name": "Calendar Planner"
+      "name": "Calendar Planner",
+      "installs": "10,000,000+",
+      "drawable": "calendar_planner"
     },
     {
       "id": "com.m24apps.acr/com.m24apps.acr.activities.SplashActivityV3",
       "existing_drawable": "generic_dialer",
-      "name": "Call Recorder"
+      "name": "Call Recorder",
+      "installs": "10,000,000+",
+      "drawable": "call_recorder"
     },
     {
       "id": "com.dmobileapps.camera/com.dmobileapps.camera.MainActivity",
       "existing_drawable": "generic_camera",
-      "name": "Camera"
+      "name": "Camera",
+      "installs": "1,000,000+",
+      "drawable": "camera"
     },
     {
       "id": "com.google.android.GoogleCamerb3/com.android.camera.CameraLauncher",

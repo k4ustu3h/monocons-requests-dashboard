@@ -7,7 +7,9 @@
     {
       "id": "com.orange.rn.dop/com.orange.rn.dop.MainActivity",
       "existing_drawable": "orange_flex",
-      "name": "Orange Flex"
+      "name": "Orange Flex",
+      "installs": "1,000,000+",
+      "drawable": "orange_flex"
     },
     {
       "id": "app.organicmaps.web/app.organicmaps.DownloadResourcesActivity",
@@ -32,12 +34,16 @@
     {
       "id": "br.com.uol.ps.myaccount/br.com.uol.ps.myaccount.main.MainActivity",
       "existing_drawable": "pagbank",
-      "name": "PagBank"
+      "name": "PagBank",
+      "installs": "50,000,000+",
+      "drawable": "pagbank"
     },
     {
       "id": "com.bonc.paintmyroom/com.bonc.paint_my_room.MainActivity",
       "existing_drawable": "substratum_lite",
-      "name": "Paint my Room"
+      "name": "Paint my Room",
+      "installs": "1,000,000+",
+      "drawable": "paint_my_room"
     },
     {
       "id": "ca.chancehorizon.paseo/ca.chancehorizon.paseo.SplashActivity",
@@ -52,7 +58,9 @@
     {
       "id": "com.emanuelef.remote_capture/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "pcapdroid",
-      "name": "PCAPdroid"
+      "name": "PCAPdroid",
+      "installs": "500,000+",
+      "drawable": "pcapdroid"
     },
     {
       "id": "com.pcapdroid.mitm/com.pcapdroid.mitm.MainActivity",
@@ -62,7 +70,9 @@
     {
       "id": "com.xsdev.pdfreader.pdfeditor.pdf.document/com.rpdev.docreadermainV2.SplashActivity",
       "existing_drawable": "generic_pdf_file",
-      "name": "PDF Editor"
+      "name": "PDF Editor",
+      "installs": "10,000,000+",
+      "drawable": "pdf_editor"
     },
     {
       "id": "SVS.pdfinspector/SVS.pdfinspector.MainActivity",
@@ -72,47 +82,65 @@
     {
       "id": "com.document.pdf.scanner.free.all/com.document.pdf.scanner.ui.ReaderSplashActivity",
       "existing_drawable": "generic_pdf_file",
-      "name": "PDF Reader"
+      "name": "PDF Reader",
+      "installs": "1,000,000+",
+      "drawable": "pdf_reader"
     },
     {
       "id": "com.gamma.pdfreader/com.gammaplay.multidocreader.MainActivity",
       "existing_drawable": "generic_pdf_file",
-      "name": "PDF Reader"
+      "name": "PDF Reader",
+      "installs": "1,000,000+",
+      "drawable": "pdf_reader"
     },
     {
       "id": "com.ikame.pdf.pdfreader.pdfviewer.editor/com.ikame.pdf.reader.presentation.main.MainActivity",
       "existing_drawable": "generic_pdf_file",
-      "name": "PDF Reader"
+      "name": "PDF Reader",
+      "installs": "10,000,000+",
+      "drawable": "pdf_reader"
     },
     {
       "id": "com.pdfreader.editor.viewer.pdfviewer/com.pdfreader.editor.presentation.splash.SplashActivity",
       "existing_drawable": "generic_pdf_square",
-      "name": "PDF Reader"
+      "name": "PDF Reader",
+      "installs": "500,000+",
+      "drawable": "pdf_reader"
     },
     {
       "id": "com.pdfreaderapp.alldocumentreader.pdfviewer/com.adjut.sdkwallpaperx.SplashActivity",
       "existing_drawable": "generic_pdf_square",
-      "name": "PDF Reader"
+      "name": "PDF Reader",
+      "installs": "1,000,000+",
+      "drawable": "pdf_reader"
     },
     {
       "id": "com.trustedapp.pdfreaderpdfviewer/com.trustedapp.pdfreader.view.fosplash.FOSplashActivity",
       "existing_drawable": "generic_pdf_file",
-      "name": "PDF Reader"
+      "name": "PDF Reader",
+      "installs": "50,000,000+",
+      "drawable": "pdf_reader"
     },
     {
       "id": "pdf.pdfreader.pdfviewer.pdfeditor/com.office.pdfreader.ui.splash.SplashActivity",
       "existing_drawable": "generic_pdf_file",
-      "name": "PDF Reader"
+      "name": "PDF Reader",
+      "installs": "10,000,000+",
+      "drawable": "pdf_reader"
     },
     {
       "id": "pdfreader.pdfviewer.officetool.pdfscanner/pdfreader.pdfviewer.officetool.pdfscanner.views.activities.splash.SplashLatestActivity",
       "existing_drawable": "generic_pdf_file",
-      "name": "PDF Reader"
+      "name": "PDF Reader",
+      "installs": "100,000,000+",
+      "drawable": "pdf_reader"
     },
     {
       "id": "pl.pekao.pekaosa.peopaykids/com.pekao.peokids.presentation.main.view.MainActivity",
       "existing_drawable": "peopay",
-      "name": "PeoPay KIDS"
+      "name": "PeoPay KIDS",
+      "installs": "100,000+",
+      "drawable": "peopay_kids"
     },
     {
       "id": "august.mendeleev.pro/august.mendeleev.pro.ui.main.MainActivity",
@@ -122,27 +150,37 @@
     {
       "id": "com.google.android.apps.safetyhub/com.google.android.apps.safetyhub.home.HomePageAppInfoEntry",
       "existing_drawable": "personal_safety",
-      "name": "Personal Safety"
+      "name": "Personal Safety",
+      "installs": "1+",
+      "drawable": "personal_safety"
     },
     {
       "id": "com.itau.pers/br.com.itau.pf.modules.features.appUse.appStart.splash.view.SplashActivity",
       "existing_drawable": "itau",
-      "name": "Personnalit\u00e9"
+      "name": "Personnalit\u00e9",
+      "installs": "1,000,000+",
+      "drawable": "com_itau_pers"
     },
     {
       "id": "com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity",
       "existing_drawable": "google_phone",
-      "name": "Phone"
+      "name": "Phone",
+      "installs": "5,000,000,000+",
+      "drawable": "phone"
     },
     {
       "id": "com.instabridge.android/com.instabridge.android.callerid.DialerActivityCompose",
       "existing_drawable": "generic_dialer",
-      "name": "Phone"
+      "name": "Phone",
+      "installs": "100,000,000+",
+      "drawable": "phone"
     },
     {
       "id": "com.map.photostamp/com.pravin.photostamp.activities.SplashActivity",
       "existing_drawable": "generic_camera",
-      "name": "PhotoStamp Camera"
+      "name": "PhotoStamp Camera",
+      "installs": "1,000,000+",
+      "drawable": "photostamp_camera"
     },
     {
       "id": "brobata.physiboard/brobata.physiboard.MainActivity",
@@ -152,7 +190,9 @@
     {
       "id": "com.markduenas.android.apigen/com.markduenas.android.apigen.MainActivity",
       "existing_drawable": "generic_pi",
-      "name": "Pi Generator"
+      "name": "Pi Generator",
+      "installs": "1,000+",
+      "drawable": "pi_generator"
     },
     {
       "id": "com.picsart.studio.light/com.socialin.android.photo.picsinphoto.MainPagerActivity",
@@ -162,7 +202,9 @@
     {
       "id": "com.picsart.studio/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "picsart",
-      "name": "Picsart"
+      "name": "Picsart",
+      "installs": "1,000,000,000+",
+      "drawable": "picsart"
     },
     {
       "id": "com.instagram.android.piko/com.instagram.android.activity.MainTabActivity",
@@ -172,12 +214,16 @@
     {
       "id": "dev.sasikanth.pinnit2/dev.sasikanth.pinnit.MainActivity",
       "existing_drawable": "pinnit",
-      "name": "Pinnit"
+      "name": "Pinnit",
+      "installs": "10,000+",
+      "drawable": "pinnit"
     },
     {
       "id": "com.pashapuma.pix.material.you.iconpack/com.jojoy.delegate.JojoyInstallerActivity",
       "existing_drawable": "pix_material_you_icon_pack",
-      "name": "Pix Material You Icons"
+      "name": "Pix Material You Icons",
+      "installs": "10,000+",
+      "drawable": "pix_material_you_icons"
     },
     {
       "id": "com.lostf1sh.pixelplayeross/com.lostf1sh.pixelplayeross.MainActivity",
@@ -187,27 +233,37 @@
     {
       "id": "com.expremio.pizzahut/com.expremio.mobileapp.MainActivity",
       "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "name": "Pizza Hut",
+      "installs": "100,000+",
+      "drawable": "pizza_hut"
     },
     {
       "id": "com.mx.pizzahutuk.orderingApp/com.mx.pizzahutuk.orderingApp.MainActivity",
       "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "name": "Pizza Hut",
+      "installs": "1,000,000+",
+      "drawable": "pizza_hut"
     },
     {
       "id": "com.ph.egypt/com.americana.me.ui.onboarding.splash.SplashActivity",
       "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "name": "Pizza Hut",
+      "installs": "500,000+",
+      "drawable": "pizza_hut"
     },
     {
       "id": "com.pizzahut.app.vn/com.pizzahut.app.vn.MainActivity",
       "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "name": "Pizza Hut",
+      "installs": "100,000+",
+      "drawable": "pizza_hut"
     },
     {
       "id": "com.pizzahut.app/com.pizzahut.app.MainActivity",
       "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "name": "Pizza Hut",
+      "installs": "1,000,000+",
+      "drawable": "pizza_hut"
     },
     {
       "id": "com.pizzahut.chile/com.pizzahut.chile.MainActivity",
@@ -217,22 +273,30 @@
     {
       "id": "com.pizzahut.ecuador/com.pizzahut.ecuador.MainActivity",
       "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "name": "Pizza Hut",
+      "installs": "100,000+",
+      "drawable": "pizza_hut"
     },
     {
       "id": "com.pizzahut.ksa/com.americana.me.ui.onboarding.splash.SplashActivity",
       "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "name": "Pizza Hut",
+      "installs": "500,000+",
+      "drawable": "pizza_hut"
     },
     {
       "id": "com.pizzahut.malaysia/com.pizzahut.MainActivity",
       "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "name": "Pizza Hut",
+      "installs": "1,000,000+",
+      "drawable": "pizza_hut"
     },
     {
       "id": "com.pizzahut.ph/com.pizzahut.extra.view.splash.DefaultSplashActivity",
       "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "name": "Pizza Hut",
+      "installs": "100,000+",
+      "drawable": "pizza_hut"
     },
     {
       "id": "com.pizzahut.za/com.pizzahut.za.MainActivity",
@@ -247,12 +311,16 @@
     {
       "id": "com.pizzahutau/com.pizzahutau.MainActivity",
       "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "name": "Pizza Hut",
+      "installs": "100,000+",
+      "drawable": "pizza_hut"
     },
     {
       "id": "com.pizzahutuk.orderingApp/com.pizzahutuk.orderingApp.MainActivity",
       "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut"
+      "name": "Pizza Hut",
+      "installs": "5,000,000+",
+      "drawable": "pizza_hut"
     }
   ]
 }

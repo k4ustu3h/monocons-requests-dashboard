@@ -7,7 +7,9 @@
     {
       "id": "cn.wps.moffice_eng/cn.wps.moffice.documentmanager.ab.proxy.en.scan_b",
       "existing_drawable": "wps_office",
-      "name": "WPS Office"
+      "name": "WPS Office",
+      "installs": "500,000,000+",
+      "drawable": "wps_office"
     },
     {
       "id": "com.twitter.androie/com.twitter.androie.StartActivity",
@@ -27,7 +29,9 @@
     {
       "id": "com.microsoft.xboxone.smartglass.beta/com.microsoft.xbox.LauncherActivity",
       "existing_drawable": "xbox",
-      "name": "Xbox Beta"
+      "name": "Xbox Beta",
+      "installs": "10,000,000+",
+      "drawable": "xbox_beta"
     },
     {
       "id": "com.xda.labs.play/com.xda.labs.one.ui.ForumLinkHandlerActivity",
@@ -42,17 +46,23 @@
     {
       "id": "com.rk.axion/com.rk.activities.main.MainActivity",
       "existing_drawable": "xed_editor",
-      "name": "Xed-Editor"
+      "name": "Xed-Editor",
+      "installs": "500+",
+      "drawable": "xed_editor"
     },
     {
       "id": "com.miui.weather2/com.miui.weather2.WeatherBaseScreen",
       "existing_drawable": "weather",
-      "name": "Xiaomi Weather"
+      "name": "Xiaomi Weather",
+      "installs": "1,000,000,000+",
+      "drawable": "xiaomi_weather"
     },
     {
       "id": "com.github.tianma8023.xposed.smscode/com.github.tianma8023.xposed.smscode.HomeActivityAlias",
       "existing_drawable": "sms_organizer",
-      "name": "XposedSmsCode"
+      "name": "XposedSmsCode",
+      "installs": "1,000+",
+      "drawable": "xposedsmscode"
     },
     {
       "id": "de.yaacc/de.yaacc.browser.TabBrowserActivity",
@@ -62,7 +72,9 @@
     {
       "id": "com.yeelight.yeelight_fluid/com.yeelight.yeelight_fluid.MainActivity",
       "existing_drawable": "yeelight",
-      "name": "Yeelight"
+      "name": "Yeelight",
+      "installs": "50,000+",
+      "drawable": "yeelight"
     },
     {
       "id": "com.kapp.youtube.finam/com.kapp.youtube.ui.MainActivity",

@@ -14,7 +14,9 @@
     {
       "id": "remix.myplayer/remix.myplayer.ui.activity.ComposeActivity",
       "existing_drawable": "music_player",
-      "name": "APlayer"
+      "name": "APlayer",
+      "installs": "50,000+",
+      "drawable": "aplayer"
     },
     {
       "id": "com.hihonor.calendar/com.android.calendar.AllInOneActivity",
@@ -34,17 +36,23 @@
     {
       "id": "com.mauriciotogneri.fileexplorer/com.mauriciotogneri.fileexplorer.activities.MainActivity",
       "existing_drawable": "generic_files",
-      "name": "File Explorer"
+      "name": "File Explorer",
+      "installs": "1,000,000+",
+      "drawable": "file_explorer"
     },
     {
       "id": "com.files.shortcut/com.files.Archivos",
       "existing_drawable": "generic_files",
-      "name": "Files: Shortcut"
+      "name": "Files: Shortcut",
+      "installs": "100,000+",
+      "drawable": "files_shortcut"
     },
     {
       "id": "com.kyotoplayer/com.kyotoplayer.ui.screens.MainActivity",
       "existing_drawable": "just_player",
-      "name": "KYOTO Player"
+      "name": "KYOTO Player",
+      "installs": "1,000,000+",
+      "drawable": "kyoto_player"
     },
     {
       "id": "com.transsion.smartmessage/com.android.messaging.ui.conversationlist.ConversationListActivity",

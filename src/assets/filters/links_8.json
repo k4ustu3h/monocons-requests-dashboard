@@ -7,17 +7,23 @@
     {
       "id": "com.adobe.lrmobile/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "lightroom",
-      "name": "Lightroom"
+      "name": "Lightroom",
+      "installs": "100,000,000+",
+      "drawable": "lightroom"
     },
     {
       "id": "com.grice.call/com.grice.call.icon.Default",
       "existing_drawable": "generic_dialer",
-      "name": "Liquid Dialer"
+      "name": "Liquid Dialer",
+      "installs": "100,000+",
+      "drawable": "liquid_dialer"
     },
     {
       "id": "com.wallpaper.liveloop/com.wallpaper.liveloop.StartActivity",
       "existing_drawable": "liveloop",
-      "name": "LiveLoop"
+      "name": "LiveLoop",
+      "installs": "100,000+",
+      "drawable": "liveloop"
     },
     {
       "id": "com.cvc953.localplayer/com.cvc953.localplayer.MainActivity",
@@ -37,7 +43,9 @@
     {
       "id": "app.lunatask.android/app.lunatask.android.MainActivity",
       "existing_drawable": "tasks",
-      "name": "Lunatask"
+      "name": "Lunatask",
+      "installs": "10,000+",
+      "drawable": "lunatask"
     },
     {
       "id": "com.j.m3play/com.j.m3play.MainActivity",
@@ -52,7 +60,9 @@
     {
       "id": "com.arlosoft.macrodroid/com.arlosoft.macrodroid.intro.ToastActivity",
       "existing_drawable": "macrodroid",
-      "name": "MacroDroid"
+      "name": "MacroDroid",
+      "installs": "10,000,000+",
+      "drawable": "macrodroid"
     },
     {
       "id": "com.topjohnwu.magisk/x.COMPONENT_PLACEHOLDER_2",
@@ -62,27 +72,37 @@
     {
       "id": "com.nebula.mahjongtile/com.unity3d.player.UnityPlayerActivity.Default",
       "existing_drawable": "generic_mahjong",
-      "name": "Mahjong Blast"
+      "name": "Mahjong Blast",
+      "installs": "100,000,000+",
+      "drawable": "mahjong_blast"
     },
     {
       "id": "com.zoundindustries.marshallbt/com.zoundindustries.marshallbt.ui.activity.DeviceSettingsActivity",
       "existing_drawable": "marshall_multi_room",
-      "name": "Marshall Bluetooth"
+      "name": "Marshall Bluetooth",
+      "installs": "5,000,000+",
+      "drawable": "marshall_bluetooth"
     },
     {
       "id": "com.devmaru.audio/com.devmaru.audio.activity.MainActivity",
       "existing_drawable": "music_player",
-      "name": "MaruAudio"
+      "name": "MaruAudio",
+      "installs": "10,000+",
+      "drawable": "maruaudio"
     },
     {
       "id": "com.numero.material_gallery/com.numero.material_gallery.MainActivity",
       "existing_drawable": "compose_material_catalog",
-      "name": "Material Components Gallery"
+      "name": "Material Components Gallery",
+      "installs": "5,000+",
+      "drawable": "material_components_gallery"
     },
     {
       "id": "material.expressive.kwgt/material.expressive.kwgt.MainActivity",
       "existing_drawable": "m3_expressive_widgets",
-      "name": "Material Expressive Widget"
+      "name": "Material Expressive Widget",
+      "installs": "1,000+",
+      "drawable": "material_expressive_widget"
     },
     {
       "id": "com.nemynew.materialsearch/com.nemynew.materialsearch.MainActivity",
@@ -92,17 +112,23 @@
     {
       "id": "eu.eleader.mobilebanking.bre/pl.mbank.companymobile.SplashScreen",
       "existing_drawable": "mbank",
-      "name": "mBank CompanyMobile"
+      "name": "mBank CompanyMobile",
+      "installs": "100,000+",
+      "drawable": "mbank_companymobile"
     },
     {
       "id": "com.mcdo.mcdonalds/com.gigigo.mcdonaldsbr.ui.activities.splash.SplashActivityDefault",
       "existing_drawable": "mcdonalds",
-      "name": "McDonald's"
+      "name": "McDonald's",
+      "installs": "100,000,000+",
+      "drawable": "mcdonalds"
     },
     {
       "id": "com.mcdonalds.app/com.mcdonalds.app.LauncherDefault",
       "existing_drawable": "mcdonalds",
-      "name": "McDonald's"
+      "name": "McDonald's",
+      "installs": "50,000,000+",
+      "drawable": "mcdonalds"
     },
     {
       "id": "com.melmeligy.mediadownloader/com.melmeligy.mediadownloader.MainActivity",
@@ -112,7 +138,9 @@
     {
       "id": "com.medium.reader/com.medium.android.donkey.launcher.LauncherActivity",
       "existing_drawable": "medium",
-      "name": "Medium"
+      "name": "Medium",
+      "installs": "10,000,000+",
+      "drawable": "medium"
     },
     {
       "id": "com.anticor.mellowdark/com.anticor.mellowdark.MainActivity",
@@ -137,17 +165,23 @@
     {
       "id": "com.appelis.mojemetrosk/com.appelis.mojemetrosk.ApplicationLoading",
       "existing_drawable": "metro",
-      "name": "METRO"
+      "name": "METRO",
+      "installs": "100,000+",
+      "drawable": "metro"
     },
     {
       "id": "de.metro.alex.customer.digitalcard.metro/com.metronom.app.companion.ui.main.MainActivity",
       "existing_drawable": "metro",
-      "name": "METRO Companion"
+      "name": "METRO Companion",
+      "installs": "5,000,000+",
+      "drawable": "metro_companion"
     },
     {
       "id": "com.xiaomi.smarthome.tv.global4/com.xiaomi.smarthome.tv.ui.MainActivity",
       "existing_drawable": "mi_home",
-      "name": "Mi Home"
+      "name": "Mi Home",
+      "installs": "100,000+",
+      "drawable": "mi_home"
     },
     {
       "id": "com.xiaomi.smarthomv/com.xiaomi.smarthome.SmartHomeMainActivity",
@@ -157,7 +191,9 @@
     {
       "id": "com.speedymovil.wire/com.speedymovil.wire.MainActivity",
       "existing_drawable": "mi_telcel",
-      "name": "Mi Telcel"
+      "name": "Mi Telcel",
+      "installs": "100,000,000+",
+      "drawable": "mi_telcel"
     },
     {
       "id": "com.gold.android.gms/org.microg.gms.ui.SettingsActivity",
@@ -172,12 +208,16 @@
     {
       "id": "com.microsoft.office.officehubrow/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "microsoft_365",
-      "name": "Microsoft 365 Copilot"
+      "name": "Microsoft 365 Copilot",
+      "installs": "1,000,000,000+",
+      "drawable": "microsoft_365_copilot"
     },
     {
       "id": "com.microsoft.bing/com.microsoft.sapphire.app.main.LauncherAlias",
       "existing_drawable": "bing",
-      "name": "Microsoft Bing"
+      "name": "Microsoft Bing",
+      "installs": "100,000,000+",
+      "drawable": "microsoft_bing"
     },
     {
       "id": "com.microsoft.copilot/com.microsoft.copilotn.MainActivityDefault",
@@ -187,12 +227,16 @@
     {
       "id": "com.microsoft.emmx.dev/com.google.android.apps.chrome.Main",
       "existing_drawable": "microsoft_edge",
-      "name": "Microsoft Edge Dev"
+      "name": "Microsoft Edge Dev",
+      "installs": "500,000+",
+      "drawable": "microsoft_edge_dev"
     },
     {
       "id": "com.microsoft.appmanager/com.microsoft.appmanager.oem.setting.OemSettingsActivity",
       "existing_drawable": "microsoft_link",
-      "name": "Microsoft Link to Windows"
+      "name": "Microsoft Link to Windows",
+      "installs": "1,000,000,000+",
+      "drawable": "microsoft_link_to_windows"
     },
     {
       "id": "com.microsoft.stream/com.microsoft.stream.ui.activities.SplashActivity",
@@ -202,7 +246,9 @@
     {
       "id": "com.microsoft.teams/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "microsoft_teams",
-      "name": "Microsoft Teams"
+      "name": "Microsoft Teams",
+      "installs": "500,000,000+",
+      "drawable": "microsoft_teams"
     },
     {
       "id": "com.microsoft.xcloud/com.microsoft.xcloud.MainActivity",

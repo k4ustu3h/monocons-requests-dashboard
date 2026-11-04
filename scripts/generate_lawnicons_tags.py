@@ -177,6 +177,22 @@ def main(input_file, output_dir, lawnicons_appfilter_path, monocons_appfilter_pa
             else:
                 group["id"] = sorted(comps)[0]
 
+    # Preserve existing installs and drawable info from current links_*.json files
+    existing_meta = {}
+    for old_file in glob.glob(os.path.join(output_dir, "links_*.json")):
+        try:
+            with open(old_file, 'r', encoding='utf-8') as f:
+                old_data = json.load(f)
+                for old_item in old_data.get('links', []):
+                    old_id = old_item.get('id')
+                    if old_id:
+                        meta = {}
+                        if 'installs' in old_item: meta['installs'] = old_item['installs']
+                        if 'drawable' in old_item: meta['drawable'] = old_item['drawable']
+                        if meta: existing_meta[old_id] = meta
+        except Exception:
+            pass
+
     links_requested = []
     links_other = []
 
@@ -195,6 +211,8 @@ def main(input_file, output_dir, lawnicons_appfilter_path, monocons_appfilter_pa
         }
         if len(comps) > 1:
             item["components"] = sorted(comps)
+        if group["id"] in existing_meta:
+            item.update(existing_meta[group["id"]])
 
         if is_requested:
             links_requested.append(item)

@@ -7,22 +7,30 @@
     {
       "id": "com.ubnt.easyunifi/com.ubnt.unifi.network.welcome.WelcomeActivity",
       "existing_drawable": "unifi",
-      "name": "UniFi"
+      "name": "UniFi",
+      "installs": "1,000,000+",
+      "drawable": "unifi"
     },
     {
       "id": "com.uniqlo.au.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.DummyLauncherActivity",
       "existing_drawable": "uniqlo",
-      "name": "UNIQLO"
+      "name": "UNIQLO",
+      "installs": "1,000,000+",
+      "drawable": "uniqlo"
     },
     {
       "id": "com.uniqlo.my.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.DummyLauncherActivity",
       "existing_drawable": "uniqlo",
-      "name": "UNIQLO"
+      "name": "UNIQLO",
+      "installs": "1,000,000+",
+      "drawable": "uniqlo"
     },
     {
       "id": "com.uniqlo.vn.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.DummyLauncherActivity",
       "existing_drawable": "uniqlo",
-      "name": "UNIQLO"
+      "name": "UNIQLO",
+      "installs": "1,000,000+",
+      "drawable": "uniqlo"
     },
     {
       "id": "com.yek.android.uniqlo/com.yek.android.uniqlo.activity.WelcomeActivity",
@@ -32,32 +40,44 @@
     {
       "id": "com.raafiya.universalacremotecontrol/com.raafiya.universalacremotecontrol.remotecontrol.SplashActivity",
       "existing_drawable": "generic_power",
-      "name": "Universal AC Remote Control"
+      "name": "Universal AC Remote Control",
+      "installs": "10,000,000+",
+      "drawable": "universal_ac_remote_control"
     },
     {
       "id": "com.letscontrol.universalprojectorremotecontrol/com.letscontrol.universalprojectorremotecontrol.remotecontrol.SplashActivity",
       "existing_drawable": "generic_power",
-      "name": "Universal Projector Remote Control"
+      "name": "Universal Projector Remote Control",
+      "installs": "1,000,000+",
+      "drawable": "universal_projector_remote_control"
     },
     {
       "id": "com.matteljv.uno/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "uno",
-      "name": "UNO!"
+      "name": "UNO!",
+      "installs": "100,000,000+",
+      "drawable": "uno"
     },
     {
       "id": "com.sivale.android/bROnt1.buE8K9.dFxEY4.t3cy29",
       "existing_drawable": "up_si_vale",
-      "name": "Up S\u00ed Vale"
+      "name": "Up S\u00ed Vale",
+      "installs": "10,000,000+",
+      "drawable": "com_sivale_android"
     },
     {
       "id": "com.uphold.wallet/com.uphold.wallet.SplashActivity",
       "existing_drawable": "uphold",
-      "name": "Uphold"
+      "name": "Uphold",
+      "installs": "5,000,000+",
+      "drawable": "uphold"
     },
     {
       "id": "info.t4w.vp/info.t4w.vp.view.MainActivity",
       "existing_drawable": "just_player",
-      "name": "Url Video Player"
+      "name": "Url Video Player",
+      "installs": "10,000,000+",
+      "drawable": "url_video_player"
     },
     {
       "id": "com.trianguloy.urlchecker.clone/com.trianguloy.urlchecker.activities.MainActivity",
@@ -67,12 +87,16 @@
     {
       "id": "com.free.vpn.usa.proxy.planet/com.vpnapp.MainActivity",
       "existing_drawable": "planet_vpn",
-      "name": "USA VPN"
+      "name": "USA VPN",
+      "installs": "1,000,000+",
+      "drawable": "usa_vpn"
     },
     {
       "id": "com.extreamsd.usbaudiorecorderpro/com.extreamsd.usbaudiorecordershared.AllTabsActivity",
       "existing_drawable": "drivedroid",
-      "name": "USB Audio Recorder PRO"
+      "name": "USB Audio Recorder PRO",
+      "installs": "50,000+",
+      "drawable": "usb_audio_recorder_pro"
     },
     {
       "id": "com.enginex0.usbmassstorage/com.enginex0.usbmassstorage.MainActivity",
@@ -87,12 +111,16 @@
     {
       "id": "com.verseview.songbook/com.verseview.songbook.MainActivity",
       "existing_drawable": "apple_music",
-      "name": "VerseVIEW Christian Song Book"
+      "name": "VerseVIEW Christian Song Book",
+      "installs": "500,000+",
+      "drawable": "verseview_christian_song_book"
     },
     {
       "id": "com.viber.voip/com.viber.voip.WelcomeActivity.Night",
       "existing_drawable": "viber",
-      "name": "Viber"
+      "name": "Viber",
+      "installs": "1,000,000,000+",
+      "drawable": "viber"
     },
     {
       "id": "com.mediatek.videoplayer/com.mediatek.videoplayer.MovieListActivity",
@@ -102,7 +130,9 @@
     {
       "id": "by.likee.downloader.without.watermark/me.lik.downloader._dev_ui._dev_SplashActivity",
       "existing_drawable": "generic_download_shelf",
-      "name": "Video downloader for Likee"
+      "name": "Video downloader for Likee",
+      "installs": "500,000+",
+      "drawable": "video_downloader_for_likee"
     },
     {
       "id": "com.doionline.videolivewallpaper/com.doionline.videolivewallpaper.MainActivity",
@@ -112,7 +142,9 @@
     {
       "id": "com.naing.vwallpaper/com.naing.vwallpaper.MainActivity",
       "existing_drawable": "video_live_wallpaper",
-      "name": "Video Live Wallpaper"
+      "name": "Video Live Wallpaper",
+      "installs": "10,000,000+",
+      "drawable": "video_live_wallpaper"
     },
     {
       "id": "com.softwinner.videoplayer/com.softwinner.videoplayer.view.activity.HomePageActivity",
@@ -137,7 +169,9 @@
     {
       "id": "com.virtualpiano.musicalkeyboard/com.unity3d.player.UnityPlayerActivity",
       "existing_drawable": "generic_piano",
-      "name": "Virtual Pianino"
+      "name": "Virtual Pianino",
+      "installs": "1,000,000+",
+      "drawable": "virtual_pianino"
     },
     {
       "id": "com.vivo.calculator/com.android.bbkcalculator.Calculator",
@@ -167,42 +201,58 @@
     {
       "id": "adarshurs.android.vlcmobileremote/adarshurs.android.vlcmobileremote.MainActivity",
       "existing_drawable": "vlc",
-      "name": "VLC Mobile Remote"
+      "name": "VLC Mobile Remote",
+      "installs": "1,000,000+",
+      "drawable": "vlc_mobile_remote"
     },
     {
       "id": "com.raytechnoto.glab.voicerecorder/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "generic_microphone",
-      "name": "Voice Recorder"
+      "name": "Voice Recorder",
+      "installs": "5,000,000+",
+      "drawable": "voice_recorder"
     },
     {
       "id": "com.prometheusinteractive.voice_launcher/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
       "existing_drawable": "generic_microphone",
-      "name": "Voice Search"
+      "name": "Voice Search",
+      "installs": "10,000,000+",
+      "drawable": "voice_search"
     },
     {
       "id": "com.DevExtras.VoiceTools/crc64ebabd5372c0ee16b.MainActivity",
       "existing_drawable": "generic_microphone",
-      "name": "Voice Tools"
+      "name": "Voice Tools",
+      "installs": "500,000+",
+      "drawable": "voice_tools"
     },
     {
       "id": "com.zaza.beatbox/com.zaza.beatbox.pagesredesign.main.MainActivity",
       "existing_drawable": "generic_audio_editor",
-      "name": "VoxBox Audio Editor"
+      "name": "VoxBox Audio Editor",
+      "installs": "1,000,000+",
+      "drawable": "voxbox_audio_editor"
     },
     {
       "id": "com.free.vpn.indonesia.proxy.planet/com.vpnapp.MainActivity",
       "existing_drawable": "planet_vpn",
-      "name": "VPN Indonesia"
+      "name": "VPN Indonesia",
+      "installs": "500,000+",
+      "drawable": "vpn_indonesia"
     },
     {
       "id": "com.feresr.walpy/com.feresr.wallpapers.SplashActivity",
       "existing_drawable": "walpy",
-      "name": "Walpy"
+      "name": "Walpy",
+      "installs": "1,000,000+",
+      "drawable": "walpy"
     },
     {
       "id": "net.waterfox.android.release/net.waterfox.android.release.AppMomo",
       "existing_drawable": "waterfox",
-      "name": "Waterfox"
+      "name": "Waterfox",
+      "installs": "100,000+",
+      "drawable": "waterfox"
     },
     {
       "id": "com.wavegram.messenger.web/org.telegram.messenger.DefaultIcon",
@@ -217,7 +267,9 @@
     {
       "id": "com.sathwbg.easymessager/com.sathwbg.easymessager.Icon0",
       "existing_drawable": "whatsapp",
-      "name": "WhatsApp"
+      "name": "WhatsApp",
+      "installs": "500+",
+      "drawable": "whatsapp"
     },
     {
       "id": "com.somessenger.site/com.whatsapp.Main",
@@ -227,27 +279,37 @@
     {
       "id": "ru.andr7e.wifimonitor/ru.andr7e.deviceinfohw.DeviceInfoActivity",
       "existing_drawable": "wifi_analyzer_open_source",
-      "name": "Wi-Fi Monitor"
+      "name": "Wi-Fi Monitor",
+      "installs": "1,000,000+",
+      "drawable": "wi_fi_monitor"
     },
     {
       "id": "com.windscribe.vpn/com.windscribe.mobile.ui.preferences.icons.VaporScribeActivity",
       "existing_drawable": "windscribe",
-      "name": "Windscribe"
+      "name": "Windscribe",
+      "installs": "10,000,000+",
+      "drawable": "windscribe"
     },
     {
       "id": "com.wolt.courierapp/com.wolt.courierapp.MainActivity",
       "existing_drawable": "wolt",
-      "name": "Wolt Courier Partner"
+      "name": "Wolt Courier Partner",
+      "installs": "1,000,000+",
+      "drawable": "wolt_courier_partner"
     },
     {
       "id": "mobilesmart.convert.word.to.pdf.documents/mobilesmart.convert.word.to.pdf.documents.main",
       "existing_drawable": "generic_pdf_square",
-      "name": "Word to PDF Converter"
+      "name": "Word to PDF Converter",
+      "installs": "1,000,000+",
+      "drawable": "word_to_pdf_converter"
     },
     {
       "id": "com.azwstudios.theholybible.web/com.azwstudios.theholybible.MainActivity",
       "existing_drawable": "generic_bible",
-      "name": "World English Bible"
+      "name": "World English Bible",
+      "installs": "500,000+",
+      "drawable": "world_english_bible"
     },
     {
       "id": "com.sigseg.android.worldmap/com.sigseg.android.map.ImageViewerActivity",
