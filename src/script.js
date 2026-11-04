@@ -308,6 +308,7 @@ const App = {
     // Runtime
     idMap: new Map(),
     renderedCount: 0,
+    renderedIds: new Set(),
     currentData: [],
     existingIcons: [],
     lowLoaded: false,
@@ -2272,7 +2273,7 @@ const Data = {
           const newApps = [];
           apps.forEach((app) => {
             const existing = App.state.idMap.get(app.componentName);
-            if (existing) {
+            if (existing && existing.componentName === app.componentName) {
               const comps = existing.components;
               Object.assign(existing, app);
               if (comps) existing.components = comps;
@@ -2336,8 +2337,11 @@ const Data = {
     return App.state.linksBatchIndex < App.state.linksTotalBatches;
   },
 
+  /**
+   * @returns {Promise<AppEntry[] | null>}
+   */
   async loadNextLinksBatch() {
-    if (App.state.linksLoading || !this.hasMoreLinks()) return false;
+    if (App.state.linksLoading || !this.hasMoreLinks()) return null;
     App.state.linksLoading = true;
 
     const nextIndex = App.state.linksBatchIndex + 1;
@@ -2345,14 +2349,14 @@ const Data = {
       const data = await this.fetchFilterData(`links_${nextIndex}`);
       if (!data) {
         App.state.linksLoading = false;
-        return false;
+        return null;
       }
 
       const items = data.links || data[`links_${nextIndex}`] || [];
       if (!Array.isArray(items) || items.length === 0) {
         App.state.linksBatchIndex = App.state.linksTotalBatches;
         App.state.linksLoading = false;
-        return false;
+        return null;
       }
 
       const newApps = [];
@@ -2406,10 +2410,10 @@ const Data = {
       if (data.total_batches) {
         App.state.linksTotalBatches = data.total_batches;
       }
-      return true;
+      return newApps;
     } catch (e) {
       console.error(`Failed to load links batch ${nextIndex}:`, e);
-      return false;
+      return null;
     } finally {
       App.state.linksLoading = false;
     }
@@ -2495,8 +2499,12 @@ const Data = {
     return commands;
   },
 
-  process() {
-    let data = App.data;
+  /**
+   * @param {AppEntry[]} apps
+   * @returns {AppEntry[]}
+   */
+  filterApps(apps) {
+    let data = apps;
     const s = App.state;
 
     // Search
@@ -2517,14 +2525,6 @@ const Data = {
         return Array.from(activeFilters).every((fid) => tags.has(fid));
       });
     }
-
-    // Deduplicate by componentName
-    const seenComps = new Set();
-    data = data.filter((app) => {
-      if (seenComps.has(app.componentName)) return false;
-      seenComps.add(app.componentName);
-      return true;
-    });
 
     // Text Search
     if (query.text) {
@@ -2597,6 +2597,21 @@ const Data = {
         }
       }
     }
+
+    return data;
+  },
+
+  process() {
+    let data = this.filterApps(App.data);
+    const s = App.state;
+
+    // Deduplicate by componentName
+    const seenComps = new Set();
+    data = data.filter((app) => {
+      if (seenComps.has(app.componentName)) return false;
+      seenComps.add(app.componentName);
+      return true;
+    });
 
     // Sort
     data = [...data];
@@ -3728,40 +3743,67 @@ const UI = {
                 UI.render();
                 return;
             }
-            const more = this.loadMore();
-            App.dom.sentinel.style.opacity = (more || Data.hasMoreLinks()) ? '1' : '0';
+            if (App.state.renderedCount < App.state.currentData.length) {
+                const more = this.loadMore();
+                App.dom.sentinel.style.opacity = (more || Data.hasMoreLinks()) ? '1' : '0';
+            }
 
-            if (Data.hasMoreLinks() && !App.state.linksLoading) {
-                const loaded = await Data.loadNextLinksBatch();
+            if ((App.state.activeFilters.has('links') || App.state.search) && Data.hasMoreLinks() && !App.state.linksLoading) {
+                const loaded = await this.handleLinksScrollLoad();
                 if (loaded) {
-                    if (App.state.activeFilters.has('links') || App.state.search) {
-                        Data.process();
-                        const moreAfter = this.loadMore();
-                        App.dom.sentinel.style.opacity = (moreAfter || Data.hasMoreLinks()) ? '1' : '0';
-                    }
                     this.checkSentinel();
                 }
+            } else {
+                App.dom.sentinel.style.opacity = (App.state.renderedCount < App.state.currentData.length || Data.hasMoreLinks()) ? '1' : '0';
             }
         }
     }, { rootMargin: '400px' });
     this.observer.observe(App.dom.sentinel);
   },
 
+  async handleLinksScrollLoad() {
+    if (!Data.hasMoreLinks() || App.state.linksLoading) return false;
+    if (!App.state.activeFilters.has('links') && !App.state.search) return false;
+
+    const newApps = await Data.loadNextLinksBatch();
+    if (newApps) {
+      if (newApps.length > 0) {
+        const matchingApps = Data.filterApps(newApps);
+        const currentSet = new Set(App.state.currentData.map((a) => a.componentName));
+        let added = false;
+        matchingApps.forEach((app) => {
+          if (!currentSet.has(app.componentName)) {
+            currentSet.add(app.componentName);
+            App.state.currentData.push(app);
+            added = true;
+          }
+        });
+        if (added) {
+          const moreAfter = this.loadMore();
+          App.dom.sentinel.style.opacity = (moreAfter || Data.hasMoreLinks()) ? '1' : '0';
+          const sectionTitle = document.getElementById('sectionTitle');
+          if (sectionTitle && (App.state.activeFilters.size > 0 || App.state.search)) {
+            sectionTitle.innerHTML = `Community requests <span style="color: var(--on-surface-variant); margin-left: var(--space-xs)">${Utils.compactNumber(App.state.currentData.length)}</span>`;
+          }
+        }
+      }
+      return true;
+    }
+    return false;
+  },
+
   async checkSentinel() {
     if (!App.dom.sentinel) return;
     const rect = App.dom.sentinel.getBoundingClientRect();
     if (rect.top <= window.innerHeight + 400) {
-      if (Data.hasMoreLinks() && !App.state.linksLoading) {
-        const loaded = await Data.loadNextLinksBatch();
-        if (loaded) {
-          if (App.state.activeFilters.has('links') || App.state.search) {
-            Data.process();
-            const moreAfter = this.loadMore();
-            App.dom.sentinel.style.opacity = (moreAfter || Data.hasMoreLinks()) ? '1' : '0';
-          }
-          if (Data.hasMoreLinks()) {
-            setTimeout(() => this.checkSentinel(), 60);
-          }
+      if (App.state.renderedCount < App.state.currentData.length) {
+        const more = this.loadMore();
+        App.dom.sentinel.style.opacity = (more || Data.hasMoreLinks()) ? '1' : '0';
+      }
+      if ((App.state.activeFilters.has('links') || App.state.search) && Data.hasMoreLinks() && !App.state.linksLoading) {
+        const loaded = await this.handleLinksScrollLoad();
+        if (loaded && Data.hasMoreLinks()) {
+          setTimeout(() => this.checkSentinel(), 60);
         }
       }
     }
@@ -3886,6 +3928,7 @@ const UI = {
       return;
     }
 
+    s.renderedIds = new Set();
     s.renderedCount = 0;
     this.loadMore();
 
@@ -3914,8 +3957,13 @@ const UI = {
     const fragment = document.createDocumentFragment();
     const tempDiv = document.createElement('div');
 
+    if (!s.renderedIds) s.renderedIds = new Set();
+
     batch.forEach((app) => {
       const id = app.componentName;
+      if (s.renderedIds.has(id)) return;
+      s.renderedIds.add(id);
+
       const isSelected = s.selected.has(id);
       const existingDrawable = App.state.existingSvgs
         ? App.state.existingSvgs.get(id)

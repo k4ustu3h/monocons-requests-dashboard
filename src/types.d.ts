@@ -201,6 +201,7 @@ declare global {
     linksBatchIndex?: number;
     linksTotalBatches?: number;
     linksLoading?: boolean;
+    renderedIds?: Set<string>;
     _quickPickEasy?: (AppEntry & { _score: number })[];
     _quickPickMiddle?: (AppEntry & { _score: number })[];
     _lastQuickPickIdx?: number;
