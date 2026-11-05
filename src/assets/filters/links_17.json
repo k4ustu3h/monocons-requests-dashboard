@@ -84,7 +84,9 @@
     {
       "id": "com.sbi.lotusintouch/com.sbi.yono.MainActivity",
       "existing_drawable": "yono_sbi",
-      "name": "YONO SBI"
+      "name": "YONO SBI",
+      "installs": "100,000,000+",
+      "drawable": "yono_sbi"
     },
     {
       "id": "com.morphe.youtube/com.morphe.youtube.morphe_original_1",
@@ -94,7 +96,9 @@
     {
       "id": "com.google.android.youtube/app.morphe.android.youtube.morphe_black_1",
       "existing_drawable": "youtube",
-      "name": "YouTube Morphe"
+      "name": "YouTube Morphe",
+      "installs": "10,000,000,000+",
+      "drawable": "youtube_morphe"
     },
     {
       "id": "anddea.yrf.tube.music/com.google.android.apps.youtube.music.activities.MusicActivity",
@@ -104,7 +108,9 @@
     {
       "id": "com.google.android.apps.youtube.music/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "youtube_music",
-      "name": "YouTube Music"
+      "name": "YouTube Music",
+      "installs": "5,000,000,000+",
+      "drawable": "youtube_music"
     },
     {
       "id": "com.morphe.youtube.music/com.morphe.youtube.music.morphe_original_1",
@@ -129,7 +135,9 @@
     {
       "id": "com.google.android.youtube.tvunplugged/com.google.android.apps.youtube.tvunplugged.activity.MainActivity",
       "existing_drawable": "youtube_tv",
-      "name": "YouTube TV"
+      "name": "YouTube TV",
+      "installs": "10,000,000+",
+      "drawable": "youtube_tv"
     },
     {
       "id": "com.wssdlc/com.whatsapp.Main",
@@ -139,52 +147,72 @@
     {
       "id": "com.dewmobile.kuaiya.play/com.qshare.app.activity.FirstActivity",
       "existing_drawable": "zapya",
-      "name": "Zapya"
+      "name": "Zapya",
+      "installs": "100,000,000+",
+      "drawable": "zapya"
     },
     {
       "id": "net.zedge.android/net.zedge.android.MainOctoberFest",
       "existing_drawable": "zedge",
-      "name": "Zedge"
+      "name": "Zedge",
+      "installs": "500,000,000+",
+      "drawable": "zedge"
     },
     {
       "id": "pl.znanylekarz/pl.znanylekarz.MainActivity",
       "existing_drawable": "doctoralia",
-      "name": "ZnanyLekarz"
+      "name": "ZnanyLekarz",
+      "installs": "1,000,000+",
+      "drawable": "znanylekarz"
     },
     {
       "id": "com.zoho.assist/com.zoho.assist.ui.landing.view.LandingPageActivity",
       "existing_drawable": "zoho_assist",
-      "name": "Zoho Assist"
+      "name": "Zoho Assist",
+      "installs": "1,000,000+",
+      "drawable": "zoho_assist"
     },
     {
       "id": "com.zoho.notebook/com.zoho.notebook.activities.DefaultIconAlias",
       "existing_drawable": "zoho_notebook",
-      "name": "Zoho Notebook"
+      "name": "Zoho Notebook",
+      "installs": "5,000,000+",
+      "drawable": "zoho_notebook"
     },
     {
       "id": "com.zoho.zohoone/com.zoho.zohoone.applock.AppLockActivity",
       "existing_drawable": "zoho_one",
-      "name": "Zoho One"
+      "name": "Zoho One",
+      "installs": "100,000+",
+      "drawable": "zoho_one"
     },
     {
       "id": "com.zoho.zohooneuser/com.zoho.zohooneuser.AppLockActivity",
       "existing_drawable": "zoho_one",
-      "name": "Zoho One"
+      "name": "Zoho One",
+      "installs": "10,000+",
+      "drawable": "zoho_one"
     },
     {
       "id": "com.zoho.mail.task/com.zoho.mail.task.MainActivity",
       "existing_drawable": "zoho_todo",
-      "name": "Zoho ToDo"
+      "name": "Zoho ToDo",
+      "installs": "50,000+",
+      "drawable": "zoho_todo"
     },
     {
       "id": "com.application.services.partner/com.application.services.partner.ui.activities.SplashActivity",
       "existing_drawable": "zomato",
-      "name": "Zomato Restaurant Partner"
+      "name": "Zomato Restaurant Partner",
+      "installs": "5,000,000+",
+      "drawable": "zomato_restaurant_partner"
     },
     {
       "id": "com.zozoplayer/com.zozoplayer.ui.activities.MainActivity",
       "existing_drawable": "generic_player",
-      "name": "ZoZo Player"
+      "name": "ZoZo Player",
+      "installs": "1,000,000+",
+      "drawable": "zozo_player"
     },
     {
       "id": "com.zte.videoplayer/com.zte.videoplayer.stock.VideoStockBrowserActivity",
@@ -194,12 +222,16 @@
     {
       "id": "ru.megamarket.marketplace/ru.goods.marketplace.SingleActivity",
       "existing_drawable": "megamarket",
-      "name": "\u041c\u0435\u0433\u0430\u043c\u0430\u0440\u043a\u0435\u0442 ~~ Megamarket"
+      "name": "\u041c\u0435\u0433\u0430\u043c\u0430\u0440\u043a\u0435\u0442 ~~ Megamarket",
+      "installs": "10,000,000+",
+      "drawable": "ru_megamarket_marketplace"
     },
     {
       "id": "com.pervayapomosh/com.pervayapomosh.MainActivity",
       "existing_drawable": "generic_aid",
-      "name": "\u041f\u0435\u0440\u0432\u0430\u044f \u041f\u043e\u043c\u043e\u0449\u044c ~~ First Aid"
+      "name": "\u041f\u0435\u0440\u0432\u0430\u044f \u041f\u043e\u043c\u043e\u0449\u044c ~~ First Aid",
+      "installs": "100,000+",
+      "drawable": "com_pervayapomosh"
     },
     {
       "id": "com.podsas.sasflix/com.podsas.sasflix.MainActivity",
@@ -209,7 +241,9 @@
     {
       "id": "com.tenbis.tbapp/com.tenbis.tbapp.features.home.HomeNavigationActivity",
       "existing_drawable": "just_eat",
-      "name": "\u05ea\u05df \u05d1\u05d9\u05e1 ~~ 10bis"
+      "name": "\u05ea\u05df \u05d1\u05d9\u05e1 ~~ 10bis",
+      "installs": "1,000,000+",
+      "drawable": "com_tenbis_tbapp"
     },
     {
       "id": "com.samanpr.blu/com.samanpr.blu.BLUE",
@@ -219,12 +253,16 @@
     {
       "id": "com.landmarkgroup.maxstores/com.landmarkgroupreactapps.SplashActivity",
       "existing_drawable": "max_fashion",
-      "name": "\u0645\u0627\u0643\u0633 \u0641\u0627\u0634\u0648\u0646 ~~ Max Fashion"
+      "name": "\u0645\u0627\u0643\u0633 \u0641\u0627\u0634\u0648\u0646 ~~ Max Fashion",
+      "installs": "10,000,000+",
+      "drawable": "com_landmarkgroup_maxstores"
     },
     {
       "id": "jp.dreambrain.adiorama/com.cognizantorderserv.kfcindiadroid.MainActivity",
       "existing_drawable": "kfc",
-      "name": "\u30b1\u30f3\u30bf\u30c3\u30ad\u30fc\u30d5\u30e9\u30a4\u30c9\u30c1\u30ad\u30f3 ~~ KFC"
+      "name": "\u30b1\u30f3\u30bf\u30c3\u30ad\u30fc\u30d5\u30e9\u30a4\u30c9\u30c1\u30ad\u30f3 ~~ KFC",
+      "installs": "10,000,000+",
+      "drawable": "jp_dreambrain_adiorama"
     },
     {
       "id": "com.lemon.lv/com.vega.launcher.precondition.PreInstallConfirmActivity",
@@ -239,7 +277,9 @@
     {
       "id": "com.alwaysrotate/com.alwaysrotate.alwaysrotate",
       "existing_drawable": "generic_rotation",
-      "name": "\u5c4f\u5e55\u65cb\u8f49 ~~ Screen Rotation"
+      "name": "\u5c4f\u5e55\u65cb\u8f49 ~~ Screen Rotation",
+      "installs": "1,000,000+",
+      "drawable": "com_alwaysrotate"
     },
     {
       "id": "cn.lyric.getter/cn.lyric.getter.launcher",
