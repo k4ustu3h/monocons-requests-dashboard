@@ -5,28 +5,6 @@
   "total_batches": 17,
   "links": [
     {
-      "id": "com.thegrizzlylabs.geniusscan/com.thegrizzlylabs.geniusscan.ui.welcome.WelcomeActivity",
-      "existing_drawable": "genius_scan",
-      "name": "Genius Scan",
-      "installs": "100,000+",
-      "drawable": "genius_scan"
-    },
-    {
-      "id": "com.ghosten.player/com.ghosten.player.MainActivity",
-      "existing_drawable": "just_player",
-      "name": "Ghosten Player"
-    },
-    {
-      "id": "io.mo.glassmic/io.mo.glassmic.MainActivity",
-      "existing_drawable": "generic_microphone",
-      "name": "GlassMic"
-    },
-    {
-      "id": "com.android.quicksearchbox/com.android.quicksearchbox.SearchActivity",
-      "existing_drawable": "google",
-      "name": "Google"
-    },
-    {
       "id": "com.google.android.apps.searchlite/com.google.android.googlequicksearchbox.SearchActivity",
       "existing_drawable": "google",
       "name": "Google",
@@ -154,13 +132,6 @@
       "name": "HeyTap Music",
       "installs": "1,000,000,000+",
       "drawable": "heytap_music"
-    },
-    {
-      "id": "com.heytap.themestore/com.nearme.themespace.activities.ThemeActivity",
-      "existing_drawable": "theme_store",
-      "name": "HeyTap Theme",
-      "installs": "1,000,000,000+",
-      "drawable": "heytap_theme"
     },
     {
       "id": "com.nearme.themespace/com.nearme.themespace.activities.ThemeActivity",
@@ -319,6 +290,37 @@
       "name": "Jiji",
       "installs": "1,000,000+",
       "drawable": "jiji"
+    },
+    {
+      "id": "com.jio.media.ondemand/com.razpay.apk.HaipeeKnk",
+      "existing_drawable": "jiocinema",
+      "name": "JioCinema"
+    },
+    {
+      "id": "com.jio.media.jiobeats/com.jio.media.jiobeats.InitActivityAliasProPlus",
+      "existing_drawable": "jiosaavn",
+      "name": "JioSaavn",
+      "installs": "500,000,000+",
+      "drawable": "jiosaavn"
+    },
+    {
+      "id": "com.aconvert.jpg2pdf/com.aconvert.jpg2pdf.MainActivity",
+      "existing_drawable": "generic_pdf_square",
+      "name": "JPG to PDF Converter",
+      "installs": "10,000,000+",
+      "drawable": "jpg_to_pdf_converter"
+    },
+    {
+      "id": "com.facebook.katanb/com.facebook.katanb.LoginActivity",
+      "existing_drawable": "facebook",
+      "name": "JTFacebook"
+    },
+    {
+      "id": "com.justeat.app.dk/com.takeaway.android.activity.Splash",
+      "existing_drawable": "just_eat",
+      "name": "Just Eat",
+      "installs": "500,000+",
+      "drawable": "just_eat"
     }
   ]
 }

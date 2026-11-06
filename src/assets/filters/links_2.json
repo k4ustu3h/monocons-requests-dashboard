@@ -5,26 +5,6 @@
   "total_batches": 17,
   "links": [
     {
-      "id": "com.coloros.onekeylockscreen/com.coloros.onekeylockscreen.OppoLockScreen",
-      "existing_drawable": "one_tap_lock_screen",
-      "name": "One-Tap Lock Screen",
-      "components": [
-        "com.coloros.onekeylockscreen/com.coloros.onekeylockscreen.OppoLockScreen",
-        "com.coloros.onekeylockscreen/com.heytap.onekeylockscreen.OneKeyLockScreen"
-      ]
-    },
-    {
-      "id": "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-      "existing_drawable": "pepper",
-      "name": "Pepper",
-      "components": [
-        "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-        "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityLightIcon"
-      ],
-      "installs": "5,000+",
-      "drawable": "pepper"
-    },
-    {
       "id": "se.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
       "existing_drawable": "pepper",
       "name": "Pepper",
@@ -443,6 +423,16 @@
       "name": "AppSend",
       "installs": "10,000+",
       "drawable": "appsend"
+    },
+    {
+      "id": "com.asus.filemanager/com.asus.filemanager.activity.FileManagerActivity",
+      "existing_drawable": "asus_file_manager",
+      "name": "ASUS File Manager"
+    },
+    {
+      "id": "com.huaqin.FM/com.huaqin.FM.FM",
+      "existing_drawable": "generic_fm_radio",
+      "name": "Asus FM Radio"
     }
   ]
 }

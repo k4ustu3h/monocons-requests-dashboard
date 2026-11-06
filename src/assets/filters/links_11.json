@@ -5,40 +5,6 @@
   "total_batches": 17,
   "links": [
     {
-      "id": "com.orange.rn.dop/com.orange.rn.dop.MainActivity",
-      "existing_drawable": "orange_flex",
-      "name": "Orange Flex",
-      "installs": "1,000,000+",
-      "drawable": "orange_flex"
-    },
-    {
-      "id": "app.organicmaps.web/app.organicmaps.DownloadResourcesActivity",
-      "existing_drawable": "organic_maps",
-      "name": "Organic Maps"
-    },
-    {
-      "id": "com.bskit.osint/com.bskit.osint.MainActivity",
-      "existing_drawable": "generic_search",
-      "name": "OSINT"
-    },
-    {
-      "id": "org.otrsc.android/org.otrsc.android.MainActivity",
-      "existing_drawable": "zcalc",
-      "name": "OTR Speed Calculator"
-    },
-    {
-      "id": "com.bintianqi.owndroid/com.bintianqi.owndroid.AliasActivity",
-      "existing_drawable": "netguard",
-      "name": "OwnDroid"
-    },
-    {
-      "id": "br.com.uol.ps.myaccount/br.com.uol.ps.myaccount.main.MainActivity",
-      "existing_drawable": "pagbank",
-      "name": "PagBank",
-      "installs": "50,000,000+",
-      "drawable": "pagbank"
-    },
-    {
       "id": "com.bonc.paintmyroom/com.bonc.paint_my_room.MainActivity",
       "existing_drawable": "substratum_lite",
       "name": "Paint my Room",
@@ -219,13 +185,6 @@
       "drawable": "pinnit"
     },
     {
-      "id": "com.pashapuma.pix.material.you.iconpack/com.jojoy.delegate.JojoyInstallerActivity",
-      "existing_drawable": "pix_material_you_icon_pack",
-      "name": "Pix Material You Icons",
-      "installs": "10,000+",
-      "drawable": "pix_material_you_icons"
-    },
-    {
       "id": "com.lostf1sh.pixelplayeross/com.lostf1sh.pixelplayeross.MainActivity",
       "existing_drawable": "pixelplay",
       "name": "PixelPlayerOSS"
@@ -321,6 +280,55 @@
       "name": "Pizza Hut",
       "installs": "5,000,000+",
       "drawable": "pizza_hut"
+    },
+    {
+      "id": "com.yum.pizzahut/com.yum.pizzahut.MainActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut",
+      "installs": "10,000,000+",
+      "drawable": "pizza_hut"
+    },
+    {
+      "id": "lk.gamma.pizzakraft.PizzaHut/lk.gamma.pizzakraft.PizzaHut.MainActivity",
+      "existing_drawable": "pizza_hut",
+      "name": "Pizza Hut",
+      "installs": "500,000+",
+      "drawable": "pizza_hut"
+    },
+    {
+      "id": "com.freevpnplanet/com.vpnapp.MainActivity",
+      "existing_drawable": "planet_vpn",
+      "name": "Planet VPN",
+      "installs": "50,000,000+",
+      "drawable": "planet_vpn"
+    },
+    {
+      "id": "com.ihenvyr.platinum_karaoke_songbook_app/com.ihenvyr.platinum_karaoke_songbook_app.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Platinum Karaoke Songbook",
+      "installs": "1,000,000+",
+      "drawable": "platinum_karaoke_songbook"
+    },
+    {
+      "id": "agency.equilibrio.sodexomexico/agency.equilibrio.sodexomexico.MainActivity",
+      "existing_drawable": "pluxee",
+      "name": "Pluxee",
+      "installs": "5,000,000+",
+      "drawable": "pluxee"
+    },
+    {
+      "id": "com.guerdons.passresto/com.sodexo.passresto.loading.presentation.activites.LoadingActivity",
+      "existing_drawable": "pluxee",
+      "name": "Pluxee",
+      "installs": "1,000,000+",
+      "drawable": "pluxee"
+    },
+    {
+      "id": "com.pluxeegroup.consumers.global/com.pluxeegroup.consumers.global.MainActivity",
+      "existing_drawable": "pluxee",
+      "name": "Pluxee",
+      "installs": "1,000,000+",
+      "drawable": "pluxee"
     }
   ]
 }

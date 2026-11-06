@@ -5,65 +5,6 @@
   "total_batches": 17,
   "links": [
     {
-      "id": "com.simplemobiletools.gallery/com.onyx.gallery.activities.NewMainActivity",
-      "existing_drawable": "simple_gallery",
-      "name": "Simple Gallery",
-      "installs": "10,000,000+",
-      "drawable": "simple_gallery"
-    },
-    {
-      "id": "com.github.anrimian.musicplayer/com.github.anrimian.musicplayer.ui.main.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Simple Music Player",
-      "installs": "5,000,000+",
-      "drawable": "simple_music_player"
-    },
-    {
-      "id": "com.simplemobiletools.smsmessenger/com.simplemobiletools.smsmessenger.activities.SimplePhSplashActivity.Orange",
-      "existing_drawable": "messages",
-      "name": "Simple SMS Messenger",
-      "installs": "5,000,000+",
-      "drawable": "simple_sms_messenger"
-    },
-    {
-      "id": "io.simplelogin.android.fdroid/io.simplelogin.android.MainActivity",
-      "existing_drawable": "simplelogin",
-      "name": "SimpleLogin"
-    },
-    {
-      "id": "com.lighttigerxiv.simple.mp/com.lighttigerxiv.simple.mp.compose.activities.main.MainActivity",
-      "existing_drawable": "just_player",
-      "name": "SimpleMP"
-    },
-    {
-      "id": "com.delco.courier/com.delco.courier.MainActivity",
-      "existing_drawable": "just_eat",
-      "name": "Skip",
-      "installs": "500,000+",
-      "drawable": "skip"
-    },
-    {
-      "id": "com.bskyb.skygo/com.bskyb.skygo.features.startup.StartupActivity",
-      "existing_drawable": "just_player",
-      "name": "Sky Go",
-      "installs": "10,000,000+",
-      "drawable": "sky_go"
-    },
-    {
-      "id": "de.sky.bw/com.bskyb.skygo.features.startup.StartupActivity",
-      "existing_drawable": "just_player",
-      "name": "Sky Go",
-      "installs": "5,000,000+",
-      "drawable": "sky_go"
-    },
-    {
-      "id": "it.sky.anywhere/com.bskyb.skygo.features.startup.StartupActivity",
-      "existing_drawable": "just_player",
-      "name": "Sky Go",
-      "installs": "5,000,000+",
-      "drawable": "sky_go"
-    },
-    {
       "id": "com.netease.sky.bilibili/com.netease.ntunisdk.external.protocol.ProtocolLauncher",
       "existing_drawable": "sky_children_of_the_light",
       "name": "Sky: Children of the Light"
@@ -319,6 +260,65 @@
       "name": "Stremio",
       "installs": "10,000,000+",
       "drawable": "stremio"
+    },
+    {
+      "id": "com.loyaltyplant.partner.subway/crc64eb65ea6159fb1028.RootActivity",
+      "existing_drawable": "subway",
+      "name": "Subway",
+      "installs": "500,000+",
+      "drawable": "subway"
+    },
+    {
+      "id": "com.subway.mobile.emea.germany/com.subway.mobile.subwayapp03.ui.SplashActivity",
+      "existing_drawable": "subway",
+      "name": "Subway",
+      "installs": "1,000,000+",
+      "drawable": "subway"
+    },
+    {
+      "id": "com.subway.mobile.emea.tuki/com.subway.mobile.subwayapp03.ui.SplashActivity",
+      "existing_drawable": "subway",
+      "name": "Subway",
+      "installs": "1,000,000+",
+      "drawable": "subway"
+    },
+    {
+      "id": "com.subway.subway/com.subway.subway.SplashActivity",
+      "existing_drawable": "subway",
+      "name": "Subway"
+    },
+    {
+      "id": "com.subwaycard/com.subwaycard.v2.activities.DispatchActivity",
+      "existing_drawable": "subway",
+      "name": "Subway",
+      "installs": "100,000+",
+      "drawable": "subway"
+    },
+    {
+      "id": "com.wahalla.subwaybr/com.wahalla.subwaybr.MainActivity",
+      "existing_drawable": "subway",
+      "name": "Subway"
+    },
+    {
+      "id": "nz.co.subcard.app/crc643f56eb19e392e7ef.MainActivity",
+      "existing_drawable": "subway",
+      "name": "Subway",
+      "installs": "100,000+",
+      "drawable": "subway"
+    },
+    {
+      "id": "com.hrincescumihai.sudoku/com.hrincescumihai.sudoku.app.MainActivity",
+      "existing_drawable": "generic_sudoku",
+      "name": "Sudoku",
+      "installs": "10,000+",
+      "drawable": "sudoku"
+    },
+    {
+      "id": "com.sumone/com.sumone.MainActivityDefault",
+      "existing_drawable": "sumone",
+      "name": "SumOne",
+      "installs": "5,000,000+",
+      "drawable": "sumone"
     }
   ]
 }

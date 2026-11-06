@@ -5,44 +5,6 @@
   "total_batches": 17,
   "links": [
     {
-      "id": "com.jio.media.ondemand/com.razpay.apk.HaipeeKnk",
-      "existing_drawable": "jiocinema",
-      "name": "JioCinema"
-    },
-    {
-      "id": "com.jpl.jiomart/com.jcpjiomart.MainActivityAlias1",
-      "existing_drawable": "jiomart",
-      "name": "JioMart",
-      "installs": "100,000,000+",
-      "drawable": "jiomart"
-    },
-    {
-      "id": "com.jio.media.jiobeats/com.jio.media.jiobeats.InitActivityAliasProPlus",
-      "existing_drawable": "jiosaavn",
-      "name": "JioSaavn",
-      "installs": "500,000,000+",
-      "drawable": "jiosaavn"
-    },
-    {
-      "id": "com.aconvert.jpg2pdf/com.aconvert.jpg2pdf.MainActivity",
-      "existing_drawable": "generic_pdf_square",
-      "name": "JPG to PDF Converter",
-      "installs": "10,000,000+",
-      "drawable": "jpg_to_pdf_converter"
-    },
-    {
-      "id": "com.facebook.katanb/com.facebook.katanb.LoginActivity",
-      "existing_drawable": "facebook",
-      "name": "JTFacebook"
-    },
-    {
-      "id": "com.justeat.app.dk/com.takeaway.android.activity.Splash",
-      "existing_drawable": "just_eat",
-      "name": "Just Eat",
-      "installs": "500,000+",
-      "drawable": "just_eat"
-    },
-    {
       "id": "com.kaorin.theme.iconpack/com.kaorin.theme.iconpack.activities.MainActivity",
       "existing_drawable": "kaorin_icon_pack",
       "name": "Kaorin Icons"
@@ -321,6 +283,42 @@
       "id": "com.lge.vvm/com.lge.vvm.launcher.VVMLauncherActivity",
       "existing_drawable": "generic_voicemail",
       "name": "LG Voicemail"
+    },
+    {
+      "id": "com.adobe.lrmobile/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "lightroom",
+      "name": "Lightroom",
+      "installs": "100,000,000+",
+      "drawable": "lightroom"
+    },
+    {
+      "id": "com.grice.call/com.grice.call.icon.Default",
+      "existing_drawable": "generic_dialer",
+      "name": "Liquid Dialer",
+      "installs": "100,000+",
+      "drawable": "liquid_dialer"
+    },
+    {
+      "id": "com.wallpaper.liveloop/com.wallpaper.liveloop.StartActivity",
+      "existing_drawable": "liveloop",
+      "name": "LiveLoop",
+      "installs": "100,000+",
+      "drawable": "liveloop"
+    },
+    {
+      "id": "com.cvc953.localplayer/com.cvc953.localplayer.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Local Player"
+    },
+    {
+      "id": "com.dn0ne.lotus/com.dn0ne.player.MainActivity",
+      "existing_drawable": "lotus",
+      "name": "Lotus"
+    },
+    {
+      "id": "com.op.lspdoze/com.op.lspdoze.ui.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "LSPDoze"
     }
   ]
 }

@@ -5,65 +5,6 @@
   "total_batches": 17,
   "links": [
     {
-      "id": "com.loyaltyplant.partner.subway/crc64eb65ea6159fb1028.RootActivity",
-      "existing_drawable": "subway",
-      "name": "Subway",
-      "installs": "500,000+",
-      "drawable": "subway"
-    },
-    {
-      "id": "com.subway.mobile.emea.germany/com.subway.mobile.subwayapp03.ui.SplashActivity",
-      "existing_drawable": "subway",
-      "name": "Subway",
-      "installs": "1,000,000+",
-      "drawable": "subway"
-    },
-    {
-      "id": "com.subway.mobile.emea.tuki/com.subway.mobile.subwayapp03.ui.SplashActivity",
-      "existing_drawable": "subway",
-      "name": "Subway",
-      "installs": "1,000,000+",
-      "drawable": "subway"
-    },
-    {
-      "id": "com.subway.subway/com.subway.subway.SplashActivity",
-      "existing_drawable": "subway",
-      "name": "Subway"
-    },
-    {
-      "id": "com.subwaycard/com.subwaycard.v2.activities.DispatchActivity",
-      "existing_drawable": "subway",
-      "name": "Subway",
-      "installs": "100,000+",
-      "drawable": "subway"
-    },
-    {
-      "id": "com.wahalla.subwaybr/com.wahalla.subwaybr.MainActivity",
-      "existing_drawable": "subway",
-      "name": "Subway"
-    },
-    {
-      "id": "nz.co.subcard.app/crc643f56eb19e392e7ef.MainActivity",
-      "existing_drawable": "subway",
-      "name": "Subway",
-      "installs": "100,000+",
-      "drawable": "subway"
-    },
-    {
-      "id": "com.hrincescumihai.sudoku/com.hrincescumihai.sudoku.app.MainActivity",
-      "existing_drawable": "generic_sudoku",
-      "name": "Sudoku",
-      "installs": "10,000+",
-      "drawable": "sudoku"
-    },
-    {
-      "id": "com.sumone/com.sumone.MainActivityDefault",
-      "existing_drawable": "sumone",
-      "name": "SumOne",
-      "installs": "5,000,000+",
-      "drawable": "sumone"
-    },
-    {
       "id": "com.superb.launcher/com.superb.iconpack.presentation.activity.IconPackActivity",
       "existing_drawable": "themed_icon_calendar_31",
       "name": "Superb Launcher Icons",
@@ -319,6 +260,67 @@
       "name": "Ultimate USB",
       "installs": "1,000,000+",
       "drawable": "ultimate_usb"
+    },
+    {
+      "id": "com.ubnt.easyunifi/com.ubnt.unifi.network.welcome.WelcomeActivity",
+      "existing_drawable": "unifi",
+      "name": "UniFi",
+      "installs": "1,000,000+",
+      "drawable": "unifi"
+    },
+    {
+      "id": "com.uniqlo.au.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.DummyLauncherActivity",
+      "existing_drawable": "uniqlo",
+      "name": "UNIQLO",
+      "installs": "1,000,000+",
+      "drawable": "uniqlo"
+    },
+    {
+      "id": "com.uniqlo.my.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.DummyLauncherActivity",
+      "existing_drawable": "uniqlo",
+      "name": "UNIQLO",
+      "installs": "1,000,000+",
+      "drawable": "uniqlo"
+    },
+    {
+      "id": "com.uniqlo.vn.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.DummyLauncherActivity",
+      "existing_drawable": "uniqlo",
+      "name": "UNIQLO",
+      "installs": "1,000,000+",
+      "drawable": "uniqlo"
+    },
+    {
+      "id": "com.yek.android.uniqlo/com.yek.android.uniqlo.activity.WelcomeActivity",
+      "existing_drawable": "uniqlo",
+      "name": "UNIQLO"
+    },
+    {
+      "id": "com.raafiya.universalacremotecontrol/com.raafiya.universalacremotecontrol.remotecontrol.SplashActivity",
+      "existing_drawable": "generic_power",
+      "name": "Universal AC Remote Control",
+      "installs": "10,000,000+",
+      "drawable": "universal_ac_remote_control"
+    },
+    {
+      "id": "com.letscontrol.universalprojectorremotecontrol/com.letscontrol.universalprojectorremotecontrol.remotecontrol.SplashActivity",
+      "existing_drawable": "generic_power",
+      "name": "Universal Projector Remote Control",
+      "installs": "1,000,000+",
+      "drawable": "universal_projector_remote_control"
+    },
+    {
+      "id": "com.matteljv.uno/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "uno",
+      "name": "UNO!",
+      "installs": "100,000,000+",
+      "drawable": "uno"
+    },
+    {
+      "id": "com.sivale.android/bROnt1.buE8K9.dFxEY4.t3cy29",
+      "existing_drawable": "up_si_vale",
+      "name": "Up S\u00ed Vale",
+      "installs": "10,000,000+",
+      "drawable": "com_sivale_android"
     }
   ]
 }

@@ -5,67 +5,6 @@
   "total_batches": 17,
   "links": [
     {
-      "id": "com.ubnt.easyunifi/com.ubnt.unifi.network.welcome.WelcomeActivity",
-      "existing_drawable": "unifi",
-      "name": "UniFi",
-      "installs": "1,000,000+",
-      "drawable": "unifi"
-    },
-    {
-      "id": "com.uniqlo.au.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.DummyLauncherActivity",
-      "existing_drawable": "uniqlo",
-      "name": "UNIQLO",
-      "installs": "1,000,000+",
-      "drawable": "uniqlo"
-    },
-    {
-      "id": "com.uniqlo.my.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.DummyLauncherActivity",
-      "existing_drawable": "uniqlo",
-      "name": "UNIQLO",
-      "installs": "1,000,000+",
-      "drawable": "uniqlo"
-    },
-    {
-      "id": "com.uniqlo.vn.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.DummyLauncherActivity",
-      "existing_drawable": "uniqlo",
-      "name": "UNIQLO",
-      "installs": "1,000,000+",
-      "drawable": "uniqlo"
-    },
-    {
-      "id": "com.yek.android.uniqlo/com.yek.android.uniqlo.activity.WelcomeActivity",
-      "existing_drawable": "uniqlo",
-      "name": "UNIQLO"
-    },
-    {
-      "id": "com.raafiya.universalacremotecontrol/com.raafiya.universalacremotecontrol.remotecontrol.SplashActivity",
-      "existing_drawable": "generic_power",
-      "name": "Universal AC Remote Control",
-      "installs": "10,000,000+",
-      "drawable": "universal_ac_remote_control"
-    },
-    {
-      "id": "com.letscontrol.universalprojectorremotecontrol/com.letscontrol.universalprojectorremotecontrol.remotecontrol.SplashActivity",
-      "existing_drawable": "generic_power",
-      "name": "Universal Projector Remote Control",
-      "installs": "1,000,000+",
-      "drawable": "universal_projector_remote_control"
-    },
-    {
-      "id": "com.matteljv.uno/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "uno",
-      "name": "UNO!",
-      "installs": "100,000,000+",
-      "drawable": "uno"
-    },
-    {
-      "id": "com.sivale.android/bROnt1.buE8K9.dFxEY4.t3cy29",
-      "existing_drawable": "up_si_vale",
-      "name": "Up S\u00ed Vale",
-      "installs": "10,000,000+",
-      "drawable": "com_sivale_android"
-    },
-    {
       "id": "com.uphold.wallet/com.uphold.wallet.SplashActivity",
       "existing_drawable": "uphold",
       "name": "Uphold",
@@ -158,11 +97,6 @@
     },
     {
       "id": "com.aam.viper4android/com.aam.viper4android.MainActivity",
-      "existing_drawable": "viper4android",
-      "name": "ViPER4Android FX"
-    },
-    {
-      "id": "com.wstxda.viper4android/com.wstxda.viper4android.MainActivity",
       "existing_drawable": "viper4android",
       "name": "ViPER4Android FX"
     },
@@ -315,6 +249,66 @@
       "id": "com.sigseg.android.worldmap/com.sigseg.android.map.ImageViewerActivity",
       "existing_drawable": "generic_earth",
       "name": "WorldMap"
+    },
+    {
+      "id": "cn.wps.moffice_eng/cn.wps.moffice.documentmanager.ab.proxy.en.scan_b",
+      "existing_drawable": "wps_office",
+      "name": "WPS Office",
+      "installs": "500,000,000+",
+      "drawable": "wps_office"
+    },
+    {
+      "id": "com.twitter.androie/com.twitter.androie.StartActivity",
+      "existing_drawable": "x",
+      "name": "X"
+    },
+    {
+      "id": "com.twitter.aeromod/com.twitter.aeromod.StartActivity",
+      "existing_drawable": "x",
+      "name": "X Aeromod"
+    },
+    {
+      "id": "me.teble.xposed.autodaily/me.teble.xposed.autodaily.activity.common.MainActivityAlias",
+      "existing_drawable": "tasky",
+      "name": "XAutoDaily"
+    },
+    {
+      "id": "com.microsoft.xboxone.smartglass.beta/com.microsoft.xbox.LauncherActivity",
+      "existing_drawable": "xbox",
+      "name": "Xbox Beta",
+      "installs": "10,000,000+",
+      "drawable": "xbox_beta"
+    },
+    {
+      "id": "com.xda.labs.play/com.xda.labs.one.ui.ForumLinkHandlerActivity",
+      "existing_drawable": "xda",
+      "name": "XDA"
+    },
+    {
+      "id": "com.xda.developers.hifueiayevvxlaovwza/com.appyet.activity.MainActivity",
+      "existing_drawable": "xda",
+      "name": "XDA Developers"
+    },
+    {
+      "id": "com.rk.axion/com.rk.activities.main.MainActivity",
+      "existing_drawable": "xed_editor",
+      "name": "Xed-Editor",
+      "installs": "500+",
+      "drawable": "xed_editor"
+    },
+    {
+      "id": "com.miui.weather2/com.miui.weather2.WeatherBaseScreen",
+      "existing_drawable": "weather",
+      "name": "Xiaomi Weather",
+      "installs": "1,000,000,000+",
+      "drawable": "xiaomi_weather"
+    },
+    {
+      "id": "com.github.tianma8023.xposed.smscode/com.github.tianma8023.xposed.smscode.HomeActivityAlias",
+      "existing_drawable": "sms_organizer",
+      "name": "XposedSmsCode",
+      "installs": "1,000+",
+      "drawable": "xposedsmscode"
     }
   ]
 }

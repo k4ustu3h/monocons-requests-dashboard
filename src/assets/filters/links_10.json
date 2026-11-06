@@ -5,42 +5,6 @@
   "total_batches": 17,
   "links": [
     {
-      "id": "jl.musicalnotes/jl.musicalnotes.activity.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Musical Notes"
-    },
-    {
-      "id": "com.muso.musicplayer/com.muso.musicplayer.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Muso",
-      "installs": "50,000,000+",
-      "drawable": "muso"
-    },
-    {
-      "id": "com.ttnet.muzik/com.ttnet.muzik.DefaultAppIconAlias",
-      "existing_drawable": "music_player",
-      "name": "Muud",
-      "installs": "5,000,000+",
-      "drawable": "muud"
-    },
-    {
-      "id": "hu.mvmnext.onlineugyintezes/com.nkmomni.app.screen.splash.SplashActivity",
-      "existing_drawable": "substratum_lite",
-      "name": "MVM Next",
-      "installs": "1,000,000+",
-      "drawable": "mvm_next"
-    },
-    {
-      "id": "com.mx.plus/com.mxtech.videoplayer.pro.ActivityMediaList",
-      "existing_drawable": "just_player",
-      "name": "MX Player"
-    },
-    {
-      "id": "com.mxtech.videoplayer.ae/com.mxtech.videoplayer.ae.ActivityWelcomeMX",
-      "existing_drawable": "just_player",
-      "name": "MX Player"
-    },
-    {
       "id": "com.samsung.android.airtel.stubapp/com.samsung.android.airtel.stubapp.ui.StubActivity",
       "existing_drawable": "my_airtel",
       "name": "My Airtel"
@@ -309,6 +273,40 @@
       "name": "Opera Mini Beta",
       "installs": "100,000,000+",
       "drawable": "opera_mini_beta"
+    },
+    {
+      "id": "com.orange.rn.dop/com.orange.rn.dop.MainActivity",
+      "existing_drawable": "orange_flex",
+      "name": "Orange Flex",
+      "installs": "1,000,000+",
+      "drawable": "orange_flex"
+    },
+    {
+      "id": "app.organicmaps.web/app.organicmaps.DownloadResourcesActivity",
+      "existing_drawable": "organic_maps",
+      "name": "Organic Maps"
+    },
+    {
+      "id": "com.bskit.osint/com.bskit.osint.MainActivity",
+      "existing_drawable": "generic_search",
+      "name": "OSINT"
+    },
+    {
+      "id": "org.otrsc.android/org.otrsc.android.MainActivity",
+      "existing_drawable": "zcalc",
+      "name": "OTR Speed Calculator"
+    },
+    {
+      "id": "com.bintianqi.owndroid/com.bintianqi.owndroid.AliasActivity",
+      "existing_drawable": "netguard",
+      "name": "OwnDroid"
+    },
+    {
+      "id": "br.com.uol.ps.myaccount/br.com.uol.ps.myaccount.main.MainActivity",
+      "existing_drawable": "pagbank",
+      "name": "PagBank",
+      "installs": "50,000,000+",
+      "drawable": "pagbank"
     }
   ]
 }

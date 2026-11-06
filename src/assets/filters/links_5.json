@@ -5,18 +5,6 @@
   "total_batches": 17,
   "links": [
     {
-      "id": "com.firstyogi.dothing/com.firstyogi.dothing.SigninActivity",
-      "existing_drawable": "tasky",
-      "name": "Dothing",
-      "installs": "5,000+",
-      "drawable": "dothing"
-    },
-    {
-      "id": "com.android.providers.downloads.ui/.DownloadList",
-      "existing_drawable": "generic_download_arrow",
-      "name": "Downloads"
-    },
-    {
       "id": "com.dropbox.dash/com.dropbox.dash.auth.impl.view.AuthActivity",
       "existing_drawable": "dropbox",
       "name": "Dropbox Dash",
@@ -83,13 +71,6 @@
       "name": "Eatventure",
       "installs": "50,000,000+",
       "drawable": "eatventure"
-    },
-    {
-      "id": "com.ebay.mobile/com.ebay.mobile.home.impl.main.MainActivity",
-      "existing_drawable": "ebay",
-      "name": "eBay",
-      "installs": "100,000,000+",
-      "drawable": "ebay"
     },
     {
       "id": "com.miHoYo.Yuanshen/org.yuzu.yuzu_emu.ui.main.MainActivity",
@@ -236,13 +217,6 @@
       "drawable": "flickr"
     },
     {
-      "id": "com.flipkart.android/com.flipkart.android.SASALELEIconAlias",
-      "existing_drawable": "flipkart",
-      "name": "Flipkart",
-      "installs": "1,000,000,000+",
-      "drawable": "flipkart"
-    },
-    {
       "id": "com.eurekateam.fmradio/com.eurekateam.fmradio.MainActivity",
       "existing_drawable": "generic_fm_radio",
       "name": "FM Radio"
@@ -323,6 +297,28 @@
       "name": "GCash",
       "installs": "100,000,000+",
       "drawable": "gcash"
+    },
+    {
+      "id": "com.thegrizzlylabs.geniusscan/com.thegrizzlylabs.geniusscan.ui.welcome.WelcomeActivity",
+      "existing_drawable": "genius_scan",
+      "name": "Genius Scan",
+      "installs": "100,000+",
+      "drawable": "genius_scan"
+    },
+    {
+      "id": "com.ghosten.player/com.ghosten.player.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "Ghosten Player"
+    },
+    {
+      "id": "io.mo.glassmic/io.mo.glassmic.MainActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "GlassMic"
+    },
+    {
+      "id": "com.android.quicksearchbox/com.android.quicksearchbox.SearchActivity",
+      "existing_drawable": "google",
+      "name": "Google"
     }
   ]
 }

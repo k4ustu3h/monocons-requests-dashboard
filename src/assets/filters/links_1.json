@@ -362,18 +362,6 @@
       "drawable": "graph_messenger"
     },
     {
-      "id": "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_custom_5",
-      "existing_drawable": "generic_player",
-      "name": "YouTube Music",
-      "components": [
-        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_custom_5",
-        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_2",
-        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_3",
-        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_5",
-        "app.morphe.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity"
-      ]
-    },
-    {
       "id": "com.sosauce.cutemusic/com.sosauce.chocola.core.MainActivity",
       "existing_drawable": "music_player",
       "name": "Chocola",
@@ -422,6 +410,19 @@
       ],
       "installs": "5,000,000+",
       "drawable": "skipthedishes"
+    },
+    {
+      "id": "com.zhiliaoapp.musically/com.windukk.mod.icon.default",
+      "existing_drawable": "tiktok",
+      "name": "TikTok Mod",
+      "components": [
+        "com.zhiliaoapp.musically/com.windukk.mod.icon.default",
+        "com.zhiliaoapp.musically/com.windukk.mod.icon.hlx",
+        "com.zhiliaoapp.musically/com.windukk.mod.icon.metal",
+        "com.zhiliaoapp.musically/com.windukk.mod.icon.parody"
+      ],
+      "installs": "1,000,000,000+",
+      "drawable": "tiktok_mod"
     },
     {
       "id": "app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_original_2",
@@ -489,18 +490,6 @@
       ],
       "installs": "100,000,000+",
       "drawable": "music_player"
-    },
-    {
-      "id": "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p5",
-      "existing_drawable": "my_pixel",
-      "name": "My Pixel",
-      "components": [
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p5",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p8",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.pFold"
-      ],
-      "installs": "1+",
-      "drawable": "my_pixel"
     },
     {
       "id": "com.opera.browser.beta/com.opera.Launcher5",
@@ -720,15 +709,6 @@
       "drawable": "minimalist"
     },
     {
-      "id": "app.morphe.manager/app.morphe.manager.MainActivity_Light_2",
-      "existing_drawable": "morphe",
-      "name": "Morphe",
-      "components": [
-        "app.morphe.manager/app.morphe.manager.MainActivity_Light_2",
-        "app.morphe.manager/app.morphe.manager.MainActivity_Light_3"
-      ]
-    },
-    {
       "id": "com.github.musicyou/com.github.musicyou.MainActivity",
       "existing_drawable": "music_player",
       "name": "Music You",
@@ -754,6 +734,26 @@
         "fork.risin42.nagramx/org.telegram.messenger.ColorfulIcon",
         "fork.risin42.nagramx/org.telegram.messenger.DarkBlueIcon"
       ]
+    },
+    {
+      "id": "com.coloros.onekeylockscreen/com.coloros.onekeylockscreen.OppoLockScreen",
+      "existing_drawable": "one_tap_lock_screen",
+      "name": "One-Tap Lock Screen",
+      "components": [
+        "com.coloros.onekeylockscreen/com.coloros.onekeylockscreen.OppoLockScreen",
+        "com.coloros.onekeylockscreen/com.heytap.onekeylockscreen.OneKeyLockScreen"
+      ]
+    },
+    {
+      "id": "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+      "existing_drawable": "pepper",
+      "name": "Pepper",
+      "components": [
+        "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+        "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityLightIcon"
+      ],
+      "installs": "5,000+",
+      "drawable": "pepper"
     }
   ]
 }

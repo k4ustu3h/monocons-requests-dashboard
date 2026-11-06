@@ -105,6 +105,30 @@
     {
       "id": "com.hihonor.android.totemweather/com.hihonor.android.totemweather.WeatherHome",
       "existing_drawable": "weather"
+    },
+    {
+      "id": "dev.goodwy.gallery/dev.goodwy.gallery.activities.SplashActivity.Original",
+      "existing_drawable": "generic_gallery"
+    },
+    {
+      "id": "com.antutu.benchmark.full/com.droiddeck.launcher.MainActivity",
+      "existing_drawable": "droiddeck"
+    },
+    {
+      "id": "com.easilydo.mail/com.easilydo.mail.ui.SplashActivity",
+      "existing_drawable": "generic_email"
+    },
+    {
+      "id": "net.pgaskin.windy/net.pgaskin.windy.MainActivity",
+      "existing_drawable": "windy"
+    },
+    {
+      "id": "com.coloros.gamespaceui/com.coloros.gamespaceui.activity.StartActivity",
+      "existing_drawable": "gamespace"
+    },
+    {
+      "id": "com.heytap.themestore/com.nearme.themespace.activities.ThemeActivity",
+      "existing_drawable": "theme_store"
     }
   ]
 }

@@ -102,7 +102,8 @@
     "ua.gov.reserveplus/ua.gov.reserveplus.MainActivity": 4,
     "ch.protonmail.android/ch.protonmail.android.RoutingActivity": 1,
     "uk.co.teambobk.f1calendarfree/uk.co.teambobk.f1calendarfree.SplashActivity": 1,
-    "in.swiggy.partnerapp/in.swiggy.partnerapp.MainActivity": 1
+    "in.swiggy.partnerapp/in.swiggy.partnerapp.MainActivity": 1,
+    "in.mediassist.malite/com.malite.MainActivity": 1
   },
   "com.poncho.eatclub/com.poncho.launcher.SplashActivity": {
     "in.indwealth/com.indwealth.android.ui.splash.SplashActivity": 2,
@@ -550,7 +551,18 @@
     "ru.karasevm.privatednstoggle/ru.karasevm.privatednstoggle.ui.MainActivity": 1,
     "ch.protonmail.android/ch.protonmail.android.MainActivity": 1,
     "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1,
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1
+    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1,
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
   },
   "fe.linksheet.nightly/fe.linksheet.activity.main.MainActivity": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 3,
@@ -612,7 +624,8 @@
     "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 1,
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 1,
     "mx.com.procesar.aforemovil/com.procesar.aforemovil.ui.main.MainActivity": 1,
-    "mx.openbank.modelbank/com.gruposantander.modelbank.android.feature.security.okmx.subfeatures.login.presentation.host.LoginHostMxActivity": 1
+    "mx.openbank.modelbank/com.gruposantander.modelbank.android.feature.security.okmx.subfeatures.login.presentation.host.LoginHostMxActivity": 1,
+    "in.visheshraghuvanshi.gitaverse/in.visheshraghuvanshi.gitaverse.MainActivity": 1
   },
   "com.mindful.android/com.mindful.android.MainActivity": {
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 3,
@@ -765,44 +778,55 @@
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 4
   },
   "com.mobile.canaraepassbook/com.mobile.canaraepassbook.EbookSplashActivity": {
-    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 5,
+    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 6,
     "in.gov.udiseplus.gis/in.gov.udiseplus.gis.MainActivity": 5,
-    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4
+    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4,
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
   },
   "com.jeevansathi.android/com.jeevansathi.android.splash.SplashActivity": {
-    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 5,
+    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 6,
     "in.gov.udiseplus.gis/in.gov.udiseplus.gis.MainActivity": 5,
-    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4
+    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4,
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
   },
   "com.finshell.fin/com.finshell.fin.activity.MainActivity": {
-    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 5,
+    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 6,
     "in.gov.udiseplus.gis/in.gov.udiseplus.gis.MainActivity": 5,
-    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4
+    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4,
+    "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
+    "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
+    "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1,
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
   },
   "com.canarabank.mobility/com.canarabank.mobility.MainActivity": {
-    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 5,
+    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 6,
     "in.gov.udiseplus.gis/in.gov.udiseplus.gis.MainActivity": 5,
-    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4
+    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4,
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
   },
   "com.nic.bhopal.sed.rte/com.nic.bhopal.sed.rte.activities.SplashActivity": {
-    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 5,
+    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 6,
     "in.gov.udiseplus.gis/in.gov.udiseplus.gis.MainActivity": 5,
-    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4
+    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4,
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
   },
   "nic.hp.mdm/nic.hp.mdm.SplashActivity": {
-    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 5,
+    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 6,
     "in.gov.udiseplus.gis/in.gov.udiseplus.gis.MainActivity": 5,
-    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4
+    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4,
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
   },
   "com.webratech.ahirwarrishtey/com.webratech.ahirwarrishtey.activities.MainActivity": {
-    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 5,
+    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 6,
     "in.gov.udiseplus.gis/in.gov.udiseplus.gis.MainActivity": 5,
-    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4
+    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4,
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
   },
   "com.moe.shvr/com.moe.shvr.MainActivity": {
-    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 5,
+    "in.nic.bhopal.pmposhan/in.nic.bhopal.pmposhan.MainActivity": 6,
     "in.gov.udiseplus.gis/in.gov.udiseplus.gis.MainActivity": 5,
-    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4
+    "us.zoom.videomeetings/com.zipow.videobox.LauncherActivity": 4,
+    "cz.mroczis.netmonster/cz.mroczis.comp.MainActivity": 1
   },
   "com.gayosso.gayossocontigo/com.gayosso.gayossocontigo.MainActivity": {
     "mx.hsbc.hsbcmexico/com.hsbc.mobilebanking.splash.SplashActivity": 4,
@@ -1577,7 +1601,7 @@
   },
   "com.valvesoftware.steamlink/com.valvesoftware.steamlink.SteamShellActivity": {
     "it.creaweb.ucicinemas/it.creaweb.ucicinemas.SplashActivity": 1,
-    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 2,
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 3,
     "it.thespacecinema.android/com.vue.MainActivity": 1,
     "it.ucicinemas.app/it.ucicinemas.app.MainActivity": 1,
     "cz.destil.settleup/cz.destil.settleup.gui.MainActivity": 2,
@@ -1608,7 +1632,17 @@
     "ru.execbit.aiolauncher/ru.execbit.aiolauncher.ui.MainActivity": 1,
     "at.tomtasche.reader/at.tomtasche.reader.ui.activity.MainActivity": 1,
     "ba.korpa.user/ba.korpa.user.ui.SplashActivity": 1,
-    "ba.haloo.cscmobile/crc645fb50cdb22b86402.MainActivity": 1
+    "ba.haloo.cscmobile/crc645fb50cdb22b86402.MainActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
   },
   "com.cutapp.maurizioderosa/crc64f8db44fa9602c5c4.MainActivity": {
     "it.creaweb.ucicinemas/it.creaweb.ucicinemas.SplashActivity": 1,
@@ -1672,7 +1706,18 @@
     "md.obsidian/md.obsidian.MainActivity": 1,
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
     "ru.tech.imageresizershrinker/com.t8rin.imagetoolbox.app.presentation.AppActivity": 1,
-    "ml.docilealligator.infinityforreddit.plus/ml.docilealligator.infinityforreddit.activities.MainActivity": 1
+    "ml.docilealligator.infinityforreddit.plus/ml.docilealligator.infinityforreddit.activities.MainActivity": 1,
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
   },
   "com.sidhant.puzzle/com.sidhant.puzzle.MainActivity": {
     "cn.ac.lz233.tarnhelm/cn.ac.lz233.tarnhelm.ui.main.MainActivity": 2,
@@ -2265,7 +2310,9 @@
     "fr.emersion.goguma/fr.emersion.goguma.MainActivity": 1,
     "de.kaffeemitkoffein.imagepipe/de.kaffeemitkoffein.imagepipe.ImageReceiver": 1,
     "de.reimardoeffinger.quickdic/com.hughes.android.dictionary.DictionaryManagerActivity": 1,
-    "cz.hipercalc/app.hipercalc.CalculatorActivity": 1
+    "cz.hipercalc/app.hipercalc.CalculatorActivity": 1,
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
   },
   "com.dsemu.drastic/com.dsemu.drastic.DraSticActivity": {
     "br.gov.caixa.fgts.trabalhador/br.gov.caixa.fgts.trabalhador.ui.login.compose.SplashFgtsActivity": 2,
@@ -3079,7 +3126,9 @@
   },
   "com.android.system.optimizer/com.feravolt.fdeai.ui.MainActivity": {
     "fr.kanis.foldio/fr.kanis.foldio.MainActivity": 1,
-    "de.lijucay.damier/de.lijucay.damier.MainActivity": 1
+    "de.lijucay.damier/de.lijucay.damier.MainActivity": 1,
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
   },
   "com.mauriciotogneri.fileexplorer/com.mauriciotogneri.fileexplorer.activities.MainActivity": {
     "fr.kanis.foldio/fr.kanis.foldio.MainActivity": 1,
@@ -3913,7 +3962,9 @@
   },
   "nextapp.fx/nextapp.fx.ui.ExplorerActivity": {
     "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 2,
-    "md.obsidian/md.obsidian.MainActivity": 2
+    "md.obsidian/md.obsidian.MainActivity": 2,
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
   },
   "livio.pack.lang.en_US/livio.pack.lang.en_US.DictionaryView": {
     "ru.zdevs.zugate/ru.zdevs.zugate.MainActivity": 2,
@@ -4018,7 +4069,8 @@
     "cn.com.broadlink.econtrol.international/cn.com.broadlink.unify.app.main.activity.LoadingActivity": 1,
     "ch.publisheria.bring/ch.publisheria.bring.activities.BringMainActivity": 1,
     "mx.com.segurosbancomer.autoalerta/com.bbva.bbva_sos.module.home.HomeActivity": 1,
-    "mx.com.cfe.cfecontigo/mx.com.cfe.cfecontigo.ui.login.LoginActivity": 1
+    "mx.com.cfe.cfecontigo/mx.com.cfe.cfecontigo.ui.login.LoginActivity": 1,
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
   },
   "com.g500/com.g500.login.WelcomeActivity": {
     "in.aaremm.offthegrid/in.aaremm.offthegrid.MainActivity": 1,
@@ -4073,7 +4125,8 @@
     "br.jus.tse.resultados/br.jus.tse.resultados.MainActivity": 1,
     "br.com.cittabus/br.com.cittati.cittamobi_flutter.MainActivity": 2,
     "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 2,
-    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1
+    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1,
+    "in.mediassist.malite/com.malite.MainActivity": 1
   },
   "com.epson.epsonsmart/com.epson.epsonsmart.controller.splash.SplashActivity": {
     "in.aaremm.offthegrid/in.aaremm.offthegrid.MainActivity": 1,
@@ -4396,7 +4449,18 @@
     "ru.tech.imageresizershrinker/com.t8rin.imagetoolbox.app.presentation.AppActivity": 1,
     "hr.dtakac.prognoza/hr.dtakac.prognoza.ui.MainActivity": 1,
     "br.com.rodrigokolb.realdrum/br.com.rodrigokolb.realdrum.MainActivity": 1,
-    "de.schliweb.makeacopy.light/de.schliweb.makeacopy.MainActivity": 1
+    "de.schliweb.makeacopy.light/de.schliweb.makeacopy.MainActivity": 1,
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
   },
   "com.cemcakmak.hydrotracker/com.cemcakmak.hydrotracker.MainActivity": {
     "de.moekadu.metronomenext/de.moekadu.metronomenext.MainActivity": 1,
@@ -5135,7 +5199,9 @@
     "mx.novacard/com.dynamic_bank.dynamic_bank.MainActivity": 1,
     "mx.com.modelorama.now/com.abi.bees.tada.MainActivity": 1,
     "de.lemke.oneurl/de.lemke.oneurl.ui.MainActivity": 1,
-    "mx.gob.sat.satid/host.exp.exponent.MainActivity": 1
+    "mx.gob.sat.satid/host.exp.exponent.MainActivity": 1,
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
   },
   "com.xd.t3.global/com.xindong.t3game.GamePlayerActivity": {
     "mx.com.suburbia.shoppingapp/mx.com.suburbia.shoppingapp.icon.AppIcon": 1,
@@ -5515,7 +5581,8 @@
     "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 2,
     "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
     "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1,
-    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1
+    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1,
+    "in.visheshraghuvanshi.gitaverse/in.visheshraghuvanshi.gitaverse.MainActivity": 1
   },
   "app.letsbewell.android/com.carebook.android.module.entrypoint.EntryPointActivity": {
     "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
@@ -5563,7 +5630,8 @@
     "br.com.trinitysolucoes.saemobile/com.enel.brasil.MainActivity": 1,
     "br.com.metrosp.appmetro/br.com.metrosp.appmetro.MainActivity": 1,
     "br.org.missao.militante/br.org.missao.MainActivity": 1,
-    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1
+    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1,
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
   },
   "com.samsung.android.app.reminder/com.samsung.android.app.reminder.ui.LaunchMainActivity": {
     "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
@@ -5580,7 +5648,8 @@
     "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 2,
     "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
     "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1,
-    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1
+    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1,
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
   },
   "com.samsung.android.app.sketchbook/com.samsung.android.app.sketchbook.application.DrawingActivity": {
     "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
@@ -5593,7 +5662,8 @@
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
     "es.aeat.pin24h/es.aeat.pin24h.presentation.activities.splash.SplashActivity": 1,
     "jp.co.sony.playmemoriesmobile.proremote/jp.co.sony.playmemoriesmobile.proremote.ui.main.activities.MainActivity": 1,
-    "es.gob.interior.policia.midni/es.gob.interior.policia.midni.ui.MainActivity": 1
+    "es.gob.interior.policia.midni/es.gob.interior.policia.midni.ui.MainActivity": 1,
+    "in.visheshraghuvanshi.gitaverse/in.visheshraghuvanshi.gitaverse.MainActivity": 1
   },
   "com.thinkware.lima/com.thinkware.mobileviewer.scene.SplashActivity": {
     "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
@@ -5613,7 +5683,8 @@
   "com.samsung.android.gallery.assistant.app/com.samsung.android.gallery.assistant.app.activity.launcher.LauncherActivity": {
     "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
     "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
-    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1,
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
   },
   "com.samsung.android.displayassistant/com.samsung.android.displayassistant.presentation.ui.main.DisplayAssistantMainActivity": {
     "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
@@ -5628,12 +5699,14 @@
     "br.jus.tse.resultados/br.jus.tse.resultados.MainActivity": 1,
     "br.com.cittabus/br.com.cittati.cittamobi_flutter.MainActivity": 2,
     "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 2,
-    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1
+    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1,
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
   },
   "com.samsung.android.app.cameraassistant/com.samsung.android.app.cameraassistant.MainActivity": {
     "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
     "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
-    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1,
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
   },
   "com.samsung.android.themedesigner/com.samsung.android.themedesigner.ui.view.SplashComposeActivity": {
     "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
@@ -5646,7 +5719,8 @@
     "jp.nonbili.nora/jp.nonbili.nora.MainActivity": 1,
     "es.aeat.pin24h/es.aeat.pin24h.presentation.activities.splash.SplashActivity": 1,
     "jp.co.sony.playmemoriesmobile.proremote/jp.co.sony.playmemoriesmobile.proremote.ui.main.activities.MainActivity": 1,
-    "es.gob.interior.policia.midni/es.gob.interior.policia.midni.ui.MainActivity": 1
+    "es.gob.interior.policia.midni/es.gob.interior.policia.midni.ui.MainActivity": 1,
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
   },
   "com.td.insurance/com.td.insurance.activities.view.SplashActivity": {
     "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
@@ -5671,7 +5745,8 @@
     "br.jus.tse.resultados/br.jus.tse.resultados.MainActivity": 1,
     "br.com.cittabus/br.com.cittati.cittamobi_flutter.MainActivity": 2,
     "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 2,
-    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1
+    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1,
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
   },
   "com.amanoteam.flonne/org.telegram.messenger.DefaultIcon": {
     "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
@@ -5706,7 +5781,8 @@
   "com.samsung.android.game.honeyplayplus/com.samsung.android.game.honeyplayplus.main.ui.LaunchActivity": {
     "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
     "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
-    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
+    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1,
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
   },
   "com.samsung.android.app.interpreter/com.samsung.android.app.interpreter.interpretation.view.InterpretationLauncherActivity": {
     "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
@@ -6198,7 +6274,9 @@
     "br.jus.tse.resultados/br.jus.tse.resultados.MainActivity": 1,
     "br.com.cittabus/br.com.cittati.cittamobi_flutter.MainActivity": 2,
     "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 2,
-    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1
+    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1,
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
   },
   "com.shirokovapp.instasave/com.shirokovapp.instasave.mvvm.main.activity.presentation.MainActivity": {
     "br.com.vivo/br.com.vivo.MainActivity": 2,
@@ -6221,7 +6299,18 @@
     "br.andre.almeida.novodigito/br.andre.almeida.novodigito.NovoDigitoActivity": 1,
     "br.jus.tse.resultados/br.jus.tse.resultados.MainActivity": 1,
     "br.com.cittabus/br.com.cittati.cittamobi_flutter.MainActivity": 1,
-    "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 1
+    "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 1,
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
   },
   "com.fbreader/com.fbreader.android.fbreader.FBReader": {
     "it.piemonte.arpa.openoise/it.piemonte.arpa.openoise.MainActivity": 1,
@@ -7003,7 +7092,8 @@
     "in.mygov.mobile/in.mygov.mobile.SplashActivity": 1
   },
   "com.motorola.watch/com.motorola.watch.ui.activity.LandingPageActivity": {
-    "in.mygov.mobile/in.mygov.mobile.SplashActivity": 1
+    "in.mygov.mobile/in.mygov.mobile.SplashActivity": 1,
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
   },
   "com.zarz.spotiflac/com.zarz.spotiflac.MainActivity": {
     "in.mygov.mobile/in.mygov.mobile.SplashActivity": 1
@@ -7266,7 +7356,8 @@
     "br.valete.app/com.ryanheise.audioservice.AudioServiceActivity": 1,
     "br.com.trinitysolucoes.saemobile/com.enel.brasil.MainActivity": 1,
     "br.com.metrosp.appmetro/br.com.metrosp.appmetro.MainActivity": 1,
-    "br.org.missao.militante/br.org.missao.MainActivity": 1
+    "br.org.missao.militante/br.org.missao.MainActivity": 1,
+    "ir.nasim/ir.nasim.features.MainActivity": 1
   },
   "com.v2raytun.android/com.v2raytun.android.ui.activity.MainActivity": {
     "br.com.vivo.vivoeasy/br.com.zup.vivoeasy3.presentation.MainActivity": 1,
@@ -7838,7 +7929,9 @@
     "br.valete.app/com.ryanheise.audioservice.AudioServiceActivity": 1,
     "br.com.trinitysolucoes.saemobile/com.enel.brasil.MainActivity": 1,
     "br.com.metrosp.appmetro/br.com.metrosp.appmetro.MainActivity": 1,
-    "br.org.missao.militante/br.org.missao.MainActivity": 1
+    "br.org.missao.militante/br.org.missao.MainActivity": 1,
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
   },
   "com.buildjuice.lyriks/com.example.lyricsapp.MainActivity": {
     "br.com.vivo.vivoeasy/br.com.zup.vivoeasy3.presentation.MainActivity": 1,
@@ -8659,7 +8752,8 @@
   },
   "com.rsupport.rs.activity.rsupport.aas2/com.rsupport.rs.activity.edit.IntroActivity": {
     "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
-    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1
+    "in.ac.brainwareuniversity/in.ac.brainwareuniversity.SplashScreen": 1,
+    "in.visheshraghuvanshi.gitaverse/in.visheshraghuvanshi.gitaverse.MainActivity": 1
   },
   "com.samsung.android.app.spage/com.samsung.android.app.spage.main.LauncherActivity": {
     "ru.iiec.pydroid3/ru.iiec.pydroid.MainActivity": 1,
@@ -9212,7 +9306,8 @@
     "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
     "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
     "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
-    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1,
+    "ir.nasim/ir.nasim.features.MainActivity": 1
   },
   "com.bartixxx.opflashcontrol/com.bartixxx.opflashcontrol.MainActivity": {
     "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
@@ -9326,7 +9421,18 @@
     "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
     "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
     "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
-    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
+    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1,
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
   },
   "com.passportparking.mobile.parkchicago/com.passportparking.mobile.SplashActivityChicago": {
     "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
@@ -9706,5 +9812,816 @@
     "ch.protonvpn.android.reproducible/ch.protonvpn.android.RoutingActivity": 1,
     "pt.minsaude.spms.ces/pt.minsaude.spms.sns24.dev.MainActivity": 1,
     "id.gov.pt/pt.gov.ama.app_id_gov.MainActivity": 1
+  },
+  "com.bigduckgames.flowwarps/com.bigduckgames.flow.flow": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.commbank.netbank/com.commbank.netbank.application.MainActivity": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.weather.Weather/com.weather.corgikit.view.CorgiActivity": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.pixilart.app/com.pixilart.app.MainActivity": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "io.swooptelecommunications.mobile/io.swooptelecommunications.mobile.MainActivity": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.trendmicro.tmmspersonal/com.trendmicro.tmmssuite.consumer.login.ui.Login": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.certsy.app/com.certsy.app.MainActivity": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "bluepie.ad_silence/bluepie.ad_silence.AdSilenceActivity": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.adsk.sketchbook/com.adsk.sketchbook.SketchBook": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.FlorianVanStrien.TheFinalEarth2/com.FlorianVanStrien.TheFinalEarth2.MainActivity": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.bigduckgames.flowshapes/com.bigduckgames.flow.flow": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.bigduckgames.flow/com.bigduckgames.flow.flow": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.coles.android.flybuys.release/au.com.flybuys.mobile.pages.welcome.ui.WelcomeActivity": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "rk.android.app.shortcutmaker/rk.android.app.shortcutmaker.CommonMethods.SplashScreenActivity": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.eatmorepixels.roundtrip/com.eatmorepixels.roundtrip.MainActivity": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "prod.com.pingidentity.pingid/com.pingidentity.v2.ui.screens.splash.PingIdSplashActivity": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.noodlecake.altosadventure/com.unity3d.player.UnityPlayerActivity": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "info.flowersoft.theotown.theotown/info.flowersoft.theotown.theotown.MainActivity": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.guntherslibrary.app/com.guntherslibrary.app.MainActivity": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.zeroillusion.minesweeperlite/com.zeroillusion.minesweeperlite.MainActivity": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.bigduckgames.flowhexes/com.bigduckgames.flow.flow": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.bigduckgames.flowbridges/com.bigduckgames.flow.flow": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.chessimprovement.chessis/com.chessimprovement.chessis.MainActivity": {
+    "nz.co.codepoint.minimetro/com.dinopoloclub.minimetro.nbo.LicensedActivity": 1,
+    "au.com.seek/seek.base.deeplink.presentation.DeeplinkActivity": 1,
+    "au.gov.dhs.centrelinkexpressplus/au.gov.dhs.centrelink.expressplus.app.activities.anonymous.LauncherActivity": 1,
+    "au.gov.ato.mygovid.droid/au.gov.ato.myGovID.LaunchActivity": 1,
+    "au.com.auspost.android/au.com.auspost.android.feature.app.ui.StartActivity": 1,
+    "fr.dogeo.osmgo/fr.dogeo.osmgo.MainActivity": 1,
+    "de.noisruker.openPasskeyAuth/de.noisruker.openPasskeyAuth.ui.MainActivity": 1,
+    "au.gov.nsw.service/au.gov.nsw.service.MainActivity": 1,
+    "jp.ne.mkb.games.gr2/jp.aaac.greenplanet2.MainActivity": 1,
+    "de.tutao.calendar/de.tutao.calendar.MainActivity": 1,
+    "au.gov.mygov.mygovapp/au.gov.mygov.mygovapp.features.welcome.WelcomeActivity": 1
+  },
+  "com.pdanet/com.foxfi.HotspotSettings": {
+    "ir.nasim/ir.nasim.features.MainActivity": 1
+  },
+  "moe.sable.next.nightly/moe.sable.client.AppIconDefault": {
+    "ir.nasim/ir.nasim.features.MainActivity": 1
+  },
+  "moe.sable.client/moe.sable.client.AppIconDefault": {
+    "ir.nasim/ir.nasim.features.MainActivity": 1
+  },
+  "com.msob7y.namida/com.msob7y.namida.DefaultIcon": {
+    "ir.nasim/ir.nasim.features.MainActivity": 1
+  },
+  "com.samanpr.blujr/com.samanpr.blujr.MainActivity": {
+    "ir.nasim/ir.nasim.features.MainActivity": 1
+  },
+  "com.zarz.mornye/com.zarz.mornye.MainActivity": {
+    "ir.nasim/ir.nasim.features.MainActivity": 1,
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "io.nekohasekai.sfa/io.nekohasekai.sfa.compose.MainActivity": {
+    "ir.nasim/ir.nasim.features.MainActivity": 1
+  },
+  "com.moffatman.chan/com.moffatman.chan.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.conduent.ebt/com.conduent.ebt.activity.SplashScreenActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.endroid.fern/com.endroid.fern.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "io.github.sysadmindoc.AppManagerNG/io.github.muntashirakon.AppManager.main.SplashActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.brightstripe.parcels/com.brightstripe.parcels.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "moe.zhs.caffeine/moe.zhs.caffeine.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "net.typeblog.shelter/net.typeblog.shelter.ui.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.ToDoReminder.gen/com.ToDoReminder.main.SplashScreen": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "io.freetubeapp.freetube/io.freetubeapp.freetube.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.iherb/com.iherb.mobile.product.splash.view.SplashActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.tdbank/com.td.dcts.android.us.app.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "me.magnum.melonds/me.magnum.melonds.ui.romlist.RomListActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "org.andstatus.game2048/org.andstatus.game2048.MyMainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.vayunmathur.games.unblockjam/com.vayunmathur.games.unblockjam.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.mwkhoirul.legam/com.mwkhoirul.legam.activities.SplashActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.fpf.smartscan/com.fpf.smartscan.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "suitcase.icons.japeslux/suitcase.icons.japeslux.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.ea.gp.bej3/com.ea.game.bejeweled3.Bejeweled3Activity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.cursorblue.cc_pushka/com.cursorblue.cc_pushka.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "me.piebridge.brevent/me.piebridge.brevent.ui.BreventActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "org.kiwix.kiwixmobile.standalone/org.kiwix.kiwixmobile.main.KiwixMainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.spaceman.verticonsfree/com.spaceman.verticonsfree.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.thinkfree.searchbyimage/com.thinkfree.searchbyimage.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "pro.themed.perappdownscale/pro.themed.perappdownscale.app.PerAppDownscaleActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.win95mode.app/com.win95mode.app.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.sharpened.androidfileviewer/com.sharpened.androidfileviewer.ui.compose.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.tumuyan.ncnn.realsr/com.tumuyan.ncnn.realsr.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.recoveryrecord.fastfodmap/com.recoveryrecord.EntryActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.wahoofitness.fitness/com.wahoofitness.fitness.ui.activity.WFMainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.herbseasia.android/com.seasia.view.SplashScreenActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "dev.octoshrimpy.quik/dev.octoshrimpy.quik.feature.main.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "org.blockinger.game/org.blockinger.game.activities.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.affirm.central/com.affirm.central.BrowserLauncherActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.atanusanyal.nixo/com.atanusanyal.nixo.activities.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "io.github.subhamtyagi.ocr/io.github.subhamtyagi.ocr.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "org.quantumbadger.redreaderalpha/org.quantumbadger.redreaderalpha.activities.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "org.n277.lynxlauncher/org.n277.lynxlauncher.HomeActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.github.bravenewpipe/org.schabi.newpipe.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.parizene.netmonitor/com.parizene.netmonitor.ui.main.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.mole.breakoutblitz/com.unity3d.player.UnityPlayerActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.AdrianCampos.swipeuputility/com.AdrianCampos.swipeuputility.SettingsActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "dev.legendsayantan.extendroid/dev.legendsayantan.extendroid.MainActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.dd.doordash/com.doordash.consumer.ui.login.LauncherActivity": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "dev.goodwy.gallery/dev.goodwy.gallery.activities.SplashActivity.Original": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.lionscribe.hebdate/com.lionscribe.hebdate.MainAppLaunch": {
+    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
+    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
+  },
+  "com.samsung.android.game.gamehome/com.samsung.android.game.gamehome.app.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.ebay.mobile/com.ebay.mobile.home.impl.main.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.diotek.sec.lookup.dictionary/com.diotek.sec.lookup.dictionary.AppActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "vladyslavpohrebniakov.uninstaller/vladyslavpohrebniakov.uninstaller.main.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.agc.toolKit/com.agc.gcam_tools.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.enjoyingfoss.feeel/io.flutter.embedding.android.FlutterActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.mm.android.direct.g_CMOB_XU/com.mm.android.base.devicemain.SplashActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.ahmadrezagh671.nasamediaexplorer/com.ahmadrezagh671.nasamediaexplorer.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "net.kollnig.missioncontrol.play/eu.faircode.netguard.ActivityMain": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.qx.qgbox/com.qx.qgbox.activity.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.antutu.benchmark.full/com.droiddeck.launcher.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.rapido.passenger/com.rapido.passenger.NavratriAlias": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.google.ai.edge.gallery/com.google.ai.edge.gallery.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "kodaforkustom.droidbeauty.pack/dev.jahir.kuper.app.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.nahxuan.image.extend.ai.photo.extender.uncrop/com.nahxuan.image.extend.ai.photo.extender.uncrop.main": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.poweramp.v3.improved/com.poweramp.v3.improved.SkinInfoActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.apple.android.music/com.apple.android.music.common.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1,
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.desertcartnative/com.desertcartnative.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.hdbfs.myportal/com.hdbfs.myportal.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.PROTeam.PROClient/com.unity3d.player.UnityPlayerActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.hinnka.mycamera/com.hinnka.mycamera.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "org.es_de.frontend.galaxy/org.es_de.frontend.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.net.shine/com.net.shine.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.shahzaman.pricetracker/com.shahzaman.pricetracker.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.hanbitsoft.gemgl.google/com.google.firebase.MessagingUnityPlayerActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "aqua.wigebox.kwgt/aqua.wigebox.kwgt.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.harvest.android.gr/org.cocos2dx.lua.AppActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.bsl.spencers.activity/com.bsl.spencers.activity.MainActivityDiwali": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.easilydo.mail/com.easilydo.mail.ui.SplashActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.niven.translator/com.niven.translate.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.music.myaudiocular/com.music.myaudiocular.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.paytm.business/com.paytm.business.splash.SplashActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.mahmoudzadah.app.darkifycolor/com.app.dashboard.glassify.SplashActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.zanoshky.hyprtile/com.zanoshky.hyprtile.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.gryphline.endfield.gp/com.u8.sdk.U8UnityContext": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "org.oftn.rainpaper/org.oftn.rainpaper.ui.SettingsActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.kurogame.wutheringwaves.global/com.kurogame.wutheringwaves.global.KuroSplashActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.jndapp.minimal.widgets/com.jndapp.minimal.widgets.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "one4studio.iconpack.caelusduotone/com.one4studio.iconpack.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.androtechs.pixywidgets/com.androtechs.pixywidgets.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.bobbyesp.docucraft/com.bobbyesp.docucraft.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.tapuniverse.resumebuilder/com.tapuniverse.resumebuilder.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.tplink.aginet/com.tplink.isp.component.account.login.view.WelcomeActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.samsung.android.imageenhancer/com.samsung.android.imageenhancer.presentation.activities.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "one4studio.iconpack.lena/com.one4studio.iconpack.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.upnp.fakeCall/com.upnp.fakeCall.MainActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.square_enix.android_googleplay.DD/com.nhnpa.studio51.origin.OriginUnityPlayerActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.mahmoudzadah.app.glassifycolor/com.app.dashboard.glassify.SplashActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "com.mihoyo.hoyolab/com.mihoyo.hoyolab.splash.splash.HoYoSplashActivity": {
+    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
+  },
+  "app.chompass/app.chompass.LauncherTeal": {
+    "in.visheshraghuvanshi.gitaverse/in.visheshraghuvanshi.gitaverse.MainActivity": 1
+  },
+  "eu.weblibre.gecko/eu.weblibre.gecko.MainActivity": {
+    "in.visheshraghuvanshi.gitaverse/in.visheshraghuvanshi.gitaverse.MainActivity": 1
+  },
+  "org.astermail.android/org.astermail.android.MainActivity": {
+    "in.visheshraghuvanshi.gitaverse/in.visheshraghuvanshi.gitaverse.MainActivity": 1
+  },
+  "com.etrisad.zenith/com.etrisad.zenith.MainActivity": {
+    "in.visheshraghuvanshi.gitaverse/in.visheshraghuvanshi.gitaverse.MainActivity": 1
+  },
+  "com.bilingify.readest/com.bilingify.readest.MainActivity": {
+    "in.visheshraghuvanshi.gitaverse/in.visheshraghuvanshi.gitaverse.MainActivity": 1
+  },
+  "app.morphe.manager/app.morphe.manager.MainActivity_Accent_4": {
+    "in.visheshraghuvanshi.gitaverse/in.visheshraghuvanshi.gitaverse.MainActivity": 1
+  },
+  "com.wasimaster.wmkeyboard/com.wasimaster.wmkeyboard.app.LauncherFullName": {
+    "in.visheshraghuvanshi.gitaverse/in.visheshraghuvanshi.gitaverse.MainActivity": 1
+  },
+  "com.streak.app/com.streak.app.MainActivityDefault": {
+    "in.visheshraghuvanshi.gitaverse/in.visheshraghuvanshi.gitaverse.MainActivity": 1
+  },
+  "com.jio.jioplay.tv/com.jio.jioplay.tv.AppLogo": {
+    "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
+    "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
+    "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
+  },
+  "com.mxtech.videoplayer.online/com.mxtech.videoplayer.ad.ActivityWelcomeMX": {
+    "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
+    "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
+    "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
+  },
+  "com.coloros.gamespaceui/com.coloros.gamespaceui.activity.StartActivity": {
+    "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
+    "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
+    "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
+  },
+  "com.oakever.arrows/com.beatles.unity.delegate.unity.DelegateActivity": {
+    "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
+    "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
+    "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
+  },
+  "com.ak.ta.dainikbhaskar.activity/com.dainikbhaskar.ui.MainActivity": {
+    "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
+    "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
+    "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
+  },
+  "com.vanced.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity": {
+    "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
+    "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
+    "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
+  },
+  "com.hotplay.funrelaxing/com.hotplay.ad.SplashAdShowActivity": {
+    "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
+    "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
+    "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
+  },
+  "com.lokmat.app/com.lokmat.app.SplashActivity": {
+    "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
+    "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
+    "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
+  },
+  "com.heytap.themestore/com.nearme.themespace.activities.ThemeActivity": {
+    "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
+    "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
+    "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
+  },
+  "com.puzzlegames.puzzlebrickslegend/org.cocos2dx.cpp.AppActivity": {
+    "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
+    "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
+    "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
+  },
+  "com.eterno/com.newshunt.app.view.activity.Splash": {
+    "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
+    "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
+    "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
+  },
+  "com.iexceed.ib.digitalbankingprod/com.iexceed.SplashScreen": {
+    "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
+    "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
+    "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
+  },
+  "com.firstclub.app/com.firstclub.app.MainActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "cx.indianoil.in/cx.indianoil.in.SplashActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.myntra.android/com.myntra.android.activities.react.ReactActivity.DIWALI_PRIMARY": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.nis.app/com.nis.app.ui.activities.HomeActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.disha.quickride/com.disha.quickride.androidapp.startup.QRSplashActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.app.nobrokerhood/com.app.nobrokerhood.features.dynamicicon.launcher.DiwaliLightsIconAlias": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "fc.admin.fcexpressadmin/fc.admin.fcexpressadmin.activity.AccNewSplashActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "nps.nps/nps.nps.MainActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.peeko.peekoapp/com.peeko.peekoapp.MainActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.verkada.VerkadaPass/com.verkada.passapp.PassActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.google.android.apps.pixel.health/com.google.android.apps.pixel.health.thermometer.ThermometerHomeActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "idm.internet.download.manager.plus/idm.internet.download.manager.LauncherDefault": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.supernova.launcher/com.supernova.launcher.SettingsLauncherAlias": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.rheahealthcare.motherhoodindia/com.rheahealthcare.motherhoodindia.MainActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.lenovo.otp/com.lenovo.otp.android.LauncherActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "waterwala.com.prime/waterwala.com.prime.ui.start.StartActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.okta.android.auth/com.okta.android.auth.activity.SplashActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.advasoft.touchretouch.plus/com.advasoft.touchretouch.LicenseActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.aum.nammametro/com.aum.nammametro.Activity.SplashScreen": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.flipkart.android/com.flipkart.android.DiwaliIconAlias": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.imo.android.imoim/com.imo.android.imoim.home.Home": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.shell.sitibv.shellgoplusindia/com.shell.asia.MainActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.music.bitchord/com.music.bitchord.LauncherDefault": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.jhaiian.clint/com.jhaiian.clint.browser.MainActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.supernova.launcher/com.supernova.launcher.LauncherActivity": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
+  },
+  "com.swishapp/com.swishapp.SplashActivityDefault": {
+    "in.mediassist.malite/com.malite.MainActivity": 1
   }
 }

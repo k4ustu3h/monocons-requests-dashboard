@@ -3,6 +3,52 @@
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "links": [
     {
+      "id": "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_2",
+      "existing_drawable": "generic_player",
+      "name": "YouTube Music",
+      "components": [
+        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_custom_5",
+        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_2",
+        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_3",
+        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_5",
+        "app.morphe.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity"
+      ]
+    },
+    {
+      "id": "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9.blk",
+      "existing_drawable": "my_pixel",
+      "name": "My Pixel",
+      "components": [
+        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p5",
+        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p8",
+        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9.blk",
+        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.pFold"
+      ],
+      "installs": "1+",
+      "drawable": "my_pixel"
+    },
+    {
+      "id": "app.morphe.manager/app.morphe.manager.MainActivity_Accent_4",
+      "existing_drawable": "morphe",
+      "name": "Morphe",
+      "components": [
+        "app.morphe.manager/app.morphe.manager.MainActivity_Accent_4",
+        "app.morphe.manager/app.morphe.manager.MainActivity_Light_2",
+        "app.morphe.manager/app.morphe.manager.MainActivity_Light_3"
+      ]
+    },
+    {
+      "id": "com.flipkart.android/com.flipkart.android.DiwaliIconAlias",
+      "existing_drawable": "flipkart",
+      "name": "Flipkart",
+      "components": [
+        "com.flipkart.android/com.flipkart.android.DiwaliIconAlias",
+        "com.flipkart.android/com.flipkart.android.SASALELEIconAlias"
+      ],
+      "installs": "1,000,000,000+",
+      "drawable": "flipkart"
+    },
+    {
       "id": "com.alensw.PicFolder/com.alensw.PicFolder.ValidatorActivity",
       "existing_drawable": "quickpic",
       "name": "Gallery",
@@ -10,6 +56,28 @@
         "com.alensw.PicFolder/com.alensw.PicFolder.MainActivity",
         "com.alensw.PicFolder/com.alensw.PicFolder.ValidatorActivity"
       ]
+    },
+    {
+      "id": "com.jpl.jiomart/com.jpl.jiomart.MainActivityDefault",
+      "existing_drawable": "jiomart",
+      "name": "JioMart",
+      "components": [
+        "com.jpl.jiomart/com.jcpjiomart.MainActivityAlias1",
+        "com.jpl.jiomart/com.jpl.jiomart.MainActivityDefault"
+      ],
+      "installs": "100,000,000+",
+      "drawable": "jiomart"
+    },
+    {
+      "id": "com.pashapuma.pix.material.you.iconpack/com.pashapuma.pix.material.you.iconpack.MiniFolderLauncherIcon",
+      "existing_drawable": "pix_material_you_icon_pack",
+      "name": "\u200bFolder",
+      "components": [
+        "com.pashapuma.pix.material.you.iconpack/com.jojoy.delegate.JojoyInstallerActivity",
+        "com.pashapuma.pix.material.you.iconpack/com.pashapuma.pix.material.you.iconpack.MiniFolderLauncherIcon"
+      ],
+      "installs": "10,000+",
+      "drawable": "com_pashapuma_pix_material_you_iconpack"
     },
     {
       "id": "remix.myplayer/remix.myplayer.ui.activity.ComposeActivity",
@@ -34,6 +102,13 @@
       "name": "C\u00e1mara"
     },
     {
+      "id": "com.ebay.mobile/com.ebay.mobile.home.impl.main.MainActivity",
+      "existing_drawable": "ebay",
+      "name": "eBay",
+      "installs": "100,000,000+",
+      "drawable": "ebay"
+    },
+    {
       "id": "com.mauriciotogneri.fileexplorer/com.mauriciotogneri.fileexplorer.activities.MainActivity",
       "existing_drawable": "generic_files",
       "name": "File Explorer",
@@ -46,6 +121,13 @@
       "name": "Files: Shortcut",
       "installs": "100,000+",
       "drawable": "files_shortcut"
+    },
+    {
+      "id": "com.heytap.themestore/com.nearme.themespace.activities.ThemeActivity",
+      "existing_drawable": "theme_store",
+      "name": "HeyTap Theme",
+      "installs": "1,000,000,000+",
+      "drawable": "heytap_theme"
     },
     {
       "id": "com.kyotoplayer/com.kyotoplayer.ui.screens.MainActivity",
@@ -70,6 +152,11 @@
       "name": "P2Play"
     },
     {
+      "id": "dev.octoshrimpy.quik/dev.octoshrimpy.quik.feature.main.MainActivity",
+      "existing_drawable": "qksms",
+      "name": "QUIK SMS"
+    },
+    {
       "id": "dev.raincord.app/com.discord.main.MainDefault",
       "existing_drawable": "discord",
       "name": "Rain"
@@ -78,6 +165,28 @@
       "id": "com.vivo.soundrecorder/com.android.activity.ReclistActivity",
       "existing_drawable": "generic_voice_recorder_waves",
       "name": "Recorder"
+    },
+    {
+      "id": "com.dot.gallery/com.dot.gallery.Launcher_ReFra",
+      "existing_drawable": "refra",
+      "name": "ReFra"
+    },
+    {
+      "id": "com.wstxda.viper4android/com.wstxda.viper4android.MainActivity",
+      "existing_drawable": "viper4android",
+      "name": "ViPER4Android FX"
+    },
+    {
+      "id": "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_2",
+      "existing_drawable": "morphe",
+      "name": "YT Music Morphe"
+    },
+    {
+      "id": "net.zedge.android/net.zedge.android.MainOctoberFest",
+      "existing_drawable": "zedge",
+      "name": "Zedge",
+      "installs": "500,000,000+",
+      "drawable": "zedge"
     }
   ]
 }

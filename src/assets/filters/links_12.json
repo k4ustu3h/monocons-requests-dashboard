@@ -5,55 +5,6 @@
   "total_batches": 17,
   "links": [
     {
-      "id": "com.yum.pizzahut/com.yum.pizzahut.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut",
-      "installs": "10,000,000+",
-      "drawable": "pizza_hut"
-    },
-    {
-      "id": "lk.gamma.pizzakraft.PizzaHut/lk.gamma.pizzakraft.PizzaHut.MainActivity",
-      "existing_drawable": "pizza_hut",
-      "name": "Pizza Hut",
-      "installs": "500,000+",
-      "drawable": "pizza_hut"
-    },
-    {
-      "id": "com.freevpnplanet/com.vpnapp.MainActivity",
-      "existing_drawable": "planet_vpn",
-      "name": "Planet VPN",
-      "installs": "50,000,000+",
-      "drawable": "planet_vpn"
-    },
-    {
-      "id": "com.ihenvyr.platinum_karaoke_songbook_app/com.ihenvyr.platinum_karaoke_songbook_app.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Platinum Karaoke Songbook",
-      "installs": "1,000,000+",
-      "drawable": "platinum_karaoke_songbook"
-    },
-    {
-      "id": "agency.equilibrio.sodexomexico/agency.equilibrio.sodexomexico.MainActivity",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee",
-      "installs": "5,000,000+",
-      "drawable": "pluxee"
-    },
-    {
-      "id": "com.guerdons.passresto/com.sodexo.passresto.loading.presentation.activites.LoadingActivity",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee",
-      "installs": "1,000,000+",
-      "drawable": "pluxee"
-    },
-    {
-      "id": "com.pluxeegroup.consumers.global/com.pluxeegroup.consumers.global.MainActivity",
-      "existing_drawable": "pluxee",
-      "name": "Pluxee",
-      "installs": "1,000,000+",
-      "drawable": "pluxee"
-    },
-    {
       "id": "com.sodexo.app.pt/es.alt10.project.android.MainAppActivity",
       "existing_drawable": "pluxee",
       "name": "Pluxee",
@@ -310,11 +261,6 @@
       "drawable": "quick_search"
     },
     {
-      "id": "dev.octoshrimpy.quik/dev.octoshrimpy.quik.feature.main.MainActivity",
-      "existing_drawable": "qksms",
-      "name": "QUIK SMS"
-    },
-    {
       "id": "com.radio.fmradio/com.radio.fmradio.activities.SplashActivityAliasMain",
       "existing_drawable": "generic_fm_radio",
       "name": "Radio FM",
@@ -327,6 +273,54 @@
       "name": "Radio FM",
       "installs": "1,000,000+",
       "drawable": "radio_fm"
+    },
+    {
+      "id": "net.metapps.watersounds/net.metapps.relaxsounds.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Rain Sounds",
+      "installs": "5,000,000+",
+      "drawable": "rain_sounds"
+    },
+    {
+      "id": "com.devgary.ready/com.devgary.ready.application.ReadyApplication",
+      "existing_drawable": "reddit",
+      "name": "Ready For Reddit"
+    },
+    {
+      "id": "com.realme.link/com.realme.ui.SplashActivity",
+      "existing_drawable": "realme_link",
+      "name": "realme Link",
+      "installs": "10,000,000+",
+      "drawable": "realme_link"
+    },
+    {
+      "id": "com.realme.linkcn/com.realme.link.home.SplashActivity",
+      "existing_drawable": "realme_link",
+      "name": "realme Link"
+    },
+    {
+      "id": "appinventor.ai_pralayaranjan24.Reboot/androidbuilder.ab_ranjanlitu12.Reboot_one_ad.Screen1",
+      "existing_drawable": "generic_power",
+      "name": "Reboot",
+      "installs": "500,000+",
+      "drawable": "reboot"
+    },
+    {
+      "id": "com.reddit.frontpage.rvx/launcher.default",
+      "existing_drawable": "reddit",
+      "name": "Reddit"
+    },
+    {
+      "id": "com.dot.gallery.gplay/com.dot.gallery.Launcher_ReFra",
+      "existing_drawable": "refra",
+      "name": "ReFra",
+      "installs": "500+",
+      "drawable": "refra"
+    },
+    {
+      "id": "com.remini.xyy/com.bendingspoons.remini.MainActivity",
+      "existing_drawable": "remini",
+      "name": "Remini"
     }
   ]
 }
