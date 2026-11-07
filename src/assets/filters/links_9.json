@@ -2,299 +2,252 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 9,
-  "total_batches": 17,
+  "total_batches": 9,
   "links": [
     {
-      "id": "com.google.android.GoogleCameraGB/com.android.camera.CameraLauncher",
-      "existing_drawable": "generic_camera",
-      "name": "ModGCAM"
+      "id": "com.naing.vwallpaper/com.naing.vwallpaper.MainActivity",
+      "existing_drawable": "video_live_wallpaper",
+      "name": "Video Live Wallpaper",
+      "installs": "10,000,000+",
+      "drawable": "video_live_wallpaper"
     },
     {
-      "id": "com.next.innovation.takatak/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity",
-      "existing_drawable": "generic_player",
-      "name": "Moj Lite",
-      "installs": "100,000,000+",
-      "drawable": "moj_lite"
+      "id": "com.softwinner.videoplayer/com.softwinner.videoplayer.view.activity.HomePageActivity",
+      "existing_drawable": "just_player",
+      "name": "Video Player"
     },
     {
-      "id": "com.netflix.NGP.MonumentValley1/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "monument_valley",
-      "name": "Monument Valley"
+      "id": "com.llsl.viper4android/com.llsl.viper4android.ui.MainActivity",
+      "existing_drawable": "viper4android",
+      "name": "ViPER4Android"
     },
     {
-      "id": "com.ustwo.mv.epicgames/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "monument_valley",
-      "name": "Monument Valley"
-    },
-    {
-      "id": "com.moonbrawl.prod/com.supercell.brawlstars.GameApp",
-      "existing_drawable": "brawl_stars",
-      "name": "Moon Brawl"
-    },
-    {
-      "id": "com.limelight.root/com.limelight.PcView",
-      "existing_drawable": "moonlight",
-      "name": "Moonlight"
-    },
-    {
-      "id": "com.morphpatches.app/com.webtoapp.ui.shell.ShellActivity",
-      "existing_drawable": "morphe",
-      "name": "Morphe Patches"
-    },
-    {
-      "id": "com.motorola.motobuds/com.motorola.motobuds.ui.activity.LandingPageROWActivity",
-      "existing_drawable": "moto_buds",
-      "name": "Moto Buds",
+      "id": "com.virtualpiano.musicalkeyboard/com.unity3d.player.UnityPlayerActivity",
+      "existing_drawable": "generic_piano",
+      "name": "Virtual Pianino",
       "installs": "1,000,000+",
-      "drawable": "moto_buds"
+      "drawable": "virtual_pianino"
     },
     {
-      "id": "com.rn_sgw/com.rn_sgw.MainActivity",
-      "existing_drawable": "moto",
-      "name": "Moto hellovoice",
+      "id": "com.vivo.calculator/com.android.bbkcalculator.Calculator",
+      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
+      "name": "vivo Calculator"
+    },
+    {
+      "id": "com.vivo.notes/com.android.notes.Notes",
+      "existing_drawable": "generic_notes",
+      "name": "vivo Notes"
+    },
+    {
+      "id": "com.raytechnoto.glab.voicerecorder/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "Voice Recorder",
+      "installs": "5,000,000+",
+      "drawable": "voice_recorder"
+    },
+    {
+      "id": "com.prometheusinteractive.voice_launcher/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "Voice Search",
+      "installs": "10,000,000+",
+      "drawable": "voice_search"
+    },
+    {
+      "id": "com.DevExtras.VoiceTools/crc64ebabd5372c0ee16b.MainActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "Voice Tools",
+      "installs": "500,000+",
+      "drawable": "voice_tools"
+    },
+    {
+      "id": "com.zaza.beatbox/com.zaza.beatbox.pagesredesign.main.MainActivity",
+      "existing_drawable": "generic_audio_editor",
+      "name": "VoxBox Audio Editor",
+      "installs": "1,000,000+",
+      "drawable": "voxbox_audio_editor"
+    },
+    {
+      "id": "com.wavegram.messenger.web/org.telegram.messenger.DefaultIcon",
+      "existing_drawable": "telegram",
+      "name": "WaveGram"
+    },
+    {
+      "id": "cz.martykan.webtube/cz.martykan.webtube.MainActivity",
+      "existing_drawable": "generic_player",
+      "name": "WebTube"
+    },
+    {
+      "id": "com.wolt.courierapp/com.wolt.courierapp.MainActivity",
+      "existing_drawable": "wolt",
+      "name": "Wolt Courier Partner",
+      "installs": "1,000,000+",
+      "drawable": "wolt_courier_partner"
+    },
+    {
+      "id": "mobilesmart.convert.word.to.pdf.documents/mobilesmart.convert.word.to.pdf.documents.main",
+      "existing_drawable": "generic_pdf_square",
+      "name": "Word to PDF Converter",
+      "installs": "1,000,000+",
+      "drawable": "word_to_pdf_converter"
+    },
+    {
+      "id": "com.azwstudios.theholybible.web/com.azwstudios.theholybible.MainActivity",
+      "existing_drawable": "generic_bible",
+      "name": "World English Bible",
+      "installs": "500,000+",
+      "drawable": "world_english_bible"
+    },
+    {
+      "id": "com.sigseg.android.worldmap/com.sigseg.android.map.ImageViewerActivity",
+      "existing_drawable": "generic_earth",
+      "name": "WorldMap"
+    },
+    {
+      "id": "me.teble.xposed.autodaily/me.teble.xposed.autodaily.activity.common.MainActivityAlias",
+      "existing_drawable": "tasky",
+      "name": "XAutoDaily"
+    },
+    {
+      "id": "com.miui.weather2/com.miui.weather2.WeatherBaseScreen",
+      "existing_drawable": "weather",
+      "name": "Xiaomi Weather",
+      "installs": "1,000,000,000+",
+      "drawable": "xiaomi_weather"
+    },
+    {
+      "id": "com.github.tianma8023.xposed.smscode/com.github.tianma8023.xposed.smscode.HomeActivityAlias",
+      "existing_drawable": "sms_organizer",
+      "name": "XposedSmsCode",
+      "installs": "1,000+",
+      "drawable": "xposedsmscode"
+    },
+    {
+      "id": "de.yaacc/de.yaacc.browser.TabBrowserActivity",
+      "existing_drawable": "generic_player",
+      "name": "YAACC"
+    },
+    {
+      "id": "com.kapp.youtube.finam/com.kapp.youtube.ui.MainActivity",
+      "existing_drawable": "ymusic",
+      "name": "YMusic Clone"
+    },
+    {
+      "id": "com.morphe.youtube/com.morphe.youtube.morphe_original_1",
+      "existing_drawable": "youtube",
+      "name": "YouTube"
+    },
+    {
+      "id": "com.google.android.youtube/app.morphe.android.youtube.morphe_black_1",
+      "existing_drawable": "youtube",
+      "name": "YouTube Morphe",
+      "installs": "10,000,000,000+",
+      "drawable": "youtube_morphe"
+    },
+    {
+      "id": "anddea.yrf.tube.music/com.google.android.apps.youtube.music.activities.MusicActivity",
+      "existing_drawable": "generic_player",
+      "name": "YouTube Music"
+    },
+    {
+      "id": "com.google.android.apps.youtube.music/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "youtube_music",
+      "name": "YouTube Music",
+      "installs": "5,000,000,000+",
+      "drawable": "youtube_music"
+    },
+    {
+      "id": "com.morphe.youtube.music/com.morphe.youtube.music.morphe_original_1",
+      "existing_drawable": "generic_player",
+      "name": "YouTube Music"
+    },
+    {
+      "id": "ytm.morphe.noname.exe/ytm.morphe.noname.exe.morphe_original_1",
+      "existing_drawable": "generic_player",
+      "name": "YouTube Music"
+    },
+    {
+      "id": "com.minimalnumbersllc/com.minimalnumbersllc.revanced_scaled_3",
+      "existing_drawable": "youtube_revanced",
+      "name": "YouTube ReVanced"
+    },
+    {
+      "id": "app.rvx.android.youtube/com.google.android.youtube.app.honeycomb.Shell",
+      "existing_drawable": "youtube",
+      "name": "YouTube ReVanced Extended"
+    },
+    {
+      "id": "com.google.android.youtube.tvunplugged/com.google.android.apps.youtube.tvunplugged.activity.MainActivity",
+      "existing_drawable": "youtube_tv",
+      "name": "YouTube TV",
+      "installs": "10,000,000+",
+      "drawable": "youtube_tv"
+    },
+    {
+      "id": "com.wssdlc/com.whatsapp.Main",
+      "existing_drawable": "whatsapp",
+      "name": "YoWhatsApp"
+    },
+    {
+      "id": "com.dewmobile.kuaiya.play/com.qshare.app.activity.FirstActivity",
+      "existing_drawable": "zapya",
+      "name": "Zapya",
+      "installs": "100,000,000+",
+      "drawable": "zapya"
+    },
+    {
+      "id": "pl.znanylekarz/pl.znanylekarz.MainActivity",
+      "existing_drawable": "doctoralia",
+      "name": "ZnanyLekarz",
+      "installs": "1,000,000+",
+      "drawable": "znanylekarz"
+    },
+    {
+      "id": "com.application.services.partner/com.application.services.partner.ui.activities.SplashActivity",
+      "existing_drawable": "zomato",
+      "name": "Zomato Restaurant Partner",
+      "installs": "5,000,000+",
+      "drawable": "zomato_restaurant_partner"
+    },
+    {
+      "id": "com.zozoplayer/com.zozoplayer.ui.activities.MainActivity",
+      "existing_drawable": "generic_player",
+      "name": "ZoZo Player",
+      "installs": "1,000,000+",
+      "drawable": "zozo_player"
+    },
+    {
+      "id": "com.zte.videoplayer/com.zte.videoplayer.stock.VideoStockBrowserActivity",
+      "existing_drawable": "jiocinema",
+      "name": "ZTE Video Player"
+    },
+    {
+      "id": "com.pervayapomosh/com.pervayapomosh.MainActivity",
+      "existing_drawable": "generic_aid",
+      "name": "\u041f\u0435\u0440\u0432\u0430\u044f \u041f\u043e\u043c\u043e\u0449\u044c ~~ First Aid",
       "installs": "100,000+",
-      "drawable": "moto_hellovoice"
+      "drawable": "com_pervayapomosh"
     },
     {
-      "id": "com.community.mbox.afen/com.transsion.subroom.activity.SplashActivity",
-      "existing_drawable": "moviebox",
-      "name": "MovieBox"
+      "id": "com.podsas.sasflix/com.podsas.sasflix.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "\u0421\u0410\u0421\u0424\u041b\u0418\u041a\u0421 ~~ SASFLIX"
     },
     {
-      "id": "com.community.mbox.affr/com.transsion.subroom.activity.SplashActivity",
-      "existing_drawable": "moviebox",
-      "name": "MovieBox"
-    },
-    {
-      "id": "com.community.mbox.in/com.game.killer.gamesActivity",
-      "existing_drawable": "moviebox",
-      "name": "MovieBox"
-    },
-    {
-      "id": "com.community.moviebox/com.transsion.subroom.activity.SplashActivity",
-      "existing_drawable": "moviebox",
-      "name": "MovieBox"
-    },
-    {
-      "id": "com.vskit.lite/com.transsion.subroom.activity.SplashActivity",
-      "existing_drawable": "moviebox",
-      "name": "MovieBox"
-    },
-    {
-      "id": "com.yomobigroup.chat/com.transsion.subroom.activity.SplashActivity",
-      "existing_drawable": "moviebox",
-      "name": "MovieBox"
-    },
-    {
-      "id": "com.gargan.abismo/com.gargan.abismo.module_home.HomeActivityNew",
-      "existing_drawable": "moviebox",
-      "name": "MovieBox HD",
-      "installs": "10,000,000+",
-      "drawable": "moviebox_hd"
-    },
-    {
-      "id": "com.community.mbox.tv/com.transsion.subroom.activity.SplashActivity",
-      "existing_drawable": "moviebox",
-      "name": "MovieBoxTV"
-    },
-    {
-      "id": "com.movistar.android.mimovistar.es/com.movistar.android.mimovistar.es.MainActivity",
-      "existing_drawable": "movistar",
-      "name": "Movistar",
-      "installs": "10,000,000+",
-      "drawable": "movistar"
-    },
-    {
-      "id": "bin.mt.plus/bin.mt.plus.Main",
-      "existing_drawable": "mt_manager",
-      "name": "MT Manager"
-    },
-    {
-      "id": "com.mediatek.gnss.nonframeworklbs/com.mediatek.gnss.nonframeworklbs.MainActivity",
+      "id": "com.pic.catcher/com.pic.catcher.ui.MainActivity",
       "existing_drawable": "generic_shell",
-      "name": "MTK Non-Framework LBS"
+      "name": "\u56fe\u7247\u6355\u624b ~~ Pic Catcher"
     },
     {
-      "id": "com.android.bbkmusic/com.android.bbkmusic.WidgetToTrackActivity",
-      "existing_drawable": "music_player",
-      "name": "Music"
-    },
-    {
-      "id": "com.android.music/com.android.music.TrackBrowserActivity",
-      "existing_drawable": "generic_player",
-      "name": "Music"
-    },
-    {
-      "id": "com.vayunmathur.music/com.vayunmathur.music.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Music"
-    },
-    {
-      "id": "siva.app.music7pro/siva.app.music7pro.app.activities.M7Player",
-      "existing_drawable": "apple_music",
-      "name": "Music 7 Pro",
+      "id": "com.alwaysrotate/com.alwaysrotate.alwaysrotate",
+      "existing_drawable": "generic_rotation",
+      "name": "\u5c4f\u5e55\u65cb\u8f49 ~~ Screen Rotation",
       "installs": "1,000,000+",
-      "drawable": "music_7_pro"
+      "drawable": "com_alwaysrotate"
     },
     {
-      "id": "com.appmusicdownload.musicdownloadervani2app/com.appmusicdownload.musicdownloadervani2app.view.splash.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Downloader"
-    },
-    {
-      "id": "com.free.music.downloader.eron/com.kunminx.musipro34.K_WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Downloader"
-    },
-    {
-      "id": "com.musicdownload.appmusicdownloader2025/com.musicdownload.appmusicdownloader2025.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Downloader"
-    },
-    {
-      "id": "com.musicdownloader.appdownloadmusic252/com.musicdownloader.appdownloadmusic252.ui.splash.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Downloader"
-    },
-    {
-      "id": "com.musicdownloader.mp3downloadmusic.musicdownloadfree/com1.musicdownloader.mp3downloadmusic.musicdownloadfree.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Downloader"
-    },
-    {
-      "id": "com.musicdownloader.musicfreeapp825v2/com.musicdownloader.appdownloadmusic25.ui.splash.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Downloader",
-      "installs": "1,000,000+",
-      "drawable": "music_downloader"
-    },
-    {
-      "id": "audioplayer.free.music.player/com.ijoysoft.music.activity.WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "10,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "com.media.music.mp3.musicplayer/com.media.music.ui.main.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music player",
-      "installs": "100,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "com.musicplan.playermusic/com.musicplan.playermusic.activities.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player"
-    },
-    {
-      "id": "com.nexnil.mediaplayer/com.musicplayer.mediaplayer.activities.PermissionActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player"
-    },
-    {
-      "id": "com.rocks.music/com.rocks.music.musicplayer.MusicSplash",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "5,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "media.audioplayer.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "100,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "media.mp3player.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "10,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "media.music.mp3player.musicplayer/media.music.mp3player.musicplayer.ui.main.MainMPActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music player",
-      "installs": "50,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "media.music.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "100,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "music.musicplayer/com.android.music.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "50,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "musicplayer.hdvideoplayer.backgroundmusic/musicplayer.hdvideoplayer.backgroundmusic.myActivities.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "50,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "musicplayer.theme.bass.equalizer/musicplayer.theme.bass.equalizer.activity.StartPageActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music player",
-      "installs": "10,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "com.iven.musicplayergo/com.iven.musicplayergo.MainActivity",
-      "existing_drawable": "music_player_go",
-      "name": "Music Player GO"
-    },
-    {
-      "id": "musicplayer.musicapp.playmusic.mp3player/musicplayer.musicapp.playmusic.mp3player.ui.splash.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player Offline & MP3",
-      "installs": "10,000,000+",
-      "drawable": "music_player_offline_mp3"
-    },
-    {
-      "id": "jl.musicalnotes/jl.musicalnotes.activity.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Musical Notes"
-    },
-    {
-      "id": "com.muso.musicplayer/com.muso.musicplayer.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Muso",
-      "installs": "50,000,000+",
-      "drawable": "muso"
-    },
-    {
-      "id": "com.ttnet.muzik/com.ttnet.muzik.DefaultAppIconAlias",
-      "existing_drawable": "music_player",
-      "name": "Muud",
-      "installs": "5,000,000+",
-      "drawable": "muud"
-    },
-    {
-      "id": "hu.mvmnext.onlineugyintezes/com.nkmomni.app.screen.splash.SplashActivity",
-      "existing_drawable": "substratum_lite",
-      "name": "MVM Next",
-      "installs": "1,000,000+",
-      "drawable": "mvm_next"
-    },
-    {
-      "id": "com.mx.plus/com.mxtech.videoplayer.pro.ActivityMediaList",
-      "existing_drawable": "just_player",
-      "name": "MX Player"
-    },
-    {
-      "id": "com.mxtech.videoplayer.ae/com.mxtech.videoplayer.ae.ActivityWelcomeMX",
-      "existing_drawable": "just_player",
-      "name": "MX Player"
+      "id": "cn.lyric.getter/cn.lyric.getter.launcher",
+      "existing_drawable": "generic_shell",
+      "name": "\u6b4c\u8bcd\u83b7\u53d6 ~~ Lyric Getter"
     }
   ]
 }

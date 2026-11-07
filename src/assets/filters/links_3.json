@@ -2,261 +2,12 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 3,
-  "total_batches": 17,
+  "total_batches": 9,
   "links": [
-    {
-      "id": "com.audible.application.kindle/com.audible.application.MainLauncher",
-      "existing_drawable": "audible",
-      "name": "Audible"
-    },
-    {
-      "id": "com.musicplayer.playermusic/com.musicplayer.playermusic.activities.AudifyStartActivity",
-      "existing_drawable": "just_player",
-      "name": "Audify Player",
-      "installs": "50,000,000+",
-      "drawable": "audify_player"
-    },
-    {
-      "id": "audioeditor.musiceditor.soundeditor.songeditor/com.min.n.MainActivity",
-      "existing_drawable": "generic_audio_editor",
-      "name": "Audio Editor",
-      "installs": "50,000,000+",
-      "drawable": "audio_editor"
-    },
-    {
-      "id": "com.awystudio.awplayer/com.awystudio.awplayer.activities.AllowAccessActivity",
-      "existing_drawable": "just_player",
-      "name": "AW Player",
-      "installs": "1,000,000+",
-      "drawable": "aw_player"
-    },
-    {
-      "id": "com.WEKA.MATRIX/com.exteragram.messenger.DefaultIcon",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
-      "id": "com.bajaj.salesapp/com.bajaj.salesapp.ui.activity.splash.SplashActivity",
-      "existing_drawable": "bajaj_finserv",
-      "name": "Bajaj Sales One"
-    },
-    {
-      "id": "br.com.bancopan.cartoes/com.btg.pactual.banking.SplashScreenActivity",
-      "existing_drawable": "banco_pan",
-      "name": "Banco PAN",
-      "installs": "50,000,000+",
-      "drawable": "banco_pan"
-    },
-    {
-      "id": "co.com.bbva.mb/com.bbva.glomohybrid.splash.presentation.view.SplashActivity",
-      "existing_drawable": "bbva",
-      "name": "BBVA",
-      "installs": "10,000,000+",
-      "drawable": "bbva"
-    },
-    {
-      "id": "com.quickplay.android.bellmediaplayer/ca.bell.fiberemote.boot.BootstrapActivity",
-      "existing_drawable": "just_player",
-      "name": "Bell Fibe TV",
-      "installs": "10,000,000+",
-      "drawable": "bell_fibe_tv"
-    },
-    {
-      "id": "br.com.bernoulli.bplay/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "generic_player",
-      "name": "Bernoulli Play",
-      "installs": "100,000+",
-      "drawable": "bernoulli_play"
-    },
-    {
-      "id": "com.kanna.bible/com.kanna.bible.activities.StartActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Bible",
-      "installs": "10,000+",
-      "drawable": "bible"
-    },
-    {
-      "id": "com.bible.holy.bible.for.women/com.offline.bible.IconDefault",
-      "existing_drawable": "generic_bible",
-      "name": "Bible for Women",
-      "installs": "10,000,000+",
-      "drawable": "bible_for_women"
-    },
-    {
-      "id": "com.azwstudios.theholybible.kjv/com.azwstudios.theholybible.MainActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Bible KJV",
-      "installs": "5,000,000+",
-      "drawable": "bible_kjv"
-    },
-    {
-      "id": "com.gyc.ace.kjv/com.gyc.ace.kjv.ActivityWelcome",
-      "existing_drawable": "generic_bible",
-      "name": "Bible KJV",
-      "installs": "5,000,000+",
-      "drawable": "bible_kjv"
-    },
-    {
-      "id": "com.hmobile.biblekjv/com.hmobile.biblekjv.MainActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Bible KJV",
-      "installs": "10,000,000+",
-      "drawable": "bible_kjv"
-    },
-    {
-      "id": "com.azwstudios.theholybible.frls/com.azwstudios.theholybible.MainActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Bible Louis Segond",
-      "installs": "500,000+",
-      "drawable": "bible_louis_segond"
-    },
-    {
-      "id": "at.billa.service/digital.riag.appsolution.MainActivity",
-      "existing_drawable": "billa",
-      "name": "BILLA",
-      "installs": "1,000,000+",
-      "drawable": "billa"
-    },
-    {
-      "id": "com.d2l.brightspace.student.android/com.d2l.brightspace.android.ui.DispatchActivity",
-      "existing_drawable": "pulse",
-      "name": "Brightspace Pulse",
-      "installs": "1,000,000+",
-      "drawable": "brightspace_pulse"
-    },
-    {
-      "id": "com.examobile.bubblelevel/com.examobile.bubblelevel.activity.MainActivity",
-      "existing_drawable": "generic_bubble_level",
-      "name": "Bubble Level",
-      "installs": "5,000,000+",
-      "drawable": "bubble_level"
-    },
-    {
-      "id": "level.bubblelevel.ruler/level.bubblelevel.ruler.MainActivity",
-      "existing_drawable": "generic_bubble_level",
-      "name": "Bubble Level",
-      "installs": "1,000,000+",
-      "drawable": "bubble_level"
-    },
-    {
-      "id": "net.androgames.level/net.androgames.level.Level$LevelStarterActivity",
-      "existing_drawable": "generic_bubble_level",
-      "name": "Bubble level",
-      "installs": "10,000,000+",
-      "drawable": "bubble_level"
-    },
-    {
-      "id": "at.burgerking.kingfinder.app/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King",
-      "installs": "100,000+",
-      "drawable": "burger_king"
-    },
-    {
-      "id": "bo.burgerking/com.usemenu.MenuAndroidApplication.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "com.ajvierci.burgerking/com.ajvierci.burgerking.MainActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King",
-      "installs": "100,000+",
-      "drawable": "burger_king"
-    },
-    {
-      "id": "com.app.burgerking/com.app.burgerking.ui.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King"
-    },
-    {
-      "id": "com.bk.ch/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King",
-      "installs": "500,000+",
-      "drawable": "burger_king"
-    },
-    {
-      "id": "com.burgerking.egypt/com.skylinedynamics.bk.splash.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King",
-      "installs": "50,000+",
-      "drawable": "burger_king"
-    },
-    {
-      "id": "com.burgerking.morocco/com.skylinedynamics.bk.splash.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King",
-      "installs": "100,000+",
-      "drawable": "burger_king"
-    },
-    {
-      "id": "com.burgerking.uae/com.skylinedynamics.bk.splash.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King",
-      "installs": "100,000+",
-      "drawable": "burger_king"
-    },
-    {
-      "id": "com.burgerkingcz/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King",
-      "installs": "100,000+",
-      "drawable": "burger_king"
-    },
-    {
-      "id": "com.burgerkingpl/rbi.android.app.Launcher",
-      "existing_drawable": "burger_king",
-      "name": "Burger King",
-      "installs": "1,000,000+",
-      "drawable": "burger_king"
-    },
-    {
-      "id": "com.bzbs.burgerking/com.bzbs.burgerking.ui.splash.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King",
-      "installs": "500,000+",
-      "drawable": "burger_king"
-    },
-    {
-      "id": "com.crazycake.burgerkingchile/com.usemenu.MenuAndroidApplication.SplashActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King",
-      "installs": "1,000,000+",
-      "drawable": "burger_king"
-    },
-    {
-      "id": "com.emn8.mobilem8.nativeapp.bkca/com.emn8.mobilem8.nativeapp.bkca.MainActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King",
-      "installs": "1,000,000+",
-      "drawable": "burger_king"
-    },
-    {
-      "id": "com.expremio.burgerking/com.expremio.mobileapp.MainActivity",
-      "existing_drawable": "burger_king",
-      "name": "Burger King",
-      "installs": "1,000,000+",
-      "drawable": "burger_king"
-    },
     {
       "id": "com.mathieu.budmaldash00/com.mathieu.budmaldash00.GeometryJump",
       "existing_drawable": "geometry_dash",
       "name": "BurmalDash"
-    },
-    {
-      "id": "com.bybit.eu/com.bybit.pro.MainActivity",
-      "existing_drawable": "bybit",
-      "name": "Bybit",
-      "installs": "500,000+",
-      "drawable": "bybit"
-    },
-    {
-      "id": "br.com.gabba.Caixa/br.nQiBi9.qATmb9.es8m45.ui.fobmI3.n45ls8",
-      "existing_drawable": "caixa",
-      "name": "CAIXA",
-      "installs": "100,000,000+",
-      "drawable": "caixa"
     },
     {
       "id": "com.candl.athena/com.candl.athena.activity.Calculator",
@@ -331,6 +82,241 @@
       "id": "com.softwinner.camera/com.softwinner.camera.CameraLauncher",
       "existing_drawable": "generic_camera",
       "name": "Camera"
+    },
+    {
+      "id": "com.ovz.carscanner.rustore/crc646a6dd679b318c207.MainActivity",
+      "existing_drawable": "generic_engine",
+      "name": "Car Scanner"
+    },
+    {
+      "id": "com.google.android.ims/com.google.android.ims.ui.WifiCallingSettingsActivity",
+      "existing_drawable": "carrier_services",
+      "name": "Carrier Services",
+      "installs": "5,000,000,000+",
+      "drawable": "carrier_services"
+    },
+    {
+      "id": "maps.jaoloonda.android.aaad_a39e4f/com.thekirankumar.youtubeauto2.activity.MainPhoneActivity",
+      "existing_drawable": "youtube",
+      "name": "CarStream"
+    },
+    {
+      "id": "com.gamma.checkers/com.unity3d.player.UnityPlayerActivity",
+      "existing_drawable": "generic_checkers",
+      "name": "Checkers",
+      "installs": "10,000,000+",
+      "drawable": "checkers"
+    },
+    {
+      "id": "com.birds.chess/com.dynamo.android.DefoldActivity",
+      "existing_drawable": "generic_chess",
+      "name": "Chess",
+      "installs": "1,000,000+",
+      "drawable": "chess"
+    },
+    {
+      "id": "com.llx.chess/com.llx.chess.AndroidLauncher",
+      "existing_drawable": "generic_chess",
+      "name": "Chess",
+      "installs": "100,000,000+",
+      "drawable": "chess"
+    },
+    {
+      "id": "com.sgebrelibanos.aderaser/com.sgebrelibanos.aderaser.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "CleanTube",
+      "installs": "1,000,000+",
+      "drawable": "cleantube"
+    },
+    {
+      "id": "com.bluelight.computer.winlauncher.prolauncher/com.bluelight.computer.winlauncher.prolauncher.googleclock.main.DeskClock",
+      "existing_drawable": "generic_clock",
+      "name": "Clock",
+      "installs": "1,000,000+",
+      "drawable": "clock"
+    },
+    {
+      "id": "com.pengyou.cloneapp/com.pengyou.cloneapp.hide.Splash",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "Clone App Calculator Icon",
+      "installs": "10,000,000+",
+      "drawable": "clone_app_calculator_icon"
+    },
+    {
+      "id": "com.apps.offbeat.colorpalette/com.apps.offbeat.colorpalette.MainActivity",
+      "existing_drawable": "substratum_lite",
+      "name": "Color Palette",
+      "installs": "100,000+",
+      "drawable": "color_palette"
+    },
+    {
+      "id": "com.blogspot.yashas003.colorpalette/com.blogspot.yashas003.colorpalette.activities.SplashScreen",
+      "existing_drawable": "substratum_lite",
+      "name": "Color Palette",
+      "installs": "100,000+",
+      "drawable": "color_palette"
+    },
+    {
+      "id": "com.bnyro.contacts/com.bnyro.contacts.ui.activities.MainActivity",
+      "existing_drawable": "generic_contacts",
+      "name": "Connect You"
+    },
+    {
+      "id": "icontacts.ios.dialer.icall/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
+      "existing_drawable": "generic_dialer",
+      "name": "Contacts & Phone Call",
+      "installs": "1,000,000+",
+      "drawable": "contacts_phone_call"
+    },
+    {
+      "id": "cool.s20.camera/com.camera.function.main.privacy.CoolCameraPrivacyActivity",
+      "existing_drawable": "nothing_camera",
+      "name": "Cool S20 Camera",
+      "installs": "1,000,000+",
+      "drawable": "cool_s20_camera"
+    },
+    {
+      "id": "com.dvdb.bergnotes/com.dvdb.dnotes.MainActivity",
+      "existing_drawable": "another_notes",
+      "name": "D Notes",
+      "installs": "500,000+",
+      "drawable": "d_notes"
+    },
+    {
+      "id": "com.dtasks.app/com.dtasks.app.MainActivity",
+      "existing_drawable": "tasks",
+      "name": "D/Tasks"
+    },
+    {
+      "id": "com.dariaos.recorder/com.dariaos.recorder.ui.MainActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "DariaOS Recorder"
+    },
+    {
+      "id": "com.darkevo.iconpack/com.darkevo.iconpack.activities.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "Dark Evo",
+      "installs": "1,000+",
+      "drawable": "dark_evo"
+    },
+    {
+      "id": "com.shisui.debloater/com.shisui.debloater.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "Debloat-X Universal"
+    },
+    {
+      "id": "com.dmholdings.denonremoteapp/com.dmholdings.remoteapp.Startup",
+      "existing_drawable": "just_player",
+      "name": "Denon Remote"
+    },
+    {
+      "id": "com.opensource.i2pradio/com.opensource.i2pradio.MainActivity",
+      "existing_drawable": "generic_fm_radio",
+      "name": "deutsia radio"
+    },
+    {
+      "id": "io.illescasDaniel.devSnippets/io.illescasDaniel.devSnippets.MainActivity",
+      "existing_drawable": "generic_braces",
+      "name": "DevSnippets",
+      "installs": "10,000+",
+      "drawable": "devsnippets"
+    },
+    {
+      "id": "com.adeeteya.digital_calculator/com.adeeteya.digital_calculator.MainActivity",
+      "existing_drawable": "zcalc",
+      "name": "Digital Calculator",
+      "installs": "1,000+",
+      "drawable": "digital_calculator"
+    },
+    {
+      "id": "com.discore/com.discord.main.MainDefault",
+      "existing_drawable": "discord",
+      "name": "Discord"
+    },
+    {
+      "id": "com.firstyogi.dothing/com.firstyogi.dothing.SigninActivity",
+      "existing_drawable": "tasky",
+      "name": "Dothing",
+      "installs": "5,000+",
+      "drawable": "dothing"
+    },
+    {
+      "id": "com.dsplayer.app/com.dsplayer.app.features.videobrowser.ui.VideoBrowserActivity",
+      "existing_drawable": "just_player",
+      "name": "DS Player",
+      "installs": "10,000+",
+      "drawable": "ds_player"
+    },
+    {
+      "id": "com.olxmena.horizontal/com.olxmena.horizontal.MainActivity",
+      "existing_drawable": "olx",
+      "name": "dubizzle",
+      "installs": "10,000,000+",
+      "drawable": "dubizzle"
+    },
+    {
+      "id": "io.github.luyifei2011.dvdcontroller/io.github.luyifei2011.dvdcontroller.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "DVD Controller"
+    },
+    {
+      "id": "com.jmsys.earth3d/com.jmsys.earth3d.SplashActivity",
+      "existing_drawable": "generic_earth",
+      "name": "Earth3D",
+      "installs": "10,000,000+",
+      "drawable": "earth3d"
+    },
+    {
+      "id": "easy.bible.read.understand.simple/org.mainsoft.newbible.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Easy Bible",
+      "installs": "1,000,000+",
+      "drawable": "easy_bible"
+    },
+    {
+      "id": "easy.launcher/easy.launcher.ime.promo.ImePromoActivity",
+      "existing_drawable": "generic_keyboard",
+      "name": "Easy Keyboard",
+      "installs": "10,000,000+",
+      "drawable": "easy_keyboard"
+    },
+    {
+      "id": "com.cem.pianokeyboard.pianomusic/com.cem.piano.guide.ui.activities.IntroActivity",
+      "existing_drawable": "generic_piano",
+      "name": "Easy Piano",
+      "installs": "500,000+",
+      "drawable": "easy_piano"
+    },
+    {
+      "id": "com.hwqgrhhjfd.idlefastfood/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "eatventure",
+      "name": "Eatventure",
+      "installs": "50,000,000+",
+      "drawable": "eatventure"
+    },
+    {
+      "id": "com.miHoYo.Yuanshen/org.yuzu.yuzu_emu.ui.main.MainActivity",
+      "existing_drawable": "genshin_impact",
+      "name": "Eden"
+    },
+    {
+      "id": "english.swahili.bible/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "English Swahili Bible",
+      "installs": "1,000,000+",
+      "drawable": "english_swahili_bible"
+    },
+    {
+      "id": "english.swahili.bible.bilingual/org.mainsoft.newbible.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "English Swahili Bible Takatifu",
+      "installs": "1,000,000+",
+      "drawable": "english_swahili_bible_takatifu"
+    },
+    {
+      "id": "com.coolappstore.everdialer.by.svhp/com.coolappstore.everdialer.by.svhp.MainActivityNothingIcon",
+      "existing_drawable": "generic_dialer",
+      "name": "Ever Dialer"
     }
   ]
 }

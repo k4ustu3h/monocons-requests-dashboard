@@ -79,8 +79,16 @@
       "existing_drawable": "interpreter"
     },
     {
+      "id": "com.edesur/com.edesur.MainActivity",
+      "existing_drawable": "enel"
+    },
+    {
       "id": "com.stratumauth.app/com.stratumauth.app.MainActivity",
       "existing_drawable": "generic_shell"
+    },
+    {
+      "id": "in.mygov.mobile/in.mygov.mobile.SplashActivity",
+      "existing_drawable": "mygov"
     },
     {
       "id": "com.vivo.browser/com.vivo.browser.BrowserActivity",
@@ -96,7 +104,7 @@
     },
     {
       "id": "com.hihonor.calendar/com.android.calendar.AllInOneActivity",
-      "existing_drawable": "calendar"
+      "existing_drawable": "themed_icon_calendar_31"
     },
     {
       "id": "com.hihonor.filemanager/com.hihonor.filemanager.common.view.activity.SplashActivity",
@@ -111,24 +119,12 @@
       "existing_drawable": "generic_gallery"
     },
     {
-      "id": "com.antutu.benchmark.full/com.droiddeck.launcher.MainActivity",
-      "existing_drawable": "droiddeck"
-    },
-    {
       "id": "com.easilydo.mail/com.easilydo.mail.ui.SplashActivity",
       "existing_drawable": "generic_email"
     },
     {
-      "id": "net.pgaskin.windy/net.pgaskin.windy.MainActivity",
-      "existing_drawable": "windy"
-    },
-    {
       "id": "com.coloros.gamespaceui/com.coloros.gamespaceui.activity.StartActivity",
       "existing_drawable": "gamespace"
-    },
-    {
-      "id": "com.heytap.themestore/com.nearme.themespace.activities.ThemeActivity",
-      "existing_drawable": "theme_store"
     }
   ]
 }

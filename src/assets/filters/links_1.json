@@ -2,7 +2,7 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 1,
-  "total_batches": 17,
+  "total_batches": 9,
   "links": [
     {
       "id": "org.telegram.messenger/com.exteragram.messenger.AmethystIcon",
@@ -412,19 +412,6 @@
       "drawable": "skipthedishes"
     },
     {
-      "id": "com.zhiliaoapp.musically/com.windukk.mod.icon.default",
-      "existing_drawable": "tiktok",
-      "name": "TikTok Mod",
-      "components": [
-        "com.zhiliaoapp.musically/com.windukk.mod.icon.default",
-        "com.zhiliaoapp.musically/com.windukk.mod.icon.hlx",
-        "com.zhiliaoapp.musically/com.windukk.mod.icon.metal",
-        "com.zhiliaoapp.musically/com.windukk.mod.icon.parody"
-      ],
-      "installs": "1,000,000,000+",
-      "drawable": "tiktok_mod"
-    },
-    {
       "id": "app.revanced.android.apps.youtube.music/app.revanced.android.apps.youtube.music.revanced_original_2",
       "existing_drawable": "generic_player",
       "name": "YouTube Music",
@@ -436,6 +423,16 @@
       ]
     },
     {
+      "id": "com.antutu.benchmark.full/com.android.module.graphics.app.MainActivity",
+      "existing_drawable": "droiddeck",
+      "name": "AnTuTu Benchmark",
+      "components": [
+        "com.antutu.benchmark.full/com.android.module.graphics.app.MainActivity",
+        "com.antutu.benchmark.full/com.antutu.benchmark.full.MainActivity",
+        "com.antutu.benchmark.full/com.example.benchmark.full.MainActivity"
+      ]
+    },
+    {
       "id": "org.telegram.messenger.web/com.exteragram.messenger.AmethystIcon",
       "existing_drawable": "telegram",
       "name": "AyuGram",
@@ -443,16 +440,6 @@
         "org.telegram.messenger.web/com.exteragram.messenger.AmethystIcon",
         "org.telegram.messenger.web/com.exteragram.messenger.DefaultIcon",
         "org.telegram.messenger.web/com.exteragram.messenger.MonetIconExtera"
-      ]
-    },
-    {
-      "id": "com.android.calendar/com.android.calendar.LaunchTasksActivity",
-      "existing_drawable": "themed_icon_calendar_31",
-      "name": "Calendar",
-      "components": [
-        "com.android.calendar/com.android.calendar.LaunchTasksActivity",
-        "com.android.calendar/com.hmct.calendar.activity.FirstAdvertActivity",
-        "com.android.calendar/com.meizu.flyme.calendar.AllInOneActivity"
       ]
     },
     {
@@ -516,16 +503,6 @@
       "drawable": "pepper"
     },
     {
-      "id": "com.advasoft.touchretouch/com.advasoft.touchretouch4.MainActivity",
-      "existing_drawable": "retouch_advasoft",
-      "name": "TouchRetouch",
-      "components": [
-        "com.advasoft.touchretouch/com.advasoft.touchretouch.LicenseActivityAlias2",
-        "com.advasoft.touchretouch/com.advasoft.touchretouch4.MainActivity",
-        "com.advasoft.touchretouch/com.advasoft.touchretouch4.MainActivityCH"
-      ]
-    },
-    {
       "id": "dk.danskebank.mobilepay/com.dnb.vipps.android.startup.ui.StartupActivity",
       "existing_drawable": "vipps_mobilepay",
       "name": "Vipps MobilePay",
@@ -545,16 +522,6 @@
         "app.morphe.android.youtube/app.morphe.android.youtube.morphe_custom_5",
         "app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_3",
         "app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_5"
-      ]
-    },
-    {
-      "id": "com.huanchengfly.tieba.post/com.huanchengfly.tieba.post.MainActivityIconInvert",
-      "existing_drawable": "tieba_lite",
-      "name": "\u8d34\u5427 Lite ~~ Tieba Lite",
-      "components": [
-        "com.huanchengfly.tieba.post/com.huanchengfly.tieba.post.MainActivityIconInvert",
-        "com.huanchengfly.tieba.post/com.huanchengfly.tieba.post.MainActivityIconThemed",
-        "com.huanchengfly.tieba.post/com.huanchengfly.tieba.post.MainActivityV2"
       ]
     },
     {
@@ -736,15 +703,6 @@
       ]
     },
     {
-      "id": "com.coloros.onekeylockscreen/com.coloros.onekeylockscreen.OppoLockScreen",
-      "existing_drawable": "one_tap_lock_screen",
-      "name": "One-Tap Lock Screen",
-      "components": [
-        "com.coloros.onekeylockscreen/com.coloros.onekeylockscreen.OppoLockScreen",
-        "com.coloros.onekeylockscreen/com.heytap.onekeylockscreen.OneKeyLockScreen"
-      ]
-    },
-    {
       "id": "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
       "existing_drawable": "pepper",
       "name": "Pepper",
@@ -754,6 +712,50 @@
       ],
       "installs": "5,000+",
       "drawable": "pepper"
+    },
+    {
+      "id": "se.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+      "existing_drawable": "pepper",
+      "name": "Pepper",
+      "components": [
+        "se.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+        "se.pepperdeals/com.pepper.apps.android.presentation.MainActivityLightIcon"
+      ],
+      "installs": "50,000+",
+      "drawable": "pepper"
+    },
+    {
+      "id": "ai.perplexity.app.android/ai.perplexity.app.android.authorization.exception.MainActivity",
+      "existing_drawable": "perplexity",
+      "name": "Perplexity",
+      "components": [
+        "ai.perplexity.app.android/ai.perplexity.app.android.authorization.exception.MainActivity",
+        "ai.perplexity.app.android/com.google.android.archive.ReactivateActivity"
+      ],
+      "installs": "100,000,000+",
+      "drawable": "perplexity"
+    },
+    {
+      "id": "com.grice.dialer/com.grice.dialer.icon.Default",
+      "existing_drawable": "generic_dialer",
+      "name": "Phone",
+      "components": [
+        "com.grice.dialer/com.grice.dialer.icon.Default",
+        "com.grice.dialer/com.grice.dialer.icon.IOS"
+      ],
+      "installs": "10,000,000+",
+      "drawable": "phone"
+    },
+    {
+      "id": "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2",
+      "existing_drawable": "just_player",
+      "name": "PlayBack",
+      "components": [
+        "com.androxus.playback/com.androxus.playback.presentation.SplashActivity",
+        "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2"
+      ],
+      "installs": "1,000,000+",
+      "drawable": "playback"
     }
   ]
 }

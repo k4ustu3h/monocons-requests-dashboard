@@ -28,27 +28,6 @@
       "drawable": "my_pixel"
     },
     {
-      "id": "app.morphe.manager/app.morphe.manager.MainActivity_Accent_4",
-      "existing_drawable": "morphe",
-      "name": "Morphe",
-      "components": [
-        "app.morphe.manager/app.morphe.manager.MainActivity_Accent_4",
-        "app.morphe.manager/app.morphe.manager.MainActivity_Light_2",
-        "app.morphe.manager/app.morphe.manager.MainActivity_Light_3"
-      ]
-    },
-    {
-      "id": "com.flipkart.android/com.flipkart.android.DiwaliIconAlias",
-      "existing_drawable": "flipkart",
-      "name": "Flipkart",
-      "components": [
-        "com.flipkart.android/com.flipkart.android.DiwaliIconAlias",
-        "com.flipkart.android/com.flipkart.android.SASALELEIconAlias"
-      ],
-      "installs": "1,000,000,000+",
-      "drawable": "flipkart"
-    },
-    {
       "id": "com.alensw.PicFolder/com.alensw.PicFolder.ValidatorActivity",
       "existing_drawable": "quickpic",
       "name": "Gallery",
@@ -56,17 +35,6 @@
         "com.alensw.PicFolder/com.alensw.PicFolder.MainActivity",
         "com.alensw.PicFolder/com.alensw.PicFolder.ValidatorActivity"
       ]
-    },
-    {
-      "id": "com.jpl.jiomart/com.jpl.jiomart.MainActivityDefault",
-      "existing_drawable": "jiomart",
-      "name": "JioMart",
-      "components": [
-        "com.jpl.jiomart/com.jcpjiomart.MainActivityAlias1",
-        "com.jpl.jiomart/com.jpl.jiomart.MainActivityDefault"
-      ],
-      "installs": "100,000,000+",
-      "drawable": "jiomart"
     },
     {
       "id": "com.pashapuma.pix.material.you.iconpack/com.pashapuma.pix.material.you.iconpack.MiniFolderLauncherIcon",
@@ -102,13 +70,6 @@
       "name": "C\u00e1mara"
     },
     {
-      "id": "com.ebay.mobile/com.ebay.mobile.home.impl.main.MainActivity",
-      "existing_drawable": "ebay",
-      "name": "eBay",
-      "installs": "100,000,000+",
-      "drawable": "ebay"
-    },
-    {
       "id": "com.mauriciotogneri.fileexplorer/com.mauriciotogneri.fileexplorer.activities.MainActivity",
       "existing_drawable": "generic_files",
       "name": "File Explorer",
@@ -121,13 +82,6 @@
       "name": "Files: Shortcut",
       "installs": "100,000+",
       "drawable": "files_shortcut"
-    },
-    {
-      "id": "com.heytap.themestore/com.nearme.themespace.activities.ThemeActivity",
-      "existing_drawable": "theme_store",
-      "name": "HeyTap Theme",
-      "installs": "1,000,000,000+",
-      "drawable": "heytap_theme"
     },
     {
       "id": "com.kyotoplayer/com.kyotoplayer.ui.screens.MainActivity",
@@ -167,11 +121,6 @@
       "name": "Recorder"
     },
     {
-      "id": "com.dot.gallery/com.dot.gallery.Launcher_ReFra",
-      "existing_drawable": "refra",
-      "name": "ReFra"
-    },
-    {
       "id": "com.wstxda.viper4android/com.wstxda.viper4android.MainActivity",
       "existing_drawable": "viper4android",
       "name": "ViPER4Android FX"
@@ -180,13 +129,6 @@
       "id": "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_2",
       "existing_drawable": "morphe",
       "name": "YT Music Morphe"
-    },
-    {
-      "id": "net.zedge.android/net.zedge.android.MainOctoberFest",
-      "existing_drawable": "zedge",
-      "name": "Zedge",
-      "installs": "500,000,000+",
-      "drawable": "zedge"
     }
   ]
 }

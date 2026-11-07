@@ -2,323 +2,309 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 4,
-  "total_batches": 17,
+  "total_batches": 9,
   "links": [
     {
-      "id": "cn.canva.editor/com.canva.app.editor.splash.DataConsentSplashActivity",
-      "existing_drawable": "canva",
-      "name": "Canva"
+      "id": "com.exteraless.app/org.telegram.messenger.TelegramIcon",
+      "existing_drawable": "telegram",
+      "name": "exteraless"
     },
     {
-      "id": "com.canva.editor.samsung/com.canva.app.editor.splash.SplashActivity",
-      "existing_drawable": "canva",
-      "name": "Canva"
-    },
-    {
-      "id": "com.canva.editor/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "canva",
-      "name": "Canva",
-      "installs": "500,000,000+",
-      "drawable": "canva"
-    },
-    {
-      "id": "com.ovz.carscanner.rustore/crc646a6dd679b318c207.MainActivity",
-      "existing_drawable": "generic_engine",
-      "name": "Car Scanner"
-    },
-    {
-      "id": "com.google.android.ims/com.google.android.ims.ui.WifiCallingSettingsActivity",
-      "existing_drawable": "carrier_services",
-      "name": "Carrier Services",
-      "installs": "5,000,000,000+",
-      "drawable": "carrier_services"
-    },
-    {
-      "id": "maps.jaoloonda.android.aaad_a39e4f/com.thekirankumar.youtubeauto2.activity.MainPhoneActivity",
-      "existing_drawable": "youtube",
-      "name": "CarStream"
-    },
-    {
-      "id": "com.gamma.checkers/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "generic_checkers",
-      "name": "Checkers",
-      "installs": "10,000,000+",
-      "drawable": "checkers"
-    },
-    {
-      "id": "com.birds.chess/com.dynamo.android.DefoldActivity",
-      "existing_drawable": "generic_chess",
-      "name": "Chess",
-      "installs": "1,000,000+",
-      "drawable": "chess"
-    },
-    {
-      "id": "com.llx.chess/com.llx.chess.AndroidLauncher",
-      "existing_drawable": "generic_chess",
-      "name": "Chess",
-      "installs": "100,000,000+",
-      "drawable": "chess"
-    },
-    {
-      "id": "com.sgebrelibanos.aderaser/com.sgebrelibanos.aderaser.MainActivity",
-      "existing_drawable": "just_player",
-      "name": "CleanTube",
-      "installs": "1,000,000+",
-      "drawable": "cleantube"
-    },
-    {
-      "id": "com.bluelight.computer.winlauncher.prolauncher/com.bluelight.computer.winlauncher.prolauncher.googleclock.main.DeskClock",
-      "existing_drawable": "generic_clock",
-      "name": "Clock",
-      "installs": "1,000,000+",
-      "drawable": "clock"
-    },
-    {
-      "id": "com.pengyou.cloneapp/com.pengyou.cloneapp.hide.Splash",
-      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "Clone App Calculator Icon",
-      "installs": "10,000,000+",
-      "drawable": "clone_app_calculator_icon"
-    },
-    {
-      "id": "com.collabora.libreoffice.snapshot/org.libreoffice.androidapp.ui.LibreOfficeUIActivity",
-      "existing_drawable": "collabora_office",
-      "name": "Collabora Office"
-    },
-    {
-      "id": "com.apps.offbeat.colorpalette/com.apps.offbeat.colorpalette.MainActivity",
-      "existing_drawable": "substratum_lite",
-      "name": "Color Palette",
-      "installs": "100,000+",
-      "drawable": "color_palette"
-    },
-    {
-      "id": "com.blogspot.yashas003.colorpalette/com.blogspot.yashas003.colorpalette.activities.SplashScreen",
-      "existing_drawable": "substratum_lite",
-      "name": "Color Palette",
-      "installs": "100,000+",
-      "drawable": "color_palette"
-    },
-    {
-      "id": "app.comaps.huawei/app.organicmaps.DownloadResourcesActivity",
-      "existing_drawable": "comaps",
-      "name": "CoMaps"
-    },
-    {
-      "id": "com.bnyro.contacts/com.bnyro.contacts.ui.activities.MainActivity",
-      "existing_drawable": "generic_contacts",
-      "name": "Connect You"
-    },
-    {
-      "id": "icontacts.ios.dialer.icall/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
-      "existing_drawable": "generic_dialer",
-      "name": "Contacts & Phone Call",
-      "installs": "1,000,000+",
-      "drawable": "contacts_phone_call"
-    },
-    {
-      "id": "cool.s20.camera/com.camera.function.main.privacy.CoolCameraPrivacyActivity",
-      "existing_drawable": "nothing_camera",
-      "name": "Cool S20 Camera",
-      "installs": "1,000,000+",
-      "drawable": "cool_s20_camera"
-    },
-    {
-      "id": "com.dvdb.bergnotes/com.dvdb.dnotes.MainActivity",
-      "existing_drawable": "another_notes",
-      "name": "D Notes",
-      "installs": "500,000+",
-      "drawable": "d_notes"
-    },
-    {
-      "id": "com.dtasks.app/com.dtasks.app.MainActivity",
-      "existing_drawable": "tasks",
-      "name": "D/Tasks"
-    },
-    {
-      "id": "com.damonplay.damonps2.free/com.damonplay.damonps2.SplashActivity",
-      "existing_drawable": "ppsspp",
-      "name": "DamonPS2",
-      "installs": "10,000,000+",
-      "drawable": "damonps2"
-    },
-    {
-      "id": "com.dariaos.recorder/com.dariaos.recorder.ui.MainActivity",
-      "existing_drawable": "generic_microphone",
-      "name": "DariaOS Recorder"
-    },
-    {
-      "id": "com.darkevo.iconpack/com.darkevo.iconpack.activities.MainActivity",
-      "existing_drawable": "generic_shell",
-      "name": "Dark Evo",
-      "installs": "1,000+",
-      "drawable": "dark_evo"
-    },
-    {
-      "id": "com.shisui.debloater/com.shisui.debloater.MainActivity",
-      "existing_drawable": "generic_shell",
-      "name": "Debloat-X Universal"
-    },
-    {
-      "id": "com.deepl.mobiletranslator/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "deepl",
-      "name": "DeepL",
-      "installs": "10,000,000+",
-      "drawable": "deepl"
-    },
-    {
-      "id": "com.example.deeplviewer/com.example.deeplviewer.activity.MainActivity",
-      "existing_drawable": "deepl",
-      "name": "DeepL"
-    },
-    {
-      "id": "com.dmholdings.denonremoteapp/com.dmholdings.remoteapp.Startup",
-      "existing_drawable": "just_player",
-      "name": "Denon Remote"
-    },
-    {
-      "id": "com.opensource.i2pradio/com.opensource.i2pradio.MainActivity",
-      "existing_drawable": "generic_fm_radio",
-      "name": "deutsia radio"
-    },
-    {
-      "id": "io.illescasDaniel.devSnippets/io.illescasDaniel.devSnippets.MainActivity",
-      "existing_drawable": "generic_braces",
-      "name": "DevSnippets",
+      "id": "com.fairphone.android.fairbudsapp/com.fairphone.fairsound.ui.activity.MainActivity",
+      "existing_drawable": "generic_voice_recorder_waves",
+      "name": "Fairbuds",
       "installs": "10,000+",
-      "drawable": "devsnippets"
+      "drawable": "fairbuds"
     },
     {
-      "id": "com.dhl.frt.mittdhl/com.dhl.frt.mittdhl.MainActivity",
-      "existing_drawable": "dhl",
-      "name": "DHL",
-      "installs": "100,000+",
-      "drawable": "dhl"
-    },
-    {
-      "id": "com.dhlparcel.consumerapp/com.dhlparcel.consumerapp.MainActivity",
-      "existing_drawable": "dhl",
-      "name": "DHL eCom"
-    },
-    {
-      "id": "com.pixelcrater.Diaro/com.pixelcrater.Diaro.MainActivity",
-      "existing_drawable": "diaro",
-      "name": "Diaro",
-      "installs": "5,000,000+",
-      "drawable": "diaro"
-    },
-    {
-      "id": "com.adeeteya.digital_calculator/com.adeeteya.digital_calculator.MainActivity",
-      "existing_drawable": "zcalc",
-      "name": "Digital Calculator",
-      "installs": "1,000+",
-      "drawable": "digital_calculator"
-    },
-    {
-      "id": "com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.settings.MultiPaneLauncherActivity",
-      "existing_drawable": "digital_wellbeing",
-      "name": "Digital Wellbeing",
-      "installs": "10,000,000,000+",
-      "drawable": "digital_wellbeing"
-    },
-    {
-      "id": "com.alibaba.android.rimet/com.alibaba.android.rimet.biz.SplashActivity",
-      "existing_drawable": "dingtalk",
-      "name": "DingTalk",
-      "installs": "5,000,000+",
-      "drawable": "dingtalk"
-    },
-    {
-      "id": "com.discord.morphe/com.discord.main.MainDefault",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discore/com.discord.main.MainDefault",
-      "existing_drawable": "discord",
-      "name": "Discord"
-    },
-    {
-      "id": "com.discovery.discoveryplus.mobile/com.wbd.fuse.appcore.FuseActivity",
-      "existing_drawable": "discoveryplus",
-      "name": "discovery+",
-      "installs": "10,000,000+",
-      "drawable": "discovery"
-    },
-    {
-      "id": "com.discovery.dplay/com.wbd.fuse.appcore.FuseActivity",
-      "existing_drawable": "discoveryplus",
-      "name": "discovery+",
-      "installs": "10,000,000+",
-      "drawable": "discovery"
-    },
-    {
-      "id": "br.com.doctoralia/com.app.MainActivity",
-      "existing_drawable": "doctoralia",
-      "name": "Doctoralia",
-      "installs": "5,000,000+",
-      "drawable": "doctoralia"
-    },
-    {
-      "id": "co.doctoralia/co.doctoralia.MainActivity",
-      "existing_drawable": "doctoralia",
-      "name": "Doctoralia",
-      "installs": "500,000+",
-      "drawable": "doctoralia"
-    },
-    {
-      "id": "com.eniyihekim/com.eniyihekim.MainActivity",
-      "existing_drawable": "doctoralia",
-      "name": "DoktorTakvimi",
+      "id": "com.blogspot.novalabsandroid.fakecallerid/com.blogspot.novalabsandroid.fakecallerid.ConfigCallActivity",
+      "existing_drawable": "generic_dialer",
+      "name": "Fake Call",
       "installs": "1,000,000+",
-      "drawable": "doktortakvimi"
+      "drawable": "fake_call"
     },
     {
-      "id": "com.dolby.dolby234/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "dolby",
-      "name": "Dolby On",
-      "installs": "10,000,000+",
-      "drawable": "dolby_on"
+      "id": "com.dox.fpoweroff/com.dox.fpoweroff.activity.MainActivity",
+      "existing_drawable": "generic_power",
+      "name": "Fake Power Off",
+      "installs": "10,000+",
+      "drawable": "fake_power_off"
     },
     {
-      "id": "com.dolby.exphub/com.dolby.exphub.namespace.MainActivity",
-      "existing_drawable": "dolby",
-      "name": "Dolby XP",
-      "installs": "500,000+",
-      "drawable": "dolby_xp"
-    },
-    {
-      "id": "com.Dominos/com.Dominos.activity.alias.LauncherRepublicAlias",
-      "existing_drawable": "dominos_pizza",
-      "name": "Domino's Pizza",
-      "installs": "100,000,000+",
-      "drawable": "dominos_pizza"
-    },
-    {
-      "id": "com.daufood.ppt/com.iproject.dominos.ui.splash.SplashActivity",
-      "existing_drawable": "dominos_pizza",
-      "name": "Domino's Pizza",
-      "installs": "100,000+",
-      "drawable": "dominos_pizza"
-    },
-    {
-      "id": "com.dominos.latin.america/com.dominos.latin.america.MainActivity",
-      "existing_drawable": "dominos_pizza",
-      "name": "Domino's Pizza",
+      "id": "com.file.manager.file.organizer.file.explorer.manage.files/com.file.manager.file.organizer.file.explorer.manage.files.ui.activity.splash.SplashActivity",
+      "existing_drawable": "generic_files",
+      "name": "File Manager",
       "installs": "1,000,000+",
-      "drawable": "dominos_pizza"
+      "drawable": "file_manager"
     },
     {
-      "id": "com.firstyogi.dothing/com.firstyogi.dothing.SigninActivity",
+      "id": "net.east_hino.standard_explorer/net.east_hino.standard_explorer.ui.ActivityMain",
+      "existing_drawable": "generic_files",
+      "name": "File Manager Shortcut",
+      "installs": "10,000+",
+      "drawable": "file_manager_shortcut"
+    },
+    {
+      "id": "nl.moeilijkedingen.jellyfinaudioplayer/nl.moeilijkedingen.jellyfinaudioplayer.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Fintunes",
+      "installs": "10,000+",
+      "drawable": "fintunes"
+    },
+    {
+      "id": "appinventor.ai_logiscool869.FlappyCopter/appinventor.ai_logiscool869.FlappyCopter.Screen1",
+      "existing_drawable": "flappy_bird",
+      "name": "Flappy Copter"
+    },
+    {
+      "id": "flashgram.org.web/org.telegram.messenger.DefaultIcon",
+      "existing_drawable": "telegram",
+      "name": "Flashgram"
+    },
+    {
+      "id": "com.eurekateam.fmradio/com.eurekateam.fmradio.MainActivity",
+      "existing_drawable": "generic_fm_radio",
+      "name": "FM Radio"
+    },
+    {
+      "id": "com.liveradio.fmradio.radiotuner.radiostation.amradio/com.liveradio.fmradio.radiotuner.radiostation.amradio.ui.activities.SplashActivity",
+      "existing_drawable": "generic_fm_radio",
+      "name": "FM Radio",
+      "installs": "5,000,000+",
+      "drawable": "fm_radio"
+    },
+    {
+      "id": "me.jajae.fmradio/me.jajae.fmradio.MainActivity",
+      "existing_drawable": "generic_fm_radio",
+      "name": "FM Radio",
+      "installs": "10,000+",
+      "drawable": "fm_radio"
+    },
+    {
+      "id": "com.ngc.fora/com.ngc.fora.ForaDictionary",
+      "existing_drawable": "generic_search",
+      "name": "Fora Dictionary",
+      "installs": "100,000+",
+      "drawable": "fora_dictionary"
+    },
+    {
+      "id": "com.freemusic.offline.bus/com.project.gugu.music.ui.activity.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Free Music"
+    },
+    {
+      "id": "com.yy.musicfm.global/com.project.gugu.music.ui.activity.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Free Music"
+    },
+    {
+      "id": "com.miui.gallery/com.miui.gallery.MainActivity",
+      "existing_drawable": "generic_gallery",
+      "name": "Gallery"
+    },
+    {
+      "id": "com.tobykurien.google_news/com.tobykurien.google_news.GoogleNewsActivity",
+      "existing_drawable": "generic_earth",
+      "name": "GApps Browser"
+    },
+    {
+      "id": "dev.jason.com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.launcher.LauncherActivity",
+      "existing_drawable": "gboard",
+      "name": "Gboard"
+    },
+    {
+      "id": "com.gbwhatsapp/com.gbwhatsapp.Icon0",
+      "existing_drawable": "whatsapp",
+      "name": "GBWhatsApp"
+    },
+    {
+      "id": "com.appgcam.gcamera/com.appgcam.gcamera.ui.SplashActivity",
+      "existing_drawable": "generic_camera",
+      "name": "GCam",
+      "installs": "1,000,000+",
+      "drawable": "gcam"
+    },
+    {
+      "id": "com.ghosten.player/com.ghosten.player.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "Ghosten Player"
+    },
+    {
+      "id": "io.mo.glassmic/io.mo.glassmic.MainActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "GlassMic"
+    },
+    {
+      "id": "com.google.android.apps.dynamite/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "google_chat",
+      "name": "Google Chat",
+      "installs": "50,000,000+",
+      "drawable": "google_chat"
+    },
+    {
+      "id": "com.google.android.talk/com.google.android.talk.SigningInActivity",
+      "existing_drawable": "google_chat",
+      "name": "Google Chat"
+    },
+    {
+      "id": "it.infocert.mobile.dike/it.infocert.mobile.dike.DikeActivity",
       "existing_drawable": "tasky",
-      "name": "Dothing",
-      "installs": "5,000+",
-      "drawable": "dothing"
+      "name": "GoSign",
+      "installs": "500,000+",
+      "drawable": "gosign"
     },
     {
-      "id": "com.android.providers.downloads.ui/.DownloadList",
-      "existing_drawable": "generic_download_arrow",
-      "name": "Downloads"
+      "id": "app.pg.grandpiano/app.pg.grandpiano.ActivityMain",
+      "existing_drawable": "generic_piano",
+      "name": "Grand Piano",
+      "installs": "5,000,000+",
+      "drawable": "grand_piano"
+    },
+    {
+      "id": "com.grindrapp.android/com.grindrapp.android.HomeActivityPhoneBlack",
+      "existing_drawable": "generic_dialer",
+      "name": "Grindr Phone",
+      "installs": "50,000,000+",
+      "drawable": "grindr_phone"
+    },
+    {
+      "id": "tad.hideapps.hiddenspace.apphider.webapps/tad.hideapps.hiddenspace.apphider.webapps.Calculator",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "Hide Apps Calculator Icon",
+      "installs": "10,000,000+",
+      "drawable": "hide_apps_calculator_icon"
+    },
+    {
+      "id": "com.blueskyapps.englishbible/com.blueskyapps.mainbible.SplashActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Holy Bible"
+    },
+    {
+      "id": "com.epsoftgroup.lasantabiblia/com.epsoftgroup.lasantabiblia.activities.SplashSetupActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Holy Bible",
+      "installs": "1,000,000+",
+      "drawable": "holy_bible"
+    },
+    {
+      "id": "com.huawei.music/com.android.mediacenter.PageActivity",
+      "existing_drawable": "huawei_music",
+      "name": "Huawei Music"
+    },
+    {
+      "id": "com.huawei.music.local/com.huawei.music.local.main.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Huawei Music Player"
+    },
+    {
+      "id": "com.huawei.android.hwouc/com.huawei.android.hwouc.ui.activities.MainEntranceActivity",
+      "existing_drawable": "huawei_software_update",
+      "name": "Huawei Software Update"
+    },
+    {
+      "id": "imagetopdf.pdfmaker.pdfconverter.pdfreader/imagetopdf.pdfmaker.pdfconverter.pdfreader.ui.I2SplashActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "Image to PDF",
+      "installs": "10,000,000+",
+      "drawable": "image_to_pdf"
+    },
+    {
+      "id": "com.readpdf.pdfreader.pdfviewer/com.readpdf.pdfreader.pdfviewer.view.activity.splash.FoSplashActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "Image to PDF Converter",
+      "installs": "10,000,000+",
+      "drawable": "image_to_pdf_converter"
+    },
+    {
+      "id": "ru.tech.imageresizershrinker/ru.tech.imageresizershrinker.app.presentation.AppActivity",
+      "existing_drawable": "image_toolbox",
+      "name": "Image Toolbox",
+      "installs": "500,000+",
+      "drawable": "image_toolbox"
+    },
+    {
+      "id": "io.deveem.byemydpi2/app.vpn.ui.MainActivity",
+      "existing_drawable": "secure_vpn",
+      "name": "Imba VPN",
+      "installs": "1,000,000+",
+      "drawable": "imba_vpn"
+    },
+    {
+      "id": "com.grykuby.minesweeper/com.google.firebase.MessagingUnityPlayerActivity",
+      "existing_drawable": "generic_minesweeper",
+      "name": "Infinite Minesweeper",
+      "installs": "1,000,000+",
+      "drawable": "infinite_minesweeper"
+    },
+    {
+      "id": "com.zionhuang.music.debug/com.zionhuang.music.MainActivity",
+      "existing_drawable": "innertune",
+      "name": "InnerTune Debug"
+    },
+    {
+      "id": "com.oasisfeng.island/com.oasisfeng.island.settings.SettingsActivity",
+      "existing_drawable": "island",
+      "name": "Insular",
+      "installs": "10,000,000+",
+      "drawable": "insular"
+    },
+    {
+      "id": "com.heytap.browser/com.heytap.browser.action.games_folder.BrowserGamesFolderActivity",
+      "existing_drawable": "generic_browser",
+      "name": "Internet Browser",
+      "installs": "1,000,000,000+",
+      "drawable": "internet_browser"
+    },
+    {
+      "id": "iTunes.Sync.Android/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "iSyncr",
+      "installs": "5,000,000+",
+      "drawable": "isyncr"
+    },
+    {
+      "id": "com.inphase.itv/com.inphase.itv.StartActivity",
+      "existing_drawable": "ladb",
+      "name": "i\u89c6 ~~ iShi"
+    },
+    {
+      "id": "com.olx.ssa.ug/ng.jiji.app.ui.splash.SplashActivity",
+      "existing_drawable": "olx",
+      "name": "Jiji",
+      "installs": "1,000,000+",
+      "drawable": "jiji"
+    },
+    {
+      "id": "com.aconvert.jpg2pdf/com.aconvert.jpg2pdf.MainActivity",
+      "existing_drawable": "generic_pdf_square",
+      "name": "JPG to PDF Converter",
+      "installs": "10,000,000+",
+      "drawable": "jpg_to_pdf_converter"
+    },
+    {
+      "id": "com.facebook.katanb/com.facebook.katanb.LoginActivity",
+      "existing_drawable": "facebook",
+      "name": "JTFacebook"
+    },
+    {
+      "id": "com.kaorin.theme.iconpack/com.kaorin.theme.iconpack.activities.MainActivity",
+      "existing_drawable": "kaorin_icon_pack",
+      "name": "Kaorin Icons"
+    },
+    {
+      "id": "at.gv.bmi.KATWARN/at.gv.bmi.KATWARN.MainActivity",
+      "existing_drawable": "katwarn",
+      "name": "KATWARN"
+    },
+    {
+      "id": "com.ivanovsky.passnotes/com.ivanovsky.passnotes.presentation.StartActivity",
+      "existing_drawable": "one_tap_lock_screen",
+      "name": "KeePassVault"
+    },
+    {
+      "id": "com.kowx712.supermanager/me.weishu.kernelsu.MainActivityOfficial",
+      "existing_drawable": "kernelsu",
+      "name": "KernelSU"
     }
   ]
 }
