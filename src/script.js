@@ -781,17 +781,10 @@ const Templates = {
       })
       .join('');
 
-    const extraCount = app.components ? app.components.length - 1 : 0;
-    const compsInfo = extraCount > 0 ? ` (${app.components.length} components)` : '';
-    const installsInfo = app.installs && app.installs !== '—' ? `\nInstalls: ${app.installs}` : '';
-    const gridTitle = extraCount > 0
-      ? `${label}${compsInfo}${installsInfo}\nFirst time: ${Utils.formatDate(app.firstAppearance)}\n\nComponents:\n${app.components.join('\n')}`
-      : `${label}${installsInfo}\nFirst time: ${Utils.formatDate(app.firstAppearance)}`;
-
     return `
       <div class="grid-card ${
       isSelected ? 'selected' : ''
-    }" data-id="${id}" title="${gridTitle}"
+    }" data-id="${id}" title="${label}\nRequests: ${app.requestCount ?? 0}\nImpact: ${app.priority || '—'}\nPoints: ${App.state.prioritiesData?.[id]?.sum ?? '—'}\nInstalls: ${app.installs ? new Intl.NumberFormat('en', { notation: 'compact' }).format(parseInt(app.installs.replace(/[,+]/g, ''))) + '+' : '—'}\nFirst time: ${Utils.formatDate(app.firstAppearance)}"
         tabindex="0" role="checkbox" aria-checked="${isSelected}">
         ${contentHtml}
         <div class="grid-overlay-tags">${tagHtml}</div>
