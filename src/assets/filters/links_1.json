@@ -625,6 +625,17 @@
       "drawable": "hotukdeals"
     },
     {
+      "id": "com.imo.android.imoimhd/com.imo.android.imoim.activities.Home",
+      "existing_drawable": "imo",
+      "name": "imo HD",
+      "components": [
+        "com.imo.android.imoimhd/com.imo.android.imoim.activities.Home",
+        "com.imo.android.imoimhd/com.imo.android.imoim.home.Home"
+      ],
+      "installs": "100,000,000+",
+      "drawable": "imo_hd"
+    },
+    {
       "id": "cocobo1.pupu.app/com.discord.main.MainDefault",
       "existing_drawable": "discord",
       "name": "Kettu",
@@ -745,17 +756,6 @@
       ],
       "installs": "10,000,000+",
       "drawable": "phone"
-    },
-    {
-      "id": "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2",
-      "existing_drawable": "just_player",
-      "name": "PlayBack",
-      "components": [
-        "com.androxus.playback/com.androxus.playback.presentation.SplashActivity",
-        "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2"
-      ],
-      "installs": "1,000,000+",
-      "drawable": "playback"
     }
   ]
 }

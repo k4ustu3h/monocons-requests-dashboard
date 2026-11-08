@@ -5,6 +5,13 @@
   "total_batches": 9,
   "links": [
     {
+      "id": "com.azwstudios.theholybible.frls/com.azwstudios.theholybible.MainActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Bible Louis Segond",
+      "installs": "500,000+",
+      "drawable": "bible_louis_segond"
+    },
+    {
       "id": "com.mathieu.budmaldash00/com.mathieu.budmaldash00.GeometryJump",
       "existing_drawable": "geometry_dash",
       "name": "BurmalDash"
@@ -286,13 +293,6 @@
       "name": "Easy Piano",
       "installs": "500,000+",
       "drawable": "easy_piano"
-    },
-    {
-      "id": "com.hwqgrhhjfd.idlefastfood/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "eatventure",
-      "name": "Eatventure",
-      "installs": "50,000,000+",
-      "drawable": "eatventure"
     },
     {
       "id": "com.miHoYo.Yuanshen/org.yuzu.yuzu_emu.ui.main.MainActivity",

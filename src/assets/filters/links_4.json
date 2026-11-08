@@ -52,11 +52,6 @@
       "drawable": "fintunes"
     },
     {
-      "id": "appinventor.ai_logiscool869.FlappyCopter/appinventor.ai_logiscool869.FlappyCopter.Screen1",
-      "existing_drawable": "flappy_bird",
-      "name": "Flappy Copter"
-    },
-    {
       "id": "flashgram.org.web/org.telegram.messenger.DefaultIcon",
       "existing_drawable": "telegram",
       "name": "Flashgram"
@@ -113,11 +108,6 @@
       "name": "Gboard"
     },
     {
-      "id": "com.gbwhatsapp/com.gbwhatsapp.Icon0",
-      "existing_drawable": "whatsapp",
-      "name": "GBWhatsApp"
-    },
-    {
       "id": "com.appgcam.gcamera/com.appgcam.gcamera.ui.SplashActivity",
       "existing_drawable": "generic_camera",
       "name": "GCam",
@@ -133,18 +123,6 @@
       "id": "io.mo.glassmic/io.mo.glassmic.MainActivity",
       "existing_drawable": "generic_microphone",
       "name": "GlassMic"
-    },
-    {
-      "id": "com.google.android.apps.dynamite/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "google_chat",
-      "name": "Google Chat",
-      "installs": "50,000,000+",
-      "drawable": "google_chat"
-    },
-    {
-      "id": "com.google.android.talk/com.google.android.talk.SigningInActivity",
-      "existing_drawable": "google_chat",
-      "name": "Google Chat"
     },
     {
       "id": "it.infocert.mobile.dike/it.infocert.mobile.dike.DikeActivity",
@@ -187,11 +165,6 @@
       "drawable": "holy_bible"
     },
     {
-      "id": "com.huawei.music/com.android.mediacenter.PageActivity",
-      "existing_drawable": "huawei_music",
-      "name": "Huawei Music"
-    },
-    {
       "id": "com.huawei.music.local/com.huawei.music.local.main.MainActivity",
       "existing_drawable": "apple_music",
       "name": "Huawei Music Player"
@@ -221,13 +194,6 @@
       "name": "Image Toolbox",
       "installs": "500,000+",
       "drawable": "image_toolbox"
-    },
-    {
-      "id": "io.deveem.byemydpi2/app.vpn.ui.MainActivity",
-      "existing_drawable": "secure_vpn",
-      "name": "Imba VPN",
-      "installs": "1,000,000+",
-      "drawable": "imba_vpn"
     },
     {
       "id": "com.grykuby.minesweeper/com.google.firebase.MessagingUnityPlayerActivity",
@@ -282,11 +248,6 @@
       "drawable": "jpg_to_pdf_converter"
     },
     {
-      "id": "com.facebook.katanb/com.facebook.katanb.LoginActivity",
-      "existing_drawable": "facebook",
-      "name": "JTFacebook"
-    },
-    {
       "id": "com.kaorin.theme.iconpack/com.kaorin.theme.iconpack.activities.MainActivity",
       "existing_drawable": "kaorin_icon_pack",
       "name": "Kaorin Icons"
@@ -305,6 +266,55 @@
       "id": "com.kowx712.supermanager/me.weishu.kernelsu.MainActivityOfficial",
       "existing_drawable": "kernelsu",
       "name": "KernelSU"
+    },
+    {
+      "id": "com.easybrain.killer.sudoku.free/com.easybrain.killer.sudoku.free.SplashActivity",
+      "existing_drawable": "generic_sudoku",
+      "name": "Killer Sudoku",
+      "installs": "10,000,000+",
+      "drawable": "killer_sudoku"
+    },
+    {
+      "id": "bible.kingjamesbiblelite/com.bible.kingjamesbiblelite.ac.base.SplashScreen",
+      "existing_drawable": "generic_bible",
+      "name": "King James Bible",
+      "installs": "10,000,000+",
+      "drawable": "king_james_bible"
+    },
+    {
+      "id": "com.xxi.film.kitanonton/com.xxi.film.kitanonton.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "KITA NONTON",
+      "installs": "100,000+",
+      "drawable": "kita_nonton"
+    },
+    {
+      "id": "wiktoria.goroch.bible_kjva.AOUSFCKLLRSGYXYC/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "KJVA Bible",
+      "installs": "500,000+",
+      "drawable": "kjva_bible"
+    },
+    {
+      "id": "la.bible.francaise.gratuit/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "La Bible",
+      "installs": "100,000+",
+      "drawable": "la_bible"
+    },
+    {
+      "id": "wiktoria.goroch.biblie_darby_french.AOURPEFFEFFAWZYR/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "La Bible",
+      "installs": "100,000+",
+      "drawable": "la_bible"
+    },
+    {
+      "id": "com.creciendodev.com.saintebible_bds/com.creciendodev.com.saintebible_bds.SplashScreen",
+      "existing_drawable": "generic_bible",
+      "name": "La Bible Du Semeur",
+      "installs": "500,000+",
+      "drawable": "la_bible_du_semeur"
     }
   ]
 }
