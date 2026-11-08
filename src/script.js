@@ -5021,8 +5021,13 @@ layoutMasonry() {
       const xmlText = e.target?.result;
       if (typeof xmlText !== 'string') return;
 
+      // Accept both full XML (with root) and fragment (items only)
+      const trimmed = xmlText.trim().replace(/^<\?xml[^>]*\?>\s*/, '');
+      const hasRoot = /^<appfilter[\s>]/.test(trimmed) || /^<resources[\s>]/.test(trimmed);
+      const wrapped = hasRoot ? trimmed : `<appfilter>${trimmed}</appfilter>`;
+
       const parser = new DOMParser();
-      const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+      const xmlDoc = parser.parseFromString(wrapped, 'text/xml');
       const items = xmlDoc.querySelectorAll('item');
 
       let added = 0;
@@ -5060,7 +5065,7 @@ layoutMasonry() {
     };
     reader.readAsText(file);
   },
-
+  
   updateIssues() {
     const list = document.getElementById('contributionIssuesList');
     if (!list) return null;
