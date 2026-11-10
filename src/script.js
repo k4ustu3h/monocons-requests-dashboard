@@ -923,9 +923,9 @@ const Templates = {
       name === '(Unknown App)';
 
     const rawSvg = Utils.sanitizeDrawableName(name);
-    const defaultSvg = (rawSvg === 'icon' || rawSvg === 'unknown')
-      ? ''
-      : rawSvg;
+    // In contribution plan: only latin names are valid; icon/unknown fallbacks become empty
+    const hasLatin = /[a-z]/.test(rawSvg) && rawSvg !== 'icon' && rawSvg !== 'unknown';
+    const defaultSvg = hasLatin ? rawSvg : '';
     const drawable = overrides.drawable !== undefined
       ? overrides.drawable
       : defaultSvg;
@@ -1815,7 +1815,6 @@ const Actions = {
     let xmlAppFilter = '';
     let txtCommands = '';
 
-    const usedDrawables = new Set();
     /** @type {Promise<void>[]} */
     const fetchPromises = [];
 
@@ -1854,13 +1853,7 @@ const Actions = {
           ? 'link'
           : 'new';
 
-      let uniqueDrawable = drawable;
-      let c = 2;
-      while (usedDrawables.has(uniqueDrawable)) {
-        uniqueDrawable = `${drawable}_${c}`;
-        c++;
-      }
-      usedDrawables.add(uniqueDrawable);
+      const uniqueDrawable = drawable;
 
       const comps = (app.components && app.components.length > 0) ? app.components : [app.componentName];
       const cmdType = 'link';
@@ -3674,7 +3667,7 @@ const UI = {
   },
 
   initObserver() {
-    this.observer = new IntersectionObserver((entries) => {
+    this.observer = new IntersectionObserver(async (entries) => {
         if (entries[0].isIntersecting) {
             if (App.state.renderedCount < App.state.currentData.length) {
                 const more = this.loadMore();
