@@ -5,17 +5,6 @@
   "total_batches": 9,
   "links": [
     {
-      "id": "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2",
-      "existing_drawable": "just_player",
-      "name": "PlayBack",
-      "components": [
-        "com.androxus.playback/com.androxus.playback.presentation.SplashActivity",
-        "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2"
-      ],
-      "installs": "1,000,000+",
-      "drawable": "playback"
-    },
-    {
       "id": "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
       "existing_drawable": "pepper",
       "name": "Preisj\u00e4ger",
@@ -387,6 +376,13 @@
       "name": "Bible KJV",
       "installs": "10,000,000+",
       "drawable": "bible_kjv"
+    },
+    {
+      "id": "com.azwstudios.theholybible.frls/com.azwstudios.theholybible.MainActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Bible Louis Segond",
+      "installs": "500,000+",
+      "drawable": "bible_louis_segond"
     }
   ]
 }

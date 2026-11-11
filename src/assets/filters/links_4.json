@@ -5,11 +5,6 @@
   "total_batches": 9,
   "links": [
     {
-      "id": "com.exteraless.app/org.telegram.messenger.TelegramIcon",
-      "existing_drawable": "telegram",
-      "name": "exteraless"
-    },
-    {
       "id": "com.fairphone.android.fairbudsapp/com.fairphone.fairsound.ui.activity.MainActivity",
       "existing_drawable": "generic_voice_recorder_waves",
       "name": "Fairbuds",
@@ -315,6 +310,13 @@
       "name": "La Bible Du Semeur",
       "installs": "500,000+",
       "drawable": "la_bible_du_semeur"
+    },
+    {
+      "id": "biblia.habla.hoy.AOVGMDRFUVODNBOFPU/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "La Biblia",
+      "installs": "1,000,000+",
+      "drawable": "la_biblia"
     }
   ]
 }

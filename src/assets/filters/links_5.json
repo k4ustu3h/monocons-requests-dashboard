@@ -5,13 +5,6 @@
   "total_batches": 9,
   "links": [
     {
-      "id": "biblia.habla.hoy.AOVGMDRFUVODNBOFPU/king.james.bible.android.activity.LaunchActivity",
-      "existing_drawable": "generic_bible",
-      "name": "La Biblia",
-      "installs": "1,000,000+",
-      "drawable": "la_biblia"
-    },
-    {
       "id": "la.biblia.catolica.latinoamericana/king.james.bible.android.activity.LaunchActivity",
       "existing_drawable": "generic_bible",
       "name": "La Biblia",
@@ -292,6 +285,13 @@
       "existing_drawable": "apple_music",
       "name": "Music Player",
       "installs": "5,000,000+",
+      "drawable": "music_player"
+    },
+    {
+      "id": "media.audioplayer.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Player",
+      "installs": "100,000,000+",
       "drawable": "music_player"
     }
   ]

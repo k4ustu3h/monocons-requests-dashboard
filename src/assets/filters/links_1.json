@@ -92,47 +92,6 @@
       ]
     },
     {
-      "id": "uz.unnarsx.cherrygram/.CG_Icon_Cherry",
-      "existing_drawable": "telegram",
-      "name": "Cherrygram",
-      "components": [
-        "uz.unnarsx.cherrygram/.CG_Icon_Cherry",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.AquaIcon",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Aqua",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Cherry_NY",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Dark",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Dark_Bra",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Dark_NY",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Green",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Laguna",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Lavanda",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Monet_Pixel",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Monet_Samsung",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Night",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Sunrise",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Sunset",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Turbo",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_Violet_Sunset_Bra",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_White_Cherry",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.CG_Icon_White_Cherry_Bra",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.DarkIcon",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.GreenIcon",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.LagunaIcon",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.LavandaIcon",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.Monet_Icon_Pixel",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.Monet_Icon_Samsung",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.NoxIcon",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.Old_Icon",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.PremiumIcon",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.SunriseIcon",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.SunsetIcon",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.TurboIcon",
-        "uz.unnarsx.cherrygram/uz.unnarsx.cherrygram.White_Icon"
-      ],
-      "installs": "500,000+",
-      "drawable": "cherrygram"
-    },
-    {
       "id": "com.aliucord/com.discord.MainActivity",
       "existing_drawable": "discord",
       "name": "Aliucord",
@@ -756,6 +715,17 @@
       ],
       "installs": "10,000,000+",
       "drawable": "phone"
+    },
+    {
+      "id": "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2",
+      "existing_drawable": "just_player",
+      "name": "PlayBack",
+      "components": [
+        "com.androxus.playback/com.androxus.playback.presentation.SplashActivity",
+        "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2"
+      ],
+      "installs": "1,000,000+",
+      "drawable": "playback"
     }
   ]
 }

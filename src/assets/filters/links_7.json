@@ -5,13 +5,6 @@
   "total_batches": 9,
   "links": [
     {
-      "id": "com.ihenvyr.platinum_karaoke_songbook_app/com.ihenvyr.platinum_karaoke_songbook_app.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Platinum Karaoke Songbook",
-      "installs": "1,000,000+",
-      "drawable": "platinum_karaoke_songbook"
-    },
-    {
       "id": "com.polette.shop.app/com.polette.shop.app.MainActivity",
       "existing_drawable": "lenskart",
       "name": "polette"
@@ -319,6 +312,11 @@
       "name": "TapTap Lite",
       "installs": "10,000,000+",
       "drawable": "taptap_lite"
+    },
+    {
+      "id": "org.mytelegram.messenger/org.telegram.messenger.DefaultIcon",
+      "existing_drawable": "telegram",
+      "name": "Telegram"
     }
   ]
 }
