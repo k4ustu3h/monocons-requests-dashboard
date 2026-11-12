@@ -5,11 +5,6 @@
   "total_batches": 9,
   "links": [
     {
-      "id": "com.polette.shop.app/com.polette.shop.app.MainActivity",
-      "existing_drawable": "lenskart",
-      "name": "polette"
-    },
-    {
       "id": "com.maxmpz.audioplayer.unlock/com.maxmpz.audioplayer.unlock.RedirectorActivity",
       "existing_drawable": "poweramp_full_unlocker",
       "name": "Poweramp Full Unlocker",
@@ -274,6 +269,13 @@
       "name": "Superb Launcher Icons",
       "installs": "100,000+",
       "drawable": "superb_launcher_icons"
+    },
+    {
+      "id": "se.bankgirot.swish/se.bankgirot.swish.ui.SplashActivity",
+      "existing_drawable": "swish",
+      "name": "Swish",
+      "installs": "5,000,000+",
+      "drawable": "swish"
     },
     {
       "id": "org.akanework.symphonica/org.akanework.symphonica.MainActivity",

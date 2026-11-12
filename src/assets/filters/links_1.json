@@ -414,18 +414,6 @@
       "drawable": "chollometro"
     },
     {
-      "id": "com.motorola.mobiledesktop/com.motorola.readyfor.MainActivityLauncherIconAlias",
-      "existing_drawable": "ready_for",
-      "name": "Moto Smart Connect",
-      "components": [
-        "com.motorola.mobiledesktop/com.motorola.readyfor.MainActivityLauncherIconAlias",
-        "com.motorola.mobiledesktop/com.motorola.readyfor.NearbyDisplaysLauncherIconAlias",
-        "com.motorola.mobiledesktop/com.motorola.readyfor.display.ui.NearbyDisplaysActivity"
-      ],
-      "installs": "100,000,000+",
-      "drawable": "moto_smart_connect"
-    },
-    {
       "id": "com.shaiban.audioplayer.mplayer/com.shaiban.audioplayer.mplayer.app.navigation.NavigatingActivity",
       "existing_drawable": "apple_music",
       "name": "Music Player",
@@ -726,6 +714,17 @@
       ],
       "installs": "1,000,000+",
       "drawable": "playback"
+    },
+    {
+      "id": "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+      "existing_drawable": "pepper",
+      "name": "Preisj\u00e4ger",
+      "components": [
+        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityLightIcon"
+      ],
+      "installs": "100,000+",
+      "drawable": "com_preisjaeger"
     }
   ]
 }

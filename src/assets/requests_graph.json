@@ -728,10 +728,6 @@
   "com.nepse.app.nepsealpha/com.nepse.app.nepsealpha.MainActivity": {
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 4
   },
-  "com.bbk.theme/com.bbk.theme.Theme": {
-    "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 4,
-    "ph.com.globe.gomo/ph.com.globe.gomo.MainActivity": 2
-  },
   "xyz.klinker.messenger/xyz.klinker.messenger.activity.MessengerActivity": {
     "de.danoeh.antennapod/de.danoeh.antennapod.activity.SplashActivity": 4
   },
@@ -1183,14 +1179,6 @@
   "com.naivas.online/com.naivas.online.MainActivity": {
     "cn.wps.moffice_eng/cn.wps.moffice.documentmanager.PreStartActivity": 4,
     "cn.xender/cn.xender.ui.activity.SplashActivity": 4
-  },
-  "com.transsion.phoenix/com.proj.sun.activity.LaunchActivity": {
-    "cn.wps.moffice_eng/cn.wps.moffice.documentmanager.PreStartActivity": 4,
-    "cn.xender/cn.xender.ui.activity.SplashActivity": 4,
-    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
-    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
-    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
-    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
   },
   "com.KatanLabs.tilematchpuzzlemaster/com.unity3d.player.UnityPlayerActivity": {
     "cn.wps.moffice_eng/cn.wps.moffice.documentmanager.PreStartActivity": 4,
@@ -5599,40 +5587,6 @@
     "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
     "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1
   },
-  "com.samsung.android.goodlock/com.samsung.android.goodlock.MainActivity": {
-    "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
-    "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
-    "ca.caa.coremobileapp/ca.ab.ama.mobileflutterpoc.MainActivity": 1,
-    "br.com.vivo/br.com.vivo.MainActivity": 2,
-    "br.org.sestsenat.portaldoclienteapp/io.flutter.embedding.android.FlutterFragmentActivity": 2,
-    "it.mirko.beta/it.mirko.beta.login.LoginActivity": 1,
-    "br.jus.tse.eleitoral.etitulo/br.jus.tse.eleitoral.etitulo.MainActivity": 3,
-    "mx.com.kambary.stickerdownloader/mx.com.kambary.sticker_downloader2.MainActivity": 1,
-    "br.andre.almeida.novodigito/br.andre.almeida.novodigito.NovoDigitoActivity": 1,
-    "br.jus.tse.resultados/br.jus.tse.resultados.MainActivity": 1,
-    "br.com.cittabus/br.com.cittati.cittamobi_flutter.MainActivity": 2,
-    "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity": 3,
-    "br.com.vivo.vivoeasy/br.com.zup.vivoeasy3.presentation.MainActivity": 1,
-    "br.gov.caixa.tem/br.gov.caixa.tem.ui.activities.SplashScreenAnimation": 1,
-    "br.com.gabba.Caixa/br.gov.caixa.internetbankingmobile.ui.start.StartActivity": 1,
-    "br.com.brasilbitcoin/br.com.brasilbitcoin.MainActivity": 1,
-    "br.com.vidaas.sp/com.example.digital_credential.MainActivity": 1,
-    "co.uk.mrwebb.wakeonlan/co.uk.mrwebb.wakeonlan.MainActivity": 1,
-    "de.felixnuesse.disky/de.felixnuesse.disky.MainActivity": 1,
-    "br.gov.dataprev.meucadunico/br.gov.dataprev.meucadunico.MainActivity": 1,
-    "co.localmonero.app/io.flutter.embedding.android.FlutterFragmentActivity": 1,
-    "de.rwth_aachen.phyphox/de.rwth_aachen.phyphox.ExperimentList": 1,
-    "br.com.kurotoshiro.leitor_manga_pro/br.com.kurotoshiro.leitor_manga.FlexMainActivity": 1,
-    "br.gov.sp.cptm.mobile/br.gov.sp.cptm.mobile.Splash": 1,
-    "br.gov.sp.prodesp.pptdigital/br.gov.sp.prodesp.pptdigital.ui.activity.SplashActivity": 1,
-    "br.com.autopass.top/br.com.autopass.top.MainActivity": 1,
-    "br.valete.app/com.ryanheise.audioservice.AudioServiceActivity": 1,
-    "br.com.trinitysolucoes.saemobile/com.enel.brasil.MainActivity": 1,
-    "br.com.metrosp.appmetro/br.com.metrosp.appmetro.MainActivity": 1,
-    "br.org.missao.militante/br.org.missao.MainActivity": 1,
-    "au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivityDefault": 1,
-    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
-  },
   "com.samsung.android.app.reminder/com.samsung.android.app.reminder.ui.LaunchMainActivity": {
     "ca.capitalone.enterprisemobilebanking/com.capitalone.mobile.wallet.launch.SplashActivity": 1,
     "jp.co.canon.ic.cameraconnect/jp.co.canon.ic.cameraconnect.top.CCTopActivity": 1,
@@ -6646,12 +6600,6 @@
     "de.nostream.nclock/de.nostream.nclock.MainActivity": 1,
     "de.j4velin.wifiAutoOff/de.j4velin.wifiAutoOff.Preferences": 1
   },
-  "com.reecedunn.espeak/com.reecedunn.espeak.eSpeakActivity": {
-    "it.belloworld.mercurygram/org.telegram.messenger.DefaultIcon": 1,
-    "at.tomtasche.reader/at.tomtasche.reader.ui.activity.MainActivity": 1,
-    "de.nostream.nclock/de.nostream.nclock.MainActivity": 1,
-    "de.j4velin.wifiAutoOff/de.j4velin.wifiAutoOff.Preferences": 1
-  },
   "com.dkbcodefactory.banking/com.dkbcodefactory.banking.RoutingDefault": {
     "it.belloworld.mercurygram/org.telegram.messenger.DefaultIcon": 1,
     "at.tomtasche.reader/at.tomtasche.reader.ui.activity.MainActivity": 1,
@@ -6797,12 +6745,6 @@
     "tr.gov.turkiye.edevlet.kapisi/tr.gov.turkiye.edevlet.kapisi.ui.splash.SplashActivity": 1
   },
   "net.osmtracker/net.osmtracker.activity.TrackManager": {
-    "de.westnordost.streetcomplete/de.westnordost.streetcomplete.screens.main.MainActivity": 1,
-    "se.nullable.flickboard/se.nullable.flickboard.MainActivity": 1,
-    "de.blau.android/de.blau.android.Splash": 1,
-    "tr.gov.turkiye.edevlet.kapisi/tr.gov.turkiye.edevlet.kapisi.ui.splash.SplashActivity": 1
-  },
-  "com.trendyol.go/com.trendyol.go.Default": {
     "de.westnordost.streetcomplete/de.westnordost.streetcomplete.screens.main.MainActivity": 1,
     "se.nullable.flickboard/se.nullable.flickboard.MainActivity": 1,
     "de.blau.android/de.blau.android.Splash": 1,
@@ -7081,10 +7023,6 @@
   "com.snapmint.customerapp/com.snapmint.customerapp.applogo.BTPSale1026": {
     "in.mygov.mobile/in.mygov.mobile.SplashActivity": 1
   },
-  "com.motorola.watch/com.motorola.watch.ui.activity.LandingPageActivity": {
-    "in.mygov.mobile/in.mygov.mobile.SplashActivity": 1,
-    "in.juspay.jatrisaathi/com.mobility.movingtech.MainActivity": 1
-  },
   "com.zarz.spotiflac/com.zarz.spotiflac.MainActivity": {
     "in.mygov.mobile/in.mygov.mobile.SplashActivity": 1
   },
@@ -7092,9 +7030,6 @@
     "in.mygov.mobile/in.mygov.mobile.SplashActivity": 1
   },
   "com.community.newroom/com.community.newroom.MainActivity": {
-    "in.mygov.mobile/in.mygov.mobile.SplashActivity": 1
-  },
-  "com.policybazaar/com.policybazaar.MainActivity": {
     "in.mygov.mobile/in.mygov.mobile.SplashActivity": 1
   },
   "org.dashnet.cookieclicker/org.dashnet.cookieclicker.MainActivity": {
@@ -8680,13 +8615,6 @@
     "ba.korpa.user/ba.korpa.user.ui.SplashActivity": 1,
     "ba.haloo.cscmobile/crc645fb50cdb22b86402.MainActivity": 1
   },
-  "com.miniclip.plagueinc/com.miniclip.plagueinc.SplashActivity": {
-    "de.hafas.android.db/db.vendo.android.vendigator.view.main.MainActivity": 1,
-    "ru.execbit.aiolauncher/ru.execbit.aiolauncher.ui.MainActivity": 1,
-    "at.tomtasche.reader/at.tomtasche.reader.ui.activity.MainActivity": 1,
-    "ba.korpa.user/ba.korpa.user.ui.SplashActivity": 1,
-    "ba.haloo.cscmobile/crc645fb50cdb22b86402.MainActivity": 1
-  },
   "com.nothing.ntessentialspace/com.nothing.ntessentialspace.MainActivity": {
     "de.hafas.android.db/db.vendo.android.vendigator.view.main.MainActivity": 1,
     "ru.execbit.aiolauncher/ru.execbit.aiolauncher.ui.MainActivity": 1,
@@ -8842,12 +8770,6 @@
     "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
   },
   "com.smartlife.nebula/com.smartlife.nebula.activity.SplashActivity": {
-    "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
-    "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
-    "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
-    "co.trkit.trackit/co.trkit.trackit.MainActivity": 1
-  },
-  "com.transsion.magicshow/com.transsion.magicmovie.activity.TRSplashActivity": {
     "ru.bpc.mobilebank.bpc/android.svat.bpcbt.com.modulesplash.SplashActivity": 1,
     "jp.konami.masterduel/jp.konami.masterduel.plugins.YgomdMainActivity": 1,
     "co.kitetech.filemanager/co.kitetech.filemanager.activity.MainActivity": 1,
@@ -9377,12 +9299,6 @@
     "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
     "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
   },
-  "com.usaa.mobile.android.usaa/com.usaa.mobile.android.app.entry.view.MainEntryActivity": {
-    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
-    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
-    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
-    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
-  },
   "gov.va.mobileapp/gov.va.mobileapp.MainActivity": {
     "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
     "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
@@ -9575,12 +9491,6 @@
     "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
   },
   "org.illiana.illiana/com.cuanativeandroidrdc.mobile.activity.ActivityNavigation": {
-    "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
-    "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
-    "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
-    "de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity": 1
-  },
-  "com.phonevalley.progressive/com.phonevalley.progressive.common.activities.SplashActivity": {
     "uk.noammm.aamods/uk.noammm.aamods.SettingsActivity": 1,
     "gr.nikolasspyr.integritycheck/gr.nikolasspyr.integritycheck.MainActivity": 1,
     "de.seemoo.at_tracking_detection/de.seemoo.at_tracking_detection.ui.MainActivity": 1,
@@ -10083,10 +9993,6 @@
     "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
     "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
   },
-  "net.typeblog.shelter/net.typeblog.shelter.ui.MainActivity": {
-    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
-    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
-  },
   "com.ToDoReminder.gen/com.ToDoReminder.main.SplashScreen": {
     "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
     "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
@@ -10108,10 +10014,6 @@
     "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
   },
   "org.andstatus.game2048/org.andstatus.game2048.MyMainActivity": {
-    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
-    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
-  },
-  "com.vayunmathur.games.unblockjam/com.vayunmathur.games.unblockjam.MainActivity": {
     "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
     "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
   },
@@ -10191,10 +10093,6 @@
     "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
     "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
   },
-  "io.github.subhamtyagi.ocr/io.github.subhamtyagi.ocr.MainActivity": {
-    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
-    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
-  },
   "org.quantumbadger.redreaderalpha/org.quantumbadger.redreaderalpha.activities.MainActivity": {
     "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
     "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
@@ -10220,10 +10118,6 @@
     "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
   },
   "dev.legendsayantan.extendroid/dev.legendsayantan.extendroid.MainActivity": {
-    "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
-    "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
-  },
-  "com.dd.doordash/com.doordash.consumer.ui.login.LauncherActivity": {
     "be.ppareit.swiftp_free/be.ppareit.swiftp.gui.MainActivity": 1,
     "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity": 1
   },
@@ -10388,11 +10282,6 @@
   "com.streak.app/com.streak.app.MainActivityDefault": {
     "in.visheshraghuvanshi.gitaverse/in.visheshraghuvanshi.gitaverse.MainActivity": 1
   },
-  "com.jio.jioplay.tv/com.jio.jioplay.tv.AppLogo": {
-    "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
-    "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
-    "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
-  },
   "com.mxtech.videoplayer.online/com.mxtech.videoplayer.ad.ActivityWelcomeMX": {
     "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
     "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
@@ -10404,11 +10293,6 @@
     "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
   },
   "com.oakever.arrows/com.beatles.unity.delegate.unity.DelegateActivity": {
-    "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
-    "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
-    "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
-  },
-  "com.ak.ta.dainikbhaskar.activity/com.dainikbhaskar.ui.MainActivity": {
     "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
     "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
     "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
@@ -10429,11 +10313,6 @@
     "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
   },
   "com.puzzlegames.puzzlebrickslegend/org.cocos2dx.cpp.AppActivity": {
-    "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
-    "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
-    "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1
-  },
-  "com.eterno/com.newshunt.app.view.activity.Splash": {
     "in.AajTak.headlines/com.android.kotlinbase.splash.SplashActivity": 1,
     "in.mohalla.sharechat/in.mohalla.sharechat.splash.SplashActivity": 1,
     "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity": 1

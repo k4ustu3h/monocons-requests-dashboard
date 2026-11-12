@@ -5,17 +5,6 @@
   "total_batches": 9,
   "links": [
     {
-      "id": "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-      "existing_drawable": "pepper",
-      "name": "Preisj\u00e4ger",
-      "components": [
-        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityLightIcon"
-      ],
-      "installs": "100,000+",
-      "drawable": "com_preisjaeger"
-    },
-    {
       "id": "com.ykart.tool.qrcodegen/com.ykart.tool.qrcodegen.MainActivity",
       "existing_drawable": "generic_qr_reader",
       "name": "QR Code Generator",
@@ -383,6 +372,11 @@
       "name": "Bible Louis Segond",
       "installs": "500,000+",
       "drawable": "bible_louis_segond"
+    },
+    {
+      "id": "com.mathieu.budmaldash00/com.mathieu.budmaldash00.GeometryJump",
+      "existing_drawable": "geometry_dash",
+      "name": "BurmalDash"
     }
   ]
 }
