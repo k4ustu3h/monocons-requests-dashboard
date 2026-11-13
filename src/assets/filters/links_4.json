@@ -5,6 +5,18 @@
   "total_batches": 9,
   "links": [
     {
+      "id": "com.exteraless.app/org.telegram.messenger.TelegramIcon",
+      "existing_drawable": "telegram",
+      "name": "exteraless"
+    },
+    {
+      "id": "com.fairphone.android.fairbudsapp/com.fairphone.fairsound.ui.activity.MainActivity",
+      "existing_drawable": "generic_voice_recorder_waves",
+      "name": "Fairbuds",
+      "installs": "10,000+",
+      "drawable": "fairbuds"
+    },
+    {
       "id": "com.blogspot.novalabsandroid.fakecallerid/com.blogspot.novalabsandroid.fakecallerid.ConfigCallActivity",
       "existing_drawable": "generic_dialer",
       "name": "Fake Call",
@@ -111,6 +123,13 @@
       "id": "io.mo.glassmic/io.mo.glassmic.MainActivity",
       "existing_drawable": "generic_microphone",
       "name": "GlassMic"
+    },
+    {
+      "id": "fr.emersion.goguma.play/fr.emersion.goguma.MainActivity",
+      "existing_drawable": "goguma",
+      "name": "Goguma",
+      "installs": "10,000+",
+      "drawable": "goguma"
     },
     {
       "id": "it.infocert.mobile.dike/it.infocert.mobile.dike.DikeActivity",
@@ -296,27 +315,6 @@
       "name": "La Bible",
       "installs": "100,000+",
       "drawable": "la_bible"
-    },
-    {
-      "id": "com.creciendodev.com.saintebible_bds/com.creciendodev.com.saintebible_bds.SplashScreen",
-      "existing_drawable": "generic_bible",
-      "name": "La Bible Du Semeur",
-      "installs": "500,000+",
-      "drawable": "la_bible_du_semeur"
-    },
-    {
-      "id": "biblia.habla.hoy.AOVGMDRFUVODNBOFPU/king.james.bible.android.activity.LaunchActivity",
-      "existing_drawable": "generic_bible",
-      "name": "La Biblia",
-      "installs": "1,000,000+",
-      "drawable": "la_biblia"
-    },
-    {
-      "id": "la.biblia.catolica.latinoamericana/king.james.bible.android.activity.LaunchActivity",
-      "existing_drawable": "generic_bible",
-      "name": "La Biblia",
-      "installs": "1,000,000+",
-      "drawable": "la_biblia"
     }
   ]
 }

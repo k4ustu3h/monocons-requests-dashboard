@@ -125,6 +125,26 @@
     {
       "id": "com.coloros.gamespaceui/com.coloros.gamespaceui.activity.StartActivity",
       "existing_drawable": "gamespace"
+    },
+    {
+      "id": "com.imo.android.imoim.morphe/com.imo.android.imoim.home.Home",
+      "existing_drawable": "imo"
+    },
+    {
+      "id": "proton.android.pass.morphe/proton.android.pass.ui.MainActivity",
+      "existing_drawable": "proton_pass"
+    },
+    {
+      "id": "morphe.reddit.frontpage/launcher.default",
+      "existing_drawable": "reddit"
+    },
+    {
+      "id": "com.instagram.barcelona.morphe/com.instagram.barcelona.mainactivity.BarcelonaActivity",
+      "existing_drawable": "threads"
+    },
+    {
+      "id": "com.twitter.android.morphe/com.x.android.main.MainActivity",
+      "existing_drawable": "x"
     }
   ]
 }

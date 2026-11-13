@@ -5,6 +5,27 @@
   "total_batches": 9,
   "links": [
     {
+      "id": "com.creciendodev.com.saintebible_bds/com.creciendodev.com.saintebible_bds.SplashScreen",
+      "existing_drawable": "generic_bible",
+      "name": "La Bible Du Semeur",
+      "installs": "500,000+",
+      "drawable": "la_bible_du_semeur"
+    },
+    {
+      "id": "biblia.habla.hoy.AOVGMDRFUVODNBOFPU/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "La Biblia",
+      "installs": "1,000,000+",
+      "drawable": "la_biblia"
+    },
+    {
+      "id": "la.biblia.catolica.latinoamericana/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "La Biblia",
+      "installs": "1,000,000+",
+      "drawable": "la_biblia"
+    },
+    {
       "id": "com.draco.ladb.free/com.draco.ladb.views.MainActivity",
       "existing_drawable": "ladb",
       "name": "LADB"
@@ -191,6 +212,11 @@
       "drawable": "moj_lite"
     },
     {
+      "id": "com.motorola.readyforassist/com.motorola.readyforassist.ui.activities.ReadyForMainActivity",
+      "existing_drawable": "moto_smart_connect",
+      "name": "Moto Smart Connect"
+    },
+    {
       "id": "com.mediatek.gnss.nonframeworklbs/com.mediatek.gnss.nonframeworklbs.MainActivity",
       "existing_drawable": "generic_shell",
       "name": "MTK Non-Framework LBS"
@@ -267,32 +293,6 @@
       "id": "com.musicplan.playermusic/com.musicplan.playermusic.activities.MainActivity",
       "existing_drawable": "apple_music",
       "name": "Music Player"
-    },
-    {
-      "id": "com.nexnil.mediaplayer/com.musicplayer.mediaplayer.activities.PermissionActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player"
-    },
-    {
-      "id": "com.rocks.music/com.rocks.music.musicplayer.MusicSplash",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "5,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "media.audioplayer.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "100,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "media.mp3player.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "10,000,000+",
-      "drawable": "music_player"
     }
   ]
 }

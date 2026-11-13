@@ -5,6 +5,28 @@
   "total_batches": 9,
   "links": [
     {
+      "id": "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2",
+      "existing_drawable": "just_player",
+      "name": "PlayBack",
+      "components": [
+        "com.androxus.playback/com.androxus.playback.presentation.SplashActivity",
+        "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2"
+      ],
+      "installs": "1,000,000+",
+      "drawable": "playback"
+    },
+    {
+      "id": "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+      "existing_drawable": "pepper",
+      "name": "Preisj\u00e4ger",
+      "components": [
+        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityLightIcon"
+      ],
+      "installs": "100,000+",
+      "drawable": "com_preisjaeger"
+    },
+    {
       "id": "com.ykart.tool.qrcodegen/com.ykart.tool.qrcodegen.MainActivity",
       "existing_drawable": "generic_qr_reader",
       "name": "QR Code Generator",
@@ -12,7 +34,7 @@
         "com.ykart.tool.qrcodegen/com.ykart.tool.qrcodegen.MainActivity",
         "com.ykart.tool.qrcodegen/com.ykart.tool.qrcodegen.SplashScreenActivity"
       ],
-      "installs": "1,000,000+",
+      "installs": "5,000,000+",
       "drawable": "qr_code_generator"
     },
     {
@@ -365,18 +387,6 @@
       "name": "Bible KJV",
       "installs": "10,000,000+",
       "drawable": "bible_kjv"
-    },
-    {
-      "id": "com.azwstudios.theholybible.frls/com.azwstudios.theholybible.MainActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Bible Louis Segond",
-      "installs": "500,000+",
-      "drawable": "bible_louis_segond"
-    },
-    {
-      "id": "com.mathieu.budmaldash00/com.mathieu.budmaldash00.GeometryJump",
-      "existing_drawable": "geometry_dash",
-      "name": "BurmalDash"
     }
   ]
 }

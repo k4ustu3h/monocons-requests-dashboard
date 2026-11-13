@@ -5,6 +5,33 @@
   "total_batches": 9,
   "links": [
     {
+      "id": "com.morphe.youtube.music/com.morphe.youtube.music.morphe_original_1",
+      "existing_drawable": "generic_player",
+      "name": "YouTube Music"
+    },
+    {
+      "id": "ytm.morphe.noname.exe/ytm.morphe.noname.exe.morphe_original_1",
+      "existing_drawable": "generic_player",
+      "name": "YouTube Music"
+    },
+    {
+      "id": "com.minimalnumbersllc/com.minimalnumbersllc.revanced_scaled_3",
+      "existing_drawable": "youtube_revanced",
+      "name": "YouTube ReVanced"
+    },
+    {
+      "id": "app.rvx.android.youtube/com.google.android.youtube.app.honeycomb.Shell",
+      "existing_drawable": "youtube",
+      "name": "YouTube ReVanced Extended"
+    },
+    {
+      "id": "com.google.android.youtube.tvunplugged/com.google.android.apps.youtube.tvunplugged.activity.MainActivity",
+      "existing_drawable": "youtube_tv",
+      "name": "YouTube TV",
+      "installs": "10,000,000+",
+      "drawable": "youtube_tv"
+    },
+    {
       "id": "com.zozoplayer/com.zozoplayer.ui.activities.MainActivity",
       "existing_drawable": "generic_player",
       "name": "ZoZo Player",

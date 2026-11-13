@@ -5,6 +5,30 @@
   "total_batches": 9,
   "links": [
     {
+      "id": "com.gabm.screenrotationcontrol/com.gabm.tapandturn.ui.MainActivity",
+      "existing_drawable": "generic_rotation",
+      "name": "Tap 'n' Turn"
+    },
+    {
+      "id": "com.quoord.tapatalkpro.activity/com.quoord.tapatalkpro.activity.directory.EntryActivity",
+      "existing_drawable": "tapatalk_pro",
+      "name": "Tapatalk",
+      "installs": "10,000,000+",
+      "drawable": "tapatalk"
+    },
+    {
+      "id": "com.taptap.global.lite/com.play.taptap.ui.SplashAct",
+      "existing_drawable": "taptap",
+      "name": "TapTap Lite",
+      "installs": "10,000,000+",
+      "drawable": "taptap_lite"
+    },
+    {
+      "id": "org.mytelegram.messenger/org.telegram.messenger.DefaultIcon",
+      "existing_drawable": "telegram",
+      "name": "Telegram"
+    },
+    {
       "id": "v.d.d.answercall/v.d.d.answercall.MainFrActivity",
       "existing_drawable": "generic_dialer",
       "name": "Tel\u00e9fono",
@@ -36,6 +60,13 @@
       "id": "com.weather.samsung/com.weather.corgikit.view.CorgiActivity",
       "existing_drawable": "the_weather_channel",
       "name": "The Weather Channel"
+    },
+    {
+      "id": "com.thegosa.miuithemes/com.thegosa.miuithemes.NewDesign",
+      "existing_drawable": "themes_by_vivo",
+      "name": "Themes",
+      "installs": "50,000,000+",
+      "drawable": "themes"
     },
     {
       "id": "com.tiktok.lite.go/com.zhiliaoapp.musically.go.mini.MainActivity",
@@ -284,33 +315,6 @@
       "id": "anddea.yrf.tube.music/com.google.android.apps.youtube.music.activities.MusicActivity",
       "existing_drawable": "generic_player",
       "name": "YouTube Music"
-    },
-    {
-      "id": "com.morphe.youtube.music/com.morphe.youtube.music.morphe_original_1",
-      "existing_drawable": "generic_player",
-      "name": "YouTube Music"
-    },
-    {
-      "id": "ytm.morphe.noname.exe/ytm.morphe.noname.exe.morphe_original_1",
-      "existing_drawable": "generic_player",
-      "name": "YouTube Music"
-    },
-    {
-      "id": "com.minimalnumbersllc/com.minimalnumbersllc.revanced_scaled_3",
-      "existing_drawable": "youtube_revanced",
-      "name": "YouTube ReVanced"
-    },
-    {
-      "id": "app.rvx.android.youtube/com.google.android.youtube.app.honeycomb.Shell",
-      "existing_drawable": "youtube",
-      "name": "YouTube ReVanced Extended"
-    },
-    {
-      "id": "com.google.android.youtube.tvunplugged/com.google.android.apps.youtube.tvunplugged.activity.MainActivity",
-      "existing_drawable": "youtube_tv",
-      "name": "YouTube TV",
-      "installs": "10,000,000+",
-      "drawable": "youtube_tv"
     }
   ]
 }

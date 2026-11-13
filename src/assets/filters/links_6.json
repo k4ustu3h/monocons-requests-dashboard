@@ -5,6 +5,32 @@
   "total_batches": 9,
   "links": [
     {
+      "id": "com.nexnil.mediaplayer/com.musicplayer.mediaplayer.activities.PermissionActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Player"
+    },
+    {
+      "id": "com.rocks.music/com.rocks.music.musicplayer.MusicSplash",
+      "existing_drawable": "apple_music",
+      "name": "Music Player",
+      "installs": "5,000,000+",
+      "drawable": "music_player"
+    },
+    {
+      "id": "media.audioplayer.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Player",
+      "installs": "100,000,000+",
+      "drawable": "music_player"
+    },
+    {
+      "id": "media.mp3player.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Player",
+      "installs": "10,000,000+",
+      "drawable": "music_player"
+    },
+    {
       "id": "media.music.mp3player.musicplayer/media.music.mp3player.musicplayer.ui.main.MainMPActivity",
       "existing_drawable": "apple_music",
       "name": "Music player",
@@ -138,7 +164,7 @@
       "id": "com.nextcloud.tasks/com.nextcloud.tasks.MainActivity",
       "existing_drawable": "tasks",
       "name": "Nextcloud Tasks",
-      "installs": "5,000+",
+      "installs": "10,000+",
       "drawable": "nextcloud_tasks"
     },
     {
@@ -295,30 +321,6 @@
       "name": "PhotoStamp Camera",
       "installs": "1,000,000+",
       "drawable": "photostamp_camera"
-    },
-    {
-      "id": "brobata.physiboard/brobata.physiboard.MainActivity",
-      "existing_drawable": "termux",
-      "name": "PhysiBoard"
-    },
-    {
-      "id": "com.markduenas.android.apigen/com.markduenas.android.apigen.MainActivity",
-      "existing_drawable": "generic_pi",
-      "name": "Pi Generator",
-      "installs": "1,000+",
-      "drawable": "pi_generator"
-    },
-    {
-      "id": "com.ihenvyr.platinum_karaoke_songbook_app/com.ihenvyr.platinum_karaoke_songbook_app.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Platinum Karaoke Songbook",
-      "installs": "1,000,000+",
-      "drawable": "platinum_karaoke_songbook"
-    },
-    {
-      "id": "com.polette.shop.app/com.polette.shop.app.MainActivity",
-      "existing_drawable": "lenskart",
-      "name": "polette"
     }
   ]
 }

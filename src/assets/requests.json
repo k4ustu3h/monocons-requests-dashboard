@@ -1,6 +1,6 @@
 {
-  "count": 1440,
-  "lastUpdate": "2026-11-12",
+  "count": 1502,
+  "lastUpdate": "2026-11-13",
   "apps": [
     {
       "drawable": "mind_space",
@@ -9,7 +9,7 @@
       "requestCount": 5,
       "firstAppearance": 1785067487.0,
       "lastRequested": 1785087287.0,
-      "roi_score": 700,
+      "roi_score": 710,
       "priority": "Low"
     },
     {
@@ -20,7 +20,7 @@
       "firstAppearance": 1785067487.0,
       "lastRequested": 1785087287.0,
       "installs": "1,000,000+",
-      "roi_score": 2873,
+      "roi_score": 2915,
       "priority": "Low"
     },
     {
@@ -30,7 +30,7 @@
       "requestCount": 5,
       "firstAppearance": 1785067487.0,
       "lastRequested": 1785087287.0,
-      "roi_score": 700,
+      "roi_score": 710,
       "priority": "Low"
     },
     {
@@ -41,7 +41,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1793659694.0,
       "installs": "10,000,000+",
-      "roi_score": 20943,
+      "roi_score": 12396,
       "priority": "Medium"
     },
     {
@@ -52,7 +52,7 @@
       "firstAppearance": 1785547777.0,
       "lastRequested": 1785791466.0,
       "installs": "50,000,000+",
-      "roi_score": 16780,
+      "roi_score": 16816,
       "priority": "Medium"
     },
     {
@@ -63,7 +63,7 @@
       "firstAppearance": 1784727668.0,
       "lastRequested": 1793548754.0,
       "installs": "10,000+",
-      "roi_score": 2463,
+      "roi_score": 1458,
       "priority": "Low"
     },
     {
@@ -74,8 +74,8 @@
       "firstAppearance": 1784727668.0,
       "lastRequested": 1793548754.0,
       "installs": "50,000,000+",
-      "roi_score": 42085,
-      "priority": "High"
+      "roi_score": 24918,
+      "priority": "Medium"
     },
     {
       "drawable": "canara_e_passbook",
@@ -85,7 +85,7 @@
       "firstAppearance": 1784727668.0,
       "lastRequested": 1793548754.0,
       "installs": "10,000,000+",
-      "roi_score": 19868,
+      "roi_score": 11764,
       "priority": "Medium"
     },
     {
@@ -96,7 +96,7 @@
       "firstAppearance": 1784727668.0,
       "lastRequested": 1793642187.0,
       "installs": "100,000,000+",
-      "roi_score": 77731,
+      "roi_score": 37130,
       "priority": "High"
     },
     {
@@ -107,7 +107,7 @@
       "firstAppearance": 1784727668.0,
       "lastRequested": 1793548754.0,
       "installs": "10,000,000+",
-      "roi_score": 19868,
+      "roi_score": 11764,
       "priority": "Medium"
     },
     {
@@ -118,7 +118,7 @@
       "firstAppearance": 1784727668.0,
       "lastRequested": 1793548754.0,
       "installs": "100,000+",
-      "roi_score": 14046,
+      "roi_score": 8416,
       "priority": "Medium"
     },
     {
@@ -129,8 +129,8 @@
       "firstAppearance": 1784727668.0,
       "lastRequested": 1793548754.0,
       "installs": "1,000,000+",
-      "roi_score": 7578,
-      "priority": "Medium"
+      "roi_score": 4487,
+      "priority": "Low"
     },
     {
       "drawable": "shvr",
@@ -140,8 +140,8 @@
       "firstAppearance": 1784727668.0,
       "lastRequested": 1793548754.0,
       "installs": "1,000,000+",
-      "roi_score": 7578,
-      "priority": "Medium"
+      "roi_score": 4487,
+      "priority": "Low"
     },
     {
       "drawable": "rte",
@@ -151,7 +151,7 @@
       "firstAppearance": 1784727668.0,
       "lastRequested": 1793548754.0,
       "installs": "100,000+",
-      "roi_score": 3692,
+      "roi_score": 2186,
       "priority": "Low"
     },
     {
@@ -172,18 +172,7 @@
       "firstAppearance": 1783066505.0,
       "lastRequested": 1792868720.0,
       "installs": "5,000,000+",
-      "roi_score": 9091,
-      "priority": "Medium"
-    },
-    {
-      "drawable": "subway_city",
-      "label": "Subway City",
-      "componentName": "com.sybogames.subway.surfers.game/com.google.firebase.MessagingUnityPlayerActivity",
-      "requestCount": 7,
-      "firstAppearance": 1783066505.0,
-      "lastRequested": 1791736229.0,
-      "installs": "10,000,000+",
-      "roi_score": 12025,
+      "roi_score": 9077,
       "priority": "Medium"
     },
     {
@@ -204,7 +193,7 @@
       "firstAppearance": 1784544069.0,
       "lastRequested": 1790969503.0,
       "installs": "1,000,000+",
-      "roi_score": 3774,
+      "roi_score": 3773,
       "priority": "Low"
     },
     {
@@ -225,7 +214,7 @@
       "firstAppearance": 1784544069.0,
       "lastRequested": 1784563869.0,
       "installs": "500,000+",
-      "roi_score": 1561,
+      "roi_score": 1560,
       "priority": "Low"
     },
     {
@@ -299,7 +288,7 @@
       "firstAppearance": 1784569288.0,
       "lastRequested": 1784589088.0,
       "installs": "5,000,000+",
-      "roi_score": 5113,
+      "roi_score": 5112,
       "priority": "Low"
     },
     {
@@ -351,7 +340,7 @@
       "firstAppearance": 1784613518.0,
       "lastRequested": 1784633318.0,
       "installs": "10,000,000+",
-      "roi_score": 5244,
+      "roi_score": 5243,
       "priority": "Low"
     },
     {
@@ -362,7 +351,7 @@
       "firstAppearance": 1784613518.0,
       "lastRequested": 1784633318.0,
       "installs": "5,000,000+",
-      "roi_score": 3854,
+      "roi_score": 3853,
       "priority": "Low"
     },
     {
@@ -373,7 +362,7 @@
       "firstAppearance": 1784613518.0,
       "lastRequested": 1784633318.0,
       "installs": "500,000+",
-      "roi_score": 1561,
+      "roi_score": 1560,
       "priority": "Low"
     },
     {
@@ -395,7 +384,7 @@
       "firstAppearance": 1784613518.0,
       "lastRequested": 1784633318.0,
       "installs": "10,000,000+",
-      "roi_score": 5244,
+      "roi_score": 5243,
       "priority": "Low"
     },
     {
@@ -535,7 +524,7 @@
       "firstAppearance": 1784613518.0,
       "lastRequested": 1784633318.0,
       "installs": "500,000+",
-      "roi_score": 1561,
+      "roi_score": 1560,
       "priority": "Low"
     },
     {
@@ -622,7 +611,7 @@
       "firstAppearance": 1784483478.0,
       "lastRequested": 1784714357.0,
       "installs": "5,000,000+",
-      "roi_score": 5117,
+      "roi_score": 5116,
       "priority": "Low"
     },
     {
@@ -655,7 +644,7 @@
       "firstAppearance": 1784694557.0,
       "lastRequested": 1785649583.0,
       "installs": "5,000,000+",
-      "roi_score": 5970,
+      "roi_score": 5985,
       "priority": "Low"
     },
     {
@@ -866,12 +855,12 @@
       "drawable": "twilight",
       "label": "Twilight",
       "componentName": "com.urbandroid.lux/com.urbandroid.lux.MainActivity",
-      "requestCount": 4,
+      "requestCount": 5,
       "firstAppearance": 1784732692.0,
-      "lastRequested": 1784752492.0,
+      "lastRequested": 1793968389.0,
       "installs": "10,000,000+",
-      "roi_score": 6010,
-      "priority": "Low"
+      "roi_score": 19146,
+      "priority": "Medium"
     },
     {
       "drawable": "url_cleaner",
@@ -1153,11 +1142,11 @@
       "drawable": "smart_tutor",
       "label": "Smart Tutor",
       "componentName": "com.rsupport.rs.activity.rsupport.aas2/com.rsupport.rs.activity.edit.IntroActivity",
-      "requestCount": 6,
+      "requestCount": 7,
       "firstAppearance": 1784953398.0,
-      "lastRequested": 1793651021.0,
+      "lastRequested": 1794004319.0,
       "installs": "100,000,000+",
-      "roi_score": 53002,
+      "roi_score": 56931,
       "priority": "High"
     },
     {
@@ -1304,7 +1293,7 @@
       "firstAppearance": 1785618315.0,
       "lastRequested": 1785669383.0,
       "installs": "10,000,000+",
-      "roi_score": 7893,
+      "roi_score": 7913,
       "priority": "Medium"
     },
     {
@@ -1335,7 +1324,7 @@
       "firstAppearance": 1786554220.0,
       "lastRequested": 1787505756.0,
       "installs": "10,000,000+",
-      "roi_score": 957,
+      "roi_score": 956,
       "priority": "Low"
     },
     {
@@ -1346,7 +1335,7 @@
       "firstAppearance": 1787018463.0,
       "lastRequested": 1792868720.0,
       "installs": "100,000,000+",
-      "roi_score": 15298,
+      "roi_score": 15275,
       "priority": "Medium"
     },
     {
@@ -1368,7 +1357,7 @@
       "firstAppearance": 1784483478.0,
       "lastRequested": 1784503278.0,
       "installs": "10,000+",
-      "roi_score": 516,
+      "roi_score": 534,
       "priority": "Low"
     },
     {
@@ -1379,7 +1368,7 @@
       "firstAppearance": 1784483478.0,
       "lastRequested": 1784503278.0,
       "installs": "100,000+",
-      "roi_score": 3306,
+      "roi_score": 3421,
       "priority": "Low"
     },
     {
@@ -1498,7 +1487,7 @@
       "firstAppearance": 1784569288.0,
       "lastRequested": 1784589088.0,
       "installs": "500,000,000+",
-      "roi_score": 39262,
+      "roi_score": 39258,
       "priority": "High"
     },
     {
@@ -1519,7 +1508,7 @@
       "firstAppearance": 1784569288.0,
       "lastRequested": 1784589088.0,
       "installs": "10,000,000+",
-      "roi_score": 6048,
+      "roi_score": 6047,
       "priority": "Low"
     },
     {
@@ -1540,7 +1529,7 @@
       "firstAppearance": 1784569288.0,
       "lastRequested": 1784589088.0,
       "installs": "50,000+",
-      "roi_score": 964,
+      "roi_score": 963,
       "priority": "Low"
     },
     {
@@ -1551,7 +1540,7 @@
       "firstAppearance": 1784569288.0,
       "lastRequested": 1792011786.0,
       "installs": "100,000,000+",
-      "roi_score": 25465,
+      "roi_score": 25463,
       "priority": "Medium"
     },
     {
@@ -1572,7 +1561,7 @@
       "firstAppearance": 1784569288.0,
       "lastRequested": 1792427450.0,
       "installs": "10,000,000+",
-      "roi_score": 11723,
+      "roi_score": 11722,
       "priority": "Medium"
     },
     {
@@ -1615,7 +1604,7 @@
       "firstAppearance": 1785176748.0,
       "lastRequested": 1785196548.0,
       "installs": "5,000,000+",
-      "roi_score": 5001,
+      "roi_score": 5000,
       "priority": "Low"
     },
     {
@@ -1632,10 +1621,10 @@
       "drawable": "secure_folder",
       "label": "Secure Folder",
       "componentName": "com.samsung.knox.securefolder/com.samsung.knox.securefolder.presentation.switcher.view.SecureFolderShortcutActivity",
-      "requestCount": 4,
+      "requestCount": 6,
       "firstAppearance": 1785176748.0,
-      "lastRequested": 1789756062.0,
-      "roi_score": 834,
+      "lastRequested": 1794004319.0,
+      "roi_score": 2360,
       "priority": "Low"
     },
     {
@@ -1667,7 +1656,7 @@
       "firstAppearance": 1785547777.0,
       "lastRequested": 1785567577.0,
       "installs": "10,000,000+",
-      "roi_score": 5033,
+      "roi_score": 5044,
       "priority": "Low"
     },
     {
@@ -1678,7 +1667,7 @@
       "firstAppearance": 1785547777.0,
       "lastRequested": 1785567577.0,
       "installs": "100,000+",
-      "roi_score": 935,
+      "roi_score": 937,
       "priority": "Low"
     },
     {
@@ -1688,7 +1677,7 @@
       "requestCount": 3,
       "firstAppearance": 1785547777.0,
       "lastRequested": 1785567577.0,
-      "roi_score": 608,
+      "roi_score": 609,
       "priority": "Low"
     },
     {
@@ -1699,7 +1688,7 @@
       "firstAppearance": 1785547777.0,
       "lastRequested": 1785567577.0,
       "installs": "1,000,000,000+",
-      "roi_score": 46008,
+      "roi_score": 46108,
       "priority": "High"
     },
     {
@@ -1710,7 +1699,7 @@
       "firstAppearance": 1785547777.0,
       "lastRequested": 1785567577.0,
       "installs": "50,000+",
-      "roi_score": 802,
+      "roi_score": 804,
       "priority": "Low"
     },
     {
@@ -1721,7 +1710,7 @@
       "firstAppearance": 1785547777.0,
       "lastRequested": 1785567577.0,
       "installs": "100,000+",
-      "roi_score": 3995,
+      "roi_score": 4004,
       "priority": "Low"
     },
     {
@@ -1732,7 +1721,7 @@
       "firstAppearance": 1785547777.0,
       "lastRequested": 1785567577.0,
       "installs": "50,000,000+",
-      "roi_score": 10660,
+      "roi_score": 10684,
       "priority": "Medium"
     },
     {
@@ -1743,7 +1732,7 @@
       "firstAppearance": 1785547777.0,
       "lastRequested": 1785567577.0,
       "installs": "100,000+",
-      "roi_score": 935,
+      "roi_score": 937,
       "priority": "Low"
     },
     {
@@ -1754,7 +1743,7 @@
       "firstAppearance": 1785547777.0,
       "lastRequested": 1785567577.0,
       "installs": "50,000,000+",
-      "roi_score": 10660,
+      "roi_score": 10684,
       "priority": "Medium"
     },
     {
@@ -1776,7 +1765,7 @@
       "firstAppearance": 1785547777.0,
       "lastRequested": 1785567577.0,
       "installs": "1,000,000+",
-      "roi_score": 1920,
+      "roi_score": 1924,
       "priority": "Low"
     },
     {
@@ -1787,17 +1776,17 @@
       "firstAppearance": 1785547777.0,
       "lastRequested": 1785567577.0,
       "installs": "100+",
-      "roi_score": 643,
+      "roi_score": 644,
       "priority": "Low"
     },
     {
       "drawable": "youtube_conv_axs",
       "label": "YouTube Conv.axs",
       "componentName": "com.pg_axis.ytcnv/com.pg_axis.ytcnv.MainActivity",
-      "requestCount": 3,
+      "requestCount": 4,
       "firstAppearance": 1785547777.0,
-      "lastRequested": 1785567577.0,
-      "roi_score": 468,
+      "lastRequested": 1794309850.0,
+      "roi_score": 1169,
       "priority": "Low"
     },
     {
@@ -1808,7 +1797,7 @@
       "firstAppearance": 1785547777.0,
       "lastRequested": 1785567577.0,
       "installs": "1,000,000+",
-      "roi_score": 1920,
+      "roi_score": 1924,
       "priority": "Low"
     },
     {
@@ -1850,7 +1839,7 @@
       "requestCount": 3,
       "firstAppearance": 1785621424.0,
       "lastRequested": 1785641224.0,
-      "roi_score": 556,
+      "roi_score": 558,
       "priority": "Low"
     },
     {
@@ -1860,7 +1849,7 @@
       "requestCount": 3,
       "firstAppearance": 1785621424.0,
       "lastRequested": 1785641224.0,
-      "roi_score": 556,
+      "roi_score": 558,
       "priority": "Low"
     },
     {
@@ -1871,7 +1860,7 @@
       "firstAppearance": 1785621424.0,
       "lastRequested": 1790458135.0,
       "installs": "10,000,000+",
-      "roi_score": 8842,
+      "roi_score": 8837,
       "priority": "Medium"
     },
     {
@@ -1882,7 +1871,7 @@
       "firstAppearance": 1785621424.0,
       "lastRequested": 1785641224.0,
       "installs": "1,000,000+",
-      "roi_score": 2281,
+      "roi_score": 2290,
       "priority": "Low"
     },
     {
@@ -1893,7 +1882,7 @@
       "firstAppearance": 1785621424.0,
       "lastRequested": 1785641224.0,
       "installs": "1,000,000+",
-      "roi_score": 2281,
+      "roi_score": 2290,
       "priority": "Low"
     },
     {
@@ -1903,7 +1892,7 @@
       "requestCount": 3,
       "firstAppearance": 1785621424.0,
       "lastRequested": 1785641224.0,
-      "roi_score": 556,
+      "roi_score": 558,
       "priority": "Low"
     },
     {
@@ -1914,7 +1903,7 @@
       "firstAppearance": 1785621424.0,
       "lastRequested": 1785641224.0,
       "installs": "10,000,000+",
-      "roi_score": 5981,
+      "roi_score": 6004,
       "priority": "Low"
     },
     {
@@ -1924,7 +1913,7 @@
       "requestCount": 3,
       "firstAppearance": 1785621424.0,
       "lastRequested": 1785641224.0,
-      "roi_score": 722,
+      "roi_score": 725,
       "priority": "Low"
     },
     {
@@ -1935,7 +1924,7 @@
       "firstAppearance": 1785621424.0,
       "lastRequested": 1785641224.0,
       "installs": "100,000+",
-      "roi_score": 1111,
+      "roi_score": 1116,
       "priority": "Low"
     },
     {
@@ -1946,7 +1935,7 @@
       "firstAppearance": 1785621424.0,
       "lastRequested": 1785641224.0,
       "installs": "100,000+",
-      "roi_score": 1111,
+      "roi_score": 1116,
       "priority": "Low"
     },
     {
@@ -1956,7 +1945,7 @@
       "requestCount": 3,
       "firstAppearance": 1785621424.0,
       "lastRequested": 1785641224.0,
-      "roi_score": 556,
+      "roi_score": 558,
       "priority": "Low"
     },
     {
@@ -1967,7 +1956,7 @@
       "firstAppearance": 1785621424.0,
       "lastRequested": 1785641224.0,
       "installs": "1,000,000+",
-      "roi_score": 2281,
+      "roi_score": 2290,
       "priority": "Low"
     },
     {
@@ -1978,7 +1967,7 @@
       "firstAppearance": 1785621424.0,
       "lastRequested": 1785641224.0,
       "installs": "1,000,000+",
-      "roi_score": 2281,
+      "roi_score": 2290,
       "priority": "Low"
     },
     {
@@ -1989,7 +1978,7 @@
       "firstAppearance": 1785621424.0,
       "lastRequested": 1785641224.0,
       "installs": "50,000,000+",
-      "roi_score": 12668,
+      "roi_score": 12718,
       "priority": "Medium"
     },
     {
@@ -2000,7 +1989,7 @@
       "firstAppearance": 1785621424.0,
       "lastRequested": 1792868720.0,
       "installs": "10,000,000+",
-      "roi_score": 10064,
+      "roi_score": 10050,
       "priority": "Medium"
     },
     {
@@ -2074,7 +2063,7 @@
       "firstAppearance": 1785618315.0,
       "lastRequested": 1785638115.0,
       "installs": "1,000,000+",
-      "roi_score": 2180,
+      "roi_score": 2179,
       "priority": "Low"
     },
     {
@@ -2103,11 +2092,11 @@
       "drawable": "accubattery",
       "label": "AccuBattery",
       "componentName": "com.digibites.accubattery/com.digibites.abatterysaver.BatterySaverActivity",
-      "requestCount": 4,
+      "requestCount": 5,
       "firstAppearance": 1785649583.0,
-      "lastRequested": 1791177406.0,
+      "lastRequested": 1793968389.0,
       "installs": "10,000,000+",
-      "roi_score": 8996,
+      "roi_score": 18711,
       "priority": "Medium"
     },
     {
@@ -2118,7 +2107,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "10,000,000+",
-      "roi_score": 6195,
+      "roi_score": 6211,
       "priority": "Low"
     },
     {
@@ -2129,7 +2118,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "1,000,000+",
-      "roi_score": 2363,
+      "roi_score": 2369,
       "priority": "Low"
     },
     {
@@ -2372,7 +2361,7 @@
       "requestCount": 3,
       "firstAppearance": 1785795105.0,
       "lastRequested": 1785814905.0,
-      "roi_score": 643,
+      "roi_score": 642,
       "priority": "Low"
     },
     {
@@ -2383,7 +2372,7 @@
       "firstAppearance": 1785795105.0,
       "lastRequested": 1785814905.0,
       "installs": "5,000,000+",
-      "roi_score": 3911,
+      "roi_score": 3909,
       "priority": "Low"
     },
     {
@@ -2394,7 +2383,7 @@
       "firstAppearance": 1785795105.0,
       "lastRequested": 1785814905.0,
       "installs": "5,000,000+",
-      "roi_score": 3911,
+      "roi_score": 3909,
       "priority": "Low"
     },
     {
@@ -2414,7 +2403,7 @@
       "requestCount": 3,
       "firstAppearance": 1785837438.0,
       "lastRequested": 1785857238.0,
-      "roi_score": 550,
+      "roi_score": 558,
       "priority": "Low"
     },
     {
@@ -2425,7 +2414,7 @@
       "firstAppearance": 1785837438.0,
       "lastRequested": 1785857238.0,
       "installs": "500,000+",
-      "roi_score": 1762,
+      "roi_score": 1787,
       "priority": "Low"
     },
     {
@@ -2435,7 +2424,7 @@
       "requestCount": 3,
       "firstAppearance": 1785837438.0,
       "lastRequested": 1785857238.0,
-      "roi_score": 550,
+      "roi_score": 558,
       "priority": "Low"
     },
     {
@@ -2446,7 +2435,7 @@
       "firstAppearance": 1785837438.0,
       "lastRequested": 1785857238.0,
       "installs": "100,000,000+",
-      "roi_score": 17496,
+      "roi_score": 17748,
       "priority": "Medium"
     },
     {
@@ -2456,7 +2445,7 @@
       "requestCount": 3,
       "firstAppearance": 1785837438.0,
       "lastRequested": 1785857238.0,
-      "roi_score": 550,
+      "roi_score": 558,
       "priority": "Low"
     },
     {
@@ -2466,7 +2455,7 @@
       "requestCount": 3,
       "firstAppearance": 1785837438.0,
       "lastRequested": 1785857238.0,
-      "roi_score": 550,
+      "roi_score": 558,
       "priority": "Low"
     },
     {
@@ -2477,7 +2466,7 @@
       "firstAppearance": 1785837438.0,
       "lastRequested": 1785857238.0,
       "installs": "1,000,000+",
-      "roi_score": 2258,
+      "roi_score": 2290,
       "priority": "Low"
     },
     {
@@ -2488,7 +2477,7 @@
       "firstAppearance": 1785837438.0,
       "lastRequested": 1785857238.0,
       "installs": "100,000,000+",
-      "roi_score": 17496,
+      "roi_score": 17748,
       "priority": "Medium"
     },
     {
@@ -2499,7 +2488,7 @@
       "firstAppearance": 1785837438.0,
       "lastRequested": 1785857238.0,
       "installs": "1,000,000+",
-      "roi_score": 2258,
+      "roi_score": 2290,
       "priority": "Low"
     },
     {
@@ -2520,7 +2509,7 @@
       "firstAppearance": 1785837438.0,
       "lastRequested": 1785857238.0,
       "installs": "10,000,000+",
-      "roi_score": 5919,
+      "roi_score": 6004,
       "priority": "Low"
     },
     {
@@ -2531,7 +2520,7 @@
       "firstAppearance": 1785837438.0,
       "lastRequested": 1785857238.0,
       "installs": "50,000+",
-      "roi_score": 943,
+      "roi_score": 957,
       "priority": "Low"
     },
     {
@@ -2553,7 +2542,7 @@
       "firstAppearance": 1784569288.0,
       "lastRequested": 1793895943.0,
       "installs": "10,000,000+",
-      "roi_score": 16930,
+      "roi_score": 9998,
       "priority": "Medium"
     },
     {
@@ -2564,7 +2553,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1790969503.0,
       "installs": "10,000,000+",
-      "roi_score": 10134,
+      "roi_score": 10133,
       "priority": "Medium"
     },
     {
@@ -2586,7 +2575,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784489449.0,
       "installs": "10,000,000+",
-      "roi_score": 5254,
+      "roi_score": 5265,
       "priority": "Low"
     },
     {
@@ -2597,7 +2586,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784489449.0,
       "installs": "10,000,000+",
-      "roi_score": 5254,
+      "roi_score": 5265,
       "priority": "Low"
     },
     {
@@ -2608,7 +2597,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784489449.0,
       "installs": "10,000+",
-      "roi_score": 651,
+      "roi_score": 653,
       "priority": "Low"
     },
     {
@@ -2619,7 +2608,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784489449.0,
       "installs": "10,000+",
-      "roi_score": 651,
+      "roi_score": 653,
       "priority": "Low"
     },
     {
@@ -2630,7 +2619,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784489449.0,
       "installs": "5,000,000+",
-      "roi_score": 3862,
+      "roi_score": 3870,
       "priority": "Low"
     },
     {
@@ -2641,7 +2630,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784489449.0,
       "installs": "10,000,000+",
-      "roi_score": 5254,
+      "roi_score": 5265,
       "priority": "Low"
     },
     {
@@ -2652,7 +2641,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784489449.0,
       "installs": "10,000,000+",
-      "roi_score": 5254,
+      "roi_score": 5265,
       "priority": "Low"
     },
     {
@@ -2663,7 +2652,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784489449.0,
       "installs": "10,000,000+",
-      "roi_score": 5254,
+      "roi_score": 5265,
       "priority": "Low"
     },
     {
@@ -2674,7 +2663,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784489449.0,
       "installs": "1,000+",
-      "roi_score": 548,
+      "roi_score": 550,
       "priority": "Low"
     },
     {
@@ -2685,7 +2674,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784489449.0,
       "installs": "50,000+",
-      "roi_score": 837,
+      "roi_score": 839,
       "priority": "Low"
     },
     {
@@ -2696,7 +2685,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1790868389.0,
       "installs": "1,000,000+",
-      "roi_score": 2994,
+      "roi_score": 3001,
       "priority": "Low"
     },
     {
@@ -2707,7 +2696,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784489449.0,
       "installs": "10,000+",
-      "roi_score": 651,
+      "roi_score": 653,
       "priority": "Low"
     },
     {
@@ -2718,7 +2707,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784489449.0,
       "installs": "1,000+",
-      "roi_score": 548,
+      "roi_score": 550,
       "priority": "Low"
     },
     {
@@ -2729,19 +2718,19 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784489449.0,
       "installs": "50,000+",
-      "roi_score": 837,
+      "roi_score": 839,
       "priority": "Low"
     },
     {
       "drawable": "esercizi_a_casa",
       "label": "Esercizi a Casa",
       "componentName": "homeworkout.homeworkouts.noequipment/homeworkout.homeworkouts.noequipment.SplashActivity",
-      "requestCount": 2,
+      "requestCount": 4,
       "firstAppearance": 1784483478.0,
-      "lastRequested": 1784483478.0,
+      "lastRequested": 1794004319.0,
       "installs": "100,000,000+",
-      "roi_score": 12356,
-      "priority": "Medium"
+      "roi_score": 63839,
+      "priority": "High"
     },
     {
       "drawable": "fight_club_5",
@@ -2773,7 +2762,7 @@
       "firstAppearance": 1784483478.0,
       "lastRequested": 1784483478.0,
       "installs": "100,000+",
-      "roi_score": 2664,
+      "roi_score": 2757,
       "priority": "Low"
     },
     {
@@ -2805,7 +2794,7 @@
       "firstAppearance": 1784569288.0,
       "lastRequested": 1793651021.0,
       "installs": "100,000+",
-      "roi_score": 3179,
+      "roi_score": 1877,
       "priority": "Low"
     },
     {
@@ -2870,7 +2859,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784489449.0,
       "installs": "1,000+",
-      "roi_score": 548,
+      "roi_score": 550,
       "priority": "Low"
     },
     {
@@ -2881,7 +2870,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784489449.0,
       "installs": "5,000,000+",
-      "roi_score": 3506,
+      "roi_score": 3557,
       "priority": "Low"
     },
     {
@@ -2892,7 +2881,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1793721943.0,
       "installs": "10,000,000+",
-      "roi_score": 18206,
+      "roi_score": 10776,
       "priority": "Medium"
     },
     {
@@ -2903,7 +2892,7 @@
       "firstAppearance": 1784489449.0,
       "lastRequested": 1784489449.0,
       "installs": "100,000+",
-      "roi_score": 3220,
+      "roi_score": 3227,
       "priority": "Low"
     },
     {
@@ -2936,7 +2925,7 @@
       "firstAppearance": 1784483478.0,
       "lastRequested": 1793895943.0,
       "installs": "1,000,000+",
-      "roi_score": 2047,
+      "roi_score": 1209,
       "priority": "Low"
     },
     {
@@ -3033,7 +3022,7 @@
       "firstAppearance": 1784483478.0,
       "lastRequested": 1784483478.0,
       "installs": "10,000,000+",
-      "roi_score": 3356,
+      "roi_score": 3474,
       "priority": "Low"
     },
     {
@@ -3044,7 +3033,7 @@
       "firstAppearance": 1784483478.0,
       "lastRequested": 1784483478.0,
       "installs": "1,000,000+",
-      "roi_score": 5790,
+      "roi_score": 5781,
       "priority": "Low"
     },
     {
@@ -3066,7 +3055,7 @@
       "firstAppearance": 1784483478.0,
       "lastRequested": 1793895943.0,
       "installs": "10,000,000+",
-      "roi_score": 15256,
+      "roi_score": 9009,
       "priority": "Medium"
     },
     {
@@ -3098,7 +3087,7 @@
       "firstAppearance": 1784483478.0,
       "lastRequested": 1784483478.0,
       "installs": "10,000+",
-      "roi_score": 275,
+      "roi_score": 285,
       "priority": "Low"
     },
     {
@@ -3120,7 +3109,7 @@
       "firstAppearance": 1784483478.0,
       "lastRequested": 1784483478.0,
       "installs": "1,000,000+",
-      "roi_score": 4659,
+      "roi_score": 4822,
       "priority": "Low"
     },
     {
@@ -3174,7 +3163,7 @@
       "requestCount": 2,
       "firstAppearance": 1784569288.0,
       "lastRequested": 1784569288.0,
-      "roi_score": 1702,
+      "roi_score": 1701,
       "priority": "Low"
     },
     {
@@ -3185,7 +3174,7 @@
       "firstAppearance": 1784569288.0,
       "lastRequested": 1784569288.0,
       "installs": "1,000+",
-      "roi_score": 662,
+      "roi_score": 661,
       "priority": "Low"
     },
     {
@@ -3279,8 +3268,8 @@
       "firstAppearance": 1784569288.0,
       "lastRequested": 1793895943.0,
       "installs": "50,000,000+",
-      "roi_score": 32405,
-      "priority": "High"
+      "roi_score": 19137,
+      "priority": "Medium"
     },
     {
       "drawable": "yazio",
@@ -3460,12 +3449,12 @@
       "drawable": "auto_clicker",
       "label": "Auto Clicker",
       "componentName": "com.truedevelopersstudio.automatictap.autoclicker/com.truedevelopersstudio.autoclicker.activities.SplashActivity",
-      "requestCount": 2,
+      "requestCount": 3,
       "firstAppearance": 1785602037.0,
-      "lastRequested": 1793736458.0,
+      "lastRequested": 1793968389.0,
       "installs": "100,000,000+",
-      "roi_score": 2381,
-      "priority": "Low"
+      "roi_score": 43509,
+      "priority": "High"
     },
     {
       "drawable": "bitzmedia",
@@ -3583,17 +3572,6 @@
       "priority": "Low"
     },
     {
-      "drawable": "comfer",
-      "label": "Comfer",
-      "componentName": "com.jeerovan.comfer/com.jeerovan.comfer.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1785602037.0,
-      "lastRequested": 1785602037.0,
-      "installs": "500,000+",
-      "roi_score": 74,
-      "priority": "Low"
-    },
-    {
       "drawable": "compose_stopwatch",
       "label": "Compose Stopwatch",
       "componentName": "com.justdeax.composeStopwatch/com.justdeax.composeStopwatch.AppActivity",
@@ -3621,7 +3599,7 @@
       "firstAppearance": 1785618315.0,
       "lastRequested": 1785638115.0,
       "installs": "1,000,000+",
-      "roi_score": 1758,
+      "roi_score": 1757,
       "priority": "Low"
     },
     {
@@ -3652,7 +3630,7 @@
       "firstAppearance": 1785618315.0,
       "lastRequested": 1785638115.0,
       "installs": "500,000+",
-      "roi_score": 1372,
+      "roi_score": 1371,
       "priority": "Low"
     },
     {
@@ -3685,7 +3663,7 @@
       "firstAppearance": 1785618315.0,
       "lastRequested": 1785638115.0,
       "installs": "1,000,000+",
-      "roi_score": 1758,
+      "roi_score": 1757,
       "priority": "Low"
     },
     {
@@ -3737,7 +3715,7 @@
       "firstAppearance": 1785618315.0,
       "lastRequested": 1793337577.0,
       "installs": "50,000+",
-      "roi_score": 4135,
+      "roi_score": 2442,
       "priority": "Low"
     },
     {
@@ -3747,7 +3725,7 @@
       "requestCount": 3,
       "firstAppearance": 1785618315.0,
       "lastRequested": 1790969503.0,
-      "roi_score": 702,
+      "roi_score": 701,
       "priority": "Low"
     },
     {
@@ -3790,7 +3768,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "1,000,000+",
-      "roi_score": 1906,
+      "roi_score": 1910,
       "priority": "Low"
     },
     {
@@ -3801,7 +3779,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "50,000+",
-      "roi_score": 796,
+      "roi_score": 798,
       "priority": "Low"
     },
     {
@@ -3834,7 +3812,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "1,000,000+",
-      "roi_score": 1906,
+      "roi_score": 1910,
       "priority": "Low"
     },
     {
@@ -3845,7 +3823,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "500,000+",
-      "roi_score": 1487,
+      "roi_score": 1491,
       "priority": "Low"
     },
     {
@@ -3856,7 +3834,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "100,000+",
-      "roi_score": 928,
+      "roi_score": 931,
       "priority": "Low"
     },
     {
@@ -3887,7 +3865,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "1,000,000+",
-      "roi_score": 1906,
+      "roi_score": 1910,
       "priority": "Low"
     },
     {
@@ -3898,7 +3876,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "100,000+",
-      "roi_score": 928,
+      "roi_score": 931,
       "priority": "Low"
     },
     {
@@ -3909,7 +3887,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "50,000+",
-      "roi_score": 796,
+      "roi_score": 798,
       "priority": "Low"
     },
     {
@@ -3931,7 +3909,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "100,000+",
-      "roi_score": 928,
+      "roi_score": 931,
       "priority": "Low"
     },
     {
@@ -3941,7 +3919,7 @@
       "requestCount": 2,
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
-      "roi_score": 464,
+      "roi_score": 465,
       "priority": "Low"
     },
     {
@@ -3952,7 +3930,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "100,000+",
-      "roi_score": 928,
+      "roi_score": 931,
       "priority": "Low"
     },
     {
@@ -3963,7 +3941,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "10,000,000+",
-      "roi_score": 4996,
+      "roi_score": 5008,
       "priority": "Low"
     },
     {
@@ -3974,7 +3952,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "10,000,000+",
-      "roi_score": 4996,
+      "roi_score": 5008,
       "priority": "Low"
     },
     {
@@ -3985,7 +3963,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "100,000+",
-      "roi_score": 928,
+      "roi_score": 931,
       "priority": "Low"
     },
     {
@@ -3996,7 +3974,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "1,000,000+",
-      "roi_score": 1906,
+      "roi_score": 1910,
       "priority": "Low"
     },
     {
@@ -4007,7 +3985,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "100+",
-      "roi_score": 491,
+      "roi_score": 492,
       "priority": "Low"
     },
     {
@@ -4018,7 +3996,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "100,000+",
-      "roi_score": 928,
+      "roi_score": 931,
       "priority": "Low"
     },
     {
@@ -4050,7 +4028,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "10,000,000+",
-      "roi_score": 4996,
+      "roi_score": 5008,
       "priority": "Low"
     },
     {
@@ -4061,7 +4039,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "10,000+",
-      "roi_score": 619,
+      "roi_score": 621,
       "priority": "Low"
     },
     {
@@ -4072,7 +4050,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "100,000+",
-      "roi_score": 928,
+      "roi_score": 931,
       "priority": "Low"
     },
     {
@@ -4083,7 +4061,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "100,000+",
-      "roi_score": 928,
+      "roi_score": 931,
       "priority": "Low"
     },
     {
@@ -4094,7 +4072,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "100+",
-      "roi_score": 491,
+      "roi_score": 492,
       "priority": "Low"
     },
     {
@@ -4105,7 +4083,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "1,000,000+",
-      "roi_score": 1906,
+      "roi_score": 1910,
       "priority": "Low"
     },
     {
@@ -4116,7 +4094,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "100,000,000+",
-      "roi_score": 14769,
+      "roi_score": 14806,
       "priority": "Medium"
     },
     {
@@ -4127,7 +4105,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "50,000+",
-      "roi_score": 796,
+      "roi_score": 798,
       "priority": "Low"
     },
     {
@@ -4138,7 +4116,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "50,000+",
-      "roi_score": 796,
+      "roi_score": 798,
       "priority": "Low"
     },
     {
@@ -4181,7 +4159,7 @@
       "firstAppearance": 1785602037.0,
       "lastRequested": 1785602037.0,
       "installs": "10,000,000+",
-      "roi_score": 2577,
+      "roi_score": 2576,
       "priority": "Low"
     },
     {
@@ -4293,7 +4271,7 @@
       "requestCount": 2,
       "firstAppearance": 1785602037.0,
       "lastRequested": 1793337577.0,
-      "roi_score": 778,
+      "roi_score": 459,
       "priority": "Low"
     },
     {
@@ -4314,7 +4292,7 @@
       "firstAppearance": 1785602037.0,
       "lastRequested": 1785602037.0,
       "installs": "1,000,000+",
-      "roi_score": 983,
+      "roi_score": 982,
       "priority": "Low"
     },
     {
@@ -4325,7 +4303,7 @@
       "firstAppearance": 1785602037.0,
       "lastRequested": 1785602037.0,
       "installs": "50,000+",
-      "roi_score": 411,
+      "roi_score": 410,
       "priority": "Low"
     },
     {
@@ -4357,7 +4335,7 @@
       "firstAppearance": 1785602037.0,
       "lastRequested": 1785649583.0,
       "installs": "100,000+",
-      "roi_score": 929,
+      "roi_score": 932,
       "priority": "Low"
     },
     {
@@ -4368,7 +4346,7 @@
       "firstAppearance": 1785602037.0,
       "lastRequested": 1785602037.0,
       "installs": "5,000,000+",
-      "roi_score": 1894,
+      "roi_score": 1893,
       "priority": "Low"
     },
     {
@@ -4410,7 +4388,7 @@
       "firstAppearance": 1785602037.0,
       "lastRequested": 1785602037.0,
       "installs": "1,000,000+",
-      "roi_score": 983,
+      "roi_score": 982,
       "priority": "Low"
     },
     {
@@ -4463,7 +4441,7 @@
       "firstAppearance": 1785618315.0,
       "lastRequested": 1785638115.0,
       "installs": "50,000,000+",
-      "roi_score": 7747,
+      "roi_score": 7745,
       "priority": "Medium"
     },
     {
@@ -4589,7 +4567,7 @@
       "firstAppearance": 1785618315.0,
       "lastRequested": 1785638115.0,
       "installs": "1,000,000+",
-      "roi_score": 1758,
+      "roi_score": 1757,
       "priority": "Low"
     },
     {
@@ -4610,7 +4588,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "1,000,000+",
-      "roi_score": 1906,
+      "roi_score": 1910,
       "priority": "Low"
     },
     {
@@ -4621,7 +4599,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "100,000+",
-      "roi_score": 928,
+      "roi_score": 931,
       "priority": "Low"
     },
     {
@@ -4632,7 +4610,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "100,000+",
-      "roi_score": 1207,
+      "roi_score": 1210,
       "priority": "Low"
     },
     {
@@ -4643,7 +4621,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "50,000,000+",
-      "roi_score": 10583,
+      "roi_score": 10609,
       "priority": "Medium"
     },
     {
@@ -4654,7 +4632,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "100,000+",
-      "roi_score": 2666,
+      "roi_score": 2759,
       "priority": "Low"
     },
     {
@@ -4665,7 +4643,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "50,000+",
-      "roi_score": 678,
+      "roi_score": 702,
       "priority": "Low"
     },
     {
@@ -4676,7 +4654,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "10+",
-      "roi_score": 625,
+      "roi_score": 627,
       "priority": "Low"
     },
     {
@@ -4686,7 +4664,7 @@
       "requestCount": 2,
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
-      "roi_score": 464,
+      "roi_score": 465,
       "priority": "Low"
     },
     {
@@ -4697,7 +4675,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "500,000+",
-      "roi_score": 1487,
+      "roi_score": 1491,
       "priority": "Low"
     },
     {
@@ -4708,7 +4686,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "1,000+",
-      "roi_score": 522,
+      "roi_score": 523,
       "priority": "Low"
     },
     {
@@ -4719,7 +4697,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "10,000,000+",
-      "roi_score": 4996,
+      "roi_score": 5008,
       "priority": "Low"
     },
     {
@@ -4729,7 +4707,7 @@
       "requestCount": 2,
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
-      "roi_score": 464,
+      "roi_score": 465,
       "priority": "Low"
     },
     {
@@ -4740,7 +4718,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "500,000+",
-      "roi_score": 1487,
+      "roi_score": 1491,
       "priority": "Low"
     },
     {
@@ -4751,7 +4729,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "50,000,000+",
-      "roi_score": 10583,
+      "roi_score": 10609,
       "priority": "Medium"
     },
     {
@@ -4762,7 +4740,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "5,000,000+",
-      "roi_score": 3672,
+      "roi_score": 3681,
       "priority": "Low"
     },
     {
@@ -4773,7 +4751,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "5,000,000+",
-      "roi_score": 3672,
+      "roi_score": 3681,
       "priority": "Low"
     },
     {
@@ -4783,7 +4761,7 @@
       "requestCount": 2,
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
-      "roi_score": 603,
+      "roi_score": 605,
       "priority": "Low"
     },
     {
@@ -4794,7 +4772,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "10,000+",
-      "roi_score": 619,
+      "roi_score": 621,
       "priority": "Low"
     },
     {
@@ -4804,7 +4782,7 @@
       "requestCount": 2,
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
-      "roi_score": 464,
+      "roi_score": 465,
       "priority": "Low"
     },
     {
@@ -4815,7 +4793,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "5,000,000+",
-      "roi_score": 3672,
+      "roi_score": 3681,
       "priority": "Low"
     },
     {
@@ -4826,7 +4804,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "100+",
-      "roi_score": 491,
+      "roi_score": 492,
       "priority": "Low"
     },
     {
@@ -4837,7 +4815,7 @@
       "firstAppearance": 1785649583.0,
       "lastRequested": 1785669383.0,
       "installs": "500,000+",
-      "roi_score": 1487,
+      "roi_score": 1491,
       "priority": "Low"
     },
     {
@@ -4848,7 +4826,7 @@
       "firstAppearance": 1785669383.0,
       "lastRequested": 1791015205.0,
       "installs": "5,000,000+",
-      "roi_score": 4301,
+      "roi_score": 4311,
       "priority": "Low"
     },
     {
@@ -4859,7 +4837,7 @@
       "firstAppearance": 1785669383.0,
       "lastRequested": 1785669383.0,
       "installs": "100,000+",
-      "roi_score": 614,
+      "roi_score": 615,
       "priority": "Low"
     },
     {
@@ -4870,7 +4848,7 @@
       "firstAppearance": 1785669383.0,
       "lastRequested": 1785669383.0,
       "installs": "5,000,000+",
-      "roi_score": 2429,
+      "roi_score": 2435,
       "priority": "Low"
     },
     {
@@ -4881,7 +4859,7 @@
       "firstAppearance": 1785669383.0,
       "lastRequested": 1785669383.0,
       "installs": "100,000+",
-      "roi_score": 614,
+      "roi_score": 615,
       "priority": "Low"
     },
     {
@@ -4903,7 +4881,7 @@
       "firstAppearance": 1784503278.0,
       "lastRequested": 1784503278.0,
       "installs": "1,000,000+",
-      "roi_score": 983,
+      "roi_score": 982,
       "priority": "Low"
     },
     {
@@ -4914,7 +4892,7 @@
       "firstAppearance": 1784503278.0,
       "lastRequested": 1784503278.0,
       "installs": "10,000,000+",
-      "roi_score": 2577,
+      "roi_score": 2576,
       "priority": "Low"
     },
     {
@@ -4925,7 +4903,7 @@
       "firstAppearance": 1783066505.0,
       "lastRequested": 1783086305.0,
       "installs": "10,000,000+",
-      "roi_score": 4773,
+      "roi_score": 4842,
       "priority": "Low"
     },
     {
@@ -4936,7 +4914,7 @@
       "firstAppearance": 1783066505.0,
       "lastRequested": 1783086305.0,
       "installs": "100,000,000+",
-      "roi_score": 14109,
+      "roi_score": 14313,
       "priority": "Medium"
     },
     {
@@ -4947,7 +4925,7 @@
       "firstAppearance": 1783066505.0,
       "lastRequested": 1783086305.0,
       "installs": "1,000,000+",
-      "roi_score": 1821,
+      "roi_score": 1847,
       "priority": "Low"
     },
     {
@@ -4980,7 +4958,7 @@
       "firstAppearance": 1786514390.0,
       "lastRequested": 1786534190.0,
       "installs": "100,000,000+",
-      "roi_score": 14346,
+      "roi_score": 14345,
       "priority": "Medium"
     },
     {
@@ -5001,7 +4979,7 @@
       "firstAppearance": 1786514390.0,
       "lastRequested": 1793337577.0,
       "installs": "10,000,000+",
-      "roi_score": 12417,
+      "roi_score": 7333,
       "priority": "Medium"
     },
     {
@@ -5033,7 +5011,7 @@
       "firstAppearance": 1786514390.0,
       "lastRequested": 1786534190.0,
       "installs": "100,000,000+",
-      "roi_score": 14346,
+      "roi_score": 14345,
       "priority": "Medium"
     },
     {
@@ -5044,7 +5022,7 @@
       "firstAppearance": 1786514390.0,
       "lastRequested": 1786534190.0,
       "installs": "100,000,000+",
-      "roi_score": 14346,
+      "roi_score": 14345,
       "priority": "Medium"
     },
     {
@@ -5055,7 +5033,7 @@
       "firstAppearance": 1786514390.0,
       "lastRequested": 1786534190.0,
       "installs": "50,000,000+",
-      "roi_score": 10280,
+      "roi_score": 10279,
       "priority": "Medium"
     },
     {
@@ -5077,7 +5055,7 @@
       "firstAppearance": 1786514390.0,
       "lastRequested": 1786534190.0,
       "installs": "50,000+",
-      "roi_score": 867,
+      "roi_score": 866,
       "priority": "Low"
     },
     {
@@ -5326,7 +5304,7 @@
       "requestCount": 2,
       "firstAppearance": 1787184542.0,
       "lastRequested": 1793649234.0,
-      "roi_score": 967,
+      "roi_score": 571,
       "priority": "Low"
     },
     {
@@ -5428,11 +5406,11 @@
       "drawable": "family_link",
       "label": "Family Link",
       "componentName": "com.google.android.apps.kids.familylink/com.google.android.apps.kids.familylink.flutter.standalone.HomeActivity",
-      "requestCount": 5,
+      "requestCount": 6,
       "firstAppearance": 1787184542.0,
-      "lastRequested": 1793659694.0,
+      "lastRequested": 1794309850.0,
       "installs": "100,000,000+",
-      "roi_score": 49583,
+      "roi_score": 55284,
       "priority": "High"
     },
     {
@@ -5487,7 +5465,7 @@
       "firstAppearance": 1787458245.0,
       "lastRequested": 1790538050.0,
       "installs": "10,000,000+",
-      "roi_score": 4981,
+      "roi_score": 4980,
       "priority": "Low"
     },
     {
@@ -5498,7 +5476,7 @@
       "firstAppearance": 1787458245.0,
       "lastRequested": 1790538050.0,
       "installs": "500,000,000+",
-      "roi_score": 32336,
+      "roi_score": 32331,
       "priority": "High"
     },
     {
@@ -5509,7 +5487,7 @@
       "firstAppearance": 1787458245.0,
       "lastRequested": 1790538050.0,
       "installs": "10,000,000+",
-      "roi_score": 4981,
+      "roi_score": 4980,
       "priority": "Low"
     },
     {
@@ -5520,7 +5498,7 @@
       "firstAppearance": 1787458245.0,
       "lastRequested": 1790538050.0,
       "installs": "10,000,000+",
-      "roi_score": 4981,
+      "roi_score": 4980,
       "priority": "Low"
     },
     {
@@ -5531,7 +5509,7 @@
       "firstAppearance": 1787458245.0,
       "lastRequested": 1790538050.0,
       "installs": "10,000,000+",
-      "roi_score": 4981,
+      "roi_score": 4980,
       "priority": "Low"
     },
     {
@@ -5586,7 +5564,7 @@
       "firstAppearance": 1787458245.0,
       "lastRequested": 1790538050.0,
       "installs": "100,000,000+",
-      "roi_score": 14724,
+      "roi_score": 14721,
       "priority": "Medium"
     },
     {
@@ -5597,7 +5575,7 @@
       "firstAppearance": 1787458245.0,
       "lastRequested": 1790538050.0,
       "installs": "50,000,000+",
-      "roi_score": 10550,
+      "roi_score": 10549,
       "priority": "Medium"
     },
     {
@@ -5608,7 +5586,7 @@
       "firstAppearance": 1787458245.0,
       "lastRequested": 1790538050.0,
       "installs": "10,000,000+",
-      "roi_score": 4981,
+      "roi_score": 4980,
       "priority": "Low"
     },
     {
@@ -5619,7 +5597,7 @@
       "firstAppearance": 1787458245.0,
       "lastRequested": 1790538050.0,
       "installs": "10,000,000+",
-      "roi_score": 4981,
+      "roi_score": 4980,
       "priority": "Low"
     },
     {
@@ -5630,7 +5608,7 @@
       "firstAppearance": 1787458245.0,
       "lastRequested": 1790538050.0,
       "installs": "100,000+",
-      "roi_score": 926,
+      "roi_score": 925,
       "priority": "Low"
     },
     {
@@ -5663,7 +5641,7 @@
       "firstAppearance": 1787911108.0,
       "lastRequested": 1789852049.0,
       "installs": "100,000,000+",
-      "roi_score": 16458,
+      "roi_score": 16454,
       "priority": "Medium"
     },
     {
@@ -5674,7 +5652,7 @@
       "firstAppearance": 1787911108.0,
       "lastRequested": 1788822403.0,
       "installs": "10,000,000+",
-      "roi_score": 4690,
+      "roi_score": 4689,
       "priority": "Low"
     },
     {
@@ -5749,7 +5727,7 @@
       "firstAppearance": 1788455751.0,
       "lastRequested": 1788475551.0,
       "installs": "10,000,000+",
-      "roi_score": 3677,
+      "roi_score": 3676,
       "priority": "Low"
     },
     {
@@ -5989,7 +5967,7 @@
       "requestCount": 2,
       "firstAppearance": 1785582237.0,
       "lastRequested": 1793895943.0,
-      "roi_score": 1241,
+      "roi_score": 733,
       "priority": "Low"
     },
     {
@@ -6310,10 +6288,10 @@
       "drawable": "paperknife",
       "label": "PaperKnife+",
       "componentName": "com.paperknifeplus.app/com.paperknifeplus.app.MainActivity",
-      "requestCount": 1,
+      "requestCount": 2,
       "firstAppearance": 1785582237.0,
-      "lastRequested": 1785582237.0,
-      "roi_score": 383,
+      "lastRequested": 1793968389.0,
+      "roi_score": 1434,
       "priority": "Low"
     },
     {
@@ -6625,7 +6603,7 @@
       "firstAppearance": 1787164742.0,
       "lastRequested": 1787164742.0,
       "installs": "10,000,000+",
-      "roi_score": 3438,
+      "roi_score": 3437,
       "priority": "Low"
     },
     {
@@ -6647,7 +6625,7 @@
       "firstAppearance": 1787164742.0,
       "lastRequested": 1793701294.0,
       "installs": "50,000+",
-      "roi_score": 2103,
+      "roi_score": 1242,
       "priority": "Low"
     },
     {
@@ -6798,8 +6776,8 @@
       "firstAppearance": 1787164742.0,
       "lastRequested": 1793337577.0,
       "installs": "100,000,000+",
-      "roi_score": 31163,
-      "priority": "High"
+      "roi_score": 18403,
+      "priority": "Medium"
     },
     {
       "drawable": "pokemon_unite",
@@ -6809,7 +6787,7 @@
       "firstAppearance": 1787164742.0,
       "lastRequested": 1787164742.0,
       "installs": "100,000,000+",
-      "roi_score": 7149,
+      "roi_score": 7148,
       "priority": "Medium"
     },
     {
@@ -7015,7 +6993,7 @@
       "firstAppearance": 1787164742.0,
       "lastRequested": 1787164742.0,
       "installs": "10,000,000+",
-      "roi_score": 3438,
+      "roi_score": 3437,
       "priority": "Low"
     },
     {
@@ -7069,7 +7047,7 @@
       "firstAppearance": 1787164742.0,
       "lastRequested": 1787164742.0,
       "installs": "10,000,000+",
-      "roi_score": 3438,
+      "roi_score": 3437,
       "priority": "Low"
     },
     {
@@ -7101,7 +7079,7 @@
       "firstAppearance": 1789462855.0,
       "lastRequested": 1790458135.0,
       "installs": "50,000,000+",
-      "roi_score": 9375,
+      "roi_score": 9370,
       "priority": "Medium"
     },
     {
@@ -7112,7 +7090,7 @@
       "firstAppearance": 1789462855.0,
       "lastRequested": 1790458135.0,
       "installs": "500,000,000+",
-      "roi_score": 28733,
+      "roi_score": 28717,
       "priority": "High"
     },
     {
@@ -7122,7 +7100,7 @@
       "requestCount": 2,
       "firstAppearance": 1789462855.0,
       "lastRequested": 1790458135.0,
-      "roi_score": 535,
+      "roi_score": 534,
       "priority": "Low"
     },
     {
@@ -7185,7 +7163,7 @@
       "firstAppearance": 1789462855.0,
       "lastRequested": 1790458135.0,
       "installs": "1,000,000+",
-      "roi_score": 1688,
+      "roi_score": 1687,
       "priority": "Low"
     },
     {
@@ -7226,7 +7204,7 @@
       "firstAppearance": 1789558996.0,
       "lastRequested": 1789558996.0,
       "installs": "10,000,000+",
-      "roi_score": 2229,
+      "roi_score": 2228,
       "priority": "Low"
     },
     {
@@ -7247,19 +7225,8 @@
       "firstAppearance": 1789558996.0,
       "lastRequested": 1789558996.0,
       "installs": "10,000+",
-      "roi_score": 245,
+      "roi_score": 241,
       "priority": "Low"
-    },
-    {
-      "drawable": "subway_surf",
-      "label": "Subway Surf",
-      "componentName": "com.kiloo.subwaysurf/com.sybogames.chili.multidex.ChiliMultidexSupportActivity",
-      "requestCount": 1,
-      "firstAppearance": 1789558996.0,
-      "lastRequested": 1789558996.0,
-      "installs": "1,000,000,000+",
-      "roi_score": 20373,
-      "priority": "Medium"
     },
     {
       "drawable": "tronsmart",
@@ -7341,7 +7308,7 @@
       "requestCount": 3,
       "firstAppearance": 1789756062.0,
       "lastRequested": 1793649234.0,
-      "roi_score": 1140,
+      "roi_score": 673,
       "priority": "Low"
     },
     {
@@ -7352,7 +7319,7 @@
       "firstAppearance": 1789756062.0,
       "lastRequested": 1792427450.0,
       "installs": "50,000,000+",
-      "roi_score": 8407,
+      "roi_score": 8405,
       "priority": "Medium"
     },
     {
@@ -7373,7 +7340,7 @@
       "requestCount": 5,
       "firstAppearance": 1789756062.0,
       "lastRequested": 1793651021.0,
-      "roi_score": 1451,
+      "roi_score": 857,
       "priority": "Low"
     },
     {
@@ -7391,21 +7358,21 @@
       "drawable": "display_assistant",
       "label": "Display Assistant",
       "componentName": "com.samsung.android.displayassistant/com.samsung.android.displayassistant.presentation.ui.main.DisplayAssistantMainActivity",
-      "requestCount": 4,
+      "requestCount": 5,
       "firstAppearance": 1789756062.0,
-      "lastRequested": 1793649234.0,
-      "roi_score": 1311,
+      "lastRequested": 1794004319.0,
+      "roi_score": 1466,
       "priority": "Low"
     },
     {
       "drawable": "find",
       "label": "Find",
       "componentName": "com.samsung.android.app.find/com.samsung.android.app.find.MainActivity",
-      "requestCount": 7,
+      "requestCount": 8,
       "firstAppearance": 1789756062.0,
-      "lastRequested": 1793651021.0,
+      "lastRequested": 1794004319.0,
       "installs": "10,000,000+",
-      "roi_score": 17997,
+      "roi_score": 19158,
       "priority": "Medium"
     },
     {
@@ -7415,7 +7382,7 @@
       "requestCount": 2,
       "firstAppearance": 1789756062.0,
       "lastRequested": 1793649234.0,
-      "roi_score": 920,
+      "roi_score": 543,
       "priority": "Low"
     },
     {
@@ -7425,7 +7392,7 @@
       "requestCount": 2,
       "firstAppearance": 1789756062.0,
       "lastRequested": 1793649234.0,
-      "roi_score": 920,
+      "roi_score": 543,
       "priority": "Low"
     },
     {
@@ -7467,7 +7434,7 @@
       "firstAppearance": 1789756062.0,
       "lastRequested": 1789756062.0,
       "installs": "10,000,000+",
-      "roi_score": 2498,
+      "roi_score": 2497,
       "priority": "Low"
     },
     {
@@ -7489,7 +7456,7 @@
       "firstAppearance": 1789756062.0,
       "lastRequested": 1789756062.0,
       "installs": "10,000,000+",
-      "roi_score": 2498,
+      "roi_score": 2497,
       "priority": "Low"
     },
     {
@@ -7517,10 +7484,10 @@
       "drawable": "reminder",
       "label": "Reminder",
       "componentName": "com.samsung.android.app.reminder/com.samsung.android.app.reminder.ui.LaunchMainActivity",
-      "requestCount": 8,
+      "requestCount": 9,
       "firstAppearance": 1789756062.0,
-      "lastRequested": 1793649234.0,
-      "roi_score": 1762,
+      "lastRequested": 1794004319.0,
+      "roi_score": 1862,
       "priority": "Low"
     },
     {
@@ -7537,10 +7504,10 @@
       "drawable": "sound_assistant",
       "label": "Sound Assistant",
       "componentName": "com.samsung.android.soundassistant/com.samsung.android.soundassistant.activities.MainActivity",
-      "requestCount": 4,
+      "requestCount": 5,
       "firstAppearance": 1789756062.0,
-      "lastRequested": 1793649234.0,
-      "roi_score": 1311,
+      "lastRequested": 1794004319.0,
+      "roi_score": 1466,
       "priority": "Low"
     },
     {
@@ -7558,10 +7525,10 @@
       "drawable": "theme_park",
       "label": "Theme Park",
       "componentName": "com.samsung.android.themedesigner/com.samsung.android.themedesigner.ui.view.SplashComposeActivity",
-      "requestCount": 4,
+      "requestCount": 6,
       "firstAppearance": 1789756062.0,
-      "lastRequested": 1793649234.0,
-      "roi_score": 1311,
+      "lastRequested": 1794004319.0,
+      "roi_score": 2090,
       "priority": "Low"
     },
     {
@@ -7582,7 +7549,7 @@
       "firstAppearance": 1790904496.0,
       "lastRequested": 1790904496.0,
       "installs": "1,000,000+",
-      "roi_score": 1204,
+      "roi_score": 1221,
       "priority": "Low"
     },
     {
@@ -7593,7 +7560,7 @@
       "firstAppearance": 1790904496.0,
       "lastRequested": 1790904496.0,
       "installs": "50,000,000+",
-      "roi_score": 6686,
+      "roi_score": 6782,
       "priority": "Low"
     },
     {
@@ -7604,7 +7571,7 @@
       "firstAppearance": 1790904496.0,
       "lastRequested": 1790904496.0,
       "installs": "1,000,000+",
-      "roi_score": 1204,
+      "roi_score": 1221,
       "priority": "Low"
     },
     {
@@ -7615,7 +7582,7 @@
       "firstAppearance": 1790904496.0,
       "lastRequested": 1790904496.0,
       "installs": "10,000+",
-      "roi_score": 391,
+      "roi_score": 397,
       "priority": "Low"
     },
     {
@@ -7625,7 +7592,7 @@
       "requestCount": 2,
       "firstAppearance": 1790904496.0,
       "lastRequested": 1791334282.0,
-      "roi_score": 449,
+      "roi_score": 456,
       "priority": "Low"
     },
     {
@@ -7636,7 +7603,7 @@
       "firstAppearance": 1790904496.0,
       "lastRequested": 1790904496.0,
       "installs": "5,000,000+",
-      "roi_score": 2320,
+      "roi_score": 2354,
       "priority": "Low"
     },
     {
@@ -7647,7 +7614,7 @@
       "firstAppearance": 1790904496.0,
       "lastRequested": 1790904496.0,
       "installs": "5,000,000+",
-      "roi_score": 2320,
+      "roi_score": 2354,
       "priority": "Low"
     },
     {
@@ -7658,7 +7625,7 @@
       "firstAppearance": 1790904496.0,
       "lastRequested": 1790904496.0,
       "installs": "1,000,000+",
-      "roi_score": 1204,
+      "roi_score": 1221,
       "priority": "Low"
     },
     {
@@ -7668,7 +7635,7 @@
       "requestCount": 1,
       "firstAppearance": 1790904496.0,
       "lastRequested": 1790904496.0,
-      "roi_score": 293,
+      "roi_score": 297,
       "priority": "Low"
     },
     {
@@ -7679,7 +7646,7 @@
       "firstAppearance": 1790904496.0,
       "lastRequested": 1790904496.0,
       "installs": "10,000,000+",
-      "roi_score": 3156,
+      "roi_score": 3202,
       "priority": "Low"
     },
     {
@@ -7690,7 +7657,7 @@
       "firstAppearance": 1790904496.0,
       "lastRequested": 1790904496.0,
       "installs": "50,000,000+",
-      "roi_score": 6686,
+      "roi_score": 6782,
       "priority": "Low"
     },
     {
@@ -8036,7 +8003,7 @@
       "firstAppearance": 1790637799.0,
       "lastRequested": 1790637799.0,
       "installs": "500,000+",
-      "roi_score": 3550,
+      "roi_score": 3548,
       "priority": "Low"
     },
     {
@@ -8217,7 +8184,7 @@
       "firstAppearance": 1790538050.0,
       "lastRequested": 1792868720.0,
       "installs": "100,000,000+",
-      "roi_score": 14401,
+      "roi_score": 14399,
       "priority": "Medium"
     },
     {
@@ -8282,7 +8249,7 @@
       "firstAppearance": 1790458135.0,
       "lastRequested": 1790458135.0,
       "installs": "10,000,000+",
-      "roi_score": 2838,
+      "roi_score": 2836,
       "priority": "Low"
     },
     {
@@ -8589,7 +8556,7 @@
       "firstAppearance": 1790959656.0,
       "lastRequested": 1793337577.0,
       "installs": "500+",
-      "roi_score": 1377,
+      "roi_score": 813,
       "priority": "Low"
     },
     {
@@ -8653,7 +8620,7 @@
       "requestCount": 2,
       "firstAppearance": 1790959656.0,
       "lastRequested": 1793895943.0,
-      "roi_score": 1037,
+      "roi_score": 613,
       "priority": "Low"
     },
     {
@@ -8762,7 +8729,7 @@
       "firstAppearance": 1790941945.0,
       "lastRequested": 1790941945.0,
       "installs": "500,000,000+",
-      "roi_score": 19785,
+      "roi_score": 19782,
       "priority": "Medium"
     },
     {
@@ -8883,7 +8850,7 @@
       "firstAppearance": 1790941945.0,
       "lastRequested": 1790941945.0,
       "installs": "100,000+",
-      "roi_score": 1763,
+      "roi_score": 1825,
       "priority": "Low"
     },
     {
@@ -8925,7 +8892,7 @@
       "firstAppearance": 1790941945.0,
       "lastRequested": 1790941945.0,
       "installs": "100,000,000+",
-      "roi_score": 9009,
+      "roi_score": 9007,
       "priority": "Medium"
     },
     {
@@ -8976,11 +8943,11 @@
       "drawable": "shizuwall",
       "label": "ShizuWall",
       "componentName": "com.arslan.shizuwall/com.arslan.shizuwall.ui.MainActivity",
-      "requestCount": 1,
+      "requestCount": 2,
       "firstAppearance": 1790941945.0,
-      "lastRequested": 1790941945.0,
+      "lastRequested": 1793968389.0,
       "installs": "500+",
-      "roi_score": 403,
+      "roi_score": 1358,
       "priority": "Low"
     },
     {
@@ -9035,7 +9002,7 @@
       "firstAppearance": 1790941945.0,
       "lastRequested": 1791736229.0,
       "installs": "100,000,000+",
-      "roi_score": 15750,
+      "roi_score": 15747,
       "priority": "Medium"
     },
     {
@@ -9195,7 +9162,7 @@
       "firstAppearance": 1790926931.0,
       "lastRequested": 1790926931.0,
       "installs": "1,000,000+",
-      "roi_score": 6631,
+      "roi_score": 6630,
       "priority": "Low"
     },
     {
@@ -9250,7 +9217,7 @@
       "firstAppearance": 1791081419.0,
       "lastRequested": 1791081419.0,
       "installs": "50,000,000+",
-      "roi_score": 5722,
+      "roi_score": 5721,
       "priority": "Low"
     },
     {
@@ -9261,7 +9228,7 @@
       "firstAppearance": 1791081419.0,
       "lastRequested": 1791081419.0,
       "installs": "50,000,000+",
-      "roi_score": 5722,
+      "roi_score": 5721,
       "priority": "Low"
     },
     {
@@ -9283,7 +9250,7 @@
       "firstAppearance": 1791081419.0,
       "lastRequested": 1791081419.0,
       "installs": "5,000,000+",
-      "roi_score": 1986,
+      "roi_score": 1985,
       "priority": "Low"
     },
     {
@@ -9305,7 +9272,7 @@
       "firstAppearance": 1791081419.0,
       "lastRequested": 1791081419.0,
       "installs": "50,000+",
-      "roi_score": 560,
+      "roi_score": 559,
       "priority": "Low"
     },
     {
@@ -9327,7 +9294,7 @@
       "firstAppearance": 1791081419.0,
       "lastRequested": 1791081419.0,
       "installs": "50,000,000+",
-      "roi_score": 5722,
+      "roi_score": 5721,
       "priority": "Low"
     },
     {
@@ -9348,7 +9315,7 @@
       "firstAppearance": 1791081419.0,
       "lastRequested": 1791081419.0,
       "installs": "100,000,000+",
-      "roi_score": 7986,
+      "roi_score": 7984,
       "priority": "Medium"
     },
     {
@@ -9392,7 +9359,7 @@
       "firstAppearance": 1791081419.0,
       "lastRequested": 1791081419.0,
       "installs": "50,000,000+",
-      "roi_score": 5722,
+      "roi_score": 5721,
       "priority": "Low"
     },
     {
@@ -9403,7 +9370,7 @@
       "firstAppearance": 1791081419.0,
       "lastRequested": 1791081419.0,
       "installs": "50,000,000+",
-      "roi_score": 5722,
+      "roi_score": 5721,
       "priority": "Low"
     },
     {
@@ -9436,7 +9403,7 @@
       "firstAppearance": 1790958942.0,
       "lastRequested": 1792868720.0,
       "installs": "1,000,000+",
-      "roi_score": 2078,
+      "roi_score": 2075,
       "priority": "Low"
     },
     {
@@ -9458,7 +9425,7 @@
       "firstAppearance": 1790969503.0,
       "lastRequested": 1790969503.0,
       "installs": "1,000,000+",
-      "roi_score": 1705,
+      "roi_score": 1704,
       "priority": "Low"
     },
     {
@@ -9480,7 +9447,7 @@
       "firstAppearance": 1790969503.0,
       "lastRequested": 1790969503.0,
       "installs": "5,000+",
-      "roi_score": 517,
+      "roi_score": 516,
       "priority": "Low"
     },
     {
@@ -9515,17 +9482,6 @@
       "priority": "Low"
     },
     {
-      "drawable": "easyway",
-      "label": "EasyWay",
-      "componentName": "com.eway/com.eway.android.app.MainActivity",
-      "requestCount": 1,
-      "firstAppearance": 1790969503.0,
-      "lastRequested": 1790969503.0,
-      "installs": "5,000,000+",
-      "roi_score": 2527,
-      "priority": "Low"
-    },
-    {
       "drawable": "ebpocket_lite",
       "label": "EBPocket Lite",
       "componentName": "info.ebstudio.ebpocketfree/info.ebstudio.ebpocketfree.EBPocket",
@@ -9554,7 +9510,7 @@
       "firstAppearance": 1790969503.0,
       "lastRequested": 1790969503.0,
       "installs": "10,000,000+",
-      "roi_score": 1826,
+      "roi_score": 1824,
       "priority": "Low"
     },
     {
@@ -9585,7 +9541,7 @@
       "firstAppearance": 1790969503.0,
       "lastRequested": 1790969503.0,
       "installs": "1,000,000+",
-      "roi_score": 5074,
+      "roi_score": 5073,
       "priority": "Low"
     },
     {
@@ -9605,7 +9561,7 @@
       "requestCount": 1,
       "firstAppearance": 1790969503.0,
       "lastRequested": 1790969503.0,
-      "roi_score": 968,
+      "roi_score": 966,
       "priority": "Low"
     },
     {
@@ -9657,7 +9613,7 @@
       "firstAppearance": 1790969503.0,
       "lastRequested": 1790969503.0,
       "installs": "100,000+",
-      "roi_score": 2506,
+      "roi_score": 2542,
       "priority": "Low"
     },
     {
@@ -9721,7 +9677,7 @@
       "firstAppearance": 1790969503.0,
       "lastRequested": 1790969503.0,
       "installs": "10,000,000+",
-      "roi_score": 3438,
+      "roi_score": 3437,
       "priority": "Low"
     },
     {
@@ -9741,7 +9697,7 @@
       "requestCount": 1,
       "firstAppearance": 1790969503.0,
       "lastRequested": 1790969503.0,
-      "roi_score": 869,
+      "roi_score": 896,
       "priority": "Low"
     },
     {
@@ -9763,7 +9719,7 @@
       "firstAppearance": 1790972520.0,
       "lastRequested": 1793656880.0,
       "installs": "10,000,000+",
-      "roi_score": 14679,
+      "roi_score": 8670,
       "priority": "Medium"
     },
     {
@@ -9829,17 +9785,7 @@
       "firstAppearance": 1790930027.0,
       "lastRequested": 1793651021.0,
       "installs": "1,000+",
-      "roi_score": 2107,
-      "priority": "Low"
-    },
-    {
-      "drawable": "chompass",
-      "label": "Chompass",
-      "componentName": "app.chompass/app.chompass.LauncherIndigo",
-      "requestCount": 2,
-      "firstAppearance": 1790930027.0,
-      "lastRequested": 1790936844.0,
-      "roi_score": 46,
+      "roi_score": 1019,
       "priority": "Low"
     },
     {
@@ -9870,7 +9816,7 @@
       "requestCount": 3,
       "firstAppearance": 1790930027.0,
       "lastRequested": 1793651021.0,
-      "roi_score": 1315,
+      "roi_score": 788,
       "priority": "Low"
     },
     {
@@ -9881,7 +9827,7 @@
       "firstAppearance": 1791177406.0,
       "lastRequested": 1791177406.0,
       "installs": "1,000,000+",
-      "roi_score": 1204,
+      "roi_score": 1221,
       "priority": "Low"
     },
     {
@@ -9892,7 +9838,7 @@
       "firstAppearance": 1791177406.0,
       "lastRequested": 1791177406.0,
       "installs": "50,000+",
-      "roi_score": 503,
+      "roi_score": 510,
       "priority": "Low"
     },
     {
@@ -9903,7 +9849,7 @@
       "firstAppearance": 1791177406.0,
       "lastRequested": 1791177406.0,
       "installs": "5,000,000+",
-      "roi_score": 2320,
+      "roi_score": 2354,
       "priority": "Low"
     },
     {
@@ -9914,7 +9860,7 @@
       "firstAppearance": 1791177406.0,
       "lastRequested": 1791177406.0,
       "installs": "1,000,000+",
-      "roi_score": 1204,
+      "roi_score": 1221,
       "priority": "Low"
     },
     {
@@ -9924,7 +9870,7 @@
       "requestCount": 1,
       "firstAppearance": 1791177406.0,
       "lastRequested": 1791177406.0,
-      "roi_score": 293,
+      "roi_score": 297,
       "priority": "Low"
     },
     {
@@ -9935,7 +9881,7 @@
       "firstAppearance": 1791177406.0,
       "lastRequested": 1791177406.0,
       "installs": "5,000,000+",
-      "roi_score": 2320,
+      "roi_score": 2354,
       "priority": "Low"
     },
     {
@@ -9945,7 +9891,7 @@
       "requestCount": 1,
       "firstAppearance": 1791177406.0,
       "lastRequested": 1791177406.0,
-      "roi_score": 293,
+      "roi_score": 297,
       "priority": "Low"
     },
     {
@@ -9955,7 +9901,7 @@
       "requestCount": 1,
       "firstAppearance": 1791177406.0,
       "lastRequested": 1791177406.0,
-      "roi_score": 293,
+      "roi_score": 297,
       "priority": "Low"
     },
     {
@@ -9965,7 +9911,7 @@
       "requestCount": 2,
       "firstAppearance": 1791177406.0,
       "lastRequested": 1793736458.0,
-      "roi_score": 812,
+      "roi_score": 487,
       "priority": "Low"
     },
     {
@@ -9976,7 +9922,7 @@
       "firstAppearance": 1791177406.0,
       "lastRequested": 1791177406.0,
       "installs": "1,000,000+",
-      "roi_score": 1204,
+      "roi_score": 1221,
       "priority": "Low"
     },
     {
@@ -9987,7 +9933,7 @@
       "firstAppearance": 1791069564.0,
       "lastRequested": 1791069564.0,
       "installs": "100,000,000+",
-      "roi_score": 7149,
+      "roi_score": 7148,
       "priority": "Medium"
     },
     {
@@ -9998,7 +9944,7 @@
       "firstAppearance": 1791069564.0,
       "lastRequested": 1791069564.0,
       "installs": "5,000,000+",
-      "roi_score": 1778,
+      "roi_score": 1777,
       "priority": "Low"
     },
     {
@@ -10158,8 +10104,8 @@
       "firstAppearance": 1791319401.0,
       "lastRequested": 1793701294.0,
       "installs": "1,000,000+",
-      "roi_score": 7095,
-      "priority": "Medium"
+      "roi_score": 4251,
+      "priority": "Low"
     },
     {
       "drawable": "finance",
@@ -10169,7 +10115,7 @@
       "firstAppearance": 1791319401.0,
       "lastRequested": 1793701294.0,
       "installs": "1,000,000+",
-      "roi_score": 3316,
+      "roi_score": 1987,
       "priority": "Low"
     },
     {
@@ -10180,7 +10126,7 @@
       "firstAppearance": 1791319401.0,
       "lastRequested": 1791319401.0,
       "installs": "100,000+",
-      "roi_score": 2506,
+      "roi_score": 2542,
       "priority": "Low"
     },
     {
@@ -10198,20 +10144,20 @@
       "drawable": "flow_nightly",
       "label": "Flow Nightly",
       "componentName": "io.github.aedev.flow.nightly/io.github.aedev.flow.IconFlowLight",
-      "requestCount": 1,
+      "requestCount": 2,
       "firstAppearance": 1791237118.0,
-      "lastRequested": 1791237118.0,
-      "roi_score": 23,
+      "lastRequested": 1794309850.0,
+      "roi_score": 703,
       "priority": "Low"
     },
     {
       "drawable": "koreader",
       "label": "KOReader",
       "componentName": "org.koreader.launcher/org.koreader.launcher.MainActivity",
-      "requestCount": 2,
+      "requestCount": 3,
       "firstAppearance": 1791237118.0,
-      "lastRequested": 1792075263.0,
-      "roi_score": 387,
+      "lastRequested": 1794309850.0,
+      "roi_score": 871,
       "priority": "Low"
     },
     {
@@ -10222,7 +10168,7 @@
       "firstAppearance": 1790962538.0,
       "lastRequested": 1793721943.0,
       "installs": "1,000,000,000+",
-      "roi_score": 67695,
+      "roi_score": 39982,
       "priority": "High"
     },
     {
@@ -10233,8 +10179,8 @@
       "firstAppearance": 1790962538.0,
       "lastRequested": 1793721943.0,
       "installs": "10,000,000+",
-      "roi_score": 7405,
-      "priority": "Medium"
+      "roi_score": 4374,
+      "priority": "Low"
     },
     {
       "drawable": "phone_manager",
@@ -10243,7 +10189,7 @@
       "requestCount": 3,
       "firstAppearance": 1790962538.0,
       "lastRequested": 1793721943.0,
-      "roi_score": 688,
+      "roi_score": 406,
       "priority": "Low"
     },
     {
@@ -10253,7 +10199,7 @@
       "requestCount": 3,
       "firstAppearance": 1790962538.0,
       "lastRequested": 1793721943.0,
-      "roi_score": 688,
+      "roi_score": 406,
       "priority": "Low"
     },
     {
@@ -10264,8 +10210,8 @@
       "firstAppearance": 1790962538.0,
       "lastRequested": 1793721943.0,
       "installs": "10,000,000+",
-      "roi_score": 7405,
-      "priority": "Medium"
+      "roi_score": 4374,
+      "priority": "Low"
     },
     {
       "drawable": "tips_1",
@@ -10274,7 +10220,7 @@
       "requestCount": 3,
       "firstAppearance": 1790962538.0,
       "lastRequested": 1793721943.0,
-      "roi_score": 688,
+      "roi_score": 406,
       "priority": "Low"
     },
     {
@@ -10284,7 +10230,7 @@
       "requestCount": 3,
       "firstAppearance": 1790962538.0,
       "lastRequested": 1793721943.0,
-      "roi_score": 688,
+      "roi_score": 406,
       "priority": "Low"
     },
     {
@@ -10294,7 +10240,7 @@
       "requestCount": 3,
       "firstAppearance": 1790962538.0,
       "lastRequested": 1793721943.0,
-      "roi_score": 688,
+      "roi_score": 406,
       "priority": "Low"
     },
     {
@@ -10304,7 +10250,7 @@
       "requestCount": 3,
       "firstAppearance": 1790962538.0,
       "lastRequested": 1793721943.0,
-      "roi_score": 688,
+      "roi_score": 406,
       "priority": "Low"
     },
     {
@@ -10568,7 +10514,7 @@
       "firstAppearance": 1791078477.0,
       "lastRequested": 1791736229.0,
       "installs": "50,000,000+",
-      "roi_score": 10487,
+      "roi_score": 10481,
       "priority": "Medium"
     },
     {
@@ -10600,7 +10546,7 @@
       "firstAppearance": 1791078477.0,
       "lastRequested": 1793337577.0,
       "installs": "50,000+",
-      "roi_score": 1333,
+      "roi_score": 787,
       "priority": "Low"
     },
     {
@@ -10695,7 +10641,7 @@
       "requestCount": 1,
       "firstAppearance": 1791078477.0,
       "lastRequested": 1791078477.0,
-      "roi_score": 553,
+      "roi_score": 580,
       "priority": "Low"
     },
     {
@@ -11057,7 +11003,7 @@
       "firstAppearance": 1791078477.0,
       "lastRequested": 1791078477.0,
       "installs": "1,000,000+",
-      "roi_score": 2921,
+      "roi_score": 3066,
       "priority": "Low"
     },
     {
@@ -11110,7 +11056,7 @@
       "firstAppearance": 1791015205.0,
       "lastRequested": 1791015205.0,
       "installs": "1,000,000+",
-      "roi_score": 5953,
+      "roi_score": 5950,
       "priority": "Low"
     },
     {
@@ -11338,7 +11284,7 @@
       "firstAppearance": 1791548328.0,
       "lastRequested": 1791548328.0,
       "installs": "50,000,000+",
-      "roi_score": 3868,
+      "roi_score": 3863,
       "priority": "Low"
     },
     {
@@ -11349,29 +11295,29 @@
       "firstAppearance": 1791548328.0,
       "lastRequested": 1792868720.0,
       "installs": "5,000,000+",
-      "roi_score": 2115,
+      "roi_score": 2112,
       "priority": "Low"
     },
     {
       "drawable": "the_powder_toy",
       "label": "The Powder Toy",
       "componentName": "uk.co.powdertoy.tpt/uk.co.powdertoy.tpt.MainActivity",
-      "requestCount": 2,
+      "requestCount": 3,
       "firstAppearance": 1792075263.0,
-      "lastRequested": 1792427450.0,
+      "lastRequested": 1794309850.0,
       "installs": "1,000,000+",
-      "roi_score": 8605,
+      "roi_score": 19190,
       "priority": "Medium"
     },
     {
       "drawable": "vgleadsheets",
       "label": "VGLeadSheets",
       "componentName": "com.vgleadsheets/com.vgleadsheets.remaster.RemasteredActivity",
-      "requestCount": 1,
+      "requestCount": 2,
       "firstAppearance": 1792075263.0,
-      "lastRequested": 1792075263.0,
+      "lastRequested": 1794309850.0,
       "installs": "1,000+",
-      "roi_score": 280,
+      "roi_score": 770,
       "priority": "Low"
     },
     {
@@ -11382,7 +11328,7 @@
       "firstAppearance": 1791736229.0,
       "lastRequested": 1791736229.0,
       "installs": "1,000,000+",
-      "roi_score": 1224,
+      "roi_score": 1223,
       "priority": "Low"
     },
     {
@@ -11403,7 +11349,7 @@
       "firstAppearance": 1791736229.0,
       "lastRequested": 1791736229.0,
       "installs": "10,000,000+",
-      "roi_score": 3208,
+      "roi_score": 3206,
       "priority": "Low"
     },
     {
@@ -11414,7 +11360,7 @@
       "firstAppearance": 1791736229.0,
       "lastRequested": 1791736229.0,
       "installs": "500,000+",
-      "roi_score": 955,
+      "roi_score": 954,
       "priority": "Low"
     },
     {
@@ -11436,7 +11382,7 @@
       "firstAppearance": 1791736229.0,
       "lastRequested": 1791736229.0,
       "installs": "500,000,000+",
-      "roi_score": 20828,
+      "roi_score": 20817,
       "priority": "Medium"
     },
     {
@@ -11447,19 +11393,19 @@
       "firstAppearance": 1791736229.0,
       "lastRequested": 1791736229.0,
       "installs": "500,000+",
-      "roi_score": 955,
+      "roi_score": 954,
       "priority": "Low"
     },
     {
       "drawable": "my_galaxy",
       "label": "My Galaxy",
       "componentName": "com.mygalaxy/com.mygalaxy.views.activity.SplashScreenActivity",
-      "requestCount": 1,
+      "requestCount": 2,
       "firstAppearance": 1791736229.0,
-      "lastRequested": 1791736229.0,
+      "lastRequested": 1794004319.0,
       "installs": "500,000,000+",
-      "roi_score": 20828,
-      "priority": "Medium"
+      "roi_score": 57147,
+      "priority": "High"
     },
     {
       "drawable": "news_1",
@@ -11479,7 +11425,7 @@
       "firstAppearance": 1791736229.0,
       "lastRequested": 1791736229.0,
       "installs": "10,000,000+",
-      "roi_score": 2838,
+      "roi_score": 2836,
       "priority": "Low"
     },
     {
@@ -11490,7 +11436,7 @@
       "firstAppearance": 1791736229.0,
       "lastRequested": 1791736229.0,
       "installs": "1,000,000+",
-      "roi_score": 1224,
+      "roi_score": 1223,
       "priority": "Low"
     },
     {
@@ -11501,7 +11447,7 @@
       "firstAppearance": 1791736229.0,
       "lastRequested": 1791736229.0,
       "installs": "10,000+",
-      "roi_score": 391,
+      "roi_score": 397,
       "priority": "Low"
     },
     {
@@ -11512,7 +11458,7 @@
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
       "installs": "500,000,000+",
-      "roi_score": 19742,
+      "roi_score": 19739,
       "priority": "Medium"
     },
     {
@@ -11533,7 +11479,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11555,7 +11501,7 @@
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
       "installs": "10,000,000+",
-      "roi_score": 3041,
+      "roi_score": 3040,
       "priority": "Low"
     },
     {
@@ -11566,7 +11512,7 @@
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
       "installs": "1,000,000,000+",
-      "roi_score": 27800,
+      "roi_score": 27795,
       "priority": "High"
     },
     {
@@ -11587,7 +11533,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11597,7 +11543,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11607,7 +11553,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11617,7 +11563,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11627,7 +11573,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11637,7 +11583,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11647,7 +11593,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11667,7 +11613,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11700,7 +11646,7 @@
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
       "installs": "10,000,000+",
-      "roi_score": 3041,
+      "roi_score": 3040,
       "priority": "Low"
     },
     {
@@ -11722,7 +11668,7 @@
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
       "installs": "50,000,000+",
-      "roi_score": 6441,
+      "roi_score": 6440,
       "priority": "Low"
     },
     {
@@ -11732,7 +11678,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11742,7 +11688,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11752,7 +11698,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11774,7 +11720,7 @@
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
       "installs": "50,000,000+",
-      "roi_score": 6441,
+      "roi_score": 6440,
       "priority": "Low"
     },
     {
@@ -11784,7 +11730,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11806,7 +11752,7 @@
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
       "installs": "100,000+",
-      "roi_score": 1105,
+      "roi_score": 1160,
       "priority": "Low"
     },
     {
@@ -11816,7 +11762,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11848,7 +11794,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11858,7 +11804,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11869,7 +11815,7 @@
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
       "installs": "500,000,000+",
-      "roi_score": 19742,
+      "roi_score": 19739,
       "priority": "Medium"
     },
     {
@@ -11879,7 +11825,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11890,7 +11836,7 @@
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
       "installs": "500,000,000+",
-      "roi_score": 19742,
+      "roi_score": 19739,
       "priority": "Medium"
     },
     {
@@ -11900,7 +11846,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11911,7 +11857,7 @@
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
       "installs": "100,000,000+",
-      "roi_score": 8989,
+      "roi_score": 8988,
       "priority": "Medium"
     },
     {
@@ -11922,7 +11868,7 @@
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
       "installs": "10,000,000+",
-      "roi_score": 3041,
+      "roi_score": 3040,
       "priority": "Low"
     },
     {
@@ -11932,7 +11878,7 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
@@ -11943,7 +11889,7 @@
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
       "installs": "10,000,000+",
-      "roi_score": 2838,
+      "roi_score": 2836,
       "priority": "Low"
     },
     {
@@ -11965,7 +11911,7 @@
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
       "installs": "5,000,000+",
-      "roi_score": 1023,
+      "roi_score": 1074,
       "priority": "Low"
     },
     {
@@ -11975,19 +11921,19 @@
       "requestCount": 1,
       "firstAppearance": 1792011786.0,
       "lastRequested": 1792011786.0,
-      "roi_score": 283,
+      "roi_score": 282,
       "priority": "Low"
     },
     {
       "drawable": "fine_lock",
       "label": "Fine Lock",
       "componentName": "yuh.yuh.finelock/yuh.yuh.finelock.T",
-      "requestCount": 1,
+      "requestCount": 2,
       "firstAppearance": 1792247158.0,
-      "lastRequested": 1792247158.0,
+      "lastRequested": 1793968389.0,
       "installs": "10,000,000+",
-      "roi_score": 2839,
-      "priority": "Low"
+      "roi_score": 9871,
+      "priority": "Medium"
     },
     {
       "drawable": "topsalao",
@@ -12204,7 +12150,7 @@
       "requestCount": 1,
       "firstAppearance": 1792863325.0,
       "lastRequested": 1792863325.0,
-      "roi_score": 1065,
+      "roi_score": 1068,
       "priority": "Low"
     },
     {
@@ -12225,7 +12171,7 @@
       "requestCount": 1,
       "firstAppearance": 1792863325.0,
       "lastRequested": 1792863325.0,
-      "roi_score": 1255,
+      "roi_score": 1254,
       "priority": "Low"
     },
     {
@@ -12364,7 +12310,7 @@
       "firstAppearance": 1792863325.0,
       "lastRequested": 1793895943.0,
       "installs": "10+",
-      "roi_score": 909,
+      "roi_score": 537,
       "priority": "Low"
     },
     {
@@ -12374,7 +12320,7 @@
       "requestCount": 1,
       "firstAppearance": 1792863325.0,
       "lastRequested": 1792863325.0,
-      "roi_score": 1255,
+      "roi_score": 1254,
       "priority": "Low"
     },
     {
@@ -12392,11 +12338,11 @@
       "drawable": "fluffychat",
       "label": "FluffyChat",
       "componentName": "chat.fluffy.fluffychat/chat.fluffy.fluffychat.MainActivity",
-      "requestCount": 2,
+      "requestCount": 3,
       "firstAppearance": 1792863325.0,
-      "lastRequested": 1793656880.0,
+      "lastRequested": 1794309850.0,
       "installs": "100,000+",
-      "roi_score": 1743,
+      "roi_score": 2205,
       "priority": "Low"
     },
     {
@@ -12607,7 +12553,7 @@
       "requestCount": 2,
       "firstAppearance": 1792863325.0,
       "lastRequested": 1793736458.0,
-      "roi_score": 672,
+      "roi_score": 397,
       "priority": "Low"
     },
     {
@@ -13033,7 +12979,7 @@
       "firstAppearance": 1793082944.0,
       "lastRequested": 1793082944.0,
       "installs": "10,000+",
-      "roi_score": 173,
+      "roi_score": 181,
       "priority": "Low"
     },
     {
@@ -13592,7 +13538,7 @@
       "firstAppearance": 1793895943.0,
       "lastRequested": 1793895943.0,
       "installs": "1,000,000+",
-      "roi_score": 5074,
+      "roi_score": 5073,
       "priority": "Low"
     },
     {
@@ -13636,7 +13582,7 @@
       "firstAppearance": 1793895943.0,
       "lastRequested": 1793895943.0,
       "installs": "5,000+",
-      "roi_score": 267,
+      "roi_score": 266,
       "priority": "Low"
     },
     {
@@ -13654,11 +13600,11 @@
       "drawable": "pixilart",
       "label": "Pixilart",
       "componentName": "com.pixilart.app/com.pixilart.app.MainActivity",
-      "requestCount": 1,
+      "requestCount": 2,
       "firstAppearance": 1793895943.0,
-      "lastRequested": 1793895943.0,
+      "lastRequested": 1794309850.0,
       "installs": "1,000,000+",
-      "roi_score": 1006,
+      "roi_score": 2660,
       "priority": "Low"
     },
     {
@@ -13734,17 +13680,7 @@
       "requestCount": 1,
       "firstAppearance": 1793656880.0,
       "lastRequested": 1793656880.0,
-      "roi_score": 160,
-      "priority": "Low"
-    },
-    {
-      "drawable": "mornye",
-      "label": "Mornye",
-      "componentName": "com.zarz.mornye/com.zarz.mornye.MainActivity",
-      "requestCount": 4,
-      "firstAppearance": 1793603339.0,
-      "lastRequested": 1793736458.0,
-      "roi_score": 635,
+      "roi_score": 156,
       "priority": "Low"
     },
     {
@@ -13754,7 +13690,7 @@
       "requestCount": 1,
       "firstAppearance": 1793656880.0,
       "lastRequested": 1793656880.0,
-      "roi_score": 160,
+      "roi_score": 156,
       "priority": "Low"
     },
     {
@@ -13765,7 +13701,7 @@
       "firstAppearance": 1793656880.0,
       "lastRequested": 1793656880.0,
       "installs": "10,000,000+",
-      "roi_score": 1717,
+      "roi_score": 1675,
       "priority": "Low"
     },
     {
@@ -13776,7 +13712,7 @@
       "firstAppearance": 1793656880.0,
       "lastRequested": 1793656880.0,
       "installs": "500+",
-      "roi_score": 175,
+      "roi_score": 170,
       "priority": "Low"
     },
     {
@@ -13786,7 +13722,7 @@
       "requestCount": 1,
       "firstAppearance": 1793656880.0,
       "lastRequested": 1793656880.0,
-      "roi_score": 160,
+      "roi_score": 156,
       "priority": "Low"
     },
     {
@@ -13797,7 +13733,7 @@
       "firstAppearance": 1793656880.0,
       "lastRequested": 1793656880.0,
       "installs": "1,000,000+",
-      "roi_score": 851,
+      "roi_score": 831,
       "priority": "Low"
     },
     {
@@ -14104,7 +14040,7 @@
       "firstAppearance": 1793337577.0,
       "lastRequested": 1793337577.0,
       "installs": "1,000,000+",
-      "roi_score": 5074,
+      "roi_score": 5073,
       "priority": "Low"
     },
     {
@@ -14241,7 +14177,7 @@
       "firstAppearance": 1793337577.0,
       "lastRequested": 1793337577.0,
       "installs": "5,000,000+",
-      "roi_score": 1778,
+      "roi_score": 1777,
       "priority": "Low"
     },
     {
@@ -14263,7 +14199,7 @@
       "firstAppearance": 1793337577.0,
       "lastRequested": 1793337577.0,
       "installs": "5,000,000+",
-      "roi_score": 1778,
+      "roi_score": 1777,
       "priority": "Low"
     },
     {
@@ -14317,7 +14253,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "10,000+",
-      "roi_score": 391,
+      "roi_score": 397,
       "priority": "Low"
     },
     {
@@ -14328,7 +14264,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "1,000,000+",
-      "roi_score": 1204,
+      "roi_score": 1221,
       "priority": "Low"
     },
     {
@@ -14339,7 +14275,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "1,000+",
-      "roi_score": 330,
+      "roi_score": 334,
       "priority": "Low"
     },
     {
@@ -14350,7 +14286,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "5,000,000+",
-      "roi_score": 2320,
+      "roi_score": 2354,
       "priority": "Low"
     },
     {
@@ -14361,7 +14297,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "10,000+",
-      "roi_score": 391,
+      "roi_score": 397,
       "priority": "Low"
     },
     {
@@ -14372,7 +14308,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "10,000+",
-      "roi_score": 391,
+      "roi_score": 397,
       "priority": "Low"
     },
     {
@@ -14383,7 +14319,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "1,000,000+",
-      "roi_score": 1204,
+      "roi_score": 1221,
       "priority": "Low"
     },
     {
@@ -14393,7 +14329,7 @@
       "requestCount": 1,
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
-      "roi_score": 293,
+      "roi_score": 297,
       "priority": "Low"
     },
     {
@@ -14404,7 +14340,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "500,000+",
-      "roi_score": 939,
+      "roi_score": 953,
       "priority": "Low"
     },
     {
@@ -14415,7 +14351,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "100+",
-      "roi_score": 310,
+      "roi_score": 314,
       "priority": "Low"
     },
     {
@@ -14426,7 +14362,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "5,000+",
-      "roi_score": 365,
+      "roi_score": 370,
       "priority": "Low"
     },
     {
@@ -14437,7 +14373,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "1,000,000+",
-      "roi_score": 1204,
+      "roi_score": 1221,
       "priority": "Low"
     },
     {
@@ -14448,7 +14384,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "10,000,000+",
-      "roi_score": 3156,
+      "roi_score": 3202,
       "priority": "Low"
     },
     {
@@ -14459,7 +14395,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "5,000,000+",
-      "roi_score": 2320,
+      "roi_score": 2354,
       "priority": "Low"
     },
     {
@@ -14469,7 +14405,7 @@
       "requestCount": 1,
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
-      "roi_score": 293,
+      "roi_score": 297,
       "priority": "Low"
     },
     {
@@ -14479,7 +14415,7 @@
       "requestCount": 1,
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
-      "roi_score": 381,
+      "roi_score": 387,
       "priority": "Low"
     },
     {
@@ -14489,17 +14425,17 @@
       "requestCount": 1,
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
-      "roi_score": 293,
+      "roi_score": 297,
       "priority": "Low"
     },
     {
       "drawable": "gaming_hub",
       "label": "Gaming Hub",
       "componentName": "com.samsung.android.game.gamehome/com.samsung.android.game.gamehome.app.MainActivity",
-      "requestCount": 1,
+      "requestCount": 2,
       "firstAppearance": 1793649234.0,
-      "lastRequested": 1793649234.0,
-      "roi_score": 293,
+      "lastRequested": 1794004319.0,
+      "roi_score": 770,
       "priority": "Low"
     },
     {
@@ -14510,7 +14446,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "10,000,000+",
-      "roi_score": 3156,
+      "roi_score": 3202,
       "priority": "Low"
     },
     {
@@ -14521,7 +14457,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "5,000+",
-      "roi_score": 365,
+      "roi_score": 370,
       "priority": "Low"
     },
     {
@@ -14532,7 +14468,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "100,000+",
-      "roi_score": 587,
+      "roi_score": 595,
       "priority": "Low"
     },
     {
@@ -14543,7 +14479,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "10,000,000+",
-      "roi_score": 3156,
+      "roi_score": 3202,
       "priority": "Low"
     },
     {
@@ -14554,7 +14490,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "10,000,000+",
-      "roi_score": 3156,
+      "roi_score": 3202,
       "priority": "Low"
     },
     {
@@ -14565,7 +14501,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "10,000,000+",
-      "roi_score": 3156,
+      "roi_score": 3202,
       "priority": "Low"
     },
     {
@@ -14576,7 +14512,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "100+",
-      "roi_score": 310,
+      "roi_score": 314,
       "priority": "Low"
     },
     {
@@ -14587,7 +14523,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "10,000+",
-      "roi_score": 391,
+      "roi_score": 397,
       "priority": "Low"
     },
     {
@@ -14598,7 +14534,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "100,000+",
-      "roi_score": 587,
+      "roi_score": 595,
       "priority": "Low"
     },
     {
@@ -14609,7 +14545,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "500,000+",
-      "roi_score": 939,
+      "roi_score": 953,
       "priority": "Low"
     },
     {
@@ -14620,7 +14556,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "10,000+",
-      "roi_score": 391,
+      "roi_score": 397,
       "priority": "Low"
     },
     {
@@ -14631,7 +14567,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "500,000+",
-      "roi_score": 939,
+      "roi_score": 953,
       "priority": "Low"
     },
     {
@@ -14642,7 +14578,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "10,000+",
-      "roi_score": 391,
+      "roi_score": 397,
       "priority": "Low"
     },
     {
@@ -14652,7 +14588,7 @@
       "requestCount": 1,
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
-      "roi_score": 293,
+      "roi_score": 297,
       "priority": "Low"
     },
     {
@@ -14663,7 +14599,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "50,000,000+",
-      "roi_score": 6686,
+      "roi_score": 6782,
       "priority": "Low"
     },
     {
@@ -14673,7 +14609,7 @@
       "requestCount": 1,
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
-      "roi_score": 293,
+      "roi_score": 297,
       "priority": "Low"
     },
     {
@@ -14684,7 +14620,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "1,000,000+",
-      "roi_score": 1204,
+      "roi_score": 1221,
       "priority": "Low"
     },
     {
@@ -14695,7 +14631,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "5,000+",
-      "roi_score": 365,
+      "roi_score": 370,
       "priority": "Low"
     },
     {
@@ -14705,7 +14641,7 @@
       "requestCount": 1,
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
-      "roi_score": 293,
+      "roi_score": 297,
       "priority": "Low"
     },
     {
@@ -14715,7 +14651,7 @@
       "requestCount": 1,
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
-      "roi_score": 293,
+      "roi_score": 297,
       "priority": "Low"
     },
     {
@@ -14726,7 +14662,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "100,000+",
-      "roi_score": 587,
+      "roi_score": 595,
       "priority": "Low"
     },
     {
@@ -14737,7 +14673,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "10,000,000+",
-      "roi_score": 3156,
+      "roi_score": 3202,
       "priority": "Low"
     },
     {
@@ -14748,7 +14684,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "10,000,000+",
-      "roi_score": 3156,
+      "roi_score": 3202,
       "priority": "Low"
     },
     {
@@ -14759,7 +14695,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "100,000+",
-      "roi_score": 587,
+      "roi_score": 595,
       "priority": "Low"
     },
     {
@@ -14769,7 +14705,7 @@
       "requestCount": 1,
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
-      "roi_score": 293,
+      "roi_score": 297,
       "priority": "Low"
     },
     {
@@ -14780,7 +14716,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "10,000,000+",
-      "roi_score": 3156,
+      "roi_score": 3202,
       "priority": "Low"
     },
     {
@@ -14791,7 +14727,7 @@
       "firstAppearance": 1793649234.0,
       "lastRequested": 1793649234.0,
       "installs": "5,000,000+",
-      "roi_score": 2320,
+      "roi_score": 2354,
       "priority": "Low"
     },
     {
@@ -14955,16 +14891,6 @@
       "priority": "Low"
     },
     {
-      "drawable": "chompass_1",
-      "label": "Chompass",
-      "componentName": "app.chompass/app.chompass.LauncherTeal",
-      "requestCount": 1,
-      "firstAppearance": 1793651021.0,
-      "lastRequested": 1793651021.0,
-      "roi_score": 381,
-      "priority": "Low"
-    },
-    {
       "drawable": "gitaverse",
       "label": "GitaVerse",
       "componentName": "in.visheshraghuvanshi.gitaverse/in.visheshraghuvanshi.gitaverse.MainActivity",
@@ -14972,7 +14898,7 @@
       "firstAppearance": 1793651021.0,
       "lastRequested": 1793651021.0,
       "installs": "10+",
-      "roi_score": 304,
+      "roi_score": 308,
       "priority": "Low"
     },
     {
@@ -14983,7 +14909,7 @@
       "firstAppearance": 1793651021.0,
       "lastRequested": 1793651021.0,
       "installs": "100,000+",
-      "roi_score": 587,
+      "roi_score": 595,
       "priority": "Low"
     },
     {
@@ -14994,7 +14920,7 @@
       "firstAppearance": 1793651021.0,
       "lastRequested": 1793651021.0,
       "installs": "1,000+",
-      "roi_score": 428,
+      "roi_score": 435,
       "priority": "Low"
     },
     {
@@ -15005,7 +14931,7 @@
       "firstAppearance": 1793651021.0,
       "lastRequested": 1793651021.0,
       "installs": "5,000+",
-      "roi_score": 474,
+      "roi_score": 481,
       "priority": "Low"
     },
     {
@@ -15015,7 +14941,7 @@
       "requestCount": 2,
       "firstAppearance": 1793651021.0,
       "lastRequested": 1793822759.0,
-      "roi_score": 446,
+      "roi_score": 452,
       "priority": "Low"
     },
     {
@@ -15026,7 +14952,7 @@
       "firstAppearance": 1793642187.0,
       "lastRequested": 1793642187.0,
       "installs": "100,000,000+",
-      "roi_score": 9331,
+      "roi_score": 9465,
       "priority": "Medium"
     },
     {
@@ -15037,7 +14963,7 @@
       "firstAppearance": 1793642187.0,
       "lastRequested": 1793642187.0,
       "installs": "50,000,000+",
-      "roi_score": 6686,
+      "roi_score": 6782,
       "priority": "Low"
     },
     {
@@ -15048,7 +14974,7 @@
       "firstAppearance": 1793642187.0,
       "lastRequested": 1793642187.0,
       "installs": "1,000,000+",
-      "roi_score": 1204,
+      "roi_score": 1221,
       "priority": "Low"
     },
     {
@@ -15058,7 +14984,7 @@
       "requestCount": 1,
       "firstAppearance": 1793642187.0,
       "lastRequested": 1793642187.0,
-      "roi_score": 293,
+      "roi_score": 297,
       "priority": "Low"
     },
     {
@@ -15069,7 +14995,7 @@
       "firstAppearance": 1793642187.0,
       "lastRequested": 1793642187.0,
       "installs": "10,000,000+",
-      "roi_score": 3156,
+      "roi_score": 3202,
       "priority": "Low"
     },
     {
@@ -15080,19 +15006,8 @@
       "firstAppearance": 1793642187.0,
       "lastRequested": 1793642187.0,
       "installs": "1,000,000+",
-      "roi_score": 1204,
+      "roi_score": 1221,
       "priority": "Low"
-    },
-    {
-      "drawable": "moj",
-      "label": "Moj",
-      "componentName": "in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity",
-      "requestCount": 1,
-      "firstAppearance": 1793642187.0,
-      "lastRequested": 1793642187.0,
-      "installs": "500,000,000+",
-      "roi_score": 20492,
-      "priority": "Medium"
     },
     {
       "drawable": "mx_player_online",
@@ -15102,7 +15017,7 @@
       "firstAppearance": 1793642187.0,
       "lastRequested": 1793642187.0,
       "installs": "10,000,000+",
-      "roi_score": 3156,
+      "roi_score": 3202,
       "priority": "Low"
     },
     {
@@ -15113,7 +15028,7 @@
       "firstAppearance": 1793642187.0,
       "lastRequested": 1793642187.0,
       "installs": "500,000,000+",
-      "roi_score": 20492,
+      "roi_score": 20787,
       "priority": "Medium"
     },
     {
@@ -15123,7 +15038,7 @@
       "requestCount": 1,
       "firstAppearance": 1793642187.0,
       "lastRequested": 1793642187.0,
-      "roi_score": 293,
+      "roi_score": 297,
       "priority": "Low"
     },
     {
@@ -15175,7 +15090,7 @@
       "requestCount": 1,
       "firstAppearance": 1793659694.0,
       "lastRequested": 1793659694.0,
-      "roi_score": 293,
+      "roi_score": 297,
       "priority": "Low"
     },
     {
@@ -15186,30 +15101,30 @@
       "firstAppearance": 1793659694.0,
       "lastRequested": 1793659694.0,
       "installs": "50,000,000+",
-      "roi_score": 6686,
+      "roi_score": 6782,
       "priority": "Low"
     },
     {
       "drawable": "indianoil_one",
       "label": "IndianOil ONE",
       "componentName": "cx.indianoil.in/cx.indianoil.in.SplashActivity",
-      "requestCount": 1,
+      "requestCount": 2,
       "firstAppearance": 1793659694.0,
-      "lastRequested": 1793659694.0,
+      "lastRequested": 1793968389.0,
       "installs": "10,000,000+",
-      "roi_score": 3156,
-      "priority": "Low"
+      "roi_score": 9446,
+      "priority": "Medium"
     },
     {
       "drawable": "inshorts",
       "label": "inshorts",
       "componentName": "com.nis.app/com.nis.app.ui.activities.HomeActivity",
-      "requestCount": 1,
+      "requestCount": 2,
       "firstAppearance": 1793659694.0,
-      "lastRequested": 1793659694.0,
+      "lastRequested": 1794004319.0,
       "installs": "10,000,000+",
-      "roi_score": 3156,
-      "priority": "Low"
+      "roi_score": 8284,
+      "priority": "Medium"
     },
     {
       "drawable": "lenovo_otp",
@@ -15219,7 +15134,7 @@
       "firstAppearance": 1793659694.0,
       "lastRequested": 1793659694.0,
       "installs": "50,000+",
-      "roi_score": 503,
+      "roi_score": 510,
       "priority": "Low"
     },
     {
@@ -15230,7 +15145,7 @@
       "firstAppearance": 1793659694.0,
       "lastRequested": 1793659694.0,
       "installs": "100,000+",
-      "roi_score": 587,
+      "roi_score": 595,
       "priority": "Low"
     },
     {
@@ -15241,7 +15156,7 @@
       "firstAppearance": 1793659694.0,
       "lastRequested": 1793659694.0,
       "installs": "1,000,000+",
-      "roi_score": 1204,
+      "roi_score": 1221,
       "priority": "Low"
     },
     {
@@ -15252,7 +15167,7 @@
       "firstAppearance": 1793659694.0,
       "lastRequested": 1793659694.0,
       "installs": "5,000,000+",
-      "roi_score": 2320,
+      "roi_score": 2354,
       "priority": "Low"
     },
     {
@@ -15263,7 +15178,7 @@
       "firstAppearance": 1793659694.0,
       "lastRequested": 1793659694.0,
       "installs": "10,000,000+",
-      "roi_score": 3156,
+      "roi_score": 3202,
       "priority": "Low"
     },
     {
@@ -15274,7 +15189,7 @@
       "firstAppearance": 1793659694.0,
       "lastRequested": 1793659694.0,
       "installs": "10,000,000+",
-      "roi_score": 3156,
+      "roi_score": 3202,
       "priority": "Low"
     },
     {
@@ -15285,7 +15200,7 @@
       "firstAppearance": 1793659694.0,
       "lastRequested": 1793659694.0,
       "installs": "100,000+",
-      "roi_score": 587,
+      "roi_score": 595,
       "priority": "Low"
     },
     {
@@ -15296,7 +15211,7 @@
       "firstAppearance": 1793659694.0,
       "lastRequested": 1793659694.0,
       "installs": "5,000,000+",
-      "roi_score": 2320,
+      "roi_score": 2354,
       "priority": "Low"
     },
     {
@@ -15307,7 +15222,7 @@
       "firstAppearance": 1793659694.0,
       "lastRequested": 1793659694.0,
       "installs": "1,000,000+",
-      "roi_score": 1204,
+      "roi_score": 1221,
       "priority": "Low"
     },
     {
@@ -15317,7 +15232,7 @@
       "requestCount": 1,
       "firstAppearance": 1793659694.0,
       "lastRequested": 1793659694.0,
-      "roi_score": 381,
+      "roi_score": 387,
       "priority": "Low"
     },
     {
@@ -15327,7 +15242,7 @@
       "requestCount": 1,
       "firstAppearance": 1793659694.0,
       "lastRequested": 1793659694.0,
-      "roi_score": 381,
+      "roi_score": 387,
       "priority": "Low"
     },
     {
@@ -15338,7 +15253,7 @@
       "firstAppearance": 1793659694.0,
       "lastRequested": 1793659694.0,
       "installs": "1+",
-      "roi_score": 302,
+      "roi_score": 306,
       "priority": "Low"
     },
     {
@@ -15370,6 +15285,758 @@
       "lastRequested": 1793794962.0,
       "installs": "1,000+",
       "roi_score": 26,
+      "priority": "Low"
+    },
+    {
+      "drawable": "clefs",
+      "label": "Clefs",
+      "componentName": "com.crazyootka.clefs/com.crazyootka.clefs.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794309850.0,
+      "lastRequested": 1794309850.0,
+      "installs": "500,000+",
+      "roi_score": 801,
+      "priority": "Low"
+    },
+    {
+      "drawable": "cymath",
+      "label": "Cymath",
+      "componentName": "com.cymath.cymath/com.cymath.cymath.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794309850.0,
+      "lastRequested": 1794309850.0,
+      "installs": "5,000,000+",
+      "roi_score": 1977,
+      "priority": "Low"
+    },
+    {
+      "drawable": "dicio",
+      "label": "Dicio",
+      "componentName": "com.setegraus.dicio/com.setegraus.dicio.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794309850.0,
+      "lastRequested": 1794309850.0,
+      "installs": "1,000,000+",
+      "roi_score": 1026,
+      "priority": "Low"
+    },
+    {
+      "drawable": "milki",
+      "label": "Milki",
+      "componentName": "milki.focus.timer/milki.focus.timer.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794309850.0,
+      "lastRequested": 1794309850.0,
+      "installs": "100,000+",
+      "roi_score": 500,
+      "priority": "Low"
+    },
+    {
+      "drawable": "repertoire",
+      "label": "Repertoire",
+      "componentName": "io.github.adithya_jayan.myrepertoirapp.fdroid/io.github.adithya_jayan.myrepertoirapp.fdroid.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794309850.0,
+      "lastRequested": 1794309850.0,
+      "roi_score": 250,
+      "priority": "Low"
+    },
+    {
+      "drawable": "icsee",
+      "label": "iCSee",
+      "componentName": "com.xm.csee/com.xworld.activity.welcome.view.WelcomePageActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794309850.0,
+      "lastRequested": 1794309850.0,
+      "installs": "10,000,000+",
+      "roi_score": 2690,
+      "priority": "Low"
+    },
+    {
+      "drawable": "jiohotstar",
+      "label": "JioHotstar",
+      "componentName": "in.startv.hotstar/com.hotstar.hotstarActivityAlias.diwali_2026",
+      "requestCount": 1,
+      "firstAppearance": 1794401079.0,
+      "lastRequested": 1794401079.0,
+      "installs": "1,000,000,000+",
+      "roi_score": 29271,
+      "priority": "High"
+    },
+    {
+      "drawable": "linkedin",
+      "label": "LinkedIn",
+      "componentName": "com.linkedin.android/com.linkedin.android.authenticator.BirthdayActivityAlias",
+      "requestCount": 1,
+      "firstAppearance": 1794401079.0,
+      "lastRequested": 1794401079.0,
+      "installs": "1,000,000,000+",
+      "roi_score": 29271,
+      "priority": "High"
+    },
+    {
+      "drawable": "ama_bus",
+      "label": "Ama Bus",
+      "componentName": "com.chalo.crut/com.zophop.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794004319.0,
+      "lastRequested": 1794004319.0,
+      "installs": "1,000,000+",
+      "roi_score": 95,
+      "priority": "Low"
+    },
+    {
+      "drawable": "audiorelay",
+      "label": "AudioRelay",
+      "componentName": "com.azefsw.audioconnect/com.azefsw.audioconnect.root.ui.RootActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794004319.0,
+      "lastRequested": 1794004319.0,
+      "installs": "1,000,000+",
+      "roi_score": 95,
+      "priority": "Low"
+    },
+    {
+      "drawable": "bloons_td_6",
+      "label": "Bloons TD 6",
+      "componentName": "com.ninjakiwi.bloonstd6/com.unity3d.player.UnityPlayerActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794004319.0,
+      "lastRequested": 1794004319.0,
+      "installs": "5,000,000+",
+      "roi_score": 183,
+      "priority": "Low"
+    },
+    {
+      "drawable": "chetak",
+      "label": "Chetak",
+      "componentName": "com.bajajmychetak/com.bajajmychetak.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794004319.0,
+      "lastRequested": 1794004319.0,
+      "installs": "500,000+",
+      "roi_score": 74,
+      "priority": "Low"
+    },
+    {
+      "drawable": "doomsday",
+      "label": "Doomsday",
+      "componentName": "com.igg.android.doomsdaylastsurvivors/com.gpc.sdk.unity.GPCSDKMainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794004319.0,
+      "lastRequested": 1794004319.0,
+      "installs": "100,000,000+",
+      "roi_score": 738,
+      "priority": "Low"
+    },
+    {
+      "drawable": "droidcam",
+      "label": "DroidCam",
+      "componentName": "com.dev47apps.obsdroidcam/com.dev47apps.obsdroidcam.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794004319.0,
+      "lastRequested": 1794004319.0,
+      "installs": "5,000,000+",
+      "roi_score": 183,
+      "priority": "Low"
+    },
+    {
+      "drawable": "hushgram",
+      "label": "Hushgram",
+      "componentName": "com.instagram.android.hush/com.instagram.android.activity.MainTabActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794004319.0,
+      "lastRequested": 1794004319.0,
+      "roi_score": 23,
+      "priority": "Low"
+    },
+    {
+      "drawable": "mahjong_scapes",
+      "label": "Mahjong Scapes",
+      "componentName": "com.match.meditation/com.android.client.UnityPlayerActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794004319.0,
+      "lastRequested": 1794004319.0,
+      "installs": "10,000,000+",
+      "roi_score": 250,
+      "priority": "Low"
+    },
+    {
+      "drawable": "mymotor",
+      "label": "MyMotor",
+      "componentName": "info.vehicle.rto.car/info.vehicle.rto.car.MainActivityDefault",
+      "requestCount": 1,
+      "firstAppearance": 1794004319.0,
+      "lastRequested": 1794004319.0,
+      "installs": "1,000,000+",
+      "roi_score": 95,
+      "priority": "Low"
+    },
+    {
+      "drawable": "obsidian_music",
+      "label": "Obsidian Music",
+      "componentName": "com.example.obsidian/com.example.obsidian.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794004319.0,
+      "lastRequested": 1794004319.0,
+      "roi_score": 23,
+      "priority": "Low"
+    },
+    {
+      "drawable": "offline_games_1",
+      "label": "Offline Games",
+      "componentName": "com.media720.games2020/com.media720.games2020.presentation.gamelist.redesign.GameListActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794004319.0,
+      "lastRequested": 1794004319.0,
+      "installs": "100,000,000+",
+      "roi_score": 738,
+      "priority": "Low"
+    },
+    {
+      "drawable": "one_hand_operation",
+      "label": "One Hand Operation +",
+      "componentName": "com.samsung.android.sidegesturepad/com.samsung.android.sidegesturepad.settings.SGPSettingsActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794004319.0,
+      "lastRequested": 1794004319.0,
+      "installs": "1,000,000+",
+      "roi_score": 95,
+      "priority": "Low"
+    },
+    {
+      "drawable": "toxly",
+      "label": "Toxly",
+      "componentName": "com.mindful.code.studio.toxly.scanner/com.mindful.code.studio.toxly.scanner.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794004319.0,
+      "lastRequested": 1794004319.0,
+      "installs": "10,000+",
+      "roi_score": 31,
+      "priority": "Low"
+    },
+    {
+      "drawable": "trackhop",
+      "label": "Trackhop",
+      "componentName": "com.xlollx.songport/com.xlollx.songport.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794004319.0,
+      "lastRequested": 1794004319.0,
+      "roi_score": 23,
+      "priority": "Low"
+    },
+    {
+      "drawable": "vehicle_challan",
+      "label": "Vehicle Challan",
+      "componentName": "com.cars24.vas.challan.rto.fastag.vehicle.information/com.cars24_challan.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1794004319.0,
+      "lastRequested": 1794004319.0,
+      "installs": "500,000+",
+      "roi_score": 74,
+      "priority": "Low"
+    },
+    {
+      "drawable": "vehicleinfo",
+      "label": "Vehicleinfo",
+      "componentName": "com.vehicle.rto.vahan.status.information.register/com.vassuperapp.DefaultIcon",
+      "requestCount": 1,
+      "firstAppearance": 1794004319.0,
+      "lastRequested": 1794004319.0,
+      "installs": "100,000,000+",
+      "roi_score": 738,
+      "priority": "Low"
+    },
+    {
+      "drawable": "az_screen_recorder",
+      "label": "AZ Screen Recorder",
+      "componentName": "com.hecorat.screenrecorder.free/com.hecorat.screenrecorder.free.activities.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "100,000,000+",
+      "roi_score": 10806,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "blogger",
+      "label": "Blogger",
+      "componentName": "com.google.android.apps.blogger/com.google.android.apps.blogger.ApplicationActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "10,000,000+",
+      "roi_score": 3656,
+      "priority": "Low"
+    },
+    {
+      "drawable": "bsnl_selfcare__new",
+      "label": "BSNL SelfCare (New)",
+      "componentName": "com.rma.bsnl/com.rma.bsnl.selfcare.ui.splash_screen.SplashScreenActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "1,000,000+",
+      "roi_score": 1394,
+      "priority": "Low"
+    },
+    {
+      "drawable": "buyhatke",
+      "label": "Buyhatke",
+      "componentName": "com.buyhatke.assistant/com.buyhatke.assistant.MainActivityLauncher",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "10,000,000+",
+      "roi_score": 3656,
+      "priority": "Low"
+    },
+    {
+      "drawable": "class_12_cbse_papers",
+      "label": "Class 12 CBSE Papers",
+      "componentName": "cbse.class12.solvedPapers/cbse.class12.solvedPapers.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "1,000,000+",
+      "roi_score": 1394,
+      "priority": "Low"
+    },
+    {
+      "drawable": "clickup",
+      "label": "ClickUp",
+      "componentName": "co.mangotechnologies.clickup/co.mangotechnologies.clickup.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "1,000,000+",
+      "roi_score": 3066,
+      "priority": "Low"
+    },
+    {
+      "drawable": "digihaat",
+      "label": "DigiHaat",
+      "componentName": "org.ondc.nirmitbap/org.ondc.nirmitbap.MainActivityDefault",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "1,000,000+",
+      "roi_score": 1394,
+      "priority": "Low"
+    },
+    {
+      "drawable": "document_reader",
+      "label": "Document Reader",
+      "componentName": "com.united.office.reader/com.united.office.reader.SplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "10,000,000+",
+      "roi_score": 3656,
+      "priority": "Low"
+    },
+    {
+      "drawable": "esanjeevani_2_0",
+      "label": "eSanjeevani 2.0",
+      "componentName": "hied.esanjeevaniabopd.com/hied.esanjeevaniabopd.com.activities.SplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "1,000,000+",
+      "roi_score": 1394,
+      "priority": "Low"
+    },
+    {
+      "drawable": "fiverr",
+      "label": "Fiverr",
+      "componentName": "com.fiverr.fiverr/com.fiverr.fiverr.activityandfragments.entrypoints.FVREntryPoint",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "50,000,000+",
+      "roi_score": 7743,
+      "priority": "Medium"
+    },
+    {
+      "drawable": "freelancer",
+      "label": "Freelancer",
+      "componentName": "com.freelancer.android.messenger/com.freelancer.main.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "10,000,000+",
+      "roi_score": 3656,
+      "priority": "Low"
+    },
+    {
+      "drawable": "gboardwu",
+      "label": "GboardWu",
+      "componentName": "com.google.android.inputmethod.latin.morphe/com.google.android.libraries.inputmethod.launcher.LauncherActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "roi_score": 340,
+      "priority": "Low"
+    },
+    {
+      "drawable": "imd",
+      "label": "IMD",
+      "componentName": "com.soul_99.suIMD/com.android.geto.activity.main.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "roi_score": 340,
+      "priority": "Low"
+    },
+    {
+      "drawable": "imo",
+      "label": "imo",
+      "componentName": "com.imo.android.imoim.morphe/com.imo.android.imoim.home.Home",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "roi_score": 340,
+      "priority": "Low"
+    },
+    {
+      "drawable": "jee_app",
+      "label": "JEE App",
+      "componentName": "com.edurev.iit/com.edurev.activity.SplashScreenActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "500,000+",
+      "roi_score": 1088,
+      "priority": "Low"
+    },
+    {
+      "drawable": "jee_guru__jee_mock_tests_2026",
+      "label": "JEE Guru: JEE Mock Tests 2026",
+      "componentName": "com.markage.jeeguru/com.markage.jeeguru.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "5,000+",
+      "roi_score": 423,
+      "priority": "Low"
+    },
+    {
+      "drawable": "jee_main_previous_year_paper",
+      "label": "JEE Main Previous Year Paper",
+      "componentName": "jee.iit.previous.year.paper/letest.ncertbooks.SplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "100,000+",
+      "roi_score": 679,
+      "priority": "Low"
+    },
+    {
+      "drawable": "jeenius_ai",
+      "label": "Jeenius AI",
+      "componentName": "com.stash.jeenius/com.stash.jeenius.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "10,000+",
+      "roi_score": 453,
+      "priority": "Low"
+    },
+    {
+      "drawable": "jeeprep",
+      "label": "JEEprep",
+      "componentName": "com.jeeprep.app/com.jeeprep.app.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "100,000+",
+      "roi_score": 679,
+      "priority": "Low"
+    },
+    {
+      "drawable": "loglog",
+      "label": "LogLog",
+      "componentName": "io.github.mthli.loglog/io.github.mthli.loglog.app.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "100,000+",
+      "roi_score": 679,
+      "priority": "Low"
+    },
+    {
+      "drawable": "marks",
+      "label": "MARKS",
+      "componentName": "com.scoremarks.marks/com.scoremarks.marks.ui.activities.SplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "1,000,000+",
+      "roi_score": 1394,
+      "priority": "Low"
+    },
+    {
+      "drawable": "muay_thai_workout",
+      "label": "Muay Thai Workout",
+      "componentName": "com.hazard.thaiboxer.muaythai/com.hazard.thaiboxer.muaythai.activity.SplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "5,000,000+",
+      "roi_score": 2687,
+      "priority": "Low"
+    },
+    {
+      "drawable": "musclewiki",
+      "label": "MuscleWiki",
+      "componentName": "com.musclewiki.macro/com.musclewiki.macro.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "1,000,000+",
+      "roi_score": 1394,
+      "priority": "Low"
+    },
+    {
+      "drawable": "ncert_books___solutions",
+      "label": "Ncert Books & Solutions",
+      "componentName": "com.solutions.ncertbooks/com.solutions.ncertbooks.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "10,000,000+",
+      "roi_score": 3656,
+      "priority": "Low"
+    },
+    {
+      "drawable": "ndl_india",
+      "label": "NDL India",
+      "componentName": "in.gov.ndl.ndlapp/in.gov.ndl.ndlapp.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "500,000+",
+      "roi_score": 4929,
+      "priority": "Low"
+    },
+    {
+      "drawable": "pixellab_1",
+      "label": "PixelLab",
+      "componentName": "com.imaginstudio.imagetools.morphe/com.imaginstudio.imagetools.pixellab.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "roi_score": 340,
+      "priority": "Low"
+    },
+    {
+      "drawable": "plus",
+      "label": "Plus",
+      "componentName": "org.telegram.plus.morphe/org.telegram.messenger.DefaultIcon",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "roi_score": 340,
+      "priority": "Low"
+    },
+    {
+      "drawable": "pollpe",
+      "label": "PollPe",
+      "componentName": "com.ai.pollpe/com.ai.pollpe.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "roi_score": 340,
+      "priority": "Low"
+    },
+    {
+      "drawable": "proton_pass",
+      "label": "Proton Pass",
+      "componentName": "proton.android.pass.morphe/proton.android.pass.ui.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "roi_score": 340,
+      "priority": "Low"
+    },
+    {
+      "drawable": "reddit",
+      "label": "Reddit",
+      "componentName": "morphe.reddit.frontpage/launcher.default",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "roi_score": 340,
+      "priority": "Low"
+    },
+    {
+      "drawable": "sanchar_saathi",
+      "label": "Sanchar Saathi",
+      "componentName": "com.dot.app.sancharsaathi/org.cdot.diu.main.SathiMainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "10,000,000+",
+      "roi_score": 3656,
+      "priority": "Low"
+    },
+    {
+      "drawable": "sathee",
+      "label": "Sathee",
+      "componentName": "com.sathee_app/com.sathee_app.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "500,000+",
+      "roi_score": 1088,
+      "priority": "Low"
+    },
+    {
+      "drawable": "settings_manager",
+      "label": "Settings manager",
+      "componentName": "com.soul_99.suIMD/com.android.geto.activity.services.SettingsManagerLauncher",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "roi_score": 340,
+      "priority": "Low"
+    },
+    {
+      "drawable": "shizuku_1",
+      "label": "Shizuku+",
+      "componentName": "af.shizuku.plus.api/af.shizuku.manager.LauncherAlias",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "roi_score": 99,
+      "priority": "Low"
+    },
+    {
+      "drawable": "solve_arena",
+      "label": "Solve Arena",
+      "componentName": "com.solvearena.app/com.solvearena.app.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "10,000+",
+      "roi_score": 453,
+      "priority": "Low"
+    },
+    {
+      "drawable": "temp_mail",
+      "label": "Temp Mail",
+      "componentName": "com.tempmail/com.tempmail.activities.splash.SplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "10,000,000+",
+      "roi_score": 3656,
+      "priority": "Low"
+    },
+    {
+      "drawable": "terabox_clone1",
+      "label": "TeraBox clone1",
+      "componentName": "com.dubox.drive.clone1/com.dubox.drive.ui.Logo0LauncherActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "roi_score": 340,
+      "priority": "Low"
+    },
+    {
+      "drawable": "threads_1",
+      "label": "Threads",
+      "componentName": "com.instagram.barcelona.morphe/com.instagram.barcelona.mainactivity.BarcelonaActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "roi_score": 340,
+      "priority": "Low"
+    },
+    {
+      "drawable": "usertesting",
+      "label": "UserTesting",
+      "componentName": "com.usertesting.recorder.krsna/com.usertesting.recorder.startup.splash.SplashActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "1,000,000+",
+      "roi_score": 1394,
+      "priority": "Low"
+    },
+    {
+      "drawable": "venus",
+      "label": "Venus",
+      "componentName": "com.discord.venus/com.discord.main.MainDefault",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "roi_score": 340,
+      "priority": "Low"
+    },
+    {
+      "drawable": "wishlink_creator",
+      "label": "Wishlink Creator",
+      "componentName": "com.wishlink.creator/com.wishlink.creator.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "1,000,000+",
+      "roi_score": 1394,
+      "priority": "Low"
+    },
+    {
+      "drawable": "x",
+      "label": "X",
+      "componentName": "com.twitter.android.morphe/com.x.android.main.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "roi_score": 340,
+      "priority": "Low"
+    },
+    {
+      "drawable": "xapk_extractor",
+      "label": "XAPK Extractor",
+      "componentName": "com.ytheekshana.apkextractor/com.ytheekshana.apkextractor.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "1,000,000+",
+      "roi_score": 1394,
+      "priority": "Low"
+    },
+    {
+      "drawable": "zlibrary_by_bookboard",
+      "label": "zLibrary by BookBoard",
+      "componentName": "com.appuraja.notestore/com.appuraja.notestore.SplashScreenActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "1,000,000+",
+      "roi_score": 1394,
+      "priority": "Low"
+    },
+    {
+      "drawable": "zwart",
+      "label": "Zwart",
+      "componentName": "com.blackiconpack.zwart/com.blackiconpack.zwart.MainActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "1,000,000+",
+      "roi_score": 1394,
+      "priority": "Low"
+    },
+    {
+      "drawable": "maniac",
+      "label": "\u03b2-Maniac",
+      "componentName": "it.mirko.beta/it.mirko.beta.onboarding.OnboardingActivity",
+      "requestCount": 1,
+      "firstAppearance": 1793968389.0,
+      "lastRequested": 1793968389.0,
+      "installs": "500,000+",
+      "roi_score": 3538,
       "priority": "Low"
     }
   ]

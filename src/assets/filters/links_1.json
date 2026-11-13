@@ -438,6 +438,18 @@
       "drawable": "opera_beta"
     },
     {
+      "id": "com.paisabazaar/com.paisabazaar.MainActivityDefault",
+      "existing_drawable": "policybazaar",
+      "name": "Paisabazaar",
+      "components": [
+        "com.paisabazaar/com.paisabazaar.MainActivityDefault",
+        "com.paisabazaar/com.pb.module.RnApp.activity.RnAppActivity",
+        "com.paisabazaar/com.pbNew.modules.app.ui.activity.SplashActivity"
+      ],
+      "installs": "10,000,000+",
+      "drawable": "paisabazaar"
+    },
+    {
       "id": "com.tippingcanoe.pepperpl/com.pepper.apps.android.app.activity.MainActivity",
       "existing_drawable": "pepper",
       "name": "Pepper",
@@ -469,6 +481,15 @@
         "app.morphe.android.youtube/app.morphe.android.youtube.morphe_custom_5",
         "app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_3",
         "app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_5"
+      ]
+    },
+    {
+      "id": "com.streamdev.aiostreamer/com.streamdev.aiostreamer.lock.MainActivity",
+      "existing_drawable": "jiotv",
+      "name": "AIO Streamer",
+      "components": [
+        "com.streamdev.aiostreamer/com.streamdev.aiostreamer.lock.MainActivity",
+        "com.streamdev.aiostreamer/com.streamdev.aiostreamer.mobile.ui.lock.MainActivity"
       ]
     },
     {
@@ -668,7 +689,7 @@
         "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
         "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityLightIcon"
       ],
-      "installs": "5,000+",
+      "installs": "10,000+",
       "drawable": "pepper"
     },
     {
@@ -703,28 +724,6 @@
       ],
       "installs": "10,000,000+",
       "drawable": "phone"
-    },
-    {
-      "id": "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2",
-      "existing_drawable": "just_player",
-      "name": "PlayBack",
-      "components": [
-        "com.androxus.playback/com.androxus.playback.presentation.SplashActivity",
-        "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2"
-      ],
-      "installs": "1,000,000+",
-      "drawable": "playback"
-    },
-    {
-      "id": "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-      "existing_drawable": "pepper",
-      "name": "Preisj\u00e4ger",
-      "components": [
-        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityLightIcon"
-      ],
-      "installs": "100,000+",
-      "drawable": "com_preisjaeger"
     }
   ]
 }
