@@ -2,72 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 4,
-  "total_batches": 9,
+  "total_batches": 8,
   "links": [
-    {
-      "id": "com.exteraless.app/org.telegram.messenger.TelegramIcon",
-      "existing_drawable": "telegram",
-      "name": "exteraless"
-    },
-    {
-      "id": "com.fairphone.android.fairbudsapp/com.fairphone.fairsound.ui.activity.MainActivity",
-      "existing_drawable": "generic_voice_recorder_waves",
-      "name": "Fairbuds",
-      "installs": "10,000+",
-      "drawable": "fairbuds"
-    },
-    {
-      "id": "com.blogspot.novalabsandroid.fakecallerid/com.blogspot.novalabsandroid.fakecallerid.ConfigCallActivity",
-      "existing_drawable": "generic_dialer",
-      "name": "Fake Call",
-      "installs": "1,000,000+",
-      "drawable": "fake_call"
-    },
-    {
-      "id": "com.dox.fpoweroff/com.dox.fpoweroff.activity.MainActivity",
-      "existing_drawable": "generic_power",
-      "name": "Fake Power Off",
-      "installs": "10,000+",
-      "drawable": "fake_power_off"
-    },
-    {
-      "id": "com.file.manager.file.organizer.file.explorer.manage.files/com.file.manager.file.organizer.file.explorer.manage.files.ui.activity.splash.SplashActivity",
-      "existing_drawable": "generic_files",
-      "name": "File Manager",
-      "installs": "1,000,000+",
-      "drawable": "file_manager"
-    },
-    {
-      "id": "net.east_hino.standard_explorer/net.east_hino.standard_explorer.ui.ActivityMain",
-      "existing_drawable": "generic_files",
-      "name": "File Manager Shortcut",
-      "installs": "10,000+",
-      "drawable": "file_manager_shortcut"
-    },
-    {
-      "id": "nl.moeilijkedingen.jellyfinaudioplayer/nl.moeilijkedingen.jellyfinaudioplayer.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Fintunes",
-      "installs": "10,000+",
-      "drawable": "fintunes"
-    },
-    {
-      "id": "flashgram.org.web/org.telegram.messenger.DefaultIcon",
-      "existing_drawable": "telegram",
-      "name": "Flashgram"
-    },
-    {
-      "id": "com.eurekateam.fmradio/com.eurekateam.fmradio.MainActivity",
-      "existing_drawable": "generic_fm_radio",
-      "name": "FM Radio"
-    },
-    {
-      "id": "com.liveradio.fmradio.radiotuner.radiostation.amradio/com.liveradio.fmradio.radiotuner.radiostation.amradio.ui.activities.SplashActivity",
-      "existing_drawable": "generic_fm_radio",
-      "name": "FM Radio",
-      "installs": "5,000,000+",
-      "drawable": "fm_radio"
-    },
     {
       "id": "me.jajae.fmradio/me.jajae.fmradio.MainActivity",
       "existing_drawable": "generic_fm_radio",
@@ -101,11 +37,6 @@
       "id": "com.tobykurien.google_news/com.tobykurien.google_news.GoogleNewsActivity",
       "existing_drawable": "generic_earth",
       "name": "GApps Browser"
-    },
-    {
-      "id": "dev.jason.com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.launcher.LauncherActivity",
-      "existing_drawable": "gboard",
-      "name": "Gboard"
     },
     {
       "id": "com.appgcam.gcamera/com.appgcam.gcamera.ui.SplashActivity",
@@ -270,11 +201,6 @@
       "name": "KeePassVault"
     },
     {
-      "id": "com.kowx712.supermanager/me.weishu.kernelsu.MainActivityOfficial",
-      "existing_drawable": "kernelsu",
-      "name": "KernelSU"
-    },
-    {
       "id": "com.easybrain.killer.sudoku.free/com.easybrain.killer.sudoku.free.SplashActivity",
       "existing_drawable": "generic_sudoku",
       "name": "Killer Sudoku",
@@ -315,6 +241,78 @@
       "name": "La Bible",
       "installs": "100,000+",
       "drawable": "la_bible"
+    },
+    {
+      "id": "com.creciendodev.com.saintebible_bds/com.creciendodev.com.saintebible_bds.SplashScreen",
+      "existing_drawable": "generic_bible",
+      "name": "La Bible Du Semeur",
+      "installs": "500,000+",
+      "drawable": "la_bible_du_semeur"
+    },
+    {
+      "id": "biblia.habla.hoy.AOVGMDRFUVODNBOFPU/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "La Biblia",
+      "installs": "1,000,000+",
+      "drawable": "la_biblia"
+    },
+    {
+      "id": "la.biblia.catolica.latinoamericana/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "La Biblia",
+      "installs": "1,000,000+",
+      "drawable": "la_biblia"
+    },
+    {
+      "id": "com.draco.ladb.free/com.draco.ladb.views.MainActivity",
+      "existing_drawable": "ladb",
+      "name": "LADB"
+    },
+    {
+      "id": "org.larpgram.cc/org.telegram.messenger.DefaultIcon",
+      "existing_drawable": "telegram",
+      "name": "larpgram"
+    },
+    {
+      "id": "com.lastpass.authenticator/com.lastpass.authenticator.ui.MainActivity",
+      "existing_drawable": "lastpass",
+      "name": "LastPass Authenticator",
+      "installs": "1,000,000+",
+      "drawable": "lastpass_authenticator"
+    },
+    {
+      "id": "com.bearinmind.launcher314/com.bearinmind.launcher314.MainActivity",
+      "existing_drawable": "generic_power",
+      "name": "Launcher314"
+    },
+    {
+      "id": "com.flass.layoutinspect/com.flass.layoutinspect.activity.MainActivityAlias",
+      "existing_drawable": "generic_shell",
+      "name": "Layout Inspect"
+    },
+    {
+      "id": "de.melvil.noten/de.melvil.noten.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Learn Music Notes",
+      "installs": "100,000+",
+      "drawable": "learn_music_notes"
+    },
+    {
+      "id": "com.learn.piano.music.instrument/com.example.pianoapplication.MainActivity",
+      "existing_drawable": "generic_piano",
+      "name": "Learn Piano",
+      "installs": "100,000+",
+      "drawable": "learn_piano"
+    },
+    {
+      "id": "com.lenovo.FileBrowser2/com.lenovo.FileBrowser.activities.FileBrowserMain",
+      "existing_drawable": "generic_files",
+      "name": "Lenovo File Manager"
+    },
+    {
+      "id": "com.zui.notes/com.zui.notes.home.MainActivity",
+      "existing_drawable": "generic_notes",
+      "name": "Lenovo ZUI Notepad"
     }
   ]
 }

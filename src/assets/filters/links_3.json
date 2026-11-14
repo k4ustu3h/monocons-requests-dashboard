@@ -2,65 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 3,
-  "total_batches": 9,
+  "total_batches": 8,
   "links": [
-    {
-      "id": "com.azwstudios.theholybible.frls/com.azwstudios.theholybible.MainActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Bible Louis Segond",
-      "installs": "500,000+",
-      "drawable": "bible_louis_segond"
-    },
-    {
-      "id": "com.mathieu.budmaldash00/com.mathieu.budmaldash00.GeometryJump",
-      "existing_drawable": "geometry_dash",
-      "name": "BurmalDash"
-    },
-    {
-      "id": "com.candl.athena/com.candl.athena.activity.Calculator",
-      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "CALCU",
-      "installs": "10,000,000+",
-      "drawable": "calcu"
-    },
-    {
-      "id": "com.jzhk.calculator/com.jzhk.calculator.Calculator",
-      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "Calculator"
-    },
-    {
-      "id": "calculatorlock.calculatorvault.photovault.hider/calculatorlock.calculatorvault.photovault.hider.SplashActivity",
-      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "Calculator Lock",
-      "installs": "50,000,000+",
-      "drawable": "calculator_lock"
-    },
-    {
-      "id": "com.bbk.calendar/com.bbk.calendar.MainActivity",
-      "existing_drawable": "calendar",
-      "name": "Calendar"
-    },
-    {
-      "id": "com.calendar.taskschedule/com.calendar.taskschedule.SplashActivity",
-      "existing_drawable": "calendar",
-      "name": "Calendar",
-      "installs": "100,000+",
-      "drawable": "calendar"
-    },
-    {
-      "id": "org.withouthat.acalendarplus/org.withouthat.acalendar.tasks.TasksActivity",
-      "existing_drawable": "themed_icon_calendar_31",
-      "name": "Calendar",
-      "installs": "500,000+",
-      "drawable": "calendar"
-    },
-    {
-      "id": "calendar.agenda.calendarplanner.agendaplanner/com.calendar.aurora.activity.SplashActivity",
-      "existing_drawable": "calendar",
-      "name": "Calendar Planner",
-      "installs": "10,000,000+",
-      "drawable": "calendar_planner"
-    },
     {
       "id": "com.m24apps.acr/com.m24apps.acr.activities.SplashActivityV3",
       "existing_drawable": "generic_dialer",
@@ -222,13 +165,6 @@
       "name": "deutsia radio"
     },
     {
-      "id": "io.illescasDaniel.devSnippets/io.illescasDaniel.devSnippets.MainActivity",
-      "existing_drawable": "generic_braces",
-      "name": "DevSnippets",
-      "installs": "10,000+",
-      "drawable": "devsnippets"
-    },
-    {
       "id": "com.adeeteya.digital_calculator/com.adeeteya.digital_calculator.MainActivity",
       "existing_drawable": "zcalc",
       "name": "Digital Calculator",
@@ -317,6 +253,70 @@
       "id": "com.coolappstore.everdialer.by.svhp/com.coolappstore.everdialer.by.svhp.MainActivityNothingIcon",
       "existing_drawable": "generic_dialer",
       "name": "Ever Dialer"
+    },
+    {
+      "id": "com.exteraless.app/org.telegram.messenger.TelegramIcon",
+      "existing_drawable": "telegram",
+      "name": "exteraless"
+    },
+    {
+      "id": "com.fairphone.android.fairbudsapp/com.fairphone.fairsound.ui.activity.MainActivity",
+      "existing_drawable": "generic_voice_recorder_waves",
+      "name": "Fairbuds",
+      "installs": "10,000+",
+      "drawable": "fairbuds"
+    },
+    {
+      "id": "com.blogspot.novalabsandroid.fakecallerid/com.blogspot.novalabsandroid.fakecallerid.ConfigCallActivity",
+      "existing_drawable": "generic_dialer",
+      "name": "Fake Call",
+      "installs": "1,000,000+",
+      "drawable": "fake_call"
+    },
+    {
+      "id": "com.dox.fpoweroff/com.dox.fpoweroff.activity.MainActivity",
+      "existing_drawable": "generic_power",
+      "name": "Fake Power Off",
+      "installs": "10,000+",
+      "drawable": "fake_power_off"
+    },
+    {
+      "id": "com.file.manager.file.organizer.file.explorer.manage.files/com.file.manager.file.organizer.file.explorer.manage.files.ui.activity.splash.SplashActivity",
+      "existing_drawable": "generic_files",
+      "name": "File Manager",
+      "installs": "1,000,000+",
+      "drawable": "file_manager"
+    },
+    {
+      "id": "net.east_hino.standard_explorer/net.east_hino.standard_explorer.ui.ActivityMain",
+      "existing_drawable": "generic_files",
+      "name": "File Manager Shortcut",
+      "installs": "10,000+",
+      "drawable": "file_manager_shortcut"
+    },
+    {
+      "id": "nl.moeilijkedingen.jellyfinaudioplayer/nl.moeilijkedingen.jellyfinaudioplayer.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Fintunes",
+      "installs": "10,000+",
+      "drawable": "fintunes"
+    },
+    {
+      "id": "flashgram.org.web/org.telegram.messenger.DefaultIcon",
+      "existing_drawable": "telegram",
+      "name": "Flashgram"
+    },
+    {
+      "id": "com.eurekateam.fmradio/com.eurekateam.fmradio.MainActivity",
+      "existing_drawable": "generic_fm_radio",
+      "name": "FM Radio"
+    },
+    {
+      "id": "com.liveradio.fmradio.radiotuner.radiostation.amradio/com.liveradio.fmradio.radiotuner.radiostation.amradio.ui.activities.SplashActivity",
+      "existing_drawable": "generic_fm_radio",
+      "name": "FM Radio",
+      "installs": "5,000,000+",
+      "drawable": "fm_radio"
     }
   ]
 }

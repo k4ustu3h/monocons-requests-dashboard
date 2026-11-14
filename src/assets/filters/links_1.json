@@ -2,7 +2,7 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 1,
-  "total_batches": 9,
+  "total_batches": 8,
   "links": [
     {
       "id": "org.telegram.messenger/com.exteragram.messenger.AmethystIcon",
@@ -125,43 +125,6 @@
         "com.aliucord/com.discord.main.MainY2K",
         "com.aliucord/com.discord.main.MainZombie"
       ]
-    },
-    {
-      "id": "com.discord/com.discord.main.MainAngry",
-      "existing_drawable": "discord",
-      "name": "Discord",
-      "components": [
-        "com.discord/com.discord.main.MainAngry",
-        "com.discord/com.discord.main.MainBeanie",
-        "com.discord/com.discord.main.MainBlurpleTwilight",
-        "com.discord/com.discord.main.MainBlush",
-        "com.discord/com.discord.main.MainBrandInverted",
-        "com.discord/com.discord.main.MainCamo",
-        "com.discord/com.discord.main.MainCherryBlossom",
-        "com.discord/com.discord.main.MainCircuit",
-        "com.discord/com.discord.main.MainClydeStein",
-        "com.discord/com.discord.main.MainController",
-        "com.discord/com.discord.main.MainDrip",
-        "com.discord/com.discord.main.MainGalaxy",
-        "com.discord/com.discord.main.MainGaming",
-        "com.discord/com.discord.main.MainHoloWaves",
-        "com.discord/com.discord.main.MainInRainbows",
-        "com.discord/com.discord.main.MainManga",
-        "com.discord/com.discord.main.MainMatteDark",
-        "com.discord/com.discord.main.MainMatteLight",
-        "com.discord/com.discord.main.MainMidnightPrism",
-        "com.discord/com.discord.main.MainMushroom",
-        "com.discord/com.discord.main.MainPastel",
-        "com.discord/com.discord.main.MainPirate",
-        "com.discord/com.discord.main.MainSlimy",
-        "com.discord/com.discord.main.MainSunset",
-        "com.discord/com.discord.main.MainY2K",
-        "com.discord/com.discord.main.MainZombie",
-        "com.discord/com.discord.screens.ScreenAux",
-        "com.discord/com.google.android.archive.ReactivateActivity"
-      ],
-      "installs": "500,000,000+",
-      "drawable": "discord"
     },
     {
       "id": "dev.beefers.vendetta/com.discord.main.MainAngry",
@@ -319,6 +282,18 @@
       ],
       "installs": "10,000,000+",
       "drawable": "graph_messenger"
+    },
+    {
+      "id": "nu.gpu.nagram/org.telegram.messenger.BlueIcon",
+      "existing_drawable": "nagram",
+      "name": "Nagram X",
+      "components": [
+        "nu.gpu.nagram/org.telegram.messenger.BlueIcon",
+        "nu.gpu.nagram/org.telegram.messenger.DarkBlueIcon",
+        "nu.gpu.nagram/org.telegram.messenger.DefaultIcon",
+        "nu.gpu.nagram/org.telegram.messenger.GoogleIcon",
+        "nu.gpu.nagram/org.telegram.messenger.NielloIcon"
+      ]
     },
     {
       "id": "com.sosauce.cutemusic/com.sosauce.chocola.core.MainActivity",
@@ -664,24 +639,6 @@
       ]
     },
     {
-      "id": "nu.gpu.nagram/org.telegram.messenger.DarkGreenIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram X",
-      "components": [
-        "nu.gpu.nagram/org.telegram.messenger.DarkGreenIcon",
-        "nu.gpu.nagram/org.telegram.messenger.NeonIcon"
-      ]
-    },
-    {
-      "id": "fork.risin42.nagramx/org.telegram.messenger.ColorfulIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram XF",
-      "components": [
-        "fork.risin42.nagramx/org.telegram.messenger.ColorfulIcon",
-        "fork.risin42.nagramx/org.telegram.messenger.DarkBlueIcon"
-      ]
-    },
-    {
       "id": "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
       "existing_drawable": "pepper",
       "name": "Pepper",
@@ -704,17 +661,6 @@
       "drawable": "pepper"
     },
     {
-      "id": "ai.perplexity.app.android/ai.perplexity.app.android.authorization.exception.MainActivity",
-      "existing_drawable": "perplexity",
-      "name": "Perplexity",
-      "components": [
-        "ai.perplexity.app.android/ai.perplexity.app.android.authorization.exception.MainActivity",
-        "ai.perplexity.app.android/com.google.android.archive.ReactivateActivity"
-      ],
-      "installs": "100,000,000+",
-      "drawable": "perplexity"
-    },
-    {
       "id": "com.grice.dialer/com.grice.dialer.icon.Default",
       "existing_drawable": "generic_dialer",
       "name": "Phone",
@@ -724,6 +670,37 @@
       ],
       "installs": "10,000,000+",
       "drawable": "phone"
+    },
+    {
+      "id": "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2",
+      "existing_drawable": "just_player",
+      "name": "PlayBack",
+      "components": [
+        "com.androxus.playback/com.androxus.playback.presentation.SplashActivity",
+        "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2"
+      ],
+      "installs": "1,000,000+",
+      "drawable": "playback"
+    },
+    {
+      "id": "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+      "existing_drawable": "pepper",
+      "name": "Preisj\u00e4ger",
+      "components": [
+        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityLightIcon"
+      ],
+      "installs": "100,000+",
+      "drawable": "com_preisjaeger"
+    },
+    {
+      "id": "app.revenge/com.discord.main.MainCamo",
+      "existing_drawable": "discord",
+      "name": "Revenge",
+      "components": [
+        "app.revenge/com.discord.main.MainCamo",
+        "app.revenge/com.discord.main.MainDefault"
+      ]
     }
   ]
 }

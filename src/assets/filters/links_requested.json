@@ -3,18 +3,6 @@
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "links": [
     {
-      "id": "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_2",
-      "existing_drawable": "generic_player",
-      "name": "YouTube Music",
-      "components": [
-        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_custom_5",
-        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_2",
-        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_3",
-        "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_5",
-        "app.morphe.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity"
-      ]
-    },
-    {
       "id": "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9.blk",
       "existing_drawable": "my_pixel",
       "name": "My Pixel",
@@ -114,11 +102,6 @@
       "id": "com.vivo.soundrecorder/com.android.activity.ReclistActivity",
       "existing_drawable": "generic_voice_recorder_waves",
       "name": "Recorder"
-    },
-    {
-      "id": "app.morphe.android.apps.youtube.music/app.morphe.android.apps.youtube.music.morphe_original_2",
-      "existing_drawable": "morphe",
-      "name": "YT Music Morphe"
     }
   ]
 }

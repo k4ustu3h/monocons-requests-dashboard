@@ -2,50 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 2,
-  "total_batches": 9,
+  "total_batches": 8,
   "links": [
-    {
-      "id": "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2",
-      "existing_drawable": "just_player",
-      "name": "PlayBack",
-      "components": [
-        "com.androxus.playback/com.androxus.playback.presentation.SplashActivity",
-        "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2"
-      ],
-      "installs": "1,000,000+",
-      "drawable": "playback"
-    },
-    {
-      "id": "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-      "existing_drawable": "pepper",
-      "name": "Preisj\u00e4ger",
-      "components": [
-        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityLightIcon"
-      ],
-      "installs": "100,000+",
-      "drawable": "com_preisjaeger"
-    },
-    {
-      "id": "com.ykart.tool.qrcodegen/com.ykart.tool.qrcodegen.MainActivity",
-      "existing_drawable": "generic_qr_reader",
-      "name": "QR Code Generator",
-      "components": [
-        "com.ykart.tool.qrcodegen/com.ykart.tool.qrcodegen.MainActivity",
-        "com.ykart.tool.qrcodegen/com.ykart.tool.qrcodegen.SplashScreenActivity"
-      ],
-      "installs": "5,000,000+",
-      "drawable": "qr_code_generator"
-    },
-    {
-      "id": "app.revenge/com.discord.main.MainCamo",
-      "existing_drawable": "discord",
-      "name": "Revenge",
-      "components": [
-        "app.revenge/com.discord.main.MainCamo",
-        "app.revenge/com.discord.main.MainDefault"
-      ]
-    },
     {
       "id": "com.samsung.android.scan3d/com.google.android.apps.cameralite.capture.CaptureActivity",
       "existing_drawable": "generic_camera",
@@ -149,17 +107,6 @@
       ]
     },
     {
-      "id": "com.google.android.music/com.android.music.activitymanagement.TopLevelActivity",
-      "existing_drawable": "generic_player",
-      "name": "YouTube Music",
-      "components": [
-        "com.google.android.music/com.android.music.activitymanagement.TopLevelActivity",
-        "com.google.android.music/com.google.android.music.tombstone.LauncherActivity"
-      ],
-      "installs": "5,000,000,000+",
-      "drawable": "youtube_music"
-    },
-    {
       "id": "ch.zkb.twint/ch.zkb.twint.ui.StartActivity",
       "existing_drawable": "twint",
       "name": "ZKB Twint",
@@ -228,20 +175,6 @@
       "drawable": "alight_phone"
     },
     {
-      "id": "com.pdfmerge.imagetopdf.pdfmaker/com.pdfmerge.imagetopdf.pdfmaker.screen.home.SplashScreen",
-      "existing_drawable": "generic_pdf_square",
-      "name": "All PDF Maker",
-      "installs": "10,000,000+",
-      "drawable": "all_pdf_maker"
-    },
-    {
-      "id": "pdfreader.pdfviewer.free.officetool/pdfreader.pdfviewer.free.officetool.ui.R3WelcomeActivity",
-      "existing_drawable": "generic_pdf_file",
-      "name": "All PDF Reader",
-      "installs": "10,000,000+",
-      "drawable": "all_pdf_reader"
-    },
-    {
       "id": "com.crazylabs.amaze.game/com.unity3d.player.UnityPlayerActivity",
       "existing_drawable": "amaze",
       "name": "AMAZE!",
@@ -266,13 +199,6 @@
       "id": "com.kamwithk.ankiconnectandroid/com.kamwithk.ankiconnectandroid.MainActivity",
       "existing_drawable": "ladb",
       "name": "Ankiconnect"
-    },
-    {
-      "id": "com.inwepo.apkinstaller/com.inwepo.apkinstaller.MainActivity",
-      "existing_drawable": "generic_shell",
-      "name": "APK Installer",
-      "installs": "100,000+",
-      "drawable": "apk_installer"
     },
     {
       "id": "com.example.libusbAndroidTest/com.example.libusbAndroidTest.MainActivity",
@@ -302,11 +228,6 @@
       "id": "com.huaqin.FM/com.huaqin.FM.FM",
       "existing_drawable": "generic_fm_radio",
       "name": "Asus FM Radio"
-    },
-    {
-      "id": "com.audible.application.kindle/com.audible.application.MainLauncher",
-      "existing_drawable": "audible",
-      "name": "Audible"
     },
     {
       "id": "com.musicplayer.playermusic/com.musicplayer.playermusic.activities.AudifyStartActivity",
@@ -387,6 +308,63 @@
       "name": "Bible KJV",
       "installs": "10,000,000+",
       "drawable": "bible_kjv"
+    },
+    {
+      "id": "com.azwstudios.theholybible.frls/com.azwstudios.theholybible.MainActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Bible Louis Segond",
+      "installs": "500,000+",
+      "drawable": "bible_louis_segond"
+    },
+    {
+      "id": "com.mathieu.budmaldash00/com.mathieu.budmaldash00.GeometryJump",
+      "existing_drawable": "geometry_dash",
+      "name": "BurmalDash"
+    },
+    {
+      "id": "com.candl.athena/com.candl.athena.activity.Calculator",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "CALCU",
+      "installs": "10,000,000+",
+      "drawable": "calcu"
+    },
+    {
+      "id": "com.jzhk.calculator/com.jzhk.calculator.Calculator",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "Calculator"
+    },
+    {
+      "id": "calculatorlock.calculatorvault.photovault.hider/calculatorlock.calculatorvault.photovault.hider.SplashActivity",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "Calculator Lock",
+      "installs": "50,000,000+",
+      "drawable": "calculator_lock"
+    },
+    {
+      "id": "com.bbk.calendar/com.bbk.calendar.MainActivity",
+      "existing_drawable": "calendar",
+      "name": "Calendar"
+    },
+    {
+      "id": "com.calendar.taskschedule/com.calendar.taskschedule.SplashActivity",
+      "existing_drawable": "calendar",
+      "name": "Calendar",
+      "installs": "100,000+",
+      "drawable": "calendar"
+    },
+    {
+      "id": "org.withouthat.acalendarplus/org.withouthat.acalendar.tasks.TasksActivity",
+      "existing_drawable": "themed_icon_calendar_31",
+      "name": "Calendar",
+      "installs": "500,000+",
+      "drawable": "calendar"
+    },
+    {
+      "id": "calendar.agenda.calendarplanner.agendaplanner/com.calendar.aurora.activity.SplashActivity",
+      "existing_drawable": "calendar",
+      "name": "Calendar Planner",
+      "installs": "10,000,000+",
+      "drawable": "calendar_planner"
     }
   ]
 }

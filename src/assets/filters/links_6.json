@@ -2,112 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 6,
-  "total_batches": 9,
+  "total_batches": 8,
   "links": [
-    {
-      "id": "com.nexnil.mediaplayer/com.musicplayer.mediaplayer.activities.PermissionActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player"
-    },
-    {
-      "id": "com.rocks.music/com.rocks.music.musicplayer.MusicSplash",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "5,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "media.audioplayer.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "100,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "media.mp3player.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "10,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "media.music.mp3player.musicplayer/media.music.mp3player.musicplayer.ui.main.MainMPActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music player",
-      "installs": "50,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "media.music.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "100,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "music.musicplayer/com.android.music.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "50,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "musicplayer.hdvideoplayer.backgroundmusic/musicplayer.hdvideoplayer.backgroundmusic.myActivities.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "50,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "musicplayer.theme.bass.equalizer/musicplayer.theme.bass.equalizer.activity.StartPageActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music player",
-      "installs": "10,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "com.iven.musicplayergo/com.iven.musicplayergo.MainActivity",
-      "existing_drawable": "music_player_go",
-      "name": "Music Player GO"
-    },
-    {
-      "id": "musicplayer.musicapp.playmusic.mp3player/musicplayer.musicapp.playmusic.mp3player.ui.splash.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player Offline & MP3",
-      "installs": "10,000,000+",
-      "drawable": "music_player_offline_mp3"
-    },
-    {
-      "id": "jl.musicalnotes/jl.musicalnotes.activity.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Musical Notes"
-    },
-    {
-      "id": "com.muso.musicplayer/com.muso.musicplayer.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Muso",
-      "installs": "50,000,000+",
-      "drawable": "muso"
-    },
-    {
-      "id": "com.ttnet.muzik/com.ttnet.muzik.DefaultAppIconAlias",
-      "existing_drawable": "music_player",
-      "name": "Muud",
-      "installs": "5,000,000+",
-      "drawable": "muud"
-    },
-    {
-      "id": "hu.mvmnext.onlineugyintezes/com.nkmomni.app.screen.splash.SplashActivity",
-      "existing_drawable": "substratum_lite",
-      "name": "MVM Next",
-      "installs": "1,000,000+",
-      "drawable": "mvm_next"
-    },
-    {
-      "id": "com.mx.plus/com.mxtech.videoplayer.pro.ActivityMediaList",
-      "existing_drawable": "just_player",
-      "name": "MX Player"
-    },
     {
       "id": "com.mxtech.videoplayer.ae/com.mxtech.videoplayer.ae.ActivityWelcomeMX",
       "existing_drawable": "just_player",
@@ -126,13 +22,6 @@
       "name": "My Piano",
       "installs": "50,000,000+",
       "drawable": "my_piano"
-    },
-    {
-      "id": "com.vodafone.selfservis/com.vodafone.selfservis.FiveGAlias",
-      "existing_drawable": "my_vodafone",
-      "name": "My Vodafone 5G",
-      "installs": "50,000,000+",
-      "drawable": "my_vodafone_5g"
     },
     {
       "id": "com.appgeneration.itunerfree/com.appgeneration.mytunerlib.ui.activities.SplashActivity",
@@ -283,11 +172,6 @@
       "drawable": "pdf_editor"
     },
     {
-      "id": "SVS.pdfinspector/SVS.pdfinspector.MainActivity",
-      "existing_drawable": "generic_pdf_file",
-      "name": "PDF Inspector"
-    },
-    {
       "id": "com.pdfreader.editor.viewer.pdfviewer/com.pdfreader.editor.presentation.splash.SplashActivity",
       "existing_drawable": "generic_pdf_square",
       "name": "PDF Reader",
@@ -321,6 +205,120 @@
       "name": "PhotoStamp Camera",
       "installs": "1,000,000+",
       "drawable": "photostamp_camera"
+    },
+    {
+      "id": "brobata.physiboard/brobata.physiboard.MainActivity",
+      "existing_drawable": "termux",
+      "name": "PhysiBoard"
+    },
+    {
+      "id": "com.markduenas.android.apigen/com.markduenas.android.apigen.MainActivity",
+      "existing_drawable": "generic_pi",
+      "name": "Pi Generator",
+      "installs": "1,000+",
+      "drawable": "pi_generator"
+    },
+    {
+      "id": "com.ihenvyr.platinum_karaoke_songbook_app/com.ihenvyr.platinum_karaoke_songbook_app.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Platinum Karaoke Songbook",
+      "installs": "1,000,000+",
+      "drawable": "platinum_karaoke_songbook"
+    },
+    {
+      "id": "com.polette.shop.app/com.polette.shop.app.MainActivity",
+      "existing_drawable": "lenskart",
+      "name": "polette"
+    },
+    {
+      "id": "com.maxmpz.audioplayer.unlock/com.maxmpz.audioplayer.unlock.RedirectorActivity",
+      "existing_drawable": "poweramp_full_unlocker",
+      "name": "Poweramp Full Unlocker",
+      "installs": "5,000,000+",
+      "drawable": "poweramp_full_unlocker"
+    },
+    {
+      "id": "gpm.tnt_premier/one.premier.handheld.presentationlayer.activities.SplashActivity",
+      "existing_drawable": "just_player",
+      "name": "PREMIER",
+      "installs": "10,000,000+",
+      "drawable": "premier"
+    },
+    {
+      "id": "com.dynamixsoftware.printershare.amazon/com.dynamixsoftware.printershare.ActivityMain",
+      "existing_drawable": "generic_printer",
+      "name": "PrinterShare"
+    },
+    {
+      "id": "com.privateinternetaccess.android/com.kape.vpn.MainActivity",
+      "existing_drawable": "pia",
+      "name": "Private Internet Access VPN",
+      "installs": "10,000,000+",
+      "drawable": "private_internet_access_vpn"
+    },
+    {
+      "id": "com.tencent.iglite/com.epicgames.ue4.SplashActivity",
+      "existing_drawable": "pubg",
+      "name": "PUBG LITE",
+      "installs": "100,000,000+",
+      "drawable": "pubg_lite"
+    },
+    {
+      "id": "com.digitalchemy.barcodeplus/com.digitalchemy.barcodeplus.ui.screen.MainScreenActivity",
+      "existing_drawable": "generic_qr_reader",
+      "name": "QR Scanner Plus",
+      "installs": "1,000,000+",
+      "drawable": "qr_scanner_plus"
+    },
+    {
+      "id": "com.tomer.draw/com.tomer.draw.gallery.MainActivity",
+      "existing_drawable": "another_notes",
+      "name": "Quick Draw Everywhere"
+    },
+    {
+      "id": "com.tk.quicksearch/com.tk.quicksearch.app.MainActivityAliasAuroraLight",
+      "existing_drawable": "quick_search",
+      "name": "Quick Search",
+      "installs": "10,000+",
+      "drawable": "quick_search"
+    },
+    {
+      "id": "com.radio.fmradio/com.radio.fmradio.activities.SplashActivityAliasMain",
+      "existing_drawable": "generic_fm_radio",
+      "name": "Radio FM",
+      "installs": "100,000,000+",
+      "drawable": "radio_fm"
+    },
+    {
+      "id": "radio.fm.online/com.appmind.countryradios.screens.splash.SplashActivity",
+      "existing_drawable": "generic_fm_radio",
+      "name": "Radio FM",
+      "installs": "1,000,000+",
+      "drawable": "radio_fm"
+    },
+    {
+      "id": "net.metapps.watersounds/net.metapps.relaxsounds.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Rain Sounds",
+      "installs": "5,000,000+",
+      "drawable": "rain_sounds"
+    },
+    {
+      "id": "android.rk.RockVideoPlayer/android.rk.RockVideoPlayer.RockVideoPlayer",
+      "existing_drawable": "just_player",
+      "name": "ReproductorVideo"
+    },
+    {
+      "id": "com.termux.revancify.blue/com.termux.revancify.MainActivity",
+      "existing_drawable": "rvx_manager",
+      "name": "Revancify"
+    },
+    {
+      "id": "com.androidrocker.audiocutter/com.androidrocker.audiocutter.MySplashActivity",
+      "existing_drawable": "sony_music",
+      "name": "Ringtone Maker",
+      "installs": "10,000,000+",
+      "drawable": "ringtone_maker"
     }
   ]
 }
