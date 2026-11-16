@@ -2,54 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 1,
-  "total_batches": 8,
+  "total_batches": 9,
   "links": [
-    {
-      "id": "org.telegram.messenger/com.exteragram.messenger.AmethystIcon",
-      "existing_drawable": "telegram",
-      "name": "AyuGram",
-      "components": [
-        "org.telegram.messenger/com.exteragram.messenger.AmethystIcon",
-        "org.telegram.messenger/com.exteragram.messenger.AyuGramYaPlus",
-        "org.telegram.messenger/com.exteragram.messenger.DefaultIcon",
-        "org.telegram.messenger/com.exteragram.messenger.ExteraIcon",
-        "org.telegram.messenger/com.exteragram.messenger.MonetIcon",
-        "org.telegram.messenger/com.exteragram.messenger.MonetIconExtera",
-        "org.telegram.messenger/com.exteragram.messenger.NeoIcon",
-        "org.telegram.messenger/com.exteragram.messenger.SusIcon",
-        "org.telegram.messenger/org.telegram.messenger.ClassicIcon",
-        "org.telegram.messenger/org.telegram.messenger.ColoredIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramAquaIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramClassicIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramDefaultIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramNekoAquaIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramNekoMusheenIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramNekoNeonIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramNekoPremiumIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramNekoPusheenIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramNekoRainbowIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramNekoSpaceIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramNekoTurboIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramNoxIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramPremiumIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramThemedClassicIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramThemedXEyeIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramTurboIcon",
-        "org.telegram.messenger/org.telegram.messenger.MomogramVintageIcon",
-        "org.telegram.messenger/org.telegram.messenger.NekoAquaIcon",
-        "org.telegram.messenger/org.telegram.messenger.NekoMusheenIcon",
-        "org.telegram.messenger/org.telegram.messenger.NekoNeonIcon",
-        "org.telegram.messenger/org.telegram.messenger.NekoPremiumIcon",
-        "org.telegram.messenger/org.telegram.messenger.NekoPusheenIcon",
-        "org.telegram.messenger/org.telegram.messenger.NekoRainbowIcon",
-        "org.telegram.messenger/org.telegram.messenger.NekoSpaceIcon",
-        "org.telegram.messenger/org.telegram.messenger.NekoTurboIcon",
-        "org.telegram.messenger/org.telegram.messenger.ThemedClassicIcon",
-        "org.telegram.messenger/org.telegram.messenger.ThemedXEyeIcon"
-      ],
-      "installs": "1,000,000,000+",
-      "drawable": "ayugram"
-    },
     {
       "id": "org.onekash.kashcal/org.onekash.kashcal.MainActivity",
       "existing_drawable": "kashcal",
@@ -225,6 +179,23 @@
       "drawable": "tasks"
     },
     {
+      "id": "org.telegram.messenger/com.exteragram.messenger.AmethystIcon",
+      "existing_drawable": "telegram",
+      "name": "AyuGram",
+      "components": [
+        "org.telegram.messenger/com.exteragram.messenger.AmethystIcon",
+        "org.telegram.messenger/com.exteragram.messenger.AyuGramYaPlus",
+        "org.telegram.messenger/com.exteragram.messenger.DefaultIcon",
+        "org.telegram.messenger/com.exteragram.messenger.ExteraIcon",
+        "org.telegram.messenger/com.exteragram.messenger.MonetIcon",
+        "org.telegram.messenger/com.exteragram.messenger.MonetIconExtera",
+        "org.telegram.messenger/com.exteragram.messenger.NeoIcon",
+        "org.telegram.messenger/com.exteragram.messenger.SusIcon"
+      ],
+      "installs": "1,000,000,000+",
+      "drawable": "ayugram"
+    },
+    {
       "id": "io.github.pyoncord.app/com.discord.main.MainBlurpleTwilight",
       "existing_drawable": "discord",
       "name": "Bunny",
@@ -270,6 +241,18 @@
       "drawable": "simple_calendar_pro"
     },
     {
+      "id": "com.sosauce.cutemusic/com.sosauce.chocola.app.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Chocola",
+      "components": [
+        "com.sosauce.cutemusic/com.sosauce.chocola.app.MainActivity",
+        "com.sosauce.cutemusic/com.sosauce.chocola.core.MainActivity",
+        "com.sosauce.cutemusic/com.sosauce.chocola.presentation.MainActivity",
+        "com.sosauce.cutemusic/com.sosauce.cutemusic.main.MainActivity",
+        "com.sosauce.cutemusic/com.sosauce.cutemusic.presentation.MainActivity"
+      ]
+    },
+    {
       "id": "ir.ilmili.telegraph/org.telegram.messenger.GraphIconBlack",
       "existing_drawable": "telegram",
       "name": "Graph Messenger",
@@ -284,26 +267,15 @@
       "drawable": "graph_messenger"
     },
     {
-      "id": "nu.gpu.nagram/org.telegram.messenger.BlueIcon",
-      "existing_drawable": "nagram",
-      "name": "Nagram X",
+      "id": "app.morphe.manager/app.morphe.manager.MainActivity_Accent_1",
+      "existing_drawable": "morphe",
+      "name": "Morphe",
       "components": [
-        "nu.gpu.nagram/org.telegram.messenger.BlueIcon",
-        "nu.gpu.nagram/org.telegram.messenger.DarkBlueIcon",
-        "nu.gpu.nagram/org.telegram.messenger.DefaultIcon",
-        "nu.gpu.nagram/org.telegram.messenger.GoogleIcon",
-        "nu.gpu.nagram/org.telegram.messenger.NielloIcon"
-      ]
-    },
-    {
-      "id": "com.sosauce.cutemusic/com.sosauce.chocola.core.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Chocola",
-      "components": [
-        "com.sosauce.cutemusic/com.sosauce.chocola.core.MainActivity",
-        "com.sosauce.cutemusic/com.sosauce.chocola.presentation.MainActivity",
-        "com.sosauce.cutemusic/com.sosauce.cutemusic.main.MainActivity",
-        "com.sosauce.cutemusic/com.sosauce.cutemusic.presentation.MainActivity"
+        "app.morphe.manager/app.morphe.manager.MainActivity_Accent_1",
+        "app.morphe.manager/app.morphe.manager.MainActivity_Accent_1_Black",
+        "app.morphe.manager/app.morphe.manager.MainActivity_Accent_2",
+        "app.morphe.manager/app.morphe.manager.MainActivity_Dark_4",
+        "app.morphe.manager/app.morphe.manager.MainActivity_Dark_5_Black"
       ]
     },
     {
@@ -377,6 +349,16 @@
       ]
     },
     {
+      "id": "com.music.bitchord/com.music.bitchord.LauncherGlassDark",
+      "existing_drawable": "bitchord",
+      "name": "BitChord",
+      "components": [
+        "com.music.bitchord/com.music.bitchord.LauncherGlassDark",
+        "com.music.bitchord/com.music.bitchord.LauncherMonochrome",
+        "com.music.bitchord/com.music.bitchord.LauncherPixelGlass"
+      ]
+    },
+    {
       "id": "com.chollometro/com.pepper.apps.android.presentation.MainActivity",
       "existing_drawable": "pepper",
       "name": "Chollometro",
@@ -387,6 +369,18 @@
       ],
       "installs": "1,000,000+",
       "drawable": "chollometro"
+    },
+    {
+      "id": "com.duolingo/com.duolingo.app.InactiveDarkLauncherLightBulb",
+      "existing_drawable": "duolingo",
+      "name": "Duolingo",
+      "components": [
+        "com.duolingo/com.duolingo.app.InactiveDarkLauncherLightBulb",
+        "com.duolingo/com.duolingo.app.InactiveHorrorLauncher",
+        "com.duolingo/com.duolingo.app.SeasonalLauncher8"
+      ],
+      "installs": "500,000,000+",
+      "drawable": "duolingo"
     },
     {
       "id": "com.shaiban.audioplayer.mplayer/com.shaiban.audioplayer.mplayer.app.navigation.NavigatingActivity",
@@ -413,18 +407,6 @@
       "drawable": "opera_beta"
     },
     {
-      "id": "com.paisabazaar/com.paisabazaar.MainActivityDefault",
-      "existing_drawable": "policybazaar",
-      "name": "Paisabazaar",
-      "components": [
-        "com.paisabazaar/com.paisabazaar.MainActivityDefault",
-        "com.paisabazaar/com.pb.module.RnApp.activity.RnAppActivity",
-        "com.paisabazaar/com.pbNew.modules.app.ui.activity.SplashActivity"
-      ],
-      "installs": "10,000,000+",
-      "drawable": "paisabazaar"
-    },
-    {
       "id": "com.tippingcanoe.pepperpl/com.pepper.apps.android.app.activity.MainActivity",
       "existing_drawable": "pepper",
       "name": "Pepper",
@@ -447,16 +429,6 @@
       ],
       "installs": "1,000,000+",
       "drawable": "vipps_mobilepay"
-    },
-    {
-      "id": "app.morphe.android.youtube/app.morphe.android.youtube.morphe_custom_5",
-      "existing_drawable": "youtube",
-      "name": "YouTube",
-      "components": [
-        "app.morphe.android.youtube/app.morphe.android.youtube.morphe_custom_5",
-        "app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_3",
-        "app.morphe.android.youtube/app.morphe.android.youtube.morphe_original_5"
-      ]
     },
     {
       "id": "com.streamdev.aiostreamer/com.streamdev.aiostreamer.lock.MainActivity",
@@ -486,6 +458,17 @@
       ],
       "installs": "10,000,000+",
       "drawable": "calculator"
+    },
+    {
+      "id": "calculatorlock.calculatorvault.photovault.hider/calculatorlock.calculatorvault.photovault.hider.SplashActivity",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "Calculator Lock",
+      "components": [
+        "calculatorlock.calculatorvault.photovault.hider/calculatorlock.calculatorvault.photovault.hider.SplashActivity",
+        "calculatorlock.calculatorvault.photovault.hider/calculatorlock.calculatorvault.photovault.hider.SplashActivity.calculator2"
+      ],
+      "installs": "50,000,000+",
+      "drawable": "calculator_lock"
     },
     {
       "id": "com.ovz.russcanner/carScannerXamarinForms.Droid.MainActivity",
@@ -526,12 +509,12 @@
       "drawable": "coins"
     },
     {
-      "id": "com.actionlauncher.pixelshortcuts/pixelshortcuts.loaders.WellbeingDashboardLoader",
-      "existing_drawable": "digital_wellbeing",
-      "name": "Digital Wellbeing",
+      "id": "com.coppel.coppelapp/bhHTZ7.pjOD47.iV0gy3.qBWR23.jrkN01.clGtJ4",
+      "existing_drawable": "bancoppel",
+      "name": "Coppel",
       "components": [
-        "com.actionlauncher.pixelshortcuts/pixelshortcuts.loaders.WellbeingDashboardLoader",
-        "com.actionlauncher.pixelshortcuts/pixelshortcuts.loaders.WellbeingLoader"
+        "com.coppel.coppelapp/bhHTZ7.pjOD47.iV0gy3.qBWR23.jrkN01.clGtJ4",
+        "com.coppel.coppelapp/fAiNv4.hNNZd9.juwEy5.zKok83.glrAc9.uZq6M3"
       ]
     },
     {
@@ -544,6 +527,15 @@
       ],
       "installs": "10,000,000+",
       "drawable": "djezzy"
+    },
+    {
+      "id": "com.coolappstore.everdialer.by.svhp/com.coolappstore.everdialer.by.svhp.MainActivityNothingIcon",
+      "existing_drawable": "generic_dialer",
+      "name": "Ever Dialer",
+      "components": [
+        "com.coolappstore.everdialer.by.svhp/com.coolappstore.everdialer.by.svhp.MainActivityNothingIcon",
+        "com.coolappstore.everdialer.by.svhp/com.coolappstore.everdialer.by.svhp.MainActivityPhoneIcon"
+      ]
     },
     {
       "id": "com.fplay.activity/com.fptplay.mobile.DefaultLauncherAlias",
@@ -566,17 +558,6 @@
       ],
       "installs": "1,000,000+",
       "drawable": "hotukdeals"
-    },
-    {
-      "id": "com.imo.android.imoimhd/com.imo.android.imoim.activities.Home",
-      "existing_drawable": "imo",
-      "name": "imo HD",
-      "components": [
-        "com.imo.android.imoimhd/com.imo.android.imoim.activities.Home",
-        "com.imo.android.imoimhd/com.imo.android.imoim.home.Home"
-      ],
-      "installs": "100,000,000+",
-      "drawable": "imo_hd"
     },
     {
       "id": "cocobo1.pupu.app/com.discord.main.MainDefault",
@@ -619,6 +600,17 @@
       "drawable": "microsoft_edge_canary"
     },
     {
+      "id": "com.mojang.minecraftpe/com.me.game.promotion_popup.MainActivity",
+      "existing_drawable": "minecraft",
+      "name": "Minecraft",
+      "components": [
+        "com.mojang.minecraftpe/com.me.game.promotion_popup.MainActivity",
+        "com.mojang.minecraftpe/com.mod.activity.SplashActivity"
+      ],
+      "installs": "100,000,000+",
+      "drawable": "minecraft"
+    },
+    {
       "id": "com.minimalisttodolist.pleasebethelastrecyclerview/com.minimalisttodolist.pleasebethelastrecyclerview.MainActivity",
       "existing_drawable": "tasks",
       "name": "Minimalist",
@@ -636,6 +628,15 @@
       "components": [
         "com.github.musicyou/com.github.musicyou.MainActivity",
         "com.github.musicyou/it.vfsfitvnm.vimusic.MainActivity"
+      ]
+    },
+    {
+      "id": "com.orion.store/com.orion.store.IconMidnight",
+      "existing_drawable": "orion_store",
+      "name": "Orion Store",
+      "components": [
+        "com.orion.store/com.orion.store.IconMidnight",
+        "com.orion.store/com.orion.store.IconMint"
       ]
     },
     {
@@ -670,37 +671,6 @@
       ],
       "installs": "10,000,000+",
       "drawable": "phone"
-    },
-    {
-      "id": "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2",
-      "existing_drawable": "just_player",
-      "name": "PlayBack",
-      "components": [
-        "com.androxus.playback/com.androxus.playback.presentation.SplashActivity",
-        "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2"
-      ],
-      "installs": "1,000,000+",
-      "drawable": "playback"
-    },
-    {
-      "id": "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-      "existing_drawable": "pepper",
-      "name": "Preisj\u00e4ger",
-      "components": [
-        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityLightIcon"
-      ],
-      "installs": "100,000+",
-      "drawable": "com_preisjaeger"
-    },
-    {
-      "id": "app.revenge/com.discord.main.MainCamo",
-      "existing_drawable": "discord",
-      "name": "Revenge",
-      "components": [
-        "app.revenge/com.discord.main.MainCamo",
-        "app.revenge/com.discord.main.MainDefault"
-      ]
     }
   ]
 }

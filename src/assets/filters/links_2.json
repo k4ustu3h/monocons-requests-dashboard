@@ -2,8 +2,48 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 2,
-  "total_batches": 8,
+  "total_batches": 9,
   "links": [
+    {
+      "id": "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2",
+      "existing_drawable": "just_player",
+      "name": "PlayBack",
+      "components": [
+        "com.androxus.playback/com.androxus.playback.presentation.SplashActivity",
+        "com.androxus.playback/com.androxus.playback.presentation.main_activity_2.MainActivity2"
+      ],
+      "installs": "1,000,000+",
+      "drawable": "playback"
+    },
+    {
+      "id": "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+      "existing_drawable": "pepper",
+      "name": "Preisj\u00e4ger",
+      "components": [
+        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
+        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityLightIcon"
+      ],
+      "installs": "100,000+",
+      "drawable": "com_preisjaeger"
+    },
+    {
+      "id": "com.dot.gallery/com.dot.gallery.Launcher_Gallery_Mono",
+      "existing_drawable": "refra",
+      "name": "ReFra",
+      "components": [
+        "com.dot.gallery/com.dot.gallery.Launcher_Gallery_Mono",
+        "com.dot.gallery/com.dot.gallery.Launcher_ReFra_Mono"
+      ]
+    },
+    {
+      "id": "app.revenge/com.discord.main.MainCamo",
+      "existing_drawable": "discord",
+      "name": "Revenge",
+      "components": [
+        "app.revenge/com.discord.main.MainCamo",
+        "app.revenge/com.discord.main.MainDefault"
+      ]
+    },
     {
       "id": "com.samsung.android.scan3d/com.google.android.apps.cameralite.capture.CaptureActivity",
       "existing_drawable": "generic_camera",
@@ -76,6 +116,17 @@
       ]
     },
     {
+      "id": "com.zhiliaoapp.musically/com.ss.android.ugc.aweme.ttp.IconStock",
+      "existing_drawable": "tiktok",
+      "name": "TikTok",
+      "components": [
+        "com.zhiliaoapp.musically/com.ss.android.ugc.aweme.ttp.IconStock",
+        "com.zhiliaoapp.musically/com.windukk.mod.icon.md"
+      ],
+      "installs": "1,000,000,000+",
+      "drawable": "tiktok"
+    },
+    {
       "id": "com.samco.trackandgraph/com.samco.trackandgraph.MainActivity",
       "existing_drawable": "generic_aid",
       "name": "Track & Graph",
@@ -98,6 +149,17 @@
       "drawable": "world_map_quiz"
     },
     {
+      "id": "cn.wps.moffice_eng/cn.wps.moffice.documentmanager.ab.proxy.en.ai_b",
+      "existing_drawable": "wps_office",
+      "name": "WPS Office",
+      "components": [
+        "cn.wps.moffice_eng/cn.wps.moffice.documentmanager.ab.proxy.en.ai_b",
+        "cn.wps.moffice_eng/cn.wps.moffice.documentmanager.ab.proxy.en.pdf_b"
+      ],
+      "installs": "500,000,000+",
+      "drawable": "wps_office"
+    },
+    {
       "id": "com.android.youtube.music.premium/com.android.youtube.music.premium.morphe_original_1",
       "existing_drawable": "generic_player_pro",
       "name": "YouTube Music",
@@ -107,20 +169,21 @@
       ]
     },
     {
-      "id": "ch.zkb.twint/ch.zkb.twint.ui.StartActivity",
-      "existing_drawable": "twint",
-      "name": "ZKB Twint",
-      "components": [
-        "ch.zkb.twint/ch.zkb.twint.ui.StartActivity",
-        "ch.zkb.twint/ch.zkb.twint.ui.startup.StartupActivity"
-      ],
-      "installs": "100,000+",
-      "drawable": "zkb_twint"
-    },
-    {
       "id": "com.mojanprs.minecrafto/com.mojang.minecraftpe.MainActivity",
       "existing_drawable": "minecraft",
       "name": "1.2Mine"
+    },
+    {
+      "id": "idm.internet.download.manager/idm.internet.download.manager.LauncherDefault",
+      "existing_drawable": "_1dm",
+      "name": "1DM",
+      "installs": "50,000,000+",
+      "drawable": "_1dm"
+    },
+    {
+      "id": "com.abdownloadmanager/com.abdownloadmanager.browser.BrowserIconInLauncher",
+      "existing_drawable": "ab_download_manager",
+      "name": "AB Download Manager"
     },
     {
       "id": "com.github.superadb/com.github.superadb.SplashActivity",
@@ -154,11 +217,23 @@
       "drawable": "ais_play"
     },
     {
+      "id": "com.ril.ajio/com.ril.ajio.launch.activity.DynamicIconActivity2",
+      "existing_drawable": "ajio",
+      "name": "AJIO",
+      "installs": "100,000,000+",
+      "drawable": "ajio"
+    },
+    {
       "id": "free.alquran.holyquran/free.alquran.holyquran.view.DisclaimerActivityNew",
       "existing_drawable": "generic_quran",
       "name": "Al Quran",
       "installs": "50,000,000+",
       "drawable": "al_quran"
+    },
+    {
+      "id": "com.android.deskclock/com.sgtc.alarmclock.SgtcLocalAlarmClockList",
+      "existing_drawable": "generic_clock",
+      "name": "Alarm"
     },
     {
       "id": "algar.telecom.meusservicos/algar.telecom.meusservicos.MainActivity",
@@ -175,11 +250,25 @@
       "drawable": "alight_phone"
     },
     {
+      "id": "free.pdf.pdfdocuments.reader.pdfviewer.pdfeditor/com.brian.base_application.start.SplashActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "All PDF Reader",
+      "installs": "1,000,000+",
+      "drawable": "all_pdf_reader"
+    },
+    {
       "id": "com.crazylabs.amaze.game/com.unity3d.player.UnityPlayerActivity",
       "existing_drawable": "amaze",
       "name": "AMAZE!",
       "installs": "100,000,000+",
       "drawable": "amaze"
+    },
+    {
+      "id": "com.amazon.dee.app/com.amazon.dee.app.icon_alias.ClassicIconAlias",
+      "existing_drawable": "amazon_alexa",
+      "name": "Amazon Alexa",
+      "installs": "100,000,000+",
+      "drawable": "amazon_alexa"
     },
     {
       "id": "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonnow.AmazonNowHomeActivityAlias",
@@ -196,9 +285,21 @@
       "drawable": "android_debug_bridge"
     },
     {
+      "id": "com.rovio.baba/com.rovio.abba.vkquality.VkQualityActivity",
+      "existing_drawable": "angry_birds_2",
+      "name": "Angry Birds 2",
+      "installs": "100,000,000+",
+      "drawable": "angry_birds_2"
+    },
+    {
       "id": "com.kamwithk.ankiconnectandroid/com.kamwithk.ankiconnectandroid.MainActivity",
       "existing_drawable": "ladb",
       "name": "Ankiconnect"
+    },
+    {
+      "id": "foundation.e.apps/foundation.e.apps.feature.main.MainActivity",
+      "existing_drawable": "app_lounge",
+      "name": "App Lounge"
     },
     {
       "id": "com.example.libusbAndroidTest/com.example.libusbAndroidTest.MainActivity",
@@ -237,13 +338,6 @@
       "drawable": "audify_player"
     },
     {
-      "id": "audioeditor.musiceditor.soundeditor.songeditor/com.min.n.MainActivity",
-      "existing_drawable": "generic_audio_editor",
-      "name": "Audio Editor",
-      "installs": "50,000,000+",
-      "drawable": "audio_editor"
-    },
-    {
       "id": "com.awystudio.awplayer/com.awystudio.awplayer.activities.AllowAccessActivity",
       "existing_drawable": "just_player",
       "name": "AW Player",
@@ -261,6 +355,13 @@
       "name": "Bajaj Sales One"
     },
     {
+      "id": "com.totaltexto.bancamovil/com.bbva.glomohybrid.splash.presentation.view.SplashActivity",
+      "existing_drawable": "bbva",
+      "name": "BBVA Provincial",
+      "installs": "10,000,000+",
+      "drawable": "bbva_provincial"
+    },
+    {
       "id": "com.quickplay.android.bellmediaplayer/ca.bell.fiberemote.boot.BootstrapActivity",
       "existing_drawable": "just_player",
       "name": "Bell Fibe TV",
@@ -275,96 +376,11 @@
       "drawable": "bernoulli_play"
     },
     {
-      "id": "com.kanna.bible/com.kanna.bible.activities.StartActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Bible",
-      "installs": "10,000+",
-      "drawable": "bible"
-    },
-    {
-      "id": "com.bible.holy.bible.for.women/com.offline.bible.IconDefault",
-      "existing_drawable": "generic_bible",
-      "name": "Bible for Women",
-      "installs": "10,000,000+",
-      "drawable": "bible_for_women"
-    },
-    {
-      "id": "com.azwstudios.theholybible.kjv/com.azwstudios.theholybible.MainActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Bible KJV",
-      "installs": "5,000,000+",
-      "drawable": "bible_kjv"
-    },
-    {
-      "id": "com.gyc.ace.kjv/com.gyc.ace.kjv.ActivityWelcome",
-      "existing_drawable": "generic_bible",
-      "name": "Bible KJV",
-      "installs": "5,000,000+",
-      "drawable": "bible_kjv"
-    },
-    {
-      "id": "com.hmobile.biblekjv/com.hmobile.biblekjv.MainActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Bible KJV",
-      "installs": "10,000,000+",
-      "drawable": "bible_kjv"
-    },
-    {
-      "id": "com.azwstudios.theholybible.frls/com.azwstudios.theholybible.MainActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Bible Louis Segond",
-      "installs": "500,000+",
-      "drawable": "bible_louis_segond"
-    },
-    {
-      "id": "com.mathieu.budmaldash00/com.mathieu.budmaldash00.GeometryJump",
-      "existing_drawable": "geometry_dash",
-      "name": "BurmalDash"
-    },
-    {
-      "id": "com.candl.athena/com.candl.athena.activity.Calculator",
-      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "CALCU",
-      "installs": "10,000,000+",
-      "drawable": "calcu"
-    },
-    {
-      "id": "com.jzhk.calculator/com.jzhk.calculator.Calculator",
-      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "Calculator"
-    },
-    {
-      "id": "calculatorlock.calculatorvault.photovault.hider/calculatorlock.calculatorvault.photovault.hider.SplashActivity",
-      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "Calculator Lock",
-      "installs": "50,000,000+",
-      "drawable": "calculator_lock"
-    },
-    {
-      "id": "com.bbk.calendar/com.bbk.calendar.MainActivity",
-      "existing_drawable": "calendar",
-      "name": "Calendar"
-    },
-    {
-      "id": "com.calendar.taskschedule/com.calendar.taskschedule.SplashActivity",
-      "existing_drawable": "calendar",
-      "name": "Calendar",
-      "installs": "100,000+",
-      "drawable": "calendar"
-    },
-    {
-      "id": "org.withouthat.acalendarplus/org.withouthat.acalendar.tasks.TasksActivity",
-      "existing_drawable": "themed_icon_calendar_31",
-      "name": "Calendar",
-      "installs": "500,000+",
-      "drawable": "calendar"
-    },
-    {
-      "id": "calendar.agenda.calendarplanner.agendaplanner/com.calendar.aurora.activity.SplashActivity",
-      "existing_drawable": "calendar",
-      "name": "Calendar Planner",
-      "installs": "10,000,000+",
-      "drawable": "calendar_planner"
+      "id": "de.deltacity.android.blutspende/de.deltacity.android.blutspende.LauncherActivity",
+      "existing_drawable": "generic_aid",
+      "name": "Blutspende",
+      "installs": "1,000,000+",
+      "drawable": "blutspende"
     }
   ]
 }

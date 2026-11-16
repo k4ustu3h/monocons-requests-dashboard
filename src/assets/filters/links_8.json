@@ -2,8 +2,258 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 8,
-  "total_batches": 8,
+  "total_batches": 9,
   "links": [
+    {
+      "id": "com.github.anrimian.musicplayer/com.github.anrimian.musicplayer.ui.main.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Simple Music Player",
+      "installs": "5,000,000+",
+      "drawable": "simple_music_player"
+    },
+    {
+      "id": "com.simplemobiletools.smsmessenger/com.simplemobiletools.smsmessenger.activities.SimplePhSplashActivity.Orange",
+      "existing_drawable": "messages",
+      "name": "Simple SMS Messenger",
+      "installs": "5,000,000+",
+      "drawable": "simple_sms_messenger"
+    },
+    {
+      "id": "com.lighttigerxiv.simple.mp/com.lighttigerxiv.simple.mp.compose.activities.main.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "SimpleMP"
+    },
+    {
+      "id": "com.bskyb.skygo/com.bskyb.skygo.features.startup.StartupActivity",
+      "existing_drawable": "just_player",
+      "name": "Sky Go",
+      "installs": "10,000,000+",
+      "drawable": "sky_go"
+    },
+    {
+      "id": "de.sky.bw/com.bskyb.skygo.features.startup.StartupActivity",
+      "existing_drawable": "just_player",
+      "name": "Sky Go",
+      "installs": "5,000,000+",
+      "drawable": "sky_go"
+    },
+    {
+      "id": "it.sky.anywhere/com.bskyb.skygo.features.startup.StartupActivity",
+      "existing_drawable": "just_player",
+      "name": "Sky Go",
+      "installs": "5,000,000+",
+      "drawable": "sky_go"
+    },
+    {
+      "id": "com.illusions.skyworthuniversalremotecontrol/com.illusions.skyworthuniversalremotecontrol.remotecontrol.SplashActivity",
+      "existing_drawable": "generic_power",
+      "name": "Skyworth TV Remote",
+      "installs": "500,000+",
+      "drawable": "skyworth_tv_remote"
+    },
+    {
+      "id": "indwin.c3.shareapp/indwin.c3.shareapp.DefaultIconAlias",
+      "existing_drawable": "slice",
+      "name": "slice",
+      "installs": "10,000,000+",
+      "drawable": "slice"
+    },
+    {
+      "id": "com.proframeapps.videoframeplayer/com.proframeapps.videoframeplayer.ui.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "Slow Motion Frame Video Player",
+      "installs": "1,000,000+",
+      "drawable": "slow_motion_frame_video_player"
+    },
+    {
+      "id": "kr.sira.calculator/kr.sira.calculator.SplashActivity",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "Smart Calculator by Smart Tools",
+      "installs": "5,000+",
+      "drawable": "smart_calculator_by_smart_tools"
+    },
+    {
+      "id": "com.netflix.NGP.Solitaire/com.mobilityware.sflnativeandroidutils.SFLLaunchActivity",
+      "existing_drawable": "generic_solitaire",
+      "name": "Solitaire",
+      "installs": "1,000,000+",
+      "drawable": "solitaire"
+    },
+    {
+      "id": "com.peoplefun.wordsolitaire/com.unity3d.player.UnityPlayerActivity",
+      "existing_drawable": "generic_solitaire",
+      "name": "Solitaire",
+      "installs": "1,000,000+",
+      "drawable": "solitaire"
+    },
+    {
+      "id": "com.solo.link.music.player.pro/com.jober.music.player.ui.activity.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "SoloPro",
+      "installs": "1,000,000+",
+      "drawable": "solopro"
+    },
+    {
+      "id": "com.angkorworld.note/com.angkorworld.memo.activities.MainActivity",
+      "existing_drawable": "samsung_notes",
+      "name": "Sticky Notepad",
+      "installs": "1,000,000+",
+      "drawable": "sticky_notepad"
+    },
+    {
+      "id": "app.streamcompanion/app.streamcompanion.MainActivity",
+      "existing_drawable": "generic_player",
+      "name": "Stream Companion",
+      "installs": "5,000+",
+      "drawable": "stream_companion"
+    },
+    {
+      "id": "com.subway.mobile.emea.germany/com.subway.mobile.emea.germany.MainActivity",
+      "existing_drawable": "subway",
+      "name": "Subway",
+      "installs": "1,000,000+",
+      "drawable": "subway"
+    },
+    {
+      "id": "com.hrincescumihai.sudoku/com.hrincescumihai.sudoku.app.MainActivity",
+      "existing_drawable": "generic_sudoku",
+      "name": "Sudoku",
+      "installs": "10,000+",
+      "drawable": "sudoku"
+    },
+    {
+      "id": "com.superb.launcher/com.superb.iconpack.presentation.activity.IconPackActivity",
+      "existing_drawable": "themed_icon_calendar_31",
+      "name": "Superb Launcher Icons",
+      "installs": "100,000+",
+      "drawable": "superb_launcher_icons"
+    },
+    {
+      "id": "se.bankgirot.swish/se.bankgirot.swish.ui.SplashActivity",
+      "existing_drawable": "swish",
+      "name": "Swish",
+      "installs": "5,000,000+",
+      "drawable": "swish"
+    },
+    {
+      "id": "org.akanework.symphonica/org.akanework.symphonica.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Symphonica"
+    },
+    {
+      "id": "com.gabm.screenrotationcontrol/com.gabm.tapandturn.ui.MainActivity",
+      "existing_drawable": "generic_rotation",
+      "name": "Tap 'n' Turn"
+    },
+    {
+      "id": "com.quoord.tapatalkpro.activity/com.quoord.tapatalkpro.activity.directory.EntryActivity",
+      "existing_drawable": "tapatalk_pro",
+      "name": "Tapatalk",
+      "installs": "10,000,000+",
+      "drawable": "tapatalk"
+    },
+    {
+      "id": "com.taptap.global.lite/com.play.taptap.ui.SplashAct",
+      "existing_drawable": "taptap",
+      "name": "TapTap Lite",
+      "installs": "10,000,000+",
+      "drawable": "taptap_lite"
+    },
+    {
+      "id": "org.mytelegram.messenger/org.telegram.messenger.DefaultIcon",
+      "existing_drawable": "telegram",
+      "name": "Telegram"
+    },
+    {
+      "id": "v.d.d.answercall/v.d.d.answercall.MainFrActivity",
+      "existing_drawable": "generic_dialer",
+      "name": "Tel\u00e9fono",
+      "installs": "10,000,000+",
+      "drawable": "v_d_d_answercall"
+    },
+    {
+      "id": "top.receivesms.app/top.receivesms.app.MainActivity",
+      "existing_drawable": "generic_email",
+      "name": "Temp Number",
+      "installs": "500,000+",
+      "drawable": "temp_number"
+    },
+    {
+      "id": "com.termux.tasker/com.termux.tasker.activities.TermuxTaskerLauncherActivity",
+      "existing_drawable": "termux",
+      "name": "Termux:Tasker"
+    },
+    {
+      "id": "com.the.the_reverse_audio/com.the.the_reverse_audio.MainActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "The Reverse Audio",
+      "installs": "1,000,000+",
+      "drawable": "the_reverse_audio"
+    },
+    {
+      "id": "com.thegosa.miuithemes/com.thegosa.miuithemes.NewDesign",
+      "existing_drawable": "themes_by_vivo",
+      "name": "Themes",
+      "installs": "50,000,000+",
+      "drawable": "themes"
+    },
+    {
+      "id": "com.ss.android.ugc.trill/com.ss.android.ugc.aweme.ttp.IconStock",
+      "existing_drawable": "tiktok",
+      "name": "TikTok"
+    },
+    {
+      "id": "com.tiktok.lite.go/com.zhiliaoapp.musically.go.mini.MainActivity",
+      "existing_drawable": "tiktok",
+      "name": "TikTok Lite",
+      "installs": "10,000,000+",
+      "drawable": "tiktok_lite"
+    },
+    {
+      "id": "com.prajwalch.torrentsearch/com.prajwalch.torrentsearch.MainActivity",
+      "existing_drawable": "torrent_search",
+      "name": "Torrent Search"
+    },
+    {
+      "id": "com.td.transvoice/com.td.transvoice.MainActivity",
+      "existing_drawable": "generic_voice",
+      "name": "Trans Voice",
+      "installs": "10,000+",
+      "drawable": "trans_voice"
+    },
+    {
+      "id": "com.truecaller/com.truecaller.ui.TrueCallerUI",
+      "existing_drawable": "generic_dialer",
+      "name": "Truecaller",
+      "installs": "1,000,000,000+",
+      "drawable": "truecaller"
+    },
+    {
+      "id": "com.hk.s.all.video.player/com.hk.s.all.video.player.HlsPlay",
+      "existing_drawable": "generic_player",
+      "name": "U Player",
+      "installs": "1,000,000+",
+      "drawable": "u_player"
+    },
+    {
+      "id": "com.android.test.uibench/com.android.test.uibench.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "UiBench"
+    },
+    {
+      "id": "com.mixapplications.ultimateusb/com.mixapplications.ultimateusb.MainActivity",
+      "existing_drawable": "drivedroid",
+      "name": "Ultimate USB",
+      "installs": "1,000,000+",
+      "drawable": "ultimate_usb"
+    },
+    {
+      "id": "com.uniqlo.ph.catalogue/com.uniqlo.ja.catalogue.view.mobile.home.DummyLauncherActivity",
+      "existing_drawable": "uniqlo",
+      "name": "UNIQLO",
+      "installs": "5,000,000+",
+      "drawable": "uniqlo"
+    },
     {
       "id": "com.raafiya.universalacremotecontrol/com.raafiya.universalacremotecontrol.remotecontrol.SplashActivity",
       "existing_drawable": "generic_power",
@@ -77,187 +327,6 @@
       "name": "Video Live Wallpaper",
       "installs": "10,000,000+",
       "drawable": "video_live_wallpaper"
-    },
-    {
-      "id": "com.softwinner.videoplayer/com.softwinner.videoplayer.view.activity.HomePageActivity",
-      "existing_drawable": "just_player",
-      "name": "Video Player"
-    },
-    {
-      "id": "com.virtualpiano.musicalkeyboard/com.unity3d.player.UnityPlayerActivity",
-      "existing_drawable": "generic_piano",
-      "name": "Virtual Pianino",
-      "installs": "1,000,000+",
-      "drawable": "virtual_pianino"
-    },
-    {
-      "id": "com.vivo.calculator/com.android.bbkcalculator.Calculator",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "vivo Calculator"
-    },
-    {
-      "id": "com.vivo.notes/com.android.notes.Notes",
-      "existing_drawable": "generic_notes",
-      "name": "vivo Notes"
-    },
-    {
-      "id": "com.raytechnoto.glab.voicerecorder/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "generic_microphone",
-      "name": "Voice Recorder",
-      "installs": "5,000,000+",
-      "drawable": "voice_recorder"
-    },
-    {
-      "id": "com.prometheusinteractive.voice_launcher/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
-      "existing_drawable": "generic_microphone",
-      "name": "Voice Search",
-      "installs": "10,000,000+",
-      "drawable": "voice_search"
-    },
-    {
-      "id": "com.DevExtras.VoiceTools/crc64ebabd5372c0ee16b.MainActivity",
-      "existing_drawable": "generic_microphone",
-      "name": "Voice Tools",
-      "installs": "500,000+",
-      "drawable": "voice_tools"
-    },
-    {
-      "id": "com.zaza.beatbox/com.zaza.beatbox.pagesredesign.main.MainActivity",
-      "existing_drawable": "generic_audio_editor",
-      "name": "VoxBox Audio Editor",
-      "installs": "1,000,000+",
-      "drawable": "voxbox_audio_editor"
-    },
-    {
-      "id": "com.wavegram.messenger.web/org.telegram.messenger.DefaultIcon",
-      "existing_drawable": "telegram",
-      "name": "WaveGram"
-    },
-    {
-      "id": "cz.martykan.webtube/cz.martykan.webtube.MainActivity",
-      "existing_drawable": "generic_player",
-      "name": "WebTube"
-    },
-    {
-      "id": "mobilesmart.convert.word.to.pdf.documents/mobilesmart.convert.word.to.pdf.documents.main",
-      "existing_drawable": "generic_pdf_square",
-      "name": "Word to PDF Converter",
-      "installs": "1,000,000+",
-      "drawable": "word_to_pdf_converter"
-    },
-    {
-      "id": "com.azwstudios.theholybible.web/com.azwstudios.theholybible.MainActivity",
-      "existing_drawable": "generic_bible",
-      "name": "World English Bible",
-      "installs": "500,000+",
-      "drawable": "world_english_bible"
-    },
-    {
-      "id": "com.sigseg.android.worldmap/com.sigseg.android.map.ImageViewerActivity",
-      "existing_drawable": "generic_earth",
-      "name": "WorldMap"
-    },
-    {
-      "id": "me.teble.xposed.autodaily/me.teble.xposed.autodaily.activity.common.MainActivityAlias",
-      "existing_drawable": "tasky",
-      "name": "XAutoDaily"
-    },
-    {
-      "id": "com.miui.weather2/com.miui.weather2.WeatherBaseScreen",
-      "existing_drawable": "weather",
-      "name": "Xiaomi Weather",
-      "installs": "1,000,000,000+",
-      "drawable": "xiaomi_weather"
-    },
-    {
-      "id": "com.github.tianma8023.xposed.smscode/com.github.tianma8023.xposed.smscode.HomeActivityAlias",
-      "existing_drawable": "sms_organizer",
-      "name": "XposedSmsCode",
-      "installs": "1,000+",
-      "drawable": "xposedsmscode"
-    },
-    {
-      "id": "de.yaacc/de.yaacc.browser.TabBrowserActivity",
-      "existing_drawable": "generic_player",
-      "name": "YAACC"
-    },
-    {
-      "id": "com.morphe.youtube/com.morphe.youtube.morphe_original_1",
-      "existing_drawable": "youtube",
-      "name": "YouTube"
-    },
-    {
-      "id": "com.google.android.youtube/app.morphe.android.youtube.morphe_black_1",
-      "existing_drawable": "youtube",
-      "name": "YouTube Morphe",
-      "installs": "10,000,000,000+",
-      "drawable": "youtube_morphe"
-    },
-    {
-      "id": "anddea.yrf.tube.music/com.google.android.apps.youtube.music.activities.MusicActivity",
-      "existing_drawable": "generic_player",
-      "name": "YouTube Music"
-    },
-    {
-      "id": "com.morphe.youtube.music/com.morphe.youtube.music.morphe_original_1",
-      "existing_drawable": "generic_player",
-      "name": "YouTube Music"
-    },
-    {
-      "id": "ytm.morphe.noname.exe/ytm.morphe.noname.exe.morphe_original_1",
-      "existing_drawable": "generic_player",
-      "name": "YouTube Music"
-    },
-    {
-      "id": "com.minimalnumbersllc/com.minimalnumbersllc.revanced_scaled_3",
-      "existing_drawable": "youtube_revanced",
-      "name": "YouTube ReVanced"
-    },
-    {
-      "id": "app.rvx.android.youtube/com.google.android.youtube.app.honeycomb.Shell",
-      "existing_drawable": "youtube",
-      "name": "YouTube ReVanced Extended"
-    },
-    {
-      "id": "com.google.android.youtube.tvunplugged/com.google.android.apps.youtube.tvunplugged.activity.MainActivity",
-      "existing_drawable": "youtube_tv",
-      "name": "YouTube TV",
-      "installs": "10,000,000+",
-      "drawable": "youtube_tv"
-    },
-    {
-      "id": "com.zozoplayer/com.zozoplayer.ui.activities.MainActivity",
-      "existing_drawable": "generic_player",
-      "name": "ZoZo Player",
-      "installs": "1,000,000+",
-      "drawable": "zozo_player"
-    },
-    {
-      "id": "com.zte.videoplayer/com.zte.videoplayer.stock.VideoStockBrowserActivity",
-      "existing_drawable": "jiocinema",
-      "name": "ZTE Video Player"
-    },
-    {
-      "id": "com.pervayapomosh/com.pervayapomosh.MainActivity",
-      "existing_drawable": "generic_aid",
-      "name": "\u041f\u0435\u0440\u0432\u0430\u044f \u041f\u043e\u043c\u043e\u0449\u044c ~~ First Aid",
-      "installs": "100,000+",
-      "drawable": "com_pervayapomosh"
-    },
-    {
-      "id": "com.podsas.sasflix/com.podsas.sasflix.MainActivity",
-      "existing_drawable": "just_player",
-      "name": "\u0421\u0410\u0421\u0424\u041b\u0418\u041a\u0421 ~~ SASFLIX"
-    },
-    {
-      "id": "com.pic.catcher/com.pic.catcher.ui.MainActivity",
-      "existing_drawable": "generic_shell",
-      "name": "\u56fe\u7247\u6355\u624b ~~ Pic Catcher"
-    },
-    {
-      "id": "cn.lyric.getter/cn.lyric.getter.launcher",
-      "existing_drawable": "generic_shell",
-      "name": "\u6b4c\u8bcd\u83b7\u53d6 ~~ Lyric Getter"
     }
   ]
 }

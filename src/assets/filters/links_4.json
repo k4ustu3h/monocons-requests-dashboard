@@ -2,21 +2,142 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 4,
-  "total_batches": 8,
+  "total_batches": 9,
   "links": [
     {
-      "id": "me.jajae.fmradio/me.jajae.fmradio.MainActivity",
-      "existing_drawable": "generic_fm_radio",
-      "name": "FM Radio",
-      "installs": "10,000+",
-      "drawable": "fm_radio"
+      "id": "com.dominospizza.az/com.pizzaapp.MainActivity",
+      "existing_drawable": "dominos_pizza",
+      "name": "Domino's Pizza",
+      "installs": "500,000+",
+      "drawable": "dominos_pizza"
     },
     {
-      "id": "com.ngc.fora/com.ngc.fora.ForaDictionary",
-      "existing_drawable": "generic_search",
-      "name": "Fora Dictionary",
-      "installs": "100,000+",
-      "drawable": "fora_dictionary"
+      "id": "com.dominospizza/com.dominospizza.SplashScreenActivity",
+      "existing_drawable": "dominos_pizza",
+      "name": "Domino's Pizza",
+      "installs": "10,000,000+",
+      "drawable": "dominos_pizza"
+    },
+    {
+      "id": "com.firstyogi.dothing/com.firstyogi.dothing.SigninActivity",
+      "existing_drawable": "tasky",
+      "name": "Dothing",
+      "installs": "5,000+",
+      "drawable": "dothing"
+    },
+    {
+      "id": "com.softwarebakery.drivedroid.paid/com.softwarebakery.drivedroid.MainActivity",
+      "existing_drawable": "drivedroid",
+      "name": "DriveDroid"
+    },
+    {
+      "id": "com.dsplayer.app/com.dsplayer.app.features.videobrowser.ui.VideoBrowserActivity",
+      "existing_drawable": "just_player",
+      "name": "DS Player",
+      "installs": "10,000+",
+      "drawable": "ds_player"
+    },
+    {
+      "id": "com.olxmena.horizontal/com.olxmena.horizontal.MainActivity",
+      "existing_drawable": "olx",
+      "name": "dubizzle",
+      "installs": "10,000,000+",
+      "drawable": "dubizzle"
+    },
+    {
+      "id": "io.github.luyifei2011.dvdcontroller/io.github.luyifei2011.dvdcontroller.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "DVD Controller"
+    },
+    {
+      "id": "easy.launcher/easy.launcher.ime.promo.ImePromoActivity",
+      "existing_drawable": "generic_keyboard",
+      "name": "Easy Keyboard",
+      "installs": "10,000,000+",
+      "drawable": "easy_keyboard"
+    },
+    {
+      "id": "com.cem.pianokeyboard.pianomusic/com.cem.piano.guide.ui.activities.IntroActivity",
+      "existing_drawable": "generic_piano",
+      "name": "Easy Piano",
+      "installs": "500,000+",
+      "drawable": "easy_piano"
+    },
+    {
+      "id": "com.exteragram.messenger/com.exteragram.messenger.HamsterIcon",
+      "existing_drawable": "exteragram",
+      "name": "exteraGram"
+    },
+    {
+      "id": "com.exteraless.app/org.telegram.messenger.TelegramIcon",
+      "existing_drawable": "telegram",
+      "name": "exteraless"
+    },
+    {
+      "id": "com.fairphone.android.fairbudsapp/com.fairphone.fairsound.ui.activity.MainActivity",
+      "existing_drawable": "generic_voice_recorder_waves",
+      "name": "Fairbuds",
+      "installs": "10,000+",
+      "drawable": "fairbuds"
+    },
+    {
+      "id": "com.blogspot.novalabsandroid.fakecallerid/com.blogspot.novalabsandroid.fakecallerid.ConfigCallActivity",
+      "existing_drawable": "generic_dialer",
+      "name": "Fake Call",
+      "installs": "1,000,000+",
+      "drawable": "fake_call"
+    },
+    {
+      "id": "com.file.manager.file.organizer.file.explorer.manage.files/com.file.manager.file.organizer.file.explorer.manage.files.ui.activity.splash.SplashActivity",
+      "existing_drawable": "generic_files",
+      "name": "File Manager",
+      "installs": "1,000,000+",
+      "drawable": "file_manager"
+    },
+    {
+      "id": "net.east_hino.standard_explorer/net.east_hino.standard_explorer.ui.ActivityMain",
+      "existing_drawable": "generic_files",
+      "name": "File Manager Shortcut",
+      "installs": "10,000+",
+      "drawable": "file_manager_shortcut"
+    },
+    {
+      "id": "nl.moeilijkedingen.jellyfinaudioplayer/nl.moeilijkedingen.jellyfinaudioplayer.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Fintunes",
+      "installs": "10,000+",
+      "drawable": "fintunes"
+    },
+    {
+      "id": "flashgram.org.web/org.telegram.messenger.DefaultIcon",
+      "existing_drawable": "telegram",
+      "name": "Flashgram"
+    },
+    {
+      "id": "com.fclash.app/com.follow.clash.MainActivity",
+      "existing_drawable": "flclash",
+      "name": "FlClash",
+      "installs": "10,000+",
+      "drawable": "flclash"
+    },
+    {
+      "id": "mobi.appplus.calculator.plus/mobi.appplus.calculator.plus.MainActivity",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "FlexCalc",
+      "installs": "1,000,000+",
+      "drawable": "flexcalc"
+    },
+    {
+      "id": "com.eurekateam.fmradio/com.eurekateam.fmradio.MainActivity",
+      "existing_drawable": "generic_fm_radio",
+      "name": "FM Radio"
+    },
+    {
+      "id": "com.mobilefootie.wc2010/com.fotmob.android.icons.AppIconLiverpool",
+      "existing_drawable": "fotmob",
+      "name": "FotMob",
+      "installs": "50,000,000+",
+      "drawable": "fotmob"
     },
     {
       "id": "com.freemusic.offline.bus/com.project.gugu.music.ui.activity.SplashActivity",
@@ -63,6 +184,13 @@
       "drawable": "goguma"
     },
     {
+      "id": "com.goibibo/com.goibibo.common.HomeActivityAliasGoTribe",
+      "existing_drawable": "goibibo",
+      "name": "Goibibo",
+      "installs": "50,000,000+",
+      "drawable": "goibibo"
+    },
+    {
       "id": "it.infocert.mobile.dike/it.infocert.mobile.dike.DikeActivity",
       "existing_drawable": "tasky",
       "name": "GoSign",
@@ -96,13 +224,6 @@
       "name": "Holy Bible"
     },
     {
-      "id": "com.epsoftgroup.lasantabiblia/com.epsoftgroup.lasantabiblia.activities.SplashSetupActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Holy Bible",
-      "installs": "1,000,000+",
-      "drawable": "holy_bible"
-    },
-    {
       "id": "com.huawei.music.local/com.huawei.music.local.main.MainActivity",
       "existing_drawable": "apple_music",
       "name": "Huawei Music Player"
@@ -111,6 +232,13 @@
       "id": "com.huawei.android.hwouc/com.huawei.android.hwouc.ui.activities.MainEntranceActivity",
       "existing_drawable": "huawei_software_update",
       "name": "Huawei Software Update"
+    },
+    {
+      "id": "com.facebook.orca/app.hushmessenger.extension.SettingsLauncher",
+      "existing_drawable": "messenger",
+      "name": "HushMessenger settings",
+      "installs": "5,000,000,000+",
+      "drawable": "hushmessenger_settings"
     },
     {
       "id": "imagetopdf.pdfmaker.pdfconverter.pdfreader/imagetopdf.pdfmaker.pdfconverter.pdfreader.ui.I2SplashActivity",
@@ -144,6 +272,11 @@
       "id": "com.zionhuang.music.debug/com.zionhuang.music.MainActivity",
       "existing_drawable": "innertune",
       "name": "InnerTune Debug"
+    },
+    {
+      "id": "com.instaprime.android/com.instagram.android.activity.MainTabActivity.zipeng",
+      "existing_drawable": "instagram",
+      "name": "InstaPrime"
     },
     {
       "id": "com.oasisfeng.island/com.oasisfeng.island.settings.SettingsActivity",
@@ -184,135 +317,6 @@
       "name": "JPG to PDF Converter",
       "installs": "10,000,000+",
       "drawable": "jpg_to_pdf_converter"
-    },
-    {
-      "id": "com.kaorin.theme.iconpack/com.kaorin.theme.iconpack.activities.MainActivity",
-      "existing_drawable": "kaorin_icon_pack",
-      "name": "Kaorin Icons"
-    },
-    {
-      "id": "at.gv.bmi.KATWARN/at.gv.bmi.KATWARN.MainActivity",
-      "existing_drawable": "katwarn",
-      "name": "KATWARN"
-    },
-    {
-      "id": "com.ivanovsky.passnotes/com.ivanovsky.passnotes.presentation.StartActivity",
-      "existing_drawable": "one_tap_lock_screen",
-      "name": "KeePassVault"
-    },
-    {
-      "id": "com.easybrain.killer.sudoku.free/com.easybrain.killer.sudoku.free.SplashActivity",
-      "existing_drawable": "generic_sudoku",
-      "name": "Killer Sudoku",
-      "installs": "10,000,000+",
-      "drawable": "killer_sudoku"
-    },
-    {
-      "id": "bible.kingjamesbiblelite/com.bible.kingjamesbiblelite.ac.base.SplashScreen",
-      "existing_drawable": "generic_bible",
-      "name": "King James Bible",
-      "installs": "10,000,000+",
-      "drawable": "king_james_bible"
-    },
-    {
-      "id": "com.xxi.film.kitanonton/com.xxi.film.kitanonton.MainActivity",
-      "existing_drawable": "just_player",
-      "name": "KITA NONTON",
-      "installs": "100,000+",
-      "drawable": "kita_nonton"
-    },
-    {
-      "id": "wiktoria.goroch.bible_kjva.AOUSFCKLLRSGYXYC/king.james.bible.android.activity.LaunchActivity",
-      "existing_drawable": "generic_bible",
-      "name": "KJVA Bible",
-      "installs": "500,000+",
-      "drawable": "kjva_bible"
-    },
-    {
-      "id": "la.bible.francaise.gratuit/king.james.bible.android.activity.LaunchActivity",
-      "existing_drawable": "generic_bible",
-      "name": "La Bible",
-      "installs": "100,000+",
-      "drawable": "la_bible"
-    },
-    {
-      "id": "wiktoria.goroch.biblie_darby_french.AOURPEFFEFFAWZYR/king.james.bible.android.activity.LaunchActivity",
-      "existing_drawable": "generic_bible",
-      "name": "La Bible",
-      "installs": "100,000+",
-      "drawable": "la_bible"
-    },
-    {
-      "id": "com.creciendodev.com.saintebible_bds/com.creciendodev.com.saintebible_bds.SplashScreen",
-      "existing_drawable": "generic_bible",
-      "name": "La Bible Du Semeur",
-      "installs": "500,000+",
-      "drawable": "la_bible_du_semeur"
-    },
-    {
-      "id": "biblia.habla.hoy.AOVGMDRFUVODNBOFPU/king.james.bible.android.activity.LaunchActivity",
-      "existing_drawable": "generic_bible",
-      "name": "La Biblia",
-      "installs": "1,000,000+",
-      "drawable": "la_biblia"
-    },
-    {
-      "id": "la.biblia.catolica.latinoamericana/king.james.bible.android.activity.LaunchActivity",
-      "existing_drawable": "generic_bible",
-      "name": "La Biblia",
-      "installs": "1,000,000+",
-      "drawable": "la_biblia"
-    },
-    {
-      "id": "com.draco.ladb.free/com.draco.ladb.views.MainActivity",
-      "existing_drawable": "ladb",
-      "name": "LADB"
-    },
-    {
-      "id": "org.larpgram.cc/org.telegram.messenger.DefaultIcon",
-      "existing_drawable": "telegram",
-      "name": "larpgram"
-    },
-    {
-      "id": "com.lastpass.authenticator/com.lastpass.authenticator.ui.MainActivity",
-      "existing_drawable": "lastpass",
-      "name": "LastPass Authenticator",
-      "installs": "1,000,000+",
-      "drawable": "lastpass_authenticator"
-    },
-    {
-      "id": "com.bearinmind.launcher314/com.bearinmind.launcher314.MainActivity",
-      "existing_drawable": "generic_power",
-      "name": "Launcher314"
-    },
-    {
-      "id": "com.flass.layoutinspect/com.flass.layoutinspect.activity.MainActivityAlias",
-      "existing_drawable": "generic_shell",
-      "name": "Layout Inspect"
-    },
-    {
-      "id": "de.melvil.noten/de.melvil.noten.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Learn Music Notes",
-      "installs": "100,000+",
-      "drawable": "learn_music_notes"
-    },
-    {
-      "id": "com.learn.piano.music.instrument/com.example.pianoapplication.MainActivity",
-      "existing_drawable": "generic_piano",
-      "name": "Learn Piano",
-      "installs": "100,000+",
-      "drawable": "learn_piano"
-    },
-    {
-      "id": "com.lenovo.FileBrowser2/com.lenovo.FileBrowser.activities.FileBrowserMain",
-      "existing_drawable": "generic_files",
-      "name": "Lenovo File Manager"
-    },
-    {
-      "id": "com.zui.notes/com.zui.notes.home.MainActivity",
-      "existing_drawable": "generic_notes",
-      "name": "Lenovo ZUI Notepad"
     }
   ]
 }

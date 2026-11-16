@@ -2,8 +2,95 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 5,
-  "total_batches": 8,
+  "total_batches": 9,
   "links": [
+    {
+      "id": "com.kaorin.theme.iconpack/com.kaorin.theme.iconpack.activities.MainActivity",
+      "existing_drawable": "kaorin_icon_pack",
+      "name": "Kaorin Icons"
+    },
+    {
+      "id": "at.gv.bmi.KATWARN/at.gv.bmi.KATWARN.MainActivity",
+      "existing_drawable": "katwarn",
+      "name": "KATWARN"
+    },
+    {
+      "id": "com.ivanovsky.passnotes/com.ivanovsky.passnotes.presentation.StartActivity",
+      "existing_drawable": "one_tap_lock_screen",
+      "name": "KeePassVault"
+    },
+    {
+      "id": "io.bramerz.kfc/com.kfc.algeria.MainActivity",
+      "existing_drawable": "kfc",
+      "name": "KFC",
+      "installs": "5,000,000+",
+      "drawable": "kfc"
+    },
+    {
+      "id": "com.easybrain.killer.sudoku.free/com.easybrain.killer.sudoku.free.SplashActivity",
+      "existing_drawable": "generic_sudoku",
+      "name": "Killer Sudoku",
+      "installs": "10,000,000+",
+      "drawable": "killer_sudoku"
+    },
+    {
+      "id": "com.xxi.film.kitanonton/com.xxi.film.kitanonton.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "KITA NONTON",
+      "installs": "100,000+",
+      "drawable": "kita_nonton"
+    },
+    {
+      "id": "com.draco.ladb.free/com.draco.ladb.views.MainActivity",
+      "existing_drawable": "ladb",
+      "name": "LADB"
+    },
+    {
+      "id": "org.larpgram.cc/org.telegram.messenger.DefaultIcon",
+      "existing_drawable": "telegram",
+      "name": "larpgram"
+    },
+    {
+      "id": "com.lastpass.authenticator/com.lastpass.authenticator.ui.MainActivity",
+      "existing_drawable": "lastpass",
+      "name": "LastPass Authenticator",
+      "installs": "1,000,000+",
+      "drawable": "lastpass_authenticator"
+    },
+    {
+      "id": "com.bearinmind.launcher314/com.bearinmind.launcher314.MainActivity",
+      "existing_drawable": "generic_power",
+      "name": "Launcher314"
+    },
+    {
+      "id": "com.flass.layoutinspect/com.flass.layoutinspect.activity.MainActivityAlias",
+      "existing_drawable": "generic_shell",
+      "name": "Layout Inspect"
+    },
+    {
+      "id": "de.melvil.noten/de.melvil.noten.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Learn Music Notes",
+      "installs": "100,000+",
+      "drawable": "learn_music_notes"
+    },
+    {
+      "id": "com.learn.piano.music.instrument/com.example.pianoapplication.MainActivity",
+      "existing_drawable": "generic_piano",
+      "name": "Learn Piano",
+      "installs": "100,000+",
+      "drawable": "learn_piano"
+    },
+    {
+      "id": "com.lenovo.FileBrowser2/com.lenovo.FileBrowser.activities.FileBrowserMain",
+      "existing_drawable": "generic_files",
+      "name": "Lenovo File Manager"
+    },
+    {
+      "id": "com.zui.notes/com.zui.notes.home.MainActivity",
+      "existing_drawable": "generic_notes",
+      "name": "Lenovo ZUI Notepad"
+    },
     {
       "id": "com.lge.music/com.lge.music.MusicBrowserActivity",
       "existing_drawable": "apple_music",
@@ -13,6 +100,13 @@
       "id": "com.lge.vvm/com.lge.vvm.launcher.VVMLauncherActivity",
       "existing_drawable": "generic_voicemail",
       "name": "LG Voicemail"
+    },
+    {
+      "id": "com.shopping.limeroad/com.shopping.limeroad.MainActivity",
+      "existing_drawable": "limeroad",
+      "name": "Limeroad",
+      "installs": "100,000,000+",
+      "drawable": "limeroad"
     },
     {
       "id": "com.grice.call/com.grice.call.icon.Default",
@@ -44,11 +138,11 @@
       "name": "M3Play"
     },
     {
-      "id": "com.nebula.mahjongtile/com.unity3d.player.UnityPlayerActivity.Default",
-      "existing_drawable": "generic_mahjong",
-      "name": "Mahjong Blast",
-      "installs": "100,000,000+",
-      "drawable": "mahjong_blast"
+      "id": "com.magicpin.local/com.local.magicpin.screensplash.SplashScreen.NAVRATRI",
+      "existing_drawable": "magicpin",
+      "name": "magicpin",
+      "installs": "10,000,000+",
+      "drawable": "magicpin"
     },
     {
       "id": "com.devmaru.audio/com.devmaru.audio.activity.MainActivity",
@@ -75,14 +169,30 @@
       "name": "Media Downloader"
     },
     {
+      "id": "meditofoundation.medito/meditofoundation.medito.MainActivity.pink",
+      "existing_drawable": "medito",
+      "name": "Medito",
+      "installs": "1,000,000+",
+      "drawable": "medito"
+    },
+    {
+      "id": "com.mercadolibre/com.mercadolibre.SplashActivityAliasDoubleDate11",
+      "existing_drawable": "mercado_pago",
+      "name": "Mercado Livre",
+      "installs": "500,000,000+",
+      "drawable": "mercado_livre"
+    },
+    {
       "id": "foundation.e.message/com.moez.QKSMS.feature.main.MainActivity",
       "existing_drawable": "messages",
       "name": "Messages"
     },
     {
-      "id": "com.gold.android.gms/org.microg.gms.ui.SettingsActivity",
-      "existing_drawable": "microg_settings",
-      "name": "MicroG"
+      "id": "com.xiaomi.smarthome/com.xiaomi.smarthome.VevsIcon",
+      "existing_drawable": "mi_home",
+      "name": "Mi Home",
+      "installs": "50,000,000+",
+      "drawable": "mi_home"
     },
     {
       "id": "net.bitplane.android.microphone/net.bitplane.android.microphone.MicrophoneActivity",
@@ -128,6 +238,21 @@
       "drawable": "moj_lite"
     },
     {
+      "id": "com.community.mbox.in.geobypass/com.transsion.subroom.activity.SplashActivity",
+      "existing_drawable": "moviebox",
+      "name": "MovieBox"
+    },
+    {
+      "id": "com.community.newroom/com.mymovie.activity.MySplashActivity",
+      "existing_drawable": "moviebox",
+      "name": "MovieBox"
+    },
+    {
+      "id": "com.community.oneroom/com.community.oneroom.pvd2gn.qui9st.CIAG9uiFNz",
+      "existing_drawable": "moviebox",
+      "name": "MovieBox"
+    },
+    {
       "id": "com.mediatek.gnss.nonframeworklbs/com.mediatek.gnss.nonframeworklbs.MainActivity",
       "existing_drawable": "generic_shell",
       "name": "MTK Non-Framework LBS"
@@ -168,141 +293,6 @@
       "id": "com.musicdownload.appmusicdownloader2025/com.musicdownload.appmusicdownloader2025.SplashActivity",
       "existing_drawable": "apple_music",
       "name": "Music Downloader"
-    },
-    {
-      "id": "com.musicdownloader.appdownloadmusic252/com.musicdownloader.appdownloadmusic252.ui.splash.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Downloader"
-    },
-    {
-      "id": "com.musicdownloader.mp3downloadmusic.musicdownloadfree/com1.musicdownloader.mp3downloadmusic.musicdownloadfree.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Downloader"
-    },
-    {
-      "id": "com.musicdownloader.musicfreeapp825v2/com.musicdownloader.appdownloadmusic25.ui.splash.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Downloader",
-      "installs": "1,000,000+",
-      "drawable": "music_downloader"
-    },
-    {
-      "id": "audioplayer.free.music.player/com.ijoysoft.music.activity.WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "10,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "com.media.music.mp3.musicplayer/com.media.music.ui.main.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music player",
-      "installs": "100,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "com.musicplan.playermusic/com.musicplan.playermusic.activities.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player"
-    },
-    {
-      "id": "com.nexnil.mediaplayer/com.musicplayer.mediaplayer.activities.PermissionActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player"
-    },
-    {
-      "id": "com.rocks.music/com.rocks.music.musicplayer.MusicSplash",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "5,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "media.audioplayer.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "100,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "media.mp3player.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "10,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "media.music.mp3player.musicplayer/media.music.mp3player.musicplayer.ui.main.MainMPActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music player",
-      "installs": "50,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "media.music.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "100,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "music.musicplayer/com.android.music.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "50,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "musicplayer.hdvideoplayer.backgroundmusic/musicplayer.hdvideoplayer.backgroundmusic.myActivities.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "50,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "musicplayer.theme.bass.equalizer/musicplayer.theme.bass.equalizer.activity.StartPageActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music player",
-      "installs": "10,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "musicplayer.musicapp.playmusic.mp3player/musicplayer.musicapp.playmusic.mp3player.ui.splash.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player Offline & MP3",
-      "installs": "10,000,000+",
-      "drawable": "music_player_offline_mp3"
-    },
-    {
-      "id": "jl.musicalnotes/jl.musicalnotes.activity.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Musical Notes"
-    },
-    {
-      "id": "com.muso.musicplayer/com.muso.musicplayer.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Muso",
-      "installs": "50,000,000+",
-      "drawable": "muso"
-    },
-    {
-      "id": "com.ttnet.muzik/com.ttnet.muzik.DefaultAppIconAlias",
-      "existing_drawable": "music_player",
-      "name": "Muud",
-      "installs": "5,000,000+",
-      "drawable": "muud"
-    },
-    {
-      "id": "hu.mvmnext.onlineugyintezes/com.nkmomni.app.screen.splash.SplashActivity",
-      "existing_drawable": "substratum_lite",
-      "name": "MVM Next",
-      "installs": "1,000,000+",
-      "drawable": "mvm_next"
-    },
-    {
-      "id": "com.mx.plus/com.mxtech.videoplayer.pro.ActivityMediaList",
-      "existing_drawable": "just_player",
-      "name": "MX Player"
     }
   ]
 }
