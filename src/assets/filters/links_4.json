@@ -2,170 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 4,
-  "total_batches": 9,
+  "total_batches": 8,
   "links": [
-    {
-      "id": "com.dominospizza.az/com.pizzaapp.MainActivity",
-      "existing_drawable": "dominos_pizza",
-      "name": "Domino's Pizza",
-      "installs": "500,000+",
-      "drawable": "dominos_pizza"
-    },
-    {
-      "id": "com.dominospizza/com.dominospizza.SplashScreenActivity",
-      "existing_drawable": "dominos_pizza",
-      "name": "Domino's Pizza",
-      "installs": "10,000,000+",
-      "drawable": "dominos_pizza"
-    },
-    {
-      "id": "com.firstyogi.dothing/com.firstyogi.dothing.SigninActivity",
-      "existing_drawable": "tasky",
-      "name": "Dothing",
-      "installs": "5,000+",
-      "drawable": "dothing"
-    },
-    {
-      "id": "com.softwarebakery.drivedroid.paid/com.softwarebakery.drivedroid.MainActivity",
-      "existing_drawable": "drivedroid",
-      "name": "DriveDroid"
-    },
-    {
-      "id": "com.dsplayer.app/com.dsplayer.app.features.videobrowser.ui.VideoBrowserActivity",
-      "existing_drawable": "just_player",
-      "name": "DS Player",
-      "installs": "10,000+",
-      "drawable": "ds_player"
-    },
-    {
-      "id": "com.olxmena.horizontal/com.olxmena.horizontal.MainActivity",
-      "existing_drawable": "olx",
-      "name": "dubizzle",
-      "installs": "10,000,000+",
-      "drawable": "dubizzle"
-    },
-    {
-      "id": "io.github.luyifei2011.dvdcontroller/io.github.luyifei2011.dvdcontroller.MainActivity",
-      "existing_drawable": "generic_shell",
-      "name": "DVD Controller"
-    },
-    {
-      "id": "easy.launcher/easy.launcher.ime.promo.ImePromoActivity",
-      "existing_drawable": "generic_keyboard",
-      "name": "Easy Keyboard",
-      "installs": "10,000,000+",
-      "drawable": "easy_keyboard"
-    },
-    {
-      "id": "com.cem.pianokeyboard.pianomusic/com.cem.piano.guide.ui.activities.IntroActivity",
-      "existing_drawable": "generic_piano",
-      "name": "Easy Piano",
-      "installs": "500,000+",
-      "drawable": "easy_piano"
-    },
-    {
-      "id": "com.exteragram.messenger/com.exteragram.messenger.HamsterIcon",
-      "existing_drawable": "exteragram",
-      "name": "exteraGram"
-    },
-    {
-      "id": "com.exteraless.app/org.telegram.messenger.TelegramIcon",
-      "existing_drawable": "telegram",
-      "name": "exteraless"
-    },
-    {
-      "id": "com.fairphone.android.fairbudsapp/com.fairphone.fairsound.ui.activity.MainActivity",
-      "existing_drawable": "generic_voice_recorder_waves",
-      "name": "Fairbuds",
-      "installs": "10,000+",
-      "drawable": "fairbuds"
-    },
-    {
-      "id": "com.blogspot.novalabsandroid.fakecallerid/com.blogspot.novalabsandroid.fakecallerid.ConfigCallActivity",
-      "existing_drawable": "generic_dialer",
-      "name": "Fake Call",
-      "installs": "1,000,000+",
-      "drawable": "fake_call"
-    },
-    {
-      "id": "com.file.manager.file.organizer.file.explorer.manage.files/com.file.manager.file.organizer.file.explorer.manage.files.ui.activity.splash.SplashActivity",
-      "existing_drawable": "generic_files",
-      "name": "File Manager",
-      "installs": "1,000,000+",
-      "drawable": "file_manager"
-    },
-    {
-      "id": "net.east_hino.standard_explorer/net.east_hino.standard_explorer.ui.ActivityMain",
-      "existing_drawable": "generic_files",
-      "name": "File Manager Shortcut",
-      "installs": "10,000+",
-      "drawable": "file_manager_shortcut"
-    },
-    {
-      "id": "nl.moeilijkedingen.jellyfinaudioplayer/nl.moeilijkedingen.jellyfinaudioplayer.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Fintunes",
-      "installs": "10,000+",
-      "drawable": "fintunes"
-    },
-    {
-      "id": "flashgram.org.web/org.telegram.messenger.DefaultIcon",
-      "existing_drawable": "telegram",
-      "name": "Flashgram"
-    },
-    {
-      "id": "com.fclash.app/com.follow.clash.MainActivity",
-      "existing_drawable": "flclash",
-      "name": "FlClash",
-      "installs": "10,000+",
-      "drawable": "flclash"
-    },
-    {
-      "id": "mobi.appplus.calculator.plus/mobi.appplus.calculator.plus.MainActivity",
-      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "FlexCalc",
-      "installs": "1,000,000+",
-      "drawable": "flexcalc"
-    },
-    {
-      "id": "com.eurekateam.fmradio/com.eurekateam.fmradio.MainActivity",
-      "existing_drawable": "generic_fm_radio",
-      "name": "FM Radio"
-    },
-    {
-      "id": "com.mobilefootie.wc2010/com.fotmob.android.icons.AppIconLiverpool",
-      "existing_drawable": "fotmob",
-      "name": "FotMob",
-      "installs": "50,000,000+",
-      "drawable": "fotmob"
-    },
-    {
-      "id": "com.freemusic.offline.bus/com.project.gugu.music.ui.activity.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Free Music"
-    },
-    {
-      "id": "com.yy.musicfm.global/com.project.gugu.music.ui.activity.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Free Music"
-    },
-    {
-      "id": "com.miui.gallery/com.miui.gallery.MainActivity",
-      "existing_drawable": "generic_gallery",
-      "name": "Gallery"
-    },
-    {
-      "id": "com.tobykurien.google_news/com.tobykurien.google_news.GoogleNewsActivity",
-      "existing_drawable": "generic_earth",
-      "name": "GApps Browser"
-    },
-    {
-      "id": "com.appgcam.gcamera/com.appgcam.gcamera.ui.SplashActivity",
-      "existing_drawable": "generic_camera",
-      "name": "GCam",
-      "installs": "1,000,000+",
-      "drawable": "gcam"
-    },
     {
       "id": "com.ghosten.player/com.ghosten.player.MainActivity",
       "existing_drawable": "just_player",
@@ -175,13 +13,6 @@
       "id": "io.mo.glassmic/io.mo.glassmic.MainActivity",
       "existing_drawable": "generic_microphone",
       "name": "GlassMic"
-    },
-    {
-      "id": "fr.emersion.goguma.play/fr.emersion.goguma.MainActivity",
-      "existing_drawable": "goguma",
-      "name": "Goguma",
-      "installs": "10,000+",
-      "drawable": "goguma"
     },
     {
       "id": "com.goibibo/com.goibibo.common.HomeActivityAliasGoTribe",
@@ -219,11 +50,6 @@
       "drawable": "hide_apps_calculator_icon"
     },
     {
-      "id": "com.blueskyapps.englishbible/com.blueskyapps.mainbible.SplashActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Holy Bible"
-    },
-    {
       "id": "com.huawei.music.local/com.huawei.music.local.main.MainActivity",
       "existing_drawable": "apple_music",
       "name": "Huawei Music Player"
@@ -234,11 +60,11 @@
       "name": "Huawei Software Update"
     },
     {
-      "id": "com.facebook.orca/app.hushmessenger.extension.SettingsLauncher",
-      "existing_drawable": "messenger",
-      "name": "HushMessenger settings",
-      "installs": "5,000,000,000+",
-      "drawable": "hushmessenger_settings"
+      "id": "com.cmepro.uhxmiditools/android.app.Activity",
+      "existing_drawable": "drivedroid",
+      "name": "HxMIDI Tools",
+      "installs": "1,000+",
+      "drawable": "hxmidi_tools"
     },
     {
       "id": "imagetopdf.pdfmaker.pdfconverter.pdfreader/imagetopdf.pdfmaker.pdfconverter.pdfreader.ui.I2SplashActivity",
@@ -274,7 +100,7 @@
       "name": "InnerTune Debug"
     },
     {
-      "id": "com.instaprime.android/com.instagram.android.activity.MainTabActivity.zipeng",
+      "id": "com.instaprime.android/com.instagram.android.activity.MainTabActivity",
       "existing_drawable": "instagram",
       "name": "InstaPrime"
     },
@@ -291,6 +117,13 @@
       "name": "Internet Browser",
       "installs": "1,000,000,000+",
       "drawable": "internet_browser"
+    },
+    {
+      "id": "com.creditkarma.mobile.international/com.creditkarma.mobile.international.landing.ui.LandingActivity",
+      "existing_drawable": "intuit_credit_karma",
+      "name": "Intuit Credit Karma",
+      "installs": "1,000,000+",
+      "drawable": "intuit_credit_karma"
     },
     {
       "id": "iTunes.Sync.Android/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
@@ -317,6 +150,159 @@
       "name": "JPG to PDF Converter",
       "installs": "10,000,000+",
       "drawable": "jpg_to_pdf_converter"
+    },
+    {
+      "id": "com.kaorin.theme.iconpack/com.kaorin.theme.iconpack.activities.MainActivity",
+      "existing_drawable": "kaorin_icon_pack",
+      "name": "Kaorin Icons"
+    },
+    {
+      "id": "org.kustom.apkmaker/org.kustom.apkmaker.ProjectListActivity",
+      "existing_drawable": "ladb",
+      "name": "KAPK"
+    },
+    {
+      "id": "com.ivanovsky.passnotes/com.ivanovsky.passnotes.presentation.StartActivity",
+      "existing_drawable": "one_tap_lock_screen",
+      "name": "KeePassVault"
+    },
+    {
+      "id": "com.easybrain.killer.sudoku.free/com.easybrain.killer.sudoku.free.SplashActivity",
+      "existing_drawable": "generic_sudoku",
+      "name": "Killer Sudoku",
+      "installs": "10,000,000+",
+      "drawable": "killer_sudoku"
+    },
+    {
+      "id": "com.xxi.film.kitanonton/com.xxi.film.kitanonton.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "KITA NONTON",
+      "installs": "100,000+",
+      "drawable": "kita_nonton"
+    },
+    {
+      "id": "com.draco.ladb.free/com.draco.ladb.views.MainActivity",
+      "existing_drawable": "ladb",
+      "name": "LADB"
+    },
+    {
+      "id": "org.larpgram.cc/org.telegram.messenger.DefaultIcon",
+      "existing_drawable": "telegram",
+      "name": "larpgram"
+    },
+    {
+      "id": "com.lastpass.authenticator/com.lastpass.authenticator.ui.MainActivity",
+      "existing_drawable": "lastpass",
+      "name": "LastPass Authenticator",
+      "installs": "1,000,000+",
+      "drawable": "lastpass_authenticator"
+    },
+    {
+      "id": "com.bearinmind.launcher314/com.bearinmind.launcher314.MainActivity",
+      "existing_drawable": "generic_power",
+      "name": "Launcher314"
+    },
+    {
+      "id": "com.flass.layoutinspect/com.flass.layoutinspect.activity.MainActivityAlias",
+      "existing_drawable": "generic_shell",
+      "name": "Layout Inspect"
+    },
+    {
+      "id": "de.melvil.noten/de.melvil.noten.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Learn Music Notes",
+      "installs": "100,000+",
+      "drawable": "learn_music_notes"
+    },
+    {
+      "id": "com.learn.piano.music.instrument/com.example.pianoapplication.MainActivity",
+      "existing_drawable": "generic_piano",
+      "name": "Learn Piano",
+      "installs": "100,000+",
+      "drawable": "learn_piano"
+    },
+    {
+      "id": "com.lenovo.FileBrowser2/com.lenovo.FileBrowser.activities.FileBrowserMain",
+      "existing_drawable": "generic_files",
+      "name": "Lenovo File Manager"
+    },
+    {
+      "id": "com.zui.notes/com.zui.notes.home.MainActivity",
+      "existing_drawable": "generic_notes",
+      "name": "Lenovo ZUI Notepad"
+    },
+    {
+      "id": "com.lge.music/com.lge.music.MusicBrowserActivity",
+      "existing_drawable": "apple_music",
+      "name": "LG Music"
+    },
+    {
+      "id": "com.lge.vvm/com.lge.vvm.launcher.VVMLauncherActivity",
+      "existing_drawable": "generic_voicemail",
+      "name": "LG Voicemail"
+    },
+    {
+      "id": "com.grice.call/com.grice.call.icon.Default",
+      "existing_drawable": "generic_dialer",
+      "name": "Liquid Dialer",
+      "installs": "100,000+",
+      "drawable": "liquid_dialer"
+    },
+    {
+      "id": "com.cvc953.localplayer/com.cvc953.localplayer.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Local Player"
+    },
+    {
+      "id": "com.op.lspdoze/com.op.lspdoze.ui.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "LSPDoze"
+    },
+    {
+      "id": "app.lunatask.android/app.lunatask.android.MainActivity",
+      "existing_drawable": "tasks",
+      "name": "Lunatask",
+      "installs": "10,000+",
+      "drawable": "lunatask"
+    },
+    {
+      "id": "com.j.m3play/com.j.m3play.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "M3Play"
+    },
+    {
+      "id": "com.devmaru.audio/com.devmaru.audio.activity.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "MaruAudio",
+      "installs": "10,000+",
+      "drawable": "maruaudio"
+    },
+    {
+      "id": "material.expressive.kwgt/material.expressive.kwgt.MainActivity",
+      "existing_drawable": "m3_expressive_widgets",
+      "name": "Material Expressive Widget",
+      "installs": "1,000+",
+      "drawable": "material_expressive_widget"
+    },
+    {
+      "id": "com.nemynew.materialsearch/com.nemynew.materialsearch.MainActivity",
+      "existing_drawable": "generic_search",
+      "name": "Material Search"
+    },
+    {
+      "id": "com.melmeligy.mediadownloader/com.melmeligy.mediadownloader.MainActivity",
+      "existing_drawable": "generic_download_shelf",
+      "name": "Media Downloader"
+    },
+    {
+      "id": "foundation.e.message/com.moez.QKSMS.feature.main.MainActivity",
+      "existing_drawable": "messages",
+      "name": "Messages"
+    },
+    {
+      "id": "net.bitplane.android.microphone/net.bitplane.android.microphone.MicrophoneActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "Microphone"
     }
   ]
 }
