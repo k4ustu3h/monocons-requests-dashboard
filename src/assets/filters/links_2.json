@@ -5,28 +5,6 @@
   "total_batches": 8,
   "links": [
     {
-      "id": "com.splendapps.splendo/com.splendapps.splendo.MainActivity",
-      "existing_drawable": "tasks",
-      "name": "SplenDO",
-      "components": [
-        "com.splendapps.splendo/com.splendapps.splendo.MainActivity",
-        "com.splendapps.splendo/com.splendapps.splendo.activity.MainActivity"
-      ],
-      "installs": "10,000,000+",
-      "drawable": "splendo"
-    },
-    {
-      "id": "com.easybrain.sudoku.android/com.easybrain.sudoku.android.SplashActivity",
-      "existing_drawable": "generic_sudoku",
-      "name": "Sudoku",
-      "components": [
-        "com.easybrain.sudoku.android/com.easybrain.sudoku.android.SplashActivity",
-        "com.easybrain.sudoku.android/com.google.android.archive.ReactivateActivity"
-      ],
-      "installs": "100,000,000+",
-      "drawable": "sudoku"
-    },
-    {
       "id": "se.svt.android.svtplay/se.svt.svtplay.ui.mobile.MainActivity",
       "existing_drawable": "just_player",
       "name": "SVT Play",
@@ -36,17 +14,6 @@
       ],
       "installs": "5,000,000+",
       "drawable": "svt_play"
-    },
-    {
-      "id": "com.zhiliaoapp.musically/com.ss.android.ugc.aweme.ttp.IconStock",
-      "existing_drawable": "tiktok",
-      "name": "TikTok",
-      "components": [
-        "com.zhiliaoapp.musically/com.ss.android.ugc.aweme.ttp.IconStock",
-        "com.zhiliaoapp.musically/com.windukk.mod.icon.md"
-      ],
-      "installs": "1,000,000,000+",
-      "drawable": "tiktok"
     },
     {
       "id": "com.samco.trackandgraph/com.samco.trackandgraph.MainActivity",
@@ -60,17 +27,6 @@
       "drawable": "track_graph"
     },
     {
-      "id": "com.qbis.guessthecountry/dev.axmol.app.AppActivity",
-      "existing_drawable": "generic_earth",
-      "name": "World Map Quiz",
-      "components": [
-        "com.qbis.guessthecountry/dev.axmol.app.AppActivity",
-        "com.qbis.guessthecountry/org.cocos2dx.cpp.AppActivity"
-      ],
-      "installs": "5,000,000+",
-      "drawable": "world_map_quiz"
-    },
-    {
       "id": "com.android.youtube.music.premium/com.android.youtube.music.premium.morphe_original_1",
       "existing_drawable": "generic_player_pro",
       "name": "YouTube Music",
@@ -78,11 +34,6 @@
         "com.android.youtube.music.premium/com.android.youtube.music.premium.morphe_original_1",
         "com.android.youtube.music.premium/com.google.android.apps.youtube.music.activities.MusicActivity"
       ]
-    },
-    {
-      "id": "com.mojanprs.minecrafto/com.mojang.minecraftpe.MainActivity",
-      "existing_drawable": "minecraft",
-      "name": "1.2Mine"
     },
     {
       "id": "com.github.superadb/com.github.superadb.SplashActivity",
@@ -345,6 +296,37 @@
       "id": "com.ovz.carscanner.rustore/crc646a6dd679b318c207.MainActivity",
       "existing_drawable": "generic_engine",
       "name": "Car Scanner"
+    },
+    {
+      "id": "com.google.android.ims/com.google.android.ims.ui.WifiCallingSettingsActivity",
+      "existing_drawable": "carrier_services",
+      "name": "Carrier Services",
+      "installs": "5,000,000,000+",
+      "drawable": "carrier_services"
+    },
+    {
+      "id": "maps.jaoloonda.android.aaad_a39e4f/com.thekirankumar.youtubeauto2.activity.MainPhoneActivity",
+      "existing_drawable": "youtube",
+      "name": "CarStream"
+    },
+    {
+      "id": "com.birds.chess/com.dynamo.android.DefoldActivity",
+      "existing_drawable": "generic_chess",
+      "name": "Chess",
+      "installs": "1,000,000+",
+      "drawable": "chess"
+    },
+    {
+      "id": "com.chess.prathxm/com.chess.splash.SplashActivity",
+      "existing_drawable": "generic_chess",
+      "name": "Chess"
+    },
+    {
+      "id": "com.llx.chess/com.llx.chess.AndroidLauncher",
+      "existing_drawable": "generic_chess",
+      "name": "Chess",
+      "installs": "100,000,000+",
+      "drawable": "chess"
     }
   ]
 }

@@ -103,23 +103,6 @@
       "drawable": "tasks"
     },
     {
-      "id": "org.telegram.messenger/com.exteragram.messenger.AmethystIcon",
-      "existing_drawable": "telegram",
-      "name": "AyuGram",
-      "components": [
-        "org.telegram.messenger/com.exteragram.messenger.AmethystIcon",
-        "org.telegram.messenger/com.exteragram.messenger.AyuGramYaPlus",
-        "org.telegram.messenger/com.exteragram.messenger.DefaultIcon",
-        "org.telegram.messenger/com.exteragram.messenger.ExteraIcon",
-        "org.telegram.messenger/com.exteragram.messenger.MonetIcon",
-        "org.telegram.messenger/com.exteragram.messenger.MonetIconExtera",
-        "org.telegram.messenger/com.exteragram.messenger.NeoIcon",
-        "org.telegram.messenger/com.exteragram.messenger.SusIcon"
-      ],
-      "installs": "1,000,000,000+",
-      "drawable": "ayugram"
-    },
-    {
       "id": "io.github.pyoncord.app/com.discord.main.MainBlurpleTwilight",
       "existing_drawable": "discord",
       "name": "Bunny",
@@ -490,17 +473,6 @@
       "drawable": "microsoft_edge_canary"
     },
     {
-      "id": "com.mojang.minecraftpe/com.me.game.promotion_popup.MainActivity",
-      "existing_drawable": "minecraft",
-      "name": "Minecraft",
-      "components": [
-        "com.mojang.minecraftpe/com.me.game.promotion_popup.MainActivity",
-        "com.mojang.minecraftpe/com.mod.activity.SplashActivity"
-      ],
-      "installs": "100,000,000+",
-      "drawable": "minecraft"
-    },
-    {
       "id": "com.minimalisttodolist.pleasebethelastrecyclerview/com.minimalisttodolist.pleasebethelastrecyclerview.MainActivity",
       "existing_drawable": "tasks",
       "name": "Minimalist",
@@ -612,6 +584,28 @@
       ],
       "installs": "5,000,000+",
       "drawable": "sky_tonight"
+    },
+    {
+      "id": "com.splendapps.splendo/com.splendapps.splendo.MainActivity",
+      "existing_drawable": "tasks",
+      "name": "SplenDO",
+      "components": [
+        "com.splendapps.splendo/com.splendapps.splendo.MainActivity",
+        "com.splendapps.splendo/com.splendapps.splendo.activity.MainActivity"
+      ],
+      "installs": "10,000,000+",
+      "drawable": "splendo"
+    },
+    {
+      "id": "com.easybrain.sudoku.android/com.easybrain.sudoku.android.SplashActivity",
+      "existing_drawable": "generic_sudoku",
+      "name": "Sudoku",
+      "components": [
+        "com.easybrain.sudoku.android/com.easybrain.sudoku.android.SplashActivity",
+        "com.easybrain.sudoku.android/com.google.android.archive.ReactivateActivity"
+      ],
+      "installs": "100,000,000+",
+      "drawable": "sudoku"
     }
   ]
 }

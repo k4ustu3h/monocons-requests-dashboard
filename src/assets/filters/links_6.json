@@ -5,76 +5,6 @@
   "total_batches": 8,
   "links": [
     {
-      "id": "com.rkkvishva.nothing_dialer/com.rkkvishva.nothing_dialer.LauncherAliasRed",
-      "existing_drawable": "generic_dialer",
-      "name": "Nothing Dialer",
-      "installs": "10,000+",
-      "drawable": "nothing_dialer"
-    },
-    {
-      "id": "cn.nubia.myfile/zte.com.cn.filer.FileMgrActivity",
-      "existing_drawable": "generic_files",
-      "name": "Nubia File Manager"
-    },
-    {
-      "id": "tz.co.wadau.nyimbozakristo/tz.co.wadau.nyimbozakristo.SplashScreenActivity",
-      "existing_drawable": "apple_music",
-      "name": "Nyimbo za Kristo"
-    },
-    {
-      "id": "com.mp3player.musicplayer.offlinemusicplayer.mp3music/com.mp3player.musicplayer.offlinemusicplayer.mp3music.newUI.presentation.activities.EntranceActivity",
-      "existing_drawable": "apple_music",
-      "name": "Offline Music Player",
-      "installs": "1,000,000+",
-      "drawable": "offline_music_player"
-    },
-    {
-      "id": "one.next.player/one.next.player.MainActivity",
-      "existing_drawable": "generic_player",
-      "name": "One Player"
-    },
-    {
-      "id": "one.only.player/one.only.player.MainActivity",
-      "existing_drawable": "just_player",
-      "name": "Only Player"
-    },
-    {
-      "id": "com.opera.mini.native.beta/com.opera.android.Default",
-      "existing_drawable": "opera_browser",
-      "name": "Opera Mini Beta",
-      "installs": "100,000,000+",
-      "drawable": "opera_mini_beta"
-    },
-    {
-      "id": "com.bskit.osint/com.bskit.osint.MainActivity",
-      "existing_drawable": "generic_search",
-      "name": "OSINT"
-    },
-    {
-      "id": "org.otrsc.android/org.otrsc.android.MainActivity",
-      "existing_drawable": "zcalc",
-      "name": "OTR Speed Calculator"
-    },
-    {
-      "id": "com.bintianqi.owndroid/com.bintianqi.owndroid.AliasActivity",
-      "existing_drawable": "netguard",
-      "name": "OwnDroid"
-    },
-    {
-      "id": "com.xsdev.pdfreader.pdfeditor.pdf.document/com.rpdev.docreadermainV2.SplashActivity",
-      "existing_drawable": "generic_pdf_file",
-      "name": "PDF Editor",
-      "installs": "10,000,000+",
-      "drawable": "pdf_editor"
-    },
-    {
-      "id": "pl.pekao.pekaosa.peopaykids/com.pekao.peokids.presentation.main.view.MainActivity",
-      "existing_drawable": "peopay",
-      "name": "PeoPay KIDS",
-      "installs": "100,000+",
-      "drawable": "peopay_kids"
-    },
-    {
       "id": "com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity",
       "existing_drawable": "google_phone",
       "name": "Phone",
@@ -187,13 +117,6 @@
       "id": "com.music.rambox/com.music.rambox.MainActivity",
       "existing_drawable": "apple_music",
       "name": "RamBox"
-    },
-    {
-      "id": "com.rapido.passenger/com.rapido.passenger.DiwaliAlias",
-      "existing_drawable": "rapido",
-      "name": "Rapido",
-      "installs": "100,000,000+",
-      "drawable": "rapido"
     },
     {
       "id": "android.rk.RockVideoPlayer/android.rk.RockVideoPlayer.RockVideoPlayer",
@@ -311,6 +234,95 @@
       "name": "Sky Go",
       "installs": "5,000,000+",
       "drawable": "sky_go"
+    },
+    {
+      "id": "com.illusions.skyworthuniversalremotecontrol/com.illusions.skyworthuniversalremotecontrol.remotecontrol.SplashActivity",
+      "existing_drawable": "generic_power",
+      "name": "Skyworth TV Remote",
+      "installs": "500,000+",
+      "drawable": "skyworth_tv_remote"
+    },
+    {
+      "id": "com.proframeapps.videoframeplayer/com.proframeapps.videoframeplayer.ui.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "Slow Motion Frame Video Player",
+      "installs": "1,000,000+",
+      "drawable": "slow_motion_frame_video_player"
+    },
+    {
+      "id": "kr.sira.calculator/kr.sira.calculator.SplashActivity",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "Smart Calculator by Smart Tools",
+      "installs": "5,000+",
+      "drawable": "smart_calculator_by_smart_tools"
+    },
+    {
+      "id": "com.netflix.NGP.Solitaire/com.mobilityware.sflnativeandroidutils.SFLLaunchActivity",
+      "existing_drawable": "generic_solitaire",
+      "name": "Solitaire",
+      "installs": "1,000,000+",
+      "drawable": "solitaire"
+    },
+    {
+      "id": "com.peoplefun.wordsolitaire/com.unity3d.player.UnityPlayerActivity",
+      "existing_drawable": "generic_solitaire",
+      "name": "Solitaire",
+      "installs": "1,000,000+",
+      "drawable": "solitaire"
+    },
+    {
+      "id": "com.solo.link.music.player.pro/com.jober.music.player.ui.activity.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "SoloPro",
+      "installs": "1,000,000+",
+      "drawable": "solopro"
+    },
+    {
+      "id": "com.getsteven.app/com.getsteven.app.screens.home.view.BaseActivity",
+      "existing_drawable": "walloo",
+      "name": "Steven",
+      "installs": "100,000+",
+      "drawable": "steven"
+    },
+    {
+      "id": "com.angkorworld.note/com.angkorworld.memo.activities.MainActivity",
+      "existing_drawable": "samsung_notes",
+      "name": "Sticky Notepad",
+      "installs": "1,000,000+",
+      "drawable": "sticky_notepad"
+    },
+    {
+      "id": "app.streamcompanion/app.streamcompanion.MainActivity",
+      "existing_drawable": "generic_player",
+      "name": "Stream Companion",
+      "installs": "5,000+",
+      "drawable": "stream_companion"
+    },
+    {
+      "id": "com.hrincescumihai.sudoku/com.hrincescumihai.sudoku.app.MainActivity",
+      "existing_drawable": "generic_sudoku",
+      "name": "Sudoku",
+      "installs": "10,000+",
+      "drawable": "sudoku"
+    },
+    {
+      "id": "com.superb.launcher/com.superb.iconpack.presentation.activity.IconPackActivity",
+      "existing_drawable": "themed_icon_calendar_31",
+      "name": "Superb Launcher Icons",
+      "installs": "100,000+",
+      "drawable": "superb_launcher_icons"
+    },
+    {
+      "id": "se.bankgirot.swish/se.bankgirot.swish.ui.SplashActivity",
+      "existing_drawable": "swish",
+      "name": "Swish",
+      "installs": "5,000,000+",
+      "drawable": "swish"
+    },
+    {
+      "id": "org.akanework.symphonica/org.akanework.symphonica.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Symphonica"
     }
   ]
 }

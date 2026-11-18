@@ -15,10 +15,6 @@
       "lawnicons_drawable": "coloros_translate"
     },
     {
-      "id": "jbl.stc.com/jbl.stc.com.activity.LauncherStartActivity",
-      "lawnicons_drawable": "jbl_headphones"
-    },
-    {
       "id": "app.bpjs.mobile/io.flutter.embedding.android.FlutterFragmentActivity",
       "lawnicons_drawable": "mobile_jkn"
     },
@@ -241,6 +237,10 @@
     {
       "id": "com.android.thememanager/com.android.thememanager.ThemeResourceTabActivity",
       "lawnicons_drawable": "themes"
+    },
+    {
+      "id": "com.diskwalaapp/com.diskwalaapp.MainActivity",
+      "lawnicons_drawable": "diskwala"
     },
     {
       "id": "io.voodoo.holeio/com.unity3d.player.UnityPlayerActivity",
@@ -623,6 +623,10 @@
       "lawnicons_drawable": "catho"
     },
     {
+      "id": "com.raribeir.catolicoorante/com.raribeir.catolicoorante.MainActivity",
+      "lawnicons_drawable": "catolico_orante"
+    },
+    {
       "id": "br.jus.tse.eleitoral.etitulo/br.jus.tse.eleitoral.etitulo.MainActivity",
       "lawnicons_drawable": "e_titulo"
     },
@@ -811,6 +815,10 @@
       "lawnicons_drawable": "agc_toolkit"
     },
     {
+      "id": "air.com.cetesdirecto.cetesmobile/air.com.cetesdirecto.cetesmobile.PantallaBienvenida",
+      "lawnicons_drawable": "cetesdirecto"
+    },
+    {
       "id": "mx.com.cfe.cfecontigo/mx.com.cfe.cfecontigo.ui.login.LoginActivity",
       "lawnicons_drawable": "cfe"
     },
@@ -863,10 +871,6 @@
       "lawnicons_drawable": "plants_vs_zombies"
     },
     {
-      "id": "dev.raincord.app/com.discord.main.MainDefault",
-      "lawnicons_drawable": "discord"
-    },
-    {
       "id": "org.readera/com.readera.MainActivity",
       "lawnicons_drawable": "read_era"
     },
@@ -881,10 +885,6 @@
     {
       "id": "com.amanoteam.kurt/com.amanoteam.kurt.activities.MainActivity",
       "lawnicons_drawable": "just_delete_me"
-    },
-    {
-      "id": "com.kyotoplayer/com.kyotoplayer.ui.screens.MainActivity",
-      "lawnicons_drawable": "just_player"
     },
     {
       "id": "com.risa.umbra/com.hecate.phantom.module_home.HomeActivityNew",
@@ -1927,10 +1927,6 @@
       "lawnicons_drawable": "lspatch_lsposed"
     },
     {
-      "id": "com.navyfederal.android/org.navyfederal.android.NFCUActivity",
-      "lawnicons_drawable": "navy_federal"
-    },
-    {
       "id": "com.orgzlyrevived/com.orgzly.android.ui.LauncherActivity",
       "lawnicons_drawable": "orgzly"
     },
@@ -2017,10 +2013,6 @@
     {
       "id": "net.omobio.dialogsc/net.omobio.dialogsc.MainActivity",
       "lawnicons_drawable": "my_robi"
-    },
-    {
-      "id": "com.payoneer.android/com.payoneer.SplashActivity",
-      "lawnicons_drawable": "payoneer"
     },
     {
       "id": "com.quranly.app/com.quranly.app.MainActivity.default",
@@ -2273,14 +2265,6 @@
     {
       "id": "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9.blk",
       "lawnicons_drawable": "my_pixel"
-    },
-    {
-      "id": "fc.admin.fcexpressadmin/fc.admin.fcexpressadmin.activity.AccNewSplashActivity",
-      "lawnicons_drawable": "firstcry"
-    },
-    {
-      "id": "cx.indianoil.in/cx.indianoil.in.SplashActivity",
-      "lawnicons_drawable": "indianoil_one"
     },
     {
       "id": "nps.nps/nps.nps.MainActivity",

@@ -84,11 +84,9 @@
       "drawable": "files_shortcut"
     },
     {
-      "id": "com.kyotoplayer/com.kyotoplayer.ui.screens.MainActivity",
-      "existing_drawable": "just_player",
-      "name": "KYOTO Player",
-      "installs": "1,000,000+",
-      "drawable": "kyoto_player"
+      "id": "org.kiwix.kiwixmobile.standalone/org.kiwix.kiwixmobile.main.KiwixMainActivity",
+      "existing_drawable": "kiwix",
+      "name": "Kiwix"
     },
     {
       "id": "com.transsion.smartmessage/com.android.messaging.ui.conversationlist.ConversationListActivity",
@@ -99,11 +97,6 @@
       "id": "com.transsion.letswitch/com.transsion.letswitch.MainActivity",
       "existing_drawable": "clone_phone",
       "name": "Mobile Cloner"
-    },
-    {
-      "id": "dev.raincord.app/com.discord.main.MainDefault",
-      "existing_drawable": "discord",
-      "name": "Rain"
     },
     {
       "id": "com.vivo.soundrecorder/com.android.activity.ReclistActivity",
