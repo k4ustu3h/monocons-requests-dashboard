@@ -2,58 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 6,
-  "total_batches": 8,
+  "total_batches": 7,
   "links": [
-    {
-      "id": "com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity",
-      "existing_drawable": "google_phone",
-      "name": "Phone",
-      "installs": "5,000,000,000+",
-      "drawable": "phone"
-    },
-    {
-      "id": "com.instabridge.android/com.instabridge.android.callerid.DialerActivityCompose",
-      "existing_drawable": "generic_dialer",
-      "name": "Phone",
-      "installs": "100,000,000+",
-      "drawable": "phone"
-    },
-    {
-      "id": "com.phone.dialer/com.phone.dialer.MainActivity",
-      "existing_drawable": "generic_dialer",
-      "name": "Phone Call"
-    },
-    {
-      "id": "com.map.photostamp/com.pravin.photostamp.activities.SplashActivity",
-      "existing_drawable": "generic_camera",
-      "name": "PhotoStamp Camera",
-      "installs": "1,000,000+",
-      "drawable": "photostamp_camera"
-    },
-    {
-      "id": "brobata.physiboard/brobata.physiboard.MainActivity",
-      "existing_drawable": "termux",
-      "name": "PhysiBoard"
-    },
-    {
-      "id": "com.ihenvyr.platinum_karaoke_songbook_app/com.ihenvyr.platinum_karaoke_songbook_app.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Platinum Karaoke Songbook",
-      "installs": "1,000,000+",
-      "drawable": "platinum_karaoke_songbook"
-    },
-    {
-      "id": "com.polette.shop.app/com.polette.shop.app.MainActivity",
-      "existing_drawable": "lenskart",
-      "name": "polette"
-    },
-    {
-      "id": "com.maxmpz.audioplayer.unlock/com.maxmpz.audioplayer.unlock.RedirectorActivity",
-      "existing_drawable": "poweramp_full_unlocker",
-      "name": "Poweramp Full Unlocker",
-      "installs": "5,000,000+",
-      "drawable": "poweramp_full_unlocker"
-    },
     {
       "id": "gpm.tnt_premier/one.premier.handheld.presentationlayer.activities.SplashActivity",
       "existing_drawable": "just_player",
@@ -323,6 +273,60 @@
       "id": "org.akanework.symphonica/org.akanework.symphonica.MainActivity",
       "existing_drawable": "music_player",
       "name": "Symphonica"
+    },
+    {
+      "id": "com.gabm.screenrotationcontrol/com.gabm.tapandturn.ui.MainActivity",
+      "existing_drawable": "generic_rotation",
+      "name": "Tap 'n' Turn"
+    },
+    {
+      "id": "com.quoord.tapatalkpro.activity/com.quoord.tapatalkpro.activity.directory.EntryActivity",
+      "existing_drawable": "tapatalk_pro",
+      "name": "Tapatalk",
+      "installs": "10,000,000+",
+      "drawable": "tapatalk"
+    },
+    {
+      "id": "com.taptap.global.lite/com.play.taptap.ui.SplashAct",
+      "existing_drawable": "taptap",
+      "name": "TapTap Lite",
+      "installs": "10,000,000+",
+      "drawable": "taptap_lite"
+    },
+    {
+      "id": "v.d.d.answercall/v.d.d.answercall.MainFrActivity",
+      "existing_drawable": "generic_dialer",
+      "name": "Tel\u00e9fono",
+      "installs": "10,000,000+",
+      "drawable": "v_d_d_answercall"
+    },
+    {
+      "id": "top.receivesms.app/top.receivesms.app.MainActivity",
+      "existing_drawable": "generic_email",
+      "name": "Temp Number",
+      "installs": "500,000+",
+      "drawable": "temp_number"
+    },
+    {
+      "id": "com.the.the_reverse_audio/com.the.the_reverse_audio.MainActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "The Reverse Audio",
+      "installs": "1,000,000+",
+      "drawable": "the_reverse_audio"
+    },
+    {
+      "id": "com.thegosa.miuithemes/com.thegosa.miuithemes.NewDesign",
+      "existing_drawable": "themes_by_vivo",
+      "name": "Themes",
+      "installs": "50,000,000+",
+      "drawable": "themes"
+    },
+    {
+      "id": "com.tiktok.lite.go/com.zhiliaoapp.musically.go.mini.MainActivity",
+      "existing_drawable": "tiktok",
+      "name": "TikTok Lite",
+      "installs": "10,000,000+",
+      "drawable": "tiktok_lite"
     }
   ]
 }

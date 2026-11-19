@@ -2,62 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 7,
-  "total_batches": 8,
+  "total_batches": 7,
   "links": [
-    {
-      "id": "com.gabm.screenrotationcontrol/com.gabm.tapandturn.ui.MainActivity",
-      "existing_drawable": "generic_rotation",
-      "name": "Tap 'n' Turn"
-    },
-    {
-      "id": "com.quoord.tapatalkpro.activity/com.quoord.tapatalkpro.activity.directory.EntryActivity",
-      "existing_drawable": "tapatalk_pro",
-      "name": "Tapatalk",
-      "installs": "10,000,000+",
-      "drawable": "tapatalk"
-    },
-    {
-      "id": "com.taptap.global.lite/com.play.taptap.ui.SplashAct",
-      "existing_drawable": "taptap",
-      "name": "TapTap Lite",
-      "installs": "10,000,000+",
-      "drawable": "taptap_lite"
-    },
-    {
-      "id": "v.d.d.answercall/v.d.d.answercall.MainFrActivity",
-      "existing_drawable": "generic_dialer",
-      "name": "Tel\u00e9fono",
-      "installs": "10,000,000+",
-      "drawable": "v_d_d_answercall"
-    },
-    {
-      "id": "top.receivesms.app/top.receivesms.app.MainActivity",
-      "existing_drawable": "generic_email",
-      "name": "Temp Number",
-      "installs": "500,000+",
-      "drawable": "temp_number"
-    },
-    {
-      "id": "com.the.the_reverse_audio/com.the.the_reverse_audio.MainActivity",
-      "existing_drawable": "generic_microphone",
-      "name": "The Reverse Audio",
-      "installs": "1,000,000+",
-      "drawable": "the_reverse_audio"
-    },
-    {
-      "id": "com.thegosa.miuithemes/com.thegosa.miuithemes.NewDesign",
-      "existing_drawable": "themes_by_vivo",
-      "name": "Themes",
-      "installs": "50,000,000+",
-      "drawable": "themes"
-    },
-    {
-      "id": "com.tiktok.lite.go/com.zhiliaoapp.musically.go.mini.MainActivity",
-      "existing_drawable": "tiktok",
-      "name": "TikTok Lite",
-      "installs": "10,000,000+",
-      "drawable": "tiktok_lite"
-    },
     {
       "id": "com.td.transvoice/com.td.transvoice.MainActivity",
       "existing_drawable": "generic_voice",
@@ -245,13 +191,6 @@
       "name": "XAutoDaily"
     },
     {
-      "id": "com.xiaomi.midrop/app.lawnchair.LawnchairLauncher",
-      "existing_drawable": "share_me",
-      "name": "Xiaomi ShareMe",
-      "installs": "1,000,000,000+",
-      "drawable": "xiaomi_shareme"
-    },
-    {
       "id": "com.miui.weather2/com.miui.weather2.WeatherBaseScreen",
       "existing_drawable": "weather",
       "name": "Xiaomi Weather",
@@ -315,6 +254,21 @@
       "name": "\u041f\u0435\u0440\u0432\u0430\u044f \u041f\u043e\u043c\u043e\u0449\u044c ~~ First Aid",
       "installs": "100,000+",
       "drawable": "com_pervayapomosh"
+    },
+    {
+      "id": "com.podsas.sasflix/com.podsas.sasflix.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "\u0421\u0410\u0421\u0424\u041b\u0418\u041a\u0421 ~~ SASFLIX"
+    },
+    {
+      "id": "com.pic.catcher/com.pic.catcher.ui.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "\u56fe\u7247\u6355\u624b ~~ Pic Catcher"
+    },
+    {
+      "id": "cn.lyric.getter/cn.lyric.getter.launcher",
+      "existing_drawable": "generic_shell",
+      "name": "\u6b4c\u8bcd\u83b7\u53d6 ~~ Lyric Getter"
     }
   ]
 }

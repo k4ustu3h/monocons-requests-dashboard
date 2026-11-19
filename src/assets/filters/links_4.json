@@ -2,55 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 4,
-  "total_batches": 8,
+  "total_batches": 7,
   "links": [
-    {
-      "id": "imagetopdf.pdfmaker.pdfconverter.pdfreader/imagetopdf.pdfmaker.pdfconverter.pdfreader.ui.I2SplashActivity",
-      "existing_drawable": "generic_pdf_file",
-      "name": "Image to PDF",
-      "installs": "10,000,000+",
-      "drawable": "image_to_pdf"
-    },
-    {
-      "id": "com.readpdf.pdfreader.pdfviewer/com.readpdf.pdfreader.pdfviewer.view.activity.splash.FoSplashActivity",
-      "existing_drawable": "generic_pdf_file",
-      "name": "Image to PDF Converter",
-      "installs": "10,000,000+",
-      "drawable": "image_to_pdf_converter"
-    },
-    {
-      "id": "ru.tech.imageresizershrinker/ru.tech.imageresizershrinker.app.presentation.AppActivity",
-      "existing_drawable": "image_toolbox",
-      "name": "Image Toolbox",
-      "installs": "500,000+",
-      "drawable": "image_toolbox"
-    },
-    {
-      "id": "com.grykuby.minesweeper/com.google.firebase.MessagingUnityPlayerActivity",
-      "existing_drawable": "generic_minesweeper",
-      "name": "Infinite Minesweeper",
-      "installs": "1,000,000+",
-      "drawable": "infinite_minesweeper"
-    },
-    {
-      "id": "com.zionhuang.music.debug/com.zionhuang.music.MainActivity",
-      "existing_drawable": "innertune",
-      "name": "InnerTune Debug"
-    },
-    {
-      "id": "com.oasisfeng.island/com.oasisfeng.island.settings.SettingsActivity",
-      "existing_drawable": "island",
-      "name": "Insular",
-      "installs": "10,000,000+",
-      "drawable": "insular"
-    },
-    {
-      "id": "com.heytap.browser/com.heytap.browser.action.games_folder.BrowserGamesFolderActivity",
-      "existing_drawable": "generic_browser",
-      "name": "Internet Browser",
-      "installs": "1,000,000,000+",
-      "drawable": "internet_browser"
-    },
     {
       "id": "iTunes.Sync.Android/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
       "existing_drawable": "apple_music",
@@ -105,11 +58,6 @@
       "id": "com.draco.ladb.free/com.draco.ladb.views.MainActivity",
       "existing_drawable": "ladb",
       "name": "LADB"
-    },
-    {
-      "id": "org.larpgram.cc/org.telegram.messenger.DefaultIcon",
-      "existing_drawable": "telegram",
-      "name": "larpgram"
     },
     {
       "id": "com.lastpass.authenticator/com.lastpass.authenticator.ui.MainActivity",
@@ -301,6 +249,52 @@
       "name": "Music 7 Pro",
       "installs": "1,000,000+",
       "drawable": "music_7_pro"
+    },
+    {
+      "id": "com.appmusicdownload.musicdownloadervani2app/com.appmusicdownload.musicdownloadervani2app.view.splash.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Downloader"
+    },
+    {
+      "id": "com.free.music.downloader.eron/com.kunminx.musipro34.K_WelcomeActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Downloader"
+    },
+    {
+      "id": "com.musicdownload.appmusicdownloader2025/com.musicdownload.appmusicdownloader2025.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Downloader"
+    },
+    {
+      "id": "com.musicdownloader.appdownloadmusic252/com.musicdownloader.appdownloadmusic252.ui.splash.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Downloader"
+    },
+    {
+      "id": "com.musicdownloader.mp3downloadmusic.musicdownloadfree/com1.musicdownloader.mp3downloadmusic.musicdownloadfree.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Downloader"
+    },
+    {
+      "id": "com.musicdownloader.musicfreeapp825v2/com.musicdownloader.appdownloadmusic25.ui.splash.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Downloader",
+      "installs": "1,000,000+",
+      "drawable": "music_downloader"
+    },
+    {
+      "id": "audioplayer.free.music.player/com.ijoysoft.music.activity.WelcomeActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Player",
+      "installs": "10,000,000+",
+      "drawable": "music_player"
+    },
+    {
+      "id": "com.media.music.mp3.musicplayer/com.media.music.ui.main.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music player",
+      "installs": "100,000,000+",
+      "drawable": "music_player"
     }
   ]
 }

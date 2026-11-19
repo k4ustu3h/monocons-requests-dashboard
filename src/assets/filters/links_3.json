@@ -2,53 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 3,
-  "total_batches": 8,
+  "total_batches": 7,
   "links": [
-    {
-      "id": "com.sgebrelibanos.aderaser/com.sgebrelibanos.aderaser.MainActivity",
-      "existing_drawable": "just_player",
-      "name": "CleanTube",
-      "installs": "1,000,000+",
-      "drawable": "cleantube"
-    },
-    {
-      "id": "com.bluelight.computer.winlauncher.prolauncher/com.bluelight.computer.winlauncher.prolauncher.googleclock.main.DeskClock",
-      "existing_drawable": "generic_clock",
-      "name": "Clock",
-      "installs": "1,000,000+",
-      "drawable": "clock"
-    },
-    {
-      "id": "com.pengyou.cloneapp/com.pengyou.cloneapp.hide.Splash",
-      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "Clone App Calculator Icon",
-      "installs": "10,000,000+",
-      "drawable": "clone_app_calculator_icon"
-    },
-    {
-      "id": "net.pgaskin.cmus.android/net.pgaskin.cmus.android.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "cmus music player"
-    },
-    {
-      "id": "com.bnyro.contacts/com.bnyro.contacts.ui.activities.MainActivity",
-      "existing_drawable": "generic_contacts",
-      "name": "Connect You"
-    },
-    {
-      "id": "icontacts.ios.dialer.icall/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
-      "existing_drawable": "generic_dialer",
-      "name": "Contacts & Phone Call",
-      "installs": "1,000,000+",
-      "drawable": "contacts_phone_call"
-    },
-    {
-      "id": "cool.s20.camera/com.camera.function.main.privacy.CoolCameraPrivacyActivity",
-      "existing_drawable": "nothing_camera",
-      "name": "Cool S20 Camera",
-      "installs": "1,000,000+",
-      "drawable": "cool_s20_camera"
-    },
     {
       "id": "com.dvdb.bergnotes/com.dvdb.dnotes.MainActivity",
       "existing_drawable": "another_notes",
@@ -205,11 +160,6 @@
       "drawable": "fintunes"
     },
     {
-      "id": "flashgram.org.web/org.telegram.messenger.DefaultIcon",
-      "existing_drawable": "telegram",
-      "name": "Flashgram"
-    },
-    {
       "id": "com.smartpdf.reader/com.smartpdf.reader.Activities.ActivityOnBoarding",
       "existing_drawable": "generic_pdf_file",
       "name": "Flex PDF Reader",
@@ -280,11 +230,16 @@
       "drawable": "grand_piano"
     },
     {
-      "id": "com.grindrapp.android/com.grindrapp.android.HomeActivityPhoneBlack",
-      "existing_drawable": "generic_dialer",
-      "name": "Grindr Phone",
-      "installs": "50,000,000+",
-      "drawable": "grindr_phone"
+      "id": "com.rockstargames.gtasager/com.rockstargames.gtasa.DownloaderActivity",
+      "existing_drawable": "grand_theft_auto_san_andreas",
+      "name": "Grand Theft Auto: San Andreas",
+      "installs": "100,000+",
+      "drawable": "grand_theft_auto_san_andreas"
+    },
+    {
+      "id": "com.ziurmods.gtasa/com.rockstargames.gtasa.GameActivity",
+      "existing_drawable": "grand_theft_auto_san_andreas",
+      "name": "Grand Theft Auto: San Andreas"
     },
     {
       "id": "tad.hideapps.hiddenspace.apphider.webapps/tad.hideapps.hiddenspace.apphider.webapps.Calculator",
@@ -309,6 +264,53 @@
       "name": "HxMIDI Tools",
       "installs": "1,000+",
       "drawable": "hxmidi_tools"
+    },
+    {
+      "id": "imagetopdf.pdfmaker.pdfconverter.pdfreader/imagetopdf.pdfmaker.pdfconverter.pdfreader.ui.I2SplashActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "Image to PDF",
+      "installs": "10,000,000+",
+      "drawable": "image_to_pdf"
+    },
+    {
+      "id": "com.readpdf.pdfreader.pdfviewer/com.readpdf.pdfreader.pdfviewer.view.activity.splash.FoSplashActivity",
+      "existing_drawable": "generic_pdf_file",
+      "name": "Image to PDF Converter",
+      "installs": "10,000,000+",
+      "drawable": "image_to_pdf_converter"
+    },
+    {
+      "id": "ru.tech.imageresizershrinker/ru.tech.imageresizershrinker.app.presentation.AppActivity",
+      "existing_drawable": "image_toolbox",
+      "name": "Image Toolbox",
+      "installs": "500,000+",
+      "drawable": "image_toolbox"
+    },
+    {
+      "id": "com.grykuby.minesweeper/com.google.firebase.MessagingUnityPlayerActivity",
+      "existing_drawable": "generic_minesweeper",
+      "name": "Infinite Minesweeper",
+      "installs": "1,000,000+",
+      "drawable": "infinite_minesweeper"
+    },
+    {
+      "id": "com.zionhuang.music.debug/com.zionhuang.music.MainActivity",
+      "existing_drawable": "innertune",
+      "name": "InnerTune Debug"
+    },
+    {
+      "id": "com.oasisfeng.island/com.oasisfeng.island.settings.SettingsActivity",
+      "existing_drawable": "island",
+      "name": "Insular",
+      "installs": "10,000,000+",
+      "drawable": "insular"
+    },
+    {
+      "id": "com.heytap.browser/com.heytap.browser.action.games_folder.BrowserGamesFolderActivity",
+      "existing_drawable": "generic_browser",
+      "name": "Internet Browser",
+      "installs": "1,000,000,000+",
+      "drawable": "internet_browser"
     }
   ]
 }

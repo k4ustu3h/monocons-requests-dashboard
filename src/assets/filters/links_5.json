@@ -2,54 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 5,
-  "total_batches": 8,
+  "total_batches": 7,
   "links": [
-    {
-      "id": "com.appmusicdownload.musicdownloadervani2app/com.appmusicdownload.musicdownloadervani2app.view.splash.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Downloader"
-    },
-    {
-      "id": "com.free.music.downloader.eron/com.kunminx.musipro34.K_WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Downloader"
-    },
-    {
-      "id": "com.musicdownload.appmusicdownloader2025/com.musicdownload.appmusicdownloader2025.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Downloader"
-    },
-    {
-      "id": "com.musicdownloader.appdownloadmusic252/com.musicdownloader.appdownloadmusic252.ui.splash.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Downloader"
-    },
-    {
-      "id": "com.musicdownloader.mp3downloadmusic.musicdownloadfree/com1.musicdownloader.mp3downloadmusic.musicdownloadfree.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Downloader"
-    },
-    {
-      "id": "com.musicdownloader.musicfreeapp825v2/com.musicdownloader.appdownloadmusic25.ui.splash.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Downloader",
-      "installs": "1,000,000+",
-      "drawable": "music_downloader"
-    },
-    {
-      "id": "audioplayer.free.music.player/com.ijoysoft.music.activity.WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "10,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "com.media.music.mp3.musicplayer/com.media.music.ui.main.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music player",
-      "installs": "100,000,000+",
-      "drawable": "music_player"
-    },
     {
       "id": "com.musicplan.playermusic/com.musicplan.playermusic.activities.MainActivity",
       "existing_drawable": "apple_music",
@@ -313,6 +267,56 @@
       "name": "PeoPay KIDS",
       "installs": "100,000+",
       "drawable": "peopay_kids"
+    },
+    {
+      "id": "com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity",
+      "existing_drawable": "google_phone",
+      "name": "Phone",
+      "installs": "5,000,000,000+",
+      "drawable": "phone"
+    },
+    {
+      "id": "com.instabridge.android/com.instabridge.android.callerid.DialerActivityCompose",
+      "existing_drawable": "generic_dialer",
+      "name": "Phone",
+      "installs": "100,000,000+",
+      "drawable": "phone"
+    },
+    {
+      "id": "com.phone.dialer/com.phone.dialer.MainActivity",
+      "existing_drawable": "generic_dialer",
+      "name": "Phone Call"
+    },
+    {
+      "id": "com.map.photostamp/com.pravin.photostamp.activities.SplashActivity",
+      "existing_drawable": "generic_camera",
+      "name": "PhotoStamp Camera",
+      "installs": "1,000,000+",
+      "drawable": "photostamp_camera"
+    },
+    {
+      "id": "brobata.physiboard/brobata.physiboard.MainActivity",
+      "existing_drawable": "termux",
+      "name": "PhysiBoard"
+    },
+    {
+      "id": "com.ihenvyr.platinum_karaoke_songbook_app/com.ihenvyr.platinum_karaoke_songbook_app.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Platinum Karaoke Songbook",
+      "installs": "1,000,000+",
+      "drawable": "platinum_karaoke_songbook"
+    },
+    {
+      "id": "com.polette.shop.app/com.polette.shop.app.MainActivity",
+      "existing_drawable": "lenskart",
+      "name": "polette"
+    },
+    {
+      "id": "com.maxmpz.audioplayer.unlock/com.maxmpz.audioplayer.unlock.RedirectorActivity",
+      "existing_drawable": "poweramp_full_unlocker",
+      "name": "Poweramp Full Unlocker",
+      "installs": "5,000,000+",
+      "drawable": "poweramp_full_unlocker"
     }
   ]
 }

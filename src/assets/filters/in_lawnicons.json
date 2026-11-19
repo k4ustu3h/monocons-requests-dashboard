@@ -3,10 +3,6 @@
   "description": "Requests that are already supported by the Lawnicons app.",
   "in_lawnicons": [
     {
-      "id": "com.oplus.aimemory/com.oplus.aimemory.MainActivity",
-      "lawnicons_drawable": "oneplus_mind_space"
-    },
-    {
       "id": "com.nekki.shadowfight2.paid/com.google.firebase.MessagingUnityPlayerActivity",
       "lawnicons_drawable": "shadow_fight_2"
     },
@@ -295,10 +291,6 @@
       "lawnicons_drawable": "asus_router"
     },
     {
-      "id": "com.google.android.tv.remote/com.google.android.tv.remote.RemoteActivity",
-      "lawnicons_drawable": "android_tv_remote_service"
-    },
-    {
       "id": "com.samsung.knox.securefolder/com.samsung.knox.securefolder.presentation.switcher.view.SecureFolderShortcutActivity",
       "lawnicons_drawable": "samsung_secure_folder"
     },
@@ -325,10 +317,6 @@
     {
       "id": "com.ethereal.openscan/com.ethereal.openscan.MainActivity",
       "lawnicons_drawable": "openscan"
-    },
-    {
-      "id": "uk.co.openweather/uk.co.openweather.MainActivity",
-      "lawnicons_drawable": "openweather"
     },
     {
       "id": "ovo.id/ovo.id.common.activity.StartingActivity",
@@ -1539,10 +1527,6 @@
       "lawnicons_drawable": "vocabulary"
     },
     {
-      "id": "org.koreader.launcher/org.koreader.launcher.MainActivity",
-      "lawnicons_drawable": "koreader"
-    },
-    {
       "id": "com.vivo.browser/com.vivo.browser.BrowserActivity",
       "lawnicons_drawable": "vivo_browser"
     },
@@ -2149,10 +2133,6 @@
     {
       "id": "jp.hamachi.android.img/jp.hamachi.android.img.app.activities.MainActivity",
       "lawnicons_drawable": "imagesearch"
-    },
-    {
-      "id": "org.kiwix.kiwixmobile.standalone/org.kiwix.kiwixmobile.main.KiwixMainActivity",
-      "lawnicons_drawable": "kiwix"
     },
     {
       "id": "me.magnum.melonds/me.magnum.melonds.ui.romlist.RomListActivity",

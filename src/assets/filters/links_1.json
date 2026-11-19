@@ -2,40 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 1,
-  "total_batches": 8,
+  "total_batches": 7,
   "links": [
-    {
-      "id": "dev.beefers.vendetta/com.discord.main.MainAngry",
-      "existing_drawable": "discord",
-      "name": "Vendetta",
-      "components": [
-        "dev.beefers.vendetta/com.discord.main.MainAngry",
-        "dev.beefers.vendetta/com.discord.main.MainBeanie",
-        "dev.beefers.vendetta/com.discord.main.MainBlush",
-        "dev.beefers.vendetta/com.discord.main.MainBrandDark",
-        "dev.beefers.vendetta/com.discord.main.MainBrandInverted",
-        "dev.beefers.vendetta/com.discord.main.MainCamo",
-        "dev.beefers.vendetta/com.discord.main.MainCherryBlossom",
-        "dev.beefers.vendetta/com.discord.main.MainCircuit",
-        "dev.beefers.vendetta/com.discord.main.MainClydeStein",
-        "dev.beefers.vendetta/com.discord.main.MainController",
-        "dev.beefers.vendetta/com.discord.main.MainDefault",
-        "dev.beefers.vendetta/com.discord.main.MainDrip",
-        "dev.beefers.vendetta/com.discord.main.MainGalaxy",
-        "dev.beefers.vendetta/com.discord.main.MainGaming",
-        "dev.beefers.vendetta/com.discord.main.MainHoloWaves",
-        "dev.beefers.vendetta/com.discord.main.MainManga",
-        "dev.beefers.vendetta/com.discord.main.MainMatteDark",
-        "dev.beefers.vendetta/com.discord.main.MainMatteLight",
-        "dev.beefers.vendetta/com.discord.main.MainMushroom",
-        "dev.beefers.vendetta/com.discord.main.MainPastel",
-        "dev.beefers.vendetta/com.discord.main.MainPirate",
-        "dev.beefers.vendetta/com.discord.main.MainSlimy",
-        "dev.beefers.vendetta/com.discord.main.MainSunset",
-        "dev.beefers.vendetta/com.discord.main.MainY2K",
-        "dev.beefers.vendetta/com.discord.main.MainZombie"
-      ]
-    },
     {
       "id": "com.simplemobiletools.calculator/com.simplemobiletools.calculator.activities.SplashActivity.Amber",
       "existing_drawable": "generic_calculator_minus_multi_plus_equal",
@@ -85,6 +53,24 @@
       ]
     },
     {
+      "id": "com.grindrapp.android/com.grindrapp.android.HomeActivityCalculator",
+      "existing_drawable": "generic_dialer",
+      "name": "Grindr",
+      "components": [
+        "com.grindrapp.android/com.grindrapp.android.HomeActivityCalculator",
+        "com.grindrapp.android/com.grindrapp.android.HomeActivityChatRed",
+        "com.grindrapp.android/com.grindrapp.android.HomeActivityNotes",
+        "com.grindrapp.android/com.grindrapp.android.HomeActivityOriginal",
+        "com.grindrapp.android/com.grindrapp.android.HomeActivityP35",
+        "com.grindrapp.android/com.grindrapp.android.HomeActivityToDo",
+        "com.grindrapp.android/com.grindrapp.android.HomeActivityUnlimited",
+        "com.grindrapp.android/com.grindrapp.android.SplashActivity",
+        "com.grindrapp.android/com.grindrapp.android.activity.SplashActivity"
+      ],
+      "installs": "50,000,000+",
+      "drawable": "grindr"
+    },
+    {
       "id": "org.tasks/com.todoroo.astrid.activity.TaskListActivity.Brown",
       "existing_drawable": "tasks",
       "name": "Tasks",
@@ -101,21 +87,6 @@
       ],
       "installs": "500,000+",
       "drawable": "tasks"
-    },
-    {
-      "id": "io.github.pyoncord.app/com.discord.main.MainBlurpleTwilight",
-      "existing_drawable": "discord",
-      "name": "Bunny",
-      "components": [
-        "io.github.pyoncord.app/com.discord.main.MainBlurpleTwilight",
-        "io.github.pyoncord.app/com.discord.main.MainBlush",
-        "io.github.pyoncord.app/com.discord.main.MainController",
-        "io.github.pyoncord.app/com.discord.main.MainDefault",
-        "io.github.pyoncord.app/com.discord.main.MainInRainbows",
-        "io.github.pyoncord.app/com.discord.main.MainManga",
-        "io.github.pyoncord.app/com.discord.main.MainMatteDark",
-        "io.github.pyoncord.app/com.discord.main.MainMidnightPrism"
-      ]
     },
     {
       "id": "com.google.android.gms/com.google.android.gms.nearby.sharing.main.MainActivity",
@@ -256,6 +227,16 @@
       "drawable": "chollometro"
     },
     {
+      "id": "com.netflix.NGP.GTASanAndreasDefinitiveEdition/com.fastman92.main_activity_launcher.MainActivity",
+      "existing_drawable": "grand_theft_auto_san_andreas",
+      "name": "Grand Theft Auto: San Andreas",
+      "components": [
+        "com.netflix.NGP.GTASanAndreasDefinitiveEdition/com.epicgames.ue4.GameActivity",
+        "com.netflix.NGP.GTASanAndreasDefinitiveEdition/com.fastman92.main_activity_launcher.MainActivity",
+        "com.netflix.NGP.GTASanAndreasDefinitiveEdition/com.fiveplay.mod.RMS.Recovery"
+      ]
+    },
+    {
       "id": "com.shaiban.audioplayer.mplayer/com.shaiban.audioplayer.mplayer.app.navigation.NavigatingActivity",
       "existing_drawable": "apple_music",
       "name": "Music Player",
@@ -310,15 +291,6 @@
       "components": [
         "com.streamdev.aiostreamer/com.streamdev.aiostreamer.lock.MainActivity",
         "com.streamdev.aiostreamer/com.streamdev.aiostreamer.mobile.ui.lock.MainActivity"
-      ]
-    },
-    {
-      "id": "com.bluecord/com.discord.app.AppActivity",
-      "existing_drawable": "discord",
-      "name": "Bluecord",
-      "components": [
-        "com.bluecord/com.discord.app.AppActivity",
-        "com.bluecord/com.discord.app.AppActivity$Main"
       ]
     },
     {
@@ -413,6 +385,17 @@
       "drawable": "fpt_play"
     },
     {
+      "id": "com.rockstargames.gtasa.de/com.byfen.archiver.MainActivity",
+      "existing_drawable": "grand_theft_auto_san_andreas",
+      "name": "Grand Theft Auto: San Andreas",
+      "components": [
+        "com.rockstargames.gtasa.de/com.byfen.archiver.MainActivity",
+        "com.rockstargames.gtasa.de/com.epicgames.ue4.GameActivity"
+      ],
+      "installs": "50,000+",
+      "drawable": "grand_theft_auto_san_andreas"
+    },
+    {
       "id": "com.tippingcanoe.hukd/com.pepper.apps.android.presentation.MainActivityDarkIcon",
       "existing_drawable": "pepper",
       "name": "hotukdeals",
@@ -430,15 +413,6 @@
       "components": [
         "org.onekash.kashcal/org.onekash.kashcal.MainActivitySupporter",
         "org.onekash.kashcal/org.onekash.kashcal.MainActivitySupporterCalendar"
-      ]
-    },
-    {
-      "id": "cocobo1.pupu.app/com.discord.main.MainDefault",
-      "existing_drawable": "discord",
-      "name": "Kettu",
-      "components": [
-        "cocobo1.pupu.app/com.discord.main.MainDefault",
-        "cocobo1.pupu.app/com.discord.main.MainGalaxy"
       ]
     },
     {
@@ -548,15 +522,6 @@
       "drawable": "com_preisjaeger"
     },
     {
-      "id": "app.revenge/com.discord.main.MainCamo",
-      "existing_drawable": "discord",
-      "name": "Revenge",
-      "components": [
-        "app.revenge/com.discord.main.MainCamo",
-        "app.revenge/com.discord.main.MainDefault"
-      ]
-    },
-    {
       "id": "com.samsung.android.scan3d/com.google.android.apps.cameralite.capture.CaptureActivity",
       "existing_drawable": "generic_camera",
       "name": "Samsung 3D Scanner",
@@ -575,17 +540,6 @@
       ]
     },
     {
-      "id": "com.vitotechnology.sky.tonight.map.star.walk/com.google.firebase.MessagingUnityPlayerActivity",
-      "existing_drawable": "star_walk_2",
-      "name": "Sky Tonight",
-      "components": [
-        "com.vitotechnology.sky.tonight.map.star.walk/com.google.firebase.MessagingUnityPlayerActivity",
-        "com.vitotechnology.sky.tonight.map.star.walk/com.unity3d.player.UnityPlayerActivity"
-      ],
-      "installs": "5,000,000+",
-      "drawable": "sky_tonight"
-    },
-    {
       "id": "com.splendapps.splendo/com.splendapps.splendo.MainActivity",
       "existing_drawable": "tasks",
       "name": "SplenDO",
@@ -597,15 +551,42 @@
       "drawable": "splendo"
     },
     {
-      "id": "com.easybrain.sudoku.android/com.easybrain.sudoku.android.SplashActivity",
-      "existing_drawable": "generic_sudoku",
-      "name": "Sudoku",
+      "id": "se.svt.android.svtplay/se.svt.svtplay.ui.mobile.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "SVT Play",
       "components": [
-        "com.easybrain.sudoku.android/com.easybrain.sudoku.android.SplashActivity",
-        "com.easybrain.sudoku.android/com.google.android.archive.ReactivateActivity"
+        "se.svt.android.svtplay/com.google.android.archive.ReactivateActivity",
+        "se.svt.android.svtplay/se.svt.svtplay.ui.mobile.MainActivity"
       ],
-      "installs": "100,000,000+",
-      "drawable": "sudoku"
+      "installs": "5,000,000+",
+      "drawable": "svt_play"
+    },
+    {
+      "id": "com.samco.trackandgraph/com.samco.trackandgraph.MainActivity",
+      "existing_drawable": "generic_aid",
+      "name": "Track & Graph",
+      "components": [
+        "com.samco.trackandgraph/com.samco.trackandgraph.MainActivity",
+        "com.samco.trackandgraph/com.samco.trackandgraph.main.MainActivity"
+      ],
+      "installs": "50,000+",
+      "drawable": "track_graph"
+    },
+    {
+      "id": "com.android.youtube.music.premium/com.android.youtube.music.premium.morphe_original_1",
+      "existing_drawable": "generic_player_pro",
+      "name": "YouTube Music",
+      "components": [
+        "com.android.youtube.music.premium/com.android.youtube.music.premium.morphe_original_1",
+        "com.android.youtube.music.premium/com.google.android.apps.youtube.music.activities.MusicActivity"
+      ]
+    },
+    {
+      "id": "com.github.superadb/com.github.superadb.SplashActivity",
+      "existing_drawable": "ladb",
+      "name": "ADB",
+      "installs": "10,000+",
+      "drawable": "adb"
     }
   ]
 }

@@ -2,46 +2,8 @@
   "label": "Links",
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "batch": 2,
-  "total_batches": 8,
+  "total_batches": 7,
   "links": [
-    {
-      "id": "se.svt.android.svtplay/se.svt.svtplay.ui.mobile.MainActivity",
-      "existing_drawable": "just_player",
-      "name": "SVT Play",
-      "components": [
-        "se.svt.android.svtplay/com.google.android.archive.ReactivateActivity",
-        "se.svt.android.svtplay/se.svt.svtplay.ui.mobile.MainActivity"
-      ],
-      "installs": "5,000,000+",
-      "drawable": "svt_play"
-    },
-    {
-      "id": "com.samco.trackandgraph/com.samco.trackandgraph.MainActivity",
-      "existing_drawable": "generic_aid",
-      "name": "Track & Graph",
-      "components": [
-        "com.samco.trackandgraph/com.samco.trackandgraph.MainActivity",
-        "com.samco.trackandgraph/com.samco.trackandgraph.main.MainActivity"
-      ],
-      "installs": "50,000+",
-      "drawable": "track_graph"
-    },
-    {
-      "id": "com.android.youtube.music.premium/com.android.youtube.music.premium.morphe_original_1",
-      "existing_drawable": "generic_player_pro",
-      "name": "YouTube Music",
-      "components": [
-        "com.android.youtube.music.premium/com.android.youtube.music.premium.morphe_original_1",
-        "com.android.youtube.music.premium/com.google.android.apps.youtube.music.activities.MusicActivity"
-      ]
-    },
-    {
-      "id": "com.github.superadb/com.github.superadb.SplashActivity",
-      "existing_drawable": "ladb",
-      "name": "ADB",
-      "installs": "10,000+",
-      "drawable": "adb"
-    },
     {
       "id": "app.adbotg.shell/app.adbotg.shell.views.MainActivity",
       "existing_drawable": "ladb",
@@ -150,21 +112,9 @@
       "drawable": "aw_player"
     },
     {
-      "id": "com.WEKA.MATRIX/com.exteragram.messenger.DefaultIcon",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram"
-    },
-    {
       "id": "com.bajaj.salesapp/com.bajaj.salesapp.ui.activity.splash.SplashActivity",
       "existing_drawable": "bajaj_finserv",
       "name": "Bajaj Sales One"
-    },
-    {
-      "id": "com.bandcamp.artistapp/com.bandcamp.artistapp.RootTabActivity",
-      "existing_drawable": "bandcamp",
-      "name": "Bandcamp Artists",
-      "installs": "500,000+",
-      "drawable": "bandcamp_artists"
     },
     {
       "id": "com.totaltexto.bancamovil/com.bbva.glomohybrid.splash.presentation.view.SplashActivity",
@@ -298,13 +248,6 @@
       "name": "Car Scanner"
     },
     {
-      "id": "com.google.android.ims/com.google.android.ims.ui.WifiCallingSettingsActivity",
-      "existing_drawable": "carrier_services",
-      "name": "Carrier Services",
-      "installs": "5,000,000,000+",
-      "drawable": "carrier_services"
-    },
-    {
       "id": "maps.jaoloonda.android.aaad_a39e4f/com.thekirankumar.youtubeauto2.activity.MainPhoneActivity",
       "existing_drawable": "youtube",
       "name": "CarStream"
@@ -327,6 +270,51 @@
       "name": "Chess",
       "installs": "100,000,000+",
       "drawable": "chess"
+    },
+    {
+      "id": "com.sgebrelibanos.aderaser/com.sgebrelibanos.aderaser.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "CleanTube",
+      "installs": "1,000,000+",
+      "drawable": "cleantube"
+    },
+    {
+      "id": "com.bluelight.computer.winlauncher.prolauncher/com.bluelight.computer.winlauncher.prolauncher.googleclock.main.DeskClock",
+      "existing_drawable": "generic_clock",
+      "name": "Clock",
+      "installs": "1,000,000+",
+      "drawable": "clock"
+    },
+    {
+      "id": "com.pengyou.cloneapp/com.pengyou.cloneapp.hide.Splash",
+      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
+      "name": "Clone App Calculator Icon",
+      "installs": "10,000,000+",
+      "drawable": "clone_app_calculator_icon"
+    },
+    {
+      "id": "net.pgaskin.cmus.android/net.pgaskin.cmus.android.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "cmus music player"
+    },
+    {
+      "id": "com.bnyro.contacts/com.bnyro.contacts.ui.activities.MainActivity",
+      "existing_drawable": "generic_contacts",
+      "name": "Connect You"
+    },
+    {
+      "id": "icontacts.ios.dialer.icall/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
+      "existing_drawable": "generic_dialer",
+      "name": "Contacts & Phone Call",
+      "installs": "1,000,000+",
+      "drawable": "contacts_phone_call"
+    },
+    {
+      "id": "cool.s20.camera/com.camera.function.main.privacy.CoolCameraPrivacyActivity",
+      "existing_drawable": "nothing_camera",
+      "name": "Cool S20 Camera",
+      "installs": "1,000,000+",
+      "drawable": "cool_s20_camera"
     }
   ]
 }
