@@ -158,19 +158,6 @@
       "drawable": "grubhub"
     },
     {
-      "id": "com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivity",
-      "existing_drawable": "pepper",
-      "name": "Pepper",
-      "components": [
-        "com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivity",
-        "com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-        "com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivityGoldIcon",
-        "com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivityLightIcon"
-      ],
-      "installs": "500,000+",
-      "drawable": "pepper"
-    },
-    {
       "id": "com.ncconsulting.skipthedishes_android/ca.skipthedishes.customer.activities.NotificationReceiverActivity",
       "existing_drawable": "just_eat",
       "name": "SkipTheDishes",
@@ -205,35 +192,13 @@
       ]
     },
     {
-      "id": "org.telegram.messenger.web/com.exteragram.messenger.AmethystIcon",
-      "existing_drawable": "telegram",
+      "id": "com.radolyn.ayugram/com.exteragram.messenger.AuroraIcon",
+      "existing_drawable": "ayugram",
       "name": "AyuGram",
       "components": [
-        "org.telegram.messenger.web/com.exteragram.messenger.AmethystIcon",
-        "org.telegram.messenger.web/com.exteragram.messenger.DefaultIcon",
-        "org.telegram.messenger.web/com.exteragram.messenger.MonetIconExtera"
-      ]
-    },
-    {
-      "id": "com.chollometro/com.pepper.apps.android.presentation.MainActivity",
-      "existing_drawable": "pepper",
-      "name": "Chollometro",
-      "components": [
-        "com.chollometro/com.pepper.apps.android.presentation.MainActivity",
-        "com.chollometro/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-        "com.chollometro/com.pepper.apps.android.presentation.MainActivityLightIcon"
-      ],
-      "installs": "1,000,000+",
-      "drawable": "chollometro"
-    },
-    {
-      "id": "com.netflix.NGP.GTASanAndreasDefinitiveEdition/com.fastman92.main_activity_launcher.MainActivity",
-      "existing_drawable": "grand_theft_auto_san_andreas",
-      "name": "Grand Theft Auto: San Andreas",
-      "components": [
-        "com.netflix.NGP.GTASanAndreasDefinitiveEdition/com.epicgames.ue4.GameActivity",
-        "com.netflix.NGP.GTASanAndreasDefinitiveEdition/com.fastman92.main_activity_launcher.MainActivity",
-        "com.netflix.NGP.GTASanAndreasDefinitiveEdition/com.fiveplay.mod.RMS.Recovery"
+        "com.radolyn.ayugram/com.exteragram.messenger.AuroraIcon",
+        "com.radolyn.ayugram/com.exteragram.messenger.Google26Icon",
+        "com.radolyn.ayugram/com.exteragram.messenger.SunsetIcon"
       ]
     },
     {
@@ -259,18 +224,6 @@
       ],
       "installs": "10,000,000+",
       "drawable": "opera_beta"
-    },
-    {
-      "id": "com.tippingcanoe.pepperpl/com.pepper.apps.android.app.activity.MainActivity",
-      "existing_drawable": "pepper",
-      "name": "Pepper",
-      "components": [
-        "com.tippingcanoe.pepperpl/com.pepper.apps.android.app.activity.MainActivity",
-        "com.tippingcanoe.pepperpl/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-        "com.tippingcanoe.pepperpl/com.pepper.apps.android.presentation.MainActivityLightIcon"
-      ],
-      "installs": "1,000,000+",
-      "drawable": "pepper"
     },
     {
       "id": "dk.danskebank.mobilepay/com.dnb.vipps.android.startup.ui.StartupActivity",
@@ -385,43 +338,12 @@
       "drawable": "fpt_play"
     },
     {
-      "id": "com.rockstargames.gtasa.de/com.byfen.archiver.MainActivity",
-      "existing_drawable": "grand_theft_auto_san_andreas",
-      "name": "Grand Theft Auto: San Andreas",
-      "components": [
-        "com.rockstargames.gtasa.de/com.byfen.archiver.MainActivity",
-        "com.rockstargames.gtasa.de/com.epicgames.ue4.GameActivity"
-      ],
-      "installs": "50,000+",
-      "drawable": "grand_theft_auto_san_andreas"
-    },
-    {
-      "id": "com.tippingcanoe.hukd/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-      "existing_drawable": "pepper",
-      "name": "hotukdeals",
-      "components": [
-        "com.tippingcanoe.hukd/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-        "com.tippingcanoe.hukd/com.pepper.apps.android.presentation.MainActivityLightIcon"
-      ],
-      "installs": "1,000,000+",
-      "drawable": "hotukdeals"
-    },
-    {
       "id": "org.onekash.kashcal/org.onekash.kashcal.MainActivitySupporter",
       "existing_drawable": "kashcal",
       "name": "KashCal Supporter",
       "components": [
         "org.onekash.kashcal/org.onekash.kashcal.MainActivitySupporter",
         "org.onekash.kashcal/org.onekash.kashcal.MainActivitySupporterCalendar"
-      ]
-    },
-    {
-      "id": "com.android.mms/com.android.mms.tab.MmsMainActivity",
-      "existing_drawable": "messages",
-      "name": "Messages",
-      "components": [
-        "com.android.mms/com.android.mms.tab.MmsMainActivity",
-        "com.android.mms/com.freeme.mms.FreemeConversationList"
       ]
     },
     {
@@ -467,28 +389,6 @@
       ]
     },
     {
-      "id": "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-      "existing_drawable": "pepper",
-      "name": "Pepper",
-      "components": [
-        "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-        "com.pepperdeals/com.pepper.apps.android.presentation.MainActivityLightIcon"
-      ],
-      "installs": "10,000+",
-      "drawable": "pepper"
-    },
-    {
-      "id": "se.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-      "existing_drawable": "pepper",
-      "name": "Pepper",
-      "components": [
-        "se.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-        "se.pepperdeals/com.pepper.apps.android.presentation.MainActivityLightIcon"
-      ],
-      "installs": "50,000+",
-      "drawable": "pepper"
-    },
-    {
       "id": "com.grice.dialer/com.grice.dialer.icon.Default",
       "existing_drawable": "generic_dialer",
       "name": "Phone",
@@ -509,17 +409,6 @@
       ],
       "installs": "1,000,000+",
       "drawable": "playback"
-    },
-    {
-      "id": "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-      "existing_drawable": "pepper",
-      "name": "Preisj\u00e4ger",
-      "components": [
-        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon",
-        "com.preisjaeger/com.pepper.apps.android.presentation.MainActivityLightIcon"
-      ],
-      "installs": "100,000+",
-      "drawable": "com_preisjaeger"
     },
     {
       "id": "com.samsung.android.scan3d/com.google.android.apps.cameralite.capture.CaptureActivity",
@@ -587,6 +476,70 @@
       "name": "ADB",
       "installs": "10,000+",
       "drawable": "adb"
+    },
+    {
+      "id": "app.adbotg.shell/app.adbotg.shell.views.MainActivity",
+      "existing_drawable": "ladb",
+      "name": "ADB OTG Shell",
+      "installs": "100,000+",
+      "drawable": "adb_otg_shell"
+    },
+    {
+      "id": "crixec.adbtoolkitsinstall/crixec.adbtoolkitsinstall.MainActivity",
+      "existing_drawable": "ladb",
+      "name": "ADB Tool Kits Installer"
+    },
+    {
+      "id": "com.rair.adbwifi/com.rair.adbwifi.activity.MainActivity",
+      "existing_drawable": "ladb",
+      "name": "ADB WiFi"
+    },
+    {
+      "id": "com.mobilityado.ado/com.mobilityado.ado.views.activities.ActSplashScreen",
+      "existing_drawable": "ado",
+      "name": "ADO",
+      "installs": "1,000,000+",
+      "drawable": "ado"
+    },
+    {
+      "id": "com.ais.mimo.AISPlay/net.vimmi.core.launcher.StartupActivity",
+      "existing_drawable": "just_player",
+      "name": "AIS PLAY",
+      "installs": "10,000,000+",
+      "drawable": "ais_play"
+    },
+    {
+      "id": "com.android.deskclock/com.sgtc.alarmclock.SgtcLocalAlarmClockList",
+      "existing_drawable": "generic_clock",
+      "name": "Alarm"
+    },
+    {
+      "id": "algar.telecom.meusservicos/algar.telecom.meusservicos.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "Algar Telecom",
+      "installs": "1,000,000+",
+      "drawable": "algar_telecom"
+    },
+    {
+      "id": "dev.goodwy.phone/dev.goodwy.phone.activities.SplashActivity.Original",
+      "existing_drawable": "generic_dialer",
+      "name": "Alight Phone",
+      "installs": "100,000+",
+      "drawable": "alight_phone"
+    },
+    {
+      "id": "com.crazylabs.amaze.game/com.unity3d.player.UnityPlayerActivity",
+      "existing_drawable": "amaze",
+      "name": "AMAZE!",
+      "installs": "100,000,000+",
+      "drawable": "amaze"
+    },
+    {
+      "id": "in.amazon.mShop.android.shopping/com.amazon.mShop.amazonnow.AmazonNowHomeActivityAlias",
+      "existing_drawable": "amazon_pay",
+      "name": "Amazon Now",
+      "installs": "500,000,000+",
+      "drawable": "amazon_now"
     }
   ]
 }

@@ -612,6 +612,10 @@
   <item component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.DefaultIcon}" drawable="ayugram" name="AyuGram" />
   <item component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.AyuGramYaPlus}" drawable="ayugram" name="AyuGram" />
   <item component="ComponentInfo{com.WEKA.MATRIX/com.exteragram.messenger.DefaultIcon}" drawable="ayugram" name="AyuGram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/com.exteragram.messenger.MonetIcon}" drawable="ayugram" name="AyuGram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/com.exteragram.messenger.MonetIconExtera}" drawable="ayugram" name="AyuGram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/com.exteragram.messenger.AmethystIcon}" drawable="ayugram" name="AyuGram" />
+  <item component="ComponentInfo{org.telegram.messenger.web/com.exteragram.messenger.DefaultIcon}" drawable="ayugram" name="AyuGram" />
   <item component="ComponentInfo{com.hecorat.screenrecorder.free/com.hecorat.screenrecorder.free.ui.MainActivity}" drawable="az_screen_recorder" name="AZ Screen Recorder" />
   <item component="ComponentInfo{com.hecorat.screenrecorder.free/com.hecorat.screenrecorder.free.activities.MainActivity}" drawable="az_screen_recorder" name="AZ Screen Recorder" />
   <item component="ComponentInfo{io.github.lime3ds.android/io.github.lime3ds.android.ui.main.MainActivity}" drawable="azahar_emulator" name="Azahar Emulator" />
@@ -984,6 +988,7 @@
   <item component="ComponentInfo{bubble.shooter.exxtreme/org.cocos2dx.javascript.AppActivity}" drawable="generic_bubble_shooter" name="Bubble Shooter! Extreme" />
   <item component="ComponentInfo{com.excellenth5game.bubblepopmaster/org.cocos2dx.javascript.AppActivity}" drawable="generic_bubble_shooter" name="Bubblepop Master" />
   <item component="ComponentInfo{champions.empire.bubble/org.cocos2dx.javascript.AppActivity}" drawable="generic_bubble_shooter" name="Bubbles Empire Champions" />
+  <item component="ComponentInfo{com.buge.appmanager/com.buge.appmanager.MainActivity}" drawable="buge_app_manager" name="Buge App Manager" />
   <item component="ComponentInfo{com.bumble.app/com.bumble.app.ui.launcher.BumbleLauncherActivity}" drawable="bumble" name="Bumble" />
   <item component="ComponentInfo{com.dwarfplanet.bundle/com.dwarfplanet.bundle.SplashActivity}" drawable="bundle" name="Bundle" />
   <item component="ComponentInfo{com.dwarfplanet.bundle/com.dwarfplanet.bundle.ui.landing.SplashActivity}" drawable="bundle" name="Bundle" />
@@ -1514,6 +1519,9 @@
   <item component="ComponentInfo{com.metallic.chiaki/com.metallic.chiaki.main.MainActivity}" drawable="chiaki" name="Chiaki" />
   <item component="ComponentInfo{com.onedebit.chime/com.onedebit.chime.MainActivity}" drawable="chime" name="Chime" />
   <item component="ComponentInfo{com.onedebit.chime/com.zoontek.rnbootsplash.RNBootSplashActivity}" drawable="chime" name="Chime" />
+  <item component="ComponentInfo{com.chollometro/com.pepper.apps.android.presentation.MainActivity}" drawable="pepper" name="Chollometro" />
+  <item component="ComponentInfo{com.chollometro/com.pepper.apps.android.presentation.MainActivityDarkIcon}" drawable="pepper" name="Chollometro" />
+  <item component="ComponentInfo{com.chollometro/com.pepper.apps.android.presentation.MainActivityLightIcon}" drawable="pepper" name="Chollometro" />
   <item component="ComponentInfo{app.chompass/app.chompass.LauncherIndigo}" drawable="chompass" name="Chompass" />
   <item component="ComponentInfo{app.chompass/app.chompass.LauncherTeal}" drawable="chompass" name="Chompass" />
   <item component="ComponentInfo{com.google.chromeremotedesktop/org.chromium.chromoting.Chromoting}" drawable="chrome_remote_desktop" name="Chrome Remote Desktop" />
@@ -3606,6 +3614,13 @@
   <item component="ComponentInfo{com.rockstargames.gtasa/com.d.a}" drawable="grand_theft_auto_san_andreas" name="Grand Theft Auto: San Andreas" />
   <item component="ComponentInfo{com.rockstargames.gtasa/com.gamein.i.a.WelcomeActivity}" drawable="grand_theft_auto_san_andreas" name="Grand Theft Auto: San Andreas" />
   <item component="ComponentInfo{com.rockstargames.gtasa/com.fastman92.main_activity_launcher.MainActivity}" drawable="grand_theft_auto_san_andreas" name="Grand Theft Auto: San Andreas" />
+  <item component="ComponentInfo{com.netflix.NGP.GTASanAndreasDefinitiveEdition/com.fastman92.main_activity_launcher.MainActivity}" drawable="grand_theft_auto_san_andreas" name="Grand Theft Auto: San Andreas" />
+  <item component="ComponentInfo{com.netflix.NGP.GTASanAndreasDefinitiveEdition/com.fiveplay.mod.RMS.Recovery}" drawable="grand_theft_auto_san_andreas" name="Grand Theft Auto: San Andreas" />
+  <item component="ComponentInfo{com.netflix.NGP.GTASanAndreasDefinitiveEdition/com.epicgames.ue4.GameActivity}" drawable="grand_theft_auto_san_andreas" name="Grand Theft Auto: San Andreas" />
+  <item component="ComponentInfo{com.rockstargames.gtasa.de/com.epicgames.ue4.GameActivity}" drawable="grand_theft_auto_san_andreas" name="Grand Theft Auto: San Andreas" />
+  <item component="ComponentInfo{com.rockstargames.gtasa.de/com.byfen.archiver.MainActivity}" drawable="grand_theft_auto_san_andreas" name="Grand Theft Auto: San Andreas" />
+  <item component="ComponentInfo{com.rockstargames.gtasager/com.rockstargames.gtasa.DownloaderActivity}" drawable="grand_theft_auto_san_andreas" name="Grand Theft Auto: San Andreas" />
+  <item component="ComponentInfo{com.ziurmods.gtasa/com.rockstargames.gtasa.GameActivity}" drawable="grand_theft_auto_san_andreas" name="Grand Theft Auto: San Andreas" />
   <item component="ComponentInfo{app.grapheneos.apps/org.grapheneos.apps.client.ui.container.MainActivity}" drawable="grapheneos_apps" name="GrapheneOS Apps" />
   <item component="ComponentInfo{app.grapheneos.apps/app.grapheneos.apps.ui.MainActivity}" drawable="grapheneos_apps" name="GrapheneOS Apps" />
   <item component="ComponentInfo{app.attestation.auditor/app.attestation.auditor.AttestationActivity}" drawable="grapheneos_auditor" name="GrapheneOS Auditor" />
@@ -3767,6 +3782,8 @@
   <item component="ComponentInfo{com.hihonor.search/com.hihonor.search.presentation.ui.activity.AliasActivity}" drawable="generic_search" name="Honor Search" />
   <item component="ComponentInfo{com.bug.hookvip/com.bug.hookvip.MainActivityAlias}" drawable="generic_shell" name="HookVIP" />
   <item component="ComponentInfo{com.bug.hookvip/com.bug.hookvip.MainActivity}" drawable="generic_shell" name="HookVIP" />
+  <item component="ComponentInfo{com.tippingcanoe.hukd/com.pepper.apps.android.presentation.MainActivityDarkIcon}" drawable="pepper" name="hotukdeals" />
+  <item component="ComponentInfo{com.tippingcanoe.hukd/com.pepper.apps.android.presentation.MainActivityLightIcon}" drawable="pepper" name="hotukdeals" />
   <item component="ComponentInfo{chenige.chkchk.wairz/chenige.chkchk.wairz.landing.MainActivity}" drawable="cube_escape_collection" name="HouseBook" />
   <item component="ComponentInfo{com.hp.printercontrol/com.google.android.archive.ReactivateActivity}" drawable="generic_printer" name="HP Smart" />
   <item component="ComponentInfo{com.hp.printercontrol/com.hp.printercontrol.hpx.PrinterControlWrapperActivity}" drawable="generic_printer" name="HP Smart" />
@@ -3894,6 +3911,8 @@
   <item component="ComponentInfo{imagetopdf.pdfmaker.pdfscanner.pdfeditor.jpgtopdf/com.templatemela.imagetopdf.ui.activity.SplashActivity}" drawable="generic_pdf_file" name="Images to PDF" />
   <item component="ComponentInfo{com.sony.playmemories.mobile/com.sony.playmemories.mobile.splash.SplashActivity}" drawable="imaging_edge_mobile" name="Imaging Edge Mobile" />
   <item component="ComponentInfo{io.deveem.byemydpi2/app.vpn.ui.MainActivity}" drawable="secure_vpn" name="Imba VPN" />
+  <item component="ComponentInfo{com.soul_99.suIMD/com.android.geto.activity.main.MainActivity}" drawable="imd" name="IMD" />
+  <item component="ComponentInfo{com.soul_99.suIMD/com.android.geto.activity.services.SettingsManagerLauncher}" drawable="imd_settings_manager" name="IMD Settings manager" />
   <item component="ComponentInfo{com.imdb.mobile/com.imdb.mobile.Home}" drawable="imdb" name="IMDb" />
   <item component="ComponentInfo{com.imdb.mobile/com.imdb.mobile.HomeActivity}" drawable="imdb" name="IMDb" />
   <item component="ComponentInfo{com.imdb.mobile/com.imdb.mobile.IMDb}" drawable="imdb" name="IMDb" />
@@ -4911,6 +4930,9 @@
   <item component="ComponentInfo{com.simplemobiletools.smsmessenger/com.simplemobiletools.smsmessenger.activities.SplashActivity.Yellow}" drawable="messages" name="Messages" />
   <item component="ComponentInfo{com.simplemobiletools.smsmessenger/com.simplemobiletools.smsmessenger.activities.SplashActivity}" drawable="messages" name="Messages" />
   <item component="ComponentInfo{com.goodwy.smsmessenger/com.goodwy.smsmessenger.activities.SplashActivity.Eight}" drawable="right_messages" name="Messages" />
+  <item component="ComponentInfo{com.android.mms/com.android.mms.ui.ConversationComposer VirtualScreenParam=Params{mDisplayId=-1, null, mFlags=0x00000000)}" drawable="messages" name="Messages" />
+  <item component="ComponentInfo{com.android.mms/com.android.mms.tab.MmsMainActivity}" drawable="messages" name="Messages" />
+  <item component="ComponentInfo{com.android.mms/com.freeme.mms.FreemeConversationList}" drawable="messages" name="Messages" />
   <item component="ComponentInfo{com.facebook.orca/.auth.StartScreenActivity}" drawable="messenger" name="Messenger" />
   <item component="ComponentInfo{com.facebook.orca/com.facebook.orca.auth.StartScreenActivity}" drawable="messenger" name="Messenger" />
   <item component="ComponentInfo{com.facebook.orca/com.facebook.orca.MainActivity}" drawable="messenger" name="Messenger" />
@@ -5406,9 +5428,56 @@
   <item component="ComponentInfo{com.orange.myorange.omd/com.orange.omnis.main.ui.MainActivity}" drawable="moj_orange" name="My Orange" />
   <item component="ComponentInfo{com.bti.myPiano/com.bti.myPiano.myPiano}" drawable="generic_piano" name="My Piano" />
   <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.base}" drawable="my_pixel" name="My Pixel" />
-  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p7}" drawable="my_pixel" name="My Pixel" />
-  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9f}" drawable="my_pixel" name="My Pixel" />
-  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9a}" drawable="my_pixel" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.Fortnite_Application}" drawable="my_pixel" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10.beg}" drawable="my_pixel_10" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10.blk}" drawable="my_pixel_10" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10.grn}" drawable="my_pixel_10" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10.gry}" drawable="my_pixel_10" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10.pnk}" drawable="my_pixel_10" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10}" drawable="my_pixel_10" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10a.beg}" drawable="my_pixel_10a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10a.blk}" drawable="my_pixel_10a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10a.pnk}" drawable="my_pixel_10a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10a.ppl}" drawable="my_pixel_10a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10a}" drawable="my_pixel_10a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10f.beg}" drawable="my_pixel_10f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10f.blk}" drawable="my_pixel_10f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10f}" drawable="my_pixel_10f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.beg}" drawable="my_pixel_11" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.blk}" drawable="my_pixel_11" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.grn}" drawable="my_pixel_11" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.gry}" drawable="my_pixel_11" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.pnk}" drawable="my_pixel_11" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.ppl}" drawable="my_pixel_11" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.slv}" drawable="my_pixel_11" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11}" drawable="my_pixel_11" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11f.blk}" drawable="my_pixel_11f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11f.gry}" drawable="my_pixel_11f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11f}" drawable="my_pixel_11f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p4}" drawable="my_pixel_4" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p5}" drawable="my_pixel_5" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p7}" drawable="my_pixel_7" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p7a}" drawable="my_pixel_7a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p7p}" drawable="my_pixel_7p" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p8}" drawable="my_pixel_8" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p8a}" drawable="my_pixel_8" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p8p}" drawable="my_pixel_8p" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9.beg}" drawable="my_pixel_9" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9.blk}" drawable="my_pixel_9" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9.grn}" drawable="my_pixel_9" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9.gry}" drawable="my_pixel_9" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9.pnk}" drawable="my_pixel_9" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9}" drawable="my_pixel_9" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9a.beg}" drawable="my_pixel_9a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9a.blk}" drawable="my_pixel_9a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9a.pnk}" drawable="my_pixel_9a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9a.ppl}" drawable="my_pixel_9a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9a}" drawable="my_pixel_9a" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9f.beg}" drawable="my_pixel_9f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9f.blk}" drawable="my_pixel_9f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9f}" drawable="my_pixel_9f" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.pFold}" drawable="my_pixel_fold" name="My Pixel" />
+  <item component="ComponentInfo{com.google.android.apps.tips/com.google.android.apps.tips.fortnite.pTablet}" drawable="my_pixel_tablet" name="My Pixel" />
   <item component="ComponentInfo{com.rayadams.myqr/com.rayadams.myqr.MainActivity}" drawable="generic_qr_reader" name="My QR" />
   <item component="ComponentInfo{myradio.radio.fmradio.liveradio.radiostation/radio.fm.onlineradio.views.activity.ActivityMain}" drawable="generic_fm_radio" name="My Radio" />
   <item component="ComponentInfo{com.vttm.vietteldiscovery/com.vttm.myviettelV2.activity.NFirstUserActivity}" drawable="my_viettel" name="My Viettel" />
@@ -6190,7 +6259,18 @@
   <item component="ComponentInfo{softax.pekao.powerpay/com.pekao.peopay.presentation.MainActivity}" drawable="peopay" name="PeoPay" />
   <item component="ComponentInfo{softax.pekao.powerpay/softax.pekao.powerpay.screen.Menu}" drawable="peopay" name="PeoPay" />
   <item component="ComponentInfo{softax.pekao.powerpay/softax.pekao.powerpay.frontend.screen.home.SplashActivity}" drawable="peopay" name="PeoPay" />
+  <item component="ComponentInfo{com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivity}" drawable="pepper" name="Pepper" />
+  <item component="ComponentInfo{com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivityDarkIcon}" drawable="pepper" name="Pepper" />
+  <item component="ComponentInfo{com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivityLightIcon}" drawable="pepper" name="Pepper" />
+  <item component="ComponentInfo{com.tippingcanoe.peppernl/com.pepper.apps.android.presentation.MainActivityGoldIcon}" drawable="pepper" name="Pepper" />
   <item component="ComponentInfo{com.tippingcanoe.pepperpl/com.pepper.apps.android.presentation.MainActivity}" drawable="pepper" name="Pepper" />
+  <item component="ComponentInfo{com.tippingcanoe.pepperpl/com.pepper.apps.android.presentation.MainActivityDarkIcon}" drawable="pepper" name="Pepper" />
+  <item component="ComponentInfo{com.tippingcanoe.pepperpl/com.pepper.apps.android.presentation.MainActivityLightIcon}" drawable="pepper" name="Pepper" />
+  <item component="ComponentInfo{com.tippingcanoe.pepperpl/com.pepper.apps.android.app.activity.MainActivity}" drawable="pepper" name="Pepper" />
+  <item component="ComponentInfo{com.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon}" drawable="pepper" name="Pepper" />
+  <item component="ComponentInfo{com.pepperdeals/com.pepper.apps.android.presentation.MainActivityLightIcon}" drawable="pepper" name="Pepper" />
+  <item component="ComponentInfo{se.pepperdeals/com.pepper.apps.android.presentation.MainActivityDarkIcon}" drawable="pepper" name="Pepper" />
+  <item component="ComponentInfo{se.pepperdeals/com.pepper.apps.android.presentation.MainActivityLightIcon}" drawable="pepper" name="Pepper" />
   <item component="ComponentInfo{com.gamestar.perfectpiano/com.gamestar.perfectpiano.NavigationMenuActivity}" drawable="generic_piano" name="Perfect Piano" />
   <item component="ComponentInfo{com.gamestar.perfectpiano/com.gamestar.perfectpiano.Splash}" drawable="generic_piano" name="Perfect Piano" />
   <item component="ComponentInfo{august.mendeleev.pro/august.mendeleev.pro.ui.main.MainActivity}" drawable="periodic_table" name="Periodic Table" />
@@ -6683,6 +6763,8 @@
   <item component="ComponentInfo{org.ppsspp.ppssppgold/org.ppsspp.ppsspp.PpssppActivity}" drawable="ppsspp" name="PPSSPP" />
   <item component="ComponentInfo{org.ppsspp.ppssppgold/org.ppsspp.ppssppgold.PpssppActivity}" drawable="ppsspp" name="PPSSPP" />
   <item component="ComponentInfo{com.mcu.prama/com.hikvision.hikconnect.login.LoadingActivity}" drawable="prama_online" name="Prama Online" />
+  <item component="ComponentInfo{com.preisjaeger/com.pepper.apps.android.presentation.MainActivityDarkIcon}" drawable="pepper" name="Preisjäger" />
+  <item component="ComponentInfo{com.preisjaeger/com.pepper.apps.android.presentation.MainActivityLightIcon}" drawable="pepper" name="Preisjäger" />
   <item component="ComponentInfo{com.pl.premierleague/com.pl.premierleague.LaunchActivity}" drawable="premier_league" name="Premier League" />
   <item component="ComponentInfo{com.pl.premierleague/com.pulselive.premierleague25.main.MainActivity}" drawable="premier_league" name="Premier League" />
   <item component="ComponentInfo{com.prequel.app/com.prequel.app.ui.SplashActivity}" drawable="prequel" name="Prequel" />
@@ -8400,7 +8482,6 @@
   <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger.beta/org.telegram.ui.LaunchActivity}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.mytelegram.messenger/org.telegram.messenger.DefaultIcon}" drawable="telegram" name="Telegram" />
-  <item component="ComponentInfo{org.telegram.messenger.web/com.exteragram.messenger.MonetIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.AquaIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.CloudIcon}" drawable="telegram" name="Telegram" />
   <item component="ComponentInfo{org.telegram.messenger.web/org.telegram.messenger.DarkIcon}" drawable="telegram" name="Telegram" />
@@ -8620,6 +8701,7 @@
   <item component="ComponentInfo{network.tracker.app/network.tracker.app.MainActivity}" drawable="tracker_network" name="Tracker Network" />
   <item component="ComponentInfo{net.kollnig.missioncontrol/eu.faircode.netguard.ActivityMain}" drawable="trackercontrol" name="TrackerControl" />
   <item component="ComponentInfo{net.kollnig.missioncontrol.fdroid/eu.faircode.netguard.ActivityMain}" drawable="trackercontrol" name="TrackerControl" />
+  <item component="ComponentInfo{com.xlollx.songport/com.xlollx.songport.MainActivity}" drawable="trackhop" name="Trackhop" />
   <item component="ComponentInfo{com.avuscapital.trading212/com.avuscapital.trading212lib.modules.mainphone.MainActivity}" drawable="trading_212" name="Trading 212" />
   <item component="ComponentInfo{com.avuscapital.trading212/com.avuscapital.trading212.MainActivity}" drawable="trading_212" name="Trading 212" />
   <item component="ComponentInfo{com.avuscapital.trading212/com.trading212.MainActivity}" drawable="trading_212" name="Trading 212" />

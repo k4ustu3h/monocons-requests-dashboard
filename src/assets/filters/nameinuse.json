@@ -52,7 +52,7 @@
     },
     {
       "id": "com.transsion.smartmessage/com.android.messaging.ui.conversationlist.ConversationListActivity",
-      "existing_drawable": "right_messages"
+      "existing_drawable": "messages"
     },
     {
       "id": "app.gyrolet.mpvrxn/app.gyrolet.mpvrx.MainActivity",
@@ -121,6 +121,10 @@
     {
       "id": "com.coloros.gamespaceui/com.coloros.gamespaceui.activity.StartActivity",
       "existing_drawable": "gamespace"
+    },
+    {
+      "id": "com.theveloper.pixelplayer/com.theveloper.pixelplayer.MainActivityDefault",
+      "existing_drawable": "pixelplay"
     }
   ]
 }

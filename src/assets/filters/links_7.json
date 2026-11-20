@@ -5,32 +5,6 @@
   "total_batches": 7,
   "links": [
     {
-      "id": "com.td.transvoice/com.td.transvoice.MainActivity",
-      "existing_drawable": "generic_voice",
-      "name": "Trans Voice",
-      "installs": "10,000+",
-      "drawable": "trans_voice"
-    },
-    {
-      "id": "com.truecaller/com.truecaller.ui.TrueCallerUI",
-      "existing_drawable": "generic_dialer",
-      "name": "Truecaller",
-      "installs": "1,000,000,000+",
-      "drawable": "truecaller"
-    },
-    {
-      "id": "com.hk.s.all.video.player/com.hk.s.all.video.player.HlsPlay",
-      "existing_drawable": "generic_player",
-      "name": "U Player",
-      "installs": "1,000,000+",
-      "drawable": "u_player"
-    },
-    {
-      "id": "com.android.test.uibench/com.android.test.uibench.MainActivity",
-      "existing_drawable": "generic_shell",
-      "name": "UiBench"
-    },
-    {
       "id": "com.mixapplications.ultimateusb/com.mixapplications.ultimateusb.MainActivity",
       "existing_drawable": "drivedroid",
       "name": "Ultimate USB",
@@ -50,6 +24,27 @@
       "name": "Universal Projector Remote Control",
       "installs": "1,000,000+",
       "drawable": "universal_projector_remote_control"
+    },
+    {
+      "id": "com.boost.universal.remote/com.boost.universal.remote.ui.SplashActivity",
+      "existing_drawable": "android_tv_remote_service",
+      "name": "Universal TV Remote",
+      "installs": "10,000,000+",
+      "drawable": "universal_tv_remote"
+    },
+    {
+      "id": "codematics.universal.tv.remote.control/codematics.universal.tv.remote.control.activities._LogoScreen",
+      "existing_drawable": "android_tv_remote_service",
+      "name": "Universal TV Remote Control",
+      "installs": "100,000,000+",
+      "drawable": "universal_tv_remote_control"
+    },
+    {
+      "id": "tv.remote.control.tvremote.alltvremote/ninedtech.android.tv.universal.remotecontrollerapp.MainActivity",
+      "existing_drawable": "android_tv_remote_service",
+      "name": "Universal TV Remote Control",
+      "installs": "10,000,000+",
+      "drawable": "universal_tv_remote_control"
     },
     {
       "id": "me.tito.unlocker/me.tito.unlocker.MainActivity",
@@ -110,6 +105,13 @@
       "id": "com.softwinner.videoplayer/com.softwinner.videoplayer.view.activity.HomePageActivity",
       "existing_drawable": "just_player",
       "name": "Video Player"
+    },
+    {
+      "id": "in.gaffarmart.www.independenttvremote/in.gaffarmart.www.independenttvremote.dispatcher_activity",
+      "existing_drawable": "android_tv_remote_service",
+      "name": "Videocon TV Remote",
+      "installs": "100,000+",
+      "drawable": "videocon_tv_remote"
     },
     {
       "id": "com.virtualpiano.musicalkeyboard/com.unity3d.player.UnityPlayerActivity",
@@ -189,6 +191,11 @@
       "id": "me.teble.xposed.autodaily/me.teble.xposed.autodaily.activity.common.MainActivityAlias",
       "existing_drawable": "tasky",
       "name": "XAutoDaily"
+    },
+    {
+      "id": "com.tvremote.xiaomitvsmart/com.thomson9atvremote.MainActivity",
+      "existing_drawable": "android_tv_remote_service",
+      "name": "Xiaomi Mi Tv Remote"
     },
     {
       "id": "com.miui.weather2/com.miui.weather2.WeatherBaseScreen",

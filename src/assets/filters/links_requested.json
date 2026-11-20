@@ -3,31 +3,6 @@
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "links": [
     {
-      "id": "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9.blk",
-      "existing_drawable": "my_pixel",
-      "name": "My Pixel",
-      "components": [
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10.blk",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10a",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p10f",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.beg",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.blk",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.gry",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p11.ppl",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p4",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p5",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p7a",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p7p",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p8",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p8a",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.p9.blk",
-        "com.google.android.apps.tips/com.google.android.apps.tips.fortnite.pFold"
-      ],
-      "installs": "1+",
-      "drawable": "my_pixel"
-    },
-    {
       "id": "com.alensw.PicFolder/com.alensw.PicFolder.ValidatorActivity",
       "existing_drawable": "quickpic",
       "name": "Gallery",
@@ -53,6 +28,13 @@
       "name": "APlayer",
       "installs": "50,000+",
       "drawable": "aplayer"
+    },
+    {
+      "id": "com.totaltexto.bancamovil/com.bbva.glomohybrid.splash.presentation.view.SplashActivity",
+      "existing_drawable": "bbva",
+      "name": "BBVA",
+      "installs": "10,000,000+",
+      "drawable": "bbva_provincial"
     },
     {
       "id": "com.hihonor.calendar/com.android.calendar.AllInOneActivity",
