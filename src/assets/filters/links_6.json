@@ -5,56 +5,6 @@
   "total_batches": 7,
   "links": [
     {
-      "id": "radio.fm.online/com.appmind.countryradios.screens.splash.SplashActivity",
-      "existing_drawable": "generic_fm_radio",
-      "name": "Radio FM",
-      "installs": "1,000,000+",
-      "drawable": "radio_fm"
-    },
-    {
-      "id": "net.metapps.watersounds/net.metapps.relaxsounds.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Rain Sounds",
-      "installs": "5,000,000+",
-      "drawable": "rain_sounds"
-    },
-    {
-      "id": "com.music.rambox/com.music.rambox.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "RamBox"
-    },
-    {
-      "id": "com.boost.samsung.remote/com.boost.samsung.remote.ui.SplashActivity",
-      "existing_drawable": "android_tv_remote_service",
-      "name": "Remote for Smart Samsung TV",
-      "installs": "10,000,000+",
-      "drawable": "remote_for_smart_samsung_tv"
-    },
-    {
-      "id": "android.rk.RockVideoPlayer/android.rk.RockVideoPlayer.RockVideoPlayer",
-      "existing_drawable": "just_player",
-      "name": "ReproductorVideo"
-    },
-    {
-      "id": "com.termux.revancify.blue/com.termux.revancify.MainActivity",
-      "existing_drawable": "rvx_manager",
-      "name": "Revancify"
-    },
-    {
-      "id": "kr.co.prnd.revolt/kr.co.prnd.revolt.ui.feature.splash.SplashActivity",
-      "existing_drawable": "revolt",
-      "name": "Revolt",
-      "installs": "500,000+",
-      "drawable": "revolt"
-    },
-    {
-      "id": "com.androidrocker.audiocutter/com.androidrocker.audiocutter.MySplashActivity",
-      "existing_drawable": "sony_music",
-      "name": "Ringtone Maker",
-      "installs": "10,000,000+",
-      "drawable": "ringtone_maker"
-    },
-    {
       "id": "com.leonidbuzmacov.ringtonerotator/com.leonidbuzmacov.ringtonerotator.MainActivity",
       "existing_drawable": "music_player",
       "name": "Ringtone Rotator"
@@ -80,13 +30,6 @@
       "id": "ss.colytitse.setappfull/ss.colytitse.setappfull.MainActivity",
       "existing_drawable": "generic_shell",
       "name": "SetAppFull"
-    },
-    {
-      "id": "cloud.shelly.smartcontrol/cloud.shelly.smartcontrol.activities.MainActivity",
-      "existing_drawable": "shelly_smart_control",
-      "name": "Shelly Smart Control",
-      "installs": "1,000,000+",
-      "drawable": "shelly_smart_control"
     },
     {
       "id": "org.ShuzaGramV2.com.web/org.telegram.messenger.DefaultIcon",
@@ -176,13 +119,6 @@
       "drawable": "smart_calculator_by_smart_tools"
     },
     {
-      "id": "com.netflix.NGP.Solitaire/com.mobilityware.sflnativeandroidutils.SFLLaunchActivity",
-      "existing_drawable": "generic_solitaire",
-      "name": "Solitaire",
-      "installs": "1,000,000+",
-      "drawable": "solitaire"
-    },
-    {
       "id": "com.peoplefun.wordsolitaire/com.unity3d.player.UnityPlayerActivity",
       "existing_drawable": "generic_solitaire",
       "name": "Solitaire",
@@ -195,13 +131,6 @@
       "name": "SoloPro",
       "installs": "1,000,000+",
       "drawable": "solopro"
-    },
-    {
-      "id": "in.gaffarmart.www.gtplremote/in.gaffarmart.www.gtplremote.dispatcher_activity",
-      "existing_drawable": "android_tv_remote_service",
-      "name": "Sony TV Remote",
-      "installs": "1,000,000+",
-      "drawable": "sony_tv_remote"
     },
     {
       "id": "com.getsteven.app/com.getsteven.app.screens.home.view.BaseActivity",
@@ -329,6 +258,77 @@
       "id": "com.android.test.uibench/com.android.test.uibench.MainActivity",
       "existing_drawable": "generic_shell",
       "name": "UiBench"
+    },
+    {
+      "id": "com.mixapplications.ultimateusb/com.mixapplications.ultimateusb.MainActivity",
+      "existing_drawable": "drivedroid",
+      "name": "Ultimate USB",
+      "installs": "1,000,000+",
+      "drawable": "ultimate_usb"
+    },
+    {
+      "id": "com.raafiya.universalacremotecontrol/com.raafiya.universalacremotecontrol.remotecontrol.SplashActivity",
+      "existing_drawable": "generic_power",
+      "name": "Universal AC Remote Control",
+      "installs": "10,000,000+",
+      "drawable": "universal_ac_remote_control"
+    },
+    {
+      "id": "com.letscontrol.universalprojectorremotecontrol/com.letscontrol.universalprojectorremotecontrol.remotecontrol.SplashActivity",
+      "existing_drawable": "generic_power",
+      "name": "Universal Projector Remote Control",
+      "installs": "1,000,000+",
+      "drawable": "universal_projector_remote_control"
+    },
+    {
+      "id": "me.tito.unlocker/me.tito.unlocker.MainActivity",
+      "existing_drawable": "google_authenticator",
+      "name": "Unlock-r",
+      "installs": "1,000,000+",
+      "drawable": "unlock_r"
+    },
+    {
+      "id": "info.t4w.vp/info.t4w.vp.view.MainActivity",
+      "existing_drawable": "just_player",
+      "name": "Url Video Player",
+      "installs": "10,000,000+",
+      "drawable": "url_video_player"
+    },
+    {
+      "id": "com.extreamsd.usbaudiorecorderpro/com.extreamsd.usbaudiorecordershared.AllTabsActivity",
+      "existing_drawable": "drivedroid",
+      "name": "USB Audio Recorder PRO",
+      "installs": "50,000+",
+      "drawable": "usb_audio_recorder_pro"
+    },
+    {
+      "id": "com.enginex0.usbmassstorage/com.enginex0.usbmassstorage.MainActivity",
+      "existing_drawable": "drivedroid",
+      "name": "USB Mass Storage"
+    },
+    {
+      "id": "com.iven.iconify/com.iven.vectorify.ui.MainActivity",
+      "existing_drawable": "another_notes",
+      "name": "Vectorify Da Home!"
+    },
+    {
+      "id": "com.verseview.songbook/com.verseview.songbook.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "VerseVIEW Christian Song Book",
+      "installs": "500,000+",
+      "drawable": "verseview_christian_song_book"
+    },
+    {
+      "id": "com.mediatek.videoplayer/com.mediatek.videoplayer.MovieListActivity",
+      "existing_drawable": "generic_player",
+      "name": "Video"
+    },
+    {
+      "id": "by.likee.downloader.without.watermark/me.lik.downloader._dev_ui._dev_SplashActivity",
+      "existing_drawable": "generic_download_shelf",
+      "name": "Video downloader for Likee",
+      "installs": "500,000+",
+      "drawable": "video_downloader_for_likee"
     }
   ]
 }

@@ -43,6 +43,10 @@
       "lawnicons_drawable": "cricfy_tv"
     },
     {
+      "id": "com.document.viewer.doc.reader/com.document.viewer.doc.reader.activity.NewSplashScreen",
+      "lawnicons_drawable": "document_reader"
+    },
+    {
       "id": "files.fileexplorer.filemanager/filemanger.manager.iostudio.manager.SplashActivity",
       "lawnicons_drawable": "file_manager"
     },
@@ -1975,6 +1979,10 @@
       "lawnicons_drawable": "honor_game_center"
     },
     {
+      "id": "com.hnb.DigitalApp/com.hnb.DigitalApp.Splash",
+      "lawnicons_drawable": "hnb"
+    },
+    {
       "id": "com.chimbori.hermitcrab/com.chimbori.hermitcrab.AdminActivity",
       "lawnicons_drawable": "hermit"
     },
@@ -2151,6 +2159,10 @@
       "lawnicons_drawable": "agc_toolkit_pro"
     },
     {
+      "id": "com.tplink.aginet/com.tplink.isp.component.account.login.view.WelcomeActivity",
+      "lawnicons_drawable": "aginet"
+    },
+    {
       "id": "com.niven.translator/com.niven.translate.MainActivity",
       "lawnicons_drawable": "bubble_translate"
     },
@@ -2299,84 +2311,16 @@
       "lawnicons_drawable": "zwart_icons"
     },
     {
-      "id": "com.ak.ta.dainikbhaskar.activity/com.dainikbhaskar.ui.launcher.DefaultIcon",
-      "lawnicons_drawable": "hindi_news"
-    },
-    {
-      "id": "li.songe.gkd/li.gkd.app.MainActivity",
-      "lawnicons_drawable": "gkd"
-    },
-    {
-      "id": "com.sina.weibo/com.sina.weibo.SplashActivity",
-      "lawnicons_drawable": "weibo"
-    },
-    {
-      "id": "com.xunmeng.pinduoduo/com.xunmeng.pinduoduo.ui.activity.MainFrameActivity",
-      "lawnicons_drawable": "pinduoduo"
-    },
-    {
-      "id": "com.taobao.taobao/com.taobao.tao.welcome.Welcome",
-      "lawnicons_drawable": "taobao"
-    },
-    {
       "id": "com.baidu.netdisk/com.baidu.netdisk.ui.DefaultMainActivity",
       "lawnicons_drawable": "baidu_netdisk"
-    },
-    {
-      "id": "com.dimowner.audiorecorder/com.dimowner.audiorecorder.app.main.MainActivity",
-      "lawnicons_drawable": "audio_recorder"
-    },
-    {
-      "id": "com.totaltexto.bancamovil/com.bbva.glomohybrid.splash.presentation.view.SplashActivity",
-      "lawnicons_drawable": "bbva"
-    },
-    {
-      "id": "com.bancodevenezuela.bdvdigital/com.gracaconsultores.bdvdigital.MainActivity",
-      "lawnicons_drawable": "bdv"
-    },
-    {
-      "id": "com.cashea.app/com.cashea.app.MainActivity",
-      "lawnicons_drawable": "cashea"
-    },
-    {
-      "id": "com.dinerorapido.bancamovil/com.bbva.venezuela_dinerorapido.module.splash.HomeActivity",
-      "lawnicons_drawable": "dinero_rapido"
     },
     {
       "id": "com.finazzi.distquake/com.finazzi.distquake.MainActivity",
       "lawnicons_drawable": "earthquake_network"
     },
     {
-      "id": "us.nobarriers.elsa/us.nobarriers.elsa.MainActivity",
-      "lawnicons_drawable": "elsa_speak"
-    },
-    {
-      "id": "com.englishscore/com.englishscore.MainActivity",
-      "lawnicons_drawable": "british_council_englishscore"
-    },
-    {
-      "id": "com.foxit.mobile.pdf.lite/com.fx.app.ui.AppActivity",
-      "lawnicons_drawable": "foxit"
-    },
-    {
-      "id": "com.kimovil.app/com.kimovil.app.MainActivity",
-      "lawnicons_drawable": "kimovil"
-    },
-    {
-      "id": "org.malwarebytes.antimalware/org.malwarebytes.antimalware.ui.MainActivity",
-      "lawnicons_drawable": "malwarebytes"
-    },
-    {
-      "id": "com.memrise.android.memrisecompanion/com.memrise.android.memrisecompanion.ui.activity.LauncherActivity",
-      "lawnicons_drawable": "memrise"
-    },
-    {
       "id": "com.metrolist.music/com.metrolist.android.MainActivityOriginal",
       "lawnicons_drawable": "metrolist"
-    },
-    {
-      "id": "com.tongyi.intl/ai.qwenlm.chat.android.MainActivity",
-      "lawnicons_drawable": "qwen_chat"
     },
     {
       "id": "net.tandem/net.tandem.ui.MainActivity",
@@ -2385,14 +2329,6 @@
     {
       "id": "com.tenda.router.app/com.tenda.login.splash.FullscreenActivity",
       "lawnicons_drawable": "tenda_wifi"
-    },
-    {
-      "id": "com.funnycat.virustotal/com.funnycat.virustotal.ui.MainActivity",
-      "lawnicons_drawable": "virustotal"
-    },
-    {
-      "id": "de.ph1b.audiobook/voice.app.features.MainActivity",
-      "lawnicons_drawable": "voice"
     },
     {
       "id": "ru.kinopoisk/ru.kinopoisk.DefaultAlias",

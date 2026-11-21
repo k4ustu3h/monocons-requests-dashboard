@@ -5,53 +5,6 @@
   "total_batches": 7,
   "links": [
     {
-      "id": "media.music.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "100,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "music.musicplayer/com.android.music.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "50,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "musicplayer.hdvideoplayer.backgroundmusic/musicplayer.hdvideoplayer.backgroundmusic.myActivities.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player",
-      "installs": "50,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "musicplayer.theme.bass.equalizer/musicplayer.theme.bass.equalizer.activity.StartPageActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music player",
-      "installs": "10,000,000+",
-      "drawable": "music_player"
-    },
-    {
-      "id": "musicplayer.musicapp.playmusic.mp3player/musicplayer.musicapp.playmusic.mp3player.ui.splash.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "Music Player Offline & MP3",
-      "installs": "10,000,000+",
-      "drawable": "music_player_offline_mp3"
-    },
-    {
-      "id": "jl.musicalnotes/jl.musicalnotes.activity.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Musical Notes"
-    },
-    {
-      "id": "com.muso.musicplayer/com.muso.musicplayer.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Muso",
-      "installs": "50,000,000+",
-      "drawable": "muso"
-    },
-    {
       "id": "com.ttnet.muzik/com.ttnet.muzik.DefaultAppIconAlias",
       "existing_drawable": "music_player",
       "name": "Muud",
@@ -317,6 +270,49 @@
       "name": "Radio FM",
       "installs": "100,000,000+",
       "drawable": "radio_fm"
+    },
+    {
+      "id": "radio.fm.online/com.appmind.countryradios.screens.splash.SplashActivity",
+      "existing_drawable": "generic_fm_radio",
+      "name": "Radio FM",
+      "installs": "1,000,000+",
+      "drawable": "radio_fm"
+    },
+    {
+      "id": "net.metapps.watersounds/net.metapps.relaxsounds.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Rain Sounds",
+      "installs": "5,000,000+",
+      "drawable": "rain_sounds"
+    },
+    {
+      "id": "com.music.rambox/com.music.rambox.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "RamBox"
+    },
+    {
+      "id": "android.rk.RockVideoPlayer/android.rk.RockVideoPlayer.RockVideoPlayer",
+      "existing_drawable": "just_player",
+      "name": "ReproductorVideo"
+    },
+    {
+      "id": "com.termux.revancify.blue/com.termux.revancify.MainActivity",
+      "existing_drawable": "rvx_manager",
+      "name": "Revancify"
+    },
+    {
+      "id": "kr.co.prnd.revolt/kr.co.prnd.revolt.ui.feature.splash.SplashActivity",
+      "existing_drawable": "revolt",
+      "name": "Revolt",
+      "installs": "500,000+",
+      "drawable": "revolt"
+    },
+    {
+      "id": "com.androidrocker.audiocutter/com.androidrocker.audiocutter.MySplashActivity",
+      "existing_drawable": "sony_music",
+      "name": "Ringtone Maker",
+      "installs": "10,000,000+",
+      "drawable": "ringtone_maker"
     }
   ]
 }

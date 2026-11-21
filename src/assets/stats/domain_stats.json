@@ -1,24 +1,24 @@
 {
   "com": {
-    "requests": 925,
-    "done": 6628,
-    "total": 7553,
+    "requests": 908,
+    "done": 6671,
+    "total": 7579,
     "global": 0,
     "global_installs": 0
   },
   "org": {
-    "requests": 63,
-    "done": 903,
-    "total": 966,
+    "requests": 62,
+    "done": 909,
+    "total": 971,
     "global": 0,
     "global_installs": 0
   },
   "de": {
-    "requests": 541,
-    "done": 129,
-    "total": 670,
-    "global": 528,
-    "global_installs": 4425584045
+    "requests": 526,
+    "done": 133,
+    "total": 659,
+    "global": 514,
+    "global_installs": 4534684045
   },
   "jp": {
     "requests": 367,
@@ -28,11 +28,11 @@
     "global_installs": 8158388090
   },
   "in": {
-    "requests": 304,
-    "done": 82,
-    "total": 386,
-    "global": 296,
-    "global_installs": 2929099820
+    "requests": 302,
+    "done": 86,
+    "total": 388,
+    "global": 295,
+    "global_installs": 2934099820
   },
   "br": {
     "requests": 274,
@@ -53,7 +53,7 @@
     "done": 47,
     "total": 254,
     "global": 201,
-    "global_installs": 5749551805
+    "global_installs": 5749552305
   },
   "it": {
     "requests": 181,
@@ -77,11 +77,11 @@
     "global_installs": 2594877225
   },
   "us": {
-    "requests": 187,
-    "done": 7,
-    "total": 194,
-    "global": 186,
-    "global_installs": 3302618065
+    "requests": 171,
+    "done": 11,
+    "total": 182,
+    "global": 171,
+    "global_installs": 3421718065
   },
   "io": {
     "requests": 41,
@@ -98,8 +98,8 @@
     "global_installs": 952576620
   },
   "net": {
-    "requests": 18,
-    "done": 122,
+    "requests": 17,
+    "done": 123,
     "total": 140,
     "global": 0,
     "global_installs": 0
@@ -315,9 +315,9 @@
     "global_installs": 331706600
   },
   "tv": {
-    "requests": 1,
-    "done": 20,
-    "total": 21,
+    "requests": 0,
+    "done": 22,
+    "total": 22,
     "global": 0,
     "global_installs": 0
   },
@@ -559,13 +559,6 @@
     "global": 0,
     "global_installs": 0
   },
-  "li": {
-    "requests": 7,
-    "done": 0,
-    "total": 7,
-    "global": 6,
-    "global_installs": 0
-  },
   "nu": {
     "requests": 0,
     "done": 7,
@@ -683,6 +676,13 @@
     "done": 5,
     "total": 5,
     "global": 0,
+    "global_installs": 0
+  },
+  "li": {
+    "requests": 3,
+    "done": 2,
+    "total": 5,
+    "global": 3,
     "global_installs": 0
   },
   "my": {
@@ -1078,6 +1078,13 @@
     "global_installs": 0
   },
   "chromahub": {
+    "requests": 0,
+    "done": 2,
+    "total": 2,
+    "global": 0,
+    "global_installs": 0
+  },
+  "cloud": {
     "requests": 0,
     "done": 2,
     "total": 2,
@@ -1672,7 +1679,7 @@
     "global": 0,
     "global_installs": 0
   },
-  "cloud": {
+  "codematics": {
     "requests": 0,
     "done": 1,
     "total": 1,

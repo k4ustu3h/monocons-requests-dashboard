@@ -5,35 +5,6 @@
   "total_batches": 7,
   "links": [
     {
-      "id": "com.bearinmind.launcher314/com.bearinmind.launcher314.MainActivity",
-      "existing_drawable": "generic_power",
-      "name": "Launcher314"
-    },
-    {
-      "id": "com.flass.layoutinspect/com.flass.layoutinspect.activity.MainActivityAlias",
-      "existing_drawable": "generic_shell",
-      "name": "Layout Inspect"
-    },
-    {
-      "id": "de.melvil.noten/de.melvil.noten.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Learn Music Notes",
-      "installs": "100,000+",
-      "drawable": "learn_music_notes"
-    },
-    {
-      "id": "com.learn.piano.music.instrument/com.example.pianoapplication.MainActivity",
-      "existing_drawable": "generic_piano",
-      "name": "Learn Piano",
-      "installs": "100,000+",
-      "drawable": "learn_piano"
-    },
-    {
-      "id": "com.lenovo.FileBrowser2/com.lenovo.FileBrowser.activities.FileBrowserMain",
-      "existing_drawable": "generic_files",
-      "name": "Lenovo File Manager"
-    },
-    {
       "id": "com.zui.notes/com.zui.notes.home.MainActivity",
       "existing_drawable": "generic_notes",
       "name": "Lenovo ZUI Notepad"
@@ -42,20 +13,6 @@
       "id": "com.lge.music/com.lge.music.MusicBrowserActivity",
       "existing_drawable": "apple_music",
       "name": "LG Music"
-    },
-    {
-      "id": "com.boost.lg.remote/com.boost.lg.remote.ui.activity.SplashActivity",
-      "existing_drawable": "android_tv_remote_service",
-      "name": "LG TV Remote",
-      "installs": "10,000,000+",
-      "drawable": "lg_tv_remote"
-    },
-    {
-      "id": "in.gaffarmart.www.tataskyremote/in.gaffarmart.www.tataskyremote.dispatcher_activity",
-      "existing_drawable": "android_tv_remote_service",
-      "name": "LG TV Remote",
-      "installs": "10,000,000+",
-      "drawable": "lg_tv_remote"
     },
     {
       "id": "com.lge.vvm/com.lge.vvm.launcher.VVMLauncherActivity",
@@ -299,6 +256,53 @@
       "name": "Music player",
       "installs": "50,000,000+",
       "drawable": "music_player"
+    },
+    {
+      "id": "media.music.musicplayer/com.ijoysoft.music.activity.WelcomeActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Player",
+      "installs": "100,000,000+",
+      "drawable": "music_player"
+    },
+    {
+      "id": "music.musicplayer/com.android.music.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Player",
+      "installs": "50,000,000+",
+      "drawable": "music_player"
+    },
+    {
+      "id": "musicplayer.hdvideoplayer.backgroundmusic/musicplayer.hdvideoplayer.backgroundmusic.myActivities.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Player",
+      "installs": "50,000,000+",
+      "drawable": "music_player"
+    },
+    {
+      "id": "musicplayer.theme.bass.equalizer/musicplayer.theme.bass.equalizer.activity.StartPageActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music player",
+      "installs": "10,000,000+",
+      "drawable": "music_player"
+    },
+    {
+      "id": "musicplayer.musicapp.playmusic.mp3player/musicplayer.musicapp.playmusic.mp3player.ui.splash.SplashActivity",
+      "existing_drawable": "apple_music",
+      "name": "Music Player Offline & MP3",
+      "installs": "10,000,000+",
+      "drawable": "music_player_offline_mp3"
+    },
+    {
+      "id": "jl.musicalnotes/jl.musicalnotes.activity.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Musical Notes"
+    },
+    {
+      "id": "com.muso.musicplayer/com.muso.musicplayer.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Muso",
+      "installs": "50,000,000+",
+      "drawable": "muso"
     }
   ]
 }

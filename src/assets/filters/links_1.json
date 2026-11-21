@@ -192,16 +192,6 @@
       ]
     },
     {
-      "id": "com.radolyn.ayugram/com.exteragram.messenger.AuroraIcon",
-      "existing_drawable": "ayugram",
-      "name": "AyuGram",
-      "components": [
-        "com.radolyn.ayugram/com.exteragram.messenger.AuroraIcon",
-        "com.radolyn.ayugram/com.exteragram.messenger.Google26Icon",
-        "com.radolyn.ayugram/com.exteragram.messenger.SunsetIcon"
-      ]
-    },
-    {
       "id": "com.shaiban.audioplayer.mplayer/com.shaiban.audioplayer.mplayer.app.navigation.NavigatingActivity",
       "existing_drawable": "apple_music",
       "name": "Music Player",
@@ -495,13 +485,6 @@
       "name": "ADB WiFi"
     },
     {
-      "id": "com.mobilityado.ado/com.mobilityado.ado.views.activities.ActSplashScreen",
-      "existing_drawable": "ado",
-      "name": "ADO",
-      "installs": "1,000,000+",
-      "drawable": "ado"
-    },
-    {
       "id": "com.ais.mimo.AISPlay/net.vimmi.core.launcher.StartupActivity",
       "existing_drawable": "just_player",
       "name": "AIS PLAY",
@@ -540,6 +523,18 @@
       "name": "Amazon Now",
       "installs": "500,000,000+",
       "drawable": "amazon_now"
+    },
+    {
+      "id": "com.htetznaing.adbotg/com.htetznaing.adbotg.MainActivity",
+      "existing_drawable": "ladb",
+      "name": "Android Debug Bridge",
+      "installs": "1,000,000+",
+      "drawable": "android_debug_bridge"
+    },
+    {
+      "id": "com.kamwithk.ankiconnectandroid/com.kamwithk.ankiconnectandroid.MainActivity",
+      "existing_drawable": "ladb",
+      "name": "Ankiconnect"
     }
   ]
 }

@@ -5,25 +5,6 @@
   "total_batches": 7,
   "links": [
     {
-      "id": "com.firstyogi.dothing/com.firstyogi.dothing.SigninActivity",
-      "existing_drawable": "tasky",
-      "name": "Dothing",
-      "installs": "5,000+",
-      "drawable": "dothing"
-    },
-    {
-      "id": "com.dsplayer.app/com.dsplayer.app.features.videobrowser.ui.VideoBrowserActivity",
-      "existing_drawable": "just_player",
-      "name": "DS Player",
-      "installs": "10,000+",
-      "drawable": "ds_player"
-    },
-    {
-      "id": "denver.mp3.music.downloader.mp3downloader/denver.mp3.music.downloader.mp3downloader.ui.activities.SplashActivity",
-      "existing_drawable": "apple_music",
-      "name": "DSM Music"
-    },
-    {
       "id": "com.olxmena.horizontal/com.olxmena.horizontal.MainActivity",
       "existing_drawable": "olx",
       "name": "dubizzle",
@@ -191,11 +172,6 @@
       "name": "Huawei Music Player"
     },
     {
-      "id": "com.huawei.android.hwouc/com.huawei.android.hwouc.ui.activities.MainEntranceActivity",
-      "existing_drawable": "huawei_software_update",
-      "name": "Huawei Software Update"
-    },
-    {
       "id": "com.cmepro.uhxmiditools/android.app.Activity",
       "existing_drawable": "drivedroid",
       "name": "HxMIDI Tools",
@@ -300,11 +276,6 @@
       "drawable": "kita_nonton"
     },
     {
-      "id": "org.koreader.launcher.fdroid/org.koreader.launcher.MainActivity",
-      "existing_drawable": "koreader",
-      "name": "KOReader"
-    },
-    {
       "id": "com.draco.ladb.free/com.draco.ladb.views.MainActivity",
       "existing_drawable": "ladb",
       "name": "LADB"
@@ -315,6 +286,35 @@
       "name": "LastPass Authenticator",
       "installs": "1,000,000+",
       "drawable": "lastpass_authenticator"
+    },
+    {
+      "id": "com.bearinmind.launcher314/com.bearinmind.launcher314.MainActivity",
+      "existing_drawable": "generic_power",
+      "name": "Launcher314"
+    },
+    {
+      "id": "com.flass.layoutinspect/com.flass.layoutinspect.activity.MainActivityAlias",
+      "existing_drawable": "generic_shell",
+      "name": "Layout Inspect"
+    },
+    {
+      "id": "de.melvil.noten/de.melvil.noten.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Learn Music Notes",
+      "installs": "100,000+",
+      "drawable": "learn_music_notes"
+    },
+    {
+      "id": "com.learn.piano.music.instrument/com.example.pianoapplication.MainActivity",
+      "existing_drawable": "generic_piano",
+      "name": "Learn Piano",
+      "installs": "100,000+",
+      "drawable": "learn_piano"
+    },
+    {
+      "id": "com.lenovo.FileBrowser2/com.lenovo.FileBrowser.activities.FileBrowserMain",
+      "existing_drawable": "generic_files",
+      "name": "Lenovo File Manager"
     }
   ]
 }
