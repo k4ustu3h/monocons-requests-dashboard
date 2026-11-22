@@ -5,33 +5,6 @@
   "total_batches": 7,
   "links": [
     {
-      "id": "com.leonidbuzmacov.ringtonerotator/com.leonidbuzmacov.ringtonerotator.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Ringtone Rotator"
-    },
-    {
-      "id": "app.rvx.manager/app.revanced.manager.MainActivity",
-      "existing_drawable": "youtube_revanced",
-      "name": "RVX Manager"
-    },
-    {
-      "id": "com.actionlauncher.pixelshortcuts/pixelshortcuts.loaders.SamsungHomeLoader",
-      "existing_drawable": "digital_wellbeing",
-      "name": "Samsung Home"
-    },
-    {
-      "id": "recorder.screenrecorder.videoeditor/com.recorder.screenrecorder.home.splash.pre.PreSplashActivity",
-      "existing_drawable": "screen_recorder",
-      "name": "Screen Recorder",
-      "installs": "100,000,000+",
-      "drawable": "screen_recorder"
-    },
-    {
-      "id": "ss.colytitse.setappfull/ss.colytitse.setappfull.MainActivity",
-      "existing_drawable": "generic_shell",
-      "name": "SetAppFull"
-    },
-    {
       "id": "org.ShuzaGramV2.com.web/org.telegram.messenger.DefaultIcon",
       "existing_drawable": "telegram",
       "name": "ShuzaGram"
@@ -329,6 +302,35 @@
       "name": "Video downloader for Likee",
       "installs": "500,000+",
       "drawable": "video_downloader_for_likee"
+    },
+    {
+      "id": "com.softwinner.videoplayer/com.softwinner.videoplayer.view.activity.HomePageActivity",
+      "existing_drawable": "just_player",
+      "name": "Video Player"
+    },
+    {
+      "id": "com.virtualpiano.musicalkeyboard/com.unity3d.player.UnityPlayerActivity",
+      "existing_drawable": "generic_piano",
+      "name": "Virtual Pianino",
+      "installs": "1,000,000+",
+      "drawable": "virtual_pianino"
+    },
+    {
+      "id": "com.vivo.calculator/com.android.bbkcalculator.Calculator",
+      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
+      "name": "vivo Calculator"
+    },
+    {
+      "id": "com.vivo.notes/com.android.notes.Notes",
+      "existing_drawable": "generic_notes",
+      "name": "vivo Notes"
+    },
+    {
+      "id": "com.raytechnoto.glab.voicerecorder/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "Voice Recorder",
+      "installs": "5,000,000+",
+      "drawable": "voice_recorder"
     }
   ]
 }

@@ -5,44 +5,6 @@
   "total_batches": 7,
   "links": [
     {
-      "id": "com.olxmena.horizontal/com.olxmena.horizontal.MainActivity",
-      "existing_drawable": "olx",
-      "name": "dubizzle",
-      "installs": "10,000,000+",
-      "drawable": "dubizzle"
-    },
-    {
-      "id": "io.github.luyifei2011.dvdcontroller/io.github.luyifei2011.dvdcontroller.MainActivity",
-      "existing_drawable": "generic_shell",
-      "name": "DVD Controller"
-    },
-    {
-      "id": "easy.launcher/easy.launcher.ime.promo.ImePromoActivity",
-      "existing_drawable": "generic_keyboard",
-      "name": "Easy Keyboard",
-      "installs": "10,000,000+",
-      "drawable": "easy_keyboard"
-    },
-    {
-      "id": "com.cem.pianokeyboard.pianomusic/com.cem.piano.guide.ui.activities.IntroActivity",
-      "existing_drawable": "generic_piano",
-      "name": "Easy Piano",
-      "installs": "500,000+",
-      "drawable": "easy_piano"
-    },
-    {
-      "id": "com.echo360.echoupload/com.echo360.echoupload.ui.splash.SplashActivity",
-      "existing_drawable": "generic_player",
-      "name": "Echo360",
-      "installs": "50,000+",
-      "drawable": "echo360"
-    },
-    {
-      "id": "org.quark.dr.canapp/org.quark.dr.canapp.MainActivity",
-      "existing_drawable": "generic_engine",
-      "name": "Ecu Tweaker"
-    },
-    {
       "id": "com.exteraless.app/org.telegram.messenger.TelegramIcon",
       "existing_drawable": "telegram",
       "name": "exteraless"
@@ -315,6 +277,38 @@
       "id": "com.lenovo.FileBrowser2/com.lenovo.FileBrowser.activities.FileBrowserMain",
       "existing_drawable": "generic_files",
       "name": "Lenovo File Manager"
+    },
+    {
+      "id": "com.zui.notes/com.zui.notes.home.MainActivity",
+      "existing_drawable": "generic_notes",
+      "name": "Lenovo ZUI Notepad"
+    },
+    {
+      "id": "com.lge.music/com.lge.music.MusicBrowserActivity",
+      "existing_drawable": "apple_music",
+      "name": "LG Music"
+    },
+    {
+      "id": "com.lge.vvm/com.lge.vvm.launcher.VVMLauncherActivity",
+      "existing_drawable": "generic_voicemail",
+      "name": "LG Voicemail"
+    },
+    {
+      "id": "com.grice.call/com.grice.call.icon.Default",
+      "existing_drawable": "generic_dialer",
+      "name": "Liquid Dialer",
+      "installs": "100,000+",
+      "drawable": "liquid_dialer"
+    },
+    {
+      "id": "com.cvc953.localplayer/com.cvc953.localplayer.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Local Player"
+    },
+    {
+      "id": "com.op.lspdoze/com.op.lspdoze.ui.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "LSPDoze"
     }
   ]
 }

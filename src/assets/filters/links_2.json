@@ -145,28 +145,6 @@
       "drawable": "call_recorder"
     },
     {
-      "id": "com.dmobileapps.camera/com.dmobileapps.camera.MainActivity",
-      "existing_drawable": "generic_camera",
-      "name": "Camera",
-      "installs": "1,000,000+",
-      "drawable": "camera"
-    },
-    {
-      "id": "com.google.android.GoogleCamerb3/com.android.camera.CameraLauncher",
-      "existing_drawable": "generic_camera",
-      "name": "Camera"
-    },
-    {
-      "id": "com.google.android.apps.googlecamera.fishfood/com.android.camera.CameraLauncher",
-      "existing_drawable": "generic_camera",
-      "name": "Camera"
-    },
-    {
-      "id": "com.softwinner.camera/com.softwinner.camera.CameraLauncher",
-      "existing_drawable": "generic_camera",
-      "name": "Camera"
-    },
-    {
       "id": "com.ovz.carscanner.rustore/crc646a6dd679b318c207.MainActivity",
       "existing_drawable": "generic_engine",
       "name": "Car Scanner"
@@ -265,11 +243,6 @@
       "drawable": "dark_evo"
     },
     {
-      "id": "com.shisui.debloater/com.shisui.debloater.MainActivity",
-      "existing_drawable": "generic_shell",
-      "name": "Debloat-X Universal"
-    },
-    {
       "id": "com.dmholdings.denonremoteapp/com.dmholdings.remoteapp.Startup",
       "existing_drawable": "just_player",
       "name": "Denon Remote"
@@ -285,11 +258,6 @@
       "name": "Digital Calculator",
       "installs": "1,000+",
       "drawable": "digital_calculator"
-    },
-    {
-      "id": "com.discore/com.discord.main.MainDefault",
-      "existing_drawable": "discord",
-      "name": "Discord"
     },
     {
       "id": "com.firstyogi.dothing/com.firstyogi.dothing.SigninActivity",
@@ -309,6 +277,44 @@
       "id": "denver.mp3.music.downloader.mp3downloader/denver.mp3.music.downloader.mp3downloader.ui.activities.SplashActivity",
       "existing_drawable": "apple_music",
       "name": "DSM Music"
+    },
+    {
+      "id": "com.olxmena.horizontal/com.olxmena.horizontal.MainActivity",
+      "existing_drawable": "olx",
+      "name": "dubizzle",
+      "installs": "10,000,000+",
+      "drawable": "dubizzle"
+    },
+    {
+      "id": "io.github.luyifei2011.dvdcontroller/io.github.luyifei2011.dvdcontroller.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "DVD Controller"
+    },
+    {
+      "id": "easy.launcher/easy.launcher.ime.promo.ImePromoActivity",
+      "existing_drawable": "generic_keyboard",
+      "name": "Easy Keyboard",
+      "installs": "10,000,000+",
+      "drawable": "easy_keyboard"
+    },
+    {
+      "id": "com.cem.pianokeyboard.pianomusic/com.cem.piano.guide.ui.activities.IntroActivity",
+      "existing_drawable": "generic_piano",
+      "name": "Easy Piano",
+      "installs": "500,000+",
+      "drawable": "easy_piano"
+    },
+    {
+      "id": "com.echo360.echoupload/com.echo360.echoupload.ui.splash.SplashActivity",
+      "existing_drawable": "generic_player",
+      "name": "Echo360",
+      "installs": "50,000+",
+      "drawable": "echo360"
+    },
+    {
+      "id": "org.quark.dr.canapp/org.quark.dr.canapp.MainActivity",
+      "existing_drawable": "generic_engine",
+      "name": "Ecu Tweaker"
     }
   ]
 }

@@ -31,28 +31,6 @@
       "drawable": "simple_calculator"
     },
     {
-      "id": "org.forkclient.messenger.beta/org.telegram.messenger.AquaIcon",
-      "existing_drawable": "telegram",
-      "name": "Fork Client",
-      "components": [
-        "org.forkclient.messenger.beta/org.telegram.messenger.AquaIcon",
-        "org.forkclient.messenger.beta/org.telegram.messenger.CloudIcon",
-        "org.forkclient.messenger.beta/org.telegram.messenger.DarkIcon",
-        "org.forkclient.messenger.beta/org.telegram.messenger.DefaultIcon",
-        "org.forkclient.messenger.beta/org.telegram.messenger.MaterialIcon",
-        "org.forkclient.messenger.beta/org.telegram.messenger.MerioIcon",
-        "org.forkclient.messenger.beta/org.telegram.messenger.MusheenIcon",
-        "org.forkclient.messenger.beta/org.telegram.messenger.NeonIcon",
-        "org.forkclient.messenger.beta/org.telegram.messenger.NoxIcon",
-        "org.forkclient.messenger.beta/org.telegram.messenger.OldSchoolIcon",
-        "org.forkclient.messenger.beta/org.telegram.messenger.PremiumIcon",
-        "org.forkclient.messenger.beta/org.telegram.messenger.RainbowIcon",
-        "org.forkclient.messenger.beta/org.telegram.messenger.SpaceIcon",
-        "org.forkclient.messenger.beta/org.telegram.messenger.TurboIcon",
-        "org.forkclient.messenger.beta/org.telegram.messenger.VintageIcon"
-      ]
-    },
-    {
       "id": "com.grindrapp.android/com.grindrapp.android.HomeActivityCalculator",
       "existing_drawable": "generic_dialer",
       "name": "Grindr",
@@ -459,6 +437,17 @@
         "com.android.youtube.music.premium/com.android.youtube.music.premium.morphe_original_1",
         "com.android.youtube.music.premium/com.google.android.apps.youtube.music.activities.MusicActivity"
       ]
+    },
+    {
+      "id": "com.weico.international/com.weico.international.activity.LogoActivity",
+      "existing_drawable": "weibo",
+      "name": "\u5fae\u535a ~~ Weibo",
+      "components": [
+        "com.weico.international/com.weico.international.activity.LogoActivity",
+        "com.weico.international/com.weico.international.appicon_white"
+      ],
+      "installs": "5,000,000+",
+      "drawable": "com_weico_international"
     },
     {
       "id": "com.github.superadb/com.github.superadb.SplashActivity",
