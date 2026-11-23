@@ -5,6 +5,16 @@
   "total_batches": 7,
   "links": [
     {
+      "id": "com.cvc953.localplayer/com.cvc953.localplayer.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Local Player"
+    },
+    {
+      "id": "com.op.lspdoze/com.op.lspdoze.ui.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "LSPDoze"
+    },
+    {
       "id": "app.lunatask.android/app.lunatask.android.MainActivity",
       "existing_drawable": "tasks",
       "name": "Lunatask",
@@ -295,20 +305,6 @@
       "id": "com.mxtech.videoplayer.ae/com.mxtech.videoplayer.ae.ActivityWelcomeMX",
       "existing_drawable": "just_player",
       "name": "MX Player"
-    },
-    {
-      "id": "com.myfiles.filefolder.filemanager/com.myfiles.filefolder.filemanager.Ui.activity.SplashActivityNew",
-      "existing_drawable": "generic_files",
-      "name": "My Files",
-      "installs": "1,000,000+",
-      "drawable": "my_files"
-    },
-    {
-      "id": "com.appgeneration.itunerfree/com.appgeneration.mytunerlib.ui.activities.SplashActivity",
-      "existing_drawable": "generic_fm_radio",
-      "name": "myTuner",
-      "installs": "10,000,000+",
-      "drawable": "mytuner"
     }
   ]
 }

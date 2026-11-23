@@ -226,6 +226,7 @@
   <item component="ComponentInfo{ahaflix.tv/com.viewlift.mobile.AppCMSLaunchActivity}" drawable="aha" name="aha" />
   <item component="ComponentInfo{facebook.video.downloader.savefrom.fb.saver.fast/com.atlasv.android.fbdownloader.ui.activity.StartupActivity}" drawable="generic_download_shelf" name="Ahafast" />
   <item component="ComponentInfo{facebook.video.downloader.savefrom.fb.saver.fast/com.atlasv.android.downloader.scaffold.ui.feature.splash.SplashActivity}" drawable="generic_download_shelf" name="Ahafast" />
+  <item component="ComponentInfo{com.webratech.ahirwarrishtey/com.webratech.ahirwarrishtey.activities.MainActivity}" drawable="ahirwar_rishtey" name="Ahirwar Rishtey" />
   <item component="ComponentInfo{com.gallery20/com.gallery20.activities.GalleryActivity}" drawable="generic_gallery" name="AI Gallery" />
   <item component="ComponentInfo{com.gallery20/com.gallery20.HomeActivity}" drawable="generic_gallery" name="AI Gallery" />
   <item component="ComponentInfo{com.foss.aihub/com.foss.aihub.MainActivity}" drawable="ai_hub" name="AI Hub" />
@@ -5804,6 +5805,10 @@
   <item component="ComponentInfo{com.wakdev.nfctools.pro/com.wakdev.nfctools.pro.views.MainActivityPro}" drawable="nfc_tools_pro" name="NFC Tools Pro" />
   <item component="ComponentInfo{com.wakdev.apps.nfctools.se/com.wakdev.apps.nfctools.se.MainActivitySE}" drawable="nfc_tools" name="NFC Tools SE" />
   <item component="ComponentInfo{com.wakdev.apps.nfctools.se/com.wakdev.apps.nfctools.se.views.MainActivitySe}" drawable="nfc_tools" name="NFC Tools SE" />
+  <item component="ComponentInfo{bitpit.launcher/bitpit.launcher.Pro}" drawable="niagara_launcher" name="Niagara Launcher" />
+  <item component="ComponentInfo{bitpit.launcher/bitpit.launcher.Settings}" drawable="niagara_launcher" name="Niagara Launcher" />
+  <item component="ComponentInfo{bitpit.launcher/bitpit.launcher.RecentlyInstalled}" drawable="niagara_launcher" name="Niagara Launcher" />
+  <item component="ComponentInfo{bitpit.launcher/bitpit.launcher.ui.HomeActivity}" drawable="niagara_launcher" name="Niagara Launcher" />
   <item component="ComponentInfo{one.plaza.nightwaveplaza/one.plaza.nightwaveplaza.MainActivity}" drawable="nightwave_plaza" name="Nightwave Plaza" />
   <item component="ComponentInfo{com.nike.india/com.fsn.nds.app.splash.LauncherActivity}" drawable="nike" name="Nike" />
   <item component="ComponentInfo{br.com.gruposbf.nike/br.com.gruposbf.nike.MainActivity}" drawable="nike" name="Nike" />
@@ -6838,18 +6843,18 @@
   <item component="ComponentInfo{com.smmservice.printer/com.smmservice.printer.ui.activity.MainActivity}" drawable="generic_printer" name="Printer" />
   <item component="ComponentInfo{org.billthefarmer.print/org.billthefarmer.print.Print}" drawable="generic_printer" name="Printer" />
   <item component="ComponentInfo{com.dynamixsoftware.printershare/com.dynamixsoftware.printershare.ActivityMain}" drawable="generic_printer" name="PrinterShare" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.MainActivity}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconSpectrum}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconSolid}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconLight}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconMidnight}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconDusk}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconPaper}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconNeon}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconPastel}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconLine}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconGold}" drawable="prism" name="Prism" />
-  <item component="ComponentInfo{com.prism.music/com.prism.music.IconWave}" drawable="prism_wave" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.MainActivity}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconSpectrum}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconSolid}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconLight}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconMidnight}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconDusk}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconPaper}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconNeon}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconPastel}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconLine}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconGold}" drawable="prism_music" name="Prism" />
+  <item component="ComponentInfo{com.prism.music/com.prism.music.IconWave}" drawable="prism_music_wave" name="Prism" />
   <item component="ComponentInfo{com.prismgallery.app/com.example.amoledgallery.LauncherIos}" drawable="prism_gallery" name="Prism Gallery" />
   <item component="ComponentInfo{br.com.sisteplant.prismanetmobile/br.com.sisteplant.prismanetmobile.MainActivity}" drawable="prism_net_mobile_vivo" name="Prism@Net Mobile Vivo" />
   <item component="ComponentInfo{com.stoutner.privacybrowser.standard/com.stoutner.privacybrowser.activities.MainWebViewActivity}" drawable="privacy_browser" name="Privacy Browser" />
@@ -7386,6 +7391,7 @@
   <item component="ComponentInfo{com.samsung.android.privateshare/com.samsung.android.privacy.view.MainActivity}" drawable="samsung_private_share" name="Samsung Private Share" />
   <item component="ComponentInfo{com.samsung.android.privateshare/com.samsung.android.privacy.view.MainActivity.launcher}" drawable="samsung_private_share" name="Samsung Private Share" />
   <item component="ComponentInfo{com.sec.android.app.fm/com.sec.android.app.fm.MainActivity}" drawable="generic_fm_radio" name="Samsung Radio" />
+  <item component="ComponentInfo{com.samsung.android.app.reminder/com.samsung.android.app.reminder.ui.LaunchMainActivity}" drawable="samsung_reminder" name="Samsung Reminder" />
   <item component="ComponentInfo{com.samsung.android.app.routines/com.samsung.android.app.routines.ui.main.RoutineLaunchActivityDummy}" drawable="samsung_routines_plus" name="Samsung Routines +" />
   <item component="ComponentInfo{com.samsung.android.app.routineplus/com.samsung.android.app.routineplus.main.RoutinePlusSplashActivity}" drawable="samsung_routines_plus" name="Samsung Routines +" />
   <item component="ComponentInfo{com.samsung.android.app.routineplus/com.samsung.android.app.routineplus.main.RoutinePlusLauncher}" drawable="samsung_routines_plus" name="Samsung Routines +" />
@@ -8857,6 +8863,7 @@
   <item component="ComponentInfo{com.tozelabs.tvshowtime/com.tozelabs.tvshowtime.MainActivity}" drawable="tv_time" name="TV Time" />
   <item component="ComponentInfo{com.tvsm.connect/com.tvsm.connect.onboarding.ui.onBoarding.OnBoardingActivityNew}" drawable="tvs_motor" name="TVS Connect" />
   <item component="ComponentInfo{com.alphabetiq.tvtracker/com.alphabetiq.tvtracker.MainActivity}" drawable="tvtracker" name="TVTracker" />
+  <item component="ComponentInfo{com.urbandroid.lux/com.urbandroid.lux.MainActivity}" drawable="twilight" name="Twilight" />
   <item component="ComponentInfo{dev.sasikanth.rss.reader/dev.sasikanth.rss.reader.MainActivity}" drawable="twine" name="Twine" />
   <item component="ComponentInfo{dev.sasikanth.rss.reader/dev.sasikanth.rss.reader.MainActivityDarkJade}" drawable="twine" name="Twine" />
   <item component="ComponentInfo{com.twinndroid/com.twinndroid.LauncherTwinn}" drawable="twinndroid" name="TwinnDroid" />
@@ -9872,6 +9879,9 @@
   <item component="ComponentInfo{web1n.stopapp/web1n.stopapp.activity.MainActivity}" drawable="black_house" name="小黑屋 ~~ Black House" />
   <item component="ComponentInfo{com.alwaysrotate/com.alwaysrotate.alwaysrotate}" drawable="generic_rotation" name="屏幕旋轉 ~~ Screen Rotation" />
   <item component="ComponentInfo{cn.samsclub.app/cn.samsclub.app.ui.SplashActivity}" drawable="sams_club" name="山姆会员商店 ~~ Sam's Club" />
+  <item component="ComponentInfo{com.weico.international/com.weico.international.activity.LogoActivity}" drawable="weibo" name="微博 ~~ Weibo" />
+  <item component="ComponentInfo{com.weico.international/com.weico.international.appicon_white}" drawable="weibo" name="微博 ~~ Weibo" />
+  <item component="ComponentInfo{com.sina.weibocare/com.weico.international.activity.LogoActivity}" drawable="weibo" name="微博 ~~ Weibo" />
   <item component="ComponentInfo{com.sina.weibo/com.sina.weibo.SplashActivity}" drawable="weibo" name="微博 ~~ Weibo" />
   <item component="ComponentInfo{com.xunmeng.pinduoduo/com.xunmeng.pinduoduo.ui.activity.MainFrameActivity}" drawable="pinduoduo" name="拼多多 ~~ Pinduoduo" />
   <item component="ComponentInfo{com.taobao.taobao/com.taobao.tao.Welcome}" drawable="taobao" name="淘宝 ~~ Taobao" />

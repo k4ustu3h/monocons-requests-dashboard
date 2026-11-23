@@ -3,6 +3,15 @@
   "description": "Apps supported in Monocons but with additional components linked in Lawnicons.",
   "links": [
     {
+      "id": "com.cinehd/com.cinehd.SplashAdActivity",
+      "existing_drawable": "just_player",
+      "name": "CineHD",
+      "components": [
+        "com.cinehd/com.cinehd.MainActivity",
+        "com.cinehd/com.cinehd.SplashAdActivity"
+      ]
+    },
+    {
       "id": "com.alensw.PicFolder/com.alensw.PicFolder.ValidatorActivity",
       "existing_drawable": "quickpic",
       "name": "Gallery",

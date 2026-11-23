@@ -5,6 +5,20 @@
   "total_batches": 7,
   "links": [
     {
+      "id": "com.myfiles.filefolder.filemanager/com.myfiles.filefolder.filemanager.Ui.activity.SplashActivityNew",
+      "existing_drawable": "generic_files",
+      "name": "My Files",
+      "installs": "1,000,000+",
+      "drawable": "my_files"
+    },
+    {
+      "id": "com.appgeneration.itunerfree/com.appgeneration.mytunerlib.ui.activities.SplashActivity",
+      "existing_drawable": "generic_fm_radio",
+      "name": "myTuner",
+      "installs": "10,000,000+",
+      "drawable": "mytuner"
+    },
+    {
       "id": "net.metapps.naturesounds/net.metapps.relaxsounds.SplashActivity",
       "existing_drawable": "apple_music",
       "name": "Nature Sounds",
@@ -201,13 +215,6 @@
       "name": "PrinterShare"
     },
     {
-      "id": "app.lonecloud.prism/app.lonecloud.prism.activities.MainActivity",
-      "existing_drawable": "prism",
-      "name": "Prism",
-      "installs": "5+",
-      "drawable": "prism"
-    },
-    {
       "id": "com.privateinternetaccess.android/com.kape.vpn.MainActivity",
       "existing_drawable": "pia",
       "name": "Private Internet Access VPN",
@@ -304,11 +311,6 @@
       "name": "Screen Recorder",
       "installs": "100,000,000+",
       "drawable": "screen_recorder"
-    },
-    {
-      "id": "ss.colytitse.setappfull/ss.colytitse.setappfull.MainActivity",
-      "existing_drawable": "generic_shell",
-      "name": "SetAppFull"
     }
   ]
 }

@@ -141,6 +141,13 @@
       "drawable": "hxmidi_tools"
     },
     {
+      "id": "br.com.brainweb.ifood/br.com.brainweb.ifood.AppIconClub",
+      "existing_drawable": "ifood",
+      "name": "iFood",
+      "installs": "100,000,000+",
+      "drawable": "ifood"
+    },
+    {
       "id": "imagetopdf.pdfmaker.pdfconverter.pdfreader/imagetopdf.pdfmaker.pdfconverter.pdfreader.ui.I2SplashActivity",
       "existing_drawable": "generic_pdf_file",
       "name": "Image to PDF",
@@ -167,6 +174,13 @@
       "name": "Infinite Minesweeper",
       "installs": "1,000,000+",
       "drawable": "infinite_minesweeper"
+    },
+    {
+      "id": "com.innbucks.customer/com.innbucks.customer.MainActivity",
+      "existing_drawable": "british_council_englishscore",
+      "name": "InnBucks",
+      "installs": "500,000+",
+      "drawable": "innbucks"
     },
     {
       "id": "com.zionhuang.music.debug/com.zionhuang.music.MainActivity",
@@ -299,16 +313,6 @@
       "name": "Liquid Dialer",
       "installs": "100,000+",
       "drawable": "liquid_dialer"
-    },
-    {
-      "id": "com.cvc953.localplayer/com.cvc953.localplayer.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "Local Player"
-    },
-    {
-      "id": "com.op.lspdoze/com.op.lspdoze.ui.MainActivity",
-      "existing_drawable": "generic_shell",
-      "name": "LSPDoze"
     }
   ]
 }

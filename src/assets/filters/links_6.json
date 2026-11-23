@@ -5,6 +5,11 @@
   "total_batches": 7,
   "links": [
     {
+      "id": "ss.colytitse.setappfull/ss.colytitse.setappfull.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "SetAppFull"
+    },
+    {
       "id": "org.ShuzaGramV2.com.web/org.telegram.messenger.DefaultIcon",
       "existing_drawable": "telegram",
       "name": "ShuzaGram"
@@ -324,13 +329,6 @@
       "id": "com.vivo.notes/com.android.notes.Notes",
       "existing_drawable": "generic_notes",
       "name": "vivo Notes"
-    },
-    {
-      "id": "com.raytechnoto.glab.voicerecorder/com.google.android.archive.ReactivateActivity",
-      "existing_drawable": "generic_microphone",
-      "name": "Voice Recorder",
-      "installs": "5,000,000+",
-      "drawable": "voice_recorder"
     }
   ]
 }

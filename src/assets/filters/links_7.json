@@ -5,6 +5,13 @@
   "total_batches": 7,
   "links": [
     {
+      "id": "com.raytechnoto.glab.voicerecorder/com.google.android.archive.ReactivateActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "Voice Recorder",
+      "installs": "5,000,000+",
+      "drawable": "voice_recorder"
+    },
+    {
       "id": "com.prometheusinteractive.voice_launcher/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
       "existing_drawable": "generic_microphone",
       "name": "Voice Search",
@@ -138,11 +145,6 @@
       "id": "com.pic.catcher/com.pic.catcher.ui.MainActivity",
       "existing_drawable": "generic_shell",
       "name": "\u56fe\u7247\u6355\u624b ~~ Pic Catcher"
-    },
-    {
-      "id": "com.sina.weibocare/com.weico.international.activity.LogoActivity",
-      "existing_drawable": "weibo",
-      "name": "\u5fae\u535a ~~ Weibo"
     },
     {
       "id": "com.sina.weibolite/com.sina.weibolite.appicon_white",
