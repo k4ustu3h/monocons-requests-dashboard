@@ -320,6 +320,7 @@ const App = {
     contributionActive: false,
     contribution: [],
     contributionOverrides: {},
+    homeScreensData: [],
     existingSvgs: new Map(),
     setsStats: {},
     domainStats: {},
@@ -330,7 +331,6 @@ const App = {
     activeTab: 'requests',
     screensData: {},
     screenSort: 'req-desc',
-    homeScreensData: [],
   },
 
   dom: {
@@ -2676,8 +2676,12 @@ const Data = {
         App.state.contributionActive = true;
       } else if (page === 'icon-review') {
         App.state.iconReviewActive = true;
-      } else if (page === 'home-screens') {
-        App.state.homeScreensActive = true;
+      }
+    }
+    if (params.has('tab')) {
+      const t = params.get('tab');
+      if (t === 'requests' || t === 'homescreens') {
+        App.state.activeTab = t;
       }
     }
   },
@@ -2708,11 +2712,12 @@ const Data = {
       params.set('page', 'contribution-plan');
     } else if (App.state.iconReviewActive) {
       params.set('page', 'icon-review');
-    } else if (App.state.homeScreensActive) {
-      params.set('page', 'home-screens');
     } else {
       params.delete('page');
     }
+
+    if (s.activeTab !== 'requests') params.set('tab', s.activeTab);
+    else params.delete('tab');
 
     const queryString = params.toString();
     const newUrl = queryString
@@ -2824,6 +2829,17 @@ const UI = {
 
   handleEvents() {
 
+    document.querySelectorAll('#mainTabs .tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        App.state.activeTab = tab.dataset.tab;
+        document.querySelectorAll('#mainTabs .tab').forEach(t =>
+          t.classList.toggle('active', t === tab)
+        );
+        this.render();
+        Data.syncUrlState();
+      });
+    });
+
     document.getElementById('toolsContribution')?.addEventListener('click', () => {
       App.state.contributionActive = true;
       this.render();
@@ -2838,12 +2854,6 @@ const UI = {
 
     document.getElementById('toolsLowQuality')?.addEventListener('click', () => {
       App.state.lowQualityActive = true;
-      this.render();
-      Data.syncUrlState();
-    });
-
-    document.getElementById('toolsHomeScreens')?.addEventListener('click', () => {
-      App.state.activeTab = 'homescreens';
       this.render();
       Data.syncUrlState();
     });
@@ -3771,8 +3781,7 @@ const UI = {
       return;
     }
 
-    if (App.state.homeScreensActive) {
-      document.getElementById('sectionTitle')?.classList.add('is-hidden');
+    if (App.state.activeTab === 'homescreens') {
       this.renderHomeScreens();
       return;
     }
@@ -3828,10 +3837,9 @@ const UI = {
     this.updateHeader();
     this.renderIconLibrary();
 
-    const sectionTitle = document.getElementById('sectionTitle');
-    if (sectionTitle) {
-      const total = s.currentData.length;
-      sectionTitle.innerHTML = `Community requests <span style="color: var(--on-surface-variant); margin-left: var(--space-xs)">${Utils.compactNumber(total)}</span>`;
+    const requestsCount = document.getElementById('requestsCount');
+    if (requestsCount) {
+      requestsCount.textContent = Utils.compactNumber(s.currentData.length);
     }
 
     const copyMatchesBtn = document.getElementById('copyDynamicMatchesBtn');
@@ -4289,6 +4297,7 @@ layoutMasonry() {
 
   renderHomeScreens() {
     App.dom.container.innerHTML = '';
+
     const entries = [...(App.state.homeScreensData || [])].reverse();
     if (!entries || entries.length === 0) {
       App.dom.container.innerHTML = '<div class="empty-state"><h3>No home screens yet</h3><p>Submissions will appear here.</p></div>';
