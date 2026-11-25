@@ -2801,6 +2801,17 @@ const UI = {
     { value: 'easy-asc', label: 'Hardest' },
   ],
 
+  syncTabState() {
+    const activeTab = App.state.activeTab === 'screens'
+      ? 'requests'
+      : App.state.activeTab;
+
+    document.querySelectorAll('#mainTabs .tab').forEach((tab) => {
+      const el = /** @type HTMLElement */ (tab);
+      el.classList.toggle('active', el.dataset.tab === activeTab);
+    });
+  },
+
   init() {
     if (App.state.regexMode) {
       App.dom.regexBtn.classList.add('active');
@@ -2853,6 +2864,7 @@ const UI = {
     this.initObserver();
     this.initRegexAutocomplete();
     this.handleEvents();
+    this.syncTabState();
     this.render();
   },
 
@@ -2868,9 +2880,7 @@ const UI = {
           App.dom.viewLabel.textContent = 'Table';
         }
         
-        document.querySelectorAll('#mainTabs .tab').forEach(t =>
-          t.classList.toggle('active', t === tab)
-        );
+        this.syncTabState();
         this.render();
         Data.syncUrlState();
       });
