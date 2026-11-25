@@ -5,20 +5,6 @@
   "total_batches": 7,
   "links": [
     {
-      "id": "com.myfiles.filefolder.filemanager/com.myfiles.filefolder.filemanager.Ui.activity.SplashActivityNew",
-      "existing_drawable": "generic_files",
-      "name": "My Files",
-      "installs": "1,000,000+",
-      "drawable": "my_files"
-    },
-    {
-      "id": "com.appgeneration.itunerfree/com.appgeneration.mytunerlib.ui.activities.SplashActivity",
-      "existing_drawable": "generic_fm_radio",
-      "name": "myTuner",
-      "installs": "10,000,000+",
-      "drawable": "mytuner"
-    },
-    {
       "id": "net.metapps.naturesounds/net.metapps.relaxsounds.SplashActivity",
       "existing_drawable": "apple_music",
       "name": "Nature Sounds",
@@ -50,9 +36,11 @@
       "name": "NexusKeet"
     },
     {
-      "id": "xyz.nextalone.nnngram/org.telegram.messenger.OFFICIAL",
-      "existing_drawable": "nullgram",
-      "name": "NMM File Manager"
+      "id": "org.bible.nltbible.newlivingtranslation/org.igvi.bible.MainActivity",
+      "existing_drawable": "generic_bible",
+      "name": "NLT Bible",
+      "installs": "100,000+",
+      "drawable": "nlt_bible"
     },
     {
       "id": "com.droidheat.musicplayer/com.droidheat.musicplayer.ui.activities.SplashActivity",
@@ -83,6 +71,11 @@
       "drawable": "nothing_dialer"
     },
     {
+      "id": "sr.teslacoilsw.launcher.prime/sr.teslacoilsw.launcher.prime.HomeScreen",
+      "existing_drawable": "nova_launcher",
+      "name": "Nova Launcher"
+    },
+    {
       "id": "cn.nubia.myfile/zte.com.cn.filer.FileMgrActivity",
       "existing_drawable": "generic_files",
       "name": "Nubia File Manager"
@@ -91,6 +84,20 @@
       "id": "tz.co.wadau.nyimbozakristo/tz.co.wadau.nyimbozakristo.SplashScreenActivity",
       "existing_drawable": "apple_music",
       "name": "Nyimbo za Kristo"
+    },
+    {
+      "id": "org.eobdfacile.android/org.eobdfacile.android.APG",
+      "existing_drawable": "generic_engine",
+      "name": "OBD2 Car Scanner",
+      "installs": "10,000,000+",
+      "drawable": "obd2_car_scanner"
+    },
+    {
+      "id": "ai.metaverselabs.obdandroid/ai.metaverselabs.obdandroid.features.splash.SplashActivity",
+      "existing_drawable": "generic_engine",
+      "name": "OBD2 Scanner",
+      "installs": "5,000,000+",
+      "drawable": "obd2_scanner"
     },
     {
       "id": "com.mp3player.musicplayer.offlinemusicplayer.mp3music/com.mp3player.musicplayer.offlinemusicplayer.mp3music.newUI.presentation.activities.EntranceActivity",
@@ -304,13 +311,6 @@
       "id": "com.actionlauncher.pixelshortcuts/pixelshortcuts.loaders.SamsungHomeLoader",
       "existing_drawable": "digital_wellbeing",
       "name": "Samsung Home"
-    },
-    {
-      "id": "recorder.screenrecorder.videoeditor/com.recorder.screenrecorder.home.splash.pre.PreSplashActivity",
-      "existing_drawable": "screen_recorder",
-      "name": "Screen Recorder",
-      "installs": "100,000,000+",
-      "drawable": "screen_recorder"
     }
   ]
 }

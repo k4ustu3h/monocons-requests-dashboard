@@ -182,6 +182,18 @@
       "drawable": "music_player"
     },
     {
+      "id": "com.teslacoilsw.launcher.prime/android.app.AppDetailsActivity",
+      "existing_drawable": "nova_launcher",
+      "name": "Nova Launcher Prime",
+      "components": [
+        "com.teslacoilsw.launcher.prime/android.app.AppDetailsActivity",
+        "com.teslacoilsw.launcher.prime/com.teslacoilsw.launcher.preferences.SettingsActivity",
+        "com.teslacoilsw.launcher.prime/com.teslacoilsw.launcher.prime.NovaLauncherPrimeActivity"
+      ],
+      "installs": "5,000,000+",
+      "drawable": "nova_launcher_prime"
+    },
+    {
       "id": "com.opera.browser.beta/com.opera.Launcher5",
       "existing_drawable": "opera_browser",
       "name": "Opera Beta",
@@ -235,15 +247,6 @@
       ],
       "installs": "50,000,000+",
       "drawable": "calculator_lock"
-    },
-    {
-      "id": "com.ovz.russcanner/carScannerXamarinForms.Droid.MainActivity",
-      "existing_drawable": "generic_engine",
-      "name": "Car Scanner",
-      "components": [
-        "com.ovz.russcanner/carScannerXamarinForms.Droid.MainActivity",
-        "com.ovz.russcanner/crc64a67336b41654b146.MainActivity"
-      ]
     },
     {
       "id": "com.github.lamarios.clipious/com.github.lamarios.clipious.MainActivity",
@@ -304,15 +307,6 @@
       ],
       "installs": "10,000,000+",
       "drawable": "fpt_play"
-    },
-    {
-      "id": "org.onekash.kashcal/org.onekash.kashcal.MainActivitySupporter",
-      "existing_drawable": "kashcal",
-      "name": "KashCal Supporter",
-      "components": [
-        "org.onekash.kashcal/org.onekash.kashcal.MainActivitySupporter",
-        "org.onekash.kashcal/org.onekash.kashcal.MainActivitySupporterCalendar"
-      ]
     },
     {
       "id": "in.co.metro.customerappmetro/in.co.metro.customerappmetro.DefaultIcon",
@@ -377,17 +371,6 @@
       ],
       "installs": "1,000,000+",
       "drawable": "playback"
-    },
-    {
-      "id": "com.tencent.mobileqq/com.tencent.mobileqq.activity.Alias2SplashActivity",
-      "existing_drawable": "qq",
-      "name": "QQ Hollow Icon",
-      "components": [
-        "com.tencent.mobileqq/com.tencent.mobileqq.activity.Alias2SplashActivity",
-        "com.tencent.mobileqq/com.tencent.mobileqq.activity.Alias4SplashActivity"
-      ],
-      "installs": "10,000,000+",
-      "drawable": "qq_hollow_icon"
     },
     {
       "id": "com.samsung.android.scan3d/com.google.android.apps.cameralite.capture.CaptureActivity",
@@ -514,6 +497,13 @@
       "drawable": "amazon_now"
     },
     {
+      "id": "org.bible.amplified.bible.app/org.igvi.bible.MainActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Amplified Bible",
+      "installs": "100,000+",
+      "drawable": "amplified_bible"
+    },
+    {
       "id": "com.htetznaing.adbotg/com.htetznaing.adbotg.MainActivity",
       "existing_drawable": "ladb",
       "name": "Android Debug Bridge",
@@ -524,6 +514,11 @@
       "id": "com.kamwithk.ankiconnectandroid/com.kamwithk.ankiconnectandroid.MainActivity",
       "existing_drawable": "ladb",
       "name": "Ankiconnect"
+    },
+    {
+      "id": "com.example.libusbAndroidTest/com.example.libusbAndroidTest.MainActivity",
+      "existing_drawable": "drivedroid",
+      "name": "Apple Dongle Volume Fixer"
     }
   ]
 }

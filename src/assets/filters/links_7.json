@@ -5,6 +5,16 @@
   "total_batches": 7,
   "links": [
     {
+      "id": "com.vivo.calculator/com.android.bbkcalculator.Calculator",
+      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
+      "name": "vivo Calculator"
+    },
+    {
+      "id": "com.vivo.notes/com.android.notes.Notes",
+      "existing_drawable": "generic_notes",
+      "name": "vivo Notes"
+    },
+    {
       "id": "com.raytechnoto.glab.voicerecorder/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "generic_microphone",
       "name": "Voice Recorder",
@@ -57,19 +67,9 @@
       "drawable": "word_to_pdf_converter"
     },
     {
-      "id": "com.sigseg.android.worldmap/com.sigseg.android.map.ImageViewerActivity",
-      "existing_drawable": "generic_earth",
-      "name": "WorldMap"
-    },
-    {
       "id": "me.teble.xposed.autodaily/me.teble.xposed.autodaily.activity.common.MainActivityAlias",
       "existing_drawable": "tasky",
       "name": "XAutoDaily"
-    },
-    {
-      "id": "com.tvremote.xiaomitvsmart/com.thomson9atvremote.MainActivity",
-      "existing_drawable": "android_tv_remote_service",
-      "name": "Xiaomi Mi Tv Remote"
     },
     {
       "id": "com.miui.weather2/com.miui.weather2.WeatherBaseScreen",
@@ -89,6 +89,13 @@
       "id": "de.yaacc/de.yaacc.browser.TabBrowserActivity",
       "existing_drawable": "generic_player",
       "name": "YAACC"
+    },
+    {
+      "id": "yoruba.holy.bible.AOVGSFFIOTUFGGBTLU/king.james.bible.android.activity.LaunchActivity",
+      "existing_drawable": "generic_bible",
+      "name": "Yoruba Bible",
+      "installs": "1,000,000+",
+      "drawable": "yoruba_bible"
     },
     {
       "id": "anddea.yrf.tube.music/com.google.android.apps.youtube.music.activities.MusicActivity",

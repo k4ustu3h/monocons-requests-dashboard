@@ -5,18 +5,6 @@
   "total_batches": 7,
   "links": [
     {
-      "id": "com.exteraless.app/org.telegram.messenger.TelegramIcon",
-      "existing_drawable": "telegram",
-      "name": "exteraless"
-    },
-    {
-      "id": "com.fairphone.android.fairbudsapp/com.fairphone.fairsound.ui.activity.MainActivity",
-      "existing_drawable": "generic_voice_recorder_waves",
-      "name": "Fairbuds",
-      "installs": "10,000+",
-      "drawable": "fairbuds"
-    },
-    {
       "id": "com.blogspot.novalabsandroid.fakecallerid/com.blogspot.novalabsandroid.fakecallerid.ConfigCallActivity",
       "existing_drawable": "generic_dialer",
       "name": "Fake Call",
@@ -64,11 +52,6 @@
       "name": "FlexCalc",
       "installs": "1,000,000+",
       "drawable": "flexcalc"
-    },
-    {
-      "id": "com.eurekateam.fmradio/com.eurekateam.fmradio.MainActivity",
-      "existing_drawable": "generic_fm_radio",
-      "name": "FM Radio"
     },
     {
       "id": "com.freemusic.offline.bus/com.project.gugu.music.ui.activity.SplashActivity",
@@ -141,11 +124,11 @@
       "drawable": "hxmidi_tools"
     },
     {
-      "id": "br.com.brainweb.ifood/br.com.brainweb.ifood.AppIconClub",
+      "id": "br.com.ifood.benefits/br.com.ifood.benefits.kvwjpljhhdqnv",
       "existing_drawable": "ifood",
-      "name": "iFood",
-      "installs": "100,000,000+",
-      "drawable": "ifood"
+      "name": "iFood Benef\u00edcios",
+      "installs": "5,000,000+",
+      "drawable": "br_com_ifood_benefits"
     },
     {
       "id": "imagetopdf.pdfmaker.pdfconverter.pdfreader/imagetopdf.pdfmaker.pdfconverter.pdfreader.ui.I2SplashActivity",
@@ -167,6 +150,20 @@
       "name": "Image Toolbox",
       "installs": "500,000+",
       "drawable": "image_toolbox"
+    },
+    {
+      "id": "com.pnn.obdcardoctor/com.pnn.obdcardoctor_full.gui.activity.SplashActivity",
+      "existing_drawable": "generic_engine",
+      "name": "inCarDoc",
+      "installs": "5,000,000+",
+      "drawable": "incardoc"
+    },
+    {
+      "id": "com.pnn.obdcardoctor_full/com.pnn.obdcardoctor_full.presentation.MainScreen",
+      "existing_drawable": "generic_engine_pro",
+      "name": "inCarDoc Pro",
+      "installs": "100,000+",
+      "drawable": "incardoc_pro"
     },
     {
       "id": "com.grykuby.minesweeper/com.google.firebase.MessagingUnityPlayerActivity",
@@ -313,6 +310,11 @@
       "name": "Liquid Dialer",
       "installs": "100,000+",
       "drawable": "liquid_dialer"
+    },
+    {
+      "id": "com.cvc953.localplayer/com.cvc953.localplayer.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "Local Player"
     }
   ]
 }
