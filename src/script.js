@@ -245,7 +245,7 @@ const COUNTRIES = {
   "tl": "Timor-Leste",
   "tm": "Turkmenistan",
   "tn": "Tunisia",
-  "tr": "Turkiye",
+  "tr": "Türkiye",
   "tt": "Trinidad and Tobago",
   "tw": "Taiwan",
   "tz": "Tanzania",
@@ -351,6 +351,7 @@ const App = {
     renderedIds: new Set(),
     currentData: [],
     existingIcons: [],
+    lawniconsIcons: [],
     linksBatchIndex: 0,
     linksTotalBatches: 0,
     linksLoading: false,
@@ -710,17 +711,18 @@ const Templates = {
     const trendingDelta = App.state.trendingDeltas[app.componentName];
     const reqValue = App.state.setsStats[pkg] || app.requestCount;
     const isSet = App.state.setsStats[pkg] !== undefined;
-    const linkedCount = app.components ? app.components.length : 1;
+    const comps = app.components;
+    const linkedCount = comps ? comps.length : 1;
     const displayReq = app.isLinkOnly
       ? `<span title="${linkedCount} linked component${linkedCount === 1 ? '' : 's'}.">${linkedCount.toLocaleString()}</span>`
       : (isSet
         ? `<span title="Combined requests for this package.">${reqValue.toLocaleString()}S</span>`
         : reqValue.toLocaleString());
 
-    const extraCount = app.components ? app.components.length - 1 : 0;
+    const extraCount = comps ? comps.length - 1 : 0;
     const extraText = extraCount > 0 ? ` (+${extraCount} more)` : '';
-    const subTitle = extraCount > 0
-      ? `${idPrefix}${id}\n\nComponents (${app.components.length}):\n${app.components.join('\n')}`
+    const subTitle = comps && comps.length > 1
+      ? `${idPrefix}${id}\n\nComponents (${comps.length}):\n${comps.join('\n')}`
       : `${idPrefix}${id}`;
 
     return `
@@ -738,13 +740,13 @@ const Templates = {
         <div class="name-col">
           <div class="name-content">
             ${existingSvgHtml}
-          <div class="name-details">
+            <div class="name-details">
               <div class="name-row">
-                  ${tagHtml}
-                  <span class="${appNameClass}">${name}</span>
+                ${tagHtml}
+                <span class="${appNameClass}">${name}</span>
               </div>
               <span class="item-sub" title="${subTitle}">ID: ${idPrefix}${id}${extraText}</span>
-          </div>
+            </div>
           </div>
         </div>
         <div class="col req">${displayReq}${
@@ -826,7 +828,7 @@ const Templates = {
     return `
       <div class="grid-card ${
       isSelected ? 'selected' : ''
-    }" data-id="${id}" title="${label}\nRequests: ${app.requestCount ?? 0}\nImpact: ${app.priority || '—'}\nPoints: ${App.state.prioritiesData?.[id]?.sum ?? '—'}\nInstalls: ${app.installs ? new Intl.NumberFormat('en', { notation: 'compact' }).format(parseInt(app.installs.replace(/[,+]/g, ''))) + '+' : '—'}\nFirst time: ${Utils.formatDate(app.firstAppearance)}"
+    }" data-id="${id}" title="${label}\nRequests: ${app.requestCount ?? 0}\nImpact: ${app.priority || '—'}\nInstalls: ${app.installs ? new Intl.NumberFormat('en', { notation: 'compact' }).format(parseInt(app.installs.replace(/[,+]/g, ''))) + '+' : '—'}\nFirst time: ${Utils.formatDate(app.firstAppearance)}"
         tabindex="0" role="checkbox" aria-checked="${isSelected}">
         ${contentHtml}
         <div class="grid-overlay-tags">${tagHtml}</div>
@@ -1298,8 +1300,9 @@ const Components = {
     /**
      * @param {string} text
      * @param {"info" | "success" | "error"} [type]
+     * @param {{ duration?: number, action?: () => void }} [opts]
      */
-    show(text, type = 'info') {
+    show(text, type = 'info', opts = {}) {
       const key = `${text}-${type}`;
       if (this.activeToasts.has(key)) return;
 
@@ -1317,10 +1320,23 @@ const Components = {
       if (type === 'error') iconSvg = `<svg><use href="#ic-error"/></svg>`;
       if (type === 'success') iconSvg = `<svg><use href="#ic-download"/></svg>`;
 
-      el.innerHTML = `${iconSvg} ${text}`;
+      if (opts.action) {
+        const link = document.createElement('span');
+        link.className = 'link';
+        link.textContent = text;
+        link.addEventListener('click', () => {
+          opts.action?.();
+          this.remove(el);
+        });
+        el.innerHTML = iconSvg;
+        el.appendChild(link);
+      } else {
+        el.innerHTML = `${iconSvg} ${text}`;
+      }
+
       App.dom.toastBox.appendChild(el);
 
-      setTimeout(() => this.remove(el), 2500);
+      setTimeout(() => this.remove(el), opts.duration ?? 2500);
     },
 
     /**
@@ -1687,6 +1703,7 @@ const Actions = {
         const pkg = cmp.split('/')[0];
         const pkgPrefix = `${pkg}/`;
         
+        /** @type {Icon[]} */
         const matchedIcons = [];
         const targetDrawable = App.state.existingSvgs?.get(cmp) ||
           App.state.existingIcons.find(icon => icon.component.startsWith(pkgPrefix))?.drawable ||
@@ -1700,7 +1717,7 @@ const Actions = {
               matchedIcons.push(icon);
             }
           });
-          App.state.lawniconsIcons.forEach(icon => {
+          (App.state.lawniconsIcons || []).forEach(icon => {
             if (compsSet.has(icon.component) || (icon.component.startsWith(pkgPrefix) && (icon.drawable === targetDrawable || !icon.drawable))) {
               matchedIcons.push(icon);
             }
@@ -1709,7 +1726,7 @@ const Actions = {
           App.state.existingIcons.forEach(icon => {
             if (icon.component.startsWith(pkgPrefix)) matchedIcons.push(icon);
           });
-          App.state.lawniconsIcons.forEach(icon => {
+          (App.state.lawniconsIcons || []).forEach(icon => {
             if (icon.component.startsWith(pkgPrefix)) matchedIcons.push(icon);
           });
         }
@@ -1728,7 +1745,7 @@ const Actions = {
             app.components.forEach(c => {
               if (!globalSeen.has(c)) {
                 globalSeen.add(c);
-                const lawnIcon = App.state.lawniconsIcons.find(i => i.component === c);
+                const lawnIcon = (App.state.lawniconsIcons || []).find(i => i.component === c);
                 const rawName = lawnIcon?.name || app.label;
                 const name = rawName.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
                 xml += `    <item component="ComponentInfo{${c}}" drawable="${finalDrawable}" name="${name}" />\n`;
@@ -2013,14 +2030,12 @@ const Data = {
         setsStats,
         domainStats,
         activityStats,
-        prioritiesData,
         ...filterObjects
       ] = await Promise.all([
         this.fetchJson(CONFIG.data.endpoint),
         this.fetchJson(CONFIG.data.setsStatsPath, {}),
         this.fetchJson(CONFIG.data.domainStatsPath, {}),
         this.fetchJson(CONFIG.data.activityStatsPath, []),
-        this.fetchJson(CONFIG.data.prioritiesPath, {}),
         ...CONFIG.data.filters.map((id) => this.fetchFilterData(id)),
       ]);
 
@@ -2029,7 +2044,6 @@ const Data = {
       App.state.domainStats = domainStats;
       App.state.activityStats = activityStats;
       App.state.lastUpdate = json.lastUpdate;
-      App.state.prioritiesData = prioritiesData;
 
       App.state.idMap = new Map();
       App.data.forEach((app) => App.state.idMap.set(app.componentName, app));
@@ -2131,6 +2145,23 @@ const Data = {
       return;
     }
 
+    this.loadUrlState();
+
+    Promise.all([
+      (async () => {
+        App.state.lowQualityData = await this.fetchJson(
+          'assets/qa_issues/review_issues.json',
+          [],
+        );
+        UI.updateLowQualityBadge();
+      })(),
+      this.loadAppfilterXml(),
+    ]).finally(() => {
+      UI.init();
+      UI.updateLowQualityBadge();
+    });
+  },
+
   /**
    * @param {Filter[]} filterObjects
    * @param {Map<string, FilterMetadata>} filterMetadata
@@ -2158,7 +2189,8 @@ const Data = {
             App.state.existingSvgs.set(appId, item.existing_drawable);
           }
           if (id === 'links') {
-            const comps = (typeof item === 'object' && Array.isArray(item.components)) ? item.components : [appId];
+            /** @type {string[]} */
+        const comps = (typeof item === 'object' && Array.isArray(item.components)) ? item.components : [appId];
             if (!App.state.idMap.has(appId)) {
               const label = (typeof item === 'object' && item.name) || appId.split('/')[0];
               const drawable = (typeof item === 'object' && (item.drawable || item.existing_drawable)) || 'unknown';
@@ -2170,7 +2202,7 @@ const Data = {
                 requestCount: 0,
                 firstAppearance: 0,
                 lastRequested: 0,
-                installs: (typeof item === 'object' && item.installs) || '—',
+                installs: (typeof item === 'object' && item.installs) || undefined,
                 isLinkOnly: true,
                 components: comps,
               };
@@ -2213,6 +2245,7 @@ const Data = {
         const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
         const items = xmlDoc.querySelectorAll('item');
 
+        /** @type {Icon[]} */
         const parsedIcons = [];
         items.forEach((item) => {
           const component = item.getAttribute('component') || '';
@@ -2277,7 +2310,6 @@ const Data = {
       compSet.add(cmp);
 
       if (tags.has('links')) {
-        const existingComps = new Set(existingIcons.map((e) => e.component));
         lawniconsIcons.forEach((icon) => {
           if (icon.component.startsWith(pkgPrefix)) {
             if ((icon.drawable === targetDrawable || !icon.drawable) && !existingComps.has(icon.component)) {
@@ -2374,6 +2406,7 @@ const Data = {
         return null;
       }
 
+      /** @type {AppEntry[]} */
       const newApps = [];
       items.forEach((item) => {
         const appId = typeof item === 'string' ? item : item.id;
@@ -2382,6 +2415,7 @@ const Data = {
           if (!App.state.existingSvgs) App.state.existingSvgs = new Map();
           App.state.existingSvgs.set(appId, item.existing_drawable);
         }
+        /** @type {string[]} */
         const comps = (typeof item === 'object' && Array.isArray(item.components)) ? item.components : [appId];
         if (!App.state.idMap.has(appId)) {
           const label = (typeof item === 'object' && item.name) || appId.split('/')[0];
@@ -2394,7 +2428,7 @@ const Data = {
             requestCount: 0,
             firstAppearance: 0,
             lastRequested: 0,
-            installs: (typeof item === 'object' && item.installs) || '—',
+            installs: (typeof item === 'object' && item.installs) || undefined,
             isLinkOnly: true,
             components: comps,
           };
@@ -2417,8 +2451,9 @@ const Data = {
             if (!App.state.existingSvgs) App.state.existingSvgs = new Map();
             App.state.existingSvgs.set(c, item.existing_drawable);
           }
-          if (!App.state.idMap.has(c)) {
-            App.state.idMap.set(c, App.state.idMap.get(appId));
+          const mappedApp = App.state.idMap.get(appId);
+          if (!App.state.idMap.has(c) && mappedApp) {
+            App.state.idMap.set(c, mappedApp);
           }
         });
       });
@@ -3991,12 +4026,12 @@ const UI = {
     const fragment = document.createDocumentFragment();
     const tempDiv = document.createElement('div');
 
-    if (!s.renderedIds) s.renderedIds = new Set();
+    const renderedIds = s.renderedIds || (s.renderedIds = new Set());
 
     batch.forEach((app) => {
       const id = app.componentName;
-      if (s.renderedIds.has(id)) return;
-      s.renderedIds.add(id);
+      if (renderedIds.has(id)) return;
+      renderedIds.add(id);
 
       const isSelected = s.selected.has(id);
       const existingDrawable = App.state.existingSvgs
@@ -5724,9 +5759,8 @@ const UI = {
       /** @type {HTMLCanvasElement | null} */ (
         document.getElementById('priorityPie')
       );
-    const card = document.getElementById('priorityCard');
     const tooltip = document.getElementById('priorityTooltip');
-    if (!canvas || !card || !tooltip) return;
+    if (!canvas || !tooltip) return;
 
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
@@ -5821,44 +5855,45 @@ const UI = {
     });
 
     const tooltipHtml = Templates.priorityTooltip(entries);
+    const hideTooltip = () => Components.Tooltip.hide(tooltip);
 
-    /**
-     * @param {number} left
-     * @param {number} top
-     */
-    const showTooltip = (left, top) => {
-      Components.Tooltip.show(tooltip, tooltipHtml, left, top, card);
-    };
+    // The tooltip is anchored to the pie, not to the cursor, so it doesn't jump
+    // between the right and left side while the pointer moves across the chart.
+    const showTooltip = () => {
+      if (tooltip.classList.contains('visible')) return;
 
-    canvas.onmousemove = (e) => {
+      Components.Tooltip.show(tooltip, tooltipHtml, 0, 0);
       const rect = canvas.getBoundingClientRect();
-      const x = e.clientX - rect.left - size / 2;
-      const y = e.clientY - rect.top - size / 2;
-      if (Math.sqrt(x * x + y * y) > size / 2 - 1) {
-        Components.Tooltip.hide(tooltip);
-        return;
+      const width = tooltip.offsetWidth;
+      const height = tooltip.offsetHeight;
+
+      let left = rect.right + 4;
+      if (left + width > innerWidth - 10) {
+        left = rect.left - width - 4;
       }
+      left = Math.max(10, Math.min(left, innerWidth - width - 10));
 
-      const cardRect = card.getBoundingClientRect();
-      showTooltip(e.clientX - cardRect.left + 12, e.clientY - cardRect.top);
-    };
-
-    canvas.onmouseleave = () => Components.Tooltip.hide(tooltip);
-
-    canvas.onfocus = () => {
-      const canvasRect = canvas.getBoundingClientRect();
-      const cardRect = card.getBoundingClientRect();
-      showTooltip(
-        canvasRect.right - cardRect.left + 4,
-        canvasRect.top - cardRect.top + canvasRect.height / 2,
+      // .tooltip is vertically centered on its top coordinate.
+      const top = Math.max(
+        10 + height / 2,
+        Math.min(rect.top + rect.height / 2, innerHeight - 10 - height / 2),
       );
+      tooltip.style.left = `${left}px`;
+      tooltip.style.top = `${top}px`;
     };
 
-    canvas.onblur = () => Components.Tooltip.hide(tooltip);
-
+    canvas.onmouseenter = showTooltip;
+    canvas.onmouseleave = hideTooltip;
+    canvas.onfocus = showTooltip;
+    canvas.onblur = hideTooltip;
     canvas.onkeydown = (e) => {
-      if (e.key === 'Escape') Components.Tooltip.hide(tooltip);
+      if (e.key === 'Escape') hideTooltip();
     };
+
+    // Fixed positioning keeps the tooltip out of the scrollable cards row,
+    // but its anchor can move when the page is scrolled or resized.
+    addEventListener('scroll', hideTooltip, true);
+    addEventListener('resize', hideTooltip);
   },
 
   renderActivityCard() {
@@ -6242,14 +6277,14 @@ const UI = {
             grid.innerHTML = matches.map((icon) =>
               Templates.libraryIconCard(icon)
             ).join('');
-            container.classList.add('expanded'); // <-- Добавляем класс
+            container.classList.add('expanded');
             expandBtn.querySelector('.copy-count').textContent = 'Show less';
             expandBtn.title = 'Show less';
           } else {
             grid.innerHTML = matches.slice(0, 20).map((icon) =>
               Templates.libraryIconCard(icon)
             ).join('');
-            container.classList.remove('expanded'); // <-- Убираем класс
+            container.classList.remove('expanded');
             expandBtn.querySelector('.copy-count').textContent = 'Show all';
             expandBtn.title = `Show all ${matches.length} icons`;
           }
