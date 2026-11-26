@@ -720,6 +720,7 @@ button.input-icon.active {
 }
 
 #priorityTooltip {
+	position: fixed;
 	background: var(--surface-container-highest);
 }
 
