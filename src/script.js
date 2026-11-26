@@ -355,6 +355,8 @@ const App = {
     linksBatchIndex: 0,
     linksTotalBatches: 0,
     linksLoading: false,
+    /** Memoized icontool commands for dynamic package matches. */
+    _dynamicMatchesCache: null,
 
     actionMode: 'new',
     lowQualityActive: false,
@@ -2267,6 +2269,7 @@ const Data = {
 
     App.state.existingIcons = existingIcons;
     App.state.lawniconsIcons = lawniconsIcons;
+    App.state._dynamicMatchesCache = null;
 
     if (App.state.existingIcons.length === 0) return;
 
@@ -2486,14 +2489,22 @@ const Data = {
   },
 
   async getDynamicMatches() {
+    // Reuse App.data: the old implementation re-fetched the 11 MB requests.json
+    // on every render, even though it is already loaded during init().
+    const cached = App.state._dynamicMatchesCache;
+    if (cached !== null) return cached;
+    if (App.data.length === 0) return [];
+
     const excluded = await this.fetchJson(CONFIG.data.excludedPackagesPath, {});
     const dynamicPkgs = new Set(excluded.dynamic || []);
-    if (dynamicPkgs.size === 0) return [];
+    if (dynamicPkgs.size === 0) {
+      // Do not memoize a transient fetch failure as a permanent empty result.
+      if (!Array.isArray(excluded.dynamic)) return [];
+      App.state._dynamicMatchesCache = [];
+      return App.state._dynamicMatchesCache;
+    }
 
-    const data = await this.fetchJson(CONFIG.data.endpoint, {});
-    const allRequests = data.apps || [];
-
-    const openRequests = allRequests.filter(app => {
+    const openRequests = App.data.filter(app => {
       const comp = app.componentName || '';
       // Skip malformed componentNames (non-ASCII, no slash, etc.)
       if (!/^[a-zA-Z0-9._]+\/[a-zA-Z0-9._$]+$/.test(comp)) return false;
@@ -2501,7 +2512,10 @@ const Data = {
       return dynamicPkgs.has(pkg);
     });
 
-    if (openRequests.length === 0) return [];
+    if (openRequests.length === 0) {
+      App.state._dynamicMatchesCache = [];
+      return App.state._dynamicMatchesCache;
+    }
 
     let appfilterIcons = App.state.existingIcons;
     if (!appfilterIcons || appfilterIcons.length === 0) {
@@ -2525,20 +2539,28 @@ const Data = {
       }
     }
 
+    // Index by package prefix once instead of scanning all icons per request.
+    /** @type {Map<string, Icon>} */
+    const iconsByPkg = new Map();
+    for (const icon of appfilterIcons) {
+      const slash = icon.component.indexOf('/');
+      if (slash === -1) continue;
+      const key = icon.component.slice(0, slash + 1);
+      if (!iconsByPkg.has(key)) iconsByPkg.set(key, icon);
+    }
+
     const commands = [];
     for (const app of openRequests) {
-      const existing = appfilterIcons.find(i => i.component.startsWith(app.componentName.split('/')[0] + '/'));
-      
+      const existing = iconsByPkg.get(app.componentName.split('/')[0] + '/');
+
       const drawable = existing ? existing.drawable : (app.drawable || Utils.sanitizeDrawableName(app.label));
       const label = existing ? existing.name : app.label;
       const safeLabel = label.replace(/'/g, "'\\''");
-      
-      const comps = (app.components && app.components.length > 0) ? app.components : [app.componentName];
-      for (const comp of comps) {
-        commands.push(`python3 ./icontool.py link "${drawable}.svg" ${comp} '${safeLabel}'`);
-      }
+
+      commands.push(`python3 ./icontool.py link "${drawable}.svg" ${app.componentName} '${safeLabel}'`);
     }
 
+    App.state._dynamicMatchesCache = commands;
     return commands;
   },
 
