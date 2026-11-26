@@ -1,730 +1,732 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta
-      name="description"
-      content="Browse, sort, and filter Monocons icon requests. Plan contributions, view stats, and more."
-    />
-    <link rel="canonical" href="/" />
+		<meta
+			name="description"
+			content="Browse, sort, and filter Monocons icon requests. Plan contributions, view stats, and more."
+		/>
+		<link rel="canonical" href="/" />
 
-    <meta property="og:title" content="Monocons Dashboard" />
-    <meta
-      property="og:description"
-      content="Browse, sort, and filter Monocons icon requests. Plan contributions, view stats, and more."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="./favicon.svg" />
-    <meta property="og:url" content="/" />
+		<meta property="og:title" content="Monocons Dashboard" />
+		<meta
+			property="og:description"
+			content="Browse, sort, and filter Monocons icon requests. Plan contributions, view stats, and more."
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="./favicon.svg" />
+		<meta property="og:url" content="/" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Monocons Dashboard" />
-    <meta
-      name="twitter:description"
-      content="Browse, sort, and filter Monocons icon requests. Plan contributions, view stats, and more."
-    />
-    <meta name="twitter:image" content="./favicon.svg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Monocons Dashboard" />
+		<meta
+			name="twitter:description"
+			content="Browse, sort, and filter Monocons icon requests. Plan contributions, view stats, and more."
+		/>
+		<meta name="twitter:image" content="./favicon.svg" />
 
-    <title>Monocons Requests Dashboard</title>
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+		<title>Monocons Requests Dashboard</title>
+		<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
 
-  <body>
-    <div class="page">
-      <!-- HEADER -->
-      <header class="header">
-        <div class="header-left">
-          <a href="./" class="header-icon-link">
-            <img
-              src="./favicon.svg"
-              alt="Lawnicons Dashboard"
-              class="header-icon"
-            />
-          </a>
-          <div class="header-info">
-            <h1>Monocons Dashboard</h1>
-            <div id="headerCount" class="header-sub"></div>
-          </div>
-        </div>
-        <div class="header-right">
-          <div
-            class="input-wrapper"
-            id="search-wrapper"
-            title="Search"
-          >
-            <div class="input-icon">
-              <svg id="searchIcon">
-                <use href="#ic-search" />
-              </svg>
-            </div>
-            <input
-              id="searchInput"
-              placeholder="Search apps and IDs"
-              aria-describedby="searchHint"
-            />
-            <button
-              id="clearSearchBtn"
-              class="input-icon is-hidden"
-              title="Clear search"
-            >
-              <svg>
-                <use href="#ic-close" />
-              </svg>
-            </button>
-            <button
-              id="regexBtn"
-              class="input-icon"
-              title="Use regular expression"
-            >
-              <svg>
-                <use href="#ic-regex" />
-              </svg>
-            </button>
-            <div
-              id="searchHint"
-              class="search-hint is-hidden"
-              role="tooltip"
-            >
-              <div>
+	<body>
+		<div class="page">
+			<!-- HEADER -->
+			<header class="header">
+				<div class="header-left">
+					<a href="./" class="header-icon-link">
+						<img
+							src="./favicon.svg"
+							alt="Monocons Dashboard"
+							class="header-icon"
+						/>
+					</a>
+					<div class="header-info">
+						<h1>Monocons Dashboard</h1>
+						<div id="headerCount" class="header-sub"></div>
+					</div>
+				</div>
+				<div class="header-right">
+					<div
+						class="input-wrapper"
+						id="search-wrapper"
+						title="Search"
+					>
+						<div class="input-icon">
+							<svg id="searchIcon">
+								<use href="#ic-search" />
+							</svg>
+						</div>
+						<input
+							id="searchInput"
+							placeholder="Search apps and IDs"
+							aria-describedby="searchHint"
+						/>
+						<button
+							id="clearSearchBtn"
+							class="input-icon is-hidden"
+							title="Clear search"
+						>
+							<svg>
+								<use href="#ic-close" />
+							</svg>
+						</button>
+						<button
+							id="regexBtn"
+							class="input-icon"
+							title="Use regular expression"
+						>
+							<svg>
+								<use href="#ic-regex" />
+							</svg>
+						</button>
+						<div
+							id="searchHint"
+							class="search-hint is-hidden"
+							role="tooltip"
+						>
+							<div>
 								<strong>scr-1</strong> for requests from a
 								specific screen.
 							</div>
-              <div>
+							<div>
 								<strong>#1234</strong> for requests linked to a
 								supported issue.
 							</div>
-            </div>
-          </div>
-          <a
-            href="https://github.com/k4ustu3h/monocons-android"
-            class="header-link"
-            title="Monocons on GitHub"
-          >
-            <svg>
-              <use href="#ic-github"></use>
-            </svg>
-          </a>
-        </div>
-      </header>
+						</div>
+					</div>
+					<a
+						href="https://github.com/k4ustu3h/monocons-android"
+						class="header-link"
+						title="Monocons on GitHub"
+					>
+						<svg>
+							<use href="#ic-github"></use>
+						</svg>
+					</a>
+				</div>
+			</header>
 
-      <div class="cards-row">
-        <div id="mainCards" style="display: contents">
-          <div id="supportedCard" class="card">
-            <div class="card-header">
-              <span class="status-pill status-supported"
-              >Supported</span>
-              <span class="card-sub" id="supportedSub"></span>
-            </div>
-            <div class="card-sub" id="supportedDesc">
+			<div class="cards-row">
+				<div id="mainCards" style="display: contents">
+					<div id="supportedCard" class="card">
+						<div class="card-header">
+							<span class="status-pill status-supported"
+								>Supported</span
+							>
+							<span class="card-sub" id="supportedSub"></span>
+						</div>
+						<div class="card-sub" id="supportedDesc">
 							Requests from Monocons supporters get higher
 							priority.
 						</div>
-            <a
-              href="https://github.com/k4ustu3h/monocons-android#supporting"
-              target="_blank"
-              rel="noopener"
-              class="link"
-              id="supportedLink"
-            >Become a supporter</a>
-          </div>
+						<a
+							href="https://github.com/k4ustu3h/monocons-android#supporting"
+							target="_blank"
+							rel="noopener"
+							class="link"
+							id="supportedLink"
+							>Become a supporter</a
+						>
+					</div>
 
-          <div id="toolsCard" class="card">
-            <div class="card-header">
-              <span class="card-title">Tools</span>
-            </div>
-            <div class="tools-links">
-              <a href="#" id="toolsContribution" class="link"
-              ><span>Contribution plan</span>
+					<div id="toolsCard" class="card">
+						<div class="card-header">
+							<span class="card-title">Tools</span>
+						</div>
+						<div class="tools-links">
+							<a href="#" id="toolsContribution" class="link"
+								><span>Contribution plan</span>
 								<span
 									class="card-sub"
 									id="toolsContributionCount"
 								></span
 							></a>
-              <a href="#" id="toolsLowQuality" class="link"
-              ><span>Low quality icons</span>
+							<a href="#" id="toolsLowQuality" class="link"
+								><span>Low quality icons</span>
 								<span
 									class="card-sub"
 									id="toolsLowQualityCount"
 								></span
 							></a>
-            </div>
-          </div>
+						</div>
+					</div>
 
-          <div id="priorityCard" class="card">
-            <canvas
-              id="priorityPie"
-              tabindex="0"
-              role="img"
-              aria-label="Requests by priority"
-            ></canvas>
-            <div class="tooltip" id="priorityTooltip"></div>
-          </div>
+					<div id="priorityCard" class="card">
+						<canvas
+							id="priorityPie"
+							tabindex="0"
+							role="img"
+							aria-label="Requests by priority"
+						></canvas>
+						<div class="tooltip" id="priorityTooltip"></div>
+					</div>
 
-          <div id="activityCard" class="card">
-            <div class="card-header">
-              <span class="card-title">Activity</span>
-              <span class="card-sub" id="activitySub"
-              >new • done</span>
-            </div>
-            <div id="activityChart" class="domain-stats"></div>
-          </div>
+					<div id="activityCard" class="card">
+						<div class="card-header">
+							<span class="card-title">Activity</span>
+							<span class="card-sub" id="activitySub"
+								>new • done</span
+							>
+						</div>
+						<div id="activityChart" class="domain-stats"></div>
+					</div>
 
-          <div id="domainStatsCard" class="card">
-            <div class="card-header">
-              <span class="card-title">Top domains</span>
-              <span
-                title="Top domains: countries with the most requests overall."
-              >
-                <svg
-                  id="domainStatsMostRequested"
-                  class="active"
-                  data-action="domain-stats-mode"
-                  data-mode="requests"
-                >
-                  <use href="#ic-most-requested" />
-                </svg>
-              </span>
-              <span
-                title="Local impact: countries where the most requested apps matter most to locals."
-              >
-                <svg
-                  id="domainStatsLocalImpact"
-                  data-action="domain-stats-mode"
-                  data-mode="local"
-                >
-                  <use href="#ic-local-impact" />
-                </svg>
-              </span>
-              <span
-                title="Lowest coverage: countries with the largest request backlog."
-              >
-                <svg
-                  id="domainStatsLowestCoverage"
-                  data-action="domain-stats-mode"
-                  data-mode="coverage"
-                >
-                  <use href="#ic-lowest-coverage" />
-                </svg>
-              </span>
-            </div>
-            <div id="domainStats" class="domain-stats"></div>
-          </div>
-        </div>
-      </div>
+					<div id="domainStatsCard" class="card">
+						<div class="card-header">
+							<span class="card-title">Top domains</span>
+							<span
+								title="Top domains: countries with the most requests overall."
+							>
+								<svg
+									id="domainStatsMostRequested"
+									class="active"
+									data-action="domain-stats-mode"
+									data-mode="requests"
+								>
+									<use href="#ic-most-requested" />
+								</svg>
+							</span>
+							<span
+								title="Local impact: countries where the most requested apps matter most to locals."
+							>
+								<svg
+									id="domainStatsLocalImpact"
+									data-action="domain-stats-mode"
+									data-mode="local"
+								>
+									<use href="#ic-local-impact" />
+								</svg>
+							</span>
+							<span
+								title="Lowest coverage: countries with the largest request backlog."
+							>
+								<svg
+									id="domainStatsLowestCoverage"
+									data-action="domain-stats-mode"
+									data-mode="coverage"
+								>
+									<use href="#ic-lowest-coverage" />
+								</svg>
+							</span>
+						</div>
+						<div id="domainStats" class="domain-stats"></div>
+					</div>
+				</div>
+			</div>
 
-      <div id="iconLibraryResults" class="icon-library-results is-hidden">
-        <div class="library-header section-header-row">
-          <span class="library-title"></span>
-          <button id="expandLibraryBtn" class="is-hidden">
-            <span class="copy-count"></span>
-          </button>
-        </div>
-        <div class="library-grid"></div>
-      </div>
+			<div id="iconLibraryResults" class="icon-library-results is-hidden">
+				<div class="library-header section-header-row">
+					<span class="library-title"></span>
+					<button id="expandLibraryBtn" class="is-hidden">
+						<span class="copy-count"></span>
+					</button>
+				</div>
+				<div class="library-grid"></div>
+			</div>
 
-      <div class="section-header-row">
-        <div class="tabs" id="mainTabs">
-          <button class="tab active" data-tab="requests">
+			<div class="section-header-row">
+				<div class="tabs" id="mainTabs">
+					<button class="tab active" data-tab="requests">
 						Community requests<span
 							class="tab-count"
 							id="requestsCount"
 						></span>
 					</button>
-          <button class="tab" data-tab="homescreens">
+					<button class="tab" data-tab="homescreens">
 						Home screens
 					</button>
-        </div>
-        <button
-          id="copyDynamicMatchesBtn"
-          class="is-hidden"
-          title="Copy dynamic matches"
-        >
-          <svg>
-            <use href="#ic-copy" />
-          </svg>
-          <span class="copy-count"></span>
-        </button>
-      </div>
+				</div>
+				<button
+					id="copyDynamicMatchesBtn"
+					class="is-hidden"
+					title="Copy dynamic matches"
+				>
+					<svg>
+						<use href="#ic-copy" />
+					</svg>
+					<span class="copy-count"></span>
+				</button>
+			</div>
 
-      <div class="controls">
-        <a href="#headerCheck" id="controlsSkip">Skip filters</a>
+			<div class="controls">
+				<a href="#headerCheck" id="controlsSkip">Skip filters</a>
 
-        <div class="controls-bottom">
-          <div class="control-group">
-            <button id="viewBtn" class="chip" title="View">
-              <span id="viewLabel">Table</span>
-            </button>
-            <button id="sortBtn" class="chip" title="Sort by">
-              <span id="sortLabel">Most requested</span>
-            </button>
-            <button
-              id="screenSortBtn"
-              class="chip is-hidden"
-              title="Sort screens"
-            >
-              <span id="screenSortLabel">Most requested</span>
-            </button>
-          </div>
+				<div class="controls-bottom">
+					<div class="control-group">
+						<button id="viewBtn" class="chip" title="View">
+							<span id="viewLabel">Table</span>
+						</button>
+						<button id="sortBtn" class="chip" title="Sort by">
+							<span id="sortLabel">Most requested</span>
+						</button>
+						<button
+							id="screenSortBtn"
+							class="chip is-hidden"
+							title="Sort screens"
+						>
+							<span id="screenSortLabel">Most requested</span>
+						</button>
+					</div>
 
-          <div
-            class="filter-tags desktop-only"
-            id="filterContainer"
-          ></div>
-          <button
-            id="mobileFilterBtn"
-            class="filter-btn mobile-only chip"
-            title="Filter apps"
-          >
-            <span>Filters</span>
-            <span id="mobileFilterCount"></span>
-          </button>
-        </div>
-      </div>
+					<div
+						class="filter-tags desktop-only"
+						id="filterContainer"
+					></div>
+					<button
+						id="mobileFilterBtn"
+						class="filter-btn mobile-only chip"
+						title="Filter apps"
+					>
+						<span>Filters</span>
+						<span id="mobileFilterCount"></span>
+					</button>
+				</div>
+			</div>
 
-      <!-- SELECTION BAR (Fixed Bottom Card) -->
-      <div id="selectionBar" class="selection-bar">
-        <div class="sb-main">
-          <div class="sb-count" id="sbCount">0 icons</div>
-          <button
-            class="sb-clear-btn"
-            id="sbHint"
-            title="[Esc] Clear selection"
-          >
-            <svg>
-              <use href="#ic-close" />
-            </svg>
-          </button>
-        </div>
-        <div class="sb-actions">
-          <button
-            class="sb-action-btn"
-            id="sbContributeBtn"
-            title="Add to contribution plan"
-          >
-            <svg>
-              <use href="#ic-add-to-plan" />
-            </svg>
-            <span>Add to plan</span>
-          </button>
-          <button
-            class="sb-action-btn sb-action-btn-icon"
-            id="sbDownloadBtn"
-            title="Download zip archive"
-          >
-            <svg>
-              <use href="#ic-download" />
-            </svg>
-          </button>
-          <button
-            class="sb-action-btn sb-action-btn-icon"
-            id="sbMenuBtn"
-            title="Download options"
-          >
-            <svg>
-              <use href="#ic-more" />
-            </svg>
-          </button>
-        </div>
-        <div
-          id="sbMenu"
-          popover="auto"
-          class="context-menu row-style"
-        ></div>
-      </div>
+			<!-- SELECTION BAR (Fixed Bottom Card) -->
+			<div id="selectionBar" class="selection-bar">
+				<div class="sb-main">
+					<div class="sb-count" id="sbCount">0 icons</div>
+					<button
+						class="sb-clear-btn"
+						id="sbHint"
+						title="[Esc] Clear selection"
+					>
+						<svg>
+							<use href="#ic-close" />
+						</svg>
+					</button>
+				</div>
+				<div class="sb-actions">
+					<button
+						class="sb-action-btn"
+						id="sbContributeBtn"
+						title="Add to contribution plan"
+					>
+						<svg>
+							<use href="#ic-add-to-plan" />
+						</svg>
+						<span>Add to plan</span>
+					</button>
+					<button
+						class="sb-action-btn sb-action-btn-icon"
+						id="sbDownloadBtn"
+						title="Download zip archive"
+					>
+						<svg>
+							<use href="#ic-download" />
+						</svg>
+					</button>
+					<button
+						class="sb-action-btn sb-action-btn-icon"
+						id="sbMenuBtn"
+						title="Download options"
+					>
+						<svg>
+							<use href="#ic-more" />
+						</svg>
+					</button>
+				</div>
+				<div
+					id="sbMenu"
+					popover="auto"
+					class="context-menu row-style"
+				></div>
+			</div>
 
-      <div class="list-viewport">
-        <div id="listHeader" class="list-header">
-          <div class="col sel">
-            <input type="checkbox" id="headerCheck" />
-          </div>
-          <div class="col icon">Icon</div>
-          <div class="col name">Name</div>
-          <div class="col req">Requests</div>
-          <div class="col roi">Impact</div>
-          <div class="col install">Installs</div>
-          <div class="col first">First time</div>
-          <div class="col actions">Actions</div>
-        </div>
-        <div id="appContainer"></div>
-        <div id="scrollSentinel">
-          <svg width="48" height="48">
-            <use href="#ic-scroller"></use>
-          </svg>
-        </div>
-      </div>
-    </div>
+			<div class="list-viewport">
+				<div id="listHeader" class="list-header">
+					<div class="col sel">
+						<input type="checkbox" id="headerCheck" />
+					</div>
+					<div class="col icon">Icon</div>
+					<div class="col name">Name</div>
+					<div class="col req">Requests</div>
+					<div class="col roi">Impact</div>
+					<div class="col install">Installs</div>
+					<div class="col first">First time</div>
+					<div class="col actions">Actions</div>
+				</div>
+				<div id="appContainer"></div>
+				<div id="scrollSentinel">
+					<svg width="48" height="48">
+						<use href="#ic-scroller"></use>
+					</svg>
+				</div>
+			</div>
+		</div>
 
-    <div id="sortMenu" popover="auto" class="context-menu row-style"></div>
-    <div
-      id="rowMenu"
-      popover="auto"
-      tabindex="0"
-      role="menu"
-      class="context-menu row-style"
-    ></div>
-    <div
-      id="mobileFilterMenu"
-      popover="auto"
-      tabindex="0"
-      role="menu"
-      class="context-menu row-style mobile-filter-style"
-    ></div>
-    <div id="toastContainer" class="toast-container"></div>
+		<div id="sortMenu" popover="auto" class="context-menu row-style"></div>
+		<div
+			id="rowMenu"
+			popover="auto"
+			tabindex="0"
+			role="menu"
+			class="context-menu row-style"
+		></div>
+		<div
+			id="mobileFilterMenu"
+			popover="auto"
+			tabindex="0"
+			role="menu"
+			class="context-menu row-style mobile-filter-style"
+		></div>
+		<div id="toastContainer" class="toast-container"></div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/fflate@0.8.2/umd/index.js"></script>
-    <script src="lint_icons.js"></script>
-    <script src="script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/fflate@0.8.2/umd/index.js"></script>
+		<script src="lint_icons.js"></script>
+		<script src="script.js"></script>
 
-    <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg">
-      <symbol
-        fill="currentColor"
-        id="ic-check"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/symbol"
-      >
-        <path
-          d="m9.55 15.15 8.475-8.475q.3-.3.7-.3t.7.3.3.713-.3.712l-9.175 9.2q-.3.3-.7.3t-.7-.3L4.55 13q-.3-.3-.288-.712t.313-.713.712-.3.713.3z"
-        />
-      </symbol>
+		<svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg">
+			<symbol
+				fill="currentColor"
+				id="ic-check"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/symbol"
+			>
+				<path
+					d="m9.55 15.15 8.475-8.475q.3-.3.7-.3t.7.3.3.713-.3.712l-9.175 9.2q-.3.3-.7.3t-.7-.3L4.55 13q-.3-.3-.288-.712t.313-.713.712-.3.713.3z"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-download"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/symbol"
-      >
-        <path
-          d="M11.625 15.512q-.175-.062-.325-.212l-3.6-3.6q-.3-.3-.287-.7t.287-.7q.3-.3.713-.313t.712.288L11 12.15V5q0-.425.288-.713T12 4t.713.287T13 5v7.15l1.875-1.875q.3-.3.713-.288t.712.313q.275.3.288.7t-.288.7l-3.6 3.6q-.15.15-.325.212t-.375.063-.375-.063M6 20q-.825 0-1.412-.588T4 18v-2q0-.425.288-.713T5 15t.713.287T6 16v2h12v-2q0-.425.288-.713T19 15t.713.287T20 16v2q0 .825-.587 1.412T18 20z"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-download"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/symbol"
+			>
+				<path
+					d="M11.625 15.512q-.175-.062-.325-.212l-3.6-3.6q-.3-.3-.287-.7t.287-.7q.3-.3.713-.313t.712.288L11 12.15V5q0-.425.288-.713T12 4t.713.287T13 5v7.15l1.875-1.875q.3-.3.713-.288t.712.313q.275.3.288.7t-.288.7l-3.6 3.6q-.15.15-.325.212t-.375.063-.375-.063M6 20q-.825 0-1.412-.588T4 18v-2q0-.425.288-.713T5 15t.713.287T6 16v2h12v-2q0-.425.288-.713T19 15t.713.287T20 16v2q0 .825-.587 1.412T18 20z"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-play"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12.194 13.693a.783.783 0 0 0-1.11 0c-.801.804-5.832 5.849-6.51 6.523.786.838 2.21 1.04 3.207.432l7.224-4.14a1733 1733 0 0 1-2.811-2.815m-1.11-3.33a.783.783 0 0 0 1.11 0l1.688-1.69h-.003l1.148-1.148L7.81 3.368c-1.018-.637-2.484-.419-3.274.435.662.658 5.76 5.772 6.548 6.561zm-1.106 2.22a.787.787 0 0 0 0-1.112L5.46 6.94 3.837 5.32a2 2 0 0 0-.018.298v12.79c.004.12.022.26.04.38 1.069-1.046 5.002-5.066 6.12-6.204zm8.858-2.866-2.4-1.383c-.705.698-2.416 2.418-3.135 3.138a.787.787 0 0 0 0 1.114c.723.72 2.405 2.413 3.113 3.116l2.4-1.376c1.814-.9 1.828-3.693.022-4.609"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-play"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M12.194 13.693a.783.783 0 0 0-1.11 0c-.801.804-5.832 5.849-6.51 6.523.786.838 2.21 1.04 3.207.432l7.224-4.14a1733 1733 0 0 1-2.811-2.815m-1.11-3.33a.783.783 0 0 0 1.11 0l1.688-1.69h-.003l1.148-1.148L7.81 3.368c-1.018-.637-2.484-.419-3.274.435.662.658 5.76 5.772 6.548 6.561zm-1.106 2.22a.787.787 0 0 0 0-1.112L5.46 6.94 3.837 5.32a2 2 0 0 0-.018.298v12.79c.004.12.022.26.04.38 1.069-1.046 5.002-5.066 6.12-6.204zm8.858-2.866-2.4-1.383c-.705.698-2.416 2.418-3.135 3.138a.787.787 0 0 0 0 1.114c.723.72 2.405 2.413 3.113 3.116l2.4-1.376c1.814-.9 1.828-3.693.022-4.609"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-more"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M6 14q-.825 0-1.412-.587T4 12t.588-1.412T6 10t1.413.588T8 12t-.587 1.413T6 14m6 0q-.825 0-1.412-.587T10 12t.588-1.412T12 10t1.413.588T14 12t-.587 1.413T12 14m6 0q-.825 0-1.412-.587T16 12t.587-1.412T18 10t1.413.588T20 12t-.587 1.413T18 14"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-more"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M6 14q-.825 0-1.412-.587T4 12t.588-1.412T6 10t1.413.588T8 12t-.587 1.413T6 14m6 0q-.825 0-1.412-.587T10 12t.588-1.412T12 10t1.413.588T14 12t-.587 1.413T12 14m6 0q-.825 0-1.412-.587T16 12t.587-1.412T18 10t1.413.588T20 12t-.587 1.413T18 14"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-copy"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M9 18q-.825 0-1.412-.587T7 16V4q0-.825.588-1.412T9 2h9q.825 0 1.413.588T20 4v12q0 .825-.587 1.413T18 18zm0-2h9V4H9zm-4 6q-.825 0-1.412-.587T3 20V7q0-.425.288-.712T4 6t.713.288T5 7v13h10q.425 0 .713.288T16 21t-.287.713T15 22zm4-6V4z"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-copy"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M9 18q-.825 0-1.412-.587T7 16V4q0-.825.588-1.412T9 2h9q.825 0 1.413.588T20 4v12q0 .825-.587 1.413T18 18zm0-2h9V4H9zm-4 6q-.825 0-1.412-.587T3 20V7q0-.425.288-.712T4 6t.713.288T5 7v13h10q.425 0 .713.288T16 21t-.287.713T15 22zm4-6V4z"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-fdroid"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M3.483 3.113a.497.497 0 0 0-.368.814L4.546 5.78a1.2 1.2 0 0 0-.082.427l.004 2.776a1.19 1.19 0 0 0 1.189 1.19h12.702a1.19 1.19 0 0 0 1.189-1.19v-2.78a1.2 1.2 0 0 0-.082-.427l1.43-1.853a.497.497 0 0 0-.085-.692.497.497 0 0 0-.696.09L18.75 5.085a1.2 1.2 0 0 0-.391-.07H5.657a1.2 1.2 0 0 0-.391.07L3.9 3.32a.5.5 0 0 0-.418-.208m4.766 3.385a1.34 1.34 0 0 1 1.28 1.34 1.34 1.34 0 0 1-1.342 1.341 1.341 1.341 0 1 1 .062-2.681m7.74 0a1.34 1.34 0 0 1 1.279 1.34 1.34 1.34 0 0 1-1.342 1.341 1.341 1.341 0 1 1 .062-2.681zM5.655 10.57a1.19 1.19 0 0 0-1.189 1.19v7.938a1.19 1.19 0 0 0 1.19 1.189h12.701a1.19 1.19 0 0 0 1.19-1.19V11.76a1.19 1.19 0 0 0-1.19-1.189zm6.544.994a4.17 4.17 0 0 1 3.976 4.165 4.173 4.173 0 0 1-4.169 4.168 4.169 4.169 0 1 1 .193-8.333m-.192.75a3.414 3.414 0 1 0 3.413 3.414 3.42 3.42 0 0 0-3.414-3.414m-.143.94a2.48 2.48 0 1 1 .143 4.954 2.49 2.49 0 0 1-2.413-1.924h1.252a1.29 1.29 0 1 0 .043-1.189H9.614a2.48 2.48 0 0 1 2.25-1.841"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-fdroid"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M3.483 3.113a.497.497 0 0 0-.368.814L4.546 5.78a1.2 1.2 0 0 0-.082.427l.004 2.776a1.19 1.19 0 0 0 1.189 1.19h12.702a1.19 1.19 0 0 0 1.189-1.19v-2.78a1.2 1.2 0 0 0-.082-.427l1.43-1.853a.497.497 0 0 0-.085-.692.497.497 0 0 0-.696.09L18.75 5.085a1.2 1.2 0 0 0-.391-.07H5.657a1.2 1.2 0 0 0-.391.07L3.9 3.32a.5.5 0 0 0-.418-.208m4.766 3.385a1.34 1.34 0 0 1 1.28 1.34 1.34 1.34 0 0 1-1.342 1.341 1.341 1.341 0 1 1 .062-2.681m7.74 0a1.34 1.34 0 0 1 1.279 1.34 1.34 1.34 0 0 1-1.342 1.341 1.341 1.341 0 1 1 .062-2.681zM5.655 10.57a1.19 1.19 0 0 0-1.189 1.19v7.938a1.19 1.19 0 0 0 1.19 1.189h12.701a1.19 1.19 0 0 0 1.19-1.19V11.76a1.19 1.19 0 0 0-1.19-1.189zm6.544.994a4.17 4.17 0 0 1 3.976 4.165 4.173 4.173 0 0 1-4.169 4.168 4.169 4.169 0 1 1 .193-8.333m-.192.75a3.414 3.414 0 1 0 3.413 3.414 3.42 3.42 0 0 0-3.414-3.414m-.143.94a2.48 2.48 0 1 1 .143 4.954 2.49 2.49 0 0 1-2.413-1.924h1.252a1.29 1.29 0 1 0 .043-1.189H9.614a2.48 2.48 0 0 1 2.25-1.841"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-izzyondroid"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M10.776 4.151c-1.846-.02-3.217.168-4.172.733-1.25.739-2.31 2.35-2.525 3.553-.353 1.972.49 4.672 2.35 5.771l6.354-9.972a37 37 0 0 0-2.007-.085m3.332.085-2.572 4.036h5.678l2.572-4.036zm-3.54 5.556-6.353 9.972h5.678l6.353-9.972zm7.003 0-6.353 9.972c2.892.19 4.906.105 6.179-.648 1.25-.739 2.31-2.35 2.525-3.553.352-1.972-.49-4.672-2.35-5.771z"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-izzyondroid"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M10.776 4.151c-1.846-.02-3.217.168-4.172.733-1.25.739-2.31 2.35-2.525 3.553-.353 1.972.49 4.672 2.35 5.771l6.354-9.972a37 37 0 0 0-2.007-.085m3.332.085-2.572 4.036h5.678l2.572-4.036zm-3.54 5.556-6.353 9.972h5.678l6.353-9.972zm7.003 0-6.353 9.972c2.892.19 4.906.105 6.179-.648 1.25-.739 2.31-2.35 2.525-3.553.352-1.972-.49-4.672-2.35-5.771z"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-galaxystore"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M16.669 7.956v-.298a4.66 4.66 0 0 0-9.32 0v.297H3.454l1.035 9.609A3.843 3.843 0 0 0 8.303 21h7.394a3.843 3.843 0 0 0 3.814-3.436l1.035-9.608zm-7.296 0v-.298a2.627 2.627 0 0 1 5.254 0v.297z"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-galaxystore"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M16.669 7.956v-.298a4.66 4.66 0 0 0-9.32 0v.297H3.454l1.035 9.609A3.843 3.843 0 0 0 8.303 21h7.394a3.843 3.843 0 0 0 3.814-3.436l1.035-9.608zm-7.296 0v-.298a2.627 2.627 0 0 1 5.254 0v.297z"
+				/>
+			</symbol>
 
-      <symbol
-        id="ic-search"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.5 16q-2.725 0-4.612-1.887T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.6 5.6q.275.275.275.7t-.275.7-.7.275-.7-.275l-5.6-5.6q-.75.6-1.725.95T9.5 16m0-2q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5 6.313 6.313 5 9.5t1.313 3.188T9.5 14"
-        />
-      </symbol>
+			<symbol
+				id="ic-search"
+				xmlns="http://www.w3.org/2000/svg"
+				fill="currentColor"
+				viewBox="0 0 24 24"
+			>
+				<path
+					d="M9.5 16q-2.725 0-4.612-1.887T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.6 5.6q.275.275.275.7t-.275.7-.7.275-.7-.275l-5.6-5.6q-.75.6-1.725.95T9.5 16m0-2q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5 6.313 6.313 5 9.5t1.313 3.188T9.5 14"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-lawnchair"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M4.285 3a1.3 1.3 0 0 0-.91.377 1.294 1.294 0 0 0 0 1.82l6.35 6.348-6.407 7.32-.006.008-.034.043-.046.059a1.3 1.3 0 0 0-.2 1.03l.01.036v.003a1.3 1.3 0 0 0 .084.228l.006.017.041.072.017.03a1.3 1.3 0 0 0 .344.366l.005.004.05.031.059.04q.11.06.23.1l.067.02.051.013H4a1.27 1.27 0 0 0 .846-.093q.007-.005.016-.007l8.24-4.126-1.917-1.917-1.62.81 1.982-2.265 7.257 7.256a1.294 1.294 0 0 0 1.82 0 1.294 1.294 0 0 0 0-1.82L16.74 14.92l3.55-1.77a1.293 1.293 0 0 0 .575-1.727 1.296 1.296 0 0 0-1.73-.576l-4.31 2.157-2.398-2.396-7.233-7.232A1.3 1.3 0 0 0 4.285 3"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-lawnchair"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M4.285 3a1.3 1.3 0 0 0-.91.377 1.294 1.294 0 0 0 0 1.82l6.35 6.348-6.407 7.32-.006.008-.034.043-.046.059a1.3 1.3 0 0 0-.2 1.03l.01.036v.003a1.3 1.3 0 0 0 .084.228l.006.017.041.072.017.03a1.3 1.3 0 0 0 .344.366l.005.004.05.031.059.04q.11.06.23.1l.067.02.051.013H4a1.27 1.27 0 0 0 .846-.093q.007-.005.016-.007l8.24-4.126-1.917-1.917-1.62.81 1.982-2.265 7.257 7.256a1.294 1.294 0 0 0 1.82 0 1.294 1.294 0 0 0 0-1.82L16.74 14.92l3.55-1.77a1.293 1.293 0 0 0 .575-1.727 1.296 1.296 0 0 0-1.73-.576l-4.31 2.157-2.398-2.396-7.233-7.232A1.3 1.3 0 0 0 4.285 3"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-regex"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M2 11.95q0-1.725.563-3.337T4.225 5.65q.275-.325.688-.35t.712.275.313.712-.263.763q-.825 1.05-1.25 2.3T4 11.95t.45 2.6 1.25 2.3q.275.35.263.75t-.313.7-.712.287-.688-.337q-1.075-1.35-1.662-2.962T2 11.95m6.438 5.613Q8 17.125 8 16.5t.438-1.062T9.5 15t1.063.438T11 16.5t-.437 1.063T9.5 18t-1.062-.437m4.825-4.85q-.288-.288-.288-.713v-.775l-.65.4q-.35.2-.762.088t-.613-.463-.087-.762.462-.613l.65-.375-.675-.375q-.35-.2-.45-.612t.1-.763q.2-.375.613-.463t.762.113l.65.375V7q0-.425.288-.713T13.974 6t.713.287.287.713v.775l.65-.4q.35-.2.763-.088T17 7.75t.088.762-.463.613l-.65.375.675.375q.35.2.45.612t-.1.763q-.2.375-.613.462t-.762-.112l-.65-.375V12q0 .425-.288.712t-.712.288-.713-.288M22 11.95q0 1.725-.562 3.338t-1.663 2.962q-.275.325-.687.338t-.713-.288-.312-.7.262-.75q.825-1.05 1.25-2.3t.425-2.6-.45-2.6-1.25-2.3q-.275-.35-.25-.763t.325-.712.7-.275.675.35Q20.825 7 21.413 8.612 22 10.225 22 11.95"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-regex"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M2 11.95q0-1.725.563-3.337T4.225 5.65q.275-.325.688-.35t.712.275.313.712-.263.763q-.825 1.05-1.25 2.3T4 11.95t.45 2.6 1.25 2.3q.275.35.263.75t-.313.7-.712.287-.688-.337q-1.075-1.35-1.662-2.962T2 11.95m6.438 5.613Q8 17.125 8 16.5t.438-1.062T9.5 15t1.063.438T11 16.5t-.437 1.063T9.5 18t-1.062-.437m4.825-4.85q-.288-.288-.288-.713v-.775l-.65.4q-.35.2-.762.088t-.613-.463-.087-.762.462-.613l.65-.375-.675-.375q-.35-.2-.45-.612t.1-.763q.2-.375.613-.463t.762.113l.65.375V7q0-.425.288-.713T13.974 6t.713.287.287.713v.775l.65-.4q.35-.2.763-.088T17 7.75t.088.762-.463.613l-.65.375.675.375q.35.2.45.612t-.1.763q-.2.375-.613.462t-.762-.112l-.65-.375V12q0 .425-.288.712t-.712.288-.713-.288M22 11.95q0 1.725-.562 3.338t-1.663 2.962q-.275.325-.687.338t-.713-.288-.312-.7.262-.75q.825-1.05 1.25-2.3t.425-2.6-.45-2.6-1.25-2.3q-.275-.35-.25-.763t.325-.712.7-.275.675.35Q20.825 7 21.413 8.612 22 10.225 22 11.95"
+				/>
+			</symbol>
 
-      <symbol
-        fill="var(--primary)"
-        id="ic-scroller"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M11.234 3.92a.908.908 0 0 1 1.532 0l.845 1.342a.91.91 0 0 0 1.106.354L16.2 5.02c.62-.25 1.288.23 1.24.887l-.118 1.575a.89.89 0 0 0 .684.927l1.556.377c.65.157.905.932.474 1.435l-1.035 1.206a.88.88 0 0 0 0 1.146l1.034 1.206a.884.884 0 0 1-.473 1.436l-1.556.376a.89.89 0 0 0-.684.928l.117 1.575c.049.657-.62 1.135-1.24.887l-1.483-.597a.91.91 0 0 0-1.106.354l-.845 1.342a.908.908 0 0 1-1.532 0l-.845-1.342a.91.91 0 0 0-1.106-.354l-1.484.597c-.62.248-1.288-.23-1.24-.887l.118-1.575a.89.89 0 0 0-.684-.928l-1.556-.376a.884.884 0 0 1-.474-1.436l1.035-1.206a.88.88 0 0 0 0-1.146l-1.035-1.206a.884.884 0 0 1 .474-1.435l1.556-.377a.89.89 0 0 0 .684-.927L6.56 5.907c-.05-.657.62-1.136 1.239-.887l1.484.596a.91.91 0 0 0 1.106-.354z"
-        />
-      </symbol>
+			<symbol
+				fill="var(--primary)"
+				id="ic-scroller"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M11.234 3.92a.908.908 0 0 1 1.532 0l.845 1.342a.91.91 0 0 0 1.106.354L16.2 5.02c.62-.25 1.288.23 1.24.887l-.118 1.575a.89.89 0 0 0 .684.927l1.556.377c.65.157.905.932.474 1.435l-1.035 1.206a.88.88 0 0 0 0 1.146l1.034 1.206a.884.884 0 0 1-.473 1.436l-1.556.376a.89.89 0 0 0-.684.928l.117 1.575c.049.657-.62 1.135-1.24.887l-1.483-.597a.91.91 0 0 0-1.106.354l-.845 1.342a.908.908 0 0 1-1.532 0l-.845-1.342a.91.91 0 0 0-1.106-.354l-1.484.597c-.62.248-1.288-.23-1.24-.887l.118-1.575a.89.89 0 0 0-.684-.928l-1.556-.376a.884.884 0 0 1-.474-1.436l1.035-1.206a.88.88 0 0 0 0-1.146l-1.035-1.206a.884.884 0 0 1 .474-1.435l1.556-.377a.89.89 0 0 0 .684-.927L6.56 5.907c-.05-.657.62-1.136 1.239-.887l1.484.596a.91.91 0 0 0 1.106-.354z"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-close"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="m12 13.4-4.9 4.9q-.275.275-.7.275t-.7-.275-.275-.7.275-.7l4.9-4.9-4.9-4.9q-.275-.275-.275-.7t.275-.7.7-.275.7.275l4.9 4.9 4.9-4.9q.275-.275.7-.275t.7.275.275.7-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7-.7.275-.7-.275z"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-close"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="m12 13.4-4.9 4.9q-.275.275-.7.275t-.7-.275-.275-.7.275-.7l4.9-4.9-4.9-4.9q-.275-.275-.275-.7t.275-.7.7-.275.7.275l4.9 4.9 4.9-4.9q.275-.275.7-.275t.7.275.275.7-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7-.7.275-.7-.275z"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-error"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12.712 16.712Q13 16.425 13 16t-.288-.713-.712-.288-.713.288-.288.712.288.713.712.288.713-.288m0-4Q13 12.425 13 12V8q0-.426-.288-.713T12 6.999t-.713.288-.288.712v4q0 .425.288.713t.712.288.713-.288M12 22q-2.076 0-3.9-.788t-3.176-2.138T2.787 15.9 1.999 12t.788-3.9 2.137-3.175T8.1 2.787t3.9-.788 3.9.788 3.176 2.137T21.212 8.1 22 12t-.788 3.9-2.137 3.175-3.175 2.138T12 22m0-2q3.35 0 5.674-2.326T20 12t-2.325-5.675T12 4 6.324 6.324 4 12t2.325 5.675T12 20"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-error"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M12.712 16.712Q13 16.425 13 16t-.288-.713-.712-.288-.713.288-.288.712.288.713.712.288.713-.288m0-4Q13 12.425 13 12V8q0-.426-.288-.713T12 6.999t-.713.288-.288.712v4q0 .425.288.713t.712.288.713-.288M12 22q-2.076 0-3.9-.788t-3.176-2.138T2.787 15.9 1.999 12t.788-3.9 2.137-3.175T8.1 2.787t3.9-.788 3.9.788 3.176 2.137T21.212 8.1 22 12t-.788 3.9-2.137 3.175-3.175 2.138T12 22m0-2q3.35 0 5.674-2.326T20 12t-2.325-5.675T12 4 6.324 6.324 4 12t2.325 5.675T12 20"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-list-view"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M9 18h11v-2.675H9zM4 8.675h3V6H4zm0 4.675h3v-2.675H4zM4 18h3v-2.675H4zm5-4.65h11v-2.675H9zm0-4.675h11V6H9zM4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20z"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-list-view"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M9 18h11v-2.675H9zM4 8.675h3V6H4zm0 4.675h3v-2.675H4zM4 18h3v-2.675H4zm5-4.65h11v-2.675H9zm0-4.675h11V6H9zM4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20z"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-grid-view"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M5 11q-.825 0-1.412-.587T3 9V5q0-.825.588-1.412T5 3h4q.825 0 1.413.588T11 5v4q0 .825-.587 1.413T9 11zm0 10q-.825 0-1.412-.587T3 19v-4q0-.825.588-1.412T5 13h4q.825 0 1.413.588T11 15v4q0 .825-.587 1.413T9 21zm10-10q-.825 0-1.412-.587T13 9V5q0-.825.588-1.412T15 3h4q.825 0 1.413.588T21 5v4q0 .825-.587 1.413T19 11zm0 10q-.825 0-1.412-.587T13 19v-4q0-.825.588-1.412T15 13h4q.825 0 1.413.588T21 15v4q0 .825-.587 1.413T19 21zM5 9h4V5H5zm10 0h4V5h-4zm0 10h4v-4h-4zM5 19h4v-4H5z"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-grid-view"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M5 11q-.825 0-1.412-.587T3 9V5q0-.825.588-1.412T5 3h4q.825 0 1.413.588T11 5v4q0 .825-.587 1.413T9 11zm0 10q-.825 0-1.412-.587T3 19v-4q0-.825.588-1.412T5 13h4q.825 0 1.413.588T11 15v4q0 .825-.587 1.413T9 21zm10-10q-.825 0-1.412-.587T13 9V5q0-.825.588-1.412T15 3h4q.825 0 1.413.588T21 5v4q0 .825-.587 1.413T19 11zm0 10q-.825 0-1.412-.587T13 19v-4q0-.825.588-1.412T15 13h4q.825 0 1.413.588T21 15v4q0 .825-.587 1.413T19 21zM5 9h4V5H5zm10 0h4V5h-4zm0 10h4v-4h-4zM5 19h4v-4H5z"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-most-requested"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M4 19h4v-8H4zm6 0h4V5h-4zm6 0h4v-6h-4zM2 19v-8q0-.825.588-1.412T4 9h4V5q0-.825.588-1.412T10 3h4q.825 0 1.413.588T16 5v6h4q.825 0 1.413.588T22 13v6q0 .825-.587 1.413T20 21H4q-.825 0-1.412-.587T2 19"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-most-requested"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M4 19h4v-8H4zm6 0h4V5h-4zm6 0h4v-6h-4zM2 19v-8q0-.825.588-1.412T4 9h4V5q0-.825.588-1.412T10 3h4q.825 0 1.413.588T16 5v6h4q.825 0 1.413.588T22 13v6q0 .825-.587 1.413T20 21H4q-.825 0-1.412-.587T2 19"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-local-impact"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M7 14v6q0 .425-.287.713T6 21t-.712-.287T5 20V5q0-.425.288-.712T6 4h7.175q.35 0 .625.225t.35.575L14.4 6H19q.425 0 .713.288T20 7v8q0 .425-.287.713T19 16h-5.175q-.35 0-.625-.225t-.35-.575L12.6 14zm7.65 0H18V8h-4.425q-.35 0-.625-.225T12.6 7.2L12.35 6H7v6h6.425q.35 0 .625.225t.35.575z"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-local-impact"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M7 14v6q0 .425-.287.713T6 21t-.712-.287T5 20V5q0-.425.288-.712T6 4h7.175q.35 0 .625.225t.35.575L14.4 6H19q.425 0 .713.288T20 7v8q0 .425-.287.713T19 16h-5.175q-.35 0-.625-.225t-.35-.575L12.6 14zm7.65 0H18V8h-4.425q-.35 0-.625-.225T12.6 7.2L12.35 6H7v6h6.425q.35 0 .625.225t.35.575z"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-lowest-coverage"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M6.975 22q-.775 0-1.337-.5T5 20.225l-1.75-16q-.1-.875.487-1.55Q4.325 2 5.225 2h13.55q.9 0 1.488.675t.487 1.55l-1.75 16q-.075.775-.637 1.275t-1.338.5zm-.2-4L7 20h10l.225-2zm-.2-2H17.45l1.3-12H5.25zm.2 4h10.45z"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-lowest-coverage"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M6.975 22q-.775 0-1.337-.5T5 20.225l-1.75-16q-.1-.875.487-1.55Q4.325 2 5.225 2h13.55q.9 0 1.488.675t.487 1.55l-1.75 16q-.075.775-.637 1.275t-1.338.5zm-.2-4L7 20h10l.225-2zm-.2-2H17.45l1.3-12H5.25zm.2 4h10.45z"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-middle-plus"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12.275 15.525q1.75 0 2.975-1.125t1.225-2.725q0-1.425-.912-2.412t-2.213-.988q-1.175 0-1.987.75t-.813 1.85q0 .475.163.938t.562.812.8.288.65-.338.288-.662-.313-.713q-.05-.05-.1-.125t-.05-.175q0-.275.225-.438t.575-.162q.5 0 .825.412t.325.988q0 .775-.638 1.313t-1.562.537q-1.175 0-1.988-.95T9.5 10.275q0-.475.112-.925t.338-.85q.2-.375.2-.788T9.85 7t-.725-.288-.65.363q-.5.7-.75 1.5t-.25 1.675q0 2.2 1.4 3.738t3.4 1.537M6 17.7q-1.425-1.3-2.212-3.037T3 11q0-3.75 2.625-6.375T12 2q3.125 0 5.538 1.838t3.137 4.787l1.3 5.125q.125.475-.175.863T21 15h-2v3q0 .825-.587 1.413T17 20h-2v1q0 .425-.287.713T14 22t-.712-.287T13 21v-2q0-.425.288-.712T14 18h3v-4q0-.425.288-.712T18 13h1.7l-.95-3.875q-.575-2.275-2.45-3.7T12 4Q9.1 4 7.05 6.025T5 10.95q0 1.5.613 2.85t1.737 2.4l.65.6V21q0 .425-.287.713T7 22t-.712-.287T6 21z"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-middle-plus"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M12.275 15.525q1.75 0 2.975-1.125t1.225-2.725q0-1.425-.912-2.412t-2.213-.988q-1.175 0-1.987.75t-.813 1.85q0 .475.163.938t.562.812.8.288.65-.338.288-.662-.313-.713q-.05-.05-.1-.125t-.05-.175q0-.275.225-.438t.575-.162q.5 0 .825.412t.325.988q0 .775-.638 1.313t-1.562.537q-1.175 0-1.988-.95T9.5 10.275q0-.475.112-.925t.338-.85q.2-.375.2-.788T9.85 7t-.725-.288-.65.363q-.5.7-.75 1.5t-.25 1.675q0 2.2 1.4 3.738t3.4 1.537M6 17.7q-1.425-1.3-2.212-3.037T3 11q0-3.75 2.625-6.375T12 2q3.125 0 5.538 1.838t3.137 4.787l1.3 5.125q.125.475-.175.863T21 15h-2v3q0 .825-.587 1.413T17 20h-2v1q0 .425-.287.713T14 22t-.712-.287T13 21v-2q0-.425.288-.712T14 18h3v-4q0-.425.288-.712T18 13h1.7l-.95-3.875q-.575-2.275-2.45-3.7T12 4Q9.1 4 7.05 6.025T5 10.95q0 1.5.613 2.85t1.737 2.4l.65.6V21q0 .425-.287.713T7 22t-.712-.287T6 21z"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-easy"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="m10.55 18.201 5.175-6.2h-4l.725-5.675L7.825 13H11.3zM9 15.001H5.9q-.6 0-.888-.538-.287-.537.063-1.037l7.475-10.75q.25-.35.65-.488.4-.137.825.013t.625.525.15.8L14 10h3.875q.65 0 .913.575.262.575-.163 1.075L10.4 21.5q-.275.325-.675.425t-.775-.075-.588-.537-.162-.788z"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-easy"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="m10.55 18.201 5.175-6.2h-4l.725-5.675L7.825 13H11.3zM9 15.001H5.9q-.6 0-.888-.538-.287-.537.063-1.037l7.475-10.75q.25-.35.65-.488.4-.137.825.013t.625.525.15.8L14 10h3.875q.65 0 .913.575.262.575-.163 1.075L10.4 21.5q-.275.325-.675.425t-.775-.075-.588-.537-.162-.788z"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-github"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12 4.198a8 8 0 0 0-8 8 8 8 0 0 0 5.47 7.59c.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.923-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.776-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.824-2.147-.09-.202-.36-1.015.07-2.117 0 0 .67-.215 2.2.82a7.7 7.7 0 0 1 2-.27 7.7 7.7 0 0 1 2 .27c1.52-1.035 2.19-.82 2.19-.82.43 1.102.16 1.915.08 2.117a3.1 3.1 0 0 1 .82 2.147c0 3.073-1.87 3.75-3.65 3.947.28.24.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.14.46.55.38A7.97 7.97 0 0 0 20 12.198a8 8 0 0 0-8-8"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-github"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M12 4.198a8 8 0 0 0-8 8 8 8 0 0 0 5.47 7.59c.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.923-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.776-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.824-2.147-.09-.202-.36-1.015.07-2.117 0 0 .67-.215 2.2.82a7.7 7.7 0 0 1 2-.27 7.7 7.7 0 0 1 2 .27c1.52-1.035 2.19-.82 2.19-.82.43 1.102.16 1.915.08 2.117a3.1 3.1 0 0 1 .82 2.147c0 3.073-1.87 3.75-3.65 3.947.28.24.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.14.46.55.38A7.97 7.97 0 0 0 20 12.198a8 8 0 0 0-8-8"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-contribution-plan"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M4 18c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2m0-6c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2m0-6c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2m6 0c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2m6 0c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2m-6 6c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2m3 7v-1.65q0-.2.075-.387a.8.8 0 0 1 .225-.338l5.225-5.2q.225-.225.5-.325a1.6 1.6 0 0 1 .55-.1q.3 0 .575.113s.35.187.5.337l.925.925q.2.225.313.5c.112.275.112.367.112.55s-.033.37-.1.563-.175.362-.325.512l-5.2 5.2q-.15.15-.337.225c-.187.075-.255.075-.388.075H14q-.424 0-.712-.287C13 19.426 13 19.283 13 19m4.55-4.475L14.5 17.55v.95h.95l3.025-3.05c-.289-.328-.61-.623-.925-.925"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-contribution-plan"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M4 18c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2m0-6c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2m0-6c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2m6 0c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2m6 0c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2m-6 6c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2m3 7v-1.65q0-.2.075-.387a.8.8 0 0 1 .225-.338l5.225-5.2q.225-.225.5-.325a1.6 1.6 0 0 1 .55-.1q.3 0 .575.113s.35.187.5.337l.925.925q.2.225.313.5c.112.275.112.367.112.55s-.033.37-.1.563-.175.362-.325.512l-5.2 5.2q-.15.15-.337.225c-.187.075-.255.075-.388.075H14q-.424 0-.712-.287C13 19.426 13 19.283 13 19m4.55-4.475L14.5 17.55v.95h.95l3.025-3.05c-.289-.328-.61-.623-.925-.925"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-add-to-plan"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M6 4a1.997 1.997 0 0 0-2 2c-.015 1.035.835 2 2 2 1.031.014 2-.832 2-2 0-1.11-.893-2-2-2m6 0a1.997 1.997 0 0 0-2 2c-.015 1.035.835 2 2 2 1.031.014 2-.832 2-2 0-1.11-.893-2-2-2m6 0a1.995 1.995 0 0 0-2 2c-.015 1.034.834 2 2 2 1.033.015 2-.833 2-2 0-1.112-.894-2-2-2M6 10a1.997 1.997 0 0 0-2 2c-.015 1.035.835 2 2 2 1.031.014 2-.832 2-2 0-1.11-.893-2-2-2m9 0a1 1 0 0 0-1 1v3h-3a1 1 0 0 0-1 1 1 1 0 0 0 1 1h3v3a1 1 0 0 0 1 1 1 1 0 0 0 1-1v-3h3a1 1 0 0 0 1-1 1 1 0 0 0-1-1h-3v-3a1 1 0 0 0-1-1m-9 6a1.996 1.996 0 0 0-2 2c-.015 1.033.833 2 2 2 1.034.015 2-.834 2-2 0-1.108-.89-2-2-2"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-add-to-plan"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M6 4a1.997 1.997 0 0 0-2 2c-.015 1.035.835 2 2 2 1.031.014 2-.832 2-2 0-1.11-.893-2-2-2m6 0a1.997 1.997 0 0 0-2 2c-.015 1.035.835 2 2 2 1.031.014 2-.832 2-2 0-1.11-.893-2-2-2m6 0a1.995 1.995 0 0 0-2 2c-.015 1.034.834 2 2 2 1.033.015 2-.833 2-2 0-1.112-.894-2-2-2M6 10a1.997 1.997 0 0 0-2 2c-.015 1.035.835 2 2 2 1.031.014 2-.832 2-2 0-1.11-.893-2-2-2m9 0a1 1 0 0 0-1 1v3h-3a1 1 0 0 0-1 1 1 1 0 0 0 1 1h3v3a1 1 0 0 0 1 1 1 1 0 0 0 1-1v-3h3a1 1 0 0 0 1-1 1 1 0 0 0-1-1h-3v-3a1 1 0 0 0-1-1m-9 6a1.996 1.996 0 0 0-2 2c-.015 1.033.833 2 2 2 1.034.015 2-.834 2-2 0-1.108-.89-2-2-2"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-arrow-back"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="m7.825 13 4.9 4.9q.3.3.288.7t-.313.7q-.3.275-.7.287t-.7-.287l-6.6-6.6q-.15-.15-.212-.325T4.425 12t.063-.375.212-.325l6.6-6.6q.275-.275.688-.275t.712.275q.3.3.3.712t-.3.713L7.825 11H19q.425 0 .713.288T20 12t-.287.713T19 13z"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-arrow-back"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="m7.825 13 4.9 4.9q.3.3.288.7t-.313.7q-.3.275-.7.287t-.7-.287l-6.6-6.6q-.15-.15-.212-.325T4.425 12t.063-.375.212-.325l6.6-6.6q.275-.275.688-.275t.712.275q.3.3.3.712t-.3.713L7.825 11H19q.425 0 .713.288T20 12t-.287.713T19 13z"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-web-search"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M2 12q0-2.075.788-3.9t2.137-3.175T8.1 2.788 12 2q3.175 0 5.663 1.75t3.612 4.525q.175.425.013.85T20.7 9.7q-.4.125-.762-.075t-.513-.6q-.6-1.5-1.725-2.65T15 4.6V5q0 .825-.587 1.413T13 7h-2v2q0 .425-.287.713T10 10H8v2h1q.425 0 .713.288T10 13v2H9l-4.8-4.8q-.075.45-.137.9T4 12q0 3.05 2.013 5.325t5.062 2.625q.4.05.663.338T12 21t-.287.712-.688.238Q7.2 21.575 4.6 18.75T2 12m18.4 8.8-2.5-2.5q-.525.3-1.125.5T15.5 19q-1.875 0-3.188-1.312T11 14.5t1.312-3.187T15.5 10t3.187 1.313T20 14.5q0 .675-.2 1.275t-.5 1.125l2.5 2.5q.275.275.275.7t-.275.7-.7.275-.7-.275m-3.125-4.525Q18 15.55 18 14.5t-.725-1.775T15.5 12t-1.775.725T13 14.5t.725 1.775T15.5 17t1.775-.725"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-web-search"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M2 12q0-2.075.788-3.9t2.137-3.175T8.1 2.788 12 2q3.175 0 5.663 1.75t3.612 4.525q.175.425.013.85T20.7 9.7q-.4.125-.762-.075t-.513-.6q-.6-1.5-1.725-2.65T15 4.6V5q0 .825-.587 1.413T13 7h-2v2q0 .425-.287.713T10 10H8v2h1q.425 0 .713.288T10 13v2H9l-4.8-4.8q-.075.45-.137.9T4 12q0 3.05 2.013 5.325t5.062 2.625q.4.05.663.338T12 21t-.287.712-.688.238Q7.2 21.575 4.6 18.75T2 12m18.4 8.8-2.5-2.5q-.525.3-1.125.5T15.5 19q-1.875 0-3.188-1.312T11 14.5t1.312-3.187T15.5 10t3.187 1.313T20 14.5q0 .675-.2 1.275t-.5 1.125l2.5 2.5q.275.275.275.7t-.275.7-.7.275-.7-.275m-3.125-4.525Q18 15.55 18 14.5t-.725-1.775T15.5 12t-1.775.725T13 14.5t.725 1.775T15.5 17t1.775-.725"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-code-xml"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M3.825 12 6.7 14.875q.275.3.288.713T6.7 16.3t-.7.3-.7-.3l-3.6-3.6q-.3-.3-.3-.7t.3-.7l3.6-3.6q.3-.3.7-.3t.7.3.3.713-.3.712zm5.088 7.513q-.188-.363-.063-.763l4.4-14.1q.125-.4.488-.587T14.5 4t.588.488.062.762l-4.4 14.1q-.125.4-.487.588T9.5 20t-.587-.487M20.175 12 17.3 9.125q-.3-.3-.3-.712t.3-.713.7-.3.7.3l3.6 3.6q.3.3.3.7t-.3.7l-3.6 3.6q-.3.3-.7.3t-.7-.3-.3-.713.3-.712z"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-code-xml"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M3.825 12 6.7 14.875q.275.3.288.713T6.7 16.3t-.7.3-.7-.3l-3.6-3.6q-.3-.3-.3-.7t.3-.7l3.6-3.6q.3-.3.7-.3t.7.3.3.713-.3.712zm5.088 7.513q-.188-.363-.063-.763l4.4-14.1q.125-.4.488-.587T14.5 4t.588.488.062.762l-4.4 14.1q-.125.4-.487.588T9.5 20t-.587-.487M20.175 12 17.3 9.125q-.3-.3-.3-.712t.3-.713.7-.3.7.3l3.6 3.6q.3.3.3.7t-.3.7l-3.6 3.6q-.3.3-.7.3t-.7-.3-.3-.713.3-.712z"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-remove"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M7 21q-.825 0-1.412-.587T5 19V6q-.425 0-.712-.287T4 5t.287-.712T5 4h4q0-.425.288-.713T10 3h4q.425 0 .713.287T15 4h4q.425 0 .713.287T20 5t-.287.713T19 6v13q0 .825-.587 1.413T17 21zM17 6H7v13h10zM7 6v13zm5 7.9 1.9 1.9q.275.275.7.275t.7-.275.275-.7-.275-.7l-1.9-1.9 1.9-1.9q.275-.275.275-.7t-.275-.7-.7-.275-.7.275L12 11.1l-1.9-1.9q-.275-.275-.7-.275t-.7.275-.275.7.275.7l1.9 1.9-1.9 1.9q-.275.275-.275.7t.275.7.7.275.7-.275z"
-        />
-      </symbol>
+			<symbol
+				fill="currentColor"
+				id="ic-remove"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M7 21q-.825 0-1.412-.587T5 19V6q-.425 0-.712-.287T4 5t.287-.712T5 4h4q0-.425.288-.713T10 3h4q.425 0 .713.287T15 4h4q.425 0 .713.287T20 5t-.287.713T19 6v13q0 .825-.587 1.413T17 21zM17 6H7v13h10zM7 6v13zm5 7.9 1.9 1.9q.275.275.7.275t.7-.275.275-.7-.275-.7l-1.9-1.9 1.9-1.9q.275-.275.275-.7t-.275-.7-.7-.275-.7.275L12 11.1l-1.9-1.9q-.275-.275-.7-.275t-.7.275-.275.7.275.7l1.9 1.9-1.9 1.9q-.275.275-.275.7t.275.7.7.275.7-.275z"
+				/>
+			</symbol>
 
-      <symbol
-        fill="currentColor"
-        id="ic-low-quality-icons"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12 21q-1.625 0-3.012-.8T6.8 18H5q-.425 0-.712-.287T4 17t.288-.712T5 16h1.1q-.075-.5-.087-1T6 14H5q-.425 0-.712-.287T4 13t.288-.712T5 12h1q0-.5.013-1t.087-1H5q-.425 0-.712-.287T4 9t.288-.712T5 8h1.8q.35-.575.788-1.075T8.6 6.05l-.925-.95Q7.4 4.825 7.4 4.413t.3-.713q.275-.275.7-.275t.7.275l1.45 1.45q.7-.225 1.425-.225t1.425.225l1.5-1.475q.275-.275.688-.275t.712.3q.275.275.275.7t-.275.7l-.95.95q.575.375 1.038.863T17.2 8H19q.425 0 .713.288T20 9t-.287.713T19 10h-1.1q.075.5.088 1T18 12h1q.425 0 .713.288T20 13t-.287.713T19 14h-1q0 .5-.012 1t-.088 1H19q.425 0 .713.288T20 17t-.287.713T19 18h-1.8q-.8 1.4-2.187 2.2T12 21m0-2q1.65 0 2.825-1.175T16 15v-4q0-1.65-1.175-2.825T12 7 9.175 8.175 8 11v4q0 1.65 1.175 2.825T12 19m-1-3h2q.425 0 .713-.287T14 15t-.287-.712T13 14h-2q-.425 0-.712.288T10 15t.288.713T11 16m0-4h2q.425 0 .713-.287T14 11t-.287-.712T13 10h-2q-.425 0-.712.288T10 11t.288.713T11 12"
-        />
-      </symbol>
-      <symbol
-        id="ic-icon-review"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M5 21c-.55 0-1.02-.196-1.413-.587A1.926 1.926 0 0 1 3 19V5c0-.55.196-1.02.587-1.413A1.926 1.926 0 0 1 5 3h14c.55 0 1.02.196 1.413.587.39.393.587.863.587 1.413v7a.97.97 0 0 1-.288.713A.968.968 0 0 1 20 13a.968.968 0 0 1-.712-.287A.968.968 0 0 1 19 12V5H5v14h5.287c.284 0 .521.096.713.288.192.191.287.429.287.712s-.095.52-.287.712a.968.968 0 0 1-.713.288H5Zm3.713-8.287A.968.968 0 0 0 9 12a.968.968 0 0 0-.287-.713A.967.967 0 0 0 8 11a.967.967 0 0 0-.713.287A.968.968 0 0 0 7 12c0 .283.096.52.287.713.192.191.43.287.713.287s.52-.096.713-.287Zm0-4A.968.968 0 0 0 9 8a.968.968 0 0 0-.287-.713A.968.968 0 0 0 8 7a.968.968 0 0 0-.713.287A.968.968 0 0 0 7 8c0 .283.096.52.287.713.192.191.43.287.713.287s.52-.096.713-.287ZM16 13a.97.97 0 0 0 .712-.287A.968.968 0 0 0 17 12a.968.968 0 0 0-.288-.713A.968.968 0 0 0 16 11h-4a.968.968 0 0 0-.713.287A.968.968 0 0 0 11 12c0 .283.096.52.287.713.192.191.43.287.713.287h4Zm0-4a.97.97 0 0 0 .712-.287A.967.967 0 0 0 17 8a.967.967 0 0 0-.288-.713A.968.968 0 0 0 16 7h-4a.968.968 0 0 0-.713.287A.967.967 0 0 0 11 8c0 .283.096.52.287.713.192.191.43.287.713.287h4Z"
-          fill="currentColor"
-        />
-        <path
-          d="m15.985 18.681 3.367-3.394a.93.93 0 0 1 .68-.287.93.93 0 0 1 .681.287.93.93 0 0 1 .287.681.93.93 0 0 1-.287.681l-4.06 4.064a.93.93 0 0 1-.68.287.93.93 0 0 1-.68-.287l-2.03-2.032A.975.975 0 0 1 13 18a.93.93 0 0 1 .287-.681.916.916 0 0 1 .668-.287c.255 0 .478.096.669.287l1.361 1.362Z"
-          fill="currentColor"
-        />
-      </symbol>
-      <symbol
-        id="ic-guides"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M6 21a2.893 2.893 0 0 1-2.125-.875A2.893 2.893 0 0 1 3 18V6c0-.833.292-1.542.875-2.125A2.893 2.893 0 0 1 6 3h9c.55 0 1.02.196 1.413.587.39.393.587.863.587 1.413v10c0 .55-.196 1.02-.587 1.413A1.926 1.926 0 0 1 15 17H6a.967.967 0 0 0-.713.288A.968.968 0 0 0 5 18c0 .283.096.52.287.712.192.192.43.288.713.288h13V6a.97.97 0 0 1 .288-.713A.968.968 0 0 1 20 5a.97.97 0 0 1 .712.287c.192.192.288.43.288.713v13c0 .55-.196 1.02-.587 1.413A1.926 1.926 0 0 1 19 21H6Zm3-6h6V5H9v10Zm-2 0V5H6a.968.968 0 0 0-.713.287A.968.968 0 0 0 5 6v9.175c.167-.05.33-.092.487-.125.159-.033.33-.05.513-.05h1Z"
-          fill="currentColor"
-        />
-      </symbol>
-    </svg>
-  </body>
+			<symbol
+				fill="currentColor"
+				id="ic-low-quality-icons"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M12 21q-1.625 0-3.012-.8T6.8 18H5q-.425 0-.712-.287T4 17t.288-.712T5 16h1.1q-.075-.5-.087-1T6 14H5q-.425 0-.712-.287T4 13t.288-.712T5 12h1q0-.5.013-1t.087-1H5q-.425 0-.712-.287T4 9t.288-.712T5 8h1.8q.35-.575.788-1.075T8.6 6.05l-.925-.95Q7.4 4.825 7.4 4.413t.3-.713q.275-.275.7-.275t.7.275l1.45 1.45q.7-.225 1.425-.225t1.425.225l1.5-1.475q.275-.275.688-.275t.712.3q.275.275.275.7t-.275.7l-.95.95q.575.375 1.038.863T17.2 8H19q.425 0 .713.288T20 9t-.287.713T19 10h-1.1q.075.5.088 1T18 12h1q.425 0 .713.288T20 13t-.287.713T19 14h-1q0 .5-.012 1t-.088 1H19q.425 0 .713.288T20 17t-.287.713T19 18h-1.8q-.8 1.4-2.187 2.2T12 21m0-2q1.65 0 2.825-1.175T16 15v-4q0-1.65-1.175-2.825T12 7 9.175 8.175 8 11v4q0 1.65 1.175 2.825T12 19m-1-3h2q.425 0 .713-.287T14 15t-.287-.712T13 14h-2q-.425 0-.712.288T10 15t.288.713T11 16m0-4h2q.425 0 .713-.287T14 11t-.287-.712T13 10h-2q-.425 0-.712.288T10 11t.288.713T11 12"
+				/>
+			</symbol>
+			<symbol
+				id="ic-icon-review"
+				viewBox="0 0 24 24"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M5 21c-.55 0-1.02-.196-1.413-.587A1.926 1.926 0 0 1 3 19V5c0-.55.196-1.02.587-1.413A1.926 1.926 0 0 1 5 3h14c.55 0 1.02.196 1.413.587.39.393.587.863.587 1.413v7a.97.97 0 0 1-.288.713A.968.968 0 0 1 20 13a.968.968 0 0 1-.712-.287A.968.968 0 0 1 19 12V5H5v14h5.287c.284 0 .521.096.713.288.192.191.287.429.287.712s-.095.52-.287.712a.968.968 0 0 1-.713.288H5Zm3.713-8.287A.968.968 0 0 0 9 12a.968.968 0 0 0-.287-.713A.967.967 0 0 0 8 11a.967.967 0 0 0-.713.287A.968.968 0 0 0 7 12c0 .283.096.52.287.713.192.191.43.287.713.287s.52-.096.713-.287Zm0-4A.968.968 0 0 0 9 8a.968.968 0 0 0-.287-.713A.968.968 0 0 0 8 7a.968.968 0 0 0-.713.287A.968.968 0 0 0 7 8c0 .283.096.52.287.713.192.191.43.287.713.287s.52-.096.713-.287ZM16 13a.97.97 0 0 0 .712-.287A.968.968 0 0 0 17 12a.968.968 0 0 0-.288-.713A.968.968 0 0 0 16 11h-4a.968.968 0 0 0-.713.287A.968.968 0 0 0 11 12c0 .283.096.52.287.713.192.191.43.287.713.287h4Zm0-4a.97.97 0 0 0 .712-.287A.967.967 0 0 0 17 8a.967.967 0 0 0-.288-.713A.968.968 0 0 0 16 7h-4a.968.968 0 0 0-.713.287A.967.967 0 0 0 11 8c0 .283.096.52.287.713.192.191.43.287.713.287h4Z"
+					fill="currentColor"
+				/>
+				<path
+					d="m15.985 18.681 3.367-3.394a.93.93 0 0 1 .68-.287.93.93 0 0 1 .681.287.93.93 0 0 1 .287.681.93.93 0 0 1-.287.681l-4.06 4.064a.93.93 0 0 1-.68.287.93.93 0 0 1-.68-.287l-2.03-2.032A.975.975 0 0 1 13 18a.93.93 0 0 1 .287-.681.916.916 0 0 1 .668-.287c.255 0 .478.096.669.287l1.361 1.362Z"
+					fill="currentColor"
+				/>
+			</symbol>
+			<symbol
+				id="ic-guides"
+				viewBox="0 0 24 24"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M6 21a2.893 2.893 0 0 1-2.125-.875A2.893 2.893 0 0 1 3 18V6c0-.833.292-1.542.875-2.125A2.893 2.893 0 0 1 6 3h9c.55 0 1.02.196 1.413.587.39.393.587.863.587 1.413v10c0 .55-.196 1.02-.587 1.413A1.926 1.926 0 0 1 15 17H6a.967.967 0 0 0-.713.288A.968.968 0 0 0 5 18c0 .283.096.52.287.712.192.192.43.288.713.288h13V6a.97.97 0 0 1 .288-.713A.968.968 0 0 1 20 5a.97.97 0 0 1 .712.287c.192.192.288.43.288.713v13c0 .55-.196 1.02-.587 1.413A1.926 1.926 0 0 1 19 21H6Zm3-6h6V5H9v10Zm-2 0V5H6a.968.968 0 0 0-.713.287A.968.968 0 0 0 5 6v9.175c.167-.05.33-.092.487-.125.159-.033.33-.05.513-.05h1Z"
+					fill="currentColor"
+				/>
+			</symbol>
+		</svg>
+	</body>
 </html>
