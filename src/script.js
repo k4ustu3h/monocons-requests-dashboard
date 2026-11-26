@@ -907,8 +907,7 @@ const Templates = {
         <div class="card-header">
           <span class="card-title">Share your home screen</span>
         </div>
-        <p class="card-sub">We add the best setups you share to our Discord and relevant subreddits.</p>
-        <a class="link" href="https://discord.gg/3x8qNWxgGZ" target="_blank" rel="noopener">#home-screens in Discord</a>
+        <p class="card-sub">We add the best setups you share to relevant subreddits.</p>
         <div class="reddit-links">${redditLinks}</div>
       </div>
     `;
