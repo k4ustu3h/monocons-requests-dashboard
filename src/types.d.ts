@@ -22,10 +22,8 @@ declare global {
     firstAppearance: number;
     lastRequested: number;
     installs?: string;
-    roi_score?: number;
     priority?: string;
     isLinkOnly?: boolean;
-    components?: string[];
   }
 
   type SortKeys = 'name' | 'req' | 'odds' | 'install' | 'time';
@@ -38,12 +36,10 @@ declare global {
   interface FilterContents {
     id: string;
     existing_drawable: string;
-    name?: string;
-    components?: string[];
   }
 
   interface Filter extends FilterMetadata {
-    [key: string]: string | (string | FilterContents)[] | undefined;
+    [key: string]: string | FilterContents[] | undefined;
   }
 
   interface Icon {
@@ -201,7 +197,6 @@ declare global {
     linksBatchIndex?: number;
     linksTotalBatches?: number;
     linksLoading?: boolean;
-    renderedIds?: Set<string>;
     _quickPickEasy?: (AppEntry & { _score: number })[];
     _quickPickMiddle?: (AppEntry & { _score: number })[];
     _lastQuickPickIdx?: number;
