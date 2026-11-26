@@ -5,13 +5,6 @@
   "total_batches": 7,
   "links": [
     {
-      "id": "io.zenzy.applock/io.zenzy.applock.MusicLauncher",
-      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
-      "name": "AppLock VIP",
-      "installs": "1,000,000+",
-      "drawable": "applock_vip"
-    },
-    {
       "id": "com.tomclaw.appsend_rb/com.tomclaw.appsend_rb.screen.apps.AppsActivity",
       "existing_drawable": "appsend",
       "name": "AppSend",
@@ -57,13 +50,6 @@
       "drawable": "bernoulli_play"
     },
     {
-      "id": "com.netease.newspikeme/com.netease.game.MessiahNativeActivity",
-      "existing_drawable": "blood_strike",
-      "name": "Blood Strike MENA",
-      "installs": "10,000,000+",
-      "drawable": "blood_strike_mena"
-    },
-    {
       "id": "de.deltacity.android.blutspende/de.deltacity.android.blutspende.LauncherActivity",
       "existing_drawable": "generic_aid",
       "name": "Blutspende",
@@ -74,13 +60,6 @@
       "id": "com.mathieu.budmaldash00/com.mathieu.budmaldash00.GeometryJump",
       "existing_drawable": "geometry_dash",
       "name": "BurmalDash"
-    },
-    {
-      "id": "org.universal.bibliafiel_comentada/org.universal.bibliafiel_comentada.screen.main.MainActivity",
-      "existing_drawable": "generic_bible",
-      "name": "B\u00edblia Fiel",
-      "installs": "1,000,000+",
-      "drawable": "org_universal_bibliafiel_comentada"
     },
     {
       "id": "com.candl.athena/com.candl.athena.activity.Calculator",
@@ -185,11 +164,6 @@
       "name": "cmus music player"
     },
     {
-      "id": "com.bnyro.contacts/com.bnyro.contacts.ui.activities.MainActivity",
-      "existing_drawable": "generic_contacts",
-      "name": "Connect You"
-    },
-    {
       "id": "icontacts.ios.dialer.icall/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
       "existing_drawable": "generic_dialer",
       "name": "Contacts & Phone Call",
@@ -236,20 +210,6 @@
       "id": "com.opensource.i2pradio/com.opensource.i2pradio.MainActivity",
       "existing_drawable": "generic_fm_radio",
       "name": "deutsia radio"
-    },
-    {
-      "id": "com.didi.global.rider/com.didi.rider.business.main.SplashActivity",
-      "existing_drawable": "didi",
-      "name": "DiDi Delivery",
-      "installs": "5,000,000+",
-      "drawable": "didi_delivery"
-    },
-    {
-      "id": "com.didiglobal.driver/com.didichuxing.driver.sdk.LauncherActivity",
-      "existing_drawable": "didi",
-      "name": "DiDi Driver",
-      "installs": "10,000,000+",
-      "drawable": "didi_driver"
     },
     {
       "id": "com.adeeteya.digital_calculator/com.adeeteya.digital_calculator.MainActivity",
@@ -321,6 +281,48 @@
       "name": "Fairbuds",
       "installs": "10,000+",
       "drawable": "fairbuds"
+    },
+    {
+      "id": "com.blogspot.novalabsandroid.fakecallerid/com.blogspot.novalabsandroid.fakecallerid.ConfigCallActivity",
+      "existing_drawable": "generic_dialer",
+      "name": "Fake Call",
+      "installs": "1,000,000+",
+      "drawable": "fake_call"
+    },
+    {
+      "id": "com.file.manager.file.organizer.file.explorer.manage.files/com.file.manager.file.organizer.file.explorer.manage.files.ui.activity.splash.SplashActivity",
+      "existing_drawable": "generic_files",
+      "name": "File Manager",
+      "installs": "1,000,000+",
+      "drawable": "file_manager"
+    },
+    {
+      "id": "com.simple.filemanager/com.simple.filemanager.ui.activity.MainPageActivity",
+      "existing_drawable": "generic_files",
+      "name": "File Manager",
+      "installs": "1,000,000+",
+      "drawable": "file_manager"
+    },
+    {
+      "id": "net.east_hino.standard_explorer/net.east_hino.standard_explorer.ui.ActivityMain",
+      "existing_drawable": "generic_files",
+      "name": "File Manager Shortcut",
+      "installs": "10,000+",
+      "drawable": "file_manager_shortcut"
+    },
+    {
+      "id": "nl.moeilijkedingen.jellyfinaudioplayer/nl.moeilijkedingen.jellyfinaudioplayer.MainActivity",
+      "existing_drawable": "apple_music",
+      "name": "Fintunes",
+      "installs": "10,000+",
+      "drawable": "fintunes"
+    },
+    {
+      "id": "com.smartpdf.reader/com.smartpdf.reader.Activities.ActivityOnBoarding",
+      "existing_drawable": "generic_pdf_file",
+      "name": "Flex PDF Reader",
+      "installs": "50,000+",
+      "drawable": "flex_pdf_reader"
     }
   ]
 }

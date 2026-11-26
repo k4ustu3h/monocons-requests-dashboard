@@ -5,48 +5,6 @@
   "total_batches": 7,
   "links": [
     {
-      "id": "com.blogspot.novalabsandroid.fakecallerid/com.blogspot.novalabsandroid.fakecallerid.ConfigCallActivity",
-      "existing_drawable": "generic_dialer",
-      "name": "Fake Call",
-      "installs": "1,000,000+",
-      "drawable": "fake_call"
-    },
-    {
-      "id": "com.file.manager.file.organizer.file.explorer.manage.files/com.file.manager.file.organizer.file.explorer.manage.files.ui.activity.splash.SplashActivity",
-      "existing_drawable": "generic_files",
-      "name": "File Manager",
-      "installs": "1,000,000+",
-      "drawable": "file_manager"
-    },
-    {
-      "id": "com.simple.filemanager/com.simple.filemanager.ui.activity.MainPageActivity",
-      "existing_drawable": "generic_files",
-      "name": "File Manager",
-      "installs": "1,000,000+",
-      "drawable": "file_manager"
-    },
-    {
-      "id": "net.east_hino.standard_explorer/net.east_hino.standard_explorer.ui.ActivityMain",
-      "existing_drawable": "generic_files",
-      "name": "File Manager Shortcut",
-      "installs": "10,000+",
-      "drawable": "file_manager_shortcut"
-    },
-    {
-      "id": "nl.moeilijkedingen.jellyfinaudioplayer/nl.moeilijkedingen.jellyfinaudioplayer.MainActivity",
-      "existing_drawable": "apple_music",
-      "name": "Fintunes",
-      "installs": "10,000+",
-      "drawable": "fintunes"
-    },
-    {
-      "id": "com.smartpdf.reader/com.smartpdf.reader.Activities.ActivityOnBoarding",
-      "existing_drawable": "generic_pdf_file",
-      "name": "Flex PDF Reader",
-      "installs": "50,000+",
-      "drawable": "flex_pdf_reader"
-    },
-    {
       "id": "mobi.appplus.calculator.plus/mobi.appplus.calculator.plus.MainActivity",
       "existing_drawable": "generic_calculator_plus_minus_multi_equal",
       "name": "FlexCalc",
@@ -150,20 +108,6 @@
       "name": "Image Toolbox",
       "installs": "500,000+",
       "drawable": "image_toolbox"
-    },
-    {
-      "id": "com.pnn.obdcardoctor/com.pnn.obdcardoctor_full.gui.activity.SplashActivity",
-      "existing_drawable": "generic_engine",
-      "name": "inCarDoc",
-      "installs": "5,000,000+",
-      "drawable": "incardoc"
-    },
-    {
-      "id": "com.pnn.obdcardoctor_full/com.pnn.obdcardoctor_full.presentation.MainScreen",
-      "existing_drawable": "generic_engine_pro",
-      "name": "inCarDoc Pro",
-      "installs": "100,000+",
-      "drawable": "incardoc_pro"
     },
     {
       "id": "com.grykuby.minesweeper/com.google.firebase.MessagingUnityPlayerActivity",
@@ -315,6 +259,52 @@
       "id": "com.cvc953.localplayer/com.cvc953.localplayer.MainActivity",
       "existing_drawable": "music_player",
       "name": "Local Player"
+    },
+    {
+      "id": "com.op.lspdoze/com.op.lspdoze.ui.MainActivity",
+      "existing_drawable": "generic_shell",
+      "name": "LSPDoze"
+    },
+    {
+      "id": "app.lunatask.android/app.lunatask.android.MainActivity",
+      "existing_drawable": "tasks",
+      "name": "Lunatask",
+      "installs": "10,000+",
+      "drawable": "lunatask"
+    },
+    {
+      "id": "com.j.m3play/com.j.m3play.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "M3Play"
+    },
+    {
+      "id": "com.devmaru.audio/com.devmaru.audio.activity.MainActivity",
+      "existing_drawable": "music_player",
+      "name": "MaruAudio",
+      "installs": "10,000+",
+      "drawable": "maruaudio"
+    },
+    {
+      "id": "material.expressive.kwgt/material.expressive.kwgt.MainActivity",
+      "existing_drawable": "m3_expressive_widgets",
+      "name": "Material Expressive Widget",
+      "installs": "1,000+",
+      "drawable": "material_expressive_widget"
+    },
+    {
+      "id": "com.nemynew.materialsearch/com.nemynew.materialsearch.MainActivity",
+      "existing_drawable": "generic_search",
+      "name": "Material Search"
+    },
+    {
+      "id": "com.melmeligy.mediadownloader/com.melmeligy.mediadownloader.MainActivity",
+      "existing_drawable": "generic_download_shelf",
+      "name": "Media Downloader"
+    },
+    {
+      "id": "foundation.e.message/com.moez.QKSMS.feature.main.MainActivity",
+      "existing_drawable": "messages",
+      "name": "Messages"
     }
   ]
 }

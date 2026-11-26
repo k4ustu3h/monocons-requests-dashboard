@@ -182,18 +182,6 @@
       "drawable": "music_player"
     },
     {
-      "id": "com.teslacoilsw.launcher.prime/android.app.AppDetailsActivity",
-      "existing_drawable": "nova_launcher",
-      "name": "Nova Launcher Prime",
-      "components": [
-        "com.teslacoilsw.launcher.prime/android.app.AppDetailsActivity",
-        "com.teslacoilsw.launcher.prime/com.teslacoilsw.launcher.preferences.SettingsActivity",
-        "com.teslacoilsw.launcher.prime/com.teslacoilsw.launcher.prime.NovaLauncherPrimeActivity"
-      ],
-      "installs": "5,000,000+",
-      "drawable": "nova_launcher_prime"
-    },
-    {
       "id": "com.opera.browser.beta/com.opera.Launcher5",
       "existing_drawable": "opera_browser",
       "name": "Opera Beta",
@@ -519,6 +507,13 @@
       "id": "com.example.libusbAndroidTest/com.example.libusbAndroidTest.MainActivity",
       "existing_drawable": "drivedroid",
       "name": "Apple Dongle Volume Fixer"
+    },
+    {
+      "id": "io.zenzy.applock/io.zenzy.applock.MusicLauncher",
+      "existing_drawable": "generic_calculator_minus_multi_plus_equal",
+      "name": "AppLock VIP",
+      "installs": "1,000,000+",
+      "drawable": "applock_vip"
     }
   ]
 }
