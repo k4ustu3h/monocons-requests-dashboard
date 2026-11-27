@@ -231,10 +231,6 @@
       "lawnicons_drawable": "books_story"
     },
     {
-      "id": "com.nothing.glyph.composer/com.nothing.glyph.composer.ui.MainActivity",
-      "lawnicons_drawable": "glyph_composer"
-    },
-    {
       "id": "net.easypark.android/net.easypark.android.mvp.splash.SplashActivity",
       "lawnicons_drawable": "easypark"
     },
@@ -313,10 +309,6 @@
     {
       "id": "com.cris.utsmobile/com.cris.ima.utsonmobile.mainmenuitems.SplashActivity",
       "lawnicons_drawable": "uts"
-    },
-    {
-      "id": "com.facebook.viewpoints/com.facebook.anna.app.activities.MainActivity",
-      "lawnicons_drawable": "viewpoints"
     },
     {
       "id": "br.gov.dataprev.carteiradigital/br.gov.dataprev.carteiradigital.MainActivity",
@@ -449,10 +441,6 @@
     {
       "id": "cz.destil.settleup/cz.destil.settleup.gui.MainActivity",
       "lawnicons_drawable": "settle_up"
-    },
-    {
-      "id": "eu.reply.cordless/replycept.dma.ui.SplashScreen",
-      "lawnicons_drawable": "vodafone_station"
     },
     {
       "id": "com.valvesoftware.steamlink/com.valvesoftware.steamlink.SteamShellActivity",
@@ -745,10 +733,6 @@
     {
       "id": "com.agc.gcam_tools/com.agc.gcam_tools.MainActivity",
       "lawnicons_drawable": "agc_toolkit"
-    },
-    {
-      "id": "air.com.cetesdirecto.cetesmobile/air.com.cetesdirecto.cetesmobile.PantallaBienvenida",
-      "lawnicons_drawable": "cetesdirecto"
     },
     {
       "id": "mx.com.cfe.cfecontigo/mx.com.cfe.cfecontigo.ui.login.LoginActivity",
@@ -2253,6 +2237,54 @@
     {
       "id": "ru.kinopoisk/ru.kinopoisk.DefaultAlias",
       "lawnicons_drawable": "kinopoisk"
+    },
+    {
+      "id": "br.com.zetabit.ios_standby/br.com.zetabit.ios_standby.MainActivity",
+      "lawnicons_drawable": "standby_mode"
+    },
+    {
+      "id": "org.nuclearfog.apollo/org.nuclearfog.apollo.ui.activities.HomeActivity",
+      "lawnicons_drawable": "headphones"
+    },
+    {
+      "id": "sushi.hardcore.droidfs/sushi.hardcore.droidfs.MainActivity",
+      "lawnicons_drawable": "droidfs"
+    },
+    {
+      "id": "com.yakovlevegor.DroidRec/com.yakovlevegor.DroidRec.MainActivity",
+      "lawnicons_drawable": "droidrec"
+    },
+    {
+      "id": "com.kwai.video/com.yxcorp.gifshow.tiny.TinyLaunchActivity",
+      "lawnicons_drawable": "kwai"
+    },
+    {
+      "id": "it.belloworld.mercurygram/org.telegram.messenger.VintageIcon",
+      "lawnicons_drawable": "mercurygram"
+    },
+    {
+      "id": "com.smartpack.packagemanager/com.smartpack.packagemanager.activities.StartActivity",
+      "lawnicons_drawable": "smartpack_package_manager"
+    },
+    {
+      "id": "com.sunilpaulmathew.snotz/com.sunilpaulmathew.snotz.activities.StartActivity",
+      "lawnicons_drawable": "snotz"
+    },
+    {
+      "id": "jp.co.sony.hes.home/jp.co.sony.hes.home.MainActivity",
+      "lawnicons_drawable": "sony_bravia_connect"
+    },
+    {
+      "id": "com.fampay.in/com.fampay.in.app_icon_alias.AppIconsAlias.DefaultIconAlias",
+      "lawnicons_drawable": "famapp"
+    },
+    {
+      "id": "com.sony.songpal/com.sony.songpal.app.view.overview.DeviceAndGroupActivity",
+      "lawnicons_drawable": "sony_music_center"
+    },
+    {
+      "id": "com.coveiot.android.boat/com.coveiot.android.leonardo.onboarding.splash.activities.ActivitySplash",
+      "lawnicons_drawable": "boat_crest"
     }
   ]
 }

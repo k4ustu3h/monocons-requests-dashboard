@@ -5,6 +5,13 @@
   "total_batches": 7,
   "links": [
     {
+      "id": "com.miui.weather2/com.miui.weather2.WeatherBaseScreen",
+      "existing_drawable": "weather",
+      "name": "Xiaomi Weather",
+      "installs": "1,000,000,000+",
+      "drawable": "xiaomi_weather"
+    },
+    {
       "id": "com.github.tianma8023.xposed.smscode/com.github.tianma8023.xposed.smscode.HomeActivityAlias",
       "existing_drawable": "sms_organizer",
       "name": "XposedSmsCode",

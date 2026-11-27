@@ -141,6 +141,11 @@
       "drawable": "themes"
     },
     {
+      "id": "com.transsion.theme/com.transsion.theme.XThemeMain",
+      "existing_drawable": "themes",
+      "name": "Themes"
+    },
+    {
       "id": "com.tiktok.lite.go/com.zhiliaoapp.musically.go.mini.MainActivity",
       "existing_drawable": "tiktok",
       "name": "TikTok Lite",
@@ -322,13 +327,6 @@
       "id": "me.teble.xposed.autodaily/me.teble.xposed.autodaily.activity.common.MainActivityAlias",
       "existing_drawable": "tasky",
       "name": "XAutoDaily"
-    },
-    {
-      "id": "com.miui.weather2/com.miui.weather2.WeatherBaseScreen",
-      "existing_drawable": "weather",
-      "name": "Xiaomi Weather",
-      "installs": "1,000,000,000+",
-      "drawable": "xiaomi_weather"
     }
   ]
 }
