@@ -56,7 +56,7 @@ Excluded (non-goals):
 - `assets/stats/sets_stats.json`: popularity overrides for sorting.
 - `assets/stats/domain_stats.json`: domain breakdown card, tooltip, `_population`.
 - `assets/stats/activity_stats.json`: activity card.
-- `assets/stats/fulfillment_history.json`: icons/day and supported/day for the activity card.
+- `assets/stats/fulfillment_history.json`: icons/day for the activity card.
 - `assets/stats/trending_baseline.json`: `trending` sort deltas.
 - `assets/qa_issues/review_issues.json`: low-quality badge and QA page.
 - `assets/qa_issues/review_pass.json`, `assets/qa_issues/svgs/`: build-time QA data and Monocons SVGs (SVGs are also rendered for `existing_drawable` and library previews).
@@ -227,7 +227,7 @@ Error Handling:
 
 - **Primary data:** `requests.json`.
 - **Filters:** `CONFIG.data.filters` defines load and display order (`plan`, `supported`, `redesign`, `easy`, `foss`, `nameinuse`, `match`, `stale`, `in_lawnicons`, `links`, `unlabeled`); each filter uses `assets/filters/<id>.json` except synthesized `plan`, computed `unlabeled`, and staggered `links` (`links_requested.json` + `links_<n>.json`).
-- **Analytics:** `sets_stats.json` (popularity), `domain_stats.json` (domain card/tooltips), `activity_stats.json` (activity card), `fulfillment_history.json` (icons/day, supported/day), `trending_baseline.json` (trending sort), `review_issues.json` (QA badge/page), plus `roi_score` and `priority` on `requests.json` entries (priority chart / impact sort).
+- **Analytics:** `sets_stats.json` (popularity), `domain_stats.json` (domain card/tooltips), `activity_stats.json` (activity card), `fulfillment_history.json` (icons/day, TTF), `trending_baseline.json` (trending sort), `review_issues.json` (QA badge/page), plus `roi_score` and `priority` on `requests.json` entries (priority chart / impact sort).
 - **Graphs & AppFilters:** `requests_graph.json` and `screens_graph.json` power geo prefixes, screen searches, and regex domain matching; `appfilter.xml` and `lawnicons_appfilter.xml` power existing-icon checks and multi-component linking.
 - **Automation & Enrichment:** `.github/workflows/prune_requests.yml` orchestrates `fetch_emails.py`, `email_parser.py`, `save_trending_baseline.py`, `prune_requests.py`, `generate_auto_tags.py`, `update_foss_tags.py`, `generate_lawnicons_tags.py`, `dump_play_info_links.py`, and `incremental_review.py` alongside `monocons-android` SVGs.
 - **Local UI persistence:** `localStorage` keys `monocons_contribution*`; selected rows are runtime-only.
