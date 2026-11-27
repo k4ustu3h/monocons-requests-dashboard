@@ -76,7 +76,6 @@ const CONFIG = {
     assetsPath: 'extracted_images/',
     iconExtension: '.webp',
     filterPath: 'assets/filters/',
-    supportedIssuesPath: 'assets/supported_issues.json',
     svgPath: 'assets/qa_issues/svgs/',
     homeScreensPath: 'assets/home_screens/entries.json',
     // Order matters for UI
@@ -411,8 +410,6 @@ const App = {
     _dynamicMatchesCache: null,
     /** Precomputed component ID -> geo prefix used by list rows. */
     _geoPrefixById: null,
-    /** Precomputed component ID -> issue key used by supported rows. */
-    _issueByComponent: null,
 
     actionMode: 'new',
     lowQualityActive: false,
@@ -430,7 +427,6 @@ const App = {
     activeTab: 'requests',
     screensData: {},
     requestsGraph: {},
-    supportedIssues: {},
     screenSort: 'req-desc',
   },
 
@@ -698,14 +694,6 @@ const Templates = {
     const appNameClass = isUnknown ? 'app-name is-hidden' : 'app-name';
 
     const tagHtml = tags.map((tagId) => {
-      if (tagId === 'supported') {
-        const issueKey = App.state._issueByComponent?.get(id);
-        if (issueKey) {
-          const issueNum = issueKey.slice(1);
-          const issueUrl = `https://github.com/k4ustu3h/monocons-android/issues/${issueNum}`;
-          return `<a class="status-pill status-supported" href="${issueUrl}" target="_blank" rel="noopener" title="Issue #${issueNum}">${issueKey}</a>`;
-        }
-      }
       const meta = App.state.filterMetadata.get(tagId);
       const label = meta ? meta.label : tagId;
       const desc = meta ? meta.description : '';
@@ -2122,7 +2110,6 @@ const Data = {
     const needsGraphData =
       (App.state.regexMode && query.length > 0) ||
       /^scr-\d+$/.test(query) ||
-      /^#\d+$/.test(query) ||
       App.state.view === 'screens' ||
       App.state.activeTab === 'homescreens';
 
@@ -2164,24 +2151,16 @@ const Data = {
 
   /** Load graph datasets and rebuild the indices derived from them. */
   async loadGraphData() {
-    const [
-      screensData,
-      requestsGraph,
-      supportedIssues,
-      homeScreensData,
-    ] = await Promise.all([
+    const [screensData, requestsGraph, homeScreensData] = await Promise.all([
       this.fetchJson(CONFIG.data.screensGraphPath, {}),
       this.fetchJson(CONFIG.data.requestsGraphPath, {}),
-      this.fetchJson(CONFIG.data.supportedIssuesPath, {}),
       this.fetchJson(CONFIG.data.homeScreensPath, []),
     ]);
 
     App.state.screensData = screensData;
     App.state.requestsGraph = requestsGraph;
-    App.state.supportedIssues = supportedIssues;
     App.state.homeScreensData = homeScreensData;
     this.buildGeoPrefixIndex();
-    this.buildIssueIndex();
   },
 
   /** Load stats that enrich cards and row badges. */
@@ -2615,19 +2594,6 @@ const Data = {
     App.state._geoPrefixById = prefixes;
   },
 
-  /** Precompute issue keys by component for supported rows. */
-  buildIssueIndex() {
-    /** @type {Map<string, string>} */
-    const issues = new Map();
-    for (const [name, comps] of Object.entries(App.state.supportedIssues || {})) {
-      if (!name.startsWith('#') || !Array.isArray(comps)) continue;
-      for (const comp of /** @type {string[]} */ (comps)) {
-        if (!issues.has(comp)) issues.set(comp, name);
-      }
-    }
-    App.state._issueByComponent = issues;
-  },
-
   async getDynamicMatches() {
     // Reuse App.data: the old implementation re-fetched the 11 MB requests.json
     // on every render, even though it is already loaded during init().
@@ -2743,16 +2709,7 @@ const Data = {
           data = [];
         }
       } else {
-        const issueMatch = query.text.match(/^#(\d+)$/);
-        if (issueMatch) {
-          const issueKey = `#${issueMatch[1]}`;
-          const issueComps = App.state.supportedIssues?.[issueKey];
-          if (issueComps) {
-            data = data.filter(app => issueComps.includes(app.componentName));
-          } else {
-            data = [];
-          }
-        } else if (s.regexMode) {
+        if (s.regexMode) {
           try {
             const regex = new RegExp(query.text, 'i');
             const isUsSearch = query.text === '^us\\.';

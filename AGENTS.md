@@ -38,7 +38,7 @@ Excluded (non-goals):
 
 ### Loading Phases
 - **Critical (before first render):** `requests.json`, `assets/filters/*.json` (`links` initially fetches `links_requested.json` + `links_1.json`), `assets/stats/sets_stats.json`, `domain_stats.json`, `activity_stats.json`, then `idMap`, `appTags`, `filterMetadata`, and synthetic `isLinkOnly` entries from initial `links` batches.
-- **URL resolution:** `Data.loadUrlState()` runs before any render. If the URL genuinely needs graphs (`regex` with text, `q=scr-N`, `q=#N`, `view=screens`, `tab=homescreens`), `Data.loadGraphData()` is awaited before `UI.init()`.
+- **URL resolution:** `Data.loadUrlState()` runs before any render. If the URL genuinely needs graphs (`regex` with text, `q=scr-N`, `view=screens`, `tab=homescreens`), `Data.loadGraphData()` is awaited before `UI.init()`.
 - **First paint:** `UI.init()` renders the first batch immediately after critical data (and required graphs) are ready.
 - **Deferred:** scheduled after the first frame via `requestIdleCallback` (fallback `setTimeout`): graph datasets (`loadGraphData()`), optional stats (`fulfillment_history.json`, `trending_baseline.json`), review issues, and dual appfilters (`assets/appfilter.xml` and `assets/lawnicons_appfilter.xml`, followed by `Data.resolveLinkedComponents()`). A single `UI.refreshAfterDeferredData()` updates cards/badges and re-renders while preserving `renderedCount` and scroll position.
 - **On demand / Staggered scroll:** `excluded_packages.json` is fetched and memoized by `Data.getDynamicMatches()`. Remaining `links` batches (`assets/filters/links_2.json` … `links_N.json`) are loaded lazily on scroll via `UI.handleLinksScrollLoad()` → `Data.loadNextLinksBatch()` when the `links` filter or text search is active. Failures in optional datasets are non-fatal.
@@ -49,7 +49,6 @@ Excluded (non-goals):
 - `assets/filters/links_requested.json` and `assets/filters/links_1.json` … `links_N.json`: `links` filter datasets for apps supported in Monocons with extra Lawnicons components, split into batches of 50 sorted by linked component count (requested apps separated into `links_requested.json`) and enriched with Play Store `installs` via `scripts/dump_play_info_links.py`.
 - `assets/requests_graph.json`: component → neighboring components (geo regex/screen matching).
 - `assets/screens_graph.json`: screen ID (`scr-N`) → component list.
-- `assets/supported_issues.json`: GitHub issue key (`#N`) → component list.
 - `assets/home_screens/entries.json` and `images/*.webp`: home-screen cards.
 - `assets/appfilter.xml`: canonical Monocons existing icon list (`ComponentInfo{...}` items).
 - `assets/lawnicons_appfilter.xml`: upstream Lawnicons appfilter used alongside `appfilter.xml` to populate `lawniconsIcons` and resolve/copy linked components for `in_lawnicons` and `links`.
@@ -119,7 +118,7 @@ Each filter file is an object with `label`, `description`, and an array under th
 
 | Parameter | Meaning |
 | --- | --- |
-| `q` | Search text, regex, `scr-N`, or `#N` query |
+| `q` | Search text, regex, or `scr-N` query |
 | `view` | `list` (default), `grid`, or `screens` |
 | `sort` | Any key from `UI.sortOptions` (including `roi-desc` / `roi-asc`); screens view uses `UI.screenSortOptions` |
 | `regex` | `1` enables regex mode |
@@ -153,7 +152,7 @@ Forbidden:
 Functional:
 - URL parameters are the source of truth on page load for `q`, `view`, `sort`, `regex`, `filters`, `page`, and `tab`.
 - `App.state.selected` (keyed by `componentName`) must persist through search, filter, sort, view, tool-page changes, staggered `links_*` loads, and the deferred-data refresh.
-- Regex mode, special queries (`scr-N`, `#N`), and screens/home-screen deep links must wait for their graph data before the first render; other URLs must not wait.
+- Regex mode, `scr-N` queries, and screens/home-screen deep links must wait for their graph data before the first render; other URLs must not wait.
 - Invalid regex input must degrade safely to zero results, not crash the app.
 - Optional-data fetch failures must be non-fatal and leave usable defaults in `App.state`.
 - When copying appfilter entries (`Actions.generateAppFilterXml()`) for apps in Lawnicons (`in_lawnicons` or `links`), all matching components from both `existingIcons` (`assets/appfilter.xml`) and `lawniconsIcons` (`assets/lawnicons_appfilter.xml`), plus resolved `app.components`, must be included and deduplicated rather than copying only the primary component.
@@ -171,7 +170,7 @@ Architectural:
 - String HTML fragments live in `Templates`; direct DOM creation is acceptable for small controls, observers, tooltips, and focus plumbing.
 - Incremental rendering builds one HTML string per batch, parses it once, and appends through a `DocumentFragment` (`UI.loadMore()`).
 - `App.state.idMap` keeps O(1) lookup for all loaded apps (including link-only entries and linked component aliases).
-- `App.state.appTags`, `filterMetadata`, `existingSvgs`, `existingIcons`, `lawniconsIcons`, `_geoPrefixById`, `_issueByComponent`, and analytics maps are the canonical lookup sources after initialization.
+- `App.state.appTags`, `filterMetadata`, `existingSvgs`, `existingIcons`, `lawniconsIcons`, `_geoPrefixById`, and analytics maps are the canonical lookup sources after initialization.
 - Deferred datasets trigger exactly one coordinated refresh (`UI.refreshAfterDeferredData()`), never separate per-dataset re-renders.
 
 Performance:
@@ -215,7 +214,7 @@ Error Handling:
   - Confirm first rows appear before graph/XML and later `links_2+` requests; confirm deep links that need graphs still wait for them.
   - Verify shift-click range selection and keyboard selection in list and grid views.
   - Verify URL restore for `q`, `view`, `sort`, `regex`, `filters`, `page`, and `tab`.
-  - Verify plain search, invalid regex, `scr-N`, `#N`, and graph-backed domain regex queries.
+  - Verify plain search, invalid regex, `scr-N`, and graph-backed domain regex queries.
   - Verify deferred data refresh preserves selection, already-rendered rows, and scroll position.
   - Verify `in_lawnicons` and `links` filters: multi-component AppFilter copying across `appfilter.xml` and `lawnicons_appfilter.xml`, linked-component count in Requests column, staggered `links_2+` batch loading on scroll without duplicate rows, and Play Store `installs` display.
   - Verify priority chart rendering and `roi-desc` / `roi-asc` impact sorting.
