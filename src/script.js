@@ -979,6 +979,9 @@ const Templates = {
       <div class="ctx-item" tabindex="0" role="menuitem" data-action="copy-name-id-entry" data-id="${id}">
         <span>name & app ID</span>
       </div>
+      <div class="ctx-item" tabindex="0" role="menuitem" data-action="copy-app-id" data-id="${id}">
+        <span>app ID</span>
+      </div>
       <div class="ctx-item" tabindex="0" role="menuitem" data-action="copy-pkg-entry" data-id="${id}">
         <span>package name</span>
       </div>
@@ -1296,6 +1299,9 @@ const Templates = {
       </div>
       <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-copy-nameid">
         <span>names and app IDs</span>
+      </div>
+      <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-copy-app-ids">
+        <span>app IDs</span>
       </div>
       <div class="ctx-item" role="menuitem" tabindex="0" data-action="sb-copy-pkgs">
         <span>package names</span>
@@ -1694,6 +1700,18 @@ const Actions = {
     } else {
       Actions.copyToClipboard(`"${id}",`);
     }
+  },
+
+  /** @param {string} id */
+  copyAppId(id) {
+    Actions.copyToClipboard(id);
+  },
+
+  copySelectedAppIds() {
+    const ids = Actions.resolveApps([...App.state.selected])
+      .map((app) => app.componentName);
+    Actions.copyToClipboard(ids.join('\n'));
+    Actions.closeSbMenu();
   },
 
   /**
@@ -3484,6 +3502,12 @@ const UI = {
           return;
         }
 
+        if (action === 'copy-app-id') {
+          const id = actionEl.dataset.id;
+          if (id) Actions.copyAppId(id);
+          return;
+        }
+
         if (action === 'sb-download-metadata') {
           App.state.actionMode = 'link';
           Actions.downloadBundle();
@@ -3523,6 +3547,11 @@ const UI = {
 
         if (action === 'sb-copy-pkgs') {
           Actions.copySelectedPkgs();
+          return;
+        }
+
+        if (action === 'sb-copy-app-ids') {
+          Actions.copySelectedAppIds();
           return;
         }
 
