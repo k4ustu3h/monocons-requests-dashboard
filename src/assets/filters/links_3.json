@@ -5,13 +5,6 @@
   "total_batches": 7,
   "links": [
     {
-      "id": "mobi.appplus.calculator.plus/mobi.appplus.calculator.plus.MainActivity",
-      "existing_drawable": "generic_calculator_plus_minus_multi_equal",
-      "name": "FlexCalc",
-      "installs": "1,000,000+",
-      "drawable": "flexcalc"
-    },
-    {
       "id": "com.freemusic.offline.bus/com.project.gugu.music.ui.activity.SplashActivity",
       "existing_drawable": "apple_music",
       "name": "Free Music"
@@ -278,13 +271,6 @@
       "name": "M3Play"
     },
     {
-      "id": "com.devmaru.audio/com.devmaru.audio.activity.MainActivity",
-      "existing_drawable": "music_player",
-      "name": "MaruAudio",
-      "installs": "10,000+",
-      "drawable": "maruaudio"
-    },
-    {
       "id": "material.expressive.kwgt/material.expressive.kwgt.MainActivity",
       "existing_drawable": "m3_expressive_widgets",
       "name": "Material Expressive Widget",
@@ -305,6 +291,18 @@
       "id": "foundation.e.message/com.moez.QKSMS.feature.main.MainActivity",
       "existing_drawable": "messages",
       "name": "Messages"
+    },
+    {
+      "id": "net.bitplane.android.microphone/net.bitplane.android.microphone.MicrophoneActivity",
+      "existing_drawable": "generic_microphone",
+      "name": "Microphone"
+    },
+    {
+      "id": "com.microsoft.emmx.dev/com.google.android.apps.chrome.Main",
+      "existing_drawable": "microsoft_edge",
+      "name": "Microsoft Edge Dev",
+      "installs": "500,000+",
+      "drawable": "microsoft_edge_dev"
     }
   ]
 }

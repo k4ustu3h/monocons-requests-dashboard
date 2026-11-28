@@ -485,13 +485,6 @@
       "drawable": "amazon_now"
     },
     {
-      "id": "org.bible.amplified.bible.app/org.igvi.bible.MainActivity",
-      "existing_drawable": "generic_bible",
-      "name": "Amplified Bible",
-      "installs": "100,000+",
-      "drawable": "amplified_bible"
-    },
-    {
       "id": "com.htetznaing.adbotg/com.htetznaing.adbotg.MainActivity",
       "existing_drawable": "ladb",
       "name": "Android Debug Bridge",
@@ -514,6 +507,13 @@
       "name": "AppLock VIP",
       "installs": "1,000,000+",
       "drawable": "applock_vip"
+    },
+    {
+      "id": "com.tomclaw.appsend_rb/com.tomclaw.appsend_rb.screen.apps.AppsActivity",
+      "existing_drawable": "appsend",
+      "name": "AppSend",
+      "installs": "10,000+",
+      "drawable": "appsend"
     }
   ]
 }

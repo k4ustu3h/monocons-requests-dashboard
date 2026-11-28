@@ -5,27 +5,6 @@
   "total_batches": 7,
   "links": [
     {
-      "id": "it.sky.anywhere/com.bskyb.skygo.features.startup.StartupActivity",
-      "existing_drawable": "just_player",
-      "name": "Sky Go",
-      "installs": "5,000,000+",
-      "drawable": "sky_go"
-    },
-    {
-      "id": "com.illusions.skyworthuniversalremotecontrol/com.illusions.skyworthuniversalremotecontrol.remotecontrol.SplashActivity",
-      "existing_drawable": "generic_power",
-      "name": "Skyworth TV Remote",
-      "installs": "500,000+",
-      "drawable": "skyworth_tv_remote"
-    },
-    {
-      "id": "com.proframeapps.videoframeplayer/com.proframeapps.videoframeplayer.ui.MainActivity",
-      "existing_drawable": "just_player",
-      "name": "Slow Motion Frame Video Player",
-      "installs": "1,000,000+",
-      "drawable": "slow_motion_frame_video_player"
-    },
-    {
       "id": "kr.sira.calculator/kr.sira.calculator.SplashActivity",
       "existing_drawable": "generic_calculator_plus_minus_multi_equal",
       "name": "Smart Calculator by Smart Tools",
@@ -272,6 +251,11 @@
       "name": "vivo Notes"
     },
     {
+      "id": "eu.reply.cordless.uk/com.vodafone.gh.app.ui.StartAppActivity",
+      "existing_drawable": "vodafone_station",
+      "name": "Vodafone Station"
+    },
+    {
       "id": "com.raytechnoto.glab.voicerecorder/com.google.android.archive.ReactivateActivity",
       "existing_drawable": "generic_microphone",
       "name": "Voice Recorder",
@@ -327,6 +311,20 @@
       "id": "me.teble.xposed.autodaily/me.teble.xposed.autodaily.activity.common.MainActivityAlias",
       "existing_drawable": "tasky",
       "name": "XAutoDaily"
+    },
+    {
+      "id": "com.miui.weather2/com.miui.weather2.WeatherBaseScreen",
+      "existing_drawable": "weather",
+      "name": "Xiaomi Weather",
+      "installs": "1,000,000,000+",
+      "drawable": "xiaomi_weather"
+    },
+    {
+      "id": "com.github.tianma8023.xposed.smscode/com.github.tianma8023.xposed.smscode.HomeActivityAlias",
+      "existing_drawable": "sms_organizer",
+      "name": "XposedSmsCode",
+      "installs": "1,000+",
+      "drawable": "xposedsmscode"
     }
   ]
 }
